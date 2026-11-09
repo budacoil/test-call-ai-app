@@ -1,0 +1,523 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+ 12           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (re)
+             10 STORE_NAME               0 (re)
+
+ 13          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (time)
+             18 STORE_NAME               1 (time)
+
+ 14          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               2 (('Callable', 'Optional'))
+             24 IMPORT_NAME              2 (typing)
+             26 IMPORT_FROM              3 (Callable)
+             28 STORE_NAME               3 (Callable)
+             30 IMPORT_FROM              4 (Optional)
+             32 STORE_NAME               4 (Optional)
+             34 POP_TOP
+
+ 16          36 LOAD_CONST               3 (600.0)
+             38 STORE_NAME               5 (MIN_GAP_S)
+
+ 17          40 LOAD_CONST               4 (30)
+             42 STORE_NAME               6 (REPEAT_LIMIT)
+
+ 18          44 LOAD_CONST               5 (3)
+             46 STORE_NAME               7 (ERROR_LIMIT)
+
+ 19          48 LOAD_CONST               6 (1800.0)
+             50 STORE_NAME               8 (STALL_S)
+
+ 20          52 LOAD_CONST               7 (300)
+             54 STORE_NAME               9 (MAX_DETAIL)
+
+ 22          56 PUSH_NULL
+             58 LOAD_NAME                0 (re)
+             60 LOAD_ATTR               20 (compile)
+             80 LOAD_CONST               8 ('[A-Za-z]:[\\\\/][^\\s\'\\"<>|]*|(?:\\\\\\\\|/)(?:[\\w.\\-]+[\\\\/])+[\\w.\\-]*')
+             82 CALL                     1
+             90 STORE_NAME              11 (_PATH_RE)
+
+ 25          92 LOAD_CONST               9 ('return')
+             94 LOAD_NAME               12 (str)
+             96 BUILD_TUPLE              2
+             98 LOAD_CONST              10 (<code object clean_detail at 0x7f6aed1fe8e0, file "watchdog.py", line 25>)
+            100 MAKE_FUNCTION            4 (annotations)
+            102 STORE_NAME              13 (clean_detail)
+
+ 31         104 PUSH_NULL
+            106 LOAD_BUILD_CLASS
+            108 LOAD_CONST              11 (<code object Watchdog at 0x7f6af1de2140, file "watchdog.py", line 31>)
+            110 MAKE_FUNCTION            0
+            112 LOAD_CONST              12 ('Watchdog')
+            114 CALL                     2
+            122 STORE_NAME              14 (Watchdog)
+            124 RETURN_CONST             1 (None)
+
+Disassembly of <code object clean_detail at 0x7f6aed1fe8e0, file "watchdog.py", line 25>:
+ 25           0 RESUME                   0
+
+ 26           2 NOP
+
+ 27           4 LOAD_GLOBAL              0 (_PATH_RE)
+             14 LOAD_ATTR                3 (NULL|self + sub)
+             34 LOAD_CONST               1 ('<path>')
+             36 LOAD_GLOBAL              5 (NULL + str)
+             46 LOAD_FAST                0 (text)
+             48 CALL                     1
+             56 CALL                     2
+             64 STORE_FAST               1 (s)
+
+ 28          66 LOAD_CONST               2 (' ')
+             68 LOAD_ATTR                7 (NULL|self + join)
+             88 LOAD_FAST                1 (s)
+             90 LOAD_ATTR                9 (NULL|self + split)
+            110 CALL                     0
+            118 CALL                     1
+            126 LOAD_CONST               0 (None)
+            128 LOAD_GLOBAL             10 (MAX_DETAIL)
+            138 BINARY_SLICE
+            140 RETURN_VALUE
+
+Disassembly of <code object Watchdog at 0x7f6af1de2140, file "watchdog.py", line 31>:
+ 31           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('Watchdog')
+              8 STORE_NAME               2 (__qualname__)
+
+ 35          10 LOAD_NAME                3 (time)
+             12 LOAD_ATTR                8 (monotonic)
+
+ 36          32 LOAD_NAME                5 (MIN_GAP_S)
+
+ 37          34 LOAD_NAME                6 (REPEAT_LIMIT)
+
+ 38          36 LOAD_NAME                7 (ERROR_LIMIT)
+
+ 39          38 LOAD_NAME                8 (STALL_S)
+
+ 32          40 BUILD_TUPLE              5
+             42 LOAD_CONST               1 ('notify')
+
+ 34          44 LOAD_NAME                9 (Callable)
+             46 LOAD_NAME               10 (str)
+             48 LOAD_NAME               10 (str)
+             50 BUILD_LIST               2
+             52 LOAD_CONST               2 (None)
+             54 BUILD_TUPLE              2
+             56 BINARY_SUBSCR
+
+ 32          60 LOAD_CONST               3 ('clock')
+
+ 35          62 LOAD_NAME                9 (Callable)
+             64 BUILD_LIST               0
+             66 LOAD_NAME               11 (float)
+             68 BUILD_TUPLE              2
+             70 BINARY_SUBSCR
+
+ 32          74 LOAD_CONST               4 ('min_gap')
+
+ 36          76 LOAD_NAME               11 (float)
+
+ 32          78 LOAD_CONST               5 ('repeat_limit')
+
+ 37          80 LOAD_NAME               12 (int)
+
+ 32          82 LOAD_CONST               6 ('error_limit')
+
+ 38          84 LOAD_NAME               12 (int)
+
+ 32          86 LOAD_CONST               7 ('stall_s')
+
+ 39          88 LOAD_NAME               11 (float)
+
+ 32          90 BUILD_TUPLE             12
+             92 LOAD_CONST               8 (<code object __init__ at 0x7f6aed1c4cb0, file "watchdog.py", line 32>)
+             94 MAKE_FUNCTION            5 (defaults, annotations)
+             96 STORE_NAME              13 (__init__)
+
+ 49          98 LOAD_CONST              20 (('return', None))
+            100 LOAD_CONST              10 (<code object start at 0x7f6aed1fd920, file "watchdog.py", line 49>)
+            102 MAKE_FUNCTION            4 (annotations)
+            104 STORE_NAME              14 (start)
+
+ 59         106 LOAD_CONST              11 ('key')
+            108 LOAD_NAME               10 (str)
+            110 LOAD_CONST               9 ('return')
+            112 LOAD_CONST               2 (None)
+            114 BUILD_TUPLE              4
+            116 LOAD_CONST              12 (<code object action at 0x7f6aed189390, file "watchdog.py", line 59>)
+            118 MAKE_FUNCTION            4 (annotations)
+            120 STORE_NAME              15 (action)
+
+ 71         122 LOAD_CONST              20 (('return', None))
+            124 LOAD_CONST              13 (<code object ok at 0x7f6aed806b10, file "watchdog.py", line 71>)
+            126 MAKE_FUNCTION            4 (annotations)
+            128 STORE_NAME              16 (ok)
+
+ 75         130 LOAD_CONST              20 (('return', None))
+            132 LOAD_CONST              14 (<code object error at 0x7f6af1e2aa60, file "watchdog.py", line 75>)
+            134 MAKE_FUNCTION            4 (annotations)
+            136 STORE_NAME              17 (error)
+
+ 81         138 LOAD_CONST              20 (('return', None))
+            140 LOAD_CONST              15 (<code object fatal at 0x7f6aed7ff440, file "watchdog.py", line 81>)
+            142 MAKE_FUNCTION            4 (annotations)
+            144 STORE_NAME              18 (fatal)
+
+ 85         146 LOAD_CONST              20 (('return', None))
+            148 LOAD_CONST              16 (<code object tick at 0x7f6aed801c30, file "watchdog.py", line 85>)
+            150 MAKE_FUNCTION            4 (annotations)
+            152 STORE_NAME              19 (tick)
+
+ 92         154 LOAD_CONST              17 ('code')
+            156 LOAD_NAME               10 (str)
+            158 LOAD_CONST              18 ('detail')
+            160 LOAD_NAME               10 (str)
+            162 LOAD_CONST               9 ('return')
+            164 LOAD_CONST               2 (None)
+            166 BUILD_TUPLE              6
+            168 LOAD_CONST              19 (<code object _fire at 0x7f6aed18ce30, file "watchdog.py", line 92>)
+            170 MAKE_FUNCTION            4 (annotations)
+            172 STORE_NAME              20 (_fire)
+            174 RETURN_CONST             2 (None)
+
+Disassembly of <code object __init__ at 0x7f6aed1c4cb0, file "watchdog.py", line 32>:
+ 32           0 RESUME                   0
+
+ 41           2 LOAD_FAST                1 (notify)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (_notify)
+
+ 42          16 LOAD_FAST                2 (clock)
+             18 LOAD_FAST                0 (self)
+             20 STORE_ATTR               1 (_clock)
+
+ 43          30 LOAD_FAST                3 (min_gap)
+             32 LOAD_FAST                0 (self)
+             34 STORE_ATTR               2 (min_gap)
+
+ 44          44 LOAD_FAST                4 (repeat_limit)
+             46 LOAD_FAST                0 (self)
+             48 STORE_ATTR               3 (repeat_limit)
+
+ 45          58 LOAD_FAST                5 (error_limit)
+             60 LOAD_FAST                0 (self)
+             62 STORE_ATTR               4 (error_limit)
+
+ 46          72 LOAD_FAST                6 (stall_s)
+             74 LOAD_FAST                0 (self)
+             76 STORE_ATTR               5 (stall_s)
+
+ 47          86 LOAD_FAST                0 (self)
+             88 LOAD_ATTR               13 (NULL|self + start)
+            108 CALL                     0
+            116 POP_TOP
+            118 RETURN_CONST             0 (None)
+
+Disassembly of <code object start at 0x7f6aed1fd920, file "watchdog.py", line 49>:
+ 49           0 RESUME                   0
+
+ 50           2 LOAD_CONST               0 (None)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (_last_alert)
+
+ 51          16 LOAD_CONST               1 (0)
+             18 LOAD_FAST                0 (self)
+             20 STORE_ATTR               1 (_held)
+
+ 52          30 LOAD_CONST               2 ('')
+             32 LOAD_FAST                0 (self)
+             34 STORE_ATTR               2 (_key)
+
+ 53          44 LOAD_CONST               1 (0)
+             46 LOAD_FAST                0 (self)
+             48 STORE_ATTR               3 (_repeat)
+
+ 54          58 LOAD_CONST               1 (0)
+             60 LOAD_FAST                0 (self)
+             62 STORE_ATTR               4 (_errors)
+
+ 55          72 LOAD_FAST                0 (self)
+             74 LOAD_ATTR               11 (NULL|self + _clock)
+             94 CALL                     0
+            102 LOAD_FAST                0 (self)
+            104 STORE_ATTR               6 (_last_action)
+
+ 56         114 LOAD_CONST               3 (False)
+            116 LOAD_FAST                0 (self)
+            118 STORE_ATTR               7 (_stall_reported)
+            128 RETURN_CONST             0 (None)
+
+Disassembly of <code object action at 0x7f6aed189390, file "watchdog.py", line 59>:
+ 59           0 RESUME                   0
+
+ 60           2 NOP
+
+ 61           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + _clock)
+             26 CALL                     0
+             34 LOAD_FAST                0 (self)
+             36 STORE_ATTR               1 (_last_action)
+
+ 62          46 LOAD_CONST               1 (False)
+             48 LOAD_FAST                0 (self)
+             50 STORE_ATTR               2 (_stall_reported)
+
+ 63          60 LOAD_FAST                1 (key)
+             62 LOAD_FAST                0 (self)
+             64 LOAD_ATTR                6 (_key)
+             84 COMPARE_OP              40 (==)
+             88 POP_JUMP_IF_FALSE       22 (to 134)
+
+ 64          90 LOAD_FAST                0 (self)
+             92 COPY                     1
+             94 LOAD_ATTR                8 (_repeat)
+            114 LOAD_CONST               2 (1)
+            116 BINARY_OP               13 (+=)
+            120 SWAP                     2
+            122 STORE_ATTR               4 (_repeat)
+            132 JUMP_FORWARD            15 (to 164)
+
+ 66     >>  134 LOAD_FAST                1 (key)
+            136 LOAD_CONST               2 (1)
+            138 SWAP                     2
+            140 LOAD_FAST                0 (self)
+            142 STORE_ATTR               3 (_key)
+            152 LOAD_FAST                0 (self)
+            154 STORE_ATTR               4 (_repeat)
+
+ 67     >>  164 LOAD_FAST                0 (self)
+            166 LOAD_ATTR                8 (_repeat)
+            186 LOAD_FAST                0 (self)
+            188 LOAD_ATTR               10 (repeat_limit)
+            208 COMPARE_OP              92 (>=)
+            212 POP_JUMP_IF_FALSE       44 (to 302)
+
+ 68         214 LOAD_FAST                0 (self)
+            216 LOAD_ATTR                8 (_repeat)
+            236 LOAD_CONST               3 (0)
+            238 SWAP                     2
+            240 STORE_FAST               2 (n)
+            242 LOAD_FAST                0 (self)
+            244 STORE_ATTR               4 (_repeat)
+
+ 69         254 LOAD_FAST                0 (self)
+            256 LOAD_ATTR               13 (NULL|self + _fire)
+            276 LOAD_CONST               4 ('repeat')
+            278 LOAD_FAST                1 (key)
+            280 FORMAT_VALUE             0
+            282 LOAD_CONST               5 (' x')
+            284 LOAD_FAST                2 (n)
+            286 FORMAT_VALUE             0
+            288 BUILD_STRING             3
+            290 CALL                     2
+            298 POP_TOP
+            300 RETURN_CONST             0 (None)
+
+ 67     >>  302 RETURN_CONST             0 (None)
+
+Disassembly of <code object ok at 0x7f6aed806b10, file "watchdog.py", line 71>:
+ 71           0 RESUME                   0
+
+ 72           2 NOP
+
+ 73           4 LOAD_CONST               1 (0)
+              6 LOAD_FAST                0 (self)
+              8 STORE_ATTR               0 (_errors)
+             18 RETURN_CONST             0 (None)
+
+Disassembly of <code object error at 0x7f6af1e2aa60, file "watchdog.py", line 75>:
+ 75           0 RESUME                   0
+
+ 76           2 LOAD_FAST                0 (self)
+              4 COPY                     1
+              6 LOAD_ATTR                0 (_errors)
+             26 LOAD_CONST               1 (1)
+             28 BINARY_OP               13 (+=)
+             32 SWAP                     2
+             34 STORE_ATTR               0 (_errors)
+
+ 77          44 LOAD_FAST                0 (self)
+             46 LOAD_ATTR                0 (_errors)
+             66 LOAD_FAST                0 (self)
+             68 LOAD_ATTR                2 (error_limit)
+             88 COMPARE_OP              92 (>=)
+             92 POP_JUMP_IF_FALSE       54 (to 202)
+
+ 78          94 LOAD_FAST                0 (self)
+             96 LOAD_ATTR                0 (_errors)
+            116 LOAD_CONST               2 (0)
+            118 SWAP                     2
+            120 STORE_FAST               2 (n)
+            122 LOAD_FAST                0 (self)
+            124 STORE_ATTR               0 (_errors)
+
+ 79         134 LOAD_FAST                0 (self)
+            136 LOAD_ATTR                5 (NULL|self + _fire)
+            156 LOAD_CONST               3 ('error')
+            158 LOAD_GLOBAL              7 (NULL + clean_detail)
+            168 LOAD_FAST                1 (text)
+            170 CALL                     1
+            178 FORMAT_VALUE             0
+            180 LOAD_CONST               4 (' (x')
+            182 LOAD_FAST                2 (n)
+            184 FORMAT_VALUE             0
+            186 LOAD_CONST               5 (')')
+            188 BUILD_STRING             4
+            190 CALL                     2
+            198 POP_TOP
+            200 RETURN_CONST             0 (None)
+
+ 77     >>  202 RETURN_CONST             0 (None)
+
+Disassembly of <code object fatal at 0x7f6aed7ff440, file "watchdog.py", line 81>:
+ 81           0 RESUME                   0
+
+ 82           2 NOP
+
+ 83           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + _fire)
+             26 LOAD_CONST               1 ('error')
+             28 LOAD_CONST               2 ('worker stopped: ')
+             30 LOAD_GLOBAL              3 (NULL + clean_detail)
+             40 LOAD_FAST                1 (text)
+             42 CALL                     1
+             50 FORMAT_VALUE             0
+             52 BUILD_STRING             2
+             54 CALL                     2
+             62 POP_TOP
+             64 RETURN_CONST             0 (None)
+
+Disassembly of <code object tick at 0x7f6aed801c30, file "watchdog.py", line 85>:
+ 85           0 RESUME                   0
+
+ 86           2 NOP
+
+ 87           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (_stall_reported)
+             26 POP_JUMP_IF_TRUE       112 (to 252)
+             28 LOAD_FAST                0 (self)
+             30 LOAD_ATTR                3 (NULL|self + _clock)
+             50 CALL                     0
+             58 LOAD_FAST                0 (self)
+             60 LOAD_ATTR                4 (_last_action)
+             80 BINARY_OP               10 (-)
+             84 LOAD_FAST                0 (self)
+             86 LOAD_ATTR                6 (stall_s)
+            106 COMPARE_OP              92 (>=)
+            110 POP_JUMP_IF_FALSE       69 (to 250)
+
+ 88         112 LOAD_CONST               1 (True)
+            114 LOAD_FAST                0 (self)
+            116 STORE_ATTR               0 (_stall_reported)
+
+ 89         126 LOAD_FAST                0 (self)
+            128 LOAD_ATTR                9 (NULL|self + _fire)
+            148 LOAD_CONST               2 ('stalled')
+            150 LOAD_CONST               3 ('no click for ')
+            152 LOAD_GLOBAL             11 (NULL + int)
+            162 LOAD_FAST                0 (self)
+            164 LOAD_ATTR                3 (NULL|self + _clock)
+            184 CALL                     0
+            192 LOAD_FAST                0 (self)
+            194 LOAD_ATTR                4 (_last_action)
+            214 BINARY_OP               10 (-)
+            218 LOAD_CONST               4 (60)
+            220 BINARY_OP                2 (//)
+            224 CALL                     1
+            232 FORMAT_VALUE             0
+            234 LOAD_CONST               5 (' min')
+            236 BUILD_STRING             3
+            238 CALL                     2
+            246 POP_TOP
+            248 RETURN_CONST             0 (None)
+
+ 87     >>  250 RETURN_CONST             0 (None)
+        >>  252 RETURN_CONST             0 (None)
+
+Disassembly of <code object _fire at 0x7f6aed18ce30, file "watchdog.py", line 92>:
+ 92           0 RESUME                   0
+
+ 93           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                1 (NULL|self + _clock)
+             24 CALL                     0
+             32 STORE_FAST               3 (now)
+
+ 94          34 LOAD_FAST                0 (self)
+             36 LOAD_ATTR                2 (_last_alert)
+             56 POP_JUMP_IF_NONE        50 (to 158)
+             58 LOAD_FAST                3 (now)
+             60 LOAD_FAST                0 (self)
+             62 LOAD_ATTR                2 (_last_alert)
+             82 BINARY_OP               10 (-)
+             86 LOAD_FAST                0 (self)
+             88 LOAD_ATTR                4 (min_gap)
+            108 COMPARE_OP               2 (<)
+            112 POP_JUMP_IF_FALSE       22 (to 158)
+
+ 95         114 LOAD_FAST                0 (self)
+            116 COPY                     1
+            118 LOAD_ATTR                6 (_held)
+            138 LOAD_CONST               1 (1)
+            140 BINARY_OP               13 (+=)
+            144 SWAP                     2
+            146 STORE_ATTR               3 (_held)
+
+ 96         156 RETURN_CONST             0 (None)
+
+ 97     >>  158 LOAD_FAST                0 (self)
+            160 LOAD_ATTR                6 (_held)
+            180 POP_JUMP_IF_FALSE       26 (to 234)
+
+ 98         182 LOAD_FAST                2 (detail)
+            184 LOAD_CONST               2 (' (+')
+            186 LOAD_FAST                0 (self)
+            188 LOAD_ATTR                6 (_held)
+            208 FORMAT_VALUE             0
+            210 LOAD_CONST               3 (' held back)')
+            212 BUILD_STRING             3
+            214 BINARY_OP               13 (+=)
+            218 STORE_FAST               2 (detail)
+
+ 99         220 LOAD_CONST               4 (0)
+            222 LOAD_FAST                0 (self)
+            224 STORE_ATTR               3 (_held)
+
+100     >>  234 LOAD_FAST                3 (now)
+            236 LOAD_FAST                0 (self)
+            238 STORE_ATTR               1 (_last_alert)
+
+101         248 NOP
+
+102         250 LOAD_FAST                0 (self)
+            252 LOAD_ATTR                9 (NULL|self + _notify)
+            272 LOAD_FAST                1 (code)
+            274 LOAD_FAST                2 (detail)
+            276 CALL                     2
+            284 POP_TOP
+            286 RETURN_CONST             0 (None)
+        >>  288 PUSH_EXC_INFO
+
+103         290 LOAD_GLOBAL             10 (Exception)
+            300 CHECK_EXC_MATCH
+            302 POP_JUMP_IF_FALSE        3 (to 310)
+            304 POP_TOP
+
+104         306 POP_EXCEPT
+            308 RETURN_CONST             0 (None)
+
+103     >>  310 RERAISE                  0
+        >>  312 COPY                     3
+            314 POP_EXCEPT
+            316 RERAISE                  1
+ExceptionTable:
+  250 to 284 -> 288 [0]
+  288 to 304 -> 312 [1] lasti
+  310 to 310 -> 312 [1] lasti

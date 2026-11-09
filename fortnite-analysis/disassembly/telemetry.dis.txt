@@ -1,0 +1,3097 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+ 10           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (json)
+             10 STORE_NAME               0 (json)
+
+ 11          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (socket)
+             18 STORE_NAME               1 (socket)
+
+ 12          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              2 (ssl)
+             26 STORE_NAME               2 (ssl)
+
+ 13          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               1 (None)
+             32 IMPORT_NAME              3 (threading)
+             34 STORE_NAME               3 (threading)
+
+ 14          36 LOAD_CONST               0 (0)
+             38 LOAD_CONST               1 (None)
+             40 IMPORT_NAME              4 (time)
+             42 STORE_NAME               4 (time)
+
+ 15          44 LOAD_CONST               0 (0)
+             46 LOAD_CONST               1 (None)
+             48 IMPORT_NAME              5 (unicodedata)
+             50 STORE_NAME               5 (unicodedata)
+
+ 16          52 LOAD_CONST               0 (0)
+             54 LOAD_CONST               1 (None)
+             56 IMPORT_NAME              6 (urllib.error)
+             58 STORE_NAME               7 (urllib)
+
+ 17          60 LOAD_CONST               0 (0)
+             62 LOAD_CONST               1 (None)
+             64 IMPORT_NAME              8 (urllib.request)
+             66 STORE_NAME               7 (urllib)
+
+ 18          68 LOAD_CONST               0 (0)
+             70 LOAD_CONST               2 (('deque',))
+             72 IMPORT_NAME              9 (collections)
+             74 IMPORT_FROM             10 (deque)
+             76 STORE_NAME              10 (deque)
+             78 POP_TOP
+
+ 19          80 LOAD_CONST               0 (0)
+             82 LOAD_CONST               3 (('Callable', 'Dict', 'List', 'Optional', 'Tuple'))
+             84 IMPORT_NAME             11 (typing)
+             86 IMPORT_FROM             12 (Callable)
+             88 STORE_NAME              12 (Callable)
+             90 IMPORT_FROM             13 (Dict)
+             92 STORE_NAME              13 (Dict)
+             94 IMPORT_FROM             14 (List)
+             96 STORE_NAME              14 (List)
+             98 IMPORT_FROM             15 (Optional)
+            100 STORE_NAME              15 (Optional)
+            102 IMPORT_FROM             16 (Tuple)
+            104 STORE_NAME              16 (Tuple)
+            106 POP_TOP
+
+ 21         108 LOAD_CONST               0 (0)
+            110 LOAD_CONST               1 (None)
+            112 IMPORT_NAME             17 (breaker)
+            114 STORE_NAME              17 (breaker)
+
+ 22         116 LOAD_CONST               0 (0)
+            118 LOAD_CONST               1 (None)
+            120 IMPORT_NAME             18 (relay)
+            122 STORE_NAME              18 (relay)
+
+ 23         124 LOAD_CONST               0 (0)
+            126 LOAD_CONST               1 (None)
+            128 IMPORT_NAME             19 (netfix)
+            130 STORE_NAME              19 (netfix)
+
+ 25         132 LOAD_CONST               4 ('LAP-')
+            134 STORE_NAME              20 (KEY_PREFIX)
+
+ 26         136 LOAD_CONST               5 (100000)
+            138 STORE_NAME              21 (MAX_GRID_B64)
+
+ 27         140 LOAD_CONST               6 (5)
+            142 STORE_NAME              22 (MIN_ACTIONS)
+
+ 28         144 LOAD_CONST               7 (60.0)
+            146 STORE_NAME              23 (WINDOW_S)
+
+ 29         148 LOAD_CONST               8 (180.0)
+            150 STORE_NAME              24 (PERIODIC_RETRY_S)
+
+ 30         152 LOAD_CONST               9 (15.0)
+            154 STORE_NAME              25 (HTTP_TIMEOUT_S)
+
+ 31         156 LOAD_CONST              10 ('your-worker')
+            158 STORE_NAME              26 (PLACEHOLDER)
+
+ 34         160 LOAD_CONST              11 (('ok', 'invalid_key', 'no_url', 'network', 'dm_closed', 'rate_limited', 'server'))
+            162 UNPACK_SEQUENCE          7
+            166 STORE_NAME              27 (OK)
+            168 STORE_NAME              28 (INVALID_KEY)
+            170 STORE_NAME              29 (NO_URL)
+            172 STORE_NAME              30 (NETWORK)
+            174 STORE_NAME              31 (DM_CLOSED)
+            176 STORE_NAME              32 (RATE_LIMITED)
+            178 STORE_NAME              33 (SERVER)
+
+ 38         180 LOAD_CONST              12 (('network_dns', 'network_tls', 'network_timeout', 'network_blocked'))
+            182 UNPACK_SEQUENCE          4
+            186 STORE_NAME              34 (NETWORK_DNS)
+            188 STORE_NAME              35 (NETWORK_TLS)
+            190 STORE_NAME              36 (NETWORK_TIMEOUT)
+            192 STORE_NAME              37 (NETWORK_BLOCKED)
+
+ 39         194 LOAD_CONST              13 ((10013, 10053, 10054, 10061))
+            196 STORE_NAME              38 (BLOCKED_WINERRORS)
+
+ 42         198 LOAD_CONST              14 ('e')
+            200 LOAD_NAME               39 (BaseException)
+            202 LOAD_CONST              15 ('return')
+            204 LOAD_NAME               16 (Tuple)
+            206 LOAD_NAME               40 (str)
+            208 LOAD_NAME               40 (str)
+            210 BUILD_TUPLE              2
+            212 BINARY_SUBSCR
+            216 BUILD_TUPLE              4
+            218 LOAD_CONST              16 (<code object classify_error at 0x17a983a0, file "telemetry.py", line 42>)
+            220 MAKE_FUNCTION            4 (annotations)
+            222 STORE_NAME              41 (classify_error)
+
+ 67         224 LOAD_CONST              17 ('kind')
+            226 LOAD_NAME               40 (str)
+            228 LOAD_CONST              15 ('return')
+            230 LOAD_NAME               40 (str)
+            232 BUILD_TUPLE              4
+            234 LOAD_CONST              18 (<code object network_status at 0x7f6aed7e5d70, file "telemetry.py", line 67>)
+            236 MAKE_FUNCTION            4 (annotations)
+            238 STORE_NAME              42 (network_status)
+
+ 71         240 LOAD_CONST              14 ('e')
+            242 LOAD_NAME               39 (BaseException)
+            244 LOAD_CONST              15 ('return')
+            246 LOAD_NAME               43 (bool)
+            248 BUILD_TUPLE              4
+            250 LOAD_CONST              19 (<code object is_cert_error at 0x7f6aed7a2c30, file "telemetry.py", line 71>)
+            252 MAKE_FUNCTION            4 (annotations)
+            254 STORE_NAME              44 (is_cert_error)
+
+ 78         256 LOAD_CONST              15 ('return')
+            258 LOAD_NAME               15 (Optional)
+            260 LOAD_NAME                2 (ssl)
+            262 LOAD_ATTR               90 (SSLContext)
+            282 BINARY_SUBSCR
+            286 BUILD_TUPLE              2
+            288 LOAD_CONST              20 (<code object bundled_context at 0x7f6aed1c4a30, file "telemetry.py", line 78>)
+            290 MAKE_FUNCTION            4 (annotations)
+            292 STORE_NAME              46 (bundled_context)
+
+ 92         294 LOAD_CONST              21 ('req')
+            296 LOAD_NAME                7 (urllib)
+            298 LOAD_ATTR               94 (request)
+            318 LOAD_ATTR               96 (Request)
+            338 LOAD_CONST              22 ('timeout')
+            340 LOAD_NAME               49 (float)
+            342 BUILD_TUPLE              4
+            344 LOAD_CONST              23 (<code object _open at 0x17a90ca0, file "telemetry.py", line 92>)
+            346 MAKE_FUNCTION            4 (annotations)
+            348 STORE_NAME              50 (_open)
+
+119         350 LOAD_CONST              21 ('req')
+            352 LOAD_NAME                7 (urllib)
+            354 LOAD_ATTR               94 (request)
+            374 LOAD_ATTR               96 (Request)
+            394 LOAD_CONST              22 ('timeout')
+            396 LOAD_NAME               49 (float)
+            398 BUILD_TUPLE              4
+            400 LOAD_CONST              24 (<code object _open_basic at 0x17a8ad40, file "telemetry.py", line 119>)
+            402 MAKE_FUNCTION            4 (annotations)
+            404 STORE_NAME              51 (_open_basic)
+
+137         406 LOAD_CONST              25 ('‐‑‒–—―−ー－ｰ')
+            408 STORE_NAME              52 (_DASHES)
+
+138         410 LOAD_NAME               53 (dict)
+            412 LOAD_ATTR              109 (NULL|self + fromkeys)
+            432 PUSH_NULL
+            434 LOAD_NAME               55 (map)
+            436 LOAD_NAME               56 (ord)
+            438 LOAD_CONST              26 ('\u200b\u200c\u200d\u200e\u200f\u2060\ufeff"\'`<>“”‘’「」')
+            440 CALL                     2
+            448 LOAD_CONST               1 (None)
+            450 CALL                     2
+            458 STORE_NAME              57 (_JUNK)
+
+141         460 LOAD_CONST              15 ('return')
+            462 LOAD_NAME               40 (str)
+            464 BUILD_TUPLE              2
+            466 LOAD_CONST              27 (<code object clean_key at 0x179cf280, file "telemetry.py", line 141>)
+            468 MAKE_FUNCTION            4 (annotations)
+            470 STORE_NAME              58 (clean_key)
+
+152         472 LOAD_CONST              15 ('return')
+            474 LOAD_NAME               43 (bool)
+            476 BUILD_TUPLE              2
+            478 LOAD_CONST              28 (<code object valid_link_key at 0x7f6aed1c5cf0, file "telemetry.py", line 152>)
+            480 MAKE_FUNCTION            4 (annotations)
+            482 STORE_NAME              59 (valid_link_key)
+
+157         484 LOAD_CONST              15 ('return')
+            486 LOAD_NAME               43 (bool)
+            488 BUILD_TUPLE              2
+            490 LOAD_CONST              29 (<code object valid_endpoint at 0x7f6af1de18a0, file "telemetry.py", line 157>)
+            492 MAKE_FUNCTION            4 (annotations)
+            494 STORE_NAME              60 (valid_endpoint)
+
+161         496 LOAD_CONST              30 ('endpoint_url')
+            498 LOAD_NAME               40 (str)
+            500 LOAD_CONST              31 ('path')
+            502 LOAD_NAME               40 (str)
+            504 LOAD_CONST              15 ('return')
+            506 LOAD_NAME               40 (str)
+            508 BUILD_TUPLE              6
+            510 LOAD_CONST              32 (<code object api_url at 0x7f6aed7a2ad0, file "telemetry.py", line 161>)
+            512 MAKE_FUNCTION            4 (annotations)
+            514 STORE_NAME              61 (api_url)
+
+170         516 LOAD_CONST              30 ('endpoint_url')
+            518 LOAD_NAME               40 (str)
+            520 LOAD_CONST              15 ('return')
+            522 LOAD_NAME               40 (str)
+            524 BUILD_TUPLE              4
+            526 LOAD_CONST              33 (<code object telemetry_url at 0x7f6aed806330, file "telemetry.py", line 170>)
+            528 MAKE_FUNCTION            4 (annotations)
+            530 STORE_NAME              62 (telemetry_url)
+
+174         532 LOAD_CONST              34 ('url')
+            534 LOAD_NAME               40 (str)
+            536 LOAD_CONST              35 ('payload')
+            538 LOAD_NAME               53 (dict)
+            540 LOAD_CONST              15 ('return')
+            542 LOAD_NAME               13 (Dict)
+            544 LOAD_NAME               40 (str)
+            546 LOAD_NAME               63 (object)
+            548 BUILD_TUPLE              2
+            550 BINARY_SUBSCR
+            554 BUILD_TUPLE              6
+            556 LOAD_CONST              36 (<code object _http_post at 0x17a61800, file "telemetry.py", line 174>)
+            558 MAKE_FUNCTION            4 (annotations)
+            560 STORE_NAME              64 (_http_post)
+
+213         562 LOAD_CONST              34 ('url')
+            564 LOAD_NAME               40 (str)
+            566 LOAD_CONST              35 ('payload')
+            568 LOAD_NAME               53 (dict)
+            570 LOAD_CONST              15 ('return')
+            572 LOAD_NAME               16 (Tuple)
+            574 LOAD_NAME               13 (Dict)
+            576 LOAD_NAME               40 (str)
+            578 LOAD_NAME               63 (object)
+            580 BUILD_TUPLE              2
+            582 BINARY_SUBSCR
+            586 LOAD_NAME               43 (bool)
+            588 BUILD_TUPLE              2
+            590 BINARY_SUBSCR
+            594 BUILD_TUPLE              6
+            596 LOAD_CONST              37 (<code object _post_one at 0x17a8fe90, file "telemetry.py", line 213>)
+            598 MAKE_FUNCTION            4 (annotations)
+            600 STORE_NAME              65 (_post_one)
+
+251         602 LOAD_CONST              38 ('answer')
+            604 LOAD_NAME               53 (dict)
+            606 LOAD_CONST              15 ('return')
+            608 LOAD_NAME               40 (str)
+            610 BUILD_TUPLE              4
+            612 LOAD_CONST              39 (<code object _status_of at 0x7f6aed7a1bb0, file "telemetry.py", line 251>)
+            614 MAKE_FUNCTION            4 (annotations)
+            616 STORE_NAME              66 (_status_of)
+
+258         618 PUSH_NULL
+            620 LOAD_BUILD_CLASS
+            622 LOAD_CONST              40 (<code object TelemetryManager at 0x179f6d90, file "telemetry.py", line 258>)
+            624 MAKE_FUNCTION            0
+            626 LOAD_CONST              41 ('TelemetryManager')
+            628 CALL                     2
+            636 STORE_NAME              67 (TelemetryManager)
+            638 RETURN_CONST             1 (None)
+
+Disassembly of <code object classify_error at 0x17a983a0, file "telemetry.py", line 42>:
+ 42           0 RESUME                   0
+
+ 43           2 NOP
+
+ 48           4 LOAD_GLOBAL              1 (NULL + getattr)
+             14 LOAD_FAST                0 (e)
+             16 LOAD_CONST               1 ('reason')
+             18 LOAD_CONST               0 (None)
+             20 CALL                     3
+             28 STORE_FAST               1 (reason)
+
+ 49          30 LOAD_GLOBAL              3 (NULL + isinstance)
+             40 LOAD_FAST                1 (reason)
+             42 LOAD_GLOBAL              4 (BaseException)
+             52 CALL                     2
+             60 POP_JUMP_IF_TRUE         2 (to 66)
+
+ 50          62 LOAD_FAST                0 (e)
+             64 STORE_FAST               1 (reason)
+
+ 51     >>   66 LOAD_GLOBAL              7 (NULL + type)
+             76 LOAD_FAST                1 (reason)
+             78 CALL                     1
+             86 LOAD_ATTR                8 (__name__)
+            106 FORMAT_VALUE             0
+            108 LOAD_CONST               2 (': ')
+            110 LOAD_FAST                1 (reason)
+            112 FORMAT_VALUE             0
+            114 BUILD_STRING             3
+            116 LOAD_CONST               0 (None)
+            118 LOAD_CONST               3 (200)
+            120 BINARY_SLICE
+            122 STORE_FAST               2 (text)
+
+ 52         124 LOAD_GLOBAL             11 (NULL + str)
+            134 LOAD_FAST                1 (reason)
+            136 CALL                     1
+            144 LOAD_ATTR               13 (NULL|self + lower)
+            164 CALL                     0
+            172 STORE_FAST               3 (low)
+
+ 53         174 LOAD_GLOBAL              1 (NULL + getattr)
+            184 LOAD_FAST                1 (reason)
+            186 LOAD_CONST               4 ('winerror')
+            188 LOAD_CONST               0 (None)
+            190 CALL                     3
+            198 COPY                     1
+            200 POP_JUMP_IF_TRUE        13 (to 228)
+            202 POP_TOP
+            204 LOAD_GLOBAL              1 (NULL + getattr)
+            214 LOAD_FAST                1 (reason)
+            216 LOAD_CONST               5 ('errno')
+            218 LOAD_CONST               0 (None)
+            220 CALL                     3
+        >>  228 STORE_FAST               4 (code)
+
+ 54         230 LOAD_GLOBAL              3 (NULL + isinstance)
+            240 LOAD_FAST                1 (reason)
+            242 LOAD_GLOBAL             14 (socket)
+            252 LOAD_ATTR               16 (gaierror)
+            272 CALL                     2
+            280 POP_JUMP_IF_FALSE        6 (to 294)
+
+ 55         282 LOAD_CONST               6 ('dns')
+            284 STORE_FAST               5 (kind)
+
+ 64         286 LOAD_FAST                5 (kind)
+            288 LOAD_FAST                2 (text)
+            290 BUILD_TUPLE              2
+            292 RETURN_VALUE
+
+ 56     >>  294 LOAD_GLOBAL              3 (NULL + isinstance)
+            304 LOAD_FAST                1 (reason)
+            306 LOAD_GLOBAL             18 (ssl)
+            316 LOAD_ATTR               20 (SSLError)
+            336 CALL                     2
+            344 POP_JUMP_IF_TRUE        41 (to 428)
+            346 LOAD_CONST               7 ('certificate')
+            348 LOAD_FAST                3 (low)
+            350 CONTAINS_OP              0
+            352 POP_JUMP_IF_TRUE        37 (to 428)
+            354 LOAD_CONST               8 ('ssl')
+            356 LOAD_GLOBAL              7 (NULL + type)
+            366 LOAD_FAST                1 (reason)
+            368 CALL                     1
+            376 LOAD_ATTR                8 (__name__)
+            396 LOAD_ATTR               13 (NULL|self + lower)
+            416 CALL                     0
+            424 CONTAINS_OP              0
+            426 POP_JUMP_IF_FALSE        6 (to 440)
+
+ 57     >>  428 LOAD_CONST               9 ('tls')
+            430 STORE_FAST               5 (kind)
+
+ 64         432 LOAD_FAST                5 (kind)
+            434 LOAD_FAST                2 (text)
+            436 BUILD_TUPLE              2
+            438 RETURN_VALUE
+
+ 58     >>  440 LOAD_GLOBAL              3 (NULL + isinstance)
+            450 LOAD_FAST                1 (reason)
+            452 LOAD_GLOBAL             14 (socket)
+            462 LOAD_ATTR               22 (timeout)
+            482 LOAD_GLOBAL             24 (TimeoutError)
+            492 BUILD_TUPLE              2
+            494 CALL                     2
+            502 POP_JUMP_IF_TRUE         4 (to 512)
+            504 LOAD_CONST              10 ('timed out')
+            506 LOAD_FAST                3 (low)
+            508 CONTAINS_OP              0
+            510 POP_JUMP_IF_FALSE        6 (to 524)
+
+ 59     >>  512 LOAD_CONST              11 ('timeout')
+            514 STORE_FAST               5 (kind)
+
+ 64         516 LOAD_FAST                5 (kind)
+            518 LOAD_FAST                2 (text)
+            520 BUILD_TUPLE              2
+            522 RETURN_VALUE
+
+ 60     >>  524 LOAD_GLOBAL              3 (NULL + isinstance)
+            534 LOAD_FAST                1 (reason)
+            536 LOAD_GLOBAL             26 (ConnectionRefusedError)
+            546 LOAD_GLOBAL             28 (ConnectionResetError)
+            556 LOAD_GLOBAL             30 (ConnectionAbortedError)
+            566 LOAD_GLOBAL             32 (PermissionError)
+            576 BUILD_TUPLE              4
+            578 CALL                     2
+            586 POP_JUMP_IF_TRUE         8 (to 604)
+            588 LOAD_FAST                4 (code)
+            590 LOAD_GLOBAL             34 (BLOCKED_WINERRORS)
+            600 CONTAINS_OP              0
+            602 POP_JUMP_IF_FALSE        6 (to 616)
+
+ 61     >>  604 LOAD_CONST              12 ('blocked')
+            606 STORE_FAST               5 (kind)
+
+ 64         608 LOAD_FAST                5 (kind)
+            610 LOAD_FAST                2 (text)
+            612 BUILD_TUPLE              2
+            614 RETURN_VALUE
+
+ 63     >>  616 LOAD_CONST              13 ('other')
+            618 STORE_FAST               5 (kind)
+
+ 64         620 LOAD_FAST                5 (kind)
+            622 LOAD_FAST                2 (text)
+            624 BUILD_TUPLE              2
+            626 RETURN_VALUE
+
+Disassembly of <code object network_status at 0x7f6aed7e5d70, file "telemetry.py", line 67>:
+ 67           0 RESUME                   0
+
+ 68           2 LOAD_GLOBAL              0 (NETWORK_DNS)
+             12 LOAD_GLOBAL              2 (NETWORK_TLS)
+             22 LOAD_GLOBAL              4 (NETWORK_TIMEOUT)
+             32 LOAD_GLOBAL              6 (NETWORK_BLOCKED)
+             42 LOAD_CONST               1 (('dns', 'tls', 'timeout', 'blocked'))
+             44 BUILD_CONST_KEY_MAP      4
+             46 LOAD_ATTR                9 (NULL|self + get)
+             66 LOAD_FAST                0 (kind)
+             68 LOAD_GLOBAL             10 (NETWORK)
+             78 CALL                     2
+             86 RETURN_VALUE
+
+Disassembly of <code object is_cert_error at 0x7f6aed7a2c30, file "telemetry.py", line 71>:
+ 71           0 RESUME                   0
+
+ 72           2 LOAD_GLOBAL              1 (NULL + getattr)
+             12 LOAD_FAST                0 (e)
+             14 LOAD_CONST               1 ('reason')
+             16 LOAD_CONST               0 (None)
+             18 CALL                     3
+             26 STORE_FAST               1 (reason)
+
+ 73          28 LOAD_GLOBAL              3 (NULL + isinstance)
+             38 LOAD_FAST                1 (reason)
+             40 LOAD_GLOBAL              4 (BaseException)
+             50 CALL                     2
+             58 POP_JUMP_IF_TRUE         2 (to 64)
+
+ 74          60 LOAD_FAST                0 (e)
+             62 STORE_FAST               1 (reason)
+
+ 75     >>   64 LOAD_GLOBAL              3 (NULL + isinstance)
+             74 LOAD_FAST                1 (reason)
+             76 LOAD_GLOBAL              6 (ssl)
+             86 LOAD_ATTR                8 (SSLCertVerificationError)
+            106 CALL                     2
+            114 COPY                     1
+            116 POP_JUMP_IF_TRUE        13 (to 144)
+            118 POP_TOP
+            120 LOAD_CONST               2 ('CERTIFICATE_VERIFY_FAILED')
+            122 LOAD_GLOBAL             11 (NULL + str)
+            132 LOAD_FAST                1 (reason)
+            134 CALL                     1
+            142 CONTAINS_OP              0
+        >>  144 RETURN_VALUE
+
+Disassembly of <code object bundled_context at 0x7f6aed1c4a30, file "telemetry.py", line 78>:
+ 78           0 RESUME                   0
+
+ 79           2 NOP
+
+ 84           4 NOP
+
+ 85           6 LOAD_CONST               1 (0)
+              8 LOAD_CONST               0 (None)
+             10 IMPORT_NAME              0 (certifi)
+             12 STORE_FAST               0 (certifi)
+
+ 87          14 LOAD_GLOBAL              3 (NULL + ssl)
+             24 LOAD_ATTR                4 (create_default_context)
+             44 LOAD_FAST                0 (certifi)
+             46 LOAD_ATTR                7 (NULL|self + where)
+             66 CALL                     0
+             74 KW_NAMES                 2 (('cafile',))
+             76 CALL                     1
+             84 RETURN_VALUE
+        >>   86 PUSH_EXC_INFO
+
+ 88          88 LOAD_GLOBAL              8 (Exception)
+             98 CHECK_EXC_MATCH
+            100 POP_JUMP_IF_FALSE        3 (to 108)
+            102 POP_TOP
+
+ 89         104 POP_EXCEPT
+            106 RETURN_CONST             0 (None)
+
+ 88     >>  108 RERAISE                  0
+        >>  110 COPY                     3
+            112 POP_EXCEPT
+            114 RERAISE                  1
+ExceptionTable:
+  6 to 82 -> 86 [0]
+  86 to 102 -> 110 [1] lasti
+  108 to 108 -> 110 [1] lasti
+
+Disassembly of <code object _open at 0x17a90ca0, file "telemetry.py", line 92>:
+ 92           0 RESUME                   0
+
+ 93           2 NOP
+
+ 95           4 LOAD_GLOBAL              1 (NULL + netfix)
+             14 LOAD_ATTR                2 (preferred)
+             34 CALL                     0
+             42 STORE_FAST               2 (pref)
+
+ 96          44 LOAD_FAST                2 (pref)
+             46 POP_JUMP_IF_FALSE       24 (to 96)
+
+ 97          48 NOP
+
+ 98          50 LOAD_GLOBAL              1 (NULL + netfix)
+             60 LOAD_ATTR                4 (open_with)
+             80 LOAD_FAST                2 (pref)
+             82 LOAD_FAST                0 (req)
+             84 LOAD_FAST                1 (timeout)
+             86 CALL                     3
+             94 RETURN_VALUE
+
+103     >>   96 NOP
+
+104          98 LOAD_GLOBAL             15 (NULL + _open_basic)
+            108 LOAD_FAST                0 (req)
+            110 LOAD_FAST                1 (timeout)
+            112 CALL                     2
+            120 RETURN_VALUE
+        >>  122 PUSH_EXC_INFO
+
+ 99         124 LOAD_GLOBAL              6 (urllib)
+            134 LOAD_ATTR                8 (error)
+            154 LOAD_ATTR               10 (HTTPError)
+            174 CHECK_EXC_MATCH
+            176 POP_JUMP_IF_FALSE        2 (to 182)
+            178 POP_TOP
+
+100         180 RAISE_VARARGS            0
+
+101     >>  182 LOAD_GLOBAL             12 (Exception)
+            192 CHECK_EXC_MATCH
+            194 POP_JUMP_IF_FALSE        3 (to 202)
+            196 POP_TOP
+
+102         198 POP_EXCEPT
+            200 JUMP_BACKWARD           53 (to 96)
+
+101     >>  202 RERAISE                  0
+        >>  204 COPY                     3
+            206 POP_EXCEPT
+            208 RERAISE                  1
+        >>  210 PUSH_EXC_INFO
+
+105         212 LOAD_GLOBAL              6 (urllib)
+            222 LOAD_ATTR                8 (error)
+            242 LOAD_ATTR               10 (HTTPError)
+            262 CHECK_EXC_MATCH
+            264 POP_JUMP_IF_FALSE        2 (to 270)
+            266 POP_TOP
+
+106         268 RAISE_VARARGS            0
+
+107     >>  270 LOAD_GLOBAL              6 (urllib)
+            280 LOAD_ATTR                8 (error)
+            300 LOAD_ATTR               16 (URLError)
+            320 CHECK_EXC_MATCH
+            322 POP_JUMP_IF_FALSE       78 (to 480)
+            324 POP_TOP
+
+108         326 NOP
+
+109         328 LOAD_GLOBAL              1 (NULL + netfix)
+            338 LOAD_ATTR               18 (rescue)
+            358 LOAD_FAST                0 (req)
+            360 LOAD_FAST                1 (timeout)
+            362 CALL                     2
+            370 STORE_FAST               3 (r)
+            372 JUMP_FORWARD            46 (to 466)
+        >>  374 PUSH_EXC_INFO
+
+110         376 LOAD_GLOBAL              6 (urllib)
+            386 LOAD_ATTR                8 (error)
+            406 LOAD_ATTR               10 (HTTPError)
+            426 CHECK_EXC_MATCH
+            428 POP_JUMP_IF_FALSE        2 (to 434)
+            430 POP_TOP
+
+111         432 RAISE_VARARGS            0
+
+112     >>  434 LOAD_GLOBAL             12 (Exception)
+            444 CHECK_EXC_MATCH
+            446 POP_JUMP_IF_FALSE        5 (to 458)
+            448 POP_TOP
+
+113         450 LOAD_CONST               0 (None)
+            452 STORE_FAST               3 (r)
+            454 POP_EXCEPT
+            456 JUMP_FORWARD             4 (to 466)
+
+112     >>  458 RERAISE                  0
+        >>  460 COPY                     3
+            462 POP_EXCEPT
+            464 RERAISE                  1
+
+114     >>  466 LOAD_FAST                3 (r)
+            468 POP_JUMP_IF_NONE         4 (to 478)
+
+115         470 LOAD_FAST                3 (r)
+            472 SWAP                     2
+            474 POP_EXCEPT
+            476 RETURN_VALUE
+
+116     >>  478 RAISE_VARARGS            0
+
+107     >>  480 RERAISE                  0
+        >>  482 COPY                     3
+            484 POP_EXCEPT
+            486 RERAISE                  1
+ExceptionTable:
+  50 to 92 -> 122 [0]
+  98 to 118 -> 210 [0]
+  122 to 196 -> 204 [1] lasti
+  202 to 202 -> 204 [1] lasti
+  210 to 324 -> 482 [1] lasti
+  328 to 370 -> 374 [1]
+  372 to 372 -> 482 [1] lasti
+  374 to 452 -> 460 [2] lasti
+  454 to 456 -> 482 [1] lasti
+  458 to 458 -> 460 [2] lasti
+  460 to 472 -> 482 [1] lasti
+  478 to 480 -> 482 [1] lasti
+
+Disassembly of <code object _open_basic at 0x17a8ad40, file "telemetry.py", line 119>:
+119           0 RESUME                   0
+
+120           2 NOP
+
+122           4 NOP
+
+123           6 LOAD_GLOBAL              0 (urllib)
+             16 LOAD_ATTR                2 (request)
+             36 LOAD_ATTR                5 (NULL|self + urlopen)
+             56 LOAD_FAST                0 (req)
+             58 LOAD_FAST                1 (timeout)
+             60 KW_NAMES                 1 (('timeout',))
+             62 CALL                     2
+             70 RETURN_VALUE
+        >>   72 PUSH_EXC_INFO
+
+124          74 LOAD_GLOBAL              0 (urllib)
+             84 LOAD_ATTR                6 (error)
+            104 LOAD_ATTR                8 (HTTPError)
+            124 CHECK_EXC_MATCH
+            126 POP_JUMP_IF_FALSE        2 (to 132)
+            128 POP_TOP
+
+125         130 RAISE_VARARGS            0
+
+126     >>  132 LOAD_GLOBAL              0 (urllib)
+            142 LOAD_ATTR                6 (error)
+            162 LOAD_ATTR               10 (URLError)
+            182 LOAD_GLOBAL             12 (OSError)
+            192 BUILD_TUPLE              2
+            194 CHECK_EXC_MATCH
+            196 POP_JUMP_IF_FALSE      225 (to 648)
+            198 STORE_FAST               2 (e)
+
+127         200 LOAD_GLOBAL             15 (NULL + is_cert_error)
+            210 LOAD_FAST                2 (e)
+            212 CALL                     1
+            220 POP_JUMP_IF_FALSE       96 (to 414)
+
+128         222 LOAD_GLOBAL             17 (NULL + bundled_context)
+            232 CALL                     0
+            240 STORE_FAST               3 (ctx)
+
+129         242 LOAD_FAST                3 (ctx)
+            244 POP_JUMP_IF_NOT_NONE     1 (to 248)
+
+130         246 RAISE_VARARGS            0
+
+131     >>  248 LOAD_GLOBAL              0 (urllib)
+            258 LOAD_ATTR                2 (request)
+            278 LOAD_ATTR               19 (NULL|self + build_opener)
+            298 LOAD_GLOBAL              0 (urllib)
+            308 LOAD_ATTR                2 (request)
+            328 LOAD_ATTR               21 (NULL|self + HTTPSHandler)
+            348 LOAD_FAST                3 (ctx)
+            350 KW_NAMES                 2 (('context',))
+            352 CALL                     1
+            360 CALL                     1
+            368 LOAD_ATTR               23 (NULL|self + open)
+            388 LOAD_FAST                0 (req)
+            390 LOAD_FAST                1 (timeout)
+            392 KW_NAMES                 1 (('timeout',))
+            394 CALL                     2
+            402 SWAP                     2
+            404 POP_EXCEPT
+            406 LOAD_CONST               0 (None)
+            408 STORE_FAST               2 (e)
+            410 DELETE_FAST              2 (e)
+            412 RETURN_VALUE
+
+132     >>  414 LOAD_GLOBAL              0 (urllib)
+            424 LOAD_ATTR                2 (request)
+            444 LOAD_ATTR               25 (NULL|self + getproxies)
+            464 CALL                     0
+            472 POP_JUMP_IF_TRUE         1 (to 476)
+
+133         474 RAISE_VARARGS            0
+
+134     >>  476 LOAD_GLOBAL              0 (urllib)
+            486 LOAD_ATTR                2 (request)
+            506 LOAD_ATTR               19 (NULL|self + build_opener)
+            526 LOAD_GLOBAL              0 (urllib)
+            536 LOAD_ATTR                2 (request)
+            556 LOAD_ATTR               27 (NULL|self + ProxyHandler)
+            576 BUILD_MAP                0
+            578 CALL                     1
+            586 CALL                     1
+            594 LOAD_ATTR               23 (NULL|self + open)
+            614 LOAD_FAST                0 (req)
+            616 LOAD_FAST                1 (timeout)
+            618 KW_NAMES                 1 (('timeout',))
+            620 CALL                     2
+            628 SWAP                     2
+            630 POP_EXCEPT
+            632 LOAD_CONST               0 (None)
+            634 STORE_FAST               2 (e)
+            636 DELETE_FAST              2 (e)
+            638 RETURN_VALUE
+        >>  640 LOAD_CONST               0 (None)
+            642 STORE_FAST               2 (e)
+            644 DELETE_FAST              2 (e)
+            646 RERAISE                  1
+
+126     >>  648 RERAISE                  0
+        >>  650 COPY                     3
+            652 POP_EXCEPT
+            654 RERAISE                  1
+ExceptionTable:
+  6 to 68 -> 72 [0]
+  72 to 198 -> 650 [1] lasti
+  200 to 400 -> 640 [1] lasti
+  402 to 402 -> 650 [1] lasti
+  414 to 626 -> 640 [1] lasti
+  628 to 628 -> 650 [1] lasti
+  640 to 648 -> 650 [1] lasti
+
+Disassembly of <code object clean_key at 0x179cf280, file "telemetry.py", line 141>:
+141           0 RESUME                   0
+
+142           2 NOP
+
+144           4 LOAD_GLOBAL              1 (NULL + isinstance)
+             14 LOAD_FAST                0 (key)
+             16 LOAD_GLOBAL              2 (str)
+             26 CALL                     2
+             34 POP_JUMP_IF_TRUE         1 (to 38)
+
+145          36 RETURN_CONST             1 ('')
+
+146     >>   38 LOAD_FAST                0 (key)
+             40 LOAD_ATTR                5 (NULL|self + translate)
+             60 LOAD_GLOBAL              2 (str)
+             70 LOAD_ATTR                7 (NULL|self + maketrans)
+             90 LOAD_GLOBAL              8 (_DASHES)
+            100 GET_ITER
+            102 LOAD_FAST_AND_CLEAR      1 (c)
+            104 SWAP                     2
+            106 BUILD_MAP                0
+            108 SWAP                     2
+        >>  110 FOR_ITER                 5 (to 124)
+            114 STORE_FAST               1 (c)
+            116 LOAD_FAST                1 (c)
+            118 LOAD_CONST               2 ('-')
+            120 MAP_ADD                  2
+            122 JUMP_BACKWARD            7 (to 110)
+        >>  124 END_FOR
+            126 SWAP                     2
+            128 STORE_FAST               1 (c)
+            130 CALL                     1
+            138 CALL                     1
+            146 STORE_FAST               2 (s)
+
+147         148 LOAD_GLOBAL             11 (NULL + unicodedata)
+            158 LOAD_ATTR               12 (normalize)
+            178 LOAD_CONST               3 ('NFKC')
+            180 LOAD_FAST                2 (s)
+            182 CALL                     2
+            190 LOAD_ATTR                5 (NULL|self + translate)
+            210 LOAD_GLOBAL             14 (_JUNK)
+            220 CALL                     1
+            228 STORE_FAST               2 (s)
+
+148         230 LOAD_CONST               1 ('')
+            232 LOAD_ATTR               17 (NULL|self + join)
+            252 LOAD_FAST                2 (s)
+            254 LOAD_ATTR               19 (NULL|self + split)
+            274 CALL                     0
+            282 CALL                     1
+            290 LOAD_ATTR               21 (NULL|self + upper)
+            310 CALL                     0
+            318 STORE_FAST               2 (s)
+
+149         320 LOAD_FAST                2 (s)
+            322 LOAD_ATTR               23 (NULL|self + startswith)
+            342 LOAD_GLOBAL             24 (KEY_PREFIX)
+            352 CALL                     1
+            360 POP_JUMP_IF_FALSE        2 (to 366)
+            362 LOAD_FAST                2 (s)
+            364 RETURN_VALUE
+        >>  366 LOAD_FAST                0 (key)
+            368 LOAD_ATTR               27 (NULL|self + strip)
+            388 CALL                     0
+            396 RETURN_VALUE
+        >>  398 SWAP                     2
+            400 POP_TOP
+
+146         402 SWAP                     2
+            404 STORE_FAST               1 (c)
+            406 RERAISE                  0
+ExceptionTable:
+  106 to 124 -> 398 [6]
+
+Disassembly of <code object valid_link_key at 0x7f6aed1c5cf0, file "telemetry.py", line 152>:
+152           0 RESUME                   0
+
+153           2 LOAD_GLOBAL              1 (NULL + clean_key)
+             12 LOAD_FAST                0 (key)
+             14 CALL                     1
+             22 STORE_FAST               0 (key)
+
+154          24 LOAD_FAST                0 (key)
+             26 LOAD_ATTR                3 (NULL|self + startswith)
+             46 LOAD_GLOBAL              4 (KEY_PREFIX)
+             56 CALL                     1
+             64 COPY                     1
+             66 POP_JUMP_IF_FALSE       27 (to 122)
+             68 POP_TOP
+             70 LOAD_GLOBAL              7 (NULL + len)
+             80 LOAD_FAST                0 (key)
+             82 CALL                     1
+             90 LOAD_GLOBAL              7 (NULL + len)
+            100 LOAD_GLOBAL              4 (KEY_PREFIX)
+            110 CALL                     1
+            118 COMPARE_OP              68 (>)
+        >>  122 RETURN_VALUE
+
+Disassembly of <code object valid_endpoint at 0x7f6af1de18a0, file "telemetry.py", line 157>:
+157           0 RESUME                   0
+
+158           2 LOAD_GLOBAL              1 (NULL + isinstance)
+             12 LOAD_FAST                0 (url)
+             14 LOAD_GLOBAL              2 (str)
+             24 CALL                     2
+             32 COPY                     1
+             34 POP_JUMP_IF_FALSE       69 (to 174)
+             36 POP_TOP
+             38 LOAD_FAST                0 (url)
+             40 LOAD_ATTR                5 (NULL|self + strip)
+             60 CALL                     0
+             68 LOAD_ATTR                7 (NULL|self + lower)
+             88 CALL                     0
+             96 LOAD_ATTR                9 (NULL|self + startswith)
+            116 LOAD_CONST               1 ('https://')
+            118 CALL                     1
+            126 COPY                     1
+            128 POP_JUMP_IF_FALSE       22 (to 174)
+            130 POP_TOP
+            132 LOAD_GLOBAL             10 (PLACEHOLDER)
+            142 LOAD_FAST                0 (url)
+            144 LOAD_ATTR                7 (NULL|self + lower)
+            164 CALL                     0
+            172 CONTAINS_OP              1
+        >>  174 RETURN_VALUE
+
+Disassembly of <code object api_url at 0x7f6aed7a2ad0, file "telemetry.py", line 161>:
+161           0 RESUME                   0
+
+162           2 NOP
+
+163           4 LOAD_FAST                0 (endpoint_url)
+              6 LOAD_ATTR                1 (NULL|self + strip)
+             26 CALL                     0
+             34 LOAD_ATTR                3 (NULL|self + rstrip)
+             54 LOAD_CONST               1 ('/')
+             56 CALL                     1
+             64 STORE_FAST               2 (u)
+
+164          66 LOAD_CONST               2 (('/api/telemetry', '/api/sync'))
+             68 GET_ITER
+        >>   70 FOR_ITER                35 (to 144)
+             74 STORE_FAST               3 (suffix)
+
+165          76 LOAD_FAST                2 (u)
+             78 LOAD_ATTR                5 (NULL|self + endswith)
+             98 LOAD_FAST                3 (suffix)
+            100 CALL                     1
+            108 POP_JUMP_IF_TRUE         1 (to 112)
+            110 JUMP_BACKWARD           21 (to 70)
+
+166     >>  112 LOAD_FAST                2 (u)
+            114 LOAD_CONST               0 (None)
+            116 LOAD_GLOBAL              7 (NULL + len)
+            126 LOAD_FAST                3 (suffix)
+            128 CALL                     1
+            136 UNARY_NEGATIVE
+            138 BINARY_SLICE
+            140 STORE_FAST               2 (u)
+            142 JUMP_BACKWARD           37 (to 70)
+
+164     >>  144 END_FOR
+
+167         146 LOAD_FAST                2 (u)
+            148 LOAD_FAST                1 (path)
+            150 BINARY_OP                0 (+)
+            154 RETURN_VALUE
+
+Disassembly of <code object telemetry_url at 0x7f6aed806330, file "telemetry.py", line 170>:
+170           0 RESUME                   0
+
+171           2 LOAD_GLOBAL              1 (NULL + api_url)
+             12 LOAD_FAST                0 (endpoint_url)
+             14 LOAD_CONST               1 ('/api/telemetry')
+             16 CALL                     2
+             24 RETURN_VALUE
+
+Disassembly of <code object _http_post at 0x17a61800, file "telemetry.py", line 174>:
+174           0 RESUME                   0
+
+175           2 NOP
+
+181           4 LOAD_GLOBAL              1 (NULL + relay)
+             14 LOAD_ATTR                2 (candidates)
+             34 LOAD_FAST                0 (url)
+             36 CALL                     1
+             44 STORE_FAST               2 (cands)
+
+182          46 LOAD_CONST               0 (None)
+             48 STORE_FAST               3 (last_exc)
+
+183          50 LOAD_CONST               0 (None)
+             52 STORE_FAST               4 (last_ans)
+
+184          54 LOAD_GLOBAL              5 (NULL + enumerate)
+             64 LOAD_FAST                2 (cands)
+             66 CALL                     1
+             74 GET_ITER
+        >>   76 FOR_ITER               142 (to 364)
+             80 UNPACK_SEQUENCE          2
+             84 STORE_FAST               5 (i)
+             86 UNPACK_SEQUENCE          2
+             90 STORE_FAST               6 (base)
+             92 STORE_FAST               7 (full)
+
+185          94 LOAD_GLOBAL              1 (NULL + relay)
+            104 LOAD_ATTR                6 (breaker_for)
+            124 LOAD_FAST                6 (base)
+            126 LOAD_FAST                5 (i)
+            128 LOAD_CONST               1 (0)
+            130 COMPARE_OP              40 (==)
+            134 CALL                     2
+            142 STORE_FAST               8 (br)
+
+186         144 LOAD_FAST                8 (br)
+            146 LOAD_ATTR                9 (NULL|self + blocked)
+            166 CALL                     0
+            174 POP_JUMP_IF_FALSE       49 (to 274)
+
+187         176 LOAD_GLOBAL             11 (NULL + breaker)
+            186 LOAD_ATTR               12 (BreakerOpen)
+            206 LOAD_CONST               2 ('relay cooling down for ')
+            208 LOAD_GLOBAL             15 (NULL + int)
+            218 LOAD_FAST                8 (br)
+            220 LOAD_ATTR               17 (NULL|self + remaining)
+            240 CALL                     0
+            248 CALL                     1
+            256 FORMAT_VALUE             0
+            258 LOAD_CONST               3 (' s')
+            260 BUILD_STRING             3
+            262 CALL                     1
+            270 STORE_FAST               3 (last_exc)
+
+188         272 JUMP_BACKWARD           99 (to 76)
+
+189     >>  274 LOAD_FAST                5 (i)
+            276 LOAD_CONST               4 (1)
+            278 BINARY_OP                0 (+)
+            282 LOAD_GLOBAL             19 (NULL + len)
+            292 LOAD_FAST                2 (cands)
+            294 CALL                     1
+            302 COMPARE_OP               2 (<)
+            306 STORE_FAST               9 (has_next)
+
+190         308 NOP
+
+191         310 LOAD_GLOBAL             21 (NULL + _post_one)
+            320 LOAD_FAST                7 (full)
+            322 LOAD_FAST                1 (payload)
+            324 LOAD_FAST                8 (br)
+            326 CALL                     3
+            334 UNPACK_SEQUENCE          2
+            338 STORE_FAST              10 (ans)
+            340 STORE_FAST              11 (failed)
+
+204         342 LOAD_FAST               11 (failed)
+            344 POP_JUMP_IF_FALSE        5 (to 356)
+            346 LOAD_FAST                9 (has_next)
+            348 POP_JUMP_IF_FALSE        3 (to 356)
+
+205         350 LOAD_FAST               10 (ans)
+            352 STORE_FAST               4 (last_ans)
+
+206         354 JUMP_BACKWARD          140 (to 76)
+
+207     >>  356 LOAD_FAST               10 (ans)
+            358 SWAP                     2
+            360 POP_TOP
+            362 RETURN_VALUE
+
+184     >>  364 END_FOR
+
+208         366 LOAD_FAST                4 (last_ans)
+            368 POP_JUMP_IF_NONE         2 (to 374)
+
+209         370 LOAD_FAST                4 (last_ans)
+            372 RETURN_VALUE
+
+210     >>  374 LOAD_FAST                3 (last_exc)
+            376 COPY                     1
+            378 POP_JUMP_IF_TRUE        21 (to 422)
+            380 POP_TOP
+            382 LOAD_GLOBAL             11 (NULL + breaker)
+            392 LOAD_ATTR               12 (BreakerOpen)
+            412 LOAD_CONST               5 ('no relay address')
+            414 CALL                     1
+        >>  422 RAISE_VARARGS            1
+        >>  424 PUSH_EXC_INFO
+
+192         426 LOAD_GLOBAL             22 (urllib)
+            436 LOAD_ATTR               24 (error)
+            456 LOAD_ATTR               26 (URLError)
+            476 CHECK_EXC_MATCH
+            478 POP_JUMP_IF_FALSE       46 (to 572)
+            480 STORE_FAST              12 (e)
+
+193         482 LOAD_FAST               12 (e)
+            484 STORE_FAST               3 (last_exc)
+
+194         486 LOAD_FAST                9 (has_next)
+            488 POP_JUMP_IF_FALSE       36 (to 562)
+
+195         490 LOAD_FAST                8 (br)
+            492 LOAD_ATTR               29 (NULL|self + trip_for)
+            512 LOAD_GLOBAL              0 (relay)
+            522 LOAD_ATTR               30 (CONNECT_FAIL_COOLDOWN_S)
+            542 CALL                     1
+            550 POP_TOP
+
+196         552 POP_EXCEPT
+            554 LOAD_CONST               0 (None)
+            556 STORE_FAST              12 (e)
+            558 DELETE_FAST             12 (e)
+            560 JUMP_BACKWARD          243 (to 76)
+
+197     >>  562 RAISE_VARARGS            0
+        >>  564 LOAD_CONST               0 (None)
+            566 STORE_FAST              12 (e)
+            568 DELETE_FAST             12 (e)
+            570 RERAISE                  1
+
+198     >>  572 LOAD_GLOBAL             32 (OSError)
+            582 CHECK_EXC_MATCH
+            584 POP_JUMP_IF_FALSE       47 (to 680)
+            586 STORE_FAST              12 (e)
+
+199         588 LOAD_FAST               12 (e)
+            590 STORE_FAST               3 (last_exc)
+
+200         592 LOAD_FAST                9 (has_next)
+            594 POP_JUMP_IF_FALSE       37 (to 670)
+
+201         596 LOAD_FAST                8 (br)
+            598 LOAD_ATTR               29 (NULL|self + trip_for)
+            618 LOAD_GLOBAL              0 (relay)
+            628 LOAD_ATTR               30 (CONNECT_FAIL_COOLDOWN_S)
+            648 CALL                     1
+            656 POP_TOP
+
+202         658 POP_EXCEPT
+            660 LOAD_CONST               0 (None)
+            662 STORE_FAST              12 (e)
+            664 DELETE_FAST             12 (e)
+            666 EXTENDED_ARG             1
+            668 JUMP_BACKWARD          297 (to 76)
+
+203     >>  670 RAISE_VARARGS            0
+        >>  672 LOAD_CONST               0 (None)
+            674 STORE_FAST              12 (e)
+            676 DELETE_FAST             12 (e)
+            678 RERAISE                  1
+
+198     >>  680 RERAISE                  0
+        >>  682 COPY                     3
+            684 POP_EXCEPT
+            686 RERAISE                  1
+ExceptionTable:
+  310 to 340 -> 424 [1]
+  424 to 480 -> 682 [2] lasti
+  482 to 550 -> 564 [2] lasti
+  562 to 562 -> 564 [2] lasti
+  564 to 586 -> 682 [2] lasti
+  588 to 656 -> 672 [2] lasti
+  670 to 670 -> 672 [2] lasti
+  672 to 680 -> 682 [2] lasti
+
+Disassembly of <code object _post_one at 0x17a8fe90, file "telemetry.py", line 213>:
+213           0 RESUME                   0
+
+214           2 NOP
+
+215           4 LOAD_GLOBAL              0 (urllib)
+             14 LOAD_ATTR                2 (request)
+             34 LOAD_ATTR                5 (NULL|self + Request)
+
+216          54 LOAD_FAST                0 (url)
+
+217          56 LOAD_GLOBAL              7 (NULL + json)
+             66 LOAD_ATTR                8 (dumps)
+             86 LOAD_FAST                1 (payload)
+             88 CALL                     1
+             96 LOAD_ATTR               11 (NULL|self + encode)
+            116 LOAD_CONST               1 ('utf-8')
+            118 CALL                     1
+
+218         126 LOAD_CONST               2 ('application/json')
+            128 LOAD_CONST               3 ('pk-auto/1.0')
+            130 LOAD_CONST               4 (('Content-Type', 'User-Agent'))
+            132 BUILD_CONST_KEY_MAP      2
+
+219         134 LOAD_CONST               5 ('POST')
+
+215         136 KW_NAMES                 6 (('data', 'headers', 'method'))
+            138 CALL                     4
+            146 STORE_FAST               3 (req)
+
+221         148 LOAD_FAST                2 (br)
+            150 LOAD_ATTR               13 (NULL|self + blocked)
+            170 CALL                     0
+            178 POP_JUMP_IF_FALSE       48 (to 276)
+
+222         180 LOAD_GLOBAL             15 (NULL + breaker)
+            190 LOAD_ATTR               16 (BreakerOpen)
+            210 LOAD_CONST               7 ('relay cooling down for ')
+            212 LOAD_GLOBAL             19 (NULL + int)
+            222 LOAD_FAST                2 (br)
+            224 LOAD_ATTR               21 (NULL|self + remaining)
+            244 CALL                     0
+            252 CALL                     1
+            260 FORMAT_VALUE             0
+            262 LOAD_CONST               8 (' s')
+            264 BUILD_STRING             3
+            266 CALL                     1
+            274 RAISE_VARARGS            1
+
+223     >>  276 LOAD_CONST               9 (200)
+            278 STORE_FAST               4 (status)
+
+224         280 NOP
+
+225         282 LOAD_GLOBAL             23 (NULL + _open)
+            292 LOAD_FAST                3 (req)
+            294 LOAD_GLOBAL             24 (HTTP_TIMEOUT_S)
+            304 CALL                     2
+            312 BEFORE_WITH
+            314 STORE_FAST               5 (r)
+
+226         316 LOAD_FAST                5 (r)
+            318 LOAD_ATTR               27 (NULL|self + read)
+            338 LOAD_CONST              10 (65536)
+            340 CALL                     1
+            348 STORE_FAST               6 (body)
+
+227         350 LOAD_GLOBAL             29 (NULL + getattr)
+            360 LOAD_FAST                5 (r)
+            362 LOAD_CONST              11 ('status')
+            364 LOAD_CONST               9 (200)
+            366 CALL                     3
+            374 COPY                     1
+            376 POP_JUMP_IF_TRUE         2 (to 382)
+            378 POP_TOP
+            380 LOAD_CONST               9 (200)
+        >>  382 STORE_FAST               4 (status)
+
+225         384 LOAD_CONST               0 (None)
+            386 LOAD_CONST               0 (None)
+            388 LOAD_CONST               0 (None)
+            390 CALL                     2
+            398 POP_TOP
+
+231     >>  400 NOP
+
+232         402 LOAD_GLOBAL              7 (NULL + json)
+            412 LOAD_ATTR               36 (loads)
+            432 LOAD_FAST_CHECK          6 (body)
+            434 LOAD_ATTR               39 (NULL|self + decode)
+            454 LOAD_CONST               1 ('utf-8')
+            456 CALL                     1
+            464 CALL                     1
+            472 STORE_FAST               8 (data)
+
+235     >>  474 LOAD_GLOBAL             43 (NULL + isinstance)
+            484 LOAD_FAST                8 (data)
+            486 LOAD_GLOBAL             44 (dict)
+            496 CALL                     2
+            504 POP_JUMP_IF_FALSE        2 (to 510)
+            506 LOAD_FAST                8 (data)
+            508 JUMP_FORWARD             1 (to 512)
+        >>  510 BUILD_MAP                0
+        >>  512 STORE_FAST               9 (parsed)
+
+236         514 LOAD_CONST              12 (False)
+            516 STORE_FAST              10 (failed)
+
+237         518 NOP
+
+238         520 LOAD_FAST                4 (status)
+            522 LOAD_CONST              13 (429)
+            524 COMPARE_OP              40 (==)
+            528 POP_JUMP_IF_FALSE       21 (to 572)
+            530 LOAD_FAST                9 (parsed)
+            532 POP_JUMP_IF_TRUE        19 (to 572)
+
+239         534 LOAD_FAST                2 (br)
+            536 LOAD_ATTR               47 (NULL|self + trip_quota)
+            556 CALL                     0
+            564 POP_TOP
+
+240         566 LOAD_CONST              14 (True)
+            568 STORE_FAST              10 (failed)
+            570 JUMP_FORWARD            45 (to 662)
+
+241     >>  572 LOAD_FAST                4 (status)
+            574 LOAD_CONST              15 (500)
+            576 COMPARE_OP              92 (>=)
+            580 POP_JUMP_IF_FALSE       19 (to 620)
+
+242         582 LOAD_FAST                2 (br)
+            584 LOAD_ATTR               49 (NULL|self + trip_error)
+            604 CALL                     0
+            612 POP_TOP
+
+243         614 LOAD_CONST              14 (True)
+            616 STORE_FAST              10 (failed)
+            618 JUMP_FORWARD            21 (to 662)
+
+244     >>  620 LOAD_FAST                4 (status)
+            622 LOAD_CONST              16 (400)
+            624 COMPARE_OP               2 (<)
+            628 POP_JUMP_IF_FALSE       16 (to 662)
+
+245         630 LOAD_FAST                2 (br)
+            632 LOAD_ATTR               51 (NULL|self + success)
+            652 CALL                     0
+            660 POP_TOP
+
+248     >>  662 LOAD_FAST                9 (parsed)
+            664 LOAD_FAST               10 (failed)
+            666 BUILD_TUPLE              2
+            668 RETURN_VALUE
+
+225     >>  670 PUSH_EXC_INFO
+            672 WITH_EXCEPT_START
+            674 POP_JUMP_IF_TRUE         1 (to 678)
+            676 RERAISE                  2
+        >>  678 POP_TOP
+            680 POP_EXCEPT
+            682 POP_TOP
+            684 POP_TOP
+            686 JUMP_BACKWARD          144 (to 400)
+        >>  688 COPY                     3
+            690 POP_EXCEPT
+            692 RERAISE                  1
+        >>  694 PUSH_EXC_INFO
+
+228         696 LOAD_GLOBAL              0 (urllib)
+            706 LOAD_ATTR               30 (error)
+            726 LOAD_ATTR               32 (HTTPError)
+            746 CHECK_EXC_MATCH
+            748 POP_JUMP_IF_FALSE       39 (to 828)
+            750 STORE_FAST               7 (e)
+
+229         752 LOAD_FAST                7 (e)
+            754 LOAD_ATTR               27 (NULL|self + read)
+            774 LOAD_CONST              10 (65536)
+            776 CALL                     1
+            784 STORE_FAST               6 (body)
+
+230         786 LOAD_FAST                7 (e)
+            788 LOAD_ATTR               34 (code)
+            808 STORE_FAST               4 (status)
+            810 POP_EXCEPT
+            812 LOAD_CONST               0 (None)
+            814 STORE_FAST               7 (e)
+            816 DELETE_FAST              7 (e)
+            818 JUMP_BACKWARD          210 (to 400)
+        >>  820 LOAD_CONST               0 (None)
+            822 STORE_FAST               7 (e)
+            824 DELETE_FAST              7 (e)
+            826 RERAISE                  1
+
+228     >>  828 RERAISE                  0
+        >>  830 COPY                     3
+            832 POP_EXCEPT
+            834 RERAISE                  1
+        >>  836 PUSH_EXC_INFO
+
+233         838 LOAD_GLOBAL             40 (Exception)
+            848 CHECK_EXC_MATCH
+            850 POP_JUMP_IF_FALSE        5 (to 862)
+            852 POP_TOP
+
+234         854 LOAD_CONST               0 (None)
+            856 STORE_FAST               8 (data)
+            858 POP_EXCEPT
+            860 JUMP_BACKWARD          194 (to 474)
+
+233     >>  862 RERAISE                  0
+        >>  864 COPY                     3
+            866 POP_EXCEPT
+            868 RERAISE                  1
+        >>  870 PUSH_EXC_INFO
+
+246         872 LOAD_GLOBAL             40 (Exception)
+            882 CHECK_EXC_MATCH
+            884 POP_JUMP_IF_FALSE        6 (to 898)
+            886 POP_TOP
+
+247         888 POP_EXCEPT
+
+248         890 LOAD_FAST                9 (parsed)
+            892 LOAD_FAST               10 (failed)
+            894 BUILD_TUPLE              2
+            896 RETURN_VALUE
+
+246     >>  898 RERAISE                  0
+        >>  900 COPY                     3
+            902 POP_EXCEPT
+            904 RERAISE                  1
+ExceptionTable:
+  282 to 312 -> 694 [0]
+  314 to 382 -> 670 [1] lasti
+  384 to 398 -> 694 [0]
+  402 to 472 -> 836 [0]
+  520 to 660 -> 870 [0]
+  670 to 678 -> 688 [3] lasti
+  680 to 692 -> 694 [0]
+  694 to 750 -> 830 [1] lasti
+  752 to 808 -> 820 [1] lasti
+  820 to 828 -> 830 [1] lasti
+  836 to 856 -> 864 [1] lasti
+  862 to 862 -> 864 [1] lasti
+  870 to 886 -> 900 [1] lasti
+  898 to 898 -> 900 [1] lasti
+
+Disassembly of <code object _status_of at 0x7f6aed7a1bb0, file "telemetry.py", line 251>:
+251           0 RESUME                   0
+
+252           2 LOAD_FAST                0 (answer)
+              4 LOAD_ATTR                1 (NULL|self + get)
+             24 LOAD_CONST               1 ('ok')
+             26 CALL                     1
+             34 LOAD_CONST               2 (True)
+             36 IS_OP                    0
+             38 POP_JUMP_IF_FALSE        6 (to 52)
+
+253          40 LOAD_GLOBAL              2 (OK)
+             50 RETURN_VALUE
+
+254     >>   52 LOAD_GLOBAL              5 (NULL + str)
+             62 LOAD_FAST                0 (answer)
+             64 LOAD_ATTR                1 (NULL|self + get)
+             84 LOAD_CONST               3 ('error')
+             86 LOAD_CONST               4 ('')
+             88 CALL                     2
+             96 CALL                     1
+            104 STORE_FAST               1 (err)
+
+255         106 LOAD_FAST                1 (err)
+            108 LOAD_GLOBAL              6 (INVALID_KEY)
+            118 LOAD_GLOBAL              8 (DM_CLOSED)
+            128 LOAD_GLOBAL             10 (RATE_LIMITED)
+            138 BUILD_TUPLE              3
+            140 CONTAINS_OP              0
+            142 POP_JUMP_IF_FALSE        2 (to 148)
+            144 LOAD_FAST                1 (err)
+            146 RETURN_VALUE
+        >>  148 LOAD_GLOBAL             12 (SERVER)
+            158 RETURN_VALUE
+
+Disassembly of <code object TelemetryManager at 0x179f6d90, file "telemetry.py", line 258>:
+258           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('TelemetryManager')
+              8 STORE_NAME               2 (__qualname__)
+
+261          10 LOAD_NAME                3 (time)
+             12 LOAD_ATTR                8 (monotonic)
+
+262          32 LOAD_CONST               1 (None)
+
+263          34 LOAD_CONST               2 (False)
+
+264          36 LOAD_CONST               1 (None)
+
+259          38 BUILD_TUPLE              4
+             40 LOAD_CONST               3 ('clock')
+
+261          42 LOAD_NAME                5 (Callable)
+             44 BUILD_LIST               0
+             46 LOAD_NAME                6 (float)
+             48 BUILD_TUPLE              2
+             50 BINARY_SUBSCR
+
+259          54 LOAD_CONST               4 ('post')
+
+262          56 LOAD_NAME                7 (Optional)
+             58 LOAD_NAME                5 (Callable)
+             60 LOAD_NAME                8 (str)
+             62 LOAD_NAME                9 (dict)
+             64 BUILD_LIST               2
+             66 LOAD_NAME                9 (dict)
+             68 BUILD_TUPLE              2
+             70 BINARY_SUBSCR
+             74 BINARY_SUBSCR
+
+259          78 LOAD_CONST               5 ('sync')
+
+263          80 LOAD_NAME               10 (bool)
+
+259          82 LOAD_CONST               6 ('log')
+
+264          84 LOAD_NAME                7 (Optional)
+             86 LOAD_NAME                5 (Callable)
+             88 LOAD_NAME                8 (str)
+             90 BUILD_LIST               1
+             92 LOAD_CONST               1 (None)
+             94 BUILD_TUPLE              2
+             96 BINARY_SUBSCR
+            100 BINARY_SUBSCR
+
+259         104 BUILD_TUPLE              8
+            106 LOAD_CONST               7 (<code object __init__ at 0x17a93230, file "telemetry.py", line 259>)
+            108 MAKE_FUNCTION            5 (defaults, annotations)
+            110 STORE_NAME              11 (__init__)
+
+290         112 LOAD_CONST              45 (('A', 'ja'))
+            114 LOAD_CONST               8 ('mode')
+            116 LOAD_NAME                8 (str)
+            118 LOAD_CONST               9 ('lang')
+            120 LOAD_NAME                8 (str)
+            122 LOAD_CONST              10 ('return')
+            124 LOAD_CONST               1 (None)
+            126 BUILD_TUPLE              6
+            128 LOAD_CONST              11 (<code object begin_session at 0x17a66560, file "telemetry.py", line 290>)
+            130 MAKE_FUNCTION            5 (defaults, annotations)
+            132 STORE_NAME              12 (begin_session)
+
+301         134 LOAD_CONST              46 ((False,))
+            136 LOAD_CONST              12 ('popup')
+            138 LOAD_NAME               10 (bool)
+            140 LOAD_CONST              10 ('return')
+            142 LOAD_CONST               1 (None)
+            144 BUILD_TUPLE              4
+            146 LOAD_CONST              13 (<code object record_action at 0x17ab6010, file "telemetry.py", line 301>)
+            148 MAKE_FUNCTION            5 (defaults, annotations)
+            150 STORE_NAME              13 (record_action)
+
+319         152 LOAD_CONST              14 ('n')
+            154 LOAD_NAME               14 (int)
+            156 LOAD_CONST              10 ('return')
+            158 LOAD_CONST               1 (None)
+            160 BUILD_TUPLE              4
+            162 LOAD_CONST              15 (<code object set_loops at 0x7f6aed17cd50, file "telemetry.py", line 319>)
+            164 MAKE_FUNCTION            4 (annotations)
+            166 STORE_NAME              15 (set_loops)
+
+322         168 LOAD_CONST              14 ('n')
+            170 LOAD_NAME               14 (int)
+            172 LOAD_CONST              10 ('return')
+            174 LOAD_CONST               1 (None)
+            176 BUILD_TUPLE              4
+            178 LOAD_CONST              16 (<code object set_claims at 0x7f6aed17f1e0, file "telemetry.py", line 322>)
+            180 MAKE_FUNCTION            4 (annotations)
+            182 STORE_NAME              16 (set_claims)
+
+325         184 LOAD_CONST              14 ('n')
+            186 LOAD_NAME               14 (int)
+            188 LOAD_CONST              10 ('return')
+            190 LOAD_CONST               1 (None)
+            192 BUILD_TUPLE              4
+            194 LOAD_CONST              17 (<code object set_popups at 0x7f6aed17db60, file "telemetry.py", line 325>)
+            196 MAKE_FUNCTION            4 (annotations)
+            198 STORE_NAME              17 (set_popups)
+
+329         200 LOAD_CONST               8 ('mode')
+            202 LOAD_NAME                8 (str)
+            204 LOAD_CONST              10 ('return')
+            206 LOAD_CONST               1 (None)
+            208 BUILD_TUPLE              4
+            210 LOAD_CONST              18 (<code object set_mode at 0x7f6aed7f4e30, file "telemetry.py", line 329>)
+            212 MAKE_FUNCTION            4 (annotations)
+            214 STORE_NAME              18 (set_mode)
+
+332         216 LOAD_CONST              10 ('return')
+            218 LOAD_NAME                9 (dict)
+            220 BUILD_TUPLE              2
+            222 LOAD_CONST              19 (<code object snapshot at 0x17a8d3c0, file "telemetry.py", line 332>)
+            224 MAKE_FUNCTION            4 (annotations)
+            226 STORE_NAME              19 (snapshot)
+
+347         228 LOAD_CONST              20 ('fn')
+            230 LOAD_NAME                5 (Callable)
+            232 BUILD_LIST               0
+            234 LOAD_CONST               1 (None)
+            236 BUILD_TUPLE              2
+            238 BINARY_SUBSCR
+            242 LOAD_CONST              10 ('return')
+            244 LOAD_NAME                7 (Optional)
+            246 LOAD_NAME               20 (threading)
+            248 LOAD_ATTR               42 (Thread)
+            268 BINARY_SUBSCR
+            272 BUILD_TUPLE              4
+            274 LOAD_CONST              21 (<code object _spawn at 0x7f6aed178540, file "telemetry.py", line 347>)
+            276 MAKE_FUNCTION            4 (annotations)
+            278 STORE_NAME              22 (_spawn)
+
+356         280 LOAD_CONST              47 ((0.0, None, None))
+            282 LOAD_CONST              22 ('link_key')
+            284 LOAD_NAME                8 (str)
+            286 LOAD_CONST              23 ('endpoint_url')
+            288 LOAD_NAME                8 (str)
+            290 LOAD_CONST              24 ('kind')
+            292 LOAD_NAME                8 (str)
+            294 LOAD_CONST              25 ('interval_h')
+            296 LOAD_NAME                6 (float)
+            298 LOAD_CONST              26 ('alert')
+            300 LOAD_NAME                7 (Optional)
+            302 LOAD_NAME                9 (dict)
+            304 BINARY_SUBSCR
+            308 LOAD_CONST              27 ('stuck')
+            310 LOAD_NAME                7 (Optional)
+            312 LOAD_NAME                9 (dict)
+            314 BINARY_SUBSCR
+            318 LOAD_CONST              10 ('return')
+            320 LOAD_CONST               1 (None)
+            322 BUILD_TUPLE             14
+            324 LOAD_CONST              28 (<code object _deliver at 0x17a9af50, file "telemetry.py", line 356>)
+            326 MAKE_FUNCTION            5 (defaults, annotations)
+            328 STORE_NAME              23 (_deliver)
+
+402         330 LOAD_CONST              10 ('return')
+            332 LOAD_NAME                7 (Optional)
+            334 LOAD_NAME                8 (str)
+            336 BINARY_SUBSCR
+            340 BUILD_TUPLE              2
+            342 LOAD_CONST              29 (<code object _early at 0x7f6aecfbc030, file "telemetry.py", line 402>)
+            344 MAKE_FUNCTION            4 (annotations)
+            346 STORE_NAME              24 (_early)
+
+409         348 LOAD_CONST              48 ((None,))
+            350 LOAD_CONST              22 ('link_key')
+            352 LOAD_NAME                8 (str)
+            354 LOAD_CONST              23 ('endpoint_url')
+            356 LOAD_NAME                8 (str)
+            358 LOAD_CONST              30 ('callback')
+            360 LOAD_NAME                7 (Optional)
+            362 LOAD_NAME                5 (Callable)
+            364 LOAD_NAME                8 (str)
+            366 BUILD_LIST               1
+            368 LOAD_CONST               1 (None)
+            370 BUILD_TUPLE              2
+            372 BINARY_SUBSCR
+            376 BINARY_SUBSCR
+            380 BUILD_TUPLE              6
+            382 LOAD_CONST              31 (<code object send_test_dm at 0x7f6aed1c43f0, file "telemetry.py", line 409>)
+            384 MAKE_FUNCTION            5 (defaults, annotations)
+            386 STORE_NAME              25 (send_test_dm)
+
+422         388 LOAD_CONST               1 (None)
+
+423         390 LOAD_NAME               26 (MIN_ACTIONS)
+
+418         392 BUILD_TUPLE              2
+            394 LOAD_CONST              22 ('link_key')
+
+420         396 LOAD_NAME                8 (str)
+
+418         398 LOAD_CONST              23 ('endpoint_url')
+
+421         400 LOAD_NAME                8 (str)
+
+418         402 LOAD_CONST              30 ('callback')
+
+422         404 LOAD_NAME                7 (Optional)
+            406 LOAD_NAME                5 (Callable)
+            408 LOAD_NAME                8 (str)
+            410 BUILD_LIST               1
+            412 LOAD_CONST               1 (None)
+            414 BUILD_TUPLE              2
+            416 BINARY_SUBSCR
+            420 BINARY_SUBSCR
+
+418         424 LOAD_CONST              32 ('min_actions')
+
+423         426 LOAD_NAME               14 (int)
+
+418         428 BUILD_TUPLE              8
+            430 LOAD_CONST              33 (<code object send_session_summary at 0x7f6af1de2e30, file "telemetry.py", line 418>)
+            432 MAKE_FUNCTION            5 (defaults, annotations)
+            434 STORE_NAME              27 (send_session_summary)
+
+433         436 LOAD_CONST              48 ((None,))
+            438 LOAD_CONST              22 ('link_key')
+            440 LOAD_NAME                8 (str)
+            442 LOAD_CONST              23 ('endpoint_url')
+            444 LOAD_NAME                8 (str)
+            446 LOAD_CONST              34 ('hours')
+            448 LOAD_NAME                6 (float)
+            450 BUILD_TUPLE              6
+            452 LOAD_CONST              35 (<code object maybe_send_periodic at 0x7f6aed18d030, file "telemetry.py", line 433>)
+            454 MAKE_FUNCTION            5 (defaults, annotations)
+            456 STORE_NAME              28 (maybe_send_periodic)
+
+450         458 LOAD_CONST              48 ((None,))
+            460 LOAD_CONST              22 ('link_key')
+            462 LOAD_NAME                8 (str)
+            464 LOAD_CONST              23 ('endpoint_url')
+            466 LOAD_NAME                8 (str)
+            468 LOAD_CONST              36 ('code')
+            470 LOAD_NAME                8 (str)
+            472 LOAD_CONST              37 ('detail')
+            474 LOAD_NAME                8 (str)
+            476 BUILD_TUPLE              8
+            478 LOAD_CONST              38 (<code object send_alert at 0x7f6af1e2af10, file "telemetry.py", line 450>)
+            480 MAKE_FUNCTION            5 (defaults, annotations)
+            482 STORE_NAME              29 (send_alert)
+
+460         484 LOAD_CONST              49 ((None, None))
+            486 LOAD_CONST              22 ('link_key')
+            488 LOAD_NAME                8 (str)
+            490 LOAD_CONST              23 ('endpoint_url')
+            492 LOAD_NAME                8 (str)
+            494 LOAD_CONST              39 ('state')
+            496 LOAD_NAME                8 (str)
+            498 LOAD_CONST              40 ('minutes')
+            500 LOAD_NAME               14 (int)
+            502 LOAD_CONST              41 ('grid_image_b64')
+            504 LOAD_NAME                7 (Optional)
+            506 LOAD_NAME                8 (str)
+            508 BINARY_SUBSCR
+            512 BUILD_TUPLE             10
+            514 LOAD_CONST              42 (<code object send_stuck at 0x17a7e4c0, file "telemetry.py", line 460>)
+            516 MAKE_FUNCTION            5 (defaults, annotations)
+            518 STORE_NAME              30 (send_stuck)
+
+475         520 LOAD_CONST              50 ((3.0,))
+            522 LOAD_CONST              43 ('timeout')
+            524 LOAD_NAME                6 (float)
+            526 LOAD_CONST              10 ('return')
+            528 LOAD_CONST               1 (None)
+            530 BUILD_TUPLE              4
+            532 LOAD_CONST              44 (<code object flush at 0x7f6af1e2a8d0, file "telemetry.py", line 475>)
+            534 MAKE_FUNCTION            5 (defaults, annotations)
+            536 STORE_NAME              31 (flush)
+            538 RETURN_CONST             1 (None)
+
+Disassembly of <code object __init__ at 0x17a93230, file "telemetry.py", line 259>:
+259           0 RESUME                   0
+
+266           2 LOAD_FAST                1 (clock)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (_clock)
+
+267          16 LOAD_FAST                2 (post)
+             18 COPY                     1
+             20 POP_JUMP_IF_TRUE         6 (to 34)
+             22 POP_TOP
+             24 LOAD_GLOBAL              2 (_http_post)
+        >>   34 LOAD_FAST                0 (self)
+             36 STORE_ATTR               2 (_post)
+
+268          46 LOAD_FAST                3 (sync)
+             48 LOAD_FAST                0 (self)
+             50 STORE_ATTR               3 (_sync)
+
+269          60 LOAD_FAST                4 (log)
+             62 COPY                     1
+             64 POP_JUMP_IF_TRUE         3 (to 72)
+             66 POP_TOP
+             68 LOAD_CONST               1 (<code object <lambda> at 0x7f6aed1a7840, file "telemetry.py", line 269>)
+             70 MAKE_FUNCTION            0
+        >>   72 LOAD_FAST                0 (self)
+             74 STORE_ATTR               4 (log)
+
+270          84 LOAD_GLOBAL             11 (NULL + threading)
+             94 LOAD_ATTR               12 (Lock)
+            114 CALL                     0
+            122 LOAD_FAST                0 (self)
+            124 STORE_ATTR               7 (_lock)
+
+271         134 BUILD_LIST               0
+            136 LOAD_FAST                0 (self)
+            138 STORE_ATTR               8 (_threads)
+
+272         148 LOAD_GLOBAL             19 (NULL + deque)
+            158 CALL                     0
+            166 LOAD_FAST                0 (self)
+            168 STORE_ATTR              10 (_window)
+
+273         178 LOAD_GLOBAL             23 (NULL + set)
+            188 CALL                     0
+            196 LOAD_FAST                0 (self)
+            198 STORE_ATTR              12 (_modes)
+
+274         208 LOAD_CONST               2 ('ja')
+            210 LOAD_FAST                0 (self)
+            212 STORE_ATTR              13 (lang)
+
+275         222 LOAD_CONST               3 (0.0)
+            224 LOAD_FAST                0 (self)
+            226 STORE_ATTR              14 (session_start_time)
+
+276         236 PUSH_NULL
+            238 LOAD_FAST                1 (clock)
+            240 CALL                     0
+            248 LOAD_FAST                0 (self)
+            250 STORE_ATTR              15 (_t0)
+
+277         260 LOAD_CONST               4 (0)
+            262 LOAD_FAST                0 (self)
+            264 STORE_ATTR              16 (total_actions)
+
+278         274 LOAD_CONST               4 (0)
+            276 LOAD_FAST                0 (self)
+            278 STORE_ATTR              17 (peak_apm)
+
+279         288 LOAD_CONST               4 (0)
+            290 LOAD_FAST                0 (self)
+            292 STORE_ATTR              18 (popups)
+
+280         302 LOAD_CONST               4 (0)
+            304 LOAD_FAST                0 (self)
+            306 STORE_ATTR              19 (loops)
+
+281         316 LOAD_CONST               4 (0)
+            318 LOAD_FAST                0 (self)
+            320 STORE_ATTR              20 (claims)
+
+282         330 LOAD_CONST               5 (True)
+            332 LOAD_FAST                0 (self)
+            334 STORE_ATTR              21 (_sent)
+
+283         344 PUSH_NULL
+            346 LOAD_FAST                1 (clock)
+            348 CALL                     0
+            356 LOAD_FAST                0 (self)
+            358 STORE_ATTR              22 (_last_report)
+
+286         368 LOAD_CONST               0 (None)
+            370 LOAD_FAST                0 (self)
+            372 STORE_ATTR              23 (extra)
+
+287         382 LOAD_CONST               0 (None)
+            384 LOAD_FAST                0 (self)
+            386 STORE_ATTR              24 (on_answer)
+            396 RETURN_CONST             0 (None)
+
+Disassembly of <code object <lambda> at 0x7f6aed1a7840, file "telemetry.py", line 269>:
+269           0 RESUME                   0
+              2 RETURN_CONST             0 (None)
+
+Disassembly of <code object begin_session at 0x17a66560, file "telemetry.py", line 290>:
+290           0 RESUME                   0
+
+291           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_lock)
+             24 BEFORE_WITH
+             26 POP_TOP
+
+292          28 LOAD_FAST                0 (self)
+             30 LOAD_ATTR                3 (NULL|self + _clock)
+             50 CALL                     0
+             58 LOAD_FAST                0 (self)
+             60 STORE_ATTR               2 (_last_report)
+
+293          70 LOAD_FAST                0 (self)
+             72 LOAD_ATTR                6 (_window)
+             92 LOAD_ATTR                9 (NULL|self + clear)
+            112 CALL                     0
+            120 POP_TOP
+
+294         122 LOAD_FAST                1 (mode)
+            124 BUILD_SET                1
+            126 LOAD_FAST                0 (self)
+            128 STORE_ATTR               5 (_modes)
+
+295         138 LOAD_FAST                2 (lang)
+            140 LOAD_FAST                0 (self)
+            142 STORE_ATTR               6 (lang)
+
+296         152 LOAD_GLOBAL             15 (NULL + time)
+            162 LOAD_ATTR               14 (time)
+            182 CALL                     0
+            190 LOAD_FAST                0 (self)
+            192 STORE_ATTR               8 (session_start_time)
+
+297         202 LOAD_FAST                0 (self)
+            204 LOAD_ATTR                3 (NULL|self + _clock)
+            224 CALL                     0
+            232 LOAD_FAST                0 (self)
+            234 STORE_ATTR               9 (_t0)
+
+298         244 LOAD_CONST               1 (0)
+            246 COPY                     1
+            248 LOAD_FAST                0 (self)
+            250 STORE_ATTR              10 (total_actions)
+            260 COPY                     1
+            262 LOAD_FAST                0 (self)
+            264 STORE_ATTR              11 (peak_apm)
+            274 COPY                     1
+            276 LOAD_FAST                0 (self)
+            278 STORE_ATTR              12 (popups)
+            288 COPY                     1
+            290 LOAD_FAST                0 (self)
+            292 STORE_ATTR              13 (loops)
+            302 LOAD_FAST                0 (self)
+            304 STORE_ATTR              14 (claims)
+
+299         314 LOAD_CONST               2 (False)
+            316 LOAD_FAST                0 (self)
+            318 STORE_ATTR              15 (_sent)
+
+291         328 LOAD_CONST               0 (None)
+            330 LOAD_CONST               0 (None)
+            332 LOAD_CONST               0 (None)
+            334 CALL                     2
+            342 POP_TOP
+            344 RETURN_CONST             0 (None)
+        >>  346 PUSH_EXC_INFO
+            348 WITH_EXCEPT_START
+            350 POP_JUMP_IF_TRUE         1 (to 354)
+            352 RERAISE                  2
+        >>  354 POP_TOP
+            356 POP_EXCEPT
+            358 POP_TOP
+            360 POP_TOP
+            362 RETURN_CONST             0 (None)
+        >>  364 COPY                     3
+            366 POP_EXCEPT
+            368 RERAISE                  1
+ExceptionTable:
+  26 to 326 -> 346 [1] lasti
+  346 to 354 -> 364 [3] lasti
+
+Disassembly of <code object record_action at 0x17ab6010, file "telemetry.py", line 301>:
+301           0 RESUME                   0
+
+302           2 NOP
+
+303           4 NOP
+
+304           6 LOAD_FAST                0 (self)
+              8 LOAD_ATTR                1 (NULL|self + _clock)
+             28 CALL                     0
+             36 STORE_FAST               2 (now)
+
+305          38 LOAD_FAST                0 (self)
+             40 LOAD_ATTR                2 (_lock)
+             60 BEFORE_WITH
+             62 POP_TOP
+
+306          64 LOAD_FAST                0 (self)
+             66 COPY                     1
+             68 LOAD_ATTR                4 (total_actions)
+             88 LOAD_CONST               1 (1)
+             90 BINARY_OP               13 (+=)
+             94 SWAP                     2
+             96 STORE_ATTR               2 (total_actions)
+
+307         106 LOAD_FAST                1 (popup)
+            108 POP_JUMP_IF_FALSE       21 (to 152)
+
+308         110 LOAD_FAST                0 (self)
+            112 COPY                     1
+            114 LOAD_ATTR                6 (popups)
+            134 LOAD_CONST               1 (1)
+            136 BINARY_OP               13 (+=)
+            140 SWAP                     2
+            142 STORE_ATTR               3 (popups)
+
+309     >>  152 LOAD_FAST                0 (self)
+            154 LOAD_ATTR                8 (_window)
+            174 STORE_FAST               3 (w)
+
+310         176 LOAD_FAST                3 (w)
+            178 LOAD_ATTR               11 (NULL|self + append)
+            198 LOAD_FAST                2 (now)
+            200 CALL                     1
+            208 POP_TOP
+
+311         210 LOAD_FAST                2 (now)
+            212 LOAD_GLOBAL             12 (WINDOW_S)
+            222 BINARY_OP               10 (-)
+            226 STORE_FAST               4 (cutoff)
+
+312         228 LOAD_FAST                3 (w)
+            230 POP_JUMP_IF_FALSE       35 (to 302)
+            232 LOAD_FAST                3 (w)
+            234 LOAD_CONST               2 (0)
+            236 BINARY_SUBSCR
+            240 LOAD_FAST                4 (cutoff)
+            242 COMPARE_OP              26 (<=)
+            246 POP_JUMP_IF_FALSE       27 (to 302)
+
+313     >>  248 LOAD_FAST                3 (w)
+            250 LOAD_ATTR               15 (NULL|self + popleft)
+            270 CALL                     0
+            278 POP_TOP
+
+312         280 LOAD_FAST                3 (w)
+            282 POP_JUMP_IF_FALSE        9 (to 302)
+            284 LOAD_FAST                3 (w)
+            286 LOAD_CONST               2 (0)
+            288 BINARY_SUBSCR
+            292 LOAD_FAST                4 (cutoff)
+            294 COMPARE_OP              26 (<=)
+            298 POP_JUMP_IF_FALSE        1 (to 302)
+            300 JUMP_BACKWARD           27 (to 248)
+
+314     >>  302 LOAD_GLOBAL             17 (NULL + len)
+            312 LOAD_FAST                3 (w)
+            314 CALL                     1
+            322 LOAD_FAST                0 (self)
+            324 LOAD_ATTR               18 (peak_apm)
+            344 COMPARE_OP              68 (>)
+            348 POP_JUMP_IF_FALSE       16 (to 382)
+
+315         350 LOAD_GLOBAL             17 (NULL + len)
+            360 LOAD_FAST                3 (w)
+            362 CALL                     1
+            370 LOAD_FAST                0 (self)
+            372 STORE_ATTR               9 (peak_apm)
+
+305     >>  382 LOAD_CONST               0 (None)
+            384 LOAD_CONST               0 (None)
+            386 LOAD_CONST               0 (None)
+            388 CALL                     2
+            396 POP_TOP
+            398 RETURN_CONST             0 (None)
+        >>  400 PUSH_EXC_INFO
+            402 WITH_EXCEPT_START
+            404 POP_JUMP_IF_TRUE         1 (to 408)
+            406 RERAISE                  2
+        >>  408 POP_TOP
+            410 POP_EXCEPT
+            412 POP_TOP
+            414 POP_TOP
+            416 RETURN_CONST             0 (None)
+        >>  418 COPY                     3
+            420 POP_EXCEPT
+            422 RERAISE                  1
+        >>  424 PUSH_EXC_INFO
+
+316         426 LOAD_GLOBAL             20 (Exception)
+            436 CHECK_EXC_MATCH
+            438 POP_JUMP_IF_FALSE        3 (to 446)
+            440 POP_TOP
+
+317         442 POP_EXCEPT
+            444 RETURN_CONST             0 (None)
+
+316     >>  446 RERAISE                  0
+        >>  448 COPY                     3
+            450 POP_EXCEPT
+            452 RERAISE                  1
+ExceptionTable:
+  6 to 60 -> 424 [0]
+  62 to 298 -> 400 [1] lasti
+  302 to 380 -> 400 [1] lasti
+  382 to 396 -> 424 [0]
+  400 to 408 -> 418 [3] lasti
+  410 to 414 -> 424 [0]
+  418 to 422 -> 424 [0]
+  424 to 440 -> 448 [1] lasti
+  446 to 446 -> 448 [1] lasti
+
+Disassembly of <code object set_loops at 0x7f6aed17cd50, file "telemetry.py", line 319>:
+319           0 RESUME                   0
+
+320           2 LOAD_GLOBAL              1 (NULL + int)
+             12 LOAD_FAST                1 (n)
+             14 CALL                     1
+             22 LOAD_FAST                0 (self)
+             24 STORE_ATTR               1 (loops)
+             34 RETURN_CONST             0 (None)
+
+Disassembly of <code object set_claims at 0x7f6aed17f1e0, file "telemetry.py", line 322>:
+322           0 RESUME                   0
+
+323           2 LOAD_GLOBAL              1 (NULL + int)
+             12 LOAD_FAST                1 (n)
+             14 CALL                     1
+             22 LOAD_FAST                0 (self)
+             24 STORE_ATTR               1 (claims)
+             34 RETURN_CONST             0 (None)
+
+Disassembly of <code object set_popups at 0x7f6aed17db60, file "telemetry.py", line 325>:
+325           0 RESUME                   0
+
+326           2 NOP
+
+327           4 LOAD_GLOBAL              1 (NULL + int)
+             14 LOAD_FAST                1 (n)
+             16 CALL                     1
+             24 LOAD_FAST                0 (self)
+             26 STORE_ATTR               1 (popups)
+             36 RETURN_CONST             0 (None)
+
+Disassembly of <code object set_mode at 0x7f6aed7f4e30, file "telemetry.py", line 329>:
+329           0 RESUME                   0
+
+330           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_modes)
+             24 LOAD_ATTR                3 (NULL|self + add)
+             44 LOAD_FAST                1 (mode)
+             46 CALL                     1
+             54 POP_TOP
+             56 RETURN_CONST             0 (None)
+
+Disassembly of <code object snapshot at 0x17a8d3c0, file "telemetry.py", line 332>:
+332           0 RESUME                   0
+
+333           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_lock)
+             24 BEFORE_WITH
+             26 POP_TOP
+
+335          28 LOAD_GLOBAL              3 (NULL + int)
+             38 LOAD_GLOBAL              5 (NULL + max)
+             48 LOAD_CONST               1 (0.0)
+             50 LOAD_FAST                0 (self)
+             52 LOAD_ATTR                7 (NULL|self + _clock)
+             72 CALL                     0
+             80 LOAD_FAST                0 (self)
+             82 LOAD_ATTR                8 (_t0)
+            102 BINARY_OP               10 (-)
+            106 CALL                     2
+            114 CALL                     1
+
+336         122 LOAD_FAST                0 (self)
+            124 LOAD_ATTR               10 (total_actions)
+
+337         144 LOAD_FAST                0 (self)
+            146 LOAD_ATTR               12 (peak_apm)
+
+338         166 LOAD_FAST                0 (self)
+            168 LOAD_ATTR               14 (loops)
+
+339         188 LOAD_FAST                0 (self)
+            190 LOAD_ATTR               16 (popups)
+
+340         210 LOAD_FAST                0 (self)
+            212 LOAD_ATTR               18 (claims)
+
+341         232 LOAD_CONST               2 ('+')
+            234 LOAD_ATTR               21 (NULL|self + join)
+            254 LOAD_GLOBAL             23 (NULL + sorted)
+            264 LOAD_FAST                0 (self)
+            266 LOAD_ATTR               24 (_modes)
+            286 CALL                     1
+            294 CALL                     1
+            302 COPY                     1
+            304 POP_JUMP_IF_TRUE         2 (to 310)
+            306 POP_TOP
+            308 LOAD_CONST               3 ('A')
+
+342     >>  310 LOAD_FAST                0 (self)
+            312 LOAD_ATTR               26 (lang)
+
+343         332 LOAD_CONST               4 ('1')
+
+334         334 LOAD_CONST               5 (('duration_s', 'total_actions', 'peak_apm', 'loops', 'popups', 'claims', 'mode', 'lang', 'version'))
+            336 BUILD_CONST_KEY_MAP      9
+
+333         338 SWAP                     2
+            340 LOAD_CONST               0 (None)
+            342 LOAD_CONST               0 (None)
+            344 LOAD_CONST               0 (None)
+            346 CALL                     2
+            354 POP_TOP
+            356 RETURN_VALUE
+        >>  358 PUSH_EXC_INFO
+            360 WITH_EXCEPT_START
+            362 POP_JUMP_IF_TRUE         1 (to 366)
+            364 RERAISE                  2
+        >>  366 POP_TOP
+            368 POP_EXCEPT
+            370 POP_TOP
+            372 POP_TOP
+            374 RETURN_CONST             0 (None)
+        >>  376 COPY                     3
+            378 POP_EXCEPT
+            380 RERAISE                  1
+ExceptionTable:
+  26 to 336 -> 358 [1] lasti
+  358 to 366 -> 376 [3] lasti
+
+Disassembly of <code object _spawn at 0x7f6aed178540, file "telemetry.py", line 347>:
+347           0 RESUME                   0
+
+348           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_sync)
+             24 POP_JUMP_IF_FALSE        8 (to 42)
+
+349          26 PUSH_NULL
+             28 LOAD_FAST                1 (fn)
+             30 CALL                     0
+             38 POP_TOP
+
+350          40 RETURN_CONST             0 (None)
+
+351     >>   42 LOAD_GLOBAL              3 (NULL + threading)
+             52 LOAD_ATTR                4 (Thread)
+             72 LOAD_FAST                1 (fn)
+             74 LOAD_CONST               1 (True)
+             76 LOAD_CONST               2 ('pk-auto-telemetry')
+             78 KW_NAMES                 3 (('target', 'daemon', 'name'))
+             80 CALL                     3
+             88 STORE_FAST               2 (t)
+
+352          90 LOAD_FAST                0 (self)
+             92 LOAD_ATTR                6 (_threads)
+            112 GET_ITER
+            114 LOAD_FAST_AND_CLEAR      3 (x)
+            116 SWAP                     2
+            118 BUILD_LIST               0
+            120 SWAP                     2
+        >>  122 FOR_ITER                21 (to 168)
+            126 STORE_FAST               3 (x)
+            128 LOAD_FAST                3 (x)
+            130 LOAD_ATTR                9 (NULL|self + is_alive)
+            150 CALL                     0
+            158 POP_JUMP_IF_TRUE         1 (to 162)
+            160 JUMP_BACKWARD           20 (to 122)
+        >>  162 LOAD_FAST                3 (x)
+            164 LIST_APPEND              2
+            166 JUMP_BACKWARD           23 (to 122)
+        >>  168 END_FOR
+            170 SWAP                     2
+            172 STORE_FAST               3 (x)
+            174 LOAD_FAST                2 (t)
+            176 BUILD_LIST               1
+            178 BINARY_OP                0 (+)
+            182 LOAD_FAST                0 (self)
+            184 STORE_ATTR               3 (_threads)
+
+353         194 LOAD_FAST                2 (t)
+            196 LOAD_ATTR               11 (NULL|self + start)
+            216 CALL                     0
+            224 POP_TOP
+
+354         226 LOAD_FAST                2 (t)
+            228 RETURN_VALUE
+        >>  230 SWAP                     2
+            232 POP_TOP
+
+352         234 SWAP                     2
+            236 STORE_FAST               3 (x)
+            238 RERAISE                  0
+ExceptionTable:
+  118 to 158 -> 230 [2]
+  162 to 168 -> 230 [2]
+
+Disassembly of <code object _deliver at 0x17a9af50, file "telemetry.py", line 356>:
+356           0 RESUME                   0
+
+357           2 NOP
+
+358           4 LOAD_GLOBAL              0 (SERVER)
+             14 STORE_FAST               8 (status)
+
+359          16 NOP
+
+360          18 LOAD_GLOBAL              3 (NULL + clean_key)
+             28 LOAD_FAST                1 (link_key)
+             30 CALL                     1
+             38 LOAD_FAST                0 (self)
+             40 LOAD_ATTR                5 (NULL|self + snapshot)
+             60 CALL                     0
+             68 LOAD_FAST                3 (kind)
+             70 LOAD_CONST               1 ('test')
+             72 COMPARE_OP              40 (==)
+             76 LOAD_FAST                3 (kind)
+             78 LOAD_CONST               2 (('link_key', 'stats', 'is_test', 'kind'))
+             80 BUILD_CONST_KEY_MAP      4
+             82 STORE_FAST               9 (payload)
+
+361          84 LOAD_FAST                5 (interval_h)
+             86 POP_JUMP_IF_FALSE        5 (to 98)
+
+362          88 LOAD_FAST                5 (interval_h)
+             90 LOAD_FAST                9 (payload)
+             92 LOAD_CONST               3 ('interval_h')
+             94 STORE_SUBSCR
+
+363     >>   98 LOAD_FAST                6 (alert)
+            100 POP_JUMP_IF_FALSE        5 (to 112)
+
+364         102 LOAD_FAST                6 (alert)
+            104 LOAD_FAST                9 (payload)
+            106 LOAD_CONST               4 ('alert')
+            108 STORE_SUBSCR
+
+365     >>  112 LOAD_FAST                7 (stuck)
+            114 POP_JUMP_IF_FALSE        5 (to 126)
+
+366         116 LOAD_FAST                7 (stuck)
+            118 LOAD_FAST                9 (payload)
+            120 LOAD_CONST               5 ('stuck')
+            122 STORE_SUBSCR
+
+367     >>  126 LOAD_FAST                0 (self)
+            128 LOAD_ATTR                6 (extra)
+            148 POP_JUMP_IF_FALSE       75 (to 300)
+
+368         150 NOP
+
+369         152 LOAD_FAST                9 (payload)
+            154 LOAD_ATTR                9 (NULL|self + update)
+            174 LOAD_FAST                0 (self)
+            176 LOAD_ATTR                7 (NULL|self + extra)
+            196 CALL                     0
+            204 COPY                     1
+            206 POP_JUMP_IF_TRUE         2 (to 212)
+            208 POP_TOP
+            210 BUILD_MAP                0
+        >>  212 LOAD_ATTR               11 (NULL|self + items)
+            232 CALL                     0
+            240 GET_ITER
+            242 LOAD_FAST_AND_CLEAR     10 (k)
+            244 LOAD_FAST_AND_CLEAR     11 (v)
+            246 SWAP                     3
+            248 BUILD_MAP                0
+            250 SWAP                     2
+        >>  252 FOR_ITER                13 (to 282)
+            256 UNPACK_SEQUENCE          2
+            260 STORE_FAST              10 (k)
+            262 STORE_FAST              11 (v)
+            264 LOAD_FAST               10 (k)
+            266 LOAD_FAST                9 (payload)
+            268 CONTAINS_OP              1
+            270 POP_JUMP_IF_TRUE         1 (to 274)
+            272 JUMP_BACKWARD           11 (to 252)
+        >>  274 LOAD_FAST               10 (k)
+            276 LOAD_FAST               11 (v)
+            278 MAP_ADD                  2
+            280 JUMP_BACKWARD           15 (to 252)
+        >>  282 END_FOR
+            284 SWAP                     3
+            286 STORE_FAST              11 (v)
+            288 STORE_FAST              10 (k)
+            290 CALL                     1
+            298 POP_TOP
+
+372     >>  300 LOAD_FAST                3 (kind)
+            302 LOAD_CONST               6 (('summary', 'stuck'))
+            304 CONTAINS_OP              0
+            306 STORE_FAST              12 (important)
+
+373         308 LOAD_FAST               12 (important)
+            310 POP_JUMP_IF_FALSE       67 (to 446)
+
+374         312 LOAD_GLOBAL             14 (breaker)
+            322 LOAD_ATTR               16 (BREAKER)
+            342 LOAD_ATTR               19 (NULL|self + override)
+            362 CALL                     0
+            370 BEFORE_WITH
+            372 POP_TOP
+
+375         374 LOAD_FAST                0 (self)
+            376 LOAD_ATTR               21 (NULL|self + _post)
+            396 LOAD_GLOBAL             23 (NULL + telemetry_url)
+            406 LOAD_FAST                2 (endpoint_url)
+            408 CALL                     1
+            416 LOAD_FAST                9 (payload)
+            418 CALL                     2
+            426 STORE_FAST              13 (answer)
+
+374         428 LOAD_CONST               0 (None)
+            430 LOAD_CONST               0 (None)
+            432 LOAD_CONST               0 (None)
+            434 CALL                     2
+            442 POP_TOP
+            444 JUMP_FORWARD            27 (to 500)
+
+377     >>  446 LOAD_FAST                0 (self)
+            448 LOAD_ATTR               21 (NULL|self + _post)
+            468 LOAD_GLOBAL             23 (NULL + telemetry_url)
+            478 LOAD_FAST                2 (endpoint_url)
+            480 CALL                     1
+            488 LOAD_FAST                9 (payload)
+            490 CALL                     2
+            498 STORE_FAST              13 (answer)
+
+378     >>  500 LOAD_GLOBAL             25 (NULL + _status_of)
+            510 LOAD_FAST_CHECK         13 (answer)
+            512 CALL                     1
+            520 STORE_FAST               8 (status)
+
+379         522 LOAD_FAST                0 (self)
+            524 LOAD_ATTR               26 (on_answer)
+            544 POP_JUMP_IF_FALSE       53 (to 652)
+            546 LOAD_GLOBAL             29 (NULL + isinstance)
+            556 LOAD_FAST               13 (answer)
+            558 LOAD_GLOBAL             30 (dict)
+            568 CALL                     2
+            576 POP_JUMP_IF_FALSE       37 (to 652)
+            578 LOAD_FAST               13 (answer)
+            580 LOAD_ATTR               33 (NULL|self + get)
+            600 LOAD_CONST               7 ('ok')
+            602 CALL                     1
+            610 LOAD_CONST               8 (True)
+            612 IS_OP                    0
+            614 POP_JUMP_IF_FALSE       18 (to 652)
+
+380         616 NOP
+
+381         618 LOAD_FAST                0 (self)
+            620 LOAD_ATTR               27 (NULL|self + on_answer)
+            640 LOAD_FAST               13 (answer)
+            642 CALL                     1
+            650 POP_TOP
+
+388     >>  652 LOAD_FAST                8 (status)
+            654 LOAD_GLOBAL             44 (OK)
+            664 COMPARE_OP              55 (!=)
+            668 POP_JUMP_IF_FALSE       90 (to 850)
+
+389         670 LOAD_FAST                0 (self)
+            672 LOAD_ATTR               39 (NULL|self + log)
+            692 LOAD_CONST              12 ('telemetry: not delivered (')
+            694 LOAD_FAST                8 (status)
+            696 FORMAT_VALUE             0
+            698 LOAD_CONST              13 (')')
+            700 BUILD_STRING             3
+            702 CALL                     1
+            710 POP_TOP
+
+390         712 LOAD_FAST                3 (kind)
+            714 LOAD_CONST              14 ('periodic')
+            716 COMPARE_OP              40 (==)
+            720 POP_JUMP_IF_FALSE       64 (to 850)
+            722 LOAD_FAST                8 (status)
+            724 LOAD_GLOBAL             46 (INVALID_KEY)
+            734 LOAD_GLOBAL             48 (DM_CLOSED)
+            744 LOAD_GLOBAL             50 (NO_URL)
+            754 BUILD_TUPLE              3
+            756 CONTAINS_OP              1
+            758 POP_JUMP_IF_FALSE       45 (to 850)
+
+392         760 NOP
+
+393         762 LOAD_FAST                0 (self)
+            764 LOAD_ATTR               53 (NULL|self + _clock)
+            784 CALL                     0
+            792 LOAD_GLOBAL             55 (NULL + max)
+            802 LOAD_CONST              15 (0.0)
+            804 LOAD_FAST                5 (interval_h)
+            806 LOAD_CONST              16 (3600.0)
+            808 BINARY_OP                5 (*)
+            812 LOAD_GLOBAL             56 (PERIODIC_RETRY_S)
+            822 BINARY_OP               10 (-)
+            826 CALL                     2
+            834 BINARY_OP               10 (-)
+            838 LOAD_FAST                0 (self)
+            840 STORE_ATTR              29 (_last_report)
+
+396     >>  850 LOAD_FAST                4 (callback)
+            852 POP_JUMP_IF_FALSE       10 (to 874)
+
+397         854 NOP
+
+398         856 PUSH_NULL
+            858 LOAD_FAST                4 (callback)
+            860 LOAD_FAST                8 (status)
+            862 CALL                     1
+            870 POP_TOP
+            872 RETURN_CONST             0 (None)
+
+396     >>  874 RETURN_CONST             0 (None)
+        >>  876 SWAP                     2
+            878 POP_TOP
+
+369         880 SWAP                     3
+            882 STORE_FAST              11 (v)
+            884 STORE_FAST              10 (k)
+            886 RERAISE                  0
+        >>  888 PUSH_EXC_INFO
+
+370         890 LOAD_GLOBAL             12 (Exception)
+            900 CHECK_EXC_MATCH
+            902 POP_JUMP_IF_FALSE        4 (to 912)
+            904 POP_TOP
+
+371         906 POP_EXCEPT
+            908 EXTENDED_ARG             1
+            910 JUMP_BACKWARD          306 (to 300)
+
+370     >>  912 RERAISE                  0
+        >>  914 COPY                     3
+            916 POP_EXCEPT
+            918 RERAISE                  1
+
+374     >>  920 PUSH_EXC_INFO
+            922 WITH_EXCEPT_START
+            924 POP_JUMP_IF_TRUE         1 (to 928)
+            926 RERAISE                  2
+        >>  928 POP_TOP
+            930 POP_EXCEPT
+            932 POP_TOP
+            934 POP_TOP
+            936 JUMP_BACKWARD          219 (to 500)
+        >>  938 COPY                     3
+            940 POP_EXCEPT
+            942 RERAISE                  1
+        >>  944 PUSH_EXC_INFO
+
+382         946 LOAD_GLOBAL             12 (Exception)
+            956 CHECK_EXC_MATCH
+            958 POP_JUMP_IF_FALSE        3 (to 966)
+            960 POP_TOP
+
+383         962 POP_EXCEPT
+            964 JUMP_BACKWARD          157 (to 652)
+
+382     >>  966 RERAISE                  0
+        >>  968 COPY                     3
+            970 POP_EXCEPT
+            972 RERAISE                  1
+        >>  974 PUSH_EXC_INFO
+
+384         976 LOAD_GLOBAL             12 (Exception)
+            986 CHECK_EXC_MATCH
+            988 POP_JUMP_IF_FALSE       80 (to 1150)
+            990 STORE_FAST              14 (e)
+
+385         992 LOAD_GLOBAL             35 (NULL + classify_error)
+           1002 LOAD_FAST               14 (e)
+           1004 CALL                     1
+           1012 UNPACK_SEQUENCE          2
+           1016 STORE_FAST               3 (kind)
+           1018 STORE_FAST              15 (text)
+
+386        1020 LOAD_GLOBAL             37 (NULL + network_status)
+           1030 LOAD_FAST                3 (kind)
+           1032 CALL                     1
+           1040 STORE_FAST               8 (status)
+
+387        1042 LOAD_FAST                0 (self)
+           1044 LOAD_ATTR               39 (NULL|self + log)
+           1064 LOAD_CONST               9 ('telemetry: ')
+           1066 LOAD_GLOBAL             41 (NULL + type)
+           1076 LOAD_FAST               14 (e)
+           1078 CALL                     1
+           1086 LOAD_ATTR               42 (__name__)
+           1106 FORMAT_VALUE             0
+           1108 LOAD_CONST              10 (' (')
+           1110 LOAD_FAST                3 (kind)
+           1112 FORMAT_VALUE             0
+           1114 LOAD_CONST              11 (') ')
+           1116 LOAD_FAST               15 (text)
+           1118 FORMAT_VALUE             0
+           1120 BUILD_STRING             6
+           1122 CALL                     1
+           1130 POP_TOP
+           1132 POP_EXCEPT
+           1134 LOAD_CONST               0 (None)
+           1136 STORE_FAST              14 (e)
+           1138 DELETE_FAST             14 (e)
+           1140 JUMP_BACKWARD          245 (to 652)
+        >> 1142 LOAD_CONST               0 (None)
+           1144 STORE_FAST              14 (e)
+           1146 DELETE_FAST             14 (e)
+           1148 RERAISE                  1
+
+384     >> 1150 RERAISE                  0
+        >> 1152 COPY                     3
+           1154 POP_EXCEPT
+           1156 RERAISE                  1
+        >> 1158 PUSH_EXC_INFO
+
+394        1160 LOAD_GLOBAL             12 (Exception)
+           1170 CHECK_EXC_MATCH
+           1172 POP_JUMP_IF_FALSE        3 (to 1180)
+           1174 POP_TOP
+
+395        1176 POP_EXCEPT
+           1178 JUMP_BACKWARD          165 (to 850)
+
+394     >> 1180 RERAISE                  0
+        >> 1182 COPY                     3
+           1184 POP_EXCEPT
+           1186 RERAISE                  1
+        >> 1188 PUSH_EXC_INFO
+
+399        1190 LOAD_GLOBAL             12 (Exception)
+           1200 CHECK_EXC_MATCH
+           1202 POP_JUMP_IF_FALSE        3 (to 1210)
+           1204 POP_TOP
+
+400        1206 POP_EXCEPT
+           1208 RETURN_CONST             0 (None)
+
+399     >> 1210 RERAISE                  0
+        >> 1212 COPY                     3
+           1214 POP_EXCEPT
+           1216 RERAISE                  1
+ExceptionTable:
+  18 to 148 -> 974 [0]
+  152 to 246 -> 888 [0]
+  248 to 270 -> 876 [5]
+  274 to 282 -> 876 [5]
+  284 to 298 -> 888 [0]
+  300 to 370 -> 974 [0]
+  372 to 426 -> 920 [1] lasti
+  428 to 614 -> 974 [0]
+  618 to 650 -> 944 [0]
+  762 to 848 -> 1158 [0]
+  856 to 870 -> 1188 [0]
+  876 to 886 -> 888 [0]
+  888 to 904 -> 914 [1] lasti
+  906 to 910 -> 974 [0]
+  912 to 912 -> 914 [1] lasti
+  914 to 918 -> 974 [0]
+  920 to 928 -> 938 [3] lasti
+  930 to 942 -> 974 [0]
+  944 to 960 -> 968 [1] lasti
+  962 to 964 -> 974 [0]
+  966 to 966 -> 968 [1] lasti
+  968 to 972 -> 974 [0]
+  974 to 990 -> 1152 [1] lasti
+  992 to 1130 -> 1142 [1] lasti
+  1142 to 1150 -> 1152 [1] lasti
+  1158 to 1174 -> 1182 [1] lasti
+  1180 to 1180 -> 1182 [1] lasti
+  1188 to 1204 -> 1212 [1] lasti
+  1210 to 1210 -> 1212 [1] lasti
+
+Disassembly of <code object _early at 0x7f6aecfbc030, file "telemetry.py", line 402>:
+402           0 RESUME                   0
+
+403           2 LOAD_GLOBAL              1 (NULL + valid_link_key)
+             12 LOAD_FAST                1 (link_key)
+             14 CALL                     1
+             22 POP_JUMP_IF_TRUE         6 (to 36)
+
+404          24 LOAD_GLOBAL              2 (INVALID_KEY)
+             34 RETURN_VALUE
+
+405     >>   36 LOAD_GLOBAL              5 (NULL + valid_endpoint)
+             46 LOAD_FAST                2 (endpoint_url)
+             48 CALL                     1
+             56 POP_JUMP_IF_TRUE         6 (to 70)
+
+406          58 LOAD_GLOBAL              6 (NO_URL)
+             68 RETURN_VALUE
+
+407     >>   70 RETURN_CONST             0 (None)
+
+Disassembly of <code object send_test_dm at 0x7f6aed1c43f0, file "telemetry.py", line 409>:
+              0 MAKE_CELL                0 (self)
+              2 MAKE_CELL                1 (link_key)
+              4 MAKE_CELL                2 (endpoint_url)
+              6 MAKE_CELL                3 (callback)
+
+409           8 RESUME                   0
+
+410          10 NOP
+
+411          12 LOAD_DEREF               0 (self)
+             14 LOAD_ATTR                1 (NULL|self + _early)
+             34 LOAD_DEREF               1 (link_key)
+             36 LOAD_DEREF               2 (endpoint_url)
+             38 LOAD_DEREF               3 (callback)
+             40 CALL                     3
+             48 STORE_FAST               4 (bad)
+
+412          50 LOAD_FAST                4 (bad)
+             52 POP_JUMP_IF_FALSE       11 (to 76)
+
+413          54 LOAD_DEREF               3 (callback)
+             56 POP_JUMP_IF_FALSE        8 (to 74)
+
+414          58 PUSH_NULL
+             60 LOAD_DEREF               3 (callback)
+             62 LOAD_FAST                4 (bad)
+             64 CALL                     1
+             72 POP_TOP
+
+415     >>   74 RETURN_CONST             0 (None)
+
+416     >>   76 LOAD_DEREF               0 (self)
+             78 LOAD_ATTR                3 (NULL|self + _spawn)
+             98 LOAD_CLOSURE             3 (callback)
+            100 LOAD_CLOSURE             2 (endpoint_url)
+            102 LOAD_CLOSURE             1 (link_key)
+            104 LOAD_CLOSURE             0 (self)
+            106 BUILD_TUPLE              4
+            108 LOAD_CONST               1 (<code object <lambda> at 0x7f6aed17e4c0, file "telemetry.py", line 416>)
+            110 MAKE_FUNCTION            8 (closure)
+            112 CALL                     1
+            120 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed17e4c0, file "telemetry.py", line 416>:
+              0 COPY_FREE_VARS           4
+
+416           2 RESUME                   0
+              4 LOAD_DEREF               3 (self)
+              6 LOAD_ATTR                1 (NULL|self + _deliver)
+             26 LOAD_DEREF               2 (link_key)
+             28 LOAD_DEREF               1 (endpoint_url)
+             30 LOAD_CONST               1 ('test')
+             32 LOAD_DEREF               0 (callback)
+             34 CALL                     4
+             42 RETURN_VALUE
+
+Disassembly of <code object send_session_summary at 0x7f6af1de2e30, file "telemetry.py", line 418>:
+              0 MAKE_CELL                0 (self)
+              2 MAKE_CELL                1 (link_key)
+              4 MAKE_CELL                2 (endpoint_url)
+              6 MAKE_CELL                3 (callback)
+
+418           8 RESUME                   0
+
+425          10 NOP
+
+426          12 LOAD_DEREF               0 (self)
+             14 LOAD_ATTR                0 (_sent)
+             34 POP_JUMP_IF_TRUE        22 (to 80)
+             36 LOAD_GLOBAL              3 (NULL + valid_link_key)
+             46 LOAD_DEREF               1 (link_key)
+             48 CALL                     1
+             56 POP_JUMP_IF_FALSE       11 (to 80)
+             58 LOAD_GLOBAL              5 (NULL + valid_endpoint)
+             68 LOAD_DEREF               2 (endpoint_url)
+             70 CALL                     1
+             78 POP_JUMP_IF_TRUE         1 (to 82)
+
+427     >>   80 RETURN_CONST             0 (None)
+
+428     >>   82 LOAD_DEREF               0 (self)
+             84 LOAD_ATTR                6 (total_actions)
+            104 LOAD_FAST                4 (min_actions)
+            106 COMPARE_OP               2 (<)
+            110 POP_JUMP_IF_FALSE        1 (to 114)
+
+429         112 RETURN_CONST             0 (None)
+
+430     >>  114 LOAD_CONST               1 (True)
+            116 LOAD_DEREF               0 (self)
+            118 STORE_ATTR               0 (_sent)
+
+431         128 LOAD_DEREF               0 (self)
+            130 LOAD_ATTR                9 (NULL|self + _spawn)
+            150 LOAD_CLOSURE             3 (callback)
+            152 LOAD_CLOSURE             2 (endpoint_url)
+            154 LOAD_CLOSURE             1 (link_key)
+            156 LOAD_CLOSURE             0 (self)
+            158 BUILD_TUPLE              4
+            160 LOAD_CONST               2 (<code object <lambda> at 0x7f6aed17e2e0, file "telemetry.py", line 431>)
+            162 MAKE_FUNCTION            8 (closure)
+            164 CALL                     1
+            172 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed17e2e0, file "telemetry.py", line 431>:
+              0 COPY_FREE_VARS           4
+
+431           2 RESUME                   0
+              4 LOAD_DEREF               3 (self)
+              6 LOAD_ATTR                1 (NULL|self + _deliver)
+             26 LOAD_DEREF               2 (link_key)
+             28 LOAD_DEREF               1 (endpoint_url)
+             30 LOAD_CONST               1 ('summary')
+             32 LOAD_DEREF               0 (callback)
+             34 CALL                     4
+             42 RETURN_VALUE
+
+Disassembly of <code object maybe_send_periodic at 0x7f6aed18d030, file "telemetry.py", line 433>:
+              0 MAKE_CELL                0 (self)
+              2 MAKE_CELL                1 (link_key)
+              4 MAKE_CELL                2 (endpoint_url)
+              6 MAKE_CELL                3 (hours)
+              8 MAKE_CELL                4 (callback)
+
+433          10 RESUME                   0
+
+434          12 NOP
+
+436          14 NOP
+
+437          16 LOAD_DEREF               3 (hours)
+             18 POP_JUMP_IF_FALSE       17 (to 54)
+             20 LOAD_DEREF               3 (hours)
+             22 LOAD_CONST               1 (0)
+             24 COMPARE_OP              26 (<=)
+             28 POP_JUMP_IF_TRUE        12 (to 54)
+             30 LOAD_DEREF               0 (self)
+             32 LOAD_ATTR                0 (_sent)
+             52 POP_JUMP_IF_FALSE        1 (to 56)
+
+438     >>   54 RETURN_CONST             0 (None)
+
+439     >>   56 LOAD_GLOBAL              3 (NULL + max)
+             66 LOAD_CONST               2 (0.5)
+             68 LOAD_GLOBAL              5 (NULL + float)
+             78 LOAD_DEREF               3 (hours)
+             80 CALL                     1
+             88 CALL                     2
+             96 LOAD_CONST               3 (3600.0)
+             98 BINARY_OP                5 (*)
+            102 STORE_FAST               5 (period)
+
+440         104 LOAD_DEREF               0 (self)
+            106 LOAD_ATTR                7 (NULL|self + _clock)
+            126 CALL                     0
+            134 STORE_FAST               6 (now)
+
+441         136 LOAD_FAST                6 (now)
+            138 LOAD_DEREF               0 (self)
+            140 LOAD_ATTR                8 (_last_report)
+            160 BINARY_OP               10 (-)
+            164 LOAD_FAST                5 (period)
+            166 COMPARE_OP               2 (<)
+            170 POP_JUMP_IF_FALSE        1 (to 174)
+
+442         172 RETURN_CONST             0 (None)
+
+443     >>  174 LOAD_FAST                6 (now)
+            176 LOAD_DEREF               0 (self)
+            178 STORE_ATTR               4 (_last_report)
+
+444         188 LOAD_GLOBAL             11 (NULL + valid_link_key)
+            198 LOAD_DEREF               1 (link_key)
+            200 CALL                     1
+            208 POP_JUMP_IF_FALSE       11 (to 232)
+            210 LOAD_GLOBAL             13 (NULL + valid_endpoint)
+            220 LOAD_DEREF               2 (endpoint_url)
+            222 CALL                     1
+            230 POP_JUMP_IF_TRUE         1 (to 234)
+
+445     >>  232 RETURN_CONST             0 (None)
+
+446     >>  234 LOAD_DEREF               0 (self)
+            236 LOAD_ATTR               15 (NULL|self + _spawn)
+            256 LOAD_CLOSURE             4 (callback)
+            258 LOAD_CLOSURE             2 (endpoint_url)
+            260 LOAD_CLOSURE             3 (hours)
+            262 LOAD_CLOSURE             1 (link_key)
+            264 LOAD_CLOSURE             0 (self)
+            266 BUILD_TUPLE              5
+            268 LOAD_CONST               4 (<code object <lambda> at 0x7f6aed7e5110, file "telemetry.py", line 446>)
+            270 MAKE_FUNCTION            8 (closure)
+            272 CALL                     1
+            280 RETURN_VALUE
+        >>  282 PUSH_EXC_INFO
+
+447         284 LOAD_GLOBAL             16 (Exception)
+            294 CHECK_EXC_MATCH
+            296 POP_JUMP_IF_FALSE        3 (to 304)
+            298 POP_TOP
+
+448         300 POP_EXCEPT
+            302 RETURN_CONST             0 (None)
+
+447     >>  304 RERAISE                  0
+        >>  306 COPY                     3
+            308 POP_EXCEPT
+            310 RERAISE                  1
+ExceptionTable:
+  16 to 52 -> 282 [0]
+  56 to 170 -> 282 [0]
+  174 to 230 -> 282 [0]
+  234 to 278 -> 282 [0]
+  282 to 298 -> 306 [1] lasti
+  304 to 304 -> 306 [1] lasti
+
+Disassembly of <code object <lambda> at 0x7f6aed7e5110, file "telemetry.py", line 446>:
+              0 COPY_FREE_VARS           5
+
+446           2 RESUME                   0
+              4 LOAD_DEREF               4 (self)
+              6 LOAD_ATTR                1 (NULL|self + _deliver)
+             26 LOAD_DEREF               3 (link_key)
+             28 LOAD_DEREF               1 (endpoint_url)
+             30 LOAD_CONST               1 ('periodic')
+             32 LOAD_DEREF               0 (callback)
+             34 LOAD_GLOBAL              3 (NULL + max)
+             44 LOAD_CONST               2 (0.5)
+             46 LOAD_GLOBAL              5 (NULL + float)
+             56 LOAD_DEREF               2 (hours)
+             58 CALL                     1
+             66 CALL                     2
+             74 CALL                     5
+             82 RETURN_VALUE
+
+Disassembly of <code object send_alert at 0x7f6af1e2af10, file "telemetry.py", line 450>:
+              0 MAKE_CELL                0 (self)
+              2 MAKE_CELL                1 (link_key)
+              4 MAKE_CELL                2 (endpoint_url)
+              6 MAKE_CELL                5 (callback)
+              8 MAKE_CELL                6 (alert)
+
+450          10 RESUME                   0
+
+451          12 NOP
+
+452          14 NOP
+
+453          16 LOAD_GLOBAL              1 (NULL + valid_link_key)
+             26 LOAD_DEREF               1 (link_key)
+             28 CALL                     1
+             36 POP_JUMP_IF_FALSE       11 (to 60)
+             38 LOAD_GLOBAL              3 (NULL + valid_endpoint)
+             48 LOAD_DEREF               2 (endpoint_url)
+             50 CALL                     1
+             58 POP_JUMP_IF_TRUE         1 (to 62)
+
+454     >>   60 RETURN_CONST             0 (None)
+
+455     >>   62 LOAD_GLOBAL              5 (NULL + str)
+             72 LOAD_FAST                3 (code)
+             74 CALL                     1
+             82 LOAD_CONST               0 (None)
+             84 LOAD_CONST               1 (20)
+             86 BINARY_SLICE
+             88 LOAD_GLOBAL              5 (NULL + str)
+             98 LOAD_FAST                4 (detail)
+            100 CALL                     1
+            108 LOAD_CONST               0 (None)
+            110 LOAD_CONST               2 (300)
+            112 BINARY_SLICE
+            114 LOAD_CONST               3 (('code', 'detail'))
+            116 BUILD_CONST_KEY_MAP      2
+            118 STORE_DEREF              6 (alert)
+
+456         120 LOAD_DEREF               0 (self)
+            122 LOAD_ATTR                7 (NULL|self + _spawn)
+            142 LOAD_CLOSURE             6 (alert)
+            144 LOAD_CLOSURE             5 (callback)
+            146 LOAD_CLOSURE             2 (endpoint_url)
+            148 LOAD_CLOSURE             1 (link_key)
+            150 LOAD_CLOSURE             0 (self)
+            152 BUILD_TUPLE              5
+            154 LOAD_CONST               4 (<code object <lambda> at 0x7f6aed17dd40, file "telemetry.py", line 456>)
+            156 MAKE_FUNCTION            8 (closure)
+            158 CALL                     1
+            166 RETURN_VALUE
+        >>  168 PUSH_EXC_INFO
+
+457         170 LOAD_GLOBAL              8 (Exception)
+            180 CHECK_EXC_MATCH
+            182 POP_JUMP_IF_FALSE        3 (to 190)
+            184 POP_TOP
+
+458         186 POP_EXCEPT
+            188 RETURN_CONST             0 (None)
+
+457     >>  190 RERAISE                  0
+        >>  192 COPY                     3
+            194 POP_EXCEPT
+            196 RERAISE                  1
+ExceptionTable:
+  16 to 58 -> 168 [0]
+  62 to 164 -> 168 [0]
+  168 to 184 -> 192 [1] lasti
+  190 to 190 -> 192 [1] lasti
+
+Disassembly of <code object <lambda> at 0x7f6aed17dd40, file "telemetry.py", line 456>:
+              0 COPY_FREE_VARS           5
+
+456           2 RESUME                   0
+              4 LOAD_DEREF               4 (self)
+              6 LOAD_ATTR                1 (NULL|self + _deliver)
+             26 LOAD_DEREF               3 (link_key)
+             28 LOAD_DEREF               2 (endpoint_url)
+             30 LOAD_CONST               1 ('alert')
+             32 LOAD_DEREF               1 (callback)
+             34 LOAD_DEREF               0 (alert)
+             36 KW_NAMES                 2 (('alert',))
+             38 CALL                     5
+             46 RETURN_VALUE
+
+Disassembly of <code object send_stuck at 0x17a7e4c0, file "telemetry.py", line 460>:
+              0 MAKE_CELL                0 (self)
+              2 MAKE_CELL                1 (link_key)
+              4 MAKE_CELL                2 (endpoint_url)
+              6 MAKE_CELL                5 (callback)
+              8 MAKE_CELL                7 (stuck)
+
+460          10 RESUME                   0
+
+461          12 NOP
+
+465          14 NOP
+
+466          16 LOAD_GLOBAL              1 (NULL + valid_link_key)
+             26 LOAD_DEREF               1 (link_key)
+             28 CALL                     1
+             36 POP_JUMP_IF_FALSE       11 (to 60)
+             38 LOAD_GLOBAL              3 (NULL + valid_endpoint)
+             48 LOAD_DEREF               2 (endpoint_url)
+             50 CALL                     1
+             58 POP_JUMP_IF_TRUE         1 (to 62)
+
+467     >>   60 RETURN_CONST             0 (None)
+
+468     >>   62 LOAD_GLOBAL              5 (NULL + str)
+             72 LOAD_FAST                3 (state)
+             74 CALL                     1
+             82 LOAD_CONST               0 (None)
+             84 LOAD_CONST               1 (24)
+             86 BINARY_SLICE
+             88 LOAD_GLOBAL              7 (NULL + max)
+             98 LOAD_CONST               2 (0)
+            100 LOAD_GLOBAL              9 (NULL + min)
+            110 LOAD_CONST               3 (100000)
+            112 LOAD_GLOBAL             11 (NULL + int)
+            122 LOAD_FAST                4 (minutes)
+            124 CALL                     1
+            132 CALL                     2
+            140 CALL                     2
+            148 LOAD_CONST               4 (('state', 'minutes'))
+            150 BUILD_CONST_KEY_MAP      2
+            152 STORE_DEREF              7 (stuck)
+
+469         154 LOAD_GLOBAL             13 (NULL + isinstance)
+            164 LOAD_FAST                6 (grid_image_b64)
+            166 LOAD_GLOBAL              4 (str)
+            176 CALL                     2
+            184 POP_JUMP_IF_FALSE       32 (to 250)
+            186 LOAD_CONST               2 (0)
+            188 LOAD_GLOBAL             15 (NULL + len)
+            198 LOAD_FAST                6 (grid_image_b64)
+            200 CALL                     1
+            208 SWAP                     2
+            210 COPY                     2
+            212 COMPARE_OP               2 (<)
+            216 POP_JUMP_IF_FALSE        9 (to 236)
+            218 LOAD_GLOBAL             16 (MAX_GRID_B64)
+            228 COMPARE_OP              26 (<=)
+            232 POP_JUMP_IF_FALSE        8 (to 250)
+            234 JUMP_FORWARD             2 (to 240)
+        >>  236 POP_TOP
+            238 JUMP_FORWARD             5 (to 250)
+
+470     >>  240 LOAD_FAST                6 (grid_image_b64)
+            242 LOAD_DEREF               7 (stuck)
+            244 LOAD_CONST               5 ('grid_image_b64')
+            246 STORE_SUBSCR
+
+471     >>  250 LOAD_DEREF               0 (self)
+            252 LOAD_ATTR               19 (NULL|self + _spawn)
+            272 LOAD_CLOSURE             5 (callback)
+            274 LOAD_CLOSURE             2 (endpoint_url)
+            276 LOAD_CLOSURE             1 (link_key)
+            278 LOAD_CLOSURE             0 (self)
+            280 LOAD_CLOSURE             7 (stuck)
+            282 BUILD_TUPLE              5
+            284 LOAD_CONST               6 (<code object <lambda> at 0x7f6aed17e790, file "telemetry.py", line 471>)
+            286 MAKE_FUNCTION            8 (closure)
+            288 CALL                     1
+            296 RETURN_VALUE
+        >>  298 PUSH_EXC_INFO
+
+472         300 LOAD_GLOBAL             20 (Exception)
+            310 CHECK_EXC_MATCH
+            312 POP_JUMP_IF_FALSE        3 (to 320)
+            314 POP_TOP
+
+473         316 POP_EXCEPT
+            318 RETURN_CONST             0 (None)
+
+472     >>  320 RERAISE                  0
+        >>  322 COPY                     3
+            324 POP_EXCEPT
+            326 RERAISE                  1
+ExceptionTable:
+  16 to 58 -> 298 [0]
+  62 to 294 -> 298 [0]
+  298 to 314 -> 322 [1] lasti
+  320 to 320 -> 322 [1] lasti
+
+Disassembly of <code object <lambda> at 0x7f6aed17e790, file "telemetry.py", line 471>:
+              0 COPY_FREE_VARS           5
+
+471           2 RESUME                   0
+              4 LOAD_DEREF               3 (self)
+              6 LOAD_ATTR                1 (NULL|self + _deliver)
+             26 LOAD_DEREF               2 (link_key)
+             28 LOAD_DEREF               1 (endpoint_url)
+             30 LOAD_CONST               1 ('stuck')
+             32 LOAD_DEREF               0 (callback)
+             34 LOAD_DEREF               4 (stuck)
+             36 KW_NAMES                 2 (('stuck',))
+             38 CALL                     5
+             46 RETURN_VALUE
+
+Disassembly of <code object flush at 0x7f6af1e2a8d0, file "telemetry.py", line 475>:
+475           0 RESUME                   0
+
+476           2 NOP
+
+477           4 LOAD_GLOBAL              1 (NULL + time)
+             14 LOAD_ATTR                2 (monotonic)
+             34 CALL                     0
+             42 LOAD_FAST                1 (timeout)
+             44 BINARY_OP                0 (+)
+             48 STORE_FAST               2 (end)
+
+478          50 LOAD_GLOBAL              5 (NULL + list)
+             60 LOAD_FAST                0 (self)
+             62 LOAD_ATTR                6 (_threads)
+             82 CALL                     1
+             90 GET_ITER
+        >>   92 FOR_ITER                49 (to 194)
+             96 STORE_FAST               3 (t)
+
+479          98 LOAD_FAST                2 (end)
+            100 LOAD_GLOBAL              1 (NULL + time)
+            110 LOAD_ATTR                2 (monotonic)
+            130 CALL                     0
+            138 BINARY_OP               10 (-)
+            142 STORE_FAST               4 (left)
+
+480         144 LOAD_FAST                4 (left)
+            146 LOAD_CONST               1 (0)
+            148 COMPARE_OP              26 (<=)
+            152 POP_JUMP_IF_FALSE        2 (to 158)
+
+481         154 POP_TOP
+            156 RETURN_CONST             0 (None)
+
+482     >>  158 LOAD_FAST                3 (t)
+            160 LOAD_ATTR                9 (NULL|self + join)
+            180 LOAD_FAST                4 (left)
+            182 CALL                     1
+            190 POP_TOP
+            192 JUMP_BACKWARD           51 (to 92)
+
+478     >>  194 END_FOR
+            196 RETURN_CONST             0 (None)

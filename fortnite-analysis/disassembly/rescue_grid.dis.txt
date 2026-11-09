@@ -1,0 +1,407 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+  6           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (base64)
+             10 STORE_NAME               0 (base64)
+
+  7          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               2 (('Optional',))
+             16 IMPORT_NAME              1 (typing)
+             18 IMPORT_FROM              2 (Optional)
+             20 STORE_NAME               2 (Optional)
+             22 POP_TOP
+
+  9          24 LOAD_CONST               0 (0)
+             26 LOAD_CONST               1 (None)
+             28 IMPORT_NAME              3 (cv2)
+             30 STORE_NAME               3 (cv2)
+
+ 10          32 LOAD_CONST               0 (0)
+             34 LOAD_CONST               1 (None)
+             36 IMPORT_NAME              4 (numpy)
+             38 STORE_NAME               5 (np)
+
+ 12          40 LOAD_CONST               3 (51200)
+             42 STORE_NAME               6 (MAX_BYTES)
+
+ 15          44 LOAD_CONST              10 ((640, 70))
+             46 LOAD_CONST               4 ('frame')
+             48 LOAD_NAME                5 (np)
+             50 LOAD_ATTR               14 (ndarray)
+             70 LOAD_CONST               5 ('max_width')
+             72 LOAD_NAME                8 (int)
+             74 LOAD_CONST               6 ('jpeg_quality')
+             76 LOAD_NAME                8 (int)
+             78 LOAD_CONST               7 ('return')
+             80 LOAD_NAME                9 (bytes)
+             82 BUILD_TUPLE              8
+             84 LOAD_CONST               8 (<code object render_rescue_grid at 0x17a9e740, file "rescue_grid.py", line 15>)
+             86 MAKE_FUNCTION            5 (defaults, annotations)
+             88 STORE_NAME              10 (render_rescue_grid)
+
+ 48          90 LOAD_CONST               7 ('return')
+             92 LOAD_NAME                2 (Optional)
+             94 LOAD_NAME               11 (str)
+             96 BINARY_SUBSCR
+            100 BUILD_TUPLE              2
+            102 LOAD_CONST               9 (<code object grid_b64 at 0x7f6aed1c4f30, file "rescue_grid.py", line 48>)
+            104 MAKE_FUNCTION            4 (annotations)
+            106 STORE_NAME              12 (grid_b64)
+            108 RETURN_CONST             1 (None)
+
+Disassembly of <code object render_rescue_grid at 0x17a9e740, file "rescue_grid.py", line 15>:
+ 15           0 RESUME                   0
+
+ 16           2 NOP
+
+ 17           4 LOAD_FAST                0 (frame)
+              6 POP_JUMP_IF_NONE        51 (to 110)
+              8 LOAD_FAST                0 (frame)
+             10 LOAD_ATTR                0 (ndim)
+             30 LOAD_CONST               1 (3)
+             32 COMPARE_OP              55 (!=)
+             36 POP_JUMP_IF_TRUE        36 (to 110)
+             38 LOAD_FAST                0 (frame)
+             40 LOAD_ATTR                2 (shape)
+             60 LOAD_CONST               2 (0)
+             62 BINARY_SUBSCR
+             66 LOAD_CONST               3 (4)
+             68 COMPARE_OP               2 (<)
+             72 POP_JUMP_IF_TRUE        18 (to 110)
+             74 LOAD_FAST                0 (frame)
+             76 LOAD_ATTR                2 (shape)
+             96 LOAD_CONST               4 (1)
+             98 BINARY_SUBSCR
+            102 LOAD_CONST               3 (4)
+            104 COMPARE_OP               2 (<)
+            108 POP_JUMP_IF_FALSE       11 (to 132)
+
+ 18     >>  110 LOAD_GLOBAL              5 (NULL + ValueError)
+            120 LOAD_CONST               5 ('bad frame')
+            122 CALL                     1
+            130 RAISE_VARARGS            1
+
+ 19     >>  132 LOAD_FAST                0 (frame)
+            134 LOAD_ATTR                2 (shape)
+            154 LOAD_CONST               0 (None)
+            156 LOAD_CONST               6 (2)
+            158 BINARY_SLICE
+            160 UNPACK_SEQUENCE          2
+            164 STORE_FAST               3 (h)
+            166 STORE_FAST               4 (w)
+
+ 20         168 LOAD_FAST                4 (w)
+            170 LOAD_FAST                1 (max_width)
+            172 COMPARE_OP              68 (>)
+            176 POP_JUMP_IF_FALSE       75 (to 328)
+
+ 21         178 LOAD_GLOBAL              7 (NULL + cv2)
+            188 LOAD_ATTR                8 (resize)
+            208 LOAD_FAST                0 (frame)
+            210 LOAD_FAST                1 (max_width)
+            212 LOAD_GLOBAL             11 (NULL + max)
+            222 LOAD_CONST               3 (4)
+            224 LOAD_GLOBAL             13 (NULL + int)
+            234 LOAD_GLOBAL             15 (NULL + round)
+            244 LOAD_FAST                3 (h)
+            246 LOAD_FAST                1 (max_width)
+            248 BINARY_OP                5 (*)
+            252 LOAD_FAST                4 (w)
+            254 BINARY_OP               11 (/)
+            258 CALL                     1
+            266 CALL                     1
+            274 CALL                     2
+            282 BUILD_TUPLE              2
+            284 LOAD_GLOBAL              6 (cv2)
+            294 LOAD_ATTR               16 (INTER_AREA)
+            314 KW_NAMES                 7 (('interpolation',))
+            316 CALL                     3
+            324 STORE_FAST               5 (img)
+            326 JUMP_FORWARD            16 (to 360)
+
+ 23     >>  328 LOAD_FAST                0 (frame)
+            330 LOAD_ATTR               19 (NULL|self + copy)
+            350 CALL                     0
+            358 STORE_FAST               5 (img)
+
+ 24     >>  360 LOAD_FAST                5 (img)
+            362 LOAD_ATTR                2 (shape)
+            382 LOAD_CONST               0 (None)
+            384 LOAD_CONST               6 (2)
+            386 BINARY_SLICE
+            388 UNPACK_SEQUENCE          2
+            392 STORE_FAST               3 (h)
+            394 STORE_FAST               4 (w)
+
+ 25         396 LOAD_CONST               8 ((255, 230, 0))
+            398 STORE_FAST               6 (cyan)
+
+ 26         400 LOAD_GLOBAL             21 (NULL + range)
+            410 LOAD_CONST               4 (1)
+            412 LOAD_CONST               3 (4)
+            414 CALL                     2
+            422 GET_ITER
+        >>  424 FOR_ITER               146 (to 720)
+            428 STORE_FAST               7 (i)
+
+ 27         430 LOAD_GLOBAL             13 (NULL + int)
+            440 LOAD_FAST                4 (w)
+            442 LOAD_FAST                7 (i)
+            444 BINARY_OP                5 (*)
+            448 LOAD_CONST               3 (4)
+            450 BINARY_OP               11 (/)
+            454 CALL                     1
+            462 LOAD_GLOBAL             13 (NULL + int)
+            472 LOAD_FAST                3 (h)
+            474 LOAD_FAST                7 (i)
+            476 BINARY_OP                5 (*)
+            480 LOAD_CONST               3 (4)
+            482 BINARY_OP               11 (/)
+            486 CALL                     1
+            494 STORE_FAST               9 (y)
+            496 STORE_FAST               8 (x)
+
+ 28         498 LOAD_FAST                8 (x)
+            500 LOAD_CONST               2 (0)
+            502 BUILD_TUPLE              2
+            504 LOAD_FAST                8 (x)
+            506 LOAD_FAST                3 (h)
+            508 LOAD_CONST               4 (1)
+            510 BINARY_OP               10 (-)
+            514 BUILD_TUPLE              2
+            516 BUILD_TUPLE              2
+            518 LOAD_CONST               2 (0)
+            520 LOAD_FAST                9 (y)
+            522 BUILD_TUPLE              2
+            524 LOAD_FAST                4 (w)
+            526 LOAD_CONST               4 (1)
+            528 BINARY_OP               10 (-)
+            532 LOAD_FAST                9 (y)
+            534 BUILD_TUPLE              2
+            536 BUILD_TUPLE              2
+            538 BUILD_TUPLE              2
+            540 GET_ITER
+        >>  542 FOR_ITER                85 (to 716)
+            546 UNPACK_SEQUENCE          2
+            550 STORE_FAST              10 (p0)
+            552 STORE_FAST              11 (p1)
+
+ 29         554 LOAD_GLOBAL              7 (NULL + cv2)
+            564 LOAD_ATTR               22 (line)
+            584 LOAD_FAST                5 (img)
+            586 LOAD_FAST               10 (p0)
+            588 LOAD_FAST               11 (p1)
+            590 LOAD_CONST               9 ((0, 0, 0))
+            592 LOAD_CONST               1 (3)
+            594 LOAD_GLOBAL              6 (cv2)
+            604 LOAD_ATTR               24 (LINE_AA)
+            624 CALL                     6
+            632 POP_TOP
+
+ 30         634 LOAD_GLOBAL              7 (NULL + cv2)
+            644 LOAD_ATTR               22 (line)
+            664 LOAD_FAST                5 (img)
+            666 LOAD_FAST               10 (p0)
+            668 LOAD_FAST               11 (p1)
+            670 LOAD_FAST                6 (cyan)
+            672 LOAD_CONST               4 (1)
+            674 LOAD_GLOBAL              6 (cv2)
+            684 LOAD_ATTR               24 (LINE_AA)
+            704 CALL                     6
+            712 POP_TOP
+            714 JUMP_BACKWARD           87 (to 542)
+
+ 28     >>  716 END_FOR
+            718 JUMP_BACKWARD          148 (to 424)
+
+ 26     >>  720 END_FOR
+
+ 31         722 LOAD_GLOBAL             11 (NULL + max)
+            732 LOAD_CONST              10 (0.4)
+            734 LOAD_FAST                4 (w)
+            736 LOAD_CONST              11 (1100.0)
+            738 BINARY_OP               11 (/)
+            742 CALL                     2
+            750 STORE_FAST              12 (scale)
+
+ 32         752 LOAD_GLOBAL             21 (NULL + range)
+            762 LOAD_CONST               3 (4)
+            764 CALL                     1
+            772 GET_ITER
+        >>  774 FOR_ITER               200 (to 1178)
+            778 STORE_FAST              13 (row)
+
+ 33         780 LOAD_GLOBAL             21 (NULL + range)
+            790 LOAD_CONST               3 (4)
+            792 CALL                     1
+            800 GET_ITER
+        >>  802 FOR_ITER               184 (to 1174)
+            806 STORE_FAST              14 (col)
+
+ 34         808 LOAD_CONST              12 ('ABCD')
+            810 LOAD_FAST               14 (col)
+            812 BINARY_SUBSCR
+            816 FORMAT_VALUE             0
+            818 LOAD_FAST               13 (row)
+            820 LOAD_CONST               4 (1)
+            822 BINARY_OP                0 (+)
+            826 FORMAT_VALUE             0
+            828 BUILD_STRING             2
+            830 STORE_FAST              15 (label)
+
+ 35         832 LOAD_GLOBAL             13 (NULL + int)
+            842 LOAD_FAST                4 (w)
+            844 LOAD_FAST               14 (col)
+            846 BINARY_OP                5 (*)
+            850 LOAD_CONST               3 (4)
+            852 BINARY_OP               11 (/)
+            856 CALL                     1
+            864 LOAD_CONST              13 (5)
+            866 BINARY_OP                0 (+)
+            870 LOAD_GLOBAL             13 (NULL + int)
+            880 LOAD_FAST                3 (h)
+            882 LOAD_FAST               13 (row)
+            884 BINARY_OP                5 (*)
+            888 LOAD_CONST               3 (4)
+            890 BINARY_OP               11 (/)
+            894 CALL                     1
+            902 LOAD_GLOBAL             13 (NULL + int)
+            912 LOAD_CONST              14 (22)
+            914 LOAD_FAST               12 (scale)
+            916 BINARY_OP                5 (*)
+            920 LOAD_CONST              15 (0.58)
+            922 BINARY_OP               11 (/)
+            926 CALL                     1
+            934 BINARY_OP                0 (+)
+            938 LOAD_CONST               6 (2)
+            940 BINARY_OP                0 (+)
+            944 BUILD_TUPLE              2
+            946 STORE_FAST              16 (org)
+
+ 36         948 LOAD_GLOBAL              7 (NULL + cv2)
+            958 LOAD_ATTR               26 (putText)
+            978 LOAD_FAST                5 (img)
+            980 LOAD_FAST               15 (label)
+            982 LOAD_FAST               16 (org)
+            984 LOAD_GLOBAL              6 (cv2)
+            994 LOAD_ATTR               28 (FONT_HERSHEY_SIMPLEX)
+           1014 LOAD_FAST               12 (scale)
+           1016 LOAD_CONST               9 ((0, 0, 0))
+           1018 LOAD_CONST               3 (4)
+           1020 LOAD_GLOBAL              6 (cv2)
+           1030 LOAD_ATTR               24 (LINE_AA)
+           1050 CALL                     8
+           1058 POP_TOP
+
+ 37        1060 LOAD_GLOBAL              7 (NULL + cv2)
+           1070 LOAD_ATTR               26 (putText)
+           1090 LOAD_FAST                5 (img)
+           1092 LOAD_FAST               15 (label)
+           1094 LOAD_FAST               16 (org)
+           1096 LOAD_GLOBAL              6 (cv2)
+           1106 LOAD_ATTR               28 (FONT_HERSHEY_SIMPLEX)
+           1126 LOAD_FAST               12 (scale)
+           1128 LOAD_CONST              16 ((255, 255, 255))
+           1130 LOAD_CONST               4 (1)
+           1132 LOAD_GLOBAL              6 (cv2)
+           1142 LOAD_ATTR               24 (LINE_AA)
+           1162 CALL                     8
+           1170 POP_TOP
+           1172 JUMP_BACKWARD          186 (to 802)
+
+ 33     >> 1174 END_FOR
+           1176 JUMP_BACKWARD          202 (to 774)
+
+ 32     >> 1178 END_FOR
+
+ 38        1180 LOAD_GLOBAL             13 (NULL + int)
+           1190 LOAD_FAST                2 (jpeg_quality)
+           1192 CALL                     1
+           1200 STORE_FAST              17 (q)
+
+ 39        1202 NOP
+
+ 40     >> 1204 LOAD_GLOBAL              7 (NULL + cv2)
+           1214 LOAD_ATTR               30 (imencode)
+           1234 LOAD_CONST              17 ('.jpg')
+           1236 LOAD_FAST                5 (img)
+           1238 LOAD_GLOBAL             13 (NULL + int)
+           1248 LOAD_GLOBAL              6 (cv2)
+           1258 LOAD_ATTR               32 (IMWRITE_JPEG_QUALITY)
+           1278 CALL                     1
+           1286 LOAD_FAST               17 (q)
+           1288 BUILD_LIST               2
+           1290 CALL                     3
+           1298 UNPACK_SEQUENCE          2
+           1302 STORE_FAST              18 (ok)
+           1304 STORE_FAST              19 (buf)
+
+ 41        1306 LOAD_FAST               18 (ok)
+           1308 POP_JUMP_IF_TRUE        11 (to 1332)
+
+ 42        1310 LOAD_GLOBAL              5 (NULL + ValueError)
+           1320 LOAD_CONST              18 ('encode failed')
+           1322 CALL                     1
+           1330 RAISE_VARARGS            1
+
+ 43     >> 1332 LOAD_GLOBAL             35 (NULL + len)
+           1342 LOAD_FAST               19 (buf)
+           1344 CALL                     1
+           1352 LOAD_GLOBAL             36 (MAX_BYTES)
+           1362 COMPARE_OP              26 (<=)
+           1366 POP_JUMP_IF_TRUE         5 (to 1378)
+           1368 LOAD_FAST               17 (q)
+           1370 LOAD_CONST              19 (25)
+           1372 COMPARE_OP              26 (<=)
+           1376 POP_JUMP_IF_FALSE       16 (to 1410)
+
+ 44     >> 1378 LOAD_FAST               19 (buf)
+           1380 LOAD_ATTR               39 (NULL|self + tobytes)
+           1400 CALL                     0
+           1408 RETURN_VALUE
+
+ 45     >> 1410 LOAD_FAST               17 (q)
+           1412 LOAD_CONST              20 (10)
+           1414 BINARY_OP               23 (-=)
+           1418 STORE_FAST              17 (q)
+
+ 39        1420 JUMP_BACKWARD          109 (to 1204)
+
+Disassembly of <code object grid_b64 at 0x7f6aed1c4f30, file "rescue_grid.py", line 48>:
+ 48           0 RESUME                   0
+
+ 49           2 NOP
+
+ 50           4 NOP
+
+ 51           6 LOAD_GLOBAL              1 (NULL + base64)
+             16 LOAD_ATTR                2 (b64encode)
+             36 LOAD_GLOBAL              5 (NULL + render_rescue_grid)
+             46 LOAD_FAST                0 (frame)
+             48 CALL                     1
+             56 CALL                     1
+             64 LOAD_ATTR                7 (NULL|self + decode)
+             84 LOAD_CONST               1 ('ascii')
+             86 CALL                     1
+             94 RETURN_VALUE
+        >>   96 PUSH_EXC_INFO
+
+ 52          98 LOAD_GLOBAL              8 (Exception)
+            108 CHECK_EXC_MATCH
+            110 POP_JUMP_IF_FALSE        3 (to 118)
+            112 POP_TOP
+
+ 53         114 POP_EXCEPT
+            116 RETURN_CONST             0 (None)
+
+ 52     >>  118 RERAISE                  0
+        >>  120 COPY                     3
+            122 POP_EXCEPT
+            124 RERAISE                  1
+ExceptionTable:
+  6 to 92 -> 96 [0]
+  96 to 112 -> 120 [1] lasti
+  118 to 118 -> 120 [1] lasti

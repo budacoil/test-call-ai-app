@@ -1,0 +1,575 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+ 11           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (('List', 'Tuple'))
+              8 IMPORT_NAME              0 (typing)
+             10 IMPORT_FROM              1 (List)
+             12 STORE_NAME               1 (List)
+             14 IMPORT_FROM              2 (Tuple)
+             16 STORE_NAME               2 (Tuple)
+             18 POP_TOP
+
+ 13          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               2 (None)
+             24 IMPORT_NAME              3 (cv2)
+             26 STORE_NAME               3 (cv2)
+
+ 14          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               2 (None)
+             32 IMPORT_NAME              4 (numpy)
+             34 STORE_NAME               5 (np)
+
+ 16          36 LOAD_CONST               3 ((0.0, 0.58, 0.22, 0.985))
+             38 STORE_NAME               6 (ROI)
+
+ 17          40 LOAD_CONST               4 (0.025)
+             42 STORE_NAME               7 (MIN_W)
+
+ 18          44 LOAD_CONST               5 (0.0095)
+             46 STORE_NAME               8 (MAX_H)
+
+ 19          48 LOAD_CONST               6 (10.0)
+             50 STORE_NAME               9 (MIN_ASPECT)
+
+ 20          52 LOAD_CONST               7 (0.016)
+             54 STORE_NAME              10 (ROW_GAP)
+
+ 21          56 LOAD_CONST               8 (0.035)
+             58 STORE_NAME              11 (X_TOL)
+
+ 22          60 LOAD_CONST               9 ((34, 56))
+             62 STORE_NAME              12 (HUE)
+
+ 23          64 LOAD_CONST              10 ((150, 160))
+             66 UNPACK_SEQUENCE          2
+             70 STORE_NAME              13 (MIN_SAT)
+             72 STORE_NAME              14 (MIN_VAL)
+
+ 24          74 LOAD_CONST              11 (10)
+             76 STORE_NAME              15 (FLAT)
+
+ 27          78 LOAD_CONST              12 ('frame')
+             80 LOAD_NAME                5 (np)
+             82 LOAD_ATTR               32 (ndarray)
+            102 LOAD_CONST              13 ('return')
+            104 LOAD_NAME                1 (List)
+            106 LOAD_NAME                2 (Tuple)
+            108 LOAD_NAME               17 (float)
+            110 LOAD_NAME               17 (float)
+            112 BUILD_TUPLE              2
+            114 BINARY_SUBSCR
+            118 BINARY_SUBSCR
+            122 BUILD_TUPLE              4
+            124 LOAD_CONST              14 (<code object _bars at 0x17a93ea0, file "squad_bar.py", line 27>)
+            126 MAKE_FUNCTION            4 (annotations)
+            128 STORE_NAME              18 (_bars)
+
+ 50         130 LOAD_CONST              12 ('frame')
+            132 LOAD_NAME                5 (np)
+            134 LOAD_ATTR               32 (ndarray)
+            154 LOAD_CONST              13 ('return')
+            156 LOAD_NAME               19 (int)
+            158 BUILD_TUPLE              4
+            160 LOAD_CONST              15 (<code object count_teammates at 0x7f6af1de7df0, file "squad_bar.py", line 50>)
+            162 MAKE_FUNCTION            4 (annotations)
+            164 STORE_NAME              20 (count_teammates)
+
+ 69         166 LOAD_CONST              12 ('frame')
+            168 LOAD_NAME                5 (np)
+            170 LOAD_ATTR               32 (ndarray)
+            190 LOAD_CONST              13 ('return')
+            192 LOAD_NAME               19 (int)
+            194 BUILD_TUPLE              4
+            196 LOAD_CONST              16 (<code object squad_size at 0x7f6aed8064f0, file "squad_bar.py", line 69>)
+            198 MAKE_FUNCTION            4 (annotations)
+            200 STORE_NAME              21 (squad_size)
+            202 RETURN_CONST             2 (None)
+
+Disassembly of <code object _bars at 0x17a93ea0, file "squad_bar.py", line 27>:
+ 27           0 RESUME                   0
+
+ 28           2 NOP
+
+ 29           4 LOAD_FAST                0 (frame)
+              6 LOAD_ATTR                0 (shape)
+             26 LOAD_CONST               0 (None)
+             28 LOAD_CONST               1 (2)
+             30 BINARY_SLICE
+             32 UNPACK_SEQUENCE          2
+             36 STORE_FAST               1 (h)
+             38 STORE_FAST               2 (w)
+
+ 30          40 LOAD_GLOBAL              3 (NULL + int)
+             50 LOAD_GLOBAL              4 (ROI)
+             60 LOAD_CONST               2 (0)
+             62 BINARY_SUBSCR
+             66 LOAD_FAST                2 (w)
+             68 BINARY_OP                5 (*)
+             72 CALL                     1
+             80 LOAD_GLOBAL              3 (NULL + int)
+             90 LOAD_GLOBAL              4 (ROI)
+            100 LOAD_CONST               3 (1)
+            102 BINARY_SUBSCR
+            106 LOAD_FAST                1 (h)
+            108 BINARY_OP                5 (*)
+            112 CALL                     1
+            120 LOAD_GLOBAL              3 (NULL + int)
+            130 LOAD_GLOBAL              4 (ROI)
+            140 LOAD_CONST               1 (2)
+            142 BINARY_SUBSCR
+            146 LOAD_FAST                2 (w)
+            148 BINARY_OP                5 (*)
+            152 CALL                     1
+            160 LOAD_GLOBAL              3 (NULL + int)
+            170 LOAD_GLOBAL              4 (ROI)
+            180 LOAD_CONST               4 (3)
+            182 BINARY_SUBSCR
+            186 LOAD_FAST                1 (h)
+            188 BINARY_OP                5 (*)
+            192 CALL                     1
+            200 BUILD_TUPLE              4
+            202 UNPACK_SEQUENCE          4
+            206 STORE_FAST               3 (x0)
+            208 STORE_FAST               4 (y0)
+            210 STORE_FAST               5 (x1)
+            212 STORE_FAST               6 (y1)
+
+ 31         214 LOAD_FAST                0 (frame)
+            216 LOAD_FAST                4 (y0)
+            218 LOAD_FAST                6 (y1)
+            220 BUILD_SLICE              2
+            222 LOAD_FAST                3 (x0)
+            224 LOAD_FAST                5 (x1)
+            226 BUILD_SLICE              2
+            228 BUILD_TUPLE              2
+            230 BINARY_SUBSCR
+            234 STORE_FAST               7 (crop)
+
+ 32         236 LOAD_FAST                7 (crop)
+            238 LOAD_ATTR                6 (size)
+            258 LOAD_CONST               2 (0)
+            260 COMPARE_OP              40 (==)
+            264 POP_JUMP_IF_FALSE        2 (to 270)
+
+ 33         266 BUILD_LIST               0
+            268 RETURN_VALUE
+
+ 34     >>  270 LOAD_GLOBAL              9 (NULL + cv2)
+            280 LOAD_ATTR               10 (cvtColor)
+            300 LOAD_FAST                7 (crop)
+            302 LOAD_GLOBAL              8 (cv2)
+            312 LOAD_ATTR               12 (COLOR_BGR2HSV)
+            332 CALL                     2
+            340 STORE_FAST               8 (hsv)
+
+ 35         342 LOAD_GLOBAL              9 (NULL + cv2)
+            352 LOAD_ATTR               14 (inRange)
+            372 LOAD_FAST                8 (hsv)
+            374 LOAD_GLOBAL             16 (HUE)
+            384 LOAD_CONST               2 (0)
+            386 BINARY_SUBSCR
+            390 LOAD_GLOBAL             18 (MIN_SAT)
+            400 LOAD_GLOBAL             20 (MIN_VAL)
+            410 BUILD_TUPLE              3
+            412 LOAD_GLOBAL             16 (HUE)
+            422 LOAD_CONST               3 (1)
+            424 BINARY_SUBSCR
+            428 LOAD_CONST               5 (255)
+            430 LOAD_CONST               5 (255)
+            432 BUILD_TUPLE              3
+            434 CALL                     3
+            442 LOAD_CONST               2 (0)
+            444 COMPARE_OP              68 (>)
+            448 STORE_FAST               9 (mask)
+
+ 36         450 LOAD_FAST                7 (crop)
+            452 LOAD_ATTR               23 (NULL|self + astype)
+            472 LOAD_GLOBAL             24 (np)
+            482 LOAD_ATTR               26 (int16)
+            502 CALL                     1
+            510 STORE_FAST              10 (ci)
+
+ 37         512 LOAD_GLOBAL             25 (NULL + np)
+            522 LOAD_ATTR               28 (pad)
+            542 LOAD_GLOBAL             25 (NULL + np)
+            552 LOAD_ATTR               30 (abs)
+            572 LOAD_FAST               10 (ci)
+            574 LOAD_CONST               0 (None)
+            576 LOAD_CONST               0 (None)
+            578 BUILD_SLICE              2
+            580 LOAD_CONST               3 (1)
+            582 LOAD_CONST               0 (None)
+            584 BUILD_SLICE              2
+            586 BUILD_TUPLE              2
+            588 BINARY_SUBSCR
+            592 LOAD_FAST               10 (ci)
+            594 LOAD_CONST               0 (None)
+            596 LOAD_CONST               0 (None)
+            598 BUILD_SLICE              2
+            600 LOAD_CONST               0 (None)
+            602 LOAD_CONST               6 (-1)
+            604 BUILD_SLICE              2
+            606 BUILD_TUPLE              2
+            608 BINARY_SUBSCR
+            612 BINARY_OP               10 (-)
+            616 CALL                     1
+            624 LOAD_ATTR               33 (NULL|self + max)
+            644 LOAD_CONST               1 (2)
+            646 KW_NAMES                 7 (('axis',))
+            648 CALL                     1
+            656 LOAD_GLOBAL             34 (FLAT)
+            666 COMPARE_OP              26 (<=)
+            670 LOAD_CONST               8 (((0, 0), (0, 1)))
+            672 CALL                     2
+            680 STORE_FAST              11 (flat)
+
+ 38         682 LOAD_FAST                9 (mask)
+            684 LOAD_FAST               11 (flat)
+            686 BINARY_OP                1 (&)
+            690 LOAD_ATTR               23 (NULL|self + astype)
+            710 LOAD_GLOBAL             24 (np)
+            720 LOAD_ATTR               36 (uint8)
+            740 CALL                     1
+            748 LOAD_CONST               5 (255)
+            750 BINARY_OP                5 (*)
+            754 STORE_FAST              12 (m)
+
+ 39         756 LOAD_GLOBAL              9 (NULL + cv2)
+            766 LOAD_ATTR               38 (morphologyEx)
+            786 LOAD_FAST               12 (m)
+            788 LOAD_GLOBAL              8 (cv2)
+            798 LOAD_ATTR               40 (MORPH_CLOSE)
+            818 LOAD_GLOBAL              9 (NULL + cv2)
+            828 LOAD_ATTR               42 (getStructuringElement)
+            848 LOAD_GLOBAL              8 (cv2)
+            858 LOAD_ATTR               44 (MORPH_RECT)
+            878 LOAD_GLOBAL             33 (NULL + max)
+            888 LOAD_CONST               4 (3)
+            890 LOAD_GLOBAL              3 (NULL + int)
+            900 LOAD_CONST               9 (0.004)
+            902 LOAD_FAST                2 (w)
+            904 BINARY_OP                5 (*)
+            908 CALL                     1
+            916 CALL                     2
+            924 LOAD_CONST               3 (1)
+            926 BINARY_OP                7 (|)
+            930 LOAD_CONST               3 (1)
+            932 BUILD_TUPLE              2
+            934 CALL                     2
+            942 CALL                     3
+            950 STORE_FAST              12 (m)
+
+ 40         952 LOAD_GLOBAL              9 (NULL + cv2)
+            962 LOAD_ATTR               38 (morphologyEx)
+            982 LOAD_FAST               12 (m)
+            984 LOAD_GLOBAL              8 (cv2)
+            994 LOAD_ATTR               46 (MORPH_OPEN)
+           1014 LOAD_GLOBAL              9 (NULL + cv2)
+           1024 LOAD_ATTR               42 (getStructuringElement)
+           1044 LOAD_GLOBAL              8 (cv2)
+           1054 LOAD_ATTR               44 (MORPH_RECT)
+           1074 LOAD_GLOBAL             33 (NULL + max)
+           1084 LOAD_CONST              10 (5)
+           1086 LOAD_GLOBAL              3 (NULL + int)
+           1096 LOAD_CONST              11 (0.02)
+           1098 LOAD_FAST                2 (w)
+           1100 BINARY_OP                5 (*)
+           1104 CALL                     1
+           1112 CALL                     2
+           1120 LOAD_CONST               3 (1)
+           1122 BUILD_TUPLE              2
+           1124 CALL                     2
+           1132 CALL                     3
+           1140 STORE_FAST              12 (m)
+
+ 41        1142 LOAD_GLOBAL              9 (NULL + cv2)
+           1152 LOAD_ATTR               48 (connectedComponentsWithStats)
+           1172 LOAD_FAST               12 (m)
+           1174 LOAD_CONST              12 (8)
+           1176 KW_NAMES                13 (('connectivity',))
+           1178 CALL                     2
+           1186 UNPACK_SEQUENCE          4
+           1190 STORE_FAST              13 (n)
+           1192 STORE_FAST              14 (_lab)
+           1194 STORE_FAST              15 (stats)
+           1196 STORE_FAST              16 (cent)
+
+ 42        1198 BUILD_LIST               0
+           1200 STORE_FAST              17 (found)
+
+ 43        1202 LOAD_GLOBAL             51 (NULL + range)
+           1212 LOAD_CONST               3 (1)
+           1214 LOAD_FAST               13 (n)
+           1216 CALL                     2
+           1224 GET_ITER
+        >> 1226 FOR_ITER               177 (to 1584)
+           1230 STORE_FAST              18 (i)
+
+ 44        1232 LOAD_GLOBAL              3 (NULL + int)
+           1242 LOAD_FAST               15 (stats)
+           1244 LOAD_FAST               18 (i)
+           1246 LOAD_GLOBAL              8 (cv2)
+           1256 LOAD_ATTR               52 (CC_STAT_WIDTH)
+           1276 BUILD_TUPLE              2
+           1278 BINARY_SUBSCR
+           1282 CALL                     1
+           1290 LOAD_GLOBAL             33 (NULL + max)
+           1300 LOAD_CONST               3 (1)
+           1302 LOAD_GLOBAL              3 (NULL + int)
+           1312 LOAD_FAST               15 (stats)
+           1314 LOAD_FAST               18 (i)
+           1316 LOAD_GLOBAL              8 (cv2)
+           1326 LOAD_ATTR               54 (CC_STAT_HEIGHT)
+           1346 BUILD_TUPLE              2
+           1348 BINARY_SUBSCR
+           1352 CALL                     1
+           1360 CALL                     2
+           1368 STORE_FAST              20 (bh)
+           1370 STORE_FAST              19 (bw)
+
+ 45        1372 LOAD_FAST               19 (bw)
+           1374 LOAD_GLOBAL             56 (MIN_W)
+           1384 LOAD_FAST                2 (w)
+           1386 BINARY_OP                5 (*)
+           1390 COMPARE_OP              92 (>=)
+           1394 POP_JUMP_IF_TRUE         1 (to 1398)
+           1396 JUMP_BACKWARD           86 (to 1226)
+        >> 1398 LOAD_FAST               20 (bh)
+           1400 LOAD_GLOBAL             33 (NULL + max)
+           1410 LOAD_CONST              14 (2.0)
+           1412 LOAD_GLOBAL             58 (MAX_H)
+           1422 LOAD_FAST                1 (h)
+           1424 BINARY_OP                5 (*)
+           1428 CALL                     2
+           1436 COMPARE_OP              26 (<=)
+           1440 POP_JUMP_IF_TRUE         1 (to 1444)
+           1442 JUMP_BACKWARD          109 (to 1226)
+        >> 1444 LOAD_FAST               19 (bw)
+           1446 LOAD_FAST               20 (bh)
+           1448 BINARY_OP               11 (/)
+           1452 LOAD_GLOBAL             60 (MIN_ASPECT)
+           1462 COMPARE_OP              92 (>=)
+           1466 POP_JUMP_IF_TRUE         1 (to 1470)
+           1468 JUMP_BACKWARD          122 (to 1226)
+
+ 46     >> 1470 LOAD_FAST               17 (found)
+           1472 LOAD_ATTR               63 (NULL|self + append)
+           1492 LOAD_FAST               16 (cent)
+           1494 LOAD_FAST               18 (i)
+           1496 BINARY_SUBSCR
+           1500 LOAD_CONST               3 (1)
+           1502 BINARY_SUBSCR
+           1506 LOAD_FAST                4 (y0)
+           1508 BINARY_OP                0 (+)
+           1512 LOAD_FAST                1 (h)
+           1514 BINARY_OP               11 (/)
+           1518 LOAD_FAST               15 (stats)
+           1520 LOAD_FAST               18 (i)
+           1522 LOAD_GLOBAL              8 (cv2)
+           1532 LOAD_ATTR               64 (CC_STAT_LEFT)
+           1552 BUILD_TUPLE              2
+           1554 BINARY_SUBSCR
+           1558 LOAD_FAST                3 (x0)
+           1560 BINARY_OP                0 (+)
+           1564 LOAD_FAST                2 (w)
+           1566 BINARY_OP               11 (/)
+           1570 BUILD_TUPLE              2
+           1572 CALL                     1
+           1580 POP_TOP
+           1582 JUMP_BACKWARD          179 (to 1226)
+
+ 43     >> 1584 END_FOR
+
+ 47        1586 LOAD_FAST               17 (found)
+           1588 RETURN_VALUE
+
+Disassembly of <code object count_teammates at 0x7f6af1de7df0, file "squad_bar.py", line 50>:
+              0 MAKE_CELL                5 (bars)
+              2 MAKE_CELL                6 (best)
+
+ 50           4 RESUME                   0
+
+ 51           6 NOP
+
+ 52           8 NOP
+
+ 53          10 LOAD_GLOBAL              1 (NULL + _bars)
+             20 LOAD_FAST                0 (frame)
+             22 CALL                     1
+             30 STORE_DEREF              5 (bars)
+
+ 54          32 LOAD_DEREF               5 (bars)
+             34 POP_JUMP_IF_TRUE         1 (to 38)
+
+ 55          36 RETURN_CONST             1 (0)
+
+ 57     >>   38 LOAD_GLOBAL              3 (NULL + max)
+             48 LOAD_DEREF               5 (bars)
+             50 LOAD_CLOSURE             5 (bars)
+             52 BUILD_TUPLE              1
+             54 LOAD_CONST               2 (<code object <lambda> at 0x7f6aed17ea60, file "squad_bar.py", line 57>)
+             56 MAKE_FUNCTION            8 (closure)
+             58 KW_NAMES                 3 (('key',))
+             60 CALL                     2
+             68 STORE_DEREF              6 (best)
+
+ 58          70 LOAD_GLOBAL              5 (NULL + sorted)
+             80 LOAD_CLOSURE             6 (best)
+             82 BUILD_TUPLE              1
+             84 LOAD_CONST               4 (<code object <genexpr> at 0x7f6aed7e4db0, file "squad_bar.py", line 58>)
+             86 MAKE_FUNCTION            8 (closure)
+             88 LOAD_DEREF               5 (bars)
+             90 GET_ITER
+             92 CALL                     0
+            100 CALL                     1
+            108 STORE_FAST               1 (ys)
+
+ 59         110 LOAD_CONST               5 ((0, None))
+            112 UNPACK_SEQUENCE          2
+            116 STORE_FAST               2 (rows)
+            118 STORE_FAST               3 (last)
+
+ 60         120 LOAD_FAST                1 (ys)
+            122 GET_ITER
+        >>  124 FOR_ITER                23 (to 174)
+            128 STORE_FAST               4 (cy)
+
+ 61         130 LOAD_FAST                3 (last)
+            132 POP_JUMP_IF_NONE        12 (to 158)
+            134 LOAD_FAST                4 (cy)
+            136 LOAD_FAST                3 (last)
+            138 BINARY_OP               10 (-)
+            142 LOAD_GLOBAL              6 (ROW_GAP)
+            152 COMPARE_OP              68 (>)
+            156 POP_JUMP_IF_FALSE        5 (to 168)
+
+ 62     >>  158 LOAD_FAST                2 (rows)
+            160 LOAD_CONST               6 (1)
+            162 BINARY_OP               13 (+=)
+            166 STORE_FAST               2 (rows)
+
+ 63     >>  168 LOAD_FAST                4 (cy)
+            170 STORE_FAST               3 (last)
+            172 JUMP_BACKWARD           25 (to 124)
+
+ 60     >>  174 END_FOR
+
+ 64         176 LOAD_FAST                2 (rows)
+            178 RETURN_VALUE
+        >>  180 PUSH_EXC_INFO
+
+ 65         182 LOAD_GLOBAL              8 (Exception)
+            192 CHECK_EXC_MATCH
+            194 POP_JUMP_IF_FALSE        3 (to 202)
+            196 POP_TOP
+
+ 66         198 POP_EXCEPT
+            200 RETURN_CONST             1 (0)
+
+ 65     >>  202 RERAISE                  0
+        >>  204 COPY                     3
+            206 POP_EXCEPT
+            208 RERAISE                  1
+ExceptionTable:
+  10 to 34 -> 180 [0]
+  38 to 176 -> 180 [0]
+  180 to 196 -> 204 [1] lasti
+  202 to 202 -> 204 [1] lasti
+
+Disassembly of <code object <lambda> at 0x7f6aed17ea60, file "squad_bar.py", line 57>:
+              0 COPY_FREE_VARS           1
+              2 MAKE_CELL                0 (b)
+
+ 57           4 RESUME                   0
+              6 LOAD_GLOBAL              1 (NULL + sum)
+             16 LOAD_CLOSURE             0 (b)
+             18 BUILD_TUPLE              1
+             20 LOAD_CONST               1 (<code object <genexpr> at 0x7f6aed7e58f0, file "squad_bar.py", line 57>)
+             22 MAKE_FUNCTION            8 (closure)
+             24 LOAD_DEREF               1 (bars)
+             26 GET_ITER
+             28 CALL                     0
+             36 CALL                     1
+             44 RETURN_VALUE
+
+Disassembly of <code object <genexpr> at 0x7f6aed7e58f0, file "squad_bar.py", line 57>:
+              0 COPY_FREE_VARS           1
+
+ 57           2 RETURN_GENERATOR
+              4 POP_TOP
+              6 RESUME                   0
+              8 LOAD_FAST                0 (.0)
+        >>   10 FOR_ITER                31 (to 76)
+             14 STORE_FAST               1 (o)
+             16 LOAD_GLOBAL              1 (NULL + abs)
+             26 LOAD_FAST                1 (o)
+             28 LOAD_CONST               0 (1)
+             30 BINARY_SUBSCR
+             34 LOAD_DEREF               2 (b)
+             36 LOAD_CONST               0 (1)
+             38 BINARY_SUBSCR
+             42 BINARY_OP               10 (-)
+             46 CALL                     1
+             54 LOAD_GLOBAL              2 (X_TOL)
+             64 COMPARE_OP              26 (<=)
+             68 YIELD_VALUE              1
+             70 RESUME                   1
+             72 POP_TOP
+             74 JUMP_BACKWARD           33 (to 10)
+        >>   76 END_FOR
+             78 RETURN_CONST             1 (None)
+        >>   80 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             82 RERAISE                  1
+ExceptionTable:
+  6 to 78 -> 80 [0] lasti
+
+Disassembly of <code object <genexpr> at 0x7f6aed7e4db0, file "squad_bar.py", line 58>:
+              0 COPY_FREE_VARS           1
+
+ 58           2 RETURN_GENERATOR
+              4 POP_TOP
+              6 RESUME                   0
+              8 LOAD_FAST                0 (.0)
+        >>   10 FOR_ITER                37 (to 88)
+             14 STORE_FAST               1 (b)
+             16 LOAD_GLOBAL              1 (NULL + abs)
+             26 LOAD_FAST                1 (b)
+             28 LOAD_CONST               0 (1)
+             30 BINARY_SUBSCR
+             34 LOAD_DEREF               2 (best)
+             36 LOAD_CONST               0 (1)
+             38 BINARY_SUBSCR
+             42 BINARY_OP               10 (-)
+             46 CALL                     1
+             54 LOAD_GLOBAL              2 (X_TOL)
+             64 COMPARE_OP              26 (<=)
+             68 POP_JUMP_IF_TRUE         1 (to 72)
+             70 JUMP_BACKWARD           31 (to 10)
+        >>   72 LOAD_FAST                1 (b)
+             74 LOAD_CONST               1 (0)
+             76 BINARY_SUBSCR
+             80 YIELD_VALUE              1
+             82 RESUME                   1
+             84 POP_TOP
+             86 JUMP_BACKWARD           39 (to 10)
+        >>   88 END_FOR
+             90 RETURN_CONST             2 (None)
+        >>   92 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             94 RERAISE                  1
+ExceptionTable:
+  6 to 68 -> 92 [0] lasti
+  72 to 90 -> 92 [0] lasti
+
+Disassembly of <code object squad_size at 0x7f6aed8064f0, file "squad_bar.py", line 69>:
+ 69           0 RESUME                   0
+
+ 70           2 NOP
+
+ 71           4 LOAD_CONST               1 (1)
+              6 LOAD_GLOBAL              1 (NULL + count_teammates)
+             16 LOAD_FAST                0 (frame)
+             18 CALL                     1
+             26 BINARY_OP                0 (+)
+             30 RETURN_VALUE

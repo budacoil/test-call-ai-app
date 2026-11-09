@@ -1,0 +1,1719 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+ 12           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (math)
+             10 STORE_NAME               0 (math)
+
+ 13          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (random)
+             18 STORE_NAME               1 (random)
+
+ 14          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              2 (time)
+             26 STORE_NAME               2 (time)
+
+ 15          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               2 (('Callable', 'Optional', 'Tuple'))
+             32 IMPORT_NAME              3 (typing)
+             34 IMPORT_FROM              4 (Callable)
+             36 STORE_NAME               4 (Callable)
+             38 IMPORT_FROM              5 (Optional)
+             40 STORE_NAME               5 (Optional)
+             42 IMPORT_FROM              6 (Tuple)
+             44 STORE_NAME               6 (Tuple)
+             46 POP_TOP
+
+ 17          48 LOAD_CONST               3 ((0.65, 1.45))
+             50 UNPACK_SEQUENCE          2
+             54 STORE_NAME               7 (LO)
+             56 STORE_NAME               8 (HI)
+
+ 18          58 LOAD_CONST               4 (0.2)
+             60 STORE_NAME               9 (SIDE_TAP_CHANCE)
+
+ 19          62 LOAD_CONST               5 ((0.2, 0.5))
+             64 STORE_NAME              10 (SIDE_TAP_S)
+
+ 20          66 LOAD_CONST               6 (0.3)
+             68 STORE_NAME              11 (MIN_HOLD_S)
+
+ 21          70 LOAD_CONST               7 ((90.0, 120.0))
+             72 STORE_NAME              12 (BREAK_EVERY_MIN)
+
+ 22          74 LOAD_CONST               8 ((120.0, 240.0))
+             76 STORE_NAME              13 (BREAK_LENGTH_S)
+
+ 23          78 LOAD_CONST               9 (('SEARCHING_PLAY', 'B:LOBBY'))
+             80 STORE_NAME              14 (LOBBY_STATES)
+
+ 26          82 LOAD_CONST              10 ((('A', 50), ('B', 20), ('C', 15), ('D', 15)))
+             84 STORE_NAME              15 (PATTERNS)
+
+ 27          86 LOAD_CONST              11 ((180, 35))
+             88 UNPACK_SEQUENCE          2
+             92 STORE_NAME              16 (LOOK_H)
+             94 STORE_NAME              17 (LOOK_V)
+
+ 28          96 LOAD_CONST              12 (40)
+             98 STORE_NAME              18 (PITCH_LIMIT)
+
+ 29         100 LOAD_CONST              13 ((4.0, 12))
+            102 UNPACK_SEQUENCE          2
+            106 STORE_NAME              19 (CLICK_SIGMA)
+            108 STORE_NAME              20 (CLICK_CLAMP)
+
+ 30         110 LOAD_CONST              14 ((0.055, 0.135))
+            112 STORE_NAME              21 (CLICK_HOLD_S)
+
+ 31         114 LOAD_CONST              15 ((15.0, 30.0))
+            116 STORE_NAME              22 (SESSION_PERIOD_MIN)
+
+ 34         118 LOAD_CONST              16 (('a', 'd'))
+            120 LOAD_CONST              16 (('a', 'd'))
+            122 LOAD_CONST              17 (('w', 's'))
+            124 LOAD_CONST              17 (('w', 's'))
+            126 LOAD_CONST              18 (('w', 's', 'a', 'd'))
+            128 BUILD_CONST_KEY_MAP      4
+            130 STORE_NAME              23 (SIDE_KEYS)
+
+ 37         132 LOAD_NAME               19 (CLICK_SIGMA)
+            134 LOAD_NAME               20 (CLICK_CLAMP)
+            136 BUILD_TUPLE              2
+            138 LOAD_CONST              19 ('rng')
+            140 LOAD_NAME                1 (random)
+            142 LOAD_ATTR               48 (Random)
+            162 LOAD_CONST              20 ('sigma')
+            164 LOAD_NAME               25 (float)
+            166 LOAD_CONST              21 ('clamp')
+            168 LOAD_NAME               26 (int)
+            170 LOAD_CONST              22 ('return')
+            172 LOAD_NAME               26 (int)
+            174 BUILD_TUPLE              8
+            176 LOAD_CONST              23 (<code object gauss_offset at 0x7f6af1f3f870, file "humanizer.py", line 37>)
+            178 MAKE_FUNCTION            5 (defaults, annotations)
+            180 STORE_NAME              27 (gauss_offset)
+
+ 42         182 LOAD_NAME               21 (CLICK_HOLD_S)
+            184 LOAD_CONST               0 (0)
+            186 BINARY_SUBSCR
+            190 LOAD_NAME               21 (CLICK_HOLD_S)
+            192 LOAD_CONST              24 (1)
+            194 BINARY_SUBSCR
+            198 BUILD_TUPLE              2
+            200 LOAD_CONST              19 ('rng')
+            202 LOAD_NAME                1 (random)
+            204 LOAD_ATTR               48 (Random)
+            224 LOAD_CONST              25 ('lo')
+            226 LOAD_NAME               25 (float)
+            228 LOAD_CONST              26 ('hi')
+            230 LOAD_NAME               25 (float)
+            232 LOAD_CONST              22 ('return')
+            234 LOAD_NAME               25 (float)
+            236 BUILD_TUPLE              8
+            238 LOAD_CONST              27 (<code object click_hold at 0x7f6af20bb480, file "humanizer.py", line 42>)
+            240 MAKE_FUNCTION            5 (defaults, annotations)
+            242 STORE_NAME              28 (click_hold)
+
+ 49         244 LOAD_CONST              28 ('n')
+            246 LOAD_NAME               26 (int)
+            248 LOAD_CONST              19 ('rng')
+            250 LOAD_NAME                1 (random)
+            252 LOAD_ATTR               48 (Random)
+            272 BUILD_TUPLE              4
+            274 LOAD_CONST              29 (<code object bezier_points at 0x17a66dd0, file "humanizer.py", line 49>)
+            276 MAKE_FUNCTION            4 (annotations)
+            278 STORE_NAME              29 (bezier_points)
+
+ 63         280 LOAD_CONST              30 ('t')
+            282 LOAD_NAME               25 (float)
+            284 LOAD_CONST              22 ('return')
+            286 LOAD_NAME               25 (float)
+            288 BUILD_TUPLE              4
+            290 LOAD_CONST              31 (<code object _ease at 0x7f6aed805450, file "humanizer.py", line 63>)
+            292 MAKE_FUNCTION            4 (annotations)
+            294 STORE_NAME              30 (_ease)
+
+ 67         296 LOAD_CONST              32 ('dx')
+            298 LOAD_NAME               26 (int)
+            300 LOAD_CONST              33 ('dy')
+            302 LOAD_NAME               26 (int)
+            304 LOAD_CONST              34 ('duration_ms')
+            306 LOAD_NAME               26 (int)
+            308 LOAD_CONST              19 ('rng')
+            310 LOAD_NAME                1 (random)
+            312 LOAD_ATTR               48 (Random)
+            332 BUILD_TUPLE              8
+            334 LOAD_CONST              35 (<code object camera_steps at 0x17a77630, file "humanizer.py", line 67>)
+            336 MAKE_FUNCTION            4 (annotations)
+            338 STORE_NAME              31 (camera_steps)
+
+ 93         340 PUSH_NULL
+            342 LOAD_BUILD_CLASS
+            344 LOAD_CONST              36 (<code object PitchBalance at 0x7f6aed7fcad0, file "humanizer.py", line 93>)
+            346 MAKE_FUNCTION            0
+            348 LOAD_CONST              37 ('PitchBalance')
+            350 CALL                     2
+            358 STORE_NAME              32 (PitchBalance)
+
+115         360 LOAD_CONST              48 ((False,))
+            362 LOAD_CONST              19 ('rng')
+            364 LOAD_NAME                1 (random)
+            366 LOAD_ATTR               48 (Random)
+            386 LOAD_CONST              38 ('relaxed')
+            388 LOAD_NAME               33 (bool)
+            390 LOAD_CONST              22 ('return')
+            392 LOAD_NAME               34 (str)
+            394 BUILD_TUPLE              6
+            396 LOAD_CONST              39 (<code object pick_pattern at 0x7f6aed800c70, file "humanizer.py", line 115>)
+            398 MAKE_FUNCTION            5 (defaults, annotations)
+            400 STORE_NAME              35 (pick_pattern)
+
+128         402 PUSH_NULL
+            404 LOAD_BUILD_CLASS
+            406 LOAD_CONST              40 (<code object SessionDrift at 0x7f6af1f3de30, file "humanizer.py", line 128>)
+            408 MAKE_FUNCTION            0
+            410 LOAD_CONST              41 ('SessionDrift')
+            412 CALL                     2
+            420 STORE_NAME              36 (SessionDrift)
+
+151         422 PUSH_NULL
+            424 LOAD_BUILD_CLASS
+            426 LOAD_CONST              42 (<code object PinkNoise at 0x7f6aed7fd130, file "humanizer.py", line 151>)
+            428 MAKE_FUNCTION            0
+            430 LOAD_CONST              43 ('PinkNoise')
+            432 CALL                     2
+            440 STORE_NAME              37 (PinkNoise)
+
+170         442 PUSH_NULL
+            444 LOAD_BUILD_CLASS
+            446 LOAD_CONST              44 (<code object Humanizer at 0x7f6af1de1fd0, file "humanizer.py", line 170>)
+            448 MAKE_FUNCTION            0
+            450 LOAD_CONST              45 ('Humanizer')
+            452 CALL                     2
+            460 STORE_NAME              38 (Humanizer)
+
+212         462 PUSH_NULL
+            464 LOAD_BUILD_CLASS
+            466 LOAD_CONST              46 (<code object CoffeeBreak at 0x7f6af1dd9a50, file "humanizer.py", line 212>)
+            468 MAKE_FUNCTION            0
+            470 LOAD_CONST              47 ('CoffeeBreak')
+            472 CALL                     2
+            480 STORE_NAME              39 (CoffeeBreak)
+            482 RETURN_CONST             1 (None)
+
+Disassembly of <code object gauss_offset at 0x7f6af1f3f870, file "humanizer.py", line 37>:
+ 37           0 RESUME                   0
+
+ 38           2 NOP
+
+ 39           4 LOAD_GLOBAL              1 (NULL + int)
+             14 LOAD_GLOBAL              3 (NULL + round)
+             24 LOAD_GLOBAL              5 (NULL + max)
+             34 LOAD_FAST                2 (clamp)
+             36 UNARY_NEGATIVE
+             38 LOAD_GLOBAL              7 (NULL + min)
+             48 LOAD_FAST                2 (clamp)
+             50 LOAD_FAST                0 (rng)
+             52 LOAD_ATTR                9 (NULL|self + gauss)
+             72 LOAD_CONST               1 (0.0)
+             74 LOAD_FAST                1 (sigma)
+             76 CALL                     2
+             84 CALL                     2
+             92 CALL                     2
+            100 CALL                     1
+            108 CALL                     1
+            116 RETURN_VALUE
+
+Disassembly of <code object click_hold at 0x7f6af20bb480, file "humanizer.py", line 42>:
+ 42           0 RESUME                   0
+
+ 43           2 NOP
+
+ 44           4 LOAD_GLOBAL              1 (NULL + math)
+             14 LOAD_ATTR                2 (log)
+             34 LOAD_FAST                1 (lo)
+             36 CALL                     1
+             44 LOAD_GLOBAL              1 (NULL + math)
+             54 LOAD_ATTR                2 (log)
+             74 LOAD_FAST                2 (hi)
+             76 CALL                     1
+             84 BINARY_OP                0 (+)
+             88 LOAD_CONST               1 (2.0)
+             90 BINARY_OP               11 (/)
+             94 STORE_FAST               3 (mu)
+
+ 45          96 LOAD_GLOBAL              1 (NULL + math)
+            106 LOAD_ATTR                2 (log)
+            126 LOAD_FAST                2 (hi)
+            128 CALL                     1
+            136 LOAD_GLOBAL              1 (NULL + math)
+            146 LOAD_ATTR                2 (log)
+            166 LOAD_FAST                1 (lo)
+            168 CALL                     1
+            176 BINARY_OP               10 (-)
+            180 LOAD_CONST               2 (4.0)
+            182 BINARY_OP               11 (/)
+            186 STORE_FAST               4 (sigma)
+
+ 46         188 LOAD_GLOBAL              5 (NULL + max)
+            198 LOAD_FAST                1 (lo)
+            200 LOAD_GLOBAL              7 (NULL + min)
+            210 LOAD_FAST                2 (hi)
+            212 LOAD_GLOBAL              1 (NULL + math)
+            222 LOAD_ATTR                8 (exp)
+            242 LOAD_FAST                0 (rng)
+            244 LOAD_ATTR               11 (NULL|self + gauss)
+            264 LOAD_FAST                3 (mu)
+            266 LOAD_FAST                4 (sigma)
+            268 CALL                     2
+            276 CALL                     1
+            284 CALL                     2
+            292 CALL                     2
+            300 RETURN_VALUE
+
+Disassembly of <code object bezier_points at 0x17a66dd0, file "humanizer.py", line 49>:
+ 49           0 RESUME                   0
+
+ 50           2 NOP
+
+ 51           4 LOAD_FAST                0 (p0)
+              6 LOAD_FAST                1 (p1)
+              8 SWAP                     2
+             10 UNPACK_SEQUENCE          2
+             14 STORE_FAST               4 (x0)
+             16 STORE_FAST               5 (y0)
+             18 UNPACK_SEQUENCE          2
+             22 STORE_FAST               6 (x1)
+             24 STORE_FAST               7 (y1)
+
+ 52          26 LOAD_FAST                4 (x0)
+             28 LOAD_FAST                6 (x1)
+             30 BINARY_OP                0 (+)
+             34 LOAD_CONST               1 (2.0)
+             36 BINARY_OP               11 (/)
+             40 LOAD_FAST                3 (rng)
+             42 LOAD_ATTR                1 (NULL|self + uniform)
+             62 LOAD_CONST               2 (-6)
+             64 LOAD_CONST               3 (6)
+             66 CALL                     2
+             74 BINARY_OP                0 (+)
+             78 STORE_FAST               8 (cx)
+
+ 53          80 LOAD_FAST                5 (y0)
+             82 LOAD_FAST                7 (y1)
+             84 BINARY_OP                0 (+)
+             88 LOAD_CONST               1 (2.0)
+             90 BINARY_OP               11 (/)
+             94 LOAD_FAST                3 (rng)
+             96 LOAD_ATTR                1 (NULL|self + uniform)
+            116 LOAD_CONST               2 (-6)
+            118 LOAD_CONST               3 (6)
+            120 CALL                     2
+            128 BINARY_OP                0 (+)
+            132 STORE_FAST               9 (cy)
+
+ 54         134 BUILD_LIST               0
+            136 STORE_FAST              10 (pts)
+
+ 55         138 LOAD_GLOBAL              3 (NULL + range)
+            148 LOAD_CONST               4 (1)
+            150 LOAD_FAST                2 (n)
+            152 LOAD_CONST               4 (1)
+            154 BINARY_OP                0 (+)
+            158 CALL                     2
+            166 GET_ITER
+        >>  168 FOR_ITER               116 (to 404)
+            172 STORE_FAST              11 (i)
+
+ 56         174 LOAD_FAST               11 (i)
+            176 LOAD_FAST                2 (n)
+            178 BINARY_OP               11 (/)
+            182 STORE_FAST              12 (t)
+
+ 57         184 LOAD_CONST               4 (1)
+            186 LOAD_FAST               12 (t)
+            188 BINARY_OP               10 (-)
+            192 LOAD_CONST               5 (2)
+            194 BINARY_OP                8 (**)
+            198 LOAD_CONST               5 (2)
+            200 LOAD_CONST               4 (1)
+            202 LOAD_FAST               12 (t)
+            204 BINARY_OP               10 (-)
+            208 BINARY_OP                5 (*)
+            212 LOAD_FAST               12 (t)
+            214 BINARY_OP                5 (*)
+            218 LOAD_FAST               12 (t)
+            220 LOAD_FAST               12 (t)
+            222 BINARY_OP                5 (*)
+            226 STORE_FAST              15 (c)
+            228 STORE_FAST              14 (b)
+            230 STORE_FAST              13 (a)
+
+ 58         232 LOAD_FAST               10 (pts)
+            234 LOAD_ATTR                5 (NULL|self + append)
+            254 LOAD_GLOBAL              7 (NULL + int)
+            264 LOAD_GLOBAL              9 (NULL + round)
+            274 LOAD_FAST               13 (a)
+            276 LOAD_FAST                4 (x0)
+            278 BINARY_OP                5 (*)
+            282 LOAD_FAST               14 (b)
+            284 LOAD_FAST                8 (cx)
+            286 BINARY_OP                5 (*)
+            290 BINARY_OP                0 (+)
+            294 LOAD_FAST               15 (c)
+            296 LOAD_FAST                6 (x1)
+            298 BINARY_OP                5 (*)
+            302 BINARY_OP                0 (+)
+            306 CALL                     1
+            314 CALL                     1
+            322 LOAD_GLOBAL              7 (NULL + int)
+            332 LOAD_GLOBAL              9 (NULL + round)
+            342 LOAD_FAST               13 (a)
+            344 LOAD_FAST                5 (y0)
+            346 BINARY_OP                5 (*)
+            350 LOAD_FAST               14 (b)
+            352 LOAD_FAST                9 (cy)
+            354 BINARY_OP                5 (*)
+            358 BINARY_OP                0 (+)
+            362 LOAD_FAST               15 (c)
+            364 LOAD_FAST                7 (y1)
+            366 BINARY_OP                5 (*)
+            370 BINARY_OP                0 (+)
+            374 CALL                     1
+            382 CALL                     1
+            390 BUILD_TUPLE              2
+            392 CALL                     1
+            400 POP_TOP
+            402 JUMP_BACKWARD          118 (to 168)
+
+ 55     >>  404 END_FOR
+
+ 59         406 LOAD_GLOBAL              7 (NULL + int)
+            416 LOAD_FAST                6 (x1)
+            418 CALL                     1
+            426 LOAD_GLOBAL              7 (NULL + int)
+            436 LOAD_FAST                7 (y1)
+            438 CALL                     1
+            446 BUILD_TUPLE              2
+            448 LOAD_FAST               10 (pts)
+            450 LOAD_CONST               6 (-1)
+            452 STORE_SUBSCR
+
+ 60         456 LOAD_FAST               10 (pts)
+            458 RETURN_VALUE
+
+Disassembly of <code object _ease at 0x7f6aed805450, file "humanizer.py", line 63>:
+ 63           0 RESUME                   0
+
+ 64           2 LOAD_FAST                0 (t)
+              4 LOAD_FAST                0 (t)
+              6 BINARY_OP                5 (*)
+             10 LOAD_CONST               1 (3.0)
+             12 LOAD_CONST               2 (2.0)
+             14 LOAD_FAST                0 (t)
+             16 BINARY_OP                5 (*)
+             20 BINARY_OP               10 (-)
+             24 BINARY_OP                5 (*)
+             28 RETURN_VALUE
+
+Disassembly of <code object camera_steps at 0x17a77630, file "humanizer.py", line 67>:
+ 67           0 RESUME                   0
+
+ 68           2 NOP
+
+ 72           4 LOAD_FAST                3 (rng)
+              6 LOAD_ATTR                1 (NULL|self + randint)
+             26 LOAD_CONST               1 (10)
+             28 LOAD_CONST               2 (25)
+             30 CALL                     2
+             38 STORE_FAST               4 (n)
+
+ 73          40 LOAD_GLOBAL              3 (NULL + max)
+             50 LOAD_CONST               3 (0.0)
+             52 LOAD_FAST                2 (duration_ms)
+             54 LOAD_CONST               4 (1000.0)
+             56 BINARY_OP               11 (/)
+             60 CALL                     2
+             68 STORE_FAST               5 (total)
+
+ 74          70 BUILD_LIST               0
+             72 LOAD_CONST               3 (0.0)
+             74 LOAD_CONST               3 (0.0)
+             76 LOAD_CONST               5 (0)
+             78 LOAD_CONST               5 (0)
+             80 BUILD_TUPLE              5
+             82 UNPACK_SEQUENCE          5
+             86 STORE_FAST               6 (out)
+             88 STORE_FAST               7 (px)
+             90 STORE_FAST               8 (py)
+             92 STORE_FAST               9 (done_x)
+             94 STORE_FAST              10 (done_y)
+
+ 75          96 LOAD_GLOBAL              5 (NULL + range)
+            106 LOAD_CONST               6 (1)
+            108 LOAD_FAST                4 (n)
+            110 LOAD_CONST               6 (1)
+            112 BINARY_OP                0 (+)
+            116 CALL                     2
+            124 GET_ITER
+        >>  126 EXTENDED_ARG             1
+            128 FOR_ITER               262 (to 656)
+            132 STORE_FAST              11 (i)
+
+ 76         134 LOAD_GLOBAL              7 (NULL + _ease)
+            144 LOAD_FAST               11 (i)
+            146 LOAD_FAST                4 (n)
+            148 BINARY_OP               11 (/)
+            152 CALL                     1
+            160 STORE_FAST              12 (e)
+
+ 77         162 LOAD_FAST                0 (dx)
+            164 LOAD_FAST               12 (e)
+            166 BINARY_OP                5 (*)
+            170 LOAD_FAST                1 (dy)
+            172 LOAD_FAST               12 (e)
+            174 BINARY_OP                5 (*)
+            178 STORE_FAST              14 (ty)
+            180 STORE_FAST              13 (tx)
+
+ 78         182 LOAD_GLOBAL              9 (NULL + int)
+            192 LOAD_GLOBAL             11 (NULL + round)
+            202 LOAD_FAST               13 (tx)
+            204 LOAD_FAST                7 (px)
+            206 BINARY_OP               10 (-)
+            210 CALL                     1
+            218 CALL                     1
+            226 LOAD_GLOBAL              9 (NULL + int)
+            236 LOAD_GLOBAL             11 (NULL + round)
+            246 LOAD_FAST               14 (ty)
+            248 LOAD_FAST                8 (py)
+            250 BINARY_OP               10 (-)
+            254 CALL                     1
+            262 CALL                     1
+            270 STORE_FAST              16 (sy)
+            272 STORE_FAST              15 (sx)
+
+ 79         274 LOAD_FAST               13 (tx)
+            276 LOAD_FAST               14 (ty)
+            278 STORE_FAST               8 (py)
+            280 STORE_FAST               7 (px)
+
+ 80         282 LOAD_FAST               11 (i)
+            284 LOAD_FAST                4 (n)
+            286 COMPARE_OP               2 (<)
+            290 POP_JUMP_IF_FALSE       89 (to 470)
+
+ 81         292 LOAD_FAST               15 (sx)
+            294 LOAD_FAST               15 (sx)
+            296 POP_JUMP_IF_TRUE         2 (to 302)
+            298 LOAD_FAST                0 (dx)
+            300 POP_JUMP_IF_FALSE       17 (to 336)
+        >>  302 LOAD_FAST                3 (rng)
+            304 LOAD_ATTR               13 (NULL|self + choice)
+            324 LOAD_CONST               7 ((-2, -1, 0, 1, 2))
+            326 CALL                     1
+            334 JUMP_FORWARD             1 (to 338)
+        >>  336 LOAD_CONST               5 (0)
+        >>  338 BINARY_OP               13 (+=)
+            342 STORE_FAST              15 (sx)
+
+ 82         344 LOAD_FAST               16 (sy)
+            346 LOAD_FAST               16 (sy)
+            348 POP_JUMP_IF_TRUE         2 (to 354)
+            350 LOAD_FAST                1 (dy)
+            352 POP_JUMP_IF_FALSE       17 (to 388)
+        >>  354 LOAD_FAST                3 (rng)
+            356 LOAD_ATTR               13 (NULL|self + choice)
+            376 LOAD_CONST               8 ((-1, 0, 1))
+            378 CALL                     1
+            386 JUMP_FORWARD             1 (to 390)
+        >>  388 LOAD_CONST               5 (0)
+        >>  390 BINARY_OP               13 (+=)
+            394 STORE_FAST              16 (sy)
+
+ 83         396 LOAD_GLOBAL             15 (NULL + abs)
+            406 LOAD_FAST                0 (dx)
+            408 CALL                     1
+            416 LOAD_CONST               9 (2)
+            418 COMPARE_OP              68 (>)
+            422 POP_JUMP_IF_FALSE        2 (to 428)
+            424 LOAD_FAST               15 (sx)
+            426 JUMP_FORWARD             1 (to 430)
+        >>  428 LOAD_CONST               5 (0)
+        >>  430 LOAD_GLOBAL             15 (NULL + abs)
+            440 LOAD_FAST                1 (dy)
+            442 CALL                     1
+            450 LOAD_CONST               9 (2)
+            452 COMPARE_OP              68 (>)
+            456 POP_JUMP_IF_FALSE        2 (to 462)
+            458 LOAD_FAST               16 (sy)
+            460 JUMP_FORWARD             1 (to 464)
+        >>  462 LOAD_CONST               5 (0)
+        >>  464 STORE_FAST              16 (sy)
+            466 STORE_FAST              15 (sx)
+            468 JUMP_FORWARD            10 (to 490)
+
+ 85     >>  470 LOAD_FAST                0 (dx)
+            472 LOAD_FAST                9 (done_x)
+            474 BINARY_OP               10 (-)
+            478 LOAD_FAST                1 (dy)
+            480 LOAD_FAST               10 (done_y)
+            482 BINARY_OP               10 (-)
+            486 STORE_FAST              16 (sy)
+            488 STORE_FAST              15 (sx)
+
+ 86     >>  490 LOAD_FAST                9 (done_x)
+            492 LOAD_FAST               15 (sx)
+            494 BINARY_OP                0 (+)
+            498 LOAD_FAST               10 (done_y)
+            500 LOAD_FAST               16 (sy)
+            502 BINARY_OP                0 (+)
+            506 STORE_FAST              10 (done_y)
+            508 STORE_FAST               9 (done_x)
+
+ 88         510 LOAD_FAST                6 (out)
+            512 LOAD_ATTR               17 (NULL|self + append)
+            532 LOAD_FAST               15 (sx)
+            534 LOAD_FAST               16 (sy)
+            536 LOAD_FAST                5 (total)
+            538 LOAD_FAST                4 (n)
+            540 BINARY_OP               11 (/)
+            544 LOAD_CONST              10 (1.4)
+            546 LOAD_CONST              11 (0.8)
+            548 LOAD_GLOBAL             19 (NULL + math)
+            558 LOAD_ATTR               20 (sin)
+            578 LOAD_GLOBAL             18 (math)
+            588 LOAD_ATTR               22 (pi)
+            608 LOAD_FAST               11 (i)
+            610 BINARY_OP                5 (*)
+            614 LOAD_FAST                4 (n)
+            616 BINARY_OP               11 (/)
+            620 CALL                     1
+            628 BINARY_OP                5 (*)
+            632 BINARY_OP               10 (-)
+            636 BINARY_OP                5 (*)
+            640 BUILD_TUPLE              3
+            642 CALL                     1
+            650 POP_TOP
+            652 EXTENDED_ARG             1
+            654 JUMP_BACKWARD          265 (to 126)
+
+ 75     >>  656 END_FOR
+
+ 89         658 LOAD_GLOBAL             25 (NULL + sum)
+            668 LOAD_CONST              12 (<code object <genexpr> at 0x7f6af1dc23d0, file "humanizer.py", line 89>)
+            670 MAKE_FUNCTION            0
+            672 LOAD_FAST                6 (out)
+            674 GET_ITER
+            676 CALL                     0
+            684 CALL                     1
+            692 STORE_FAST              17 (k)
+
+ 90         694 LOAD_FAST                6 (out)
+            696 GET_ITER
+            698 LOAD_FAST_AND_CLEAR     15 (sx)
+            700 LOAD_FAST_AND_CLEAR     16 (sy)
+            702 LOAD_FAST_AND_CLEAR     18 (d)
+            704 SWAP                     4
+            706 BUILD_LIST               0
+            708 SWAP                     2
+        >>  710 FOR_ITER                24 (to 762)
+            714 UNPACK_SEQUENCE          3
+            718 STORE_FAST              15 (sx)
+            720 STORE_FAST              16 (sy)
+            722 STORE_FAST              18 (d)
+            724 LOAD_FAST               15 (sx)
+            726 LOAD_FAST               16 (sy)
+            728 LOAD_FAST               17 (k)
+            730 LOAD_CONST               5 (0)
+            732 COMPARE_OP              68 (>)
+            736 POP_JUMP_IF_FALSE        8 (to 754)
+            738 LOAD_FAST               18 (d)
+            740 LOAD_FAST                5 (total)
+            742 BINARY_OP                5 (*)
+            746 LOAD_FAST               17 (k)
+            748 BINARY_OP               11 (/)
+            752 JUMP_FORWARD             1 (to 756)
+        >>  754 LOAD_CONST               3 (0.0)
+        >>  756 BUILD_TUPLE              3
+            758 LIST_APPEND              2
+            760 JUMP_BACKWARD           26 (to 710)
+        >>  762 END_FOR
+            764 SWAP                     4
+            766 STORE_FAST              18 (d)
+            768 STORE_FAST              16 (sy)
+            770 STORE_FAST              15 (sx)
+            772 RETURN_VALUE
+        >>  774 SWAP                     2
+            776 POP_TOP
+            778 SWAP                     4
+            780 STORE_FAST              18 (d)
+            782 STORE_FAST              16 (sy)
+            784 STORE_FAST              15 (sx)
+            786 RERAISE                  0
+ExceptionTable:
+  706 to 762 -> 774 [4]
+
+Disassembly of <code object <genexpr> at 0x7f6af1dc23d0, file "humanizer.py", line 89>:
+ 89           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+              6 LOAD_FAST                0 (.0)
+        >>    8 FOR_ITER                 9 (to 30)
+             12 EXTENDED_ARG             1
+             14 UNPACK_EX              256
+             16 STORE_FAST               1 (_)
+             18 STORE_FAST               2 (d)
+             20 LOAD_FAST                2 (d)
+             22 YIELD_VALUE              1
+             24 RESUME                   1
+             26 POP_TOP
+             28 JUMP_BACKWARD           11 (to 8)
+        >>   30 END_FOR
+             32 RETURN_CONST             0 (None)
+        >>   34 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             36 RERAISE                  1
+ExceptionTable:
+  4 to 32 -> 34 [0] lasti
+
+Disassembly of <code object PitchBalance at 0x7f6aed7fcad0, file "humanizer.py", line 93>:
+ 93           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('PitchBalance')
+              8 STORE_NAME               2 (__qualname__)
+
+ 94          10 NOP
+
+ 96          12 LOAD_CONST               6 ((None,))
+             14 LOAD_CONST               2 ('rng')
+             16 LOAD_NAME                3 (Optional)
+             18 LOAD_NAME                4 (random)
+             20 LOAD_ATTR               10 (Random)
+             40 BINARY_SUBSCR
+             44 BUILD_TUPLE              2
+             46 LOAD_CONST               3 (<code object __init__ at 0x7f6af1dbf550, file "humanizer.py", line 96>)
+             48 MAKE_FUNCTION            5 (defaults, annotations)
+             50 STORE_NAME               6 (__init__)
+
+100          52 LOAD_CONST               4 ('return')
+             54 LOAD_NAME                7 (Tuple)
+             56 LOAD_NAME                8 (int)
+             58 LOAD_NAME                8 (int)
+             60 LOAD_NAME                8 (int)
+             62 BUILD_TUPLE              3
+             64 BINARY_SUBSCR
+             68 BUILD_TUPLE              2
+             70 LOAD_CONST               5 (<code object next_look at 0x17a38b30, file "humanizer.py", line 100>)
+             72 MAKE_FUNCTION            4 (annotations)
+             74 STORE_NAME               9 (next_look)
+             76 RETURN_CONST             1 (None)
+
+Disassembly of <code object __init__ at 0x7f6af1dbf550, file "humanizer.py", line 96>:
+ 96           0 RESUME                   0
+
+ 97           2 LOAD_FAST                1 (rng)
+              4 COPY                     1
+              6 POP_JUMP_IF_TRUE        20 (to 48)
+              8 POP_TOP
+             10 LOAD_GLOBAL              1 (NULL + random)
+             20 LOAD_ATTR                2 (Random)
+             40 CALL                     0
+        >>   48 LOAD_FAST                0 (self)
+             50 STORE_ATTR               2 (_rng)
+
+ 98          60 LOAD_CONST               1 (0)
+             62 LOAD_FAST                0 (self)
+             64 STORE_ATTR               3 (pitch)
+             74 RETURN_CONST             0 (None)
+
+Disassembly of <code object next_look at 0x17a38b30, file "humanizer.py", line 100>:
+100           0 RESUME                   0
+
+101           2 NOP
+
+102           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (_rng)
+             26 STORE_FAST               1 (r)
+
+103          28 LOAD_FAST                1 (r)
+             30 LOAD_ATTR                3 (NULL|self + randint)
+             50 LOAD_GLOBAL              4 (LOOK_H)
+             60 UNARY_NEGATIVE
+             62 LOAD_GLOBAL              4 (LOOK_H)
+             72 CALL                     2
+             80 STORE_FAST               2 (dx)
+
+104          82 LOAD_FAST                1 (r)
+             84 LOAD_ATTR                3 (NULL|self + randint)
+            104 LOAD_GLOBAL              6 (LOOK_V)
+            114 UNARY_NEGATIVE
+            116 LOAD_GLOBAL              6 (LOOK_V)
+            126 CALL                     2
+            134 STORE_FAST               3 (dy)
+
+105         136 LOAD_GLOBAL              9 (NULL + abs)
+            146 LOAD_FAST                0 (self)
+            148 LOAD_ATTR               10 (pitch)
+            168 CALL                     1
+            176 LOAD_GLOBAL             12 (PITCH_LIMIT)
+            186 LOAD_CONST               1 (4)
+            188 BINARY_OP                2 (//)
+            192 COMPARE_OP              68 (>)
+            196 POP_JUMP_IF_FALSE      104 (to 406)
+
+106         198 LOAD_GLOBAL             15 (NULL + int)
+            208 LOAD_GLOBAL             17 (NULL + math)
+            218 LOAD_ATTR               18 (copysign)
+            238 LOAD_GLOBAL             21 (NULL + min)
+            248 LOAD_GLOBAL              9 (NULL + abs)
+            258 LOAD_FAST                0 (self)
+            260 LOAD_ATTR               10 (pitch)
+            280 CALL                     1
+            288 LOAD_GLOBAL              6 (LOOK_V)
+            298 CALL                     2
+            306 LOAD_FAST                0 (self)
+            308 LOAD_ATTR               10 (pitch)
+            328 CALL                     2
+            336 CALL                     1
+            344 UNARY_NEGATIVE
+            346 STORE_FAST               4 (back)
+
+107         348 LOAD_GLOBAL             15 (NULL + int)
+            358 LOAD_GLOBAL             23 (NULL + round)
+            368 LOAD_CONST               2 (0.6)
+            370 LOAD_FAST                4 (back)
+            372 BINARY_OP                5 (*)
+            376 LOAD_CONST               3 (0.4)
+            378 LOAD_FAST                3 (dy)
+            380 BINARY_OP                5 (*)
+            384 BINARY_OP                0 (+)
+            388 CALL                     1
+            396 CALL                     1
+            404 STORE_FAST               3 (dy)
+
+108     >>  406 LOAD_GLOBAL              9 (NULL + abs)
+            416 LOAD_FAST                0 (self)
+            418 LOAD_ATTR               10 (pitch)
+            438 LOAD_FAST                3 (dy)
+            440 BINARY_OP                0 (+)
+            444 CALL                     1
+            452 LOAD_GLOBAL             12 (PITCH_LIMIT)
+            462 COMPARE_OP              68 (>)
+            466 POP_JUMP_IF_FALSE       13 (to 494)
+
+109         468 LOAD_FAST                0 (self)
+            470 LOAD_ATTR               10 (pitch)
+            490 UNARY_NEGATIVE
+            492 STORE_FAST               3 (dy)
+
+110     >>  494 LOAD_GLOBAL             25 (NULL + max)
+            504 LOAD_GLOBAL              6 (LOOK_V)
+            514 UNARY_NEGATIVE
+            516 LOAD_GLOBAL             21 (NULL + min)
+            526 LOAD_GLOBAL              6 (LOOK_V)
+            536 LOAD_FAST                3 (dy)
+            538 CALL                     2
+            546 CALL                     2
+            554 STORE_FAST               3 (dy)
+
+111         556 LOAD_FAST                0 (self)
+            558 COPY                     1
+            560 LOAD_ATTR               10 (pitch)
+            580 LOAD_FAST                3 (dy)
+            582 BINARY_OP               13 (+=)
+            586 SWAP                     2
+            588 STORE_ATTR               5 (pitch)
+
+112         598 LOAD_FAST                2 (dx)
+            600 LOAD_FAST                3 (dy)
+            602 LOAD_FAST                1 (r)
+            604 LOAD_ATTR                3 (NULL|self + randint)
+            624 LOAD_CONST               4 (180)
+            626 LOAD_CONST               5 (520)
+            628 CALL                     2
+            636 BUILD_TUPLE              3
+            638 RETURN_VALUE
+
+Disassembly of <code object pick_pattern at 0x7f6aed800c70, file "humanizer.py", line 115>:
+115           0 RESUME                   0
+
+116           2 NOP
+
+117           4 LOAD_GLOBAL              1 (NULL + dict)
+             14 LOAD_GLOBAL              2 (PATTERNS)
+             24 CALL                     1
+             32 STORE_FAST               2 (w)
+
+118          34 LOAD_FAST                1 (relaxed)
+             36 POP_JUMP_IF_FALSE       23 (to 84)
+
+119          38 LOAD_FAST                2 (w)
+             40 LOAD_CONST               1 ('A')
+             42 BINARY_SUBSCR
+             46 LOAD_CONST               2 (10)
+             48 BINARY_OP               10 (-)
+             52 LOAD_FAST                2 (w)
+             54 LOAD_CONST               3 ('D')
+             56 BINARY_SUBSCR
+             60 LOAD_CONST               2 (10)
+             62 BINARY_OP                0 (+)
+             66 SWAP                     2
+             68 LOAD_FAST                2 (w)
+             70 LOAD_CONST               1 ('A')
+             72 STORE_SUBSCR
+             76 LOAD_FAST                2 (w)
+             78 LOAD_CONST               3 ('D')
+             80 STORE_SUBSCR
+
+120     >>   84 LOAD_FAST                0 (rng)
+             86 LOAD_ATTR                5 (NULL|self + uniform)
+            106 LOAD_CONST               4 (0)
+            108 LOAD_GLOBAL              7 (NULL + sum)
+            118 LOAD_FAST                2 (w)
+            120 LOAD_ATTR                9 (NULL|self + values)
+            140 CALL                     0
+            148 CALL                     1
+            156 CALL                     2
+            164 STORE_FAST               3 (x)
+
+121         166 LOAD_FAST                2 (w)
+            168 LOAD_ATTR               11 (NULL|self + items)
+            188 CALL                     0
+            196 GET_ITER
+        >>  198 FOR_ITER                19 (to 240)
+            202 UNPACK_SEQUENCE          2
+            206 STORE_FAST               4 (name)
+            208 STORE_FAST               5 (weight)
+
+122         210 LOAD_FAST                3 (x)
+            212 LOAD_FAST                5 (weight)
+            214 BINARY_OP               23 (-=)
+            218 STORE_FAST               3 (x)
+
+123         220 LOAD_FAST                3 (x)
+            222 LOAD_CONST               4 (0)
+            224 COMPARE_OP               2 (<)
+            228 POP_JUMP_IF_TRUE         1 (to 232)
+            230 JUMP_BACKWARD           17 (to 198)
+
+124     >>  232 LOAD_FAST                4 (name)
+            234 SWAP                     2
+            236 POP_TOP
+            238 RETURN_VALUE
+
+121     >>  240 END_FOR
+
+125         242 RETURN_CONST             1 ('A')
+
+Disassembly of <code object SessionDrift at 0x7f6af1f3de30, file "humanizer.py", line 128>:
+128           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('SessionDrift')
+              8 STORE_NAME               2 (__qualname__)
+
+129          10 NOP
+
+131          12 LOAD_NAME                3 (time)
+             14 LOAD_ATTR                8 (monotonic)
+             34 LOAD_CONST               1 (None)
+             36 BUILD_TUPLE              2
+             38 LOAD_CONST               2 ('clock')
+             40 LOAD_NAME                5 (Callable)
+             42 BUILD_LIST               0
+             44 LOAD_NAME                6 (float)
+             46 BUILD_TUPLE              2
+             48 BINARY_SUBSCR
+             52 LOAD_CONST               3 ('rng')
+             54 LOAD_NAME                7 (Optional)
+             56 LOAD_NAME                8 (random)
+             58 LOAD_ATTR               18 (Random)
+             78 BINARY_SUBSCR
+             82 BUILD_TUPLE              4
+             84 LOAD_CONST               4 (<code object __init__ at 0x17a606e0, file "humanizer.py", line 131>)
+             86 MAKE_FUNCTION            5 (defaults, annotations)
+             88 STORE_NAME              10 (__init__)
+
+139          90 LOAD_CONST               5 ('return')
+             92 LOAD_NAME                6 (float)
+             94 BUILD_TUPLE              2
+             96 LOAD_CONST               6 (<code object focus at 0x7f6af1f76830, file "humanizer.py", line 139>)
+             98 MAKE_FUNCTION            4 (annotations)
+            100 STORE_NAME              11 (focus)
+
+143         102 LOAD_CONST               5 ('return')
+            104 LOAD_NAME               12 (bool)
+            106 BUILD_TUPLE              2
+            108 LOAD_CONST               7 (<code object relaxed at 0x7f6af1dc35a0, file "humanizer.py", line 143>)
+            110 MAKE_FUNCTION            4 (annotations)
+            112 STORE_NAME              13 (relaxed)
+
+146         114 LOAD_CONST               5 ('return')
+            116 LOAD_NAME                6 (float)
+            118 BUILD_TUPLE              2
+            120 LOAD_CONST               8 (<code object factor at 0x7f6af1dd3430, file "humanizer.py", line 146>)
+            122 MAKE_FUNCTION            4 (annotations)
+            124 STORE_NAME              14 (factor)
+            126 RETURN_CONST             1 (None)
+
+Disassembly of <code object __init__ at 0x17a606e0, file "humanizer.py", line 131>:
+131           0 RESUME                   0
+
+132           2 LOAD_FAST                1 (clock)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (_clock)
+
+133          16 LOAD_FAST                2 (rng)
+             18 COPY                     1
+             20 POP_JUMP_IF_TRUE        20 (to 62)
+             22 POP_TOP
+             24 LOAD_GLOBAL              3 (NULL + random)
+             34 LOAD_ATTR                4 (Random)
+             54 CALL                     0
+        >>   62 LOAD_FAST                0 (self)
+             64 STORE_ATTR               3 (_rng)
+
+134          74 PUSH_NULL
+             76 LOAD_FAST                1 (clock)
+             78 CALL                     0
+             86 LOAD_FAST                0 (self)
+             88 STORE_ATTR               4 (_t0)
+
+135          98 PUSH_NULL
+            100 LOAD_FAST                0 (self)
+            102 LOAD_ATTR                6 (_rng)
+            122 LOAD_ATTR               10 (uniform)
+            142 LOAD_GLOBAL             12 (SESSION_PERIOD_MIN)
+            152 CALL_FUNCTION_EX         0
+            154 LOAD_CONST               1 (60.0)
+            156 BINARY_OP                5 (*)
+            160 LOAD_FAST                0 (self)
+            162 STORE_ATTR               7 (_period)
+
+136         172 LOAD_FAST                0 (self)
+            174 LOAD_ATTR                6 (_rng)
+            194 LOAD_ATTR               11 (NULL|self + uniform)
+            214 LOAD_CONST               2 (0.0)
+            216 LOAD_CONST               3 (2)
+            218 LOAD_GLOBAL             16 (math)
+            228 LOAD_ATTR               18 (pi)
+            248 BINARY_OP                5 (*)
+            252 CALL                     2
+            260 LOAD_FAST                0 (self)
+            262 STORE_ATTR              10 (_phase)
+
+137         272 LOAD_GLOBAL             23 (NULL + PinkNoise)
+            282 LOAD_FAST                0 (self)
+            284 LOAD_ATTR                6 (_rng)
+            304 CALL                     1
+            312 LOAD_FAST                0 (self)
+            314 STORE_ATTR              12 (_noise)
+            324 RETURN_CONST             0 (None)
+
+Disassembly of <code object focus at 0x7f6af1f76830, file "humanizer.py", line 139>:
+139           0 RESUME                   0
+
+140           2 LOAD_GLOBAL              1 (NULL + math)
+             12 LOAD_ATTR                2 (sin)
+             32 LOAD_CONST               1 (2)
+             34 LOAD_GLOBAL              0 (math)
+             44 LOAD_ATTR                4 (pi)
+             64 BINARY_OP                5 (*)
+             68 LOAD_FAST                0 (self)
+             70 LOAD_ATTR                7 (NULL|self + _clock)
+             90 CALL                     0
+             98 LOAD_FAST                0 (self)
+            100 LOAD_ATTR                8 (_t0)
+            120 BINARY_OP               10 (-)
+            124 BINARY_OP                5 (*)
+            128 LOAD_FAST                0 (self)
+            130 LOAD_ATTR               10 (_period)
+            150 BINARY_OP               11 (/)
+            154 LOAD_FAST                0 (self)
+            156 LOAD_ATTR               12 (_phase)
+            176 BINARY_OP                0 (+)
+            180 CALL                     1
+            188 STORE_FAST               1 (wave)
+
+141         190 LOAD_GLOBAL             15 (NULL + max)
+            200 LOAD_CONST               2 (0.0)
+            202 LOAD_GLOBAL             17 (NULL + min)
+            212 LOAD_CONST               3 (1.0)
+            214 LOAD_CONST               4 (0.5)
+            216 LOAD_CONST               5 (0.38)
+            218 LOAD_FAST                1 (wave)
+            220 BINARY_OP                5 (*)
+            224 BINARY_OP                0 (+)
+            228 LOAD_CONST               6 (0.12)
+            230 LOAD_FAST                0 (self)
+            232 LOAD_ATTR               18 (_noise)
+            252 LOAD_ATTR               21 (NULL|self + next)
+            272 CALL                     0
+            280 BINARY_OP                5 (*)
+            284 BINARY_OP                0 (+)
+            288 CALL                     2
+            296 CALL                     2
+            304 RETURN_VALUE
+
+Disassembly of <code object relaxed at 0x7f6af1dc35a0, file "humanizer.py", line 143>:
+143           0 RESUME                   0
+
+144           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                1 (NULL|self + focus)
+             24 CALL                     0
+             32 LOAD_CONST               1 (0.3)
+             34 COMPARE_OP               2 (<)
+             38 RETURN_VALUE
+
+Disassembly of <code object factor at 0x7f6af1dd3430, file "humanizer.py", line 146>:
+146           0 RESUME                   0
+
+147           2 NOP
+
+148           4 LOAD_CONST               1 (1.0)
+              6 LOAD_CONST               2 (0.3)
+              8 LOAD_CONST               1 (1.0)
+             10 LOAD_FAST                0 (self)
+             12 LOAD_ATTR                1 (NULL|self + focus)
+             32 CALL                     0
+             40 BINARY_OP               10 (-)
+             44 BINARY_OP                5 (*)
+             48 BINARY_OP                0 (+)
+             52 RETURN_VALUE
+
+Disassembly of <code object PinkNoise at 0x7f6aed7fd130, file "humanizer.py", line 151>:
+151           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('PinkNoise')
+              8 STORE_NAME               2 (__qualname__)
+
+152          10 NOP
+
+154          12 LOAD_CONST               7 ((None, 6))
+             14 LOAD_CONST               2 ('rng')
+             16 LOAD_NAME                3 (Optional)
+             18 LOAD_NAME                4 (random)
+             20 LOAD_ATTR               10 (Random)
+             40 BINARY_SUBSCR
+             44 LOAD_CONST               3 ('octaves')
+             46 LOAD_NAME                6 (int)
+             48 BUILD_TUPLE              4
+             50 LOAD_CONST               4 (<code object __init__ at 0x7f6af1e29ac0, file "humanizer.py", line 154>)
+             52 MAKE_FUNCTION            5 (defaults, annotations)
+             54 STORE_NAME               7 (__init__)
+
+159          56 LOAD_CONST               5 ('return')
+             58 LOAD_NAME                8 (float)
+             60 BUILD_TUPLE              2
+             62 LOAD_CONST               6 (<code object next at 0x179cc2b0, file "humanizer.py", line 159>)
+             64 MAKE_FUNCTION            4 (annotations)
+             66 STORE_NAME               9 (next)
+             68 RETURN_CONST             1 (None)
+
+Disassembly of <code object __init__ at 0x7f6af1e29ac0, file "humanizer.py", line 154>:
+154           0 RESUME                   0
+
+155           2 LOAD_FAST                1 (rng)
+              4 COPY                     1
+              6 POP_JUMP_IF_TRUE        20 (to 48)
+              8 POP_TOP
+             10 LOAD_GLOBAL              1 (NULL + random)
+             20 LOAD_ATTR                2 (Random)
+             40 CALL                     0
+        >>   48 LOAD_FAST                0 (self)
+             50 STORE_ATTR               2 (_rng)
+
+156          60 LOAD_GLOBAL              7 (NULL + range)
+             70 LOAD_FAST                2 (octaves)
+             72 CALL                     1
+             80 GET_ITER
+             82 LOAD_FAST_AND_CLEAR      3 (_)
+             84 SWAP                     2
+             86 BUILD_LIST               0
+             88 SWAP                     2
+        >>   90 FOR_ITER                30 (to 154)
+             94 STORE_FAST               3 (_)
+             96 LOAD_FAST                0 (self)
+             98 LOAD_ATTR                4 (_rng)
+            118 LOAD_ATTR                9 (NULL|self + uniform)
+            138 LOAD_CONST               1 (-1)
+            140 LOAD_CONST               2 (1)
+            142 CALL                     2
+            150 LIST_APPEND              2
+            152 JUMP_BACKWARD           32 (to 90)
+        >>  154 END_FOR
+            156 SWAP                     2
+            158 STORE_FAST               3 (_)
+            160 LOAD_FAST                0 (self)
+            162 STORE_ATTR               5 (_rows)
+
+157         172 LOAD_CONST               3 (0)
+            174 LOAD_FAST                0 (self)
+            176 STORE_ATTR               6 (_n)
+            186 RETURN_CONST             0 (None)
+        >>  188 SWAP                     2
+            190 POP_TOP
+
+156         192 SWAP                     2
+            194 STORE_FAST               3 (_)
+            196 RERAISE                  0
+ExceptionTable:
+  86 to 154 -> 188 [2]
+
+Disassembly of <code object next at 0x179cc2b0, file "humanizer.py", line 159>:
+159           0 RESUME                   0
+
+160           2 LOAD_FAST                0 (self)
+              4 COPY                     1
+              6 LOAD_ATTR                0 (_n)
+             26 LOAD_CONST               1 (1)
+             28 BINARY_OP               13 (+=)
+             32 SWAP                     2
+             34 STORE_ATTR               0 (_n)
+
+161          44 LOAD_FAST                0 (self)
+             46 LOAD_ATTR                0 (_n)
+             66 LOAD_CONST               2 (0)
+             68 STORE_FAST               2 (i)
+             70 STORE_FAST               1 (n)
+
+162          72 LOAD_FAST                1 (n)
+             74 LOAD_CONST               3 (2)
+             76 BINARY_OP                6 (%)
+             80 LOAD_CONST               2 (0)
+             82 COMPARE_OP              40 (==)
+             86 POP_JUMP_IF_FALSE       73 (to 234)
+             88 LOAD_FAST                2 (i)
+             90 LOAD_GLOBAL              3 (NULL + len)
+            100 LOAD_FAST                0 (self)
+            102 LOAD_ATTR                4 (_rows)
+            122 CALL                     1
+            130 LOAD_CONST               1 (1)
+            132 BINARY_OP               10 (-)
+            136 COMPARE_OP               2 (<)
+            140 POP_JUMP_IF_FALSE       46 (to 234)
+
+163     >>  142 LOAD_FAST                1 (n)
+            144 LOAD_CONST               3 (2)
+            146 BINARY_OP               15 (//=)
+            150 STORE_FAST               1 (n)
+
+164         152 LOAD_FAST                2 (i)
+            154 LOAD_CONST               1 (1)
+            156 BINARY_OP               13 (+=)
+            160 STORE_FAST               2 (i)
+
+162         162 LOAD_FAST                1 (n)
+            164 LOAD_CONST               3 (2)
+            166 BINARY_OP                6 (%)
+            170 LOAD_CONST               2 (0)
+            172 COMPARE_OP              40 (==)
+            176 POP_JUMP_IF_FALSE       28 (to 234)
+            178 LOAD_FAST                2 (i)
+            180 LOAD_GLOBAL              3 (NULL + len)
+            190 LOAD_FAST                0 (self)
+            192 LOAD_ATTR                4 (_rows)
+            212 CALL                     1
+            220 LOAD_CONST               1 (1)
+            222 BINARY_OP               10 (-)
+            226 COMPARE_OP               2 (<)
+            230 POP_JUMP_IF_FALSE        1 (to 234)
+            232 JUMP_BACKWARD           46 (to 142)
+
+165     >>  234 LOAD_FAST                0 (self)
+            236 LOAD_ATTR                6 (_rng)
+            256 LOAD_ATTR                9 (NULL|self + uniform)
+            276 LOAD_CONST               4 (-1)
+            278 LOAD_CONST               1 (1)
+            280 CALL                     2
+            288 LOAD_FAST                0 (self)
+            290 LOAD_ATTR                4 (_rows)
+            310 LOAD_FAST                2 (i)
+            312 STORE_SUBSCR
+
+166         316 LOAD_GLOBAL             11 (NULL + sum)
+            326 LOAD_FAST                0 (self)
+            328 LOAD_ATTR                4 (_rows)
+            348 CALL                     1
+            356 LOAD_GLOBAL              3 (NULL + len)
+            366 LOAD_FAST                0 (self)
+            368 LOAD_ATTR                4 (_rows)
+            388 CALL                     1
+            396 LOAD_CONST               5 (0.5)
+            398 BINARY_OP                5 (*)
+            402 BINARY_OP               11 (/)
+            406 STORE_FAST               3 (v)
+
+167         408 LOAD_GLOBAL             13 (NULL + max)
+            418 LOAD_CONST               6 (-1.0)
+            420 LOAD_GLOBAL             15 (NULL + min)
+            430 LOAD_CONST               7 (1.0)
+            432 LOAD_FAST                3 (v)
+            434 CALL                     2
+            442 CALL                     2
+            450 RETURN_VALUE
+
+Disassembly of <code object Humanizer at 0x7f6af1de1fd0, file "humanizer.py", line 170>:
+170           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('Humanizer')
+              8 STORE_NAME               2 (__qualname__)
+
+171          10 LOAD_CONST              15 ((None,))
+             12 LOAD_CONST               2 ('rng')
+             14 LOAD_NAME                3 (Optional)
+             16 LOAD_NAME                4 (random)
+             18 LOAD_ATTR               10 (Random)
+             38 BINARY_SUBSCR
+             42 BUILD_TUPLE              2
+             44 LOAD_CONST               3 (<code object __init__ at 0x7f6aed178c00, file "humanizer.py", line 171>)
+             46 MAKE_FUNCTION            5 (defaults, annotations)
+             48 STORE_NAME               6 (__init__)
+
+178          50 LOAD_NAME                7 (staticmethod)
+
+179          52 LOAD_CONST               4 ('v')
+             54 LOAD_NAME                8 (float)
+             56 LOAD_CONST               5 ('return')
+             58 LOAD_NAME                8 (float)
+             60 BUILD_TUPLE              4
+             62 LOAD_CONST               6 (<code object _factor at 0x7f6af1de68d0, file "humanizer.py", line 178>)
+             64 MAKE_FUNCTION            4 (annotations)
+
+178          66 CALL                     0
+
+179          74 STORE_NAME               9 (_factor)
+
+183          76 LOAD_CONST               7 ('base')
+             78 LOAD_NAME                8 (float)
+             80 LOAD_CONST               5 ('return')
+             82 LOAD_NAME                8 (float)
+             84 BUILD_TUPLE              4
+             86 LOAD_CONST               8 (<code object interval at 0x7f6af1dd73f0, file "humanizer.py", line 183>)
+             88 MAKE_FUNCTION            4 (annotations)
+             90 STORE_NAME              10 (interval)
+
+186          92 LOAD_CONST               7 ('base')
+             94 LOAD_NAME                8 (float)
+             96 LOAD_CONST               5 ('return')
+             98 LOAD_NAME                8 (float)
+            100 BUILD_TUPLE              4
+            102 LOAD_CONST               9 (<code object hold at 0x7f6af1f3f230, file "humanizer.py", line 186>)
+            104 MAKE_FUNCTION            4 (annotations)
+            106 STORE_NAME              11 (hold)
+
+189         108 LOAD_CONST               5 ('return')
+            110 LOAD_NAME               12 (str)
+            112 BUILD_TUPLE              2
+            114 LOAD_CONST              10 (<code object pattern at 0x7f6af1dd7cf0, file "humanizer.py", line 189>)
+            116 MAKE_FUNCTION            4 (annotations)
+            118 STORE_NAME              13 (pattern)
+
+192         120 LOAD_CONST               5 ('return')
+            122 LOAD_NAME                8 (float)
+            124 BUILD_TUPLE              2
+            126 LOAD_CONST              11 (<code object session_factor at 0x7f6aed7f5530, file "humanizer.py", line 192>)
+            128 MAKE_FUNCTION            4 (annotations)
+            130 STORE_NAME              14 (session_factor)
+
+195         132 LOAD_CONST              12 ('key')
+            134 LOAD_NAME               12 (str)
+            136 LOAD_CONST              13 ('hold')
+            138 LOAD_NAME                8 (float)
+            140 LOAD_CONST               5 ('return')
+            142 LOAD_NAME                3 (Optional)
+            144 LOAD_NAME               15 (Tuple)
+            146 LOAD_NAME                8 (float)
+            148 LOAD_NAME               12 (str)
+            150 LOAD_NAME                8 (float)
+            152 BUILD_TUPLE              3
+            154 BINARY_SUBSCR
+            158 BINARY_SUBSCR
+            162 BUILD_TUPLE              6
+            164 LOAD_CONST              14 (<code object side_tap at 0x17a6c7d0, file "humanizer.py", line 195>)
+            166 MAKE_FUNCTION            4 (annotations)
+            168 STORE_NAME              16 (side_tap)
+            170 RETURN_CONST             1 (None)
+
+Disassembly of <code object __init__ at 0x7f6aed178c00, file "humanizer.py", line 171>:
+171           0 RESUME                   0
+
+172           2 LOAD_FAST                1 (rng)
+              4 COPY                     1
+              6 POP_JUMP_IF_TRUE        20 (to 48)
+              8 POP_TOP
+             10 LOAD_GLOBAL              1 (NULL + random)
+             20 LOAD_ATTR                2 (Random)
+             40 CALL                     0
+        >>   48 LOAD_FAST                0 (self)
+             50 STORE_ATTR               2 (_rng)
+
+173          60 LOAD_GLOBAL              7 (NULL + PinkNoise)
+             70 LOAD_FAST                0 (self)
+             72 LOAD_ATTR                4 (_rng)
+             92 CALL                     1
+            100 LOAD_FAST                0 (self)
+            102 STORE_ATTR               4 (_interval)
+
+174         112 LOAD_GLOBAL              7 (NULL + PinkNoise)
+            122 LOAD_FAST                0 (self)
+            124 LOAD_ATTR                4 (_rng)
+            144 CALL                     1
+            152 LOAD_FAST                0 (self)
+            154 STORE_ATTR               5 (_hold)
+
+175         164 LOAD_GLOBAL             13 (NULL + SessionDrift)
+            174 CALL                     0
+            182 LOAD_FAST                0 (self)
+            184 STORE_ATTR               7 (drift)
+
+176         194 LOAD_GLOBAL             17 (NULL + PitchBalance)
+            204 CALL                     0
+            212 LOAD_FAST                0 (self)
+            214 STORE_ATTR               9 (pitch)
+            224 RETURN_CONST             0 (None)
+
+Disassembly of <code object _factor at 0x7f6af1de68d0, file "humanizer.py", line 178>:
+178           0 RESUME                   0
+
+180           2 LOAD_FAST                0 (v)
+              4 LOAD_CONST               1 (1.0)
+              6 BINARY_OP                0 (+)
+             10 LOAD_CONST               2 (2.0)
+             12 BINARY_OP               11 (/)
+             16 STORE_FAST               1 (u)
+
+181          18 LOAD_GLOBAL              1 (NULL + math)
+             28 LOAD_ATTR                2 (exp)
+             48 LOAD_GLOBAL              1 (NULL + math)
+             58 LOAD_ATTR                4 (log)
+             78 LOAD_GLOBAL              6 (LO)
+             88 CALL                     1
+             96 LOAD_GLOBAL              1 (NULL + math)
+            106 LOAD_ATTR                4 (log)
+            126 LOAD_GLOBAL              8 (HI)
+            136 CALL                     1
+            144 LOAD_GLOBAL              1 (NULL + math)
+            154 LOAD_ATTR                4 (log)
+            174 LOAD_GLOBAL              6 (LO)
+            184 CALL                     1
+            192 BINARY_OP               10 (-)
+            196 LOAD_FAST                1 (u)
+            198 BINARY_OP                5 (*)
+            202 BINARY_OP                0 (+)
+            206 CALL                     1
+            214 RETURN_VALUE
+
+Disassembly of <code object interval at 0x7f6af1dd73f0, file "humanizer.py", line 183>:
+183           0 RESUME                   0
+
+184           2 LOAD_FAST                1 (base)
+              4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + _factor)
+             26 LOAD_FAST                0 (self)
+             28 LOAD_ATTR                2 (_interval)
+             48 LOAD_ATTR                5 (NULL|self + next)
+             68 CALL                     0
+             76 CALL                     1
+             84 BINARY_OP                5 (*)
+             88 RETURN_VALUE
+
+Disassembly of <code object hold at 0x7f6af1f3f230, file "humanizer.py", line 186>:
+186           0 RESUME                   0
+
+187           2 LOAD_GLOBAL              1 (NULL + max)
+             12 LOAD_GLOBAL              2 (MIN_HOLD_S)
+             22 LOAD_FAST                1 (base)
+             24 LOAD_FAST                0 (self)
+             26 LOAD_ATTR                5 (NULL|self + _factor)
+             46 LOAD_FAST                0 (self)
+             48 LOAD_ATTR                6 (_hold)
+             68 LOAD_ATTR                9 (NULL|self + next)
+             88 CALL                     0
+             96 CALL                     1
+            104 BINARY_OP                5 (*)
+            108 CALL                     2
+            116 RETURN_VALUE
+
+Disassembly of <code object pattern at 0x7f6af1dd7cf0, file "humanizer.py", line 189>:
+189           0 RESUME                   0
+
+190           2 LOAD_GLOBAL              1 (NULL + pick_pattern)
+             12 LOAD_FAST                0 (self)
+             14 LOAD_ATTR                2 (_rng)
+             34 LOAD_FAST                0 (self)
+             36 LOAD_ATTR                4 (drift)
+             56 LOAD_ATTR                7 (NULL|self + relaxed)
+             76 CALL                     0
+             84 CALL                     2
+             92 RETURN_VALUE
+
+Disassembly of <code object session_factor at 0x7f6aed7f5530, file "humanizer.py", line 192>:
+192           0 RESUME                   0
+
+193           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (drift)
+             24 LOAD_ATTR                3 (NULL|self + factor)
+             44 CALL                     0
+             52 RETURN_VALUE
+
+Disassembly of <code object side_tap at 0x17a6c7d0, file "humanizer.py", line 195>:
+195           0 RESUME                   0
+
+196           2 NOP
+
+200           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (_rng)
+             26 LOAD_ATTR                3 (NULL|self + random)
+             46 CALL                     0
+             54 LOAD_GLOBAL              4 (SIDE_TAP_CHANCE)
+             64 COMPARE_OP              92 (>=)
+             68 POP_JUMP_IF_FALSE        1 (to 72)
+
+201          70 RETURN_CONST             0 (None)
+
+202     >>   72 LOAD_GLOBAL              6 (SIDE_KEYS)
+             82 LOAD_ATTR                9 (NULL|self + get)
+            102 LOAD_FAST                1 (key)
+            104 LOAD_CONST               1 (())
+            106 CALL                     2
+            114 GET_ITER
+            116 LOAD_FAST_AND_CLEAR      4 (k)
+            118 SWAP                     2
+            120 BUILD_LIST               0
+            122 SWAP                     2
+        >>  124 FOR_ITER                 9 (to 146)
+            128 STORE_FAST               4 (k)
+            130 LOAD_FAST                4 (k)
+            132 LOAD_FAST                2 (keys)
+            134 CONTAINS_OP              0
+            136 POP_JUMP_IF_TRUE         1 (to 140)
+            138 JUMP_BACKWARD            8 (to 124)
+        >>  140 LOAD_FAST                4 (k)
+            142 LIST_APPEND              2
+            144 JUMP_BACKWARD           11 (to 124)
+        >>  146 END_FOR
+            148 STORE_FAST               5 (options)
+            150 STORE_FAST               4 (k)
+
+203         152 LOAD_FAST                5 (options)
+            154 POP_JUMP_IF_TRUE         1 (to 158)
+
+204         156 RETURN_CONST             0 (None)
+
+205     >>  158 PUSH_NULL
+            160 LOAD_FAST                0 (self)
+            162 LOAD_ATTR                0 (_rng)
+            182 LOAD_ATTR               10 (uniform)
+            202 LOAD_GLOBAL             12 (SIDE_TAP_S)
+            212 CALL_FUNCTION_EX         0
+            214 STORE_FAST               6 (tap)
+
+206         216 LOAD_FAST                3 (hold)
+            218 LOAD_FAST                6 (tap)
+            220 LOAD_CONST               2 (0.2)
+            222 BINARY_OP                0 (+)
+            226 COMPARE_OP               2 (<)
+            230 POP_JUMP_IF_FALSE        1 (to 234)
+
+207         232 RETURN_CONST             0 (None)
+
+208     >>  234 LOAD_FAST                0 (self)
+            236 LOAD_ATTR                0 (_rng)
+            256 LOAD_ATTR               11 (NULL|self + uniform)
+            276 LOAD_CONST               3 (0.1)
+            278 LOAD_FAST                3 (hold)
+            280 LOAD_FAST                6 (tap)
+            282 BINARY_OP               10 (-)
+            286 LOAD_CONST               3 (0.1)
+            288 BINARY_OP               10 (-)
+            292 CALL                     2
+            300 STORE_FAST               7 (lead)
+
+209         302 LOAD_FAST                7 (lead)
+            304 LOAD_FAST                0 (self)
+            306 LOAD_ATTR                0 (_rng)
+            326 LOAD_ATTR               15 (NULL|self + choice)
+            346 LOAD_FAST                5 (options)
+            348 CALL                     1
+            356 LOAD_FAST                6 (tap)
+            358 BUILD_TUPLE              3
+            360 RETURN_VALUE
+        >>  362 SWAP                     2
+            364 POP_TOP
+
+202         366 SWAP                     2
+            368 STORE_FAST               4 (k)
+            370 RERAISE                  0
+ExceptionTable:
+  120 to 136 -> 362 [2]
+  140 to 146 -> 362 [2]
+
+Disassembly of <code object CoffeeBreak at 0x7f6af1dd9a50, file "humanizer.py", line 212>:
+212           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('CoffeeBreak')
+              8 STORE_NAME               2 (__qualname__)
+
+213          10 NOP
+
+215          12 LOAD_NAME                3 (time)
+             14 LOAD_ATTR                8 (monotonic)
+             34 LOAD_CONST               1 (None)
+             36 BUILD_TUPLE              2
+             38 LOAD_CONST               2 ('clock')
+             40 LOAD_NAME                5 (Callable)
+             42 BUILD_LIST               0
+             44 LOAD_NAME                6 (float)
+             46 BUILD_TUPLE              2
+             48 BINARY_SUBSCR
+             52 LOAD_CONST               3 ('rng')
+             54 LOAD_NAME                7 (Optional)
+             56 LOAD_NAME                8 (random)
+             58 LOAD_ATTR               18 (Random)
+             78 BINARY_SUBSCR
+             82 BUILD_TUPLE              4
+             84 LOAD_CONST               4 (<code object __init__ at 0x7f6aed7a8930, file "humanizer.py", line 215>)
+             86 MAKE_FUNCTION            5 (defaults, annotations)
+             88 STORE_NAME              10 (__init__)
+
+222          90 LOAD_CONST               5 ('state_value')
+             92 LOAD_NAME               11 (str)
+             94 LOAD_CONST               6 ('return')
+             96 LOAD_NAME                6 (float)
+             98 BUILD_TUPLE              4
+            100 LOAD_CONST               7 (<code object check at 0x179cef00, file "humanizer.py", line 222>)
+            102 MAKE_FUNCTION            4 (annotations)
+            104 STORE_NAME              12 (check)
+            106 RETURN_CONST             1 (None)
+
+Disassembly of <code object __init__ at 0x7f6aed7a8930, file "humanizer.py", line 215>:
+215           0 RESUME                   0
+
+216           2 LOAD_FAST                1 (settings)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (s)
+
+217          16 LOAD_FAST                2 (clock)
+             18 LOAD_FAST                0 (self)
+             20 STORE_ATTR               1 (_clock)
+
+218          30 LOAD_FAST                3 (rng)
+             32 COPY                     1
+             34 POP_JUMP_IF_TRUE        20 (to 76)
+             36 POP_TOP
+             38 LOAD_GLOBAL              5 (NULL + random)
+             48 LOAD_ATTR                6 (Random)
+             68 CALL                     0
+        >>   76 LOAD_FAST                0 (self)
+             78 STORE_ATTR               4 (_rng)
+
+219          88 PUSH_NULL
+             90 LOAD_FAST                2 (clock)
+             92 CALL                     0
+            100 LOAD_FAST                0 (self)
+            102 STORE_ATTR               5 (_t0)
+
+220         112 PUSH_NULL
+            114 LOAD_FAST                0 (self)
+            116 LOAD_ATTR                8 (_rng)
+            136 LOAD_ATTR               12 (uniform)
+            156 LOAD_GLOBAL             14 (BREAK_EVERY_MIN)
+            166 CALL_FUNCTION_EX         0
+            168 LOAD_CONST               1 (60.0)
+            170 BINARY_OP                5 (*)
+            174 LOAD_FAST                0 (self)
+            176 STORE_ATTR               8 (_due)
+            186 RETURN_CONST             0 (None)
+
+Disassembly of <code object check at 0x179cef00, file "humanizer.py", line 222>:
+222           0 RESUME                   0
+
+223           2 NOP
+
+224           4 LOAD_GLOBAL              1 (NULL + getattr)
+             14 LOAD_FAST                0 (self)
+             16 LOAD_ATTR                2 (s)
+             36 LOAD_CONST               1 ('coffee_break_enabled')
+             38 LOAD_CONST               2 (False)
+             40 CALL                     3
+             48 POP_JUMP_IF_FALSE        8 (to 66)
+             50 LOAD_FAST                1 (state_value)
+             52 LOAD_GLOBAL              4 (LOBBY_STATES)
+             62 CONTAINS_OP              1
+             64 POP_JUMP_IF_FALSE        1 (to 68)
+
+225     >>   66 RETURN_CONST             3 (0.0)
+
+226     >>   68 LOAD_FAST                0 (self)
+             70 LOAD_ATTR                7 (NULL|self + _clock)
+             90 CALL                     0
+             98 STORE_FAST               2 (now)
+
+227         100 LOAD_FAST                2 (now)
+            102 LOAD_FAST                0 (self)
+            104 LOAD_ATTR                8 (_t0)
+            124 BINARY_OP               10 (-)
+            128 LOAD_FAST                0 (self)
+            130 LOAD_ATTR               10 (_due)
+            150 COMPARE_OP               2 (<)
+            154 POP_JUMP_IF_FALSE        1 (to 158)
+
+228         156 RETURN_CONST             3 (0.0)
+
+229     >>  158 PUSH_NULL
+            160 LOAD_FAST                0 (self)
+            162 LOAD_ATTR               12 (_rng)
+            182 LOAD_ATTR               14 (uniform)
+            202 LOAD_GLOBAL             16 (BREAK_LENGTH_S)
+            212 CALL_FUNCTION_EX         0
+            214 STORE_FAST               3 (length)
+
+230         216 LOAD_FAST                2 (now)
+            218 LOAD_FAST                3 (length)
+            220 BINARY_OP                0 (+)
+            224 LOAD_FAST                0 (self)
+            226 STORE_ATTR               4 (_t0)
+
+231         236 PUSH_NULL
+            238 LOAD_FAST                0 (self)
+            240 LOAD_ATTR               12 (_rng)
+            260 LOAD_ATTR               14 (uniform)
+            280 LOAD_GLOBAL             18 (BREAK_EVERY_MIN)
+            290 CALL_FUNCTION_EX         0
+            292 LOAD_CONST               4 (60.0)
+            294 BINARY_OP                5 (*)
+            298 LOAD_FAST                0 (self)
+            300 STORE_ATTR               5 (_due)
+
+232         310 LOAD_FAST                3 (length)
+            312 RETURN_VALUE
+        >>  314 PUSH_EXC_INFO
+
+233         316 LOAD_GLOBAL             20 (Exception)
+            326 CHECK_EXC_MATCH
+            328 POP_JUMP_IF_FALSE        3 (to 336)
+            330 POP_TOP
+
+234         332 POP_EXCEPT
+            334 RETURN_CONST             3 (0.0)
+
+233     >>  336 RERAISE                  0
+        >>  338 COPY                     3
+            340 POP_EXCEPT
+            342 RERAISE                  1
+ExceptionTable:
+  4 to 64 -> 314 [0]
+  68 to 154 -> 314 [0]
+  158 to 310 -> 314 [0]
+  314 to 330 -> 338 [1] lasti
+  336 to 336 -> 338 [1] lasti

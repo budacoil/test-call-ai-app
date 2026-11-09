@@ -1,0 +1,2090 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+ 13           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (ctypes)
+             10 STORE_NAME               0 (ctypes)
+
+ 14          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (time)
+             18 STORE_NAME               1 (time)
+
+ 15          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               2 (('wintypes',))
+             24 IMPORT_NAME              0 (ctypes)
+             26 IMPORT_FROM              2 (wintypes)
+             28 STORE_NAME               2 (wintypes)
+             30 POP_TOP
+
+ 16          32 LOAD_CONST               0 (0)
+             34 LOAD_CONST               3 (('dataclass',))
+             36 IMPORT_NAME              3 (dataclasses)
+             38 IMPORT_FROM              4 (dataclass)
+             40 STORE_NAME               4 (dataclass)
+             42 POP_TOP
+
+ 17          44 LOAD_CONST               0 (0)
+             46 LOAD_CONST               4 (('Optional', 'Tuple'))
+             48 IMPORT_NAME              5 (typing)
+             50 IMPORT_FROM              6 (Optional)
+             52 STORE_NAME               6 (Optional)
+             54 IMPORT_FROM              7 (Tuple)
+             56 STORE_NAME               7 (Tuple)
+             58 POP_TOP
+
+ 19          60 LOAD_CONST               0 (0)
+             62 LOAD_CONST               1 (None)
+             64 IMPORT_NAME              8 (numpy)
+             66 STORE_NAME               9 (np)
+
+ 21          68 LOAD_CONST               5 (1)
+             70 STORE_NAME              10 (PW_CLIENTONLY)
+
+ 22          72 LOAD_CONST               6 (2)
+             74 STORE_NAME              11 (PW_RENDERFULLCONTENT)
+
+ 23          76 LOAD_CONST               0 (0)
+             78 STORE_NAME              12 (BI_RGB)
+
+ 24          80 LOAD_CONST               0 (0)
+             82 STORE_NAME              13 (DIB_RGB_COLORS)
+
+ 26          84 LOAD_CONST               7 (('ok', 'minimized', 'no_window', 'black', 'error', 'denied'))
+             86 UNPACK_SEQUENCE          6
+             90 STORE_NAME              14 (OK)
+             92 STORE_NAME              15 (MINIMIZED)
+             94 STORE_NAME              16 (NO_WINDOW)
+             96 STORE_NAME              17 (BLACK)
+             98 STORE_NAME              18 (ERROR)
+            100 STORE_NAME              19 (DENIED)
+
+ 27         102 LOAD_CONST               8 (5)
+            104 STORE_NAME              20 (ERROR_ACCESS_DENIED)
+
+ 30         106 LOAD_NAME               10 (PW_CLIENTONLY)
+            108 LOAD_NAME               11 (PW_RENDERFULLCONTENT)
+            110 BINARY_OP                7 (|)
+            114 LOAD_NAME               10 (PW_CLIENTONLY)
+            116 BUILD_TUPLE              2
+            118 STORE_NAME              21 (FLAG_VARIANTS)
+
+ 33         120 LOAD_NAME                4 (dataclass)
+
+ 34         122 PUSH_NULL
+            124 LOAD_BUILD_CLASS
+            126 LOAD_CONST               9 (<code object Capture at 0x7f6aed1c70f0, file "window_capture.py", line 33>)
+            128 MAKE_FUNCTION            0
+            130 LOAD_CONST              10 ('Capture')
+            132 CALL                     2
+
+ 33         140 CALL                     0
+
+ 34         148 STORE_NAME              22 (Capture)
+
+ 44         150 LOAD_CONST              11 ('origin')
+            152 LOAD_NAME                7 (Tuple)
+            154 LOAD_NAME               23 (int)
+            156 LOAD_NAME               23 (int)
+            158 BUILD_TUPLE              2
+            160 BINARY_SUBSCR
+            164 LOAD_CONST              12 ('rel_x')
+            166 LOAD_NAME               23 (int)
+            168 LOAD_CONST              13 ('rel_y')
+            170 LOAD_NAME               23 (int)
+            172 LOAD_CONST              14 ('return')
+            174 LOAD_NAME                7 (Tuple)
+            176 LOAD_NAME               23 (int)
+            178 LOAD_NAME               23 (int)
+            180 BUILD_TUPLE              2
+            182 BINARY_SUBSCR
+            186 BUILD_TUPLE              8
+            188 LOAD_CONST              15 (<code object to_screen at 0x7f6aed7ffee0, file "window_capture.py", line 44>)
+            190 MAKE_FUNCTION            4 (annotations)
+            192 STORE_NAME              24 (to_screen)
+
+ 48         194 PUSH_NULL
+            196 LOAD_BUILD_CLASS
+            198 LOAD_CONST              16 (<code object _BITMAPINFOHEADER at 0x7f6aed189960, file "window_capture.py", line 48>)
+            200 MAKE_FUNCTION            0
+            202 LOAD_CONST              17 ('_BITMAPINFOHEADER')
+            204 LOAD_NAME                0 (ctypes)
+            206 LOAD_ATTR               50 (Structure)
+            226 CALL                     3
+            234 STORE_NAME              26 (_BITMAPINFOHEADER)
+
+ 57         236 PUSH_NULL
+            238 LOAD_BUILD_CLASS
+            240 LOAD_CONST              18 (<code object _BITMAPINFO at 0x7f6aed7f6730, file "window_capture.py", line 57>)
+            242 MAKE_FUNCTION            0
+            244 LOAD_CONST              19 ('_BITMAPINFO')
+            246 LOAD_NAME                0 (ctypes)
+            248 LOAD_ATTR               50 (Structure)
+            268 CALL                     3
+            276 STORE_NAME              27 (_BITMAPINFO)
+
+ 61         278 PUSH_NULL
+            280 LOAD_BUILD_CLASS
+            282 LOAD_CONST              20 (<code object Win32Gdi at 0x7f6aecfac760, file "window_capture.py", line 61>)
+            284 MAKE_FUNCTION            0
+            286 LOAD_CONST              21 ('Win32Gdi')
+            288 CALL                     2
+            296 STORE_NAME              28 (Win32Gdi)
+
+136         298 PUSH_NULL
+            300 LOAD_BUILD_CLASS
+            302 LOAD_CONST              22 (<code object GameWindow at 0x7f6aed7ffaa0, file "window_capture.py", line 136>)
+            304 MAKE_FUNCTION            0
+            306 LOAD_CONST              23 ('GameWindow')
+            308 CALL                     2
+            316 STORE_NAME              29 (GameWindow)
+
+165         318 PUSH_NULL
+            320 LOAD_BUILD_CLASS
+            322 LOAD_CONST              24 (<code object WindowCapture at 0x7f6aed7a3470, file "window_capture.py", line 165>)
+            324 MAKE_FUNCTION            0
+            326 LOAD_CONST              25 ('WindowCapture')
+            328 CALL                     2
+            336 STORE_NAME              30 (WindowCapture)
+
+263         338 LOAD_CONST              29 (('return', None))
+            340 LOAD_CONST              26 (<code object _quiet at 0x7f6aecffc030, file "window_capture.py", line 263>)
+            342 MAKE_FUNCTION            4 (annotations)
+            344 STORE_NAME              31 (_quiet)
+
+270         346 LOAD_CONST              27 ('frame')
+            348 LOAD_NAME                9 (np)
+            350 LOAD_ATTR               64 (ndarray)
+            370 LOAD_CONST              14 ('return')
+            372 LOAD_NAME               33 (bool)
+            374 BUILD_TUPLE              4
+            376 LOAD_CONST              28 (<code object _is_black at 0x7f6aed1d1f10, file "window_capture.py", line 270>)
+            378 MAKE_FUNCTION            4 (annotations)
+            380 STORE_NAME              34 (_is_black)
+            382 RETURN_CONST             1 (None)
+
+Disassembly of <code object Capture at 0x7f6aed1c70f0, file "window_capture.py", line 33>:
+ 33           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('Capture')
+              8 STORE_NAME               2 (__qualname__)
+             10 SETUP_ANNOTATIONS
+
+ 35          12 LOAD_NAME                3 (str)
+             14 LOAD_NAME                4 (__annotations__)
+             16 LOAD_CONST               1 ('status')
+             18 STORE_SUBSCR
+
+ 36          22 LOAD_CONST               2 (None)
+             24 STORE_NAME               5 (frame)
+             26 LOAD_NAME                6 (Optional)
+             28 LOAD_NAME                7 (np)
+             30 LOAD_ATTR               16 (ndarray)
+             50 BINARY_SUBSCR
+             54 LOAD_NAME                4 (__annotations__)
+             56 LOAD_CONST               3 ('frame')
+             58 STORE_SUBSCR
+
+ 37          62 LOAD_CONST               4 ((0, 0))
+             64 STORE_NAME               9 (origin)
+             66 LOAD_NAME               10 (Tuple)
+             68 LOAD_NAME               11 (int)
+             70 LOAD_NAME               11 (int)
+             72 BUILD_TUPLE              2
+             74 BINARY_SUBSCR
+             78 LOAD_NAME                4 (__annotations__)
+             80 LOAD_CONST               5 ('origin')
+             82 STORE_SUBSCR
+
+ 39          86 LOAD_CONST               6 ('x')
+             88 LOAD_NAME               11 (int)
+             90 LOAD_CONST               7 ('y')
+             92 LOAD_NAME               11 (int)
+             94 LOAD_CONST               8 ('return')
+             96 LOAD_NAME               10 (Tuple)
+             98 LOAD_NAME               11 (int)
+            100 LOAD_NAME               11 (int)
+            102 BUILD_TUPLE              2
+            104 BINARY_SUBSCR
+            108 BUILD_TUPLE              6
+            110 LOAD_CONST               9 (<code object to_screen at 0x7f6aed1d3df0, file "window_capture.py", line 39>)
+            112 MAKE_FUNCTION            4 (annotations)
+            114 STORE_NAME              12 (to_screen)
+            116 RETURN_CONST             2 (None)
+
+Disassembly of <code object to_screen at 0x7f6aed1d3df0, file "window_capture.py", line 39>:
+ 39           0 RESUME                   0
+
+ 40           2 NOP
+
+ 41           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (origin)
+             26 LOAD_CONST               1 (0)
+             28 BINARY_SUBSCR
+             32 LOAD_GLOBAL              3 (NULL + int)
+             42 LOAD_FAST                1 (x)
+             44 CALL                     1
+             52 BINARY_OP                0 (+)
+             56 LOAD_FAST                0 (self)
+             58 LOAD_ATTR                0 (origin)
+             78 LOAD_CONST               2 (1)
+             80 BINARY_SUBSCR
+             84 LOAD_GLOBAL              3 (NULL + int)
+             94 LOAD_FAST                2 (y)
+             96 CALL                     1
+            104 BINARY_OP                0 (+)
+            108 BUILD_TUPLE              2
+            110 RETURN_VALUE
+
+Disassembly of <code object to_screen at 0x7f6aed7ffee0, file "window_capture.py", line 44>:
+ 44           0 RESUME                   0
+
+ 45           2 LOAD_FAST                0 (origin)
+              4 LOAD_CONST               1 (0)
+              6 BINARY_SUBSCR
+             10 LOAD_GLOBAL              1 (NULL + int)
+             20 LOAD_FAST                1 (rel_x)
+             22 CALL                     1
+             30 BINARY_OP                0 (+)
+             34 LOAD_FAST                0 (origin)
+             36 LOAD_CONST               2 (1)
+             38 BINARY_SUBSCR
+             42 LOAD_GLOBAL              1 (NULL + int)
+             52 LOAD_FAST                2 (rel_y)
+             54 CALL                     1
+             62 BINARY_OP                0 (+)
+             66 BUILD_TUPLE              2
+             68 RETURN_VALUE
+
+Disassembly of <code object _BITMAPINFOHEADER at 0x7f6aed189960, file "window_capture.py", line 48>:
+ 48           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('_BITMAPINFOHEADER')
+              8 STORE_NAME               2 (__qualname__)
+
+ 50          10 LOAD_CONST               1 ('biSize')
+             12 LOAD_NAME                3 (wintypes)
+             14 LOAD_ATTR                8 (DWORD)
+             34 BUILD_TUPLE              2
+             36 LOAD_CONST               2 ('biWidth')
+             38 LOAD_NAME                3 (wintypes)
+             40 LOAD_ATTR               10 (LONG)
+             60 BUILD_TUPLE              2
+             62 LOAD_CONST               3 ('biHeight')
+             64 LOAD_NAME                3 (wintypes)
+             66 LOAD_ATTR               10 (LONG)
+             86 BUILD_TUPLE              2
+
+ 51          88 LOAD_CONST               4 ('biPlanes')
+             90 LOAD_NAME                3 (wintypes)
+             92 LOAD_ATTR               12 (WORD)
+            112 BUILD_TUPLE              2
+            114 LOAD_CONST               5 ('biBitCount')
+            116 LOAD_NAME                3 (wintypes)
+            118 LOAD_ATTR               12 (WORD)
+            138 BUILD_TUPLE              2
+            140 LOAD_CONST               6 ('biCompression')
+            142 LOAD_NAME                3 (wintypes)
+            144 LOAD_ATTR                8 (DWORD)
+            164 BUILD_TUPLE              2
+
+ 52         166 LOAD_CONST               7 ('biSizeImage')
+            168 LOAD_NAME                3 (wintypes)
+            170 LOAD_ATTR                8 (DWORD)
+            190 BUILD_TUPLE              2
+            192 LOAD_CONST               8 ('biXPelsPerMeter')
+            194 LOAD_NAME                3 (wintypes)
+            196 LOAD_ATTR               10 (LONG)
+            216 BUILD_TUPLE              2
+            218 LOAD_CONST               9 ('biYPelsPerMeter')
+            220 LOAD_NAME                3 (wintypes)
+            222 LOAD_ATTR               10 (LONG)
+            242 BUILD_TUPLE              2
+
+ 53         244 LOAD_CONST              10 ('biClrUsed')
+            246 LOAD_NAME                3 (wintypes)
+            248 LOAD_ATTR                8 (DWORD)
+            268 BUILD_TUPLE              2
+            270 LOAD_CONST              11 ('biClrImportant')
+            272 LOAD_NAME                3 (wintypes)
+            274 LOAD_ATTR                8 (DWORD)
+            294 BUILD_TUPLE              2
+
+ 49         296 BUILD_LIST              11
+            298 STORE_NAME               7 (_fields_)
+            300 RETURN_CONST            12 (None)
+
+Disassembly of <code object _BITMAPINFO at 0x7f6aed7f6730, file "window_capture.py", line 57>:
+ 57           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('_BITMAPINFO')
+              8 STORE_NAME               2 (__qualname__)
+
+ 58          10 LOAD_CONST               1 ('bmiHeader')
+             12 LOAD_NAME                3 (_BITMAPINFOHEADER)
+             14 BUILD_TUPLE              2
+             16 LOAD_CONST               2 ('bmiColors')
+             18 LOAD_NAME                4 (wintypes)
+             20 LOAD_ATTR               10 (DWORD)
+             40 LOAD_CONST               3 (3)
+             42 BINARY_OP                5 (*)
+             46 BUILD_TUPLE              2
+             48 BUILD_LIST               2
+             50 STORE_NAME               6 (_fields_)
+             52 RETURN_CONST             4 (None)
+
+Disassembly of <code object Win32Gdi at 0x7f6aecfac760, file "window_capture.py", line 61>:
+ 61           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('Win32Gdi')
+              8 STORE_NAME               2 (__qualname__)
+
+ 62          10 NOP
+
+ 64          12 LOAD_CONST               1 (<code object __init__ at 0x17ae6940, file "window_capture.py", line 64>)
+             14 MAKE_FUNCTION            0
+             16 STORE_NAME               3 (__init__)
+
+ 83          18 LOAD_CONST               2 ('return')
+             20 LOAD_NAME                4 (bool)
+             22 BUILD_TUPLE              2
+             24 LOAD_CONST               3 (<code object is_window at 0x7f6aed7ffcc0, file "window_capture.py", line 83>)
+             26 MAKE_FUNCTION            4 (annotations)
+             28 STORE_NAME               5 (is_window)
+
+ 86          30 LOAD_CONST               2 ('return')
+             32 LOAD_NAME                4 (bool)
+             34 BUILD_TUPLE              2
+             36 LOAD_CONST               4 (<code object is_iconic at 0x7f6aed7fe890, file "window_capture.py", line 86>)
+             38 MAKE_FUNCTION            4 (annotations)
+             40 STORE_NAME               6 (is_iconic)
+
+ 89          42 LOAD_CONST               2 ('return')
+             44 LOAD_NAME                7 (Optional)
+             46 LOAD_NAME                8 (Tuple)
+             48 LOAD_NAME                9 (int)
+             50 LOAD_NAME                9 (int)
+             52 LOAD_NAME                9 (int)
+             54 LOAD_NAME                9 (int)
+             56 BUILD_TUPLE              4
+             58 BINARY_SUBSCR
+             62 BINARY_SUBSCR
+             66 BUILD_TUPLE              2
+             68 LOAD_CONST               5 (<code object client_rect at 0x17a945a0, file "window_capture.py", line 89>)
+             70 MAKE_FUNCTION            4 (annotations)
+             72 STORE_NAME              10 (client_rect)
+
+ 96          74 LOAD_CONST               6 (<code object get_dc at 0x7f6aed7f4b30, file "window_capture.py", line 96>)
+             76 MAKE_FUNCTION            0
+             78 STORE_NAME              11 (get_dc)
+
+ 99          80 LOAD_CONST               7 (<code object release_dc at 0x7f6aed7f7530, file "window_capture.py", line 99>)
+             82 MAKE_FUNCTION            0
+             84 STORE_NAME              12 (release_dc)
+
+102          86 LOAD_CONST               8 (<code object create_compatible_dc at 0x7f6aed7f7330, file "window_capture.py", line 102>)
+             88 MAKE_FUNCTION            0
+             90 STORE_NAME              13 (create_compatible_dc)
+
+105          92 LOAD_CONST               9 (<code object create_compatible_bitmap at 0x7f6aed7f7930, file "window_capture.py", line 105>)
+             94 MAKE_FUNCTION            0
+             96 STORE_NAME              14 (create_compatible_bitmap)
+
+108          98 LOAD_CONST              10 (<code object select_object at 0x7f6aed7f6d30, file "window_capture.py", line 108>)
+            100 MAKE_FUNCTION            0
+            102 STORE_NAME              15 (select_object)
+
+111         104 LOAD_CONST              11 (<code object delete_object at 0x7f6aed7f6930, file "window_capture.py", line 111>)
+            106 MAKE_FUNCTION            0
+            108 STORE_NAME              16 (delete_object)
+
+114         110 LOAD_CONST              12 (<code object delete_dc at 0x7f6aed7f7230, file "window_capture.py", line 114>)
+            112 MAKE_FUNCTION            0
+            114 STORE_NAME              17 (delete_dc)
+
+117         116 LOAD_CONST               2 ('return')
+            118 LOAD_NAME                4 (bool)
+            120 BUILD_TUPLE              2
+            122 LOAD_CONST              13 (<code object print_window at 0x7f6aed1c5e30, file "window_capture.py", line 117>)
+            124 MAKE_FUNCTION            4 (annotations)
+            126 STORE_NAME              18 (print_window)
+
+121         128 LOAD_CONST               2 ('return')
+            130 LOAD_NAME                9 (int)
+            132 BUILD_TUPLE              2
+            134 LOAD_CONST              14 (<code object last_error at 0x7f6aed17d2f0, file "window_capture.py", line 121>)
+            136 MAKE_FUNCTION            4 (annotations)
+            138 STORE_NAME              19 (last_error)
+
+125         140 LOAD_CONST              15 ('w')
+            142 LOAD_NAME                9 (int)
+            144 LOAD_CONST              16 ('h')
+            146 LOAD_NAME                9 (int)
+            148 LOAD_CONST               2 ('return')
+            150 LOAD_NAME                7 (Optional)
+            152 LOAD_NAME               20 (bytes)
+            154 BINARY_SUBSCR
+            158 BUILD_TUPLE              6
+            160 LOAD_CONST              17 (<code object get_dibits at 0x17ae6400, file "window_capture.py", line 125>)
+            162 MAKE_FUNCTION            4 (annotations)
+            164 STORE_NAME              21 (get_dibits)
+            166 RETURN_CONST            18 (None)
+
+Disassembly of <code object __init__ at 0x17ae6940, file "window_capture.py", line 64>:
+ 64           0 RESUME                   0
+
+ 65           2 LOAD_GLOBAL              1 (NULL + ctypes)
+             12 LOAD_ATTR                2 (WinDLL)
+             32 LOAD_CONST               1 ('user32')
+             34 LOAD_CONST               2 (True)
+             36 KW_NAMES                 3 (('use_last_error',))
+             38 CALL                     2
+             46 LOAD_FAST                0 (self)
+             48 STORE_ATTR               2 (u)
+
+ 66          58 LOAD_GLOBAL              1 (NULL + ctypes)
+             68 LOAD_ATTR                2 (WinDLL)
+             88 LOAD_CONST               4 ('gdi32')
+             90 LOAD_CONST               2 (True)
+             92 KW_NAMES                 3 (('use_last_error',))
+             94 CALL                     2
+            102 LOAD_FAST                0 (self)
+            104 STORE_ATTR               3 (g)
+
+ 67         114 LOAD_GLOBAL              8 (wintypes)
+            124 LOAD_ATTR               10 (HANDLE)
+            144 LOAD_GLOBAL              0 (ctypes)
+            154 LOAD_ATTR               12 (c_int)
+            174 LOAD_GLOBAL              8 (wintypes)
+            184 LOAD_ATTR               14 (BOOL)
+            204 STORE_FAST               3 (b)
+            206 STORE_FAST               2 (i)
+            208 STORE_FAST               1 (h)
+
+ 68         210 LOAD_FAST                1 (h)
+            212 BUILD_LIST               1
+            214 LOAD_FAST                3 (b)
+            216 SWAP                     2
+            218 LOAD_FAST                0 (self)
+            220 LOAD_ATTR                4 (u)
+            240 LOAD_ATTR               16 (IsWindow)
+            260 STORE_ATTR               9 (argtypes)
+            270 LOAD_FAST                0 (self)
+            272 LOAD_ATTR                4 (u)
+            292 LOAD_ATTR               16 (IsWindow)
+            312 STORE_ATTR              10 (restype)
+
+ 69         322 LOAD_FAST                1 (h)
+            324 BUILD_LIST               1
+            326 LOAD_FAST                3 (b)
+            328 SWAP                     2
+            330 LOAD_FAST                0 (self)
+            332 LOAD_ATTR                4 (u)
+            352 LOAD_ATTR               22 (IsIconic)
+            372 STORE_ATTR               9 (argtypes)
+            382 LOAD_FAST                0 (self)
+            384 LOAD_ATTR                4 (u)
+            404 LOAD_ATTR               22 (IsIconic)
+            424 STORE_ATTR              10 (restype)
+
+ 70         434 LOAD_FAST                1 (h)
+            436 LOAD_GLOBAL              1 (NULL + ctypes)
+            446 LOAD_ATTR               24 (POINTER)
+            466 LOAD_GLOBAL              8 (wintypes)
+            476 LOAD_ATTR               26 (RECT)
+            496 CALL                     1
+            504 BUILD_LIST               2
+            506 LOAD_FAST                3 (b)
+            508 SWAP                     2
+            510 LOAD_FAST                0 (self)
+            512 LOAD_ATTR                4 (u)
+            532 LOAD_ATTR               28 (GetClientRect)
+            552 STORE_ATTR               9 (argtypes)
+            562 LOAD_FAST                0 (self)
+            564 LOAD_ATTR                4 (u)
+            584 LOAD_ATTR               28 (GetClientRect)
+            604 STORE_ATTR              10 (restype)
+
+ 71         614 LOAD_FAST                1 (h)
+            616 LOAD_GLOBAL              1 (NULL + ctypes)
+            626 LOAD_ATTR               24 (POINTER)
+            646 LOAD_GLOBAL              8 (wintypes)
+            656 LOAD_ATTR               30 (POINT)
+            676 CALL                     1
+            684 BUILD_LIST               2
+            686 LOAD_FAST                3 (b)
+            688 SWAP                     2
+            690 LOAD_FAST                0 (self)
+            692 LOAD_ATTR                4 (u)
+            712 LOAD_ATTR               32 (ClientToScreen)
+            732 STORE_ATTR               9 (argtypes)
+            742 LOAD_FAST                0 (self)
+            744 LOAD_ATTR                4 (u)
+            764 LOAD_ATTR               32 (ClientToScreen)
+            784 STORE_ATTR              10 (restype)
+
+ 72         794 LOAD_FAST                1 (h)
+            796 BUILD_LIST               1
+            798 LOAD_FAST                1 (h)
+            800 SWAP                     2
+            802 LOAD_FAST                0 (self)
+            804 LOAD_ATTR                4 (u)
+            824 LOAD_ATTR               34 (GetDC)
+            844 STORE_ATTR               9 (argtypes)
+            854 LOAD_FAST                0 (self)
+            856 LOAD_ATTR                4 (u)
+            876 LOAD_ATTR               34 (GetDC)
+            896 STORE_ATTR              10 (restype)
+
+ 73         906 LOAD_FAST                1 (h)
+            908 LOAD_FAST                1 (h)
+            910 BUILD_LIST               2
+            912 LOAD_FAST                2 (i)
+            914 SWAP                     2
+            916 LOAD_FAST                0 (self)
+            918 LOAD_ATTR                4 (u)
+            938 LOAD_ATTR               36 (ReleaseDC)
+            958 STORE_ATTR               9 (argtypes)
+            968 LOAD_FAST                0 (self)
+            970 LOAD_ATTR                4 (u)
+            990 LOAD_ATTR               36 (ReleaseDC)
+           1010 STORE_ATTR              10 (restype)
+
+ 74        1020 LOAD_FAST                1 (h)
+           1022 LOAD_FAST                1 (h)
+           1024 LOAD_GLOBAL              8 (wintypes)
+           1034 LOAD_ATTR               38 (UINT)
+           1054 BUILD_LIST               3
+           1056 LOAD_FAST                3 (b)
+           1058 SWAP                     2
+           1060 LOAD_FAST                0 (self)
+           1062 LOAD_ATTR                4 (u)
+           1082 LOAD_ATTR               40 (PrintWindow)
+           1102 STORE_ATTR               9 (argtypes)
+           1112 LOAD_FAST                0 (self)
+           1114 LOAD_ATTR                4 (u)
+           1134 LOAD_ATTR               40 (PrintWindow)
+           1154 STORE_ATTR              10 (restype)
+
+ 75        1164 LOAD_FAST                1 (h)
+           1166 BUILD_LIST               1
+           1168 LOAD_FAST                1 (h)
+           1170 SWAP                     2
+           1172 LOAD_FAST                0 (self)
+           1174 LOAD_ATTR                6 (g)
+           1194 LOAD_ATTR               42 (CreateCompatibleDC)
+           1214 STORE_ATTR               9 (argtypes)
+           1224 LOAD_FAST                0 (self)
+           1226 LOAD_ATTR                6 (g)
+           1246 LOAD_ATTR               42 (CreateCompatibleDC)
+           1266 STORE_ATTR              10 (restype)
+
+ 76        1276 LOAD_FAST                1 (h)
+           1278 LOAD_FAST                2 (i)
+           1280 LOAD_FAST                2 (i)
+           1282 BUILD_LIST               3
+           1284 LOAD_FAST                1 (h)
+           1286 SWAP                     2
+           1288 LOAD_FAST                0 (self)
+           1290 LOAD_ATTR                6 (g)
+           1310 LOAD_ATTR               44 (CreateCompatibleBitmap)
+           1330 STORE_ATTR               9 (argtypes)
+           1340 LOAD_FAST                0 (self)
+           1342 LOAD_ATTR                6 (g)
+           1362 LOAD_ATTR               44 (CreateCompatibleBitmap)
+           1382 STORE_ATTR              10 (restype)
+
+ 77        1392 LOAD_FAST                1 (h)
+           1394 LOAD_FAST                1 (h)
+           1396 BUILD_LIST               2
+           1398 LOAD_FAST                1 (h)
+           1400 SWAP                     2
+           1402 LOAD_FAST                0 (self)
+           1404 LOAD_ATTR                6 (g)
+           1424 LOAD_ATTR               46 (SelectObject)
+           1444 STORE_ATTR               9 (argtypes)
+           1454 LOAD_FAST                0 (self)
+           1456 LOAD_ATTR                6 (g)
+           1476 LOAD_ATTR               46 (SelectObject)
+           1496 STORE_ATTR              10 (restype)
+
+ 78        1506 LOAD_FAST                1 (h)
+           1508 BUILD_LIST               1
+           1510 LOAD_FAST                3 (b)
+           1512 SWAP                     2
+           1514 LOAD_FAST                0 (self)
+           1516 LOAD_ATTR                6 (g)
+           1536 LOAD_ATTR               48 (DeleteObject)
+           1556 STORE_ATTR               9 (argtypes)
+           1566 LOAD_FAST                0 (self)
+           1568 LOAD_ATTR                6 (g)
+           1588 LOAD_ATTR               48 (DeleteObject)
+           1608 STORE_ATTR              10 (restype)
+
+ 79        1618 LOAD_FAST                1 (h)
+           1620 BUILD_LIST               1
+           1622 LOAD_FAST                3 (b)
+           1624 SWAP                     2
+           1626 LOAD_FAST                0 (self)
+           1628 LOAD_ATTR                6 (g)
+           1648 LOAD_ATTR               50 (DeleteDC)
+           1668 STORE_ATTR               9 (argtypes)
+           1678 LOAD_FAST                0 (self)
+           1680 LOAD_ATTR                6 (g)
+           1700 LOAD_ATTR               50 (DeleteDC)
+           1720 STORE_ATTR              10 (restype)
+
+ 80        1730 LOAD_FAST                1 (h)
+           1732 LOAD_FAST                1 (h)
+           1734 LOAD_GLOBAL              8 (wintypes)
+           1744 LOAD_ATTR               38 (UINT)
+           1764 LOAD_GLOBAL              8 (wintypes)
+           1774 LOAD_ATTR               38 (UINT)
+           1794 LOAD_GLOBAL              0 (ctypes)
+           1804 LOAD_ATTR               52 (c_void_p)
+           1824 LOAD_GLOBAL              0 (ctypes)
+           1834 LOAD_ATTR               52 (c_void_p)
+           1854 LOAD_GLOBAL              8 (wintypes)
+           1864 LOAD_ATTR               38 (UINT)
+           1884 BUILD_LIST               7
+           1886 LOAD_FAST                0 (self)
+           1888 LOAD_ATTR                6 (g)
+           1908 LOAD_ATTR               54 (GetDIBits)
+           1928 STORE_ATTR               9 (argtypes)
+
+ 81        1938 LOAD_FAST                2 (i)
+           1940 LOAD_FAST                0 (self)
+           1942 LOAD_ATTR                6 (g)
+           1962 LOAD_ATTR               54 (GetDIBits)
+           1982 STORE_ATTR              10 (restype)
+           1992 RETURN_CONST             0 (None)
+
+Disassembly of <code object is_window at 0x7f6aed7ffcc0, file "window_capture.py", line 83>:
+ 83           0 RESUME                   0
+
+ 84           2 LOAD_GLOBAL              1 (NULL + bool)
+             12 LOAD_FAST                0 (self)
+             14 LOAD_ATTR                2 (u)
+             34 LOAD_ATTR                5 (NULL|self + IsWindow)
+             54 LOAD_FAST                1 (hwnd)
+             56 CALL                     1
+             64 CALL                     1
+             72 RETURN_VALUE
+
+Disassembly of <code object is_iconic at 0x7f6aed7fe890, file "window_capture.py", line 86>:
+ 86           0 RESUME                   0
+
+ 87           2 LOAD_GLOBAL              1 (NULL + bool)
+             12 LOAD_FAST                0 (self)
+             14 LOAD_ATTR                2 (u)
+             34 LOAD_ATTR                5 (NULL|self + IsIconic)
+             54 LOAD_FAST                1 (hwnd)
+             56 CALL                     1
+             64 CALL                     1
+             72 RETURN_VALUE
+
+Disassembly of <code object client_rect at 0x17a945a0, file "window_capture.py", line 89>:
+ 89           0 RESUME                   0
+
+ 90           2 NOP
+
+ 91           4 LOAD_GLOBAL              1 (NULL + wintypes)
+             14 LOAD_ATTR                2 (RECT)
+             34 CALL                     0
+             42 LOAD_GLOBAL              1 (NULL + wintypes)
+             52 LOAD_ATTR                4 (POINT)
+             72 LOAD_CONST               1 (0)
+             74 LOAD_CONST               1 (0)
+             76 CALL                     2
+             84 STORE_FAST               3 (pt)
+             86 STORE_FAST               2 (rc)
+
+ 92          88 LOAD_FAST                0 (self)
+             90 LOAD_ATTR                6 (u)
+            110 LOAD_ATTR                9 (NULL|self + GetClientRect)
+            130 LOAD_FAST                1 (hwnd)
+            132 LOAD_GLOBAL             11 (NULL + ctypes)
+            142 LOAD_ATTR               12 (byref)
+            162 LOAD_FAST                2 (rc)
+            164 CALL                     1
+            172 CALL                     2
+            180 POP_JUMP_IF_FALSE       47 (to 276)
+            182 LOAD_FAST                0 (self)
+            184 LOAD_ATTR                6 (u)
+            204 LOAD_ATTR               15 (NULL|self + ClientToScreen)
+            224 LOAD_FAST                1 (hwnd)
+            226 LOAD_GLOBAL             11 (NULL + ctypes)
+            236 LOAD_ATTR               12 (byref)
+            256 LOAD_FAST                3 (pt)
+            258 CALL                     1
+            266 CALL                     2
+            274 POP_JUMP_IF_TRUE         1 (to 278)
+
+ 93     >>  276 RETURN_CONST             0 (None)
+
+ 94     >>  278 LOAD_FAST                3 (pt)
+            280 LOAD_ATTR               16 (x)
+            300 LOAD_FAST                3 (pt)
+            302 LOAD_ATTR               18 (y)
+            322 LOAD_FAST                2 (rc)
+            324 LOAD_ATTR               20 (right)
+            344 LOAD_FAST                2 (rc)
+            346 LOAD_ATTR               22 (left)
+            366 BINARY_OP               10 (-)
+            370 LOAD_FAST                2 (rc)
+            372 LOAD_ATTR               24 (bottom)
+            392 LOAD_FAST                2 (rc)
+            394 LOAD_ATTR               26 (top)
+            414 BINARY_OP               10 (-)
+            418 BUILD_TUPLE              4
+            420 RETURN_VALUE
+
+Disassembly of <code object get_dc at 0x7f6aed7f4b30, file "window_capture.py", line 96>:
+ 96           0 RESUME                   0
+
+ 97           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (u)
+             24 LOAD_ATTR                3 (NULL|self + GetDC)
+             44 LOAD_FAST                1 (hwnd)
+             46 CALL                     1
+             54 RETURN_VALUE
+
+Disassembly of <code object release_dc at 0x7f6aed7f7530, file "window_capture.py", line 99>:
+ 99           0 RESUME                   0
+
+100           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (u)
+             24 LOAD_ATTR                3 (NULL|self + ReleaseDC)
+             44 LOAD_FAST                1 (hwnd)
+             46 LOAD_FAST                2 (hdc)
+             48 CALL                     2
+             56 RETURN_VALUE
+
+Disassembly of <code object create_compatible_dc at 0x7f6aed7f7330, file "window_capture.py", line 102>:
+102           0 RESUME                   0
+
+103           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (g)
+             24 LOAD_ATTR                3 (NULL|self + CreateCompatibleDC)
+             44 LOAD_FAST                1 (hdc)
+             46 CALL                     1
+             54 RETURN_VALUE
+
+Disassembly of <code object create_compatible_bitmap at 0x7f6aed7f7930, file "window_capture.py", line 105>:
+105           0 RESUME                   0
+
+106           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (g)
+             24 LOAD_ATTR                3 (NULL|self + CreateCompatibleBitmap)
+             44 LOAD_FAST                1 (hdc)
+             46 LOAD_FAST                2 (w)
+             48 LOAD_FAST                3 (h)
+             50 CALL                     3
+             58 RETURN_VALUE
+
+Disassembly of <code object select_object at 0x7f6aed7f6d30, file "window_capture.py", line 108>:
+108           0 RESUME                   0
+
+109           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (g)
+             24 LOAD_ATTR                3 (NULL|self + SelectObject)
+             44 LOAD_FAST                1 (hdc)
+             46 LOAD_FAST                2 (obj)
+             48 CALL                     2
+             56 RETURN_VALUE
+
+Disassembly of <code object delete_object at 0x7f6aed7f6930, file "window_capture.py", line 111>:
+111           0 RESUME                   0
+
+112           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (g)
+             24 LOAD_ATTR                3 (NULL|self + DeleteObject)
+             44 LOAD_FAST                1 (obj)
+             46 CALL                     1
+             54 RETURN_VALUE
+
+Disassembly of <code object delete_dc at 0x7f6aed7f7230, file "window_capture.py", line 114>:
+114           0 RESUME                   0
+
+115           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (g)
+             24 LOAD_ATTR                3 (NULL|self + DeleteDC)
+             44 LOAD_FAST                1 (hdc)
+             46 CALL                     1
+             54 RETURN_VALUE
+
+Disassembly of <code object print_window at 0x7f6aed1c5e30, file "window_capture.py", line 117>:
+117           0 RESUME                   0
+
+118           2 LOAD_GLOBAL              1 (NULL + ctypes)
+             12 LOAD_ATTR                2 (set_last_error)
+             32 LOAD_CONST               1 (0)
+             34 CALL                     1
+             42 POP_TOP
+
+119          44 LOAD_GLOBAL              5 (NULL + bool)
+             54 LOAD_FAST                0 (self)
+             56 LOAD_ATTR                6 (u)
+             76 LOAD_ATTR                9 (NULL|self + PrintWindow)
+             96 LOAD_FAST                1 (hwnd)
+             98 LOAD_FAST                2 (hdc)
+            100 LOAD_FAST                3 (flags)
+            102 CALL                     3
+            110 CALL                     1
+            118 RETURN_VALUE
+
+Disassembly of <code object last_error at 0x7f6aed17d2f0, file "window_capture.py", line 121>:
+121           0 RESUME                   0
+
+122           2 NOP
+
+123           4 LOAD_GLOBAL              1 (NULL + ctypes)
+             14 LOAD_ATTR                2 (get_last_error)
+             34 CALL                     0
+             42 RETURN_VALUE
+
+Disassembly of <code object get_dibits at 0x17ae6400, file "window_capture.py", line 125>:
+125           0 RESUME                   0
+
+126           2 NOP
+
+127           4 LOAD_GLOBAL              1 (NULL + _BITMAPINFO)
+             14 CALL                     0
+             22 STORE_FAST               5 (info)
+
+128          24 LOAD_GLOBAL              3 (NULL + ctypes)
+             34 LOAD_ATTR                4 (sizeof)
+             54 LOAD_GLOBAL              6 (_BITMAPINFOHEADER)
+             64 CALL                     1
+             72 LOAD_FAST                5 (info)
+             74 LOAD_ATTR                8 (bmiHeader)
+             94 STORE_ATTR               5 (biSize)
+
+129         104 LOAD_FAST                3 (w)
+            106 LOAD_FAST                4 (h)
+            108 UNARY_NEGATIVE
+            110 SWAP                     2
+            112 LOAD_FAST                5 (info)
+            114 LOAD_ATTR                8 (bmiHeader)
+            134 STORE_ATTR               6 (biWidth)
+            144 LOAD_FAST                5 (info)
+            146 LOAD_ATTR                8 (bmiHeader)
+            166 STORE_ATTR               7 (biHeight)
+
+130         176 LOAD_CONST               1 (1)
+            178 LOAD_CONST               2 (32)
+            180 LOAD_GLOBAL             16 (BI_RGB)
+            190 SWAP                     3
+            192 LOAD_FAST                5 (info)
+            194 LOAD_ATTR                8 (bmiHeader)
+            214 STORE_ATTR               9 (biPlanes)
+            224 LOAD_FAST                5 (info)
+            226 LOAD_ATTR                8 (bmiHeader)
+            246 STORE_ATTR              10 (biBitCount)
+            256 LOAD_FAST                5 (info)
+            258 LOAD_ATTR                8 (bmiHeader)
+            278 STORE_ATTR              11 (biCompression)
+
+131         288 LOAD_GLOBAL              3 (NULL + ctypes)
+            298 LOAD_ATTR               24 (c_ubyte)
+            318 LOAD_FAST                3 (w)
+            320 LOAD_FAST                4 (h)
+            322 BINARY_OP                5 (*)
+            326 LOAD_CONST               3 (4)
+            328 BINARY_OP                5 (*)
+            332 BINARY_OP                5 (*)
+            336 CALL                     0
+            344 STORE_FAST               6 (buf)
+
+132         346 LOAD_FAST                0 (self)
+            348 LOAD_ATTR               26 (g)
+            368 LOAD_ATTR               29 (NULL|self + GetDIBits)
+            388 LOAD_FAST                1 (hdc)
+            390 LOAD_FAST                2 (bitmap)
+            392 LOAD_CONST               4 (0)
+            394 LOAD_FAST                4 (h)
+            396 LOAD_FAST                6 (buf)
+            398 LOAD_GLOBAL              3 (NULL + ctypes)
+            408 LOAD_ATTR               30 (byref)
+            428 LOAD_FAST                5 (info)
+            430 CALL                     1
+            438 LOAD_GLOBAL             32 (DIB_RGB_COLORS)
+            448 CALL                     7
+            456 STORE_FAST               7 (lines)
+
+133         458 LOAD_FAST                7 (lines)
+            460 LOAD_FAST                4 (h)
+            462 COMPARE_OP              40 (==)
+            466 POP_JUMP_IF_FALSE       11 (to 490)
+            468 LOAD_GLOBAL             35 (NULL + bytes)
+            478 LOAD_FAST                6 (buf)
+            480 CALL                     1
+            488 RETURN_VALUE
+        >>  490 LOAD_CONST               0 (None)
+            492 RETURN_VALUE
+
+Disassembly of <code object GameWindow at 0x7f6aed7ffaa0, file "window_capture.py", line 136>:
+136           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('GameWindow')
+              8 STORE_NAME               2 (__qualname__)
+
+137          10 NOP
+
+139          12 LOAD_CONST               1 (None)
+             14 LOAD_CONST               1 (None)
+             16 LOAD_NAME                3 (time)
+             18 LOAD_ATTR                8 (monotonic)
+             38 LOAD_CONST               2 (1.0)
+             40 BUILD_TUPLE              4
+             42 LOAD_CONST               3 ('retry_s')
+             44 LOAD_NAME                5 (float)
+             46 BUILD_TUPLE              2
+             48 LOAD_CONST               4 (<code object __init__ at 0x7f6aed7aa2b0, file "window_capture.py", line 139>)
+             50 MAKE_FUNCTION            5 (defaults, annotations)
+             52 STORE_NAME               6 (__init__)
+
+150          54 LOAD_CONST               5 ('return')
+             56 LOAD_NAME                7 (Optional)
+             58 LOAD_NAME                8 (int)
+             60 BINARY_SUBSCR
+             64 BUILD_TUPLE              2
+             66 LOAD_CONST               6 (<code object hwnd at 0x17a97610, file "window_capture.py", line 150>)
+             68 MAKE_FUNCTION            4 (annotations)
+             70 STORE_NAME               9 (hwnd)
+             72 RETURN_CONST             1 (None)
+
+Disassembly of <code object __init__ at 0x7f6aed7aa2b0, file "window_capture.py", line 139>:
+              0 MAKE_CELL                5 (api)
+              2 MAKE_CELL                6 (focus)
+
+139           4 RESUME                   0
+
+140           6 LOAD_FAST                1 (finder)
+              8 POP_JUMP_IF_NONE         2 (to 14)
+             10 LOAD_FAST                2 (is_window)
+             12 POP_JUMP_IF_NOT_NONE    39 (to 92)
+
+141     >>   14 LOAD_CONST               1 (0)
+             16 LOAD_CONST               0 (None)
+             18 IMPORT_NAME              0 (focus)
+             20 STORE_DEREF              6 (focus)
+
+143          22 LOAD_DEREF               6 (focus)
+             24 LOAD_ATTR                3 (NULL|self + WinApi)
+             44 CALL                     0
+             52 STORE_DEREF              5 (api)
+
+144          54 LOAD_FAST                1 (finder)
+             56 COPY                     1
+             58 POP_JUMP_IF_TRUE         6 (to 72)
+             60 POP_TOP
+             62 LOAD_CLOSURE             5 (api)
+             64 LOAD_CLOSURE             6 (focus)
+             66 BUILD_TUPLE              2
+             68 LOAD_CONST               2 (<code object <lambda> at 0x7f6aed17e5b0, file "window_capture.py", line 144>)
+             70 MAKE_FUNCTION            8 (closure)
+        >>   72 STORE_FAST               1 (finder)
+
+145          74 LOAD_FAST                2 (is_window)
+             76 COPY                     1
+             78 POP_JUMP_IF_TRUE         5 (to 90)
+             80 POP_TOP
+             82 LOAD_CLOSURE             5 (api)
+             84 BUILD_TUPLE              1
+             86 LOAD_CONST               3 (<code object <lambda> at 0x7f6aed7fdbd0, file "window_capture.py", line 145>)
+             88 MAKE_FUNCTION            8 (closure)
+        >>   90 STORE_FAST               2 (is_window)
+
+146     >>   92 LOAD_FAST                1 (finder)
+             94 LOAD_FAST                2 (is_window)
+             96 LOAD_FAST                3 (clock)
+             98 LOAD_FAST                4 (retry_s)
+            100 BUILD_TUPLE              4
+            102 UNPACK_SEQUENCE          4
+            106 LOAD_FAST                0 (self)
+            108 STORE_ATTR               2 (_find)
+            118 LOAD_FAST                0 (self)
+            120 STORE_ATTR               3 (_is_window)
+            130 LOAD_FAST                0 (self)
+            132 STORE_ATTR               4 (_clock)
+            142 LOAD_FAST                0 (self)
+            144 STORE_ATTR               5 (_retry_s)
+
+147         154 LOAD_CONST               0 (None)
+            156 LOAD_FAST                0 (self)
+            158 STORE_ATTR               6 (_hwnd)
+
+148         168 LOAD_CONST               4 (0.0)
+            170 LOAD_FAST                0 (self)
+            172 STORE_ATTR               7 (_next_search)
+            182 RETURN_CONST             0 (None)
+
+Disassembly of <code object <lambda> at 0x7f6aed17e5b0, file "window_capture.py", line 144>:
+              0 COPY_FREE_VARS           2
+
+144           2 RESUME                   0
+              4 LOAD_DEREF               1 (focus)
+              6 LOAD_ATTR                1 (NULL|self + find_game)
+             26 LOAD_DEREF               0 (api)
+             28 CALL                     1
+             36 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed7fdbd0, file "window_capture.py", line 145>:
+              0 COPY_FREE_VARS           1
+
+145           2 RESUME                   0
+              4 LOAD_GLOBAL              1 (NULL + bool)
+             14 LOAD_DEREF               1 (api)
+             16 LOAD_ATTR                2 (u)
+             36 LOAD_ATTR                5 (NULL|self + IsWindow)
+             56 LOAD_FAST                0 (h)
+             58 CALL                     1
+             66 CALL                     1
+             74 RETURN_VALUE
+
+Disassembly of <code object hwnd at 0x17a97610, file "window_capture.py", line 150>:
+150           0 RESUME                   0
+
+151           2 NOP
+
+152           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (_hwnd)
+             26 POP_JUMP_IF_FALSE       39 (to 106)
+             28 LOAD_FAST                0 (self)
+             30 LOAD_ATTR                3 (NULL|self + _is_window)
+             50 LOAD_FAST                0 (self)
+             52 LOAD_ATTR                0 (_hwnd)
+             72 CALL                     1
+             80 POP_JUMP_IF_FALSE       12 (to 106)
+
+153          82 LOAD_FAST                0 (self)
+             84 LOAD_ATTR                0 (_hwnd)
+            104 RETURN_VALUE
+
+154     >>  106 LOAD_CONST               0 (None)
+            108 LOAD_FAST                0 (self)
+            110 STORE_ATTR               0 (_hwnd)
+
+155         120 LOAD_FAST                0 (self)
+            122 LOAD_ATTR                5 (NULL|self + _clock)
+            142 CALL                     0
+            150 STORE_FAST               1 (now)
+
+156         152 LOAD_FAST                1 (now)
+            154 LOAD_FAST                0 (self)
+            156 LOAD_ATTR                6 (_next_search)
+            176 COMPARE_OP              92 (>=)
+            180 POP_JUMP_IF_FALSE       53 (to 288)
+
+157         182 LOAD_FAST                0 (self)
+            184 LOAD_ATTR                9 (NULL|self + _find)
+            204 CALL                     0
+            212 LOAD_FAST                0 (self)
+            214 STORE_ATTR               0 (_hwnd)
+
+158         224 LOAD_FAST                0 (self)
+            226 LOAD_ATTR                0 (_hwnd)
+            246 POP_JUMP_IF_TRUE        20 (to 288)
+
+159         248 LOAD_FAST                1 (now)
+            250 LOAD_FAST                0 (self)
+            252 LOAD_ATTR               10 (_retry_s)
+            272 BINARY_OP                0 (+)
+            276 LOAD_FAST                0 (self)
+            278 STORE_ATTR               3 (_next_search)
+
+162     >>  288 LOAD_FAST                0 (self)
+            290 LOAD_ATTR                0 (_hwnd)
+            310 RETURN_VALUE
+        >>  312 PUSH_EXC_INFO
+
+160         314 LOAD_GLOBAL             12 (Exception)
+            324 CHECK_EXC_MATCH
+            326 POP_JUMP_IF_FALSE       21 (to 370)
+            328 POP_TOP
+
+161         330 LOAD_CONST               0 (None)
+            332 LOAD_FAST                0 (self)
+            334 STORE_ATTR               0 (_hwnd)
+            344 POP_EXCEPT
+
+162         346 LOAD_FAST                0 (self)
+            348 LOAD_ATTR                0 (_hwnd)
+            368 RETURN_VALUE
+
+160     >>  370 RERAISE                  0
+        >>  372 COPY                     3
+            374 POP_EXCEPT
+            376 RERAISE                  1
+ExceptionTable:
+  4 to 102 -> 312 [0]
+  106 to 286 -> 312 [0]
+  312 to 342 -> 372 [1] lasti
+  370 to 370 -> 372 [1] lasti
+
+Disassembly of <code object WindowCapture at 0x7f6aed7a3470, file "window_capture.py", line 165>:
+165           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('WindowCapture')
+              8 STORE_NAME               2 (__qualname__)
+
+166          10 LOAD_CONST               1 (None)
+             12 LOAD_CONST               1 (None)
+             14 LOAD_NAME                3 (time)
+             16 LOAD_ATTR                8 (monotonic)
+             36 LOAD_CONST               2 (3)
+             38 LOAD_CONST               3 (60.0)
+             40 BUILD_TUPLE              5
+             42 LOAD_CONST               4 ('locator')
+             44 LOAD_NAME                5 (Optional)
+             46 LOAD_NAME                6 (GameWindow)
+             48 BINARY_SUBSCR
+             52 LOAD_CONST               5 ('black_limit')
+             54 LOAD_NAME                7 (int)
+             56 LOAD_CONST               6 ('black_pause_s')
+             58 LOAD_NAME                8 (float)
+             60 BUILD_TUPLE              6
+             62 LOAD_CONST               7 (<code object __init__ at 0x7f6aed17a550, file "window_capture.py", line 166>)
+             64 MAKE_FUNCTION            5 (defaults, annotations)
+             66 STORE_NAME               9 (__init__)
+
+178          68 LOAD_CONST               8 ('status')
+             70 LOAD_NAME               10 (str)
+             72 LOAD_CONST               9 ('return')
+             74 LOAD_NAME               11 (Capture)
+             76 BUILD_TUPLE              4
+             78 LOAD_CONST              10 (<code object _failed at 0x7f6aecfc1210, file "window_capture.py", line 178>)
+             80 MAKE_FUNCTION            4 (annotations)
+             82 STORE_NAME              12 (_failed)
+
+187          84 LOAD_CONST               9 ('return')
+             86 LOAD_NAME               11 (Capture)
+             88 BUILD_TUPLE              2
+             90 LOAD_CONST              11 (<code object grab at 0x17a9bc30, file "window_capture.py", line 187>)
+             92 MAKE_FUNCTION            4 (annotations)
+             94 STORE_NAME              13 (grab)
+
+223          96 LOAD_NAME               14 (PW_CLIENTONLY)
+             98 LOAD_NAME               15 (PW_RENDERFULLCONTENT)
+            100 BINARY_OP                7 (|)
+            104 BUILD_TUPLE              1
+            106 LOAD_CONST              12 ('w')
+            108 LOAD_NAME                7 (int)
+            110 LOAD_CONST              13 ('h')
+            112 LOAD_NAME                7 (int)
+            114 LOAD_CONST              14 ('flags')
+            116 LOAD_NAME                7 (int)
+            118 LOAD_CONST               9 ('return')
+            120 LOAD_NAME                5 (Optional)
+            122 LOAD_NAME               16 (np)
+            124 LOAD_ATTR               34 (ndarray)
+            144 BINARY_SUBSCR
+            148 BUILD_TUPLE              8
+            150 LOAD_CONST              15 (<code object _print at 0x17aa3270, file "window_capture.py", line 223>)
+            152 MAKE_FUNCTION            5 (defaults, annotations)
+            154 STORE_NAME              18 (_print)
+            156 RETURN_CONST             1 (None)
+
+Disassembly of <code object __init__ at 0x7f6aed17a550, file "window_capture.py", line 166>:
+166           0 RESUME                   0
+
+167           2 LOAD_FAST                2 (api)
+              4 COPY                     1
+              6 POP_JUMP_IF_TRUE        10 (to 28)
+              8 POP_TOP
+             10 LOAD_GLOBAL              1 (NULL + Win32Gdi)
+             20 CALL                     0
+        >>   28 LOAD_FAST                0 (self)
+             30 STORE_ATTR               1 (api)
+
+168          40 LOAD_FAST                1 (locator)
+             42 COPY                     1
+             44 POP_JUMP_IF_TRUE        10 (to 66)
+             46 POP_TOP
+             48 LOAD_GLOBAL              5 (NULL + GameWindow)
+             58 CALL                     0
+        >>   66 LOAD_FAST                0 (self)
+             68 STORE_ATTR               3 (locator)
+
+169          78 LOAD_FAST                3 (clock)
+             80 LOAD_FAST                0 (self)
+             82 STORE_ATTR               4 (_clock)
+
+170          92 LOAD_FAST                4 (black_limit)
+             94 LOAD_FAST                5 (black_pause_s)
+             96 SWAP                     2
+             98 LOAD_FAST                0 (self)
+            100 STORE_ATTR               5 (black_limit)
+            110 LOAD_FAST                0 (self)
+            112 STORE_ATTR               6 (black_pause_s)
+
+171         122 LOAD_CONST               1 (0)
+            124 LOAD_FAST                0 (self)
+            126 STORE_ATTR               7 (_black)
+
+172         136 LOAD_CONST               2 (0.0)
+            138 LOAD_FAST                0 (self)
+            140 STORE_ATTR               8 (_paused_until)
+
+173         150 LOAD_CONST               3 (False)
+            152 LOAD_FAST                0 (self)
+            154 STORE_ATTR               9 (_denied)
+
+174         164 LOAD_GLOBAL             20 (BLACK)
+            174 LOAD_FAST                0 (self)
+            176 STORE_ATTR              11 (_last_paused_status)
+
+175         186 LOAD_GLOBAL             24 (FLAG_VARIANTS)
+            196 LOAD_CONST               1 (0)
+            198 BINARY_SUBSCR
+            202 LOAD_FAST                0 (self)
+            204 STORE_ATTR              13 (_flags_ok)
+
+176         214 LOAD_CONST               0 (None)
+            216 LOAD_FAST                0 (self)
+            218 STORE_ATTR              14 (last_flags)
+            228 RETURN_CONST             0 (None)
+
+Disassembly of <code object _failed at 0x7f6aecfc1210, file "window_capture.py", line 178>:
+178           0 RESUME                   0
+
+179           2 NOP
+
+180           4 LOAD_FAST                0 (self)
+              6 COPY                     1
+              8 LOAD_ATTR                0 (_black)
+             28 LOAD_CONST               1 (1)
+             30 BINARY_OP               13 (+=)
+             34 SWAP                     2
+             36 STORE_ATTR               0 (_black)
+
+181          46 LOAD_FAST                0 (self)
+             48 LOAD_ATTR                0 (_black)
+             68 LOAD_FAST                0 (self)
+             70 LOAD_ATTR                2 (black_limit)
+             90 COMPARE_OP              92 (>=)
+             94 POP_JUMP_IF_FALSE       48 (to 192)
+
+182          96 LOAD_FAST                0 (self)
+             98 LOAD_ATTR                5 (NULL|self + _clock)
+            118 CALL                     0
+            126 LOAD_FAST                0 (self)
+            128 LOAD_ATTR                6 (black_pause_s)
+            148 BINARY_OP                0 (+)
+            152 LOAD_FAST                0 (self)
+            154 STORE_ATTR               4 (_paused_until)
+
+183         164 LOAD_FAST                1 (status)
+            166 LOAD_FAST                0 (self)
+            168 STORE_ATTR               5 (_last_paused_status)
+
+184         178 LOAD_CONST               2 (0)
+            180 LOAD_FAST                0 (self)
+            182 STORE_ATTR               0 (_black)
+
+185     >>  192 LOAD_GLOBAL             13 (NULL + Capture)
+            202 LOAD_FAST                1 (status)
+            204 CALL                     1
+            212 RETURN_VALUE
+
+Disassembly of <code object grab at 0x17a9bc30, file "window_capture.py", line 187>:
+              0 MAKE_CELL                0 (self)
+
+187           2 RESUME                   0
+
+188           4 NOP
+
+189           6 NOP
+
+190           8 LOAD_CONST               1 (False)
+             10 LOAD_DEREF               0 (self)
+             12 STORE_ATTR               0 (_denied)
+
+191          22 LOAD_DEREF               0 (self)
+             24 LOAD_ATTR                3 (NULL|self + _clock)
+             44 CALL                     0
+             52 LOAD_DEREF               0 (self)
+             54 LOAD_ATTR                4 (_paused_until)
+             74 COMPARE_OP               2 (<)
+             78 POP_JUMP_IF_FALSE       21 (to 122)
+
+192          80 LOAD_GLOBAL              7 (NULL + Capture)
+             90 LOAD_DEREF               0 (self)
+             92 LOAD_ATTR                8 (_last_paused_status)
+            112 CALL                     1
+            120 RETURN_VALUE
+
+193     >>  122 LOAD_DEREF               0 (self)
+            124 LOAD_ATTR               10 (locator)
+            144 LOAD_ATTR               13 (NULL|self + hwnd)
+            164 CALL                     0
+            172 STORE_FAST               1 (hwnd)
+
+194         174 LOAD_FAST                1 (hwnd)
+            176 POP_JUMP_IF_TRUE        15 (to 208)
+
+195         178 LOAD_GLOBAL              7 (NULL + Capture)
+            188 LOAD_GLOBAL             14 (NO_WINDOW)
+            198 CALL                     1
+            206 RETURN_VALUE
+
+196     >>  208 LOAD_DEREF               0 (self)
+            210 LOAD_ATTR               16 (api)
+            230 LOAD_ATTR               19 (NULL|self + is_iconic)
+            250 LOAD_FAST                1 (hwnd)
+            252 CALL                     1
+            260 POP_JUMP_IF_FALSE       15 (to 292)
+
+197         262 LOAD_GLOBAL              7 (NULL + Capture)
+            272 LOAD_GLOBAL             20 (MINIMIZED)
+            282 CALL                     1
+            290 RETURN_VALUE
+
+198     >>  292 LOAD_DEREF               0 (self)
+            294 LOAD_ATTR               16 (api)
+            314 LOAD_ATTR               23 (NULL|self + client_rect)
+            334 LOAD_FAST                1 (hwnd)
+            336 CALL                     1
+            344 STORE_FAST               2 (rect)
+
+199         346 LOAD_FAST                2 (rect)
+            348 POP_JUMP_IF_FALSE       16 (to 382)
+            350 LOAD_FAST                2 (rect)
+            352 LOAD_CONST               2 (2)
+            354 BINARY_SUBSCR
+            358 LOAD_CONST               3 (0)
+            360 COMPARE_OP              26 (<=)
+            364 POP_JUMP_IF_TRUE         8 (to 382)
+            366 LOAD_FAST                2 (rect)
+            368 LOAD_CONST               4 (3)
+            370 BINARY_SUBSCR
+            374 LOAD_CONST               3 (0)
+            376 COMPARE_OP              26 (<=)
+            380 POP_JUMP_IF_FALSE       15 (to 412)
+
+200     >>  382 LOAD_GLOBAL              7 (NULL + Capture)
+            392 LOAD_GLOBAL             24 (ERROR)
+            402 CALL                     1
+            410 RETURN_VALUE
+
+201     >>  412 LOAD_FAST                2 (rect)
+            414 UNPACK_SEQUENCE          4
+            418 STORE_FAST               3 (left)
+            420 STORE_FAST               4 (top)
+            422 STORE_FAST               5 (w)
+            424 STORE_FAST               6 (h)
+
+202         426 LOAD_CONST               1 (False)
+            428 COPY                     1
+            430 STORE_FAST               7 (saw_black)
+            432 STORE_FAST               8 (saw_denied)
+
+203         434 LOAD_GLOBAL             27 (NULL + sorted)
+            444 LOAD_GLOBAL             28 (FLAG_VARIANTS)
+            454 LOAD_CLOSURE             0 (self)
+            456 BUILD_TUPLE              1
+            458 LOAD_CONST               5 (<code object <lambda> at 0x7f6aed17d890, file "window_capture.py", line 203>)
+            460 MAKE_FUNCTION            8 (closure)
+            462 KW_NAMES                 6 (('key',))
+            464 CALL                     2
+            472 GET_ITER
+        >>  474 FOR_ITER               103 (to 684)
+            478 STORE_FAST               9 (flags)
+
+204         480 LOAD_CONST               1 (False)
+            482 LOAD_DEREF               0 (self)
+            484 STORE_ATTR               0 (_denied)
+
+205         494 LOAD_DEREF               0 (self)
+            496 LOAD_ATTR               31 (NULL|self + _print)
+            516 LOAD_FAST                1 (hwnd)
+            518 LOAD_FAST                5 (w)
+            520 LOAD_FAST                6 (h)
+            522 LOAD_FAST                9 (flags)
+            524 CALL                     4
+            532 STORE_FAST              10 (frame)
+
+206         534 LOAD_FAST               10 (frame)
+            536 POP_JUMP_IF_NOT_NONE    17 (to 572)
+
+207         538 LOAD_DEREF               0 (self)
+            540 LOAD_ATTR                0 (_denied)
+            560 POP_JUMP_IF_FALSE        4 (to 570)
+
+208         562 LOAD_CONST               7 (True)
+            564 STORE_FAST               8 (saw_denied)
+
+209         566 POP_TOP
+            568 JUMP_FORWARD            58 (to 686)
+
+210     >>  570 JUMP_BACKWARD           49 (to 474)
+
+211     >>  572 LOAD_GLOBAL             33 (NULL + _is_black)
+            582 LOAD_FAST               10 (frame)
+            584 CALL                     1
+            592 POP_JUMP_IF_FALSE        3 (to 600)
+
+212         594 LOAD_CONST               7 (True)
+            596 STORE_FAST               7 (saw_black)
+
+213         598 JUMP_BACKWARD           63 (to 474)
+
+214     >>  600 LOAD_CONST               3 (0)
+            602 LOAD_DEREF               0 (self)
+            604 STORE_ATTR              17 (_black)
+
+215         614 LOAD_FAST                9 (flags)
+            616 COPY                     1
+            618 LOAD_DEREF               0 (self)
+            620 STORE_ATTR              18 (_flags_ok)
+            630 LOAD_DEREF               0 (self)
+            632 STORE_ATTR              19 (last_flags)
+
+216         642 LOAD_GLOBAL              7 (NULL + Capture)
+            652 LOAD_GLOBAL             40 (OK)
+            662 LOAD_FAST               10 (frame)
+            664 LOAD_FAST                3 (left)
+            666 LOAD_FAST                4 (top)
+            668 BUILD_TUPLE              2
+            670 CALL                     3
+            678 SWAP                     2
+            680 POP_TOP
+            682 RETURN_VALUE
+
+203     >>  684 END_FOR
+
+217     >>  686 LOAD_FAST                8 (saw_denied)
+            688 POP_JUMP_IF_FALSE       21 (to 732)
+
+218         690 LOAD_DEREF               0 (self)
+            692 LOAD_ATTR               43 (NULL|self + _failed)
+            712 LOAD_GLOBAL             44 (DENIED)
+            722 CALL                     1
+            730 RETURN_VALUE
+
+219     >>  732 LOAD_FAST                7 (saw_black)
+            734 POP_JUMP_IF_FALSE       21 (to 778)
+            736 LOAD_DEREF               0 (self)
+            738 LOAD_ATTR               43 (NULL|self + _failed)
+            758 LOAD_GLOBAL             46 (BLACK)
+            768 CALL                     1
+            776 RETURN_VALUE
+        >>  778 LOAD_GLOBAL              7 (NULL + Capture)
+            788 LOAD_GLOBAL             24 (ERROR)
+            798 CALL                     1
+            806 RETURN_VALUE
+        >>  808 PUSH_EXC_INFO
+
+220         810 LOAD_GLOBAL             48 (Exception)
+            820 CHECK_EXC_MATCH
+            822 POP_JUMP_IF_FALSE       18 (to 860)
+            824 POP_TOP
+
+221         826 LOAD_GLOBAL              7 (NULL + Capture)
+            836 LOAD_GLOBAL             24 (ERROR)
+            846 CALL                     1
+            854 SWAP                     2
+            856 POP_EXCEPT
+            858 RETURN_VALUE
+
+220     >>  860 RERAISE                  0
+        >>  862 COPY                     3
+            864 POP_EXCEPT
+            866 RERAISE                  1
+ExceptionTable:
+  8 to 118 -> 808 [0]
+  122 to 204 -> 808 [0]
+  208 to 288 -> 808 [0]
+  292 to 408 -> 808 [0]
+  412 to 680 -> 808 [0]
+  684 to 728 -> 808 [0]
+  732 to 774 -> 808 [0]
+  778 to 804 -> 808 [0]
+  808 to 854 -> 862 [1] lasti
+  860 to 860 -> 862 [1] lasti
+
+Disassembly of <code object <lambda> at 0x7f6aed17d890, file "window_capture.py", line 203>:
+              0 COPY_FREE_VARS           1
+
+203           2 RESUME                   0
+              4 LOAD_FAST                0 (f)
+              6 LOAD_DEREF               1 (self)
+              8 LOAD_ATTR                0 (_flags_ok)
+             28 COMPARE_OP              55 (!=)
+             32 RETURN_VALUE
+
+Disassembly of <code object _print at 0x17aa3270, file "window_capture.py", line 223>:
+223           0 RESUME                   0
+
+224           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (api)
+             24 STORE_FAST               5 (api)
+
+225          26 LOAD_CONST               0 (None)
+             28 COPY                     1
+             30 STORE_FAST               6 (hdc)
+             32 COPY                     1
+             34 STORE_FAST               7 (memdc)
+             36 COPY                     1
+             38 STORE_FAST               8 (bitmap)
+             40 STORE_FAST               9 (old)
+
+226          42 NOP
+
+227          44 LOAD_FAST                5 (api)
+             46 LOAD_ATTR                3 (NULL|self + get_dc)
+             66 LOAD_FAST                1 (hwnd)
+             68 CALL                     1
+             76 STORE_FAST               6 (hdc)
+
+228          78 LOAD_FAST                6 (hdc)
+             80 POP_JUMP_IF_TRUE       101 (to 284)
+
+229          82 NOP
+
+253          84 LOAD_FAST                9 (old)
+             86 POP_JUMP_IF_FALSE       23 (to 134)
+
+254          88 LOAD_GLOBAL              5 (NULL + _quiet)
+             98 LOAD_FAST                5 (api)
+            100 LOAD_ATTR                6 (select_object)
+            120 LOAD_FAST                7 (memdc)
+            122 LOAD_FAST                9 (old)
+            124 CALL                     3
+            132 POP_TOP
+
+255     >>  134 LOAD_FAST                8 (bitmap)
+            136 POP_JUMP_IF_FALSE       22 (to 182)
+
+256         138 LOAD_GLOBAL              5 (NULL + _quiet)
+            148 LOAD_FAST                5 (api)
+            150 LOAD_ATTR                8 (delete_object)
+            170 LOAD_FAST                8 (bitmap)
+            172 CALL                     2
+            180 POP_TOP
+
+257     >>  182 LOAD_FAST                7 (memdc)
+            184 POP_JUMP_IF_FALSE       22 (to 230)
+
+258         186 LOAD_GLOBAL              5 (NULL + _quiet)
+            196 LOAD_FAST                5 (api)
+            198 LOAD_ATTR               10 (delete_dc)
+            218 LOAD_FAST                7 (memdc)
+            220 CALL                     2
+            228 POP_TOP
+
+259     >>  230 LOAD_FAST                6 (hdc)
+            232 POP_JUMP_IF_FALSE       24 (to 282)
+
+260         234 LOAD_GLOBAL              5 (NULL + _quiet)
+            244 LOAD_FAST                5 (api)
+            246 LOAD_ATTR               12 (release_dc)
+            266 LOAD_FAST                1 (hwnd)
+            268 LOAD_FAST                6 (hdc)
+            270 CALL                     3
+            278 POP_TOP
+            280 RETURN_CONST             0 (None)
+
+259     >>  282 RETURN_CONST             0 (None)
+
+230     >>  284 LOAD_FAST                5 (api)
+            286 LOAD_ATTR               15 (NULL|self + create_compatible_dc)
+            306 LOAD_FAST                6 (hdc)
+            308 CALL                     1
+            316 STORE_FAST               7 (memdc)
+
+231         318 LOAD_FAST                7 (memdc)
+            320 POP_JUMP_IF_TRUE       101 (to 524)
+
+232         322 NOP
+
+253         324 LOAD_FAST                9 (old)
+            326 POP_JUMP_IF_FALSE       23 (to 374)
+
+254         328 LOAD_GLOBAL              5 (NULL + _quiet)
+            338 LOAD_FAST                5 (api)
+            340 LOAD_ATTR                6 (select_object)
+            360 LOAD_FAST                7 (memdc)
+            362 LOAD_FAST                9 (old)
+            364 CALL                     3
+            372 POP_TOP
+
+255     >>  374 LOAD_FAST                8 (bitmap)
+            376 POP_JUMP_IF_FALSE       22 (to 422)
+
+256         378 LOAD_GLOBAL              5 (NULL + _quiet)
+            388 LOAD_FAST                5 (api)
+            390 LOAD_ATTR                8 (delete_object)
+            410 LOAD_FAST                8 (bitmap)
+            412 CALL                     2
+            420 POP_TOP
+
+257     >>  422 LOAD_FAST                7 (memdc)
+            424 POP_JUMP_IF_FALSE       22 (to 470)
+
+258         426 LOAD_GLOBAL              5 (NULL + _quiet)
+            436 LOAD_FAST                5 (api)
+            438 LOAD_ATTR               10 (delete_dc)
+            458 LOAD_FAST                7 (memdc)
+            460 CALL                     2
+            468 POP_TOP
+
+259     >>  470 LOAD_FAST                6 (hdc)
+            472 POP_JUMP_IF_FALSE       24 (to 522)
+
+260         474 LOAD_GLOBAL              5 (NULL + _quiet)
+            484 LOAD_FAST                5 (api)
+            486 LOAD_ATTR               12 (release_dc)
+            506 LOAD_FAST                1 (hwnd)
+            508 LOAD_FAST                6 (hdc)
+            510 CALL                     3
+            518 POP_TOP
+            520 RETURN_CONST             0 (None)
+
+259     >>  522 RETURN_CONST             0 (None)
+
+233     >>  524 LOAD_FAST                5 (api)
+            526 LOAD_ATTR               17 (NULL|self + create_compatible_bitmap)
+            546 LOAD_FAST                6 (hdc)
+            548 LOAD_FAST                2 (w)
+            550 LOAD_FAST                3 (h)
+            552 CALL                     3
+            560 STORE_FAST               8 (bitmap)
+
+234         562 LOAD_FAST                8 (bitmap)
+            564 POP_JUMP_IF_TRUE       101 (to 768)
+
+235         566 NOP
+
+253         568 LOAD_FAST                9 (old)
+            570 POP_JUMP_IF_FALSE       23 (to 618)
+
+254         572 LOAD_GLOBAL              5 (NULL + _quiet)
+            582 LOAD_FAST                5 (api)
+            584 LOAD_ATTR                6 (select_object)
+            604 LOAD_FAST                7 (memdc)
+            606 LOAD_FAST                9 (old)
+            608 CALL                     3
+            616 POP_TOP
+
+255     >>  618 LOAD_FAST                8 (bitmap)
+            620 POP_JUMP_IF_FALSE       22 (to 666)
+
+256         622 LOAD_GLOBAL              5 (NULL + _quiet)
+            632 LOAD_FAST                5 (api)
+            634 LOAD_ATTR                8 (delete_object)
+            654 LOAD_FAST                8 (bitmap)
+            656 CALL                     2
+            664 POP_TOP
+
+257     >>  666 LOAD_FAST                7 (memdc)
+            668 POP_JUMP_IF_FALSE       22 (to 714)
+
+258         670 LOAD_GLOBAL              5 (NULL + _quiet)
+            680 LOAD_FAST                5 (api)
+            682 LOAD_ATTR               10 (delete_dc)
+            702 LOAD_FAST                7 (memdc)
+            704 CALL                     2
+            712 POP_TOP
+
+259     >>  714 LOAD_FAST                6 (hdc)
+            716 POP_JUMP_IF_FALSE       24 (to 766)
+
+260         718 LOAD_GLOBAL              5 (NULL + _quiet)
+            728 LOAD_FAST                5 (api)
+            730 LOAD_ATTR               12 (release_dc)
+            750 LOAD_FAST                1 (hwnd)
+            752 LOAD_FAST                6 (hdc)
+            754 CALL                     3
+            762 POP_TOP
+            764 RETURN_CONST             0 (None)
+
+259     >>  766 RETURN_CONST             0 (None)
+
+236     >>  768 LOAD_FAST                5 (api)
+            770 LOAD_ATTR                7 (NULL|self + select_object)
+            790 LOAD_FAST                7 (memdc)
+            792 LOAD_FAST                8 (bitmap)
+            794 CALL                     2
+            802 STORE_FAST               9 (old)
+
+237         804 LOAD_FAST                5 (api)
+            806 LOAD_ATTR               19 (NULL|self + print_window)
+            826 LOAD_FAST                1 (hwnd)
+            828 LOAD_FAST                7 (memdc)
+            830 LOAD_FAST                4 (flags)
+            832 CALL                     3
+            840 STORE_FAST              10 (ok)
+
+238         842 LOAD_FAST               10 (ok)
+            844 POP_JUMP_IF_TRUE        32 (to 910)
+
+239         846 NOP
+
+240         848 PUSH_NULL
+            850 LOAD_GLOBAL             21 (NULL + getattr)
+            860 LOAD_FAST                5 (api)
+            862 LOAD_CONST               1 ('last_error')
+            864 LOAD_CONST               2 (<code object <lambda> at 0x7f6aed1a6b40, file "window_capture.py", line 240>)
+            866 MAKE_FUNCTION            0
+            868 CALL                     3
+            876 CALL                     0
+            884 LOAD_GLOBAL             22 (ERROR_ACCESS_DENIED)
+            894 COMPARE_OP              40 (==)
+            898 LOAD_FAST                0 (self)
+            900 STORE_ATTR              12 (_denied)
+
+243     >>  910 LOAD_FAST                9 (old)
+            912 POP_JUMP_IF_FALSE       20 (to 954)
+
+244         914 LOAD_FAST                5 (api)
+            916 LOAD_ATTR                7 (NULL|self + select_object)
+            936 LOAD_FAST                7 (memdc)
+            938 LOAD_FAST                9 (old)
+            940 CALL                     2
+            948 POP_TOP
+
+245         950 LOAD_CONST               0 (None)
+            952 STORE_FAST               9 (old)
+
+246     >>  954 LOAD_FAST               10 (ok)
+            956 POP_JUMP_IF_TRUE       101 (to 1160)
+
+247         958 NOP
+
+253         960 LOAD_FAST                9 (old)
+            962 POP_JUMP_IF_FALSE       23 (to 1010)
+
+254         964 LOAD_GLOBAL              5 (NULL + _quiet)
+            974 LOAD_FAST                5 (api)
+            976 LOAD_ATTR                6 (select_object)
+            996 LOAD_FAST                7 (memdc)
+            998 LOAD_FAST                9 (old)
+           1000 CALL                     3
+           1008 POP_TOP
+
+255     >> 1010 LOAD_FAST                8 (bitmap)
+           1012 POP_JUMP_IF_FALSE       22 (to 1058)
+
+256        1014 LOAD_GLOBAL              5 (NULL + _quiet)
+           1024 LOAD_FAST                5 (api)
+           1026 LOAD_ATTR                8 (delete_object)
+           1046 LOAD_FAST                8 (bitmap)
+           1048 CALL                     2
+           1056 POP_TOP
+
+257     >> 1058 LOAD_FAST                7 (memdc)
+           1060 POP_JUMP_IF_FALSE       22 (to 1106)
+
+258        1062 LOAD_GLOBAL              5 (NULL + _quiet)
+           1072 LOAD_FAST                5 (api)
+           1074 LOAD_ATTR               10 (delete_dc)
+           1094 LOAD_FAST                7 (memdc)
+           1096 CALL                     2
+           1104 POP_TOP
+
+259     >> 1106 LOAD_FAST                6 (hdc)
+           1108 POP_JUMP_IF_FALSE       24 (to 1158)
+
+260        1110 LOAD_GLOBAL              5 (NULL + _quiet)
+           1120 LOAD_FAST                5 (api)
+           1122 LOAD_ATTR               12 (release_dc)
+           1142 LOAD_FAST                1 (hwnd)
+           1144 LOAD_FAST                6 (hdc)
+           1146 CALL                     3
+           1154 POP_TOP
+           1156 RETURN_CONST             0 (None)
+
+259     >> 1158 RETURN_CONST             0 (None)
+
+248     >> 1160 LOAD_FAST                5 (api)
+           1162 LOAD_ATTR               29 (NULL|self + get_dibits)
+           1182 LOAD_FAST                7 (memdc)
+           1184 LOAD_FAST                8 (bitmap)
+           1186 LOAD_FAST                2 (w)
+           1188 LOAD_FAST                3 (h)
+           1190 CALL                     4
+           1198 STORE_FAST              11 (data)
+
+249        1200 LOAD_FAST               11 (data)
+           1202 POP_JUMP_IF_NONE        20 (to 1244)
+           1204 LOAD_GLOBAL             31 (NULL + len)
+           1214 LOAD_FAST               11 (data)
+           1216 CALL                     1
+           1224 LOAD_FAST                2 (w)
+           1226 LOAD_FAST                3 (h)
+           1228 BINARY_OP                5 (*)
+           1232 LOAD_CONST               4 (4)
+           1234 BINARY_OP                5 (*)
+           1238 COMPARE_OP              55 (!=)
+           1242 POP_JUMP_IF_FALSE      101 (to 1446)
+
+250     >> 1244 NOP
+
+253        1246 LOAD_FAST                9 (old)
+           1248 POP_JUMP_IF_FALSE       23 (to 1296)
+
+254        1250 LOAD_GLOBAL              5 (NULL + _quiet)
+           1260 LOAD_FAST                5 (api)
+           1262 LOAD_ATTR                6 (select_object)
+           1282 LOAD_FAST                7 (memdc)
+           1284 LOAD_FAST                9 (old)
+           1286 CALL                     3
+           1294 POP_TOP
+
+255     >> 1296 LOAD_FAST                8 (bitmap)
+           1298 POP_JUMP_IF_FALSE       22 (to 1344)
+
+256        1300 LOAD_GLOBAL              5 (NULL + _quiet)
+           1310 LOAD_FAST                5 (api)
+           1312 LOAD_ATTR                8 (delete_object)
+           1332 LOAD_FAST                8 (bitmap)
+           1334 CALL                     2
+           1342 POP_TOP
+
+257     >> 1344 LOAD_FAST                7 (memdc)
+           1346 POP_JUMP_IF_FALSE       22 (to 1392)
+
+258        1348 LOAD_GLOBAL              5 (NULL + _quiet)
+           1358 LOAD_FAST                5 (api)
+           1360 LOAD_ATTR               10 (delete_dc)
+           1380 LOAD_FAST                7 (memdc)
+           1382 CALL                     2
+           1390 POP_TOP
+
+259     >> 1392 LOAD_FAST                6 (hdc)
+           1394 POP_JUMP_IF_FALSE       24 (to 1444)
+
+260        1396 LOAD_GLOBAL              5 (NULL + _quiet)
+           1406 LOAD_FAST                5 (api)
+           1408 LOAD_ATTR               12 (release_dc)
+           1428 LOAD_FAST                1 (hwnd)
+           1430 LOAD_FAST                6 (hdc)
+           1432 CALL                     3
+           1440 POP_TOP
+           1442 RETURN_CONST             0 (None)
+
+259     >> 1444 RETURN_CONST             0 (None)
+
+251     >> 1446 LOAD_GLOBAL             33 (NULL + np)
+           1456 LOAD_ATTR               34 (frombuffer)
+           1476 LOAD_FAST               11 (data)
+           1478 LOAD_GLOBAL             32 (np)
+           1488 LOAD_ATTR               36 (uint8)
+           1508 KW_NAMES                 5 (('dtype',))
+           1510 CALL                     2
+           1518 LOAD_ATTR               39 (NULL|self + reshape)
+           1538 LOAD_FAST                3 (h)
+           1540 LOAD_FAST                2 (w)
+           1542 LOAD_CONST               4 (4)
+           1544 CALL                     3
+           1552 LOAD_CONST               0 (None)
+           1554 LOAD_CONST               0 (None)
+           1556 BUILD_SLICE              2
+           1558 LOAD_CONST               0 (None)
+           1560 LOAD_CONST               0 (None)
+           1562 BUILD_SLICE              2
+           1564 LOAD_CONST               0 (None)
+           1566 LOAD_CONST               6 (3)
+           1568 BUILD_SLICE              2
+           1570 BUILD_TUPLE              3
+           1572 BINARY_SUBSCR
+           1576 LOAD_ATTR               41 (NULL|self + copy)
+           1596 CALL                     0
+
+253        1604 LOAD_FAST                9 (old)
+           1606 POP_JUMP_IF_FALSE       23 (to 1654)
+
+254        1608 LOAD_GLOBAL              5 (NULL + _quiet)
+           1618 LOAD_FAST                5 (api)
+           1620 LOAD_ATTR                6 (select_object)
+           1640 LOAD_FAST                7 (memdc)
+           1642 LOAD_FAST                9 (old)
+           1644 CALL                     3
+           1652 POP_TOP
+
+255     >> 1654 LOAD_FAST                8 (bitmap)
+           1656 POP_JUMP_IF_FALSE       22 (to 1702)
+
+256        1658 LOAD_GLOBAL              5 (NULL + _quiet)
+           1668 LOAD_FAST                5 (api)
+           1670 LOAD_ATTR                8 (delete_object)
+           1690 LOAD_FAST                8 (bitmap)
+           1692 CALL                     2
+           1700 POP_TOP
+
+257     >> 1702 LOAD_FAST                7 (memdc)
+           1704 POP_JUMP_IF_FALSE       22 (to 1750)
+
+258        1706 LOAD_GLOBAL              5 (NULL + _quiet)
+           1716 LOAD_FAST                5 (api)
+           1718 LOAD_ATTR               10 (delete_dc)
+           1738 LOAD_FAST                7 (memdc)
+           1740 CALL                     2
+           1748 POP_TOP
+
+259     >> 1750 LOAD_FAST                6 (hdc)
+           1752 POP_JUMP_IF_FALSE       24 (to 1802)
+
+260        1754 LOAD_GLOBAL              5 (NULL + _quiet)
+           1764 LOAD_FAST                5 (api)
+           1766 LOAD_ATTR               12 (release_dc)
+           1786 LOAD_FAST                1 (hwnd)
+           1788 LOAD_FAST                6 (hdc)
+           1790 CALL                     3
+           1798 POP_TOP
+           1800 RETURN_VALUE
+
+259     >> 1802 RETURN_VALUE
+        >> 1804 PUSH_EXC_INFO
+
+241        1806 LOAD_GLOBAL             26 (Exception)
+           1816 CHECK_EXC_MATCH
+           1818 POP_JUMP_IF_FALSE       11 (to 1842)
+           1820 POP_TOP
+
+242        1822 LOAD_CONST               3 (False)
+           1824 LOAD_FAST                0 (self)
+           1826 STORE_ATTR              12 (_denied)
+           1836 POP_EXCEPT
+           1838 EXTENDED_ARG             1
+           1840 JUMP_BACKWARD          466 (to 910)
+
+241     >> 1842 RERAISE                  0
+        >> 1844 COPY                     3
+           1846 POP_EXCEPT
+           1848 RERAISE                  1
+        >> 1850 PUSH_EXC_INFO
+
+253        1852 LOAD_FAST                9 (old)
+           1854 POP_JUMP_IF_FALSE       23 (to 1902)
+
+254        1856 LOAD_GLOBAL              5 (NULL + _quiet)
+           1866 LOAD_FAST                5 (api)
+           1868 LOAD_ATTR                6 (select_object)
+           1888 LOAD_FAST                7 (memdc)
+           1890 LOAD_FAST                9 (old)
+           1892 CALL                     3
+           1900 POP_TOP
+
+255     >> 1902 LOAD_FAST                8 (bitmap)
+           1904 POP_JUMP_IF_FALSE       22 (to 1950)
+
+256        1906 LOAD_GLOBAL              5 (NULL + _quiet)
+           1916 LOAD_FAST                5 (api)
+           1918 LOAD_ATTR                8 (delete_object)
+           1938 LOAD_FAST                8 (bitmap)
+           1940 CALL                     2
+           1948 POP_TOP
+
+257     >> 1950 LOAD_FAST                7 (memdc)
+           1952 POP_JUMP_IF_FALSE       22 (to 1998)
+
+258        1954 LOAD_GLOBAL              5 (NULL + _quiet)
+           1964 LOAD_FAST                5 (api)
+           1966 LOAD_ATTR               10 (delete_dc)
+           1986 LOAD_FAST                7 (memdc)
+           1988 CALL                     2
+           1996 POP_TOP
+
+259     >> 1998 LOAD_FAST                6 (hdc)
+           2000 POP_JUMP_IF_FALSE       24 (to 2050)
+
+260        2002 LOAD_GLOBAL              5 (NULL + _quiet)
+           2012 LOAD_FAST                5 (api)
+           2014 LOAD_ATTR               12 (release_dc)
+           2034 LOAD_FAST                1 (hwnd)
+           2036 LOAD_FAST                6 (hdc)
+           2038 CALL                     3
+           2046 POP_TOP
+           2048 RERAISE                  0
+
+259     >> 2050 RERAISE                  0
+        >> 2052 COPY                     3
+           2054 POP_EXCEPT
+           2056 RERAISE                  1
+ExceptionTable:
+  44 to 80 -> 1850 [0]
+  284 to 320 -> 1850 [0]
+  524 to 564 -> 1850 [0]
+  768 to 844 -> 1850 [0]
+  848 to 908 -> 1804 [0]
+  910 to 956 -> 1850 [0]
+  1160 to 1242 -> 1850 [0]
+  1446 to 1602 -> 1850 [0]
+  1804 to 1834 -> 1844 [1] lasti
+  1836 to 1840 -> 1850 [0]
+  1842 to 1842 -> 1844 [1] lasti
+  1844 to 1848 -> 1850 [0]
+  1850 to 2050 -> 2052 [1] lasti
+
+Disassembly of <code object <lambda> at 0x7f6aed1a6b40, file "window_capture.py", line 240>:
+240           0 RESUME                   0
+              2 RETURN_CONST             1 (0)
+
+Disassembly of <code object _quiet at 0x7f6aecffc030, file "window_capture.py", line 263>:
+263           0 RESUME                   0
+
+264           2 NOP
+
+265           4 PUSH_NULL
+              6 LOAD_FAST                0 (fn)
+              8 LOAD_FAST                1 (args)
+             10 CALL_FUNCTION_EX         0
+             12 POP_TOP
+             14 RETURN_CONST             0 (None)
+        >>   16 PUSH_EXC_INFO
+
+266          18 LOAD_GLOBAL              0 (Exception)
+             28 CHECK_EXC_MATCH
+             30 POP_JUMP_IF_FALSE        3 (to 38)
+             32 POP_TOP
+
+267          34 POP_EXCEPT
+             36 RETURN_CONST             0 (None)
+
+266     >>   38 RERAISE                  0
+        >>   40 COPY                     3
+             42 POP_EXCEPT
+             44 RERAISE                  1
+ExceptionTable:
+  4 to 12 -> 16 [0]
+  16 to 32 -> 40 [1] lasti
+  38 to 38 -> 40 [1] lasti
+
+Disassembly of <code object _is_black at 0x7f6aed1d1f10, file "window_capture.py", line 270>:
+270           0 RESUME                   0
+
+271           2 NOP
+
+272           4 LOAD_FAST                0 (frame)
+              6 LOAD_CONST               0 (None)
+              8 LOAD_CONST               0 (None)
+             10 LOAD_CONST               1 (8)
+             12 BUILD_SLICE              3
+             14 LOAD_CONST               0 (None)
+             16 LOAD_CONST               0 (None)
+             18 LOAD_CONST               1 (8)
+             20 BUILD_SLICE              3
+             22 BUILD_TUPLE              2
+             24 BINARY_SUBSCR
+             28 LOAD_ATTR                1 (NULL|self + any)
+             48 CALL                     0
+             56 UNARY_NOT
+             58 COPY                     1
+             60 POP_JUMP_IF_FALSE       17 (to 96)
+             62 POP_TOP
+             64 LOAD_FAST                0 (frame)
+             66 LOAD_ATTR                1 (NULL|self + any)
+             86 CALL                     0
+             94 UNARY_NOT
+        >>   96 RETURN_VALUE

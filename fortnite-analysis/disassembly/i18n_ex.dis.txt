@@ -1,0 +1,650 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+  4           4 BUILD_MAP                0
+
+  5           6 LOAD_CONST               0 ('tab_extras')
+              8 LOAD_CONST               1 ('拡張')
+
+  4          10 MAP_ADD                  1
+
+  6          12 LOAD_CONST               2 ('ex_mute')
+             14 LOAD_CONST               3 ('稼働中はフォートナイトの音をミュートする（停止時に元の音量・ミュート状態へ戻す）')
+
+  4          16 MAP_ADD                  1
+
+  7          18 LOAD_CONST               4 ('ex_loot')
+             20 LOAD_CONST               5 ('報酬を受け取る直前の画面を保存する（Loot Vault・最新100枚）')
+
+  4          22 MAP_ADD                  1
+
+  8          24 LOAD_CONST               6 ('ex_loot_open')
+             26 LOAD_CONST               7 ('📁 獲得報酬フォルダを開く（Loot Vault）')
+
+  4          28 MAP_ADD                  1
+
+  9          30 LOAD_CONST               8 ('ex_human')
+             32 LOAD_CONST               9 ('人間らしい入力のゆらぎ（WASDの間隔・長押し時間を毎回少し変える）')
+
+  4          34 MAP_ADD                  1
+
+ 10          36 LOAD_CONST              10 ('ex_look')
+             38 LOAD_CONST              11 ('自然な視点移動（Mouse Look：マウスでカメラを少しずつ動かす）')
+
+  4          40 MAP_ADD                  1
+
+ 11          42 LOAD_CONST              12 ('ex_jitter')
+             44 LOAD_CONST              13 ('秒数のランダム振れ幅（Jitter：待機秒数を毎回±15%の範囲でランダムに決める）')
+
+  4          46 MAP_ADD                  1
+
+ 12          48 LOAD_CONST              14 ('ex_jpct_pre')
+             50 LOAD_CONST              15 ('振れ幅 ±')
+
+  4          52 MAP_ADD                  1
+
+ 12          54 LOAD_CONST              16 ('ex_jpct_post')
+             56 LOAD_CONST              17 ('％（5〜50）')
+
+  4          58 MAP_ADD                  1
+
+ 13          60 LOAD_CONST              18 ('ex_jprev')
+             62 LOAD_CONST              19 ('実際の待機範囲（{base:g}秒設定）: {lo:.1f}秒 〜 {hi:.1f}秒')
+
+  4          64 MAP_ADD                  1
+
+ 14          66 LOAD_CONST              20 ('ex_jprev_off')
+             68 LOAD_CONST              21 ('ジッターOFF: {base:g}秒固定')
+
+  4          70 MAP_ADD                  1
+
+ 15          72 LOAD_CONST              22 ('ex_modefix')
+             74 LOAD_CONST              23 ('ロビーのモードが勝手にソロに戻ったら、スクワッド＋チームを埋めるに自動で直す')
+
+  4          76 MAP_ADD                  1
+
+ 16          78 LOAD_CONST              24 ('ex_bus')
+             80 LOAD_CONST              25 ('バスのカウントダウンが15〜25になったらバスから飛び降り、真下を向いてWを押し続ける（その後は通常のAFK動作）')
+
+  4          82 MAP_ADD                  1
+
+ 17          84 LOAD_CONST              26 ('ex_dive_pre')
+             86 LOAD_CONST              27 ('Wを押し続ける秒数: ')
+
+  4          88 MAP_ADD                  1
+
+ 17          90 LOAD_CONST              28 ('ex_dive_post')
+             92 LOAD_CONST              29 ('秒')
+
+  4          94 MAP_ADD                  1
+
+ 18          96 LOAD_CONST              30 ('ex_pickaxe')
+             98 LOAD_CONST              31 ('つるはしスイングによるAFK防止（マッチ中のみ・ロビーでは動かない）')
+
+  4         100 MAP_ADD                  1
+
+ 19         102 LOAD_CONST              32 ('ex_pick_pre')
+            104 LOAD_CONST              33 ('スイングの間隔: ')
+
+  4         106 MAP_ADD                  1
+
+ 19         108 LOAD_CONST              34 ('〜')
+            110 LOAD_CONST              35 ('秒の間のランダム')
+
+ 20         112 LOAD_CONST              36 ('90〜120分ごとにロビーで2〜4分の小休止を入れる')
+
+ 21         114 LOAD_CONST              37 ('報酬を受け取る画面をDiscordのDMに送る（5分に1回まで）')
+
+ 22         116 LOAD_CONST              38 ('しきい値すれすれのボタンを自動で補正する（オート・キャリブレーション）')
+
+ 23         118 LOAD_CONST              39 ('【モードB】待機島で100秒後から10秒ごとに左下の味方枠を数え、自分を含め1〜2枠ならロビーに戻る')
+
+ 24         120 LOAD_CONST              40 ('進まないまま')
+            122 LOAD_CONST              41 ('分たったら自動復旧（Esc）→ DMで通知（0=オフ）')
+
+ 25         124 LOAD_CONST              42 ('止まっている間、Discordの /rescue コマンドでの遠隔操作を受け付ける')
+
+  4         126 LOAD_CONST              43 (('ex_pick_mid', 'ex_pick_post', 'ex_coffee', 'ex_rshot', 'ex_calib', 'ex_squad', 'ex_stuck_pre', 'ex_stuck_post', 'ex_rescue'))
+            128 BUILD_CONST_KEY_MAP      9
+            130 DICT_UPDATE              1
+
+ 27         132 BUILD_MAP                0
+
+ 28         134 LOAD_CONST               0 ('tab_extras')
+            136 LOAD_CONST              44 ('Extras')
+
+ 27         138 MAP_ADD                  1
+
+ 29         140 LOAD_CONST               2 ('ex_mute')
+            142 LOAD_CONST              45 ("Mute Fortnite's sound while running (restored to the previous volume / mute state on stop)")
+
+ 27         144 MAP_ADD                  1
+
+ 30         146 LOAD_CONST               4 ('ex_loot')
+            148 LOAD_CONST              46 ('Save the screen right before each reward is claimed (Loot Vault, newest 100)')
+
+ 27         150 MAP_ADD                  1
+
+ 31         152 LOAD_CONST               6 ('ex_loot_open')
+            154 LOAD_CONST              47 ('📁 Open the rewards folder (Loot Vault)')
+
+ 27         156 MAP_ADD                  1
+
+ 32         158 LOAD_CONST               8 ('ex_human')
+            160 LOAD_CONST              48 ('Human-like input variation (WASD interval and hold time change a little every time)')
+
+ 27         162 MAP_ADD                  1
+
+ 33         164 LOAD_CONST              10 ('ex_look')
+            166 LOAD_CONST              49 ('Natural view movement (Mouse Look: nudge the camera smoothly with the mouse)')
+
+ 27         168 MAP_ADD                  1
+
+ 34         170 LOAD_CONST              12 ('ex_jitter')
+            172 LOAD_CONST              50 ('Random wait spread (Jitter: every wait is drawn at random within +-15% of the set seconds)')
+
+ 27         174 MAP_ADD                  1
+
+ 35         176 LOAD_CONST              14 ('ex_jpct_pre')
+            178 LOAD_CONST              51 ('Spread +-')
+
+ 27         180 MAP_ADD                  1
+
+ 35         182 LOAD_CONST              16 ('ex_jpct_post')
+            184 LOAD_CONST              52 ('% (5-50)')
+
+ 27         186 MAP_ADD                  1
+
+ 36         188 LOAD_CONST              18 ('ex_jprev')
+            190 LOAD_CONST              53 ('Actual random range (set {base:g}s): {lo:.1f}s ~ {hi:.1f}s')
+
+ 27         192 MAP_ADD                  1
+
+ 37         194 LOAD_CONST              20 ('ex_jprev_off')
+            196 LOAD_CONST              54 ('Jitter off: fixed {base:g}s')
+
+ 27         198 MAP_ADD                  1
+
+ 38         200 LOAD_CONST              22 ('ex_modefix')
+            202 LOAD_CONST              55 ('If the lobby mode falls back to Solo, set it back to Squad + Fill automatically')
+
+ 27         204 MAP_ADD                  1
+
+ 39         206 LOAD_CONST              24 ('ex_bus')
+            208 LOAD_CONST              56 ('When the bus countdown reads 15-25, jump off the bus, look straight down and hold W (then the normal anti-AFK goes on)')
+
+ 27         210 MAP_ADD                  1
+
+ 40         212 LOAD_CONST              26 ('ex_dive_pre')
+            214 LOAD_CONST              57 ('Hold W for ')
+
+ 27         216 MAP_ADD                  1
+
+ 40         218 LOAD_CONST              28 ('ex_dive_post')
+            220 LOAD_CONST              58 (' s')
+
+ 27         222 MAP_ADD                  1
+
+ 41         224 LOAD_CONST              30 ('ex_pickaxe')
+            226 LOAD_CONST              59 ('Pickaxe swing for AFK prevention (only during a match, never in the lobby)')
+
+ 27         228 MAP_ADD                  1
+
+ 42         230 LOAD_CONST              32 ('ex_pick_pre')
+            232 LOAD_CONST              60 ('Swing at a random moment between ')
+
+ 27         234 MAP_ADD                  1
+
+ 42         236 LOAD_CONST              61 (' and ')
+            238 LOAD_CONST              58 (' s')
+
+ 43         240 LOAD_CONST              62 ('Take a 2-4 minute break in the lobby every 90-120 minutes')
+
+ 44         242 LOAD_CONST              63 ('Send the reward screen to Discord by DM (at most once every 5 minutes)')
+
+ 45         244 LOAD_CONST              64 ('Correct buttons that sit just below the threshold automatically (auto-calibration)')
+
+ 46         246 LOAD_CONST              65 ('[Mode B] From 100 s on the island, count the teammate cards (bottom left) every 10 s; leave if the team (you included) is 1-2')
+
+ 47         248 LOAD_CONST              66 ('After no progress for')
+            250 LOAD_CONST              67 ('min: automatic recovery (Esc), then a DM (0 = off)')
+
+ 48         252 LOAD_CONST              68 ('While stuck, accept remote control with the /rescue command on Discord')
+
+ 27         254 LOAD_CONST              43 (('ex_pick_mid', 'ex_pick_post', 'ex_coffee', 'ex_rshot', 'ex_calib', 'ex_squad', 'ex_stuck_pre', 'ex_stuck_post', 'ex_rescue'))
+            256 BUILD_CONST_KEY_MAP      9
+            258 DICT_UPDATE              1
+
+ 50         260 BUILD_MAP                0
+
+ 51         262 LOAD_CONST               0 ('tab_extras')
+            264 LOAD_CONST              44 ('Extras')
+
+ 50         266 MAP_ADD                  1
+
+ 52         268 LOAD_CONST               2 ('ex_mute')
+            270 LOAD_CONST              69 ('Silenciar el sonido de Fortnite mientras funciona (se restaura el volumen / silencio anterior al parar)')
+
+ 50         272 MAP_ADD                  1
+
+ 53         274 LOAD_CONST               4 ('ex_loot')
+            276 LOAD_CONST              70 ('Guardar la pantalla justo antes de reclamar cada recompensa (Loot Vault, las últimas 100)')
+
+ 50         278 MAP_ADD                  1
+
+ 54         280 LOAD_CONST               6 ('ex_loot_open')
+            282 LOAD_CONST              71 ('📁 Abrir la carpeta de recompensas (Loot Vault)')
+
+ 50         284 MAP_ADD                  1
+
+ 55         286 LOAD_CONST               8 ('ex_human')
+            288 LOAD_CONST              72 ('Variación humana de las pulsaciones (el intervalo y la duración de WASD cambian un poco cada vez)')
+
+ 50         290 MAP_ADD                  1
+
+ 56         292 LOAD_CONST              10 ('ex_look')
+            294 LOAD_CONST              73 ('Movimiento de vista natural (Mouse Look: mueve la cámara suavemente con el ratón)')
+
+ 50         296 MAP_ADD                  1
+
+ 57         298 LOAD_CONST              12 ('ex_jitter')
+            300 LOAD_CONST              74 ('Variación aleatoria de las esperas (Jitter: cada espera se sortea dentro de ±15 % de los segundos fijados)')
+
+ 50         302 MAP_ADD                  1
+
+ 58         304 LOAD_CONST              14 ('ex_jpct_pre')
+            306 LOAD_CONST              75 ('Variación ±')
+
+ 50         308 MAP_ADD                  1
+
+ 58         310 LOAD_CONST              16 ('ex_jpct_post')
+            312 LOAD_CONST              52 ('% (5-50)')
+
+ 50         314 MAP_ADD                  1
+
+ 59         316 LOAD_CONST              18 ('ex_jprev')
+            318 LOAD_CONST              76 ('Rango aleatorio real (ajustado {base:g}s): {lo:.1f}s ~ {hi:.1f}s')
+
+ 50         320 MAP_ADD                  1
+
+ 60         322 LOAD_CONST              20 ('ex_jprev_off')
+            324 LOAD_CONST              77 ('Jitter desactivado: {base:g}s fijos')
+
+ 50         326 MAP_ADD                  1
+
+ 61         328 LOAD_CONST              22 ('ex_modefix')
+            330 LOAD_CONST              78 ('Si el modo del lobby vuelve a Solo, volver a poner Escuadrón + Rellenar automáticamente')
+
+ 50         332 MAP_ADD                  1
+
+ 62         334 LOAD_CONST              24 ('ex_bus')
+            336 LOAD_CONST              79 ('Cuando la cuenta atrás del autobús marque 15-25, saltar, mirar hacia abajo y mantener W (luego sigue el anti-AFK normal)')
+
+ 50         338 MAP_ADD                  1
+
+ 63         340 LOAD_CONST              26 ('ex_dive_pre')
+            342 LOAD_CONST              80 ('Mantener W durante ')
+
+ 50         344 MAP_ADD                  1
+
+ 63         346 LOAD_CONST              28 ('ex_dive_post')
+            348 LOAD_CONST              58 (' s')
+
+ 50         350 MAP_ADD                  1
+
+ 64         352 LOAD_CONST              30 ('ex_pickaxe')
+            354 LOAD_CONST              81 ('Golpe de pico contra el AFK (solo durante una partida, nunca en el lobby)')
+
+ 50         356 MAP_ADD                  1
+
+ 65         358 LOAD_CONST              32 ('ex_pick_pre')
+            360 LOAD_CONST              82 ('Golpear en un momento aleatorio entre ')
+
+ 50         362 MAP_ADD                  1
+
+ 65         364 LOAD_CONST              83 (' y ')
+            366 LOAD_CONST              58 (' s')
+
+ 66         368 LOAD_CONST              84 ('Hacer una pausa de 2-4 minutos en el lobby cada 90-120 minutos')
+
+ 67         370 LOAD_CONST              85 ('Enviar la pantalla de recompensa por DM de Discord (como máximo cada 5 minutos)')
+
+ 68         372 LOAD_CONST              86 ('Corregir automáticamente los botones que quedan justo por debajo del umbral (autocalibración)')
+
+ 69         374 LOAD_CONST              87 ('[Modo B] Desde 100 s en la isla, cuenta cada 10 s las tarjetas de compañeros (abajo a la izquierda); sal si el equipo (contigo) es de 1-2')
+
+ 70         376 LOAD_CONST              88 ('Tras')
+            378 LOAD_CONST              89 ('min sin avance: recuperación automática (Esc) y un DM (0 = desactivado)')
+
+ 71         380 LOAD_CONST              90 ('Mientras esté atascado, aceptar el control remoto con el comando /rescue de Discord')
+
+ 50         382 LOAD_CONST              43 (('ex_pick_mid', 'ex_pick_post', 'ex_coffee', 'ex_rshot', 'ex_calib', 'ex_squad', 'ex_stuck_pre', 'ex_stuck_post', 'ex_rescue'))
+            384 BUILD_CONST_KEY_MAP      9
+            386 DICT_UPDATE              1
+
+ 73         388 BUILD_MAP                0
+
+ 74         390 LOAD_CONST               0 ('tab_extras')
+            392 LOAD_CONST              44 ('Extras')
+
+ 73         394 MAP_ADD                  1
+
+ 75         396 LOAD_CONST               2 ('ex_mute')
+            398 LOAD_CONST              91 ('Silenciar o som do Fortnite enquanto roda (restaura o volume / mudo anterior ao parar)')
+
+ 73         400 MAP_ADD                  1
+
+ 76         402 LOAD_CONST               4 ('ex_loot')
+            404 LOAD_CONST              92 ('Salvar a tela logo antes de coletar cada recompensa (Loot Vault, as últimas 100)')
+
+ 73         406 MAP_ADD                  1
+
+ 77         408 LOAD_CONST               6 ('ex_loot_open')
+            410 LOAD_CONST              93 ('📁 Abrir a pasta de recompensas (Loot Vault)')
+
+ 73         412 MAP_ADD                  1
+
+ 78         414 LOAD_CONST               8 ('ex_human')
+            416 LOAD_CONST              94 ('Variação humana das teclas (intervalo e duração do WASD mudam um pouco a cada vez)')
+
+ 73         418 MAP_ADD                  1
+
+ 79         420 LOAD_CONST              10 ('ex_look')
+            422 LOAD_CONST              95 ('Movimento de visão natural (Mouse Look: move a câmera suavemente com o mouse)')
+
+ 73         424 MAP_ADD                  1
+
+ 80         426 LOAD_CONST              12 ('ex_jitter')
+            428 LOAD_CONST              96 ('Variação aleatória das esperas (Jitter: cada espera é sorteada dentro de ±15 % dos segundos definidos)')
+
+ 73         430 MAP_ADD                  1
+
+ 81         432 LOAD_CONST              14 ('ex_jpct_pre')
+            434 LOAD_CONST              97 ('Variação ±')
+
+ 73         436 MAP_ADD                  1
+
+ 81         438 LOAD_CONST              16 ('ex_jpct_post')
+            440 LOAD_CONST              52 ('% (5-50)')
+
+ 73         442 MAP_ADD                  1
+
+ 82         444 LOAD_CONST              18 ('ex_jprev')
+            446 LOAD_CONST              98 ('Faixa aleatória real (definido {base:g}s): {lo:.1f}s ~ {hi:.1f}s')
+
+ 73         448 MAP_ADD                  1
+
+ 83         450 LOAD_CONST              20 ('ex_jprev_off')
+            452 LOAD_CONST              99 ('Jitter desligado: {base:g}s fixos')
+
+ 73         454 MAP_ADD                  1
+
+ 84         456 LOAD_CONST              22 ('ex_modefix')
+            458 LOAD_CONST             100 ('Se o modo do lobby voltar para Solo, definir Esquadrão + Preencher automaticamente')
+
+ 73         460 MAP_ADD                  1
+
+ 85         462 LOAD_CONST              24 ('ex_bus')
+            464 LOAD_CONST             101 ('Quando a contagem do ônibus marcar 15-25, pular, olhar para baixo e segurar W (depois segue o anti-AFK normal)')
+
+ 73         466 MAP_ADD                  1
+
+ 86         468 LOAD_CONST              26 ('ex_dive_pre')
+            470 LOAD_CONST             102 ('Segurar W por ')
+
+ 73         472 MAP_ADD                  1
+
+ 86         474 LOAD_CONST              28 ('ex_dive_post')
+            476 LOAD_CONST              58 (' s')
+
+ 73         478 MAP_ADD                  1
+
+ 87         480 LOAD_CONST              30 ('ex_pickaxe')
+            482 LOAD_CONST             103 ('Golpe de picareta contra AFK (só durante a partida, nunca no lobby)')
+
+ 73         484 MAP_ADD                  1
+
+ 88         486 LOAD_CONST              32 ('ex_pick_pre')
+            488 LOAD_CONST             104 ('Golpear em um momento aleatório entre ')
+
+ 73         490 MAP_ADD                  1
+
+ 88         492 LOAD_CONST             105 (' e ')
+            494 LOAD_CONST              58 (' s')
+
+ 89         496 LOAD_CONST             106 ('Fazer uma pausa de 2-4 minutos no lobby a cada 90-120 minutos')
+
+ 90         498 LOAD_CONST             107 ('Enviar a tela de recompensa por DM do Discord (no máximo a cada 5 minutos)')
+
+ 91         500 LOAD_CONST             108 ('Corrigir automaticamente botões que ficam logo abaixo do limite (autocalibração)')
+
+ 92         502 LOAD_CONST             109 ('[Modo B] Após 100 s na ilha, conta a cada 10 s os cartões de companheiros (canto inferior esquerdo); sai se a equipe (com você) tiver 1-2')
+
+ 93         504 LOAD_CONST             110 ('Após')
+            506 LOAD_CONST             111 ('min sem progresso: recuperação automática (Esc) e uma DM (0 = desligado)')
+
+ 94         508 LOAD_CONST             112 ('Enquanto estiver travado, aceitar controle remoto pelo comando /rescue do Discord')
+
+ 73         510 LOAD_CONST              43 (('ex_pick_mid', 'ex_pick_post', 'ex_coffee', 'ex_rshot', 'ex_calib', 'ex_squad', 'ex_stuck_pre', 'ex_stuck_post', 'ex_rescue'))
+            512 BUILD_CONST_KEY_MAP      9
+            514 DICT_UPDATE              1
+
+ 96         516 BUILD_MAP                0
+
+ 97         518 LOAD_CONST               0 ('tab_extras')
+            520 LOAD_CONST             113 ('Дополнительно')
+
+ 96         522 MAP_ADD                  1
+
+ 98         524 LOAD_CONST               2 ('ex_mute')
+            526 LOAD_CONST             114 ('Отключать звук Fortnite во время работы (при остановке возвращается прежняя громкость / состояние)')
+
+ 96         528 MAP_ADD                  1
+
+ 99         530 LOAD_CONST               4 ('ex_loot')
+            532 LOAD_CONST             115 ('Сохранять экран прямо перед получением каждой награды (Loot Vault, последние 100)')
+
+ 96         534 MAP_ADD                  1
+
+100         536 LOAD_CONST               6 ('ex_loot_open')
+            538 LOAD_CONST             116 ('📁 Открыть папку наград (Loot Vault)')
+
+ 96         540 MAP_ADD                  1
+
+101         542 LOAD_CONST               8 ('ex_human')
+            544 LOAD_CONST             117 ('Человеческий разброс нажатий (интервал и длительность WASD немного меняются каждый раз)')
+
+ 96         546 MAP_ADD                  1
+
+102         548 LOAD_CONST              10 ('ex_look')
+            550 LOAD_CONST             118 ('Естественное движение камеры (Mouse Look: плавно двигать камеру мышью)')
+
+ 96         552 MAP_ADD                  1
+
+103         554 LOAD_CONST              12 ('ex_jitter')
+            556 LOAD_CONST             119 ('Случайный разброс ожидания (Jitter: каждое ожидание выбирается случайно в пределах ±15 % от заданных секунд)')
+
+ 96         558 MAP_ADD                  1
+
+104         560 LOAD_CONST              14 ('ex_jpct_pre')
+            562 LOAD_CONST             120 ('Разброс ±')
+
+ 96         564 MAP_ADD                  1
+
+104         566 LOAD_CONST              16 ('ex_jpct_post')
+            568 LOAD_CONST             121 ('% (5–50)')
+
+ 96         570 MAP_ADD                  1
+
+105         572 LOAD_CONST              18 ('ex_jprev')
+            574 LOAD_CONST             122 ('Реальный диапазон (задано {base:g} с): {lo:.1f} с ~ {hi:.1f} с')
+
+ 96         576 MAP_ADD                  1
+
+106         578 LOAD_CONST              20 ('ex_jprev_off')
+            580 LOAD_CONST             123 ('Jitter выкл.: фиксированно {base:g} с')
+
+ 96         582 MAP_ADD                  1
+
+107         584 LOAD_CONST              22 ('ex_modefix')
+            586 LOAD_CONST             124 ('Если режим в лобби сбросился на «Соло», автоматически вернуть «Отряд» + «Заполнить»')
+
+ 96         588 MAP_ADD                  1
+
+108         590 LOAD_CONST              24 ('ex_bus')
+            592 LOAD_CONST             125 ('Когда отсчёт автобуса покажет 15–25, спрыгнуть, посмотреть вниз и удерживать W (затем обычный анти-AFK)')
+
+ 96         594 MAP_ADD                  1
+
+109         596 LOAD_CONST              26 ('ex_dive_pre')
+            598 LOAD_CONST             126 ('Удерживать W ')
+
+ 96         600 MAP_ADD                  1
+
+109         602 LOAD_CONST              28 ('ex_dive_post')
+            604 LOAD_CONST             127 (' с')
+
+ 96         606 MAP_ADD                  1
+
+110         608 LOAD_CONST              30 ('ex_pickaxe')
+            610 LOAD_CONST             128 ('Удар киркой против AFK (только во время матча, не в лобби)')
+
+ 96         612 MAP_ADD                  1
+
+111         614 LOAD_CONST              32 ('ex_pick_pre')
+            616 LOAD_CONST             129 ('Бить в случайный момент между ')
+
+ 96         618 MAP_ADD                  1
+
+111         620 LOAD_CONST             130 (' и ')
+            622 LOAD_CONST             127 (' с')
+
+112         624 LOAD_CONST             131 ('Делать перерыв 2–4 минуты в лобби каждые 90–120 минут')
+
+113         626 LOAD_CONST             132 ('Отправлять экран награды в ЛС Discord (не чаще раза в 5 минут)')
+
+114         628 LOAD_CONST             133 ('Автоматически исправлять кнопки, оказавшиеся чуть ниже порога (автокалибровка)')
+
+115         630 LOAD_CONST             134 ('[Режим B] После 100 с на острове каждые 10 с считать карточки союзников (слева внизу); выйти, если в команде (с вами) 1–2')
+
+116         632 LOAD_CONST             135 ('Если нет прогресса')
+            634 LOAD_CONST             136 ('мин: автоматическое восстановление (Esc), затем ЛС (0 = выкл.)')
+
+117         636 LOAD_CONST             137 ('Пока завис, принимать удалённое управление командой /rescue в Discord')
+
+ 96         638 LOAD_CONST              43 (('ex_pick_mid', 'ex_pick_post', 'ex_coffee', 'ex_rshot', 'ex_calib', 'ex_squad', 'ex_stuck_pre', 'ex_stuck_post', 'ex_rescue'))
+            640 BUILD_CONST_KEY_MAP      9
+            642 DICT_UPDATE              1
+
+119         644 BUILD_MAP                0
+
+120         646 LOAD_CONST               0 ('tab_extras')
+            648 LOAD_CONST              44 ('Extras')
+
+119         650 MAP_ADD                  1
+
+121         652 LOAD_CONST               2 ('ex_mute')
+            654 LOAD_CONST             138 ("Couper le son de Fortnite pendant l'exécution (volume / sourdine d'origine rétablis à l'arrêt)")
+
+119         656 MAP_ADD                  1
+
+122         658 LOAD_CONST               4 ('ex_loot')
+            660 LOAD_CONST             139 ("Enregistrer l'écran juste avant chaque récompense réclamée (Loot Vault, les 100 dernières)")
+
+119         662 MAP_ADD                  1
+
+123         664 LOAD_CONST               6 ('ex_loot_open')
+            666 LOAD_CONST             140 ('📁 Ouvrir le dossier des récompenses (Loot Vault)')
+
+119         668 MAP_ADD                  1
+
+124         670 LOAD_CONST               8 ('ex_human')
+            672 LOAD_CONST             141 ("Variation humaine des touches (l'intervalle et la durée de WASD changent un peu à chaque fois)")
+
+119         674 MAP_ADD                  1
+
+125         676 LOAD_CONST              10 ('ex_look')
+            678 LOAD_CONST             142 ('Mouvement de vue naturel (Mouse Look : déplace doucement la caméra avec la souris)')
+
+119         680 MAP_ADD                  1
+
+126         682 LOAD_CONST              12 ('ex_jitter')
+            684 LOAD_CONST             143 ('Variation aléatoire des attentes (Jitter : chaque attente est tirée au hasard à ±15 % des secondes réglées)')
+
+119         686 MAP_ADD                  1
+
+127         688 LOAD_CONST              14 ('ex_jpct_pre')
+            690 LOAD_CONST             144 ('Écart ±')
+
+119         692 MAP_ADD                  1
+
+127         694 LOAD_CONST              16 ('ex_jpct_post')
+            696 LOAD_CONST              52 ('% (5-50)')
+
+119         698 MAP_ADD                  1
+
+128         700 LOAD_CONST              18 ('ex_jprev')
+            702 LOAD_CONST             145 ('Plage aléatoire réelle (réglé {base:g} s) : {lo:.1f} s ~ {hi:.1f} s')
+
+119         704 MAP_ADD                  1
+
+129         706 LOAD_CONST              20 ('ex_jprev_off')
+            708 LOAD_CONST             146 ('Jitter désactivé : {base:g} s fixes')
+
+119         710 MAP_ADD                  1
+
+130         712 LOAD_CONST              22 ('ex_modefix')
+            714 LOAD_CONST             147 ('Si le mode du lobby repasse en Solo, remettre automatiquement Escouade + Compléter')
+
+119         716 MAP_ADD                  1
+
+131         718 LOAD_CONST              24 ('ex_bus')
+            720 LOAD_CONST             148 ("Quand le compte à rebours du bus indique 15-25, sauter, regarder droit vers le bas et maintenir W (puis l'anti-AFK normal reprend)")
+
+119         722 MAP_ADD                  1
+
+132         724 LOAD_CONST              26 ('ex_dive_pre')
+            726 LOAD_CONST             149 ('Maintenir W pendant ')
+
+119         728 MAP_ADD                  1
+
+132         730 LOAD_CONST              28 ('ex_dive_post')
+            732 LOAD_CONST              58 (' s')
+
+119         734 MAP_ADD                  1
+
+133         736 LOAD_CONST              30 ('ex_pickaxe')
+            738 LOAD_CONST             150 ('Coup de pioche anti-AFK (uniquement pendant une partie, jamais dans le lobby)')
+
+119         740 MAP_ADD                  1
+
+134         742 LOAD_CONST              32 ('ex_pick_pre')
+            744 LOAD_CONST             151 ('Frapper à un moment aléatoire entre ')
+
+119         746 MAP_ADD                  1
+
+134         748 LOAD_CONST             152 (' et ')
+            750 LOAD_CONST              58 (' s')
+
+135         752 LOAD_CONST             153 ('Faire une pause de 2 à 4 minutes dans le lobby toutes les 90 à 120 minutes')
+
+136         754 LOAD_CONST             154 ("Envoyer l'écran de récompense par DM Discord (au plus une fois toutes les 5 minutes)")
+
+137         756 LOAD_CONST             155 ('Corriger automatiquement les boutons juste sous le seuil (autocalibration)')
+
+138         758 LOAD_CONST             156 ("[Mode B] Après 100 s sur l'île, compte toutes les 10 s les cartes d'équipiers (en bas à gauche) ; quitte si l'équipe (vous compris) est de 1-2")
+
+139         760 LOAD_CONST             157 ('Sans progression pendant')
+            762 LOAD_CONST             158 ('min : récupération automatique (Échap), puis un DM (0 = désactivé)')
+
+140         764 LOAD_CONST             159 ('Quand il est bloqué, accepter le contrôle à distance via la commande /rescue de Discord')
+
+119         766 LOAD_CONST              43 (('ex_pick_mid', 'ex_pick_post', 'ex_coffee', 'ex_rshot', 'ex_calib', 'ex_squad', 'ex_stuck_pre', 'ex_stuck_post', 'ex_rescue'))
+            768 BUILD_CONST_KEY_MAP      9
+            770 DICT_UPDATE              1
+
+  3         772 LOAD_CONST             160 (('ja', 'en', 'es', 'pt', 'ru', 'fr'))
+            774 BUILD_CONST_KEY_MAP      6
+            776 STORE_NAME               0 (UI_EX)
+            778 RETURN_CONST           161 (None)

@@ -1,0 +1,590 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+  4           4 BUILD_MAP                0
+
+  5           6 LOAD_CONST               0 ('ac_button')
+              8 LOAD_CONST               1 ('解像度・DPI 自動診断')
+
+  4          10 MAP_ADD                  1
+
+  5          12 LOAD_CONST               2 ('ac_running')
+             14 LOAD_CONST               3 ('診断中…')
+
+  4          16 MAP_ADD                  1
+
+  5          18 LOAD_CONST               4 ('ac_title')
+             20 LOAD_CONST               5 ('自動診断の結果')
+
+  4          22 MAP_ADD                  1
+
+  6          24 LOAD_CONST               6 ('ac_dpi_ok')
+             26 LOAD_CONST               7 ('Windowsの表示倍率: {pct}%（pk-autoはDPI対応済みなので問題ありません）')
+
+  4          28 MAP_ADD                  1
+
+  7          30 LOAD_CONST               8 ('ac_dpi_unaware')
+             32 LOAD_CONST               9 ('pk-autoがDPI非対応で動いています。クリック位置がずれます。管理者として起動し直してください。')
+
+  4          34 MAP_ADD                  1
+
+  8          36 LOAD_CONST              10 ('ac_dpi_mismatch')
+             38 LOAD_CONST              11 ('画面の座標が拡大縮小されています（論理 {lw}x{lh} / 実際 {pw}x{ph}）。クリック位置がずれる原因になります。')
+
+  4          40 MAP_ADD                  1
+
+  9          42 LOAD_CONST              12 ('ac_res')
+             44 LOAD_CONST              13 ('監視中のモニター {i}: {w}x{h}')
+
+  4          46 MAP_ADD                  1
+
+ 10          48 LOAD_CONST              14 ('ac_res_low')
+             50 LOAD_CONST              15 ('解像度 {w}x{h} が低すぎます（1280x720以上を推奨）。ボタンが小さくて認識できないことがあります。')
+
+  4          52 MAP_ADD                  1
+
+ 11          54 LOAD_CONST              16 ('ac_aspect')
+             56 LOAD_CONST              17 ('画面の縦横比が16:9ではありません（{w}x{h}）。ボタンの形が合わない場合は「画像を切り抜く」で撮り直してください。')
+
+  4          58 MAP_ADD                  1
+
+ 12          60 LOAD_CONST              18 ('ac_monitor_invalid')
+             62 LOAD_CONST              19 ('モニター {i} は存在しません（接続は {n} 台）。1番のモニターを使います。')
+
+  4          64 MAP_ADD                  1
+
+ 13          66 LOAD_CONST              20 ('ac_game_none')
+             68 LOAD_CONST              21 ('フォートナイトの窓が見つかりません。ゲームを起動してロビーを表示してから、もう一度実行してください。')
+
+  4          70 MAP_ADD                  1
+
+ 14          72 LOAD_CONST              22 ('ac_game_min')
+             74 LOAD_CONST              23 ('ゲームが最小化されています。元に戻して、表示モードを「ウィンドウフルスクリーン」にしてください。')
+
+  4          76 MAP_ADD                  1
+
+ 15          78 LOAD_CONST              24 ('ac_game_size')
+             80 LOAD_CONST              25 ('ゲーム画面のサイズ: {w}x{h}')
+
+  4          82 MAP_ADD                  1
+
+ 16          84 LOAD_CONST              26 ('ac_monitor_mismatch')
+             86 LOAD_CONST              27 ('ゲームはモニター {game} にありますが、pk-autoはモニター {sel} を見ています。ゲームのあるモニターに合わせてください。')
+
+  4          88 MAP_ADD                  1
+
+ 17          90 LOAD_CONST              28 ('ac_game_small')
+             92 LOAD_CONST              29 ('ゲームの窓（{w}x{h}）がモニター（{mw}x{mh}）より小さいです。表示モードを「ウィンドウフルスクリーン」にしてください。')
+
+  4          94 MAP_ADD                  1
+
+ 18          96 LOAD_CONST              30 ('ac_scale_ok')
+             98 LOAD_CONST              31 ('ボタンの大きさは想定どおりです（{name}: {pct}%）。')
+
+  4         100 MAP_ADD                  1
+
+ 19         102 LOAD_CONST              32 ('ac_scale_bad')
+            104 LOAD_CONST              33 ('ボタンの大きさが想定の約{pct}%です（{name}）。ゲームの解像度を1920x1080、UIの大きさを100%にするか、「画像を切り抜く」で撮り直してください。')
+
+  4         106 MAP_ADD                  1
+
+ 20         108 LOAD_CONST              34 ('今、画面にボタンが見つからないため、大きさの確認はできませんでした。ロビー（プレイボタンが見える画面）で、もう一度実行してください。')
+
+ 21         110 LOAD_CONST              35 ('問題は見つかりませんでした。')
+
+ 22         112 LOAD_CONST              36 ('{n} 件の注意があります。上の ⚠ を確認してください。')
+
+  4         114 LOAD_CONST              37 (('ac_scale_unknown', 'ac_summary_ok', 'ac_summary_warn'))
+            116 BUILD_CONST_KEY_MAP      3
+            118 DICT_UPDATE              1
+
+ 24         120 BUILD_MAP                0
+
+ 25         122 LOAD_CONST               0 ('ac_button')
+            124 LOAD_CONST              38 ('Auto-check resolution / DPI')
+
+ 24         126 MAP_ADD                  1
+
+ 25         128 LOAD_CONST               2 ('ac_running')
+            130 LOAD_CONST              39 ('Checking…')
+
+ 24         132 MAP_ADD                  1
+
+ 25         134 LOAD_CONST               4 ('ac_title')
+            136 LOAD_CONST              40 ('Auto-check result')
+
+ 24         138 MAP_ADD                  1
+
+ 26         140 LOAD_CONST               6 ('ac_dpi_ok')
+            142 LOAD_CONST              41 ('Windows display scaling: {pct}% (fine: pk-auto is DPI aware)')
+
+ 24         144 MAP_ADD                  1
+
+ 27         146 LOAD_CONST               8 ('ac_dpi_unaware')
+            148 LOAD_CONST              42 ('pk-auto is running without DPI awareness, so click positions will be off. Restart it as administrator.')
+
+ 24         150 MAP_ADD                  1
+
+ 28         152 LOAD_CONST              10 ('ac_dpi_mismatch')
+            154 LOAD_CONST              43 ('Screen coordinates are scaled (logical {lw}x{lh} / real {pw}x{ph}). Clicks can land off target.')
+
+ 24         156 MAP_ADD                  1
+
+ 29         158 LOAD_CONST              12 ('ac_res')
+            160 LOAD_CONST              44 ('Watched monitor {i}: {w}x{h}')
+
+ 24         162 MAP_ADD                  1
+
+ 30         164 LOAD_CONST              14 ('ac_res_low')
+            166 LOAD_CONST              45 ('Resolution {w}x{h} is too low (1280x720 or more is recommended). Buttons may be too small to recognize.')
+
+ 24         168 MAP_ADD                  1
+
+ 31         170 LOAD_CONST              16 ('ac_aspect')
+            172 LOAD_CONST              46 ('The screen is not 16:9 ({w}x{h}). If buttons are not recognized, recapture them with “Crop image”.')
+
+ 24         174 MAP_ADD                  1
+
+ 32         176 LOAD_CONST              18 ('ac_monitor_invalid')
+            178 LOAD_CONST              47 ('Monitor {i} does not exist ({n} connected). Monitor 1 is used.')
+
+ 24         180 MAP_ADD                  1
+
+ 33         182 LOAD_CONST              20 ('ac_game_none')
+            184 LOAD_CONST              48 ('The Fortnite window was not found. Start the game, show the lobby and run this again.')
+
+ 24         186 MAP_ADD                  1
+
+ 34         188 LOAD_CONST              22 ('ac_game_min')
+            190 LOAD_CONST              49 ('The game is minimized. Restore it and set the display mode to “Windowed Fullscreen”.')
+
+ 24         192 MAP_ADD                  1
+
+ 35         194 LOAD_CONST              24 ('ac_game_size')
+            196 LOAD_CONST              50 ('Game window size: {w}x{h}')
+
+ 24         198 MAP_ADD                  1
+
+ 36         200 LOAD_CONST              26 ('ac_monitor_mismatch')
+            202 LOAD_CONST              51 ("The game is on monitor {game} but pk-auto watches monitor {sel}. Match it to the game's monitor.")
+
+ 24         204 MAP_ADD                  1
+
+ 37         206 LOAD_CONST              28 ('ac_game_small')
+            208 LOAD_CONST              52 ('The game window ({w}x{h}) is smaller than the monitor ({mw}x{mh}). Set the display mode to “Windowed Fullscreen”.')
+
+ 24         210 MAP_ADD                  1
+
+ 38         212 LOAD_CONST              30 ('ac_scale_ok')
+            214 LOAD_CONST              53 ('Button size is as expected ({name}: {pct}%).')
+
+ 24         216 MAP_ADD                  1
+
+ 39         218 LOAD_CONST              32 ('ac_scale_bad')
+            220 LOAD_CONST              54 ('Buttons are about {pct}% of the expected size ({name}). Set the game to 1920x1080 with UI scale 100%, or recapture with “Crop image”.')
+
+ 24         222 MAP_ADD                  1
+
+ 40         224 LOAD_CONST              55 ('No known button is on screen right now, so the size could not be checked. Show the lobby (Play button visible) and run it again.')
+
+ 41         226 LOAD_CONST              56 ('No problems found.')
+
+ 42         228 LOAD_CONST              57 ('{n} warning(s). Check the ⚠ lines above.')
+
+ 24         230 LOAD_CONST              37 (('ac_scale_unknown', 'ac_summary_ok', 'ac_summary_warn'))
+            232 BUILD_CONST_KEY_MAP      3
+            234 DICT_UPDATE              1
+
+ 44         236 BUILD_MAP                0
+
+ 45         238 LOAD_CONST               0 ('ac_button')
+            240 LOAD_CONST              58 ('Autodiagnóstico de resolución / DPI')
+
+ 44         242 MAP_ADD                  1
+
+ 45         244 LOAD_CONST               2 ('ac_running')
+            246 LOAD_CONST              59 ('Comprobando…')
+
+ 44         248 MAP_ADD                  1
+
+ 45         250 LOAD_CONST               4 ('ac_title')
+            252 LOAD_CONST              60 ('Resultado del autodiagnóstico')
+
+ 44         254 MAP_ADD                  1
+
+ 46         256 LOAD_CONST               6 ('ac_dpi_ok')
+            258 LOAD_CONST              61 ('Escala de pantalla de Windows: {pct}% (correcto: pk-auto es compatible con DPI)')
+
+ 44         260 MAP_ADD                  1
+
+ 47         262 LOAD_CONST               8 ('ac_dpi_unaware')
+            264 LOAD_CONST              62 ('pk-auto se ejecuta sin compatibilidad con DPI, así que los clics saldrán desplazados. Reinícialo como administrador.')
+
+ 44         266 MAP_ADD                  1
+
+ 48         268 LOAD_CONST              10 ('ac_dpi_mismatch')
+            270 LOAD_CONST              63 ('Las coordenadas de pantalla están escaladas (lógicas {lw}x{lh} / reales {pw}x{ph}). Los clics pueden fallar.')
+
+ 44         272 MAP_ADD                  1
+
+ 49         274 LOAD_CONST              12 ('ac_res')
+            276 LOAD_CONST              64 ('Monitor vigilado {i}: {w}x{h}')
+
+ 44         278 MAP_ADD                  1
+
+ 50         280 LOAD_CONST              14 ('ac_res_low')
+            282 LOAD_CONST              65 ('La resolución {w}x{h} es demasiado baja (se recomienda 1280x720 o más). Los botones pueden ser demasiado pequeños.')
+
+ 44         284 MAP_ADD                  1
+
+ 51         286 LOAD_CONST              16 ('ac_aspect')
+            288 LOAD_CONST              66 ('La pantalla no es 16:9 ({w}x{h}). Si no se reconocen los botones, vuelve a capturarlos con «Recortar imagen».')
+
+ 44         290 MAP_ADD                  1
+
+ 52         292 LOAD_CONST              18 ('ac_monitor_invalid')
+            294 LOAD_CONST              67 ('El monitor {i} no existe ({n} conectados). Se usa el monitor 1.')
+
+ 44         296 MAP_ADD                  1
+
+ 53         298 LOAD_CONST              20 ('ac_game_none')
+            300 LOAD_CONST              68 ('No se encontró la ventana de Fortnite. Inicia el juego, muestra el lobby y vuelve a ejecutar esto.')
+
+ 44         302 MAP_ADD                  1
+
+ 54         304 LOAD_CONST              22 ('ac_game_min')
+            306 LOAD_CONST              69 ('El juego está minimizado. Restáuralo y pon el modo de pantalla en «Pantalla completa en ventana».')
+
+ 44         308 MAP_ADD                  1
+
+ 55         310 LOAD_CONST              24 ('ac_game_size')
+            312 LOAD_CONST              70 ('Tamaño de la ventana del juego: {w}x{h}')
+
+ 44         314 MAP_ADD                  1
+
+ 56         316 LOAD_CONST              26 ('ac_monitor_mismatch')
+            318 LOAD_CONST              71 ('El juego está en el monitor {game} pero pk-auto vigila el monitor {sel}. Ajústalo al del juego.')
+
+ 44         320 MAP_ADD                  1
+
+ 57         322 LOAD_CONST              28 ('ac_game_small')
+            324 LOAD_CONST              72 ('La ventana del juego ({w}x{h}) es menor que el monitor ({mw}x{mh}). Pon el modo de pantalla en «Pantalla completa en ventana».')
+
+ 44         326 MAP_ADD                  1
+
+ 58         328 LOAD_CONST              30 ('ac_scale_ok')
+            330 LOAD_CONST              73 ('El tamaño de los botones es el esperado ({name}: {pct}%).')
+
+ 44         332 MAP_ADD                  1
+
+ 59         334 LOAD_CONST              32 ('ac_scale_bad')
+            336 LOAD_CONST              74 ('Los botones miden aprox. el {pct}% de lo esperado ({name}). Pon el juego en 1920x1080 con escala de interfaz 100%, o recapturalos con «Recortar imagen».')
+
+ 44         338 MAP_ADD                  1
+
+ 60         340 LOAD_CONST              75 ('Ahora no hay ningún botón conocido en pantalla, así que no se pudo comprobar el tamaño. Muestra el lobby (botón Jugar visible) y vuelve a ejecutar.')
+
+ 61         342 LOAD_CONST              76 ('No se encontraron problemas.')
+
+ 62         344 LOAD_CONST              77 ('{n} advertencia(s). Revisa las líneas con ⚠.')
+
+ 44         346 LOAD_CONST              37 (('ac_scale_unknown', 'ac_summary_ok', 'ac_summary_warn'))
+            348 BUILD_CONST_KEY_MAP      3
+            350 DICT_UPDATE              1
+
+ 64         352 BUILD_MAP                0
+
+ 65         354 LOAD_CONST               0 ('ac_button')
+            356 LOAD_CONST              78 ('Autodiagnóstico de resolução / DPI')
+
+ 64         358 MAP_ADD                  1
+
+ 65         360 LOAD_CONST               2 ('ac_running')
+            362 LOAD_CONST              79 ('Verificando…')
+
+ 64         364 MAP_ADD                  1
+
+ 65         366 LOAD_CONST               4 ('ac_title')
+            368 LOAD_CONST              80 ('Resultado do autodiagnóstico')
+
+ 64         370 MAP_ADD                  1
+
+ 66         372 LOAD_CONST               6 ('ac_dpi_ok')
+            374 LOAD_CONST              81 ('Escala de exibição do Windows: {pct}% (tudo certo: o pk-auto é compatível com DPI)')
+
+ 64         376 MAP_ADD                  1
+
+ 67         378 LOAD_CONST               8 ('ac_dpi_unaware')
+            380 LOAD_CONST              82 ('O pk-auto está rodando sem suporte a DPI, então os cliques sairão deslocados. Reinicie como administrador.')
+
+ 64         382 MAP_ADD                  1
+
+ 68         384 LOAD_CONST              10 ('ac_dpi_mismatch')
+            386 LOAD_CONST              83 ('As coordenadas da tela estão escaladas (lógicas {lw}x{lh} / reais {pw}x{ph}). Os cliques podem errar o alvo.')
+
+ 64         388 MAP_ADD                  1
+
+ 69         390 LOAD_CONST              12 ('ac_res')
+            392 LOAD_CONST              84 ('Monitor observado {i}: {w}x{h}')
+
+ 64         394 MAP_ADD                  1
+
+ 70         396 LOAD_CONST              14 ('ac_res_low')
+            398 LOAD_CONST              85 ('A resolução {w}x{h} é baixa demais (recomendado 1280x720 ou mais). Os botões podem ficar pequenos demais.')
+
+ 64         400 MAP_ADD                  1
+
+ 71         402 LOAD_CONST              16 ('ac_aspect')
+            404 LOAD_CONST              86 ('A tela não é 16:9 ({w}x{h}). Se os botões não forem reconhecidos, capture-os de novo com «Recortar imagem».')
+
+ 64         406 MAP_ADD                  1
+
+ 72         408 LOAD_CONST              18 ('ac_monitor_invalid')
+            410 LOAD_CONST              87 ('O monitor {i} não existe ({n} conectados). O monitor 1 será usado.')
+
+ 64         412 MAP_ADD                  1
+
+ 73         414 LOAD_CONST              20 ('ac_game_none')
+            416 LOAD_CONST              88 ('A janela do Fortnite não foi encontrada. Abra o jogo, mostre o lobby e execute de novo.')
+
+ 64         418 MAP_ADD                  1
+
+ 74         420 LOAD_CONST              22 ('ac_game_min')
+            422 LOAD_CONST              89 ('O jogo está minimizado. Restaure-o e defina o modo de exibição como «Tela cheia em janela».')
+
+ 64         424 MAP_ADD                  1
+
+ 75         426 LOAD_CONST              24 ('ac_game_size')
+            428 LOAD_CONST              90 ('Tamanho da janela do jogo: {w}x{h}')
+
+ 64         430 MAP_ADD                  1
+
+ 76         432 LOAD_CONST              26 ('ac_monitor_mismatch')
+            434 LOAD_CONST              91 ('O jogo está no monitor {game}, mas o pk-auto observa o monitor {sel}. Ajuste para o monitor do jogo.')
+
+ 64         436 MAP_ADD                  1
+
+ 77         438 LOAD_CONST              28 ('ac_game_small')
+            440 LOAD_CONST              92 ('A janela do jogo ({w}x{h}) é menor que o monitor ({mw}x{mh}). Defina o modo de exibição como «Tela cheia em janela».')
+
+ 64         442 MAP_ADD                  1
+
+ 78         444 LOAD_CONST              30 ('ac_scale_ok')
+            446 LOAD_CONST              93 ('O tamanho dos botões está como esperado ({name}: {pct}%).')
+
+ 64         448 MAP_ADD                  1
+
+ 79         450 LOAD_CONST              32 ('ac_scale_bad')
+            452 LOAD_CONST              94 ('Os botões têm cerca de {pct}% do tamanho esperado ({name}). Use 1920x1080 com escala de interface 100%, ou capture de novo com «Recortar imagem».')
+
+ 64         454 MAP_ADD                  1
+
+ 80         456 LOAD_CONST              95 ('Nenhum botão conhecido está na tela agora, então não deu para verificar o tamanho. Mostre o lobby (botão Jogar visível) e execute de novo.')
+
+ 81         458 LOAD_CONST              96 ('Nenhum problema encontrado.')
+
+ 82         460 LOAD_CONST              97 ('{n} aviso(s). Veja as linhas com ⚠.')
+
+ 64         462 LOAD_CONST              37 (('ac_scale_unknown', 'ac_summary_ok', 'ac_summary_warn'))
+            464 BUILD_CONST_KEY_MAP      3
+            466 DICT_UPDATE              1
+
+ 84         468 BUILD_MAP                0
+
+ 85         470 LOAD_CONST               0 ('ac_button')
+            472 LOAD_CONST              98 ('Автодиагностика разрешения / DPI')
+
+ 84         474 MAP_ADD                  1
+
+ 85         476 LOAD_CONST               2 ('ac_running')
+            478 LOAD_CONST              99 ('Проверка…')
+
+ 84         480 MAP_ADD                  1
+
+ 85         482 LOAD_CONST               4 ('ac_title')
+            484 LOAD_CONST             100 ('Результат автодиагностики')
+
+ 84         486 MAP_ADD                  1
+
+ 86         488 LOAD_CONST               6 ('ac_dpi_ok')
+            490 LOAD_CONST             101 ('Масштаб экрана Windows: {pct}% (всё в порядке: pk-auto поддерживает DPI)')
+
+ 84         492 MAP_ADD                  1
+
+ 87         494 LOAD_CONST               8 ('ac_dpi_unaware')
+            496 LOAD_CONST             102 ('pk-auto работает без поддержки DPI, поэтому клики будут смещены. Перезапустите от имени администратора.')
+
+ 84         498 MAP_ADD                  1
+
+ 88         500 LOAD_CONST              10 ('ac_dpi_mismatch')
+            502 LOAD_CONST             103 ('Координаты экрана масштабируются (логические {lw}x{lh} / реальные {pw}x{ph}). Клики могут промахиваться.')
+
+ 84         504 MAP_ADD                  1
+
+ 89         506 LOAD_CONST              12 ('ac_res')
+            508 LOAD_CONST             104 ('Отслеживаемый монитор {i}: {w}x{h}')
+
+ 84         510 MAP_ADD                  1
+
+ 90         512 LOAD_CONST              14 ('ac_res_low')
+            514 LOAD_CONST             105 ('Разрешение {w}x{h} слишком низкое (рекомендуется 1280x720 и выше). Кнопки могут быть слишком мелкими.')
+
+ 84         516 MAP_ADD                  1
+
+ 91         518 LOAD_CONST              16 ('ac_aspect')
+            520 LOAD_CONST             106 ('Экран не 16:9 ({w}x{h}). Если кнопки не распознаются, снимите их заново через «Вырезать изображение».')
+
+ 84         522 MAP_ADD                  1
+
+ 92         524 LOAD_CONST              18 ('ac_monitor_invalid')
+            526 LOAD_CONST             107 ('Монитора {i} нет (подключено: {n}). Используется монитор 1.')
+
+ 84         528 MAP_ADD                  1
+
+ 93         530 LOAD_CONST              20 ('ac_game_none')
+            532 LOAD_CONST             108 ('Окно Fortnite не найдено. Запустите игру, откройте лобби и повторите проверку.')
+
+ 84         534 MAP_ADD                  1
+
+ 94         536 LOAD_CONST              22 ('ac_game_min')
+            538 LOAD_CONST             109 ('Игра свёрнута. Разверните её и выберите режим отображения «Оконный во весь экран».')
+
+ 84         540 MAP_ADD                  1
+
+ 95         542 LOAD_CONST              24 ('ac_game_size')
+            544 LOAD_CONST             110 ('Размер окна игры: {w}x{h}')
+
+ 84         546 MAP_ADD                  1
+
+ 96         548 LOAD_CONST              26 ('ac_monitor_mismatch')
+            550 LOAD_CONST             111 ('Игра на мониторе {game}, а pk-auto следит за монитором {sel}. Выберите монитор с игрой.')
+
+ 84         552 MAP_ADD                  1
+
+ 97         554 LOAD_CONST              28 ('ac_game_small')
+            556 LOAD_CONST             112 ('Окно игры ({w}x{h}) меньше монитора ({mw}x{mh}). Выберите режим отображения «Оконный во весь экран».')
+
+ 84         558 MAP_ADD                  1
+
+ 98         560 LOAD_CONST              30 ('ac_scale_ok')
+            562 LOAD_CONST             113 ('Размер кнопок соответствует ожидаемому ({name}: {pct}%).')
+
+ 84         564 MAP_ADD                  1
+
+ 99         566 LOAD_CONST              32 ('ac_scale_bad')
+            568 LOAD_CONST             114 ('Кнопки составляют около {pct}% от ожидаемого размера ({name}). Установите в игре 1920x1080 и масштаб интерфейса 100% или снимите кнопки заново через «Вырезать изображение».')
+
+ 84         570 MAP_ADD                  1
+
+100         572 LOAD_CONST             115 ('Сейчас на экране нет известных кнопок, поэтому размер проверить не удалось. Откройте лобби (видна кнопка «Играть») и повторите.')
+
+101         574 LOAD_CONST             116 ('Проблем не найдено.')
+
+102         576 LOAD_CONST             117 ('Предупреждений: {n}. Посмотрите строки с ⚠.')
+
+ 84         578 LOAD_CONST              37 (('ac_scale_unknown', 'ac_summary_ok', 'ac_summary_warn'))
+            580 BUILD_CONST_KEY_MAP      3
+            582 DICT_UPDATE              1
+
+104         584 BUILD_MAP                0
+
+105         586 LOAD_CONST               0 ('ac_button')
+            588 LOAD_CONST             118 ('Autodiagnostic résolution / DPI')
+
+104         590 MAP_ADD                  1
+
+105         592 LOAD_CONST               2 ('ac_running')
+            594 LOAD_CONST             119 ('Vérification…')
+
+104         596 MAP_ADD                  1
+
+105         598 LOAD_CONST               4 ('ac_title')
+            600 LOAD_CONST             120 ("Résultat de l'autodiagnostic")
+
+104         602 MAP_ADD                  1
+
+106         604 LOAD_CONST               6 ('ac_dpi_ok')
+            606 LOAD_CONST             121 ("Mise à l'échelle de l'affichage Windows : {pct} % (aucun souci : pk-auto gère le DPI)")
+
+104         608 MAP_ADD                  1
+
+107         610 LOAD_CONST               8 ('ac_dpi_unaware')
+            612 LOAD_CONST             122 ('pk-auto tourne sans gestion du DPI : les clics seront décalés. Relancez-le en administrateur.')
+
+104         614 MAP_ADD                  1
+
+108         616 LOAD_CONST              10 ('ac_dpi_mismatch')
+            618 LOAD_CONST             123 ("Les coordonnées de l'écran sont mises à l'échelle (logiques {lw}x{lh} / réelles {pw}x{ph}). Les clics peuvent manquer leur cible.")
+
+104         620 MAP_ADD                  1
+
+109         622 LOAD_CONST              12 ('ac_res')
+            624 LOAD_CONST             124 ('Moniteur surveillé {i} : {w}x{h}')
+
+104         626 MAP_ADD                  1
+
+110         628 LOAD_CONST              14 ('ac_res_low')
+            630 LOAD_CONST             125 ('La résolution {w}x{h} est trop basse (1280x720 ou plus recommandé). Les boutons peuvent être trop petits.')
+
+104         632 MAP_ADD                  1
+
+111         634 LOAD_CONST              16 ('ac_aspect')
+            636 LOAD_CONST             126 ("L'écran n'est pas en 16:9 ({w}x{h}). Si les boutons ne sont pas reconnus, recapturez-les avec « Recadrer l'image ».")
+
+104         638 MAP_ADD                  1
+
+112         640 LOAD_CONST              18 ('ac_monitor_invalid')
+            642 LOAD_CONST             127 ("Le moniteur {i} n'existe pas ({n} connectés). Le moniteur 1 est utilisé.")
+
+104         644 MAP_ADD                  1
+
+113         646 LOAD_CONST              20 ('ac_game_none')
+            648 LOAD_CONST             128 ('La fenêtre de Fortnite est introuvable. Lancez le jeu, affichez le lobby et relancez la vérification.')
+
+104         650 MAP_ADD                  1
+
+114         652 LOAD_CONST              22 ('ac_game_min')
+            654 LOAD_CONST             129 ("Le jeu est réduit. Restaurez-le et réglez l'affichage sur « Plein écran fenêtré ».")
+
+104         656 MAP_ADD                  1
+
+115         658 LOAD_CONST              24 ('ac_game_size')
+            660 LOAD_CONST             130 ('Taille de la fenêtre du jeu : {w}x{h}')
+
+104         662 MAP_ADD                  1
+
+116         664 LOAD_CONST              26 ('ac_monitor_mismatch')
+            666 LOAD_CONST             131 ('Le jeu est sur le moniteur {game} mais pk-auto surveille le moniteur {sel}. Choisissez celui du jeu.')
+
+104         668 MAP_ADD                  1
+
+117         670 LOAD_CONST              28 ('ac_game_small')
+            672 LOAD_CONST             132 ("La fenêtre du jeu ({w}x{h}) est plus petite que le moniteur ({mw}x{mh}). Réglez l'affichage sur « Plein écran fenêtré ».")
+
+104         674 MAP_ADD                  1
+
+118         676 LOAD_CONST              30 ('ac_scale_ok')
+            678 LOAD_CONST             133 ('La taille des boutons est conforme ({name} : {pct} %).')
+
+104         680 MAP_ADD                  1
+
+119         682 LOAD_CONST              32 ('ac_scale_bad')
+            684 LOAD_CONST             134 ("Les boutons font environ {pct} % de la taille attendue ({name}). Réglez le jeu en 1920x1080 avec une échelle d'interface de 100 %, ou recapturez-les avec « Recadrer l'image ».")
+
+104         686 MAP_ADD                  1
+
+120         688 LOAD_CONST             135 ("Aucun bouton connu n'est à l'écran, la taille n'a donc pas pu être vérifiée. Affichez le lobby (bouton Jouer visible) et relancez.")
+
+121         690 LOAD_CONST             136 ('Aucun problème trouvé.')
+
+122         692 LOAD_CONST             137 ('{n} avertissement(s). Consultez les lignes ⚠.')
+
+104         694 LOAD_CONST              37 (('ac_scale_unknown', 'ac_summary_ok', 'ac_summary_warn'))
+            696 BUILD_CONST_KEY_MAP      3
+            698 DICT_UPDATE              1
+
+  3         700 LOAD_CONST             138 (('ja', 'en', 'es', 'pt', 'ru', 'fr'))
+            702 BUILD_CONST_KEY_MAP      6
+            704 STORE_NAME               0 (UI_AC)
+            706 RETURN_CONST           139 (None)

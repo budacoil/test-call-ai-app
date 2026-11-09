@@ -1,0 +1,2467 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+ 15           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (ctypes)
+             10 STORE_NAME               0 (ctypes)
+
+ 16          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (json)
+             18 STORE_NAME               1 (json)
+
+ 17          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              2 (os)
+             26 STORE_NAME               2 (os)
+
+ 18          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               1 (None)
+             32 IMPORT_NAME              3 (threading)
+             34 STORE_NAME               3 (threading)
+
+ 19          36 LOAD_CONST               0 (0)
+             38 LOAD_CONST               1 (None)
+             40 IMPORT_NAME              4 (time)
+             42 STORE_NAME               4 (time)
+
+ 20          44 LOAD_CONST               0 (0)
+             46 LOAD_CONST               2 (('deque',))
+             48 IMPORT_NAME              5 (collections)
+             50 IMPORT_FROM              6 (deque)
+             52 STORE_NAME               6 (deque)
+             54 POP_TOP
+
+ 21          56 LOAD_CONST               0 (0)
+             58 LOAD_CONST               3 (('wintypes',))
+             60 IMPORT_NAME              0 (ctypes)
+             62 IMPORT_FROM              7 (wintypes)
+             64 STORE_NAME               7 (wintypes)
+             66 POP_TOP
+
+ 22          68 LOAD_CONST               0 (0)
+             70 LOAD_CONST               4 (('Callable', 'Deque', 'Optional', 'Tuple'))
+             72 IMPORT_NAME              8 (typing)
+             74 IMPORT_FROM              9 (Callable)
+             76 STORE_NAME               9 (Callable)
+             78 IMPORT_FROM             10 (Deque)
+             80 STORE_NAME              10 (Deque)
+             82 IMPORT_FROM             11 (Optional)
+             84 STORE_NAME              11 (Optional)
+             86 IMPORT_FROM             12 (Tuple)
+             88 STORE_NAME              12 (Tuple)
+             90 POP_TOP
+
+ 24          92 LOAD_CONST               5 (-20)
+             94 STORE_NAME              13 (GWL_EXSTYLE)
+
+ 25          96 LOAD_CONST               6 (32)
+             98 STORE_NAME              14 (WS_EX_TRANSPARENT)
+
+ 26         100 LOAD_CONST               7 (524288)
+            102 STORE_NAME              15 (WS_EX_LAYERED)
+
+ 27         104 LOAD_NAME               15 (WS_EX_LAYERED)
+            106 LOAD_NAME               14 (WS_EX_TRANSPARENT)
+            108 BINARY_OP                7 (|)
+            112 STORE_NAME              16 (GHOST_BITS)
+
+ 28         114 LOAD_CONST               8 (2)
+            116 STORE_NAME              17 (LWA_ALPHA)
+
+ 29         118 LOAD_CONST               9 (1)
+            120 STORE_NAME              18 (HWND_BOTTOM)
+
+ 30         122 LOAD_CONST              10 ((1, 2, 16))
+            124 UNPACK_SEQUENCE          3
+            128 STORE_NAME              19 (SWP_NOSIZE)
+            130 STORE_NAME              20 (SWP_NOMOVE)
+            132 STORE_NAME              21 (SWP_NOACTIVATE)
+
+ 31         134 LOAD_CONST               8 (2)
+            136 STORE_NAME              22 (GA_ROOT)
+
+ 32         138 LOAD_CONST              11 (4294967295)
+            140 STORE_NAME              23 (MASK32)
+
+ 33         142 LOAD_CONST               9 (1)
+            144 STORE_NAME              24 (GHOST_ALPHA)
+
+ 34         146 LOAD_CONST              12 (1000)
+            148 STORE_NAME              25 (IDLE_BEFORE_INPUT_MS)
+
+ 35         150 LOAD_CONST              13 (5.0)
+            152 STORE_NAME              26 (IDLE_WAIT_MAX_S)
+
+ 36         154 LOAD_CONST              14 (60)
+            156 STORE_NAME              27 (OWN_MARGIN_MS)
+
+ 37         158 LOAD_CONST              15 (10.0)
+            160 STORE_NAME              28 (RETRY_AFTER_FAIL_S)
+
+ 38         162 LOAD_CONST              16 ('pk-auto_shield.json')
+            164 STORE_NAME              29 (MARKER_NAME)
+
+ 41         166 PUSH_NULL
+            168 LOAD_BUILD_CLASS
+            170 LOAD_CONST              17 (<code object GhostApi at 0x7f6af1de1b80, file "ghost.py", line 41>)
+            172 MAKE_FUNCTION            0
+            174 LOAD_CONST              18 ('GhostApi')
+            176 CALL                     2
+            184 STORE_NAME              30 (GhostApi)
+
+114         186 PUSH_NULL
+            188 LOAD_BUILD_CLASS
+            190 LOAD_CONST              19 (<code object UserActivity at 0x7f6aed7fc8b0, file "ghost.py", line 114>)
+            192 MAKE_FUNCTION            0
+            194 LOAD_CONST              20 ('UserActivity')
+            196 CALL                     2
+            204 STORE_NAME              31 (UserActivity)
+
+158         206 PUSH_NULL
+            208 LOAD_BUILD_CLASS
+            210 LOAD_CONST              21 (<code object GhostWindow at 0x7f6af20bb860, file "ghost.py", line 158>)
+            212 MAKE_FUNCTION            0
+            214 LOAD_CONST              22 ('GhostWindow')
+            216 CALL                     2
+            224 STORE_NAME              32 (GhostWindow)
+
+351         226 LOAD_CONST              23 ('marker_path')
+            228 LOAD_NAME               33 (str)
+            230 LOAD_CONST              24 ('return')
+            232 LOAD_NAME               34 (bool)
+            234 BUILD_TUPLE              4
+            236 LOAD_CONST              25 (<code object recover_at_launch at 0x7f6aed7e45d0, file "ghost.py", line 351>)
+            238 MAKE_FUNCTION            4 (annotations)
+            240 STORE_NAME              35 (recover_at_launch)
+            242 RETURN_CONST             1 (None)
+
+Disassembly of <code object GhostApi at 0x7f6af1de1b80, file "ghost.py", line 41>:
+ 41           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('GhostApi')
+              8 STORE_NAME               2 (__qualname__)
+
+ 42          10 NOP
+
+ 44          12 LOAD_CONST               1 (<code object __init__ at 0x17a6a340, file "ghost.py", line 44>)
+             14 MAKE_FUNCTION            0
+             16 STORE_NAME               3 (__init__)
+
+ 62          18 LOAD_CONST               2 ('return')
+             20 LOAD_NAME                4 (bool)
+             22 BUILD_TUPLE              2
+             24 LOAD_CONST               3 (<code object is_window at 0x7f6aed7fc360, file "ghost.py", line 62>)
+             26 MAKE_FUNCTION            4 (annotations)
+             28 STORE_NAME               5 (is_window)
+
+ 65          30 LOAD_CONST               4 ('x')
+             32 LOAD_NAME                6 (int)
+             34 LOAD_CONST               5 ('y')
+             36 LOAD_NAME                6 (int)
+             38 LOAD_CONST               2 ('return')
+             40 LOAD_NAME                7 (Optional)
+             42 LOAD_NAME                6 (int)
+             44 BINARY_SUBSCR
+             48 BUILD_TUPLE              6
+             50 LOAD_CONST               6 (<code object root_at at 0x7f6af1de70f0, file "ghost.py", line 65>)
+             52 MAKE_FUNCTION            4 (annotations)
+             54 STORE_NAME               8 (root_at)
+
+ 70          56 LOAD_CONST               2 ('return')
+             58 LOAD_NAME                9 (str)
+             60 BUILD_TUPLE              2
+             62 LOAD_CONST               7 (<code object class_name at 0x7f6af1f3f370, file "ghost.py", line 70>)
+             64 MAKE_FUNCTION            4 (annotations)
+             66 STORE_NAME              10 (class_name)
+
+ 75          68 LOAD_CONST               2 ('return')
+             70 LOAD_NAME                4 (bool)
+             72 BUILD_TUPLE              2
+             74 LOAD_CONST               8 (<code object to_bottom at 0x7f6af1f830c0, file "ghost.py", line 75>)
+             76 MAKE_FUNCTION            4 (annotations)
+             78 STORE_NAME              11 (to_bottom)
+
+ 79          80 LOAD_CONST               2 ('return')
+             82 LOAD_NAME                4 (bool)
+             84 BUILD_TUPLE              2
+             86 LOAD_CONST               9 (<code object raise_top at 0x7f6af1f3e830, file "ghost.py", line 79>)
+             88 MAKE_FUNCTION            4 (annotations)
+             90 STORE_NAME              12 (raise_top)
+
+ 83          92 LOAD_CONST              19 (('return', None))
+             94 LOAD_CONST              11 (<code object flush at 0x7f6af1f3e0b0, file "ghost.py", line 83>)
+             96 MAKE_FUNCTION            4 (annotations)
+             98 STORE_NAME              13 (flush)
+
+ 91         100 LOAD_CONST               2 ('return')
+            102 LOAD_NAME                6 (int)
+            104 BUILD_TUPLE              2
+            106 LOAD_CONST              12 (<code object get_exstyle at 0x7f6af1dd9de0, file "ghost.py", line 91>)
+            108 MAKE_FUNCTION            4 (annotations)
+            110 STORE_NAME              14 (get_exstyle)
+
+ 94         112 LOAD_CONST              13 ('value')
+            114 LOAD_NAME                6 (int)
+            116 LOAD_CONST               2 ('return')
+            118 LOAD_NAME                4 (bool)
+            120 BUILD_TUPLE              4
+            122 LOAD_CONST              14 (<code object set_exstyle at 0x7f6aed8001f0, file "ghost.py", line 94>)
+            124 MAKE_FUNCTION            4 (annotations)
+            126 STORE_NAME              15 (set_exstyle)
+
+ 99         128 LOAD_CONST              20 ((255,))
+            130 LOAD_CONST              15 ('alpha')
+            132 LOAD_NAME                6 (int)
+            134 LOAD_CONST               2 ('return')
+            136 LOAD_NAME                4 (bool)
+            138 BUILD_TUPLE              4
+            140 LOAD_CONST              16 (<code object set_alpha at 0x7f6aed7e4150, file "ghost.py", line 99>)
+            142 MAKE_FUNCTION            5 (defaults, annotations)
+            144 STORE_NAME              16 (set_alpha)
+
+102         146 LOAD_CONST               2 ('return')
+            148 LOAD_NAME                6 (int)
+            150 BUILD_TUPLE              2
+            152 LOAD_CONST              17 (<code object tick at 0x7f6aed7fc470, file "ghost.py", line 102>)
+            154 MAKE_FUNCTION            4 (annotations)
+            156 STORE_NAME              17 (tick)
+
+105         158 LOAD_CONST               2 ('return')
+            160 LOAD_NAME                6 (int)
+            162 BUILD_TUPLE              2
+            164 LOAD_CONST              18 (<code object last_input_tick at 0x7f6aed800730, file "ghost.py", line 105>)
+            166 MAKE_FUNCTION            4 (annotations)
+            168 STORE_NAME              18 (last_input_tick)
+            170 RETURN_CONST            10 (None)
+
+Disassembly of <code object __init__ at 0x17a6a340, file "ghost.py", line 44>:
+ 44           0 RESUME                   0
+
+ 45           2 LOAD_GLOBAL              1 (NULL + ctypes)
+             12 LOAD_ATTR                2 (WinDLL)
+             32 LOAD_CONST               1 ('user32')
+             34 LOAD_CONST               2 (True)
+             36 KW_NAMES                 3 (('use_last_error',))
+             38 CALL                     2
+             46 LOAD_FAST                0 (self)
+             48 STORE_ATTR               2 (u)
+
+ 46          58 LOAD_GLOBAL              1 (NULL + ctypes)
+             68 LOAD_ATTR                2 (WinDLL)
+             88 LOAD_CONST               4 ('kernel32')
+             90 LOAD_CONST               2 (True)
+             92 KW_NAMES                 3 (('use_last_error',))
+             94 CALL                     2
+            102 LOAD_FAST                0 (self)
+            104 STORE_ATTR               3 (k)
+
+ 47         114 LOAD_GLOBAL              8 (wintypes)
+            124 LOAD_ATTR               10 (HANDLE)
+            144 LOAD_GLOBAL              8 (wintypes)
+            154 LOAD_ATTR               12 (BOOL)
+            174 LOAD_GLOBAL              0 (ctypes)
+            184 LOAD_ATTR               14 (c_int)
+            204 STORE_FAST               3 (i)
+            206 STORE_FAST               2 (b)
+            208 STORE_FAST               1 (h)
+
+ 48         210 LOAD_FAST                1 (h)
+            212 BUILD_LIST               1
+            214 LOAD_FAST                2 (b)
+            216 SWAP                     2
+            218 LOAD_FAST                0 (self)
+            220 LOAD_ATTR                4 (u)
+            240 LOAD_ATTR               16 (IsWindow)
+            260 STORE_ATTR               9 (argtypes)
+            270 LOAD_FAST                0 (self)
+            272 LOAD_ATTR                4 (u)
+            292 LOAD_ATTR               16 (IsWindow)
+            312 STORE_ATTR              10 (restype)
+
+ 49         322 LOAD_FAST                1 (h)
+            324 LOAD_GLOBAL              8 (wintypes)
+            334 LOAD_ATTR               22 (UINT)
+            354 BUILD_LIST               2
+            356 LOAD_FAST                1 (h)
+            358 SWAP                     2
+            360 LOAD_FAST                0 (self)
+            362 LOAD_ATTR                4 (u)
+            382 LOAD_ATTR               24 (GetAncestor)
+            402 STORE_ATTR               9 (argtypes)
+            412 LOAD_FAST                0 (self)
+            414 LOAD_ATTR                4 (u)
+            434 LOAD_ATTR               24 (GetAncestor)
+            454 STORE_ATTR              10 (restype)
+
+ 50         464 LOAD_GLOBAL              8 (wintypes)
+            474 LOAD_ATTR               26 (POINT)
+            494 BUILD_LIST               1
+            496 LOAD_FAST                1 (h)
+            498 SWAP                     2
+            500 LOAD_FAST                0 (self)
+            502 LOAD_ATTR                4 (u)
+            522 LOAD_ATTR               28 (WindowFromPoint)
+            542 STORE_ATTR               9 (argtypes)
+            552 LOAD_FAST                0 (self)
+            554 LOAD_ATTR                4 (u)
+            574 LOAD_ATTR               28 (WindowFromPoint)
+            594 STORE_ATTR              10 (restype)
+
+ 51         604 LOAD_FAST                1 (h)
+            606 LOAD_FAST                1 (h)
+            608 LOAD_FAST                3 (i)
+            610 LOAD_FAST                3 (i)
+            612 LOAD_FAST                3 (i)
+            614 LOAD_FAST                3 (i)
+            616 LOAD_GLOBAL              8 (wintypes)
+            626 LOAD_ATTR               22 (UINT)
+            646 BUILD_LIST               7
+            648 LOAD_FAST                2 (b)
+            650 SWAP                     2
+            652 LOAD_FAST                0 (self)
+            654 LOAD_ATTR                4 (u)
+            674 LOAD_ATTR               30 (SetWindowPos)
+            694 STORE_ATTR               9 (argtypes)
+            704 LOAD_FAST                0 (self)
+            706 LOAD_ATTR                4 (u)
+            726 LOAD_ATTR               30 (SetWindowPos)
+            746 STORE_ATTR              10 (restype)
+
+ 52         756 LOAD_FAST                1 (h)
+            758 LOAD_FAST                3 (i)
+            760 BUILD_LIST               2
+            762 LOAD_GLOBAL              0 (ctypes)
+            772 LOAD_ATTR               32 (c_ssize_t)
+            792 SWAP                     2
+            794 LOAD_FAST                0 (self)
+            796 LOAD_ATTR                4 (u)
+            816 LOAD_ATTR               34 (GetWindowLongPtrW)
+            836 STORE_ATTR               9 (argtypes)
+            846 LOAD_FAST                0 (self)
+            848 LOAD_ATTR                4 (u)
+            868 LOAD_ATTR               34 (GetWindowLongPtrW)
+            888 STORE_ATTR              10 (restype)
+
+ 53         898 LOAD_FAST                1 (h)
+            900 LOAD_FAST                3 (i)
+            902 LOAD_GLOBAL              0 (ctypes)
+            912 LOAD_ATTR               32 (c_ssize_t)
+            932 BUILD_LIST               3
+            934 LOAD_GLOBAL              0 (ctypes)
+            944 LOAD_ATTR               32 (c_ssize_t)
+            964 SWAP                     2
+            966 LOAD_FAST                0 (self)
+            968 LOAD_ATTR                4 (u)
+            988 LOAD_ATTR               36 (SetWindowLongPtrW)
+           1008 STORE_ATTR               9 (argtypes)
+           1018 LOAD_FAST                0 (self)
+           1020 LOAD_ATTR                4 (u)
+           1040 LOAD_ATTR               36 (SetWindowLongPtrW)
+           1060 STORE_ATTR              10 (restype)
+
+ 54        1070 LOAD_FAST                1 (h)
+           1072 LOAD_GLOBAL              8 (wintypes)
+           1082 LOAD_ATTR               38 (DWORD)
+           1102 LOAD_GLOBAL              0 (ctypes)
+           1112 LOAD_ATTR               40 (c_ubyte)
+           1132 LOAD_GLOBAL              8 (wintypes)
+           1142 LOAD_ATTR               38 (DWORD)
+           1162 BUILD_LIST               4
+           1164 LOAD_FAST                2 (b)
+           1166 SWAP                     2
+           1168 LOAD_FAST                0 (self)
+           1170 LOAD_ATTR                4 (u)
+           1190 LOAD_ATTR               42 (SetLayeredWindowAttributes)
+           1210 STORE_ATTR               9 (argtypes)
+           1220 LOAD_FAST                0 (self)
+           1222 LOAD_ATTR                4 (u)
+           1242 LOAD_ATTR               42 (SetLayeredWindowAttributes)
+           1262 STORE_ATTR              10 (restype)
+
+ 55        1272 LOAD_FAST                1 (h)
+           1274 LOAD_GLOBAL              8 (wintypes)
+           1284 LOAD_ATTR               44 (LPWSTR)
+           1304 LOAD_FAST                3 (i)
+           1306 BUILD_LIST               3
+           1308 LOAD_FAST                3 (i)
+           1310 SWAP                     2
+           1312 LOAD_FAST                0 (self)
+           1314 LOAD_ATTR                4 (u)
+           1334 LOAD_ATTR               46 (GetClassNameW)
+           1354 STORE_ATTR               9 (argtypes)
+           1364 LOAD_FAST                0 (self)
+           1366 LOAD_ATTR                4 (u)
+           1386 LOAD_ATTR               46 (GetClassNameW)
+           1406 STORE_ATTR              10 (restype)
+
+ 56        1416 LOAD_GLOBAL              8 (wintypes)
+           1426 LOAD_ATTR               38 (DWORD)
+           1446 LOAD_FAST                0 (self)
+           1448 LOAD_ATTR                6 (k)
+           1468 LOAD_ATTR               48 (GetTickCount)
+           1488 STORE_ATTR              10 (restype)
+
+ 57        1498 NOP
+
+ 58        1500 LOAD_GLOBAL              1 (NULL + ctypes)
+           1510 LOAD_ATTR                2 (WinDLL)
+           1530 LOAD_CONST               5 ('dwmapi')
+           1532 CALL                     1
+           1540 LOAD_FAST                0 (self)
+           1542 STORE_ATTR              25 (dwm)
+           1552 RETURN_CONST             0 (None)
+        >> 1554 PUSH_EXC_INFO
+
+ 59        1556 LOAD_GLOBAL             52 (OSError)
+           1566 CHECK_EXC_MATCH
+           1568 POP_JUMP_IF_FALSE       10 (to 1590)
+           1570 POP_TOP
+
+ 60        1572 LOAD_CONST               0 (None)
+           1574 LOAD_FAST                0 (self)
+           1576 STORE_ATTR              25 (dwm)
+           1586 POP_EXCEPT
+           1588 RETURN_CONST             0 (None)
+
+ 59     >> 1590 RERAISE                  0
+        >> 1592 COPY                     3
+           1594 POP_EXCEPT
+           1596 RERAISE                  1
+ExceptionTable:
+  1500 to 1550 -> 1554 [0]
+  1554 to 1584 -> 1592 [1] lasti
+  1590 to 1590 -> 1592 [1] lasti
+
+Disassembly of <code object is_window at 0x7f6aed7fc360, file "ghost.py", line 62>:
+ 62           0 RESUME                   0
+
+ 63           2 LOAD_GLOBAL              1 (NULL + bool)
+             12 LOAD_FAST                0 (self)
+             14 LOAD_ATTR                2 (u)
+             34 LOAD_ATTR                5 (NULL|self + IsWindow)
+             54 LOAD_FAST                1 (h)
+             56 CALL                     1
+             64 CALL                     1
+             72 RETURN_VALUE
+
+Disassembly of <code object root_at at 0x7f6af1de70f0, file "ghost.py", line 65>:
+ 65           0 RESUME                   0
+
+ 66           2 NOP
+
+ 67           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (u)
+             26 LOAD_ATTR                3 (NULL|self + WindowFromPoint)
+             46 LOAD_GLOBAL              5 (NULL + wintypes)
+             56 LOAD_ATTR                6 (POINT)
+             76 LOAD_GLOBAL              9 (NULL + int)
+             86 LOAD_FAST                1 (x)
+             88 CALL                     1
+             96 LOAD_GLOBAL              9 (NULL + int)
+            106 LOAD_FAST                2 (y)
+            108 CALL                     1
+            116 CALL                     2
+            124 CALL                     1
+            132 STORE_FAST               3 (w)
+
+ 68         134 LOAD_FAST                3 (w)
+            136 POP_JUMP_IF_FALSE       36 (to 210)
+            138 LOAD_FAST                0 (self)
+            140 LOAD_ATTR                0 (u)
+            160 LOAD_ATTR               11 (NULL|self + GetAncestor)
+            180 LOAD_FAST                3 (w)
+            182 LOAD_GLOBAL             12 (GA_ROOT)
+            192 CALL                     2
+            200 COPY                     1
+            202 POP_JUMP_IF_TRUE         2 (to 208)
+            204 POP_TOP
+            206 LOAD_FAST                3 (w)
+        >>  208 RETURN_VALUE
+        >>  210 LOAD_CONST               0 (None)
+            212 RETURN_VALUE
+
+Disassembly of <code object class_name at 0x7f6af1f3f370, file "ghost.py", line 70>:
+ 70           0 RESUME                   0
+
+ 71           2 LOAD_GLOBAL              1 (NULL + ctypes)
+             12 LOAD_ATTR                2 (create_unicode_buffer)
+             32 LOAD_CONST               1 (256)
+             34 CALL                     1
+             42 STORE_FAST               2 (buf)
+
+ 72          44 LOAD_FAST                0 (self)
+             46 LOAD_ATTR                4 (u)
+             66 LOAD_ATTR                7 (NULL|self + GetClassNameW)
+             86 LOAD_FAST                1 (h)
+             88 LOAD_FAST                2 (buf)
+             90 LOAD_CONST               1 (256)
+             92 CALL                     3
+            100 POP_TOP
+
+ 73         102 LOAD_FAST                2 (buf)
+            104 LOAD_ATTR                8 (value)
+            124 RETURN_VALUE
+
+Disassembly of <code object to_bottom at 0x7f6af1f830c0, file "ghost.py", line 75>:
+ 75           0 RESUME                   0
+
+ 76           2 NOP
+
+ 77           4 LOAD_GLOBAL              1 (NULL + bool)
+             14 LOAD_FAST                0 (self)
+             16 LOAD_ATTR                2 (u)
+             36 LOAD_ATTR                5 (NULL|self + SetWindowPos)
+             56 LOAD_FAST                1 (h)
+             58 LOAD_GLOBAL              6 (HWND_BOTTOM)
+             68 LOAD_CONST               1 (0)
+             70 LOAD_CONST               1 (0)
+             72 LOAD_CONST               1 (0)
+             74 LOAD_CONST               1 (0)
+             76 LOAD_GLOBAL              8 (SWP_NOMOVE)
+             86 LOAD_GLOBAL             10 (SWP_NOSIZE)
+             96 BINARY_OP                7 (|)
+            100 LOAD_GLOBAL             12 (SWP_NOACTIVATE)
+            110 BINARY_OP                7 (|)
+            114 CALL                     7
+            122 CALL                     1
+            130 RETURN_VALUE
+
+Disassembly of <code object raise_top at 0x7f6af1f3e830, file "ghost.py", line 79>:
+ 79           0 RESUME                   0
+
+ 80           2 NOP
+
+ 81           4 LOAD_GLOBAL              1 (NULL + bool)
+             14 LOAD_FAST                0 (self)
+             16 LOAD_ATTR                2 (u)
+             36 LOAD_ATTR                5 (NULL|self + SetWindowPos)
+             56 LOAD_FAST                1 (h)
+             58 LOAD_CONST               1 (0)
+             60 LOAD_CONST               1 (0)
+             62 LOAD_CONST               1 (0)
+             64 LOAD_CONST               1 (0)
+             66 LOAD_CONST               1 (0)
+             68 LOAD_GLOBAL              6 (SWP_NOMOVE)
+             78 LOAD_GLOBAL              8 (SWP_NOSIZE)
+             88 BINARY_OP                7 (|)
+             92 LOAD_GLOBAL             10 (SWP_NOACTIVATE)
+            102 BINARY_OP                7 (|)
+            106 CALL                     7
+            114 CALL                     1
+            122 RETURN_VALUE
+
+Disassembly of <code object flush at 0x7f6af1f3e0b0, file "ghost.py", line 83>:
+ 83           0 RESUME                   0
+
+ 84           2 NOP
+
+ 85           4 NOP
+
+ 86           6 LOAD_FAST                0 (self)
+              8 LOAD_ATTR                0 (dwm)
+             28 POP_JUMP_IF_FALSE       27 (to 84)
+
+ 87          30 LOAD_FAST                0 (self)
+             32 LOAD_ATTR                0 (dwm)
+             52 LOAD_ATTR                3 (NULL|self + DwmFlush)
+             72 CALL                     0
+             80 POP_TOP
+             82 RETURN_CONST             0 (None)
+
+ 86     >>   84 RETURN_CONST             0 (None)
+        >>   86 PUSH_EXC_INFO
+
+ 88          88 LOAD_GLOBAL              4 (Exception)
+             98 CHECK_EXC_MATCH
+            100 POP_JUMP_IF_FALSE        3 (to 108)
+            102 POP_TOP
+
+ 89         104 POP_EXCEPT
+            106 RETURN_CONST             0 (None)
+
+ 88     >>  108 RERAISE                  0
+        >>  110 COPY                     3
+            112 POP_EXCEPT
+            114 RERAISE                  1
+ExceptionTable:
+  6 to 80 -> 86 [0]
+  86 to 102 -> 110 [1] lasti
+  108 to 108 -> 110 [1] lasti
+
+Disassembly of <code object get_exstyle at 0x7f6af1dd9de0, file "ghost.py", line 91>:
+ 91           0 RESUME                   0
+
+ 92           2 LOAD_GLOBAL              1 (NULL + int)
+             12 LOAD_FAST                0 (self)
+             14 LOAD_ATTR                2 (u)
+             34 LOAD_ATTR                5 (NULL|self + GetWindowLongPtrW)
+             54 LOAD_FAST                1 (h)
+             56 LOAD_GLOBAL              6 (GWL_EXSTYLE)
+             66 CALL                     2
+             74 CALL                     1
+             82 LOAD_GLOBAL              8 (MASK32)
+             92 BINARY_OP                1 (&)
+             96 RETURN_VALUE
+
+Disassembly of <code object set_exstyle at 0x7f6aed8001f0, file "ghost.py", line 94>:
+ 94           0 RESUME                   0
+
+ 95           2 LOAD_GLOBAL              1 (NULL + ctypes)
+             12 LOAD_ATTR                2 (set_last_error)
+             32 LOAD_CONST               1 (0)
+             34 CALL                     1
+             42 POP_TOP
+
+ 96          44 LOAD_FAST                0 (self)
+             46 LOAD_ATTR                4 (u)
+             66 LOAD_ATTR                7 (NULL|self + SetWindowLongPtrW)
+             86 LOAD_FAST                1 (h)
+             88 LOAD_GLOBAL              8 (GWL_EXSTYLE)
+             98 LOAD_GLOBAL              1 (NULL + ctypes)
+            108 LOAD_ATTR               10 (c_ssize_t)
+            128 LOAD_FAST                2 (value)
+            130 CALL                     1
+            138 CALL                     3
+            146 POP_TOP
+
+ 97         148 LOAD_GLOBAL              1 (NULL + ctypes)
+            158 LOAD_ATTR               12 (get_last_error)
+            178 CALL                     0
+            186 LOAD_CONST               1 (0)
+            188 COMPARE_OP              40 (==)
+            192 COPY                     1
+            194 POP_JUMP_IF_FALSE       27 (to 250)
+            196 POP_TOP
+            198 LOAD_FAST                0 (self)
+            200 LOAD_ATTR               15 (NULL|self + get_exstyle)
+            220 LOAD_FAST                1 (h)
+            222 CALL                     1
+            230 LOAD_FAST                2 (value)
+            232 LOAD_GLOBAL             16 (MASK32)
+            242 BINARY_OP                1 (&)
+            246 COMPARE_OP              40 (==)
+        >>  250 RETURN_VALUE
+
+Disassembly of <code object set_alpha at 0x7f6aed7e4150, file "ghost.py", line 99>:
+ 99           0 RESUME                   0
+
+100           2 LOAD_GLOBAL              1 (NULL + bool)
+             12 LOAD_FAST                0 (self)
+             14 LOAD_ATTR                2 (u)
+             34 LOAD_ATTR                5 (NULL|self + SetLayeredWindowAttributes)
+             54 LOAD_FAST                1 (h)
+             56 LOAD_CONST               1 (0)
+             58 LOAD_FAST                2 (alpha)
+             60 LOAD_GLOBAL              6 (LWA_ALPHA)
+             70 CALL                     4
+             78 CALL                     1
+             86 RETURN_VALUE
+
+Disassembly of <code object tick at 0x7f6aed7fc470, file "ghost.py", line 102>:
+102           0 RESUME                   0
+
+103           2 LOAD_GLOBAL              1 (NULL + int)
+             12 LOAD_FAST                0 (self)
+             14 LOAD_ATTR                2 (k)
+             34 LOAD_ATTR                5 (NULL|self + GetTickCount)
+             54 CALL                     0
+             62 CALL                     1
+             70 RETURN_VALUE
+
+Disassembly of <code object last_input_tick at 0x7f6aed800730, file "ghost.py", line 105>:
+105           0 RESUME                   0
+
+106           2 PUSH_NULL
+              4 LOAD_BUILD_CLASS
+              6 LOAD_CONST               1 (<code object LASTINPUTINFO at 0x7f6aed7fc580, file "ghost.py", line 106>)
+              8 MAKE_FUNCTION            0
+             10 LOAD_CONST               2 ('LASTINPUTINFO')
+             12 LOAD_GLOBAL              0 (ctypes)
+             22 LOAD_ATTR                2 (Structure)
+             42 CALL                     3
+             50 STORE_FAST               1 (LASTINPUTINFO)
+
+109          52 PUSH_NULL
+             54 LOAD_FAST                1 (LASTINPUTINFO)
+             56 LOAD_GLOBAL              1 (NULL + ctypes)
+             66 LOAD_ATTR                4 (sizeof)
+             86 LOAD_FAST                1 (LASTINPUTINFO)
+             88 CALL                     1
+             96 LOAD_CONST               3 (0)
+             98 CALL                     2
+            106 STORE_FAST               2 (info)
+
+110         108 LOAD_FAST                0 (self)
+            110 LOAD_ATTR                6 (u)
+            130 LOAD_ATTR                9 (NULL|self + GetLastInputInfo)
+            150 LOAD_GLOBAL              1 (NULL + ctypes)
+            160 LOAD_ATTR               10 (byref)
+            180 LOAD_FAST                2 (info)
+            182 CALL                     1
+            190 CALL                     1
+            198 POP_TOP
+
+111         200 LOAD_GLOBAL             13 (NULL + int)
+            210 LOAD_FAST                2 (info)
+            212 LOAD_ATTR               14 (dwTime)
+            232 CALL                     1
+            240 RETURN_VALUE
+
+Disassembly of <code object LASTINPUTINFO at 0x7f6aed7fc580, file "ghost.py", line 106>:
+106           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('GhostApi.last_input_tick.<locals>.LASTINPUTINFO')
+              8 STORE_NAME               2 (__qualname__)
+
+107          10 LOAD_CONST               1 ('cbSize')
+             12 LOAD_NAME                3 (wintypes)
+             14 LOAD_ATTR                8 (UINT)
+             34 BUILD_TUPLE              2
+             36 LOAD_CONST               2 ('dwTime')
+             38 LOAD_NAME                3 (wintypes)
+             40 LOAD_ATTR               10 (DWORD)
+             60 BUILD_TUPLE              2
+             62 BUILD_LIST               2
+             64 STORE_NAME               6 (_fields_)
+             66 RETURN_CONST             3 (None)
+
+Disassembly of <code object UserActivity at 0x7f6aed7fc8b0, file "ghost.py", line 114>:
+114           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('UserActivity')
+              8 STORE_NAME               2 (__qualname__)
+
+115          10 NOP
+
+122          12 LOAD_CONST               1 (<code object __init__ at 0x7f6aed7fc690, file "ghost.py", line 122>)
+             14 MAKE_FUNCTION            0
+             16 STORE_NAME               3 (__init__)
+
+128          18 LOAD_CONST              10 (('return', None))
+             20 LOAD_CONST               4 (<code object own_begin at 0x7f6af1ddbdf0, file "ghost.py", line 128>)
+             22 MAKE_FUNCTION            4 (annotations)
+             24 STORE_NAME               4 (own_begin)
+
+131          26 LOAD_CONST              10 (('return', None))
+             28 LOAD_CONST               5 (<code object own_end at 0x7f6af20e3630, file "ghost.py", line 131>)
+             30 MAKE_FUNCTION            4 (annotations)
+             32 STORE_NAME               5 (own_end)
+
+136          34 LOAD_CONST               6 ('t')
+             36 LOAD_NAME                6 (int)
+             38 LOAD_CONST               2 ('return')
+             40 LOAD_NAME                7 (bool)
+             42 BUILD_TUPLE              4
+             44 LOAD_CONST               7 (<code object _is_own at 0x7f6af1de1730, file "ghost.py", line 136>)
+             46 MAKE_FUNCTION            4 (annotations)
+             48 STORE_NAME               8 (_is_own)
+
+143          50 LOAD_CONST              10 (('return', None))
+             52 LOAD_CONST               8 (<code object scan at 0x7f6aed7a0870, file "ghost.py", line 143>)
+             54 MAKE_FUNCTION            4 (annotations)
+             56 STORE_NAME               9 (scan)
+
+150          58 LOAD_CONST               2 ('return')
+             60 LOAD_NAME                6 (int)
+             62 BUILD_TUPLE              2
+             64 LOAD_CONST               9 (<code object idle_ms at 0x7f6aed7a1630, file "ghost.py", line 150>)
+             66 MAKE_FUNCTION            4 (annotations)
+             68 STORE_NAME              10 (idle_ms)
+             70 RETURN_CONST             3 (None)
+
+Disassembly of <code object __init__ at 0x7f6aed7fc690, file "ghost.py", line 122>:
+122           0 RESUME                   0
+
+123           2 LOAD_FAST                1 (api)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (api)
+
+124          16 LOAD_GLOBAL              3 (NULL + deque)
+             26 LOAD_CONST               1 (64)
+             28 KW_NAMES                 2 (('maxlen',))
+             30 CALL                     1
+             38 LOAD_FAST                0 (self)
+             40 STORE_ATTR               2 (_own)
+
+125          50 LOAD_CONST               0 (None)
+             52 LOAD_FAST                0 (self)
+             54 STORE_ATTR               3 (_seen)
+
+126          64 LOAD_CONST               0 (None)
+             66 LOAD_FAST                0 (self)
+             68 STORE_ATTR               4 (_user_tick)
+             78 RETURN_CONST             0 (None)
+
+Disassembly of <code object own_begin at 0x7f6af1ddbdf0, file "ghost.py", line 128>:
+128           0 RESUME                   0
+
+129           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_own)
+             24 LOAD_ATTR                3 (NULL|self + append)
+             44 LOAD_FAST                0 (self)
+             46 LOAD_ATTR                4 (api)
+             66 LOAD_ATTR                7 (NULL|self + tick)
+             86 CALL                     0
+             94 LOAD_CONST               0 (None)
+             96 BUILD_TUPLE              2
+             98 CALL                     1
+            106 POP_TOP
+            108 RETURN_CONST             0 (None)
+
+Disassembly of <code object own_end at 0x7f6af20e3630, file "ghost.py", line 131>:
+131           0 RESUME                   0
+
+132           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_own)
+             24 POP_JUMP_IF_FALSE      102 (to 230)
+             26 LOAD_FAST                0 (self)
+             28 LOAD_ATTR                0 (_own)
+             48 LOAD_CONST               1 (-1)
+             50 BINARY_SUBSCR
+             54 LOAD_CONST               2 (1)
+             56 BINARY_SUBSCR
+             60 POP_JUMP_IF_NOT_NONE    83 (to 228)
+
+133          62 LOAD_FAST                0 (self)
+             64 LOAD_ATTR                0 (_own)
+             84 LOAD_ATTR                3 (NULL|self + pop)
+            104 CALL                     0
+            112 LOAD_CONST               3 (0)
+            114 BINARY_SUBSCR
+            118 STORE_FAST               1 (start)
+
+134         120 LOAD_FAST                0 (self)
+            122 LOAD_ATTR                0 (_own)
+            142 LOAD_ATTR                5 (NULL|self + append)
+            162 LOAD_FAST                1 (start)
+            164 LOAD_FAST                0 (self)
+            166 LOAD_ATTR                6 (api)
+            186 LOAD_ATTR                9 (NULL|self + tick)
+            206 CALL                     0
+            214 BUILD_TUPLE              2
+            216 CALL                     1
+            224 POP_TOP
+            226 RETURN_CONST             0 (None)
+
+132     >>  228 RETURN_CONST             0 (None)
+        >>  230 RETURN_CONST             0 (None)
+
+Disassembly of <code object _is_own at 0x7f6af1de1730, file "ghost.py", line 136>:
+136           0 RESUME                   0
+
+137           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_own)
+             24 GET_ITER
+        >>   26 FOR_ITER                69 (to 168)
+             30 UNPACK_SEQUENCE          2
+             34 STORE_FAST               2 (start)
+             36 STORE_FAST               3 (end)
+
+138          38 LOAD_FAST                3 (end)
+             40 POP_JUMP_IF_NONE         2 (to 46)
+             42 LOAD_FAST                3 (end)
+             44 JUMP_FORWARD            25 (to 96)
+        >>   46 LOAD_FAST                0 (self)
+             48 LOAD_ATTR                2 (api)
+             68 LOAD_ATTR                5 (NULL|self + tick)
+             88 CALL                     0
+        >>   96 LOAD_FAST                2 (start)
+             98 BINARY_OP               10 (-)
+            102 LOAD_GLOBAL              6 (MASK32)
+            112 BINARY_OP                1 (&)
+            116 STORE_FAST               4 (span)
+
+139         118 LOAD_FAST                1 (t)
+            120 LOAD_FAST                2 (start)
+            122 BINARY_OP               10 (-)
+            126 LOAD_GLOBAL              6 (MASK32)
+            136 BINARY_OP                1 (&)
+            140 LOAD_FAST                4 (span)
+            142 LOAD_GLOBAL              8 (OWN_MARGIN_MS)
+            152 BINARY_OP                0 (+)
+            156 COMPARE_OP              26 (<=)
+            160 POP_JUMP_IF_TRUE         1 (to 164)
+            162 JUMP_BACKWARD           69 (to 26)
+
+140     >>  164 POP_TOP
+            166 RETURN_CONST             1 (True)
+
+137     >>  168 END_FOR
+
+141         170 RETURN_CONST             2 (False)
+
+Disassembly of <code object scan at 0x7f6aed7a0870, file "ghost.py", line 143>:
+143           0 RESUME                   0
+
+144           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (api)
+             24 LOAD_ATTR                3 (NULL|self + last_input_tick)
+             44 CALL                     0
+             52 STORE_FAST               1 (t)
+
+145          54 LOAD_FAST                1 (t)
+             56 LOAD_FAST                0 (self)
+             58 LOAD_ATTR                4 (_seen)
+             78 COMPARE_OP              55 (!=)
+             82 POP_JUMP_IF_FALSE       33 (to 150)
+
+146          84 LOAD_FAST                1 (t)
+             86 LOAD_FAST                0 (self)
+             88 STORE_ATTR               2 (_seen)
+
+147          98 LOAD_FAST                0 (self)
+            100 LOAD_ATTR                7 (NULL|self + _is_own)
+            120 LOAD_FAST                1 (t)
+            122 CALL                     1
+            130 POP_JUMP_IF_TRUE         8 (to 148)
+
+148         132 LOAD_FAST                1 (t)
+            134 LOAD_FAST                0 (self)
+            136 STORE_ATTR               4 (_user_tick)
+            146 RETURN_CONST             0 (None)
+
+147     >>  148 RETURN_CONST             0 (None)
+
+145     >>  150 RETURN_CONST             0 (None)
+
+Disassembly of <code object idle_ms at 0x7f6aed7a1630, file "ghost.py", line 150>:
+150           0 RESUME                   0
+
+151           2 NOP
+
+152           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + scan)
+             26 CALL                     0
+             34 POP_TOP
+
+153          36 LOAD_FAST                0 (self)
+             38 LOAD_ATTR                2 (_user_tick)
+             58 POP_JUMP_IF_NOT_NONE     1 (to 62)
+
+154          60 RETURN_CONST             1 (1000000000)
+
+155     >>   62 LOAD_FAST                0 (self)
+             64 LOAD_ATTR                4 (api)
+             84 LOAD_ATTR                7 (NULL|self + tick)
+            104 CALL                     0
+            112 LOAD_FAST                0 (self)
+            114 LOAD_ATTR                2 (_user_tick)
+            134 BINARY_OP               10 (-)
+            138 LOAD_GLOBAL              8 (MASK32)
+            148 BINARY_OP                1 (&)
+            152 RETURN_VALUE
+
+Disassembly of <code object GhostWindow at 0x7f6af20bb860, file "ghost.py", line 158>:
+158           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('GhostWindow')
+              8 STORE_NAME               2 (__qualname__)
+
+159          10 LOAD_CONST               1 (None)
+             12 LOAD_CONST               1 (None)
+             14 LOAD_CONST               2 (<code object <lambda> at 0x7f6aed712320, file "ghost.py", line 159>)
+             16 MAKE_FUNCTION            0
+
+160          18 LOAD_CONST               1 (None)
+             20 LOAD_NAME                3 (time)
+             22 LOAD_ATTR                8 (monotonic)
+
+159          42 BUILD_TUPLE              5
+             44 LOAD_CONST               3 ('activity')
+             46 LOAD_NAME                5 (Optional)
+             48 LOAD_NAME                6 (UserActivity)
+             50 BINARY_SUBSCR
+             54 LOAD_CONST               4 ('game_hwnd')
+             56 LOAD_NAME                7 (Callable)
+             58 BUILD_LIST               0
+             60 LOAD_NAME                5 (Optional)
+             62 LOAD_NAME                8 (int)
+             64 BINARY_SUBSCR
+             68 BUILD_TUPLE              2
+             70 BINARY_SUBSCR
+             74 LOAD_CONST               5 ('marker_path')
+
+160          76 LOAD_NAME                5 (Optional)
+             78 LOAD_NAME                9 (str)
+             80 BINARY_SUBSCR
+
+159          84 LOAD_CONST               6 ('clock')
+
+160          86 LOAD_NAME                7 (Callable)
+             88 BUILD_LIST               0
+             90 LOAD_NAME               10 (float)
+             92 BUILD_TUPLE              2
+             94 BINARY_SUBSCR
+
+159          98 BUILD_TUPLE              8
+            100 LOAD_CONST               7 (<code object __init__ at 0x179d23a0, file "ghost.py", line 159>)
+            102 MAKE_FUNCTION            5 (defaults, annotations)
+            104 STORE_NAME              11 (__init__)
+
+178         106 LOAD_CONST              28 (('return', None))
+            108 LOAD_CONST               9 (<code object _write_marker at 0x17a64100, file "ghost.py", line 178>)
+            110 MAKE_FUNCTION            4 (annotations)
+            112 STORE_NAME              12 (_write_marker)
+
+187         114 LOAD_CONST              28 (('return', None))
+            116 LOAD_CONST              10 (<code object _clear_marker at 0x7f6af1f3e330, file "ghost.py", line 187>)
+            118 MAKE_FUNCTION            4 (annotations)
+            120 STORE_NAME              13 (_clear_marker)
+
+194         122 LOAD_CONST               8 ('return')
+            124 LOAD_NAME               14 (bool)
+            126 BUILD_TUPLE              2
+            128 LOAD_CONST              11 (<code object recover at 0x17a61160, file "ghost.py", line 194>)
+            130 MAKE_FUNCTION            4 (annotations)
+            132 STORE_NAME              15 (recover)
+
+211         134 LOAD_CONST               8 ('return')
+            136 LOAD_NAME               14 (bool)
+            138 BUILD_TUPLE              2
+            140 LOAD_CONST              12 (<code object wanted at 0x7f6aed8048f0, file "ghost.py", line 211>)
+            142 MAKE_FUNCTION            4 (annotations)
+            144 STORE_NAME              16 (wanted)
+
+214         146 LOAD_CONST               8 ('return')
+            148 LOAD_NAME               14 (bool)
+            150 BUILD_TUPLE              2
+            152 LOAD_CONST              13 (<code object ensure at 0x17a5cf20, file "ghost.py", line 214>)
+            154 MAKE_FUNCTION            4 (annotations)
+            156 STORE_NAME              17 (ensure)
+
+224         158 LOAD_CONST               8 ('return')
+            160 LOAD_NAME               14 (bool)
+            162 BUILD_TUPLE              2
+            164 LOAD_CONST              14 (<code object _ensure at 0x17a6d650, file "ghost.py", line 224>)
+            166 MAKE_FUNCTION            4 (annotations)
+            168 STORE_NAME              18 (_ensure)
+
+256         170 LOAD_CONST              15 ('click')
+            172 LOAD_NAME               14 (bool)
+            174 LOAD_CONST               8 ('return')
+            176 LOAD_NAME               14 (bool)
+            178 BUILD_TUPLE              4
+            180 LOAD_CONST              16 (<code object hide at 0x17a3c850, file "ghost.py", line 256>)
+            182 MAKE_FUNCTION            4 (annotations)
+            184 STORE_NAME              19 (hide)
+
+274         186 LOAD_CONST              28 (('return', None))
+            188 LOAD_CONST              17 (<code object sink at 0x17a5ea70, file "ghost.py", line 274>)
+            190 MAKE_FUNCTION            4 (annotations)
+            192 STORE_NAME              20 (sink)
+
+287         194 LOAD_CONST              28 (('return', None))
+            196 LOAD_CONST              18 (<code object rest at 0x179cffa0, file "ghost.py", line 287>)
+            198 MAKE_FUNCTION            4 (annotations)
+            200 STORE_NAME              21 (rest)
+
+304         202 LOAD_CONST              28 (('return', None))
+            204 LOAD_CONST              19 (<code object _forget at 0x7f6af1ddbcc0, file "ghost.py", line 304>)
+            206 MAKE_FUNCTION            4 (annotations)
+            208 STORE_NAME              22 (_forget)
+
+309         210 LOAD_CONST              28 (('return', None))
+            212 LOAD_CONST              20 (<code object restore at 0x17936ee0, file "ghost.py", line 309>)
+            214 MAKE_FUNCTION            4 (annotations)
+            216 STORE_NAME              23 (restore)
+
+328         218 LOAD_CONST              21 ('reason')
+            220 LOAD_NAME                9 (str)
+            222 LOAD_CONST               8 ('return')
+            224 LOAD_CONST               1 (None)
+            226 BUILD_TUPLE              4
+            228 LOAD_CONST              22 (<code object disable at 0x7f6aed7f4230, file "ghost.py", line 328>)
+            230 MAKE_FUNCTION            4 (annotations)
+            232 STORE_NAME              24 (disable)
+
+333         234 LOAD_CONST              28 (('return', None))
+            236 LOAD_CONST              23 (<code object reset at 0x7f6af1f3e5b0, file "ghost.py", line 333>)
+            238 MAKE_FUNCTION            4 (annotations)
+            240 STORE_NAME              25 (reset)
+
+339         242 LOAD_CONST              29 ((0.5,))
+            244 LOAD_CONST              24 ('stop')
+            246 LOAD_NAME               26 (threading)
+            248 LOAD_ATTR               54 (Event)
+            268 LOAD_CONST              25 ('wanted')
+            270 LOAD_NAME                7 (Callable)
+            272 BUILD_LIST               0
+            274 LOAD_NAME               14 (bool)
+            276 BUILD_TUPLE              2
+            278 BINARY_SUBSCR
+            282 LOAD_CONST              26 ('interval')
+            284 LOAD_NAME               10 (float)
+            286 LOAD_CONST               8 ('return')
+            288 LOAD_CONST               1 (None)
+            290 BUILD_TUPLE              8
+            292 LOAD_CONST              27 (<code object watch at 0x7f6af1de7290, file "ghost.py", line 339>)
+            294 MAKE_FUNCTION            5 (defaults, annotations)
+            296 STORE_NAME              28 (watch)
+            298 RETURN_CONST             1 (None)
+
+Disassembly of <code object <lambda> at 0x7f6aed712320, file "ghost.py", line 159>:
+159           0 RESUME                   0
+              2 RETURN_CONST             0 (None)
+
+Disassembly of <code object __init__ at 0x179d23a0, file "ghost.py", line 159>:
+159           0 RESUME                   0
+
+161           2 LOAD_FAST                1 (api)
+              4 COPY                     1
+              6 POP_JUMP_IF_TRUE        10 (to 28)
+              8 POP_TOP
+             10 LOAD_GLOBAL              1 (NULL + GhostApi)
+             20 CALL                     0
+        >>   28 LOAD_FAST                0 (self)
+             30 STORE_ATTR               1 (api)
+
+162          40 LOAD_FAST                2 (activity)
+             42 COPY                     1
+             44 POP_JUMP_IF_TRUE        21 (to 88)
+             46 POP_TOP
+             48 LOAD_GLOBAL              5 (NULL + UserActivity)
+             58 LOAD_FAST                0 (self)
+             60 LOAD_ATTR                2 (api)
+             80 CALL                     1
+        >>   88 LOAD_FAST                0 (self)
+             90 STORE_ATTR               3 (activity)
+
+163         100 LOAD_FAST                3 (game_hwnd)
+            102 LOAD_FAST                0 (self)
+            104 STORE_ATTR               4 (_game)
+
+164         114 LOAD_FAST                4 (marker_path)
+            116 LOAD_FAST                0 (self)
+            118 STORE_ATTR               5 (marker_path)
+
+165         128 LOAD_FAST                5 (clock)
+            130 LOAD_FAST                0 (self)
+            132 STORE_ATTR               6 (_clock)
+
+166         142 LOAD_CONST               0 (None)
+            144 LOAD_FAST                0 (self)
+            146 STORE_ATTR               7 (hwnd)
+
+167         156 LOAD_CONST               1 (0)
+            158 LOAD_FAST                0 (self)
+            160 STORE_ATTR               8 (orig)
+
+168         170 LOAD_CONST               1 (0)
+            172 LOAD_FAST                0 (self)
+            174 STORE_ATTR               9 (added)
+
+169         184 LOAD_CONST               2 (False)
+            186 LOAD_FAST                0 (self)
+            188 STORE_ATTR              10 (ghosted)
+
+170         198 LOAD_CONST               2 (False)
+            200 LOAD_FAST                0 (self)
+            202 STORE_ATTR              11 (hidden)
+
+171         212 LOAD_CONST               3 ('')
+            214 LOAD_FAST                0 (self)
+            216 STORE_ATTR              12 (disabled)
+
+172         226 LOAD_CONST               3 ('')
+            228 LOAD_FAST                0 (self)
+            230 STORE_ATTR              13 (failed)
+
+173         240 LOAD_CONST               4 (0.0)
+            242 LOAD_FAST                0 (self)
+            244 STORE_ATTR              14 (_retry_at)
+
+174         254 LOAD_GLOBAL             31 (NULL + threading)
+            264 LOAD_ATTR               32 (RLock)
+            284 CALL                     0
+            292 LOAD_FAST                0 (self)
+            294 STORE_ATTR              17 (cap_lock)
+
+175         304 LOAD_GLOBAL             31 (NULL + threading)
+            314 LOAD_ATTR               32 (RLock)
+            334 CALL                     0
+            342 LOAD_FAST                0 (self)
+            344 STORE_ATTR              18 (_lock)
+            354 RETURN_CONST             0 (None)
+
+Disassembly of <code object _write_marker at 0x17a64100, file "ghost.py", line 178>:
+178           0 RESUME                   0
+
+179           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (marker_path)
+             24 POP_JUMP_IF_FALSE       12 (to 50)
+             26 LOAD_FAST                0 (self)
+             28 LOAD_ATTR                2 (hwnd)
+             48 POP_JUMP_IF_TRUE         1 (to 52)
+
+180     >>   50 RETURN_CONST             0 (None)
+
+181     >>   52 NOP
+
+182          54 LOAD_GLOBAL              5 (NULL + open)
+             64 LOAD_FAST                0 (self)
+             66 LOAD_ATTR                0 (marker_path)
+             86 LOAD_CONST               1 ('w')
+             88 LOAD_CONST               2 ('utf-8')
+             90 KW_NAMES                 3 (('encoding',))
+             92 CALL                     3
+            100 BEFORE_WITH
+            102 STORE_FAST               1 (f)
+
+183         104 LOAD_GLOBAL              7 (NULL + json)
+            114 LOAD_ATTR                8 (dump)
+            134 LOAD_CONST               4 (True)
+            136 LOAD_FAST                0 (self)
+            138 LOAD_ATTR                2 (hwnd)
+            158 LOAD_FAST                0 (self)
+            160 LOAD_ATTR               10 (api)
+            180 LOAD_ATTR               13 (NULL|self + class_name)
+            200 LOAD_FAST                0 (self)
+            202 LOAD_ATTR                2 (hwnd)
+            222 CALL                     1
+            230 LOAD_FAST                0 (self)
+            232 LOAD_ATTR               14 (added)
+            252 LOAD_CONST               5 (('ghost', 'hwnd', 'class', 'added'))
+            254 BUILD_CONST_KEY_MAP      4
+            256 LOAD_FAST                1 (f)
+            258 CALL                     2
+            266 POP_TOP
+
+182         268 LOAD_CONST               0 (None)
+            270 LOAD_CONST               0 (None)
+            272 LOAD_CONST               0 (None)
+            274 CALL                     2
+            282 POP_TOP
+            284 RETURN_CONST             0 (None)
+        >>  286 PUSH_EXC_INFO
+            288 WITH_EXCEPT_START
+            290 POP_JUMP_IF_TRUE         1 (to 294)
+            292 RERAISE                  2
+        >>  294 POP_TOP
+            296 POP_EXCEPT
+            298 POP_TOP
+            300 POP_TOP
+            302 RETURN_CONST             0 (None)
+        >>  304 COPY                     3
+            306 POP_EXCEPT
+            308 RERAISE                  1
+        >>  310 PUSH_EXC_INFO
+
+184         312 LOAD_GLOBAL             16 (Exception)
+            322 CHECK_EXC_MATCH
+            324 POP_JUMP_IF_FALSE        3 (to 332)
+            326 POP_TOP
+
+185         328 POP_EXCEPT
+            330 RETURN_CONST             0 (None)
+
+184     >>  332 RERAISE                  0
+        >>  334 COPY                     3
+            336 POP_EXCEPT
+            338 RERAISE                  1
+ExceptionTable:
+  54 to 100 -> 310 [0]
+  102 to 266 -> 286 [1] lasti
+  268 to 282 -> 310 [0]
+  286 to 294 -> 304 [3] lasti
+  296 to 300 -> 310 [0]
+  304 to 308 -> 310 [0]
+  310 to 326 -> 334 [1] lasti
+  332 to 332 -> 334 [1] lasti
+
+Disassembly of <code object _clear_marker at 0x7f6af1f3e330, file "ghost.py", line 187>:
+187           0 RESUME                   0
+
+188           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (marker_path)
+             24 POP_JUMP_IF_FALSE       33 (to 92)
+
+189          26 NOP
+
+190          28 LOAD_GLOBAL              3 (NULL + os)
+             38 LOAD_ATTR                4 (remove)
+             58 LOAD_FAST                0 (self)
+             60 LOAD_ATTR                0 (marker_path)
+             80 CALL                     1
+             88 POP_TOP
+             90 RETURN_CONST             0 (None)
+
+188     >>   92 RETURN_CONST             0 (None)
+        >>   94 PUSH_EXC_INFO
+
+191          96 LOAD_GLOBAL              6 (OSError)
+            106 CHECK_EXC_MATCH
+            108 POP_JUMP_IF_FALSE        3 (to 116)
+            110 POP_TOP
+
+192         112 POP_EXCEPT
+            114 RETURN_CONST             0 (None)
+
+191     >>  116 RERAISE                  0
+        >>  118 COPY                     3
+            120 POP_EXCEPT
+            122 RERAISE                  1
+ExceptionTable:
+  28 to 88 -> 94 [0]
+  94 to 110 -> 118 [1] lasti
+  116 to 116 -> 118 [1] lasti
+
+Disassembly of <code object recover at 0x17a61160, file "ghost.py", line 194>:
+194           0 RESUME                   0
+
+195           2 NOP
+
+196           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (marker_path)
+             26 POP_JUMP_IF_FALSE       41 (to 110)
+             28 LOAD_GLOBAL              2 (os)
+             38 LOAD_ATTR                4 (path)
+             58 LOAD_ATTR                7 (NULL|self + isfile)
+             78 LOAD_FAST                0 (self)
+             80 LOAD_ATTR                0 (marker_path)
+            100 CALL                     1
+            108 POP_JUMP_IF_TRUE         1 (to 112)
+
+197     >>  110 RETURN_CONST             1 (False)
+
+198     >>  112 NOP
+
+199         114 LOAD_GLOBAL              9 (NULL + open)
+            124 LOAD_FAST                0 (self)
+            126 LOAD_ATTR                0 (marker_path)
+            146 LOAD_CONST               2 ('r')
+            148 LOAD_CONST               3 ('utf-8')
+            150 KW_NAMES                 4 (('encoding',))
+            152 CALL                     3
+            160 BEFORE_WITH
+            162 STORE_FAST               1 (f)
+
+200         164 LOAD_GLOBAL             11 (NULL + json)
+            174 LOAD_ATTR               12 (load)
+            194 LOAD_FAST                1 (f)
+            196 CALL                     1
+            204 STORE_FAST               2 (m)
+
+199         206 LOAD_CONST               0 (None)
+            208 LOAD_CONST               0 (None)
+            210 LOAD_CONST               0 (None)
+            212 CALL                     2
+            220 POP_TOP
+
+201     >>  222 LOAD_GLOBAL             15 (NULL + int)
+            232 LOAD_FAST_CHECK          2 (m)
+            234 LOAD_ATTR               17 (NULL|self + get)
+            254 LOAD_CONST               5 ('hwnd')
+            256 LOAD_CONST               6 (0)
+            258 CALL                     2
+            266 CALL                     1
+            274 STORE_FAST               3 (h)
+
+202         276 LOAD_FAST                2 (m)
+            278 LOAD_ATTR               17 (NULL|self + get)
+            298 LOAD_CONST               7 ('ghost')
+            300 CALL                     1
+            308 LOAD_CONST               8 (True)
+            310 IS_OP                    0
+            312 POP_JUMP_IF_FALSE      187 (to 688)
+            314 LOAD_FAST                3 (h)
+            316 POP_JUMP_IF_FALSE      185 (to 688)
+            318 LOAD_FAST                0 (self)
+            320 LOAD_ATTR               18 (api)
+            340 LOAD_ATTR               21 (NULL|self + is_window)
+            360 LOAD_FAST                3 (h)
+            362 CALL                     1
+            370 POP_JUMP_IF_FALSE      158 (to 688)
+            372 LOAD_FAST                0 (self)
+            374 LOAD_ATTR               18 (api)
+            394 LOAD_ATTR               23 (NULL|self + class_name)
+            414 LOAD_FAST                3 (h)
+            416 CALL                     1
+            424 LOAD_FAST                2 (m)
+            426 LOAD_ATTR               17 (NULL|self + get)
+            446 LOAD_CONST               9 ('class')
+            448 CALL                     1
+            456 COMPARE_OP              40 (==)
+            460 POP_JUMP_IF_FALSE      113 (to 688)
+
+203         462 LOAD_FAST                0 (self)
+            464 LOAD_ATTR               18 (api)
+            484 LOAD_ATTR               25 (NULL|self + set_alpha)
+            504 LOAD_FAST                3 (h)
+            506 LOAD_CONST              10 (255)
+            508 CALL                     2
+            516 POP_TOP
+
+204         518 LOAD_FAST                0 (self)
+            520 LOAD_ATTR               18 (api)
+            540 LOAD_ATTR               27 (NULL|self + set_exstyle)
+            560 LOAD_FAST                3 (h)
+            562 LOAD_FAST                0 (self)
+            564 LOAD_ATTR               18 (api)
+            584 LOAD_ATTR               29 (NULL|self + get_exstyle)
+            604 LOAD_FAST                3 (h)
+            606 CALL                     1
+            614 LOAD_GLOBAL             15 (NULL + int)
+            624 LOAD_FAST                2 (m)
+            626 LOAD_ATTR               17 (NULL|self + get)
+            646 LOAD_CONST              11 ('added')
+            648 CALL                     1
+            656 COPY                     1
+            658 POP_JUMP_IF_TRUE         2 (to 664)
+            660 POP_TOP
+            662 LOAD_CONST               6 (0)
+        >>  664 CALL                     1
+            672 UNARY_INVERT
+            674 BINARY_OP                1 (&)
+            678 CALL                     2
+            686 POP_TOP
+
+207     >>  688 LOAD_FAST                0 (self)
+            690 LOAD_ATTR               33 (NULL|self + _clear_marker)
+            710 CALL                     0
+            718 POP_TOP
+
+208         720 RETURN_CONST             8 (True)
+
+199     >>  722 PUSH_EXC_INFO
+            724 WITH_EXCEPT_START
+            726 POP_JUMP_IF_TRUE         1 (to 730)
+            728 RERAISE                  2
+        >>  730 POP_TOP
+            732 POP_EXCEPT
+            734 POP_TOP
+            736 POP_TOP
+            738 EXTENDED_ARG             1
+            740 JUMP_BACKWARD          260 (to 222)
+        >>  742 COPY                     3
+            744 POP_EXCEPT
+            746 RERAISE                  1
+        >>  748 PUSH_EXC_INFO
+
+205         750 LOAD_GLOBAL             30 (Exception)
+            760 CHECK_EXC_MATCH
+            762 POP_JUMP_IF_FALSE        3 (to 770)
+            764 POP_TOP
+
+206         766 POP_EXCEPT
+            768 JUMP_BACKWARD           41 (to 688)
+
+205     >>  770 RERAISE                  0
+        >>  772 COPY                     3
+            774 POP_EXCEPT
+            776 RERAISE                  1
+ExceptionTable:
+  114 to 160 -> 748 [0]
+  162 to 204 -> 722 [1] lasti
+  206 to 686 -> 748 [0]
+  722 to 730 -> 742 [3] lasti
+  732 to 746 -> 748 [0]
+  748 to 764 -> 772 [1] lasti
+  770 to 770 -> 772 [1] lasti
+
+Disassembly of <code object wanted at 0x7f6aed8048f0, file "ghost.py", line 211>:
+211           0 RESUME                   0
+
+212           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (disabled)
+             24 UNARY_NOT
+             26 RETURN_VALUE
+
+Disassembly of <code object ensure at 0x17a5cf20, file "ghost.py", line 214>:
+214           0 RESUME                   0
+
+215           2 NOP
+
+216           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (cap_lock)
+             26 LOAD_ATTR                3 (NULL|self + acquire)
+             46 LOAD_CONST               1 (False)
+             48 KW_NAMES                 2 (('blocking',))
+             50 CALL                     1
+             58 POP_JUMP_IF_TRUE        12 (to 84)
+
+217          60 LOAD_FAST                0 (self)
+             62 LOAD_ATTR                4 (ghosted)
+             82 RETURN_VALUE
+
+218     >>   84 NOP
+
+219          86 LOAD_FAST                0 (self)
+             88 LOAD_ATTR                6 (_lock)
+            108 BEFORE_WITH
+            110 POP_TOP
+
+220         112 LOAD_FAST                0 (self)
+            114 LOAD_ATTR                9 (NULL|self + _ensure)
+            134 CALL                     0
+
+219         142 SWAP                     2
+            144 LOAD_CONST               0 (None)
+            146 LOAD_CONST               0 (None)
+            148 LOAD_CONST               0 (None)
+            150 CALL                     2
+            158 POP_TOP
+
+222         160 LOAD_FAST                0 (self)
+            162 LOAD_ATTR                0 (cap_lock)
+            182 LOAD_ATTR               11 (NULL|self + release)
+            202 CALL                     0
+            210 POP_TOP
+            212 RETURN_VALUE
+
+219     >>  214 PUSH_EXC_INFO
+            216 WITH_EXCEPT_START
+            218 POP_JUMP_IF_TRUE         1 (to 222)
+            220 RERAISE                  2
+        >>  222 POP_TOP
+            224 POP_EXCEPT
+            226 POP_TOP
+            228 POP_TOP
+            230 JUMP_FORWARD             3 (to 238)
+        >>  232 COPY                     3
+            234 POP_EXCEPT
+            236 RERAISE                  1
+        >>  238 NOP
+
+222         240 LOAD_FAST                0 (self)
+            242 LOAD_ATTR                0 (cap_lock)
+            262 LOAD_ATTR               11 (NULL|self + release)
+            282 CALL                     0
+            290 POP_TOP
+            292 RETURN_CONST             0 (None)
+        >>  294 PUSH_EXC_INFO
+            296 LOAD_FAST                0 (self)
+            298 LOAD_ATTR                0 (cap_lock)
+            318 LOAD_ATTR               11 (NULL|self + release)
+            338 CALL                     0
+            346 POP_TOP
+            348 RERAISE                  0
+        >>  350 COPY                     3
+            352 POP_EXCEPT
+            354 RERAISE                  1
+ExceptionTable:
+  86 to 108 -> 294 [0]
+  110 to 140 -> 214 [1] lasti
+  142 to 158 -> 294 [0]
+  214 to 222 -> 232 [3] lasti
+  224 to 236 -> 294 [0]
+  294 to 348 -> 350 [1] lasti
+
+Disassembly of <code object _ensure at 0x17a6d650, file "ghost.py", line 224>:
+224           0 RESUME                   0
+
+225           2 NOP
+
+226           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + _game)
+             26 CALL                     0
+             34 STORE_FAST               1 (h)
+
+227          36 LOAD_FAST                0 (self)
+             38 LOAD_ATTR                3 (NULL|self + wanted)
+             58 CALL                     0
+             66 POP_JUMP_IF_FALSE       29 (to 126)
+             68 LOAD_FAST                1 (h)
+             70 POP_JUMP_IF_FALSE       27 (to 126)
+             72 LOAD_FAST                0 (self)
+             74 LOAD_ATTR                4 (api)
+             94 LOAD_ATTR                7 (NULL|self + is_window)
+            114 LOAD_FAST                1 (h)
+            116 CALL                     1
+            124 POP_JUMP_IF_TRUE        58 (to 242)
+
+228     >>  126 LOAD_FAST                0 (self)
+            128 LOAD_ATTR                8 (hwnd)
+            148 POP_JUMP_IF_FALSE       45 (to 240)
+            150 LOAD_FAST                1 (h)
+            152 POP_JUMP_IF_FALSE       27 (to 208)
+            154 LOAD_FAST                0 (self)
+            156 LOAD_ATTR                4 (api)
+            176 LOAD_ATTR                7 (NULL|self + is_window)
+            196 LOAD_FAST                1 (h)
+            198 CALL                     1
+            206 POP_JUMP_IF_TRUE        16 (to 240)
+
+229     >>  208 LOAD_FAST                0 (self)
+            210 LOAD_ATTR               11 (NULL|self + _forget)
+            230 CALL                     0
+            238 POP_TOP
+
+230     >>  240 RETURN_CONST             1 (False)
+
+231     >>  242 LOAD_FAST                0 (self)
+            244 LOAD_ATTR                8 (hwnd)
+            264 POP_JUMP_IF_FALSE       31 (to 328)
+            266 LOAD_FAST                0 (self)
+            268 LOAD_ATTR                8 (hwnd)
+            288 LOAD_FAST                1 (h)
+            290 COMPARE_OP              55 (!=)
+            294 POP_JUMP_IF_FALSE       16 (to 328)
+
+232         296 LOAD_FAST                0 (self)
+            298 LOAD_ATTR               13 (NULL|self + restore)
+            318 CALL                     0
+            326 POP_TOP
+
+233     >>  328 LOAD_FAST                0 (self)
+            330 LOAD_ATTR               14 (ghosted)
+            350 POP_JUMP_IF_FALSE      100 (to 552)
+
+234         352 LOAD_FAST                0 (self)
+            354 LOAD_ATTR                4 (api)
+            374 LOAD_ATTR               17 (NULL|self + get_exstyle)
+            394 LOAD_FAST                1 (h)
+            396 CALL                     1
+            404 STORE_FAST               2 (ex)
+
+235         406 LOAD_FAST                2 (ex)
+            408 LOAD_GLOBAL             18 (WS_EX_LAYERED)
+            418 BINARY_OP                1 (&)
+            422 POP_JUMP_IF_TRUE        35 (to 494)
+
+236         424 LOAD_FAST                0 (self)
+            426 LOAD_ATTR                4 (api)
+            446 LOAD_ATTR               21 (NULL|self + set_exstyle)
+            466 LOAD_FAST                1 (h)
+            468 LOAD_FAST                2 (ex)
+            470 LOAD_GLOBAL             18 (WS_EX_LAYERED)
+            480 BINARY_OP                7 (|)
+            484 CALL                     2
+            492 POP_TOP
+
+237     >>  494 LOAD_FAST                0 (self)
+            496 LOAD_ATTR                4 (api)
+            516 LOAD_ATTR               23 (NULL|self + set_alpha)
+            536 LOAD_FAST                1 (h)
+            538 LOAD_CONST               2 (255)
+            540 CALL                     2
+            548 POP_TOP
+
+238         550 RETURN_CONST             3 (True)
+
+239     >>  552 LOAD_FAST                0 (self)
+            554 LOAD_ATTR               24 (failed)
+            574 POP_JUMP_IF_FALSE       30 (to 636)
+            576 LOAD_FAST                0 (self)
+            578 LOAD_ATTR               27 (NULL|self + _clock)
+            598 CALL                     0
+            606 LOAD_FAST                0 (self)
+            608 LOAD_ATTR               28 (_retry_at)
+            628 COMPARE_OP               2 (<)
+            632 POP_JUMP_IF_FALSE        1 (to 636)
+
+240         634 RETURN_CONST             1 (False)
+
+241     >>  636 LOAD_FAST                0 (self)
+            638 LOAD_ATTR                4 (api)
+            658 LOAD_ATTR               17 (NULL|self + get_exstyle)
+            678 LOAD_FAST                1 (h)
+            680 CALL                     1
+            688 STORE_FAST               3 (orig)
+
+242         690 LOAD_FAST                1 (h)
+            692 LOAD_FAST                3 (orig)
+            694 LOAD_GLOBAL             30 (GHOST_BITS)
+            704 LOAD_FAST                3 (orig)
+            706 UNARY_INVERT
+            708 BINARY_OP                1 (&)
+            712 SWAP                     3
+            714 LOAD_FAST                0 (self)
+            716 STORE_ATTR               4 (hwnd)
+            726 LOAD_FAST                0 (self)
+            728 STORE_ATTR              16 (orig)
+            738 LOAD_FAST                0 (self)
+            740 STORE_ATTR              17 (added)
+
+243         750 LOAD_FAST                0 (self)
+            752 LOAD_ATTR               37 (NULL|self + _write_marker)
+            772 CALL                     0
+            780 POP_TOP
+
+244         782 LOAD_FAST                0 (self)
+            784 LOAD_ATTR                4 (api)
+            804 LOAD_ATTR               21 (NULL|self + set_exstyle)
+            824 LOAD_FAST                1 (h)
+            826 LOAD_FAST                3 (orig)
+            828 LOAD_GLOBAL             18 (WS_EX_LAYERED)
+            838 BINARY_OP                7 (|)
+            842 CALL                     2
+            850 POP_JUMP_IF_FALSE       77 (to 1006)
+            852 LOAD_FAST                0 (self)
+            854 LOAD_ATTR                4 (api)
+            874 LOAD_ATTR               23 (NULL|self + set_alpha)
+            894 LOAD_FAST                1 (h)
+            896 LOAD_CONST               2 (255)
+            898 CALL                     2
+            906 POP_JUMP_IF_FALSE       49 (to 1006)
+
+245         908 LOAD_CONST               4 ((True, False, ''))
+            910 UNPACK_SEQUENCE          3
+            914 LOAD_FAST                0 (self)
+            916 STORE_ATTR               7 (ghosted)
+            926 LOAD_FAST                0 (self)
+            928 STORE_ATTR              19 (hidden)
+            938 LOAD_FAST                0 (self)
+            940 STORE_ATTR              12 (failed)
+
+246         950 LOAD_FAST                0 (self)
+            952 LOAD_ATTR                4 (api)
+            972 LOAD_ATTR               41 (NULL|self + to_bottom)
+            992 LOAD_FAST                1 (h)
+            994 CALL                     1
+           1002 POP_TOP
+
+247        1004 RETURN_CONST             3 (True)
+
+248     >> 1006 LOAD_CONST               5 ('denied')
+           1008 LOAD_FAST                0 (self)
+           1010 LOAD_ATTR               27 (NULL|self + _clock)
+           1030 CALL                     0
+           1038 LOAD_GLOBAL             42 (RETRY_AFTER_FAIL_S)
+           1048 BINARY_OP                0 (+)
+           1052 SWAP                     2
+           1054 LOAD_FAST                0 (self)
+           1056 STORE_ATTR              12 (failed)
+           1066 LOAD_FAST                0 (self)
+           1068 STORE_ATTR              14 (_retry_at)
+
+249        1078 LOAD_FAST                0 (self)
+           1080 LOAD_ATTR               13 (NULL|self + restore)
+           1100 CALL                     0
+           1108 POP_TOP
+
+253        1110 RETURN_CONST             1 (False)
+        >> 1112 PUSH_EXC_INFO
+
+250        1114 LOAD_GLOBAL             44 (Exception)
+           1124 CHECK_EXC_MATCH
+           1126 POP_JUMP_IF_FALSE       55 (to 1238)
+           1128 POP_TOP
+
+251        1130 LOAD_CONST               6 ('error')
+           1132 LOAD_FAST                0 (self)
+           1134 LOAD_ATTR               27 (NULL|self + _clock)
+           1154 CALL                     0
+           1162 LOAD_GLOBAL             42 (RETRY_AFTER_FAIL_S)
+           1172 BINARY_OP                0 (+)
+           1176 SWAP                     2
+           1178 LOAD_FAST                0 (self)
+           1180 STORE_ATTR              12 (failed)
+           1190 LOAD_FAST                0 (self)
+           1192 STORE_ATTR              14 (_retry_at)
+
+252        1202 LOAD_FAST                0 (self)
+           1204 LOAD_ATTR               13 (NULL|self + restore)
+           1224 CALL                     0
+           1232 POP_TOP
+           1234 POP_EXCEPT
+
+253        1236 RETURN_CONST             1 (False)
+
+250     >> 1238 RERAISE                  0
+        >> 1240 COPY                     3
+           1242 POP_EXCEPT
+           1244 RERAISE                  1
+ExceptionTable:
+  4 to 238 -> 1112 [0]
+  242 to 548 -> 1112 [0]
+  552 to 632 -> 1112 [0]
+  636 to 1002 -> 1112 [0]
+  1006 to 1108 -> 1112 [0]
+  1112 to 1232 -> 1240 [1] lasti
+  1238 to 1238 -> 1240 [1] lasti
+
+Disassembly of <code object hide at 0x17a3c850, file "ghost.py", line 256>:
+256           0 RESUME                   0
+
+257           2 NOP
+
+258           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (_lock)
+             26 BEFORE_WITH
+             28 POP_TOP
+
+259          30 NOP
+
+260          32 LOAD_FAST                0 (self)
+             34 LOAD_ATTR                2 (hwnd)
+             54 STORE_FAST               2 (h)
+
+261          56 LOAD_FAST                0 (self)
+             58 LOAD_ATTR                4 (ghosted)
+             78 POP_JUMP_IF_FALSE       29 (to 138)
+             80 LOAD_FAST                2 (h)
+             82 POP_JUMP_IF_FALSE       27 (to 138)
+             84 LOAD_FAST                0 (self)
+             86 LOAD_ATTR                6 (api)
+            106 LOAD_ATTR                9 (NULL|self + is_window)
+            126 LOAD_FAST                2 (h)
+            128 CALL                     1
+            136 POP_JUMP_IF_TRUE        10 (to 158)
+
+262     >>  138 NOP
+
+258         140 LOAD_CONST               0 (None)
+            142 LOAD_CONST               0 (None)
+            144 LOAD_CONST               0 (None)
+            146 CALL                     2
+            154 POP_TOP
+            156 RETURN_CONST             1 (False)
+
+263     >>  158 LOAD_FAST                0 (self)
+            160 LOAD_ATTR                6 (api)
+            180 LOAD_ATTR               11 (NULL|self + get_exstyle)
+            200 LOAD_FAST                2 (h)
+            202 CALL                     1
+            210 LOAD_GLOBAL             12 (WS_EX_LAYERED)
+            220 BINARY_OP                7 (|)
+            224 STORE_FAST               3 (ex)
+
+264         226 LOAD_FAST                1 (click)
+            228 POP_JUMP_IF_FALSE       10 (to 250)
+            230 LOAD_FAST                3 (ex)
+            232 LOAD_GLOBAL             14 (WS_EX_TRANSPARENT)
+            242 UNARY_INVERT
+            244 BINARY_OP                1 (&)
+            248 JUMP_FORWARD             8 (to 266)
+        >>  250 LOAD_FAST                3 (ex)
+            252 LOAD_GLOBAL             14 (WS_EX_TRANSPARENT)
+            262 BINARY_OP                7 (|)
+        >>  266 STORE_FAST               3 (ex)
+
+265         268 LOAD_FAST                3 (ex)
+            270 LOAD_FAST                0 (self)
+            272 LOAD_ATTR                6 (api)
+            292 LOAD_ATTR               11 (NULL|self + get_exstyle)
+            312 LOAD_FAST                2 (h)
+            314 CALL                     1
+            322 COMPARE_OP              55 (!=)
+            326 POP_JUMP_IF_FALSE       28 (to 384)
+
+266         328 LOAD_FAST                0 (self)
+            330 LOAD_ATTR                6 (api)
+            350 LOAD_ATTR               17 (NULL|self + set_exstyle)
+            370 LOAD_FAST                2 (h)
+            372 LOAD_FAST                3 (ex)
+            374 CALL                     2
+            382 POP_TOP
+
+267     >>  384 LOAD_FAST                0 (self)
+            386 LOAD_ATTR                6 (api)
+            406 LOAD_ATTR               19 (NULL|self + set_alpha)
+            426 LOAD_FAST                2 (h)
+            428 LOAD_GLOBAL             20 (GHOST_ALPHA)
+            438 CALL                     2
+            446 POP_TOP
+
+268         448 LOAD_CONST               2 (True)
+            450 LOAD_FAST                0 (self)
+            452 STORE_ATTR              11 (hidden)
+
+269         462 LOAD_FAST                0 (self)
+            464 LOAD_ATTR                6 (api)
+            484 LOAD_ATTR               25 (NULL|self + flush)
+            504 CALL                     0
+            512 POP_TOP
+
+270         514 NOP
+
+258         516 LOAD_CONST               0 (None)
+            518 LOAD_CONST               0 (None)
+            520 LOAD_CONST               0 (None)
+            522 CALL                     2
+            530 POP_TOP
+            532 RETURN_CONST             2 (True)
+        >>  534 PUSH_EXC_INFO
+
+271         536 LOAD_GLOBAL             26 (Exception)
+            546 CHECK_EXC_MATCH
+            548 POP_JUMP_IF_FALSE       11 (to 572)
+            550 POP_TOP
+
+272         552 POP_EXCEPT
+
+258         554 LOAD_CONST               0 (None)
+            556 LOAD_CONST               0 (None)
+            558 LOAD_CONST               0 (None)
+            560 CALL                     2
+            568 POP_TOP
+            570 RETURN_CONST             1 (False)
+
+271     >>  572 RERAISE                  0
+        >>  574 COPY                     3
+            576 POP_EXCEPT
+            578 RERAISE                  1
+
+258     >>  580 PUSH_EXC_INFO
+            582 WITH_EXCEPT_START
+            584 POP_JUMP_IF_TRUE         1 (to 588)
+            586 RERAISE                  2
+        >>  588 POP_TOP
+            590 POP_EXCEPT
+            592 POP_TOP
+            594 POP_TOP
+            596 RETURN_CONST             0 (None)
+        >>  598 COPY                     3
+            600 POP_EXCEPT
+            602 RERAISE                  1
+ExceptionTable:
+  28 to 28 -> 580 [1] lasti
+  32 to 136 -> 534 [1]
+  158 to 512 -> 534 [1]
+  534 to 550 -> 574 [2] lasti
+  552 to 552 -> 580 [1] lasti
+  572 to 572 -> 574 [2] lasti
+  574 to 578 -> 580 [1] lasti
+  580 to 588 -> 598 [3] lasti
+
+Disassembly of <code object sink at 0x17a5ea70, file "ghost.py", line 274>:
+274           0 RESUME                   0
+
+275           2 NOP
+
+276           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (_lock)
+             26 BEFORE_WITH
+             28 POP_TOP
+
+277          30 LOAD_FAST                0 (self)
+             32 LOAD_ATTR                2 (hwnd)
+             52 STORE_FAST               1 (h)
+
+278          54 LOAD_FAST                0 (self)
+             56 LOAD_ATTR                4 (ghosted)
+             76 POP_JUMP_IF_FALSE        2 (to 82)
+             78 LOAD_FAST                1 (h)
+             80 POP_JUMP_IF_TRUE        10 (to 102)
+
+279     >>   82 NOP
+
+276          84 LOAD_CONST               0 (None)
+             86 LOAD_CONST               0 (None)
+             88 LOAD_CONST               0 (None)
+             90 CALL                     2
+             98 POP_TOP
+            100 RETURN_CONST             0 (None)
+
+280     >>  102 NOP
+
+281         104 LOAD_FAST                0 (self)
+            106 LOAD_ATTR                6 (api)
+            126 LOAD_ATTR                9 (NULL|self + is_window)
+            146 LOAD_FAST                1 (h)
+            148 CALL                     1
+            156 POP_JUMP_IF_FALSE       53 (to 264)
+
+282         158 LOAD_FAST                0 (self)
+            160 LOAD_ATTR                6 (api)
+            180 LOAD_ATTR               11 (NULL|self + to_bottom)
+            200 LOAD_FAST                1 (h)
+            202 CALL                     1
+            210 POP_TOP
+
+283         212 LOAD_FAST                0 (self)
+            214 LOAD_ATTR                6 (api)
+            234 LOAD_ATTR               13 (NULL|self + flush)
+            254 CALL                     0
+            262 POP_TOP
+
+276     >>  264 LOAD_CONST               0 (None)
+            266 LOAD_CONST               0 (None)
+            268 LOAD_CONST               0 (None)
+            270 CALL                     2
+            278 POP_TOP
+            280 RETURN_CONST             0 (None)
+        >>  282 PUSH_EXC_INFO
+
+284         284 LOAD_GLOBAL             14 (Exception)
+            294 CHECK_EXC_MATCH
+            296 POP_JUMP_IF_FALSE        3 (to 304)
+            298 POP_TOP
+
+285         300 POP_EXCEPT
+            302 JUMP_BACKWARD           20 (to 264)
+
+284     >>  304 RERAISE                  0
+        >>  306 COPY                     3
+            308 POP_EXCEPT
+            310 RERAISE                  1
+
+276     >>  312 PUSH_EXC_INFO
+            314 WITH_EXCEPT_START
+            316 POP_JUMP_IF_TRUE         1 (to 320)
+            318 RERAISE                  2
+        >>  320 POP_TOP
+            322 POP_EXCEPT
+            324 POP_TOP
+            326 POP_TOP
+            328 RETURN_CONST             0 (None)
+        >>  330 COPY                     3
+            332 POP_EXCEPT
+            334 RERAISE                  1
+ExceptionTable:
+  28 to 82 -> 312 [1] lasti
+  104 to 262 -> 282 [1]
+  282 to 298 -> 306 [2] lasti
+  300 to 302 -> 312 [1] lasti
+  304 to 304 -> 306 [2] lasti
+  306 to 310 -> 312 [1] lasti
+  312 to 320 -> 330 [3] lasti
+
+Disassembly of <code object rest at 0x179cffa0, file "ghost.py", line 287>:
+287           0 RESUME                   0
+
+288           2 NOP
+
+289           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (_lock)
+             26 BEFORE_WITH
+             28 POP_TOP
+
+290          30 LOAD_FAST                0 (self)
+             32 LOAD_ATTR                2 (hwnd)
+             52 STORE_FAST               1 (h)
+
+291          54 LOAD_CONST               1 (False)
+             56 LOAD_FAST                0 (self)
+             58 STORE_ATTR               2 (hidden)
+
+292          68 LOAD_FAST                0 (self)
+             70 LOAD_ATTR                6 (ghosted)
+             90 POP_JUMP_IF_FALSE        2 (to 96)
+             92 LOAD_FAST                1 (h)
+             94 POP_JUMP_IF_TRUE        10 (to 116)
+
+293     >>   96 NOP
+
+289          98 LOAD_CONST               0 (None)
+            100 LOAD_CONST               0 (None)
+            102 LOAD_CONST               0 (None)
+            104 CALL                     2
+            112 POP_TOP
+            114 RETURN_CONST             0 (None)
+
+294     >>  116 NOP
+
+295         118 LOAD_FAST                0 (self)
+            120 LOAD_ATTR                8 (api)
+            140 LOAD_ATTR               11 (NULL|self + is_window)
+            160 LOAD_FAST                1 (h)
+            162 CALL                     1
+            170 POP_JUMP_IF_FALSE      145 (to 462)
+
+296         172 LOAD_FAST                0 (self)
+            174 LOAD_ATTR                8 (api)
+            194 LOAD_ATTR               13 (NULL|self + flush)
+            214 CALL                     0
+            222 POP_TOP
+
+297         224 LOAD_FAST                0 (self)
+            226 LOAD_ATTR                8 (api)
+            246 LOAD_ATTR               15 (NULL|self + get_exstyle)
+            266 LOAD_FAST                1 (h)
+            268 CALL                     1
+            276 STORE_FAST               2 (ex)
+
+298         278 LOAD_FAST                2 (ex)
+            280 LOAD_GLOBAL             16 (WS_EX_TRANSPARENT)
+            290 BINARY_OP                1 (&)
+            294 POP_JUMP_IF_FALSE       55 (to 406)
+            296 LOAD_GLOBAL             16 (WS_EX_TRANSPARENT)
+            306 LOAD_FAST                0 (self)
+            308 LOAD_ATTR               18 (added)
+            328 BINARY_OP                1 (&)
+            332 POP_JUMP_IF_FALSE       36 (to 406)
+
+299         334 LOAD_FAST                0 (self)
+            336 LOAD_ATTR                8 (api)
+            356 LOAD_ATTR               21 (NULL|self + set_exstyle)
+            376 LOAD_FAST                1 (h)
+            378 LOAD_FAST                2 (ex)
+            380 LOAD_GLOBAL             16 (WS_EX_TRANSPARENT)
+            390 UNARY_INVERT
+            392 BINARY_OP                1 (&)
+            396 CALL                     2
+            404 POP_TOP
+
+300     >>  406 LOAD_FAST                0 (self)
+            408 LOAD_ATTR                8 (api)
+            428 LOAD_ATTR               23 (NULL|self + set_alpha)
+            448 LOAD_FAST                1 (h)
+            450 LOAD_CONST               2 (255)
+            452 CALL                     2
+            460 POP_TOP
+
+289     >>  462 LOAD_CONST               0 (None)
+            464 LOAD_CONST               0 (None)
+            466 LOAD_CONST               0 (None)
+            468 CALL                     2
+            476 POP_TOP
+            478 RETURN_CONST             0 (None)
+        >>  480 PUSH_EXC_INFO
+
+301         482 LOAD_GLOBAL             24 (Exception)
+            492 CHECK_EXC_MATCH
+            494 POP_JUMP_IF_FALSE        3 (to 502)
+            496 POP_TOP
+
+302         498 POP_EXCEPT
+            500 JUMP_BACKWARD           20 (to 462)
+
+301     >>  502 RERAISE                  0
+        >>  504 COPY                     3
+            506 POP_EXCEPT
+            508 RERAISE                  1
+
+289     >>  510 PUSH_EXC_INFO
+            512 WITH_EXCEPT_START
+            514 POP_JUMP_IF_TRUE         1 (to 518)
+            516 RERAISE                  2
+        >>  518 POP_TOP
+            520 POP_EXCEPT
+            522 POP_TOP
+            524 POP_TOP
+            526 RETURN_CONST             0 (None)
+        >>  528 COPY                     3
+            530 POP_EXCEPT
+            532 RERAISE                  1
+ExceptionTable:
+  28 to 96 -> 510 [1] lasti
+  118 to 460 -> 480 [1]
+  480 to 496 -> 504 [2] lasti
+  498 to 500 -> 510 [1] lasti
+  502 to 502 -> 504 [2] lasti
+  504 to 508 -> 510 [1] lasti
+  510 to 518 -> 528 [3] lasti
+
+Disassembly of <code object _forget at 0x7f6af1ddbcc0, file "ghost.py", line 304>:
+304           0 RESUME                   0
+
+305           2 LOAD_CONST               1 ((None, 0, 0))
+              4 UNPACK_SEQUENCE          3
+              8 LOAD_FAST                0 (self)
+             10 STORE_ATTR               0 (hwnd)
+             20 LOAD_FAST                0 (self)
+             22 STORE_ATTR               1 (orig)
+             32 LOAD_FAST                0 (self)
+             34 STORE_ATTR               2 (added)
+
+306          44 LOAD_CONST               2 (False)
+             46 COPY                     1
+             48 LOAD_FAST                0 (self)
+             50 STORE_ATTR               3 (ghosted)
+             60 LOAD_FAST                0 (self)
+             62 STORE_ATTR               4 (hidden)
+
+307          72 LOAD_FAST                0 (self)
+             74 LOAD_ATTR               11 (NULL|self + _clear_marker)
+             94 CALL                     0
+            102 POP_TOP
+            104 RETURN_CONST             0 (None)
+
+Disassembly of <code object restore at 0x17936ee0, file "ghost.py", line 309>:
+309           0 RESUME                   0
+
+310           2 NOP
+
+311           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (cap_lock)
+             26 LOAD_ATTR                3 (NULL|self + acquire)
+             46 LOAD_CONST               1 (2)
+             48 KW_NAMES                 2 (('timeout',))
+             50 CALL                     1
+             58 STORE_FAST               1 (got)
+
+312          60 NOP
+
+313          62 LOAD_FAST                0 (self)
+             64 LOAD_ATTR                4 (_lock)
+             84 BEFORE_WITH
+             86 POP_TOP
+
+314          88 LOAD_FAST                0 (self)
+             90 LOAD_ATTR                6 (hwnd)
+            110 LOAD_FAST                0 (self)
+            112 LOAD_ATTR                8 (added)
+            132 STORE_FAST               3 (added)
+            134 STORE_FAST               2 (h)
+
+315         136 LOAD_FAST                0 (self)
+            138 LOAD_ATTR               10 (ghosted)
+            158 COPY                     1
+            160 POP_JUMP_IF_TRUE        11 (to 184)
+            162 POP_TOP
+            164 LOAD_GLOBAL             13 (NULL + bool)
+            174 LOAD_FAST                3 (added)
+            176 CALL                     1
+        >>  184 STORE_FAST               4 (was)
+
+316         186 LOAD_FAST                0 (self)
+            188 LOAD_ATTR               15 (NULL|self + _forget)
+            208 CALL                     0
+            216 POP_TOP
+
+317         218 LOAD_FAST                2 (h)
+            220 POP_JUMP_IF_FALSE      115 (to 452)
+            222 LOAD_FAST                4 (was)
+            224 POP_JUMP_IF_FALSE      113 (to 452)
+
+318         226 NOP
+
+319         228 LOAD_FAST                0 (self)
+            230 LOAD_ATTR               16 (api)
+            250 LOAD_ATTR               19 (NULL|self + is_window)
+            270 LOAD_FAST                2 (h)
+            272 CALL                     1
+            280 POP_JUMP_IF_FALSE       85 (to 452)
+
+320         282 LOAD_FAST                0 (self)
+            284 LOAD_ATTR               16 (api)
+            304 LOAD_ATTR               21 (NULL|self + set_alpha)
+            324 LOAD_FAST                2 (h)
+            326 LOAD_CONST               3 (255)
+            328 CALL                     2
+            336 POP_TOP
+
+321         338 LOAD_FAST                0 (self)
+            340 LOAD_ATTR               16 (api)
+            360 LOAD_ATTR               23 (NULL|self + set_exstyle)
+            380 LOAD_FAST                2 (h)
+            382 LOAD_FAST                0 (self)
+            384 LOAD_ATTR               16 (api)
+            404 LOAD_ATTR               25 (NULL|self + get_exstyle)
+            424 LOAD_FAST                2 (h)
+            426 CALL                     1
+            434 LOAD_FAST                3 (added)
+            436 UNARY_INVERT
+            438 BINARY_OP                1 (&)
+            442 CALL                     2
+            450 POP_TOP
+
+313     >>  452 LOAD_CONST               0 (None)
+            454 LOAD_CONST               0 (None)
+            456 LOAD_CONST               0 (None)
+            458 CALL                     2
+            466 POP_TOP
+
+325     >>  468 LOAD_FAST                1 (got)
+            470 POP_JUMP_IF_FALSE       27 (to 526)
+
+326         472 LOAD_FAST                0 (self)
+            474 LOAD_ATTR                0 (cap_lock)
+            494 LOAD_ATTR               29 (NULL|self + release)
+            514 CALL                     0
+            522 POP_TOP
+            524 RETURN_CONST             0 (None)
+
+325     >>  526 RETURN_CONST             0 (None)
+        >>  528 PUSH_EXC_INFO
+
+322         530 LOAD_GLOBAL             26 (Exception)
+            540 CHECK_EXC_MATCH
+            542 POP_JUMP_IF_FALSE        3 (to 550)
+            544 POP_TOP
+
+323         546 POP_EXCEPT
+            548 JUMP_BACKWARD           49 (to 452)
+
+322     >>  550 RERAISE                  0
+        >>  552 COPY                     3
+            554 POP_EXCEPT
+            556 RERAISE                  1
+
+313     >>  558 PUSH_EXC_INFO
+            560 WITH_EXCEPT_START
+            562 POP_JUMP_IF_TRUE         1 (to 566)
+            564 RERAISE                  2
+        >>  566 POP_TOP
+            568 POP_EXCEPT
+            570 POP_TOP
+            572 POP_TOP
+            574 JUMP_BACKWARD           54 (to 468)
+        >>  576 COPY                     3
+            578 POP_EXCEPT
+            580 RERAISE                  1
+        >>  582 PUSH_EXC_INFO
+
+325         584 LOAD_FAST                1 (got)
+            586 POP_JUMP_IF_FALSE       27 (to 642)
+
+326         588 LOAD_FAST                0 (self)
+            590 LOAD_ATTR                0 (cap_lock)
+            610 LOAD_ATTR               29 (NULL|self + release)
+            630 CALL                     0
+            638 POP_TOP
+            640 RERAISE                  0
+
+325     >>  642 RERAISE                  0
+        >>  644 COPY                     3
+            646 POP_EXCEPT
+            648 RERAISE                  1
+ExceptionTable:
+  62 to 84 -> 582 [0]
+  86 to 224 -> 558 [1] lasti
+  228 to 450 -> 528 [1]
+  452 to 466 -> 582 [0]
+  528 to 544 -> 552 [2] lasti
+  546 to 548 -> 558 [1] lasti
+  550 to 550 -> 552 [2] lasti
+  552 to 556 -> 558 [1] lasti
+  558 to 566 -> 576 [3] lasti
+  568 to 580 -> 582 [0]
+  582 to 642 -> 644 [1] lasti
+
+Disassembly of <code object disable at 0x7f6aed7f4230, file "ghost.py", line 328>:
+328           0 RESUME                   0
+
+329           2 NOP
+
+330           4 LOAD_FAST                1 (reason)
+              6 LOAD_FAST                0 (self)
+              8 STORE_ATTR               0 (disabled)
+
+331          18 LOAD_FAST                0 (self)
+             20 LOAD_ATTR                3 (NULL|self + restore)
+             40 CALL                     0
+             48 POP_TOP
+             50 RETURN_CONST             0 (None)
+
+Disassembly of <code object reset at 0x7f6af1f3e5b0, file "ghost.py", line 333>:
+333           0 RESUME                   0
+
+334           2 NOP
+
+335           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (_lock)
+             26 BEFORE_WITH
+             28 POP_TOP
+
+336          30 LOAD_CONST               1 (('', '', 0.0))
+             32 UNPACK_SEQUENCE          3
+             36 LOAD_FAST                0 (self)
+             38 STORE_ATTR               1 (disabled)
+             48 LOAD_FAST                0 (self)
+             50 STORE_ATTR               2 (failed)
+             60 LOAD_FAST                0 (self)
+             62 STORE_ATTR               3 (_retry_at)
+
+335          72 LOAD_CONST               0 (None)
+             74 LOAD_CONST               0 (None)
+             76 LOAD_CONST               0 (None)
+             78 CALL                     2
+             86 POP_TOP
+             88 RETURN_CONST             0 (None)
+        >>   90 PUSH_EXC_INFO
+             92 WITH_EXCEPT_START
+             94 POP_JUMP_IF_TRUE         1 (to 98)
+             96 RERAISE                  2
+        >>   98 POP_TOP
+            100 POP_EXCEPT
+            102 POP_TOP
+            104 POP_TOP
+            106 RETURN_CONST             0 (None)
+        >>  108 COPY                     3
+            110 POP_EXCEPT
+            112 RERAISE                  1
+ExceptionTable:
+  28 to 70 -> 90 [1] lasti
+  90 to 98 -> 108 [3] lasti
+
+Disassembly of <code object watch at 0x7f6af1de7290, file "ghost.py", line 339>:
+339           0 RESUME                   0
+
+340           2 NOP
+
+341           4 LOAD_FAST                1 (stop)
+              6 LOAD_ATTR                1 (NULL|self + wait)
+             26 LOAD_FAST                3 (interval)
+             28 CALL                     1
+             36 POP_JUMP_IF_TRUE        72 (to 182)
+
+342     >>   38 NOP
+
+343          40 PUSH_NULL
+             42 LOAD_FAST                2 (wanted)
+             44 CALL                     0
+             52 POP_JUMP_IF_FALSE       17 (to 88)
+
+344          54 LOAD_FAST                0 (self)
+             56 LOAD_ATTR                3 (NULL|self + ensure)
+             76 CALL                     0
+             84 POP_TOP
+             86 JUMP_FORWARD            28 (to 144)
+
+345     >>   88 LOAD_FAST                0 (self)
+             90 LOAD_ATTR                4 (hwnd)
+            110 POP_JUMP_IF_FALSE       16 (to 144)
+
+346         112 LOAD_FAST                0 (self)
+            114 LOAD_ATTR                7 (NULL|self + restore)
+            134 CALL                     0
+            142 POP_TOP
+
+341     >>  144 LOAD_FAST                1 (stop)
+            146 LOAD_ATTR                1 (NULL|self + wait)
+            166 LOAD_FAST                3 (interval)
+            168 CALL                     1
+            176 POP_JUMP_IF_TRUE         1 (to 180)
+            178 JUMP_BACKWARD           71 (to 38)
+        >>  180 RETURN_CONST             0 (None)
+        >>  182 RETURN_CONST             0 (None)
+        >>  184 PUSH_EXC_INFO
+
+347         186 LOAD_GLOBAL              8 (Exception)
+            196 CHECK_EXC_MATCH
+            198 POP_JUMP_IF_FALSE        3 (to 206)
+            200 POP_TOP
+
+348         202 POP_EXCEPT
+            204 JUMP_BACKWARD           31 (to 144)
+
+347     >>  206 RERAISE                  0
+        >>  208 COPY                     3
+            210 POP_EXCEPT
+            212 RERAISE                  1
+ExceptionTable:
+  40 to 142 -> 184 [0]
+  184 to 200 -> 208 [1] lasti
+  206 to 206 -> 208 [1] lasti
+
+Disassembly of <code object recover_at_launch at 0x7f6aed7e45d0, file "ghost.py", line 351>:
+351           0 RESUME                   0
+
+352           2 NOP
+
+353           4 NOP
+
+354           6 LOAD_GLOBAL              1 (NULL + GhostWindow)
+             16 LOAD_FAST                0 (marker_path)
+             18 KW_NAMES                 1 (('marker_path',))
+             20 CALL                     1
+             28 LOAD_ATTR                3 (NULL|self + recover)
+             48 CALL                     0
+             56 RETURN_VALUE
+        >>   58 PUSH_EXC_INFO
+
+355          60 LOAD_GLOBAL              4 (Exception)
+             70 CHECK_EXC_MATCH
+             72 POP_JUMP_IF_FALSE        3 (to 80)
+             74 POP_TOP
+
+356          76 POP_EXCEPT
+             78 RETURN_CONST             2 (False)
+
+355     >>   80 RERAISE                  0
+        >>   82 COPY                     3
+             84 POP_EXCEPT
+             86 RERAISE                  1
+ExceptionTable:
+  6 to 54 -> 58 [0]
+  58 to 74 -> 82 [1] lasti
+  80 to 80 -> 82 [1] lasti

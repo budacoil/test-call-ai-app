@@ -1,0 +1,13 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+  7           4 LOAD_CONST               0 ('2.0.0')
+              6 STORE_NAME               0 (__version__)
+
+ 10           8 LOAD_CONST               1 (True)
+             10 STORE_NAME               1 (LICENSE_REQUIRED)
+
+ 11          12 LOAD_CONST               2 ('ppkk12/fortnite-automatic-lap')
+             14 STORE_NAME               2 (GITHUB_REPO)
+             16 RETURN_CONST             3 (None)

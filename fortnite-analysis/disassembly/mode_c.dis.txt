@@ -1,0 +1,198 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+ 11           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (time)
+             10 STORE_NAME               0 (time)
+
+ 12          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               2 (('Callable', 'Dict', 'Optional'))
+             16 IMPORT_NAME              1 (typing)
+             18 IMPORT_FROM              2 (Callable)
+             20 STORE_NAME               2 (Callable)
+             22 IMPORT_FROM              3 (Dict)
+             24 STORE_NAME               3 (Dict)
+             26 IMPORT_FROM              4 (Optional)
+             28 STORE_NAME               4 (Optional)
+             30 POP_TOP
+
+ 14          32 LOAD_CONST               0 (0)
+             34 LOAD_CONST               1 (None)
+             36 IMPORT_NAME              5 (numpy)
+             38 STORE_NAME               6 (np)
+
+ 16          40 LOAD_CONST               0 (0)
+             42 LOAD_CONST               3 (('State', 'StateMachine', 'StepResult'))
+             44 IMPORT_NAME              7 (state_machine)
+             46 IMPORT_FROM              8 (State)
+             48 STORE_NAME               8 (State)
+             50 IMPORT_FROM              9 (StateMachine)
+             52 STORE_NAME               9 (StateMachine)
+             54 IMPORT_FROM             10 (StepResult)
+             56 STORE_NAME              10 (StepResult)
+             58 POP_TOP
+
+ 17          60 LOAD_CONST               0 (0)
+             62 LOAD_CONST               4 (('ModeB',))
+             64 IMPORT_NAME             11 (mode_b)
+             66 IMPORT_FROM             12 (ModeB)
+             68 STORE_NAME              12 (ModeB)
+             70 POP_TOP
+
+ 20          72 PUSH_NULL
+             74 LOAD_BUILD_CLASS
+             76 LOAD_CONST               5 (<code object ModeC at 0x7f6af1f83600, file "mode_c.py", line 20>)
+             78 MAKE_FUNCTION            0
+             80 LOAD_CONST               6 ('ModeC')
+             82 LOAD_NAME               12 (ModeB)
+             84 CALL                     3
+             92 STORE_NAME              13 (ModeC)
+             94 RETURN_CONST             1 (None)
+
+Disassembly of <code object ModeC at 0x7f6af1f83600, file "mode_c.py", line 20>:
+              0 MAKE_CELL                0 (__class__)
+
+ 20           2 RESUME                   0
+              4 LOAD_NAME                0 (__name__)
+              6 STORE_NAME               1 (__module__)
+              8 LOAD_CONST               0 ('ModeC')
+             10 STORE_NAME               2 (__qualname__)
+
+ 27          12 LOAD_NAME                3 (time)
+             14 LOAD_ATTR                8 (monotonic)
+
+ 21          34 BUILD_TUPLE              1
+             36 LOAD_CONST               1 ('templates')
+
+ 24          38 LOAD_NAME                5 (Dict)
+             40 LOAD_NAME                6 (str)
+             42 LOAD_NAME                7 (Optional)
+             44 LOAD_NAME                8 (np)
+             46 LOAD_ATTR               18 (ndarray)
+             66 BINARY_SUBSCR
+             70 BUILD_TUPLE              2
+             72 BINARY_SUBSCR
+
+ 21          76 LOAD_CONST               2 ('mode_a')
+
+ 26          78 LOAD_NAME               10 (StateMachine)
+
+ 21          80 LOAD_CONST               3 ('clock')
+
+ 27          82 LOAD_NAME               11 (Callable)
+             84 BUILD_LIST               0
+             86 LOAD_NAME               12 (float)
+             88 BUILD_TUPLE              2
+             90 BINARY_SUBSCR
+
+ 21          94 BUILD_TUPLE              6
+             96 LOAD_CLOSURE             0 (__class__)
+             98 BUILD_TUPLE              1
+            100 LOAD_CONST               4 (<code object __init__ at 0x7f6aed7f6230, file "mode_c.py", line 21>)
+            102 MAKE_FUNCTION           13 (defaults, annotations, closure)
+            104 STORE_NAME              13 (__init__)
+
+ 32         106 LOAD_CONST               5 ('return')
+            108 LOAD_NAME               12 (float)
+            110 BUILD_TUPLE              2
+            112 LOAD_CONST               6 (<code object _wait_s at 0x7f6aed17ed30, file "mode_c.py", line 32>)
+            114 MAKE_FUNCTION            4 (annotations)
+            116 STORE_NAME              14 (_wait_s)
+
+ 35         118 LOAD_CONST               5 ('return')
+            120 LOAD_NAME               15 (StepResult)
+            122 BUILD_TUPLE              2
+            124 LOAD_CLOSURE             0 (__class__)
+            126 BUILD_TUPLE              1
+            128 LOAD_CONST               7 (<code object _countdown at 0x7f6af1f8e640, file "mode_c.py", line 35>)
+            130 MAKE_FUNCTION           12 (annotations, closure)
+            132 STORE_NAME              16 (_countdown)
+            134 LOAD_CLOSURE             0 (__class__)
+            136 COPY                     1
+            138 STORE_NAME              17 (__classcell__)
+            140 RETURN_VALUE
+
+Disassembly of <code object __init__ at 0x7f6aed7f6230, file "mode_c.py", line 21>:
+              0 COPY_FREE_VARS           1
+
+ 21           2 RESUME                   0
+
+ 29           4 LOAD_GLOBAL              0 (super)
+             14 LOAD_DEREF               6 (__class__)
+             16 LOAD_FAST                0 (self)
+             18 LOAD_SUPER_ATTR          5 (NULL|self + __init__)
+             22 LOAD_FAST                1 (settings)
+             24 LOAD_FAST                2 (templates)
+             26 LOAD_FAST                3 (controller)
+             28 LOAD_FAST                5 (clock)
+             30 CALL                     4
+             38 POP_TOP
+
+ 30          40 LOAD_FAST                4 (mode_a)
+             42 LOAD_FAST                0 (self)
+             44 STORE_ATTR               2 (_mode_a)
+             54 RETURN_CONST             0 (None)
+
+Disassembly of <code object _wait_s at 0x7f6aed17ed30, file "mode_c.py", line 32>:
+ 32           0 RESUME                   0
+
+ 33           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (s)
+             24 LOAD_ATTR                2 (wait_c)
+             44 RETURN_VALUE
+
+Disassembly of <code object _countdown at 0x7f6af1f8e640, file "mode_c.py", line 35>:
+              0 COPY_FREE_VARS           1
+
+ 35           2 RESUME                   0
+
+ 36           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + _find_one)
+             26 LOAD_CONST               1 ('item_found')
+             28 LOAD_FAST                1 (frame)
+             30 CALL                     2
+             38 UNPACK_SEQUENCE          2
+             42 STORE_FAST               5 (m)
+             44 STORE_FAST               6 (score)
+
+ 37          46 LOAD_FAST                5 (m)
+             48 POP_JUMP_IF_FALSE       89 (to 228)
+
+ 38          50 LOAD_FAST                0 (self)
+             52 LOAD_ATTR                3 (NULL|self + log)
+             72 LOAD_CONST               2 ('item found: switching to mode A')
+             74 CALL                     1
+             82 POP_TOP
+
+ 39          84 LOAD_GLOBAL              4 (State)
+             94 LOAD_ATTR                6 (IN_MATCH)
+            114 LOAD_FAST                0 (self)
+            116 LOAD_ATTR                8 (_mode_a)
+            136 STORE_ATTR               5 (state)
+
+ 40         146 LOAD_CONST               3 ('A')
+            148 LOAD_FAST                0 (self)
+            150 LOAD_ATTR               12 (s)
+            170 STORE_ATTR               7 (mode)
+
+ 41         180 LOAD_GLOBAL             17 (NULL + StepResult)
+            190 LOAD_FAST                0 (self)
+            192 LOAD_ATTR               10 (state)
+            212 LOAD_FAST                6 (score)
+            214 LOAD_CONST               4 (False)
+            216 LOAD_CONST               2 ('item found: switching to mode A')
+            218 CALL                     4
+            226 RETURN_VALUE
+
+ 42     >>  228 LOAD_GLOBAL             18 (super)
+            238 LOAD_DEREF               7 (__class__)
+            240 LOAD_FAST                0 (self)
+            242 LOAD_SUPER_ATTR         41 (NULL|self + _countdown)
+            246 LOAD_FAST                1 (frame)
+            248 LOAD_FAST                2 (now)
+            250 LOAD_FAST                3 (ox)
+            252 LOAD_FAST                4 (oy)
+            254 CALL                     4
+            262 RETURN_VALUE

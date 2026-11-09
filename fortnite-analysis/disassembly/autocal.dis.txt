@@ -1,0 +1,876 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+ 10           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (time)
+             10 STORE_NAME               0 (time)
+
+ 11          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               2 (('replace',))
+             16 IMPORT_NAME              1 (dataclasses)
+             18 IMPORT_FROM              2 (replace)
+             20 STORE_NAME               2 (replace)
+             22 POP_TOP
+
+ 12          24 LOAD_CONST               0 (0)
+             26 LOAD_CONST               3 (('Callable', 'Dict', 'Optional', 'Tuple'))
+             28 IMPORT_NAME              3 (typing)
+             30 IMPORT_FROM              4 (Callable)
+             32 STORE_NAME               4 (Callable)
+             34 IMPORT_FROM              5 (Dict)
+             36 STORE_NAME               5 (Dict)
+             38 IMPORT_FROM              6 (Optional)
+             40 STORE_NAME               6 (Optional)
+             42 IMPORT_FROM              7 (Tuple)
+             44 STORE_NAME               7 (Tuple)
+             46 POP_TOP
+
+ 14          48 LOAD_CONST               0 (0)
+             50 LOAD_CONST               4 (('COLOUR_CHECKED', 'Plate', 'aim_point', 'colour_matches', 'find_plate', 'find_template'))
+             52 IMPORT_NAME              8 (vision)
+             54 IMPORT_FROM              9 (COLOUR_CHECKED)
+             56 STORE_NAME               9 (COLOUR_CHECKED)
+             58 IMPORT_FROM             10 (Plate)
+             60 STORE_NAME              10 (Plate)
+             62 IMPORT_FROM             11 (aim_point)
+             64 STORE_NAME              11 (aim_point)
+             66 IMPORT_FROM             12 (colour_matches)
+             68 STORE_NAME              12 (colour_matches)
+             70 IMPORT_FROM             13 (find_plate)
+             72 STORE_NAME              13 (find_plate)
+             74 IMPORT_FROM             14 (find_template)
+             76 STORE_NAME              14 (find_template)
+             78 POP_TOP
+
+ 16          80 LOAD_CONST               5 (30.0)
+             82 STORE_NAME              15 (STUCK_S)
+
+ 17          84 LOAD_CONST               6 (0.1)
+             86 STORE_NAME              16 (BAND)
+
+ 18          88 LOAD_CONST               7 (0.68)
+             90 STORE_NAME              17 (MIN_SCORE)
+
+ 19          92 LOAD_CONST               8 (14)
+             94 STORE_NAME              18 (SAME_PX)
+
+ 20          96 LOAD_CONST               9 (3)
+             98 STORE_NAME              19 (NEED_SEEN)
+
+ 21         100 LOAD_CONST              10 (3.0)
+            102 STORE_NAME              20 (JUDGE_AFTER_S)
+
+ 22         104 LOAD_CONST              11 (12.0)
+            106 STORE_NAME              21 (TRIAL_WINDOW_S)
+
+ 23         108 LOAD_CONST              12 (300.0)
+            110 STORE_NAME              22 (COOLDOWN_S)
+
+ 26         112 PUSH_NULL
+            114 LOAD_BUILD_CLASS
+            116 LOAD_CONST              13 (<code object AutoCalibrator at 0x7f6af20c32f0, file "autocal.py", line 26>)
+            118 MAKE_FUNCTION            0
+            120 LOAD_CONST              14 ('AutoCalibrator')
+            122 CALL                     2
+            130 STORE_NAME              23 (AutoCalibrator)
+
+120         132 LOAD_CONST              15 ('thr')
+            134 LOAD_NAME               24 (float)
+            136 LOAD_CONST              16 ('pos')
+            138 LOAD_NAME                7 (Tuple)
+            140 LOAD_NAME               25 (int)
+            142 LOAD_NAME               25 (int)
+            144 BUILD_TUPLE              2
+            146 BINARY_SUBSCR
+            150 LOAD_CONST              17 ('return')
+            152 LOAD_NAME               26 (bool)
+            154 BUILD_TUPLE              6
+            156 LOAD_CONST              18 (<code object still_visible at 0x7f6aed7c0210, file "autocal.py", line 120>)
+            158 MAKE_FUNCTION            4 (annotations)
+            160 STORE_NAME              27 (still_visible)
+            162 RETURN_CONST             1 (None)
+
+Disassembly of <code object AutoCalibrator at 0x7f6af20c32f0, file "autocal.py", line 26>:
+ 26           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('AutoCalibrator')
+              8 STORE_NAME               2 (__qualname__)
+
+ 27          10 LOAD_NAME                3 (time)
+             12 LOAD_ATTR                8 (monotonic)
+             32 LOAD_CONST               1 (None)
+             34 BUILD_TUPLE              2
+             36 LOAD_CONST               2 ('clock')
+             38 LOAD_NAME                5 (Callable)
+             40 BUILD_LIST               0
+             42 LOAD_NAME                6 (float)
+             44 BUILD_TUPLE              2
+             46 BINARY_SUBSCR
+             50 LOAD_CONST               3 ('log')
+             52 LOAD_NAME                7 (Optional)
+             54 LOAD_NAME                5 (Callable)
+             56 LOAD_NAME                8 (str)
+             58 BUILD_LIST               1
+             60 LOAD_CONST               1 (None)
+             62 BUILD_TUPLE              2
+             64 BINARY_SUBSCR
+             68 BINARY_SUBSCR
+             72 BUILD_TUPLE              4
+             74 LOAD_CONST               4 (<code object __init__ at 0x7f6af20479f0, file "autocal.py", line 27>)
+             76 MAKE_FUNCTION            5 (defaults, annotations)
+             78 STORE_NAME               9 (__init__)
+
+ 39          80 LOAD_CONST               5 ('key')
+             82 LOAD_NAME                8 (str)
+             84 LOAD_CONST               6 ('base')
+             86 LOAD_NAME                6 (float)
+             88 LOAD_CONST               7 ('return')
+             90 LOAD_NAME                6 (float)
+             92 BUILD_TUPLE              6
+             94 LOAD_CONST               8 (<code object threshold_for at 0x7f6af1dd5c50, file "autocal.py", line 39>)
+             96 MAKE_FUNCTION            4 (annotations)
+             98 STORE_NAME              10 (threshold_for)
+
+ 43         100 LOAD_CONST               5 ('key')
+            102 LOAD_NAME                8 (str)
+            104 LOAD_CONST               9 ('plate')
+            106 LOAD_NAME               11 (Plate)
+            108 LOAD_CONST               7 ('return')
+            110 LOAD_NAME               11 (Plate)
+            112 BUILD_TUPLE              6
+            114 LOAD_CONST              10 (<code object plate at 0x7f6af1f3efb0, file "autocal.py", line 43>)
+            116 MAKE_FUNCTION            4 (annotations)
+            118 STORE_NAME              12 (plate)
+
+ 48         120 LOAD_CONST              20 (('return', None))
+            122 LOAD_CONST              11 (<code object check at 0x7f6af1dda040, file "autocal.py", line 48>)
+            124 MAKE_FUNCTION            4 (annotations)
+            126 STORE_NAME              13 (check)
+
+ 54         128 LOAD_CONST              12 ('visible')
+            130 LOAD_NAME                5 (Callable)
+            132 LOAD_NAME                8 (str)
+            134 LOAD_NAME                6 (float)
+            136 LOAD_NAME               14 (Tuple)
+            138 LOAD_NAME               15 (int)
+            140 LOAD_NAME               15 (int)
+            142 BUILD_TUPLE              2
+            144 BINARY_SUBSCR
+            148 BUILD_LIST               3
+            150 LOAD_NAME               16 (bool)
+            152 BUILD_TUPLE              2
+            154 BINARY_SUBSCR
+            158 LOAD_CONST               7 ('return')
+            160 LOAD_NAME                7 (Optional)
+            162 LOAD_NAME               14 (Tuple)
+            164 LOAD_NAME                8 (str)
+            166 LOAD_NAME               17 (dict)
+            168 BUILD_TUPLE              2
+            170 BINARY_SUBSCR
+            174 BINARY_SUBSCR
+            178 BUILD_TUPLE              4
+            180 LOAD_CONST              13 (<code object judge at 0x17a5f1d0, file "autocal.py", line 54>)
+            182 MAKE_FUNCTION            4 (annotations)
+            184 STORE_NAME              18 (judge)
+
+ 83         186 NOP
+
+ 82         188 LOAD_CONST              21 ((None,))
+            190 LOAD_CONST               5 ('key')
+            192 LOAD_NAME                8 (str)
+            194 LOAD_CONST              14 ('score')
+            196 LOAD_NAME                6 (float)
+            198 LOAD_CONST               6 ('base')
+            200 LOAD_NAME                6 (float)
+            202 LOAD_CONST              15 ('ox')
+            204 LOAD_NAME               15 (int)
+            206 LOAD_CONST              16 ('oy')
+            208 LOAD_NAME               15 (int)
+            210 LOAD_CONST              17 ('click')
+
+ 83         212 LOAD_NAME                5 (Callable)
+            214 LOAD_NAME               15 (int)
+            216 LOAD_NAME               15 (int)
+            218 BUILD_LIST               2
+            220 LOAD_NAME               16 (bool)
+            222 BUILD_TUPLE              2
+            224 BINARY_SUBSCR
+
+ 82         228 LOAD_CONST              18 ('meta')
+
+ 83         230 LOAD_NAME                7 (Optional)
+            232 LOAD_NAME               17 (dict)
+            234 BINARY_SUBSCR
+
+ 82         238 LOAD_CONST               7 ('return')
+
+ 83         240 LOAD_NAME               16 (bool)
+
+ 82         242 BUILD_TUPLE             16
+            244 LOAD_CONST              19 (<code object attempt at 0x17a608f0, file "autocal.py", line 82>)
+            246 MAKE_FUNCTION            5 (defaults, annotations)
+            248 STORE_NAME              19 (attempt)
+            250 RETURN_CONST             1 (None)
+
+Disassembly of <code object __init__ at 0x7f6af20479f0, file "autocal.py", line 27>:
+ 27           0 RESUME                   0
+
+ 28           2 LOAD_FAST                1 (settings)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (s)
+
+ 29          16 LOAD_FAST                2 (clock)
+             18 LOAD_FAST                0 (self)
+             20 STORE_ATTR               1 (_clock)
+
+ 30          30 LOAD_FAST                3 (log)
+             32 COPY                     1
+             34 POP_JUMP_IF_TRUE         3 (to 42)
+             36 POP_TOP
+             38 LOAD_CONST               1 (<code object <lambda> at 0x7f6aed712db0, file "autocal.py", line 30>)
+             40 MAKE_FUNCTION            0
+        >>   42 LOAD_FAST                0 (self)
+             44 STORE_ATTR               2 (log)
+
+ 31          54 BUILD_MAP                0
+             56 LOAD_FAST                0 (self)
+             58 STORE_ATTR               3 (adapted)
+
+ 32          68 LOAD_CONST               0 (None)
+             70 LOAD_FAST                0 (self)
+             72 STORE_ATTR               4 (_state)
+
+ 33          82 PUSH_NULL
+             84 LOAD_FAST                2 (clock)
+             86 CALL                     0
+             94 LOAD_FAST                0 (self)
+             96 STORE_ATTR               5 (_since)
+
+ 34         106 LOAD_CONST               2 (('', (0, 0), 0))
+            108 LOAD_FAST                0 (self)
+            110 STORE_ATTR               6 (_seen)
+
+ 35         120 LOAD_CONST               0 (None)
+            122 LOAD_FAST                0 (self)
+            124 STORE_ATTR               7 (trial)
+
+ 36         134 BUILD_MAP                0
+            136 LOAD_FAST                0 (self)
+            138 STORE_ATTR               8 (_cool)
+            148 RETURN_CONST             0 (None)
+
+Disassembly of <code object <lambda> at 0x7f6aed712db0, file "autocal.py", line 30>:
+ 30           0 RESUME                   0
+              2 RETURN_CONST             0 (None)
+
+Disassembly of <code object threshold_for at 0x7f6af1dd5c50, file "autocal.py", line 39>:
+ 39           0 RESUME                   0
+
+ 40           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (adapted)
+             24 LOAD_ATTR                3 (NULL|self + get)
+             44 LOAD_FAST                1 (key)
+             46 CALL                     1
+             54 STORE_FAST               3 (v)
+
+ 41          56 LOAD_FAST                3 (v)
+             58 POP_JUMP_IF_NONE        12 (to 84)
+             60 LOAD_GLOBAL              5 (NULL + min)
+             70 LOAD_FAST                2 (base)
+             72 LOAD_FAST                3 (v)
+             74 CALL                     2
+             82 RETURN_VALUE
+        >>   84 LOAD_FAST                2 (base)
+             86 RETURN_VALUE
+
+Disassembly of <code object plate at 0x7f6af1f3efb0, file "autocal.py", line 43>:
+ 43           0 RESUME                   0
+
+ 44           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (adapted)
+             24 LOAD_ATTR                3 (NULL|self + get)
+             44 LOAD_FAST                1 (key)
+             46 CALL                     1
+             54 STORE_FAST               3 (v)
+
+ 45          56 LOAD_FAST                3 (v)
+             58 POP_JUMP_IF_NONE        28 (to 116)
+             60 LOAD_FAST                3 (v)
+             62 LOAD_FAST                2 (plate)
+             64 LOAD_ATTR                4 (threshold)
+             84 COMPARE_OP               2 (<)
+             88 POP_JUMP_IF_FALSE       13 (to 116)
+             90 LOAD_GLOBAL              7 (NULL + replace)
+            100 LOAD_FAST                2 (plate)
+            102 LOAD_FAST                3 (v)
+            104 KW_NAMES                 1 (('threshold',))
+            106 CALL                     2
+            114 RETURN_VALUE
+        >>  116 LOAD_FAST                2 (plate)
+            118 RETURN_VALUE
+
+Disassembly of <code object check at 0x7f6af1dda040, file "autocal.py", line 48>:
+ 48           0 RESUME                   0
+
+ 49           2 NOP
+
+ 50           4 LOAD_FAST                1 (state)
+              6 LOAD_FAST                0 (self)
+              8 LOAD_ATTR                0 (_state)
+             28 COMPARE_OP              55 (!=)
+             32 POP_JUMP_IF_FALSE       37 (to 108)
+
+ 51          34 LOAD_FAST                1 (state)
+             36 LOAD_FAST                0 (self)
+             38 LOAD_ATTR                3 (NULL|self + _clock)
+             58 CALL                     0
+             66 SWAP                     2
+             68 LOAD_FAST                0 (self)
+             70 STORE_ATTR               0 (_state)
+             80 LOAD_FAST                0 (self)
+             82 STORE_ATTR               2 (_since)
+
+ 52          92 LOAD_CONST               1 (('', (0, 0), 0))
+             94 LOAD_FAST                0 (self)
+             96 STORE_ATTR               3 (_seen)
+            106 RETURN_CONST             0 (None)
+
+ 50     >>  108 RETURN_CONST             0 (None)
+
+Disassembly of <code object judge at 0x17a5f1d0, file "autocal.py", line 54>:
+ 54           0 RESUME                   0
+
+ 55           2 NOP
+
+ 59           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (trial)
+             26 STORE_FAST               2 (t)
+
+ 60          28 LOAD_FAST                2 (t)
+             30 POP_JUMP_IF_NOT_NONE     1 (to 34)
+
+ 61          32 RETURN_CONST             0 (None)
+
+ 62     >>   34 NOP
+
+ 63          36 LOAD_FAST                0 (self)
+             38 LOAD_ATTR                3 (NULL|self + _clock)
+             58 CALL                     0
+             66 STORE_FAST               3 (now)
+
+ 64          68 LOAD_FAST                3 (now)
+             70 LOAD_FAST                2 (t)
+             72 LOAD_CONST               1 ('t')
+             74 BINARY_SUBSCR
+             78 BINARY_OP               10 (-)
+             82 STORE_FAST               4 (dt)
+
+ 65          84 LOAD_FAST                4 (dt)
+             86 LOAD_GLOBAL              4 (JUDGE_AFTER_S)
+             96 COMPARE_OP               2 (<)
+            100 POP_JUMP_IF_FALSE        1 (to 104)
+
+ 66         102 RETURN_CONST             0 (None)
+
+ 67     >>  104 PUSH_NULL
+            106 LOAD_FAST                1 (visible)
+            108 LOAD_FAST                2 (t)
+            110 LOAD_CONST               2 ('key')
+            112 BINARY_SUBSCR
+            116 LOAD_FAST                2 (t)
+            118 LOAD_CONST               3 ('thr')
+            120 BINARY_SUBSCR
+            124 LOAD_FAST                2 (t)
+            126 LOAD_CONST               4 ('pos')
+            128 BINARY_SUBSCR
+            132 CALL                     3
+            140 POP_JUMP_IF_TRUE        62 (to 266)
+
+ 68         142 LOAD_FAST                2 (t)
+            144 LOAD_CONST               3 ('thr')
+            146 BINARY_SUBSCR
+            150 LOAD_FAST                0 (self)
+            152 LOAD_ATTR                6 (adapted)
+            172 LOAD_FAST                2 (t)
+            174 LOAD_CONST               2 ('key')
+            176 BINARY_SUBSCR
+            180 STORE_SUBSCR
+
+ 69         184 LOAD_CONST               0 (None)
+            186 LOAD_FAST                0 (self)
+            188 STORE_ATTR               0 (trial)
+
+ 70         198 LOAD_FAST                0 (self)
+            200 LOAD_ATTR                9 (NULL|self + log)
+            220 LOAD_CONST               5 ('[auto-calibrate] ')
+            222 LOAD_FAST                2 (t)
+            224 LOAD_CONST               2 ('key')
+            226 BINARY_SUBSCR
+            230 FORMAT_VALUE             0
+            232 LOAD_CONST               6 (' threshold adapted to ')
+            234 LOAD_FAST                2 (t)
+            236 LOAD_CONST               3 ('thr')
+            238 BINARY_SUBSCR
+            242 LOAD_CONST               7 ('.2f')
+            244 FORMAT_VALUE             4 (with format)
+            246 BUILD_STRING             4
+            248 CALL                     1
+            256 POP_TOP
+
+ 71         258 LOAD_CONST               8 ('ok')
+            260 LOAD_FAST                2 (t)
+            262 BUILD_TUPLE              2
+            264 RETURN_VALUE
+
+ 72     >>  266 LOAD_FAST                4 (dt)
+            268 LOAD_GLOBAL             10 (TRIAL_WINDOW_S)
+            278 COMPARE_OP              92 (>=)
+            282 POP_JUMP_IF_FALSE       79 (to 442)
+
+ 73         284 LOAD_FAST                3 (now)
+            286 LOAD_GLOBAL             12 (COOLDOWN_S)
+            296 BINARY_OP                0 (+)
+            300 LOAD_FAST                0 (self)
+            302 LOAD_ATTR               14 (_cool)
+            322 LOAD_FAST                2 (t)
+            324 LOAD_CONST               2 ('key')
+            326 BINARY_SUBSCR
+            330 STORE_SUBSCR
+
+ 74         334 LOAD_CONST               0 (None)
+            336 LOAD_FAST                0 (self)
+            338 STORE_ATTR               0 (trial)
+
+ 75         348 LOAD_FAST                0 (self)
+            350 LOAD_ATTR                9 (NULL|self + log)
+            370 LOAD_CONST               5 ('[auto-calibrate] ')
+            372 LOAD_FAST                2 (t)
+            374 LOAD_CONST               2 ('key')
+            376 BINARY_SUBSCR
+            380 FORMAT_VALUE             0
+            382 LOAD_CONST               9 (' test click did not advance; paused for ')
+            384 LOAD_GLOBAL             17 (NULL + int)
+            394 LOAD_GLOBAL             12 (COOLDOWN_S)
+            404 LOAD_CONST              10 (60)
+            406 BINARY_OP                2 (//)
+            410 CALL                     1
+            418 FORMAT_VALUE             0
+            420 LOAD_CONST              11 (' min')
+            422 BUILD_STRING             5
+            424 CALL                     1
+            432 POP_TOP
+
+ 76         434 LOAD_CONST              12 ('fail')
+            436 LOAD_FAST                2 (t)
+            438 BUILD_TUPLE              2
+            440 RETURN_VALUE
+
+ 72     >>  442 NOP
+
+ 79         444 RETURN_CONST             0 (None)
+        >>  446 PUSH_EXC_INFO
+
+ 77         448 LOAD_GLOBAL             18 (Exception)
+            458 CHECK_EXC_MATCH
+            460 POP_JUMP_IF_FALSE       10 (to 482)
+            462 POP_TOP
+
+ 78         464 LOAD_CONST               0 (None)
+            466 LOAD_FAST                0 (self)
+            468 STORE_ATTR               0 (trial)
+            478 POP_EXCEPT
+
+ 79         480 RETURN_CONST             0 (None)
+
+ 77     >>  482 RERAISE                  0
+        >>  484 COPY                     3
+            486 POP_EXCEPT
+            488 RERAISE                  1
+ExceptionTable:
+  36 to 100 -> 446 [0]
+  104 to 262 -> 446 [0]
+  266 to 438 -> 446 [0]
+  446 to 476 -> 484 [1] lasti
+  482 to 482 -> 484 [1] lasti
+
+Disassembly of <code object attempt at 0x17a608f0, file "autocal.py", line 82>:
+ 82           0 RESUME                   0
+
+ 84           2 NOP
+
+ 86           4 NOP
+
+ 87           6 LOAD_GLOBAL              1 (NULL + getattr)
+             16 LOAD_FAST                0 (self)
+             18 LOAD_ATTR                2 (s)
+             38 LOAD_CONST               1 ('auto_calibrate')
+             40 LOAD_CONST               2 (False)
+             42 CALL                     3
+             50 POP_JUMP_IF_FALSE       14 (to 80)
+             52 LOAD_FAST                4 (tpl)
+             54 POP_JUMP_IF_NONE        12 (to 80)
+             56 LOAD_FAST                0 (self)
+             58 LOAD_ATTR                4 (trial)
+             78 POP_JUMP_IF_NONE         1 (to 82)
+
+ 88     >>   80 RETURN_CONST             2 (False)
+
+ 89     >>   82 LOAD_FAST                0 (self)
+             84 LOAD_ATTR                7 (NULL|self + _clock)
+            104 CALL                     0
+            112 STORE_FAST              12 (now)
+
+ 90         114 LOAD_FAST               12 (now)
+            116 LOAD_FAST                0 (self)
+            118 LOAD_ATTR                8 (_cool)
+            138 LOAD_ATTR               11 (NULL|self + get)
+            158 LOAD_FAST                3 (key)
+            160 LOAD_CONST               3 (0.0)
+            162 CALL                     2
+            170 COMPARE_OP               2 (<)
+            174 POP_JUMP_IF_TRUE        22 (to 220)
+            176 LOAD_FAST               12 (now)
+            178 LOAD_FAST                0 (self)
+            180 LOAD_ATTR               12 (_since)
+            200 BINARY_OP               10 (-)
+            204 LOAD_GLOBAL             14 (STUCK_S)
+            214 COMPARE_OP               2 (<)
+            218 POP_JUMP_IF_FALSE        1 (to 222)
+
+ 91     >>  220 RETURN_CONST             2 (False)
+
+ 92     >>  222 LOAD_GLOBAL             17 (NULL + max)
+            232 LOAD_GLOBAL             18 (MIN_SCORE)
+            242 LOAD_FAST                6 (base)
+            244 LOAD_GLOBAL             20 (BAND)
+            254 BINARY_OP               10 (-)
+            258 CALL                     2
+            266 STORE_FAST              13 (lo)
+
+ 93         268 LOAD_FAST               13 (lo)
+            270 LOAD_FAST                5 (score)
+            272 SWAP                     2
+            274 COPY                     2
+            276 COMPARE_OP              26 (<=)
+            280 POP_JUMP_IF_FALSE        5 (to 292)
+            282 LOAD_FAST                6 (base)
+            284 COMPARE_OP               2 (<)
+            288 POP_JUMP_IF_TRUE        10 (to 310)
+            290 JUMP_FORWARD             1 (to 294)
+        >>  292 POP_TOP
+
+ 94     >>  294 LOAD_CONST               4 (('', (0, 0), 0))
+            296 LOAD_FAST                0 (self)
+            298 STORE_ATTR              11 (_seen)
+
+ 95         308 RETURN_CONST             2 (False)
+
+ 96     >>  310 LOAD_GLOBAL             17 (NULL + max)
+            320 LOAD_GLOBAL             18 (MIN_SCORE)
+            330 LOAD_GLOBAL             25 (NULL + round)
+            340 LOAD_FAST                5 (score)
+            342 LOAD_CONST               5 (0.02)
+            344 BINARY_OP               10 (-)
+            348 LOAD_CONST               6 (2)
+            350 CALL                     2
+            358 CALL                     2
+            366 STORE_FAST              14 (thr)
+
+ 97         368 LOAD_GLOBAL             27 (NULL + isinstance)
+            378 LOAD_FAST                4 (tpl)
+            380 LOAD_GLOBAL             28 (Plate)
+            390 CALL                     2
+            398 POP_JUMP_IF_FALSE       28 (to 456)
+
+ 98         400 LOAD_GLOBAL             31 (NULL + find_plate)
+            410 LOAD_FAST                2 (frame)
+            412 LOAD_GLOBAL             33 (NULL + replace)
+            422 LOAD_FAST                4 (tpl)
+            424 LOAD_FAST               14 (thr)
+            426 KW_NAMES                 7 (('threshold',))
+            428 CALL                     2
+            436 LOAD_FAST               10 (scales)
+            438 CALL                     3
+            446 UNPACK_SEQUENCE          2
+            450 STORE_FAST              15 (m)
+            452 STORE_FAST              16 (_)
+            454 JUMP_FORWARD            17 (to 490)
+
+100     >>  456 LOAD_GLOBAL             35 (NULL + find_template)
+            466 LOAD_FAST                2 (frame)
+            468 LOAD_FAST                4 (tpl)
+            470 LOAD_FAST               14 (thr)
+            472 LOAD_FAST               10 (scales)
+            474 CALL                     4
+            482 UNPACK_SEQUENCE          2
+            486 STORE_FAST              15 (m)
+            488 STORE_FAST              16 (_)
+
+101     >>  490 LOAD_FAST               15 (m)
+            492 POP_JUMP_IF_FALSE       21 (to 536)
+            494 LOAD_FAST                3 (key)
+            496 LOAD_GLOBAL             36 (COLOUR_CHECKED)
+            506 CONTAINS_OP              0
+            508 POP_JUMP_IF_FALSE       14 (to 538)
+            510 LOAD_GLOBAL             39 (NULL + colour_matches)
+            520 LOAD_FAST                2 (frame)
+            522 LOAD_FAST                4 (tpl)
+            524 LOAD_FAST               15 (m)
+            526 CALL                     3
+            534 POP_JUMP_IF_TRUE         1 (to 538)
+
+102     >>  536 RETURN_CONST             2 (False)
+
+103     >>  538 LOAD_GLOBAL             41 (NULL + int)
+            548 LOAD_FAST               15 (m)
+            550 LOAD_CONST               8 (0)
+            552 BINARY_SUBSCR
+            556 CALL                     1
+            564 LOAD_GLOBAL             41 (NULL + int)
+            574 LOAD_FAST               15 (m)
+            576 LOAD_CONST               9 (1)
+            578 BINARY_SUBSCR
+            582 CALL                     1
+            590 BUILD_TUPLE              2
+            592 STORE_FAST              17 (pos)
+
+104         594 LOAD_FAST                0 (self)
+            596 LOAD_ATTR               22 (_seen)
+            616 UNPACK_SEQUENCE          3
+            620 STORE_FAST              18 (k)
+            622 STORE_FAST              19 (p)
+            624 STORE_FAST              20 (n)
+
+105         626 LOAD_FAST               18 (k)
+            628 LOAD_FAST                3 (key)
+            630 COMPARE_OP              40 (==)
+            634 COPY                     1
+            636 POP_JUMP_IF_FALSE       56 (to 750)
+            638 POP_TOP
+            640 LOAD_GLOBAL             43 (NULL + abs)
+            650 LOAD_FAST               19 (p)
+            652 LOAD_CONST               8 (0)
+            654 BINARY_SUBSCR
+            658 LOAD_FAST               17 (pos)
+            660 LOAD_CONST               8 (0)
+            662 BINARY_SUBSCR
+            666 BINARY_OP               10 (-)
+            670 CALL                     1
+            678 LOAD_GLOBAL             44 (SAME_PX)
+            688 COMPARE_OP              26 (<=)
+            692 COPY                     1
+            694 POP_JUMP_IF_FALSE       27 (to 750)
+            696 POP_TOP
+            698 LOAD_GLOBAL             43 (NULL + abs)
+            708 LOAD_FAST               19 (p)
+            710 LOAD_CONST               9 (1)
+            712 BINARY_SUBSCR
+            716 LOAD_FAST               17 (pos)
+            718 LOAD_CONST               9 (1)
+            720 BINARY_SUBSCR
+            724 BINARY_OP               10 (-)
+            728 CALL                     1
+            736 LOAD_GLOBAL             44 (SAME_PX)
+            746 COMPARE_OP              26 (<=)
+        >>  750 STORE_FAST              21 (same)
+
+106         752 LOAD_FAST                3 (key)
+            754 LOAD_FAST               17 (pos)
+            756 LOAD_FAST               21 (same)
+            758 POP_JUMP_IF_FALSE        5 (to 770)
+            760 LOAD_FAST               20 (n)
+            762 LOAD_CONST               9 (1)
+            764 BINARY_OP                0 (+)
+            768 JUMP_FORWARD             1 (to 772)
+        >>  770 LOAD_CONST               9 (1)
+        >>  772 BUILD_TUPLE              3
+            774 LOAD_FAST                0 (self)
+            776 STORE_ATTR              11 (_seen)
+
+107         786 LOAD_FAST                0 (self)
+            788 LOAD_ATTR               22 (_seen)
+            808 LOAD_CONST               6 (2)
+            810 BINARY_SUBSCR
+            814 LOAD_GLOBAL             46 (NEED_SEEN)
+            824 COMPARE_OP               2 (<)
+            828 POP_JUMP_IF_FALSE        1 (to 832)
+
+108         830 RETURN_CONST             2 (False)
+
+109     >>  832 LOAD_CONST               4 (('', (0, 0), 0))
+            834 LOAD_FAST                0 (self)
+            836 STORE_ATTR              11 (_seen)
+
+110         846 LOAD_GLOBAL             49 (NULL + aim_point)
+            856 LOAD_FAST                3 (key)
+            858 LOAD_FAST                4 (tpl)
+            860 LOAD_FAST               15 (m)
+            862 CALL                     3
+            870 UNPACK_SEQUENCE          2
+            874 STORE_FAST              22 (ax)
+            876 STORE_FAST              23 (ay)
+
+111         878 PUSH_NULL
+            880 LOAD_FAST                9 (click)
+            882 LOAD_FAST               22 (ax)
+            884 LOAD_FAST                7 (ox)
+            886 BINARY_OP                0 (+)
+            890 LOAD_FAST               23 (ay)
+            892 LOAD_FAST                8 (oy)
+            894 BINARY_OP                0 (+)
+            898 CALL                     2
+            906 POP_JUMP_IF_TRUE         1 (to 910)
+
+112         908 RETURN_CONST             2 (False)
+
+113     >>  910 LOAD_FAST                3 (key)
+            912 LOAD_FAST               14 (thr)
+            914 LOAD_FAST               17 (pos)
+            916 LOAD_FAST                1 (state)
+            918 LOAD_FAST               12 (now)
+            920 LOAD_CONST              10 (('key', 'thr', 'pos', 'state', 't'))
+            922 BUILD_CONST_KEY_MAP      5
+            924 LOAD_FAST               11 (meta)
+            926 COPY                     1
+            928 POP_JUMP_IF_TRUE         2 (to 934)
+            930 POP_TOP
+            932 BUILD_MAP                0
+        >>  934 DICT_UPDATE              1
+            936 LOAD_FAST                0 (self)
+            938 STORE_ATTR               2 (trial)
+
+114         948 LOAD_FAST                0 (self)
+            950 LOAD_ATTR               51 (NULL|self + log)
+            970 LOAD_CONST              11 ('[auto-calibrate] ')
+            972 LOAD_FAST                3 (key)
+            974 FORMAT_VALUE             0
+            976 LOAD_CONST              12 (' score ')
+            978 LOAD_FAST                5 (score)
+            980 LOAD_CONST              13 ('.2f')
+            982 FORMAT_VALUE             4 (with format)
+            984 LOAD_CONST              14 (' < ')
+            986 LOAD_FAST                6 (base)
+            988 LOAD_CONST              13 ('.2f')
+            990 FORMAT_VALUE             4 (with format)
+            992 LOAD_CONST              15 (' for ')
+            994 LOAD_GLOBAL             41 (NULL + int)
+           1004 LOAD_FAST               12 (now)
+           1006 LOAD_FAST                0 (self)
+           1008 LOAD_ATTR               12 (_since)
+           1028 BINARY_OP               10 (-)
+           1032 CALL                     1
+           1040 FORMAT_VALUE             0
+           1042 LOAD_CONST              16 ('s: test click at a lowered threshold (')
+           1044 LOAD_FAST               14 (thr)
+           1046 LOAD_CONST              13 ('.2f')
+           1048 FORMAT_VALUE             4 (with format)
+           1050 LOAD_CONST              17 (')')
+           1052 BUILD_STRING            11
+           1054 CALL                     1
+           1062 POP_TOP
+
+115        1064 RETURN_CONST            18 (True)
+        >> 1066 PUSH_EXC_INFO
+
+116        1068 LOAD_GLOBAL             52 (Exception)
+           1078 CHECK_EXC_MATCH
+           1080 POP_JUMP_IF_FALSE        3 (to 1088)
+           1082 POP_TOP
+
+117        1084 POP_EXCEPT
+           1086 RETURN_CONST             2 (False)
+
+116     >> 1088 RERAISE                  0
+        >> 1090 COPY                     3
+           1092 POP_EXCEPT
+           1094 RERAISE                  1
+ExceptionTable:
+  6 to 78 -> 1066 [0]
+  82 to 218 -> 1066 [0]
+  222 to 306 -> 1066 [0]
+  310 to 534 -> 1066 [0]
+  538 to 828 -> 1066 [0]
+  832 to 906 -> 1066 [0]
+  910 to 1062 -> 1066 [0]
+  1066 to 1082 -> 1090 [1] lasti
+  1088 to 1088 -> 1090 [1] lasti
+
+Disassembly of <code object still_visible at 0x7f6aed7c0210, file "autocal.py", line 120>:
+120           0 RESUME                   0
+
+121           2 NOP
+
+122           4 LOAD_FAST                1 (tpl)
+              6 POP_JUMP_IF_NOT_NONE     1 (to 10)
+
+123           8 RETURN_CONST             1 (False)
+
+124     >>   10 LOAD_GLOBAL              1 (NULL + isinstance)
+             20 LOAD_FAST                1 (tpl)
+             22 LOAD_GLOBAL              2 (Plate)
+             32 CALL                     2
+             40 POP_JUMP_IF_FALSE       28 (to 98)
+
+125          42 LOAD_GLOBAL              5 (NULL + find_plate)
+             52 LOAD_FAST                0 (frame)
+             54 LOAD_GLOBAL              7 (NULL + replace)
+             64 LOAD_FAST                1 (tpl)
+             66 LOAD_FAST                2 (thr)
+             68 KW_NAMES                 2 (('threshold',))
+             70 CALL                     2
+             78 LOAD_FAST                4 (scales)
+             80 CALL                     3
+             88 UNPACK_SEQUENCE          2
+             92 STORE_FAST               5 (m)
+             94 STORE_FAST               6 (_)
+             96 JUMP_FORWARD            17 (to 132)
+
+127     >>   98 LOAD_GLOBAL              9 (NULL + find_template)
+            108 LOAD_FAST                0 (frame)
+            110 LOAD_FAST                1 (tpl)
+            112 LOAD_FAST                2 (thr)
+            114 LOAD_FAST                4 (scales)
+            116 CALL                     4
+            124 UNPACK_SEQUENCE          2
+            128 STORE_FAST               5 (m)
+            130 STORE_FAST               6 (_)
+
+128     >>  132 LOAD_GLOBAL             11 (NULL + bool)
+            142 LOAD_FAST                5 (m)
+            144 CALL                     1
+            152 COPY                     1
+            154 POP_JUMP_IF_FALSE       62 (to 280)
+            156 POP_TOP
+            158 LOAD_GLOBAL             13 (NULL + abs)
+            168 LOAD_FAST                5 (m)
+            170 LOAD_CONST               3 (0)
+            172 BINARY_SUBSCR
+            176 LOAD_FAST                3 (pos)
+            178 LOAD_CONST               3 (0)
+            180 BINARY_SUBSCR
+            184 BINARY_OP               10 (-)
+            188 CALL                     1
+            196 LOAD_CONST               4 (3)
+            198 LOAD_GLOBAL             14 (SAME_PX)
+            208 BINARY_OP                5 (*)
+            212 COMPARE_OP              26 (<=)
+            216 COPY                     1
+            218 POP_JUMP_IF_FALSE       30 (to 280)
+            220 POP_TOP
+            222 LOAD_GLOBAL             13 (NULL + abs)
+            232 LOAD_FAST                5 (m)
+            234 LOAD_CONST               5 (1)
+            236 BINARY_SUBSCR
+            240 LOAD_FAST                3 (pos)
+            242 LOAD_CONST               5 (1)
+            244 BINARY_SUBSCR
+            248 BINARY_OP               10 (-)
+            252 CALL                     1
+            260 LOAD_CONST               4 (3)
+            262 LOAD_GLOBAL             14 (SAME_PX)
+            272 BINARY_OP                5 (*)
+            276 COMPARE_OP              26 (<=)
+        >>  280 RETURN_VALUE

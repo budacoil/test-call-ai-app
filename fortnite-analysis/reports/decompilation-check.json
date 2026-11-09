@@ -1,0 +1,1538 @@
+{
+  "tool": "ejfkdev/pycdc v0.8.2",
+  "source": "https://github.com/ejfkdev/pycdc/releases/tag/v0.8.2",
+  "application_executed": false,
+  "note": "Syntax and conservative instruction comparison only. Different signatures do not prove incorrect behavior; successful parsing does not prove equivalence.",
+  "module_count": 48,
+  "syntax_valid": 48,
+  "incomplete_modules": [
+    "anti_afk",
+    "audio_mute",
+    "background_input",
+    "main",
+    "update_ui",
+    "updater",
+    "window_capture"
+  ],
+  "modules": [
+    {
+      "module": "anti_afk",
+      "syntax_error": null,
+      "compiler_warnings": [
+        "'NoneType' object is not callable; perhaps you missed a comma?"
+      ],
+      "decompiler_incomplete": true,
+      "calls_to_none": [
+        334
+      ],
+      "original_code_objects": 37,
+      "reconstructed_code_objects": 37,
+      "matching_instruction_signatures": [
+        "<module>",
+        "_Guard",
+        "_Guard.__init__",
+        "_Guard._alive",
+        "_Guard.is_set",
+        "_Guard.wait",
+        "_halted",
+        "_default_key_down",
+        "_default_key_up",
+        "AntiAfk",
+        "AntiAfk.__init__",
+        "AntiAfk._humanize",
+        "AntiAfk._background",
+        "AntiAfk._input_context",
+        "AntiAfk._use_post",
+        "AntiAfk._can_look",
+        "AntiAfk._user_away",
+        "AntiAfk.dive_async.<locals>.work",
+        "AntiAfk.release_all",
+        "AntiAfk.run.<locals>.<lambda>"
+      ],
+      "different_instruction_signatures": [
+        "AntiAfk._look_around",
+        "AntiAfk._tap",
+        "AntiAfk.press_once",
+        "AntiAfk._strafe",
+        "AntiAfk._jump_walk",
+        "AntiAfk._fidget",
+        "AntiAfk._micro_pause",
+        "AntiAfk.pickaxe_swing",
+        "AntiAfk.dive_async",
+        "AntiAfk.dive",
+        "AntiAfk._pickaxe_delay",
+        "AntiAfk._pickaxe_tick",
+        "AntiAfk._next_ratio",
+        "AntiAfk.run"
+      ],
+      "ambiguous_qualnames": [
+        "AntiAfk.<lambda>"
+      ],
+      "missing_qualnames": []
+    },
+    {
+      "module": "audio_mute",
+      "syntax_error": null,
+      "compiler_warnings": [
+        "'NoneType' object is not callable; perhaps you missed a comma?",
+        "'NoneType' object is not callable; perhaps you missed a comma?"
+      ],
+      "decompiler_incomplete": true,
+      "calls_to_none": [
+        135,
+        150
+      ],
+      "original_code_objects": 29,
+      "reconstructed_code_objects": 29,
+      "matching_instruction_signatures": [
+        "<module>",
+        "Session",
+        "Session.__init__",
+        "_guid",
+        "_guid.<locals>.GUID",
+        "_call",
+        "_release",
+        "_process_names.<locals>.ENTRY",
+        "CoreAudioBackend",
+        "CoreAudioBackend._session.<locals>.get_mute",
+        "PycawBackend",
+        "PycawBackend.__init__",
+        "PycawBackend.sessions",
+        "default_backend",
+        "GameAudioController",
+        "GameAudioController.__init__",
+        "GameAudioController.__init__.<locals>.<genexpr>",
+        "GameAudioController.__init__.<locals>.<lambda>",
+        "GameAudioController._backend_or_default",
+        "GameAudioController._game_sessions",
+        "GameAudioController.refresh"
+      ],
+      "different_instruction_signatures": [
+        "_process_names",
+        "CoreAudioBackend.sessions",
+        "CoreAudioBackend._session",
+        "CoreAudioBackend._session.<locals>.set_mute",
+        "GameAudioController.mute",
+        "GameAudioController.restore"
+      ],
+      "ambiguous_qualnames": [
+        "PycawBackend.sessions.<locals>.<lambda>"
+      ],
+      "missing_qualnames": []
+    },
+    {
+      "module": "autocal",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 10,
+      "reconstructed_code_objects": 10,
+      "matching_instruction_signatures": [
+        "<module>",
+        "AutoCalibrator",
+        "AutoCalibrator.__init__",
+        "AutoCalibrator.__init__.<locals>.<lambda>",
+        "AutoCalibrator.threshold_for",
+        "AutoCalibrator.plate"
+      ],
+      "different_instruction_signatures": [
+        "AutoCalibrator.check",
+        "AutoCalibrator.judge",
+        "AutoCalibrator.attempt",
+        "still_visible"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "autocheck",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 15,
+      "reconstructed_code_objects": 15,
+      "matching_instruction_signatures": [
+        "<module>",
+        "Item",
+        "SystemEnv",
+        "SystemEnv.__init__",
+        "SystemEnv.monitors",
+        "SystemEnv.frame",
+        "SystemEnv.templates",
+        "run_checks",
+        "run_checks.<locals>.<genexpr>",
+        "format_items",
+        "format_items.<locals>.<genexpr>"
+      ],
+      "different_instruction_signatures": [
+        "SystemEnv.dpi",
+        "SystemEnv.game",
+        "scan_scale",
+        "_monitor_of"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "background_input",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": true,
+      "calls_to_none": [],
+      "original_code_objects": 32,
+      "reconstructed_code_objects": 32,
+      "matching_instruction_signatures": [
+        "<module>",
+        "Win32Input",
+        "Win32Input.foreground",
+        "Win32Input.cursor_pos",
+        "Win32Input.set_cursor_pos",
+        "Win32Input.button_down",
+        "Win32Input.is_window",
+        "Win32Input.is_iconic",
+        "FocusSwapContext",
+        "FocusSwapContext.__init__",
+        "FocusSwapContext.__enter__",
+        "BackgroundInput",
+        "BackgroundInput.__init__",
+        "BackgroundInput._on",
+        "BackgroundInput.context",
+        "BackgroundInput.watch",
+        "BackgroundInput.capture_guard",
+        "BackgroundInput.post_key",
+        "BackgroundInput.post_tap"
+      ],
+      "different_instruction_signatures": [
+        "Win32Input.__init__",
+        "Win32Input.force_foreground",
+        "Win32Input.post_key",
+        "FocusSwapContext._wait_for_user_drag",
+        "FocusSwapContext._wait_for_idle",
+        "FocusSwapContext.__exit__",
+        "BackgroundInput._ghost_on",
+        "BackgroundInput.sync",
+        "BackgroundInput.start",
+        "BackgroundInput.release_all",
+        "BackgroundInput.other_window_in_front",
+        "BackgroundInput.user_busy",
+        "BackgroundInput.ghost_notice"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "breaker",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 12,
+      "reconstructed_code_objects": 12,
+      "matching_instruction_signatures": [
+        "<module>",
+        "BreakerOpen",
+        "Breaker",
+        "Breaker.__init__",
+        "Breaker.remaining",
+        "Breaker.blocked",
+        "Breaker.trip_quota",
+        "Breaker.trip_error",
+        "Breaker.success",
+        "Breaker.reset"
+      ],
+      "different_instruction_signatures": [
+        "Breaker.trip_for",
+        "Breaker.override"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "bus_drop",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 20,
+      "reconstructed_code_objects": 20,
+      "matching_instruction_signatures": [
+        "<module>",
+        "find_plate.<locals>.<genexpr>",
+        "split_digits.<locals>.<genexpr>",
+        "_crop",
+        "_shear",
+        "_unit",
+        "prepare_template",
+        "classify.<locals>.<lambda>",
+        "BusDrop",
+        "BusDrop.<lambda>",
+        "BusDrop.__init__",
+        "BusDrop._window"
+      ],
+      "different_instruction_signatures": [
+        "find_plate",
+        "split_digits",
+        "load_templates",
+        "classify",
+        "read_countdown",
+        "BusDrop.estimate",
+        "BusDrop.observe",
+        "BusDrop._save_sample"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "config",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 16,
+      "reconstructed_code_objects": 16,
+      "matching_instruction_signatures": [
+        "<module>",
+        "plate_filename",
+        "uses_template",
+        "template_filename",
+        "base_dir",
+        "assets_dir",
+        "external_template_path",
+        "Settings",
+        "Settings.<genexpr>",
+        "user_settings_path"
+      ],
+      "different_instruction_signatures": [
+        "bundled_assets_dir",
+        "template_path",
+        "jitter_range",
+        "get_jittered_wait",
+        "load_user_settings",
+        "save_user_settings"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "controller",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 18,
+      "reconstructed_code_objects": 18,
+      "matching_instruction_signatures": [
+        "<module>",
+        "_mouse_event_move",
+        "Controller",
+        "Controller.__init__",
+        "Controller._background",
+        "Controller._humanize",
+        "Controller._default_swing",
+        "Controller._default_press",
+        "Controller.ready"
+      ],
+      "different_instruction_signatures": [
+        "move_camera_smooth",
+        "_cursor_pos",
+        "Controller._input_context",
+        "Controller._default_click",
+        "Controller.press",
+        "Controller.click",
+        "Controller.user_away",
+        "Controller.look",
+        "Controller.swing"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "diagnose",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 21,
+      "reconstructed_code_objects": 21,
+      "matching_instruction_signatures": [
+        "<module>",
+        "_admin",
+        "build_report.<locals>.<genexpr>",
+        "build_report.<locals>.<lambda>",
+        "NetProbe",
+        "NetProbe.resolve",
+        "NetProbe.handshake",
+        "NetProbe._tls",
+        "NetProbe._tls.<locals>.<genexpr>",
+        "NetProbe.get",
+        "_proxy_text",
+        "_step",
+        "network_report.<locals>.<genexpr>",
+        "run"
+      ],
+      "different_instruction_signatures": [
+        "_variant_name",
+        "build_report",
+        "network_report",
+        "default_report_path"
+      ],
+      "ambiguous_qualnames": [
+        "network_report.<locals>.<lambda>"
+      ],
+      "missing_qualnames": []
+    },
+    {
+      "module": "ed25519_verify",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 8,
+      "reconstructed_code_objects": 8,
+      "matching_instruction_signatures": [
+        "<module>",
+        "_inv",
+        "_x_recover",
+        "_add",
+        "_mul",
+        "_decode",
+        "_eq"
+      ],
+      "different_instruction_signatures": [
+        "verify"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "focus",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 16,
+      "reconstructed_code_objects": 16,
+      "matching_instruction_signatures": [
+        "<module>",
+        "WinApi",
+        "WinApi.__init__",
+        "WinApi.windows",
+        "WinApi.windows.<locals>.cb",
+        "WinApi.class_name",
+        "WinApi.title",
+        "WinApi.is_minimized",
+        "WinApi.process_name.<locals>.ENTRY",
+        "WinApi.foreground",
+        "is_game_window.<locals>.<genexpr>"
+      ],
+      "different_instruction_signatures": [
+        "WinApi.process_name",
+        "WinApi.focus",
+        "is_game_window",
+        "find_game",
+        "ensure_game_foreground"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "ghost",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 40,
+      "reconstructed_code_objects": 40,
+      "matching_instruction_signatures": [
+        "<module>",
+        "GhostApi",
+        "GhostApi.is_window",
+        "GhostApi.class_name",
+        "GhostApi.to_bottom",
+        "GhostApi.raise_top",
+        "GhostApi.get_exstyle",
+        "GhostApi.set_exstyle",
+        "GhostApi.set_alpha",
+        "GhostApi.tick",
+        "GhostApi.last_input_tick",
+        "GhostApi.last_input_tick.<locals>.LASTINPUTINFO",
+        "UserActivity",
+        "UserActivity.__init__",
+        "UserActivity.own_begin",
+        "UserActivity.own_end",
+        "UserActivity._is_own",
+        "UserActivity.scan",
+        "GhostWindow",
+        "GhostWindow.<lambda>",
+        "GhostWindow.__init__",
+        "GhostWindow._write_marker",
+        "GhostWindow._clear_marker",
+        "GhostWindow.wanted",
+        "GhostWindow._ensure",
+        "GhostWindow._forget",
+        "GhostWindow.disable"
+      ],
+      "different_instruction_signatures": [
+        "GhostApi.__init__",
+        "GhostApi.root_at",
+        "GhostApi.flush",
+        "UserActivity.idle_ms",
+        "GhostWindow.recover",
+        "GhostWindow.ensure",
+        "GhostWindow.hide",
+        "GhostWindow.sink",
+        "GhostWindow.rest",
+        "GhostWindow.restore",
+        "GhostWindow.reset",
+        "GhostWindow.watch",
+        "recover_at_launch"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "gui_extras",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 16,
+      "reconstructed_code_objects": 16,
+      "matching_instruction_signatures": [
+        "<module>",
+        "build",
+        "build.<locals>.check",
+        "build.<locals>.check.<locals>.<lambda>",
+        "wait_for_mode",
+        "preview_text",
+        "_refresh_preview.<locals>.<lambda>"
+      ],
+      "different_instruction_signatures": [
+        "_on_pct",
+        "_refresh_preview",
+        "open_vault"
+      ],
+      "ambiguous_qualnames": [
+        "build.<locals>.<lambda>"
+      ],
+      "missing_qualnames": []
+    },
+    {
+      "module": "humanizer",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 30,
+      "reconstructed_code_objects": 30,
+      "matching_instruction_signatures": [
+        "<module>",
+        "gauss_offset",
+        "click_hold",
+        "_ease",
+        "camera_steps.<locals>.<genexpr>",
+        "PitchBalance",
+        "PitchBalance.__init__",
+        "SessionDrift",
+        "SessionDrift.__init__",
+        "SessionDrift.focus",
+        "SessionDrift.relaxed",
+        "SessionDrift.factor",
+        "PinkNoise",
+        "PinkNoise.__init__",
+        "PinkNoise.next",
+        "Humanizer",
+        "Humanizer.__init__",
+        "Humanizer._factor",
+        "Humanizer.interval",
+        "Humanizer.hold",
+        "Humanizer.pattern",
+        "Humanizer.session_factor",
+        "CoffeeBreak",
+        "CoffeeBreak.__init__",
+        "CoffeeBreak.check"
+      ],
+      "different_instruction_signatures": [
+        "bezier_points",
+        "camera_steps",
+        "PitchBalance.next_look",
+        "pick_pattern",
+        "Humanizer.side_tap"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "i18n",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 4,
+      "reconstructed_code_objects": 4,
+      "matching_instruction_signatures": [
+        "<module>",
+        "norm",
+        "guide"
+      ],
+      "different_instruction_signatures": [
+        "t"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "i18n_ac",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 1,
+      "reconstructed_code_objects": 1,
+      "matching_instruction_signatures": [
+        "<module>"
+      ],
+      "different_instruction_signatures": [],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "i18n_ex",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 1,
+      "reconstructed_code_objects": 1,
+      "matching_instruction_signatures": [
+        "<module>"
+      ],
+      "different_instruction_signatures": [],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "i18n_fr",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 1,
+      "reconstructed_code_objects": 1,
+      "matching_instruction_signatures": [
+        "<module>"
+      ],
+      "different_instruction_signatures": [],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "i18n_lic",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 1,
+      "reconstructed_code_objects": 1,
+      "matching_instruction_signatures": [
+        "<module>"
+      ],
+      "different_instruction_signatures": [],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "licensing",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 18,
+      "reconstructed_code_objects": 18,
+      "matching_instruction_signatures": [
+        "<module>",
+        "pop_notices",
+        "Busy",
+        "required",
+        "clean_key.<locals>.<genexpr>",
+        "valid_format",
+        "_remembered",
+        "_temp_pass_live"
+      ],
+      "different_instruction_signatures": [
+        "note",
+        "_default_post",
+        "clean_key",
+        "machine_id",
+        "key_id",
+        "_proof_ok",
+        "is_fresh",
+        "verify",
+        "_outage",
+        "_grace"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "licensing_ui",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 8,
+      "reconstructed_code_objects": 8,
+      "matching_instruction_signatures": [
+        "<module>",
+        "_t",
+        "gate",
+        "_check",
+        "_check.<locals>.work",
+        "handle"
+      ],
+      "different_instruction_signatures": [
+        "poll",
+        "startup"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "loot_vault",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 12,
+      "reconstructed_code_objects": 12,
+      "matching_instruction_signatures": [
+        "<module>",
+        "default_folder",
+        "LootVault",
+        "LootVault.__init__",
+        "LootVault.__init__.<locals>.<lambda>",
+        "LootVault.save",
+        "LootVault._run",
+        "LootVault._write",
+        "LootVault._trim"
+      ],
+      "different_instruction_signatures": [
+        "LootVault.files",
+        "LootVault.flush",
+        "LootVault.open_folder"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "main",
+      "syntax_error": null,
+      "compiler_warnings": [
+        "'NoneType' object is not callable; perhaps you missed a comma?"
+      ],
+      "decompiler_incomplete": true,
+      "calls_to_none": [
+        441
+      ],
+      "original_code_objects": 72,
+      "reconstructed_code_objects": 72,
+      "matching_instruction_signatures": [
+        "App",
+        "App._l",
+        "App._build_control",
+        "App._build_control.<locals>.<lambda>",
+        "App._build_modes",
+        "App._build_keys",
+        "App._build_tail",
+        "App._build_discord",
+        "App._build_diag",
+        "App.run_diagnose",
+        "App.run_diagnose.<locals>.work",
+        "App.run_autocheck.<locals>.work",
+        "App._autocheck_done",
+        "App._diag_done",
+        "App._build_guide",
+        "App._render_guide",
+        "App._running",
+        "App._refresh_btn",
+        "App._on_th",
+        "App._on_lang",
+        "App._on_mode",
+        "App._show",
+        "App.toggle",
+        "App._start_run",
+        "App.stop",
+        "App._apply_remote.<locals>.<genexpr>",
+        "App.send_test_dm",
+        "App.fix_network",
+        "App.capture_template",
+        "App.capture_template.<locals>.go",
+        "App._start_hotkey",
+        "App._start_hotkey.<locals>.listen",
+        "App._start_hotkey.<locals>.listen.<locals>.<lambda>",
+        "App._log",
+        "App._quit",
+        "App.run",
+        "selftest.<locals>.<genexpr>"
+      ],
+      "different_instruction_signatures": [
+        "<module>",
+        "_enable_dpi_awareness",
+        "App.__init__",
+        "App.run_autocheck",
+        "App._apply_lang",
+        "App._on_afk_num",
+        "App._on_space_count",
+        "App._finish_session",
+        "App._apply_remote",
+        "App.open_invite",
+        "App.capture_template.<locals>.go.<locals>.done",
+        "App._tick",
+        "selftest"
+      ],
+      "ambiguous_qualnames": [
+        "App.__init__.<locals>.<lambda>",
+        "App._build_modes.<locals>.<lambda>",
+        "App._build_keys.<locals>.<lambda>",
+        "App._build_discord.<locals>.<lambda>",
+        "selftest.<locals>.<lambda>"
+      ],
+      "missing_qualnames": []
+    },
+    {
+      "module": "mode_b",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 27,
+      "reconstructed_code_objects": 27,
+      "matching_instruction_signatures": [
+        "<module>",
+        "ModeB",
+        "ModeB.__init__",
+        "ModeB.start",
+        "ModeB.stop",
+        "ModeB._wait_s",
+        "ModeB._wait_now",
+        "ModeB._find",
+        "ModeB._find_one",
+        "ModeB._click",
+        "ModeB._press_esc",
+        "ModeB._enter_countdown",
+        "ModeB.step",
+        "ModeB.step.<locals>.<lambda>",
+        "ModeB._step",
+        "ModeB._lobby",
+        "ModeB._loading",
+        "ModeB._countdown",
+        "ModeB._menu"
+      ],
+      "different_instruction_signatures": [
+        "ModeB.match_active",
+        "ModeB._calibrate",
+        "ModeB._squad_small"
+      ],
+      "ambiguous_qualnames": [
+        "ModeB.__init__.<locals>.<lambda>",
+        "ModeB._find_one.<locals>.<lambda>"
+      ],
+      "missing_qualnames": []
+    },
+    {
+      "module": "mode_c",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 5,
+      "reconstructed_code_objects": 5,
+      "matching_instruction_signatures": [
+        "<module>",
+        "ModeC",
+        "ModeC.__init__",
+        "ModeC._wait_s",
+        "ModeC._countdown"
+      ],
+      "different_instruction_signatures": [],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "mode_fix",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 20,
+      "reconstructed_code_objects": 20,
+      "matching_instruction_signatures": [
+        "<module>",
+        "_yellow",
+        "_rgb",
+        "find_lobby_play.<locals>.<genexpr>",
+        "find_mode_label.<locals>.<genexpr>",
+        "panel_play.<locals>.<genexpr>",
+        "ModeFix",
+        "ModeFix.<lambda>",
+        "ModeFix.__init__",
+        "ModeFix._in_the_panel"
+      ],
+      "different_instruction_signatures": [
+        "find_lobby_play",
+        "find_mode_label",
+        "find_tiles",
+        "fill_switch",
+        "panel_play",
+        "ModeFix.poll"
+      ],
+      "ambiguous_qualnames": [
+        "find_tiles.<locals>.<genexpr>"
+      ],
+      "missing_qualnames": []
+    },
+    {
+      "module": "netfix",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 17,
+      "reconstructed_code_objects": 17,
+      "matching_instruction_signatures": [
+        "<module>",
+        "preferred",
+        "set_preferred",
+        "_context",
+        "_addrs_v4",
+        "_PinnedHandler",
+        "_PinnedHandler.__init__",
+        "_PinnedHandler.https_open",
+        "_PinnedHandler.https_open.<locals>.Conn",
+        "_PinnedHandler.https_open.<locals>.Conn.connect",
+        "repair_async",
+        "repair_async.<locals>.work"
+      ],
+      "different_instruction_signatures": [
+        "_addrs_doh",
+        "_connect_any",
+        "open_with",
+        "rescue",
+        "repair"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "relay",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 12,
+      "reconstructed_code_objects": 12,
+      "matching_instruction_signatures": [
+        "<module>",
+        "cache_path",
+        "load_cache",
+        "start.<locals>.loop"
+      ],
+      "different_instruction_signatures": [
+        "clean_url",
+        "parse_list",
+        "set_user_urls",
+        "candidates",
+        "breaker_for",
+        "fetch_list",
+        "refresh",
+        "start"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "remote",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 21,
+      "reconstructed_code_objects": 21,
+      "matching_instruction_signatures": [
+        "<module>",
+        "_bounded",
+        "current_of",
+        "RemoteSync",
+        "RemoteSync.__init__",
+        "RemoteSync.start",
+        "RemoteSync.stop",
+        "RemoteSync.poke",
+        "RemoteSync._run",
+        "RemoteSync._fresh",
+        "RemoteSync._rescue_fast",
+        "RemoteSync._flags"
+      ],
+      "different_instruction_signatures": [
+        "clean_config",
+        "apply_config",
+        "RemoteSync._log_failure",
+        "RemoteSync._sleep",
+        "RemoteSync.piggy_body",
+        "RemoteSync.poll_once",
+        "RemoteSync.handle_answer"
+      ],
+      "ambiguous_qualnames": [
+        "RemoteSync.__init__.<locals>.<lambda>"
+      ],
+      "missing_qualnames": []
+    },
+    {
+      "module": "rescue",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 14,
+      "reconstructed_code_objects": 14,
+      "matching_instruction_signatures": [
+        "<module>",
+        "valid_action",
+        "Rescue",
+        "Rescue.__init__",
+        "Rescue.__init__.<locals>.<lambda>",
+        "Rescue.stuck",
+        "Rescue.progress",
+        "Rescue.tick",
+        "Rescue._tick",
+        "Rescue._run_pending"
+      ],
+      "different_instruction_signatures": [
+        "push",
+        "cell_center",
+        "Rescue._intake",
+        "Rescue._execute"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "rescue_grid",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 3,
+      "reconstructed_code_objects": 3,
+      "matching_instruction_signatures": [
+        "<module>"
+      ],
+      "different_instruction_signatures": [
+        "render_rescue_grid",
+        "grid_b64"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "reward_fallback",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 7,
+      "reconstructed_code_objects": 7,
+      "matching_instruction_signatures": [
+        "<module>",
+        "find_white_button.<locals>.<genexpr>",
+        "RewardFallback",
+        "RewardFallback.__init__",
+        "RewardFallback.reset"
+      ],
+      "different_instruction_signatures": [
+        "find_white_button",
+        "RewardFallback.poll"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "reward_shot",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 7,
+      "reconstructed_code_objects": 7,
+      "matching_instruction_signatures": [
+        "<module>",
+        "RewardShotSender",
+        "RewardShotSender.__init__",
+        "RewardShotSender.__init__.<locals>.<lambda>",
+        "RewardShotSender.allowed"
+      ],
+      "different_instruction_signatures": [
+        "RewardShotSender.notify",
+        "RewardShotSender._run"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "shot",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 9,
+      "reconstructed_code_objects": 9,
+      "matching_instruction_signatures": [
+        "<module>",
+        "ShotSender",
+        "ShotSender.__init__"
+      ],
+      "different_instruction_signatures": [
+        "encode_jpeg",
+        "grab_frame",
+        "ShotSender.request",
+        "ShotSender._run"
+      ],
+      "ambiguous_qualnames": [
+        "ShotSender.__init__.<locals>.<lambda>"
+      ],
+      "missing_qualnames": []
+    },
+    {
+      "module": "snip",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 8,
+      "reconstructed_code_objects": 8,
+      "matching_instruction_signatures": [
+        "<module>",
+        "SnipOverlay",
+        "SnipOverlay.__init__",
+        "SnipOverlay.__init__.<locals>.<lambda>",
+        "SnipOverlay._down",
+        "SnipOverlay._drag",
+        "SnipOverlay._up",
+        "SnipOverlay._close"
+      ],
+      "different_instruction_signatures": [],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "space_press",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 8,
+      "reconstructed_code_objects": 8,
+      "matching_instruction_signatures": [
+        "<module>",
+        "SpacePresser",
+        "SpacePresser.__init__",
+        "SpacePresser._enabled",
+        "SpacePresser._window",
+        "SpacePresser.<lambda>",
+        "SpacePresser.run"
+      ],
+      "different_instruction_signatures": [
+        "SpacePresser.poll"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "squad_bar",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 7,
+      "reconstructed_code_objects": 7,
+      "matching_instruction_signatures": [
+        "<module>",
+        "count_teammates.<locals>.<lambda>",
+        "count_teammates.<locals>.<lambda>.<locals>.<genexpr>",
+        "count_teammates.<locals>.<genexpr>",
+        "squad_size"
+      ],
+      "different_instruction_signatures": [
+        "_bars",
+        "count_teammates"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "state_machine",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 23,
+      "reconstructed_code_objects": 23,
+      "matching_instruction_signatures": [
+        "<module>",
+        "State",
+        "StepResult",
+        "RewardCounter",
+        "RewardCounter.__init__",
+        "RewardCounter.update",
+        "StateMachine",
+        "StateMachine.__init__",
+        "StateMachine.start",
+        "StateMachine.stop",
+        "StateMachine.step",
+        "StateMachine.step.<locals>.<lambda>",
+        "StateMachine._step"
+      ],
+      "different_instruction_signatures": [
+        "note_claim",
+        "visible_rewards"
+      ],
+      "ambiguous_qualnames": [
+        "StateMachine.__init__.<locals>.<lambda>",
+        "StateMachine._step.<locals>.<genexpr>",
+        "StateMachine._step.<locals>.<lambda>"
+      ],
+      "missing_qualnames": []
+    },
+    {
+      "module": "survey",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 11,
+      "reconstructed_code_objects": 11,
+      "matching_instruction_signatures": [
+        "<module>",
+        "_disc_row.<locals>.<lambda>",
+        "_white_pill.<locals>.<genexpr>",
+        "SurveyGuard",
+        "SurveyGuard.__init__",
+        "SurveyGuard.poll"
+      ],
+      "different_instruction_signatures": [
+        "_disc_row",
+        "_white_pill",
+        "find_skip"
+      ],
+      "ambiguous_qualnames": [
+        "_disc_row.<locals>.<genexpr>"
+      ],
+      "missing_qualnames": []
+    },
+    {
+      "module": "telemetry",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 39,
+      "reconstructed_code_objects": 39,
+      "matching_instruction_signatures": [
+        "<module>",
+        "network_status",
+        "is_cert_error",
+        "valid_link_key",
+        "valid_endpoint",
+        "telemetry_url",
+        "_status_of",
+        "TelemetryManager",
+        "TelemetryManager.__init__",
+        "TelemetryManager.__init__.<locals>.<lambda>",
+        "TelemetryManager.set_loops",
+        "TelemetryManager.set_claims",
+        "TelemetryManager.set_popups",
+        "TelemetryManager.set_mode",
+        "TelemetryManager.snapshot",
+        "TelemetryManager._spawn",
+        "TelemetryManager._early",
+        "TelemetryManager.send_test_dm.<locals>.<lambda>",
+        "TelemetryManager.send_session_summary.<locals>.<lambda>",
+        "TelemetryManager.maybe_send_periodic.<locals>.<lambda>",
+        "TelemetryManager.send_alert.<locals>.<lambda>",
+        "TelemetryManager.send_stuck.<locals>.<lambda>"
+      ],
+      "different_instruction_signatures": [
+        "classify_error",
+        "bundled_context",
+        "_open",
+        "_open_basic",
+        "clean_key",
+        "api_url",
+        "_http_post",
+        "_post_one",
+        "TelemetryManager.begin_session",
+        "TelemetryManager.record_action",
+        "TelemetryManager._deliver",
+        "TelemetryManager.send_test_dm",
+        "TelemetryManager.send_session_summary",
+        "TelemetryManager.maybe_send_periodic",
+        "TelemetryManager.send_alert",
+        "TelemetryManager.send_stuck",
+        "TelemetryManager.flush"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "update_ui",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": true,
+      "calls_to_none": [],
+      "original_code_objects": 28,
+      "reconstructed_code_objects": 28,
+      "matching_instruction_signatures": [
+        "<module>",
+        "UpdateDialog",
+        "UpdateDialog.__init__",
+        "UpdateDialog.alive",
+        "UpdateDialog.lift",
+        "UpdateDialog.set_progress",
+        "UpdateDialog.installing",
+        "UpdateDialog.busy",
+        "UpdateDialog.error",
+        "UpdateController",
+        "UpdateController.__init__",
+        "UpdateController.t",
+        "UpdateController.build_row",
+        "UpdateController.relabel",
+        "UpdateController._show_banner",
+        "UpdateController.start_auto_check",
+        "UpdateController.start_auto_check.<locals>.<lambda>",
+        "UpdateController.check",
+        "UpdateController.check.<locals>.<lambda>",
+        "UpdateController.open_dialog",
+        "UpdateController.install",
+        "UpdateController.install.<locals>.work.<locals>.<lambda>"
+      ],
+      "different_instruction_signatures": [
+        "UpdateDialog.later",
+        "UpdateController.install.<locals>.work",
+        "UpdateController._apply",
+        "UpdateController.poll"
+      ],
+      "ambiguous_qualnames": [
+        "UpdateController.build_row.<locals>.<lambda>"
+      ],
+      "missing_qualnames": []
+    },
+    {
+      "module": "updater",
+      "syntax_error": null,
+      "compiler_warnings": [
+        "'NoneType' object is not callable; perhaps you missed a comma?"
+      ],
+      "decompiler_incomplete": true,
+      "calls_to_none": [
+        256
+      ],
+      "original_code_objects": 36,
+      "reconstructed_code_objects": 36,
+      "matching_instruction_signatures": [
+        "<module>",
+        "UpdateError",
+        "parse_version.<locals>.<genexpr>",
+        "is_newer",
+        "_trusted_host",
+        "_trusted_host.<locals>.<genexpr>",
+        "_SafeRedirect",
+        "_SafeRedirect.redirect_request",
+        "_CertFallbackOpener",
+        "_CertFallbackOpener.__init__",
+        "_CertFallbackOpener.open",
+        "build_opener",
+        "UpdateInfo",
+        "AutoUpdater",
+        "AutoUpdater.__init__",
+        "AutoUpdater.can_self_replace",
+        "AutoUpdater.api_url",
+        "AutoUpdater._repo_download_url",
+        "AutoUpdater._request",
+        "AutoUpdater._pick_asset.<locals>.<lambda>",
+        "AutoUpdater.check_async",
+        "AutoUpdater.check_async.<locals>.work",
+        "AutoUpdater._check_exe",
+        "AutoUpdater._extract_exe.<locals>.<lambda>",
+        "AutoUpdater.download_update.<locals>.<lambda>",
+        "AutoUpdater._discard",
+        "AutoUpdater.download_and_apply_update.<locals>.<lambda>"
+      ],
+      "different_instruction_signatures": [
+        "parse_version",
+        "clean_env",
+        "AutoUpdater._pick_asset",
+        "AutoUpdater.check_for_updates",
+        "AutoUpdater._extract_exe",
+        "AutoUpdater._download",
+        "AutoUpdater.download_update",
+        "AutoUpdater.launch_runner",
+        "AutoUpdater.download_and_apply_update"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "version",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 1,
+      "reconstructed_code_objects": 1,
+      "matching_instruction_signatures": [
+        "<module>"
+      ],
+      "different_instruction_signatures": [],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "vision",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 16,
+      "reconstructed_code_objects": 16,
+      "matching_instruction_signatures": [
+        "<module>",
+        "Plate",
+        "_gray",
+        "find_plate.<locals>.match",
+        "_median_colour"
+      ],
+      "different_instruction_signatures": [
+        "load_template",
+        "load_template_auto",
+        "capture_screen",
+        "capture_for_matching",
+        "capture_game_window",
+        "find_template",
+        "_match",
+        "find_plate",
+        "colour_matches",
+        "aim_point",
+        "find_checked"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "watchdog",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 11,
+      "reconstructed_code_objects": 11,
+      "matching_instruction_signatures": [
+        "<module>",
+        "clean_detail",
+        "Watchdog",
+        "Watchdog.__init__",
+        "Watchdog.start",
+        "Watchdog.ok",
+        "Watchdog.error",
+        "Watchdog.fatal",
+        "Watchdog._fire"
+      ],
+      "different_instruction_signatures": [
+        "Watchdog.action",
+        "Watchdog.tick"
+      ],
+      "ambiguous_qualnames": [],
+      "missing_qualnames": []
+    },
+    {
+      "module": "window_capture",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": true,
+      "calls_to_none": [],
+      "original_code_objects": 35,
+      "reconstructed_code_objects": 35,
+      "matching_instruction_signatures": [
+        "<module>",
+        "Capture",
+        "Capture.to_screen",
+        "to_screen",
+        "_BITMAPINFOHEADER",
+        "_BITMAPINFO",
+        "Win32Gdi",
+        "Win32Gdi.is_window",
+        "Win32Gdi.is_iconic",
+        "Win32Gdi.get_dc",
+        "Win32Gdi.release_dc",
+        "Win32Gdi.create_compatible_dc",
+        "Win32Gdi.create_compatible_bitmap",
+        "Win32Gdi.select_object",
+        "Win32Gdi.delete_object",
+        "Win32Gdi.delete_dc",
+        "Win32Gdi.print_window",
+        "Win32Gdi.last_error",
+        "GameWindow",
+        "GameWindow.__init__",
+        "GameWindow.hwnd",
+        "WindowCapture",
+        "WindowCapture.__init__",
+        "WindowCapture.grab.<locals>.<lambda>",
+        "WindowCapture._print.<locals>.<lambda>",
+        "_quiet"
+      ],
+      "different_instruction_signatures": [
+        "Win32Gdi.__init__",
+        "Win32Gdi.client_rect",
+        "Win32Gdi.get_dibits",
+        "WindowCapture._failed",
+        "WindowCapture.grab",
+        "WindowCapture._print",
+        "_is_black"
+      ],
+      "ambiguous_qualnames": [
+        "GameWindow.__init__.<locals>.<lambda>"
+      ],
+      "missing_qualnames": []
+    },
+    {
+      "module": "worker",
+      "syntax_error": null,
+      "compiler_warnings": [],
+      "decompiler_incomplete": false,
+      "calls_to_none": [],
+      "original_code_objects": 20,
+      "reconstructed_code_objects": 17,
+      "matching_instruction_signatures": [
+        "<module>",
+        "Worker",
+        "Worker.__init__",
+        "Worker.run.<locals>.on_claim",
+        "Worker.run.<locals>.find_popup",
+        "Worker.run.<locals>.send_stuck",
+        "Worker.run.<locals>.in_match",
+        "Worker.run.<locals>.alert"
+      ],
+      "different_instruction_signatures": [
+        "load_templates",
+        "Worker._load_templates",
+        "Worker.run"
+      ],
+      "ambiguous_qualnames": [
+        "Worker.run.<locals>.<lambda>"
+      ],
+      "missing_qualnames": [
+        "Worker.run.<locals>.<genexpr>"
+      ]
+    }
+  ]
+}

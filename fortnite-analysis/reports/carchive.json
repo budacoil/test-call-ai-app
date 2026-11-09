@@ -1,0 +1,8390 @@
+{
+  "python_version": 312,
+  "python_library": "python312.dll",
+  "entries": [
+    {
+      "name": "struct",
+      "offset": 0,
+      "size": 233,
+      "uncompressed_size": 289,
+      "compressed": 1,
+      "type": "m"
+    },
+    {
+      "name": "pyimod01_archive",
+      "offset": 233,
+      "size": 2778,
+      "uncompressed_size": 4826,
+      "compressed": 1,
+      "type": "m"
+    },
+    {
+      "name": "pyimod02_importers",
+      "offset": 3011,
+      "size": 13580,
+      "uncompressed_size": 32114,
+      "compressed": 1,
+      "type": "m"
+    },
+    {
+      "name": "pyimod03_ctypes",
+      "offset": 16591,
+      "size": 2722,
+      "uncompressed_size": 6130,
+      "compressed": 1,
+      "type": "m"
+    },
+    {
+      "name": "pyimod04_pywin32",
+      "offset": 19313,
+      "size": 917,
+      "uncompressed_size": 1614,
+      "compressed": 1,
+      "type": "m"
+    },
+    {
+      "name": "pyiboot01_bootstrap",
+      "offset": 20230,
+      "size": 1110,
+      "uncompressed_size": 1921,
+      "compressed": 1,
+      "type": "s"
+    },
+    {
+      "name": "pyi_rth_inspect",
+      "offset": 21340,
+      "size": 1432,
+      "uncompressed_size": 2700,
+      "compressed": 1,
+      "type": "s"
+    },
+    {
+      "name": "pyi_rth_pkgutil",
+      "offset": 22772,
+      "size": 949,
+      "uncompressed_size": 1509,
+      "compressed": 1,
+      "type": "s"
+    },
+    {
+      "name": "pyi_rth_multiprocessing",
+      "offset": 23721,
+      "size": 1316,
+      "uncompressed_size": 2303,
+      "compressed": 1,
+      "type": "s"
+    },
+    {
+      "name": "pyi_rth__tkinter",
+      "offset": 25037,
+      "size": 458,
+      "uncompressed_size": 806,
+      "compressed": 1,
+      "type": "s"
+    },
+    {
+      "name": "main",
+      "offset": 25495,
+      "size": 60289,
+      "uncompressed_size": 60289,
+      "compressed": 0,
+      "type": "s"
+    },
+    {
+      "name": "PIL\\_avif.cp312-win_amd64.pyd",
+      "offset": 85784,
+      "size": 4315243,
+      "uncompressed_size": 7893504,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "PIL\\_imaging.cp312-win_amd64.pyd",
+      "offset": 4401027,
+      "size": 1031146,
+      "uncompressed_size": 2662400,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "PIL\\_imagingcms.cp312-win_amd64.pyd",
+      "offset": 5432173,
+      "size": 121096,
+      "uncompressed_size": 275456,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "PIL\\_imagingtk.cp312-win_amd64.pyd",
+      "offset": 5553269,
+      "size": 6397,
+      "uncompressed_size": 14336,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "PIL\\_webp.cp312-win_amd64.pyd",
+      "offset": 5559666,
+      "size": 211498,
+      "uncompressed_size": 415744,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "VCRUNTIME140.dll",
+      "offset": 5771164,
+      "size": 59650,
+      "uncompressed_size": 120400,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "VCRUNTIME140_1.dll",
+      "offset": 5830814,
+      "size": 26379,
+      "uncompressed_size": 49776,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_asyncio.pyd",
+      "offset": 5857193,
+      "size": 34009,
+      "uncompressed_size": 74096,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_bz2.pyd",
+      "offset": 5891202,
+      "size": 46636,
+      "uncompressed_size": 86896,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_ctypes.pyd",
+      "offset": 5937838,
+      "size": 59533,
+      "uncompressed_size": 127480,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_decimal.pyd",
+      "offset": 5997371,
+      "size": 125538,
+      "uncompressed_size": 262000,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_elementtree.pyd",
+      "offset": 6122909,
+      "size": 61878,
+      "uncompressed_size": 135160,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_hashlib.pyd",
+      "offset": 6184787,
+      "size": 31479,
+      "uncompressed_size": 68976,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_lzma.pyd",
+      "offset": 6216266,
+      "size": 89893,
+      "uncompressed_size": 161136,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_multiprocessing.pyd",
+      "offset": 6306159,
+      "size": 20490,
+      "uncompressed_size": 37368,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_overlapped.pyd",
+      "offset": 6326649,
+      "size": 28559,
+      "uncompressed_size": 57336,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_queue.pyd",
+      "offset": 6355208,
+      "size": 18904,
+      "uncompressed_size": 33784,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_socket.pyd",
+      "offset": 6374112,
+      "size": 40952,
+      "uncompressed_size": 85496,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_ssl.pyd",
+      "offset": 6415064,
+      "size": 71856,
+      "uncompressed_size": 179432,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\auto.tcl",
+      "offset": 6486920,
+      "size": 6679,
+      "uncompressed_size": 21578,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\clock.tcl",
+      "offset": 6493599,
+      "size": 30259,
+      "uncompressed_size": 133009,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\ascii.enc",
+      "offset": 6523858,
+      "size": 301,
+      "uncompressed_size": 1110,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\big5.enc",
+      "offset": 6524159,
+      "size": 32229,
+      "uncompressed_size": 94389,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cns11643.enc",
+      "offset": 6556388,
+      "size": 20938,
+      "uncompressed_size": 98634,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp1250.enc",
+      "offset": 6577326,
+      "size": 553,
+      "uncompressed_size": 1111,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp1251.enc",
+      "offset": 6577879,
+      "size": 545,
+      "uncompressed_size": 1111,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp1252.enc",
+      "offset": 6578424,
+      "size": 532,
+      "uncompressed_size": 1111,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp1253.enc",
+      "offset": 6578956,
+      "size": 535,
+      "uncompressed_size": 1111,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp1254.enc",
+      "offset": 6579491,
+      "size": 537,
+      "uncompressed_size": 1111,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp1255.enc",
+      "offset": 6580028,
+      "size": 529,
+      "uncompressed_size": 1111,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp1256.enc",
+      "offset": 6580557,
+      "size": 557,
+      "uncompressed_size": 1111,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp1257.enc",
+      "offset": 6581114,
+      "size": 551,
+      "uncompressed_size": 1111,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp1258.enc",
+      "offset": 6581665,
+      "size": 544,
+      "uncompressed_size": 1111,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp437.enc",
+      "offset": 6582209,
+      "size": 543,
+      "uncompressed_size": 1110,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp737.enc",
+      "offset": 6582752,
+      "size": 535,
+      "uncompressed_size": 1110,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp775.enc",
+      "offset": 6583287,
+      "size": 550,
+      "uncompressed_size": 1110,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp850.enc",
+      "offset": 6583837,
+      "size": 544,
+      "uncompressed_size": 1110,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp852.enc",
+      "offset": 6584381,
+      "size": 550,
+      "uncompressed_size": 1110,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp855.enc",
+      "offset": 6584931,
+      "size": 555,
+      "uncompressed_size": 1110,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp857.enc",
+      "offset": 6585486,
+      "size": 546,
+      "uncompressed_size": 1110,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp860.enc",
+      "offset": 6586032,
+      "size": 544,
+      "uncompressed_size": 1110,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp861.enc",
+      "offset": 6586576,
+      "size": 548,
+      "uncompressed_size": 1110,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp862.enc",
+      "offset": 6587124,
+      "size": 535,
+      "uncompressed_size": 1110,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp863.enc",
+      "offset": 6587659,
+      "size": 545,
+      "uncompressed_size": 1110,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp864.enc",
+      "offset": 6588204,
+      "size": 552,
+      "uncompressed_size": 1110,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp865.enc",
+      "offset": 6588756,
+      "size": 543,
+      "uncompressed_size": 1110,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp866.enc",
+      "offset": 6589299,
+      "size": 543,
+      "uncompressed_size": 1110,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp869.enc",
+      "offset": 6589842,
+      "size": 541,
+      "uncompressed_size": 1110,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp874.enc",
+      "offset": 6590383,
+      "size": 528,
+      "uncompressed_size": 1110,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp932.enc",
+      "offset": 6590911,
+      "size": 18489,
+      "uncompressed_size": 49008,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp936.enc",
+      "offset": 6609400,
+      "size": 51529,
+      "uncompressed_size": 134671,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp949.enc",
+      "offset": 6660929,
+      "size": 40836,
+      "uncompressed_size": 132551,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\cp950.enc",
+      "offset": 6701765,
+      "size": 31779,
+      "uncompressed_size": 93330,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\dingbats.enc",
+      "offset": 6733544,
+      "size": 540,
+      "uncompressed_size": 1113,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\ebcdic.enc",
+      "offset": 6734084,
+      "size": 503,
+      "uncompressed_size": 1073,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\euc-cn.enc",
+      "offset": 6734587,
+      "size": 18649,
+      "uncompressed_size": 86971,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\euc-jp.enc",
+      "offset": 6753236,
+      "size": 17543,
+      "uncompressed_size": 83890,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\euc-kr.enc",
+      "offset": 6770779,
+      "size": 20599,
+      "uncompressed_size": 95451,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\gb12345.enc",
+      "offset": 6791378,
+      "size": 18747,
+      "uncompressed_size": 88033,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\gb1988.enc",
+      "offset": 6810125,
+      "size": 450,
+      "uncompressed_size": 1111,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\gb2312-raw.enc",
+      "offset": 6810575,
+      "size": 18340,
+      "uncompressed_size": 85912,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\gb2312.enc",
+      "offset": 6828915,
+      "size": 18649,
+      "uncompressed_size": 86971,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\iso2022-jp.enc",
+      "offset": 6847564,
+      "size": 146,
+      "uncompressed_size": 204,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\iso2022-kr.enc",
+      "offset": 6847710,
+      "size": 117,
+      "uncompressed_size": 122,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\iso2022.enc",
+      "offset": 6847827,
+      "size": 159,
+      "uncompressed_size": 240,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\iso8859-1.enc",
+      "offset": 6847986,
+      "size": 515,
+      "uncompressed_size": 1114,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\iso8859-10.enc",
+      "offset": 6848501,
+      "size": 544,
+      "uncompressed_size": 1115,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\iso8859-11.enc",
+      "offset": 6849045,
+      "size": 526,
+      "uncompressed_size": 1115,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\iso8859-13.enc",
+      "offset": 6849571,
+      "size": 542,
+      "uncompressed_size": 1115,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\iso8859-14.enc",
+      "offset": 6850113,
+      "size": 542,
+      "uncompressed_size": 1115,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\iso8859-15.enc",
+      "offset": 6850655,
+      "size": 527,
+      "uncompressed_size": 1115,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\iso8859-16.enc",
+      "offset": 6851182,
+      "size": 546,
+      "uncompressed_size": 1115,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\iso8859-2.enc",
+      "offset": 6851728,
+      "size": 546,
+      "uncompressed_size": 1114,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\iso8859-3.enc",
+      "offset": 6852274,
+      "size": 541,
+      "uncompressed_size": 1114,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\iso8859-4.enc",
+      "offset": 6852815,
+      "size": 545,
+      "uncompressed_size": 1114,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\iso8859-5.enc",
+      "offset": 6853360,
+      "size": 525,
+      "uncompressed_size": 1114,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\iso8859-6.enc",
+      "offset": 6853885,
+      "size": 478,
+      "uncompressed_size": 1114,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\iso8859-7.enc",
+      "offset": 6854363,
+      "size": 530,
+      "uncompressed_size": 1114,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\iso8859-8.enc",
+      "offset": 6854893,
+      "size": 466,
+      "uncompressed_size": 1114,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\iso8859-9.enc",
+      "offset": 6855359,
+      "size": 522,
+      "uncompressed_size": 1114,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\jis0201.enc",
+      "offset": 6855881,
+      "size": 450,
+      "uncompressed_size": 1112,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\jis0208.enc",
+      "offset": 6856331,
+      "size": 17103,
+      "uncompressed_size": 81772,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\jis0212.enc",
+      "offset": 6873434,
+      "size": 14202,
+      "uncompressed_size": 72133,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\koi8-r.enc",
+      "offset": 6887636,
+      "size": 542,
+      "uncompressed_size": 1111,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\koi8-ru.enc",
+      "offset": 6888178,
+      "size": 540,
+      "uncompressed_size": 1092,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\koi8-t.enc",
+      "offset": 6888718,
+      "size": 526,
+      "uncompressed_size": 1091,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\koi8-u.enc",
+      "offset": 6889244,
+      "size": 545,
+      "uncompressed_size": 1111,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\ksc5601.enc",
+      "offset": 6889789,
+      "size": 20286,
+      "uncompressed_size": 94393,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\macCentEuro.enc",
+      "offset": 6910075,
+      "size": 559,
+      "uncompressed_size": 1116,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\macCroatian.enc",
+      "offset": 6910634,
+      "size": 565,
+      "uncompressed_size": 1116,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\macCyrillic.enc",
+      "offset": 6911199,
+      "size": 562,
+      "uncompressed_size": 1116,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\macDingbats.enc",
+      "offset": 6911761,
+      "size": 546,
+      "uncompressed_size": 1116,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\macGreek.enc",
+      "offset": 6912307,
+      "size": 554,
+      "uncompressed_size": 1113,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\macIceland.enc",
+      "offset": 6912861,
+      "size": 564,
+      "uncompressed_size": 1115,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\macJapan.enc",
+      "offset": 6913425,
+      "size": 17898,
+      "uncompressed_size": 48813,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\macRoman.enc",
+      "offset": 6931323,
+      "size": 565,
+      "uncompressed_size": 1113,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\macRomania.enc",
+      "offset": 6931888,
+      "size": 566,
+      "uncompressed_size": 1115,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\macThai.enc",
+      "offset": 6932454,
+      "size": 546,
+      "uncompressed_size": 1112,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\macTurkish.enc",
+      "offset": 6933000,
+      "size": 569,
+      "uncompressed_size": 1115,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\macUkraine.enc",
+      "offset": 6933569,
+      "size": 562,
+      "uncompressed_size": 1115,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\shiftjis.enc",
+      "offset": 6934131,
+      "size": 17090,
+      "uncompressed_size": 42552,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\symbol.enc",
+      "offset": 6951221,
+      "size": 568,
+      "uncompressed_size": 1111,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\encoding\\tis-620.enc",
+      "offset": 6951789,
+      "size": 478,
+      "uncompressed_size": 1112,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\history.tcl",
+      "offset": 6952267,
+      "size": 2613,
+      "uncompressed_size": 8236,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\http1.0\\http.tcl",
+      "offset": 6954880,
+      "size": 3070,
+      "uncompressed_size": 10052,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\http1.0\\pkgIndex.tcl",
+      "offset": 6957950,
+      "size": 423,
+      "uncompressed_size": 746,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\init.tcl",
+      "offset": 6958373,
+      "size": 8118,
+      "uncompressed_size": 25722,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\af.msg",
+      "offset": 6966491,
+      "size": 322,
+      "uncompressed_size": 1038,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\af_za.msg",
+      "offset": 6966813,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\ar.msg",
+      "offset": 6966976,
+      "size": 451,
+      "uncompressed_size": 2018,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\ar_in.msg",
+      "offset": 6967427,
+      "size": 163,
+      "uncompressed_size": 265,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\ar_jo.msg",
+      "offset": 6967590,
+      "size": 342,
+      "uncompressed_size": 1851,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\ar_lb.msg",
+      "offset": 6967932,
+      "size": 341,
+      "uncompressed_size": 1851,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\ar_sy.msg",
+      "offset": 6968273,
+      "size": 346,
+      "uncompressed_size": 1851,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\be.msg",
+      "offset": 6968619,
+      "size": 493,
+      "uncompressed_size": 2157,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\bg.msg",
+      "offset": 6969112,
+      "size": 450,
+      "uncompressed_size": 1871,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\bn.msg",
+      "offset": 6969562,
+      "size": 414,
+      "uncompressed_size": 2335,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\bn_in.msg",
+      "offset": 6969976,
+      "size": 164,
+      "uncompressed_size": 265,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\ca.msg",
+      "offset": 6970140,
+      "size": 350,
+      "uncompressed_size": 1152,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\cs.msg",
+      "offset": 6970490,
+      "size": 405,
+      "uncompressed_size": 1354,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\da.msg",
+      "offset": 6970895,
+      "size": 363,
+      "uncompressed_size": 1208,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\de.msg",
+      "offset": 6971258,
+      "size": 385,
+      "uncompressed_size": 1276,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\de_at.msg",
+      "offset": 6971643,
+      "size": 295,
+      "uncompressed_size": 847,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\de_be.msg",
+      "offset": 6971938,
+      "size": 381,
+      "uncompressed_size": 1276,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\el.msg",
+      "offset": 6972319,
+      "size": 501,
+      "uncompressed_size": 2304,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\en_au.msg",
+      "offset": 6972820,
+      "size": 170,
+      "uncompressed_size": 307,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\en_be.msg",
+      "offset": 6972990,
+      "size": 174,
+      "uncompressed_size": 312,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\en_bw.msg",
+      "offset": 6973164,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\en_ca.msg",
+      "offset": 6973327,
+      "size": 169,
+      "uncompressed_size": 295,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\en_gb.msg",
+      "offset": 6973496,
+      "size": 162,
+      "uncompressed_size": 286,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\en_hk.msg",
+      "offset": 6973658,
+      "size": 173,
+      "uncompressed_size": 329,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\en_ie.msg",
+      "offset": 6973831,
+      "size": 162,
+      "uncompressed_size": 286,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\en_in.msg",
+      "offset": 6973993,
+      "size": 166,
+      "uncompressed_size": 318,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\en_nz.msg",
+      "offset": 6974159,
+      "size": 171,
+      "uncompressed_size": 307,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\en_ph.msg",
+      "offset": 6974330,
+      "size": 172,
+      "uncompressed_size": 329,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\en_sg.msg",
+      "offset": 6974502,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\en_za.msg",
+      "offset": 6974665,
+      "size": 161,
+      "uncompressed_size": 251,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\en_zw.msg",
+      "offset": 6974826,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\eo.msg",
+      "offset": 6974989,
+      "size": 392,
+      "uncompressed_size": 1285,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\es.msg",
+      "offset": 6975381,
+      "size": 375,
+      "uncompressed_size": 1232,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\es_ar.msg",
+      "offset": 6975756,
+      "size": 157,
+      "uncompressed_size": 248,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\es_bo.msg",
+      "offset": 6975913,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\es_cl.msg",
+      "offset": 6976076,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\es_co.msg",
+      "offset": 6976239,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\es_cr.msg",
+      "offset": 6976402,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\es_do.msg",
+      "offset": 6976565,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\es_ec.msg",
+      "offset": 6976728,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\es_gt.msg",
+      "offset": 6976891,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\es_hn.msg",
+      "offset": 6977054,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\es_mx.msg",
+      "offset": 6977217,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\es_ni.msg",
+      "offset": 6977380,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\es_pa.msg",
+      "offset": 6977543,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\es_pe.msg",
+      "offset": 6977706,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\es_pr.msg",
+      "offset": 6977869,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\es_py.msg",
+      "offset": 6978032,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\es_sv.msg",
+      "offset": 6978195,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\es_uy.msg",
+      "offset": 6978358,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\es_ve.msg",
+      "offset": 6978521,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\et.msg",
+      "offset": 6978684,
+      "size": 381,
+      "uncompressed_size": 1258,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\eu.msg",
+      "offset": 6979065,
+      "size": 299,
+      "uncompressed_size": 1032,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\eu_es.msg",
+      "offset": 6979364,
+      "size": 168,
+      "uncompressed_size": 294,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\fa.msg",
+      "offset": 6979532,
+      "size": 382,
+      "uncompressed_size": 1711,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\fa_in.msg",
+      "offset": 6979914,
+      "size": 452,
+      "uncompressed_size": 2009,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\fa_ir.msg",
+      "offset": 6980366,
+      "size": 201,
+      "uncompressed_size": 426,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\fi.msg",
+      "offset": 6980567,
+      "size": 375,
+      "uncompressed_size": 1195,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\fo.msg",
+      "offset": 6980942,
+      "size": 328,
+      "uncompressed_size": 1033,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\fo_fo.msg",
+      "offset": 6981270,
+      "size": 162,
+      "uncompressed_size": 286,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\fr.msg",
+      "offset": 6981432,
+      "size": 369,
+      "uncompressed_size": 1257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\fr_be.msg",
+      "offset": 6981801,
+      "size": 163,
+      "uncompressed_size": 286,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\fr_ca.msg",
+      "offset": 6981964,
+      "size": 162,
+      "uncompressed_size": 286,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\fr_ch.msg",
+      "offset": 6982126,
+      "size": 164,
+      "uncompressed_size": 288,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\ga.msg",
+      "offset": 6982290,
+      "size": 364,
+      "uncompressed_size": 1188,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\ga_ie.msg",
+      "offset": 6982654,
+      "size": 162,
+      "uncompressed_size": 286,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\gl.msg",
+      "offset": 6982816,
+      "size": 315,
+      "uncompressed_size": 997,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\gl_es.msg",
+      "offset": 6983131,
+      "size": 162,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\gv.msg",
+      "offset": 6983293,
+      "size": 326,
+      "uncompressed_size": 1084,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\gv_gb.msg",
+      "offset": 6983619,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\he.msg",
+      "offset": 6983782,
+      "size": 426,
+      "uncompressed_size": 1990,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\hi.msg",
+      "offset": 6984208,
+      "size": 365,
+      "uncompressed_size": 1777,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\hi_in.msg",
+      "offset": 6984573,
+      "size": 162,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\hr.msg",
+      "offset": 6984735,
+      "size": 376,
+      "uncompressed_size": 1171,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\hu.msg",
+      "offset": 6985111,
+      "size": 430,
+      "uncompressed_size": 1381,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\id.msg",
+      "offset": 6985541,
+      "size": 294,
+      "uncompressed_size": 961,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\id_id.msg",
+      "offset": 6985835,
+      "size": 162,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\is.msg",
+      "offset": 6985997,
+      "size": 391,
+      "uncompressed_size": 1305,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\it.msg",
+      "offset": 6986388,
+      "size": 384,
+      "uncompressed_size": 1294,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\it_ch.msg",
+      "offset": 6986772,
+      "size": 157,
+      "uncompressed_size": 250,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\ja.msg",
+      "offset": 6986929,
+      "size": 536,
+      "uncompressed_size": 1689,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\kl.msg",
+      "offset": 6987465,
+      "size": 322,
+      "uncompressed_size": 1025,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\kl_gl.msg",
+      "offset": 6987787,
+      "size": 160,
+      "uncompressed_size": 286,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\ko.msg",
+      "offset": 6987947,
+      "size": 393,
+      "uncompressed_size": 1621,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\ko_kr.msg",
+      "offset": 6988340,
+      "size": 193,
+      "uncompressed_size": 354,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\kok.msg",
+      "offset": 6988533,
+      "size": 403,
+      "uncompressed_size": 1997,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\kok_in.msg",
+      "offset": 6988936,
+      "size": 163,
+      "uncompressed_size": 260,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\kw.msg",
+      "offset": 6989099,
+      "size": 325,
+      "uncompressed_size": 1013,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\kw_gb.msg",
+      "offset": 6989424,
+      "size": 163,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\lt.msg",
+      "offset": 6989587,
+      "size": 416,
+      "uncompressed_size": 1307,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\lv.msg",
+      "offset": 6990003,
+      "size": 403,
+      "uncompressed_size": 1271,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\mk.msg",
+      "offset": 6990406,
+      "size": 468,
+      "uncompressed_size": 2157,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\mr.msg",
+      "offset": 6990874,
+      "size": 361,
+      "uncompressed_size": 1846,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\mr_in.msg",
+      "offset": 6991235,
+      "size": 162,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\ms.msg",
+      "offset": 6991397,
+      "size": 293,
+      "uncompressed_size": 957,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\ms_my.msg",
+      "offset": 6991690,
+      "size": 163,
+      "uncompressed_size": 265,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\mt.msg",
+      "offset": 6991853,
+      "size": 291,
+      "uncompressed_size": 717,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\nb.msg",
+      "offset": 6992144,
+      "size": 362,
+      "uncompressed_size": 1209,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\nl.msg",
+      "offset": 6992506,
+      "size": 349,
+      "uncompressed_size": 1129,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\nl_be.msg",
+      "offset": 6992855,
+      "size": 162,
+      "uncompressed_size": 286,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\nn.msg",
+      "offset": 6993017,
+      "size": 364,
+      "uncompressed_size": 1200,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\pl.msg",
+      "offset": 6993381,
+      "size": 406,
+      "uncompressed_size": 1263,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\pt.msg",
+      "offset": 6993787,
+      "size": 370,
+      "uncompressed_size": 1177,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\pt_br.msg",
+      "offset": 6994157,
+      "size": 162,
+      "uncompressed_size": 286,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\ro.msg",
+      "offset": 6994319,
+      "size": 394,
+      "uncompressed_size": 1224,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\ru.msg",
+      "offset": 6994713,
+      "size": 498,
+      "uncompressed_size": 2091,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\ru_ua.msg",
+      "offset": 6995211,
+      "size": 157,
+      "uncompressed_size": 248,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\sh.msg",
+      "offset": 6995368,
+      "size": 373,
+      "uncompressed_size": 1212,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\sk.msg",
+      "offset": 6995741,
+      "size": 388,
+      "uncompressed_size": 1255,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\sl.msg",
+      "offset": 6996129,
+      "size": 381,
+      "uncompressed_size": 1216,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\sq.msg",
+      "offset": 6996510,
+      "size": 409,
+      "uncompressed_size": 1321,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\sr.msg",
+      "offset": 6996919,
+      "size": 468,
+      "uncompressed_size": 2087,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\sv.msg",
+      "offset": 6997387,
+      "size": 371,
+      "uncompressed_size": 1219,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\sw.msg",
+      "offset": 6997758,
+      "size": 319,
+      "uncompressed_size": 1040,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\ta.msg",
+      "offset": 6998077,
+      "size": 375,
+      "uncompressed_size": 1874,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\ta_in.msg",
+      "offset": 6998452,
+      "size": 162,
+      "uncompressed_size": 257,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\te.msg",
+      "offset": 6998614,
+      "size": 387,
+      "uncompressed_size": 2149,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\te_in.msg",
+      "offset": 6999001,
+      "size": 210,
+      "uncompressed_size": 419,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\th.msg",
+      "offset": 6999211,
+      "size": 546,
+      "uncompressed_size": 2359,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\tr.msg",
+      "offset": 6999757,
+      "size": 379,
+      "uncompressed_size": 1183,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\uk.msg",
+      "offset": 7000136,
+      "size": 485,
+      "uncompressed_size": 2165,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\vi.msg",
+      "offset": 7000621,
+      "size": 395,
+      "uncompressed_size": 1471,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\zh.msg",
+      "offset": 7001016,
+      "size": 694,
+      "uncompressed_size": 3385,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\zh_cn.msg",
+      "offset": 7001710,
+      "size": 190,
+      "uncompressed_size": 319,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\zh_hk.msg",
+      "offset": 7001900,
+      "size": 288,
+      "uncompressed_size": 780,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\zh_sg.msg",
+      "offset": 7002188,
+      "size": 185,
+      "uncompressed_size": 347,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\msgs\\zh_tw.msg",
+      "offset": 7002373,
+      "size": 191,
+      "uncompressed_size": 354,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\opt0.4\\optparse.tcl",
+      "offset": 7002564,
+      "size": 9921,
+      "uncompressed_size": 33781,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\opt0.4\\pkgIndex.tcl",
+      "offset": 7012485,
+      "size": 385,
+      "uncompressed_size": 636,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\package.tcl",
+      "offset": 7012870,
+      "size": 7187,
+      "uncompressed_size": 23983,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\parray.tcl",
+      "offset": 7020057,
+      "size": 456,
+      "uncompressed_size": 844,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\safe.tcl",
+      "offset": 7020513,
+      "size": 12808,
+      "uncompressed_size": 42328,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tclIndex",
+      "offset": 7033321,
+      "size": 916,
+      "uncompressed_size": 7432,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tm.tcl",
+      "offset": 7034237,
+      "size": 4475,
+      "uncompressed_size": 12236,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Abidjan",
+      "offset": 7038712,
+      "size": 138,
+      "uncompressed_size": 147,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Accra",
+      "offset": 7038850,
+      "size": 140,
+      "uncompressed_size": 183,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Addis_Ababa",
+      "offset": 7038990,
+      "size": 145,
+      "uncompressed_size": 189,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Algiers",
+      "offset": 7039135,
+      "size": 351,
+      "uncompressed_size": 1080,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Asmara",
+      "offset": 7039486,
+      "size": 142,
+      "uncompressed_size": 184,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Asmera",
+      "offset": 7039628,
+      "size": 142,
+      "uncompressed_size": 184,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Bamako",
+      "offset": 7039770,
+      "size": 142,
+      "uncompressed_size": 184,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Bangui",
+      "offset": 7039912,
+      "size": 141,
+      "uncompressed_size": 178,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Banjul",
+      "offset": 7040053,
+      "size": 143,
+      "uncompressed_size": 184,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Bissau",
+      "offset": 7040196,
+      "size": 152,
+      "uncompressed_size": 175,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Blantyre",
+      "offset": 7040348,
+      "size": 144,
+      "uncompressed_size": 183,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Brazzaville",
+      "offset": 7040492,
+      "size": 145,
+      "uncompressed_size": 183,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Bujumbura",
+      "offset": 7040637,
+      "size": 146,
+      "uncompressed_size": 184,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Cairo",
+      "offset": 7040783,
+      "size": 1630,
+      "uncompressed_size": 8472,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Casablanca",
+      "offset": 7042413,
+      "size": 1174,
+      "uncompressed_size": 5335,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Ceuta",
+      "offset": 7043587,
+      "size": 1542,
+      "uncompressed_size": 7536,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Conakry",
+      "offset": 7045129,
+      "size": 143,
+      "uncompressed_size": 185,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Dakar",
+      "offset": 7045272,
+      "size": 141,
+      "uncompressed_size": 183,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Dar_es_Salaam",
+      "offset": 7045413,
+      "size": 148,
+      "uncompressed_size": 191,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Djibouti",
+      "offset": 7045561,
+      "size": 143,
+      "uncompressed_size": 186,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Douala",
+      "offset": 7045704,
+      "size": 140,
+      "uncompressed_size": 178,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\El_Aaiun",
+      "offset": 7045844,
+      "size": 1118,
+      "uncompressed_size": 5049,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Freetown",
+      "offset": 7046962,
+      "size": 143,
+      "uncompressed_size": 186,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Gaborone",
+      "offset": 7047105,
+      "size": 142,
+      "uncompressed_size": 183,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Harare",
+      "offset": 7047247,
+      "size": 141,
+      "uncompressed_size": 181,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Johannesburg",
+      "offset": 7047388,
+      "size": 185,
+      "uncompressed_size": 309,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Juba",
+      "offset": 7047573,
+      "size": 335,
+      "uncompressed_size": 1127,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Kampala",
+      "offset": 7047908,
+      "size": 143,
+      "uncompressed_size": 185,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Khartoum",
+      "offset": 7048051,
+      "size": 337,
+      "uncompressed_size": 1131,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Kigali",
+      "offset": 7048388,
+      "size": 141,
+      "uncompressed_size": 181,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Kinshasa",
+      "offset": 7048529,
+      "size": 141,
+      "uncompressed_size": 180,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Lagos",
+      "offset": 7048670,
+      "size": 172,
+      "uncompressed_size": 232,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Libreville",
+      "offset": 7048842,
+      "size": 142,
+      "uncompressed_size": 182,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Lome",
+      "offset": 7048984,
+      "size": 140,
+      "uncompressed_size": 182,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Luanda",
+      "offset": 7049124,
+      "size": 139,
+      "uncompressed_size": 178,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Lubumbashi",
+      "offset": 7049263,
+      "size": 145,
+      "uncompressed_size": 185,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Lusaka",
+      "offset": 7049408,
+      "size": 142,
+      "uncompressed_size": 181,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Malabo",
+      "offset": 7049550,
+      "size": 140,
+      "uncompressed_size": 178,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Maputo",
+      "offset": 7049690,
+      "size": 139,
+      "uncompressed_size": 149,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Maseru",
+      "offset": 7049829,
+      "size": 147,
+      "uncompressed_size": 199,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Mbabane",
+      "offset": 7049976,
+      "size": 148,
+      "uncompressed_size": 200,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Mogadishu",
+      "offset": 7050124,
+      "size": 145,
+      "uncompressed_size": 187,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Monrovia",
+      "offset": 7050269,
+      "size": 160,
+      "uncompressed_size": 208,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Nairobi",
+      "offset": 7050429,
+      "size": 179,
+      "uncompressed_size": 268,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Ndjamena",
+      "offset": 7050608,
+      "size": 164,
+      "uncompressed_size": 208,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Niamey",
+      "offset": 7050772,
+      "size": 141,
+      "uncompressed_size": 178,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Nouakchott",
+      "offset": 7050913,
+      "size": 146,
+      "uncompressed_size": 188,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Ouagadougou",
+      "offset": 7051059,
+      "size": 147,
+      "uncompressed_size": 189,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Porto-Novo",
+      "offset": 7051206,
+      "size": 145,
+      "uncompressed_size": 182,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Sao_Tome",
+      "offset": 7051351,
+      "size": 173,
+      "uncompressed_size": 234,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Timbuktu",
+      "offset": 7051524,
+      "size": 144,
+      "uncompressed_size": 186,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Tripoli",
+      "offset": 7051668,
+      "size": 316,
+      "uncompressed_size": 954,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Tunis",
+      "offset": 7051984,
+      "size": 338,
+      "uncompressed_size": 1111,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Africa\\Windhoek",
+      "offset": 7052322,
+      "size": 455,
+      "uncompressed_size": 1646,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Adak",
+      "offset": 7052777,
+      "size": 1659,
+      "uncompressed_size": 8447,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Anchorage",
+      "offset": 7054436,
+      "size": 1672,
+      "uncompressed_size": 8685,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Anguilla",
+      "offset": 7056108,
+      "size": 149,
+      "uncompressed_size": 202,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Antigua",
+      "offset": 7056257,
+      "size": 148,
+      "uncompressed_size": 201,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Araguaina",
+      "offset": 7056405,
+      "size": 445,
+      "uncompressed_size": 1727,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Argentina\\Buenos_Aires",
+      "offset": 7056850,
+      "size": 512,
+      "uncompressed_size": 1987,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Argentina\\Catamarca",
+      "offset": 7057362,
+      "size": 517,
+      "uncompressed_size": 2015,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Argentina\\ComodRivadavia",
+      "offset": 7057879,
+      "size": 156,
+      "uncompressed_size": 242,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Argentina\\Cordoba",
+      "offset": 7058035,
+      "size": 509,
+      "uncompressed_size": 1982,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Argentina\\Jujuy",
+      "offset": 7058544,
+      "size": 510,
+      "uncompressed_size": 1980,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Argentina\\La_Rioja",
+      "offset": 7059054,
+      "size": 519,
+      "uncompressed_size": 2043,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Argentina\\Mendoza",
+      "offset": 7059573,
+      "size": 516,
+      "uncompressed_size": 2015,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Argentina\\Rio_Gallegos",
+      "offset": 7060089,
+      "size": 518,
+      "uncompressed_size": 2018,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Argentina\\Salta",
+      "offset": 7060607,
+      "size": 504,
+      "uncompressed_size": 1951,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Argentina\\San_Juan",
+      "offset": 7061111,
+      "size": 522,
+      "uncompressed_size": 2043,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Argentina\\San_Luis",
+      "offset": 7061633,
+      "size": 523,
+      "uncompressed_size": 2019,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Argentina\\Tucuman",
+      "offset": 7062156,
+      "size": 525,
+      "uncompressed_size": 2042,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Argentina\\Ushuaia",
+      "offset": 7062681,
+      "size": 514,
+      "uncompressed_size": 2013,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Aruba",
+      "offset": 7063195,
+      "size": 147,
+      "uncompressed_size": 199,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Asuncion",
+      "offset": 7063342,
+      "size": 1502,
+      "uncompressed_size": 7691,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Atikokan",
+      "offset": 7064844,
+      "size": 143,
+      "uncompressed_size": 187,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Atka",
+      "offset": 7064987,
+      "size": 138,
+      "uncompressed_size": 177,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Bahia",
+      "offset": 7065125,
+      "size": 483,
+      "uncompressed_size": 1949,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Bahia_Banderas",
+      "offset": 7065608,
+      "size": 514,
+      "uncompressed_size": 2042,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Barbados",
+      "offset": 7066122,
+      "size": 262,
+      "uncompressed_size": 648,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Belem",
+      "offset": 7066384,
+      "size": 307,
+      "uncompressed_size": 1001,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Belize",
+      "offset": 7066691,
+      "size": 705,
+      "uncompressed_size": 3284,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Blanc-Sablon",
+      "offset": 7067396,
+      "size": 152,
+      "uncompressed_size": 206,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Boa_Vista",
+      "offset": 7067548,
+      "size": 341,
+      "uncompressed_size": 1164,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Bogota",
+      "offset": 7067889,
+      "size": 174,
+      "uncompressed_size": 243,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Boise",
+      "offset": 7068063,
+      "size": 1668,
+      "uncompressed_size": 8605,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Buenos_Aires",
+      "offset": 7069731,
+      "size": 150,
+      "uncompressed_size": 239,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Cambridge_Bay",
+      "offset": 7069881,
+      "size": 1604,
+      "uncompressed_size": 8154,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Campo_Grande",
+      "offset": 7071485,
+      "size": 629,
+      "uncompressed_size": 2827,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Cancun",
+      "offset": 7072114,
+      "size": 406,
+      "uncompressed_size": 1442,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Caracas",
+      "offset": 7072520,
+      "size": 181,
+      "uncompressed_size": 276,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Catamarca",
+      "offset": 7072701,
+      "size": 146,
+      "uncompressed_size": 227,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Cayenne",
+      "offset": 7072847,
+      "size": 153,
+      "uncompressed_size": 183,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Cayman",
+      "offset": 7073000,
+      "size": 142,
+      "uncompressed_size": 185,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Chicago",
+      "offset": 7073142,
+      "size": 2085,
+      "uncompressed_size": 11372,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Chihuahua",
+      "offset": 7075227,
+      "size": 511,
+      "uncompressed_size": 2040,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Ciudad_Juarez",
+      "offset": 7075738,
+      "size": 1354,
+      "uncompressed_size": 6657,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Coral_Harbour",
+      "offset": 7077092,
+      "size": 148,
+      "uncompressed_size": 192,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Cordoba",
+      "offset": 7077240,
+      "size": 146,
+      "uncompressed_size": 219,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Costa_Rica",
+      "offset": 7077386,
+      "size": 221,
+      "uncompressed_size": 431,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Creston",
+      "offset": 7077607,
+      "size": 143,
+      "uncompressed_size": 189,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Cuiaba",
+      "offset": 7077750,
+      "size": 621,
+      "uncompressed_size": 2821,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Curacao",
+      "offset": 7078371,
+      "size": 148,
+      "uncompressed_size": 201,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Danmarkshavn",
+      "offset": 7078519,
+      "size": 350,
+      "uncompressed_size": 1095,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Dawson",
+      "offset": 7078869,
+      "size": 695,
+      "uncompressed_size": 3028,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Dawson_Creek",
+      "offset": 7079564,
+      "size": 484,
+      "uncompressed_size": 1940,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Denver",
+      "offset": 7080048,
+      "size": 1685,
+      "uncompressed_size": 8920,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Detroit",
+      "offset": 7081733,
+      "size": 1639,
+      "uncompressed_size": 8430,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Dominica",
+      "offset": 7083372,
+      "size": 148,
+      "uncompressed_size": 202,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Edmonton",
+      "offset": 7083520,
+      "size": 1648,
+      "uncompressed_size": 8600,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Eirunepe",
+      "offset": 7085168,
+      "size": 351,
+      "uncompressed_size": 1194,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\El_Salvador",
+      "offset": 7085519,
+      "size": 183,
+      "uncompressed_size": 279,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Ensenada",
+      "offset": 7085702,
+      "size": 143,
+      "uncompressed_size": 190,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Fort_Nelson",
+      "offset": 7085845,
+      "size": 927,
+      "uncompressed_size": 4578,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Fort_Wayne",
+      "offset": 7086772,
+      "size": 152,
+      "uncompressed_size": 231,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Fortaleza",
+      "offset": 7086924,
+      "size": 376,
+      "uncompressed_size": 1380,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Glace_Bay",
+      "offset": 7087300,
+      "size": 1603,
+      "uncompressed_size": 8372,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Godthab",
+      "offset": 7088903,
+      "size": 142,
+      "uncompressed_size": 180,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Goose_Bay",
+      "offset": 7089045,
+      "size": 2005,
+      "uncompressed_size": 10353,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Grand_Turk",
+      "offset": 7091050,
+      "size": 1471,
+      "uncompressed_size": 7522,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Grenada",
+      "offset": 7092521,
+      "size": 147,
+      "uncompressed_size": 201,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Guadeloupe",
+      "offset": 7092668,
+      "size": 150,
+      "uncompressed_size": 204,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Guatemala",
+      "offset": 7092818,
+      "size": 211,
+      "uncompressed_size": 399,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Guayaquil",
+      "offset": 7093029,
+      "size": 179,
+      "uncompressed_size": 246,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Guyana",
+      "offset": 7093208,
+      "size": 174,
+      "uncompressed_size": 242,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Halifax",
+      "offset": 7093382,
+      "size": 2027,
+      "uncompressed_size": 11124,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Havana",
+      "offset": 7095409,
+      "size": 1645,
+      "uncompressed_size": 8729,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Hermosillo",
+      "offset": 7097054,
+      "size": 245,
+      "uncompressed_size": 589,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Indiana\\Indianapolis",
+      "offset": 7097299,
+      "size": 1432,
+      "uncompressed_size": 7230,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Indiana\\Knox",
+      "offset": 7098731,
+      "size": 1665,
+      "uncompressed_size": 8755,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Indiana\\Marengo",
+      "offset": 7100396,
+      "size": 1432,
+      "uncompressed_size": 7273,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Indiana\\Petersburg",
+      "offset": 7101828,
+      "size": 1499,
+      "uncompressed_size": 7611,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Indiana\\Tell_City",
+      "offset": 7103327,
+      "size": 1404,
+      "uncompressed_size": 7100,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Indiana\\Vevay",
+      "offset": 7104731,
+      "size": 1306,
+      "uncompressed_size": 6563,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Indiana\\Vincennes",
+      "offset": 7106037,
+      "size": 1433,
+      "uncompressed_size": 7226,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Indiana\\Winamac",
+      "offset": 7107470,
+      "size": 1471,
+      "uncompressed_size": 7410,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Indianapolis",
+      "offset": 7108941,
+      "size": 145,
+      "uncompressed_size": 233,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Inuvik",
+      "offset": 7109086,
+      "size": 1575,
+      "uncompressed_size": 8053,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Iqaluit",
+      "offset": 7110661,
+      "size": 1556,
+      "uncompressed_size": 8086,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Jamaica",
+      "offset": 7112217,
+      "size": 283,
+      "uncompressed_size": 847,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Jujuy",
+      "offset": 7112500,
+      "size": 147,
+      "uncompressed_size": 211,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Juneau",
+      "offset": 7112647,
+      "size": 1677,
+      "uncompressed_size": 8682,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Kentucky\\Louisville",
+      "offset": 7114324,
+      "size": 1867,
+      "uncompressed_size": 9553,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Kentucky\\Monticello",
+      "offset": 7116191,
+      "size": 1681,
+      "uncompressed_size": 8558,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Knox_IN",
+      "offset": 7117872,
+      "size": 147,
+      "uncompressed_size": 204,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Kralendijk",
+      "offset": 7118019,
+      "size": 151,
+      "uncompressed_size": 204,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\La_Paz",
+      "offset": 7118170,
+      "size": 170,
+      "uncompressed_size": 217,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Lima",
+      "offset": 7118340,
+      "size": 215,
+      "uncompressed_size": 450,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Los_Angeles",
+      "offset": 7118555,
+      "size": 1817,
+      "uncompressed_size": 9726,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Louisville",
+      "offset": 7120372,
+      "size": 149,
+      "uncompressed_size": 228,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Lower_Princes",
+      "offset": 7120521,
+      "size": 152,
+      "uncompressed_size": 207,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Maceio",
+      "offset": 7120673,
+      "size": 396,
+      "uncompressed_size": 1492,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Managua",
+      "offset": 7121069,
+      "size": 255,
+      "uncompressed_size": 611,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Manaus",
+      "offset": 7121324,
+      "size": 334,
+      "uncompressed_size": 1132,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Marigot",
+      "offset": 7121658,
+      "size": 148,
+      "uncompressed_size": 201,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Martinique",
+      "offset": 7121806,
+      "size": 179,
+      "uncompressed_size": 251,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Matamoros",
+      "offset": 7121985,
+      "size": 1310,
+      "uncompressed_size": 6745,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Mazatlan",
+      "offset": 7123295,
+      "size": 495,
+      "uncompressed_size": 2036,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Mendoza",
+      "offset": 7123790,
+      "size": 147,
+      "uncompressed_size": 219,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Menominee",
+      "offset": 7123937,
+      "size": 1608,
+      "uncompressed_size": 8410,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Merida",
+      "offset": 7125545,
+      "size": 466,
+      "uncompressed_size": 1877,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Metlakatla",
+      "offset": 7126011,
+      "size": 1332,
+      "uncompressed_size": 6705,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Mexico_City",
+      "offset": 7127343,
+      "size": 548,
+      "uncompressed_size": 2261,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Miquelon",
+      "offset": 7127891,
+      "size": 1396,
+      "uncompressed_size": 6852,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Moncton",
+      "offset": 7129287,
+      "size": 1974,
+      "uncompressed_size": 10507,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Monterrey",
+      "offset": 7131261,
+      "size": 518,
+      "uncompressed_size": 2100,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Montevideo",
+      "offset": 7131779,
+      "size": 651,
+      "uncompressed_size": 2800,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Montreal",
+      "offset": 7132430,
+      "size": 142,
+      "uncompressed_size": 190,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Montserrat",
+      "offset": 7132572,
+      "size": 149,
+      "uncompressed_size": 204,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Nassau",
+      "offset": 7132721,
+      "size": 141,
+      "uncompressed_size": 188,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\New_York",
+      "offset": 7132862,
+      "size": 2079,
+      "uncompressed_size": 11373,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Nipigon",
+      "offset": 7134941,
+      "size": 142,
+      "uncompressed_size": 189,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Nome",
+      "offset": 7135083,
+      "size": 1678,
+      "uncompressed_size": 8680,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Noronha",
+      "offset": 7136761,
+      "size": 371,
+      "uncompressed_size": 1354,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\North_Dakota\\Beulah",
+      "offset": 7137132,
+      "size": 1678,
+      "uncompressed_size": 8557,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\North_Dakota\\Center",
+      "offset": 7138810,
+      "size": 1673,
+      "uncompressed_size": 8557,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\North_Dakota\\New_Salem",
+      "offset": 7140483,
+      "size": 1679,
+      "uncompressed_size": 8560,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Nuuk",
+      "offset": 7142162,
+      "size": 1483,
+      "uncompressed_size": 7111,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Ojinaga",
+      "offset": 7143645,
+      "size": 1366,
+      "uncompressed_size": 6874,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Panama",
+      "offset": 7145011,
+      "size": 159,
+      "uncompressed_size": 186,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Pangnirtung",
+      "offset": 7145170,
+      "size": 147,
+      "uncompressed_size": 193,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Paramaribo",
+      "offset": 7145317,
+      "size": 182,
+      "uncompressed_size": 249,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Phoenix",
+      "offset": 7145499,
+      "size": 226,
+      "uncompressed_size": 496,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Port-au-Prince",
+      "offset": 7145725,
+      "size": 1305,
+      "uncompressed_size": 6613,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Port_of_Spain",
+      "offset": 7147030,
+      "size": 151,
+      "uncompressed_size": 207,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Porto_Acre",
+      "offset": 7147181,
+      "size": 149,
+      "uncompressed_size": 201,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Porto_Velho",
+      "offset": 7147330,
+      "size": 320,
+      "uncompressed_size": 1021,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Puerto_Rico",
+      "offset": 7147650,
+      "size": 187,
+      "uncompressed_size": 283,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Punta_Arenas",
+      "offset": 7147837,
+      "size": 807,
+      "uncompressed_size": 3614,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Rainy_River",
+      "offset": 7148644,
+      "size": 148,
+      "uncompressed_size": 196,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Rankin_Inlet",
+      "offset": 7148792,
+      "size": 1544,
+      "uncompressed_size": 8029,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Recife",
+      "offset": 7150336,
+      "size": 377,
+      "uncompressed_size": 1377,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Regina",
+      "offset": 7150713,
+      "size": 449,
+      "uncompressed_size": 1781,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Resolute",
+      "offset": 7151162,
+      "size": 1546,
+      "uncompressed_size": 8025,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Rio_Branco",
+      "offset": 7152708,
+      "size": 331,
+      "uncompressed_size": 1080,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Rosario",
+      "offset": 7153039,
+      "size": 150,
+      "uncompressed_size": 219,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Santa_Isabel",
+      "offset": 7153189,
+      "size": 146,
+      "uncompressed_size": 194,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Santarem",
+      "offset": 7153335,
+      "size": 323,
+      "uncompressed_size": 1048,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Santiago",
+      "offset": 7153658,
+      "size": 1672,
+      "uncompressed_size": 8590,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Santo_Domingo",
+      "offset": 7155330,
+      "size": 265,
+      "uncompressed_size": 616,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Sao_Paulo",
+      "offset": 7155595,
+      "size": 635,
+      "uncompressed_size": 2808,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Scoresbysund",
+      "offset": 7156230,
+      "size": 1507,
+      "uncompressed_size": 6902,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Shiprock",
+      "offset": 7157737,
+      "size": 144,
+      "uncompressed_size": 187,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Sitka",
+      "offset": 7157881,
+      "size": 1658,
+      "uncompressed_size": 8651,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\St_Barthelemy",
+      "offset": 7159539,
+      "size": 153,
+      "uncompressed_size": 207,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\St_Johns",
+      "offset": 7159692,
+      "size": 2161,
+      "uncompressed_size": 11289,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\St_Kitts",
+      "offset": 7161853,
+      "size": 148,
+      "uncompressed_size": 202,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\St_Lucia",
+      "offset": 7162001,
+      "size": 149,
+      "uncompressed_size": 202,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\St_Thomas",
+      "offset": 7162150,
+      "size": 150,
+      "uncompressed_size": 203,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\St_Vincent",
+      "offset": 7162300,
+      "size": 150,
+      "uncompressed_size": 204,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Swift_Current",
+      "offset": 7162450,
+      "size": 304,
+      "uncompressed_size": 874,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Tegucigalpa",
+      "offset": 7162754,
+      "size": 193,
+      "uncompressed_size": 341,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Thule",
+      "offset": 7162947,
+      "size": 1330,
+      "uncompressed_size": 6890,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Thunder_Bay",
+      "offset": 7164277,
+      "size": 146,
+      "uncompressed_size": 193,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Tijuana",
+      "offset": 7164423,
+      "size": 1695,
+      "uncompressed_size": 8941,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Toronto",
+      "offset": 7166118,
+      "size": 2067,
+      "uncompressed_size": 11248,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Tortola",
+      "offset": 7168185,
+      "size": 147,
+      "uncompressed_size": 201,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Vancouver",
+      "offset": 7168332,
+      "size": 1830,
+      "uncompressed_size": 9815,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Virgin",
+      "offset": 7170162,
+      "size": 148,
+      "uncompressed_size": 200,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Whitehorse",
+      "offset": 7170310,
+      "size": 697,
+      "uncompressed_size": 3033,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Winnipeg",
+      "offset": 7171007,
+      "size": 1810,
+      "uncompressed_size": 9695,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Yakutat",
+      "offset": 7172817,
+      "size": 1657,
+      "uncompressed_size": 8683,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\America\\Yellowknife",
+      "offset": 7174474,
+      "size": 147,
+      "uncompressed_size": 196,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Antarctica\\Casey",
+      "offset": 7174621,
+      "size": 238,
+      "uncompressed_size": 611,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Antarctica\\Davis",
+      "offset": 7174859,
+      "size": 182,
+      "uncompressed_size": 318,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Antarctica\\DumontDUrville",
+      "offset": 7175041,
+      "size": 158,
+      "uncompressed_size": 214,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Antarctica\\Macquarie",
+      "offset": 7175199,
+      "size": 1605,
+      "uncompressed_size": 8447,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Antarctica\\Mawson",
+      "offset": 7176804,
+      "size": 151,
+      "uncompressed_size": 178,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Antarctica\\McMurdo",
+      "offset": 7176955,
+      "size": 150,
+      "uncompressed_size": 195,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Antarctica\\Palmer",
+      "offset": 7177105,
+      "size": 578,
+      "uncompressed_size": 2531,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Antarctica\\Rothera",
+      "offset": 7177683,
+      "size": 140,
+      "uncompressed_size": 150,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Antarctica\\South_Pole",
+      "offset": 7177823,
+      "size": 153,
+      "uncompressed_size": 198,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Antarctica\\Syowa",
+      "offset": 7177976,
+      "size": 144,
+      "uncompressed_size": 178,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Antarctica\\Troll",
+      "offset": 7178120,
+      "size": 1183,
+      "uncompressed_size": 5370,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Antarctica\\Vostok",
+      "offset": 7179303,
+      "size": 166,
+      "uncompressed_size": 231,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Arctic\\Longyearbyen",
+      "offset": 7179469,
+      "size": 148,
+      "uncompressed_size": 187,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Aden",
+      "offset": 7179617,
+      "size": 138,
+      "uncompressed_size": 171,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Almaty",
+      "offset": 7179755,
+      "size": 446,
+      "uncompressed_size": 1614,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Amman",
+      "offset": 7180201,
+      "size": 618,
+      "uncompressed_size": 2681,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Anadyr",
+      "offset": 7180819,
+      "size": 541,
+      "uncompressed_size": 2019,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Aqtau",
+      "offset": 7181360,
+      "size": 454,
+      "uncompressed_size": 1612,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Aqtobe",
+      "offset": 7181814,
+      "size": 450,
+      "uncompressed_size": 1613,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Ashgabat",
+      "offset": 7182264,
+      "size": 303,
+      "uncompressed_size": 852,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Ashkhabad",
+      "offset": 7182567,
+      "size": 140,
+      "uncompressed_size": 182,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Atyrau",
+      "offset": 7182707,
+      "size": 455,
+      "uncompressed_size": 1613,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Baghdad",
+      "offset": 7183162,
+      "size": 437,
+      "uncompressed_size": 1649,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Bahrain",
+      "offset": 7183599,
+      "size": 138,
+      "uncompressed_size": 171,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Baku",
+      "offset": 7183737,
+      "size": 533,
+      "uncompressed_size": 2080,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Bangkok",
+      "offset": 7184270,
+      "size": 151,
+      "uncompressed_size": 180,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Barnaul",
+      "offset": 7184421,
+      "size": 534,
+      "uncompressed_size": 2049,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Beirut",
+      "offset": 7184955,
+      "size": 1559,
+      "uncompressed_size": 8024,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Bishkek",
+      "offset": 7186514,
+      "size": 452,
+      "uncompressed_size": 1616,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Brunei",
+      "offset": 7186966,
+      "size": 141,
+      "uncompressed_size": 176,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Calcutta",
+      "offset": 7187107,
+      "size": 140,
+      "uncompressed_size": 178,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Chita",
+      "offset": 7187247,
+      "size": 526,
+      "uncompressed_size": 2019,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Choibalsan",
+      "offset": 7187773,
+      "size": 145,
+      "uncompressed_size": 192,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Chongqing",
+      "offset": 7187918,
+      "size": 143,
+      "uncompressed_size": 182,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Chungking",
+      "offset": 7188061,
+      "size": 144,
+      "uncompressed_size": 182,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Colombo",
+      "offset": 7188205,
+      "size": 205,
+      "uncompressed_size": 352,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Dacca",
+      "offset": 7188410,
+      "size": 137,
+      "uncompressed_size": 169,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Damascus",
+      "offset": 7188547,
+      "size": 772,
+      "uncompressed_size": 3691,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Dhaka",
+      "offset": 7189319,
+      "size": 199,
+      "uncompressed_size": 351,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Dili",
+      "offset": 7189518,
+      "size": 165,
+      "uncompressed_size": 231,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Dubai",
+      "offset": 7189683,
+      "size": 140,
+      "uncompressed_size": 147,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Dushanbe",
+      "offset": 7189823,
+      "size": 287,
+      "uncompressed_size": 796,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Famagusta",
+      "offset": 7190110,
+      "size": 1501,
+      "uncompressed_size": 7596,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Gaza",
+      "offset": 7191611,
+      "size": 1947,
+      "uncompressed_size": 10227,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Harbin",
+      "offset": 7193558,
+      "size": 141,
+      "uncompressed_size": 179,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Hebron",
+      "offset": 7193699,
+      "size": 1935,
+      "uncompressed_size": 10202,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Ho_Chi_Minh",
+      "offset": 7195634,
+      "size": 211,
+      "uncompressed_size": 387,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Hong_Kong",
+      "offset": 7195845,
+      "size": 515,
+      "uncompressed_size": 2226,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Hovd",
+      "offset": 7196360,
+      "size": 420,
+      "uncompressed_size": 1533,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Irkutsk",
+      "offset": 7196780,
+      "size": 532,
+      "uncompressed_size": 2023,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Istanbul",
+      "offset": 7197312,
+      "size": 141,
+      "uncompressed_size": 187,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Jakarta",
+      "offset": 7197453,
+      "size": 204,
+      "uncompressed_size": 356,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Jayapura",
+      "offset": 7197657,
+      "size": 166,
+      "uncompressed_size": 209,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Jerusalem",
+      "offset": 7197823,
+      "size": 1621,
+      "uncompressed_size": 8135,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Kabul",
+      "offset": 7199444,
+      "size": 149,
+      "uncompressed_size": 176,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Kamchatka",
+      "offset": 7199593,
+      "size": 531,
+      "uncompressed_size": 1994,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Karachi",
+      "offset": 7200124,
+      "size": 226,
+      "uncompressed_size": 447,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Kashgar",
+      "offset": 7200350,
+      "size": 141,
+      "uncompressed_size": 174,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Kathmandu",
+      "offset": 7200491,
+      "size": 152,
+      "uncompressed_size": 179,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Katmandu",
+      "offset": 7200643,
+      "size": 139,
+      "uncompressed_size": 184,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Khandyga",
+      "offset": 7200782,
+      "size": 546,
+      "uncompressed_size": 2051,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Kolkata",
+      "offset": 7201328,
+      "size": 197,
+      "uncompressed_size": 330,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Krasnoyarsk",
+      "offset": 7201525,
+      "size": 528,
+      "uncompressed_size": 1996,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Kuala_Lumpur",
+      "offset": 7202053,
+      "size": 148,
+      "uncompressed_size": 188,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Kuching",
+      "offset": 7202201,
+      "size": 251,
+      "uncompressed_size": 649,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Kuwait",
+      "offset": 7202452,
+      "size": 140,
+      "uncompressed_size": 173,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Macao",
+      "offset": 7202592,
+      "size": 134,
+      "uncompressed_size": 169,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Macau",
+      "offset": 7202726,
+      "size": 533,
+      "uncompressed_size": 2212,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Magadan",
+      "offset": 7203259,
+      "size": 527,
+      "uncompressed_size": 2021,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Makassar",
+      "offset": 7203786,
+      "size": 174,
+      "uncompressed_size": 241,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Manila",
+      "offset": 7203960,
+      "size": 214,
+      "uncompressed_size": 421,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Muscat",
+      "offset": 7204174,
+      "size": 139,
+      "uncompressed_size": 170,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Nicosia",
+      "offset": 7204313,
+      "size": 1493,
+      "uncompressed_size": 7625,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Novokuznetsk",
+      "offset": 7205806,
+      "size": 533,
+      "uncompressed_size": 1997,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Novosibirsk",
+      "offset": 7206339,
+      "size": 541,
+      "uncompressed_size": 2053,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Omsk",
+      "offset": 7206880,
+      "size": 521,
+      "uncompressed_size": 1989,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Oral",
+      "offset": 7207401,
+      "size": 452,
+      "uncompressed_size": 1611,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Phnom_Penh",
+      "offset": 7207853,
+      "size": 145,
+      "uncompressed_size": 180,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Pontianak",
+      "offset": 7207998,
+      "size": 210,
+      "uncompressed_size": 358,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Pyongyang",
+      "offset": 7208208,
+      "size": 180,
+      "uncompressed_size": 273,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Qatar",
+      "offset": 7208388,
+      "size": 149,
+      "uncompressed_size": 174,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Qostanay",
+      "offset": 7208537,
+      "size": 459,
+      "uncompressed_size": 1644,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Qyzylorda",
+      "offset": 7208996,
+      "size": 454,
+      "uncompressed_size": 1617,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Rangoon",
+      "offset": 7209450,
+      "size": 139,
+      "uncompressed_size": 174,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Riyadh",
+      "offset": 7209589,
+      "size": 139,
+      "uncompressed_size": 147,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Saigon",
+      "offset": 7209728,
+      "size": 145,
+      "uncompressed_size": 188,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Sakhalin",
+      "offset": 7209873,
+      "size": 541,
+      "uncompressed_size": 2049,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Samarkand",
+      "offset": 7210414,
+      "size": 302,
+      "uncompressed_size": 853,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Seoul",
+      "offset": 7210716,
+      "size": 315,
+      "uncompressed_size": 985,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Shanghai",
+      "offset": 7211031,
+      "size": 306,
+      "uncompressed_size": 981,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Singapore",
+      "offset": 7211337,
+      "size": 207,
+      "uncompressed_size": 357,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Srednekolymsk",
+      "offset": 7211544,
+      "size": 528,
+      "uncompressed_size": 1998,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Taipei",
+      "offset": 7212072,
+      "size": 366,
+      "uncompressed_size": 1344,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Tashkent",
+      "offset": 7212438,
+      "size": 299,
+      "uncompressed_size": 852,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Tbilisi",
+      "offset": 7212737,
+      "size": 466,
+      "uncompressed_size": 1675,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Tehran",
+      "offset": 7213203,
+      "size": 513,
+      "uncompressed_size": 2150,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Tel_Aviv",
+      "offset": 7213716,
+      "size": 144,
+      "uncompressed_size": 184,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Thimbu",
+      "offset": 7213860,
+      "size": 139,
+      "uncompressed_size": 176,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Thimphu",
+      "offset": 7213999,
+      "size": 151,
+      "uncompressed_size": 176,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Tokyo",
+      "offset": 7214150,
+      "size": 196,
+      "uncompressed_size": 388,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Tomsk",
+      "offset": 7214346,
+      "size": 535,
+      "uncompressed_size": 2048,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Ujung_Pandang",
+      "offset": 7214881,
+      "size": 148,
+      "uncompressed_size": 186,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Ulaanbaatar",
+      "offset": 7215029,
+      "size": 429,
+      "uncompressed_size": 1540,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Ulan_Bator",
+      "offset": 7215458,
+      "size": 143,
+      "uncompressed_size": 192,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Urumqi",
+      "offset": 7215601,
+      "size": 141,
+      "uncompressed_size": 148,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Ust-Nera",
+      "offset": 7215742,
+      "size": 530,
+      "uncompressed_size": 1992,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Vientiane",
+      "offset": 7216272,
+      "size": 141,
+      "uncompressed_size": 179,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Vladivostok",
+      "offset": 7216413,
+      "size": 534,
+      "uncompressed_size": 1996,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Yakutsk",
+      "offset": 7216947,
+      "size": 523,
+      "uncompressed_size": 1992,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Yangon",
+      "offset": 7217470,
+      "size": 169,
+      "uncompressed_size": 237,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Yekaterinburg",
+      "offset": 7217639,
+      "size": 545,
+      "uncompressed_size": 2029,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Asia\\Yerevan",
+      "offset": 7218184,
+      "size": 518,
+      "uncompressed_size": 1964,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Atlantic\\Azores",
+      "offset": 7218702,
+      "size": 2055,
+      "uncompressed_size": 9517,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Atlantic\\Bermuda",
+      "offset": 7220757,
+      "size": 1678,
+      "uncompressed_size": 8784,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Atlantic\\Canary",
+      "offset": 7222435,
+      "size": 1479,
+      "uncompressed_size": 6855,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Atlantic\\Cape_Verde",
+      "offset": 7223914,
+      "size": 175,
+      "uncompressed_size": 242,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Atlantic\\Faeroe",
+      "offset": 7224089,
+      "size": 138,
+      "uncompressed_size": 186,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Atlantic\\Faroe",
+      "offset": 7224227,
+      "size": 1464,
+      "uncompressed_size": 6796,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Atlantic\\Jan_Mayen",
+      "offset": 7225691,
+      "size": 148,
+      "uncompressed_size": 186,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Atlantic\\Madeira",
+      "offset": 7225839,
+      "size": 2032,
+      "uncompressed_size": 9510,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Atlantic\\Reykjavik",
+      "offset": 7227871,
+      "size": 149,
+      "uncompressed_size": 189,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Atlantic\\South_Georgia",
+      "offset": 7228020,
+      "size": 149,
+      "uncompressed_size": 159,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Atlantic\\St_Helena",
+      "offset": 7228169,
+      "size": 148,
+      "uncompressed_size": 189,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Atlantic\\Stanley",
+      "offset": 7228317,
+      "size": 545,
+      "uncompressed_size": 2187,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\ACT",
+      "offset": 7228862,
+      "size": 142,
+      "uncompressed_size": 190,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\Adelaide",
+      "offset": 7229004,
+      "size": 1586,
+      "uncompressed_size": 8372,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\Brisbane",
+      "offset": 7230590,
+      "size": 256,
+      "uncompressed_size": 674,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\Broken_Hill",
+      "offset": 7230846,
+      "size": 1613,
+      "uncompressed_size": 8437,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\Canberra",
+      "offset": 7232459,
+      "size": 145,
+      "uncompressed_size": 195,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\Currie",
+      "offset": 7232604,
+      "size": 143,
+      "uncompressed_size": 193,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\Darwin",
+      "offset": 7232747,
+      "size": 209,
+      "uncompressed_size": 437,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\Eucla",
+      "offset": 7232956,
+      "size": 264,
+      "uncompressed_size": 699,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\Hobart",
+      "offset": 7233220,
+      "size": 1630,
+      "uncompressed_size": 8734,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\LHI",
+      "offset": 7234850,
+      "size": 144,
+      "uncompressed_size": 199,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\Lindeman",
+      "offset": 7234994,
+      "size": 283,
+      "uncompressed_size": 824,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\Lord_Howe",
+      "offset": 7235277,
+      "size": 1459,
+      "uncompressed_size": 7047,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\Melbourne",
+      "offset": 7236736,
+      "size": 1568,
+      "uncompressed_size": 8341,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\NSW",
+      "offset": 7238304,
+      "size": 144,
+      "uncompressed_size": 190,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\North",
+      "offset": 7238448,
+      "size": 144,
+      "uncompressed_size": 192,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\Perth",
+      "offset": 7238592,
+      "size": 269,
+      "uncompressed_size": 739,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\Queensland",
+      "offset": 7238861,
+      "size": 148,
+      "uncompressed_size": 203,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\South",
+      "offset": 7239009,
+      "size": 143,
+      "uncompressed_size": 198,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\Sydney",
+      "offset": 7239152,
+      "size": 1564,
+      "uncompressed_size": 8338,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\Tasmania",
+      "offset": 7240716,
+      "size": 144,
+      "uncompressed_size": 195,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\Victoria",
+      "offset": 7240860,
+      "size": 147,
+      "uncompressed_size": 204,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\West",
+      "offset": 7241007,
+      "size": 143,
+      "uncompressed_size": 188,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Australia\\Yancowinna",
+      "offset": 7241150,
+      "size": 151,
+      "uncompressed_size": 212,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Brazil\\Acre",
+      "offset": 7241301,
+      "size": 147,
+      "uncompressed_size": 194,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Brazil\\DeNoronha",
+      "offset": 7241448,
+      "size": 144,
+      "uncompressed_size": 190,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Brazil\\East",
+      "offset": 7241592,
+      "size": 146,
+      "uncompressed_size": 191,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Brazil\\West",
+      "offset": 7241738,
+      "size": 144,
+      "uncompressed_size": 182,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\CET",
+      "offset": 7241882,
+      "size": 138,
+      "uncompressed_size": 177,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\CST6CDT",
+      "offset": 7242020,
+      "size": 143,
+      "uncompressed_size": 181,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Canada\\Atlantic",
+      "offset": 7242163,
+      "size": 145,
+      "uncompressed_size": 189,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Canada\\Central",
+      "offset": 7242308,
+      "size": 146,
+      "uncompressed_size": 191,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Canada\\Eastern",
+      "offset": 7242454,
+      "size": 144,
+      "uncompressed_size": 188,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Canada\\Mountain",
+      "offset": 7242598,
+      "size": 146,
+      "uncompressed_size": 192,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Canada\\Newfoundland",
+      "offset": 7242744,
+      "size": 151,
+      "uncompressed_size": 196,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Canada\\Pacific",
+      "offset": 7242895,
+      "size": 148,
+      "uncompressed_size": 194,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Canada\\Saskatchewan",
+      "offset": 7243043,
+      "size": 149,
+      "uncompressed_size": 190,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Canada\\Yukon",
+      "offset": 7243192,
+      "size": 147,
+      "uncompressed_size": 195,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Chile\\Continental",
+      "offset": 7243339,
+      "size": 147,
+      "uncompressed_size": 194,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Chile\\EasterIsland",
+      "offset": 7243486,
+      "size": 145,
+      "uncompressed_size": 189,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Cuba",
+      "offset": 7243631,
+      "size": 138,
+      "uncompressed_size": 175,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\EET",
+      "offset": 7243769,
+      "size": 137,
+      "uncompressed_size": 171,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\EST",
+      "offset": 7243906,
+      "size": 139,
+      "uncompressed_size": 174,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\EST5EDT",
+      "offset": 7244045,
+      "size": 146,
+      "uncompressed_size": 184,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Egypt",
+      "offset": 7244191,
+      "size": 137,
+      "uncompressed_size": 170,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Eire",
+      "offset": 7244328,
+      "size": 137,
+      "uncompressed_size": 172,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT",
+      "offset": 7244465,
+      "size": 111,
+      "uncompressed_size": 110,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT+0",
+      "offset": 7244576,
+      "size": 132,
+      "uncompressed_size": 159,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT+1",
+      "offset": 7244708,
+      "size": 118,
+      "uncompressed_size": 115,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT+10",
+      "offset": 7244826,
+      "size": 120,
+      "uncompressed_size": 117,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT+11",
+      "offset": 7244946,
+      "size": 120,
+      "uncompressed_size": 117,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT+12",
+      "offset": 7245066,
+      "size": 120,
+      "uncompressed_size": 117,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT+2",
+      "offset": 7245186,
+      "size": 117,
+      "uncompressed_size": 115,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT+3",
+      "offset": 7245303,
+      "size": 119,
+      "uncompressed_size": 116,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT+4",
+      "offset": 7245422,
+      "size": 119,
+      "uncompressed_size": 116,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT+5",
+      "offset": 7245541,
+      "size": 119,
+      "uncompressed_size": 116,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT+6",
+      "offset": 7245660,
+      "size": 119,
+      "uncompressed_size": 116,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT+7",
+      "offset": 7245779,
+      "size": 119,
+      "uncompressed_size": 116,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT+8",
+      "offset": 7245898,
+      "size": 119,
+      "uncompressed_size": 116,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT+9",
+      "offset": 7246017,
+      "size": 119,
+      "uncompressed_size": 116,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT-0",
+      "offset": 7246136,
+      "size": 132,
+      "uncompressed_size": 159,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT-1",
+      "offset": 7246268,
+      "size": 117,
+      "uncompressed_size": 114,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT-10",
+      "offset": 7246385,
+      "size": 119,
+      "uncompressed_size": 116,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT-11",
+      "offset": 7246504,
+      "size": 119,
+      "uncompressed_size": 116,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT-12",
+      "offset": 7246623,
+      "size": 119,
+      "uncompressed_size": 116,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT-13",
+      "offset": 7246742,
+      "size": 119,
+      "uncompressed_size": 116,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT-14",
+      "offset": 7246861,
+      "size": 119,
+      "uncompressed_size": 116,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT-2",
+      "offset": 7246980,
+      "size": 116,
+      "uncompressed_size": 114,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT-3",
+      "offset": 7247096,
+      "size": 118,
+      "uncompressed_size": 115,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT-4",
+      "offset": 7247214,
+      "size": 118,
+      "uncompressed_size": 115,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT-5",
+      "offset": 7247332,
+      "size": 118,
+      "uncompressed_size": 115,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT-6",
+      "offset": 7247450,
+      "size": 118,
+      "uncompressed_size": 115,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT-7",
+      "offset": 7247568,
+      "size": 118,
+      "uncompressed_size": 115,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT-8",
+      "offset": 7247686,
+      "size": 118,
+      "uncompressed_size": 115,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT-9",
+      "offset": 7247804,
+      "size": 118,
+      "uncompressed_size": 115,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\GMT0",
+      "offset": 7247922,
+      "size": 132,
+      "uncompressed_size": 158,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\Greenwich",
+      "offset": 7248054,
+      "size": 138,
+      "uncompressed_size": 163,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\UCT",
+      "offset": 7248192,
+      "size": 133,
+      "uncompressed_size": 157,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\UTC",
+      "offset": 7248325,
+      "size": 111,
+      "uncompressed_size": 110,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\Universal",
+      "offset": 7248436,
+      "size": 137,
+      "uncompressed_size": 163,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Etc\\Zulu",
+      "offset": 7248573,
+      "size": 135,
+      "uncompressed_size": 158,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Amsterdam",
+      "offset": 7248708,
+      "size": 145,
+      "uncompressed_size": 190,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Andorra",
+      "offset": 7248853,
+      "size": 1407,
+      "uncompressed_size": 6927,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Astrakhan",
+      "offset": 7250260,
+      "size": 530,
+      "uncompressed_size": 1997,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Athens",
+      "offset": 7250790,
+      "size": 1582,
+      "uncompressed_size": 7954,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Belfast",
+      "offset": 7252372,
+      "size": 141,
+      "uncompressed_size": 182,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Belgrade",
+      "offset": 7252513,
+      "size": 1473,
+      "uncompressed_size": 7309,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Berlin",
+      "offset": 7253986,
+      "size": 1608,
+      "uncompressed_size": 8020,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Bratislava",
+      "offset": 7255594,
+      "size": 145,
+      "uncompressed_size": 185,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Brussels",
+      "offset": 7255739,
+      "size": 1866,
+      "uncompressed_size": 9223,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Bucharest",
+      "offset": 7257605,
+      "size": 1558,
+      "uncompressed_size": 7974,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Budapest",
+      "offset": 7259163,
+      "size": 1647,
+      "uncompressed_size": 8287,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Busingen",
+      "offset": 7260810,
+      "size": 143,
+      "uncompressed_size": 183,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Chisinau",
+      "offset": 7260953,
+      "size": 1636,
+      "uncompressed_size": 8096,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Copenhagen",
+      "offset": 7262589,
+      "size": 144,
+      "uncompressed_size": 185,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Dublin",
+      "offset": 7262733,
+      "size": 2095,
+      "uncompressed_size": 9810,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Gibraltar",
+      "offset": 7264828,
+      "size": 1925,
+      "uncompressed_size": 9509,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Guernsey",
+      "offset": 7266753,
+      "size": 142,
+      "uncompressed_size": 183,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Helsinki",
+      "offset": 7266895,
+      "size": 1469,
+      "uncompressed_size": 7368,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Isle_of_Man",
+      "offset": 7268364,
+      "size": 145,
+      "uncompressed_size": 186,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Istanbul",
+      "offset": 7268509,
+      "size": 814,
+      "uncompressed_size": 3678,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Jersey",
+      "offset": 7269323,
+      "size": 141,
+      "uncompressed_size": 181,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Kaliningrad",
+      "offset": 7269464,
+      "size": 636,
+      "uncompressed_size": 2511,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Kiev",
+      "offset": 7270100,
+      "size": 138,
+      "uncompressed_size": 173,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Kirov",
+      "offset": 7270238,
+      "size": 526,
+      "uncompressed_size": 2010,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Kyiv",
+      "offset": 7270764,
+      "size": 1518,
+      "uncompressed_size": 7455,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Lisbon",
+      "offset": 7272282,
+      "size": 2089,
+      "uncompressed_size": 9958,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Ljubljana",
+      "offset": 7274371,
+      "size": 146,
+      "uncompressed_size": 190,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\London",
+      "offset": 7274517,
+      "size": 2130,
+      "uncompressed_size": 10211,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Luxembourg",
+      "offset": 7276647,
+      "size": 146,
+      "uncompressed_size": 191,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Madrid",
+      "offset": 7276793,
+      "size": 1717,
+      "uncompressed_size": 8517,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Malta",
+      "offset": 7278510,
+      "size": 1705,
+      "uncompressed_size": 8724,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Mariehamn",
+      "offset": 7280215,
+      "size": 145,
+      "uncompressed_size": 190,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Minsk",
+      "offset": 7280360,
+      "size": 578,
+      "uncompressed_size": 2176,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Monaco",
+      "offset": 7280938,
+      "size": 142,
+      "uncompressed_size": 178,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Moscow",
+      "offset": 7281080,
+      "size": 638,
+      "uncompressed_size": 2430,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Nicosia",
+      "offset": 7281718,
+      "size": 139,
+      "uncompressed_size": 179,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Oslo",
+      "offset": 7281857,
+      "size": 140,
+      "uncompressed_size": 179,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Paris",
+      "offset": 7281997,
+      "size": 1871,
+      "uncompressed_size": 9152,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Podgorica",
+      "offset": 7283868,
+      "size": 146,
+      "uncompressed_size": 190,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Prague",
+      "offset": 7284014,
+      "size": 1617,
+      "uncompressed_size": 8038,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Riga",
+      "offset": 7285631,
+      "size": 1565,
+      "uncompressed_size": 7658,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Rome",
+      "offset": 7287196,
+      "size": 1724,
+      "uncompressed_size": 8813,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Samara",
+      "offset": 7288920,
+      "size": 538,
+      "uncompressed_size": 2050,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\San_Marino",
+      "offset": 7289458,
+      "size": 143,
+      "uncompressed_size": 179,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Sarajevo",
+      "offset": 7289601,
+      "size": 145,
+      "uncompressed_size": 189,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Saratov",
+      "offset": 7289746,
+      "size": 525,
+      "uncompressed_size": 1995,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Simferopol",
+      "offset": 7290271,
+      "size": 625,
+      "uncompressed_size": 2389,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Skopje",
+      "offset": 7290896,
+      "size": 144,
+      "uncompressed_size": 187,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Sofia",
+      "offset": 7291040,
+      "size": 1530,
+      "uncompressed_size": 7654,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Stockholm",
+      "offset": 7292570,
+      "size": 144,
+      "uncompressed_size": 184,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Tallinn",
+      "offset": 7292714,
+      "size": 1542,
+      "uncompressed_size": 7549,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Tirane",
+      "offset": 7294256,
+      "size": 1539,
+      "uncompressed_size": 7675,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Tiraspol",
+      "offset": 7295795,
+      "size": 144,
+      "uncompressed_size": 189,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Ulyanovsk",
+      "offset": 7295939,
+      "size": 546,
+      "uncompressed_size": 2051,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Uzhgorod",
+      "offset": 7296485,
+      "size": 143,
+      "uncompressed_size": 177,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Vaduz",
+      "offset": 7296628,
+      "size": 142,
+      "uncompressed_size": 180,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Vatican",
+      "offset": 7296770,
+      "size": 141,
+      "uncompressed_size": 176,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Vienna",
+      "offset": 7296911,
+      "size": 1579,
+      "uncompressed_size": 7930,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Vilnius",
+      "offset": 7298490,
+      "size": 1544,
+      "uncompressed_size": 7485,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Volgograd",
+      "offset": 7300034,
+      "size": 552,
+      "uncompressed_size": 2104,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Warsaw",
+      "offset": 7300586,
+      "size": 1738,
+      "uncompressed_size": 8662,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Zagreb",
+      "offset": 7302324,
+      "size": 143,
+      "uncompressed_size": 187,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Zaporozhye",
+      "offset": 7302467,
+      "size": 143,
+      "uncompressed_size": 179,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Europe\\Zurich",
+      "offset": 7302610,
+      "size": 1475,
+      "uncompressed_size": 7305,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\GB",
+      "offset": 7304085,
+      "size": 136,
+      "uncompressed_size": 170,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\GB-Eire",
+      "offset": 7304221,
+      "size": 139,
+      "uncompressed_size": 175,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\GMT",
+      "offset": 7304360,
+      "size": 129,
+      "uncompressed_size": 153,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\GMT+0",
+      "offset": 7304489,
+      "size": 132,
+      "uncompressed_size": 155,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\GMT-0",
+      "offset": 7304621,
+      "size": 132,
+      "uncompressed_size": 155,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\GMT0",
+      "offset": 7304753,
+      "size": 131,
+      "uncompressed_size": 154,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Greenwich",
+      "offset": 7304884,
+      "size": 136,
+      "uncompressed_size": 159,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\HST",
+      "offset": 7305020,
+      "size": 139,
+      "uncompressed_size": 180,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Hongkong",
+      "offset": 7305159,
+      "size": 139,
+      "uncompressed_size": 179,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Iceland",
+      "offset": 7305298,
+      "size": 140,
+      "uncompressed_size": 178,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Indian\\Antananarivo",
+      "offset": 7305438,
+      "size": 148,
+      "uncompressed_size": 190,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Indian\\Chagos",
+      "offset": 7305586,
+      "size": 152,
+      "uncompressed_size": 178,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Indian\\Christmas",
+      "offset": 7305738,
+      "size": 145,
+      "uncompressed_size": 181,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Indian\\Cocos",
+      "offset": 7305883,
+      "size": 140,
+      "uncompressed_size": 174,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Indian\\Comoro",
+      "offset": 7306023,
+      "size": 144,
+      "uncompressed_size": 184,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Indian\\Kerguelen",
+      "offset": 7306167,
+      "size": 144,
+      "uncompressed_size": 190,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Indian\\Mahe",
+      "offset": 7306311,
+      "size": 140,
+      "uncompressed_size": 170,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Indian\\Maldives",
+      "offset": 7306451,
+      "size": 152,
+      "uncompressed_size": 182,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Indian\\Mauritius",
+      "offset": 7306603,
+      "size": 176,
+      "uncompressed_size": 267,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Indian\\Mayotte",
+      "offset": 7306779,
+      "size": 145,
+      "uncompressed_size": 185,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Indian\\Reunion",
+      "offset": 7306924,
+      "size": 141,
+      "uncompressed_size": 173,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Iran",
+      "offset": 7307065,
+      "size": 134,
+      "uncompressed_size": 166,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Israel",
+      "offset": 7307199,
+      "size": 139,
+      "uncompressed_size": 177,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Jamaica",
+      "offset": 7307338,
+      "size": 135,
+      "uncompressed_size": 181,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Japan",
+      "offset": 7307473,
+      "size": 135,
+      "uncompressed_size": 164,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Kwajalein",
+      "offset": 7307608,
+      "size": 139,
+      "uncompressed_size": 189,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Libya",
+      "offset": 7307747,
+      "size": 138,
+      "uncompressed_size": 176,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\MET",
+      "offset": 7307885,
+      "size": 138,
+      "uncompressed_size": 177,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\MST",
+      "offset": 7308023,
+      "size": 139,
+      "uncompressed_size": 177,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\MST7MDT",
+      "offset": 7308162,
+      "size": 142,
+      "uncompressed_size": 178,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Mexico\\BajaNorte",
+      "offset": 7308304,
+      "size": 148,
+      "uncompressed_size": 190,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Mexico\\BajaSur",
+      "offset": 7308452,
+      "size": 148,
+      "uncompressed_size": 191,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Mexico\\General",
+      "offset": 7308600,
+      "size": 146,
+      "uncompressed_size": 200,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\NZ",
+      "offset": 7308746,
+      "size": 139,
+      "uncompressed_size": 179,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\NZ-CHAT",
+      "offset": 7308885,
+      "size": 143,
+      "uncompressed_size": 181,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Navajo",
+      "offset": 7309028,
+      "size": 140,
+      "uncompressed_size": 177,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\PRC",
+      "offset": 7309168,
+      "size": 138,
+      "uncompressed_size": 171,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\PST8PDT",
+      "offset": 7309306,
+      "size": 147,
+      "uncompressed_size": 193,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Apia",
+      "offset": 7309453,
+      "size": 312,
+      "uncompressed_size": 882,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Auckland",
+      "offset": 7309765,
+      "size": 1663,
+      "uncompressed_size": 8772,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Bougainville",
+      "offset": 7311428,
+      "size": 189,
+      "uncompressed_size": 276,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Chatham",
+      "offset": 7311617,
+      "size": 1494,
+      "uncompressed_size": 7406,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Chuuk",
+      "offset": 7313111,
+      "size": 148,
+      "uncompressed_size": 202,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Easter",
+      "offset": 7313259,
+      "size": 1569,
+      "uncompressed_size": 7941,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Efate",
+      "offset": 7314828,
+      "size": 276,
+      "uncompressed_size": 766,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Enderbury",
+      "offset": 7315104,
+      "size": 145,
+      "uncompressed_size": 188,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Fakaofo",
+      "offset": 7315249,
+      "size": 156,
+      "uncompressed_size": 183,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Fiji",
+      "offset": 7315405,
+      "size": 308,
+      "uncompressed_size": 957,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Funafuti",
+      "offset": 7315713,
+      "size": 143,
+      "uncompressed_size": 187,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Galapagos",
+      "offset": 7315856,
+      "size": 174,
+      "uncompressed_size": 243,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Gambier",
+      "offset": 7316030,
+      "size": 145,
+      "uncompressed_size": 154,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Guadalcanal",
+      "offset": 7316175,
+      "size": 145,
+      "uncompressed_size": 156,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Guam",
+      "offset": 7316320,
+      "size": 285,
+      "uncompressed_size": 732,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Honolulu",
+      "offset": 7316605,
+      "size": 202,
+      "uncompressed_size": 344,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Johnston",
+      "offset": 7316807,
+      "size": 144,
+      "uncompressed_size": 193,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Kanton",
+      "offset": 7316951,
+      "size": 158,
+      "uncompressed_size": 205,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Kiritimati",
+      "offset": 7317109,
+      "size": 167,
+      "uncompressed_size": 214,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Kosrae",
+      "offset": 7317276,
+      "size": 214,
+      "uncompressed_size": 386,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Kwajalein",
+      "offset": 7317490,
+      "size": 188,
+      "uncompressed_size": 298,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Majuro",
+      "offset": 7317678,
+      "size": 142,
+      "uncompressed_size": 185,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Marquesas",
+      "offset": 7317820,
+      "size": 146,
+      "uncompressed_size": 156,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Midway",
+      "offset": 7317966,
+      "size": 144,
+      "uncompressed_size": 194,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Nauru",
+      "offset": 7318110,
+      "size": 170,
+      "uncompressed_size": 236,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Niue",
+      "offset": 7318280,
+      "size": 153,
+      "uncompressed_size": 180,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Norfolk",
+      "offset": 7318433,
+      "size": 1056,
+      "uncompressed_size": 4964,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Noumea",
+      "offset": 7319489,
+      "size": 185,
+      "uncompressed_size": 319,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Pago_Pago",
+      "offset": 7319674,
+      "size": 158,
+      "uncompressed_size": 188,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Palau",
+      "offset": 7319832,
+      "size": 155,
+      "uncompressed_size": 182,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Pitcairn",
+      "offset": 7319987,
+      "size": 154,
+      "uncompressed_size": 184,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Pohnpei",
+      "offset": 7320141,
+      "size": 146,
+      "uncompressed_size": 201,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Ponape",
+      "offset": 7320287,
+      "size": 145,
+      "uncompressed_size": 200,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Port_Moresby",
+      "offset": 7320432,
+      "size": 162,
+      "uncompressed_size": 189,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Rarotonga",
+      "offset": 7320594,
+      "size": 313,
+      "uncompressed_size": 940,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Saipan",
+      "offset": 7320907,
+      "size": 140,
+      "uncompressed_size": 179,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Samoa",
+      "offset": 7321047,
+      "size": 143,
+      "uncompressed_size": 193,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Tahiti",
+      "offset": 7321190,
+      "size": 143,
+      "uncompressed_size": 153,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Tarawa",
+      "offset": 7321333,
+      "size": 141,
+      "uncompressed_size": 151,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Tongatapu",
+      "offset": 7321474,
+      "size": 221,
+      "uncompressed_size": 438,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Truk",
+      "offset": 7321695,
+      "size": 146,
+      "uncompressed_size": 201,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Wake",
+      "offset": 7321841,
+      "size": 141,
+      "uncompressed_size": 183,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Wallis",
+      "offset": 7321982,
+      "size": 142,
+      "uncompressed_size": 185,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Pacific\\Yap",
+      "offset": 7322124,
+      "size": 146,
+      "uncompressed_size": 200,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Poland",
+      "offset": 7322270,
+      "size": 140,
+      "uncompressed_size": 174,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Portugal",
+      "offset": 7322410,
+      "size": 141,
+      "uncompressed_size": 176,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\ROC",
+      "offset": 7322551,
+      "size": 135,
+      "uncompressed_size": 165,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\ROK",
+      "offset": 7322686,
+      "size": 136,
+      "uncompressed_size": 162,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Singapore",
+      "offset": 7322822,
+      "size": 137,
+      "uncompressed_size": 180,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\SystemV\\AST4",
+      "offset": 7322959,
+      "size": 154,
+      "uncompressed_size": 201,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\SystemV\\AST4ADT",
+      "offset": 7323113,
+      "size": 152,
+      "uncompressed_size": 192,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\SystemV\\CST6",
+      "offset": 7323265,
+      "size": 149,
+      "uncompressed_size": 186,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\SystemV\\CST6CDT",
+      "offset": 7323414,
+      "size": 152,
+      "uncompressed_size": 192,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\SystemV\\EST5",
+      "offset": 7323566,
+      "size": 154,
+      "uncompressed_size": 204,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\SystemV\\EST5EDT",
+      "offset": 7323720,
+      "size": 156,
+      "uncompressed_size": 195,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\SystemV\\HST10",
+      "offset": 7323876,
+      "size": 152,
+      "uncompressed_size": 193,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\SystemV\\MST7",
+      "offset": 7324028,
+      "size": 150,
+      "uncompressed_size": 189,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\SystemV\\MST7MDT",
+      "offset": 7324178,
+      "size": 152,
+      "uncompressed_size": 189,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\SystemV\\PST8",
+      "offset": 7324330,
+      "size": 149,
+      "uncompressed_size": 192,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\SystemV\\PST8PDT",
+      "offset": 7324479,
+      "size": 156,
+      "uncompressed_size": 204,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\SystemV\\YST9",
+      "offset": 7324635,
+      "size": 149,
+      "uncompressed_size": 189,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\SystemV\\YST9YDT",
+      "offset": 7324784,
+      "size": 153,
+      "uncompressed_size": 198,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Turkey",
+      "offset": 7324937,
+      "size": 140,
+      "uncompressed_size": 180,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\UCT",
+      "offset": 7325077,
+      "size": 131,
+      "uncompressed_size": 153,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\US\\Alaska",
+      "offset": 7325208,
+      "size": 145,
+      "uncompressed_size": 189,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\US\\Aleutian",
+      "offset": 7325353,
+      "size": 142,
+      "uncompressed_size": 176,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\US\\Arizona",
+      "offset": 7325495,
+      "size": 144,
+      "uncompressed_size": 184,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\US\\Central",
+      "offset": 7325639,
+      "size": 143,
+      "uncompressed_size": 184,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\US\\East-Indiana",
+      "offset": 7325782,
+      "size": 149,
+      "uncompressed_size": 228,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\US\\Eastern",
+      "offset": 7325931,
+      "size": 147,
+      "uncompressed_size": 187,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\US\\Hawaii",
+      "offset": 7326078,
+      "size": 144,
+      "uncompressed_size": 186,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\US\\Indiana-Starke",
+      "offset": 7326222,
+      "size": 148,
+      "uncompressed_size": 206,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\US\\Michigan",
+      "offset": 7326370,
+      "size": 145,
+      "uncompressed_size": 185,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\US\\Mountain",
+      "offset": 7326515,
+      "size": 144,
+      "uncompressed_size": 182,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\US\\Pacific",
+      "offset": 7326659,
+      "size": 148,
+      "uncompressed_size": 196,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\US\\Samoa",
+      "offset": 7326807,
+      "size": 143,
+      "uncompressed_size": 188,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\UTC",
+      "offset": 7326950,
+      "size": 129,
+      "uncompressed_size": 153,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Universal",
+      "offset": 7327079,
+      "size": 135,
+      "uncompressed_size": 159,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\W-SU",
+      "offset": 7327214,
+      "size": 139,
+      "uncompressed_size": 172,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\WET",
+      "offset": 7327353,
+      "size": 137,
+      "uncompressed_size": 171,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\tzdata\\Zulu",
+      "offset": 7327490,
+      "size": 132,
+      "uncompressed_size": 154,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tcl_data\\word.tcl",
+      "offset": 7327622,
+      "size": 1347,
+      "uncompressed_size": 5051,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\bgerror.tcl",
+      "offset": 7328969,
+      "size": 3270,
+      "uncompressed_size": 8806,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\button.tcl",
+      "offset": 7332239,
+      "size": 3218,
+      "uncompressed_size": 21612,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\choosedir.tcl",
+      "offset": 7335457,
+      "size": 3103,
+      "uncompressed_size": 10009,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\clrpick.tcl",
+      "offset": 7338560,
+      "size": 5952,
+      "uncompressed_size": 22039,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\comdlg.tcl",
+      "offset": 7344512,
+      "size": 2892,
+      "uncompressed_size": 8690,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\console.tcl",
+      "offset": 7347404,
+      "size": 8965,
+      "uncompressed_size": 33364,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\dialog.tcl",
+      "offset": 7356369,
+      "size": 2394,
+      "uncompressed_size": 5988,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\entry.tcl",
+      "offset": 7358763,
+      "size": 4747,
+      "uncompressed_size": 18942,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\focus.tcl",
+      "offset": 7363510,
+      "size": 1678,
+      "uncompressed_size": 5035,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\fontchooser.tcl",
+      "offset": 7365188,
+      "size": 4454,
+      "uncompressed_size": 18292,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\iconlist.tcl",
+      "offset": 7369642,
+      "size": 4877,
+      "uncompressed_size": 17456,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\icons.tcl",
+      "offset": 7374519,
+      "size": 7795,
+      "uncompressed_size": 11037,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\images\\README",
+      "offset": 7382314,
+      "size": 206,
+      "uncompressed_size": 329,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\images\\logo.eps",
+      "offset": 7382520,
+      "size": 10511,
+      "uncompressed_size": 34991,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\images\\logo100.gif",
+      "offset": 7393031,
+      "size": 2083,
+      "uncompressed_size": 2341,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\images\\logo64.gif",
+      "offset": 7395114,
+      "size": 1385,
+      "uncompressed_size": 1670,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\images\\logoLarge.gif",
+      "offset": 7396499,
+      "size": 10804,
+      "uncompressed_size": 11000,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\images\\logoMed.gif",
+      "offset": 7407303,
+      "size": 3532,
+      "uncompressed_size": 3889,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\images\\pwrdLogo.eps",
+      "offset": 7410835,
+      "size": 9042,
+      "uncompressed_size": 29706,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\images\\pwrdLogo100.gif",
+      "offset": 7419877,
+      "size": 1560,
+      "uncompressed_size": 1615,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\images\\pwrdLogo150.gif",
+      "offset": 7421437,
+      "size": 2440,
+      "uncompressed_size": 2489,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\images\\pwrdLogo175.gif",
+      "offset": 7423877,
+      "size": 2932,
+      "uncompressed_size": 2981,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\images\\pwrdLogo200.gif",
+      "offset": 7426809,
+      "size": 3438,
+      "uncompressed_size": 3491,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\images\\pwrdLogo75.gif",
+      "offset": 7430247,
+      "size": 1126,
+      "uncompressed_size": 1171,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\images\\tai-ku.gif",
+      "offset": 7431373,
+      "size": 5400,
+      "uncompressed_size": 5473,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\license.terms",
+      "offset": 7436773,
+      "size": 1209,
+      "uncompressed_size": 2307,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\listbox.tcl",
+      "offset": 7437982,
+      "size": 3697,
+      "uncompressed_size": 15255,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\megawidget.tcl",
+      "offset": 7441679,
+      "size": 3082,
+      "uncompressed_size": 9862,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\menu.tcl",
+      "offset": 7444761,
+      "size": 10466,
+      "uncompressed_size": 40215,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\mkpsenc.tcl",
+      "offset": 7455227,
+      "size": 10662,
+      "uncompressed_size": 30840,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\msgbox.tcl",
+      "offset": 7465889,
+      "size": 4211,
+      "uncompressed_size": 16786,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\msgs\\cs.msg",
+      "offset": 7470100,
+      "size": 1137,
+      "uncompressed_size": 4235,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\msgs\\da.msg",
+      "offset": 7471237,
+      "size": 1034,
+      "uncompressed_size": 3987,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\msgs\\de.msg",
+      "offset": 7472271,
+      "size": 1289,
+      "uncompressed_size": 4914,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\msgs\\el.msg",
+      "offset": 7473560,
+      "size": 1559,
+      "uncompressed_size": 8784,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\msgs\\en.msg",
+      "offset": 7475119,
+      "size": 653,
+      "uncompressed_size": 3377,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\msgs\\en_gb.msg",
+      "offset": 7475772,
+      "size": 67,
+      "uncompressed_size": 66,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\msgs\\eo.msg",
+      "offset": 7475839,
+      "size": 1081,
+      "uncompressed_size": 4035,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\msgs\\es.msg",
+      "offset": 7476920,
+      "size": 1038,
+      "uncompressed_size": 4024,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\msgs\\fi.msg",
+      "offset": 7477958,
+      "size": 1212,
+      "uncompressed_size": 4693,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\msgs\\fr.msg",
+      "offset": 7479170,
+      "size": 992,
+      "uncompressed_size": 3877,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\msgs\\hu.msg",
+      "offset": 7480162,
+      "size": 1186,
+      "uncompressed_size": 4678,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\msgs\\it.msg",
+      "offset": 7481348,
+      "size": 976,
+      "uncompressed_size": 3765,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\msgs\\nl.msg",
+      "offset": 7482324,
+      "size": 1159,
+      "uncompressed_size": 4557,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\msgs\\pl.msg",
+      "offset": 7483483,
+      "size": 1337,
+      "uncompressed_size": 4932,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\msgs\\pt.msg",
+      "offset": 7484820,
+      "size": 1044,
+      "uncompressed_size": 3987,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\msgs\\ru.msg",
+      "offset": 7485864,
+      "size": 1604,
+      "uncompressed_size": 8620,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\msgs\\sv.msg",
+      "offset": 7487468,
+      "size": 1009,
+      "uncompressed_size": 3908,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\msgs\\zh_cn.msg",
+      "offset": 7488477,
+      "size": 1398,
+      "uncompressed_size": 4948,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\obsolete.tcl",
+      "offset": 7489875,
+      "size": 1685,
+      "uncompressed_size": 5772,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\optMenu.tcl",
+      "offset": 7491560,
+      "size": 794,
+      "uncompressed_size": 1629,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\palette.tcl",
+      "offset": 7492354,
+      "size": 2992,
+      "uncompressed_size": 8418,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\panedwindow.tcl",
+      "offset": 7495346,
+      "size": 1446,
+      "uncompressed_size": 5370,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\pkgIndex.tcl",
+      "offset": 7496792,
+      "size": 231,
+      "uncompressed_size": 376,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\safetk.tcl",
+      "offset": 7497023,
+      "size": 2807,
+      "uncompressed_size": 7632,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\scale.tcl",
+      "offset": 7499830,
+      "size": 2433,
+      "uncompressed_size": 8693,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\scrlbar.tcl",
+      "offset": 7502263,
+      "size": 3210,
+      "uncompressed_size": 13188,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\spinbox.tcl",
+      "offset": 7505473,
+      "size": 4181,
+      "uncompressed_size": 16543,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\tclIndex",
+      "offset": 7509654,
+      "size": 2134,
+      "uncompressed_size": 24443,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\tearoff.tcl",
+      "offset": 7511788,
+      "size": 1815,
+      "uncompressed_size": 4625,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\text.tcl",
+      "offset": 7513603,
+      "size": 8493,
+      "uncompressed_size": 35183,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\tk.tcl",
+      "offset": 7522096,
+      "size": 6861,
+      "uncompressed_size": 24322,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\tkfbox.tcl",
+      "offset": 7528957,
+      "size": 12510,
+      "uncompressed_size": 39606,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\altTheme.tcl",
+      "offset": 7541467,
+      "size": 1199,
+      "uncompressed_size": 4901,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\aquaTheme.tcl",
+      "offset": 7542666,
+      "size": 1082,
+      "uncompressed_size": 3809,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\button.tcl",
+      "offset": 7543748,
+      "size": 1251,
+      "uncompressed_size": 3014,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\clamTheme.tcl",
+      "offset": 7544999,
+      "size": 1314,
+      "uncompressed_size": 5858,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\classicTheme.tcl",
+      "offset": 7546313,
+      "size": 1166,
+      "uncompressed_size": 4354,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\combobox.tcl",
+      "offset": 7547479,
+      "size": 4099,
+      "uncompressed_size": 12708,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\cursors.tcl",
+      "offset": 7551578,
+      "size": 1847,
+      "uncompressed_size": 4674,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\defaults.tcl",
+      "offset": 7553425,
+      "size": 1121,
+      "uncompressed_size": 5004,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\entry.tcl",
+      "offset": 7554546,
+      "size": 5359,
+      "uncompressed_size": 18006,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\fonts.tcl",
+      "offset": 7559905,
+      "size": 1713,
+      "uncompressed_size": 5639,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\menubutton.tcl",
+      "offset": 7561618,
+      "size": 2116,
+      "uncompressed_size": 6408,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\notebook.tcl",
+      "offset": 7563734,
+      "size": 1875,
+      "uncompressed_size": 5863,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\panedwindow.tcl",
+      "offset": 7565609,
+      "size": 649,
+      "uncompressed_size": 2161,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\progress.tcl",
+      "offset": 7566258,
+      "size": 445,
+      "uncompressed_size": 1138,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\scale.tcl",
+      "offset": 7566703,
+      "size": 763,
+      "uncompressed_size": 2787,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\scrollbar.tcl",
+      "offset": 7567466,
+      "size": 1096,
+      "uncompressed_size": 3284,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\sizegrip.tcl",
+      "offset": 7568562,
+      "size": 941,
+      "uncompressed_size": 2502,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\spinbox.tcl",
+      "offset": 7569503,
+      "size": 1646,
+      "uncompressed_size": 5003,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\treeview.tcl",
+      "offset": 7571149,
+      "size": 2848,
+      "uncompressed_size": 10180,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\ttk.tcl",
+      "offset": 7573997,
+      "size": 1896,
+      "uncompressed_size": 5509,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\utils.tcl",
+      "offset": 7575893,
+      "size": 2946,
+      "uncompressed_size": 8621,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\vistaTheme.tcl",
+      "offset": 7578839,
+      "size": 2042,
+      "uncompressed_size": 10692,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\winTheme.tcl",
+      "offset": 7580881,
+      "size": 1015,
+      "uncompressed_size": 3848,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\ttk\\xpTheme.tcl",
+      "offset": 7581896,
+      "size": 821,
+      "uncompressed_size": 3090,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\unsupported.tcl",
+      "offset": 7582717,
+      "size": 2547,
+      "uncompressed_size": 10521,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tk_data\\xmfbox.tcl",
+      "offset": 7585264,
+      "size": 6954,
+      "uncompressed_size": 26991,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_tkinter.pyd",
+      "offset": 7592218,
+      "size": 34403,
+      "uncompressed_size": 68600,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_uuid.pyd",
+      "offset": 7626621,
+      "size": 15671,
+      "uncompressed_size": 27128,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "_wmi.pyd",
+      "offset": 7642292,
+      "size": 22111,
+      "uncompressed_size": 40304,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "assets_default\\claim_btn.png",
+      "offset": 7664403,
+      "size": 14373,
+      "uncompressed_size": 14362,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "assets_default\\claim_btn_en.png",
+      "offset": 7678776,
+      "size": 8054,
+      "uncompressed_size": 8043,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "assets_default\\claim_btn_plate.png",
+      "offset": 7686830,
+      "size": 13151,
+      "uncompressed_size": 13724,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "assets_default\\claim_single_btn.png",
+      "offset": 7699981,
+      "size": 4870,
+      "uncompressed_size": 4859,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "assets_default\\claim_single_btn_en.png",
+      "offset": 7704851,
+      "size": 6679,
+      "uncompressed_size": 6668,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "assets_default\\continue_btn.png",
+      "offset": 7711530,
+      "size": 1505,
+      "uncompressed_size": 1518,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "assets_default\\countdown_digits.npz",
+      "offset": 7713035,
+      "size": 25351,
+      "uncompressed_size": 25911,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "assets_default\\hud_btn.png",
+      "offset": 7738386,
+      "size": 9849,
+      "uncompressed_size": 10695,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "assets_default\\item_found_btn.png",
+      "offset": 7748235,
+      "size": 94359,
+      "uncompressed_size": 96161,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "assets_default\\menu_btn.png",
+      "offset": 7842594,
+      "size": 2039,
+      "uncompressed_size": 2098,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "assets_default\\menu_return_btn.png",
+      "offset": 7844633,
+      "size": 34072,
+      "uncompressed_size": 38559,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "assets_default\\play_btn.png",
+      "offset": 7878705,
+      "size": 6737,
+      "uncompressed_size": 6726,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "assets_default\\play_btn_en.png",
+      "offset": 7885442,
+      "size": 7780,
+      "uncompressed_size": 7769,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "assets_default\\play_btn_plate.png",
+      "offset": 7893222,
+      "size": 12104,
+      "uncompressed_size": 13447,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "assets_default\\return_lobby_btn.png",
+      "offset": 7905326,
+      "size": 7700,
+      "uncompressed_size": 7689,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "assets_default\\return_lobby_btn_en.png",
+      "offset": 7913026,
+      "size": 12138,
+      "uncompressed_size": 12127,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "assets_default\\return_lobby_btn_plate.png",
+      "offset": 7925164,
+      "size": 19455,
+      "uncompressed_size": 20776,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "assets_default\\skip_btn.png",
+      "offset": 7944619,
+      "size": 1423,
+      "uncompressed_size": 1416,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "assets_default\\storefront_play_btn.png",
+      "offset": 7946042,
+      "size": 8751,
+      "uncompressed_size": 9158,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "base_library.zip",
+      "offset": 7954793,
+      "size": 352601,
+      "uncompressed_size": 1206201,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "certifi\\cacert.pem",
+      "offset": 8307394,
+      "size": 129804,
+      "uncompressed_size": 235863,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "certifi\\py.typed",
+      "offset": 8437198,
+      "size": 8,
+      "uncompressed_size": 0,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "cv2\\__init__.py",
+      "offset": 8437206,
+      "size": 2112,
+      "uncompressed_size": 6811,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "cv2\\config-3.py",
+      "offset": 8439318,
+      "size": 367,
+      "uncompressed_size": 748,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "cv2\\config.py",
+      "offset": 8439685,
+      "size": 104,
+      "uncompressed_size": 123,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "cv2\\cv2.pyd",
+      "offset": 8439789,
+      "size": 30688864,
+      "uncompressed_size": 86293504,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "cv2\\data\\__init__.py",
+      "offset": 39128653,
+      "size": 73,
+      "uncompressed_size": 73,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "cv2\\load_config_py3.py",
+      "offset": 39128726,
+      "size": 166,
+      "uncompressed_size": 253,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "cv2\\mat_wrapper\\__init__.py",
+      "offset": 39128892,
+      "size": 589,
+      "uncompressed_size": 1164,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "cv2\\misc\\__init__.py",
+      "offset": 39129481,
+      "size": 41,
+      "uncompressed_size": 38,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "cv2\\misc\\version.py",
+      "offset": 39129522,
+      "size": 88,
+      "uncompressed_size": 95,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "cv2\\opencv_videoio_ffmpeg500_64.dll",
+      "offset": 39129610,
+      "size": 12960677,
+      "uncompressed_size": 30876160,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "cv2\\typing\\__init__.py",
+      "offset": 52090287,
+      "size": 936,
+      "uncompressed_size": 4465,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "cv2\\utils\\__init__.py",
+      "offset": 52091223,
+      "size": 169,
+      "uncompressed_size": 344,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "cv2\\version.py",
+      "offset": 52091392,
+      "size": 84,
+      "uncompressed_size": 96,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "libcrypto-3.dll",
+      "offset": 52091476,
+      "size": 1856009,
+      "uncompressed_size": 5231472,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "libffi-8.dll",
+      "offset": 53947485,
+      "size": 23195,
+      "uncompressed_size": 39696,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "libssl-3.dll",
+      "offset": 53970680,
+      "size": 283342,
+      "uncompressed_size": 794992,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\DELVEWHEEL",
+      "offset": 54254022,
+      "size": 220,
+      "uncompressed_size": 462,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\INSTALLER",
+      "offset": 54254242,
+      "size": 12,
+      "uncompressed_size": 4,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\METADATA",
+      "offset": 54254254,
+      "size": 2618,
+      "uncompressed_size": 6635,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\RECORD",
+      "offset": 54256872,
+      "size": 44139,
+      "uncompressed_size": 113361,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\REQUESTED",
+      "offset": 54301011,
+      "size": 8,
+      "uncompressed_size": 0,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\WHEEL",
+      "offset": 54301019,
+      "size": 88,
+      "uncompressed_size": 85,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\entry_points.txt",
+      "offset": 54301107,
+      "size": 140,
+      "uncompressed_size": 220,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\licenses\\LICENSE.txt",
+      "offset": 54301247,
+      "size": 15039,
+      "uncompressed_size": 45831,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\licenses\\numpy\\_core\\include\\numpy\\libdivide\\LICENSE.txt",
+      "offset": 54316286,
+      "size": 545,
+      "uncompressed_size": 1039,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\licenses\\numpy\\_core\\src\\common\\pythoncapi-compat\\COPYING",
+      "offset": 54316831,
+      "size": 449,
+      "uncompressed_size": 704,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\licenses\\numpy\\_core\\src\\highway\\LICENSE",
+      "offset": 54317280,
+      "size": 7201,
+      "uncompressed_size": 21155,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\licenses\\numpy\\_core\\src\\multiarray\\dragon4_LICENSE.txt",
+      "offset": 54324481,
+      "size": 836,
+      "uncompressed_size": 1441,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\licenses\\numpy\\_core\\src\\npysort\\x86-simd-sort\\LICENSE.md",
+      "offset": 54325317,
+      "size": 813,
+      "uncompressed_size": 1542,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\licenses\\numpy\\_core\\src\\umath\\svml\\LICENSE",
+      "offset": 54326130,
+      "size": 816,
+      "uncompressed_size": 1573,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\licenses\\numpy\\fft\\pocketfft\\LICENSE.md",
+      "offset": 54326946,
+      "size": 804,
+      "uncompressed_size": 1523,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\licenses\\numpy\\linalg\\lapack_lite\\LICENSE.txt",
+      "offset": 54327750,
+      "size": 1071,
+      "uncompressed_size": 2314,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\licenses\\numpy\\ma\\LICENSE",
+      "offset": 54328821,
+      "size": 814,
+      "uncompressed_size": 1616,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\licenses\\numpy\\random\\LICENSE.md",
+      "offset": 54329635,
+      "size": 1496,
+      "uncompressed_size": 3582,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\licenses\\numpy\\random\\src\\distributions\\LICENSE.md",
+      "offset": 54331131,
+      "size": 1333,
+      "uncompressed_size": 2805,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\licenses\\numpy\\random\\src\\mt19937\\LICENSE.md",
+      "offset": 54332464,
+      "size": 1430,
+      "uncompressed_size": 2986,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\licenses\\numpy\\random\\src\\pcg64\\LICENSE.md",
+      "offset": 54333894,
+      "size": 697,
+      "uncompressed_size": 1176,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\licenses\\numpy\\random\\src\\philox\\LICENSE.md",
+      "offset": 54334591,
+      "size": 807,
+      "uncompressed_size": 1540,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\licenses\\numpy\\random\\src\\sfc64\\LICENSE.md",
+      "offset": 54335398,
+      "size": 769,
+      "uncompressed_size": 1253,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy-2.5.4.dist-info\\licenses\\numpy\\random\\src\\splitmix64\\LICENSE.md",
+      "offset": 54336167,
+      "size": 246,
+      "uncompressed_size": 340,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy.libs\\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+      "offset": 54336413,
+      "size": 6491753,
+      "uncompressed_size": 20589056,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy.libs\\msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+      "offset": 60828166,
+      "size": 184649,
+      "uncompressed_size": 575056,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy\\_core\\_multiarray_tests.cp312-win_amd64.pyd",
+      "offset": 61012815,
+      "size": 29423,
+      "uncompressed_size": 65536,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy\\_core\\_multiarray_umath.cp312-win_amd64.pyd",
+      "offset": 61042238,
+      "size": 1245892,
+      "uncompressed_size": 3855872,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy\\fft\\_pocketfft_umath.cp312-win_amd64.pyd",
+      "offset": 62288130,
+      "size": 108171,
+      "uncompressed_size": 276480,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy\\linalg\\_umath_linalg.cp312-win_amd64.pyd",
+      "offset": 62396301,
+      "size": 44363,
+      "uncompressed_size": 112640,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy\\random\\_bounded_integers.cp312-win_amd64.pyd",
+      "offset": 62440664,
+      "size": 89545,
+      "uncompressed_size": 208896,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy\\random\\_common.cp312-win_amd64.pyd",
+      "offset": 62530209,
+      "size": 72648,
+      "uncompressed_size": 174080,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy\\random\\_generator.cp312-win_amd64.pyd",
+      "offset": 62602857,
+      "size": 282776,
+      "uncompressed_size": 624640,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy\\random\\_mt19937.cp312-win_amd64.pyd",
+      "offset": 62885633,
+      "size": 44742,
+      "uncompressed_size": 92672,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy\\random\\_pcg64.cp312-win_amd64.pyd",
+      "offset": 62930375,
+      "size": 43588,
+      "uncompressed_size": 105984,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy\\random\\_philox.cp312-win_amd64.pyd",
+      "offset": 62973963,
+      "size": 40349,
+      "uncompressed_size": 89088,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy\\random\\_sfc64.cp312-win_amd64.pyd",
+      "offset": 63014312,
+      "size": 29889,
+      "uncompressed_size": 64000,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy\\random\\bit_generator.cp312-win_amd64.pyd",
+      "offset": 63044201,
+      "size": 75283,
+      "uncompressed_size": 173056,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "numpy\\random\\mtrand.cp312-win_amd64.pyd",
+      "offset": 63119484,
+      "size": 225455,
+      "uncompressed_size": 522752,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "pyexpat.pyd",
+      "offset": 63344939,
+      "size": 99621,
+      "uncompressed_size": 205304,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "python3.dll",
+      "offset": 63444560,
+      "size": 24165,
+      "uncompressed_size": 70376,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "python312.dll",
+      "offset": 63468725,
+      "size": 2548450,
+      "uncompressed_size": 6945272,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "select.pyd",
+      "offset": 66017175,
+      "size": 18849,
+      "uncompressed_size": 33136,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "tcl86t.dll",
+      "offset": 66036024,
+      "size": 892320,
+      "uncompressed_size": 1841896,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "tcl8\\8.4\\platform-1.0.19.tm",
+      "offset": 66928344,
+      "size": 3744,
+      "uncompressed_size": 11708,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "tcl8\\8.4\\platform\\shell-1.1.4.tm",
+      "offset": 66932088,
+      "size": 2083,
+      "uncompressed_size": 6242,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "tcl8\\8.5\\msgcat-1.6.1.tm",
+      "offset": 66934171,
+      "size": 10028,
+      "uncompressed_size": 35120,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "tcl8\\8.5\\tcltest-2.5.8.tm",
+      "offset": 66944199,
+      "size": 28040,
+      "uncompressed_size": 105163,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "tcl8\\8.6\\http-2.9.8.tm",
+      "offset": 66972239,
+      "size": 31036,
+      "uncompressed_size": 118283,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "tk86t.dll",
+      "offset": 67003275,
+      "size": 726962,
+      "uncompressed_size": 1590776,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "unicodedata.pyd",
+      "offset": 67730237,
+      "size": 419262,
+      "uncompressed_size": 1140592,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "zlib1.dll",
+      "offset": 68149499,
+      "size": 80996,
+      "uncompressed_size": 148336,
+      "compressed": 1,
+      "type": "b"
+    },
+    {
+      "name": "O",
+      "offset": 68230495,
+      "size": 0,
+      "uncompressed_size": 0,
+      "compressed": 0,
+      "type": "o"
+    },
+    {
+      "name": "O",
+      "offset": 68230495,
+      "size": 0,
+      "uncompressed_size": 0,
+      "compressed": 0,
+      "type": "o"
+    },
+    {
+      "name": "pyi-contents-directory _internal",
+      "offset": 68230495,
+      "size": 0,
+      "uncompressed_size": 0,
+      "compressed": 0,
+      "type": "o"
+    },
+    {
+      "name": "PYZ.pyz",
+      "offset": 68230495,
+      "size": 4284245,
+      "uncompressed_size": 4284245,
+      "compressed": 0,
+      "type": "z"
+    }
+  ]
+}

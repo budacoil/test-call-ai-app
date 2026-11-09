@@ -1,0 +1,1928 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+ 12           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (ctypes)
+             10 STORE_NAME               0 (ctypes)
+
+ 13          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (os)
+             18 STORE_NAME               1 (os)
+
+ 14          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              2 (socket)
+             26 STORE_NAME               2 (socket)
+
+ 15          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               1 (None)
+             32 IMPORT_NAME              3 (ssl)
+             34 STORE_NAME               3 (ssl)
+
+ 16          36 LOAD_CONST               0 (0)
+             38 LOAD_CONST               1 (None)
+             40 IMPORT_NAME              4 (sys)
+             42 STORE_NAME               4 (sys)
+
+ 17          44 LOAD_CONST               0 (0)
+             46 LOAD_CONST               1 (None)
+             48 IMPORT_NAME              5 (tempfile)
+             50 STORE_NAME               5 (tempfile)
+
+ 18          52 LOAD_CONST               0 (0)
+             54 LOAD_CONST               1 (None)
+             56 IMPORT_NAME              6 (time)
+             58 STORE_NAME               6 (time)
+
+ 19          60 LOAD_CONST               0 (0)
+             62 LOAD_CONST               1 (None)
+             64 IMPORT_NAME              7 (urllib.parse)
+             66 STORE_NAME               8 (urllib)
+
+ 20          68 LOAD_CONST               0 (0)
+             70 LOAD_CONST               1 (None)
+             72 IMPORT_NAME              9 (urllib.request)
+             74 STORE_NAME               8 (urllib)
+
+ 21          76 LOAD_CONST               0 (0)
+             78 LOAD_CONST               2 (('Callable', 'Dict', 'List', 'Optional', 'Tuple'))
+             80 IMPORT_NAME             10 (typing)
+             82 IMPORT_FROM             11 (Callable)
+             84 STORE_NAME              11 (Callable)
+             86 IMPORT_FROM             12 (Dict)
+             88 STORE_NAME              12 (Dict)
+             90 IMPORT_FROM             13 (List)
+             92 STORE_NAME              13 (List)
+             94 IMPORT_FROM             14 (Optional)
+             96 STORE_NAME              14 (Optional)
+             98 IMPORT_FROM             15 (Tuple)
+            100 STORE_NAME              15 (Tuple)
+            102 POP_TOP
+
+ 23         104 LOAD_CONST               0 (0)
+            106 LOAD_CONST               1 (None)
+            108 IMPORT_NAME             16 (config)
+            110 STORE_NAME              16 (config)
+
+ 24         112 LOAD_CONST               0 (0)
+            114 LOAD_CONST               1 (None)
+            116 IMPORT_NAME             17 (focus)
+            118 STORE_NAME              17 (focus)
+
+ 25         120 LOAD_CONST               0 (0)
+            122 LOAD_CONST               1 (None)
+            124 IMPORT_NAME             18 (telemetry)
+            126 STORE_NAME              18 (telemetry)
+
+ 26         128 LOAD_CONST               0 (0)
+            130 LOAD_CONST               1 (None)
+            132 IMPORT_NAME             19 (window_capture)
+            134 STORE_NAME              20 (wc)
+
+ 27         136 LOAD_CONST               0 (0)
+            138 LOAD_CONST               3 (('__version__',))
+            140 IMPORT_NAME             21 (version)
+            142 IMPORT_FROM             22 (__version__)
+            144 STORE_NAME              22 (__version__)
+            146 POP_TOP
+
+ 29         148 LOAD_CONST               4 (6.0)
+            150 STORE_NAME              23 (PROBE_TIMEOUT_S)
+
+ 32         152 LOAD_CONST               5 ('return')
+            154 LOAD_NAME               24 (bool)
+            156 BUILD_TUPLE              2
+            158 LOAD_CONST               6 (<code object _admin at 0x7f6af1f823a0, file "diagnose.py", line 32>)
+            160 MAKE_FUNCTION            4 (annotations)
+            162 STORE_NAME              25 (_admin)
+
+ 39         164 LOAD_CONST               7 ('flags')
+            166 LOAD_NAME               26 (int)
+            168 LOAD_CONST               5 ('return')
+            170 LOAD_NAME               27 (str)
+            172 BUILD_TUPLE              4
+            174 LOAD_CONST               8 (<code object _variant_name at 0x7f6af1dd2130, file "diagnose.py", line 39>)
+            176 MAKE_FUNCTION            4 (annotations)
+            178 STORE_NAME              28 (_variant_name)
+
+ 43         180 LOAD_CONST              22 ((None, None))
+            182 LOAD_CONST               5 ('return')
+            184 LOAD_NAME               13 (List)
+            186 LOAD_NAME               27 (str)
+            188 BINARY_SUBSCR
+            192 BUILD_TUPLE              2
+            194 LOAD_CONST               9 (<code object build_report at 0x179cb1f0, file "diagnose.py", line 43>)
+            196 MAKE_FUNCTION            5 (defaults, annotations)
+            198 STORE_NAME              29 (build_report)
+
+106         200 PUSH_NULL
+            202 LOAD_BUILD_CLASS
+            204 LOAD_CONST              10 (<code object NetProbe at 0x7f6af1dda500, file "diagnose.py", line 106>)
+            206 MAKE_FUNCTION            0
+            208 LOAD_CONST              11 ('NetProbe')
+            210 CALL                     2
+            218 STORE_NAME              30 (NetProbe)
+
+137         220 LOAD_CONST               5 ('return')
+            222 LOAD_NAME               27 (str)
+            224 BUILD_TUPLE              2
+            226 LOAD_CONST              12 (<code object _proxy_text at 0x17a62d20, file "diagnose.py", line 137>)
+            228 MAKE_FUNCTION            4 (annotations)
+            230 STORE_NAME              31 (_proxy_text)
+
+151         232 LOAD_CONST              13 ('label')
+            234 LOAD_NAME               27 (str)
+            236 LOAD_CONST              14 ('fn')
+            238 LOAD_NAME               11 (Callable)
+            240 BUILD_LIST               0
+            242 LOAD_NAME               27 (str)
+            244 BUILD_TUPLE              2
+            246 BINARY_SUBSCR
+            250 LOAD_CONST               5 ('return')
+            252 LOAD_NAME               15 (Tuple)
+            254 LOAD_NAME               24 (bool)
+            256 LOAD_NAME               27 (str)
+            258 BUILD_TUPLE              2
+            260 BINARY_SUBSCR
+            264 BUILD_TUPLE              6
+            266 LOAD_CONST              15 (<code object _step at 0x7f6af1f76c30, file "diagnose.py", line 151>)
+            268 MAKE_FUNCTION            4 (annotations)
+            270 STORE_NAME              32 (_step)
+
+161         272 LOAD_CONST              22 ((None, None))
+            274 LOAD_CONST              16 ('relay_url')
+            276 LOAD_NAME               14 (Optional)
+            278 LOAD_NAME               27 (str)
+            280 BINARY_SUBSCR
+            284 LOAD_CONST               5 ('return')
+            286 LOAD_NAME               13 (List)
+            288 LOAD_NAME               27 (str)
+            290 BINARY_SUBSCR
+            294 BUILD_TUPLE              4
+            296 LOAD_CONST              17 (<code object network_report at 0x179c9fd0, file "diagnose.py", line 161>)
+            298 MAKE_FUNCTION            5 (defaults, annotations)
+            300 STORE_NAME              33 (network_report)
+
+201         302 LOAD_CONST              18 ('pk-auto_report.txt')
+            304 STORE_NAME              34 (REPORT_NAME)
+
+204         306 LOAD_CONST               5 ('return')
+            308 LOAD_NAME               27 (str)
+            310 BUILD_TUPLE              2
+            312 LOAD_CONST              19 (<code object default_report_path at 0x17a5d150, file "diagnose.py", line 204>)
+            314 MAKE_FUNCTION            4 (annotations)
+            316 STORE_NAME              35 (default_report_path)
+
+215         318 LOAD_CONST              20 ('out_path')
+            320 LOAD_NAME               27 (str)
+            322 LOAD_CONST               5 ('return')
+            324 LOAD_CONST               1 (None)
+            326 BUILD_TUPLE              4
+            328 LOAD_CONST              21 (<code object run at 0x179de3c0, file "diagnose.py", line 215>)
+            330 MAKE_FUNCTION            4 (annotations)
+            332 STORE_NAME              36 (run)
+            334 RETURN_CONST             1 (None)
+
+Disassembly of <code object _admin at 0x7f6af1f823a0, file "diagnose.py", line 32>:
+ 32           0 RESUME                   0
+
+ 33           2 NOP
+
+ 34           4 LOAD_GLOBAL              1 (NULL + bool)
+             14 LOAD_GLOBAL              2 (ctypes)
+             24 LOAD_ATTR                4 (windll)
+             44 LOAD_ATTR                6 (shell32)
+             64 LOAD_ATTR                9 (NULL|self + IsUserAnAdmin)
+             84 CALL                     0
+             92 CALL                     1
+            100 RETURN_VALUE
+        >>  102 PUSH_EXC_INFO
+
+ 35         104 LOAD_GLOBAL             10 (Exception)
+            114 CHECK_EXC_MATCH
+            116 POP_JUMP_IF_FALSE        3 (to 124)
+            118 POP_TOP
+
+ 36         120 POP_EXCEPT
+            122 RETURN_CONST             1 (False)
+
+ 35     >>  124 RERAISE                  0
+        >>  126 COPY                     3
+            128 POP_EXCEPT
+            130 RERAISE                  1
+ExceptionTable:
+  4 to 98 -> 102 [0]
+  102 to 118 -> 126 [1] lasti
+  124 to 124 -> 126 [1] lasti
+
+Disassembly of <code object _variant_name at 0x7f6af1dd2130, file "diagnose.py", line 39>:
+ 39           0 RESUME                   0
+
+ 40           2 LOAD_FAST                0 (flags)
+              4 LOAD_GLOBAL              0 (wc)
+             14 LOAD_ATTR                2 (PW_RENDERFULLCONTENT)
+             34 BINARY_OP                1 (&)
+             38 POP_JUMP_IF_FALSE        5 (to 50)
+             40 LOAD_CONST               1 ('PW_RENDERFULLCONTENT|')
+             42 LOAD_CONST               3 ('PW_CLIENTONLY')
+             44 BINARY_OP                0 (+)
+             48 RETURN_VALUE
+        >>   50 LOAD_CONST               2 ('')
+             52 LOAD_CONST               3 ('PW_CLIENTONLY')
+             54 BINARY_OP                0 (+)
+             58 RETURN_VALUE
+
+Disassembly of <code object build_report at 0x179cb1f0, file "diagnose.py", line 43>:
+              0 MAKE_CELL               22 (game)
+              2 MAKE_CELL               23 (low)
+
+ 43           4 RESUME                   0
+
+ 44           6 LOAD_FAST                0 (api)
+              8 COPY                     1
+             10 POP_JUMP_IF_TRUE        20 (to 52)
+             12 POP_TOP
+             14 LOAD_GLOBAL              1 (NULL + focus)
+             24 LOAD_ATTR                2 (WinApi)
+             44 CALL                     0
+        >>   52 STORE_FAST               0 (api)
+
+ 45          54 LOAD_FAST                1 (gdi)
+             56 COPY                     1
+             58 POP_JUMP_IF_TRUE        20 (to 100)
+             60 POP_TOP
+             62 LOAD_GLOBAL              5 (NULL + wc)
+             72 LOAD_ATTR                6 (Win32Gdi)
+             92 CALL                     0
+        >>  100 STORE_FAST               1 (gdi)
+
+ 46         102 LOAD_CONST               1 ('pk-auto ')
+            104 LOAD_GLOBAL              8 (__version__)
+            114 FORMAT_VALUE             0
+            116 LOAD_CONST               2 (' | frozen=')
+            118 LOAD_GLOBAL             11 (NULL + bool)
+            128 LOAD_GLOBAL             13 (NULL + getattr)
+            138 LOAD_GLOBAL             14 (sys)
+            148 LOAD_CONST               3 ('frozen')
+            150 LOAD_CONST               4 (False)
+            152 CALL                     3
+            160 CALL                     1
+            168 FORMAT_VALUE             0
+            170 LOAD_CONST               5 (' | this program runs as administrator: ')
+            172 LOAD_GLOBAL             17 (NULL + _admin)
+            182 CALL                     0
+            190 FORMAT_VALUE             0
+            192 BUILD_STRING             6
+            194 BUILD_LIST               1
+            196 STORE_FAST               2 (lines)
+
+ 47         198 NOP
+
+ 48         200 LOAD_FAST                0 (api)
+            202 LOAD_ATTR               19 (NULL|self + windows)
+            222 CALL                     0
+            230 STORE_FAST               3 (windows)
+
+ 51         232 BUILD_LIST               0
+            234 STORE_FAST               5 (related)
+
+ 52         236 LOAD_FAST                3 (windows)
+            238 GET_ITER
+        >>  240 FOR_ITER               118 (to 480)
+            244 STORE_FAST               6 (h)
+
+ 53         246 LOAD_FAST                0 (api)
+            248 LOAD_ATTR               23 (NULL|self + class_name)
+            268 LOAD_FAST                6 (h)
+            270 CALL                     1
+            278 LOAD_FAST                0 (api)
+            280 LOAD_ATTR               25 (NULL|self + title)
+            300 LOAD_FAST                6 (h)
+            302 CALL                     1
+            310 STORE_FAST               8 (title)
+            312 STORE_FAST               7 (cls)
+
+ 54         314 LOAD_FAST                7 (cls)
+            316 LOAD_CONST               7 (' ')
+            318 BINARY_OP                0 (+)
+            322 LOAD_FAST                8 (title)
+            324 BINARY_OP                0 (+)
+            328 LOAD_ATTR               27 (NULL|self + lower)
+            348 CALL                     0
+            356 STORE_DEREF             23 (low)
+
+ 55         358 LOAD_FAST                7 (cls)
+            360 LOAD_GLOBAL              0 (focus)
+            370 LOAD_ATTR               28 (GAME_CLASS)
+            390 COMPARE_OP              40 (==)
+            394 POP_JUMP_IF_TRUE        21 (to 438)
+            396 LOAD_GLOBAL             31 (NULL + any)
+            406 LOAD_CLOSURE            23 (low)
+            408 BUILD_TUPLE              1
+            410 LOAD_CONST               8 (<code object <genexpr> at 0x7f6af1dc3c30, file "diagnose.py", line 55>)
+            412 MAKE_FUNCTION            8 (closure)
+            414 LOAD_CONST               9 (('fortnite', 'geforce now', 'フォートナイト'))
+            416 GET_ITER
+            418 CALL                     0
+            426 CALL                     1
+            434 POP_JUMP_IF_TRUE         1 (to 438)
+            436 JUMP_BACKWARD           99 (to 240)
+
+ 56     >>  438 LOAD_FAST                5 (related)
+            440 LOAD_ATTR               33 (NULL|self + append)
+            460 LOAD_FAST                6 (h)
+            462 LOAD_FAST                7 (cls)
+            464 LOAD_FAST                8 (title)
+            466 BUILD_TUPLE              3
+            468 CALL                     1
+            476 POP_TOP
+            478 JUMP_BACKWARD          120 (to 240)
+
+ 52     >>  480 END_FOR
+
+ 57         482 LOAD_FAST                2 (lines)
+            484 LOAD_ATTR               33 (NULL|self + append)
+            504 LOAD_CONST              10 ('windows that look related to the game: ')
+            506 LOAD_GLOBAL             35 (NULL + len)
+            516 LOAD_FAST                5 (related)
+            518 CALL                     1
+            526 FORMAT_VALUE             0
+            528 BUILD_STRING             2
+            530 CALL                     1
+            538 POP_TOP
+
+ 58         540 LOAD_FAST                5 (related)
+            542 GET_ITER
+        >>  544 FOR_ITER               106 (to 760)
+            548 UNPACK_SEQUENCE          3
+            552 STORE_FAST               6 (h)
+            554 STORE_FAST               7 (cls)
+            556 STORE_FAST               8 (title)
+
+ 59         558 LOAD_CONST              11 ('')
+            560 STORE_FAST               9 (proc)
+
+ 60         562 NOP
+
+ 61         564 LOAD_FAST                0 (api)
+            566 LOAD_ATTR               37 (NULL|self + process_name)
+            586 LOAD_FAST                6 (h)
+            588 CALL                     1
+            596 STORE_FAST               9 (proc)
+
+ 64     >>  598 LOAD_FAST                1 (gdi)
+            600 LOAD_ATTR               39 (NULL|self + client_rect)
+            620 LOAD_FAST                6 (h)
+            622 CALL                     1
+            630 STORE_FAST              10 (r)
+
+ 65         632 LOAD_FAST                2 (lines)
+            634 LOAD_ATTR               33 (NULL|self + append)
+            654 LOAD_CONST              12 ('  hwnd=')
+            656 LOAD_FAST                6 (h)
+            658 FORMAT_VALUE             0
+            660 LOAD_CONST              13 (' class=')
+            662 LOAD_FAST                7 (cls)
+            664 FORMAT_VALUE             2 (repr)
+            666 LOAD_CONST              14 (' title=')
+            668 LOAD_FAST                8 (title)
+            670 FORMAT_VALUE             2 (repr)
+            672 LOAD_CONST              15 (' program=')
+            674 LOAD_FAST                9 (proc)
+            676 FORMAT_VALUE             2 (repr)
+            678 LOAD_CONST              16 (' client=')
+            680 LOAD_FAST               10 (r)
+            682 LOAD_CONST              17 (2)
+            684 BINARY_SUBSCR
+            688 FORMAT_VALUE             0
+            690 LOAD_CONST              18 ('x')
+            692 LOAD_FAST               10 (r)
+            694 POP_JUMP_IF_FALSE        5 (to 706)
+            696 LOAD_FAST               10 (r)
+            698 LOAD_CONST              19 (3)
+            700 BINARY_SUBSCR
+            704 JUMP_FORWARD             1 (to 708)
+        >>  706 LOAD_CONST              20 ('?')
+        >>  708 FORMAT_VALUE             0
+            710 LOAD_CONST              21 (' minimized=')
+            712 LOAD_FAST                1 (gdi)
+            714 LOAD_ATTR               41 (NULL|self + is_iconic)
+            734 LOAD_FAST                6 (h)
+            736 CALL                     1
+            744 FORMAT_VALUE             0
+            746 BUILD_STRING            14
+            748 CALL                     1
+            756 POP_TOP
+            758 JUMP_BACKWARD          108 (to 544)
+
+ 58     >>  760 END_FOR
+
+ 66         762 LOAD_GLOBAL              1 (NULL + focus)
+            772 LOAD_ATTR               42 (find_game)
+            792 LOAD_FAST                0 (api)
+            794 CALL                     1
+            802 STORE_DEREF             22 (game)
+
+ 67         804 LOAD_DEREF              22 (game)
+            806 POP_JUMP_IF_TRUE        19 (to 846)
+
+ 68         808 LOAD_FAST                2 (lines)
+            810 LOAD_ATTR               33 (NULL|self + append)
+            830 LOAD_CONST              22 ('RESULT: the game window was NOT found (start the game first; if it is running, send this report).')
+            832 CALL                     1
+            840 POP_TOP
+
+ 69         842 LOAD_FAST                2 (lines)
+            844 RETURN_VALUE
+
+ 70     >>  846 LOAD_FAST                2 (lines)
+            848 LOAD_ATTR               33 (NULL|self + append)
+            868 LOAD_CONST              23 ('game window found: hwnd=')
+            870 LOAD_DEREF              22 (game)
+            872 FORMAT_VALUE             0
+            874 LOAD_CONST              24 (', class=')
+            876 LOAD_FAST                0 (api)
+            878 LOAD_ATTR               23 (NULL|self + class_name)
+            898 LOAD_DEREF              22 (game)
+            900 CALL                     1
+            908 FORMAT_VALUE             2 (repr)
+            910 LOAD_CONST              25 (', title=')
+            912 LOAD_FAST                0 (api)
+            914 LOAD_ATTR               25 (NULL|self + title)
+            934 LOAD_DEREF              22 (game)
+            936 CALL                     1
+            944 FORMAT_VALUE             2 (repr)
+            946 BUILD_STRING             6
+            948 CALL                     1
+            956 POP_TOP
+
+ 71         958 LOAD_FAST                1 (gdi)
+            960 LOAD_ATTR               41 (NULL|self + is_iconic)
+            980 LOAD_DEREF              22 (game)
+            982 CALL                     1
+            990 POP_JUMP_IF_FALSE       19 (to 1030)
+
+ 72         992 LOAD_FAST                2 (lines)
+            994 LOAD_ATTR               33 (NULL|self + append)
+           1014 LOAD_CONST              26 ('RESULT: the game window is minimized - Windows does not draw it, so it cannot be captured. Un-minimize it and set the display mode to Windowed Fullscreen.')
+           1016 CALL                     1
+           1024 POP_TOP
+
+ 74        1026 LOAD_FAST                2 (lines)
+           1028 RETURN_VALUE
+
+ 75     >> 1030 LOAD_FAST                1 (gdi)
+           1032 LOAD_ATTR               39 (NULL|self + client_rect)
+           1052 LOAD_DEREF              22 (game)
+           1054 CALL                     1
+           1062 STORE_FAST              11 (rect)
+
+ 76        1064 LOAD_FAST               11 (rect)
+           1066 POP_JUMP_IF_FALSE       16 (to 1100)
+           1068 LOAD_FAST               11 (rect)
+           1070 LOAD_CONST              17 (2)
+           1072 BINARY_SUBSCR
+           1076 LOAD_CONST              27 (0)
+           1078 COMPARE_OP              26 (<=)
+           1082 POP_JUMP_IF_TRUE         8 (to 1100)
+           1084 LOAD_FAST               11 (rect)
+           1086 LOAD_CONST              19 (3)
+           1088 BINARY_SUBSCR
+           1092 LOAD_CONST              27 (0)
+           1094 COMPARE_OP              26 (<=)
+           1098 POP_JUMP_IF_FALSE       23 (to 1146)
+
+ 77     >> 1100 LOAD_FAST                2 (lines)
+           1102 LOAD_ATTR               33 (NULL|self + append)
+           1122 LOAD_CONST              28 ('RESULT: the window has no usable client area (')
+           1124 LOAD_FAST               11 (rect)
+           1126 FORMAT_VALUE             0
+           1128 LOAD_CONST              29 (').')
+           1130 BUILD_STRING             3
+           1132 CALL                     1
+           1140 POP_TOP
+
+ 78        1142 LOAD_FAST                2 (lines)
+           1144 RETURN_VALUE
+
+ 79     >> 1146 LOAD_FAST               11 (rect)
+           1148 UNPACK_SEQUENCE          4
+           1152 STORE_FAST              12 (left)
+           1154 STORE_FAST              13 (top)
+           1156 STORE_FAST              14 (w)
+           1158 STORE_FAST               6 (h)
+
+ 80        1160 LOAD_FAST                2 (lines)
+           1162 LOAD_ATTR               33 (NULL|self + append)
+           1182 LOAD_CONST              30 ('client area: ')
+           1184 LOAD_FAST               14 (w)
+           1186 FORMAT_VALUE             0
+           1188 LOAD_CONST              18 ('x')
+           1190 LOAD_FAST                6 (h)
+           1192 FORMAT_VALUE             0
+           1194 LOAD_CONST              31 (' at screen position (')
+           1196 LOAD_FAST               12 (left)
+           1198 FORMAT_VALUE             0
+           1200 LOAD_CONST              32 (', ')
+           1202 LOAD_FAST               13 (top)
+           1204 FORMAT_VALUE             0
+           1206 LOAD_CONST              33 (')')
+           1208 BUILD_STRING             9
+           1210 CALL                     1
+           1218 POP_TOP
+
+ 81        1220 LOAD_GLOBAL              5 (NULL + wc)
+           1230 LOAD_ATTR               44 (WindowCapture)
+           1250 LOAD_GLOBAL              5 (NULL + wc)
+           1260 LOAD_ATTR               46 (GameWindow)
+           1280 LOAD_CLOSURE            22 (game)
+           1282 BUILD_TUPLE              1
+           1284 LOAD_CONST              34 (<code object <lambda> at 0x7f6aed712c10, file "diagnose.py", line 81>)
+           1286 MAKE_FUNCTION            8 (closure)
+           1288 LOAD_FAST                1 (gdi)
+           1290 LOAD_ATTR               48 (is_window)
+           1310 KW_NAMES                35 (('finder', 'is_window'))
+           1312 CALL                     2
+           1320 LOAD_FAST                1 (gdi)
+           1322 KW_NAMES                36 (('api',))
+           1324 CALL                     2
+           1332 STORE_FAST              15 (cap)
+
+ 82        1334 LOAD_CONST               0 (None)
+           1336 STORE_FAST              16 (working)
+
+ 83        1338 LOAD_GLOBAL              4 (wc)
+           1348 LOAD_ATTR               50 (FLAG_VARIANTS)
+           1368 GET_ITER
+        >> 1370 EXTENDED_ARG             1
+           1372 FOR_ITER               269 (to 1914)
+           1376 STORE_FAST              17 (flags)
+
+ 84        1378 LOAD_GLOBAL             53 (NULL + time)
+           1388 LOAD_ATTR               54 (perf_counter)
+           1408 CALL                     0
+           1416 STORE_FAST              18 (t0)
+
+ 85        1418 LOAD_CONST               4 (False)
+           1420 LOAD_FAST               15 (cap)
+           1422 STORE_ATTR              28 (_denied)
+
+ 86        1432 LOAD_FAST               15 (cap)
+           1434 LOAD_ATTR               59 (NULL|self + _print)
+           1454 LOAD_DEREF              22 (game)
+           1456 LOAD_FAST               14 (w)
+           1458 LOAD_FAST                6 (h)
+           1460 LOAD_FAST               17 (flags)
+           1462 CALL                     4
+           1470 STORE_FAST              19 (frame)
+
+ 87        1472 LOAD_GLOBAL             53 (NULL + time)
+           1482 LOAD_ATTR               54 (perf_counter)
+           1502 CALL                     0
+           1510 LOAD_FAST               18 (t0)
+           1512 BINARY_OP               10 (-)
+           1516 LOAD_CONST              37 (1000)
+           1518 BINARY_OP                5 (*)
+           1522 STORE_FAST              20 (ms)
+
+ 88        1524 LOAD_FAST               19 (frame)
+           1526 POP_JUMP_IF_NOT_NONE    68 (to 1664)
+
+ 89        1528 LOAD_FAST               15 (cap)
+           1530 LOAD_ATTR               56 (_denied)
+           1550 POP_JUMP_IF_FALSE        2 (to 1556)
+           1552 LOAD_CONST              38 ('ACCESS DENIED (the game runs as administrator; run pk-auto as administrator)')
+           1554 JUMP_FORWARD             1 (to 1558)
+        >> 1556 LOAD_CONST              39 ('failed')
+        >> 1558 STORE_FAST              21 (why)
+
+ 90        1560 LOAD_FAST                2 (lines)
+           1562 LOAD_ATTR               33 (NULL|self + append)
+           1582 LOAD_CONST              40 ('  PrintWindow ')
+           1584 LOAD_GLOBAL             61 (NULL + _variant_name)
+           1594 LOAD_FAST               17 (flags)
+           1596 CALL                     1
+           1604 FORMAT_VALUE             0
+           1606 LOAD_CONST              41 (': ')
+           1608 LOAD_FAST               21 (why)
+           1610 FORMAT_VALUE             0
+           1612 LOAD_CONST              42 (' [')
+           1614 LOAD_FAST               20 (ms)
+           1616 LOAD_CONST              43 ('.0f')
+           1618 FORMAT_VALUE             4 (with format)
+           1620 LOAD_CONST              44 (' ms]')
+           1622 BUILD_STRING             7
+           1624 CALL                     1
+           1632 POP_TOP
+
+ 91        1634 LOAD_FAST               15 (cap)
+           1636 LOAD_ATTR               56 (_denied)
+           1656 POP_JUMP_IF_TRUE         1 (to 1660)
+           1658 JUMP_BACKWARD          145 (to 1370)
+
+ 92     >> 1660 POP_TOP
+           1662 JUMP_FORWARD           126 (to 1916)
+
+ 93     >> 1664 LOAD_GLOBAL              5 (NULL + wc)
+           1674 LOAD_ATTR               62 (_is_black)
+           1694 LOAD_FAST               19 (frame)
+           1696 CALL                     1
+           1704 POP_JUMP_IF_FALSE       35 (to 1776)
+
+ 94        1706 LOAD_FAST                2 (lines)
+           1708 LOAD_ATTR               33 (NULL|self + append)
+           1728 LOAD_CONST              40 ('  PrintWindow ')
+           1730 LOAD_GLOBAL             61 (NULL + _variant_name)
+           1740 LOAD_FAST               17 (flags)
+           1742 CALL                     1
+           1750 FORMAT_VALUE             0
+           1752 LOAD_CONST              45 (': BLACK picture [')
+           1754 LOAD_FAST               20 (ms)
+           1756 LOAD_CONST              43 ('.0f')
+           1758 FORMAT_VALUE             4 (with format)
+           1760 LOAD_CONST              44 (' ms]')
+           1762 BUILD_STRING             5
+           1764 CALL                     1
+           1772 POP_TOP
+           1774 JUMP_BACKWARD          203 (to 1370)
+
+ 96     >> 1776 LOAD_FAST                2 (lines)
+           1778 LOAD_ATTR               33 (NULL|self + append)
+           1798 LOAD_CONST              40 ('  PrintWindow ')
+           1800 LOAD_GLOBAL             61 (NULL + _variant_name)
+           1810 LOAD_FAST               17 (flags)
+           1812 CALL                     1
+           1820 FORMAT_VALUE             0
+           1822 LOAD_CONST              46 (': OK, mean brightness ')
+           1824 LOAD_GLOBAL             65 (NULL + float)
+           1834 LOAD_FAST               19 (frame)
+           1836 LOAD_ATTR               67 (NULL|self + mean)
+           1856 CALL                     0
+           1864 CALL                     1
+           1872 LOAD_CONST              43 ('.0f')
+           1874 FORMAT_VALUE             4 (with format)
+           1876 LOAD_CONST              42 (' [')
+           1878 LOAD_FAST               20 (ms)
+           1880 LOAD_CONST              43 ('.0f')
+           1882 FORMAT_VALUE             4 (with format)
+           1884 LOAD_CONST              44 (' ms]')
+           1886 BUILD_STRING             7
+           1888 CALL                     1
+           1896 POP_TOP
+
+ 97        1898 LOAD_FAST               16 (working)
+           1900 COPY                     1
+           1902 POP_JUMP_IF_TRUE         2 (to 1908)
+           1904 POP_TOP
+           1906 LOAD_FAST               17 (flags)
+        >> 1908 STORE_FAST              16 (working)
+           1910 EXTENDED_ARG             1
+           1912 JUMP_BACKWARD          272 (to 1370)
+
+ 83     >> 1914 END_FOR
+
+ 98     >> 1916 LOAD_FAST               16 (working)
+           1918 POP_JUMP_IF_NONE        19 (to 1958)
+
+ 99        1920 LOAD_FAST                2 (lines)
+           1922 LOAD_ATTR               33 (NULL|self + append)
+           1942 LOAD_CONST              47 ('RESULT: the game window can be captured, also behind other windows. Background mode should work.')
+           1944 CALL                     1
+           1952 POP_TOP
+
+103        1954 LOAD_FAST                2 (lines)
+           1956 RETURN_VALUE
+
+101     >> 1958 LOAD_FAST                2 (lines)
+           1960 LOAD_ATTR               33 (NULL|self + append)
+           1980 LOAD_CONST              48 ('RESULT: the game window cannot be captured behind other windows with this method. Keep the game uncovered (pk-auto then falls back to the normal screen capture), or send this report.')
+           1982 CALL                     1
+           1990 POP_TOP
+
+103        1992 LOAD_FAST                2 (lines)
+           1994 RETURN_VALUE
+        >> 1996 PUSH_EXC_INFO
+
+ 49        1998 LOAD_GLOBAL             20 (Exception)
+           2008 CHECK_EXC_MATCH
+           2010 POP_JUMP_IF_FALSE       19 (to 2050)
+           2012 STORE_FAST               4 (e)
+
+ 50        2014 LOAD_FAST                2 (lines)
+           2016 LOAD_CONST               6 ('cannot list windows: ')
+           2018 LOAD_FAST                4 (e)
+           2020 FORMAT_VALUE             0
+           2022 BUILD_STRING             2
+           2024 BUILD_LIST               1
+           2026 BINARY_OP                0 (+)
+           2030 SWAP                     2
+           2032 POP_EXCEPT
+           2034 LOAD_CONST               0 (None)
+           2036 STORE_FAST               4 (e)
+           2038 DELETE_FAST              4 (e)
+           2040 RETURN_VALUE
+        >> 2042 LOAD_CONST               0 (None)
+           2044 STORE_FAST               4 (e)
+           2046 DELETE_FAST              4 (e)
+           2048 RERAISE                  1
+
+ 49     >> 2050 RERAISE                  0
+        >> 2052 COPY                     3
+           2054 POP_EXCEPT
+           2056 RERAISE                  1
+        >> 2058 PUSH_EXC_INFO
+
+ 62        2060 LOAD_GLOBAL             20 (Exception)
+           2070 CHECK_EXC_MATCH
+           2072 POP_JUMP_IF_FALSE        4 (to 2082)
+           2074 POP_TOP
+
+ 63        2076 POP_EXCEPT
+           2078 EXTENDED_ARG             2
+           2080 JUMP_BACKWARD          742 (to 598)
+
+ 62     >> 2082 RERAISE                  0
+        >> 2084 COPY                     3
+           2086 POP_EXCEPT
+           2088 RERAISE                  1
+ExceptionTable:
+  200 to 230 -> 1996 [0]
+  564 to 596 -> 2058 [1]
+  1996 to 2012 -> 2052 [1] lasti
+  2014 to 2028 -> 2042 [1] lasti
+  2030 to 2030 -> 2052 [1] lasti
+  2042 to 2050 -> 2052 [1] lasti
+  2058 to 2074 -> 2084 [2] lasti
+  2082 to 2082 -> 2084 [2] lasti
+
+Disassembly of <code object <genexpr> at 0x7f6af1dc3c30, file "diagnose.py", line 55>:
+              0 COPY_FREE_VARS           1
+
+ 55           2 RETURN_GENERATOR
+              4 POP_TOP
+              6 RESUME                   0
+              8 LOAD_FAST                0 (.0)
+        >>   10 FOR_ITER                 8 (to 30)
+             14 STORE_FAST               1 (k)
+             16 LOAD_FAST                1 (k)
+             18 LOAD_DEREF               2 (low)
+             20 CONTAINS_OP              0
+             22 YIELD_VALUE              1
+             24 RESUME                   1
+             26 POP_TOP
+             28 JUMP_BACKWARD           10 (to 10)
+        >>   30 END_FOR
+             32 RETURN_CONST             0 (None)
+        >>   34 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             36 RERAISE                  1
+ExceptionTable:
+  6 to 32 -> 34 [0] lasti
+
+Disassembly of <code object <lambda> at 0x7f6aed712c10, file "diagnose.py", line 81>:
+              0 COPY_FREE_VARS           1
+
+ 81           2 RESUME                   0
+              4 LOAD_DEREF               0 (game)
+              6 RETURN_VALUE
+
+Disassembly of <code object NetProbe at 0x7f6af1dda500, file "diagnose.py", line 106>:
+106           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('NetProbe')
+              8 STORE_NAME               2 (__qualname__)
+
+107          10 NOP
+
+109          12 LOAD_CONST               1 ('host')
+             14 LOAD_NAME                3 (str)
+             16 LOAD_CONST               2 ('return')
+             18 LOAD_NAME                3 (str)
+             20 BUILD_TUPLE              4
+             22 LOAD_CONST               3 (<code object resolve at 0x7f6aed7a81b0, file "diagnose.py", line 109>)
+             24 MAKE_FUNCTION            4 (annotations)
+             26 STORE_NAME               4 (resolve)
+
+113          28 LOAD_CONST               1 ('host')
+             30 LOAD_NAME                3 (str)
+             32 LOAD_CONST               2 ('return')
+             34 LOAD_NAME                3 (str)
+             36 BUILD_TUPLE              4
+             38 LOAD_CONST               4 (<code object handshake at 0x7f6af20bb670, file "diagnose.py", line 113>)
+             40 MAKE_FUNCTION            4 (annotations)
+             42 STORE_NAME               5 (handshake)
+
+124          44 LOAD_CONST               1 ('host')
+             46 LOAD_NAME                3 (str)
+             48 LOAD_CONST               5 ('ctx')
+             50 LOAD_NAME                6 (ssl)
+             52 LOAD_ATTR               14 (SSLContext)
+             72 LOAD_CONST               2 ('return')
+             74 LOAD_NAME                3 (str)
+             76 BUILD_TUPLE              6
+             78 LOAD_CONST               6 (<code object _tls at 0x179d0860, file "diagnose.py", line 124>)
+             80 MAKE_FUNCTION            4 (annotations)
+             82 STORE_NAME               8 (_tls)
+
+131          84 LOAD_CONST               7 ('url')
+             86 LOAD_NAME                3 (str)
+             88 LOAD_CONST               2 ('return')
+             90 LOAD_NAME                3 (str)
+             92 BUILD_TUPLE              4
+             94 LOAD_CONST               8 (<code object get at 0x7f6af1de63f0, file "diagnose.py", line 131>)
+             96 MAKE_FUNCTION            4 (annotations)
+             98 STORE_NAME               9 (get)
+            100 RETURN_CONST             9 (None)
+
+Disassembly of <code object resolve at 0x7f6aed7a81b0, file "diagnose.py", line 109>:
+109           0 RESUME                   0
+
+110           2 LOAD_GLOBAL              1 (NULL + socket)
+             12 LOAD_ATTR                2 (getaddrinfo)
+             32 LOAD_FAST                1 (host)
+             34 LOAD_CONST               1 (443)
+             36 LOAD_GLOBAL              0 (socket)
+             46 LOAD_ATTR                4 (SOCK_STREAM)
+             66 KW_NAMES                 2 (('type',))
+             68 CALL                     3
+             76 STORE_FAST               2 (infos)
+
+111          78 LOAD_CONST               3 (', ')
+             80 LOAD_ATTR                7 (NULL|self + join)
+            100 LOAD_GLOBAL              9 (NULL + sorted)
+            110 LOAD_FAST                2 (infos)
+            112 GET_ITER
+            114 LOAD_FAST_AND_CLEAR      3 (i)
+            116 SWAP                     2
+            118 BUILD_SET                0
+            120 SWAP                     2
+        >>  122 FOR_ITER                10 (to 146)
+            126 STORE_FAST               3 (i)
+            128 LOAD_FAST                3 (i)
+            130 LOAD_CONST               4 (4)
+            132 BINARY_SUBSCR
+            136 LOAD_CONST               5 (0)
+            138 BINARY_SUBSCR
+            142 SET_ADD                  2
+            144 JUMP_BACKWARD           12 (to 122)
+        >>  146 END_FOR
+            148 SWAP                     2
+            150 STORE_FAST               3 (i)
+            152 CALL                     1
+            160 LOAD_CONST               0 (None)
+            162 LOAD_CONST               6 (3)
+            164 BINARY_SLICE
+            166 CALL                     1
+            174 RETURN_VALUE
+        >>  176 SWAP                     2
+            178 POP_TOP
+            180 SWAP                     2
+            182 STORE_FAST               3 (i)
+            184 RERAISE                  0
+ExceptionTable:
+  118 to 146 -> 176 [6]
+
+Disassembly of <code object handshake at 0x7f6af20bb670, file "diagnose.py", line 113>:
+113           0 RESUME                   0
+
+114           2 NOP
+
+115           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + _tls)
+             26 LOAD_FAST                1 (host)
+             28 LOAD_GLOBAL              3 (NULL + ssl)
+             38 LOAD_ATTR                4 (create_default_context)
+             58 CALL                     0
+             66 CALL                     2
+             74 RETURN_VALUE
+        >>   76 PUSH_EXC_INFO
+
+116          78 LOAD_GLOBAL              2 (ssl)
+             88 LOAD_ATTR                6 (SSLCertVerificationError)
+            108 CHECK_EXC_MATCH
+            110 POP_JUMP_IF_FALSE       86 (to 284)
+            112 STORE_FAST               2 (e)
+
+117         114 LOAD_GLOBAL              9 (NULL + telemetry)
+            124 LOAD_ATTR               10 (bundled_context)
+            144 CALL                     0
+            152 STORE_FAST               3 (ctx)
+
+118         154 LOAD_FAST                3 (ctx)
+            156 POP_JUMP_IF_NOT_NONE     1 (to 160)
+
+119         158 RAISE_VARARGS            0
+
+120     >>  160 LOAD_FAST                0 (self)
+            162 LOAD_ATTR                1 (NULL|self + _tls)
+            182 LOAD_FAST                1 (host)
+            184 LOAD_FAST                3 (ctx)
+            186 CALL                     2
+            194 STORE_FAST               4 (note)
+
+121         196 LOAD_FAST                2 (e)
+            198 LOAD_ATTR               12 (verify_message)
+            218 COPY                     1
+            220 POP_JUMP_IF_TRUE        12 (to 246)
+            222 POP_TOP
+            224 LOAD_FAST                2 (e)
+            226 LOAD_ATTR               14 (reason)
+        >>  246 FORMAT_VALUE             0
+            248 STORE_FAST               5 (raise_msg)
+
+122         250 LOAD_FAST                4 (note)
+            252 FORMAT_VALUE             0
+            254 LOAD_CONST               1 (" - the PC's certificate store REJECTED it (")
+            256 LOAD_FAST                5 (raise_msg)
+            258 FORMAT_VALUE             0
+            260 LOAD_CONST               2 (') but the bundled certificates accept it; pk-auto uses those')
+            262 BUILD_STRING             4
+            264 SWAP                     2
+            266 POP_EXCEPT
+            268 LOAD_CONST               0 (None)
+            270 STORE_FAST               2 (e)
+            272 DELETE_FAST              2 (e)
+            274 RETURN_VALUE
+        >>  276 LOAD_CONST               0 (None)
+            278 STORE_FAST               2 (e)
+            280 DELETE_FAST              2 (e)
+            282 RERAISE                  1
+
+116     >>  284 RERAISE                  0
+        >>  286 COPY                     3
+            288 POP_EXCEPT
+            290 RERAISE                  1
+ExceptionTable:
+  4 to 72 -> 76 [0]
+  76 to 112 -> 286 [1] lasti
+  114 to 262 -> 276 [1] lasti
+  264 to 264 -> 286 [1] lasti
+  276 to 284 -> 286 [1] lasti
+
+Disassembly of <code object _tls at 0x179d0860, file "diagnose.py", line 124>:
+124           0 RESUME                   0
+
+125           2 LOAD_GLOBAL              1 (NULL + socket)
+             12 LOAD_ATTR                2 (create_connection)
+             32 LOAD_FAST                1 (host)
+             34 LOAD_CONST               1 (443)
+             36 BUILD_TUPLE              2
+             38 LOAD_GLOBAL              4 (PROBE_TIMEOUT_S)
+             48 KW_NAMES                 2 (('timeout',))
+             50 CALL                     2
+             58 BEFORE_WITH
+             60 STORE_FAST               3 (raw)
+
+126          62 LOAD_FAST                2 (ctx)
+             64 LOAD_ATTR                7 (NULL|self + wrap_socket)
+             84 LOAD_FAST                3 (raw)
+             86 LOAD_FAST                1 (host)
+             88 KW_NAMES                 3 (('server_hostname',))
+             90 CALL                     2
+             98 BEFORE_WITH
+            100 STORE_FAST               4 (tls)
+
+127         102 LOAD_FAST                4 (tls)
+            104 LOAD_ATTR                9 (NULL|self + getpeercert)
+            124 CALL                     0
+            132 COPY                     1
+            134 POP_JUMP_IF_TRUE         2 (to 140)
+            136 POP_TOP
+            138 BUILD_MAP                0
+        >>  140 STORE_FAST               5 (cert)
+
+128         142 LOAD_GLOBAL             11 (NULL + dict)
+            152 LOAD_CONST               4 (<code object <genexpr> at 0x7f6af1dc33c0, file "diagnose.py", line 128>)
+            154 MAKE_FUNCTION            0
+            156 LOAD_FAST                5 (cert)
+            158 LOAD_ATTR               13 (NULL|self + get)
+            178 LOAD_CONST               5 ('issuer')
+            180 LOAD_CONST               6 (())
+            182 CALL                     2
+            190 GET_ITER
+            192 CALL                     0
+            200 CALL                     1
+            208 LOAD_ATTR               13 (NULL|self + get)
+            228 LOAD_CONST               7 ('commonName')
+            230 LOAD_CONST               8 ('?')
+            232 CALL                     2
+            240 STORE_FAST               6 (issuer)
+
+129         242 LOAD_FAST                4 (tls)
+            244 LOAD_ATTR               15 (NULL|self + version)
+            264 CALL                     0
+            272 FORMAT_VALUE             0
+            274 LOAD_CONST               9 (', issued by ')
+            276 LOAD_FAST                6 (issuer)
+            278 FORMAT_VALUE             0
+            280 LOAD_CONST              10 (', valid until ')
+            282 LOAD_FAST                5 (cert)
+            284 LOAD_ATTR               13 (NULL|self + get)
+            304 LOAD_CONST              11 ('notAfter')
+            306 LOAD_CONST               8 ('?')
+            308 CALL                     2
+            316 FORMAT_VALUE             0
+            318 BUILD_STRING             5
+
+126         320 SWAP                     2
+            322 LOAD_CONST               0 (None)
+            324 LOAD_CONST               0 (None)
+            326 LOAD_CONST               0 (None)
+            328 CALL                     2
+            336 POP_TOP
+
+125         338 SWAP                     2
+            340 LOAD_CONST               0 (None)
+            342 LOAD_CONST               0 (None)
+            344 LOAD_CONST               0 (None)
+            346 CALL                     2
+            354 POP_TOP
+            356 RETURN_VALUE
+
+126     >>  358 PUSH_EXC_INFO
+            360 WITH_EXCEPT_START
+            362 POP_JUMP_IF_TRUE         1 (to 366)
+            364 RERAISE                  2
+        >>  366 POP_TOP
+            368 POP_EXCEPT
+            370 POP_TOP
+            372 POP_TOP
+            374 JUMP_FORWARD             3 (to 382)
+        >>  376 COPY                     3
+            378 POP_EXCEPT
+            380 RERAISE                  1
+        >>  382 NOP
+
+125         384 LOAD_CONST               0 (None)
+            386 LOAD_CONST               0 (None)
+            388 LOAD_CONST               0 (None)
+            390 CALL                     2
+            398 POP_TOP
+            400 RETURN_CONST             0 (None)
+        >>  402 PUSH_EXC_INFO
+            404 WITH_EXCEPT_START
+            406 POP_JUMP_IF_TRUE         1 (to 410)
+            408 RERAISE                  2
+        >>  410 POP_TOP
+            412 POP_EXCEPT
+            414 POP_TOP
+            416 POP_TOP
+            418 RETURN_CONST             0 (None)
+        >>  420 COPY                     3
+            422 POP_EXCEPT
+            424 RERAISE                  1
+ExceptionTable:
+  60 to 98 -> 402 [1] lasti
+  100 to 318 -> 358 [2] lasti
+  320 to 336 -> 402 [1] lasti
+  358 to 366 -> 376 [4] lasti
+  368 to 380 -> 402 [1] lasti
+  402 to 410 -> 420 [3] lasti
+
+Disassembly of <code object <genexpr> at 0x7f6af1dc33c0, file "diagnose.py", line 128>:
+128           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+              6 LOAD_FAST                0 (.0)
+        >>    8 FOR_ITER                 9 (to 30)
+             12 STORE_FAST               1 (x)
+             14 LOAD_FAST                1 (x)
+             16 LOAD_CONST               0 (0)
+             18 BINARY_SUBSCR
+             22 YIELD_VALUE              1
+             24 RESUME                   1
+             26 POP_TOP
+             28 JUMP_BACKWARD           11 (to 8)
+        >>   30 END_FOR
+             32 RETURN_CONST             1 (None)
+        >>   34 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             36 RERAISE                  1
+ExceptionTable:
+  4 to 32 -> 34 [0] lasti
+
+Disassembly of <code object get at 0x7f6af1de63f0, file "diagnose.py", line 131>:
+131           0 RESUME                   0
+
+132           2 LOAD_GLOBAL              0 (urllib)
+             12 LOAD_ATTR                2 (request)
+             32 LOAD_ATTR                5 (NULL|self + Request)
+             52 LOAD_FAST                1 (url)
+             54 LOAD_CONST               1 ('User-Agent')
+             56 LOAD_CONST               2 ('pk-auto-diagnose/')
+             58 LOAD_GLOBAL              6 (__version__)
+             68 FORMAT_VALUE             0
+             70 BUILD_STRING             2
+             72 BUILD_MAP                1
+             74 KW_NAMES                 3 (('headers',))
+             76 CALL                     2
+             84 STORE_FAST               2 (req)
+
+133          86 LOAD_GLOBAL              9 (NULL + telemetry)
+             96 LOAD_ATTR               10 (_open)
+            116 LOAD_FAST                2 (req)
+            118 LOAD_GLOBAL             12 (PROBE_TIMEOUT_S)
+            128 CALL                     2
+            136 BEFORE_WITH
+            138 STORE_FAST               3 (r)
+
+134         140 LOAD_CONST               4 ('HTTP ')
+            142 LOAD_FAST                3 (r)
+            144 LOAD_ATTR               14 (status)
+            164 FORMAT_VALUE             0
+            166 BUILD_STRING             2
+
+133         168 SWAP                     2
+            170 LOAD_CONST               0 (None)
+            172 LOAD_CONST               0 (None)
+            174 LOAD_CONST               0 (None)
+            176 CALL                     2
+            184 POP_TOP
+            186 RETURN_VALUE
+        >>  188 PUSH_EXC_INFO
+            190 WITH_EXCEPT_START
+            192 POP_JUMP_IF_TRUE         1 (to 196)
+            194 RERAISE                  2
+        >>  196 POP_TOP
+            198 POP_EXCEPT
+            200 POP_TOP
+            202 POP_TOP
+            204 RETURN_CONST             0 (None)
+        >>  206 COPY                     3
+            208 POP_EXCEPT
+            210 RERAISE                  1
+ExceptionTable:
+  138 to 166 -> 188 [1] lasti
+  188 to 196 -> 206 [3] lasti
+
+Disassembly of <code object _proxy_text at 0x17a62d20, file "diagnose.py", line 137>:
+137           0 RESUME                   0
+
+138           2 NOP
+
+139           4 LOAD_GLOBAL              0 (urllib)
+             14 LOAD_ATTR                2 (request)
+             34 LOAD_ATTR                5 (NULL|self + getproxies)
+             54 CALL                     0
+             62 STORE_FAST               0 (proxies)
+
+142          64 LOAD_FAST                0 (proxies)
+             66 POP_JUMP_IF_TRUE         1 (to 70)
+
+143          68 RETURN_CONST             2 ('none')
+
+144     >>   70 BUILD_LIST               0
+             72 STORE_FAST               1 (shown)
+
+145          74 LOAD_GLOBAL              9 (NULL + sorted)
+             84 LOAD_FAST                0 (proxies)
+             86 LOAD_ATTR               11 (NULL|self + items)
+            106 CALL                     0
+            114 CALL                     1
+            122 GET_ITER
+        >>  124 FOR_ITER                90 (to 308)
+            128 UNPACK_SEQUENCE          2
+            132 STORE_FAST               2 (scheme)
+            134 STORE_FAST               3 (url)
+
+146         136 LOAD_GLOBAL              0 (urllib)
+            146 LOAD_ATTR               12 (parse)
+            166 LOAD_ATTR               15 (NULL|self + urlparse)
+            186 LOAD_CONST               3 ('://')
+            188 LOAD_FAST                3 (url)
+            190 CONTAINS_OP              0
+            192 POP_JUMP_IF_FALSE        2 (to 198)
+            194 LOAD_FAST                3 (url)
+            196 JUMP_FORWARD             4 (to 206)
+        >>  198 LOAD_CONST               4 ('//')
+            200 LOAD_FAST                3 (url)
+            202 BINARY_OP                0 (+)
+        >>  206 CALL                     1
+            214 STORE_FAST               4 (u)
+
+147         216 LOAD_FAST                1 (shown)
+            218 LOAD_ATTR               17 (NULL|self + append)
+            238 LOAD_FAST                2 (scheme)
+            240 FORMAT_VALUE             0
+            242 LOAD_CONST               5 ('=')
+            244 LOAD_FAST                4 (u)
+            246 LOAD_ATTR               18 (hostname)
+            266 FORMAT_VALUE             0
+            268 LOAD_CONST               6 (':')
+            270 LOAD_FAST                4 (u)
+            272 LOAD_ATTR               20 (port)
+            292 FORMAT_VALUE             0
+            294 BUILD_STRING             5
+            296 CALL                     1
+            304 POP_TOP
+            306 JUMP_BACKWARD           92 (to 124)
+
+145     >>  308 END_FOR
+
+148         310 LOAD_CONST               7 ('configured (')
+            312 LOAD_CONST               8 (', ')
+            314 LOAD_ATTR               23 (NULL|self + join)
+            334 LOAD_FAST                1 (shown)
+            336 CALL                     1
+            344 BINARY_OP                0 (+)
+            348 LOAD_CONST               9 (')')
+            350 BINARY_OP                0 (+)
+            354 RETURN_VALUE
+        >>  356 PUSH_EXC_INFO
+
+140         358 LOAD_GLOBAL              6 (Exception)
+            368 CHECK_EXC_MATCH
+            370 POP_JUMP_IF_FALSE        3 (to 378)
+            372 POP_TOP
+
+141         374 POP_EXCEPT
+            376 RETURN_CONST             1 ('unknown')
+
+140     >>  378 RERAISE                  0
+        >>  380 COPY                     3
+            382 POP_EXCEPT
+            384 RERAISE                  1
+ExceptionTable:
+  4 to 62 -> 356 [0]
+  356 to 372 -> 380 [1] lasti
+  378 to 378 -> 380 [1] lasti
+
+Disassembly of <code object _step at 0x7f6af1f76c30, file "diagnose.py", line 151>:
+151           0 RESUME                   0
+
+152           2 LOAD_GLOBAL              1 (NULL + time)
+             12 LOAD_ATTR                2 (perf_counter)
+             32 CALL                     0
+             40 STORE_FAST               2 (t0)
+
+153          42 NOP
+
+154          44 PUSH_NULL
+             46 LOAD_FAST                1 (fn)
+             48 CALL                     0
+             56 STORE_FAST               3 (out)
+
+155          58 LOAD_CONST               1 (True)
+             60 LOAD_CONST               2 ('  ')
+             62 LOAD_FAST                0 (label)
+             64 FORMAT_VALUE             0
+             66 LOAD_CONST               3 (': OK ')
+             68 LOAD_FAST                3 (out)
+             70 FORMAT_VALUE             0
+             72 LOAD_CONST               4 (' [')
+             74 LOAD_GLOBAL              1 (NULL + time)
+             84 LOAD_ATTR                2 (perf_counter)
+            104 CALL                     0
+            112 LOAD_FAST                2 (t0)
+            114 BINARY_OP               10 (-)
+            118 LOAD_CONST               5 (1000)
+            120 BINARY_OP                5 (*)
+            124 LOAD_CONST               6 ('.0f')
+            126 FORMAT_VALUE             4 (with format)
+            128 LOAD_CONST               7 (' ms]')
+            130 BUILD_STRING             7
+            132 BUILD_TUPLE              2
+            134 RETURN_VALUE
+        >>  136 PUSH_EXC_INFO
+
+156         138 LOAD_GLOBAL              4 (Exception)
+            148 CHECK_EXC_MATCH
+            150 POP_JUMP_IF_FALSE       76 (to 304)
+            152 STORE_FAST               4 (e)
+
+157         154 LOAD_GLOBAL              7 (NULL + telemetry)
+            164 LOAD_ATTR                8 (classify_error)
+            184 LOAD_FAST                4 (e)
+            186 CALL                     1
+            194 UNPACK_SEQUENCE          2
+            198 STORE_FAST               5 (kind)
+            200 STORE_FAST               6 (text)
+
+158         202 LOAD_CONST               8 (False)
+            204 LOAD_CONST               2 ('  ')
+            206 LOAD_FAST                0 (label)
+            208 FORMAT_VALUE             0
+            210 LOAD_CONST               9 (': FAILED (')
+            212 LOAD_FAST                5 (kind)
+            214 FORMAT_VALUE             0
+            216 LOAD_CONST              10 (') ')
+            218 LOAD_FAST                6 (text)
+            220 FORMAT_VALUE             0
+            222 LOAD_CONST               4 (' [')
+            224 LOAD_GLOBAL              1 (NULL + time)
+            234 LOAD_ATTR                2 (perf_counter)
+            254 CALL                     0
+            262 LOAD_FAST                2 (t0)
+            264 BINARY_OP               10 (-)
+            268 LOAD_CONST               5 (1000)
+            270 BINARY_OP                5 (*)
+            274 LOAD_CONST               6 ('.0f')
+            276 FORMAT_VALUE             4 (with format)
+            278 LOAD_CONST               7 (' ms]')
+            280 BUILD_STRING             9
+            282 BUILD_TUPLE              2
+            284 SWAP                     2
+            286 POP_EXCEPT
+            288 LOAD_CONST               0 (None)
+            290 STORE_FAST               4 (e)
+            292 DELETE_FAST              4 (e)
+            294 RETURN_VALUE
+        >>  296 LOAD_CONST               0 (None)
+            298 STORE_FAST               4 (e)
+            300 DELETE_FAST              4 (e)
+            302 RERAISE                  1
+
+156     >>  304 RERAISE                  0
+        >>  306 COPY                     3
+            308 POP_EXCEPT
+            310 RERAISE                  1
+ExceptionTable:
+  44 to 132 -> 136 [0]
+  136 to 152 -> 306 [1] lasti
+  154 to 282 -> 296 [1] lasti
+  284 to 284 -> 306 [1] lasti
+  296 to 304 -> 306 [1] lasti
+
+Disassembly of <code object network_report at 0x179c9fd0, file "diagnose.py", line 161>:
+              0 MAKE_CELL                0 (probe)
+              2 MAKE_CELL               17 (ok_by_host)
+
+161           4 RESUME                   0
+
+162           6 LOAD_DEREF               0 (probe)
+              8 COPY                     1
+             10 POP_JUMP_IF_TRUE        10 (to 32)
+             12 POP_TOP
+             14 LOAD_GLOBAL              1 (NULL + NetProbe)
+             24 CALL                     0
+        >>   32 STORE_DEREF              0 (probe)
+
+163          34 LOAD_FAST                1 (relay_url)
+             36 COPY                     1
+             38 POP_JUMP_IF_TRUE        16 (to 72)
+             40 POP_TOP
+             42 LOAD_GLOBAL              2 (config)
+             52 LOAD_ATTR                4 (DEFAULT_TELEMETRY_URL)
+        >>   72 STORE_FAST               1 (relay_url)
+
+164          74 LOAD_CONST               1 ('')
+             76 LOAD_CONST               2 ('== network ==')
+             78 BUILD_LIST               2
+             80 STORE_FAST               2 (lines)
+
+165          82 LOAD_FAST                2 (lines)
+             84 LOAD_ATTR                7 (NULL|self + append)
+            104 LOAD_CONST               3 ('PC time: ')
+            106 LOAD_GLOBAL              9 (NULL + time)
+            116 LOAD_ATTR               10 (strftime)
+            136 LOAD_CONST               4 ('%Y-%m-%d %H:%M:%S')
+            138 CALL                     1
+            146 FORMAT_VALUE             0
+            148 LOAD_CONST               5 (' (UTC offset ')
+            150 LOAD_GLOBAL              8 (time)
+            160 LOAD_ATTR               12 (timezone)
+            180 UNARY_NEGATIVE
+            182 LOAD_CONST               6 (3600)
+            184 BINARY_OP                2 (//)
+            188 LOAD_CONST               7 ('+d')
+            190 FORMAT_VALUE             4 (with format)
+            192 LOAD_CONST               8 (' h) - a wrong date or time breaks secure connections')
+            194 BUILD_STRING             5
+            196 CALL                     1
+            204 POP_TOP
+
+166         206 LOAD_FAST                2 (lines)
+            208 LOAD_ATTR                7 (NULL|self + append)
+            228 LOAD_CONST               9 ('system proxy: ')
+            230 LOAD_GLOBAL             15 (NULL + _proxy_text)
+            240 CALL                     0
+            248 FORMAT_VALUE             0
+            250 BUILD_STRING             2
+            252 CALL                     1
+            260 POP_TOP
+
+167         262 LOAD_CONST              10 ('relay (Discord DM / settings)')
+            264 LOAD_GLOBAL             16 (urllib)
+            274 LOAD_ATTR               18 (parse)
+            294 LOAD_ATTR               21 (NULL|self + urlparse)
+            314 LOAD_FAST                1 (relay_url)
+            316 CALL                     1
+            324 LOAD_ATTR               22 (hostname)
+            344 COPY                     1
+            346 POP_JUMP_IF_TRUE         2 (to 352)
+            348 POP_TOP
+            350 LOAD_CONST               1 ('')
+        >>  352 LOAD_FAST                1 (relay_url)
+            354 LOAD_ATTR               25 (NULL|self + rstrip)
+            374 LOAD_CONST              11 ('/')
+            376 CALL                     1
+            384 LOAD_CONST              11 ('/')
+            386 BINARY_OP                0 (+)
+            390 BUILD_TUPLE              3
+
+168         392 LOAD_CONST              12 (('GitHub (updates)', 'api.github.com', 'https://api.github.com/'))
+
+169         394 LOAD_CONST              13 (('Discord', 'discord.com', 'https://discord.com/api/v10/gateway'))
+
+167         396 BUILD_LIST               3
+            398 STORE_FAST               3 (targets)
+
+170         400 BUILD_MAP                0
+            402 STORE_DEREF             17 (ok_by_host)
+
+171         404 BUILD_MAP                0
+            406 STORE_FAST               4 (tls_failed)
+
+172         408 LOAD_FAST                3 (targets)
+            410 GET_ITER
+        >>  412 FOR_ITER               118 (to 652)
+            416 UNPACK_SEQUENCE          3
+            420 STORE_FAST               5 (title)
+            422 STORE_FAST               6 (host)
+            424 STORE_FAST               7 (url)
+
+173         426 LOAD_FAST                2 (lines)
+            428 LOAD_ATTR                7 (NULL|self + append)
+            448 LOAD_FAST                5 (title)
+            450 FORMAT_VALUE             0
+            452 LOAD_CONST              14 (': ')
+            454 LOAD_FAST                6 (host)
+            456 FORMAT_VALUE             0
+            458 BUILD_STRING             3
+            460 CALL                     1
+            468 POP_TOP
+
+174         470 LOAD_CONST              15 (True)
+            472 STORE_FAST               8 (all_ok)
+
+175         474 LOAD_CONST              16 ('name lookup')
+            476 LOAD_FAST                6 (host)
+            478 BUILD_TUPLE              1
+            480 LOAD_CLOSURE             0 (probe)
+            482 BUILD_TUPLE              1
+            484 LOAD_CONST              17 (<code object <lambda> at 0x7f6af1dc3d20, file "diagnose.py", line 175>)
+            486 MAKE_FUNCTION            9 (defaults, closure)
+            488 BUILD_TUPLE              2
+            490 LOAD_CONST              18 ('secure connection')
+            492 LOAD_FAST                6 (host)
+            494 BUILD_TUPLE              1
+            496 LOAD_CLOSURE             0 (probe)
+            498 BUILD_TUPLE              1
+            500 LOAD_CONST              19 (<code object <lambda> at 0x7f6af1dc31e0, file "diagnose.py", line 175>)
+            502 MAKE_FUNCTION            9 (defaults, closure)
+            504 BUILD_TUPLE              2
+
+176         506 LOAD_CONST              20 ('page request')
+            508 LOAD_FAST                7 (url)
+            510 BUILD_TUPLE              1
+            512 LOAD_CLOSURE             0 (probe)
+            514 BUILD_TUPLE              1
+            516 LOAD_CONST              21 (<code object <lambda> at 0x7f6af1dc34b0, file "diagnose.py", line 176>)
+            518 MAKE_FUNCTION            9 (defaults, closure)
+            520 BUILD_TUPLE              2
+
+175         522 BUILD_TUPLE              3
+            524 GET_ITER
+        >>  526 FOR_ITER                54 (to 638)
+            530 UNPACK_SEQUENCE          2
+            534 STORE_FAST               9 (label)
+            536 STORE_FAST              10 (fn)
+
+177         538 LOAD_GLOBAL             27 (NULL + _step)
+            548 LOAD_FAST                9 (label)
+            550 LOAD_FAST               10 (fn)
+            552 CALL                     2
+            560 UNPACK_SEQUENCE          2
+            564 STORE_FAST              11 (ok)
+            566 STORE_FAST              12 (line)
+
+178         568 LOAD_FAST                2 (lines)
+            570 LOAD_ATTR                7 (NULL|self + append)
+            590 LOAD_FAST               12 (line)
+            592 CALL                     1
+            600 POP_TOP
+
+179         602 LOAD_FAST                8 (all_ok)
+            604 COPY                     1
+            606 POP_JUMP_IF_FALSE        2 (to 612)
+            608 POP_TOP
+            610 LOAD_FAST               11 (ok)
+        >>  612 STORE_FAST               8 (all_ok)
+
+180         614 LOAD_FAST               11 (ok)
+            616 POP_JUMP_IF_FALSE        1 (to 620)
+            618 JUMP_BACKWARD           47 (to 526)
+
+181     >>  620 LOAD_CONST              22 ('FAILED (tls)')
+            622 LOAD_FAST               12 (line)
+            624 CONTAINS_OP              0
+            626 LOAD_FAST                4 (tls_failed)
+            628 LOAD_FAST                6 (host)
+            630 STORE_SUBSCR
+
+182         634 POP_TOP
+            636 JUMP_FORWARD             1 (to 640)
+
+175     >>  638 END_FOR
+
+183     >>  640 LOAD_FAST                8 (all_ok)
+            642 LOAD_DEREF              17 (ok_by_host)
+            644 LOAD_FAST                6 (host)
+            646 STORE_SUBSCR
+            650 JUMP_BACKWARD          120 (to 412)
+
+172     >>  652 END_FOR
+
+184         654 LOAD_FAST                3 (targets)
+            656 LOAD_CONST              23 (0)
+            658 BINARY_SUBSCR
+            662 LOAD_CONST              24 (1)
+            664 BINARY_SUBSCR
+            668 LOAD_FAST                3 (targets)
+            670 LOAD_CONST              24 (1)
+            672 LOAD_CONST               0 (None)
+            674 BINARY_SLICE
+            676 GET_ITER
+            678 LOAD_FAST_AND_CLEAR     13 (_)
+            680 LOAD_FAST_AND_CLEAR     14 (h)
+            682 SWAP                     3
+            684 BUILD_LIST               0
+            686 SWAP                     2
+        >>  688 FOR_ITER                 8 (to 708)
+            692 UNPACK_SEQUENCE          3
+            696 STORE_FAST              13 (_)
+            698 STORE_FAST              14 (h)
+            700 STORE_FAST              13 (_)
+            702 LOAD_FAST               14 (h)
+            704 LIST_APPEND              2
+            706 JUMP_BACKWARD           10 (to 688)
+        >>  708 END_FOR
+            710 STORE_FAST              16 (others)
+            712 STORE_FAST              13 (_)
+            714 STORE_FAST              14 (h)
+            716 STORE_FAST              15 (relay_host)
+
+185         718 LOAD_GLOBAL             29 (NULL + all)
+            728 LOAD_DEREF              17 (ok_by_host)
+            730 LOAD_ATTR               31 (NULL|self + values)
+            750 CALL                     0
+            758 CALL                     1
+            766 POP_JUMP_IF_FALSE       19 (to 806)
+
+186         768 LOAD_FAST                2 (lines)
+            770 LOAD_ATTR                7 (NULL|self + append)
+            790 LOAD_CONST              25 ('RESULT: the relay, GitHub and Discord are all reachable. The network is fine; if the DM test still fails, send this report.')
+            792 CALL                     1
+            800 POP_TOP
+
+198         802 LOAD_FAST                2 (lines)
+            804 RETURN_VALUE
+
+187     >>  806 LOAD_GLOBAL             33 (NULL + any)
+            816 LOAD_DEREF              17 (ok_by_host)
+            818 LOAD_ATTR               31 (NULL|self + values)
+            838 CALL                     0
+            846 CALL                     1
+            854 POP_JUMP_IF_TRUE        19 (to 894)
+
+188         856 LOAD_FAST                2 (lines)
+            858 LOAD_ATTR                7 (NULL|self + append)
+            878 LOAD_CONST              26 ('RESULT: nothing can be reached. Check the internet connection, VPN, proxy and the firewall / security software (allow pk-auto.exe).')
+            880 CALL                     1
+            888 POP_TOP
+
+198         890 LOAD_FAST                2 (lines)
+            892 RETURN_VALUE
+
+189     >>  894 LOAD_FAST                4 (tls_failed)
+            896 LOAD_ATTR               35 (NULL|self + get)
+            916 LOAD_FAST               15 (relay_host)
+            918 CALL                     1
+            926 POP_JUMP_IF_FALSE       19 (to 966)
+
+190         928 LOAD_FAST                2 (lines)
+            930 LOAD_ATTR                7 (NULL|self + append)
+            950 LOAD_CONST              27 ("RESULT: the relay's security certificate is not accepted on this PC (also not with pk-auto's bundled certificates). Check the PC's date and time and install the pending Windows updates; if security software with 'HTTPS / web scanning' is installed (antivirus, school / company filter), turn that scanning off for pk-auto.exe. Send this report if that does not help.")
+            952 CALL                     1
+            960 POP_TOP
+
+198         962 LOAD_FAST                2 (lines)
+            964 RETURN_VALUE
+
+193     >>  966 LOAD_DEREF              17 (ok_by_host)
+            968 LOAD_ATTR               35 (NULL|self + get)
+            988 LOAD_FAST               15 (relay_host)
+            990 CALL                     1
+            998 POP_JUMP_IF_TRUE        39 (to 1078)
+           1000 LOAD_GLOBAL             29 (NULL + all)
+           1010 LOAD_CLOSURE            17 (ok_by_host)
+           1012 BUILD_TUPLE              1
+           1014 LOAD_CONST              28 (<code object <genexpr> at 0x7f6af1dd3930, file "diagnose.py", line 193>)
+           1016 MAKE_FUNCTION            8 (closure)
+           1018 LOAD_FAST               16 (others)
+           1020 GET_ITER
+           1022 CALL                     0
+           1030 CALL                     1
+           1038 POP_JUMP_IF_FALSE       19 (to 1078)
+
+194        1040 LOAD_FAST                2 (lines)
+           1042 LOAD_ATTR                7 (NULL|self + append)
+           1062 LOAD_CONST              29 ('RESULT: only the relay server is unreachable while GitHub and Discord work. This network blocks *.workers.dev (or its DNS does not know it). Try another DNS (e.g. 1.1.1.1 / 8.8.8.8), turn a VPN on / off, or another network. Send this report if that does not help.')
+           1064 CALL                     1
+           1072 POP_TOP
+
+198        1074 LOAD_FAST                2 (lines)
+           1076 RETURN_VALUE
+
+197     >> 1078 LOAD_FAST                2 (lines)
+           1080 LOAD_ATTR                7 (NULL|self + append)
+           1100 LOAD_CONST              30 ('RESULT: some servers are reachable and some are not. See the FAILED lines above (the stage and kind tell what blocks it).')
+           1102 CALL                     1
+           1110 POP_TOP
+
+198        1112 LOAD_FAST                2 (lines)
+           1114 RETURN_VALUE
+        >> 1116 SWAP                     2
+           1118 POP_TOP
+
+184        1120 SWAP                     3
+           1122 STORE_FAST              14 (h)
+           1124 STORE_FAST              13 (_)
+           1126 RERAISE                  0
+ExceptionTable:
+  684 to 708 -> 1116 [4]
+
+Disassembly of <code object <lambda> at 0x7f6af1dc3d20, file "diagnose.py", line 175>:
+              0 COPY_FREE_VARS           1
+
+175           2 RESUME                   0
+              4 LOAD_DEREF               1 (probe)
+              6 LOAD_ATTR                1 (NULL|self + resolve)
+             26 LOAD_FAST                0 (h)
+             28 CALL                     1
+             36 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6af1dc31e0, file "diagnose.py", line 175>:
+              0 COPY_FREE_VARS           1
+
+175           2 RESUME                   0
+              4 LOAD_DEREF               1 (probe)
+              6 LOAD_ATTR                1 (NULL|self + handshake)
+             26 LOAD_FAST                0 (h)
+             28 CALL                     1
+             36 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6af1dc34b0, file "diagnose.py", line 176>:
+              0 COPY_FREE_VARS           1
+
+176           2 RESUME                   0
+              4 LOAD_DEREF               1 (probe)
+              6 LOAD_ATTR                1 (NULL|self + get)
+             26 LOAD_FAST                0 (u)
+             28 CALL                     1
+             36 RETURN_VALUE
+
+Disassembly of <code object <genexpr> at 0x7f6af1dd3930, file "diagnose.py", line 193>:
+              0 COPY_FREE_VARS           1
+
+193           2 RETURN_GENERATOR
+              4 POP_TOP
+              6 RESUME                   0
+              8 LOAD_FAST                0 (.0)
+        >>   10 FOR_ITER                21 (to 56)
+             14 STORE_FAST               1 (h)
+             16 LOAD_DEREF               2 (ok_by_host)
+             18 LOAD_ATTR                1 (NULL|self + get)
+             38 LOAD_FAST                1 (h)
+             40 CALL                     1
+             48 YIELD_VALUE              1
+             50 RESUME                   1
+             52 POP_TOP
+             54 JUMP_BACKWARD           23 (to 10)
+        >>   56 END_FOR
+             58 RETURN_CONST             0 (None)
+        >>   60 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             62 RERAISE                  1
+ExceptionTable:
+  6 to 58 -> 60 [0] lasti
+
+Disassembly of <code object default_report_path at 0x17a5d150, file "diagnose.py", line 204>:
+204           0 RESUME                   0
+
+205           2 NOP
+
+206           4 LOAD_GLOBAL              1 (NULL + config)
+             14 LOAD_ATTR                2 (base_dir)
+             34 CALL                     0
+             42 LOAD_GLOBAL              4 (os)
+             52 LOAD_ATTR                6 (path)
+             72 LOAD_ATTR                9 (NULL|self + join)
+             92 LOAD_GLOBAL              4 (os)
+            102 LOAD_ATTR                6 (path)
+            122 LOAD_ATTR               11 (NULL|self + expanduser)
+            142 LOAD_CONST               1 ('~')
+            144 CALL                     1
+            152 LOAD_CONST               2 ('Desktop')
+            154 CALL                     2
+            162 LOAD_GLOBAL             13 (NULL + tempfile)
+            172 LOAD_ATTR               14 (gettempdir)
+            192 CALL                     0
+            200 BUILD_TUPLE              3
+            202 GET_ITER
+        >>  204 FOR_ITER               108 (to 424)
+            208 STORE_FAST               0 (folder)
+
+207         210 NOP
+
+208         212 LOAD_GLOBAL              4 (os)
+            222 LOAD_ATTR                6 (path)
+            242 LOAD_ATTR               17 (NULL|self + isdir)
+            262 LOAD_FAST                0 (folder)
+            264 CALL                     1
+            272 POP_JUMP_IF_FALSE       74 (to 422)
+            274 LOAD_GLOBAL              5 (NULL + os)
+            284 LOAD_ATTR               18 (access)
+            304 LOAD_FAST                0 (folder)
+            306 LOAD_GLOBAL              4 (os)
+            316 LOAD_ATTR               20 (W_OK)
+            336 CALL                     2
+            344 POP_JUMP_IF_FALSE       38 (to 422)
+
+209         346 LOAD_GLOBAL              4 (os)
+            356 LOAD_ATTR                6 (path)
+            376 LOAD_ATTR                9 (NULL|self + join)
+            396 LOAD_FAST                0 (folder)
+            398 LOAD_GLOBAL             22 (REPORT_NAME)
+            408 CALL                     2
+            416 SWAP                     2
+            418 POP_TOP
+            420 RETURN_VALUE
+        >>  422 JUMP_BACKWARD          110 (to 204)
+
+206     >>  424 END_FOR
+
+212         426 LOAD_GLOBAL              4 (os)
+            436 LOAD_ATTR                6 (path)
+            456 LOAD_ATTR                9 (NULL|self + join)
+            476 LOAD_GLOBAL             13 (NULL + tempfile)
+            486 LOAD_ATTR               14 (gettempdir)
+            506 CALL                     0
+            514 LOAD_GLOBAL             22 (REPORT_NAME)
+            524 CALL                     2
+            532 RETURN_VALUE
+        >>  534 PUSH_EXC_INFO
+
+210         536 LOAD_GLOBAL             24 (Exception)
+            546 CHECK_EXC_MATCH
+            548 POP_JUMP_IF_FALSE        3 (to 556)
+            550 POP_TOP
+
+211         552 POP_EXCEPT
+            554 JUMP_BACKWARD          176 (to 204)
+
+210     >>  556 RERAISE                  0
+        >>  558 COPY                     3
+            560 POP_EXCEPT
+            562 RERAISE                  1
+ExceptionTable:
+  212 to 414 -> 534 [1]
+  534 to 550 -> 558 [2] lasti
+  556 to 556 -> 558 [2] lasti
+
+Disassembly of <code object run at 0x179de3c0, file "diagnose.py", line 215>:
+215           0 RESUME                   0
+
+216           2 NOP
+
+217           4 LOAD_GLOBAL              1 (NULL + build_report)
+             14 CALL                     0
+             22 STORE_FAST               1 (lines)
+
+220     >>   24 NOP
+
+221          26 LOAD_FAST                1 (lines)
+             28 LOAD_GLOBAL              9 (NULL + network_report)
+             38 CALL                     0
+             46 BINARY_OP               13 (+=)
+             50 STORE_FAST               1 (lines)
+
+224     >>   52 LOAD_GLOBAL             13 (NULL + open)
+             62 LOAD_FAST                0 (out_path)
+             64 LOAD_CONST               4 ('w')
+             66 LOAD_CONST               5 ('utf-8')
+             68 KW_NAMES                 6 (('encoding',))
+             70 CALL                     3
+             78 BEFORE_WITH
+             80 STORE_FAST               3 (f)
+
+225          82 LOAD_FAST                3 (f)
+             84 LOAD_ATTR               15 (NULL|self + write)
+            104 LOAD_CONST               7 ('\n')
+            106 LOAD_ATTR               17 (NULL|self + join)
+            126 LOAD_FAST                1 (lines)
+            128 CALL                     1
+            136 LOAD_CONST               7 ('\n')
+            138 BINARY_OP                0 (+)
+            142 CALL                     1
+            150 POP_TOP
+
+224         152 LOAD_CONST               0 (None)
+            154 LOAD_CONST               0 (None)
+            156 LOAD_CONST               0 (None)
+            158 CALL                     2
+            166 POP_TOP
+            168 RETURN_CONST             0 (None)
+        >>  170 PUSH_EXC_INFO
+
+218         172 LOAD_GLOBAL              2 (Exception)
+            182 CHECK_EXC_MATCH
+            184 POP_JUMP_IF_FALSE       38 (to 262)
+            186 STORE_FAST               2 (e)
+
+219         188 LOAD_CONST               1 ('diagnose failed: ')
+            190 LOAD_GLOBAL              5 (NULL + type)
+            200 LOAD_FAST                2 (e)
+            202 CALL                     1
+            210 LOAD_ATTR                6 (__name__)
+            230 FORMAT_VALUE             0
+            232 LOAD_CONST               2 (': ')
+            234 LOAD_FAST                2 (e)
+            236 FORMAT_VALUE             0
+            238 BUILD_STRING             4
+            240 BUILD_LIST               1
+            242 STORE_FAST               1 (lines)
+            244 POP_EXCEPT
+            246 LOAD_CONST               0 (None)
+            248 STORE_FAST               2 (e)
+            250 DELETE_FAST              2 (e)
+            252 JUMP_BACKWARD          115 (to 24)
+        >>  254 LOAD_CONST               0 (None)
+            256 STORE_FAST               2 (e)
+            258 DELETE_FAST              2 (e)
+            260 RERAISE                  1
+
+218     >>  262 RERAISE                  0
+        >>  264 COPY                     3
+            266 POP_EXCEPT
+            268 RERAISE                  1
+        >>  270 PUSH_EXC_INFO
+
+222         272 LOAD_GLOBAL              2 (Exception)
+            282 CHECK_EXC_MATCH
+            284 POP_JUMP_IF_FALSE       52 (to 390)
+            286 STORE_FAST               2 (e)
+
+223         288 LOAD_FAST                1 (lines)
+            290 LOAD_ATTR               11 (NULL|self + append)
+            310 LOAD_CONST               3 ('network check failed: ')
+            312 LOAD_GLOBAL              5 (NULL + type)
+            322 LOAD_FAST                2 (e)
+            324 CALL                     1
+            332 LOAD_ATTR                6 (__name__)
+            352 FORMAT_VALUE             0
+            354 LOAD_CONST               2 (': ')
+            356 LOAD_FAST                2 (e)
+            358 FORMAT_VALUE             0
+            360 BUILD_STRING             4
+            362 CALL                     1
+            370 POP_TOP
+            372 POP_EXCEPT
+            374 LOAD_CONST               0 (None)
+            376 STORE_FAST               2 (e)
+            378 DELETE_FAST              2 (e)
+            380 JUMP_BACKWARD          165 (to 52)
+        >>  382 LOAD_CONST               0 (None)
+            384 STORE_FAST               2 (e)
+            386 DELETE_FAST              2 (e)
+            388 RERAISE                  1
+
+222     >>  390 RERAISE                  0
+        >>  392 COPY                     3
+            394 POP_EXCEPT
+            396 RERAISE                  1
+
+224     >>  398 PUSH_EXC_INFO
+            400 WITH_EXCEPT_START
+            402 POP_JUMP_IF_TRUE         1 (to 406)
+            404 RERAISE                  2
+        >>  406 POP_TOP
+            408 POP_EXCEPT
+            410 POP_TOP
+            412 POP_TOP
+            414 RETURN_CONST             0 (None)
+        >>  416 COPY                     3
+            418 POP_EXCEPT
+            420 RERAISE                  1
+ExceptionTable:
+  4 to 22 -> 170 [0]
+  26 to 50 -> 270 [0]
+  80 to 150 -> 398 [1] lasti
+  170 to 186 -> 264 [1] lasti
+  188 to 242 -> 254 [1] lasti
+  254 to 262 -> 264 [1] lasti
+  270 to 286 -> 392 [1] lasti
+  288 to 370 -> 382 [1] lasti
+  382 to 390 -> 392 [1] lasti
+  398 to 406 -> 416 [3] lasti

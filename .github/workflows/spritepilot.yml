@@ -1,0 +1,42 @@
+name: Sprite Pilot checks and Windows build
+on:
+  push:
+    branches: [main, telegram-desktop]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    defaults:
+      run:
+        working-directory: fortnite-telegram
+    runs-on: ubuntu-latest
+    env:
+      QT_QPA_PLATFORM: offscreen
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e . pytest
+      - run: python -m pytest -q
+  windows:
+    defaults:
+      run:
+        working-directory: fortnite-telegram
+    needs: tests
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install and build
+        shell: cmd
+        run: call build_spritepilot.bat
+      - uses: actions/upload-artifact@v4
+        with:
+          name: SpritePilot-Windows
+          path: fortnite-telegram/dist/SpritePilot/
+          if-no-files-found: error

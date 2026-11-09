@@ -1,0 +1,4710 @@
+[
+  {
+    "module": "anti_afk",
+    "original_filename": "anti_afk.py",
+    "global_names": [
+      "contextlib",
+      "random",
+      "threading",
+      "time",
+      "typing",
+      "Callable",
+      "Optional",
+      "config",
+      "humanizer",
+      "Humanizer",
+      "DIVE_PITCH",
+      "DIVE_RESTORE",
+      "PICKAXE_EVERY_S",
+      "_Guard",
+      "bool",
+      "_halted",
+      "str",
+      "_default_key_down",
+      "_default_key_up",
+      "AntiAfk"
+    ],
+    "functions": [
+      {
+        "name": "_Guard",
+        "line": 21
+      },
+      {
+        "name": "_Guard.__init__",
+        "line": 25
+      },
+      {
+        "name": "_Guard._alive",
+        "line": 28
+      },
+      {
+        "name": "_Guard.is_set",
+        "line": 34
+      },
+      {
+        "name": "_Guard.wait",
+        "line": 37
+      },
+      {
+        "name": "_halted",
+        "line": 49
+      },
+      {
+        "name": "_default_key_down",
+        "line": 54
+      },
+      {
+        "name": "_default_key_up",
+        "line": 60
+      },
+      {
+        "name": "AntiAfk",
+        "line": 66
+      },
+      {
+        "name": "AntiAfk.__init__",
+        "line": 67
+      },
+      {
+        "name": "AntiAfk._humanize",
+        "line": 106
+      },
+      {
+        "name": "AntiAfk._background",
+        "line": 109
+      },
+      {
+        "name": "AntiAfk._input_context",
+        "line": 112
+      },
+      {
+        "name": "AntiAfk._use_post",
+        "line": 115
+      },
+      {
+        "name": "AntiAfk._can_look",
+        "line": 118
+      },
+      {
+        "name": "AntiAfk._user_away",
+        "line": 121
+      },
+      {
+        "name": "AntiAfk._look_around",
+        "line": 127
+      },
+      {
+        "name": "AntiAfk._tap",
+        "line": 137
+      },
+      {
+        "name": "AntiAfk.press_once",
+        "line": 147
+      },
+      {
+        "name": "AntiAfk._strafe",
+        "line": 174
+      },
+      {
+        "name": "AntiAfk._jump_walk",
+        "line": 208
+      },
+      {
+        "name": "AntiAfk._fidget",
+        "line": 227
+      },
+      {
+        "name": "AntiAfk._micro_pause",
+        "line": 244
+      },
+      {
+        "name": "AntiAfk.pickaxe_swing",
+        "line": 256
+      },
+      {
+        "name": "AntiAfk.<lambda>",
+        "line": 275
+      },
+      {
+        "name": "AntiAfk.dive_async",
+        "line": 275
+      },
+      {
+        "name": "AntiAfk.dive_async.<locals>.work",
+        "line": 281
+      },
+      {
+        "name": "AntiAfk.<lambda>",
+        "line": 293
+      },
+      {
+        "name": "AntiAfk.dive",
+        "line": 293
+      },
+      {
+        "name": "AntiAfk._pickaxe_delay",
+        "line": 339
+      },
+      {
+        "name": "AntiAfk._pickaxe_tick",
+        "line": 348
+      },
+      {
+        "name": "AntiAfk._next_ratio",
+        "line": 364
+      },
+      {
+        "name": "AntiAfk.release_all",
+        "line": 379
+      },
+      {
+        "name": "AntiAfk.<lambda>",
+        "line": 387
+      },
+      {
+        "name": "AntiAfk.run",
+        "line": 387
+      },
+      {
+        "name": "AntiAfk.run.<locals>.<lambda>",
+        "line": 411
+      }
+    ]
+  },
+  {
+    "module": "audio_mute",
+    "original_filename": "audio_mute.py",
+    "global_names": [
+      "atexit",
+      "ctypes",
+      "threading",
+      "wintypes",
+      "typing",
+      "Callable",
+      "Dict",
+      "List",
+      "Optional",
+      "Tuple",
+      "GAME_EXES",
+      "Session",
+      "str",
+      "_guid",
+      "int",
+      "tuple",
+      "_call",
+      "_release",
+      "_process_names",
+      "CoreAudioBackend",
+      "PycawBackend",
+      "default_backend",
+      "GameAudioController"
+    ],
+    "functions": [
+      {
+        "name": "Session",
+        "line": 21
+      },
+      {
+        "name": "Session.__init__",
+        "line": 24
+      },
+      {
+        "name": "_guid",
+        "line": 29
+      },
+      {
+        "name": "_guid.<locals>.GUID",
+        "line": 32
+      },
+      {
+        "name": "_call",
+        "line": 43
+      },
+      {
+        "name": "_release",
+        "line": 50
+      },
+      {
+        "name": "_process_names",
+        "line": 58
+      },
+      {
+        "name": "_process_names.<locals>.ENTRY",
+        "line": 61
+      },
+      {
+        "name": "CoreAudioBackend",
+        "line": 88
+      },
+      {
+        "name": "CoreAudioBackend.sessions",
+        "line": 97
+      },
+      {
+        "name": "CoreAudioBackend._session",
+        "line": 131
+      },
+      {
+        "name": "CoreAudioBackend._session.<locals>.get_mute",
+        "line": 148
+      },
+      {
+        "name": "CoreAudioBackend._session.<locals>.set_mute",
+        "line": 153
+      },
+      {
+        "name": "PycawBackend",
+        "line": 159
+      },
+      {
+        "name": "PycawBackend.__init__",
+        "line": 162
+      },
+      {
+        "name": "PycawBackend.sessions",
+        "line": 165
+      },
+      {
+        "name": "PycawBackend.sessions.<locals>.<lambda>",
+        "line": 173
+      },
+      {
+        "name": "PycawBackend.sessions.<locals>.<lambda>",
+        "line": 173
+      },
+      {
+        "name": "default_backend",
+        "line": 177
+      },
+      {
+        "name": "GameAudioController",
+        "line": 185
+      },
+      {
+        "name": "GameAudioController.__init__",
+        "line": 186
+      },
+      {
+        "name": "GameAudioController.__init__.<locals>.<genexpr>",
+        "line": 188
+      },
+      {
+        "name": "GameAudioController.__init__.<locals>.<lambda>",
+        "line": 189
+      },
+      {
+        "name": "GameAudioController._backend_or_default",
+        "line": 195
+      },
+      {
+        "name": "GameAudioController._game_sessions",
+        "line": 200
+      },
+      {
+        "name": "GameAudioController.mute",
+        "line": 203
+      },
+      {
+        "name": "GameAudioController.refresh",
+        "line": 229
+      },
+      {
+        "name": "GameAudioController.restore",
+        "line": 233
+      }
+    ]
+  },
+  {
+    "module": "autocal",
+    "original_filename": "autocal.py",
+    "global_names": [
+      "time",
+      "dataclasses",
+      "replace",
+      "typing",
+      "Callable",
+      "Dict",
+      "Optional",
+      "Tuple",
+      "vision",
+      "COLOUR_CHECKED",
+      "Plate",
+      "aim_point",
+      "colour_matches",
+      "find_plate",
+      "find_template",
+      "STUCK_S",
+      "BAND",
+      "MIN_SCORE",
+      "SAME_PX",
+      "NEED_SEEN",
+      "JUDGE_AFTER_S",
+      "TRIAL_WINDOW_S",
+      "COOLDOWN_S",
+      "AutoCalibrator",
+      "float",
+      "int",
+      "bool",
+      "still_visible"
+    ],
+    "functions": [
+      {
+        "name": "AutoCalibrator",
+        "line": 26
+      },
+      {
+        "name": "AutoCalibrator.__init__",
+        "line": 27
+      },
+      {
+        "name": "AutoCalibrator.__init__.<locals>.<lambda>",
+        "line": 30
+      },
+      {
+        "name": "AutoCalibrator.threshold_for",
+        "line": 39
+      },
+      {
+        "name": "AutoCalibrator.plate",
+        "line": 43
+      },
+      {
+        "name": "AutoCalibrator.check",
+        "line": 48
+      },
+      {
+        "name": "AutoCalibrator.judge",
+        "line": 54
+      },
+      {
+        "name": "AutoCalibrator.attempt",
+        "line": 82
+      },
+      {
+        "name": "still_visible",
+        "line": 120
+      }
+    ]
+  },
+  {
+    "module": "autocheck",
+    "original_filename": "autocheck.py",
+    "global_names": [
+      "ctypes",
+      "dataclasses",
+      "dataclass",
+      "field",
+      "typing",
+      "Callable",
+      "Dict",
+      "List",
+      "Optional",
+      "Tuple",
+      "cv2",
+      "numpy",
+      "np",
+      "i18n",
+      "SCALES",
+      "OK_SCALE",
+      "MIN_SCORE",
+      "MIN_PX",
+      "SCAN_KEYS",
+      "MIN_W",
+      "MIN_H",
+      "Item",
+      "SystemEnv",
+      "ndarray",
+      "dict",
+      "float",
+      "str",
+      "scan_scale",
+      "int",
+      "_monitor_of",
+      "run_checks",
+      "MARK",
+      "format_items"
+    ],
+    "functions": [
+      {
+        "name": "Item",
+        "line": 25
+      },
+      {
+        "name": "SystemEnv",
+        "line": 32
+      },
+      {
+        "name": "SystemEnv.__init__",
+        "line": 35
+      },
+      {
+        "name": "SystemEnv.dpi",
+        "line": 38
+      },
+      {
+        "name": "SystemEnv.monitors",
+        "line": 57
+      },
+      {
+        "name": "SystemEnv.game",
+        "line": 63
+      },
+      {
+        "name": "SystemEnv.frame",
+        "line": 77
+      },
+      {
+        "name": "SystemEnv.templates",
+        "line": 82
+      },
+      {
+        "name": "scan_scale",
+        "line": 88
+      },
+      {
+        "name": "_monitor_of",
+        "line": 116
+      },
+      {
+        "name": "run_checks",
+        "line": 124
+      },
+      {
+        "name": "run_checks.<locals>.<genexpr>",
+        "line": 200
+      },
+      {
+        "name": "format_items",
+        "line": 208
+      },
+      {
+        "name": "format_items.<locals>.<genexpr>",
+        "line": 210
+      }
+    ]
+  },
+  {
+    "module": "background_input",
+    "original_filename": "background_input.py",
+    "global_names": [
+      "atexit",
+      "ctypes",
+      "os",
+      "time",
+      "wintypes",
+      "typing",
+      "Callable",
+      "Optional",
+      "Tuple",
+      "VK_LBUTTON",
+      "VK_RBUTTON",
+      "SETTLE_S",
+      "AFTER_S",
+      "DRAG_WAIT_S",
+      "WM_ACTIVATE",
+      "WM_KEYDOWN",
+      "WM_KEYUP",
+      "WA_ACTIVE",
+      "VK_NAMES",
+      "Win32Input",
+      "FocusSwapContext",
+      "BackgroundInput"
+    ],
+    "functions": [
+      {
+        "name": "Win32Input",
+        "line": 35
+      },
+      {
+        "name": "Win32Input.__init__",
+        "line": 38
+      },
+      {
+        "name": "Win32Input.foreground",
+        "line": 57
+      },
+      {
+        "name": "Win32Input.cursor_pos",
+        "line": 60
+      },
+      {
+        "name": "Win32Input.set_cursor_pos",
+        "line": 65
+      },
+      {
+        "name": "Win32Input.button_down",
+        "line": 68
+      },
+      {
+        "name": "Win32Input.is_window",
+        "line": 71
+      },
+      {
+        "name": "Win32Input.is_iconic",
+        "line": 74
+      },
+      {
+        "name": "Win32Input.force_foreground",
+        "line": 77
+      },
+      {
+        "name": "Win32Input.post_key",
+        "line": 90
+      },
+      {
+        "name": "FocusSwapContext",
+        "line": 98
+      },
+      {
+        "name": "FocusSwapContext.__init__",
+        "line": 105
+      },
+      {
+        "name": "FocusSwapContext._wait_for_user_drag",
+        "line": 124
+      },
+      {
+        "name": "FocusSwapContext._wait_for_idle",
+        "line": 130
+      },
+      {
+        "name": "FocusSwapContext.__enter__",
+        "line": 136
+      },
+      {
+        "name": "FocusSwapContext.__exit__",
+        "line": 173
+      },
+      {
+        "name": "BackgroundInput",
+        "line": 217
+      },
+      {
+        "name": "BackgroundInput.__init__",
+        "line": 220
+      },
+      {
+        "name": "BackgroundInput._on",
+        "line": 232
+      },
+      {
+        "name": "BackgroundInput._ghost_on",
+        "line": 235
+      },
+      {
+        "name": "BackgroundInput.sync",
+        "line": 239
+      },
+      {
+        "name": "BackgroundInput.start",
+        "line": 249
+      },
+      {
+        "name": "BackgroundInput.release_all",
+        "line": 262
+      },
+      {
+        "name": "BackgroundInput.context",
+        "line": 269
+      },
+      {
+        "name": "BackgroundInput.other_window_in_front",
+        "line": 274
+      },
+      {
+        "name": "BackgroundInput.user_busy",
+        "line": 285
+      },
+      {
+        "name": "BackgroundInput.watch",
+        "line": 294
+      },
+      {
+        "name": "BackgroundInput.capture_guard",
+        "line": 298
+      },
+      {
+        "name": "BackgroundInput.ghost_notice",
+        "line": 302
+      },
+      {
+        "name": "BackgroundInput.post_key",
+        "line": 315
+      },
+      {
+        "name": "BackgroundInput.post_tap",
+        "line": 324
+      }
+    ]
+  },
+  {
+    "module": "breaker",
+    "original_filename": "breaker.py",
+    "global_names": [
+      "contextlib",
+      "random",
+      "threading",
+      "time",
+      "typing",
+      "Callable",
+      "local",
+      "_TL",
+      "QUOTA_COOLDOWN_S",
+      "ERROR_BASE_S",
+      "ERROR_MAX_S",
+      "OSError",
+      "BreakerOpen",
+      "Breaker",
+      "BREAKER"
+    ],
+    "functions": [
+      {
+        "name": "BreakerOpen",
+        "line": 24
+      },
+      {
+        "name": "Breaker",
+        "line": 28
+      },
+      {
+        "name": "Breaker.__init__",
+        "line": 29
+      },
+      {
+        "name": "Breaker.remaining",
+        "line": 37
+      },
+      {
+        "name": "Breaker.blocked",
+        "line": 41
+      },
+      {
+        "name": "Breaker.trip_quota",
+        "line": 44
+      },
+      {
+        "name": "Breaker.trip_error",
+        "line": 51
+      },
+      {
+        "name": "Breaker.trip_for",
+        "line": 59
+      },
+      {
+        "name": "Breaker.success",
+        "line": 65
+      },
+      {
+        "name": "Breaker.reset",
+        "line": 69
+      },
+      {
+        "name": "Breaker.override",
+        "line": 73
+      }
+    ]
+  },
+  {
+    "module": "bus_drop",
+    "original_filename": "bus_drop.py",
+    "global_names": [
+      "os",
+      "time",
+      "typing",
+      "Callable",
+      "List",
+      "Optional",
+      "Tuple",
+      "cv2",
+      "numpy",
+      "np",
+      "config",
+      "GW",
+      "GH",
+      "MIN_SCORE",
+      "MIN_MARGIN",
+      "LOST_S",
+      "CONFIRM",
+      "WINDOW_S",
+      "SAMPLE_LIMIT",
+      "NPZ_NAME",
+      "ndarray",
+      "find_plate",
+      "split_digits",
+      "_crop",
+      "float",
+      "_shear",
+      "_unit",
+      "prepare_template",
+      "_TEMPLATES",
+      "dict",
+      "__annotations__",
+      "str",
+      "load_templates",
+      "classify",
+      "bool",
+      "int",
+      "read_countdown",
+      "BusDrop"
+    ],
+    "functions": [
+      {
+        "name": "find_plate",
+        "line": 33
+      },
+      {
+        "name": "find_plate.<locals>.<genexpr>",
+        "line": 45
+      },
+      {
+        "name": "split_digits",
+        "line": 62
+      },
+      {
+        "name": "split_digits.<locals>.<genexpr>",
+        "line": 70
+      },
+      {
+        "name": "_crop",
+        "line": 98
+      },
+      {
+        "name": "_shear",
+        "line": 105
+      },
+      {
+        "name": "_unit",
+        "line": 111
+      },
+      {
+        "name": "prepare_template",
+        "line": 116
+      },
+      {
+        "name": "load_templates",
+        "line": 124
+      },
+      {
+        "name": "classify",
+        "line": 146
+      },
+      {
+        "name": "classify.<locals>.<lambda>",
+        "line": 159
+      },
+      {
+        "name": "read_countdown",
+        "line": 165
+      },
+      {
+        "name": "BusDrop",
+        "line": 190
+      },
+      {
+        "name": "BusDrop.<lambda>",
+        "line": 191
+      },
+      {
+        "name": "BusDrop.__init__",
+        "line": 191
+      },
+      {
+        "name": "BusDrop._window",
+        "line": 204
+      },
+      {
+        "name": "BusDrop.estimate",
+        "line": 208
+      },
+      {
+        "name": "BusDrop.observe",
+        "line": 228
+      },
+      {
+        "name": "BusDrop._save_sample",
+        "line": 260
+      }
+    ]
+  },
+  {
+    "module": "config",
+    "original_filename": "config.py",
+    "global_names": [
+      "json",
+      "os",
+      "random",
+      "sys",
+      "dataclasses",
+      "dataclass",
+      "FALLBACK_RELAY_URLS",
+      "tuple",
+      "__annotations__",
+      "RELAY_LIST_URL",
+      "DEFAULT_TELEMETRY_URL",
+      "DISCORD_INVITE_URL",
+      "TEMPLATE_NAMES",
+      "MODES",
+      "OPTIONAL_TEMPLATES",
+      "LANGS",
+      "PLATE_LANGS",
+      "LANG_INDEPENDENT",
+      "PLATES",
+      "PLATE_UNUSED",
+      "str",
+      "plate_filename",
+      "bool",
+      "uses_template",
+      "template_filename",
+      "base_dir",
+      "assets_dir",
+      "bundled_assets_dir",
+      "external_template_path",
+      "template_path",
+      "Settings",
+      "USER_SETTING_KEYS",
+      "NUMBER_RANGES",
+      "PICKAXE_SLOT_KEYS",
+      "float",
+      "jitter_range",
+      "get_jittered_wait",
+      "user_settings_path",
+      "load_user_settings",
+      "save_user_settings"
+    ],
+    "functions": [
+      {
+        "name": "plate_filename",
+        "line": 96
+      },
+      {
+        "name": "uses_template",
+        "line": 100
+      },
+      {
+        "name": "template_filename",
+        "line": 104
+      },
+      {
+        "name": "base_dir",
+        "line": 115
+      },
+      {
+        "name": "assets_dir",
+        "line": 121
+      },
+      {
+        "name": "bundled_assets_dir",
+        "line": 125
+      },
+      {
+        "name": "external_template_path",
+        "line": 132
+      },
+      {
+        "name": "template_path",
+        "line": 137
+      },
+      {
+        "name": "Settings",
+        "line": 146
+      },
+      {
+        "name": "Settings.<genexpr>",
+        "line": 156
+      },
+      {
+        "name": "jitter_range",
+        "line": 247
+      },
+      {
+        "name": "get_jittered_wait",
+        "line": 258
+      },
+      {
+        "name": "user_settings_path",
+        "line": 264
+      },
+      {
+        "name": "load_user_settings",
+        "line": 268
+      },
+      {
+        "name": "save_user_settings",
+        "line": 298
+      }
+    ]
+  },
+  {
+    "module": "controller",
+    "original_filename": "controller.py",
+    "global_names": [
+      "contextlib",
+      "random",
+      "time",
+      "typing",
+      "Callable",
+      "Optional",
+      "humanizer",
+      "MOUSEEVENTF_MOVE",
+      "int",
+      "_mouse_event_move",
+      "sleep",
+      "Random",
+      "move_camera_smooth",
+      "_cursor_pos",
+      "Controller"
+    ],
+    "functions": [
+      {
+        "name": "_mouse_event_move",
+        "line": 12
+      },
+      {
+        "name": "move_camera_smooth",
+        "line": 19
+      },
+      {
+        "name": "_cursor_pos",
+        "line": 34
+      },
+      {
+        "name": "Controller",
+        "line": 42
+      },
+      {
+        "name": "Controller.__init__",
+        "line": 43
+      },
+      {
+        "name": "Controller._background",
+        "line": 74
+      },
+      {
+        "name": "Controller._input_context",
+        "line": 77
+      },
+      {
+        "name": "Controller._humanize",
+        "line": 81
+      },
+      {
+        "name": "Controller._default_click",
+        "line": 84
+      },
+      {
+        "name": "Controller._default_swing",
+        "line": 118
+      },
+      {
+        "name": "Controller._default_press",
+        "line": 130
+      },
+      {
+        "name": "Controller.press",
+        "line": 141
+      },
+      {
+        "name": "Controller.ready",
+        "line": 151
+      },
+      {
+        "name": "Controller.click",
+        "line": 154
+      },
+      {
+        "name": "Controller.user_away",
+        "line": 171
+      },
+      {
+        "name": "Controller.look",
+        "line": 178
+      },
+      {
+        "name": "Controller.swing",
+        "line": 190
+      }
+    ]
+  },
+  {
+    "module": "diagnose",
+    "original_filename": "diagnose.py",
+    "global_names": [
+      "ctypes",
+      "os",
+      "socket",
+      "ssl",
+      "sys",
+      "tempfile",
+      "time",
+      "urllib.parse",
+      "urllib",
+      "urllib.request",
+      "typing",
+      "Callable",
+      "Dict",
+      "List",
+      "Optional",
+      "Tuple",
+      "config",
+      "focus",
+      "telemetry",
+      "window_capture",
+      "wc",
+      "version",
+      "__version__",
+      "PROBE_TIMEOUT_S",
+      "bool",
+      "_admin",
+      "int",
+      "str",
+      "_variant_name",
+      "build_report",
+      "NetProbe",
+      "_proxy_text",
+      "_step",
+      "network_report",
+      "REPORT_NAME",
+      "default_report_path",
+      "run"
+    ],
+    "functions": [
+      {
+        "name": "_admin",
+        "line": 32
+      },
+      {
+        "name": "_variant_name",
+        "line": 39
+      },
+      {
+        "name": "build_report",
+        "line": 43
+      },
+      {
+        "name": "build_report.<locals>.<genexpr>",
+        "line": 55
+      },
+      {
+        "name": "build_report.<locals>.<lambda>",
+        "line": 81
+      },
+      {
+        "name": "NetProbe",
+        "line": 106
+      },
+      {
+        "name": "NetProbe.resolve",
+        "line": 109
+      },
+      {
+        "name": "NetProbe.handshake",
+        "line": 113
+      },
+      {
+        "name": "NetProbe._tls",
+        "line": 124
+      },
+      {
+        "name": "NetProbe._tls.<locals>.<genexpr>",
+        "line": 128
+      },
+      {
+        "name": "NetProbe.get",
+        "line": 131
+      },
+      {
+        "name": "_proxy_text",
+        "line": 137
+      },
+      {
+        "name": "_step",
+        "line": 151
+      },
+      {
+        "name": "network_report",
+        "line": 161
+      },
+      {
+        "name": "network_report.<locals>.<lambda>",
+        "line": 175
+      },
+      {
+        "name": "network_report.<locals>.<lambda>",
+        "line": 175
+      },
+      {
+        "name": "network_report.<locals>.<lambda>",
+        "line": 176
+      },
+      {
+        "name": "network_report.<locals>.<genexpr>",
+        "line": 193
+      },
+      {
+        "name": "default_report_path",
+        "line": 204
+      },
+      {
+        "name": "run",
+        "line": 215
+      }
+    ]
+  },
+  {
+    "module": "ed25519_verify",
+    "original_filename": "ed25519_verify.py",
+    "global_names": [
+      "hashlib",
+      "P",
+      "Q",
+      "pow",
+      "D",
+      "I",
+      "int",
+      "_inv",
+      "_x_recover",
+      "_BY",
+      "_BX",
+      "_B",
+      "_ZERO",
+      "_add",
+      "_mul",
+      "bytes",
+      "_decode",
+      "bool",
+      "_eq",
+      "verify"
+    ],
+    "functions": [
+      {
+        "name": "_inv",
+        "line": 14
+      },
+      {
+        "name": "_x_recover",
+        "line": 18
+      },
+      {
+        "name": "_add",
+        "line": 34
+      },
+      {
+        "name": "_mul",
+        "line": 45
+      },
+      {
+        "name": "_decode",
+        "line": 55
+      },
+      {
+        "name": "_eq",
+        "line": 71
+      },
+      {
+        "name": "verify",
+        "line": 75
+      }
+    ]
+  },
+  {
+    "module": "focus",
+    "original_filename": "focus.py",
+    "global_names": [
+      "time",
+      "typing",
+      "Callable",
+      "List",
+      "Optional",
+      "GAME_CLASS",
+      "GAME_TITLE",
+      "FORTNITE_EXES",
+      "GFN_CLASS",
+      "GFN_TITLE",
+      "GFN_GAME_NAMES",
+      "WinApi",
+      "str",
+      "bool",
+      "is_game_window",
+      "int",
+      "find_game",
+      "sleep",
+      "float",
+      "ensure_game_foreground"
+    ],
+    "functions": [
+      {
+        "name": "WinApi",
+        "line": 20
+      },
+      {
+        "name": "WinApi.__init__",
+        "line": 23
+      },
+      {
+        "name": "WinApi.windows",
+        "line": 31
+      },
+      {
+        "name": "WinApi.windows.<locals>.cb",
+        "line": 35
+      },
+      {
+        "name": "WinApi.class_name",
+        "line": 43
+      },
+      {
+        "name": "WinApi.title",
+        "line": 48
+      },
+      {
+        "name": "WinApi.is_minimized",
+        "line": 53
+      },
+      {
+        "name": "WinApi.process_name",
+        "line": 56
+      },
+      {
+        "name": "WinApi.process_name.<locals>.ENTRY",
+        "line": 64
+      },
+      {
+        "name": "WinApi.foreground",
+        "line": 91
+      },
+      {
+        "name": "WinApi.focus",
+        "line": 94
+      },
+      {
+        "name": "is_game_window",
+        "line": 107
+      },
+      {
+        "name": "is_game_window.<locals>.<genexpr>",
+        "line": 117
+      },
+      {
+        "name": "find_game",
+        "line": 120
+      },
+      {
+        "name": "ensure_game_foreground",
+        "line": 138
+      }
+    ]
+  },
+  {
+    "module": "ghost",
+    "original_filename": "ghost.py",
+    "global_names": [
+      "ctypes",
+      "json",
+      "os",
+      "threading",
+      "time",
+      "collections",
+      "deque",
+      "wintypes",
+      "typing",
+      "Callable",
+      "Deque",
+      "Optional",
+      "Tuple",
+      "GWL_EXSTYLE",
+      "WS_EX_TRANSPARENT",
+      "WS_EX_LAYERED",
+      "GHOST_BITS",
+      "LWA_ALPHA",
+      "HWND_BOTTOM",
+      "SWP_NOSIZE",
+      "SWP_NOMOVE",
+      "SWP_NOACTIVATE",
+      "GA_ROOT",
+      "MASK32",
+      "GHOST_ALPHA",
+      "IDLE_BEFORE_INPUT_MS",
+      "IDLE_WAIT_MAX_S",
+      "OWN_MARGIN_MS",
+      "RETRY_AFTER_FAIL_S",
+      "MARKER_NAME",
+      "GhostApi",
+      "UserActivity",
+      "GhostWindow",
+      "str",
+      "bool",
+      "recover_at_launch"
+    ],
+    "functions": [
+      {
+        "name": "GhostApi",
+        "line": 41
+      },
+      {
+        "name": "GhostApi.__init__",
+        "line": 44
+      },
+      {
+        "name": "GhostApi.is_window",
+        "line": 62
+      },
+      {
+        "name": "GhostApi.root_at",
+        "line": 65
+      },
+      {
+        "name": "GhostApi.class_name",
+        "line": 70
+      },
+      {
+        "name": "GhostApi.to_bottom",
+        "line": 75
+      },
+      {
+        "name": "GhostApi.raise_top",
+        "line": 79
+      },
+      {
+        "name": "GhostApi.flush",
+        "line": 83
+      },
+      {
+        "name": "GhostApi.get_exstyle",
+        "line": 91
+      },
+      {
+        "name": "GhostApi.set_exstyle",
+        "line": 94
+      },
+      {
+        "name": "GhostApi.set_alpha",
+        "line": 99
+      },
+      {
+        "name": "GhostApi.tick",
+        "line": 102
+      },
+      {
+        "name": "GhostApi.last_input_tick",
+        "line": 105
+      },
+      {
+        "name": "GhostApi.last_input_tick.<locals>.LASTINPUTINFO",
+        "line": 106
+      },
+      {
+        "name": "UserActivity",
+        "line": 114
+      },
+      {
+        "name": "UserActivity.__init__",
+        "line": 122
+      },
+      {
+        "name": "UserActivity.own_begin",
+        "line": 128
+      },
+      {
+        "name": "UserActivity.own_end",
+        "line": 131
+      },
+      {
+        "name": "UserActivity._is_own",
+        "line": 136
+      },
+      {
+        "name": "UserActivity.scan",
+        "line": 143
+      },
+      {
+        "name": "UserActivity.idle_ms",
+        "line": 150
+      },
+      {
+        "name": "GhostWindow",
+        "line": 158
+      },
+      {
+        "name": "GhostWindow.<lambda>",
+        "line": 159
+      },
+      {
+        "name": "GhostWindow.__init__",
+        "line": 159
+      },
+      {
+        "name": "GhostWindow._write_marker",
+        "line": 178
+      },
+      {
+        "name": "GhostWindow._clear_marker",
+        "line": 187
+      },
+      {
+        "name": "GhostWindow.recover",
+        "line": 194
+      },
+      {
+        "name": "GhostWindow.wanted",
+        "line": 211
+      },
+      {
+        "name": "GhostWindow.ensure",
+        "line": 214
+      },
+      {
+        "name": "GhostWindow._ensure",
+        "line": 224
+      },
+      {
+        "name": "GhostWindow.hide",
+        "line": 256
+      },
+      {
+        "name": "GhostWindow.sink",
+        "line": 274
+      },
+      {
+        "name": "GhostWindow.rest",
+        "line": 287
+      },
+      {
+        "name": "GhostWindow._forget",
+        "line": 304
+      },
+      {
+        "name": "GhostWindow.restore",
+        "line": 309
+      },
+      {
+        "name": "GhostWindow.disable",
+        "line": 328
+      },
+      {
+        "name": "GhostWindow.reset",
+        "line": 333
+      },
+      {
+        "name": "GhostWindow.watch",
+        "line": 339
+      },
+      {
+        "name": "recover_at_launch",
+        "line": 351
+      }
+    ]
+  },
+  {
+    "module": "gui_extras",
+    "original_filename": "gui_extras.py",
+    "global_names": [
+      "tkinter",
+      "tk",
+      "ttk",
+      "config",
+      "i18n",
+      "build",
+      "float",
+      "wait_for_mode",
+      "str",
+      "preview_text",
+      "_on_pct",
+      "bool",
+      "_refresh_preview",
+      "open_vault"
+    ],
+    "functions": [
+      {
+        "name": "build",
+        "line": 13
+      },
+      {
+        "name": "build.<locals>.check",
+        "line": 17
+      },
+      {
+        "name": "build.<locals>.check.<locals>.<lambda>",
+        "line": 20
+      },
+      {
+        "name": "build.<locals>.<lambda>",
+        "line": 27
+      },
+      {
+        "name": "build.<locals>.<lambda>",
+        "line": 38
+      },
+      {
+        "name": "build.<locals>.<lambda>",
+        "line": 50
+      },
+      {
+        "name": "build.<locals>.<lambda>",
+        "line": 61
+      },
+      {
+        "name": "build.<locals>.<lambda>",
+        "line": 62
+      },
+      {
+        "name": "build.<locals>.<lambda>",
+        "line": 74
+      },
+      {
+        "name": "wait_for_mode",
+        "line": 78
+      },
+      {
+        "name": "preview_text",
+        "line": 83
+      },
+      {
+        "name": "_on_pct",
+        "line": 91
+      },
+      {
+        "name": "_refresh_preview",
+        "line": 101
+      },
+      {
+        "name": "_refresh_preview.<locals>.<lambda>",
+        "line": 109
+      },
+      {
+        "name": "open_vault",
+        "line": 114
+      }
+    ]
+  },
+  {
+    "module": "humanizer",
+    "original_filename": "humanizer.py",
+    "global_names": [
+      "math",
+      "random",
+      "time",
+      "typing",
+      "Callable",
+      "Optional",
+      "Tuple",
+      "LO",
+      "HI",
+      "SIDE_TAP_CHANCE",
+      "SIDE_TAP_S",
+      "MIN_HOLD_S",
+      "BREAK_EVERY_MIN",
+      "BREAK_LENGTH_S",
+      "LOBBY_STATES",
+      "PATTERNS",
+      "LOOK_H",
+      "LOOK_V",
+      "PITCH_LIMIT",
+      "CLICK_SIGMA",
+      "CLICK_CLAMP",
+      "CLICK_HOLD_S",
+      "SESSION_PERIOD_MIN",
+      "SIDE_KEYS",
+      "Random",
+      "float",
+      "int",
+      "gauss_offset",
+      "click_hold",
+      "bezier_points",
+      "_ease",
+      "camera_steps",
+      "PitchBalance",
+      "bool",
+      "str",
+      "pick_pattern",
+      "SessionDrift",
+      "PinkNoise",
+      "Humanizer",
+      "CoffeeBreak"
+    ],
+    "functions": [
+      {
+        "name": "gauss_offset",
+        "line": 37
+      },
+      {
+        "name": "click_hold",
+        "line": 42
+      },
+      {
+        "name": "bezier_points",
+        "line": 49
+      },
+      {
+        "name": "_ease",
+        "line": 63
+      },
+      {
+        "name": "camera_steps",
+        "line": 67
+      },
+      {
+        "name": "camera_steps.<locals>.<genexpr>",
+        "line": 89
+      },
+      {
+        "name": "PitchBalance",
+        "line": 93
+      },
+      {
+        "name": "PitchBalance.__init__",
+        "line": 96
+      },
+      {
+        "name": "PitchBalance.next_look",
+        "line": 100
+      },
+      {
+        "name": "pick_pattern",
+        "line": 115
+      },
+      {
+        "name": "SessionDrift",
+        "line": 128
+      },
+      {
+        "name": "SessionDrift.__init__",
+        "line": 131
+      },
+      {
+        "name": "SessionDrift.focus",
+        "line": 139
+      },
+      {
+        "name": "SessionDrift.relaxed",
+        "line": 143
+      },
+      {
+        "name": "SessionDrift.factor",
+        "line": 146
+      },
+      {
+        "name": "PinkNoise",
+        "line": 151
+      },
+      {
+        "name": "PinkNoise.__init__",
+        "line": 154
+      },
+      {
+        "name": "PinkNoise.next",
+        "line": 159
+      },
+      {
+        "name": "Humanizer",
+        "line": 170
+      },
+      {
+        "name": "Humanizer.__init__",
+        "line": 171
+      },
+      {
+        "name": "Humanizer._factor",
+        "line": 178
+      },
+      {
+        "name": "Humanizer.interval",
+        "line": 183
+      },
+      {
+        "name": "Humanizer.hold",
+        "line": 186
+      },
+      {
+        "name": "Humanizer.pattern",
+        "line": 189
+      },
+      {
+        "name": "Humanizer.session_factor",
+        "line": 192
+      },
+      {
+        "name": "Humanizer.side_tap",
+        "line": 195
+      },
+      {
+        "name": "CoffeeBreak",
+        "line": 212
+      },
+      {
+        "name": "CoffeeBreak.__init__",
+        "line": 215
+      },
+      {
+        "name": "CoffeeBreak.check",
+        "line": 222
+      }
+    ]
+  },
+  {
+    "module": "i18n",
+    "original_filename": "i18n.py",
+    "global_names": [
+      "typing",
+      "Dict",
+      "List",
+      "Tuple",
+      "i18n_ac",
+      "UI_AC",
+      "i18n_ex",
+      "UI_EX",
+      "i18n_lic",
+      "UI_LIC",
+      "i18n_fr",
+      "GUIDE_FR",
+      "UI_FR",
+      "LANG_CODES",
+      "DEFAULT_LANG",
+      "str",
+      "Block",
+      "UI",
+      "__annotations__",
+      "GUIDE",
+      "items",
+      "_lang",
+      "_texts",
+      "update",
+      "norm",
+      "t",
+      "guide"
+    ],
+    "functions": [
+      {
+        "name": "norm",
+        "line": 635
+      },
+      {
+        "name": "t",
+        "line": 639
+      },
+      {
+        "name": "guide",
+        "line": 645
+      }
+    ]
+  },
+  {
+    "module": "i18n_ac",
+    "original_filename": "i18n_ac.py",
+    "global_names": [
+      "UI_AC"
+    ],
+    "functions": []
+  },
+  {
+    "module": "i18n_ex",
+    "original_filename": "i18n_ex.py",
+    "global_names": [
+      "UI_EX"
+    ],
+    "functions": []
+  },
+  {
+    "module": "i18n_fr",
+    "original_filename": "i18n_fr.py",
+    "global_names": [
+      "UI_FR",
+      "GUIDE_FR"
+    ],
+    "functions": []
+  },
+  {
+    "module": "i18n_lic",
+    "original_filename": "i18n_lic.py",
+    "global_names": [
+      "UI_LIC"
+    ],
+    "functions": []
+  },
+  {
+    "module": "licensing",
+    "original_filename": "licensing.py",
+    "global_names": [
+      "hashlib",
+      "json",
+      "re",
+      "time",
+      "unicodedata",
+      "urllib.error",
+      "urllib",
+      "urllib.request",
+      "typing",
+      "Callable",
+      "config",
+      "ed25519_verify",
+      "telemetry",
+      "version",
+      "PREFIX",
+      "compile",
+      "KEY_RE",
+      "SIGN_PUBKEY",
+      "GRACE_S",
+      "RECHECK_S",
+      "TEMP_PASS_S",
+      "GRACE_MAX_S",
+      "OK",
+      "NEED_KEY",
+      "INVALID",
+      "USED",
+      "REVOKED",
+      "OFFLINE",
+      "SERVER",
+      "BUSY",
+      "_NOTICES",
+      "list",
+      "__annotations__",
+      "str",
+      "note",
+      "pop_notices",
+      "Exception",
+      "Busy",
+      "dict",
+      "_default_post",
+      "bool",
+      "required",
+      "clean_key",
+      "valid_format",
+      "machine_id",
+      "key_id",
+      "float",
+      "_proof_ok",
+      "_remembered",
+      "_temp_pass_live",
+      "is_fresh",
+      "verify",
+      "_outage",
+      "_grace"
+    ],
+    "functions": [
+      {
+        "name": "note",
+        "line": 48
+      },
+      {
+        "name": "pop_notices",
+        "line": 55
+      },
+      {
+        "name": "Busy",
+        "line": 61
+      },
+      {
+        "name": "_default_post",
+        "line": 65
+      },
+      {
+        "name": "required",
+        "line": 74
+      },
+      {
+        "name": "clean_key",
+        "line": 79
+      },
+      {
+        "name": "clean_key.<locals>.<genexpr>",
+        "line": 89
+      },
+      {
+        "name": "valid_format",
+        "line": 93
+      },
+      {
+        "name": "machine_id",
+        "line": 97
+      },
+      {
+        "name": "key_id",
+        "line": 114
+      },
+      {
+        "name": "_proof_ok",
+        "line": 120
+      },
+      {
+        "name": "_remembered",
+        "line": 133
+      },
+      {
+        "name": "_temp_pass_live",
+        "line": 137
+      },
+      {
+        "name": "is_fresh",
+        "line": 141
+      },
+      {
+        "name": "verify",
+        "line": 150
+      },
+      {
+        "name": "_outage",
+        "line": 183
+      },
+      {
+        "name": "_grace",
+        "line": 203
+      }
+    ]
+  },
+  {
+    "module": "licensing_ui",
+    "original_filename": "licensing_ui.py",
+    "global_names": [
+      "queue",
+      "threading",
+      "tkinter",
+      "messagebox",
+      "simpledialog",
+      "config",
+      "i18n",
+      "licensing",
+      "str",
+      "_t",
+      "gate",
+      "_check",
+      "poll",
+      "handle",
+      "bool",
+      "startup"
+    ],
+    "functions": [
+      {
+        "name": "_t",
+        "line": 16
+      },
+      {
+        "name": "gate",
+        "line": 20
+      },
+      {
+        "name": "_check",
+        "line": 27
+      },
+      {
+        "name": "_check.<locals>.work",
+        "line": 32
+      },
+      {
+        "name": "poll",
+        "line": 42
+      },
+      {
+        "name": "handle",
+        "line": 58
+      },
+      {
+        "name": "startup",
+        "line": 76
+      }
+    ]
+  },
+  {
+    "module": "loot_vault",
+    "original_filename": "loot_vault.py",
+    "global_names": [
+      "os",
+      "queue",
+      "threading",
+      "time",
+      "typing",
+      "Callable",
+      "List",
+      "Optional",
+      "cv2",
+      "numpy",
+      "np",
+      "config",
+      "FOLDER_NAME",
+      "MAX_FILES",
+      "str",
+      "default_folder",
+      "LootVault"
+    ],
+    "functions": [
+      {
+        "name": "default_folder",
+        "line": 24
+      },
+      {
+        "name": "LootVault",
+        "line": 28
+      },
+      {
+        "name": "LootVault.__init__",
+        "line": 29
+      },
+      {
+        "name": "LootVault.__init__.<locals>.<lambda>",
+        "line": 35
+      },
+      {
+        "name": "LootVault.save",
+        "line": 41
+      },
+      {
+        "name": "LootVault._run",
+        "line": 56
+      },
+      {
+        "name": "LootVault._write",
+        "line": 67
+      },
+      {
+        "name": "LootVault.files",
+        "line": 80
+      },
+      {
+        "name": "LootVault._trim",
+        "line": 87
+      },
+      {
+        "name": "LootVault.flush",
+        "line": 95
+      },
+      {
+        "name": "LootVault.open_folder",
+        "line": 101
+      }
+    ]
+  },
+  {
+    "module": "main",
+    "original_filename": "main.py",
+    "global_names": [
+      "os",
+      "queue",
+      "sys",
+      "threading",
+      "time",
+      "tkinter",
+      "tk",
+      "webbrowser",
+      "ttk",
+      "_enable_dpi_awareness",
+      "config",
+      "i18n",
+      "remote",
+      "gui_extras",
+      "licensing_ui",
+      "relay",
+      "rescue",
+      "shot",
+      "Settings",
+      "snip",
+      "SnipOverlay",
+      "state_machine",
+      "State",
+      "telemetry",
+      "TelemetryManager",
+      "clean_key",
+      "update_ui",
+      "UpdateController",
+      "vision",
+      "capture_screen",
+      "load_template_auto",
+      "worker",
+      "Worker",
+      "load_templates",
+      "TITLE",
+      "App",
+      "str",
+      "selftest",
+      "__name__",
+      "len",
+      "argv",
+      "diagnose",
+      "run"
+    ],
+    "functions": [
+      {
+        "name": "_enable_dpi_awareness",
+        "line": 11
+      },
+      {
+        "name": "App",
+        "line": 46
+      },
+      {
+        "name": "App.__init__",
+        "line": 47
+      },
+      {
+        "name": "App.__init__.<locals>.<lambda>",
+        "line": 67
+      },
+      {
+        "name": "App.__init__.<locals>.<lambda>",
+        "line": 67
+      },
+      {
+        "name": "App._l",
+        "line": 106
+      },
+      {
+        "name": "App._build_control",
+        "line": 111
+      },
+      {
+        "name": "App._build_control.<locals>.<lambda>",
+        "line": 120
+      },
+      {
+        "name": "App._build_modes",
+        "line": 135
+      },
+      {
+        "name": "App._build_modes.<locals>.<lambda>",
+        "line": 145
+      },
+      {
+        "name": "App._build_modes.<locals>.<lambda>",
+        "line": 152
+      },
+      {
+        "name": "App._build_keys",
+        "line": 154
+      },
+      {
+        "name": "App._build_keys.<locals>.<lambda>",
+        "line": 158
+      },
+      {
+        "name": "App._build_keys.<locals>.<lambda>",
+        "line": 163
+      },
+      {
+        "name": "App._build_keys.<locals>.<lambda>",
+        "line": 168
+      },
+      {
+        "name": "App._build_keys.<locals>.<lambda>",
+        "line": 173
+      },
+      {
+        "name": "App._build_keys.<locals>.<lambda>",
+        "line": 186
+      },
+      {
+        "name": "App._build_keys.<locals>.<lambda>",
+        "line": 187
+      },
+      {
+        "name": "App._build_keys.<locals>.<lambda>",
+        "line": 192
+      },
+      {
+        "name": "App._build_keys.<locals>.<lambda>",
+        "line": 204
+      },
+      {
+        "name": "App._build_keys.<locals>.<lambda>",
+        "line": 205
+      },
+      {
+        "name": "App._build_tail",
+        "line": 207
+      },
+      {
+        "name": "App._build_discord",
+        "line": 225
+      },
+      {
+        "name": "App._build_discord.<locals>.<lambda>",
+        "line": 233
+      },
+      {
+        "name": "App._build_discord.<locals>.<lambda>",
+        "line": 236
+      },
+      {
+        "name": "App._build_discord.<locals>.<lambda>",
+        "line": 243
+      },
+      {
+        "name": "App._build_discord.<locals>.<lambda>",
+        "line": 248
+      },
+      {
+        "name": "App._build_discord.<locals>.<lambda>",
+        "line": 253
+      },
+      {
+        "name": "App._build_discord.<locals>.<lambda>",
+        "line": 262
+      },
+      {
+        "name": "App._build_discord.<locals>.<lambda>",
+        "line": 265
+      },
+      {
+        "name": "App._build_diag",
+        "line": 272
+      },
+      {
+        "name": "App.run_diagnose",
+        "line": 281
+      },
+      {
+        "name": "App.run_diagnose.<locals>.work",
+        "line": 290
+      },
+      {
+        "name": "App.run_autocheck",
+        "line": 300
+      },
+      {
+        "name": "App.run_autocheck.<locals>.work",
+        "line": 310
+      },
+      {
+        "name": "App._autocheck_done",
+        "line": 318
+      },
+      {
+        "name": "App._diag_done",
+        "line": 325
+      },
+      {
+        "name": "App._build_guide",
+        "line": 342
+      },
+      {
+        "name": "App._render_guide",
+        "line": 353
+      },
+      {
+        "name": "App._apply_lang",
+        "line": 366
+      },
+      {
+        "name": "App._running",
+        "line": 381
+      },
+      {
+        "name": "App._refresh_btn",
+        "line": 384
+      },
+      {
+        "name": "App._on_th",
+        "line": 387
+      },
+      {
+        "name": "App._on_lang",
+        "line": 391
+      },
+      {
+        "name": "App._on_mode",
+        "line": 398
+      },
+      {
+        "name": "App._on_afk_num",
+        "line": 402
+      },
+      {
+        "name": "App._on_space_count",
+        "line": 411
+      },
+      {
+        "name": "App._show",
+        "line": 420
+      },
+      {
+        "name": "App.toggle",
+        "line": 423
+      },
+      {
+        "name": "App._start_run",
+        "line": 429
+      },
+      {
+        "name": "App.stop",
+        "line": 439
+      },
+      {
+        "name": "App._finish_session",
+        "line": 447
+      },
+      {
+        "name": "App._apply_remote",
+        "line": 452
+      },
+      {
+        "name": "App._apply_remote.<locals>.<genexpr>",
+        "line": 466
+      },
+      {
+        "name": "App.open_invite",
+        "line": 469
+      },
+      {
+        "name": "App.send_test_dm",
+        "line": 476
+      },
+      {
+        "name": "App.fix_network",
+        "line": 483
+      },
+      {
+        "name": "App.capture_template",
+        "line": 490
+      },
+      {
+        "name": "App.capture_template.<locals>.go",
+        "line": 494
+      },
+      {
+        "name": "App.capture_template.<locals>.go.<locals>.done",
+        "line": 495
+      },
+      {
+        "name": "App._start_hotkey",
+        "line": 507
+      },
+      {
+        "name": "App._start_hotkey.<locals>.listen",
+        "line": 508
+      },
+      {
+        "name": "App._start_hotkey.<locals>.listen.<locals>.<lambda>",
+        "line": 512
+      },
+      {
+        "name": "App._log",
+        "line": 520
+      },
+      {
+        "name": "App._tick",
+        "line": 526
+      },
+      {
+        "name": "App._quit",
+        "line": 560
+      },
+      {
+        "name": "App.run",
+        "line": 570
+      },
+      {
+        "name": "selftest",
+        "line": 574
+      },
+      {
+        "name": "selftest.<locals>.<genexpr>",
+        "line": 591
+      },
+      {
+        "name": "selftest.<locals>.<lambda>",
+        "line": 621
+      },
+      {
+        "name": "selftest.<locals>.<lambda>",
+        "line": 621
+      }
+    ]
+  },
+  {
+    "module": "mode_b",
+    "original_filename": "mode_b.py",
+    "global_names": [
+      "math",
+      "time",
+      "typing",
+      "Callable",
+      "Dict",
+      "Optional",
+      "numpy",
+      "np",
+      "config",
+      "autocal",
+      "AutoCalibrator",
+      "still_visible",
+      "state_machine",
+      "POPUP_KEYS",
+      "REWARD_KEYS",
+      "RewardCounter",
+      "State",
+      "StepResult",
+      "note_claim",
+      "visible_rewards",
+      "squad_bar",
+      "mode_fix",
+      "ModeFix",
+      "reward_fallback",
+      "RewardFallback",
+      "survey",
+      "SurveyGuard",
+      "vision",
+      "Plate",
+      "aim_point",
+      "find_checked",
+      "find_plate",
+      "find_template",
+      "LOAD_FALLBACK_S",
+      "ESC_GRACE_S",
+      "MENU_RETRY_S",
+      "MENU_MAX_ESC",
+      "SPACE_STOP_LEAD_S",
+      "SQUAD_START_S",
+      "SQUAD_EVERY_S",
+      "SQUAD_MAX_SIZE",
+      "SQUAD_CONFIRM",
+      "ModeB"
+    ],
+    "functions": [
+      {
+        "name": "ModeB",
+        "line": 34
+      },
+      {
+        "name": "ModeB.__init__",
+        "line": 35
+      },
+      {
+        "name": "ModeB.__init__.<locals>.<lambda>",
+        "line": 45
+      },
+      {
+        "name": "ModeB.__init__.<locals>.<lambda>",
+        "line": 46
+      },
+      {
+        "name": "ModeB.__init__.<locals>.<lambda>",
+        "line": 47
+      },
+      {
+        "name": "ModeB.start",
+        "line": 61
+      },
+      {
+        "name": "ModeB.match_active",
+        "line": 65
+      },
+      {
+        "name": "ModeB.stop",
+        "line": 82
+      },
+      {
+        "name": "ModeB._wait_s",
+        "line": 86
+      },
+      {
+        "name": "ModeB._wait_now",
+        "line": 90
+      },
+      {
+        "name": "ModeB._find",
+        "line": 94
+      },
+      {
+        "name": "ModeB._find_one",
+        "line": 103
+      },
+      {
+        "name": "ModeB._find_one.<locals>.<lambda>",
+        "line": 109
+      },
+      {
+        "name": "ModeB._find_one.<locals>.<lambda>",
+        "line": 111
+      },
+      {
+        "name": "ModeB._calibrate",
+        "line": 113
+      },
+      {
+        "name": "ModeB._click",
+        "line": 126
+      },
+      {
+        "name": "ModeB._press_esc",
+        "line": 132
+      },
+      {
+        "name": "ModeB._enter_countdown",
+        "line": 137
+      },
+      {
+        "name": "ModeB.step",
+        "line": 152
+      },
+      {
+        "name": "ModeB.step.<locals>.<lambda>",
+        "line": 156
+      },
+      {
+        "name": "ModeB._step",
+        "line": 169
+      },
+      {
+        "name": "ModeB._lobby",
+        "line": 181
+      },
+      {
+        "name": "ModeB._loading",
+        "line": 212
+      },
+      {
+        "name": "ModeB._squad_small",
+        "line": 229
+      },
+      {
+        "name": "ModeB._countdown",
+        "line": 251
+      },
+      {
+        "name": "ModeB._menu",
+        "line": 273
+      }
+    ]
+  },
+  {
+    "module": "mode_c",
+    "original_filename": "mode_c.py",
+    "global_names": [
+      "time",
+      "typing",
+      "Callable",
+      "Dict",
+      "Optional",
+      "numpy",
+      "np",
+      "state_machine",
+      "State",
+      "StateMachine",
+      "StepResult",
+      "mode_b",
+      "ModeB",
+      "ModeC"
+    ],
+    "functions": [
+      {
+        "name": "ModeC",
+        "line": 20
+      },
+      {
+        "name": "ModeC.__init__",
+        "line": 21
+      },
+      {
+        "name": "ModeC._wait_s",
+        "line": 32
+      },
+      {
+        "name": "ModeC._countdown",
+        "line": 35
+      }
+    ]
+  },
+  {
+    "module": "mode_fix",
+    "original_filename": "mode_fix.py",
+    "global_names": [
+      "time",
+      "typing",
+      "Callable",
+      "List",
+      "Optional",
+      "Tuple",
+      "cv2",
+      "numpy",
+      "np",
+      "SOLO_RATIO",
+      "VERIFY_EVERY_S",
+      "OPEN_COOLDOWN_S",
+      "MAX_OPENS",
+      "OPEN_WINDOW_S",
+      "BACKOFF_S",
+      "MAX_TILE_CLICKS",
+      "MAX_FILL_CLICKS",
+      "int",
+      "str",
+      "Click",
+      "ndarray",
+      "_yellow",
+      "_rgb",
+      "find_lobby_play",
+      "find_mode_label",
+      "find_tiles",
+      "bool",
+      "fill_switch",
+      "panel_play",
+      "ModeFix"
+    ],
+    "functions": [
+      {
+        "name": "_yellow",
+        "line": 32
+      },
+      {
+        "name": "_rgb",
+        "line": 36
+      },
+      {
+        "name": "find_lobby_play",
+        "line": 40
+      },
+      {
+        "name": "find_lobby_play.<locals>.<genexpr>",
+        "line": 49
+      },
+      {
+        "name": "find_mode_label",
+        "line": 56
+      },
+      {
+        "name": "find_mode_label.<locals>.<genexpr>",
+        "line": 82
+      },
+      {
+        "name": "find_tiles",
+        "line": 100
+      },
+      {
+        "name": "find_tiles.<locals>.<genexpr>",
+        "line": 114
+      },
+      {
+        "name": "find_tiles.<locals>.<genexpr>",
+        "line": 120
+      },
+      {
+        "name": "find_tiles.<locals>.<genexpr>",
+        "line": 122
+      },
+      {
+        "name": "find_tiles.<locals>.<genexpr>",
+        "line": 122
+      },
+      {
+        "name": "fill_switch",
+        "line": 132
+      },
+      {
+        "name": "panel_play",
+        "line": 146
+      },
+      {
+        "name": "panel_play.<locals>.<genexpr>",
+        "line": 155
+      },
+      {
+        "name": "ModeFix",
+        "line": 165
+      },
+      {
+        "name": "ModeFix.<lambda>",
+        "line": 166
+      },
+      {
+        "name": "ModeFix.__init__",
+        "line": 166
+      },
+      {
+        "name": "ModeFix.poll",
+        "line": 179
+      },
+      {
+        "name": "ModeFix._in_the_panel",
+        "line": 212
+      }
+    ]
+  },
+  {
+    "module": "netfix",
+    "original_filename": "netfix.py",
+    "global_names": [
+      "http.client",
+      "http",
+      "json",
+      "socket",
+      "ssl",
+      "threading",
+      "time",
+      "urllib.error",
+      "urllib",
+      "urllib.parse",
+      "urllib.request",
+      "typing",
+      "Callable",
+      "List",
+      "Optional",
+      "Tuple",
+      "SPECS",
+      "RESCUE_SPECS",
+      "DOH_SERVERS",
+      "DOH_TTL_S",
+      "PROBE_TIMEOUT_S",
+      "Lock",
+      "_lock",
+      "_preferred",
+      "str",
+      "__annotations__",
+      "_doh_cache",
+      "dict",
+      "preferred",
+      "set_preferred",
+      "bool",
+      "SSLContext",
+      "_context",
+      "int",
+      "_addrs_v4",
+      "_addrs_doh",
+      "float",
+      "_connect_any",
+      "request",
+      "HTTPSHandler",
+      "_PinnedHandler",
+      "Request",
+      "open_with",
+      "rescue",
+      "repair",
+      "Thread",
+      "repair_async"
+    ],
+    "functions": [
+      {
+        "name": "preferred",
+        "line": 33
+      },
+      {
+        "name": "set_preferred",
+        "line": 37
+      },
+      {
+        "name": "_context",
+        "line": 43
+      },
+      {
+        "name": "_addrs_v4",
+        "line": 55
+      },
+      {
+        "name": "_addrs_doh",
+        "line": 59
+      },
+      {
+        "name": "_connect_any",
+        "line": 80
+      },
+      {
+        "name": "_PinnedHandler",
+        "line": 90
+      },
+      {
+        "name": "_PinnedHandler.__init__",
+        "line": 93
+      },
+      {
+        "name": "_PinnedHandler.https_open",
+        "line": 97
+      },
+      {
+        "name": "_PinnedHandler.https_open.<locals>.Conn",
+        "line": 100
+      },
+      {
+        "name": "_PinnedHandler.https_open.<locals>.Conn.connect",
+        "line": 101
+      },
+      {
+        "name": "open_with",
+        "line": 108
+      },
+      {
+        "name": "rescue",
+        "line": 125
+      },
+      {
+        "name": "repair",
+        "line": 144
+      },
+      {
+        "name": "repair_async",
+        "line": 170
+      },
+      {
+        "name": "repair_async.<locals>.work",
+        "line": 173
+      }
+    ]
+  },
+  {
+    "module": "relay",
+    "original_filename": "relay.py",
+    "global_names": [
+      "json",
+      "os",
+      "re",
+      "threading",
+      "time",
+      "typing",
+      "Callable",
+      "List",
+      "Optional",
+      "Tuple",
+      "breaker",
+      "config",
+      "MAX_URLS",
+      "REFRESH_S",
+      "CACHE_NAME",
+      "CONNECT_FAIL_COOLDOWN_S",
+      "Lock",
+      "_lock",
+      "_user",
+      "str",
+      "__annotations__",
+      "_remote",
+      "_breakers",
+      "dict",
+      "_started",
+      "clean_url",
+      "parse_list",
+      "set_user_urls",
+      "candidates",
+      "bool",
+      "breaker_for",
+      "cache_path",
+      "load_cache",
+      "fetch_list",
+      "refresh",
+      "sleep",
+      "float",
+      "start"
+    ],
+    "functions": [
+      {
+        "name": "clean_url",
+        "line": 35
+      },
+      {
+        "name": "parse_list",
+        "line": 48
+      },
+      {
+        "name": "set_user_urls",
+        "line": 59
+      },
+      {
+        "name": "candidates",
+        "line": 67
+      },
+      {
+        "name": "breaker_for",
+        "line": 84
+      },
+      {
+        "name": "cache_path",
+        "line": 96
+      },
+      {
+        "name": "load_cache",
+        "line": 100
+      },
+      {
+        "name": "fetch_list",
+        "line": 112
+      },
+      {
+        "name": "refresh",
+        "line": 130
+      },
+      {
+        "name": "start",
+        "line": 145
+      },
+      {
+        "name": "start.<locals>.loop",
+        "line": 154
+      }
+    ]
+  },
+  {
+    "module": "remote",
+    "original_filename": "remote.py",
+    "global_names": [
+      "threading",
+      "typing",
+      "Callable",
+      "Dict",
+      "Optional",
+      "time",
+      "telemetry",
+      "SYNC_INTERVAL_S",
+      "MIN_INTERVAL_S",
+      "MAX_INTERVAL_S",
+      "FIRST_DELAY_S",
+      "RESCUE_POLL_S",
+      "RESCUE_MAX_POLLS",
+      "SHOT_POLL_S",
+      "LANGS",
+      "float",
+      "_bounded",
+      "str",
+      "object",
+      "clean_config",
+      "current_of",
+      "tuple",
+      "apply_config",
+      "RemoteSync"
+    ],
+    "functions": [
+      {
+        "name": "_bounded",
+        "line": 28
+      },
+      {
+        "name": "clean_config",
+        "line": 40
+      },
+      {
+        "name": "current_of",
+        "line": 63
+      },
+      {
+        "name": "apply_config",
+        "line": 71
+      },
+      {
+        "name": "RemoteSync",
+        "line": 82
+      },
+      {
+        "name": "RemoteSync.__init__",
+        "line": 83
+      },
+      {
+        "name": "RemoteSync.__init__.<locals>.<lambda>",
+        "line": 103
+      },
+      {
+        "name": "RemoteSync.__init__.<locals>.<lambda>",
+        "line": 104
+      },
+      {
+        "name": "RemoteSync._log_failure",
+        "line": 115
+      },
+      {
+        "name": "RemoteSync.start",
+        "line": 123
+      },
+      {
+        "name": "RemoteSync.stop",
+        "line": 128
+      },
+      {
+        "name": "RemoteSync.poke",
+        "line": 132
+      },
+      {
+        "name": "RemoteSync._run",
+        "line": 136
+      },
+      {
+        "name": "RemoteSync._fresh",
+        "line": 148
+      },
+      {
+        "name": "RemoteSync._rescue_fast",
+        "line": 152
+      },
+      {
+        "name": "RemoteSync._sleep",
+        "line": 155
+      },
+      {
+        "name": "RemoteSync.piggy_body",
+        "line": 170
+      },
+      {
+        "name": "RemoteSync._flags",
+        "line": 179
+      },
+      {
+        "name": "RemoteSync.poll_once",
+        "line": 186
+      },
+      {
+        "name": "RemoteSync.handle_answer",
+        "line": 203
+      }
+    ]
+  },
+  {
+    "module": "rescue",
+    "original_filename": "rescue.py",
+    "global_names": [
+      "queue",
+      "re",
+      "time",
+      "typing",
+      "Callable",
+      "List",
+      "Optional",
+      "Tuple",
+      "STAGE2_AFTER_S",
+      "MATCH_STUCK_S",
+      "ACTION_TTL_S",
+      "compile",
+      "ACTION_RE",
+      "Queue",
+      "incoming",
+      "__annotations__",
+      "bool",
+      "valid_action",
+      "str",
+      "push",
+      "float",
+      "cell_center",
+      "Rescue"
+    ],
+    "functions": [
+      {
+        "name": "valid_action",
+        "line": 28
+      },
+      {
+        "name": "push",
+        "line": 32
+      },
+      {
+        "name": "cell_center",
+        "line": 43
+      },
+      {
+        "name": "Rescue",
+        "line": 53
+      },
+      {
+        "name": "Rescue.__init__",
+        "line": 54
+      },
+      {
+        "name": "Rescue.__init__.<locals>.<lambda>",
+        "line": 70
+      },
+      {
+        "name": "Rescue.stuck",
+        "line": 80
+      },
+      {
+        "name": "Rescue.progress",
+        "line": 84
+      },
+      {
+        "name": "Rescue.tick",
+        "line": 91
+      },
+      {
+        "name": "Rescue._tick",
+        "line": 97
+      },
+      {
+        "name": "Rescue._intake",
+        "line": 129
+      },
+      {
+        "name": "Rescue._run_pending",
+        "line": 140
+      },
+      {
+        "name": "Rescue._execute",
+        "line": 150
+      }
+    ]
+  },
+  {
+    "module": "rescue_grid",
+    "original_filename": "rescue_grid.py",
+    "global_names": [
+      "base64",
+      "typing",
+      "Optional",
+      "cv2",
+      "numpy",
+      "np",
+      "MAX_BYTES",
+      "ndarray",
+      "int",
+      "bytes",
+      "render_rescue_grid",
+      "str",
+      "grid_b64"
+    ],
+    "functions": [
+      {
+        "name": "render_rescue_grid",
+        "line": 15
+      },
+      {
+        "name": "grid_b64",
+        "line": 48
+      }
+    ]
+  },
+  {
+    "module": "reward_fallback",
+    "original_filename": "reward_fallback.py",
+    "global_names": [
+      "time",
+      "typing",
+      "Callable",
+      "Optional",
+      "Tuple",
+      "cv2",
+      "numpy",
+      "np",
+      "IDLE_S",
+      "RETRY_S",
+      "GAP_S",
+      "BAND",
+      "ndarray",
+      "int",
+      "find_white_button",
+      "RewardFallback"
+    ],
+    "functions": [
+      {
+        "name": "find_white_button",
+        "line": 20
+      },
+      {
+        "name": "find_white_button.<locals>.<genexpr>",
+        "line": 35
+      },
+      {
+        "name": "RewardFallback",
+        "line": 47
+      },
+      {
+        "name": "RewardFallback.__init__",
+        "line": 48
+      },
+      {
+        "name": "RewardFallback.reset",
+        "line": 54
+      },
+      {
+        "name": "RewardFallback.poll",
+        "line": 58
+      }
+    ]
+  },
+  {
+    "module": "reward_shot",
+    "original_filename": "reward_shot.py",
+    "global_names": [
+      "base64",
+      "threading",
+      "time",
+      "typing",
+      "Callable",
+      "Optional",
+      "numpy",
+      "np",
+      "shot",
+      "telemetry",
+      "COOLDOWN_S",
+      "RewardShotSender"
+    ],
+    "functions": [
+      {
+        "name": "RewardShotSender",
+        "line": 24
+      },
+      {
+        "name": "RewardShotSender.__init__",
+        "line": 25
+      },
+      {
+        "name": "RewardShotSender.__init__.<locals>.<lambda>",
+        "line": 35
+      },
+      {
+        "name": "RewardShotSender.allowed",
+        "line": 43
+      },
+      {
+        "name": "RewardShotSender.notify",
+        "line": 51
+      },
+      {
+        "name": "RewardShotSender._run",
+        "line": 72
+      }
+    ]
+  },
+  {
+    "module": "shot",
+    "original_filename": "shot.py",
+    "global_names": [
+      "base64",
+      "threading",
+      "typing",
+      "Callable",
+      "Optional",
+      "cv2",
+      "numpy",
+      "np",
+      "telemetry",
+      "MAX_WIDTH",
+      "JPEG_QUALITY",
+      "MAX_BYTES",
+      "ndarray",
+      "int",
+      "bytes",
+      "encode_jpeg",
+      "grab_frame",
+      "ShotSender"
+    ],
+    "functions": [
+      {
+        "name": "encode_jpeg",
+        "line": 25
+      },
+      {
+        "name": "grab_frame",
+        "line": 42
+      },
+      {
+        "name": "ShotSender",
+        "line": 55
+      },
+      {
+        "name": "ShotSender.__init__",
+        "line": 56
+      },
+      {
+        "name": "ShotSender.__init__.<locals>.<lambda>",
+        "line": 65
+      },
+      {
+        "name": "ShotSender.__init__.<locals>.<lambda>",
+        "line": 67
+      },
+      {
+        "name": "ShotSender.request",
+        "line": 71
+      },
+      {
+        "name": "ShotSender._run",
+        "line": 83
+      }
+    ]
+  },
+  {
+    "module": "snip",
+    "original_filename": "snip.py",
+    "global_names": [
+      "os",
+      "tkinter",
+      "tk",
+      "config",
+      "i18n",
+      "vision",
+      "capture_screen",
+      "SnipOverlay"
+    ],
+    "functions": [
+      {
+        "name": "SnipOverlay",
+        "line": 10
+      },
+      {
+        "name": "SnipOverlay.__init__",
+        "line": 13
+      },
+      {
+        "name": "SnipOverlay.__init__.<locals>.<lambda>",
+        "line": 31
+      },
+      {
+        "name": "SnipOverlay._down",
+        "line": 33
+      },
+      {
+        "name": "SnipOverlay._drag",
+        "line": 37
+      },
+      {
+        "name": "SnipOverlay._up",
+        "line": 41
+      },
+      {
+        "name": "SnipOverlay._close",
+        "line": 57
+      }
+    ]
+  },
+  {
+    "module": "space_press",
+    "original_filename": "space_press.py",
+    "global_names": [
+      "random",
+      "threading",
+      "time",
+      "typing",
+      "Callable",
+      "List",
+      "Optional",
+      "Tuple",
+      "SpacePresser"
+    ],
+    "functions": [
+      {
+        "name": "SpacePresser",
+        "line": 17
+      },
+      {
+        "name": "SpacePresser.__init__",
+        "line": 18
+      },
+      {
+        "name": "SpacePresser._enabled",
+        "line": 40
+      },
+      {
+        "name": "SpacePresser._window",
+        "line": 44
+      },
+      {
+        "name": "SpacePresser.poll",
+        "line": 50
+      },
+      {
+        "name": "SpacePresser.<lambda>",
+        "line": 72
+      },
+      {
+        "name": "SpacePresser.run",
+        "line": 72
+      }
+    ]
+  },
+  {
+    "module": "squad_bar",
+    "original_filename": "squad_bar.py",
+    "global_names": [
+      "typing",
+      "List",
+      "Tuple",
+      "cv2",
+      "numpy",
+      "np",
+      "ROI",
+      "MIN_W",
+      "MAX_H",
+      "MIN_ASPECT",
+      "ROW_GAP",
+      "X_TOL",
+      "HUE",
+      "MIN_SAT",
+      "MIN_VAL",
+      "FLAT",
+      "ndarray",
+      "float",
+      "_bars",
+      "int",
+      "count_teammates",
+      "squad_size"
+    ],
+    "functions": [
+      {
+        "name": "_bars",
+        "line": 27
+      },
+      {
+        "name": "count_teammates",
+        "line": 50
+      },
+      {
+        "name": "count_teammates.<locals>.<lambda>",
+        "line": 57
+      },
+      {
+        "name": "count_teammates.<locals>.<lambda>.<locals>.<genexpr>",
+        "line": 57
+      },
+      {
+        "name": "count_teammates.<locals>.<genexpr>",
+        "line": 58
+      },
+      {
+        "name": "squad_size",
+        "line": 69
+      }
+    ]
+  },
+  {
+    "module": "state_machine",
+    "original_filename": "state_machine.py",
+    "global_names": [
+      "time",
+      "dataclasses",
+      "dataclass",
+      "enum",
+      "Enum",
+      "typing",
+      "Callable",
+      "Dict",
+      "Optional",
+      "numpy",
+      "np",
+      "autocal",
+      "AutoCalibrator",
+      "still_visible",
+      "mode_fix",
+      "ModeFix",
+      "reward_fallback",
+      "RewardFallback",
+      "survey",
+      "SurveyGuard",
+      "vision",
+      "Plate",
+      "aim_point",
+      "find_checked",
+      "find_plate",
+      "find_template",
+      "State",
+      "SEARCHING_PLAY",
+      "IN_MATCH",
+      "SKIPPING_RESULT",
+      "RETURNING_LOBBY",
+      "STAGES",
+      "POPUP_KEYS",
+      "REWARD_KEYS",
+      "StepResult",
+      "str",
+      "ndarray",
+      "note_claim",
+      "set",
+      "visible_rewards",
+      "RewardCounter",
+      "StateMachine"
+    ],
+    "functions": [
+      {
+        "name": "State",
+        "line": 22
+      },
+      {
+        "name": "StepResult",
+        "line": 53
+      },
+      {
+        "name": "note_claim",
+        "line": 62
+      },
+      {
+        "name": "visible_rewards",
+        "line": 76
+      },
+      {
+        "name": "RewardCounter",
+        "line": 92
+      },
+      {
+        "name": "RewardCounter.__init__",
+        "line": 101
+      },
+      {
+        "name": "RewardCounter.update",
+        "line": 105
+      },
+      {
+        "name": "StateMachine",
+        "line": 115
+      },
+      {
+        "name": "StateMachine.__init__",
+        "line": 116
+      },
+      {
+        "name": "StateMachine.__init__.<locals>.<lambda>",
+        "line": 126
+      },
+      {
+        "name": "StateMachine.__init__.<locals>.<lambda>",
+        "line": 127
+      },
+      {
+        "name": "StateMachine.__init__.<locals>.<lambda>",
+        "line": 128
+      },
+      {
+        "name": "StateMachine.start",
+        "line": 132
+      },
+      {
+        "name": "StateMachine.stop",
+        "line": 136
+      },
+      {
+        "name": "StateMachine.step",
+        "line": 139
+      },
+      {
+        "name": "StateMachine.step.<locals>.<lambda>",
+        "line": 143
+      },
+      {
+        "name": "StateMachine._step",
+        "line": 156
+      },
+      {
+        "name": "StateMachine._step.<locals>.<genexpr>",
+        "line": 161
+      },
+      {
+        "name": "StateMachine._step.<locals>.<lambda>",
+        "line": 194
+      },
+      {
+        "name": "StateMachine._step.<locals>.<lambda>",
+        "line": 197
+      },
+      {
+        "name": "StateMachine._step.<locals>.<genexpr>",
+        "line": 200
+      },
+      {
+        "name": "StateMachine._step.<locals>.<genexpr>",
+        "line": 211
+      }
+    ]
+  },
+  {
+    "module": "survey",
+    "original_filename": "survey.py",
+    "global_names": [
+      "time",
+      "typing",
+      "Callable",
+      "Optional",
+      "Tuple",
+      "cv2",
+      "numpy",
+      "np",
+      "DISC_BAND",
+      "BUTTON_BAND",
+      "MIN_DISCS",
+      "GAP_S",
+      "WHITE_MIN",
+      "ndarray",
+      "bool",
+      "_disc_row",
+      "int",
+      "_white_pill",
+      "find_skip",
+      "SurveyGuard"
+    ],
+    "functions": [
+      {
+        "name": "_disc_row",
+        "line": 20
+      },
+      {
+        "name": "_disc_row.<locals>.<genexpr>",
+        "line": 33
+      },
+      {
+        "name": "_disc_row.<locals>.<genexpr>",
+        "line": 43
+      },
+      {
+        "name": "_disc_row.<locals>.<lambda>",
+        "line": 43
+      },
+      {
+        "name": "_white_pill",
+        "line": 52
+      },
+      {
+        "name": "_white_pill.<locals>.<genexpr>",
+        "line": 65
+      },
+      {
+        "name": "find_skip",
+        "line": 75
+      },
+      {
+        "name": "SurveyGuard",
+        "line": 85
+      },
+      {
+        "name": "SurveyGuard.__init__",
+        "line": 88
+      },
+      {
+        "name": "SurveyGuard.poll",
+        "line": 92
+      }
+    ]
+  },
+  {
+    "module": "telemetry",
+    "original_filename": "telemetry.py",
+    "global_names": [
+      "json",
+      "socket",
+      "ssl",
+      "threading",
+      "time",
+      "unicodedata",
+      "urllib.error",
+      "urllib",
+      "urllib.request",
+      "collections",
+      "deque",
+      "typing",
+      "Callable",
+      "Dict",
+      "List",
+      "Optional",
+      "Tuple",
+      "breaker",
+      "relay",
+      "netfix",
+      "KEY_PREFIX",
+      "MAX_GRID_B64",
+      "MIN_ACTIONS",
+      "WINDOW_S",
+      "PERIODIC_RETRY_S",
+      "HTTP_TIMEOUT_S",
+      "PLACEHOLDER",
+      "OK",
+      "INVALID_KEY",
+      "NO_URL",
+      "NETWORK",
+      "DM_CLOSED",
+      "RATE_LIMITED",
+      "SERVER",
+      "NETWORK_DNS",
+      "NETWORK_TLS",
+      "NETWORK_TIMEOUT",
+      "NETWORK_BLOCKED",
+      "BLOCKED_WINERRORS",
+      "BaseException",
+      "str",
+      "classify_error",
+      "network_status",
+      "bool",
+      "is_cert_error",
+      "SSLContext",
+      "bundled_context",
+      "request",
+      "Request",
+      "float",
+      "_open",
+      "_open_basic",
+      "_DASHES",
+      "dict",
+      "fromkeys",
+      "map",
+      "ord",
+      "_JUNK",
+      "clean_key",
+      "valid_link_key",
+      "valid_endpoint",
+      "api_url",
+      "telemetry_url",
+      "object",
+      "_http_post",
+      "_post_one",
+      "_status_of",
+      "TelemetryManager"
+    ],
+    "functions": [
+      {
+        "name": "classify_error",
+        "line": 42
+      },
+      {
+        "name": "network_status",
+        "line": 67
+      },
+      {
+        "name": "is_cert_error",
+        "line": 71
+      },
+      {
+        "name": "bundled_context",
+        "line": 78
+      },
+      {
+        "name": "_open",
+        "line": 92
+      },
+      {
+        "name": "_open_basic",
+        "line": 119
+      },
+      {
+        "name": "clean_key",
+        "line": 141
+      },
+      {
+        "name": "valid_link_key",
+        "line": 152
+      },
+      {
+        "name": "valid_endpoint",
+        "line": 157
+      },
+      {
+        "name": "api_url",
+        "line": 161
+      },
+      {
+        "name": "telemetry_url",
+        "line": 170
+      },
+      {
+        "name": "_http_post",
+        "line": 174
+      },
+      {
+        "name": "_post_one",
+        "line": 213
+      },
+      {
+        "name": "_status_of",
+        "line": 251
+      },
+      {
+        "name": "TelemetryManager",
+        "line": 258
+      },
+      {
+        "name": "TelemetryManager.__init__",
+        "line": 259
+      },
+      {
+        "name": "TelemetryManager.__init__.<locals>.<lambda>",
+        "line": 269
+      },
+      {
+        "name": "TelemetryManager.begin_session",
+        "line": 290
+      },
+      {
+        "name": "TelemetryManager.record_action",
+        "line": 301
+      },
+      {
+        "name": "TelemetryManager.set_loops",
+        "line": 319
+      },
+      {
+        "name": "TelemetryManager.set_claims",
+        "line": 322
+      },
+      {
+        "name": "TelemetryManager.set_popups",
+        "line": 325
+      },
+      {
+        "name": "TelemetryManager.set_mode",
+        "line": 329
+      },
+      {
+        "name": "TelemetryManager.snapshot",
+        "line": 332
+      },
+      {
+        "name": "TelemetryManager._spawn",
+        "line": 347
+      },
+      {
+        "name": "TelemetryManager._deliver",
+        "line": 356
+      },
+      {
+        "name": "TelemetryManager._early",
+        "line": 402
+      },
+      {
+        "name": "TelemetryManager.send_test_dm",
+        "line": 409
+      },
+      {
+        "name": "TelemetryManager.send_test_dm.<locals>.<lambda>",
+        "line": 416
+      },
+      {
+        "name": "TelemetryManager.send_session_summary",
+        "line": 418
+      },
+      {
+        "name": "TelemetryManager.send_session_summary.<locals>.<lambda>",
+        "line": 431
+      },
+      {
+        "name": "TelemetryManager.maybe_send_periodic",
+        "line": 433
+      },
+      {
+        "name": "TelemetryManager.maybe_send_periodic.<locals>.<lambda>",
+        "line": 446
+      },
+      {
+        "name": "TelemetryManager.send_alert",
+        "line": 450
+      },
+      {
+        "name": "TelemetryManager.send_alert.<locals>.<lambda>",
+        "line": 456
+      },
+      {
+        "name": "TelemetryManager.send_stuck",
+        "line": 460
+      },
+      {
+        "name": "TelemetryManager.send_stuck.<locals>.<lambda>",
+        "line": 471
+      },
+      {
+        "name": "TelemetryManager.flush",
+        "line": 475
+      }
+    ]
+  },
+  {
+    "module": "update_ui",
+    "original_filename": "update_ui.py",
+    "global_names": [
+      "queue",
+      "threading",
+      "tkinter",
+      "tk",
+      "webbrowser",
+      "ttk",
+      "typing",
+      "Optional",
+      "i18n",
+      "updater",
+      "AutoUpdater",
+      "UpdateError",
+      "UpdateInfo",
+      "version",
+      "GITHUB_REPO",
+      "__version__",
+      "WHY_KEYS",
+      "AUTO_CHECK_DELAY_MS",
+      "UpdateDialog",
+      "UpdateController"
+    ],
+    "functions": [
+      {
+        "name": "UpdateDialog",
+        "line": 20
+      },
+      {
+        "name": "UpdateDialog.__init__",
+        "line": 23
+      },
+      {
+        "name": "UpdateDialog.alive",
+        "line": 64
+      },
+      {
+        "name": "UpdateDialog.lift",
+        "line": 70
+      },
+      {
+        "name": "UpdateDialog.set_progress",
+        "line": 74
+      },
+      {
+        "name": "UpdateDialog.installing",
+        "line": 78
+      },
+      {
+        "name": "UpdateDialog.busy",
+        "line": 84
+      },
+      {
+        "name": "UpdateDialog.error",
+        "line": 89
+      },
+      {
+        "name": "UpdateDialog.later",
+        "line": 95
+      },
+      {
+        "name": "UpdateController",
+        "line": 101
+      },
+      {
+        "name": "UpdateController.__init__",
+        "line": 102
+      },
+      {
+        "name": "UpdateController.t",
+        "line": 113
+      },
+      {
+        "name": "UpdateController.build_row",
+        "line": 117
+      },
+      {
+        "name": "UpdateController.build_row.<locals>.<lambda>",
+        "line": 123
+      },
+      {
+        "name": "UpdateController.build_row.<locals>.<lambda>",
+        "line": 126
+      },
+      {
+        "name": "UpdateController.relabel",
+        "line": 135
+      },
+      {
+        "name": "UpdateController._show_banner",
+        "line": 143
+      },
+      {
+        "name": "UpdateController.start_auto_check",
+        "line": 149
+      },
+      {
+        "name": "UpdateController.start_auto_check.<locals>.<lambda>",
+        "line": 151
+      },
+      {
+        "name": "UpdateController.check",
+        "line": 153
+      },
+      {
+        "name": "UpdateController.check.<locals>.<lambda>",
+        "line": 159
+      },
+      {
+        "name": "UpdateController.open_dialog",
+        "line": 162
+      },
+      {
+        "name": "UpdateController.install",
+        "line": 170
+      },
+      {
+        "name": "UpdateController.install.<locals>.work",
+        "line": 180
+      },
+      {
+        "name": "UpdateController.install.<locals>.work.<locals>.<lambda>",
+        "line": 182
+      },
+      {
+        "name": "UpdateController._apply",
+        "line": 191
+      },
+      {
+        "name": "UpdateController.poll",
+        "line": 204
+      }
+    ]
+  },
+  {
+    "module": "updater",
+    "original_filename": "updater.py",
+    "global_names": [
+      "hashlib",
+      "json",
+      "os",
+      "re",
+      "subprocess",
+      "sys",
+      "threading",
+      "urllib.error",
+      "urllib",
+      "urllib.parse",
+      "urllib.request",
+      "zipfile",
+      "dataclasses",
+      "dataclass",
+      "typing",
+      "Callable",
+      "Optional",
+      "telemetry",
+      "version",
+      "GITHUB_REPO",
+      "__version__",
+      "API_TIMEOUT_S",
+      "READ_TIMEOUT_S",
+      "CHUNK",
+      "MIN_EXE_BYTES",
+      "MAX_DOWNLOAD_BYTES",
+      "MAX_NOTES_CHARS",
+      "STAGED_SUFFIX",
+      "BACKUP_SUFFIX",
+      "DOWNLOAD_NAME",
+      "RUNNER_NAME",
+      "TRUSTED_HOST_SUFFIXES",
+      "CREATE_NO_WINDOW",
+      "CREATE_NEW_PROCESS_GROUP",
+      "RUNNER_BAT",
+      "Exception",
+      "UpdateError",
+      "compile",
+      "_VER_RE",
+      "I",
+      "_PRE_RE",
+      "tuple",
+      "parse_version",
+      "bool",
+      "is_newer",
+      "str",
+      "_trusted_host",
+      "request",
+      "HTTPRedirectHandler",
+      "_SafeRedirect",
+      "_CertFallbackOpener",
+      "build_opener",
+      "dict",
+      "clean_env",
+      "UpdateInfo",
+      "AutoUpdater"
+    ],
+    "functions": [
+      {
+        "name": "UpdateError",
+        "line": 78
+      },
+      {
+        "name": "parse_version",
+        "line": 87
+      },
+      {
+        "name": "parse_version.<locals>.<genexpr>",
+        "line": 92
+      },
+      {
+        "name": "is_newer",
+        "line": 98
+      },
+      {
+        "name": "_trusted_host",
+        "line": 104
+      },
+      {
+        "name": "_trusted_host.<locals>.<genexpr>",
+        "line": 106
+      },
+      {
+        "name": "_SafeRedirect",
+        "line": 109
+      },
+      {
+        "name": "_SafeRedirect.redirect_request",
+        "line": 112
+      },
+      {
+        "name": "_CertFallbackOpener",
+        "line": 119
+      },
+      {
+        "name": "_CertFallbackOpener.__init__",
+        "line": 122
+      },
+      {
+        "name": "_CertFallbackOpener.open",
+        "line": 126
+      },
+      {
+        "name": "build_opener",
+        "line": 140
+      },
+      {
+        "name": "clean_env",
+        "line": 144
+      },
+      {
+        "name": "UpdateInfo",
+        "line": 152
+      },
+      {
+        "name": "AutoUpdater",
+        "line": 164
+      },
+      {
+        "name": "AutoUpdater.__init__",
+        "line": 165
+      },
+      {
+        "name": "AutoUpdater.can_self_replace",
+        "line": 176
+      },
+      {
+        "name": "AutoUpdater.api_url",
+        "line": 180
+      },
+      {
+        "name": "AutoUpdater._repo_download_url",
+        "line": 184
+      },
+      {
+        "name": "AutoUpdater._request",
+        "line": 187
+      },
+      {
+        "name": "AutoUpdater._pick_asset",
+        "line": 191
+      },
+      {
+        "name": "AutoUpdater._pick_asset.<locals>.<lambda>",
+        "line": 201
+      },
+      {
+        "name": "AutoUpdater.check_for_updates",
+        "line": 203
+      },
+      {
+        "name": "AutoUpdater.check_async",
+        "line": 235
+      },
+      {
+        "name": "AutoUpdater.check_async.<locals>.work",
+        "line": 238
+      },
+      {
+        "name": "AutoUpdater._check_exe",
+        "line": 250
+      },
+      {
+        "name": "AutoUpdater._extract_exe",
+        "line": 256
+      },
+      {
+        "name": "AutoUpdater._extract_exe.<locals>.<lambda>",
+        "line": 261
+      },
+      {
+        "name": "AutoUpdater._download",
+        "line": 269
+      },
+      {
+        "name": "AutoUpdater.download_update",
+        "line": 297
+      },
+      {
+        "name": "AutoUpdater.download_update.<locals>.<lambda>",
+        "line": 309
+      },
+      {
+        "name": "AutoUpdater._discard",
+        "line": 337
+      },
+      {
+        "name": "AutoUpdater.launch_runner",
+        "line": 346
+      },
+      {
+        "name": "AutoUpdater.download_and_apply_update",
+        "line": 365
+      },
+      {
+        "name": "AutoUpdater.download_and_apply_update.<locals>.<lambda>",
+        "line": 370
+      }
+    ]
+  },
+  {
+    "module": "version",
+    "original_filename": "version.py",
+    "global_names": [
+      "__version__",
+      "LICENSE_REQUIRED",
+      "GITHUB_REPO"
+    ],
+    "functions": []
+  },
+  {
+    "module": "vision",
+    "original_filename": "vision.py",
+    "global_names": [
+      "os",
+      "dataclasses",
+      "dataclass",
+      "typing",
+      "Optional",
+      "Sequence",
+      "Tuple",
+      "cv2",
+      "numpy",
+      "np",
+      "int",
+      "float",
+      "Match",
+      "str",
+      "ndarray",
+      "load_template",
+      "Plate",
+      "dict",
+      "load_template_auto",
+      "capture_screen",
+      "capture_for_matching",
+      "bool",
+      "capture_game_window",
+      "find_template",
+      "_gray",
+      "_match",
+      "find_plate",
+      "COLOUR_CHECKED",
+      "PLAY_AIM_DOWN",
+      "COLOUR_TOL",
+      "_median_colour",
+      "colour_matches",
+      "aim_point",
+      "find_checked"
+    ],
+    "functions": [
+      {
+        "name": "load_template",
+        "line": 12
+      },
+      {
+        "name": "Plate",
+        "line": 21
+      },
+      {
+        "name": "load_template_auto",
+        "line": 31
+      },
+      {
+        "name": "capture_screen",
+        "line": 51
+      },
+      {
+        "name": "capture_for_matching",
+        "line": 61
+      },
+      {
+        "name": "capture_game_window",
+        "line": 83
+      },
+      {
+        "name": "find_template",
+        "line": 102
+      },
+      {
+        "name": "_gray",
+        "line": 136
+      },
+      {
+        "name": "_match",
+        "line": 140
+      },
+      {
+        "name": "find_plate",
+        "line": 150
+      },
+      {
+        "name": "find_plate.<locals>.match",
+        "line": 166
+      },
+      {
+        "name": "_median_colour",
+        "line": 202
+      },
+      {
+        "name": "colour_matches",
+        "line": 211
+      },
+      {
+        "name": "aim_point",
+        "line": 238
+      },
+      {
+        "name": "find_checked",
+        "line": 250
+      }
+    ]
+  },
+  {
+    "module": "watchdog",
+    "original_filename": "watchdog.py",
+    "global_names": [
+      "re",
+      "time",
+      "typing",
+      "Callable",
+      "Optional",
+      "MIN_GAP_S",
+      "REPEAT_LIMIT",
+      "ERROR_LIMIT",
+      "STALL_S",
+      "MAX_DETAIL",
+      "compile",
+      "_PATH_RE",
+      "str",
+      "clean_detail",
+      "Watchdog"
+    ],
+    "functions": [
+      {
+        "name": "clean_detail",
+        "line": 25
+      },
+      {
+        "name": "Watchdog",
+        "line": 31
+      },
+      {
+        "name": "Watchdog.__init__",
+        "line": 32
+      },
+      {
+        "name": "Watchdog.start",
+        "line": 49
+      },
+      {
+        "name": "Watchdog.action",
+        "line": 59
+      },
+      {
+        "name": "Watchdog.ok",
+        "line": 71
+      },
+      {
+        "name": "Watchdog.error",
+        "line": 75
+      },
+      {
+        "name": "Watchdog.fatal",
+        "line": 81
+      },
+      {
+        "name": "Watchdog.tick",
+        "line": 85
+      },
+      {
+        "name": "Watchdog._fire",
+        "line": 92
+      }
+    ]
+  },
+  {
+    "module": "window_capture",
+    "original_filename": "window_capture.py",
+    "global_names": [
+      "ctypes",
+      "time",
+      "wintypes",
+      "dataclasses",
+      "dataclass",
+      "typing",
+      "Optional",
+      "Tuple",
+      "numpy",
+      "np",
+      "PW_CLIENTONLY",
+      "PW_RENDERFULLCONTENT",
+      "BI_RGB",
+      "DIB_RGB_COLORS",
+      "OK",
+      "MINIMIZED",
+      "NO_WINDOW",
+      "BLACK",
+      "ERROR",
+      "DENIED",
+      "ERROR_ACCESS_DENIED",
+      "FLAG_VARIANTS",
+      "Capture",
+      "int",
+      "to_screen",
+      "Structure",
+      "_BITMAPINFOHEADER",
+      "_BITMAPINFO",
+      "Win32Gdi",
+      "GameWindow",
+      "WindowCapture",
+      "_quiet",
+      "ndarray",
+      "bool",
+      "_is_black"
+    ],
+    "functions": [
+      {
+        "name": "Capture",
+        "line": 33
+      },
+      {
+        "name": "Capture.to_screen",
+        "line": 39
+      },
+      {
+        "name": "to_screen",
+        "line": 44
+      },
+      {
+        "name": "_BITMAPINFOHEADER",
+        "line": 48
+      },
+      {
+        "name": "_BITMAPINFO",
+        "line": 57
+      },
+      {
+        "name": "Win32Gdi",
+        "line": 61
+      },
+      {
+        "name": "Win32Gdi.__init__",
+        "line": 64
+      },
+      {
+        "name": "Win32Gdi.is_window",
+        "line": 83
+      },
+      {
+        "name": "Win32Gdi.is_iconic",
+        "line": 86
+      },
+      {
+        "name": "Win32Gdi.client_rect",
+        "line": 89
+      },
+      {
+        "name": "Win32Gdi.get_dc",
+        "line": 96
+      },
+      {
+        "name": "Win32Gdi.release_dc",
+        "line": 99
+      },
+      {
+        "name": "Win32Gdi.create_compatible_dc",
+        "line": 102
+      },
+      {
+        "name": "Win32Gdi.create_compatible_bitmap",
+        "line": 105
+      },
+      {
+        "name": "Win32Gdi.select_object",
+        "line": 108
+      },
+      {
+        "name": "Win32Gdi.delete_object",
+        "line": 111
+      },
+      {
+        "name": "Win32Gdi.delete_dc",
+        "line": 114
+      },
+      {
+        "name": "Win32Gdi.print_window",
+        "line": 117
+      },
+      {
+        "name": "Win32Gdi.last_error",
+        "line": 121
+      },
+      {
+        "name": "Win32Gdi.get_dibits",
+        "line": 125
+      },
+      {
+        "name": "GameWindow",
+        "line": 136
+      },
+      {
+        "name": "GameWindow.__init__",
+        "line": 139
+      },
+      {
+        "name": "GameWindow.__init__.<locals>.<lambda>",
+        "line": 144
+      },
+      {
+        "name": "GameWindow.__init__.<locals>.<lambda>",
+        "line": 145
+      },
+      {
+        "name": "GameWindow.hwnd",
+        "line": 150
+      },
+      {
+        "name": "WindowCapture",
+        "line": 165
+      },
+      {
+        "name": "WindowCapture.__init__",
+        "line": 166
+      },
+      {
+        "name": "WindowCapture._failed",
+        "line": 178
+      },
+      {
+        "name": "WindowCapture.grab",
+        "line": 187
+      },
+      {
+        "name": "WindowCapture.grab.<locals>.<lambda>",
+        "line": 203
+      },
+      {
+        "name": "WindowCapture._print",
+        "line": 223
+      },
+      {
+        "name": "WindowCapture._print.<locals>.<lambda>",
+        "line": 240
+      },
+      {
+        "name": "_quiet",
+        "line": 263
+      },
+      {
+        "name": "_is_black",
+        "line": 270
+      }
+    ]
+  },
+  {
+    "module": "worker",
+    "original_filename": "worker.py",
+    "global_names": [
+      "os",
+      "queue",
+      "threading",
+      "time",
+      "config",
+      "i18n",
+      "anti_afk",
+      "AntiAfk",
+      "audio_mute",
+      "GameAudioController",
+      "bus_drop",
+      "BusDrop",
+      "background_input",
+      "BackgroundInput",
+      "Settings",
+      "controller",
+      "Controller",
+      "focus",
+      "ensure_game_foreground",
+      "humanizer",
+      "CoffeeBreak",
+      "loot_vault",
+      "LootVault",
+      "mode_b",
+      "ModeB",
+      "mode_c",
+      "ModeC",
+      "reward_shot",
+      "RewardShotSender",
+      "rescue",
+      "Rescue",
+      "space_press",
+      "SpacePresser",
+      "state_machine",
+      "POPUP_KEYS",
+      "State",
+      "StateMachine",
+      "telemetry",
+      "TelemetryManager",
+      "vision",
+      "Plate",
+      "capture_for_matching",
+      "find_plate",
+      "find_template",
+      "load_template_auto",
+      "watchdog",
+      "Watchdog",
+      "window_capture",
+      "GameWindow",
+      "WindowCapture",
+      "BG_HINTS",
+      "str",
+      "dict",
+      "load_templates",
+      "Thread",
+      "Worker"
+    ],
+    "functions": [
+      {
+        "name": "load_templates",
+        "line": 33
+      },
+      {
+        "name": "Worker",
+        "line": 41
+      },
+      {
+        "name": "Worker.__init__",
+        "line": 42
+      },
+      {
+        "name": "Worker._load_templates",
+        "line": 50
+      },
+      {
+        "name": "Worker.run",
+        "line": 57
+      },
+      {
+        "name": "Worker.run.<locals>.<lambda>",
+        "line": 71
+      },
+      {
+        "name": "Worker.run.<locals>.on_claim",
+        "line": 82
+      },
+      {
+        "name": "Worker.run.<locals>.find_popup",
+        "line": 94
+      },
+      {
+        "name": "Worker.run.<locals>.send_stuck",
+        "line": 104
+      },
+      {
+        "name": "Worker.run.<locals>.<lambda>",
+        "line": 115
+      },
+      {
+        "name": "Worker.run.<locals>.in_match",
+        "line": 119
+      },
+      {
+        "name": "Worker.run.<locals>.<lambda>",
+        "line": 122
+      },
+      {
+        "name": "Worker.run.<locals>.<lambda>",
+        "line": 123
+      },
+      {
+        "name": "Worker.run.<locals>.<lambda>",
+        "line": 123
+      },
+      {
+        "name": "Worker.run.<locals>.<lambda>",
+        "line": 129
+      },
+      {
+        "name": "Worker.run.<locals>.alert",
+        "line": 134
+      },
+      {
+        "name": "Worker.run.<locals>.<genexpr>",
+        "line": 188
+      },
+      {
+        "name": "Worker.run.<locals>.<genexpr>",
+        "line": 189
+      },
+      {
+        "name": "Worker.run.<locals>.<genexpr>",
+        "line": 190
+      }
+    ]
+  }
+]

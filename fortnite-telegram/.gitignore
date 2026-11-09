@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+build/
+dist/
+dist_protected/
+build_obf/
+*.spec
+*.pfx
+*.p12
+*.egg-info/
+.pytest_cache/
+*.sqlite3*
+settings.json
+telegram-offset.json
+spritepilot-data/
+.env

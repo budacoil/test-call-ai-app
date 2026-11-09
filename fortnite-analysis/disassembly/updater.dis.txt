@@ -1,0 +1,2585 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+ 18           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (hashlib)
+             10 STORE_NAME               0 (hashlib)
+
+ 19          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (json)
+             18 STORE_NAME               1 (json)
+
+ 20          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              2 (os)
+             26 STORE_NAME               2 (os)
+
+ 21          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               1 (None)
+             32 IMPORT_NAME              3 (re)
+             34 STORE_NAME               3 (re)
+
+ 22          36 LOAD_CONST               0 (0)
+             38 LOAD_CONST               1 (None)
+             40 IMPORT_NAME              4 (subprocess)
+             42 STORE_NAME               4 (subprocess)
+
+ 23          44 LOAD_CONST               0 (0)
+             46 LOAD_CONST               1 (None)
+             48 IMPORT_NAME              5 (sys)
+             50 STORE_NAME               5 (sys)
+
+ 24          52 LOAD_CONST               0 (0)
+             54 LOAD_CONST               1 (None)
+             56 IMPORT_NAME              6 (threading)
+             58 STORE_NAME               6 (threading)
+
+ 25          60 LOAD_CONST               0 (0)
+             62 LOAD_CONST               1 (None)
+             64 IMPORT_NAME              7 (urllib.error)
+             66 STORE_NAME               8 (urllib)
+
+ 26          68 LOAD_CONST               0 (0)
+             70 LOAD_CONST               1 (None)
+             72 IMPORT_NAME              9 (urllib.parse)
+             74 STORE_NAME               8 (urllib)
+
+ 27          76 LOAD_CONST               0 (0)
+             78 LOAD_CONST               1 (None)
+             80 IMPORT_NAME             10 (urllib.request)
+             82 STORE_NAME               8 (urllib)
+
+ 28          84 LOAD_CONST               0 (0)
+             86 LOAD_CONST               1 (None)
+             88 IMPORT_NAME             11 (zipfile)
+             90 STORE_NAME              11 (zipfile)
+
+ 29          92 LOAD_CONST               0 (0)
+             94 LOAD_CONST               2 (('dataclass',))
+             96 IMPORT_NAME             12 (dataclasses)
+             98 IMPORT_FROM             13 (dataclass)
+            100 STORE_NAME              13 (dataclass)
+            102 POP_TOP
+
+ 30         104 LOAD_CONST               0 (0)
+            106 LOAD_CONST               3 (('Callable', 'Optional'))
+            108 IMPORT_NAME             14 (typing)
+            110 IMPORT_FROM             15 (Callable)
+            112 STORE_NAME              15 (Callable)
+            114 IMPORT_FROM             16 (Optional)
+            116 STORE_NAME              16 (Optional)
+            118 POP_TOP
+
+ 32         120 LOAD_CONST               0 (0)
+            122 LOAD_CONST               1 (None)
+            124 IMPORT_NAME             17 (telemetry)
+            126 STORE_NAME              17 (telemetry)
+
+ 33         128 LOAD_CONST               0 (0)
+            130 LOAD_CONST               4 (('GITHUB_REPO', '__version__'))
+            132 IMPORT_NAME             18 (version)
+            134 IMPORT_FROM             19 (GITHUB_REPO)
+            136 STORE_NAME              19 (GITHUB_REPO)
+            138 IMPORT_FROM             20 (__version__)
+            140 STORE_NAME              20 (__version__)
+            142 POP_TOP
+
+ 35         144 LOAD_CONST               5 (5.0)
+            146 STORE_NAME              21 (API_TIMEOUT_S)
+
+ 36         148 LOAD_CONST               6 (30.0)
+            150 STORE_NAME              22 (READ_TIMEOUT_S)
+
+ 37         152 LOAD_CONST               7 (65536)
+            154 STORE_NAME              23 (CHUNK)
+
+ 38         156 LOAD_CONST               8 (1000000)
+            158 STORE_NAME              24 (MIN_EXE_BYTES)
+
+ 39         160 LOAD_CONST               9 (419430400)
+            162 STORE_NAME              25 (MAX_DOWNLOAD_BYTES)
+
+ 40         164 LOAD_CONST              10 (4000)
+            166 STORE_NAME              26 (MAX_NOTES_CHARS)
+
+ 41         168 LOAD_CONST              11 ('.new')
+            170 STORE_NAME              27 (STAGED_SUFFIX)
+
+ 42         172 LOAD_CONST              12 ('.bak')
+            174 STORE_NAME              28 (BACKUP_SUFFIX)
+
+ 43         176 LOAD_CONST              13 ('pk-auto_update.download')
+            178 STORE_NAME              29 (DOWNLOAD_NAME)
+
+ 44         180 LOAD_CONST              14 ('_update_runner.bat')
+            182 STORE_NAME              30 (RUNNER_NAME)
+
+ 45         184 LOAD_CONST              15 (('github.com', 'githubusercontent.com'))
+            186 STORE_NAME              31 (TRUSTED_HOST_SUFFIXES)
+
+ 46         188 LOAD_CONST              16 (134217728)
+            190 STORE_NAME              32 (CREATE_NO_WINDOW)
+
+ 47         192 LOAD_CONST              17 (512)
+            194 STORE_NAME              33 (CREATE_NEW_PROCESS_GROUP)
+
+ 51         196 LOAD_CONST              18 ('@echo off\nsetlocal EnableExtensions\nset /a TRIES=0\ncopy /y "%PKA_OLD%" "%PKA_BAK%" >nul 2>&1\n:wait\nping -n 2 127.0.0.1 >nul\ndel /f /q "%PKA_OLD%" >nul 2>&1\nif not exist "%PKA_OLD%" goto swap\nset /a TRIES+=1\nif %TRIES% lss 90 goto wait\ngoto giveup\n:swap\nmove /y "%PKA_NEW%" "%PKA_OLD%" >nul 2>&1\nif errorlevel 1 goto restore\ndel /f /q "%PKA_BAK%" >nul 2>&1\ngoto launch\n:restore\ncopy /y "%PKA_BAK%" "%PKA_OLD%" >nul 2>&1\n:giveup\ndel /f /q "%PKA_NEW%" >nul 2>&1\ndel /f /q "%PKA_BAK%" >nul 2>&1\n:launch\nstart "" "%PKA_OLD%"\ndel "%~f0"\n')
+            198 STORE_NAME              34 (RUNNER_BAT)
+
+ 78         200 PUSH_NULL
+            202 LOAD_BUILD_CLASS
+            204 LOAD_CONST              19 (<code object UpdateError at 0x7f6aed1a5d70, file "updater.py", line 78>)
+            206 MAKE_FUNCTION            0
+            208 LOAD_CONST              20 ('UpdateError')
+            210 LOAD_NAME               35 (Exception)
+            212 CALL                     3
+            220 STORE_NAME              36 (UpdateError)
+
+ 83         222 PUSH_NULL
+            224 LOAD_NAME                3 (re)
+            226 LOAD_ATTR               74 (compile)
+            246 LOAD_CONST              21 ('^\\s*[vV]?(\\d+)(?:\\.(\\d+))?(?:\\.(\\d+))?(.*)$')
+            248 CALL                     1
+            256 STORE_NAME              38 (_VER_RE)
+
+ 84         258 PUSH_NULL
+            260 LOAD_NAME                3 (re)
+            262 LOAD_ATTR               74 (compile)
+            282 LOAD_CONST              22 ('^[-._]?(alpha|beta|rc|pre|dev)(?![a-z])')
+            284 LOAD_NAME                3 (re)
+            286 LOAD_ATTR               78 (I)
+            306 CALL                     2
+            314 STORE_NAME              40 (_PRE_RE)
+
+ 87         316 LOAD_CONST              23 ('return')
+            318 LOAD_NAME               16 (Optional)
+            320 LOAD_NAME               41 (tuple)
+            322 BINARY_SUBSCR
+            326 BUILD_TUPLE              2
+            328 LOAD_CONST              24 (<code object parse_version at 0x7f6aed18d830, file "updater.py", line 87>)
+            330 MAKE_FUNCTION            4 (annotations)
+            332 STORE_NAME              42 (parse_version)
+
+ 98         334 LOAD_CONST              23 ('return')
+            336 LOAD_NAME               43 (bool)
+            338 BUILD_TUPLE              2
+            340 LOAD_CONST              25 (<code object is_newer at 0x7f6aed7ff990, file "updater.py", line 98>)
+            342 MAKE_FUNCTION            4 (annotations)
+            344 STORE_NAME              44 (is_newer)
+
+104         346 LOAD_CONST              26 ('host')
+            348 LOAD_NAME               45 (str)
+            350 LOAD_CONST              23 ('return')
+            352 LOAD_NAME               43 (bool)
+            354 BUILD_TUPLE              4
+            356 LOAD_CONST              27 (<code object _trusted_host at 0x7f6aed7e7750, file "updater.py", line 104>)
+            358 MAKE_FUNCTION            4 (annotations)
+            360 STORE_NAME              46 (_trusted_host)
+
+109         362 PUSH_NULL
+            364 LOAD_BUILD_CLASS
+            366 LOAD_CONST              28 (<code object _SafeRedirect at 0x7f6aed805ed0, file "updater.py", line 109>)
+            368 MAKE_FUNCTION            0
+            370 LOAD_CONST              29 ('_SafeRedirect')
+            372 LOAD_NAME                8 (urllib)
+            374 LOAD_ATTR               94 (request)
+            394 LOAD_ATTR               96 (HTTPRedirectHandler)
+            414 CALL                     3
+            422 STORE_NAME              49 (_SafeRedirect)
+
+119         424 PUSH_NULL
+            426 LOAD_BUILD_CLASS
+            428 LOAD_CONST              30 (<code object _CertFallbackOpener at 0x7f6aed806790, file "updater.py", line 119>)
+            430 MAKE_FUNCTION            0
+            432 LOAD_CONST              31 ('_CertFallbackOpener')
+            434 CALL                     2
+            442 STORE_NAME              50 (_CertFallbackOpener)
+
+140         444 LOAD_CONST              32 (<code object build_opener at 0x7f6aed8079f0, file "updater.py", line 140>)
+            446 MAKE_FUNCTION            0
+            448 STORE_NAME              51 (build_opener)
+
+144         450 LOAD_CONST              23 ('return')
+            452 LOAD_NAME               52 (dict)
+            454 BUILD_TUPLE              2
+            456 LOAD_CONST              33 (<code object clean_env at 0x7f6af1e2b3c0, file "updater.py", line 144>)
+            458 MAKE_FUNCTION            4 (annotations)
+            460 STORE_NAME              53 (clean_env)
+
+152         462 LOAD_NAME               13 (dataclass)
+
+153         464 PUSH_NULL
+            466 LOAD_BUILD_CLASS
+            468 LOAD_CONST              34 (<code object UpdateInfo at 0x7f6aed1d2af0, file "updater.py", line 152>)
+            470 MAKE_FUNCTION            0
+            472 LOAD_CONST              35 ('UpdateInfo')
+            474 CALL                     2
+
+152         482 CALL                     0
+
+153         490 STORE_NAME              54 (UpdateInfo)
+
+164         492 PUSH_NULL
+            494 LOAD_BUILD_CLASS
+            496 LOAD_CONST              36 (<code object AutoUpdater at 0x17ae5d60, file "updater.py", line 164>)
+            498 MAKE_FUNCTION            0
+            500 LOAD_CONST              37 ('AutoUpdater')
+            502 CALL                     2
+            510 STORE_NAME              55 (AutoUpdater)
+            512 RETURN_CONST             1 (None)
+
+Disassembly of <code object UpdateError at 0x7f6aed1a5d70, file "updater.py", line 78>:
+ 78           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('UpdateError')
+              8 STORE_NAME               2 (__qualname__)
+
+ 79          10 RETURN_CONST             1 (None)
+
+Disassembly of <code object parse_version at 0x7f6aed18d830, file "updater.py", line 87>:
+ 87           0 RESUME                   0
+
+ 88           2 NOP
+
+ 89           4 LOAD_GLOBAL              0 (_VER_RE)
+             14 LOAD_ATTR                3 (NULL|self + match)
+             34 LOAD_GLOBAL              5 (NULL + str)
+             44 LOAD_FAST                0 (text)
+             46 COPY                     1
+             48 POP_JUMP_IF_TRUE         2 (to 54)
+             50 POP_TOP
+             52 LOAD_CONST               1 ('')
+        >>   54 CALL                     1
+             62 CALL                     1
+             70 STORE_FAST               1 (m)
+
+ 90          72 LOAD_FAST                1 (m)
+             74 POP_JUMP_IF_TRUE         1 (to 78)
+
+ 91          76 RETURN_CONST             0 (None)
+
+ 92     >>   78 LOAD_GLOBAL              7 (NULL + tuple)
+             88 LOAD_CONST               2 (<code object <genexpr> at 0x7f6aed7f7830, file "updater.py", line 92>)
+             90 MAKE_FUNCTION            0
+             92 LOAD_FAST                1 (m)
+             94 LOAD_ATTR                9 (NULL|self + group)
+            114 LOAD_CONST               3 (1)
+            116 LOAD_CONST               4 (2)
+            118 LOAD_CONST               5 (3)
+            120 CALL                     3
+            128 GET_ITER
+            130 CALL                     0
+            138 CALL                     1
+            146 STORE_FAST               2 (nums)
+
+ 93         148 LOAD_FAST                1 (m)
+            150 LOAD_ATTR                9 (NULL|self + group)
+            170 LOAD_CONST               6 (4)
+            172 CALL                     1
+            180 LOAD_ATTR               11 (NULL|self + strip)
+            200 CALL                     0
+            208 STORE_FAST               3 (suffix)
+
+ 94         210 LOAD_GLOBAL             12 (_PRE_RE)
+            220 LOAD_ATTR                3 (NULL|self + match)
+            240 LOAD_FAST                3 (suffix)
+            242 CALL                     1
+            250 STORE_FAST               4 (pre)
+
+ 95         252 LOAD_FAST                2 (nums)
+            254 LOAD_FAST                4 (pre)
+            256 POP_JUMP_IF_FALSE       20 (to 298)
+            258 LOAD_CONST               7 (0)
+            260 LOAD_FAST                3 (suffix)
+            262 LOAD_ATTR               15 (NULL|self + lower)
+            282 CALL                     0
+            290 BUILD_TUPLE              2
+            292 BINARY_OP                0 (+)
+            296 RETURN_VALUE
+        >>  298 LOAD_CONST               8 ((1, ''))
+            300 BINARY_OP                0 (+)
+            304 RETURN_VALUE
+
+Disassembly of <code object <genexpr> at 0x7f6aed7f7830, file "updater.py", line 92>:
+ 92           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+              6 LOAD_FAST                0 (.0)
+        >>    8 FOR_ITER                19 (to 50)
+             12 STORE_FAST               1 (x)
+             14 LOAD_FAST                1 (x)
+             16 POP_JUMP_IF_FALSE       11 (to 40)
+             18 LOAD_GLOBAL              1 (NULL + int)
+             28 LOAD_FAST                1 (x)
+             30 CALL                     1
+             38 JUMP_FORWARD             1 (to 42)
+        >>   40 LOAD_CONST               0 (0)
+        >>   42 YIELD_VALUE              1
+             44 RESUME                   1
+             46 POP_TOP
+             48 JUMP_BACKWARD           21 (to 8)
+        >>   50 END_FOR
+             52 RETURN_CONST             1 (None)
+        >>   54 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             56 RERAISE                  1
+ExceptionTable:
+  4 to 52 -> 54 [0] lasti
+
+Disassembly of <code object is_newer at 0x7f6aed7ff990, file "updater.py", line 98>:
+ 98           0 RESUME                   0
+
+ 99           2 LOAD_GLOBAL              1 (NULL + parse_version)
+             12 LOAD_FAST                0 (latest)
+             14 CALL                     1
+             22 LOAD_GLOBAL              1 (NULL + parse_version)
+             32 LOAD_FAST                1 (current)
+             34 CALL                     1
+             42 STORE_FAST               3 (b)
+             44 STORE_FAST               2 (a)
+
+100          46 LOAD_FAST                2 (a)
+             48 LOAD_CONST               0 (None)
+             50 IS_OP                    1
+             52 COPY                     1
+             54 POP_JUMP_IF_FALSE       11 (to 78)
+             56 POP_TOP
+             58 LOAD_FAST                3 (b)
+             60 LOAD_CONST               0 (None)
+             62 IS_OP                    1
+             64 COPY                     1
+             66 POP_JUMP_IF_FALSE        5 (to 78)
+             68 POP_TOP
+             70 LOAD_FAST                2 (a)
+             72 LOAD_FAST                3 (b)
+             74 COMPARE_OP              68 (>)
+        >>   78 RETURN_VALUE
+
+Disassembly of <code object _trusted_host at 0x7f6aed7e7750, file "updater.py", line 104>:
+              0 MAKE_CELL                0 (host)
+
+104           2 RESUME                   0
+
+105           4 LOAD_DEREF               0 (host)
+              6 COPY                     1
+              8 POP_JUMP_IF_TRUE         2 (to 14)
+             10 POP_TOP
+             12 LOAD_CONST               1 ('')
+        >>   14 LOAD_ATTR                1 (NULL|self + lower)
+             34 CALL                     0
+             42 STORE_DEREF              0 (host)
+
+106          44 LOAD_GLOBAL              3 (NULL + any)
+             54 LOAD_CLOSURE             0 (host)
+             56 BUILD_TUPLE              1
+             58 LOAD_CONST               2 (<code object <genexpr> at 0x7f6aed7e7ab0, file "updater.py", line 106>)
+             60 MAKE_FUNCTION            8 (closure)
+             62 LOAD_GLOBAL              4 (TRUSTED_HOST_SUFFIXES)
+             72 GET_ITER
+             74 CALL                     0
+             82 CALL                     1
+             90 RETURN_VALUE
+
+Disassembly of <code object <genexpr> at 0x7f6aed7e7ab0, file "updater.py", line 106>:
+              0 COPY_FREE_VARS           1
+
+106           2 RETURN_GENERATOR
+              4 POP_TOP
+              6 RESUME                   0
+              8 LOAD_FAST                0 (.0)
+        >>   10 FOR_ITER                31 (to 76)
+             14 STORE_FAST               1 (s)
+             16 LOAD_DEREF               2 (host)
+             18 LOAD_FAST                1 (s)
+             20 COMPARE_OP              40 (==)
+             24 COPY                     1
+             26 POP_JUMP_IF_TRUE        20 (to 68)
+             28 POP_TOP
+             30 LOAD_DEREF               2 (host)
+             32 LOAD_ATTR                1 (NULL|self + endswith)
+             52 LOAD_CONST               0 ('.')
+             54 LOAD_FAST                1 (s)
+             56 BINARY_OP                0 (+)
+             60 CALL                     1
+        >>   68 YIELD_VALUE              1
+             70 RESUME                   1
+             72 POP_TOP
+             74 JUMP_BACKWARD           33 (to 10)
+        >>   76 END_FOR
+             78 RETURN_CONST             1 (None)
+        >>   80 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             82 RERAISE                  1
+ExceptionTable:
+  6 to 78 -> 80 [0] lasti
+
+Disassembly of <code object _SafeRedirect at 0x7f6aed805ed0, file "updater.py", line 109>:
+              0 MAKE_CELL                0 (__class__)
+
+109           2 RESUME                   0
+              4 LOAD_NAME                0 (__name__)
+              6 STORE_NAME               1 (__module__)
+              8 LOAD_CONST               0 ('_SafeRedirect')
+             10 STORE_NAME               2 (__qualname__)
+
+110          12 NOP
+
+112          14 LOAD_CLOSURE             0 (__class__)
+             16 BUILD_TUPLE              1
+             18 LOAD_CONST               1 (<code object redirect_request at 0x7f6af1f8e470, file "updater.py", line 112>)
+             20 MAKE_FUNCTION            8 (closure)
+             22 STORE_NAME               3 (redirect_request)
+             24 LOAD_CLOSURE             0 (__class__)
+             26 COPY                     1
+             28 STORE_NAME               4 (__classcell__)
+             30 RETURN_VALUE
+
+Disassembly of <code object redirect_request at 0x7f6af1f8e470, file "updater.py", line 112>:
+              0 COPY_FREE_VARS           1
+
+112           2 RESUME                   0
+
+113           4 LOAD_GLOBAL              0 (urllib)
+             14 LOAD_ATTR                2 (parse)
+             34 LOAD_ATTR                5 (NULL|self + urlparse)
+             54 LOAD_FAST                6 (newurl)
+             56 CALL                     1
+             64 STORE_FAST               7 (u)
+
+114          66 LOAD_FAST                7 (u)
+             68 LOAD_ATTR                6 (scheme)
+             88 LOAD_CONST               1 ('https')
+             90 COMPARE_OP              55 (!=)
+             94 POP_JUMP_IF_TRUE        21 (to 138)
+             96 LOAD_GLOBAL              9 (NULL + _trusted_host)
+            106 LOAD_FAST                7 (u)
+            108 LOAD_ATTR               10 (hostname)
+            128 CALL                     1
+            136 POP_JUMP_IF_TRUE        44 (to 226)
+
+115     >>  138 LOAD_GLOBAL              0 (urllib)
+            148 LOAD_ATTR               12 (error)
+            168 LOAD_ATTR               15 (NULL|self + URLError)
+            188 LOAD_CONST               2 ('redirect to an untrusted address refused: ')
+            190 LOAD_FAST                7 (u)
+            192 LOAD_ATTR               10 (hostname)
+            212 FORMAT_VALUE             0
+            214 BUILD_STRING             2
+            216 CALL                     1
+            224 RAISE_VARARGS            1
+
+116     >>  226 LOAD_GLOBAL             16 (super)
+            236 LOAD_DEREF               8 (__class__)
+            238 LOAD_FAST                0 (self)
+            240 LOAD_SUPER_ATTR         37 (NULL|self + redirect_request)
+            244 LOAD_FAST                1 (req)
+            246 LOAD_FAST                2 (fp)
+            248 LOAD_FAST                3 (code)
+            250 LOAD_FAST                4 (msg)
+            252 LOAD_FAST                5 (headers)
+            254 LOAD_FAST                6 (newurl)
+            256 CALL                     6
+            264 RETURN_VALUE
+
+Disassembly of <code object _CertFallbackOpener at 0x7f6aed806790, file "updater.py", line 119>:
+119           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('_CertFallbackOpener')
+              8 STORE_NAME               2 (__qualname__)
+
+120          10 NOP
+
+122          12 LOAD_CONST               1 (<code object __init__ at 0x7f6aed1d35a0, file "updater.py", line 122>)
+             14 MAKE_FUNCTION            0
+             16 STORE_NAME               3 (__init__)
+
+126          18 LOAD_CONST               4 ((None,))
+             20 LOAD_CONST               3 (<code object open at 0x179de120, file "updater.py", line 126>)
+             22 MAKE_FUNCTION            1 (defaults)
+             24 STORE_NAME               4 (open)
+             26 RETURN_CONST             2 (None)
+
+Disassembly of <code object __init__ at 0x7f6aed1d35a0, file "updater.py", line 122>:
+122           0 RESUME                   0
+
+123           2 LOAD_GLOBAL              0 (urllib)
+             12 LOAD_ATTR                2 (request)
+             32 LOAD_ATTR                5 (NULL|self + build_opener)
+             52 LOAD_GLOBAL              6 (_SafeRedirect)
+             62 CALL                     1
+             70 LOAD_FAST                0 (self)
+             72 STORE_ATTR               4 (_main)
+
+124          82 LOAD_CONST               0 (None)
+             84 LOAD_FAST                0 (self)
+             86 STORE_ATTR               5 (_bundled)
+             96 RETURN_CONST             0 (None)
+
+Disassembly of <code object open at 0x179de120, file "updater.py", line 126>:
+126           0 RESUME                   0
+
+127           2 NOP
+
+128           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (_main)
+             26 LOAD_ATTR                3 (NULL|self + open)
+             46 LOAD_FAST                1 (req)
+             48 LOAD_FAST                2 (timeout)
+             50 KW_NAMES                 1 (('timeout',))
+             52 CALL                     2
+             60 RETURN_VALUE
+        >>   62 PUSH_EXC_INFO
+
+129          64 LOAD_GLOBAL              4 (urllib)
+             74 LOAD_ATTR                6 (error)
+             94 LOAD_ATTR                8 (URLError)
+            114 LOAD_GLOBAL             10 (OSError)
+            124 BUILD_TUPLE              2
+            126 CHECK_EXC_MATCH
+            128 POP_JUMP_IF_FALSE      167 (to 464)
+            130 STORE_FAST               3 (e)
+
+130         132 LOAD_GLOBAL             13 (NULL + telemetry)
+            142 LOAD_ATTR               14 (is_cert_error)
+            162 LOAD_FAST                3 (e)
+            164 CALL                     1
+            172 POP_JUMP_IF_TRUE         1 (to 176)
+
+131         174 RAISE_VARARGS            0
+
+132     >>  176 LOAD_FAST                0 (self)
+            178 LOAD_ATTR               16 (_bundled)
+            198 POP_JUMP_IF_NOT_NONE    94 (to 388)
+
+133         200 LOAD_GLOBAL             13 (NULL + telemetry)
+            210 LOAD_ATTR               18 (bundled_context)
+            230 CALL                     0
+            238 STORE_FAST               4 (ctx)
+
+134         240 LOAD_FAST                4 (ctx)
+            242 POP_JUMP_IF_NOT_NONE     1 (to 246)
+
+135         244 RAISE_VARARGS            0
+
+136     >>  246 LOAD_GLOBAL              4 (urllib)
+            256 LOAD_ATTR               20 (request)
+            276 LOAD_ATTR               23 (NULL|self + build_opener)
+            296 LOAD_GLOBAL             24 (_SafeRedirect)
+            306 LOAD_GLOBAL              4 (urllib)
+            316 LOAD_ATTR               20 (request)
+            336 LOAD_ATTR               27 (NULL|self + HTTPSHandler)
+            356 LOAD_FAST                4 (ctx)
+            358 KW_NAMES                 2 (('context',))
+            360 CALL                     1
+            368 CALL                     2
+            376 LOAD_FAST                0 (self)
+            378 STORE_ATTR               8 (_bundled)
+
+137     >>  388 LOAD_FAST                0 (self)
+            390 LOAD_ATTR               16 (_bundled)
+            410 LOAD_ATTR                3 (NULL|self + open)
+            430 LOAD_FAST                1 (req)
+            432 LOAD_FAST                2 (timeout)
+            434 KW_NAMES                 1 (('timeout',))
+            436 CALL                     2
+            444 SWAP                     2
+            446 POP_EXCEPT
+            448 LOAD_CONST               0 (None)
+            450 STORE_FAST               3 (e)
+            452 DELETE_FAST              3 (e)
+            454 RETURN_VALUE
+        >>  456 LOAD_CONST               0 (None)
+            458 STORE_FAST               3 (e)
+            460 DELETE_FAST              3 (e)
+            462 RERAISE                  1
+
+129     >>  464 RERAISE                  0
+        >>  466 COPY                     3
+            468 POP_EXCEPT
+            470 RERAISE                  1
+ExceptionTable:
+  4 to 58 -> 62 [0]
+  62 to 130 -> 466 [1] lasti
+  132 to 442 -> 456 [1] lasti
+  444 to 444 -> 466 [1] lasti
+  456 to 464 -> 466 [1] lasti
+
+Disassembly of <code object build_opener at 0x7f6aed8079f0, file "updater.py", line 140>:
+140           0 RESUME                   0
+
+141           2 LOAD_GLOBAL              1 (NULL + _CertFallbackOpener)
+             12 CALL                     0
+             20 RETURN_VALUE
+
+Disassembly of <code object clean_env at 0x7f6af1e2b3c0, file "updater.py", line 144>:
+144           0 RESUME                   0
+
+145           2 NOP
+
+147           4 LOAD_FAST                0 (env)
+              6 LOAD_ATTR                1 (NULL|self + items)
+             26 CALL                     0
+             34 GET_ITER
+             36 LOAD_FAST_AND_CLEAR      1 (k)
+             38 LOAD_FAST_AND_CLEAR      2 (v)
+             40 SWAP                     3
+             42 BUILD_MAP                0
+             44 SWAP                     2
+        >>   46 FOR_ITER                60 (to 170)
+             50 UNPACK_SEQUENCE          2
+             54 STORE_FAST               1 (k)
+             56 STORE_FAST               2 (v)
+             58 LOAD_FAST                1 (k)
+             60 LOAD_ATTR                3 (NULL|self + upper)
+             80 CALL                     0
+             88 LOAD_ATTR                5 (NULL|self + startswith)
+            108 LOAD_CONST               1 ('_PYI')
+            110 CALL                     1
+            118 POP_JUMP_IF_FALSE        1 (to 122)
+            120 JUMP_BACKWARD           38 (to 46)
+        >>  122 LOAD_FAST                1 (k)
+            124 LOAD_ATTR                3 (NULL|self + upper)
+            144 CALL                     0
+            152 LOAD_CONST               2 ('_MEIPASS2')
+            154 COMPARE_OP              55 (!=)
+            158 POP_JUMP_IF_TRUE         1 (to 162)
+            160 JUMP_BACKWARD           58 (to 46)
+        >>  162 LOAD_FAST                1 (k)
+            164 LOAD_FAST                2 (v)
+            166 MAP_ADD                  2
+            168 JUMP_BACKWARD           62 (to 46)
+        >>  170 END_FOR
+            172 STORE_FAST               3 (out)
+            174 STORE_FAST               1 (k)
+            176 STORE_FAST               2 (v)
+
+148         178 LOAD_CONST               3 ('1')
+            180 LOAD_FAST                3 (out)
+            182 LOAD_CONST               4 ('PYINSTALLER_RESET_ENVIRONMENT')
+            184 STORE_SUBSCR
+
+149         188 LOAD_FAST                3 (out)
+            190 RETURN_VALUE
+        >>  192 SWAP                     2
+            194 POP_TOP
+
+147         196 SWAP                     3
+            198 STORE_FAST               2 (v)
+            200 STORE_FAST               1 (k)
+            202 RERAISE                  0
+ExceptionTable:
+  42 to 118 -> 192 [3]
+  122 to 158 -> 192 [3]
+  162 to 170 -> 192 [3]
+
+Disassembly of <code object UpdateInfo at 0x7f6aed1d2af0, file "updater.py", line 152>:
+152           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('UpdateInfo')
+              8 STORE_NAME               2 (__qualname__)
+             10 SETUP_ANNOTATIONS
+
+154          12 LOAD_NAME                3 (str)
+             14 LOAD_NAME                4 (__annotations__)
+             16 LOAD_CONST               1 ('tag')
+             18 STORE_SUBSCR
+
+155          22 LOAD_NAME                3 (str)
+             24 LOAD_NAME                4 (__annotations__)
+             26 LOAD_CONST               2 ('latest_version')
+             28 STORE_SUBSCR
+
+156          32 LOAD_NAME                3 (str)
+             34 LOAD_NAME                4 (__annotations__)
+             36 LOAD_CONST               3 ('release_notes')
+             38 STORE_SUBSCR
+
+157          42 LOAD_NAME                3 (str)
+             44 LOAD_NAME                4 (__annotations__)
+             46 LOAD_CONST               4 ('download_url')
+             48 STORE_SUBSCR
+
+158          52 LOAD_NAME                3 (str)
+             54 LOAD_NAME                4 (__annotations__)
+             56 LOAD_CONST               5 ('asset_name')
+             58 STORE_SUBSCR
+
+159          62 LOAD_CONST               6 (0)
+             64 STORE_NAME               5 (size)
+             66 LOAD_NAME                6 (int)
+             68 LOAD_NAME                4 (__annotations__)
+             70 LOAD_CONST               7 ('size')
+             72 STORE_SUBSCR
+
+160          76 LOAD_CONST               8 ('')
+             78 STORE_NAME               7 (sha256)
+             80 LOAD_NAME                3 (str)
+             82 LOAD_NAME                4 (__annotations__)
+             84 LOAD_CONST               9 ('sha256')
+             86 STORE_SUBSCR
+
+161          90 LOAD_CONST               8 ('')
+             92 STORE_NAME               8 (page_url)
+             94 LOAD_NAME                3 (str)
+             96 LOAD_NAME                4 (__annotations__)
+             98 LOAD_CONST              10 ('page_url')
+            100 STORE_SUBSCR
+            104 RETURN_CONST            11 (None)
+
+Disassembly of <code object AutoUpdater at 0x17ae5d60, file "updater.py", line 164>:
+164           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('AutoUpdater')
+              8 STORE_NAME               2 (__qualname__)
+
+165          10 LOAD_NAME                3 (__version__)
+             12 LOAD_NAME                4 (GITHUB_REPO)
+             14 LOAD_CONST               1 (None)
+             16 LOAD_CONST               1 (None)
+
+166          18 LOAD_CONST               1 (None)
+             20 LOAD_CONST               1 (None)
+             22 LOAD_NAME                5 (MIN_EXE_BYTES)
+
+165          24 BUILD_TUPLE              7
+             26 LOAD_CONST               2 ('current_version')
+             28 LOAD_NAME                6 (str)
+             30 LOAD_CONST               3 ('repo')
+             32 LOAD_NAME                6 (str)
+             34 LOAD_CONST               4 ('frozen')
+             36 LOAD_NAME                7 (Optional)
+             38 LOAD_NAME                8 (bool)
+             40 BINARY_SUBSCR
+             44 LOAD_CONST               5 ('exe_path')
+
+166          46 LOAD_NAME                7 (Optional)
+             48 LOAD_NAME                6 (str)
+             50 BINARY_SUBSCR
+
+165          54 LOAD_CONST               6 ('url_ok')
+
+166          56 LOAD_NAME                7 (Optional)
+             58 LOAD_NAME                9 (Callable)
+             60 LOAD_NAME                6 (str)
+             62 BUILD_LIST               1
+             64 LOAD_NAME                8 (bool)
+             66 BUILD_TUPLE              2
+             68 BINARY_SUBSCR
+             72 BINARY_SUBSCR
+
+165          76 LOAD_CONST               7 ('min_exe_bytes')
+
+166          78 LOAD_NAME               10 (int)
+
+165          80 BUILD_TUPLE             12
+             82 LOAD_CONST               8 (<code object __init__ at 0x7f6af1f8ed80, file "updater.py", line 165>)
+             84 MAKE_FUNCTION            5 (defaults, annotations)
+             86 STORE_NAME              11 (__init__)
+
+176          88 LOAD_NAME               12 (property)
+
+177          90 LOAD_CONST               9 ('return')
+             92 LOAD_NAME                8 (bool)
+             94 BUILD_TUPLE              2
+             96 LOAD_CONST              10 (<code object can_self_replace at 0x7f6aed807750, file "updater.py", line 176>)
+             98 MAKE_FUNCTION            4 (annotations)
+
+176         100 CALL                     0
+
+177         108 STORE_NAME              13 (can_self_replace)
+
+180         110 LOAD_NAME               12 (property)
+
+181         112 LOAD_CONST               9 ('return')
+            114 LOAD_NAME                6 (str)
+            116 BUILD_TUPLE              2
+            118 LOAD_CONST              11 (<code object api_url at 0x7f6aed17da70, file "updater.py", line 180>)
+            120 MAKE_FUNCTION            4 (annotations)
+
+180         122 CALL                     0
+
+181         130 STORE_NAME              14 (api_url)
+
+184         132 LOAD_CONST              12 ('url')
+            134 LOAD_NAME                6 (str)
+            136 LOAD_CONST               9 ('return')
+            138 LOAD_NAME                8 (bool)
+            140 BUILD_TUPLE              4
+            142 LOAD_CONST              13 (<code object _repo_download_url at 0x7f6aed1d2fb0, file "updater.py", line 184>)
+            144 MAKE_FUNCTION            4 (annotations)
+            146 STORE_NAME              15 (_repo_download_url)
+
+187         148 LOAD_CONST              36 (('*/*',))
+            150 LOAD_CONST              12 ('url')
+            152 LOAD_NAME                6 (str)
+            154 LOAD_CONST              14 ('accept')
+            156 LOAD_NAME                6 (str)
+            158 BUILD_TUPLE              4
+            160 LOAD_CONST              15 (<code object _request at 0x7f6aed1d30e0, file "updater.py", line 187>)
+            162 MAKE_FUNCTION            5 (defaults, annotations)
+            164 STORE_NAME              16 (_request)
+
+191         166 LOAD_CONST               9 ('return')
+            168 LOAD_NAME                7 (Optional)
+            170 LOAD_NAME               17 (dict)
+            172 BINARY_SUBSCR
+            176 BUILD_TUPLE              2
+            178 LOAD_CONST              16 (<code object _pick_asset at 0x17a8c5e0, file "updater.py", line 191>)
+            180 MAKE_FUNCTION            4 (annotations)
+            182 STORE_NAME              18 (_pick_asset)
+
+203         184 LOAD_CONST               9 ('return')
+            186 LOAD_NAME                7 (Optional)
+            188 LOAD_NAME               19 (UpdateInfo)
+            190 BINARY_SUBSCR
+            194 BUILD_TUPLE              2
+            196 LOAD_CONST              17 (<code object check_for_updates at 0x17ae5610, file "updater.py", line 203>)
+            198 MAKE_FUNCTION            4 (annotations)
+            200 STORE_NAME              20 (check_for_updates)
+
+235         202 LOAD_CONST              18 ('callback')
+            204 LOAD_NAME                9 (Callable)
+            206 LOAD_NAME                7 (Optional)
+            208 LOAD_NAME               19 (UpdateInfo)
+            210 BINARY_SUBSCR
+            214 BUILD_LIST               1
+            216 LOAD_CONST               1 (None)
+            218 BUILD_TUPLE              2
+            220 BINARY_SUBSCR
+            224 LOAD_CONST               9 ('return')
+            226 LOAD_NAME               21 (threading)
+            228 LOAD_ATTR               44 (Thread)
+            248 BUILD_TUPLE              4
+            250 LOAD_CONST              19 (<code object check_async at 0x7f6aed1d0ae0, file "updater.py", line 235>)
+            252 MAKE_FUNCTION            4 (annotations)
+            254 STORE_NAME              23 (check_async)
+
+250         256 LOAD_CONST              20 ('path')
+            258 LOAD_NAME                6 (str)
+            260 LOAD_CONST               9 ('return')
+            262 LOAD_CONST               1 (None)
+            264 BUILD_TUPLE              4
+            266 LOAD_CONST              21 (<code object _check_exe at 0x7f6aecfc0370, file "updater.py", line 250>)
+            268 MAKE_FUNCTION            4 (annotations)
+            270 STORE_NAME              24 (_check_exe)
+
+256         272 LOAD_CONST              22 ('zip_path')
+            274 LOAD_NAME                6 (str)
+            276 LOAD_CONST              23 ('dest')
+            278 LOAD_NAME                6 (str)
+            280 LOAD_CONST               9 ('return')
+            282 LOAD_CONST               1 (None)
+            284 BUILD_TUPLE              6
+            286 LOAD_CONST              24 (<code object _extract_exe at 0x17a8ed10, file "updater.py", line 256>)
+            288 MAKE_FUNCTION            4 (annotations)
+            290 STORE_NAME              25 (_extract_exe)
+
+269         292 LOAD_CONST              12 ('url')
+            294 LOAD_NAME                6 (str)
+            296 LOAD_CONST              20 ('path')
+            298 LOAD_NAME                6 (str)
+            300 LOAD_CONST              25 ('progress')
+            302 LOAD_NAME                9 (Callable)
+            304 LOAD_NAME               10 (int)
+            306 BUILD_LIST               1
+            308 LOAD_CONST               1 (None)
+            310 BUILD_TUPLE              2
+            312 BINARY_SUBSCR
+            316 LOAD_CONST              26 ('size')
+            318 LOAD_NAME               10 (int)
+            320 LOAD_CONST              27 ('sha256')
+            322 LOAD_NAME                6 (str)
+            324 LOAD_CONST               9 ('return')
+            326 LOAD_CONST               1 (None)
+            328 BUILD_TUPLE             12
+            330 LOAD_CONST              28 (<code object _download at 0x17ac1270, file "updater.py", line 269>)
+            332 MAKE_FUNCTION            4 (annotations)
+            334 STORE_NAME              26 (_download)
+
+297         336 LOAD_CONST              37 ((None, '', 0))
+            338 LOAD_CONST              29 ('progress_callback')
+            340 LOAD_NAME                7 (Optional)
+            342 LOAD_NAME                9 (Callable)
+            344 LOAD_NAME               10 (int)
+            346 BUILD_LIST               1
+            348 LOAD_CONST               1 (None)
+            350 BUILD_TUPLE              2
+            352 BINARY_SUBSCR
+            356 BINARY_SUBSCR
+            360 LOAD_CONST              27 ('sha256')
+            362 LOAD_NAME                6 (str)
+            364 LOAD_CONST              26 ('size')
+            366 LOAD_NAME               10 (int)
+            368 LOAD_CONST               9 ('return')
+            370 LOAD_NAME                6 (str)
+            372 BUILD_TUPLE              8
+            374 LOAD_CONST              30 (<code object download_update at 0x17a986e0, file "updater.py", line 297>)
+            376 MAKE_FUNCTION            5 (defaults, annotations)
+            378 STORE_NAME              27 (download_update)
+
+337         380 LOAD_NAME               28 (staticmethod)
+
+338         382 LOAD_CONST              20 ('path')
+            384 LOAD_NAME                6 (str)
+            386 LOAD_CONST               9 ('return')
+            388 LOAD_CONST               1 (None)
+            390 BUILD_TUPLE              4
+            392 LOAD_CONST              31 (<code object _discard at 0x7f6aed1feb80, file "updater.py", line 337>)
+            394 MAKE_FUNCTION            4 (annotations)
+
+337         396 CALL                     0
+
+338         404 STORE_NAME              29 (_discard)
+
+346         406 LOAD_CONST              32 ('staged_path')
+            408 LOAD_NAME                6 (str)
+            410 LOAD_CONST               9 ('return')
+            412 LOAD_NAME                6 (str)
+            414 BUILD_TUPLE              4
+            416 LOAD_CONST              33 (<code object launch_runner at 0x17ae87b0, file "updater.py", line 346>)
+            418 MAKE_FUNCTION            4 (annotations)
+            420 STORE_NAME              30 (launch_runner)
+
+365         422 NOP
+
+366         424 NOP
+
+365         426 LOAD_CONST              38 ((None, '', 0, None))
+            428 LOAD_CONST              29 ('progress_callback')
+            430 LOAD_NAME                7 (Optional)
+            432 LOAD_NAME                9 (Callable)
+            434 LOAD_NAME               10 (int)
+            436 BUILD_LIST               1
+            438 LOAD_CONST               1 (None)
+            440 BUILD_TUPLE              2
+            442 BINARY_SUBSCR
+            446 BINARY_SUBSCR
+            450 LOAD_CONST              27 ('sha256')
+
+366         452 LOAD_NAME                6 (str)
+
+365         454 LOAD_CONST              26 ('size')
+
+366         456 LOAD_NAME               10 (int)
+
+365         458 LOAD_CONST              34 ('exit_fn')
+
+366         460 LOAD_NAME                7 (Optional)
+            462 LOAD_NAME                9 (Callable)
+            464 BUILD_LIST               0
+            466 LOAD_CONST               1 (None)
+            468 BUILD_TUPLE              2
+            470 BINARY_SUBSCR
+            474 BINARY_SUBSCR
+
+365         478 LOAD_CONST               9 ('return')
+
+366         480 LOAD_CONST               1 (None)
+
+365         482 BUILD_TUPLE             10
+            484 LOAD_CONST              35 (<code object download_and_apply_update at 0x7f6aed1d10d0, file "updater.py", line 365>)
+            486 MAKE_FUNCTION            5 (defaults, annotations)
+            488 STORE_NAME              31 (download_and_apply_update)
+            490 RETURN_CONST             1 (None)
+
+Disassembly of <code object __init__ at 0x7f6af1f8ed80, file "updater.py", line 165>:
+165           0 RESUME                   0
+
+167           2 LOAD_FAST                1 (current_version)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (current)
+
+168          16 LOAD_FAST                2 (repo)
+             18 LOAD_FAST                0 (self)
+             20 STORE_ATTR               1 (repo)
+
+169          30 LOAD_FAST                3 (opener)
+             32 COPY                     1
+             34 POP_JUMP_IF_TRUE        10 (to 56)
+             36 POP_TOP
+             38 LOAD_GLOBAL              5 (NULL + build_opener)
+             48 CALL                     0
+        >>   56 LOAD_FAST                0 (self)
+             58 STORE_ATTR               3 (_opener)
+
+170          68 LOAD_FAST                4 (frozen)
+             70 POP_JUMP_IF_NOT_NONE    26 (to 124)
+             72 LOAD_GLOBAL              9 (NULL + bool)
+             82 LOAD_GLOBAL             11 (NULL + getattr)
+             92 LOAD_GLOBAL             12 (sys)
+            102 LOAD_CONST               1 ('frozen')
+            104 LOAD_CONST               2 (False)
+            106 CALL                     3
+            114 CALL                     1
+            122 JUMP_FORWARD             1 (to 126)
+        >>  124 LOAD_FAST                4 (frozen)
+        >>  126 LOAD_FAST                0 (self)
+            128 STORE_ATTR               7 (frozen)
+
+171         138 LOAD_FAST                5 (exe_path)
+            140 COPY                     1
+            142 POP_JUMP_IF_TRUE        16 (to 176)
+            144 POP_TOP
+            146 LOAD_GLOBAL             12 (sys)
+            156 LOAD_ATTR               16 (executable)
+        >>  176 LOAD_FAST                0 (self)
+            178 STORE_ATTR               9 (exe_path)
+
+172         188 LOAD_FAST                6 (url_ok)
+            190 COPY                     1
+            192 POP_JUMP_IF_TRUE        12 (to 218)
+            194 POP_TOP
+            196 LOAD_FAST                0 (self)
+            198 LOAD_ATTR               20 (_repo_download_url)
+        >>  218 LOAD_FAST                0 (self)
+            220 STORE_ATTR              11 (_url_ok)
+
+173         230 LOAD_FAST                7 (min_exe_bytes)
+            232 LOAD_FAST                0 (self)
+            234 STORE_ATTR              12 (min_exe_bytes)
+
+174         244 LOAD_CONST               3 ('')
+            246 LOAD_FAST                0 (self)
+            248 STORE_ATTR              13 (last_error)
+            258 RETURN_CONST             0 (None)
+
+Disassembly of <code object can_self_replace at 0x7f6aed807750, file "updater.py", line 176>:
+176           0 RESUME                   0
+
+178           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (frozen)
+             24 RETURN_VALUE
+
+Disassembly of <code object api_url at 0x7f6aed17da70, file "updater.py", line 180>:
+180           0 RESUME                   0
+
+182           2 LOAD_CONST               1 ('https://api.github.com/repos/')
+              4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (repo)
+             26 FORMAT_VALUE             0
+             28 LOAD_CONST               2 ('/releases/latest')
+             30 BUILD_STRING             3
+             32 RETURN_VALUE
+
+Disassembly of <code object _repo_download_url at 0x7f6aed1d2fb0, file "updater.py", line 184>:
+184           0 RESUME                   0
+
+185           2 LOAD_GLOBAL              1 (NULL + isinstance)
+             12 LOAD_FAST                1 (url)
+             14 LOAD_GLOBAL              2 (str)
+             24 CALL                     2
+             32 COPY                     1
+             34 POP_JUMP_IF_FALSE       31 (to 98)
+             36 POP_TOP
+             38 LOAD_FAST                1 (url)
+             40 LOAD_ATTR                5 (NULL|self + startswith)
+             60 LOAD_CONST               1 ('https://github.com/')
+             62 LOAD_FAST                0 (self)
+             64 LOAD_ATTR                6 (repo)
+             84 FORMAT_VALUE             0
+             86 LOAD_CONST               2 ('/releases/download/')
+             88 BUILD_STRING             3
+             90 CALL                     1
+        >>   98 RETURN_VALUE
+
+Disassembly of <code object _request at 0x7f6aed1d30e0, file "updater.py", line 187>:
+187           0 RESUME                   0
+
+188           2 LOAD_GLOBAL              0 (urllib)
+             12 LOAD_ATTR                2 (request)
+             32 LOAD_ATTR                5 (NULL|self + Request)
+             52 LOAD_FAST                1 (url)
+             54 LOAD_CONST               1 ('pk-auto-updater/')
+             56 LOAD_FAST                0 (self)
+             58 LOAD_ATTR                6 (current)
+             78 FORMAT_VALUE             0
+             80 BUILD_STRING             2
+             82 LOAD_FAST                2 (accept)
+             84 LOAD_CONST               2 (('User-Agent', 'Accept'))
+             86 BUILD_CONST_KEY_MAP      2
+             88 KW_NAMES                 3 (('headers',))
+             90 CALL                     2
+             98 RETURN_VALUE
+
+Disassembly of <code object _pick_asset at 0x17a8c5e0, file "updater.py", line 191>:
+191           0 RESUME                   0
+
+192           2 BUILD_LIST               0
+              4 STORE_FAST               2 (found)
+
+193           6 LOAD_GLOBAL              1 (NULL + isinstance)
+             16 LOAD_FAST                1 (assets)
+             18 LOAD_GLOBAL              2 (list)
+             28 CALL                     2
+             36 POP_JUMP_IF_FALSE        2 (to 42)
+             38 LOAD_FAST                1 (assets)
+             40 JUMP_FORWARD             1 (to 44)
+        >>   42 BUILD_LIST               0
+        >>   44 GET_ITER
+        >>   46 FOR_ITER               190 (to 430)
+             50 STORE_FAST               3 (a)
+
+194          52 LOAD_GLOBAL              1 (NULL + isinstance)
+             62 LOAD_FAST                3 (a)
+             64 LOAD_GLOBAL              4 (dict)
+             74 CALL                     2
+             82 POP_JUMP_IF_TRUE         1 (to 86)
+
+195          84 JUMP_BACKWARD           20 (to 46)
+
+196     >>   86 LOAD_GLOBAL              7 (NULL + str)
+             96 LOAD_FAST                3 (a)
+             98 LOAD_ATTR                9 (NULL|self + get)
+            118 LOAD_CONST               1 ('name')
+            120 LOAD_CONST               2 ('')
+            122 CALL                     2
+            130 CALL                     1
+            138 LOAD_FAST                3 (a)
+            140 LOAD_ATTR                9 (NULL|self + get)
+            160 LOAD_CONST               3 ('browser_download_url')
+            162 CALL                     1
+            170 STORE_FAST               5 (url)
+            172 STORE_FAST               4 (name)
+
+197         174 LOAD_FAST                4 (name)
+            176 LOAD_ATTR               11 (NULL|self + lower)
+            196 CALL                     0
+            204 STORE_FAST               6 (low)
+
+198         206 LOAD_FAST                6 (low)
+            208 LOAD_ATTR               13 (NULL|self + endswith)
+            228 LOAD_CONST               4 ('.exe')
+            230 CALL                     1
+            238 POP_JUMP_IF_TRUE        17 (to 274)
+            240 LOAD_FAST                6 (low)
+            242 LOAD_ATTR               13 (NULL|self + endswith)
+            262 LOAD_CONST               5 ('.zip')
+            264 CALL                     1
+            272 POP_JUMP_IF_FALSE       17 (to 308)
+        >>  274 LOAD_FAST                0 (self)
+            276 LOAD_ATTR               15 (NULL|self + _url_ok)
+            296 LOAD_FAST                5 (url)
+            298 CALL                     1
+            306 POP_JUMP_IF_TRUE         1 (to 310)
+
+199     >>  308 JUMP_BACKWARD          132 (to 46)
+
+200     >>  310 LOAD_FAST                2 (found)
+            312 LOAD_ATTR               17 (NULL|self + append)
+            332 LOAD_FAST                6 (low)
+            334 LOAD_ATTR               13 (NULL|self + endswith)
+            354 LOAD_CONST               4 ('.exe')
+            356 CALL                     1
+            364 POP_JUMP_IF_FALSE        2 (to 370)
+            366 LOAD_CONST               6 (0)
+            368 JUMP_FORWARD             1 (to 372)
+        >>  370 LOAD_CONST               7 (1)
+        >>  372 LOAD_FAST                6 (low)
+            374 LOAD_ATTR               19 (NULL|self + startswith)
+            394 LOAD_CONST               8 ('pk-auto')
+            396 CALL                     1
+            404 POP_JUMP_IF_FALSE        2 (to 410)
+            406 LOAD_CONST               6 (0)
+            408 JUMP_FORWARD             1 (to 412)
+        >>  410 LOAD_CONST               7 (1)
+        >>  412 LOAD_FAST                4 (name)
+            414 LOAD_FAST                3 (a)
+            416 BUILD_TUPLE              4
+            418 CALL                     1
+            426 POP_TOP
+            428 JUMP_BACKWARD          192 (to 46)
+
+193     >>  430 END_FOR
+
+201         432 LOAD_FAST                2 (found)
+            434 POP_JUMP_IF_FALSE       17 (to 470)
+            436 LOAD_GLOBAL             21 (NULL + min)
+            446 LOAD_FAST                2 (found)
+            448 LOAD_CONST               9 (<code object <lambda> at 0x7f6aed1a6660, file "updater.py", line 201>)
+            450 MAKE_FUNCTION            0
+            452 KW_NAMES                10 (('key',))
+            454 CALL                     2
+            462 LOAD_CONST              11 (3)
+            464 BINARY_SUBSCR
+            468 RETURN_VALUE
+        >>  470 LOAD_CONST               0 (None)
+            472 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed1a6660, file "updater.py", line 201>:
+201           0 RESUME                   0
+              2 LOAD_FAST                0 (t)
+              4 LOAD_CONST               0 (None)
+              6 LOAD_CONST               1 (3)
+              8 BINARY_SLICE
+             10 RETURN_VALUE
+
+Disassembly of <code object check_for_updates at 0x17ae5610, file "updater.py", line 203>:
+203           0 RESUME                   0
+
+204           2 NOP
+
+205           4 LOAD_CONST               1 ('')
+              6 LOAD_FAST                0 (self)
+              8 STORE_ATTR               0 (last_error)
+
+206          18 NOP
+
+207          20 LOAD_FAST                0 (self)
+             22 LOAD_ATTR                2 (_opener)
+             42 LOAD_ATTR                5 (NULL|self + open)
+             62 LOAD_FAST                0 (self)
+             64 LOAD_ATTR                7 (NULL|self + _request)
+             84 LOAD_FAST                0 (self)
+             86 LOAD_ATTR                8 (api_url)
+            106 LOAD_CONST               2 ('application/vnd.github+json')
+            108 CALL                     2
+            116 LOAD_GLOBAL             10 (API_TIMEOUT_S)
+            126 KW_NAMES                 3 (('timeout',))
+            128 CALL                     2
+            136 BEFORE_WITH
+            138 STORE_FAST               1 (r)
+
+208         140 LOAD_GLOBAL             13 (NULL + json)
+            150 LOAD_ATTR               14 (loads)
+            170 LOAD_FAST                1 (r)
+            172 LOAD_ATTR               17 (NULL|self + read)
+            192 LOAD_CONST               4 (2000000)
+            194 CALL                     1
+            202 LOAD_ATTR               19 (NULL|self + decode)
+            222 LOAD_CONST               5 ('utf-8')
+            224 CALL                     1
+            232 CALL                     1
+            240 STORE_FAST               2 (rel)
+
+207         242 LOAD_CONST               0 (None)
+            244 LOAD_CONST               0 (None)
+            246 LOAD_CONST               0 (None)
+            248 CALL                     2
+            256 POP_TOP
+
+209     >>  258 LOAD_GLOBAL             21 (NULL + isinstance)
+            268 LOAD_FAST_CHECK          2 (rel)
+            270 LOAD_GLOBAL             22 (dict)
+            280 CALL                     2
+            288 POP_JUMP_IF_FALSE       34 (to 358)
+            290 LOAD_FAST                2 (rel)
+            292 LOAD_ATTR               25 (NULL|self + get)
+            312 LOAD_CONST               6 ('draft')
+            314 CALL                     1
+            322 POP_JUMP_IF_TRUE        17 (to 358)
+            324 LOAD_FAST                2 (rel)
+            326 LOAD_ATTR               25 (NULL|self + get)
+            346 LOAD_CONST               7 ('prerelease')
+            348 CALL                     1
+            356 POP_JUMP_IF_FALSE        1 (to 360)
+
+210     >>  358 RETURN_CONST             0 (None)
+
+211     >>  360 LOAD_GLOBAL             27 (NULL + str)
+            370 LOAD_FAST                2 (rel)
+            372 LOAD_ATTR               25 (NULL|self + get)
+            392 LOAD_CONST               8 ('tag_name')
+            394 LOAD_CONST               1 ('')
+            396 CALL                     2
+            404 CALL                     1
+            412 STORE_FAST               3 (tag)
+
+212         414 LOAD_GLOBAL             29 (NULL + is_newer)
+            424 LOAD_FAST                3 (tag)
+            426 LOAD_FAST                0 (self)
+            428 LOAD_ATTR               30 (current)
+            448 CALL                     2
+            456 POP_JUMP_IF_TRUE         1 (to 460)
+
+213         458 RETURN_CONST             0 (None)
+
+214     >>  460 LOAD_FAST                0 (self)
+            462 LOAD_ATTR               33 (NULL|self + _pick_asset)
+            482 LOAD_FAST                2 (rel)
+            484 LOAD_ATTR               25 (NULL|self + get)
+            504 LOAD_CONST               9 ('assets')
+            506 CALL                     1
+            514 CALL                     1
+            522 STORE_FAST               4 (asset)
+
+215         524 LOAD_FAST                4 (asset)
+            526 POP_JUMP_IF_NOT_NONE     8 (to 544)
+
+216         528 LOAD_CONST              10 ('no_asset')
+            530 LOAD_FAST                0 (self)
+            532 STORE_ATTR               0 (last_error)
+
+217         542 RETURN_CONST             0 (None)
+
+218     >>  544 LOAD_GLOBAL             27 (NULL + str)
+            554 LOAD_FAST                4 (asset)
+            556 LOAD_ATTR               25 (NULL|self + get)
+            576 LOAD_CONST              11 ('digest')
+            578 CALL                     1
+            586 COPY                     1
+            588 POP_JUMP_IF_TRUE         2 (to 594)
+            590 POP_TOP
+            592 LOAD_CONST               1 ('')
+        >>  594 CALL                     1
+            602 STORE_FAST               5 (digest)
+
+219         604 LOAD_FAST                5 (digest)
+            606 LOAD_ATTR               35 (NULL|self + lower)
+            626 CALL                     0
+            634 LOAD_ATTR               37 (NULL|self + startswith)
+            654 LOAD_CONST              12 ('sha256:')
+            656 CALL                     1
+            664 POP_JUMP_IF_FALSE       35 (to 736)
+            666 LOAD_FAST                5 (digest)
+            668 LOAD_ATTR               39 (NULL|self + split)
+            688 LOAD_CONST              13 (':')
+            690 LOAD_CONST              14 (1)
+            692 CALL                     2
+            700 LOAD_CONST              14 (1)
+            702 BINARY_SUBSCR
+            706 LOAD_ATTR               35 (NULL|self + lower)
+            726 CALL                     0
+            734 JUMP_FORWARD             1 (to 738)
+        >>  736 LOAD_CONST               1 ('')
+        >>  738 STORE_FAST               6 (sha)
+
+220         740 LOAD_FAST                4 (asset)
+            742 LOAD_ATTR               25 (NULL|self + get)
+            762 LOAD_CONST              15 ('size')
+            764 CALL                     1
+            772 STORE_FAST               7 (size)
+
+221         774 LOAD_GLOBAL             41 (NULL + UpdateInfo)
+
+222         784 LOAD_FAST                3 (tag)
+
+223         786 LOAD_FAST                3 (tag)
+            788 LOAD_ATTR               43 (NULL|self + lstrip)
+            808 LOAD_CONST              16 ('vV')
+            810 CALL                     1
+
+224         818 LOAD_GLOBAL             27 (NULL + str)
+            828 LOAD_FAST                2 (rel)
+            830 LOAD_ATTR               25 (NULL|self + get)
+            850 LOAD_CONST              17 ('body')
+            852 CALL                     1
+            860 COPY                     1
+            862 POP_JUMP_IF_TRUE         2 (to 868)
+            864 POP_TOP
+            866 LOAD_CONST               1 ('')
+        >>  868 CALL                     1
+            876 LOAD_CONST               0 (None)
+            878 LOAD_GLOBAL             44 (MAX_NOTES_CHARS)
+            888 BINARY_SLICE
+
+225         890 LOAD_FAST                4 (asset)
+            892 LOAD_CONST              18 ('browser_download_url')
+            894 BINARY_SUBSCR
+
+226         898 LOAD_GLOBAL             27 (NULL + str)
+            908 LOAD_FAST                4 (asset)
+            910 LOAD_ATTR               25 (NULL|self + get)
+            930 LOAD_CONST              19 ('name')
+            932 LOAD_CONST               1 ('')
+            934 CALL                     2
+            942 CALL                     1
+
+227         950 LOAD_GLOBAL             21 (NULL + isinstance)
+            960 LOAD_FAST                7 (size)
+            962 LOAD_GLOBAL             46 (int)
+            972 CALL                     2
+            980 POP_JUMP_IF_FALSE        7 (to 996)
+            982 LOAD_FAST                7 (size)
+            984 LOAD_CONST              20 (0)
+            986 COMPARE_OP              68 (>)
+            990 POP_JUMP_IF_FALSE        2 (to 996)
+            992 LOAD_FAST                7 (size)
+            994 JUMP_FORWARD             1 (to 998)
+        >>  996 LOAD_CONST              20 (0)
+
+228     >>  998 LOAD_GLOBAL             49 (NULL + re)
+           1008 LOAD_ATTR               50 (fullmatch)
+           1028 LOAD_CONST              21 ('[0-9a-f]{64}')
+           1030 LOAD_FAST                6 (sha)
+           1032 CALL                     2
+           1040 POP_JUMP_IF_FALSE        2 (to 1046)
+           1042 LOAD_FAST                6 (sha)
+           1044 JUMP_FORWARD             1 (to 1048)
+        >> 1046 LOAD_CONST               1 ('')
+
+229     >> 1048 LOAD_GLOBAL             27 (NULL + str)
+           1058 LOAD_FAST                2 (rel)
+           1060 LOAD_ATTR               25 (NULL|self + get)
+           1080 LOAD_CONST              22 ('html_url')
+           1082 CALL                     1
+           1090 COPY                     1
+           1092 POP_JUMP_IF_TRUE         2 (to 1098)
+           1094 POP_TOP
+           1096 LOAD_CONST               1 ('')
+        >> 1098 CALL                     1
+
+221        1106 KW_NAMES                23 (('tag', 'latest_version', 'release_notes', 'download_url', 'asset_name', 'size', 'sha256', 'page_url'))
+           1108 CALL                     8
+           1116 RETURN_VALUE
+
+207     >> 1118 PUSH_EXC_INFO
+           1120 WITH_EXCEPT_START
+           1122 POP_JUMP_IF_TRUE         1 (to 1126)
+           1124 RERAISE                  2
+        >> 1126 POP_TOP
+           1128 POP_EXCEPT
+           1130 POP_TOP
+           1132 POP_TOP
+           1134 EXTENDED_ARG             1
+           1136 JUMP_BACKWARD          440 (to 258)
+        >> 1138 COPY                     3
+           1140 POP_EXCEPT
+           1142 RERAISE                  1
+        >> 1144 PUSH_EXC_INFO
+
+231        1146 LOAD_GLOBAL             52 (Exception)
+           1156 CHECK_EXC_MATCH
+           1158 POP_JUMP_IF_FALSE       36 (to 1232)
+           1160 STORE_FAST               8 (e)
+
+232        1162 LOAD_GLOBAL             55 (NULL + type)
+           1172 LOAD_FAST                8 (e)
+           1174 CALL                     1
+           1182 LOAD_ATTR               56 (__name__)
+           1202 LOAD_FAST                0 (self)
+           1204 STORE_ATTR               0 (last_error)
+
+233        1214 POP_EXCEPT
+           1216 LOAD_CONST               0 (None)
+           1218 STORE_FAST               8 (e)
+           1220 DELETE_FAST              8 (e)
+           1222 RETURN_CONST             0 (None)
+        >> 1224 LOAD_CONST               0 (None)
+           1226 STORE_FAST               8 (e)
+           1228 DELETE_FAST              8 (e)
+           1230 RERAISE                  1
+
+231     >> 1232 RERAISE                  0
+        >> 1234 COPY                     3
+           1236 POP_EXCEPT
+           1238 RERAISE                  1
+ExceptionTable:
+  20 to 136 -> 1144 [0]
+  138 to 240 -> 1118 [1] lasti
+  242 to 356 -> 1144 [0]
+  360 to 456 -> 1144 [0]
+  460 to 540 -> 1144 [0]
+  544 to 1114 -> 1144 [0]
+  1118 to 1126 -> 1138 [3] lasti
+  1128 to 1142 -> 1144 [0]
+  1144 to 1160 -> 1234 [1] lasti
+  1162 to 1212 -> 1224 [1] lasti
+  1224 to 1232 -> 1234 [1] lasti
+
+Disassembly of <code object check_async at 0x7f6aed1d0ae0, file "updater.py", line 235>:
+              0 MAKE_CELL                0 (self)
+              2 MAKE_CELL                1 (callback)
+
+235           4 RESUME                   0
+
+236           6 NOP
+
+238           8 LOAD_CLOSURE             1 (callback)
+             10 LOAD_CLOSURE             0 (self)
+             12 BUILD_TUPLE              2
+             14 LOAD_CONST               1 (<code object work at 0x7f6aed7e5a10, file "updater.py", line 238>)
+             16 MAKE_FUNCTION            8 (closure)
+             18 STORE_FAST               2 (work)
+
+245          20 LOAD_GLOBAL              1 (NULL + threading)
+             30 LOAD_ATTR                2 (Thread)
+             50 LOAD_FAST                2 (work)
+             52 LOAD_CONST               2 (True)
+             54 LOAD_CONST               3 ('pk-auto-update-check')
+             56 KW_NAMES                 4 (('target', 'daemon', 'name'))
+             58 CALL                     3
+             66 STORE_FAST               3 (t)
+
+246          68 LOAD_FAST                3 (t)
+             70 LOAD_ATTR                5 (NULL|self + start)
+             90 CALL                     0
+             98 POP_TOP
+
+247         100 LOAD_FAST                3 (t)
+            102 RETURN_VALUE
+
+Disassembly of <code object work at 0x7f6aed7e5a10, file "updater.py", line 238>:
+              0 COPY_FREE_VARS           2
+
+238           2 RESUME                   0
+
+239           4 LOAD_DEREF               2 (self)
+              6 LOAD_ATTR                1 (NULL|self + check_for_updates)
+             26 CALL                     0
+             34 STORE_FAST               0 (info)
+
+240          36 NOP
+
+241          38 PUSH_NULL
+             40 LOAD_DEREF               1 (callback)
+             42 LOAD_FAST                0 (info)
+             44 CALL                     1
+             52 POP_TOP
+             54 RETURN_CONST             0 (None)
+        >>   56 PUSH_EXC_INFO
+
+242          58 LOAD_GLOBAL              2 (Exception)
+             68 CHECK_EXC_MATCH
+             70 POP_JUMP_IF_FALSE        3 (to 78)
+             72 POP_TOP
+
+243          74 POP_EXCEPT
+             76 RETURN_CONST             0 (None)
+
+242     >>   78 RERAISE                  0
+        >>   80 COPY                     3
+             82 POP_EXCEPT
+             84 RERAISE                  1
+ExceptionTable:
+  38 to 52 -> 56 [0]
+  56 to 72 -> 80 [1] lasti
+  78 to 78 -> 80 [1] lasti
+
+Disassembly of <code object _check_exe at 0x7f6aecfc0370, file "updater.py", line 250>:
+250           0 RESUME                   0
+
+251           2 LOAD_GLOBAL              1 (NULL + open)
+             12 LOAD_FAST                1 (path)
+             14 LOAD_CONST               1 ('rb')
+             16 CALL                     2
+             24 BEFORE_WITH
+             26 STORE_FAST               2 (f)
+
+252          28 LOAD_FAST                2 (f)
+             30 LOAD_ATTR                3 (NULL|self + read)
+             50 LOAD_CONST               2 (2)
+             52 CALL                     1
+             60 STORE_FAST               3 (head)
+
+251          62 LOAD_CONST               0 (None)
+             64 LOAD_CONST               0 (None)
+             66 LOAD_CONST               0 (None)
+             68 CALL                     2
+             76 POP_TOP
+
+253     >>   78 LOAD_GLOBAL              4 (os)
+             88 LOAD_ATTR                6 (path)
+            108 LOAD_ATTR                9 (NULL|self + getsize)
+            128 LOAD_FAST                1 (path)
+            130 CALL                     1
+            138 LOAD_FAST                0 (self)
+            140 LOAD_ATTR               10 (min_exe_bytes)
+            160 COMPARE_OP               2 (<)
+            164 POP_JUMP_IF_TRUE         5 (to 176)
+            166 LOAD_FAST_CHECK          3 (head)
+            168 LOAD_CONST               3 (b'MZ')
+            170 COMPARE_OP              55 (!=)
+            174 POP_JUMP_IF_FALSE       11 (to 198)
+
+254     >>  176 LOAD_GLOBAL             13 (NULL + UpdateError)
+            186 LOAD_CONST               4 ('verify')
+            188 CALL                     1
+            196 RAISE_VARARGS            1
+
+253     >>  198 RETURN_CONST             0 (None)
+
+251     >>  200 PUSH_EXC_INFO
+            202 WITH_EXCEPT_START
+            204 POP_JUMP_IF_TRUE         1 (to 208)
+            206 RERAISE                  2
+        >>  208 POP_TOP
+            210 POP_EXCEPT
+            212 POP_TOP
+            214 POP_TOP
+            216 JUMP_BACKWARD           70 (to 78)
+        >>  218 COPY                     3
+            220 POP_EXCEPT
+            222 RERAISE                  1
+ExceptionTable:
+  26 to 60 -> 200 [1] lasti
+  200 to 208 -> 218 [3] lasti
+
+Disassembly of <code object _extract_exe at 0x17a8ed10, file "updater.py", line 256>:
+256           0 RESUME                   0
+
+257           2 LOAD_GLOBAL              1 (NULL + zipfile)
+             12 LOAD_ATTR                2 (ZipFile)
+             32 LOAD_FAST                1 (zip_path)
+             34 CALL                     1
+             42 BEFORE_WITH
+             44 STORE_FAST               3 (z)
+
+258          46 LOAD_FAST                3 (z)
+             48 LOAD_ATTR                5 (NULL|self + infolist)
+             68 CALL                     0
+             76 GET_ITER
+             78 LOAD_FAST_AND_CLEAR      4 (i)
+             80 SWAP                     2
+             82 BUILD_LIST               0
+             84 SWAP                     2
+        >>   86 FOR_ITER                83 (to 256)
+             90 STORE_FAST               4 (i)
+             92 LOAD_FAST                4 (i)
+             94 LOAD_ATTR                7 (NULL|self + is_dir)
+            114 CALL                     0
+            122 POP_JUMP_IF_FALSE        1 (to 126)
+            124 JUMP_BACKWARD           20 (to 86)
+        >>  126 LOAD_FAST                4 (i)
+            128 LOAD_ATTR                8 (filename)
+            148 LOAD_ATTR               11 (NULL|self + lower)
+            168 CALL                     0
+            176 LOAD_ATTR               13 (NULL|self + endswith)
+            196 LOAD_CONST               1 ('.exe')
+            198 CALL                     1
+            206 POP_JUMP_IF_TRUE         1 (to 210)
+            208 JUMP_BACKWARD           62 (to 86)
+        >>  210 LOAD_FAST                4 (i)
+            212 LOAD_ATTR               14 (file_size)
+            232 LOAD_GLOBAL             16 (MAX_DOWNLOAD_BYTES)
+            242 COMPARE_OP              26 (<=)
+            246 POP_JUMP_IF_TRUE         1 (to 250)
+            248 JUMP_BACKWARD           82 (to 86)
+        >>  250 LOAD_FAST                4 (i)
+            252 LIST_APPEND              2
+            254 JUMP_BACKWARD           85 (to 86)
+        >>  256 END_FOR
+            258 STORE_FAST               5 (members)
+            260 STORE_FAST               4 (i)
+
+259         262 LOAD_FAST                5 (members)
+            264 POP_JUMP_IF_TRUE        11 (to 288)
+
+260         266 LOAD_GLOBAL             19 (NULL + UpdateError)
+            276 LOAD_CONST               2 ('verify')
+            278 CALL                     1
+            286 RAISE_VARARGS            1
+
+261     >>  288 LOAD_GLOBAL             21 (NULL + min)
+            298 LOAD_FAST                5 (members)
+            300 LOAD_CONST               3 (<code object <lambda> at 0x7f6af1e2b230, file "updater.py", line 261>)
+            302 MAKE_FUNCTION            0
+            304 KW_NAMES                 4 (('key',))
+            306 CALL                     2
+            314 STORE_FAST               6 (m)
+
+262         316 LOAD_FAST                3 (z)
+            318 LOAD_ATTR               23 (NULL|self + open)
+            338 LOAD_FAST                6 (m)
+            340 CALL                     1
+            348 BEFORE_WITH
+            350 STORE_FAST               7 (src)
+            352 LOAD_GLOBAL             23 (NULL + open)
+            362 LOAD_FAST                2 (dest)
+            364 LOAD_CONST               5 ('wb')
+            366 CALL                     2
+            374 BEFORE_WITH
+            376 STORE_FAST               8 (out)
+
+263         378 NOP
+
+264     >>  380 LOAD_FAST                7 (src)
+            382 LOAD_ATTR               25 (NULL|self + read)
+            402 LOAD_GLOBAL             26 (CHUNK)
+            412 CALL                     1
+            420 STORE_FAST               9 (chunk)
+
+265         422 LOAD_FAST                9 (chunk)
+            424 POP_JUMP_IF_TRUE         1 (to 428)
+
+266         426 JUMP_FORWARD            18 (to 464)
+
+267     >>  428 LOAD_FAST                8 (out)
+            430 LOAD_ATTR               29 (NULL|self + write)
+            450 LOAD_FAST                9 (chunk)
+            452 CALL                     1
+            460 POP_TOP
+
+263         462 JUMP_BACKWARD           42 (to 380)
+
+266     >>  464 NOP
+
+262         466 LOAD_CONST               0 (None)
+            468 LOAD_CONST               0 (None)
+            470 LOAD_CONST               0 (None)
+            472 CALL                     2
+            480 POP_TOP
+        >>  482 LOAD_CONST               0 (None)
+            484 LOAD_CONST               0 (None)
+            486 LOAD_CONST               0 (None)
+            488 CALL                     2
+            496 POP_TOP
+
+257     >>  498 LOAD_CONST               0 (None)
+            500 LOAD_CONST               0 (None)
+            502 LOAD_CONST               0 (None)
+            504 CALL                     2
+            512 POP_TOP
+            514 RETURN_CONST             0 (None)
+        >>  516 SWAP                     2
+            518 POP_TOP
+
+258         520 SWAP                     2
+            522 STORE_FAST               4 (i)
+            524 RERAISE                  0
+
+262     >>  526 PUSH_EXC_INFO
+            528 WITH_EXCEPT_START
+            530 POP_JUMP_IF_TRUE         1 (to 534)
+            532 RERAISE                  2
+        >>  534 POP_TOP
+            536 POP_EXCEPT
+            538 POP_TOP
+            540 POP_TOP
+            542 JUMP_BACKWARD           31 (to 482)
+        >>  544 COPY                     3
+            546 POP_EXCEPT
+            548 RERAISE                  1
+        >>  550 PUSH_EXC_INFO
+            552 WITH_EXCEPT_START
+            554 POP_JUMP_IF_TRUE         1 (to 558)
+            556 RERAISE                  2
+        >>  558 POP_TOP
+            560 POP_EXCEPT
+            562 POP_TOP
+            564 POP_TOP
+            566 JUMP_BACKWARD           35 (to 498)
+        >>  568 COPY                     3
+            570 POP_EXCEPT
+            572 RERAISE                  1
+
+257     >>  574 PUSH_EXC_INFO
+            576 WITH_EXCEPT_START
+            578 POP_JUMP_IF_TRUE         1 (to 582)
+            580 RERAISE                  2
+        >>  582 POP_TOP
+            584 POP_EXCEPT
+            586 POP_TOP
+            588 POP_TOP
+            590 RETURN_CONST             0 (None)
+        >>  592 COPY                     3
+            594 POP_EXCEPT
+            596 RERAISE                  1
+ExceptionTable:
+  44 to 80 -> 574 [1] lasti
+  82 to 122 -> 516 [3]
+  126 to 206 -> 516 [3]
+  210 to 246 -> 516 [3]
+  250 to 256 -> 516 [3]
+  258 to 348 -> 574 [1] lasti
+  350 to 374 -> 550 [2] lasti
+  376 to 462 -> 526 [3] lasti
+  466 to 480 -> 550 [2] lasti
+  482 to 496 -> 574 [1] lasti
+  516 to 524 -> 574 [1] lasti
+  526 to 534 -> 544 [5] lasti
+  536 to 548 -> 550 [2] lasti
+  550 to 558 -> 568 [4] lasti
+  560 to 572 -> 574 [1] lasti
+  574 to 582 -> 592 [3] lasti
+
+Disassembly of <code object <lambda> at 0x7f6af1e2b230, file "updater.py", line 261>:
+261           0 RESUME                   0
+              2 LOAD_GLOBAL              0 (os)
+             12 LOAD_ATTR                2 (path)
+             32 LOAD_ATTR                5 (NULL|self + basename)
+             52 LOAD_FAST                0 (i)
+             54 LOAD_ATTR                6 (filename)
+             74 CALL                     1
+             82 LOAD_ATTR                9 (NULL|self + lower)
+            102 CALL                     0
+            110 LOAD_ATTR               11 (NULL|self + startswith)
+            130 LOAD_CONST               1 ('pk-auto')
+            132 CALL                     1
+            140 POP_JUMP_IF_FALSE       14 (to 170)
+            142 LOAD_CONST               2 (0)
+            144 LOAD_FAST                0 (i)
+            146 LOAD_ATTR                6 (filename)
+            166 BUILD_TUPLE              2
+            168 RETURN_VALUE
+        >>  170 LOAD_CONST               3 (1)
+            172 LOAD_FAST                0 (i)
+            174 LOAD_ATTR                6 (filename)
+            194 BUILD_TUPLE              2
+            196 RETURN_VALUE
+
+Disassembly of <code object _download at 0x17ac1270, file "updater.py", line 269>:
+269           0 RESUME                   0
+
+270           2 LOAD_GLOBAL              1 (NULL + hashlib)
+             12 LOAD_ATTR                2 (sha256)
+             32 CALL                     0
+             40 LOAD_CONST               1 (0)
+             42 LOAD_CONST               2 (-1)
+             44 STORE_FAST               8 (last)
+             46 STORE_FAST               7 (got)
+             48 STORE_FAST               6 (h)
+
+271          50 LOAD_FAST                0 (self)
+             52 LOAD_ATTR                4 (_opener)
+             72 LOAD_ATTR                7 (NULL|self + open)
+             92 LOAD_FAST                0 (self)
+             94 LOAD_ATTR                9 (NULL|self + _request)
+            114 LOAD_FAST                1 (url)
+            116 CALL                     1
+            124 LOAD_GLOBAL             10 (READ_TIMEOUT_S)
+            134 KW_NAMES                 3 (('timeout',))
+            136 CALL                     2
+            144 BEFORE_WITH
+            146 STORE_FAST               9 (r)
+
+272         148 NOP
+
+273         150 LOAD_GLOBAL             13 (NULL + int)
+            160 LOAD_FAST                9 (r)
+            162 LOAD_ATTR               14 (headers)
+            182 LOAD_ATTR               17 (NULL|self + get)
+            202 LOAD_CONST               4 ('Content-Length')
+            204 CALL                     1
+            212 COPY                     1
+            214 POP_JUMP_IF_TRUE         2 (to 220)
+            216 POP_TOP
+            218 LOAD_CONST               1 (0)
+        >>  220 CALL                     1
+            228 STORE_FAST              10 (total)
+
+276     >>  230 LOAD_FAST               10 (total)
+            232 COPY                     1
+            234 POP_JUMP_IF_TRUE         2 (to 240)
+            236 POP_TOP
+            238 LOAD_FAST                4 (size)
+        >>  240 STORE_FAST              10 (total)
+
+277         242 LOAD_FAST               10 (total)
+            244 LOAD_GLOBAL             24 (MAX_DOWNLOAD_BYTES)
+            254 COMPARE_OP              68 (>)
+            258 POP_JUMP_IF_FALSE       11 (to 282)
+
+278         260 LOAD_GLOBAL             27 (NULL + UpdateError)
+            270 LOAD_CONST               5 ('verify')
+            272 CALL                     1
+            280 RAISE_VARARGS            1
+
+279     >>  282 LOAD_GLOBAL              7 (NULL + open)
+            292 LOAD_FAST                2 (path)
+            294 LOAD_CONST               6 ('wb')
+            296 CALL                     2
+            304 BEFORE_WITH
+            306 STORE_FAST              11 (f)
+
+280         308 NOP
+
+281     >>  310 LOAD_FAST                9 (r)
+            312 LOAD_ATTR               29 (NULL|self + read)
+            332 LOAD_GLOBAL             30 (CHUNK)
+            342 CALL                     1
+            350 STORE_FAST              12 (chunk)
+
+282         352 LOAD_FAST               12 (chunk)
+            354 POP_JUMP_IF_TRUE         1 (to 358)
+
+283         356 JUMP_FORWARD           113 (to 584)
+
+284     >>  358 LOAD_FAST                7 (got)
+            360 LOAD_GLOBAL             33 (NULL + len)
+            370 LOAD_FAST               12 (chunk)
+            372 CALL                     1
+            380 BINARY_OP               13 (+=)
+            384 STORE_FAST               7 (got)
+
+285         386 LOAD_FAST                7 (got)
+            388 LOAD_GLOBAL             24 (MAX_DOWNLOAD_BYTES)
+            398 COMPARE_OP              68 (>)
+            402 POP_JUMP_IF_FALSE       11 (to 426)
+
+286         404 LOAD_GLOBAL             27 (NULL + UpdateError)
+            414 LOAD_CONST               5 ('verify')
+            416 CALL                     1
+            424 RAISE_VARARGS            1
+
+287     >>  426 LOAD_FAST               11 (f)
+            428 LOAD_ATTR               35 (NULL|self + write)
+            448 LOAD_FAST               12 (chunk)
+            450 CALL                     1
+            458 POP_TOP
+
+288         460 LOAD_FAST                6 (h)
+            462 LOAD_ATTR               37 (NULL|self + update)
+            482 LOAD_FAST               12 (chunk)
+            484 CALL                     1
+            492 POP_TOP
+
+289         494 LOAD_FAST               10 (total)
+            496 POP_JUMP_IF_FALSE       42 (to 582)
+
+290         498 LOAD_GLOBAL             39 (NULL + min)
+            508 LOAD_CONST               7 (99)
+            510 LOAD_GLOBAL             13 (NULL + int)
+            520 LOAD_FAST                7 (got)
+            522 LOAD_CONST               8 (100)
+            524 BINARY_OP                5 (*)
+            528 LOAD_FAST               10 (total)
+            530 BINARY_OP               11 (/)
+            534 CALL                     1
+            542 CALL                     2
+            550 STORE_FAST              13 (pct)
+
+291         552 LOAD_FAST               13 (pct)
+            554 LOAD_FAST                8 (last)
+            556 COMPARE_OP              55 (!=)
+            560 POP_JUMP_IF_FALSE       10 (to 582)
+
+292         562 LOAD_FAST               13 (pct)
+            564 STORE_FAST               8 (last)
+
+293         566 PUSH_NULL
+            568 LOAD_FAST                3 (progress)
+            570 LOAD_FAST               13 (pct)
+            572 CALL                     1
+            580 POP_TOP
+
+280     >>  582 JUMP_BACKWARD          137 (to 310)
+
+283     >>  584 NOP
+
+279         586 LOAD_CONST               0 (None)
+            588 LOAD_CONST               0 (None)
+            590 LOAD_CONST               0 (None)
+            592 CALL                     2
+            600 POP_TOP
+
+271     >>  602 LOAD_CONST               0 (None)
+            604 LOAD_CONST               0 (None)
+            606 LOAD_CONST               0 (None)
+            608 CALL                     2
+            616 POP_TOP
+
+294     >>  618 LOAD_FAST                4 (size)
+            620 POP_JUMP_IF_FALSE        5 (to 632)
+            622 LOAD_FAST                7 (got)
+            624 LOAD_FAST                4 (size)
+            626 COMPARE_OP              55 (!=)
+            630 POP_JUMP_IF_TRUE        49 (to 730)
+        >>  632 LOAD_FAST                5 (sha256)
+            634 POP_JUMP_IF_FALSE       59 (to 754)
+            636 LOAD_FAST                6 (h)
+            638 LOAD_ATTR               41 (NULL|self + hexdigest)
+            658 CALL                     0
+            666 LOAD_ATTR               43 (NULL|self + lower)
+            686 CALL                     0
+            694 LOAD_FAST                5 (sha256)
+            696 LOAD_ATTR               43 (NULL|self + lower)
+            716 CALL                     0
+            724 COMPARE_OP              55 (!=)
+            728 POP_JUMP_IF_FALSE       11 (to 752)
+
+295     >>  730 LOAD_GLOBAL             27 (NULL + UpdateError)
+            740 LOAD_CONST               5 ('verify')
+            742 CALL                     1
+            750 RAISE_VARARGS            1
+
+294     >>  752 RETURN_CONST             0 (None)
+        >>  754 RETURN_CONST             0 (None)
+        >>  756 PUSH_EXC_INFO
+
+274         758 LOAD_GLOBAL             18 (TypeError)
+            768 LOAD_GLOBAL             20 (ValueError)
+            778 LOAD_GLOBAL             22 (AttributeError)
+            788 BUILD_TUPLE              3
+            790 CHECK_EXC_MATCH
+            792 POP_JUMP_IF_FALSE        6 (to 806)
+            794 POP_TOP
+
+275         796 LOAD_CONST               1 (0)
+            798 STORE_FAST              10 (total)
+            800 POP_EXCEPT
+            802 EXTENDED_ARG             1
+            804 JUMP_BACKWARD          288 (to 230)
+
+274     >>  806 RERAISE                  0
+        >>  808 COPY                     3
+            810 POP_EXCEPT
+            812 RERAISE                  1
+
+279     >>  814 PUSH_EXC_INFO
+            816 WITH_EXCEPT_START
+            818 POP_JUMP_IF_TRUE         1 (to 822)
+            820 RERAISE                  2
+        >>  822 POP_TOP
+            824 POP_EXCEPT
+            826 POP_TOP
+            828 POP_TOP
+            830 JUMP_BACKWARD          115 (to 602)
+        >>  832 COPY                     3
+            834 POP_EXCEPT
+            836 RERAISE                  1
+
+271     >>  838 PUSH_EXC_INFO
+            840 WITH_EXCEPT_START
+            842 POP_JUMP_IF_TRUE         1 (to 846)
+            844 RERAISE                  2
+        >>  846 POP_TOP
+            848 POP_EXCEPT
+            850 POP_TOP
+            852 POP_TOP
+            854 JUMP_BACKWARD          119 (to 618)
+        >>  856 COPY                     3
+            858 POP_EXCEPT
+            860 RERAISE                  1
+ExceptionTable:
+  146 to 146 -> 838 [1] lasti
+  150 to 228 -> 756 [1]
+  230 to 304 -> 838 [1] lasti
+  306 to 582 -> 814 [2] lasti
+  586 to 600 -> 838 [1] lasti
+  756 to 798 -> 808 [2] lasti
+  800 to 804 -> 838 [1] lasti
+  806 to 806 -> 808 [2] lasti
+  808 to 812 -> 838 [1] lasti
+  814 to 822 -> 832 [4] lasti
+  824 to 836 -> 838 [1] lasti
+  838 to 846 -> 856 [3] lasti
+
+Disassembly of <code object download_update at 0x17a986e0, file "updater.py", line 297>:
+297           0 RESUME                   0
+
+298           2 NOP
+
+302           4 LOAD_GLOBAL              1 (NULL + isinstance)
+             14 LOAD_FAST                1 (source)
+             16 LOAD_GLOBAL              2 (UpdateInfo)
+             26 CALL                     2
+             34 POP_JUMP_IF_FALSE       12 (to 60)
+             36 LOAD_FAST                1 (source)
+             38 LOAD_ATTR                4 (download_url)
+             58 JUMP_FORWARD            10 (to 80)
+        >>   60 LOAD_GLOBAL              7 (NULL + str)
+             70 LOAD_FAST                1 (source)
+             72 CALL                     1
+        >>   80 STORE_FAST               5 (url)
+
+303          82 LOAD_GLOBAL              1 (NULL + isinstance)
+             92 LOAD_FAST                1 (source)
+             94 LOAD_GLOBAL              2 (UpdateInfo)
+            104 CALL                     2
+            112 POP_JUMP_IF_FALSE       32 (to 178)
+
+304         114 LOAD_FAST                3 (sha256)
+            116 COPY                     1
+            118 POP_JUMP_IF_TRUE        12 (to 144)
+            120 POP_TOP
+            122 LOAD_FAST                1 (source)
+            124 LOAD_ATTR                8 (sha256)
+        >>  144 LOAD_FAST                4 (size)
+            146 COPY                     1
+            148 POP_JUMP_IF_TRUE        12 (to 174)
+            150 POP_TOP
+            152 LOAD_FAST                1 (source)
+            154 LOAD_ATTR               10 (size)
+        >>  174 STORE_FAST               4 (size)
+            176 STORE_FAST               3 (sha256)
+
+305     >>  178 LOAD_FAST                0 (self)
+            180 LOAD_ATTR               12 (frozen)
+            200 POP_JUMP_IF_TRUE        11 (to 224)
+
+306         202 LOAD_GLOBAL             15 (NULL + UpdateError)
+            212 LOAD_CONST               1 ('not_frozen')
+            214 CALL                     1
+            222 RAISE_VARARGS            1
+
+307     >>  224 LOAD_FAST                0 (self)
+            226 LOAD_ATTR               17 (NULL|self + _url_ok)
+            246 LOAD_FAST                5 (url)
+            248 CALL                     1
+            256 POP_JUMP_IF_TRUE        11 (to 280)
+
+308         258 LOAD_GLOBAL             15 (NULL + UpdateError)
+            268 LOAD_CONST               2 ('untrusted_url')
+            270 CALL                     1
+            278 RAISE_VARARGS            1
+
+309     >>  280 LOAD_FAST                2 (progress_callback)
+            282 COPY                     1
+            284 POP_JUMP_IF_TRUE         3 (to 292)
+            286 POP_TOP
+            288 LOAD_CONST               3 (<code object <lambda> at 0x7f6aed1a6db0, file "updater.py", line 309>)
+            290 MAKE_FUNCTION            0
+        >>  292 STORE_FAST               6 (progress)
+
+310         294 LOAD_GLOBAL             18 (os)
+            304 LOAD_ATTR               20 (path)
+            324 LOAD_ATTR               23 (NULL|self + dirname)
+            344 LOAD_GLOBAL             18 (os)
+            354 LOAD_ATTR               20 (path)
+            374 LOAD_ATTR               25 (NULL|self + abspath)
+            394 LOAD_FAST                0 (self)
+            396 LOAD_ATTR               26 (exe_path)
+            416 CALL                     1
+            424 CALL                     1
+            432 STORE_FAST               7 (exe_dir)
+
+311         434 LOAD_GLOBAL             18 (os)
+            444 LOAD_ATTR               20 (path)
+            464 LOAD_ATTR               29 (NULL|self + join)
+            484 LOAD_FAST                7 (exe_dir)
+            486 LOAD_GLOBAL             30 (DOWNLOAD_NAME)
+            496 CALL                     2
+            504 STORE_FAST               8 (tmp)
+
+312         506 LOAD_GLOBAL             18 (os)
+            516 LOAD_ATTR               20 (path)
+            536 LOAD_ATTR               25 (NULL|self + abspath)
+            556 LOAD_FAST                0 (self)
+            558 LOAD_ATTR               26 (exe_path)
+            578 CALL                     1
+            586 LOAD_GLOBAL             32 (STAGED_SUFFIX)
+            596 BINARY_OP                0 (+)
+            600 STORE_FAST               9 (staged)
+
+313         602 NOP
+
+314         604 PUSH_NULL
+            606 LOAD_FAST                6 (progress)
+            608 LOAD_CONST               4 (0)
+            610 CALL                     1
+            618 POP_TOP
+
+315         620 LOAD_FAST                0 (self)
+            622 LOAD_ATTR               35 (NULL|self + _download)
+            642 LOAD_FAST                5 (url)
+            644 LOAD_FAST                8 (tmp)
+            646 LOAD_FAST                6 (progress)
+            648 LOAD_FAST                4 (size)
+            650 LOAD_FAST                3 (sha256)
+            652 CALL                     5
+            660 POP_TOP
+
+316         662 LOAD_GLOBAL             37 (NULL + open)
+            672 LOAD_FAST                8 (tmp)
+            674 LOAD_CONST               5 ('rb')
+            676 CALL                     2
+            684 BEFORE_WITH
+            686 STORE_FAST              10 (f)
+
+317         688 LOAD_FAST               10 (f)
+            690 LOAD_ATTR               39 (NULL|self + read)
+            710 LOAD_CONST               6 (2)
+            712 CALL                     1
+            720 LOAD_CONST               7 (b'PK')
+            722 COMPARE_OP              40 (==)
+            726 STORE_FAST              11 (is_zip)
+
+316         728 LOAD_CONST               0 (None)
+            730 LOAD_CONST               0 (None)
+            732 LOAD_CONST               0 (None)
+            734 CALL                     2
+            742 POP_TOP
+
+318     >>  744 LOAD_FAST_CHECK         11 (is_zip)
+            746 POP_JUMP_IF_FALSE       19 (to 786)
+
+319         748 LOAD_FAST                0 (self)
+            750 LOAD_ATTR               41 (NULL|self + _extract_exe)
+            770 LOAD_FAST                8 (tmp)
+            772 LOAD_FAST                9 (staged)
+            774 CALL                     2
+            782 POP_TOP
+            784 JUMP_FORWARD            22 (to 830)
+
+321     >>  786 LOAD_GLOBAL             19 (NULL + os)
+            796 LOAD_ATTR               42 (replace)
+            816 LOAD_FAST                8 (tmp)
+            818 LOAD_FAST                9 (staged)
+            820 CALL                     2
+            828 POP_TOP
+
+322     >>  830 LOAD_FAST                0 (self)
+            832 LOAD_ATTR               45 (NULL|self + _check_exe)
+            852 LOAD_FAST                9 (staged)
+            854 CALL                     1
+            862 POP_TOP
+
+323         864 PUSH_NULL
+            866 LOAD_FAST                6 (progress)
+            868 LOAD_CONST               8 (100)
+            870 CALL                     1
+            878 POP_TOP
+
+324         880 LOAD_FAST                9 (staged)
+
+335         882 LOAD_FAST                0 (self)
+            884 LOAD_ATTR               47 (NULL|self + _discard)
+            904 LOAD_FAST                8 (tmp)
+            906 CALL                     1
+            914 POP_TOP
+            916 RETURN_VALUE
+
+316     >>  918 PUSH_EXC_INFO
+            920 WITH_EXCEPT_START
+            922 POP_JUMP_IF_TRUE         1 (to 926)
+            924 RERAISE                  2
+        >>  926 POP_TOP
+            928 POP_EXCEPT
+            930 POP_TOP
+            932 POP_TOP
+            934 JUMP_BACKWARD           96 (to 744)
+        >>  936 COPY                     3
+            938 POP_EXCEPT
+            940 RERAISE                  1
+        >>  942 PUSH_EXC_INFO
+
+325         944 LOAD_GLOBAL             14 (UpdateError)
+            954 CHECK_EXC_MATCH
+            956 POP_JUMP_IF_FALSE       19 (to 996)
+            958 POP_TOP
+
+326         960 LOAD_FAST                0 (self)
+            962 LOAD_ATTR               47 (NULL|self + _discard)
+            982 LOAD_FAST                9 (staged)
+            984 CALL                     1
+            992 POP_TOP
+
+327         994 RAISE_VARARGS            0
+
+328     >>  996 LOAD_GLOBAL             48 (PermissionError)
+           1006 LOAD_GLOBAL             50 (FileNotFoundError)
+           1016 LOAD_GLOBAL             52 (NotADirectoryError)
+           1026 BUILD_TUPLE              3
+           1028 CHECK_EXC_MATCH
+           1030 POP_JUMP_IF_FALSE       34 (to 1100)
+           1032 STORE_FAST              12 (e)
+
+329        1034 LOAD_FAST                0 (self)
+           1036 LOAD_ATTR               47 (NULL|self + _discard)
+           1056 LOAD_FAST                9 (staged)
+           1058 CALL                     1
+           1066 POP_TOP
+
+330        1068 LOAD_GLOBAL             15 (NULL + UpdateError)
+           1078 LOAD_CONST               9 ('not_writable')
+           1080 CALL                     1
+           1088 LOAD_FAST               12 (e)
+           1090 RAISE_VARARGS            2
+        >> 1092 LOAD_CONST               0 (None)
+           1094 STORE_FAST              12 (e)
+           1096 DELETE_FAST             12 (e)
+           1098 RERAISE                  1
+
+331     >> 1100 LOAD_GLOBAL             54 (OSError)
+           1110 LOAD_GLOBAL             56 (zipfile)
+           1120 LOAD_ATTR               58 (BadZipFile)
+           1140 LOAD_GLOBAL             60 (urllib)
+           1150 LOAD_ATTR               62 (error)
+           1170 LOAD_ATTR               64 (URLError)
+           1190 BUILD_TUPLE              3
+           1192 CHECK_EXC_MATCH
+           1194 POP_JUMP_IF_FALSE       77 (to 1350)
+           1196 STORE_FAST              12 (e)
+
+332        1198 LOAD_FAST                0 (self)
+           1200 LOAD_ATTR               47 (NULL|self + _discard)
+           1220 LOAD_FAST                9 (staged)
+           1222 CALL                     1
+           1230 POP_TOP
+
+333        1232 LOAD_GLOBAL             15 (NULL + UpdateError)
+           1242 LOAD_GLOBAL              1 (NULL + isinstance)
+           1252 LOAD_FAST               12 (e)
+           1254 LOAD_GLOBAL             60 (urllib)
+           1264 LOAD_ATTR               62 (error)
+           1284 LOAD_ATTR               64 (URLError)
+           1304 CALL                     2
+           1312 POP_JUMP_IF_FALSE        7 (to 1328)
+           1314 LOAD_CONST              10 ('network')
+           1316 CALL                     1
+           1324 LOAD_FAST               12 (e)
+           1326 RAISE_VARARGS            2
+        >> 1328 LOAD_CONST              11 ('verify')
+           1330 CALL                     1
+           1338 LOAD_FAST               12 (e)
+           1340 RAISE_VARARGS            2
+        >> 1342 LOAD_CONST               0 (None)
+           1344 STORE_FAST              12 (e)
+           1346 DELETE_FAST             12 (e)
+           1348 RERAISE                  1
+
+331     >> 1350 RERAISE                  0
+        >> 1352 COPY                     3
+           1354 POP_EXCEPT
+           1356 RERAISE                  1
+        >> 1358 PUSH_EXC_INFO
+
+335        1360 LOAD_FAST                0 (self)
+           1362 LOAD_ATTR               47 (NULL|self + _discard)
+           1382 LOAD_FAST                8 (tmp)
+           1384 CALL                     1
+           1392 POP_TOP
+           1394 RERAISE                  0
+        >> 1396 COPY                     3
+           1398 POP_EXCEPT
+           1400 RERAISE                  1
+ExceptionTable:
+  604 to 684 -> 942 [0]
+  686 to 726 -> 918 [1] lasti
+  728 to 880 -> 942 [0]
+  918 to 926 -> 936 [3] lasti
+  928 to 940 -> 942 [0]
+  942 to 1032 -> 1352 [1] lasti
+  1034 to 1090 -> 1092 [1] lasti
+  1092 to 1196 -> 1352 [1] lasti
+  1198 to 1340 -> 1342 [1] lasti
+  1342 to 1350 -> 1352 [1] lasti
+  1352 to 1356 -> 1358 [0]
+  1358 to 1394 -> 1396 [1] lasti
+
+Disassembly of <code object <lambda> at 0x7f6aed1a6db0, file "updater.py", line 309>:
+309           0 RESUME                   0
+              2 RETURN_CONST             0 (None)
+
+Disassembly of <code object _discard at 0x7f6aed1feb80, file "updater.py", line 337>:
+337           0 RESUME                   0
+
+339           2 NOP
+
+340           4 LOAD_GLOBAL              0 (os)
+             14 LOAD_ATTR                2 (path)
+             34 LOAD_ATTR                5 (NULL|self + exists)
+             54 LOAD_FAST                0 (path)
+             56 CALL                     1
+             64 POP_JUMP_IF_FALSE       22 (to 110)
+
+341          66 LOAD_GLOBAL              1 (NULL + os)
+             76 LOAD_ATTR                6 (remove)
+             96 LOAD_FAST                0 (path)
+             98 CALL                     1
+            106 POP_TOP
+            108 RETURN_CONST             0 (None)
+
+340     >>  110 RETURN_CONST             0 (None)
+        >>  112 PUSH_EXC_INFO
+
+342         114 LOAD_GLOBAL              8 (OSError)
+            124 CHECK_EXC_MATCH
+            126 POP_JUMP_IF_FALSE        3 (to 134)
+            128 POP_TOP
+
+343         130 POP_EXCEPT
+            132 RETURN_CONST             0 (None)
+
+342     >>  134 RERAISE                  0
+        >>  136 COPY                     3
+            138 POP_EXCEPT
+            140 RERAISE                  1
+ExceptionTable:
+  4 to 106 -> 112 [0]
+  112 to 128 -> 136 [1] lasti
+  134 to 134 -> 136 [1] lasti
+
+Disassembly of <code object launch_runner at 0x17ae87b0, file "updater.py", line 346>:
+346           0 RESUME                   0
+
+347           2 NOP
+
+348           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (frozen)
+             26 POP_JUMP_IF_TRUE        11 (to 50)
+
+349          28 LOAD_GLOBAL              3 (NULL + UpdateError)
+             38 LOAD_CONST               1 ('not_frozen')
+             40 CALL                     1
+             48 RAISE_VARARGS            1
+
+350     >>   50 LOAD_GLOBAL              4 (os)
+             60 LOAD_ATTR                6 (path)
+             80 LOAD_ATTR                9 (NULL|self + abspath)
+            100 LOAD_FAST                0 (self)
+            102 LOAD_ATTR               10 (exe_path)
+            122 CALL                     1
+            130 STORE_FAST               2 (exe)
+
+351         132 LOAD_GLOBAL              4 (os)
+            142 LOAD_ATTR                6 (path)
+            162 LOAD_ATTR               13 (NULL|self + dirname)
+            182 LOAD_FAST                2 (exe)
+            184 CALL                     1
+            192 STORE_FAST               3 (exe_dir)
+
+352         194 LOAD_GLOBAL              4 (os)
+            204 LOAD_ATTR                6 (path)
+            224 LOAD_ATTR               15 (NULL|self + join)
+            244 LOAD_FAST                3 (exe_dir)
+            246 LOAD_GLOBAL             16 (RUNNER_NAME)
+            256 CALL                     2
+            264 STORE_FAST               4 (bat)
+
+353         266 NOP
+
+354         268 LOAD_GLOBAL             19 (NULL + open)
+            278 LOAD_FAST                4 (bat)
+            280 LOAD_CONST               2 ('w')
+            282 LOAD_CONST               3 ('ascii')
+            284 LOAD_CONST               4 ('\r\n')
+            286 KW_NAMES                 5 (('encoding', 'newline'))
+            288 CALL                     4
+            296 BEFORE_WITH
+            298 STORE_FAST               5 (f)
+
+355         300 LOAD_FAST                5 (f)
+            302 LOAD_ATTR               21 (NULL|self + write)
+            322 LOAD_GLOBAL             22 (RUNNER_BAT)
+            332 CALL                     1
+            340 POP_TOP
+
+354         342 LOAD_CONST               0 (None)
+            344 LOAD_CONST               0 (None)
+            346 LOAD_CONST               0 (None)
+            348 CALL                     2
+            356 POP_TOP
+
+358     >>  358 LOAD_GLOBAL             27 (NULL + clean_env)
+            368 LOAD_GLOBAL              4 (os)
+            378 LOAD_ATTR               28 (environ)
+            398 CALL                     1
+            406 STORE_FAST               7 (env)
+
+359         408 LOAD_FAST                7 (env)
+            410 LOAD_ATTR               31 (NULL|self + update)
+            430 LOAD_FAST                2 (exe)
+            432 LOAD_GLOBAL              4 (os)
+            442 LOAD_ATTR                6 (path)
+            462 LOAD_ATTR                9 (NULL|self + abspath)
+            482 LOAD_FAST                1 (staged_path)
+            484 CALL                     1
+            492 LOAD_FAST                2 (exe)
+            494 LOAD_GLOBAL             32 (BACKUP_SUFFIX)
+            504 BINARY_OP                0 (+)
+            508 KW_NAMES                 7 (('PKA_OLD', 'PKA_NEW', 'PKA_BAK'))
+            510 CALL                     3
+            518 POP_TOP
+
+360         520 LOAD_GLOBAL              4 (os)
+            530 LOAD_ATTR               34 (name)
+            550 LOAD_CONST               8 ('nt')
+            552 COMPARE_OP              40 (==)
+            556 POP_JUMP_IF_FALSE       13 (to 584)
+            558 LOAD_GLOBAL             36 (CREATE_NO_WINDOW)
+            568 LOAD_GLOBAL             38 (CREATE_NEW_PROCESS_GROUP)
+            578 BINARY_OP                7 (|)
+            582 JUMP_FORWARD             1 (to 586)
+        >>  584 LOAD_CONST               9 (0)
+        >>  586 STORE_FAST               8 (flags)
+
+361         588 LOAD_GLOBAL             41 (NULL + subprocess)
+            598 LOAD_ATTR               42 (Popen)
+            618 LOAD_FAST                4 (bat)
+            620 BUILD_LIST               1
+            622 LOAD_FAST                7 (env)
+            624 LOAD_FAST                3 (exe_dir)
+            626 LOAD_FAST                8 (flags)
+            628 LOAD_GLOBAL             40 (subprocess)
+            638 LOAD_ATTR               44 (DEVNULL)
+
+362         658 LOAD_GLOBAL             40 (subprocess)
+            668 LOAD_ATTR               44 (DEVNULL)
+            688 LOAD_GLOBAL             40 (subprocess)
+            698 LOAD_ATTR               44 (DEVNULL)
+            718 LOAD_CONST              10 (True)
+
+361         720 KW_NAMES                11 (('env', 'cwd', 'creationflags', 'stdin', 'stdout', 'stderr', 'close_fds'))
+            722 CALL                     8
+            730 POP_TOP
+
+363         732 LOAD_FAST                4 (bat)
+            734 RETURN_VALUE
+
+354     >>  736 PUSH_EXC_INFO
+            738 WITH_EXCEPT_START
+            740 POP_JUMP_IF_TRUE         1 (to 744)
+            742 RERAISE                  2
+        >>  744 POP_TOP
+            746 POP_EXCEPT
+            748 POP_TOP
+            750 POP_TOP
+            752 JUMP_BACKWARD          198 (to 358)
+        >>  754 COPY                     3
+            756 POP_EXCEPT
+            758 RERAISE                  1
+        >>  760 PUSH_EXC_INFO
+
+356         762 LOAD_GLOBAL             24 (OSError)
+            772 CHECK_EXC_MATCH
+            774 POP_JUMP_IF_FALSE       17 (to 810)
+            776 STORE_FAST               6 (e)
+
+357         778 LOAD_GLOBAL              3 (NULL + UpdateError)
+            788 LOAD_CONST               6 ('not_writable')
+            790 CALL                     1
+            798 LOAD_FAST                6 (e)
+            800 RAISE_VARARGS            2
+        >>  802 LOAD_CONST               0 (None)
+            804 STORE_FAST               6 (e)
+            806 DELETE_FAST              6 (e)
+            808 RERAISE                  1
+
+356     >>  810 RERAISE                  0
+        >>  812 COPY                     3
+            814 POP_EXCEPT
+            816 RERAISE                  1
+ExceptionTable:
+  268 to 296 -> 760 [0]
+  298 to 340 -> 736 [1] lasti
+  342 to 356 -> 760 [0]
+  736 to 744 -> 754 [3] lasti
+  746 to 758 -> 760 [0]
+  760 to 776 -> 812 [1] lasti
+  778 to 800 -> 802 [1] lasti
+  802 to 810 -> 812 [1] lasti
+
+Disassembly of <code object download_and_apply_update at 0x7f6aed1d10d0, file "updater.py", line 365>:
+365           0 RESUME                   0
+
+367           2 NOP
+
+368           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + download_update)
+             26 LOAD_FAST                1 (download_url)
+             28 LOAD_FAST                2 (progress_callback)
+             30 LOAD_FAST                3 (sha256)
+             32 LOAD_FAST                4 (size)
+             34 CALL                     4
+             42 STORE_FAST               6 (staged)
+
+369          44 LOAD_FAST                0 (self)
+             46 LOAD_ATTR                3 (NULL|self + launch_runner)
+             66 LOAD_FAST                6 (staged)
+             68 CALL                     1
+             76 POP_TOP
+
+370          78 PUSH_NULL
+             80 LOAD_FAST                5 (exit_fn)
+             82 COPY                     1
+             84 POP_JUMP_IF_TRUE         3 (to 92)
+             86 POP_TOP
+             88 LOAD_CONST               1 (<code object <lambda> at 0x7f6aed17d4d0, file "updater.py", line 370>)
+             90 MAKE_FUNCTION            0
+        >>   92 CALL                     0
+            100 POP_TOP
+            102 RETURN_CONST             0 (None)
+
+Disassembly of <code object <lambda> at 0x7f6aed17d4d0, file "updater.py", line 370>:
+370           0 RESUME                   0
+              2 LOAD_GLOBAL              1 (NULL + sys)
+             12 LOAD_ATTR                2 (exit)
+             32 LOAD_CONST               1 (0)
+             34 CALL                     1
+             42 RETURN_VALUE

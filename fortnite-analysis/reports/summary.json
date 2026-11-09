@@ -1,0 +1,13 @@
+{
+  "file": "/workspace/fortnite-analysis/downloads/pk-auto-v2.0.0.exe",
+  "bytes": 72943484,
+  "sha256": "988953c55ac2a9111eda53c896ea1ba630db3ceb23ec2ccaf4d267b0357e26d4",
+  "python": "3.12",
+  "carchive_entries": 1048,
+  "pyz_modules": 540,
+  "application_modules": 48,
+  "pyarmor_module_names": [],
+  "pyarmor_symbols": [],
+  "application_executed": false,
+  "readable_source_recovered": false
+}

@@ -1,0 +1,8 @@
+opencv-python
+mss
+numpy
+pydirectinput
+keyboard
+Pillow
+pytest
+pyinstaller

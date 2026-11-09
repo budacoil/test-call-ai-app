@@ -1,0 +1,542 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+ 11           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (base64)
+             10 STORE_NAME               0 (base64)
+
+ 12          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (threading)
+             18 STORE_NAME               1 (threading)
+
+ 13          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              2 (time)
+             26 STORE_NAME               2 (time)
+
+ 14          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               2 (('Callable', 'Optional'))
+             32 IMPORT_NAME              3 (typing)
+             34 IMPORT_FROM              4 (Callable)
+             36 STORE_NAME               4 (Callable)
+             38 IMPORT_FROM              5 (Optional)
+             40 STORE_NAME               5 (Optional)
+             42 POP_TOP
+
+ 16          44 LOAD_CONST               0 (0)
+             46 LOAD_CONST               1 (None)
+             48 IMPORT_NAME              6 (numpy)
+             50 STORE_NAME               7 (np)
+
+ 18          52 LOAD_CONST               0 (0)
+             54 LOAD_CONST               1 (None)
+             56 IMPORT_NAME              8 (shot)
+             58 STORE_NAME               8 (shot)
+
+ 19          60 LOAD_CONST               0 (0)
+             62 LOAD_CONST               1 (None)
+             64 IMPORT_NAME              9 (telemetry)
+             66 STORE_NAME               9 (telemetry)
+
+ 21          68 LOAD_CONST               3 (300.0)
+             70 STORE_NAME              10 (COOLDOWN_S)
+
+ 24          72 PUSH_NULL
+             74 LOAD_BUILD_CLASS
+             76 LOAD_CONST               4 (<code object RewardShotSender at 0x7f6af1e2a420, file "reward_shot.py", line 24>)
+             78 MAKE_FUNCTION            0
+             80 LOAD_CONST               5 ('RewardShotSender')
+             82 CALL                     2
+             90 STORE_NAME              11 (RewardShotSender)
+             92 RETURN_CONST             1 (None)
+
+Disassembly of <code object RewardShotSender at 0x7f6af1e2a420, file "reward_shot.py", line 24>:
+ 24           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('RewardShotSender')
+              8 STORE_NAME               2 (__qualname__)
+
+ 28          10 LOAD_CONST               1 (None)
+
+ 29          12 LOAD_CONST               1 (None)
+
+ 30          14 LOAD_NAME                3 (time)
+             16 LOAD_ATTR                8 (monotonic)
+
+ 31          36 LOAD_CONST               2 (False)
+
+ 25          38 BUILD_TUPLE              4
+             40 LOAD_CONST               3 ('post')
+
+ 28          42 LOAD_NAME                5 (Optional)
+             44 LOAD_NAME                6 (Callable)
+             46 LOAD_NAME                7 (str)
+             48 LOAD_NAME                8 (dict)
+             50 BUILD_LIST               2
+             52 LOAD_NAME                8 (dict)
+             54 BUILD_TUPLE              2
+             56 BINARY_SUBSCR
+             60 BINARY_SUBSCR
+
+ 25          64 LOAD_CONST               4 ('log')
+
+ 29          66 LOAD_NAME                5 (Optional)
+             68 LOAD_NAME                6 (Callable)
+             70 LOAD_NAME                7 (str)
+             72 BUILD_LIST               1
+             74 LOAD_CONST               1 (None)
+             76 BUILD_TUPLE              2
+             78 BINARY_SUBSCR
+             82 BINARY_SUBSCR
+
+ 25          86 LOAD_CONST               5 ('clock')
+
+ 30          88 LOAD_NAME                6 (Callable)
+             90 BUILD_LIST               0
+             92 LOAD_NAME                9 (float)
+             94 BUILD_TUPLE              2
+             96 BINARY_SUBSCR
+
+ 25         100 LOAD_CONST               6 ('sync')
+
+ 31         102 LOAD_NAME               10 (bool)
+
+ 25         104 BUILD_TUPLE              8
+            106 LOAD_CONST               7 (<code object __init__ at 0x7f6af1de7910, file "reward_shot.py", line 25>)
+            108 MAKE_FUNCTION            5 (defaults, annotations)
+            110 STORE_NAME              11 (__init__)
+
+ 43         112 LOAD_CONST               8 ('return')
+            114 LOAD_NAME               10 (bool)
+            116 BUILD_TUPLE              2
+            118 LOAD_CONST               9 (<code object allowed at 0x7f6af1e2a5b0, file "reward_shot.py", line 43>)
+            120 MAKE_FUNCTION            4 (annotations)
+            122 STORE_NAME              12 (allowed)
+
+ 51         124 LOAD_CONST              10 ('frame')
+            126 LOAD_NAME               13 (np)
+            128 LOAD_ATTR               28 (ndarray)
+            148 LOAD_CONST               8 ('return')
+            150 LOAD_NAME               10 (bool)
+            152 BUILD_TUPLE              4
+            154 LOAD_CONST              11 (<code object notify at 0x17a8cd30, file "reward_shot.py", line 51>)
+            156 MAKE_FUNCTION            4 (annotations)
+            158 STORE_NAME              15 (notify)
+
+ 72         160 LOAD_CONST              10 ('frame')
+            162 LOAD_NAME               13 (np)
+            164 LOAD_ATTR               28 (ndarray)
+            184 LOAD_CONST               8 ('return')
+            186 LOAD_NAME                7 (str)
+            188 BUILD_TUPLE              4
+            190 LOAD_CONST              12 (<code object _run at 0x17a8b650, file "reward_shot.py", line 72>)
+            192 MAKE_FUNCTION            4 (annotations)
+            194 STORE_NAME              16 (_run)
+            196 RETURN_CONST             1 (None)
+
+Disassembly of <code object __init__ at 0x7f6af1de7910, file "reward_shot.py", line 25>:
+ 25           0 RESUME                   0
+
+ 33           2 LOAD_FAST                1 (settings)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (s)
+
+ 34          16 LOAD_FAST                2 (post)
+             18 COPY                     1
+             20 POP_JUMP_IF_TRUE        16 (to 54)
+             22 POP_TOP
+             24 LOAD_GLOBAL              2 (telemetry)
+             34 LOAD_ATTR                4 (_http_post)
+        >>   54 LOAD_FAST                0 (self)
+             56 STORE_ATTR               3 (_post)
+
+ 35          66 LOAD_FAST                3 (log)
+             68 COPY                     1
+             70 POP_JUMP_IF_TRUE         3 (to 78)
+             72 POP_TOP
+             74 LOAD_CONST               1 (<code object <lambda> at 0x7f6aed1a7290, file "reward_shot.py", line 35>)
+             76 MAKE_FUNCTION            0
+        >>   78 LOAD_FAST                0 (self)
+             80 STORE_ATTR               4 (log)
+
+ 36          90 LOAD_FAST                4 (clock)
+             92 LOAD_FAST                0 (self)
+             94 STORE_ATTR               5 (_clock)
+
+ 37         104 LOAD_FAST                5 (sync)
+            106 LOAD_FAST                0 (self)
+            108 STORE_ATTR               6 (_sync)
+
+ 38         118 LOAD_CONST               0 (None)
+            120 LOAD_FAST                0 (self)
+            122 STORE_ATTR               7 (_last)
+
+ 39         132 LOAD_GLOBAL             17 (NULL + threading)
+            142 LOAD_ATTR               18 (Lock)
+            162 CALL                     0
+            170 LOAD_FAST                0 (self)
+            172 STORE_ATTR              10 (_busy)
+
+ 40         182 LOAD_CONST               2 (0)
+            184 LOAD_FAST                0 (self)
+            186 STORE_ATTR              11 (sent)
+
+ 41         196 LOAD_CONST               2 (0)
+            198 LOAD_FAST                0 (self)
+            200 STORE_ATTR              12 (skipped)
+            210 RETURN_CONST             0 (None)
+
+Disassembly of <code object <lambda> at 0x7f6aed1a7290, file "reward_shot.py", line 35>:
+ 35           0 RESUME                   0
+              2 RETURN_CONST             0 (None)
+
+Disassembly of <code object allowed at 0x7f6af1e2a5b0, file "reward_shot.py", line 43>:
+ 43           0 RESUME                   0
+
+ 44           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (s)
+             24 STORE_FAST               1 (s)
+
+ 45          26 LOAD_GLOBAL              3 (NULL + bool)
+
+ 46          36 LOAD_GLOBAL              5 (NULL + getattr)
+             46 LOAD_FAST                1 (s)
+             48 LOAD_CONST               1 ('reward_shot_enabled')
+             50 LOAD_CONST               2 (False)
+             52 CALL                     3
+             60 COPY                     1
+             62 POP_JUMP_IF_FALSE       64 (to 192)
+             64 POP_TOP
+
+ 47          66 LOAD_GLOBAL              7 (NULL + telemetry)
+             76 LOAD_ATTR                8 (valid_link_key)
+             96 LOAD_FAST                1 (s)
+             98 LOAD_ATTR               10 (discord_link_key)
+            118 CALL                     1
+
+ 46         126 COPY                     1
+            128 POP_JUMP_IF_FALSE       31 (to 192)
+            130 POP_TOP
+
+ 48         132 LOAD_GLOBAL              7 (NULL + telemetry)
+            142 LOAD_ATTR               12 (valid_endpoint)
+            162 LOAD_FAST                1 (s)
+            164 LOAD_ATTR               14 (telemetry_api_url)
+            184 CALL                     1
+
+ 45     >>  192 CALL                     1
+            200 RETURN_VALUE
+
+Disassembly of <code object notify at 0x17a8cd30, file "reward_shot.py", line 51>:
+ 51           0 RESUME                   0
+
+ 52           2 NOP
+
+ 53           4 NOP
+
+ 54           6 LOAD_FAST                0 (self)
+              8 LOAD_ATTR                1 (NULL|self + allowed)
+             28 CALL                     0
+             36 POP_JUMP_IF_TRUE         1 (to 40)
+
+ 55          38 RETURN_CONST             1 (False)
+
+ 56     >>   40 LOAD_FAST                0 (self)
+             42 LOAD_ATTR                3 (NULL|self + _clock)
+             62 CALL                     0
+             70 STORE_FAST               2 (now)
+
+ 57          72 LOAD_FAST                0 (self)
+             74 LOAD_ATTR                4 (_last)
+             94 POP_JUMP_IF_NONE        44 (to 184)
+             96 LOAD_FAST                2 (now)
+             98 LOAD_FAST                0 (self)
+            100 LOAD_ATTR                4 (_last)
+            120 BINARY_OP               10 (-)
+            124 LOAD_GLOBAL              6 (COOLDOWN_S)
+            134 COMPARE_OP               2 (<)
+            138 POP_JUMP_IF_FALSE       22 (to 184)
+
+ 58         140 LOAD_FAST                0 (self)
+            142 COPY                     1
+            144 LOAD_ATTR                8 (skipped)
+            164 LOAD_CONST               2 (1)
+            166 BINARY_OP               13 (+=)
+            170 SWAP                     2
+            172 STORE_ATTR               4 (skipped)
+
+ 59         182 RETURN_CONST             1 (False)
+
+ 60     >>  184 LOAD_FAST                0 (self)
+            186 LOAD_ATTR               10 (_busy)
+            206 LOAD_ATTR               13 (NULL|self + acquire)
+            226 LOAD_CONST               1 (False)
+            228 KW_NAMES                 3 (('blocking',))
+            230 CALL                     1
+            238 POP_JUMP_IF_TRUE         1 (to 242)
+
+ 61         240 RETURN_CONST             1 (False)
+
+ 62     >>  242 LOAD_FAST                2 (now)
+            244 LOAD_FAST                0 (self)
+            246 STORE_ATTR               2 (_last)
+
+ 63         256 LOAD_GLOBAL             15 (NULL + np)
+            266 LOAD_ATTR               16 (array)
+            286 LOAD_FAST                1 (frame)
+            288 LOAD_CONST               4 (True)
+            290 KW_NAMES                 5 (('copy',))
+            292 CALL                     2
+            300 STORE_FAST               3 (picture)
+
+ 64         302 LOAD_FAST                0 (self)
+            304 LOAD_ATTR               18 (_sync)
+            324 POP_JUMP_IF_FALSE       18 (to 362)
+
+ 65         326 LOAD_FAST                0 (self)
+            328 LOAD_ATTR               21 (NULL|self + _run)
+            348 LOAD_FAST                3 (picture)
+            350 CALL                     1
+            358 POP_TOP
+
+ 66         360 RETURN_CONST             4 (True)
+
+ 67     >>  362 LOAD_GLOBAL             23 (NULL + threading)
+            372 LOAD_ATTR               24 (Thread)
+            392 LOAD_FAST                0 (self)
+            394 LOAD_ATTR               20 (_run)
+            414 LOAD_FAST                3 (picture)
+            416 BUILD_TUPLE              1
+            418 LOAD_CONST               4 (True)
+            420 LOAD_CONST               6 ('pk-auto-rewardshot')
+            422 KW_NAMES                 7 (('target', 'args', 'daemon', 'name'))
+            424 CALL                     4
+            432 LOAD_ATTR               27 (NULL|self + start)
+            452 CALL                     0
+            460 POP_TOP
+
+ 68         462 RETURN_CONST             4 (True)
+        >>  464 PUSH_EXC_INFO
+
+ 69         466 LOAD_GLOBAL             28 (Exception)
+            476 CHECK_EXC_MATCH
+            478 POP_JUMP_IF_FALSE        3 (to 486)
+            480 POP_TOP
+
+ 70         482 POP_EXCEPT
+            484 RETURN_CONST             1 (False)
+
+ 69     >>  486 RERAISE                  0
+        >>  488 COPY                     3
+            490 POP_EXCEPT
+            492 RERAISE                  1
+ExceptionTable:
+  6 to 36 -> 464 [0]
+  40 to 180 -> 464 [0]
+  184 to 238 -> 464 [0]
+  242 to 358 -> 464 [0]
+  362 to 460 -> 464 [0]
+  464 to 480 -> 488 [1] lasti
+  486 to 486 -> 488 [1] lasti
+
+Disassembly of <code object _run at 0x17a8b650, file "reward_shot.py", line 72>:
+ 72           0 RESUME                   0
+
+ 73           2 NOP
+
+ 74           4 LOAD_GLOBAL              1 (NULL + shot)
+             14 LOAD_ATTR                2 (encode_jpeg)
+             34 LOAD_FAST                1 (frame)
+             36 CALL                     1
+             44 STORE_FAST               2 (jpeg)
+
+ 75          46 LOAD_FAST                2 (jpeg)
+             48 POP_JUMP_IF_NOT_NONE    45 (to 140)
+
+ 76          50 LOAD_FAST                0 (self)
+             52 LOAD_ATTR                5 (NULL|self + log)
+             72 LOAD_CONST               1 ('reward screen: could not encode the picture')
+             74 CALL                     1
+             82 POP_TOP
+
+ 77          84 NOP
+
+ 94          86 LOAD_FAST                0 (self)
+             88 LOAD_ATTR                6 (_busy)
+            108 LOAD_ATTR                9 (NULL|self + release)
+            128 CALL                     0
+            136 POP_TOP
+            138 RETURN_CONST             2 ('no_picture')
+
+ 78     >>  140 LOAD_FAST                0 (self)
+            142 LOAD_ATTR               10 (s)
+            162 STORE_FAST               3 (s)
+
+ 79         164 LOAD_FAST                0 (self)
+            166 LOAD_ATTR               13 (NULL|self + _post)
+
+ 80         186 LOAD_GLOBAL             15 (NULL + telemetry)
+            196 LOAD_ATTR               16 (api_url)
+            216 LOAD_FAST                3 (s)
+            218 LOAD_ATTR               18 (telemetry_api_url)
+            238 LOAD_CONST               3 ('/api/reward-shot')
+            240 CALL                     2
+
+ 81         248 LOAD_GLOBAL             15 (NULL + telemetry)
+            258 LOAD_ATTR               20 (clean_key)
+            278 LOAD_FAST                3 (s)
+            280 LOAD_ATTR               22 (discord_link_key)
+            300 CALL                     1
+            308 LOAD_GLOBAL             25 (NULL + base64)
+            318 LOAD_ATTR               26 (b64encode)
+            338 LOAD_FAST                2 (jpeg)
+            340 CALL                     1
+            348 LOAD_ATTR               29 (NULL|self + decode)
+            368 LOAD_CONST               4 ('ascii')
+            370 CALL                     1
+            378 LOAD_CONST               5 (('link_key', 'image'))
+            380 BUILD_CONST_KEY_MAP      2
+
+ 79         382 CALL                     2
+            390 STORE_FAST               4 (ans)
+
+ 83         392 LOAD_GLOBAL             31 (NULL + isinstance)
+            402 LOAD_FAST                4 (ans)
+            404 LOAD_GLOBAL             32 (dict)
+            414 CALL                     2
+            422 COPY                     1
+            424 POP_JUMP_IF_FALSE       19 (to 464)
+            426 POP_TOP
+            428 LOAD_FAST                4 (ans)
+            430 LOAD_ATTR               35 (NULL|self + get)
+            450 LOAD_CONST               6 ('ok')
+            452 CALL                     1
+            460 LOAD_CONST               7 (True)
+            462 IS_OP                    0
+        >>  464 STORE_FAST               5 (ok)
+
+ 84         466 LOAD_FAST                5 (ok)
+            468 POP_JUMP_IF_FALSE        2 (to 474)
+            470 LOAD_CONST               6 ('ok')
+            472 JUMP_FORWARD            44 (to 562)
+        >>  474 LOAD_GLOBAL             31 (NULL + isinstance)
+            484 LOAD_FAST                4 (ans)
+            486 LOAD_GLOBAL             32 (dict)
+            496 CALL                     2
+            504 POP_JUMP_IF_FALSE       27 (to 560)
+            506 LOAD_GLOBAL             37 (NULL + str)
+            516 LOAD_FAST                4 (ans)
+            518 LOAD_ATTR               35 (NULL|self + get)
+            538 LOAD_CONST               8 ('error')
+            540 LOAD_CONST               9 ('server')
+            542 CALL                     2
+            550 CALL                     1
+            558 JUMP_FORWARD             1 (to 562)
+        >>  560 LOAD_CONST               9 ('server')
+        >>  562 STORE_FAST               6 (status)
+
+ 85         564 LOAD_FAST                5 (ok)
+            566 POP_JUMP_IF_FALSE       21 (to 610)
+
+ 86         568 LOAD_FAST                0 (self)
+            570 COPY                     1
+            572 LOAD_ATTR               38 (sent)
+            592 LOAD_CONST              10 (1)
+            594 BINARY_OP               13 (+=)
+            598 SWAP                     2
+            600 STORE_ATTR              19 (sent)
+
+ 87     >>  610 LOAD_FAST                0 (self)
+            612 LOAD_ATTR                5 (NULL|self + log)
+            632 LOAD_CONST              11 ('reward screen: ')
+            634 LOAD_FAST                6 (status)
+            636 FORMAT_VALUE             0
+            638 BUILD_STRING             2
+            640 CALL                     1
+            648 POP_TOP
+
+ 88         650 LOAD_FAST                6 (status)
+
+ 94         652 LOAD_FAST                0 (self)
+            654 LOAD_ATTR                6 (_busy)
+            674 LOAD_ATTR                9 (NULL|self + release)
+            694 CALL                     0
+            702 POP_TOP
+            704 RETURN_VALUE
+        >>  706 PUSH_EXC_INFO
+
+ 89         708 LOAD_GLOBAL             40 (Exception)
+            718 CHECK_EXC_MATCH
+            720 POP_JUMP_IF_FALSE      105 (to 932)
+            722 STORE_FAST               7 (e)
+
+ 90         724 LOAD_GLOBAL             15 (NULL + telemetry)
+            734 LOAD_ATTR               42 (classify_error)
+            754 LOAD_FAST                7 (e)
+            756 CALL                     1
+            764 UNPACK_SEQUENCE          2
+            768 STORE_FAST               8 (kind)
+            770 STORE_FAST               9 (text)
+
+ 91         772 LOAD_FAST                0 (self)
+            774 LOAD_ATTR                5 (NULL|self + log)
+            794 LOAD_CONST              11 ('reward screen: ')
+            796 LOAD_GLOBAL             45 (NULL + type)
+            806 LOAD_FAST                7 (e)
+            808 CALL                     1
+            816 LOAD_ATTR               46 (__name__)
+            836 FORMAT_VALUE             0
+            838 LOAD_CONST              12 (' (')
+            840 LOAD_FAST                8 (kind)
+            842 FORMAT_VALUE             0
+            844 LOAD_CONST              13 (') ')
+            846 LOAD_FAST                9 (text)
+            848 FORMAT_VALUE             0
+            850 BUILD_STRING             6
+            852 CALL                     1
+            860 POP_TOP
+
+ 92         862 POP_EXCEPT
+            864 LOAD_CONST               0 (None)
+            866 STORE_FAST               7 (e)
+            868 DELETE_FAST              7 (e)
+
+ 94         870 LOAD_FAST                0 (self)
+            872 LOAD_ATTR                6 (_busy)
+            892 LOAD_ATTR                9 (NULL|self + release)
+            912 CALL                     0
+            920 POP_TOP
+            922 RETURN_CONST             8 ('error')
+        >>  924 LOAD_CONST               0 (None)
+            926 STORE_FAST               7 (e)
+            928 DELETE_FAST              7 (e)
+            930 RERAISE                  1
+
+ 89     >>  932 RERAISE                  0
+        >>  934 COPY                     3
+            936 POP_EXCEPT
+            938 RERAISE                  1
+        >>  940 PUSH_EXC_INFO
+
+ 94         942 LOAD_FAST                0 (self)
+            944 LOAD_ATTR                6 (_busy)
+            964 LOAD_ATTR                9 (NULL|self + release)
+            984 CALL                     0
+            992 POP_TOP
+            994 RERAISE                  0
+        >>  996 COPY                     3
+            998 POP_EXCEPT
+           1000 RERAISE                  1
+ExceptionTable:
+  4 to 82 -> 706 [0]
+  140 to 650 -> 706 [0]
+  706 to 722 -> 934 [1] lasti
+  724 to 860 -> 924 [1] lasti
+  862 to 868 -> 940 [0]
+  924 to 932 -> 934 [1] lasti
+  934 to 938 -> 940 [0]
+  940 to 994 -> 996 [1] lasti

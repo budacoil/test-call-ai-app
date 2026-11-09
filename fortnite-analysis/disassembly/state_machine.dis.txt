@@ -1,0 +1,1553 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+  8           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (time)
+             10 STORE_NAME               0 (time)
+
+  9          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               2 (('dataclass',))
+             16 IMPORT_NAME              1 (dataclasses)
+             18 IMPORT_FROM              2 (dataclass)
+             20 STORE_NAME               2 (dataclass)
+             22 POP_TOP
+
+ 10          24 LOAD_CONST               0 (0)
+             26 LOAD_CONST               3 (('Enum',))
+             28 IMPORT_NAME              3 (enum)
+             30 IMPORT_FROM              4 (Enum)
+             32 STORE_NAME               4 (Enum)
+             34 POP_TOP
+
+ 11          36 LOAD_CONST               0 (0)
+             38 LOAD_CONST               4 (('Callable', 'Dict', 'Optional'))
+             40 IMPORT_NAME              5 (typing)
+             42 IMPORT_FROM              6 (Callable)
+             44 STORE_NAME               6 (Callable)
+             46 IMPORT_FROM              7 (Dict)
+             48 STORE_NAME               7 (Dict)
+             50 IMPORT_FROM              8 (Optional)
+             52 STORE_NAME               8 (Optional)
+             54 POP_TOP
+
+ 13          56 LOAD_CONST               0 (0)
+             58 LOAD_CONST               1 (None)
+             60 IMPORT_NAME              9 (numpy)
+             62 STORE_NAME              10 (np)
+
+ 15          64 LOAD_CONST               0 (0)
+             66 LOAD_CONST               5 (('AutoCalibrator', 'still_visible'))
+             68 IMPORT_NAME             11 (autocal)
+             70 IMPORT_FROM             12 (AutoCalibrator)
+             72 STORE_NAME              12 (AutoCalibrator)
+             74 IMPORT_FROM             13 (still_visible)
+             76 STORE_NAME              13 (still_visible)
+             78 POP_TOP
+
+ 16          80 LOAD_CONST               0 (0)
+             82 LOAD_CONST               6 (('ModeFix',))
+             84 IMPORT_NAME             14 (mode_fix)
+             86 IMPORT_FROM             15 (ModeFix)
+             88 STORE_NAME              15 (ModeFix)
+             90 POP_TOP
+
+ 17          92 LOAD_CONST               0 (0)
+             94 LOAD_CONST               7 (('RewardFallback',))
+             96 IMPORT_NAME             16 (reward_fallback)
+             98 IMPORT_FROM             17 (RewardFallback)
+            100 STORE_NAME              17 (RewardFallback)
+            102 POP_TOP
+
+ 18         104 LOAD_CONST               0 (0)
+            106 LOAD_CONST               8 (('SurveyGuard',))
+            108 IMPORT_NAME             18 (survey)
+            110 IMPORT_FROM             19 (SurveyGuard)
+            112 STORE_NAME              19 (SurveyGuard)
+            114 POP_TOP
+
+ 19         116 LOAD_CONST               0 (0)
+            118 LOAD_CONST               9 (('Plate', 'aim_point', 'find_checked', 'find_plate', 'find_template'))
+            120 IMPORT_NAME             20 (vision)
+            122 IMPORT_FROM             21 (Plate)
+            124 STORE_NAME              21 (Plate)
+            126 IMPORT_FROM             22 (aim_point)
+            128 STORE_NAME              22 (aim_point)
+            130 IMPORT_FROM             23 (find_checked)
+            132 STORE_NAME              23 (find_checked)
+            134 IMPORT_FROM             24 (find_plate)
+            136 STORE_NAME              24 (find_plate)
+            138 IMPORT_FROM             25 (find_template)
+            140 STORE_NAME              25 (find_template)
+            142 POP_TOP
+
+ 22         144 PUSH_NULL
+            146 LOAD_BUILD_CLASS
+            148 LOAD_CONST              10 (<code object State at 0x7f6aed17d200, file "state_machine.py", line 22>)
+            150 MAKE_FUNCTION            0
+            152 LOAD_CONST              11 ('State')
+            154 LOAD_NAME                4 (Enum)
+            156 CALL                     3
+            164 STORE_NAME              26 (State)
+
+ 37         166 LOAD_NAME               26 (State)
+            168 LOAD_ATTR               54 (SEARCHING_PLAY)
+            188 LOAD_CONST              12 ('play')
+            190 BUILD_TUPLE              2
+
+ 38         192 LOAD_NAME               26 (State)
+            194 LOAD_ATTR               56 (IN_MATCH)
+            214 LOAD_CONST              13 ('continue')
+            216 BUILD_TUPLE              2
+
+ 39         218 LOAD_NAME               26 (State)
+            220 LOAD_ATTR               58 (SKIPPING_RESULT)
+            240 LOAD_CONST              14 ('skip')
+            242 BUILD_TUPLE              2
+
+ 40         244 LOAD_NAME               26 (State)
+            246 LOAD_ATTR               60 (RETURNING_LOBBY)
+            266 LOAD_CONST              15 ('return_lobby')
+            268 BUILD_TUPLE              2
+
+ 36         270 BUILD_LIST               4
+            272 STORE_NAME              31 (STAGES)
+
+ 45         274 LOAD_CONST              16 (('claim', 'claim_single', 'popup'))
+            276 STORE_NAME              32 (POPUP_KEYS)
+
+ 50         278 LOAD_CONST              17 (('claim', 'claim_single'))
+            280 STORE_NAME              33 (REWARD_KEYS)
+
+ 53         282 LOAD_NAME                2 (dataclass)
+
+ 54         284 PUSH_NULL
+            286 LOAD_BUILD_CLASS
+            288 LOAD_CONST              18 (<code object StepResult at 0x7f6aed7ff770, file "state_machine.py", line 53>)
+            290 MAKE_FUNCTION            0
+            292 LOAD_CONST              19 ('StepResult')
+            294 CALL                     2
+
+ 53         302 CALL                     0
+
+ 54         310 STORE_NAME              34 (StepResult)
+
+ 62         312 LOAD_CONST              20 ('key')
+            314 LOAD_NAME               35 (str)
+            316 LOAD_CONST              21 ('frame')
+            318 LOAD_NAME               10 (np)
+            320 LOAD_ATTR               72 (ndarray)
+            340 LOAD_CONST              22 ('return')
+            342 LOAD_CONST               1 (None)
+            344 BUILD_TUPLE              6
+            346 LOAD_CONST              23 (<code object note_claim at 0x7f6aed7a1210, file "state_machine.py", line 62>)
+            348 MAKE_FUNCTION            4 (annotations)
+            350 STORE_NAME              37 (note_claim)
+
+ 76         352 LOAD_CONST              21 ('frame')
+            354 LOAD_NAME               10 (np)
+            356 LOAD_ATTR               72 (ndarray)
+            376 LOAD_CONST              24 ('templates')
+            378 LOAD_NAME                7 (Dict)
+            380 LOAD_NAME               35 (str)
+            382 LOAD_NAME                8 (Optional)
+            384 LOAD_NAME               10 (np)
+            386 LOAD_ATTR               72 (ndarray)
+            406 BINARY_SUBSCR
+            410 BUILD_TUPLE              2
+            412 BINARY_SUBSCR
+            416 LOAD_CONST              22 ('return')
+            418 LOAD_NAME               38 (set)
+            420 BUILD_TUPLE              6
+            422 LOAD_CONST              25 (<code object visible_rewards at 0x7f6aed189b50, file "state_machine.py", line 76>)
+            424 MAKE_FUNCTION            4 (annotations)
+            426 STORE_NAME              39 (visible_rewards)
+
+ 92         428 PUSH_NULL
+            430 LOAD_BUILD_CLASS
+            432 LOAD_CONST              26 (<code object RewardCounter at 0x7f6aed7fe780, file "state_machine.py", line 92>)
+            434 MAKE_FUNCTION            0
+            436 LOAD_CONST              27 ('RewardCounter')
+            438 CALL                     2
+            446 STORE_NAME              40 (RewardCounter)
+
+115         448 PUSH_NULL
+            450 LOAD_BUILD_CLASS
+            452 LOAD_CONST              28 (<code object StateMachine at 0x7f6af1e29480, file "state_machine.py", line 115>)
+            454 MAKE_FUNCTION            0
+            456 LOAD_CONST              29 ('StateMachine')
+            458 CALL                     2
+            466 STORE_NAME              41 (StateMachine)
+            468 RETURN_CONST             1 (None)
+
+Disassembly of <code object State at 0x7f6aed17d200, file "state_machine.py", line 22>:
+ 22           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('State')
+              8 STORE_NAME               2 (__qualname__)
+
+ 23          10 LOAD_CONST               1 ('IDLE')
+             12 STORE_NAME               3 (IDLE)
+
+ 24          14 LOAD_CONST               2 ('SEARCHING_PLAY')
+             16 STORE_NAME               4 (SEARCHING_PLAY)
+
+ 25          18 LOAD_CONST               3 ('IN_MATCH')
+             20 STORE_NAME               5 (IN_MATCH)
+
+ 26          22 LOAD_CONST               4 ('SKIPPING_RESULT')
+             24 STORE_NAME               6 (SKIPPING_RESULT)
+
+ 27          26 LOAD_CONST               5 ('RETURNING_LOBBY')
+             28 STORE_NAME               7 (RETURNING_LOBBY)
+
+ 29          30 LOAD_CONST               6 ('B:LOBBY')
+             32 STORE_NAME               8 (B_LOBBY)
+
+ 30          34 LOAD_CONST               7 ('B:LOADING')
+             36 STORE_NAME               9 (B_WAIT_MATCH)
+
+ 31          38 LOAD_CONST               8 ('B:WAITING')
+             40 STORE_NAME              10 (B_COUNTDOWN)
+
+ 32          42 LOAD_CONST               9 ('B:MENU')
+             44 STORE_NAME              11 (B_MENU)
+             46 RETURN_CONST            10 (None)
+
+Disassembly of <code object StepResult at 0x7f6aed7ff770, file "state_machine.py", line 53>:
+ 53           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('StepResult')
+              8 STORE_NAME               2 (__qualname__)
+             10 SETUP_ANNOTATIONS
+
+ 55          12 LOAD_NAME                3 (State)
+             14 LOAD_NAME                4 (__annotations__)
+             16 LOAD_CONST               1 ('state')
+             18 STORE_SUBSCR
+
+ 56          22 LOAD_CONST               2 (0.0)
+             24 STORE_NAME               5 (score)
+             26 LOAD_NAME                6 (float)
+             28 LOAD_NAME                4 (__annotations__)
+             30 LOAD_CONST               3 ('score')
+             32 STORE_SUBSCR
+
+ 57          36 LOAD_CONST               4 (False)
+             38 STORE_NAME               7 (clicked)
+             40 LOAD_NAME                8 (bool)
+             42 LOAD_NAME                4 (__annotations__)
+             44 LOAD_CONST               5 ('clicked')
+             46 STORE_SUBSCR
+
+ 58          50 LOAD_CONST               6 ('')
+             52 STORE_NAME               9 (note)
+             54 LOAD_NAME               10 (str)
+             56 LOAD_NAME                4 (__annotations__)
+             58 LOAD_CONST               7 ('note')
+             60 STORE_SUBSCR
+
+ 59          64 LOAD_CONST               6 ('')
+             66 STORE_NAME              11 (key)
+             68 LOAD_NAME               10 (str)
+             70 LOAD_NAME                4 (__annotations__)
+             72 LOAD_CONST               8 ('key')
+             74 STORE_SUBSCR
+             78 RETURN_CONST             9 (None)
+
+Disassembly of <code object note_claim at 0x7f6aed7a1210, file "state_machine.py", line 62>:
+ 62           0 RESUME                   0
+
+ 63           2 NOP
+
+ 67           4 LOAD_FAST                0 (machine)
+              6 COPY                     1
+              8 LOAD_ATTR                0 (claims)
+             28 LOAD_CONST               1 (1)
+             30 BINARY_OP               13 (+=)
+             34 SWAP                     2
+             36 STORE_ATTR               0 (claims)
+
+ 68          46 LOAD_FAST                0 (machine)
+             48 LOAD_ATTR                2 (on_claim)
+             68 STORE_FAST               3 (cb)
+
+ 69          70 LOAD_FAST                3 (cb)
+             72 POP_JUMP_IF_NONE        22 (to 118)
+
+ 70          74 NOP
+
+ 71          76 PUSH_NULL
+             78 LOAD_FAST                3 (cb)
+             80 LOAD_FAST                1 (key)
+             82 LOAD_FAST                2 (frame)
+             84 LOAD_FAST                0 (machine)
+             86 LOAD_ATTR                4 (loops)
+            106 CALL                     3
+            114 POP_TOP
+            116 RETURN_CONST             0 (None)
+
+ 69     >>  118 RETURN_CONST             0 (None)
+        >>  120 PUSH_EXC_INFO
+
+ 72         122 LOAD_GLOBAL              6 (Exception)
+            132 CHECK_EXC_MATCH
+            134 POP_JUMP_IF_FALSE        3 (to 142)
+            136 POP_TOP
+
+ 73         138 POP_EXCEPT
+            140 RETURN_CONST             0 (None)
+
+ 72     >>  142 RERAISE                  0
+        >>  144 COPY                     3
+            146 POP_EXCEPT
+            148 RERAISE                  1
+ExceptionTable:
+  76 to 114 -> 120 [0]
+  120 to 136 -> 144 [1] lasti
+  142 to 142 -> 144 [1] lasti
+
+Disassembly of <code object visible_rewards at 0x7f6aed189b50, file "state_machine.py", line 76>:
+ 76           0 RESUME                   0
+
+ 77           2 NOP
+
+ 78           4 LOAD_GLOBAL              1 (NULL + set)
+             14 CALL                     0
+             22 STORE_FAST               3 (seen)
+
+ 79          24 LOAD_GLOBAL              2 (REWARD_KEYS)
+             34 GET_ITER
+        >>   36 FOR_ITER               122 (to 284)
+             40 STORE_FAST               4 (key)
+
+ 80          42 LOAD_FAST                1 (templates)
+             44 LOAD_ATTR                5 (NULL|self + get)
+             64 LOAD_FAST                4 (key)
+             66 CALL                     1
+             74 STORE_FAST               5 (tpl)
+
+ 81          76 LOAD_FAST                5 (tpl)
+             78 POP_JUMP_IF_NOT_NONE     1 (to 82)
+
+ 82          80 JUMP_BACKWARD           23 (to 36)
+
+ 83     >>   82 LOAD_GLOBAL              7 (NULL + isinstance)
+             92 LOAD_FAST                5 (tpl)
+             94 LOAD_GLOBAL              8 (Plate)
+            104 CALL                     2
+            112 POP_JUMP_IF_FALSE       27 (to 168)
+
+ 84         114 LOAD_GLOBAL             11 (NULL + find_plate)
+            124 LOAD_FAST                0 (frame)
+            126 LOAD_FAST                5 (tpl)
+            128 LOAD_FAST                2 (settings)
+            130 LOAD_ATTR               12 (scales)
+            150 CALL                     3
+            158 UNPACK_SEQUENCE          2
+            162 STORE_FAST               6 (m)
+            164 STORE_FAST               7 (_)
+            166 JUMP_FORWARD            37 (to 242)
+
+ 86     >>  168 LOAD_GLOBAL             15 (NULL + find_template)
+            178 LOAD_FAST                0 (frame)
+            180 LOAD_FAST                5 (tpl)
+            182 LOAD_FAST                2 (settings)
+            184 LOAD_ATTR               16 (threshold)
+            204 LOAD_FAST                2 (settings)
+            206 LOAD_ATTR               12 (scales)
+            226 CALL                     4
+            234 UNPACK_SEQUENCE          2
+            238 STORE_FAST               6 (m)
+            240 STORE_FAST               7 (_)
+
+ 87     >>  242 LOAD_FAST                6 (m)
+            244 POP_JUMP_IF_TRUE         1 (to 248)
+            246 JUMP_BACKWARD          106 (to 36)
+
+ 88     >>  248 LOAD_FAST                3 (seen)
+            250 LOAD_ATTR               19 (NULL|self + add)
+            270 LOAD_FAST                4 (key)
+            272 CALL                     1
+            280 POP_TOP
+            282 JUMP_BACKWARD          124 (to 36)
+
+ 79     >>  284 END_FOR
+
+ 89         286 LOAD_FAST                3 (seen)
+            288 RETURN_VALUE
+
+Disassembly of <code object RewardCounter at 0x7f6aed7fe780, file "state_machine.py", line 92>:
+ 92           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('RewardCounter')
+              8 STORE_NAME               2 (__qualname__)
+
+ 93          10 NOP
+
+101          12 LOAD_NAME                3 (time)
+             14 LOAD_ATTR                8 (monotonic)
+             34 BUILD_TUPLE              1
+             36 LOAD_CONST               1 ('clock')
+             38 LOAD_NAME                5 (Callable)
+             40 BUILD_LIST               0
+             42 LOAD_NAME                6 (float)
+             44 BUILD_TUPLE              2
+             46 BINARY_SUBSCR
+             50 BUILD_TUPLE              2
+             52 LOAD_CONST               2 (<code object __init__ at 0x7f6aed17f0f0, file "state_machine.py", line 101>)
+             54 MAKE_FUNCTION            5 (defaults, annotations)
+             56 STORE_NAME               7 (__init__)
+
+105          58 LOAD_CONST               3 ('clicked_key')
+             60 LOAD_NAME                8 (str)
+             62 LOAD_CONST               4 ('seen')
+             64 LOAD_NAME                9 (set)
+             66 LOAD_CONST               5 ('return')
+             68 LOAD_CONST               6 (None)
+             70 BUILD_TUPLE              6
+             72 LOAD_CONST               7 (<code object update at 0x7f6aed8016f0, file "state_machine.py", line 105>)
+             74 MAKE_FUNCTION            4 (annotations)
+             76 STORE_NAME              10 (update)
+             78 RETURN_CONST             6 (None)
+
+Disassembly of <code object __init__ at 0x7f6aed17f0f0, file "state_machine.py", line 101>:
+101           0 RESUME                   0
+
+102           2 LOAD_CONST               1 (0)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (count)
+
+103          16 LOAD_GLOBAL              3 (NULL + set)
+             26 CALL                     0
+             34 LOAD_FAST                0 (self)
+             36 STORE_ATTR               2 (_pending)
+             46 RETURN_CONST             0 (None)
+
+Disassembly of <code object update at 0x7f6aed8016f0, file "state_machine.py", line 105>:
+105           0 RESUME                   0
+
+106           2 LOAD_FAST                1 (clicked_key)
+              4 LOAD_GLOBAL              0 (REWARD_KEYS)
+             14 CONTAINS_OP              0
+             16 POP_JUMP_IF_FALSE       27 (to 72)
+
+107          18 LOAD_FAST                0 (self)
+             20 LOAD_ATTR                2 (_pending)
+             40 LOAD_ATTR                5 (NULL|self + add)
+             60 LOAD_FAST                1 (clicked_key)
+             62 CALL                     1
+             70 POP_TOP
+
+108     >>   72 LOAD_GLOBAL              7 (NULL + list)
+             82 LOAD_FAST                0 (self)
+             84 LOAD_ATTR                2 (_pending)
+            104 CALL                     1
+            112 GET_ITER
+        >>  114 FOR_ITER                60 (to 238)
+            118 STORE_FAST               3 (key)
+
+109         120 LOAD_FAST                3 (key)
+            122 LOAD_FAST                2 (seen)
+            124 CONTAINS_OP              0
+            126 POP_JUMP_IF_TRUE         5 (to 138)
+            128 LOAD_FAST                3 (key)
+            130 LOAD_FAST                1 (clicked_key)
+            132 COMPARE_OP              40 (==)
+            136 POP_JUMP_IF_FALSE        1 (to 140)
+
+110     >>  138 JUMP_BACKWARD           13 (to 114)
+
+111     >>  140 LOAD_FAST                0 (self)
+            142 COPY                     1
+            144 LOAD_ATTR                8 (count)
+            164 LOAD_CONST               1 (1)
+            166 BINARY_OP               13 (+=)
+            170 SWAP                     2
+            172 STORE_ATTR               4 (count)
+
+112         182 LOAD_FAST                0 (self)
+            184 LOAD_ATTR                2 (_pending)
+            204 LOAD_ATTR               11 (NULL|self + discard)
+            224 LOAD_FAST                3 (key)
+            226 CALL                     1
+            234 POP_TOP
+            236 JUMP_BACKWARD           62 (to 114)
+
+108     >>  238 END_FOR
+            240 RETURN_CONST             0 (None)
+
+Disassembly of <code object StateMachine at 0x7f6af1e29480, file "state_machine.py", line 115>:
+115           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('StateMachine')
+              8 STORE_NAME               2 (__qualname__)
+
+116          10 LOAD_NAME                3 (time)
+             12 LOAD_ATTR                8 (monotonic)
+             32 BUILD_TUPLE              1
+             34 LOAD_CONST               1 ('templates')
+             36 LOAD_NAME                5 (Dict)
+             38 LOAD_NAME                6 (str)
+             40 LOAD_NAME                7 (Optional)
+             42 LOAD_NAME                8 (np)
+             44 LOAD_ATTR               18 (ndarray)
+             64 BINARY_SUBSCR
+             68 BUILD_TUPLE              2
+             70 BINARY_SUBSCR
+             74 LOAD_CONST               2 ('clock')
+             76 LOAD_NAME               10 (Callable)
+             78 BUILD_LIST               0
+             80 LOAD_NAME               11 (float)
+             82 BUILD_TUPLE              2
+             84 BINARY_SUBSCR
+             88 BUILD_TUPLE              4
+             90 LOAD_CONST               3 (<code object __init__ at 0x17a8d610, file "state_machine.py", line 116>)
+             92 MAKE_FUNCTION            5 (defaults, annotations)
+             94 STORE_NAME              12 (__init__)
+
+132          96 LOAD_CONST              13 (('return', None))
+             98 LOAD_CONST               6 (<code object start at 0x7f6aed1d0c10, file "state_machine.py", line 132>)
+            100 MAKE_FUNCTION            4 (annotations)
+            102 STORE_NAME              13 (start)
+
+136         104 LOAD_CONST              13 (('return', None))
+            106 LOAD_CONST               7 (<code object stop at 0x7f6aed17fd20, file "state_machine.py", line 136>)
+            108 MAKE_FUNCTION            4 (annotations)
+            110 STORE_NAME              14 (stop)
+
+139         112 LOAD_CONST              14 ((0, 0))
+            114 LOAD_CONST               8 ('frame')
+            116 LOAD_NAME                8 (np)
+            118 LOAD_ATTR               18 (ndarray)
+            138 LOAD_CONST               9 ('ox')
+            140 LOAD_NAME               15 (int)
+            142 LOAD_CONST              10 ('oy')
+            144 LOAD_NAME               15 (int)
+            146 LOAD_CONST               4 ('return')
+            148 LOAD_NAME               16 (StepResult)
+            150 BUILD_TUPLE              8
+            152 LOAD_CONST              11 (<code object step at 0x17a9ced0, file "state_machine.py", line 139>)
+            154 MAKE_FUNCTION            5 (defaults, annotations)
+            156 STORE_NAME              17 (step)
+
+156         158 LOAD_CONST              14 ((0, 0))
+            160 LOAD_CONST               8 ('frame')
+            162 LOAD_NAME                8 (np)
+            164 LOAD_ATTR               18 (ndarray)
+            184 LOAD_CONST               9 ('ox')
+            186 LOAD_NAME               15 (int)
+            188 LOAD_CONST              10 ('oy')
+            190 LOAD_NAME               15 (int)
+            192 LOAD_CONST               4 ('return')
+            194 LOAD_NAME               16 (StepResult)
+            196 BUILD_TUPLE              8
+            198 LOAD_CONST              12 (<code object _step at 0x17a955c0, file "state_machine.py", line 156>)
+            200 MAKE_FUNCTION            5 (defaults, annotations)
+            202 STORE_NAME              18 (_step)
+            204 RETURN_CONST             5 (None)
+
+Disassembly of <code object __init__ at 0x17a8d610, file "state_machine.py", line 116>:
+              0 MAKE_CELL                0 (self)
+
+116           2 RESUME                   0
+
+117           4 LOAD_FAST                1 (settings)
+              6 LOAD_DEREF               0 (self)
+              8 STORE_ATTR               0 (s)
+
+118          18 LOAD_FAST                2 (templates)
+             20 LOAD_DEREF               0 (self)
+             22 STORE_ATTR               1 (templates)
+
+119          32 LOAD_FAST                3 (controller)
+             34 LOAD_DEREF               0 (self)
+             36 STORE_ATTR               2 (ctrl)
+
+120          46 LOAD_FAST                4 (clock)
+             48 LOAD_DEREF               0 (self)
+             50 STORE_ATTR               3 (_clock)
+
+121          60 LOAD_GLOBAL              8 (State)
+             70 LOAD_ATTR               10 (IDLE)
+             90 LOAD_DEREF               0 (self)
+             92 STORE_ATTR               6 (state)
+
+122         102 LOAD_CONST               1 (0)
+            104 LOAD_DEREF               0 (self)
+            106 STORE_ATTR               7 (loops)
+
+123         116 LOAD_GLOBAL             17 (NULL + RewardCounter)
+            126 LOAD_FAST                4 (clock)
+            128 CALL                     1
+            136 LOAD_DEREF               0 (self)
+            138 STORE_ATTR               9 (rewards)
+
+124         148 LOAD_CONST               1 (0)
+            150 LOAD_DEREF               0 (self)
+            152 STORE_ATTR              10 (claims)
+
+125         162 LOAD_CONST               0 (None)
+            164 LOAD_DEREF               0 (self)
+            166 STORE_ATTR              11 (on_claim)
+
+126         176 LOAD_CONST               2 (<code object <lambda> at 0x7f6aed1a5bd0, file "state_machine.py", line 126>)
+            178 MAKE_FUNCTION            0
+            180 LOAD_DEREF               0 (self)
+            182 STORE_ATTR              12 (log)
+
+127         192 LOAD_GLOBAL             27 (NULL + AutoCalibrator)
+            202 LOAD_FAST                1 (settings)
+            204 LOAD_FAST                4 (clock)
+            206 LOAD_CLOSURE             0 (self)
+            208 BUILD_TUPLE              1
+            210 LOAD_CONST               3 (<code object <lambda> at 0x7f6aed17e010, file "state_machine.py", line 127>)
+            212 MAKE_FUNCTION            8 (closure)
+            214 KW_NAMES                 4 (('log',))
+            216 CALL                     3
+            224 LOAD_DEREF               0 (self)
+            226 STORE_ATTR              14 (cal)
+
+128         236 LOAD_GLOBAL             31 (NULL + ModeFix)
+            246 LOAD_FAST                1 (settings)
+            248 LOAD_FAST                4 (clock)
+            250 LOAD_CLOSURE             0 (self)
+            252 BUILD_TUPLE              1
+            254 LOAD_CONST               5 (<code object <lambda> at 0x7f6aed17fc30, file "state_machine.py", line 128>)
+            256 MAKE_FUNCTION            8 (closure)
+            258 KW_NAMES                 4 (('log',))
+            260 CALL                     3
+            268 LOAD_DEREF               0 (self)
+            270 STORE_ATTR              16 (modefix)
+
+129         280 LOAD_GLOBAL             35 (NULL + SurveyGuard)
+            290 LOAD_FAST                4 (clock)
+            292 CALL                     1
+            300 LOAD_DEREF               0 (self)
+            302 STORE_ATTR              18 (survey)
+
+130         312 LOAD_GLOBAL             39 (NULL + RewardFallback)
+            322 LOAD_FAST                4 (clock)
+            324 CALL                     1
+            332 LOAD_DEREF               0 (self)
+            334 STORE_ATTR              20 (fallback)
+            344 RETURN_CONST             0 (None)
+
+Disassembly of <code object <lambda> at 0x7f6aed1a5bd0, file "state_machine.py", line 126>:
+126           0 RESUME                   0
+              2 RETURN_CONST             0 (None)
+
+Disassembly of <code object <lambda> at 0x7f6aed17e010, file "state_machine.py", line 127>:
+              0 COPY_FREE_VARS           1
+
+127           2 RESUME                   0
+              4 LOAD_DEREF               1 (self)
+              6 LOAD_ATTR                1 (NULL|self + log)
+             26 LOAD_FAST                0 (m)
+             28 CALL                     1
+             36 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed17fc30, file "state_machine.py", line 128>:
+              0 COPY_FREE_VARS           1
+
+128           2 RESUME                   0
+              4 LOAD_DEREF               1 (self)
+              6 LOAD_ATTR                1 (NULL|self + log)
+             26 LOAD_FAST                0 (m)
+             28 CALL                     1
+             36 RETURN_VALUE
+
+Disassembly of <code object start at 0x7f6aed1d0c10, file "state_machine.py", line 132>:
+132           0 RESUME                   0
+
+133           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (state)
+             24 LOAD_GLOBAL              2 (State)
+             34 LOAD_ATTR                4 (IDLE)
+             54 IS_OP                    0
+             56 POP_JUMP_IF_FALSE       22 (to 102)
+
+134          58 LOAD_GLOBAL              2 (State)
+             68 LOAD_ATTR                6 (SEARCHING_PLAY)
+             88 LOAD_FAST                0 (self)
+             90 STORE_ATTR               0 (state)
+            100 RETURN_CONST             0 (None)
+
+133     >>  102 RETURN_CONST             0 (None)
+
+Disassembly of <code object stop at 0x7f6aed17fd20, file "state_machine.py", line 136>:
+136           0 RESUME                   0
+
+137           2 LOAD_GLOBAL              0 (State)
+             12 LOAD_ATTR                2 (IDLE)
+             32 LOAD_FAST                0 (self)
+             34 STORE_ATTR               2 (state)
+             44 RETURN_CONST             0 (None)
+
+Disassembly of <code object step at 0x17a9ced0, file "state_machine.py", line 139>:
+              0 MAKE_CELL                0 (self)
+              2 MAKE_CELL                1 (frame)
+
+139           4 RESUME                   0
+
+140           6 LOAD_DEREF               0 (self)
+              8 LOAD_ATTR                0 (state)
+             28 LOAD_GLOBAL              2 (State)
+             38 LOAD_ATTR                4 (IDLE)
+             58 IS_OP                    0
+             60 POP_JUMP_IF_FALSE       23 (to 108)
+
+141          62 LOAD_GLOBAL              7 (NULL + StepResult)
+             72 LOAD_DEREF               0 (self)
+             74 LOAD_ATTR                0 (state)
+             94 LOAD_CONST               1 ('idle')
+             96 KW_NAMES                 2 (('note',))
+             98 CALL                     2
+            106 RETURN_VALUE
+
+142     >>  108 LOAD_DEREF               0 (self)
+            110 LOAD_ATTR                8 (cal)
+            130 LOAD_ATTR               11 (NULL|self + check)
+            150 LOAD_DEREF               0 (self)
+            152 LOAD_ATTR                0 (state)
+            172 CALL                     1
+            180 POP_TOP
+
+143         182 LOAD_DEREF               0 (self)
+            184 LOAD_ATTR                8 (cal)
+            204 LOAD_ATTR               13 (NULL|self + judge)
+            224 LOAD_CLOSURE             1 (frame)
+            226 LOAD_CLOSURE             0 (self)
+            228 BUILD_TUPLE              2
+            230 LOAD_CONST               3 (<code object <lambda> at 0x7f6aed1c6330, file "state_machine.py", line 143>)
+            232 MAKE_FUNCTION            8 (closure)
+            234 CALL                     1
+            242 STORE_FAST               4 (j)
+
+144         244 LOAD_FAST                4 (j)
+            246 POP_JUMP_IF_NONE        52 (to 352)
+            248 LOAD_FAST                4 (j)
+            250 LOAD_CONST               4 (0)
+            252 BINARY_SUBSCR
+            256 LOAD_CONST               5 ('fail')
+            258 COMPARE_OP              40 (==)
+            262 POP_JUMP_IF_FALSE       44 (to 352)
+
+145         264 LOAD_FAST                4 (j)
+            266 LOAD_CONST               6 (1)
+            268 BINARY_SUBSCR
+            272 LOAD_CONST               7 ('prev')
+            274 BINARY_SUBSCR
+            278 LOAD_DEREF               0 (self)
+            280 STORE_ATTR               0 (state)
+
+146         290 LOAD_DEREF               0 (self)
+            292 COPY                     1
+            294 LOAD_ATTR               14 (loops)
+            314 LOAD_FAST                4 (j)
+            316 LOAD_CONST               6 (1)
+            318 BINARY_SUBSCR
+            322 LOAD_CONST               8 ('fin')
+            324 BINARY_SUBSCR
+            328 POP_JUMP_IF_FALSE        2 (to 334)
+            330 LOAD_CONST               6 (1)
+            332 JUMP_FORWARD             1 (to 336)
+        >>  334 LOAD_CONST               4 (0)
+        >>  336 BINARY_OP               23 (-=)
+            340 SWAP                     2
+            342 STORE_ATTR               7 (loops)
+
+147     >>  352 LOAD_GLOBAL             17 (NULL + visible_rewards)
+            362 LOAD_DEREF               1 (frame)
+            364 LOAD_DEREF               0 (self)
+            366 LOAD_ATTR               18 (templates)
+            386 LOAD_DEREF               0 (self)
+            388 LOAD_ATTR               20 (s)
+            408 CALL                     3
+            416 STORE_FAST               5 (seen)
+
+148         418 LOAD_DEREF               0 (self)
+            420 LOAD_ATTR               23 (NULL|self + _step)
+            440 LOAD_DEREF               1 (frame)
+            442 LOAD_FAST                2 (ox)
+            444 LOAD_FAST                3 (oy)
+            446 CALL                     3
+            454 STORE_FAST               6 (r)
+
+149         456 LOAD_DEREF               0 (self)
+            458 LOAD_ATTR               24 (rewards)
+            478 LOAD_ATTR               27 (NULL|self + update)
+            498 LOAD_FAST                6 (r)
+            500 LOAD_ATTR               28 (clicked)
+            520 POP_JUMP_IF_FALSE       12 (to 546)
+            522 LOAD_FAST                6 (r)
+            524 LOAD_ATTR               30 (key)
+            544 JUMP_FORWARD             1 (to 548)
+        >>  546 LOAD_CONST               9 ('')
+        >>  548 LOAD_FAST                5 (seen)
+            550 CALL                     2
+            558 POP_TOP
+
+150         560 LOAD_FAST                6 (r)
+            562 LOAD_ATTR               28 (clicked)
+            582 POP_JUMP_IF_FALSE       26 (to 636)
+
+151         584 LOAD_DEREF               0 (self)
+            586 LOAD_ATTR               32 (fallback)
+            606 LOAD_ATTR               35 (NULL|self + reset)
+            626 CALL                     0
+            634 POP_TOP
+
+152     >>  636 LOAD_FAST                6 (r)
+            638 LOAD_ATTR               28 (clicked)
+            658 POP_JUMP_IF_FALSE       41 (to 742)
+            660 LOAD_FAST                6 (r)
+            662 LOAD_ATTR               30 (key)
+            682 LOAD_GLOBAL             36 (REWARD_KEYS)
+            692 CONTAINS_OP              0
+            694 POP_JUMP_IF_FALSE       23 (to 742)
+
+153         696 LOAD_GLOBAL             39 (NULL + note_claim)
+            706 LOAD_DEREF               0 (self)
+            708 LOAD_FAST                6 (r)
+            710 LOAD_ATTR               30 (key)
+            730 LOAD_DEREF               1 (frame)
+            732 CALL                     3
+            740 POP_TOP
+
+154     >>  742 LOAD_FAST                6 (r)
+            744 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed1c6330, file "state_machine.py", line 143>:
+              0 COPY_FREE_VARS           2
+
+143           2 RESUME                   0
+              4 LOAD_GLOBAL              1 (NULL + still_visible)
+             14 LOAD_DEREF               3 (frame)
+             16 LOAD_DEREF               4 (self)
+             18 LOAD_ATTR                2 (templates)
+             38 LOAD_ATTR                5 (NULL|self + get)
+             58 LOAD_FAST                0 (k)
+             60 CALL                     1
+             68 LOAD_FAST                1 (thr)
+             70 LOAD_FAST                2 (pos)
+             72 LOAD_DEREF               4 (self)
+             74 LOAD_ATTR                6 (s)
+             94 LOAD_ATTR                8 (scales)
+            114 CALL                     5
+            122 RETURN_VALUE
+
+Disassembly of <code object _step at 0x17a955c0, file "state_machine.py", line 156>:
+              0 MAKE_CELL                0 (self)
+              2 MAKE_CELL               21 (own_key)
+              4 MAKE_CELL               22 (plate)
+              6 MAKE_CELL               23 (thr)
+              8 MAKE_CELL               24 (tpl)
+
+156          10 RESUME                   0
+
+157          12 LOAD_DEREF               0 (self)
+             14 LOAD_ATTR                0 (state)
+             34 LOAD_GLOBAL              2 (State)
+             44 LOAD_ATTR                4 (SEARCHING_PLAY)
+             64 IS_OP                    0
+             66 POP_JUMP_IF_FALSE      122 (to 312)
+             68 LOAD_DEREF               0 (self)
+             70 LOAD_ATTR                6 (ctrl)
+             90 LOAD_ATTR                9 (NULL|self + ready)
+            110 CALL                     0
+            118 POP_JUMP_IF_FALSE       96 (to 312)
+
+158         120 LOAD_DEREF               0 (self)
+            122 LOAD_ATTR               10 (modefix)
+            142 LOAD_ATTR               13 (NULL|self + poll)
+            162 LOAD_FAST                1 (frame)
+            164 CALL                     1
+            172 STORE_FAST               4 (fx)
+
+159         174 LOAD_FAST                4 (fx)
+            176 POP_JUMP_IF_FALSE       67 (to 312)
+            178 LOAD_DEREF               0 (self)
+            180 LOAD_ATTR                6 (ctrl)
+            200 LOAD_ATTR               15 (NULL|self + click)
+            220 LOAD_FAST                4 (fx)
+            222 LOAD_CONST               1 (0)
+            224 BINARY_SUBSCR
+            228 LOAD_FAST                2 (ox)
+            230 BINARY_OP                0 (+)
+            234 LOAD_FAST                4 (fx)
+            236 LOAD_CONST               2 (1)
+            238 BINARY_SUBSCR
+            242 LOAD_FAST                3 (oy)
+            244 BINARY_OP                0 (+)
+            248 CALL                     2
+            256 POP_JUMP_IF_FALSE       27 (to 312)
+
+160         258 LOAD_GLOBAL             17 (NULL + StepResult)
+            268 LOAD_DEREF               0 (self)
+            270 LOAD_ATTR                0 (state)
+            290 LOAD_CONST               3 (0.0)
+            292 LOAD_CONST               4 (True)
+            294 LOAD_FAST                4 (fx)
+            296 LOAD_CONST               5 (2)
+            298 BINARY_SUBSCR
+            302 CALL                     4
+            310 RETURN_VALUE
+
+161     >>  312 LOAD_GLOBAL             19 (NULL + next)
+            322 LOAD_CLOSURE             0 (self)
+            324 BUILD_TUPLE              1
+            326 LOAD_CONST               6 (<code object <genexpr> at 0x7f6aed7fddf0, file "state_machine.py", line 161>)
+            328 MAKE_FUNCTION            8 (closure)
+            330 LOAD_GLOBAL             21 (NULL + enumerate)
+            340 LOAD_GLOBAL             22 (STAGES)
+            350 CALL                     1
+            358 GET_ITER
+            360 CALL                     0
+            368 CALL                     1
+            376 STORE_FAST               5 (idx)
+
+162         378 LOAD_GLOBAL             22 (STAGES)
+            388 LOAD_FAST                5 (idx)
+            390 BINARY_SUBSCR
+            394 LOAD_CONST               2 (1)
+            396 BINARY_SUBSCR
+            400 STORE_DEREF             21 (own_key)
+
+163         402 LOAD_GLOBAL             25 (NULL + len)
+            412 LOAD_GLOBAL             22 (STAGES)
+            422 CALL                     1
+            430 STORE_FAST               6 (n)
+
+166         432 BUILD_LIST               0
+            434 STORE_FAST               7 (cands)
+
+168         436 LOAD_GLOBAL             27 (NULL + range)
+            446 LOAD_FAST                5 (idx)
+            448 LOAD_FAST                6 (n)
+            450 CALL                     2
+            458 GET_ITER
+        >>  460 FOR_ITER                84 (to 632)
+            464 STORE_FAST               8 (i)
+
+169         466 LOAD_GLOBAL             22 (STAGES)
+            476 LOAD_FAST                8 (i)
+            478 BINARY_SUBSCR
+            482 LOAD_CONST               2 (1)
+            484 BINARY_SUBSCR
+            488 STORE_FAST               9 (key)
+
+170         490 LOAD_FAST                5 (idx)
+            492 LOAD_CONST               1 (0)
+            494 COMPARE_OP              40 (==)
+            498 POP_JUMP_IF_FALSE       26 (to 552)
+            500 LOAD_FAST                9 (key)
+            502 LOAD_CONST               7 ('continue')
+            504 COMPARE_OP              40 (==)
+            508 POP_JUMP_IF_FALSE       21 (to 552)
+
+171         510 LOAD_FAST                7 (cands)
+            512 LOAD_ATTR               29 (NULL|self + append)
+            532 LOAD_FAST                9 (key)
+            534 LOAD_CONST               0 (None)
+            536 LOAD_CONST               8 (False)
+            538 BUILD_TUPLE              3
+            540 CALL                     1
+            548 POP_TOP
+            550 JUMP_BACKWARD           46 (to 460)
+
+173     >>  552 LOAD_FAST                7 (cands)
+            554 LOAD_ATTR               29 (NULL|self + append)
+            574 LOAD_FAST                9 (key)
+            576 LOAD_GLOBAL             22 (STAGES)
+            586 LOAD_FAST                8 (i)
+            588 LOAD_CONST               2 (1)
+            590 BINARY_OP                0 (+)
+            594 LOAD_FAST                6 (n)
+            596 BINARY_OP                6 (%)
+            600 BINARY_SUBSCR
+            604 LOAD_CONST               1 (0)
+            606 BINARY_SUBSCR
+            610 LOAD_FAST                9 (key)
+            612 LOAD_CONST               9 ('return_lobby')
+            614 COMPARE_OP              40 (==)
+            618 BUILD_TUPLE              3
+            620 CALL                     1
+            628 POP_TOP
+            630 JUMP_BACKWARD           86 (to 460)
+
+168     >>  632 END_FOR
+
+175         634 LOAD_FAST                5 (idx)
+            636 LOAD_CONST               2 (1)
+            638 COMPARE_OP              92 (>=)
+            642 POP_JUMP_IF_FALSE       33 (to 710)
+
+176         644 LOAD_FAST                7 (cands)
+            646 LOAD_ATTR               29 (NULL|self + append)
+            666 LOAD_GLOBAL             22 (STAGES)
+            676 LOAD_FAST                5 (idx)
+            678 LOAD_CONST               2 (1)
+            680 BINARY_OP               10 (-)
+            684 BINARY_SUBSCR
+            688 LOAD_CONST               2 (1)
+            690 BINARY_SUBSCR
+            694 LOAD_CONST               0 (None)
+            696 LOAD_CONST               8 (False)
+            698 BUILD_TUPLE              3
+            700 CALL                     1
+            708 POP_TOP
+
+178     >>  710 LOAD_FAST                5 (idx)
+            712 LOAD_CONST               5 (2)
+            714 COMPARE_OP              92 (>=)
+            718 POP_JUMP_IF_FALSE       34 (to 788)
+
+179         720 LOAD_FAST                7 (cands)
+            722 LOAD_ATTR               29 (NULL|self + append)
+            742 LOAD_CONST              10 ('play')
+            744 LOAD_GLOBAL              2 (State)
+            754 LOAD_ATTR               30 (IN_MATCH)
+            774 LOAD_CONST               8 (False)
+            776 BUILD_TUPLE              3
+            778 CALL                     1
+            786 POP_TOP
+
+182     >>  788 LOAD_FAST                7 (cands)
+            790 LOAD_FAST                7 (cands)
+            792 GET_ITER
+            794 LOAD_FAST_AND_CLEAR      9 (key)
+            796 LOAD_FAST_AND_CLEAR     10 (nxt)
+            798 LOAD_FAST_AND_CLEAR     11 (fin)
+            800 SWAP                     4
+            802 BUILD_LIST               0
+            804 SWAP                     2
+        >>  806 FOR_ITER                17 (to 844)
+            810 UNPACK_SEQUENCE          3
+            814 STORE_FAST               9 (key)
+            816 STORE_FAST              10 (nxt)
+            818 STORE_FAST              11 (fin)
+            820 LOAD_FAST                9 (key)
+            822 LOAD_CONST              10 ('play')
+            824 COMPARE_OP              40 (==)
+            828 POP_JUMP_IF_TRUE         1 (to 832)
+            830 JUMP_BACKWARD           13 (to 806)
+        >>  832 LOAD_CONST              11 ('storefront_play')
+            834 LOAD_FAST               10 (nxt)
+            836 LOAD_FAST               11 (fin)
+            838 BUILD_TUPLE              3
+            840 LIST_APPEND              2
+            842 JUMP_BACKWARD           19 (to 806)
+        >>  844 END_FOR
+            846 SWAP                     4
+            848 STORE_FAST              11 (fin)
+            850 STORE_FAST              10 (nxt)
+            852 STORE_FAST               9 (key)
+            854 BINARY_OP                0 (+)
+            858 STORE_FAST               7 (cands)
+
+184         860 LOAD_GLOBAL             32 (POPUP_KEYS)
+            870 GET_ITER
+        >>  872 FOR_ITER                22 (to 920)
+            876 STORE_FAST               9 (key)
+
+185         878 LOAD_FAST                7 (cands)
+            880 LOAD_ATTR               29 (NULL|self + append)
+            900 LOAD_FAST                9 (key)
+            902 LOAD_CONST               0 (None)
+            904 LOAD_CONST               8 (False)
+            906 BUILD_TUPLE              3
+            908 CALL                     1
+            916 POP_TOP
+            918 JUMP_BACKWARD           24 (to 872)
+
+184     >>  920 END_FOR
+
+187         922 LOAD_CONST               3 (0.0)
+            924 STORE_FAST              12 (own_score)
+
+188         926 LOAD_FAST                7 (cands)
+            928 GET_ITER
+        >>  930 EXTENDED_ARG             1
+            932 FOR_ITER               330 (to 1596)
+            936 UNPACK_SEQUENCE          3
+            940 STORE_FAST               9 (key)
+            942 STORE_FAST              10 (nxt)
+            944 STORE_FAST              13 (finishes_loop)
+
+189         946 LOAD_DEREF               0 (self)
+            948 LOAD_ATTR               34 (templates)
+            968 LOAD_ATTR               37 (NULL|self + get)
+            988 LOAD_FAST                9 (key)
+            990 CALL                     1
+            998 STORE_DEREF             24 (tpl)
+
+190        1000 LOAD_DEREF              24 (tpl)
+           1002 POP_JUMP_IF_NOT_NONE     1 (to 1006)
+
+191        1004 JUMP_BACKWARD           38 (to 930)
+
+192     >> 1006 LOAD_GLOBAL             39 (NULL + isinstance)
+           1016 LOAD_DEREF              24 (tpl)
+           1018 LOAD_GLOBAL             40 (Plate)
+           1028 CALL                     2
+           1036 POP_JUMP_IF_FALSE       50 (to 1138)
+
+193        1038 LOAD_DEREF               0 (self)
+           1040 LOAD_ATTR               42 (cal)
+           1060 LOAD_ATTR               45 (NULL|self + plate)
+           1080 LOAD_FAST                9 (key)
+           1082 LOAD_DEREF              24 (tpl)
+           1084 CALL                     2
+           1092 STORE_DEREF             22 (plate)
+
+194        1094 LOAD_GLOBAL             47 (NULL + find_checked)
+           1104 LOAD_FAST                1 (frame)
+           1106 LOAD_FAST                9 (key)
+           1108 LOAD_DEREF              24 (tpl)
+           1110 LOAD_CLOSURE            22 (plate)
+           1112 LOAD_CLOSURE             0 (self)
+           1114 BUILD_TUPLE              2
+           1116 LOAD_CONST              12 (<code object <lambda> at 0x7f6aed7ff660, file "state_machine.py", line 194>)
+           1118 MAKE_FUNCTION            8 (closure)
+           1120 CALL                     4
+           1128 UNPACK_SEQUENCE          2
+           1132 STORE_FAST              14 (m)
+           1134 STORE_FAST              15 (score)
+           1136 JUMP_FORWARD            70 (to 1278)
+
+196     >> 1138 LOAD_DEREF               0 (self)
+           1140 LOAD_ATTR               42 (cal)
+           1160 LOAD_ATTR               49 (NULL|self + threshold_for)
+           1180 LOAD_FAST                9 (key)
+           1182 LOAD_DEREF               0 (self)
+           1184 LOAD_ATTR               50 (s)
+           1204 LOAD_ATTR               52 (threshold)
+           1224 CALL                     2
+           1232 STORE_DEREF             23 (thr)
+
+197        1234 LOAD_GLOBAL             47 (NULL + find_checked)
+           1244 LOAD_FAST                1 (frame)
+           1246 LOAD_FAST                9 (key)
+           1248 LOAD_DEREF              24 (tpl)
+           1250 LOAD_CLOSURE             0 (self)
+           1252 LOAD_CLOSURE            23 (thr)
+           1254 LOAD_CLOSURE            24 (tpl)
+           1256 BUILD_TUPLE              3
+           1258 LOAD_CONST              13 (<code object <lambda> at 0x7f6aed7fe670, file "state_machine.py", line 197>)
+           1260 MAKE_FUNCTION            8 (closure)
+           1262 CALL                     4
+           1270 UNPACK_SEQUENCE          2
+           1274 STORE_FAST              14 (m)
+           1276 STORE_FAST              15 (score)
+
+198     >> 1278 LOAD_FAST                9 (key)
+           1280 LOAD_DEREF              21 (own_key)
+           1282 COMPARE_OP              40 (==)
+           1286 POP_JUMP_IF_FALSE        2 (to 1292)
+
+199        1288 LOAD_FAST               15 (score)
+           1290 STORE_FAST              12 (own_score)
+
+200     >> 1292 LOAD_FAST               14 (m)
+           1294 POP_JUMP_IF_TRUE         1 (to 1298)
+           1296 JUMP_BACKWARD          184 (to 930)
+        >> 1298 PUSH_NULL
+           1300 LOAD_DEREF               0 (self)
+           1302 LOAD_ATTR                6 (ctrl)
+           1322 LOAD_ATTR               14 (click)
+           1342 LOAD_CONST              14 (<code object <genexpr> at 0x7f6aed17fe10, file "state_machine.py", line 200>)
+           1344 MAKE_FUNCTION            0
+           1346 LOAD_GLOBAL             55 (NULL + zip)
+           1356 LOAD_GLOBAL             57 (NULL + aim_point)
+           1366 LOAD_FAST                9 (key)
+           1368 LOAD_DEREF              24 (tpl)
+           1370 LOAD_FAST               14 (m)
+           1372 CALL                     3
+           1380 LOAD_FAST                2 (ox)
+           1382 LOAD_FAST                3 (oy)
+           1384 BUILD_TUPLE              2
+           1386 CALL                     2
+           1394 GET_ITER
+           1396 CALL                     0
+           1404 CALL_FUNCTION_EX         0
+           1406 POP_JUMP_IF_TRUE         1 (to 1410)
+           1408 JUMP_BACKWARD          240 (to 930)
+
+201     >> 1410 LOAD_FAST               10 (nxt)
+           1412 POP_JUMP_IF_NOT_NONE    31 (to 1476)
+
+202        1414 LOAD_GLOBAL             17 (NULL + StepResult)
+           1424 LOAD_DEREF               0 (self)
+           1426 LOAD_ATTR                0 (state)
+           1446 LOAD_FAST               15 (score)
+           1448 LOAD_CONST               4 (True)
+           1450 LOAD_CONST              15 ('clicked ')
+           1452 LOAD_FAST                9 (key)
+           1454 FORMAT_VALUE             0
+           1456 LOAD_CONST              16 (' (stay)')
+           1458 BUILD_STRING             3
+           1460 LOAD_FAST                9 (key)
+           1462 CALL                     5
+           1470 SWAP                     2
+           1472 POP_TOP
+           1474 RETURN_VALUE
+
+203     >> 1476 LOAD_FAST               13 (finishes_loop)
+           1478 POP_JUMP_IF_FALSE       21 (to 1522)
+
+204        1480 LOAD_DEREF               0 (self)
+           1482 COPY                     1
+           1484 LOAD_ATTR               58 (loops)
+           1504 LOAD_CONST               2 (1)
+           1506 BINARY_OP               13 (+=)
+           1510 SWAP                     2
+           1512 STORE_ATTR              29 (loops)
+
+205     >> 1522 LOAD_FAST               10 (nxt)
+           1524 LOAD_DEREF               0 (self)
+           1526 STORE_ATTR               0 (state)
+
+206        1536 LOAD_GLOBAL             17 (NULL + StepResult)
+           1546 LOAD_DEREF               0 (self)
+           1548 LOAD_ATTR                0 (state)
+           1568 LOAD_FAST               15 (score)
+           1570 LOAD_CONST               4 (True)
+           1572 LOAD_CONST              15 ('clicked ')
+           1574 LOAD_FAST                9 (key)
+           1576 FORMAT_VALUE             0
+           1578 BUILD_STRING             2
+           1580 LOAD_FAST                9 (key)
+           1582 CALL                     5
+           1590 SWAP                     2
+           1592 POP_TOP
+           1594 RETURN_VALUE
+
+188     >> 1596 END_FOR
+
+207        1598 LOAD_DEREF               0 (self)
+           1600 LOAD_ATTR               34 (templates)
+           1620 LOAD_ATTR               37 (NULL|self + get)
+           1640 LOAD_DEREF              21 (own_key)
+           1642 CALL                     1
+           1650 STORE_FAST              16 (own_tpl)
+
+208        1652 LOAD_FAST               16 (own_tpl)
+           1654 POP_JUMP_IF_NOT_NONE    27 (to 1710)
+
+209        1656 LOAD_GLOBAL             17 (NULL + StepResult)
+           1666 LOAD_DEREF               0 (self)
+           1668 LOAD_ATTR                0 (state)
+           1688 LOAD_CONST               3 (0.0)
+           1690 LOAD_CONST               8 (False)
+           1692 LOAD_DEREF              21 (own_key)
+           1694 FORMAT_VALUE             0
+           1696 LOAD_CONST              17 (' template missing')
+           1698 BUILD_STRING             2
+           1700 CALL                     4
+           1708 RETURN_VALUE
+
+210     >> 1710 LOAD_GLOBAL             39 (NULL + isinstance)
+           1720 LOAD_FAST               16 (own_tpl)
+           1722 LOAD_GLOBAL             40 (Plate)
+           1732 CALL                     2
+           1740 POP_JUMP_IF_FALSE       12 (to 1766)
+           1742 LOAD_FAST               16 (own_tpl)
+           1744 LOAD_ATTR               52 (threshold)
+           1764 JUMP_FORWARD            21 (to 1808)
+        >> 1766 LOAD_DEREF               0 (self)
+           1768 LOAD_ATTR               50 (s)
+           1788 LOAD_ATTR               52 (threshold)
+        >> 1808 STORE_FAST              17 (base)
+
+211        1810 LOAD_GLOBAL             19 (NULL + next)
+           1820 LOAD_CLOSURE            21 (own_key)
+           1822 BUILD_TUPLE              1
+           1824 LOAD_CONST              18 (<code object <genexpr> at 0x7f6aecfa4430, file "state_machine.py", line 211>)
+           1826 MAKE_FUNCTION            8 (closure)
+           1828 LOAD_FAST                7 (cands)
+           1830 GET_ITER
+           1832 CALL                     0
+           1840 LOAD_CONST              19 ((None, False))
+           1842 CALL                     2
+           1850 UNPACK_SEQUENCE          2
+           1854 STORE_FAST              18 (own_nxt)
+           1856 STORE_FAST              19 (own_fin)
+
+212        1858 LOAD_DEREF               0 (self)
+           1860 LOAD_ATTR               42 (cal)
+           1880 LOAD_ATTR               61 (NULL|self + attempt)
+           1900 LOAD_DEREF               0 (self)
+           1902 LOAD_ATTR                0 (state)
+           1922 LOAD_FAST                1 (frame)
+           1924 LOAD_DEREF              21 (own_key)
+           1926 LOAD_FAST               16 (own_tpl)
+           1928 LOAD_FAST               12 (own_score)
+           1930 LOAD_FAST               17 (base)
+           1932 LOAD_FAST                2 (ox)
+           1934 LOAD_FAST                3 (oy)
+           1936 LOAD_DEREF               0 (self)
+           1938 LOAD_ATTR                6 (ctrl)
+           1958 LOAD_ATTR               14 (click)
+           1978 LOAD_DEREF               0 (self)
+           1980 LOAD_ATTR               50 (s)
+           2000 LOAD_ATTR               62 (scales)
+
+213        2020 LOAD_DEREF               0 (self)
+           2022 LOAD_ATTR                0 (state)
+           2042 LOAD_FAST               19 (own_fin)
+           2044 LOAD_CONST              20 (('prev', 'fin'))
+           2046 BUILD_CONST_KEY_MAP      2
+
+212        2048 KW_NAMES                21 (('meta',))
+           2050 CALL                    11
+           2058 POP_JUMP_IF_FALSE       59 (to 2178)
+
+214        2060 LOAD_FAST               19 (own_fin)
+           2062 POP_JUMP_IF_FALSE       21 (to 2106)
+
+215        2064 LOAD_DEREF               0 (self)
+           2066 COPY                     1
+           2068 LOAD_ATTR               58 (loops)
+           2088 LOAD_CONST               2 (1)
+           2090 BINARY_OP               13 (+=)
+           2094 SWAP                     2
+           2096 STORE_ATTR              29 (loops)
+
+216     >> 2106 LOAD_FAST               18 (own_nxt)
+           2108 POP_JUMP_IF_NONE         7 (to 2124)
+
+217        2110 LOAD_FAST               18 (own_nxt)
+           2112 LOAD_DEREF               0 (self)
+           2114 STORE_ATTR               0 (state)
+
+218     >> 2124 LOAD_GLOBAL             17 (NULL + StepResult)
+           2134 LOAD_DEREF               0 (self)
+           2136 LOAD_ATTR                0 (state)
+           2156 LOAD_FAST               12 (own_score)
+           2158 LOAD_CONST               4 (True)
+           2160 LOAD_CONST              22 ('auto-calibrate test click on ')
+           2162 LOAD_DEREF              21 (own_key)
+           2164 FORMAT_VALUE             0
+           2166 BUILD_STRING             2
+           2168 CALL                     4
+           2176 RETURN_VALUE
+
+219     >> 2178 LOAD_DEREF               0 (self)
+           2180 LOAD_ATTR                0 (state)
+           2200 LOAD_GLOBAL              2 (State)
+           2210 LOAD_ATTR                4 (SEARCHING_PLAY)
+           2230 IS_OP                    0
+           2232 POP_JUMP_IF_FALSE      188 (to 2610)
+
+220        2234 LOAD_DEREF               0 (self)
+           2236 LOAD_ATTR               64 (survey)
+           2256 LOAD_ATTR               13 (NULL|self + poll)
+           2276 LOAD_FAST                1 (frame)
+           2278 CALL                     1
+           2286 STORE_FAST              20 (pt)
+
+221        2288 LOAD_FAST               20 (pt)
+           2290 POP_JUMP_IF_FALSE       65 (to 2422)
+           2292 LOAD_DEREF               0 (self)
+           2294 LOAD_ATTR                6 (ctrl)
+           2314 LOAD_ATTR               15 (NULL|self + click)
+           2334 LOAD_FAST               20 (pt)
+           2336 LOAD_CONST               1 (0)
+           2338 BINARY_SUBSCR
+           2342 LOAD_FAST                2 (ox)
+           2344 BINARY_OP                0 (+)
+           2348 LOAD_FAST               20 (pt)
+           2350 LOAD_CONST               2 (1)
+           2352 BINARY_SUBSCR
+           2356 LOAD_FAST                3 (oy)
+           2358 BINARY_OP                0 (+)
+           2362 CALL                     2
+           2370 POP_JUMP_IF_FALSE       25 (to 2422)
+
+222        2372 LOAD_GLOBAL             17 (NULL + StepResult)
+           2382 LOAD_DEREF               0 (self)
+           2384 LOAD_ATTR                0 (state)
+           2404 LOAD_CONST               3 (0.0)
+           2406 LOAD_CONST               4 (True)
+           2408 LOAD_CONST              23 ('clicked survey skip (stay)')
+           2410 LOAD_CONST              24 ('survey')
+           2412 CALL                     5
+           2420 RETURN_VALUE
+
+223     >> 2422 LOAD_DEREF               0 (self)
+           2424 LOAD_ATTR               66 (fallback)
+           2444 LOAD_ATTR               13 (NULL|self + poll)
+           2464 LOAD_FAST                1 (frame)
+           2466 CALL                     1
+           2474 STORE_FAST              20 (pt)
+
+224        2476 LOAD_FAST               20 (pt)
+           2478 POP_JUMP_IF_FALSE       65 (to 2610)
+           2480 LOAD_DEREF               0 (self)
+           2482 LOAD_ATTR                6 (ctrl)
+           2502 LOAD_ATTR               15 (NULL|self + click)
+           2522 LOAD_FAST               20 (pt)
+           2524 LOAD_CONST               1 (0)
+           2526 BINARY_SUBSCR
+           2530 LOAD_FAST                2 (ox)
+           2532 BINARY_OP                0 (+)
+           2536 LOAD_FAST               20 (pt)
+           2538 LOAD_CONST               2 (1)
+           2540 BINARY_SUBSCR
+           2544 LOAD_FAST                3 (oy)
+           2546 BINARY_OP                0 (+)
+           2550 CALL                     2
+           2558 POP_JUMP_IF_FALSE       25 (to 2610)
+
+225        2560 LOAD_GLOBAL             17 (NULL + StepResult)
+           2570 LOAD_DEREF               0 (self)
+           2572 LOAD_ATTR                0 (state)
+           2592 LOAD_CONST               3 (0.0)
+           2594 LOAD_CONST               4 (True)
+           2596 LOAD_CONST              25 ('clicked reward button (fallback)')
+           2598 LOAD_CONST              26 ('claim_single')
+           2600 CALL                     5
+           2608 RETURN_VALUE
+
+226     >> 2610 LOAD_GLOBAL             17 (NULL + StepResult)
+           2620 LOAD_DEREF               0 (self)
+           2622 LOAD_ATTR                0 (state)
+           2642 LOAD_FAST               12 (own_score)
+           2644 LOAD_CONST               8 (False)
+           2646 LOAD_CONST              27 ('waiting ')
+           2648 LOAD_DEREF              21 (own_key)
+           2650 FORMAT_VALUE             0
+           2652 BUILD_STRING             2
+           2654 CALL                     4
+           2662 RETURN_VALUE
+        >> 2664 SWAP                     2
+           2666 POP_TOP
+
+182        2668 SWAP                     4
+           2670 STORE_FAST              11 (fin)
+           2672 STORE_FAST              10 (nxt)
+           2674 STORE_FAST               9 (key)
+           2676 RERAISE                  0
+ExceptionTable:
+  802 to 828 -> 2664 [5]
+  832 to 844 -> 2664 [5]
+
+Disassembly of <code object <genexpr> at 0x7f6aed7fddf0, file "state_machine.py", line 161>:
+              0 COPY_FREE_VARS           1
+
+161           2 RETURN_GENERATOR
+              4 POP_TOP
+              6 RESUME                   0
+              8 LOAD_FAST                0 (.0)
+        >>   10 FOR_ITER                27 (to 68)
+             14 UNPACK_SEQUENCE          2
+             18 STORE_FAST               1 (i)
+             20 UNPACK_SEQUENCE          2
+             24 STORE_FAST               2 (st)
+             26 STORE_FAST               3 (_)
+             28 LOAD_FAST                2 (st)
+             30 LOAD_DEREF               4 (self)
+             32 LOAD_ATTR                0 (state)
+             52 IS_OP                    0
+             54 POP_JUMP_IF_TRUE         1 (to 58)
+             56 JUMP_BACKWARD           24 (to 10)
+        >>   58 LOAD_FAST                1 (i)
+             60 YIELD_VALUE              1
+             62 RESUME                   1
+             64 POP_TOP
+             66 JUMP_BACKWARD           29 (to 10)
+        >>   68 END_FOR
+             70 RETURN_CONST             0 (None)
+        >>   72 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             74 RERAISE                  1
+ExceptionTable:
+  6 to 54 -> 72 [0] lasti
+  58 to 70 -> 72 [0] lasti
+
+Disassembly of <code object <lambda> at 0x7f6aed7ff660, file "state_machine.py", line 194>:
+              0 COPY_FREE_VARS           2
+
+194           2 RESUME                   0
+              4 LOAD_GLOBAL              1 (NULL + find_plate)
+             14 LOAD_FAST                0 (f)
+             16 LOAD_DEREF               1 (plate)
+             18 LOAD_DEREF               2 (self)
+             20 LOAD_ATTR                2 (s)
+             40 LOAD_ATTR                4 (scales)
+             60 CALL                     3
+             68 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed7fe670, file "state_machine.py", line 197>:
+              0 COPY_FREE_VARS           3
+
+197           2 RESUME                   0
+              4 LOAD_GLOBAL              1 (NULL + find_template)
+             14 LOAD_FAST                0 (f)
+             16 LOAD_DEREF               3 (tpl)
+             18 LOAD_DEREF               2 (thr)
+             20 LOAD_DEREF               1 (self)
+             22 LOAD_ATTR                2 (s)
+             42 LOAD_ATTR                4 (scales)
+             62 CALL                     4
+             70 RETURN_VALUE
+
+Disassembly of <code object <genexpr> at 0x7f6aed17fe10, file "state_machine.py", line 200>:
+200           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+              6 LOAD_FAST                0 (.0)
+        >>    8 FOR_ITER                12 (to 36)
+             12 UNPACK_SEQUENCE          2
+             16 STORE_FAST               1 (a)
+             18 STORE_FAST               2 (o)
+             20 LOAD_FAST                1 (a)
+             22 LOAD_FAST                2 (o)
+             24 BINARY_OP                0 (+)
+             28 YIELD_VALUE              1
+             30 RESUME                   1
+             32 POP_TOP
+             34 JUMP_BACKWARD           14 (to 8)
+        >>   36 END_FOR
+             38 RETURN_CONST             0 (None)
+        >>   40 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             42 RERAISE                  1
+ExceptionTable:
+  4 to 38 -> 40 [0] lasti
+
+Disassembly of <code object <genexpr> at 0x7f6aecfa4430, file "state_machine.py", line 211>:
+              0 COPY_FREE_VARS           1
+
+211           2 RETURN_GENERATOR
+              4 POP_TOP
+              6 RESUME                   0
+              8 LOAD_FAST                0 (.0)
+        >>   10 FOR_ITER                18 (to 50)
+             14 UNPACK_SEQUENCE          3
+             18 STORE_FAST               1 (k)
+             20 STORE_FAST               2 (n)
+             22 STORE_FAST               3 (f)
+             24 LOAD_FAST                1 (k)
+             26 LOAD_DEREF               4 (own_key)
+             28 COMPARE_OP              40 (==)
+             32 POP_JUMP_IF_TRUE         1 (to 36)
+             34 JUMP_BACKWARD           13 (to 10)
+        >>   36 LOAD_FAST                2 (n)
+             38 LOAD_FAST                3 (f)
+             40 BUILD_TUPLE              2
+             42 YIELD_VALUE              1
+             44 RESUME                   1
+             46 POP_TOP
+             48 JUMP_BACKWARD           20 (to 10)
+        >>   50 END_FOR
+             52 RETURN_CONST             0 (None)
+        >>   54 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             56 RERAISE                  1
+ExceptionTable:
+  6 to 32 -> 54 [0] lasti
+  36 to 52 -> 54 [0] lasti

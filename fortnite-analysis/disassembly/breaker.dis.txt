@@ -1,0 +1,549 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+ 12           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (contextlib)
+             10 STORE_NAME               0 (contextlib)
+
+ 13          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (random)
+             18 STORE_NAME               1 (random)
+
+ 14          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              2 (threading)
+             26 STORE_NAME               2 (threading)
+
+ 15          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               1 (None)
+             32 IMPORT_NAME              3 (time)
+             34 STORE_NAME               3 (time)
+
+ 16          36 LOAD_CONST               0 (0)
+             38 LOAD_CONST               2 (('Callable',))
+             40 IMPORT_NAME              4 (typing)
+             42 IMPORT_FROM              5 (Callable)
+             44 STORE_NAME               5 (Callable)
+             46 POP_TOP
+
+ 18          48 PUSH_NULL
+             50 LOAD_NAME                2 (threading)
+             52 LOAD_ATTR               12 (local)
+             72 CALL                     0
+             80 STORE_NAME               7 (_TL)
+
+ 20          82 LOAD_CONST               3 ((1800.0, 3600.0))
+             84 STORE_NAME               8 (QUOTA_COOLDOWN_S)
+
+ 21          86 LOAD_CONST               4 ((120.0, 1800.0))
+             88 UNPACK_SEQUENCE          2
+             92 STORE_NAME               9 (ERROR_BASE_S)
+             94 STORE_NAME              10 (ERROR_MAX_S)
+
+ 24          96 PUSH_NULL
+             98 LOAD_BUILD_CLASS
+            100 LOAD_CONST               5 (<code object BreakerOpen at 0x7f6aed7131c0, file "breaker.py", line 24>)
+            102 MAKE_FUNCTION            0
+            104 LOAD_CONST               6 ('BreakerOpen')
+            106 LOAD_NAME               11 (OSError)
+            108 CALL                     3
+            116 STORE_NAME              12 (BreakerOpen)
+
+ 28         118 PUSH_NULL
+            120 LOAD_BUILD_CLASS
+            122 LOAD_CONST               7 (<code object Breaker at 0x7f6af1de1450, file "breaker.py", line 28>)
+            124 MAKE_FUNCTION            0
+            126 LOAD_CONST               8 ('Breaker')
+            128 CALL                     2
+            136 STORE_NAME              13 (Breaker)
+
+ 83         138 PUSH_NULL
+            140 LOAD_NAME               13 (Breaker)
+            142 CALL                     0
+            150 STORE_NAME              14 (BREAKER)
+            152 RETURN_CONST             1 (None)
+
+Disassembly of <code object BreakerOpen at 0x7f6aed7131c0, file "breaker.py", line 24>:
+ 24           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('BreakerOpen')
+              8 STORE_NAME               2 (__qualname__)
+
+ 25          10 RETURN_CONST             1 (None)
+
+Disassembly of <code object Breaker at 0x7f6af1de1450, file "breaker.py", line 28>:
+ 28           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('Breaker')
+              8 STORE_NAME               2 (__qualname__)
+
+ 29          10 LOAD_NAME                3 (time)
+             12 LOAD_ATTR                8 (monotonic)
+             32 LOAD_NAME                5 (random)
+             34 BUILD_TUPLE              2
+             36 LOAD_CONST               1 ('clock')
+             38 LOAD_NAME                6 (Callable)
+             40 BUILD_LIST               0
+             42 LOAD_NAME                7 (float)
+             44 BUILD_TUPLE              2
+             46 BINARY_SUBSCR
+             50 BUILD_TUPLE              2
+             52 LOAD_CONST               2 (<code object __init__ at 0x7f6af1f828e0, file "breaker.py", line 29>)
+             54 MAKE_FUNCTION            5 (defaults, annotations)
+             56 STORE_NAME               8 (__init__)
+
+ 37          58 LOAD_CONST               3 ('return')
+             60 LOAD_NAME                7 (float)
+             62 BUILD_TUPLE              2
+             64 LOAD_CONST               4 (<code object remaining at 0x7f6aed7a05b0, file "breaker.py", line 37>)
+             66 MAKE_FUNCTION            4 (annotations)
+             68 STORE_NAME               9 (remaining)
+
+ 41          70 LOAD_CONST               3 ('return')
+             72 LOAD_NAME               10 (bool)
+             74 BUILD_TUPLE              2
+             76 LOAD_CONST               5 (<code object blocked at 0x7f6af1dd7870, file "breaker.py", line 41>)
+             78 MAKE_FUNCTION            4 (annotations)
+             80 STORE_NAME              11 (blocked)
+
+ 44          82 LOAD_CONST               3 ('return')
+             84 LOAD_NAME                7 (float)
+             86 BUILD_TUPLE              2
+             88 LOAD_CONST               6 (<code object trip_quota at 0x7f6af20e3cf0, file "breaker.py", line 44>)
+             90 MAKE_FUNCTION            4 (annotations)
+             92 STORE_NAME              12 (trip_quota)
+
+ 51          94 LOAD_CONST               3 ('return')
+             96 LOAD_NAME                7 (float)
+             98 BUILD_TUPLE              2
+            100 LOAD_CONST               7 (<code object trip_error at 0x17a64ae0, file "breaker.py", line 51>)
+            102 MAKE_FUNCTION            4 (annotations)
+            104 STORE_NAME              13 (trip_error)
+
+ 59         106 LOAD_CONST               8 ('seconds')
+            108 LOAD_NAME                7 (float)
+            110 LOAD_CONST               3 ('return')
+            112 LOAD_NAME                7 (float)
+            114 BUILD_TUPLE              4
+            116 LOAD_CONST               9 (<code object trip_for at 0x7f6af1de1000, file "breaker.py", line 59>)
+            118 MAKE_FUNCTION            4 (annotations)
+            120 STORE_NAME              14 (trip_for)
+
+ 65         122 LOAD_CONST              14 (('return', None))
+            124 LOAD_CONST              11 (<code object success at 0x7f6af1dd7ab0, file "breaker.py", line 65>)
+            126 MAKE_FUNCTION            4 (annotations)
+            128 STORE_NAME              15 (success)
+
+ 69         130 LOAD_CONST              14 (('return', None))
+            132 LOAD_CONST              12 (<code object reset at 0x7f6af1ddb210, file "breaker.py", line 69>)
+            134 MAKE_FUNCTION            4 (annotations)
+            136 STORE_NAME              16 (reset)
+
+ 73         138 LOAD_NAME               17 (contextlib)
+            140 LOAD_ATTR               36 (contextmanager)
+
+ 74         160 LOAD_CONST              13 (<code object override at 0x7f6af1f83de0, file "breaker.py", line 73>)
+            162 MAKE_FUNCTION            0
+
+ 73         164 CALL                     0
+
+ 74         172 STORE_NAME              19 (override)
+            174 RETURN_CONST            10 (None)
+
+Disassembly of <code object __init__ at 0x7f6af1f828e0, file "breaker.py", line 29>:
+ 29           0 RESUME                   0
+
+ 30           2 LOAD_FAST                1 (clock)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (_clock)
+
+ 31          16 LOAD_FAST                2 (rng)
+             18 LOAD_FAST                0 (self)
+             20 STORE_ATTR               1 (_rng)
+
+ 32          30 LOAD_CONST               1 (0.0)
+             32 LOAD_FAST                0 (self)
+             34 STORE_ATTR               2 (_until)
+
+ 33          44 LOAD_CONST               2 (0)
+             46 LOAD_FAST                0 (self)
+             48 STORE_ATTR               3 (_errors)
+
+ 34          58 LOAD_GLOBAL              9 (NULL + threading)
+             68 LOAD_ATTR               10 (Lock)
+             88 CALL                     0
+             96 LOAD_FAST                0 (self)
+             98 STORE_ATTR               6 (_lock)
+
+ 35         108 LOAD_GLOBAL             14 (_TL)
+            118 LOAD_FAST                0 (self)
+            120 STORE_ATTR               8 (_local)
+            130 RETURN_CONST             0 (None)
+
+Disassembly of <code object remaining at 0x7f6aed7a05b0, file "breaker.py", line 37>:
+ 37           0 RESUME                   0
+
+ 38           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_lock)
+             24 BEFORE_WITH
+             26 POP_TOP
+
+ 39          28 LOAD_GLOBAL              3 (NULL + max)
+             38 LOAD_CONST               1 (0.0)
+             40 LOAD_FAST                0 (self)
+             42 LOAD_ATTR                4 (_until)
+             62 LOAD_FAST                0 (self)
+             64 LOAD_ATTR                7 (NULL|self + _clock)
+             84 CALL                     0
+             92 BINARY_OP               10 (-)
+             96 CALL                     2
+
+ 38         104 SWAP                     2
+            106 LOAD_CONST               0 (None)
+            108 LOAD_CONST               0 (None)
+            110 LOAD_CONST               0 (None)
+            112 CALL                     2
+            120 POP_TOP
+            122 RETURN_VALUE
+        >>  124 PUSH_EXC_INFO
+            126 WITH_EXCEPT_START
+            128 POP_JUMP_IF_TRUE         1 (to 132)
+            130 RERAISE                  2
+        >>  132 POP_TOP
+            134 POP_EXCEPT
+            136 POP_TOP
+            138 POP_TOP
+            140 RETURN_CONST             0 (None)
+        >>  142 COPY                     3
+            144 POP_EXCEPT
+            146 RERAISE                  1
+ExceptionTable:
+  26 to 102 -> 124 [1] lasti
+  124 to 132 -> 142 [3] lasti
+
+Disassembly of <code object blocked at 0x7f6af1dd7870, file "breaker.py", line 41>:
+ 41           0 RESUME                   0
+
+ 42           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                1 (NULL|self + remaining)
+             24 CALL                     0
+             32 LOAD_CONST               1 (0)
+             34 COMPARE_OP              68 (>)
+             38 COPY                     1
+             40 POP_JUMP_IF_FALSE       24 (to 90)
+             42 POP_TOP
+             44 LOAD_GLOBAL              3 (NULL + getattr)
+             54 LOAD_FAST                0 (self)
+             56 LOAD_ATTR                4 (_local)
+             76 LOAD_CONST               2 ('override')
+             78 LOAD_CONST               3 (False)
+             80 CALL                     3
+             88 UNARY_NOT
+        >>   90 RETURN_VALUE
+
+Disassembly of <code object trip_quota at 0x7f6af20e3cf0, file "breaker.py", line 44>:
+ 44           0 RESUME                   0
+
+ 45           2 PUSH_NULL
+              4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (_rng)
+             26 LOAD_ATTR                2 (uniform)
+             46 LOAD_GLOBAL              4 (QUOTA_COOLDOWN_S)
+             56 CALL_FUNCTION_EX         0
+             58 STORE_FAST               1 (d)
+
+ 46          60 LOAD_FAST                0 (self)
+             62 LOAD_ATTR                6 (_lock)
+             82 BEFORE_WITH
+             84 POP_TOP
+
+ 47          86 LOAD_GLOBAL              9 (NULL + max)
+             96 LOAD_FAST                0 (self)
+             98 LOAD_ATTR               10 (_until)
+            118 LOAD_FAST                0 (self)
+            120 LOAD_ATTR               13 (NULL|self + _clock)
+            140 CALL                     0
+            148 LOAD_FAST                1 (d)
+            150 BINARY_OP                0 (+)
+            154 CALL                     2
+            162 LOAD_FAST                0 (self)
+            164 STORE_ATTR               5 (_until)
+
+ 48         174 LOAD_CONST               1 (0)
+            176 LOAD_FAST                0 (self)
+            178 STORE_ATTR               7 (_errors)
+
+ 46         188 LOAD_CONST               0 (None)
+            190 LOAD_CONST               0 (None)
+            192 LOAD_CONST               0 (None)
+            194 CALL                     2
+            202 POP_TOP
+
+ 49         204 LOAD_FAST                1 (d)
+            206 RETURN_VALUE
+
+ 46     >>  208 PUSH_EXC_INFO
+            210 WITH_EXCEPT_START
+            212 POP_JUMP_IF_TRUE         1 (to 216)
+            214 RERAISE                  2
+        >>  216 POP_TOP
+            218 POP_EXCEPT
+            220 POP_TOP
+            222 POP_TOP
+
+ 49         224 LOAD_FAST                1 (d)
+            226 RETURN_VALUE
+        >>  228 COPY                     3
+            230 POP_EXCEPT
+            232 RERAISE                  1
+ExceptionTable:
+  84 to 186 -> 208 [1] lasti
+  208 to 216 -> 228 [3] lasti
+
+Disassembly of <code object trip_error at 0x17a64ae0, file "breaker.py", line 51>:
+ 51           0 RESUME                   0
+
+ 52           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_lock)
+             24 BEFORE_WITH
+             26 POP_TOP
+
+ 53          28 LOAD_FAST                0 (self)
+             30 COPY                     1
+             32 LOAD_ATTR                2 (_errors)
+             52 LOAD_CONST               1 (1)
+             54 BINARY_OP               13 (+=)
+             58 SWAP                     2
+             60 STORE_ATTR               1 (_errors)
+
+ 54          70 LOAD_GLOBAL              5 (NULL + min)
+             80 LOAD_GLOBAL              6 (ERROR_MAX_S)
+             90 LOAD_GLOBAL              8 (ERROR_BASE_S)
+            100 LOAD_CONST               2 (2)
+            102 LOAD_FAST                0 (self)
+            104 LOAD_ATTR                2 (_errors)
+            124 LOAD_CONST               1 (1)
+            126 BINARY_OP               10 (-)
+            130 BINARY_OP                8 (**)
+            134 BINARY_OP                5 (*)
+            138 CALL                     2
+            146 LOAD_FAST                0 (self)
+            148 LOAD_ATTR               10 (_rng)
+            168 LOAD_ATTR               13 (NULL|self + uniform)
+            188 LOAD_CONST               3 (1.0)
+            190 LOAD_CONST               4 (1.25)
+            192 CALL                     2
+            200 BINARY_OP                5 (*)
+            204 STORE_FAST               1 (d)
+
+ 55         206 LOAD_GLOBAL              5 (NULL + min)
+            216 LOAD_FAST                1 (d)
+            218 LOAD_GLOBAL              6 (ERROR_MAX_S)
+            228 CALL                     2
+            236 STORE_FAST               1 (d)
+
+ 56         238 LOAD_GLOBAL             15 (NULL + max)
+            248 LOAD_FAST                0 (self)
+            250 LOAD_ATTR               16 (_until)
+            270 LOAD_FAST                0 (self)
+            272 LOAD_ATTR               19 (NULL|self + _clock)
+            292 CALL                     0
+            300 LOAD_FAST                1 (d)
+            302 BINARY_OP                0 (+)
+            306 CALL                     2
+            314 LOAD_FAST                0 (self)
+            316 STORE_ATTR               8 (_until)
+
+ 52         326 LOAD_CONST               0 (None)
+            328 LOAD_CONST               0 (None)
+            330 LOAD_CONST               0 (None)
+            332 CALL                     2
+            340 POP_TOP
+
+ 57         342 LOAD_FAST                1 (d)
+            344 RETURN_VALUE
+
+ 52     >>  346 PUSH_EXC_INFO
+            348 WITH_EXCEPT_START
+            350 POP_JUMP_IF_TRUE         1 (to 354)
+            352 RERAISE                  2
+        >>  354 POP_TOP
+            356 POP_EXCEPT
+            358 POP_TOP
+            360 POP_TOP
+
+ 57         362 LOAD_FAST_CHECK          1 (d)
+            364 RETURN_VALUE
+        >>  366 COPY                     3
+            368 POP_EXCEPT
+            370 RERAISE                  1
+ExceptionTable:
+  26 to 324 -> 346 [1] lasti
+  346 to 354 -> 366 [3] lasti
+
+Disassembly of <code object trip_for at 0x7f6af1de1000, file "breaker.py", line 59>:
+ 59           0 RESUME                   0
+
+ 60           2 NOP
+
+ 61           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (_lock)
+             26 BEFORE_WITH
+             28 POP_TOP
+
+ 62          30 LOAD_GLOBAL              3 (NULL + max)
+             40 LOAD_FAST                0 (self)
+             42 LOAD_ATTR                4 (_until)
+             62 LOAD_FAST                0 (self)
+             64 LOAD_ATTR                7 (NULL|self + _clock)
+             84 CALL                     0
+             92 LOAD_FAST                1 (seconds)
+             94 BINARY_OP                0 (+)
+             98 CALL                     2
+            106 LOAD_FAST                0 (self)
+            108 STORE_ATTR               2 (_until)
+
+ 61         118 LOAD_CONST               0 (None)
+            120 LOAD_CONST               0 (None)
+            122 LOAD_CONST               0 (None)
+            124 CALL                     2
+            132 POP_TOP
+
+ 63         134 LOAD_FAST                1 (seconds)
+            136 RETURN_VALUE
+
+ 61     >>  138 PUSH_EXC_INFO
+            140 WITH_EXCEPT_START
+            142 POP_JUMP_IF_TRUE         1 (to 146)
+            144 RERAISE                  2
+        >>  146 POP_TOP
+            148 POP_EXCEPT
+            150 POP_TOP
+            152 POP_TOP
+
+ 63         154 LOAD_FAST                1 (seconds)
+            156 RETURN_VALUE
+        >>  158 COPY                     3
+            160 POP_EXCEPT
+            162 RERAISE                  1
+ExceptionTable:
+  28 to 116 -> 138 [1] lasti
+  138 to 146 -> 158 [3] lasti
+
+Disassembly of <code object success at 0x7f6af1dd7ab0, file "breaker.py", line 65>:
+ 65           0 RESUME                   0
+
+ 66           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_lock)
+             24 BEFORE_WITH
+             26 POP_TOP
+
+ 67          28 LOAD_CONST               1 (0)
+             30 LOAD_FAST                0 (self)
+             32 STORE_ATTR               1 (_errors)
+
+ 66          42 LOAD_CONST               0 (None)
+             44 LOAD_CONST               0 (None)
+             46 LOAD_CONST               0 (None)
+             48 CALL                     2
+             56 POP_TOP
+             58 RETURN_CONST             0 (None)
+        >>   60 PUSH_EXC_INFO
+             62 WITH_EXCEPT_START
+             64 POP_JUMP_IF_TRUE         1 (to 68)
+             66 RERAISE                  2
+        >>   68 POP_TOP
+             70 POP_EXCEPT
+             72 POP_TOP
+             74 POP_TOP
+             76 RETURN_CONST             0 (None)
+        >>   78 COPY                     3
+             80 POP_EXCEPT
+             82 RERAISE                  1
+ExceptionTable:
+  26 to 40 -> 60 [1] lasti
+  60 to 68 -> 78 [3] lasti
+
+Disassembly of <code object reset at 0x7f6af1ddb210, file "breaker.py", line 69>:
+ 69           0 RESUME                   0
+
+ 70           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_lock)
+             24 BEFORE_WITH
+             26 POP_TOP
+
+ 71          28 LOAD_CONST               1 ((0.0, 0))
+             30 UNPACK_SEQUENCE          2
+             34 LOAD_FAST                0 (self)
+             36 STORE_ATTR               1 (_until)
+             46 LOAD_FAST                0 (self)
+             48 STORE_ATTR               2 (_errors)
+
+ 70          58 LOAD_CONST               0 (None)
+             60 LOAD_CONST               0 (None)
+             62 LOAD_CONST               0 (None)
+             64 CALL                     2
+             72 POP_TOP
+             74 RETURN_CONST             0 (None)
+        >>   76 PUSH_EXC_INFO
+             78 WITH_EXCEPT_START
+             80 POP_JUMP_IF_TRUE         1 (to 84)
+             82 RERAISE                  2
+        >>   84 POP_TOP
+             86 POP_EXCEPT
+             88 POP_TOP
+             90 POP_TOP
+             92 RETURN_CONST             0 (None)
+        >>   94 COPY                     3
+             96 POP_EXCEPT
+             98 RERAISE                  1
+ExceptionTable:
+  26 to 56 -> 76 [1] lasti
+  76 to 84 -> 94 [3] lasti
+
+Disassembly of <code object override at 0x7f6af1f83de0, file "breaker.py", line 73>:
+ 73           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+ 75           6 NOP
+
+ 76           8 LOAD_CONST               1 (True)
+             10 LOAD_FAST                0 (self)
+             12 LOAD_ATTR                0 (_local)
+             32 STORE_ATTR               1 (override)
+
+ 77          42 NOP
+
+ 78          44 LOAD_CONST               0 (None)
+             46 YIELD_VALUE              2
+             48 RESUME                   1
+             50 POP_TOP
+
+ 80          52 LOAD_CONST               2 (False)
+             54 LOAD_FAST                0 (self)
+             56 LOAD_ATTR                0 (_local)
+             76 STORE_ATTR               1 (override)
+             86 RETURN_CONST             0 (None)
+        >>   88 PUSH_EXC_INFO
+             90 LOAD_CONST               2 (False)
+             92 LOAD_FAST                0 (self)
+             94 LOAD_ATTR                0 (_local)
+            114 STORE_ATTR               1 (override)
+            124 RERAISE                  0
+        >>  126 COPY                     3
+            128 POP_EXCEPT
+            130 RERAISE                  1
+        >>  132 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+            134 RERAISE                  1
+ExceptionTable:
+  4 to 40 -> 132 [0] lasti
+  44 to 50 -> 88 [0]
+  52 to 86 -> 132 [0] lasti
+  88 to 124 -> 126 [1] lasti
+  126 to 130 -> 132 [0] lasti

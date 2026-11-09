@@ -1,0 +1,1556 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+ 10           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (threading)
+             10 STORE_NAME               0 (threading)
+
+ 11          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               2 (('Callable', 'Dict', 'Optional'))
+             16 IMPORT_NAME              1 (typing)
+             18 IMPORT_FROM              2 (Callable)
+             20 STORE_NAME               2 (Callable)
+             22 IMPORT_FROM              3 (Dict)
+             24 STORE_NAME               3 (Dict)
+             26 IMPORT_FROM              4 (Optional)
+             28 STORE_NAME               4 (Optional)
+             30 POP_TOP
+
+ 13          32 LOAD_CONST               0 (0)
+             34 LOAD_CONST               1 (None)
+             36 IMPORT_NAME              5 (time)
+             38 STORE_NAME               5 (time)
+
+ 15          40 LOAD_CONST               0 (0)
+             42 LOAD_CONST               1 (None)
+             44 IMPORT_NAME              6 (telemetry)
+             46 STORE_NAME               6 (telemetry)
+
+ 19          48 LOAD_CONST               3 (900.0)
+             50 STORE_NAME               7 (SYNC_INTERVAL_S)
+
+ 20          52 LOAD_CONST               4 ((60.0, 900.0))
+             54 UNPACK_SEQUENCE          2
+             58 STORE_NAME               8 (MIN_INTERVAL_S)
+             60 STORE_NAME               9 (MAX_INTERVAL_S)
+
+ 21          62 LOAD_CONST               5 (3.0)
+             64 STORE_NAME              10 (FIRST_DELAY_S)
+
+ 22          66 LOAD_CONST               6 (60.0)
+             68 STORE_NAME              11 (RESCUE_POLL_S)
+
+ 23          70 LOAD_CONST               7 (30)
+             72 STORE_NAME              12 (RESCUE_MAX_POLLS)
+
+ 24          74 LOAD_CONST               8 (90.0)
+             76 STORE_NAME              13 (SHOT_POLL_S)
+
+ 25          78 LOAD_CONST               9 (('ja', 'en', 'es', 'pt', 'ru', 'fr'))
+             80 STORE_NAME              14 (LANGS)
+
+ 28          82 LOAD_CONST              10 ('lo')
+             84 LOAD_NAME               15 (float)
+             86 LOAD_CONST              11 ('hi')
+             88 LOAD_NAME               15 (float)
+             90 LOAD_CONST              12 ('return')
+             92 LOAD_NAME                4 (Optional)
+             94 LOAD_NAME               15 (float)
+             96 BINARY_SUBSCR
+            100 BUILD_TUPLE              6
+            102 LOAD_CONST              13 (<code object _bounded at 0x7f6af1de7430, file "remote.py", line 28>)
+            104 MAKE_FUNCTION            4 (annotations)
+            106 STORE_NAME              16 (_bounded)
+
+ 40         108 LOAD_CONST              12 ('return')
+            110 LOAD_NAME                3 (Dict)
+            112 LOAD_NAME               17 (str)
+            114 LOAD_NAME               18 (object)
+            116 BUILD_TUPLE              2
+            118 BINARY_SUBSCR
+            122 BUILD_TUPLE              2
+            124 LOAD_CONST              14 (<code object clean_config at 0x17ab40a0, file "remote.py", line 40>)
+            126 MAKE_FUNCTION            4 (annotations)
+            128 STORE_NAME              19 (clean_config)
+
+ 63         130 LOAD_CONST              12 ('return')
+            132 LOAD_NAME                3 (Dict)
+            134 LOAD_NAME               17 (str)
+            136 LOAD_NAME               18 (object)
+            138 BUILD_TUPLE              2
+            140 BINARY_SUBSCR
+            144 BUILD_TUPLE              2
+            146 LOAD_CONST              15 (<code object current_of at 0x17a90a60, file "remote.py", line 63>)
+            148 MAKE_FUNCTION            4 (annotations)
+            150 STORE_NAME              20 (current_of)
+
+ 71         152 LOAD_CONST              12 ('return')
+            154 LOAD_NAME                3 (Dict)
+            156 LOAD_NAME               17 (str)
+            158 LOAD_NAME               21 (tuple)
+            160 BUILD_TUPLE              2
+            162 BINARY_SUBSCR
+            166 BUILD_TUPLE              2
+            168 LOAD_CONST              16 (<code object apply_config at 0x7f6aed7a18f0, file "remote.py", line 71>)
+            170 MAKE_FUNCTION            4 (annotations)
+            172 STORE_NAME              22 (apply_config)
+
+ 82         174 PUSH_NULL
+            176 LOAD_BUILD_CLASS
+            178 LOAD_CONST              17 (<code object RemoteSync at 0x17a7c910, file "remote.py", line 82>)
+            180 MAKE_FUNCTION            0
+            182 LOAD_CONST              18 ('RemoteSync')
+            184 CALL                     2
+            192 STORE_NAME              23 (RemoteSync)
+            194 RETURN_CONST             1 (None)
+
+Disassembly of <code object _bounded at 0x7f6af1de7430, file "remote.py", line 28>:
+ 28           0 RESUME                   0
+
+ 29           2 LOAD_FAST                0 (v)
+              4 POP_JUMP_IF_NONE        22 (to 50)
+              6 LOAD_GLOBAL              1 (NULL + isinstance)
+             16 LOAD_FAST                0 (v)
+             18 LOAD_GLOBAL              2 (bool)
+             28 LOAD_GLOBAL              4 (str)
+             38 BUILD_TUPLE              2
+             40 CALL                     2
+             48 POP_JUMP_IF_FALSE        1 (to 52)
+
+ 30     >>   50 RETURN_CONST             0 (None)
+
+ 31     >>   52 NOP
+
+ 32          54 LOAD_GLOBAL              7 (NULL + float)
+             64 LOAD_FAST                0 (v)
+             66 CALL                     1
+             74 STORE_FAST               0 (v)
+
+ 35          76 LOAD_FAST                0 (v)
+             78 LOAD_FAST                0 (v)
+             80 COMPARE_OP              55 (!=)
+             84 POP_JUMP_IF_TRUE        24 (to 134)
+             86 LOAD_FAST                0 (v)
+             88 LOAD_GLOBAL              7 (NULL + float)
+             98 LOAD_CONST               1 ('inf')
+            100 CALL                     1
+            108 LOAD_GLOBAL              7 (NULL + float)
+            118 LOAD_CONST               2 ('-inf')
+            120 CALL                     1
+            128 BUILD_TUPLE              2
+            130 CONTAINS_OP              0
+            132 POP_JUMP_IF_FALSE        1 (to 136)
+
+ 36     >>  134 RETURN_CONST             0 (None)
+
+ 37     >>  136 LOAD_GLOBAL             13 (NULL + min)
+            146 LOAD_FAST                2 (hi)
+            148 LOAD_GLOBAL             15 (NULL + max)
+            158 LOAD_FAST                1 (lo)
+            160 LOAD_FAST                0 (v)
+            162 CALL                     2
+            170 CALL                     2
+            178 RETURN_VALUE
+        >>  180 PUSH_EXC_INFO
+
+ 33         182 LOAD_GLOBAL              8 (TypeError)
+            192 LOAD_GLOBAL             10 (ValueError)
+            202 BUILD_TUPLE              2
+            204 CHECK_EXC_MATCH
+            206 POP_JUMP_IF_FALSE        3 (to 214)
+            208 POP_TOP
+
+ 34         210 POP_EXCEPT
+            212 RETURN_CONST             0 (None)
+
+ 33     >>  214 RERAISE                  0
+        >>  216 COPY                     3
+            218 POP_EXCEPT
+            220 RERAISE                  1
+ExceptionTable:
+  54 to 74 -> 180 [0]
+  180 to 208 -> 216 [1] lasti
+  214 to 214 -> 216 [1] lasti
+
+Disassembly of <code object clean_config at 0x17ab40a0, file "remote.py", line 40>:
+ 40           0 RESUME                   0
+
+ 41           2 NOP
+
+ 42           4 BUILD_MAP                0
+              6 STORE_FAST               1 (out)
+
+ 43           8 LOAD_GLOBAL              1 (NULL + isinstance)
+             18 LOAD_FAST                0 (c)
+             20 LOAD_GLOBAL              2 (dict)
+             30 CALL                     2
+             38 POP_JUMP_IF_TRUE         2 (to 44)
+
+ 44          40 LOAD_FAST                1 (out)
+             42 RETURN_VALUE
+
+ 45     >>   44 LOAD_FAST                0 (c)
+             46 LOAD_ATTR                5 (NULL|self + get)
+             66 LOAD_CONST               1 ('mode')
+             68 CALL                     1
+             76 LOAD_CONST               2 (('A', 'B', 'C'))
+             78 CONTAINS_OP              0
+             80 POP_JUMP_IF_FALSE        8 (to 98)
+
+ 46          82 LOAD_FAST                0 (c)
+             84 LOAD_CONST               1 ('mode')
+             86 BINARY_SUBSCR
+             90 LOAD_FAST                1 (out)
+             92 LOAD_CONST               1 ('mode')
+             94 STORE_SUBSCR
+
+ 47     >>   98 LOAD_FAST                0 (c)
+            100 LOAD_ATTR                5 (NULL|self + get)
+            120 LOAD_CONST               3 ('lang')
+            122 CALL                     1
+            130 LOAD_GLOBAL              6 (LANGS)
+            140 CONTAINS_OP              0
+            142 POP_JUMP_IF_FALSE        8 (to 160)
+
+ 48         144 LOAD_FAST                0 (c)
+            146 LOAD_CONST               3 ('lang')
+            148 BINARY_SUBSCR
+            152 LOAD_FAST                1 (out)
+            154 LOAD_CONST               3 ('lang')
+            156 STORE_SUBSCR
+
+ 49     >>  160 LOAD_CONST               4 ((('wait_b', 10, 600, 0), ('wait_c', 10, 600, 0), ('afk_interval', 1, 600, 0), ('afk_hold', 0.5, 30, 1)))
+            162 GET_ITER
+        >>  164 FOR_ITER                91 (to 350)
+            168 UNPACK_SEQUENCE          4
+            172 STORE_FAST               2 (key)
+            174 STORE_FAST               3 (lo)
+            176 STORE_FAST               4 (hi)
+            178 STORE_FAST               5 (nd)
+
+ 50         180 LOAD_GLOBAL              9 (NULL + _bounded)
+            190 LOAD_FAST                0 (c)
+            192 LOAD_ATTR                5 (NULL|self + get)
+            212 LOAD_FAST                2 (key)
+            214 CALL                     1
+            222 LOAD_FAST                3 (lo)
+            224 LOAD_FAST                4 (hi)
+            226 CALL                     3
+            234 STORE_FAST               6 (v)
+
+ 51         236 LOAD_FAST                6 (v)
+            238 POP_JUMP_IF_NOT_NONE     1 (to 242)
+            240 JUMP_BACKWARD           39 (to 164)
+
+ 52     >>  242 LOAD_GLOBAL             11 (NULL + min)
+            252 LOAD_FAST                4 (hi)
+            254 LOAD_GLOBAL             13 (NULL + max)
+            264 LOAD_FAST                3 (lo)
+            266 LOAD_FAST                6 (v)
+            268 CALL                     2
+            276 CALL                     2
+            284 STORE_FAST               6 (v)
+
+ 53         286 LOAD_FAST                5 (nd)
+            288 LOAD_CONST               5 (0)
+            290 COMPARE_OP              40 (==)
+            294 POP_JUMP_IF_FALSE       11 (to 318)
+            296 LOAD_GLOBAL             15 (NULL + round)
+            306 LOAD_FAST                6 (v)
+            308 CALL                     1
+            316 JUMP_FORWARD            11 (to 340)
+        >>  318 LOAD_GLOBAL             15 (NULL + round)
+            328 LOAD_FAST                6 (v)
+            330 LOAD_FAST                5 (nd)
+            332 CALL                     2
+        >>  340 LOAD_FAST                1 (out)
+            342 LOAD_FAST                2 (key)
+            344 STORE_SUBSCR
+            348 JUMP_BACKWARD           93 (to 164)
+
+ 49     >>  350 END_FOR
+
+ 54         352 LOAD_GLOBAL              9 (NULL + _bounded)
+            362 LOAD_FAST                0 (c)
+            364 LOAD_ATTR                5 (NULL|self + get)
+            384 LOAD_CONST               6 ('report_hours')
+            386 CALL                     1
+            394 LOAD_CONST               5 (0)
+            396 LOAD_CONST               7 (24)
+            398 CALL                     3
+            406 STORE_FAST               6 (v)
+
+ 55         408 LOAD_FAST                6 (v)
+            410 POP_JUMP_IF_NONE        54 (to 520)
+
+ 56         412 LOAD_GLOBAL             11 (NULL + min)
+            422 LOAD_CONST               8 (24.0)
+            424 LOAD_GLOBAL             13 (NULL + max)
+            434 LOAD_CONST               9 (0.0)
+            436 LOAD_FAST                6 (v)
+            438 CALL                     2
+            446 CALL                     2
+            454 STORE_FAST               6 (v)
+
+ 57         456 LOAD_FAST                6 (v)
+            458 LOAD_CONST               5 (0)
+            460 COMPARE_OP              40 (==)
+            464 POP_JUMP_IF_FALSE        2 (to 470)
+            466 LOAD_CONST               9 (0.0)
+            468 JUMP_FORWARD            21 (to 512)
+        >>  470 LOAD_GLOBAL             13 (NULL + max)
+            480 LOAD_CONST              10 (0.5)
+            482 LOAD_GLOBAL             15 (NULL + round)
+            492 LOAD_FAST                6 (v)
+            494 LOAD_CONST              11 (1)
+            496 CALL                     2
+            504 CALL                     2
+        >>  512 LOAD_FAST                1 (out)
+            514 LOAD_CONST               6 ('report_hours')
+            516 STORE_SUBSCR
+
+ 58     >>  520 LOAD_GLOBAL              1 (NULL + isinstance)
+            530 LOAD_FAST                0 (c)
+            532 LOAD_ATTR                5 (NULL|self + get)
+            552 LOAD_CONST              12 ('afk_enabled')
+            554 CALL                     1
+            562 LOAD_GLOBAL             16 (bool)
+            572 CALL                     2
+            580 POP_JUMP_IF_FALSE        8 (to 598)
+
+ 59         582 LOAD_FAST                0 (c)
+            584 LOAD_CONST              12 ('afk_enabled')
+            586 BINARY_SUBSCR
+            590 LOAD_FAST                1 (out)
+            592 LOAD_CONST              12 ('afk_enabled')
+            594 STORE_SUBSCR
+
+ 60     >>  598 LOAD_FAST                1 (out)
+            600 RETURN_VALUE
+
+Disassembly of <code object current_of at 0x17a90a60, file "remote.py", line 63>:
+ 63           0 RESUME                   0
+
+ 64           2 NOP
+
+ 66           4 LOAD_FAST                0 (s)
+              6 LOAD_ATTR                0 (mode)
+             26 LOAD_FAST                0 (s)
+             28 LOAD_ATTR                2 (lang)
+             48 LOAD_GLOBAL              5 (NULL + round)
+             58 LOAD_GLOBAL              7 (NULL + float)
+             68 LOAD_FAST                0 (s)
+             70 LOAD_ATTR                8 (wait_b)
+             90 CALL                     1
+             98 CALL                     1
+            106 LOAD_GLOBAL              5 (NULL + round)
+            116 LOAD_GLOBAL              7 (NULL + float)
+            126 LOAD_FAST                0 (s)
+            128 LOAD_ATTR               10 (wait_c)
+            148 CALL                     1
+            156 CALL                     1
+            164 LOAD_GLOBAL              7 (NULL + float)
+            174 LOAD_FAST                0 (s)
+            176 LOAD_ATTR               12 (report_hours)
+            196 CALL                     1
+
+ 67         204 LOAD_GLOBAL             15 (NULL + bool)
+            214 LOAD_FAST                0 (s)
+            216 LOAD_ATTR               16 (afk_enabled)
+            236 CALL                     1
+            244 LOAD_GLOBAL              5 (NULL + round)
+            254 LOAD_GLOBAL              7 (NULL + float)
+            264 LOAD_FAST                0 (s)
+            266 LOAD_ATTR               18 (afk_interval)
+            286 CALL                     1
+            294 CALL                     1
+            302 LOAD_GLOBAL              5 (NULL + round)
+            312 LOAD_GLOBAL              7 (NULL + float)
+            322 LOAD_FAST                0 (s)
+            324 LOAD_ATTR               20 (afk_hold)
+            344 CALL                     1
+            352 LOAD_CONST               1 (1)
+            354 CALL                     2
+
+ 65         362 LOAD_CONST               2 (('mode', 'lang', 'wait_b', 'wait_c', 'report_hours', 'afk_enabled', 'afk_interval', 'afk_hold'))
+            364 BUILD_CONST_KEY_MAP      8
+            366 RETURN_VALUE
+
+Disassembly of <code object apply_config at 0x7f6aed7a18f0, file "remote.py", line 71>:
+ 71           0 RESUME                   0
+
+ 72           2 NOP
+
+ 73           4 BUILD_MAP                0
+              6 STORE_FAST               2 (changed)
+
+ 74           8 LOAD_GLOBAL              1 (NULL + clean_config)
+             18 LOAD_FAST                1 (cfg)
+             20 CALL                     1
+             28 LOAD_ATTR                3 (NULL|self + items)
+             48 CALL                     0
+             56 GET_ITER
+        >>   58 FOR_ITER                43 (to 148)
+             62 UNPACK_SEQUENCE          2
+             66 STORE_FAST               3 (k)
+             68 STORE_FAST               4 (v)
+
+ 75          70 LOAD_GLOBAL              5 (NULL + getattr)
+             80 LOAD_FAST                0 (s)
+             82 LOAD_FAST                3 (k)
+             84 CALL                     2
+             92 STORE_FAST               5 (old)
+
+ 76          94 LOAD_FAST                5 (old)
+             96 LOAD_FAST                4 (v)
+             98 COMPARE_OP              55 (!=)
+            102 POP_JUMP_IF_TRUE         1 (to 106)
+            104 JUMP_BACKWARD           24 (to 58)
+
+ 77     >>  106 LOAD_GLOBAL              7 (NULL + setattr)
+            116 LOAD_FAST                0 (s)
+            118 LOAD_FAST                3 (k)
+            120 LOAD_FAST                4 (v)
+            122 CALL                     3
+            130 POP_TOP
+
+ 78         132 LOAD_FAST                5 (old)
+            134 LOAD_FAST                4 (v)
+            136 BUILD_TUPLE              2
+            138 LOAD_FAST                2 (changed)
+            140 LOAD_FAST                3 (k)
+            142 STORE_SUBSCR
+            146 JUMP_BACKWARD           45 (to 58)
+
+ 74     >>  148 END_FOR
+
+ 79         150 LOAD_FAST                2 (changed)
+            152 RETURN_VALUE
+
+Disassembly of <code object RemoteSync at 0x17a7c910, file "remote.py", line 82>:
+ 82           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('RemoteSync')
+              8 STORE_NAME               2 (__qualname__)
+
+ 87          10 LOAD_CONST               1 (None)
+
+ 88          12 LOAD_CONST               1 (None)
+
+ 89          14 LOAD_CONST               1 (None)
+
+ 90          16 LOAD_NAME                3 (SYNC_INTERVAL_S)
+
+ 91          18 LOAD_CONST               1 (None)
+
+ 92          20 LOAD_CONST               1 (None)
+
+ 93          22 LOAD_NAME                4 (time)
+             24 LOAD_ATTR               10 (monotonic)
+
+ 83          44 BUILD_TUPLE              7
+             46 LOAD_CONST               2 ('on_config')
+
+ 86          48 LOAD_NAME                6 (Callable)
+             50 LOAD_NAME                7 (dict)
+             52 LOAD_NAME                8 (int)
+             54 BUILD_LIST               2
+             56 LOAD_CONST               1 (None)
+             58 BUILD_TUPLE              2
+             60 BINARY_SUBSCR
+
+ 83          64 LOAD_CONST               3 ('on_shot')
+
+ 87          66 LOAD_NAME                9 (Optional)
+             68 LOAD_NAME                6 (Callable)
+             70 LOAD_NAME               10 (str)
+             72 BUILD_LIST               1
+             74 LOAD_CONST               1 (None)
+             76 BUILD_TUPLE              2
+             78 BINARY_SUBSCR
+             82 BINARY_SUBSCR
+
+ 83          86 LOAD_CONST               4 ('on_rescue')
+
+ 88          88 LOAD_NAME                9 (Optional)
+             90 LOAD_NAME                6 (Callable)
+             92 LOAD_NAME               10 (str)
+             94 BUILD_LIST               1
+             96 LOAD_CONST               1 (None)
+             98 BUILD_TUPLE              2
+            100 BINARY_SUBSCR
+            104 BINARY_SUBSCR
+
+ 83         108 LOAD_CONST               5 ('post')
+
+ 89         110 LOAD_NAME                9 (Optional)
+            112 LOAD_NAME                6 (Callable)
+            114 LOAD_NAME               10 (str)
+            116 LOAD_NAME                7 (dict)
+            118 BUILD_LIST               2
+            120 LOAD_NAME                7 (dict)
+            122 BUILD_TUPLE              2
+            124 BINARY_SUBSCR
+            128 BINARY_SUBSCR
+
+ 83         132 LOAD_CONST               6 ('interval')
+
+ 90         134 LOAD_NAME               11 (float)
+
+ 83         136 LOAD_CONST               7 ('log')
+
+ 91         138 LOAD_NAME                9 (Optional)
+            140 LOAD_NAME                6 (Callable)
+            142 LOAD_NAME               10 (str)
+            144 BUILD_LIST               1
+            146 LOAD_CONST               1 (None)
+            148 BUILD_TUPLE              2
+            150 BINARY_SUBSCR
+            154 BINARY_SUBSCR
+
+ 83         158 LOAD_CONST               8 ('active')
+
+ 92         160 LOAD_NAME                9 (Optional)
+            162 LOAD_NAME                6 (Callable)
+            164 BUILD_LIST               0
+            166 LOAD_NAME               12 (bool)
+            168 BUILD_TUPLE              2
+            170 BINARY_SUBSCR
+            174 BINARY_SUBSCR
+
+ 83         178 LOAD_CONST               9 ('clock')
+
+ 93         180 LOAD_NAME                6 (Callable)
+            182 BUILD_LIST               0
+            184 LOAD_NAME               11 (float)
+            186 BUILD_TUPLE              2
+            188 BINARY_SUBSCR
+
+ 83         192 BUILD_TUPLE             16
+            194 LOAD_CONST              10 (<code object __init__ at 0x179df570, file "remote.py", line 83>)
+            196 MAKE_FUNCTION            5 (defaults, annotations)
+            198 STORE_NAME              13 (__init__)
+
+115         200 LOAD_CONST              11 ('e')
+            202 LOAD_NAME               14 (BaseException)
+            204 LOAD_CONST              12 ('return')
+            206 LOAD_CONST               1 (None)
+            208 BUILD_TUPLE              4
+            210 LOAD_CONST              13 (<code object _log_failure at 0x7f6af1e28b20, file "remote.py", line 115>)
+            212 MAKE_FUNCTION            4 (annotations)
+            214 STORE_NAME              15 (_log_failure)
+
+123         216 LOAD_CONST              26 (('return', None))
+            218 LOAD_CONST              14 (<code object start at 0x7f6aed7a1370, file "remote.py", line 123>)
+            220 MAKE_FUNCTION            4 (annotations)
+            222 STORE_NAME              16 (start)
+
+128         224 LOAD_CONST              26 (('return', None))
+            226 LOAD_CONST              15 (<code object stop at 0x7f6aed1d0750, file "remote.py", line 128>)
+            228 MAKE_FUNCTION            4 (annotations)
+            230 STORE_NAME              17 (stop)
+
+132         232 LOAD_CONST              26 (('return', None))
+            234 LOAD_CONST              16 (<code object poke at 0x7f6aed7f6f30, file "remote.py", line 132>)
+            236 MAKE_FUNCTION            4 (annotations)
+            238 STORE_NAME              18 (poke)
+
+136         240 LOAD_CONST              26 (('return', None))
+            242 LOAD_CONST              17 (<code object _run at 0x17a76e30, file "remote.py", line 136>)
+            244 MAKE_FUNCTION            4 (annotations)
+            246 STORE_NAME              19 (_run)
+
+148         248 LOAD_CONST              12 ('return')
+            250 LOAD_NAME               12 (bool)
+            252 BUILD_TUPLE              2
+            254 LOAD_CONST              18 (<code object _fresh at 0x7f6aed7e6af0, file "remote.py", line 148>)
+            256 MAKE_FUNCTION            4 (annotations)
+            258 STORE_NAME              20 (_fresh)
+
+152         260 LOAD_CONST              12 ('return')
+            262 LOAD_NAME               12 (bool)
+            264 BUILD_TUPLE              2
+            266 LOAD_CONST              19 (<code object _rescue_fast at 0x7f6aed1fd290, file "remote.py", line 152>)
+            268 MAKE_FUNCTION            4 (annotations)
+            270 STORE_NAME              21 (_rescue_fast)
+
+155         272 LOAD_CONST              12 ('return')
+            274 LOAD_NAME               12 (bool)
+            276 BUILD_TUPLE              2
+            278 LOAD_CONST              20 (<code object _sleep at 0x7f6aed188bd0, file "remote.py", line 155>)
+            280 MAKE_FUNCTION            4 (annotations)
+            282 STORE_NAME              22 (_sleep)
+
+170         284 LOAD_CONST              12 ('return')
+            286 LOAD_NAME                7 (dict)
+            288 BUILD_TUPLE              2
+            290 LOAD_CONST              21 (<code object piggy_body at 0x7f6aed179980, file "remote.py", line 170>)
+            292 MAKE_FUNCTION            4 (annotations)
+            294 STORE_NAME              23 (piggy_body)
+
+179         296 LOAD_CONST              22 ('body')
+            298 LOAD_NAME                7 (dict)
+            300 LOAD_CONST              12 ('return')
+            302 LOAD_CONST               1 (None)
+            304 BUILD_TUPLE              4
+            306 LOAD_CONST              23 (<code object _flags at 0x7f6af1de7c50, file "remote.py", line 179>)
+            308 MAKE_FUNCTION            4 (annotations)
+            310 STORE_NAME              24 (_flags)
+
+186         312 LOAD_CONST              12 ('return')
+            314 LOAD_NAME                9 (Optional)
+            316 LOAD_NAME               10 (str)
+            318 BINARY_SUBSCR
+            322 BUILD_TUPLE              2
+            324 LOAD_CONST              24 (<code object poll_once at 0x17a7d590, file "remote.py", line 186>)
+            326 MAKE_FUNCTION            4 (annotations)
+            328 STORE_NAME              25 (poll_once)
+
+203         330 LOAD_CONST              12 ('return')
+            332 LOAD_NAME                9 (Optional)
+            334 LOAD_NAME               10 (str)
+            336 BINARY_SUBSCR
+            340 BUILD_TUPLE              2
+            342 LOAD_CONST              25 (<code object handle_answer at 0x17a9a350, file "remote.py", line 203>)
+            344 MAKE_FUNCTION            4 (annotations)
+            346 STORE_NAME              26 (handle_answer)
+            348 RETURN_CONST             1 (None)
+
+Disassembly of <code object __init__ at 0x179df570, file "remote.py", line 83>:
+ 83           0 RESUME                   0
+
+ 95           2 LOAD_FAST                1 (settings)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (s)
+
+ 96          16 LOAD_FAST                2 (on_config)
+             18 LOAD_FAST                0 (self)
+             20 STORE_ATTR               1 (on_config)
+
+ 97          30 LOAD_FAST                3 (on_shot)
+             32 LOAD_FAST                0 (self)
+             34 STORE_ATTR               2 (on_shot)
+
+ 98          44 LOAD_FAST                4 (on_rescue)
+             46 LOAD_FAST                0 (self)
+             48 STORE_ATTR               3 (on_rescue)
+
+ 99          58 LOAD_CONST               1 ('')
+             60 LOAD_FAST                0 (self)
+             62 STORE_ATTR               4 (rescue_done)
+
+100          72 LOAD_CONST               1 ('')
+             74 LOAD_FAST                0 (self)
+             76 STORE_ATTR               5 (shot_done)
+
+101          86 LOAD_FAST                5 (post)
+             88 COPY                     1
+             90 POP_JUMP_IF_TRUE        16 (to 124)
+             92 POP_TOP
+             94 LOAD_GLOBAL             12 (telemetry)
+            104 LOAD_ATTR               14 (_http_post)
+        >>  124 LOAD_FAST                0 (self)
+            126 STORE_ATTR               8 (_post)
+
+102         136 LOAD_FAST                6 (interval)
+            138 LOAD_FAST                0 (self)
+            140 STORE_ATTR               9 (interval)
+
+103         150 LOAD_FAST                7 (log)
+            152 COPY                     1
+            154 POP_JUMP_IF_TRUE         3 (to 162)
+            156 POP_TOP
+            158 LOAD_CONST               2 (<code object <lambda> at 0x7f6aed1a5140, file "remote.py", line 103>)
+            160 MAKE_FUNCTION            0
+        >>  162 LOAD_FAST                0 (self)
+            164 STORE_ATTR              10 (log)
+
+104         174 LOAD_FAST                8 (active)
+            176 COPY                     1
+            178 POP_JUMP_IF_TRUE         3 (to 186)
+            180 POP_TOP
+            182 LOAD_CONST               3 (<code object <lambda> at 0x7f6aed1a7df0, file "remote.py", line 104>)
+            184 MAKE_FUNCTION            0
+        >>  186 LOAD_FAST                0 (self)
+            188 STORE_ATTR              11 (_active)
+
+105         198 LOAD_FAST                9 (clock)
+            200 LOAD_FAST                0 (self)
+            202 STORE_ATTR              12 (_clock)
+
+106         212 LOAD_CONST               4 (-1000000000.0)
+            214 LOAD_FAST                0 (self)
+            216 STORE_ATTR              13 (_last_answer)
+
+107         226 LOAD_CONST               5 (0)
+            228 LOAD_FAST                0 (self)
+            230 STORE_ATTR              14 (_rescue_polls)
+
+108         240 LOAD_CONST               5 (0)
+            242 LOAD_FAST                0 (self)
+            244 STORE_ATTR              15 (applied_rev)
+
+109         254 LOAD_CONST               1 ('')
+            256 LOAD_FAST                0 (self)
+            258 STORE_ATTR              16 (_last_failure)
+
+110         268 LOAD_CONST               1 ('')
+            270 LOAD_FAST                0 (self)
+            272 STORE_ATTR              17 (_last_key)
+
+111         282 LOAD_GLOBAL             37 (NULL + threading)
+            292 LOAD_ATTR               38 (Event)
+            312 CALL                     0
+            320 LOAD_FAST                0 (self)
+            322 STORE_ATTR              20 (_stop)
+
+112         332 LOAD_GLOBAL             37 (NULL + threading)
+            342 LOAD_ATTR               38 (Event)
+            362 CALL                     0
+            370 LOAD_FAST                0 (self)
+            372 STORE_ATTR              21 (_wake)
+
+113         382 LOAD_CONST               0 (None)
+            384 LOAD_FAST                0 (self)
+            386 STORE_ATTR              22 (_thread)
+            396 RETURN_CONST             0 (None)
+
+Disassembly of <code object <lambda> at 0x7f6aed1a5140, file "remote.py", line 103>:
+103           0 RESUME                   0
+              2 RETURN_CONST             0 (None)
+
+Disassembly of <code object <lambda> at 0x7f6aed1a7df0, file "remote.py", line 104>:
+104           0 RESUME                   0
+              2 RETURN_CONST             1 (True)
+
+Disassembly of <code object _log_failure at 0x7f6af1e28b20, file "remote.py", line 115>:
+115           0 RESUME                   0
+
+116           2 NOP
+
+117           4 LOAD_GLOBAL              1 (NULL + telemetry)
+             14 LOAD_ATTR                2 (classify_error)
+             34 LOAD_FAST                1 (e)
+             36 CALL                     1
+             44 UNPACK_SEQUENCE          2
+             48 STORE_FAST               2 (kind)
+             50 STORE_FAST               3 (text)
+
+118          52 LOAD_CONST               1 ('remote: ')
+             54 LOAD_GLOBAL              5 (NULL + type)
+             64 LOAD_FAST                1 (e)
+             66 CALL                     1
+             74 LOAD_ATTR                6 (__name__)
+             94 FORMAT_VALUE             0
+             96 LOAD_CONST               2 (' (')
+             98 LOAD_FAST                2 (kind)
+            100 FORMAT_VALUE             0
+            102 LOAD_CONST               3 (') ')
+            104 LOAD_FAST                3 (text)
+            106 FORMAT_VALUE             0
+            108 BUILD_STRING             6
+            110 STORE_FAST               4 (line)
+
+119         112 LOAD_FAST                4 (line)
+            114 LOAD_FAST                0 (self)
+            116 LOAD_ATTR                8 (_last_failure)
+            136 COMPARE_OP              55 (!=)
+            140 POP_JUMP_IF_FALSE       25 (to 192)
+
+120         142 LOAD_FAST                4 (line)
+            144 LOAD_FAST                0 (self)
+            146 STORE_ATTR               4 (_last_failure)
+
+121         156 LOAD_FAST                0 (self)
+            158 LOAD_ATTR               11 (NULL|self + log)
+            178 LOAD_FAST                4 (line)
+            180 CALL                     1
+            188 POP_TOP
+            190 RETURN_CONST             0 (None)
+
+119     >>  192 RETURN_CONST             0 (None)
+
+Disassembly of <code object start at 0x7f6aed7a1370, file "remote.py", line 123>:
+123           0 RESUME                   0
+
+124           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_thread)
+             24 POP_JUMP_IF_NOT_NONE    66 (to 158)
+
+125          26 LOAD_GLOBAL              3 (NULL + threading)
+             36 LOAD_ATTR                4 (Thread)
+             56 LOAD_FAST                0 (self)
+             58 LOAD_ATTR                6 (_run)
+             78 LOAD_CONST               1 (True)
+             80 LOAD_CONST               2 ('pk-auto-remote')
+             82 KW_NAMES                 3 (('target', 'daemon', 'name'))
+             84 CALL                     3
+             92 LOAD_FAST                0 (self)
+             94 STORE_ATTR               0 (_thread)
+
+126         104 LOAD_FAST                0 (self)
+            106 LOAD_ATTR                0 (_thread)
+            126 LOAD_ATTR                9 (NULL|self + start)
+            146 CALL                     0
+            154 POP_TOP
+            156 RETURN_CONST             0 (None)
+
+124     >>  158 RETURN_CONST             0 (None)
+
+Disassembly of <code object stop at 0x7f6aed1d0750, file "remote.py", line 128>:
+128           0 RESUME                   0
+
+129           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_stop)
+             24 LOAD_ATTR                3 (NULL|self + set)
+             44 CALL                     0
+             52 POP_TOP
+
+130          54 LOAD_FAST                0 (self)
+             56 LOAD_ATTR                4 (_wake)
+             76 LOAD_ATTR                3 (NULL|self + set)
+             96 CALL                     0
+            104 POP_TOP
+            106 RETURN_CONST             0 (None)
+
+Disassembly of <code object poke at 0x7f6aed7f6f30, file "remote.py", line 132>:
+132           0 RESUME                   0
+
+133           2 NOP
+
+134           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (_wake)
+             26 LOAD_ATTR                3 (NULL|self + set)
+             46 CALL                     0
+             54 POP_TOP
+             56 RETURN_CONST             0 (None)
+
+Disassembly of <code object _run at 0x17a76e30, file "remote.py", line 136>:
+136           0 RESUME                   0
+
+137           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_wake)
+             24 LOAD_ATTR                3 (NULL|self + wait)
+             44 LOAD_GLOBAL              4 (FIRST_DELAY_S)
+             54 CALL                     1
+             62 POP_TOP
+
+138          64 LOAD_CONST               1 (True)
+             66 STORE_FAST               1 (forced)
+
+139          68 LOAD_FAST                0 (self)
+             70 LOAD_ATTR                6 (_stop)
+             90 LOAD_ATTR                9 (NULL|self + is_set)
+            110 CALL                     0
+            118 POP_JUMP_IF_TRUE       121 (to 362)
+
+140     >>  120 LOAD_FAST                0 (self)
+            122 LOAD_ATTR                0 (_wake)
+            142 LOAD_ATTR               11 (NULL|self + clear)
+            162 CALL                     0
+            170 POP_TOP
+
+141         172 NOP
+
+142         174 LOAD_FAST                1 (forced)
+            176 POP_JUMP_IF_TRUE        32 (to 242)
+            178 LOAD_FAST                0 (self)
+            180 LOAD_ATTR               13 (NULL|self + _active)
+            200 CALL                     0
+            208 POP_JUMP_IF_FALSE       32 (to 274)
+            210 LOAD_FAST                0 (self)
+            212 LOAD_ATTR               15 (NULL|self + _fresh)
+            232 CALL                     0
+            240 POP_JUMP_IF_TRUE        16 (to 274)
+
+143     >>  242 LOAD_FAST                0 (self)
+            244 LOAD_ATTR               17 (NULL|self + poll_once)
+            264 CALL                     0
+            272 POP_TOP
+
+146     >>  274 LOAD_FAST                0 (self)
+            276 LOAD_ATTR               23 (NULL|self + _sleep)
+            296 CALL                     0
+            304 STORE_FAST               1 (forced)
+
+139         306 LOAD_FAST                0 (self)
+            308 LOAD_ATTR                6 (_stop)
+            328 LOAD_ATTR                9 (NULL|self + is_set)
+            348 CALL                     0
+            356 POP_JUMP_IF_TRUE         1 (to 360)
+            358 JUMP_BACKWARD          120 (to 120)
+        >>  360 RETURN_CONST             0 (None)
+        >>  362 RETURN_CONST             0 (None)
+        >>  364 PUSH_EXC_INFO
+
+144         366 LOAD_GLOBAL             18 (Exception)
+            376 CHECK_EXC_MATCH
+            378 POP_JUMP_IF_FALSE       27 (to 434)
+            380 STORE_FAST               2 (e)
+
+145         382 LOAD_FAST                0 (self)
+            384 LOAD_ATTR               21 (NULL|self + _log_failure)
+            404 LOAD_FAST                2 (e)
+            406 CALL                     1
+            414 POP_TOP
+            416 POP_EXCEPT
+            418 LOAD_CONST               0 (None)
+            420 STORE_FAST               2 (e)
+            422 DELETE_FAST              2 (e)
+            424 JUMP_BACKWARD           76 (to 274)
+        >>  426 LOAD_CONST               0 (None)
+            428 STORE_FAST               2 (e)
+            430 DELETE_FAST              2 (e)
+            432 RERAISE                  1
+
+144     >>  434 RERAISE                  0
+        >>  436 COPY                     3
+            438 POP_EXCEPT
+            440 RERAISE                  1
+ExceptionTable:
+  174 to 272 -> 364 [0]
+  364 to 380 -> 436 [1] lasti
+  382 to 414 -> 426 [1] lasti
+  426 to 434 -> 436 [1] lasti
+
+Disassembly of <code object _fresh at 0x7f6aed7e6af0, file "remote.py", line 148>:
+148           0 RESUME                   0
+
+149           2 NOP
+
+150           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + _clock)
+             26 CALL                     0
+             34 LOAD_FAST                0 (self)
+             36 LOAD_ATTR                2 (_last_answer)
+             56 BINARY_OP               10 (-)
+             60 LOAD_FAST                0 (self)
+             62 LOAD_ATTR                4 (interval)
+             82 LOAD_CONST               1 (0.5)
+             84 BINARY_OP                5 (*)
+             88 COMPARE_OP               2 (<)
+             92 RETURN_VALUE
+
+Disassembly of <code object _rescue_fast at 0x7f6aed1fd290, file "remote.py", line 152>:
+152           0 RESUME                   0
+
+153           2 LOAD_GLOBAL              1 (NULL + bool)
+             12 LOAD_GLOBAL              3 (NULL + getattr)
+             22 LOAD_FAST                0 (self)
+             24 LOAD_ATTR                4 (s)
+             44 LOAD_CONST               1 ('rescue_listening')
+             46 LOAD_CONST               2 (False)
+             48 CALL                     3
+             56 COPY                     1
+             58 POP_JUMP_IF_FALSE       33 (to 126)
+             60 POP_TOP
+             62 LOAD_FAST                0 (self)
+             64 LOAD_ATTR                6 (on_rescue)
+             84 COPY                     1
+             86 POP_JUMP_IF_FALSE       19 (to 126)
+             88 POP_TOP
+             90 LOAD_FAST                0 (self)
+             92 LOAD_ATTR                8 (_rescue_polls)
+            112 LOAD_GLOBAL             10 (RESCUE_MAX_POLLS)
+            122 COMPARE_OP               2 (<)
+        >>  126 CALL                     1
+            134 RETURN_VALUE
+
+Disassembly of <code object _sleep at 0x7f6aed188bd0, file "remote.py", line 155>:
+155           0 RESUME                   0
+
+156           2 NOP
+
+158           4 LOAD_CONST               1 (0.0)
+              6 STORE_FAST               1 (waited)
+
+159           8 LOAD_FAST                0 (self)
+             10 LOAD_ATTR                0 (_stop)
+             30 LOAD_ATTR                3 (NULL|self + is_set)
+             50 CALL                     0
+             58 POP_JUMP_IF_TRUE       117 (to 294)
+
+160     >>   60 LOAD_GLOBAL              5 (NULL + min)
+             70 LOAD_CONST               2 (5.0)
+             72 LOAD_FAST                0 (self)
+             74 LOAD_ATTR                6 (interval)
+             94 LOAD_FAST                1 (waited)
+             96 BINARY_OP               10 (-)
+            100 CALL                     2
+            108 STORE_FAST               2 (step)
+
+161         110 LOAD_FAST                2 (step)
+            112 LOAD_CONST               3 (0)
+            114 COMPARE_OP              26 (<=)
+            118 POP_JUMP_IF_FALSE        1 (to 122)
+
+162         120 RETURN_CONST             4 (False)
+
+163     >>  122 LOAD_FAST                0 (self)
+            124 LOAD_ATTR                8 (_wake)
+            144 LOAD_ATTR               11 (NULL|self + wait)
+            164 LOAD_FAST                2 (step)
+            166 CALL                     1
+            174 POP_JUMP_IF_FALSE        1 (to 178)
+
+164         176 RETURN_CONST             5 (True)
+
+165     >>  178 LOAD_FAST                1 (waited)
+            180 LOAD_FAST                2 (step)
+            182 BINARY_OP               13 (+=)
+            186 STORE_FAST               1 (waited)
+
+166         188 LOAD_FAST                0 (self)
+            190 LOAD_ATTR               13 (NULL|self + _rescue_fast)
+            210 CALL                     0
+            218 POP_JUMP_IF_FALSE       10 (to 240)
+            220 LOAD_FAST                1 (waited)
+            222 LOAD_GLOBAL             14 (RESCUE_POLL_S)
+            232 COMPARE_OP              92 (>=)
+            236 POP_JUMP_IF_FALSE        1 (to 240)
+
+167         238 RETURN_CONST             4 (False)
+
+159     >>  240 LOAD_FAST                0 (self)
+            242 LOAD_ATTR                0 (_stop)
+            262 LOAD_ATTR                3 (NULL|self + is_set)
+            282 CALL                     0
+            290 POP_JUMP_IF_TRUE         1 (to 294)
+            292 JUMP_BACKWARD          117 (to 60)
+
+168     >>  294 RETURN_CONST             4 (False)
+
+Disassembly of <code object piggy_body at 0x7f6aed179980, file "remote.py", line 170>:
+170           0 RESUME                   0
+
+171           2 NOP
+
+172           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (s)
+             26 STORE_FAST               1 (s)
+
+173          28 LOAD_FAST                1 (s)
+             30 LOAD_ATTR                2 (remote_enabled)
+             50 POP_JUMP_IF_FALSE       54 (to 160)
+             52 LOAD_GLOBAL              5 (NULL + telemetry)
+             62 LOAD_ATTR                6 (valid_link_key)
+             82 LOAD_GLOBAL              5 (NULL + telemetry)
+             92 LOAD_ATTR                8 (clean_key)
+            112 LOAD_FAST                1 (s)
+            114 LOAD_ATTR               10 (discord_link_key)
+            134 COPY                     1
+            136 POP_JUMP_IF_TRUE         2 (to 142)
+            138 POP_TOP
+            140 LOAD_CONST               1 ('')
+        >>  142 CALL                     1
+            150 CALL                     1
+            158 POP_JUMP_IF_TRUE         2 (to 164)
+
+174     >>  160 BUILD_MAP                0
+            162 RETURN_VALUE
+
+175     >>  164 LOAD_CONST               2 ('applied_rev')
+            166 LOAD_FAST                0 (self)
+            168 LOAD_ATTR               12 (applied_rev)
+            188 BUILD_MAP                1
+            190 STORE_FAST               2 (body)
+
+176         192 LOAD_FAST                0 (self)
+            194 LOAD_ATTR               15 (NULL|self + _flags)
+            214 LOAD_FAST                2 (body)
+            216 CALL                     1
+            224 POP_TOP
+
+177         226 LOAD_FAST                2 (body)
+            228 RETURN_VALUE
+
+Disassembly of <code object _flags at 0x7f6af1de7c50, file "remote.py", line 179>:
+179           0 RESUME                   0
+
+180           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (s)
+             24 STORE_FAST               2 (s)
+
+181          26 LOAD_GLOBAL              3 (NULL + getattr)
+             36 LOAD_FAST                2 (s)
+             38 LOAD_CONST               1 ('screenshot_enabled')
+             40 LOAD_CONST               2 (False)
+             42 CALL                     3
+             50 POP_JUMP_IF_FALSE       33 (to 118)
+             52 LOAD_FAST                0 (self)
+             54 LOAD_ATTR                4 (on_shot)
+             74 POP_JUMP_IF_FALSE       21 (to 118)
+
+182          76 LOAD_CONST               3 (True)
+             78 LOAD_FAST                0 (self)
+             80 LOAD_ATTR                6 (shot_done)
+            100 SWAP                     2
+            102 LOAD_FAST                1 (body)
+            104 LOAD_CONST               4 ('shot')
+            106 STORE_SUBSCR
+            110 LOAD_FAST                1 (body)
+            112 LOAD_CONST               5 ('shot_done')
+            114 STORE_SUBSCR
+
+183     >>  118 LOAD_GLOBAL              3 (NULL + getattr)
+            128 LOAD_FAST                2 (s)
+            130 LOAD_CONST               6 ('rescue_listening')
+            132 LOAD_CONST               2 (False)
+            134 CALL                     3
+            142 POP_JUMP_IF_FALSE       35 (to 214)
+            144 LOAD_FAST                0 (self)
+            146 LOAD_ATTR                8 (on_rescue)
+            166 POP_JUMP_IF_FALSE       22 (to 212)
+
+184         168 LOAD_CONST               3 (True)
+            170 LOAD_FAST                0 (self)
+            172 LOAD_ATTR               10 (rescue_done)
+            192 SWAP                     2
+            194 LOAD_FAST                1 (body)
+            196 LOAD_CONST               7 ('rescue')
+            198 STORE_SUBSCR
+            202 LOAD_FAST                1 (body)
+            204 LOAD_CONST               8 ('rescue_done')
+            206 STORE_SUBSCR
+            210 RETURN_CONST             0 (None)
+
+183     >>  212 RETURN_CONST             0 (None)
+        >>  214 RETURN_CONST             0 (None)
+
+Disassembly of <code object poll_once at 0x17a7d590, file "remote.py", line 186>:
+186           0 RESUME                   0
+
+187           2 NOP
+
+188           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (s)
+             26 STORE_FAST               1 (s)
+
+189          28 LOAD_GLOBAL              3 (NULL + telemetry)
+             38 LOAD_ATTR                4 (clean_key)
+             58 LOAD_FAST                1 (s)
+             60 LOAD_ATTR                6 (discord_link_key)
+             80 COPY                     1
+             82 POP_JUMP_IF_TRUE         2 (to 88)
+             84 POP_TOP
+             86 LOAD_CONST               1 ('')
+        >>   88 CALL                     1
+             96 STORE_FAST               2 (key)
+
+190          98 LOAD_FAST                1 (s)
+            100 LOAD_ATTR                8 (remote_enabled)
+            120 POP_JUMP_IF_FALSE       52 (to 226)
+            122 LOAD_GLOBAL              3 (NULL + telemetry)
+            132 LOAD_ATTR               10 (valid_link_key)
+            152 LOAD_FAST                2 (key)
+            154 CALL                     1
+            162 POP_JUMP_IF_FALSE       31 (to 226)
+            164 LOAD_GLOBAL              3 (NULL + telemetry)
+            174 LOAD_ATTR               12 (valid_endpoint)
+            194 LOAD_FAST                1 (s)
+            196 LOAD_ATTR               14 (telemetry_api_url)
+            216 CALL                     1
+            224 POP_JUMP_IF_TRUE         1 (to 228)
+
+191     >>  226 RETURN_CONST             0 (None)
+
+192     >>  228 LOAD_FAST                2 (key)
+            230 LOAD_FAST                0 (self)
+            232 LOAD_ATTR               16 (_last_key)
+            252 COMPARE_OP              55 (!=)
+            256 POP_JUMP_IF_FALSE       15 (to 288)
+
+193         258 LOAD_FAST                2 (key)
+            260 LOAD_CONST               2 (0)
+            262 SWAP                     2
+            264 LOAD_FAST                0 (self)
+            266 STORE_ATTR               8 (_last_key)
+            276 LOAD_FAST                0 (self)
+            278 STORE_ATTR               9 (applied_rev)
+
+194     >>  288 NOP
+
+195         290 LOAD_FAST                2 (key)
+            292 LOAD_FAST                0 (self)
+            294 LOAD_ATTR               18 (applied_rev)
+            314 LOAD_GLOBAL             21 (NULL + current_of)
+            324 LOAD_FAST                1 (s)
+            326 CALL                     1
+            334 LOAD_CONST               3 (('link_key', 'applied_rev', 'current'))
+            336 BUILD_CONST_KEY_MAP      3
+            338 STORE_FAST               3 (body)
+
+196         340 LOAD_FAST                0 (self)
+            342 LOAD_ATTR               23 (NULL|self + _flags)
+            362 LOAD_FAST                3 (body)
+            364 CALL                     1
+            372 POP_TOP
+
+197         374 LOAD_FAST                0 (self)
+            376 LOAD_ATTR               25 (NULL|self + _post)
+            396 LOAD_GLOBAL              3 (NULL + telemetry)
+            406 LOAD_ATTR               26 (api_url)
+            426 LOAD_FAST                1 (s)
+            428 LOAD_ATTR               14 (telemetry_api_url)
+            448 LOAD_CONST               4 ('/api/sync')
+            450 CALL                     2
+            458 LOAD_FAST                3 (body)
+            460 CALL                     2
+            468 STORE_FAST               4 (ans)
+
+201         470 LOAD_FAST                0 (self)
+            472 LOAD_ATTR               33 (NULL|self + handle_answer)
+            492 LOAD_FAST                4 (ans)
+            494 CALL                     1
+            502 RETURN_VALUE
+        >>  504 PUSH_EXC_INFO
+
+198         506 LOAD_GLOBAL             28 (Exception)
+            516 CHECK_EXC_MATCH
+            518 POP_JUMP_IF_FALSE       27 (to 574)
+            520 STORE_FAST               5 (e)
+
+199         522 LOAD_FAST                0 (self)
+            524 LOAD_ATTR               31 (NULL|self + _log_failure)
+            544 LOAD_FAST                5 (e)
+            546 CALL                     1
+            554 POP_TOP
+
+200         556 POP_EXCEPT
+            558 LOAD_CONST               0 (None)
+            560 STORE_FAST               5 (e)
+            562 DELETE_FAST              5 (e)
+            564 RETURN_CONST             0 (None)
+        >>  566 LOAD_CONST               0 (None)
+            568 STORE_FAST               5 (e)
+            570 DELETE_FAST              5 (e)
+            572 RERAISE                  1
+
+198     >>  574 RERAISE                  0
+        >>  576 COPY                     3
+            578 POP_EXCEPT
+            580 RERAISE                  1
+ExceptionTable:
+  290 to 468 -> 504 [0]
+  504 to 520 -> 576 [1] lasti
+  522 to 554 -> 566 [1] lasti
+  566 to 574 -> 576 [1] lasti
+
+Disassembly of <code object handle_answer at 0x17a9a350, file "remote.py", line 203>:
+203           0 RESUME                   0
+
+204           2 NOP
+
+206           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (s)
+             26 STORE_FAST               2 (s)
+
+207          28 LOAD_GLOBAL              3 (NULL + isinstance)
+             38 LOAD_FAST                1 (ans)
+             40 LOAD_GLOBAL              4 (dict)
+             50 CALL                     2
+             58 POP_JUMP_IF_FALSE       19 (to 98)
+             60 LOAD_FAST                1 (ans)
+             62 LOAD_ATTR                7 (NULL|self + get)
+             82 LOAD_CONST               1 ('ok')
+             84 CALL                     1
+             92 LOAD_CONST               2 (True)
+             94 IS_OP                    1
+             96 POP_JUMP_IF_FALSE        1 (to 100)
+
+208     >>   98 RETURN_CONST             0 (None)
+
+209     >>  100 LOAD_FAST                0 (self)
+            102 LOAD_ATTR                9 (NULL|self + _clock)
+            122 CALL                     0
+            130 LOAD_FAST                0 (self)
+            132 STORE_ATTR               5 (_last_answer)
+
+210         142 LOAD_GLOBAL             13 (NULL + _bounded)
+            152 LOAD_FAST                1 (ans)
+            154 LOAD_ATTR                7 (NULL|self + get)
+            174 LOAD_CONST               3 ('poll_hint_s')
+            176 CALL                     1
+            184 LOAD_GLOBAL             14 (MIN_INTERVAL_S)
+            194 LOAD_GLOBAL             16 (MAX_INTERVAL_S)
+            204 CALL                     3
+            212 STORE_FAST               3 (hint)
+
+211         214 LOAD_FAST                3 (hint)
+            216 POP_JUMP_IF_NOT_NONE    36 (to 290)
+
+212         218 LOAD_GLOBAL             13 (NULL + _bounded)
+            228 LOAD_FAST                1 (ans)
+            230 LOAD_ATTR                7 (NULL|self + get)
+            250 LOAD_CONST               4 ('poll_s')
+            252 CALL                     1
+            260 LOAD_GLOBAL             14 (MIN_INTERVAL_S)
+            270 LOAD_GLOBAL             16 (MAX_INTERVAL_S)
+            280 CALL                     3
+            288 STORE_FAST               3 (hint)
+
+213     >>  290 LOAD_FAST                3 (hint)
+            292 POP_JUMP_IF_NONE         7 (to 308)
+
+214         294 LOAD_FAST                3 (hint)
+            296 LOAD_FAST                0 (self)
+            298 STORE_ATTR               9 (interval)
+
+215     >>  308 LOAD_GLOBAL             21 (NULL + getattr)
+            318 LOAD_FAST                2 (s)
+            320 LOAD_CONST               5 ('rescue_listening')
+            322 LOAD_CONST               6 (False)
+            324 CALL                     3
+            332 POP_JUMP_IF_FALSE      238 (to 810)
+            334 LOAD_FAST                0 (self)
+            336 LOAD_ATTR               22 (on_rescue)
+            356 POP_JUMP_IF_FALSE      226 (to 810)
+
+216         358 LOAD_FAST                0 (self)
+            360 COPY                     1
+            362 LOAD_ATTR               24 (_rescue_polls)
+            382 LOAD_CONST               7 (1)
+            384 BINARY_OP               13 (+=)
+            388 SWAP                     2
+            390 STORE_ATTR              12 (_rescue_polls)
+
+217         400 LOAD_FAST                0 (self)
+            402 LOAD_ATTR               24 (_rescue_polls)
+            422 LOAD_GLOBAL             26 (RESCUE_MAX_POLLS)
+            432 COMPARE_OP              26 (<=)
+            436 POP_JUMP_IF_FALSE       31 (to 500)
+
+218         438 LOAD_GLOBAL             29 (NULL + min)
+            448 LOAD_FAST                0 (self)
+            450 LOAD_ATTR               18 (interval)
+            470 LOAD_GLOBAL             30 (RESCUE_POLL_S)
+            480 CALL                     2
+            488 LOAD_FAST                0 (self)
+            490 STORE_ATTR               9 (interval)
+
+219     >>  500 LOAD_FAST                1 (ans)
+            502 LOAD_ATTR                7 (NULL|self + get)
+            522 LOAD_CONST               8 ('rescue_req')
+            524 CALL                     1
+            532 STORE_FAST               4 (r)
+
+220         534 LOAD_GLOBAL              3 (NULL + isinstance)
+            544 LOAD_FAST                4 (r)
+            546 LOAD_GLOBAL              4 (dict)
+            556 CALL                     2
+            564 POP_JUMP_IF_FALSE      129 (to 824)
+            566 LOAD_GLOBAL              3 (NULL + isinstance)
+            576 LOAD_FAST                4 (r)
+            578 LOAD_ATTR                7 (NULL|self + get)
+            598 LOAD_CONST               9 ('id')
+            600 CALL                     1
+            608 LOAD_GLOBAL             32 (str)
+            618 CALL                     2
+            626 POP_JUMP_IF_FALSE       98 (to 824)
+            628 LOAD_FAST                4 (r)
+            630 LOAD_CONST               9 ('id')
+            632 BINARY_SUBSCR
+            636 LOAD_ATTR               35 (NULL|self + isdigit)
+            656 CALL                     0
+            664 POP_JUMP_IF_FALSE       79 (to 824)
+            666 LOAD_FAST                4 (r)
+            668 LOAD_CONST               9 ('id')
+            670 BINARY_SUBSCR
+            674 LOAD_FAST                0 (self)
+            676 LOAD_ATTR               36 (rescue_done)
+            696 COMPARE_OP              55 (!=)
+            700 POP_JUMP_IF_FALSE       61 (to 824)
+
+221         702 LOAD_FAST                4 (r)
+            704 LOAD_CONST               9 ('id')
+            706 BINARY_SUBSCR
+            710 LOAD_FAST                0 (self)
+            712 STORE_ATTR              18 (rescue_done)
+
+222         722 NOP
+
+223         724 LOAD_FAST                0 (self)
+            726 LOAD_ATTR               23 (NULL|self + on_rescue)
+            746 LOAD_GLOBAL             33 (NULL + str)
+            756 LOAD_FAST                4 (r)
+            758 LOAD_ATTR                7 (NULL|self + get)
+            778 LOAD_CONST              10 ('action')
+            780 LOAD_CONST              11 ('')
+            782 CALL                     2
+            790 CALL                     1
+            798 CALL                     1
+            806 POP_TOP
+            808 JUMP_FORWARD             7 (to 824)
+
+227     >>  810 LOAD_CONST              12 (0)
+            812 LOAD_FAST                0 (self)
+            814 STORE_ATTR              12 (_rescue_polls)
+
+228     >>  824 LOAD_GLOBAL             21 (NULL + getattr)
+            834 LOAD_FAST                2 (s)
+            836 LOAD_CONST              13 ('screenshot_enabled')
+            838 LOAD_CONST               6 (False)
+            840 CALL                     3
+            848 POP_JUMP_IF_FALSE      132 (to 1114)
+            850 LOAD_FAST                0 (self)
+            852 LOAD_ATTR               40 (on_shot)
+            872 POP_JUMP_IF_FALSE      120 (to 1114)
+
+229         874 LOAD_GLOBAL             29 (NULL + min)
+            884 LOAD_FAST                0 (self)
+            886 LOAD_ATTR               18 (interval)
+            906 LOAD_GLOBAL             42 (SHOT_POLL_S)
+            916 CALL                     2
+            924 LOAD_FAST                0 (self)
+            926 STORE_ATTR               9 (interval)
+
+230         936 LOAD_FAST                1 (ans)
+            938 LOAD_ATTR                7 (NULL|self + get)
+            958 LOAD_CONST              14 ('shot_req')
+            960 CALL                     1
+            968 STORE_FAST               5 (req)
+
+231         970 LOAD_GLOBAL              3 (NULL + isinstance)
+            980 LOAD_FAST                5 (req)
+            982 LOAD_GLOBAL             32 (str)
+            992 CALL                     2
+           1000 POP_JUMP_IF_FALSE       56 (to 1114)
+           1002 LOAD_FAST                5 (req)
+           1004 LOAD_ATTR               35 (NULL|self + isdigit)
+           1024 CALL                     0
+           1032 POP_JUMP_IF_FALSE       40 (to 1114)
+           1034 LOAD_FAST                5 (req)
+           1036 LOAD_FAST                0 (self)
+           1038 LOAD_ATTR               44 (shot_done)
+           1058 COMPARE_OP              55 (!=)
+           1062 POP_JUMP_IF_FALSE       25 (to 1114)
+
+232        1064 LOAD_FAST                5 (req)
+           1066 LOAD_FAST                0 (self)
+           1068 STORE_ATTR              22 (shot_done)
+
+233        1078 NOP
+
+234        1080 LOAD_FAST                0 (self)
+           1082 LOAD_ATTR               41 (NULL|self + on_shot)
+           1102 LOAD_FAST                5 (req)
+           1104 CALL                     1
+           1112 POP_TOP
+
+237     >> 1114 NOP
+
+238        1116 LOAD_GLOBAL             47 (NULL + int)
+           1126 LOAD_FAST                1 (ans)
+           1128 LOAD_ATTR                7 (NULL|self + get)
+           1148 LOAD_CONST              15 ('rev')
+           1150 LOAD_CONST              12 (0)
+           1152 CALL                     2
+           1160 CALL                     1
+           1168 STORE_FAST               6 (rev)
+
+241        1170 LOAD_FAST                6 (rev)
+           1172 LOAD_FAST                0 (self)
+           1174 LOAD_ATTR               52 (applied_rev)
+           1194 COMPARE_OP               2 (<)
+           1198 POP_JUMP_IF_FALSE        8 (to 1216)
+
+242        1200 LOAD_FAST                6 (rev)
+           1202 LOAD_FAST                0 (self)
+           1204 STORE_ATTR              26 (applied_rev)
+
+243        1214 RETURN_CONST            16 ('idle')
+
+244     >> 1216 LOAD_GLOBAL             55 (NULL + clean_config)
+           1226 LOAD_FAST                1 (ans)
+           1228 LOAD_ATTR                7 (NULL|self + get)
+           1248 LOAD_CONST              17 ('config')
+           1250 CALL                     1
+           1258 CALL                     1
+           1266 STORE_FAST               7 (cfg)
+
+245        1268 LOAD_FAST                6 (rev)
+           1270 LOAD_FAST                0 (self)
+           1272 LOAD_ATTR               52 (applied_rev)
+           1292 COMPARE_OP              68 (>)
+           1296 POP_JUMP_IF_FALSE       33 (to 1364)
+
+246        1298 LOAD_FAST                7 (cfg)
+           1300 POP_JUMP_IF_FALSE       18 (to 1338)
+
+247        1302 LOAD_FAST                0 (self)
+           1304 LOAD_ATTR               57 (NULL|self + on_config)
+           1324 LOAD_FAST                7 (cfg)
+           1326 LOAD_FAST                6 (rev)
+           1328 CALL                     2
+           1336 POP_TOP
+
+248     >> 1338 LOAD_FAST                6 (rev)
+           1340 LOAD_FAST                0 (self)
+           1342 STORE_ATTR              26 (applied_rev)
+
+249        1352 LOAD_FAST                7 (cfg)
+           1354 POP_JUMP_IF_FALSE        2 (to 1360)
+           1356 LOAD_CONST              18 ('applied')
+           1358 RETURN_VALUE
+        >> 1360 LOAD_CONST              16 ('idle')
+           1362 RETURN_VALUE
+
+250     >> 1364 RETURN_CONST            16 ('idle')
+        >> 1366 PUSH_EXC_INFO
+
+224        1368 LOAD_GLOBAL             38 (Exception)
+           1378 CHECK_EXC_MATCH
+           1380 POP_JUMP_IF_FALSE        4 (to 1390)
+           1382 POP_TOP
+
+225        1384 POP_EXCEPT
+           1386 EXTENDED_ARG             1
+           1388 JUMP_BACKWARD          283 (to 824)
+
+224     >> 1390 RERAISE                  0
+        >> 1392 COPY                     3
+           1394 POP_EXCEPT
+           1396 RERAISE                  1
+        >> 1398 PUSH_EXC_INFO
+
+235        1400 LOAD_GLOBAL             38 (Exception)
+           1410 CHECK_EXC_MATCH
+           1412 POP_JUMP_IF_FALSE        3 (to 1420)
+           1414 POP_TOP
+
+236        1416 POP_EXCEPT
+           1418 JUMP_BACKWARD          153 (to 1114)
+
+235     >> 1420 RERAISE                  0
+        >> 1422 COPY                     3
+           1424 POP_EXCEPT
+           1426 RERAISE                  1
+        >> 1428 PUSH_EXC_INFO
+
+239        1430 LOAD_GLOBAL             48 (TypeError)
+           1440 LOAD_GLOBAL             50 (ValueError)
+           1450 BUILD_TUPLE              2
+           1452 CHECK_EXC_MATCH
+           1454 POP_JUMP_IF_FALSE        3 (to 1462)
+           1456 POP_TOP
+
+240        1458 POP_EXCEPT
+           1460 RETURN_CONST             0 (None)
+
+239     >> 1462 RERAISE                  0
+        >> 1464 COPY                     3
+           1466 POP_EXCEPT
+           1468 RERAISE                  1
+ExceptionTable:
+  724 to 806 -> 1366 [0]
+  1080 to 1112 -> 1398 [0]
+  1116 to 1168 -> 1428 [0]
+  1366 to 1382 -> 1392 [1] lasti
+  1390 to 1390 -> 1392 [1] lasti
+  1398 to 1414 -> 1422 [1] lasti
+  1420 to 1420 -> 1422 [1] lasti
+  1428 to 1456 -> 1464 [1] lasti
+  1462 to 1462 -> 1464 [1] lasti

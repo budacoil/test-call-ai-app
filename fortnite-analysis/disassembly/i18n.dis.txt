@@ -1,0 +1,2856 @@
+  0           0 RESUME                   0
+
+  1           2 SETUP_ANNOTATIONS
+
+  5           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (('Dict', 'List', 'Tuple'))
+              8 IMPORT_NAME              0 (typing)
+             10 IMPORT_FROM              1 (Dict)
+             12 STORE_NAME               1 (Dict)
+             14 IMPORT_FROM              2 (List)
+             16 STORE_NAME               2 (List)
+             18 IMPORT_FROM              3 (Tuple)
+             20 STORE_NAME               3 (Tuple)
+             22 POP_TOP
+
+  7          24 LOAD_CONST               0 (0)
+             26 LOAD_CONST               2 (('UI_AC',))
+             28 IMPORT_NAME              4 (i18n_ac)
+             30 IMPORT_FROM              5 (UI_AC)
+             32 STORE_NAME               5 (UI_AC)
+             34 POP_TOP
+
+  8          36 LOAD_CONST               0 (0)
+             38 LOAD_CONST               3 (('UI_EX',))
+             40 IMPORT_NAME              6 (i18n_ex)
+             42 IMPORT_FROM              7 (UI_EX)
+             44 STORE_NAME               7 (UI_EX)
+             46 POP_TOP
+
+  9          48 LOAD_CONST               0 (0)
+             50 LOAD_CONST               4 (('UI_LIC',))
+             52 IMPORT_NAME              8 (i18n_lic)
+             54 IMPORT_FROM              9 (UI_LIC)
+             56 STORE_NAME               9 (UI_LIC)
+             58 POP_TOP
+
+ 10          60 LOAD_CONST               0 (0)
+             62 LOAD_CONST               5 (('GUIDE_FR', 'UI_FR'))
+             64 IMPORT_NAME             10 (i18n_fr)
+             66 IMPORT_FROM             11 (GUIDE_FR)
+             68 STORE_NAME              11 (GUIDE_FR)
+             70 IMPORT_FROM             12 (UI_FR)
+             72 STORE_NAME              12 (UI_FR)
+             74 POP_TOP
+
+ 12          76 LOAD_CONST               6 (('ja', 'en', 'es', 'pt', 'ru', 'fr'))
+             78 STORE_NAME              13 (LANG_CODES)
+
+ 13          80 LOAD_CONST               7 ('en')
+             82 STORE_NAME              14 (DEFAULT_LANG)
+
+ 16          84 LOAD_NAME                3 (Tuple)
+             86 LOAD_NAME               15 (str)
+             88 LOAD_NAME               15 (str)
+             90 BUILD_TUPLE              2
+             92 BINARY_SUBSCR
+             96 STORE_NAME              16 (Block)
+
+ 19          98 BUILD_MAP                0
+
+ 20         100 LOAD_CONST               8 ('tab_control')
+            102 LOAD_CONST               9 ('操作')
+
+ 19         104 MAP_ADD                  1
+
+ 20         106 LOAD_CONST              10 ('tab_guide')
+            108 LOAD_CONST              11 ('説明')
+
+ 19         110 MAP_ADD                  1
+
+ 21         112 LOAD_CONST              12 ('start')
+            114 LOAD_CONST              13 ('開始')
+
+ 19         116 MAP_ADD                  1
+
+ 21         118 LOAD_CONST              14 ('stop')
+            120 LOAD_CONST              15 ('停止')
+
+ 19         122 MAP_ADD                  1
+
+ 21         124 LOAD_CONST              16 ('topmost')
+            126 LOAD_CONST              17 ('最前面')
+
+ 19         128 MAP_ADD                  1
+
+ 22         130 LOAD_CONST              18 ('lang_label')
+            132 LOAD_CONST              19 ('言語（画面・ゲーム）')
+
+ 19         134 MAP_ADD                  1
+
+ 23         136 LOAD_CONST              20 ('mode_A')
+            138 LOAD_CONST              21 ('A: 通常ループ (続行→スキップ→ロビーへ)')
+
+ 19         140 MAP_ADD                  1
+
+ 24         142 LOAD_CONST              22 ('mode_B')
+            144 LOAD_CONST              23 ('B: 待機島で待ってEscから退出')
+
+ 19         146 MAP_ADD                  1
+
+ 25         148 LOAD_CONST              24 ('mode_C')
+            150 LOAD_CONST              25 ('C: 待機島で待って退出、アイテム発見でAへ切替')
+
+ 19         152 MAP_ADD                  1
+
+ 26         154 LOAD_CONST              26 ('b_pre')
+            156 LOAD_CONST              27 ('B: 待機島で')
+
+ 19         158 MAP_ADD                  1
+
+ 26         160 LOAD_CONST              28 ('b_post')
+            162 LOAD_CONST              29 ('秒待ってから Esc')
+
+ 19         164 MAP_ADD                  1
+
+ 27         166 LOAD_CONST              30 ('c_pre')
+            168 LOAD_CONST              31 ('C: 待機島で')
+
+ 19         170 MAP_ADD                  1
+
+ 27         172 LOAD_CONST              32 ('c_post')
+            174 LOAD_CONST              29 ('秒待ってから Esc')
+
+ 19         176 MAP_ADD                  1
+
+ 28         178 LOAD_CONST              33 ('afk_check')
+            180 LOAD_CONST              34 ('マッチ中 WASD ランダム長押し')
+
+ 19         182 MAP_ADD                  1
+
+ 29         184 LOAD_CONST              35 ('afk_pre')
+            186 LOAD_CONST              36 ('間隔')
+
+ 19         188 MAP_ADD                  1
+
+ 29         190 LOAD_CONST              37 ('afk_mid')
+            192 LOAD_CONST              38 ('秒ごと / 長押し')
+
+ 19         194 MAP_ADD                  1
+
+ 29         196 LOAD_CONST              39 ('afk_post')
+            198 LOAD_CONST              40 ('秒')
+
+ 19         200 MAP_ADD                  1
+            202 BUILD_MAP                0
+
+ 30         204 LOAD_CONST              41 ('threshold')
+            206 LOAD_CONST              42 ('しきい値')
+
+ 19         208 MAP_ADD                  1
+
+ 30         210 LOAD_CONST              43 ('crop')
+            212 LOAD_CONST              44 ('画像を切り抜く')
+
+ 19         214 MAP_ADD                  1
+
+ 31         216 LOAD_CONST              45 ('info')
+            218 LOAD_CONST              46 ('{state}   スコア: {score:.2f}   周回: {loops}')
+
+ 19         220 MAP_ADD                  1
+
+ 32         222 LOAD_CONST              47 ('log_started')
+            224 LOAD_CONST              48 ('開始しました')
+
+ 19         226 MAP_ADD                  1
+
+ 32         228 LOAD_CONST              49 ('log_stopped')
+            230 LOAD_CONST              50 ('停止しました')
+
+ 19         232 MAP_ADD                  1
+
+ 33         234 LOAD_CONST              51 ('log_language')
+            236 LOAD_CONST              52 ('言語: {name}')
+
+ 19         238 MAP_ADD                  1
+
+ 33         240 LOAD_CONST              53 ('log_mode')
+            242 LOAD_CONST              54 ('モード: {name}')
+
+ 19         244 MAP_ADD                  1
+
+ 34         246 LOAD_CONST              55 ('log_saved')
+            248 LOAD_CONST              56 ('保存しました: {path}')
+
+ 19         250 MAP_ADD                  1
+
+ 34         252 LOAD_CONST              57 ('log_cancelled')
+            254 LOAD_CONST              58 ('切り抜きをキャンセルしました')
+
+ 19         256 MAP_ADD                  1
+
+ 35         258 LOAD_CONST              59 ('log_capture_error')
+            260 LOAD_CONST              60 ('切り抜きエラー: {error}')
+
+ 19         262 MAP_ADD                  1
+
+ 36         264 LOAD_CONST              61 ('log_too_large')
+            266 LOAD_CONST              62 ('選択範囲が大きすぎます。ボタンの周りだけをドラッグしてください')
+
+ 19         268 MAP_ADD                  1
+
+ 37         270 LOAD_CONST              63 ('dm_key_label')
+            272 LOAD_CONST              64 ('連携キー')
+
+ 19         274 MAP_ADD                  1
+
+ 37         276 LOAD_CONST              65 ('dm_test')
+            278 LOAD_CONST              66 ('DMテスト送信')
+
+ 19         280 MAP_ADD                  1
+
+ 38         282 LOAD_CONST              67 ('dm_enabled')
+            284 LOAD_CONST              68 ('停止・終了時に集計をDMで送る')
+
+ 19         286 MAP_ADD                  1
+
+ 39         288 LOAD_CONST              69 ('alert_check')
+            290 LOAD_CONST              70 ('異常（同じ操作の連続・エラー・停止）をDMで通知する（10分に1回まで）')
+
+ 19         292 MAP_ADD                  1
+
+ 40         294 LOAD_CONST              71 ('shot_check')
+            296 LOAD_CONST              72 ('Discordからの画面確認を許可する（/screenshot で今の画面を自分にだけDM送信）')
+
+ 19         298 MAP_ADD                  1
+
+ 41         300 LOAD_CONST              73 ('dm_desc')
+            302 LOAD_CONST              74 ('公式Discordサーバーで /link と入力して取得したキーを貼り付けてください（ログイン不要）')
+
+ 19         304 MAP_ADD                  1
+            306 DICT_UPDATE              1
+            308 BUILD_MAP                0
+
+ 42         310 LOAD_CONST              75 ('dm_s_sending')
+            312 LOAD_CONST              76 ('送信中…')
+
+ 19         314 MAP_ADD                  1
+
+ 42         316 LOAD_CONST              77 ('dm_s_ok')
+            318 LOAD_CONST              78 ('✔ 送信しました（DMを確認してください）')
+
+ 19         320 MAP_ADD                  1
+
+ 43         322 LOAD_CONST              79 ('dm_s_invalid_key')
+            324 LOAD_CONST              80 ('✖ キーが正しくありません（LAP- で始まるキー）')
+
+ 19         326 MAP_ADD                  1
+
+ 44         328 LOAD_CONST              81 ('dm_s_no_url')
+            330 LOAD_CONST              82 ('✖ 送信先が未設定です')
+
+ 19         332 MAP_ADD                  1
+
+ 44         334 LOAD_CONST              83 ('dm_s_network')
+            336 LOAD_CONST              84 ('✖ 通信できませんでした')
+
+ 19         338 MAP_ADD                  1
+
+ 45         340 LOAD_CONST              85 ('dm_s_network_dns')
+            342 LOAD_CONST              86 ('✖ サーバーの名前を引けません（インターネット接続・DNS・VPN を確認してください）')
+
+ 19         344 MAP_ADD                  1
+
+ 46         346 LOAD_CONST              87 ('dm_s_network_tls')
+            348 LOAD_CONST              88 ('✖ 安全な接続を確立できません（PC の日付と時刻、セキュリティソフトの通信検査を確認してください）')
+
+ 19         350 MAP_ADD                  1
+
+ 47         352 LOAD_CONST              89 ('dm_s_network_timeout')
+            354 LOAD_CONST              90 ('✖ 応答がありません（回線が不安定、またはファイアウォール・VPN で遮断されています）')
+
+ 19         356 MAP_ADD                  1
+
+ 48         358 LOAD_CONST              91 ('dm_s_network_blocked')
+            360 LOAD_CONST              92 ('✖ 接続が拒否・遮断されました（セキュリティソフト・ファイアウォールで pk-auto の通信を許可してください）')
+
+ 19         362 MAP_ADD                  1
+
+ 49         364 LOAD_CONST              93 ('dm_s_dm_closed')
+            366 LOAD_CONST              94 ('✖ DMを送れません（DMの受信設定を確認）')
+
+ 19         368 MAP_ADD                  1
+
+ 50         370 LOAD_CONST              95 ('dm_s_rate_limited')
+            372 LOAD_CONST              96 ('✖ 少し待ってから再度お試しください')
+
+ 19         374 MAP_ADD                  1
+
+ 50         376 LOAD_CONST              97 ('dm_s_server')
+            378 LOAD_CONST              98 ('✖ サーバーエラー')
+
+ 19         380 MAP_ADD                  1
+
+ 51         382 LOAD_CONST              99 ('dm_every_pre')
+            384 LOAD_CONST             100 ('DM送信間隔')
+
+ 19         386 MAP_ADD                  1
+
+ 51         388 LOAD_CONST             101 ('dm_every_post')
+            390 LOAD_CONST             102 ('時間ごと（0 = 停止・終了時のみ）')
+
+ 19         392 MAP_ADD                  1
+
+ 52         394 LOAD_CONST             103 ('remote_enabled')
+            396 LOAD_CONST             104 ('Discordの /settings での設定変更を受け付ける')
+
+ 19         398 MAP_ADD                  1
+
+ 53         400 LOAD_CONST             105 ('log_remote')
+            402 LOAD_CONST             106 ('Discordから設定を反映: {what}')
+
+ 19         404 MAP_ADD                  1
+
+ 54         406 LOAD_CONST             107 ('dm_join')
+            408 LOAD_CONST             108 ('Discordサーバーに参加')
+
+ 19         410 MAP_ADD                  1
+            412 DICT_UPDATE              1
+            414 BUILD_MAP                0
+
+ 55         416 LOAD_CONST             109 ('space_check')
+            418 LOAD_CONST             110 ('マッチ中 スペースキー連打')
+
+ 19         420 MAP_ADD                  1
+
+ 55         422 LOAD_CONST             111 ('space_pre')
+            424 LOAD_CONST             112 ('スペース')
+
+ 19         426 MAP_ADD                  1
+
+ 55         428 LOAD_CONST             113 ('space_mid')
+            430 LOAD_CONST             114 ('秒に')
+
+ 19         432 MAP_ADD                  1
+
+ 55         434 LOAD_CONST             115 ('space_post')
+            436 LOAD_CONST             116 ('回押す')
+
+ 19         438 MAP_ADD                  1
+
+ 56         440 LOAD_CONST             117 ('diag_button')
+            442 LOAD_CONST             118 ('診断レポートを作成')
+
+ 19         444 MAP_ADD                  1
+
+ 56         446 LOAD_CONST             119 ('diag_running')
+            448 LOAD_CONST             120 ('診断中…（最大30秒）')
+
+ 19         450 MAP_ADD                  1
+
+ 57         452 LOAD_CONST             121 ('net_fix_button')
+            454 LOAD_CONST             122 ('接続を修復')
+
+ 19         456 MAP_ADD                  1
+
+ 57         458 LOAD_CONST             123 ('dm_s_fix_running')
+            460 LOAD_CONST             124 ('修復中…（最大1分）')
+
+ 19         462 MAP_ADD                  1
+
+ 57         464 LOAD_CONST             125 ('dm_s_fix_ok')
+            466 LOAD_CONST             126 ('✔ 接続を修復しました。「テスト送信」を押してください')
+
+ 19         468 MAP_ADD                  1
+
+ 57         470 LOAD_CONST             127 ('dm_s_fix_same')
+            472 LOAD_CONST             128 ('✔ 通信は正常です。キー・DM設定を確認してください')
+
+ 19         474 MAP_ADD                  1
+
+ 57         476 LOAD_CONST             129 ('dm_s_fix_fail')
+            478 LOAD_CONST             130 ('✖ 修復できません。診断レポートを作って送ってください')
+
+ 19         480 MAP_ADD                  1
+
+ 58         482 LOAD_CONST             131 ('diag_done')
+            484 LOAD_CONST             132 ('保存しました: {name}（メモ帳で開き、クリップボードにもコピーしました）')
+
+ 19         486 MAP_ADD                  1
+
+ 58         488 LOAD_CONST             133 ('diag_failed')
+            490 LOAD_CONST             134 ('診断に失敗しました')
+
+ 19         492 MAP_ADD                  1
+
+ 59         494 LOAD_CONST             135 ('bg_check')
+            496 LOAD_CONST             136 ('バックグラウンド動作（裏画面キャプチャ＆瞬間スワップ）')
+
+ 19         498 MAP_ADD                  1
+
+ 60         500 LOAD_CONST             137 ('ghost_check')
+            502 LOAD_CONST             138 ('ゲーム画面を透明にして邪魔しない（幽霊化）')
+
+ 19         504 MAP_ADD                  1
+
+ 61         506 LOAD_CONST             139 ('ghost_show_check')
+            508 LOAD_CONST             140 ('ゲーム画面を一時的に表示する（確認用）')
+
+ 19         510 MAP_ADD                  1
+
+ 62         512 LOAD_CONST             141 ('log_ghost_failed')
+            514 LOAD_CONST             142 ('ゲームの窓を透明にできませんでした（ゲーム側が管理者権限の可能性があります。pk-auto を「管理者として実行」してください）。通常のスワップで動作します。')
+
+ 19         516 MAP_ADD                  1
+            518 DICT_UPDATE              1
+            520 BUILD_MAP                0
+
+ 63         522 LOAD_CONST             143 ('log_bg_minimized')
+            524 LOAD_CONST             144 ('ゲームが最小化されています。最小化を解除し、他のウィンドウの裏に重ねて配置してください（Fortnite の画面モードは「ウィンドウフルスクリーン」にしてください）。')
+
+ 19         526 MAP_ADD                  1
+
+ 64         528 LOAD_CONST             145 ('log_bg_black')
+            530 LOAD_CONST             146 ('ゲームの裏画面を取得できないため、通常の画面キャプチャに切り替えました（ゲームを他のウィンドウで隠さないでください）。')
+
+ 19         532 MAP_ADD                  1
+
+ 65         534 LOAD_CONST             147 ('log_bg_denied')
+            536 LOAD_CONST             148 ('ゲームの窓を取得できません（アクセス拒否）。ゲーム側が管理者権限で動いているため、pk-auto を「管理者として実行」してください。今は通常の画面キャプチャを使っています。')
+
+ 19         538 MAP_ADD                  1
+
+ 66         540 LOAD_CONST             149 ('upd_ver')
+            542 LOAD_CONST             150 ('バージョン v{cur}')
+
+ 19         544 MAP_ADD                  1
+
+ 66         546 LOAD_CONST             151 ('upd_check')
+            548 LOAD_CONST             152 ('アップデートを確認')
+
+ 19         550 MAP_ADD                  1
+
+ 66         552 LOAD_CONST             153 ('upd_auto')
+            554 LOAD_CONST             154 ('起動時に確認')
+
+ 19         556 MAP_ADD                  1
+
+ 67         558 LOAD_CONST             155 ('upd_checking')
+            560 LOAD_CONST             156 ('確認中…')
+
+ 19         562 MAP_ADD                  1
+
+ 67         564 LOAD_CONST             157 ('upd_latest')
+            566 LOAD_CONST             158 ('最新版です')
+
+ 19         568 MAP_ADD                  1
+
+ 67         570 LOAD_CONST             159 ('upd_check_failed')
+            572 LOAD_CONST             160 ('確認できませんでした（オフライン、またはGitHubの制限）')
+
+ 19         574 MAP_ADD                  1
+
+ 68         576 LOAD_CONST             161 ('upd_title')
+            578 LOAD_CONST             162 ('アップデートがあります')
+
+ 19         580 MAP_ADD                  1
+
+ 68         582 LOAD_CONST             163 ('upd_newver')
+            584 LOAD_CONST             164 ('新しいバージョン v{new}（現在 v{cur}）')
+
+ 19         586 MAP_ADD                  1
+
+ 68         588 LOAD_CONST             165 ('upd_notes')
+            590 LOAD_CONST             166 ('更新内容')
+
+ 19         592 MAP_ADD                  1
+
+ 69         594 LOAD_CONST             167 ('upd_now')
+            596 LOAD_CONST             168 ('今すぐ更新して再起動')
+
+ 19         598 MAP_ADD                  1
+
+ 69         600 LOAD_CONST             169 ('upd_later')
+            602 LOAD_CONST             170 ('あとで')
+
+ 19         604 MAP_ADD                  1
+
+ 69         606 LOAD_CONST             171 ('upd_page')
+            608 LOAD_CONST             172 ('ダウンロードページを開く')
+
+ 19         610 MAP_ADD                  1
+
+ 70         612 LOAD_CONST             173 ('upd_dev')
+            614 LOAD_CONST             174 ('開発版（.py）で動作中のため、自動更新は行いません。')
+
+ 19         616 MAP_ADD                  1
+
+ 71         618 LOAD_CONST             175 ('upd_downloading')
+            620 LOAD_CONST             176 ('ダウンロード中… {pct}%')
+
+ 19         622 MAP_ADD                  1
+            624 DICT_UPDATE              1
+
+ 71         626 LOAD_CONST             177 ('更新を適用します。まもなく再起動します…')
+
+ 72         628 LOAD_CONST             178 ('更新に失敗しました: {why}')
+
+ 73         630 LOAD_CONST             179 ('ダウンロードの検証に失敗しました（ファイルが壊れているか、正しいファイルではありません）')
+
+ 74         632 LOAD_CONST             180 ('通信に失敗しました')
+
+ 75         634 LOAD_CONST             181 ('このフォルダに書き込めません（別の場所に置くか、管理者で実行してください）')
+
+ 76         636 LOAD_CONST             182 ('🔔 新しいバージョン v{new} があります')
+            638 LOAD_CONST             183 ('詳細')
+
+ 19         640 LOAD_CONST             184 (('upd_installing', 'upd_error', 'upd_err_verify', 'upd_err_network', 'upd_err_write', 'upd_banner', 'upd_details'))
+            642 BUILD_CONST_KEY_MAP      7
+            644 DICT_UPDATE              1
+
+ 78         646 BUILD_MAP                0
+
+ 79         648 LOAD_CONST               8 ('tab_control')
+            650 LOAD_CONST             185 ('Control')
+
+ 78         652 MAP_ADD                  1
+
+ 79         654 LOAD_CONST              10 ('tab_guide')
+            656 LOAD_CONST             186 ('Guide')
+
+ 78         658 MAP_ADD                  1
+
+ 80         660 LOAD_CONST              12 ('start')
+            662 LOAD_CONST             187 ('Start')
+
+ 78         664 MAP_ADD                  1
+
+ 80         666 LOAD_CONST              14 ('stop')
+            668 LOAD_CONST             188 ('Stop')
+
+ 78         670 MAP_ADD                  1
+
+ 80         672 LOAD_CONST              16 ('topmost')
+            674 LOAD_CONST             189 ('Always on top')
+
+ 78         676 MAP_ADD                  1
+
+ 81         678 LOAD_CONST              18 ('lang_label')
+            680 LOAD_CONST             190 ('Language (app & game)')
+
+ 78         682 MAP_ADD                  1
+
+ 82         684 LOAD_CONST              20 ('mode_A')
+            686 LOAD_CONST             191 ('A: Normal loop (Continue → Skip → Lobby)')
+
+ 78         688 MAP_ADD                  1
+
+ 83         690 LOAD_CONST              22 ('mode_B')
+            692 LOAD_CONST             192 ('B: Wait on the island, then leave via Esc')
+
+ 78         694 MAP_ADD                  1
+
+ 84         696 LOAD_CONST              24 ('mode_C')
+            698 LOAD_CONST             193 ('C: Island loop, switches to A when an item is found')
+
+ 78         700 MAP_ADD                  1
+
+ 85         702 LOAD_CONST              26 ('b_pre')
+            704 LOAD_CONST             194 ('B: Wait on island')
+
+ 78         706 MAP_ADD                  1
+
+ 85         708 LOAD_CONST              28 ('b_post')
+            710 LOAD_CONST             195 ('s, then Esc')
+
+ 78         712 MAP_ADD                  1
+
+ 86         714 LOAD_CONST              30 ('c_pre')
+            716 LOAD_CONST             196 ('C: Wait on island')
+
+ 78         718 MAP_ADD                  1
+
+ 86         720 LOAD_CONST              32 ('c_post')
+            722 LOAD_CONST             195 ('s, then Esc')
+
+ 78         724 MAP_ADD                  1
+
+ 87         726 LOAD_CONST              33 ('afk_check')
+            728 LOAD_CONST             197 ('Hold random WASD key during match')
+
+ 78         730 MAP_ADD                  1
+
+ 88         732 LOAD_CONST              35 ('afk_pre')
+            734 LOAD_CONST             198 ('Every')
+
+ 78         736 MAP_ADD                  1
+
+ 88         738 LOAD_CONST              37 ('afk_mid')
+            740 LOAD_CONST             199 ('s / hold')
+
+ 78         742 MAP_ADD                  1
+
+ 88         744 LOAD_CONST              39 ('afk_post')
+            746 LOAD_CONST             200 ('s')
+
+ 78         748 MAP_ADD                  1
+            750 BUILD_MAP                0
+
+ 89         752 LOAD_CONST              41 ('threshold')
+            754 LOAD_CONST             201 ('Threshold')
+
+ 78         756 MAP_ADD                  1
+
+ 89         758 LOAD_CONST              43 ('crop')
+            760 LOAD_CONST             202 ('Crop image')
+
+ 78         762 MAP_ADD                  1
+
+ 90         764 LOAD_CONST              45 ('info')
+            766 LOAD_CONST             203 ('{state}   score: {score:.2f}   loops: {loops}')
+
+ 78         768 MAP_ADD                  1
+
+ 91         770 LOAD_CONST              47 ('log_started')
+            772 LOAD_CONST             204 ('started')
+
+ 78         774 MAP_ADD                  1
+
+ 91         776 LOAD_CONST              49 ('log_stopped')
+            778 LOAD_CONST             205 ('stopped')
+
+ 78         780 MAP_ADD                  1
+
+ 92         782 LOAD_CONST              51 ('log_language')
+            784 LOAD_CONST             206 ('language: {name}')
+
+ 78         786 MAP_ADD                  1
+
+ 92         788 LOAD_CONST              53 ('log_mode')
+            790 LOAD_CONST             207 ('mode: {name}')
+
+ 78         792 MAP_ADD                  1
+
+ 93         794 LOAD_CONST              55 ('log_saved')
+            796 LOAD_CONST             208 ('saved {path}')
+
+ 78         798 MAP_ADD                  1
+
+ 93         800 LOAD_CONST              57 ('log_cancelled')
+            802 LOAD_CONST             209 ('capture cancelled')
+
+ 78         804 MAP_ADD                  1
+
+ 94         806 LOAD_CONST              59 ('log_capture_error')
+            808 LOAD_CONST             210 ('capture error: {error}')
+
+ 78         810 MAP_ADD                  1
+
+ 95         812 LOAD_CONST              61 ('log_too_large')
+            814 LOAD_CONST             211 ('selection too large - drag only around the button')
+
+ 78         816 MAP_ADD                  1
+
+ 96         818 LOAD_CONST              63 ('dm_key_label')
+            820 LOAD_CONST             212 ('Link key')
+
+ 78         822 MAP_ADD                  1
+
+ 96         824 LOAD_CONST              65 ('dm_test')
+            826 LOAD_CONST             213 ('Send test DM')
+
+ 78         828 MAP_ADD                  1
+
+ 97         830 LOAD_CONST              67 ('dm_enabled')
+            832 LOAD_CONST             214 ('Send a session summary by DM on stop / exit')
+
+ 78         834 MAP_ADD                  1
+
+ 98         836 LOAD_CONST              69 ('alert_check')
+            838 LOAD_CONST             215 ('Send a DM when something goes wrong (repeated action, errors, stall; at most once per 10 min)')
+
+ 78         840 MAP_ADD                  1
+
+ 99         842 LOAD_CONST              71 ('shot_check')
+            844 LOAD_CONST             216 ('Allow screen checks from Discord (/screenshot sends the current screen to you only, by DM)')
+
+ 78         846 MAP_ADD                  1
+
+100         848 LOAD_CONST              73 ('dm_desc')
+            850 LOAD_CONST             217 ('Type /link on the official Discord server and paste the key you get here (no login needed).')
+
+ 78         852 MAP_ADD                  1
+            854 DICT_UPDATE              1
+            856 BUILD_MAP                0
+
+101         858 LOAD_CONST              75 ('dm_s_sending')
+            860 LOAD_CONST             218 ('Sending…')
+
+ 78         862 MAP_ADD                  1
+
+101         864 LOAD_CONST              77 ('dm_s_ok')
+            866 LOAD_CONST             219 ('✔ Sent — check your DMs')
+
+ 78         868 MAP_ADD                  1
+
+102         870 LOAD_CONST              79 ('dm_s_invalid_key')
+            872 LOAD_CONST             220 ('✖ Invalid key (it must start with LAP-)')
+
+ 78         874 MAP_ADD                  1
+
+103         876 LOAD_CONST              81 ('dm_s_no_url')
+            878 LOAD_CONST             221 ('✖ Destination not configured')
+
+ 78         880 MAP_ADD                  1
+
+103         882 LOAD_CONST              83 ('dm_s_network')
+            884 LOAD_CONST             222 ('✖ Could not connect')
+
+ 78         886 MAP_ADD                  1
+
+104         888 LOAD_CONST              85 ('dm_s_network_dns')
+            890 LOAD_CONST             223 ('✖ Cannot resolve the server name (check your internet connection, DNS or VPN)')
+
+ 78         892 MAP_ADD                  1
+
+105         894 LOAD_CONST              87 ('dm_s_network_tls')
+            896 LOAD_CONST             224 ("✖ Cannot set up a secure connection (check the PC's date and time, and any security software that inspects traffic)")
+
+ 78         898 MAP_ADD                  1
+
+106         900 LOAD_CONST              89 ('dm_s_network_timeout')
+            902 LOAD_CONST             225 ('✖ No answer (unstable connection, or blocked by a firewall / VPN)')
+
+ 78         904 MAP_ADD                  1
+
+107         906 LOAD_CONST              91 ('dm_s_network_blocked')
+            908 LOAD_CONST             226 ('✖ The connection was refused or blocked (allow pk-auto in your security software / firewall)')
+
+ 78         910 MAP_ADD                  1
+
+108         912 LOAD_CONST              93 ('dm_s_dm_closed')
+            914 LOAD_CONST             227 ("✖ Can't send a DM (check your DM privacy settings)")
+
+ 78         916 MAP_ADD                  1
+
+109         918 LOAD_CONST              95 ('dm_s_rate_limited')
+            920 LOAD_CONST             228 ('✖ Please wait a moment and try again')
+
+ 78         922 MAP_ADD                  1
+
+109         924 LOAD_CONST              97 ('dm_s_server')
+            926 LOAD_CONST             229 ('✖ Server error')
+
+ 78         928 MAP_ADD                  1
+
+110         930 LOAD_CONST              99 ('dm_every_pre')
+            932 LOAD_CONST             230 ('DM every')
+
+ 78         934 MAP_ADD                  1
+
+110         936 LOAD_CONST             101 ('dm_every_post')
+            938 LOAD_CONST             231 ('h (0 = only on stop / exit)')
+
+ 78         940 MAP_ADD                  1
+
+111         942 LOAD_CONST             103 ('remote_enabled')
+            944 LOAD_CONST             232 ('Accept settings changed with /settings on Discord')
+
+ 78         946 MAP_ADD                  1
+
+112         948 LOAD_CONST             105 ('log_remote')
+            950 LOAD_CONST             233 ('applied from Discord: {what}')
+
+ 78         952 MAP_ADD                  1
+
+113         954 LOAD_CONST             107 ('dm_join')
+            956 LOAD_CONST             234 ('Join the Discord server')
+
+ 78         958 MAP_ADD                  1
+            960 DICT_UPDATE              1
+            962 BUILD_MAP                0
+
+114         964 LOAD_CONST             109 ('space_check')
+            966 LOAD_CONST             235 ('Press Space during match')
+
+ 78         968 MAP_ADD                  1
+
+114         970 LOAD_CONST             111 ('space_pre')
+            972 LOAD_CONST             236 ('Space: every')
+
+ 78         974 MAP_ADD                  1
+
+114         976 LOAD_CONST             113 ('space_mid')
+            978 LOAD_CONST             237 ('s, press')
+
+ 78         980 MAP_ADD                  1
+
+114         982 LOAD_CONST             115 ('space_post')
+            984 LOAD_CONST             238 ('times')
+
+ 78         986 MAP_ADD                  1
+
+115         988 LOAD_CONST             117 ('diag_button')
+            990 LOAD_CONST             239 ('Create diagnostic report')
+
+ 78         992 MAP_ADD                  1
+
+115         994 LOAD_CONST             119 ('diag_running')
+            996 LOAD_CONST             240 ('Running… (up to 30 s)')
+
+ 78         998 MAP_ADD                  1
+
+116        1000 LOAD_CONST             121 ('net_fix_button')
+           1002 LOAD_CONST             241 ('Repair connection')
+
+ 78        1004 MAP_ADD                  1
+
+116        1006 LOAD_CONST             123 ('dm_s_fix_running')
+           1008 LOAD_CONST             242 ('Repairing… (up to 1 min)')
+
+ 78        1010 MAP_ADD                  1
+
+116        1012 LOAD_CONST             125 ('dm_s_fix_ok')
+           1014 LOAD_CONST             243 ('✔ Connection repaired. Press the test button')
+
+ 78        1016 MAP_ADD                  1
+
+116        1018 LOAD_CONST             127 ('dm_s_fix_same')
+           1020 LOAD_CONST             244 ('✔ The connection is fine. Check the key and DM settings')
+
+ 78        1022 MAP_ADD                  1
+
+116        1024 LOAD_CONST             129 ('dm_s_fix_fail')
+           1026 LOAD_CONST             245 ('✖ Could not repair. Create the diagnostic report and send it')
+
+ 78        1028 MAP_ADD                  1
+
+117        1030 LOAD_CONST             131 ('diag_done')
+           1032 LOAD_CONST             246 ('Saved: {name} (opened in Notepad and copied to the clipboard)')
+
+ 78        1034 MAP_ADD                  1
+
+117        1036 LOAD_CONST             133 ('diag_failed')
+           1038 LOAD_CONST             247 ('Diagnosis failed')
+
+ 78        1040 MAP_ADD                  1
+
+118        1042 LOAD_CONST             135 ('bg_check')
+           1044 LOAD_CONST             248 ('Background mode (capture behind windows + quick focus swap)')
+
+ 78        1046 MAP_ADD                  1
+
+119        1048 LOAD_CONST             137 ('ghost_check')
+           1050 LOAD_CONST             249 ('Make the game invisible so it never gets in the way (ghost)')
+
+ 78        1052 MAP_ADD                  1
+
+120        1054 LOAD_CONST             139 ('ghost_show_check')
+           1056 LOAD_CONST             250 ('Show the game for a moment (to check)')
+
+ 78        1058 MAP_ADD                  1
+
+121        1060 LOAD_CONST             141 ('log_ghost_failed')
+           1062 LOAD_CONST             251 ('The game window could not be made invisible (the game may run as administrator: run pk-auto as administrator). The plain focus swap is used.')
+
+ 78        1064 MAP_ADD                  1
+           1066 DICT_UPDATE              1
+           1068 BUILD_MAP                0
+
+122        1070 LOAD_CONST             143 ('log_bg_minimized')
+           1072 LOAD_CONST             252 ("The game is minimized. Un-minimize it and put other windows over it instead (set Fortnite's display mode to “Windowed Fullscreen”).")
+
+ 78        1074 MAP_ADD                  1
+
+123        1076 LOAD_CONST             145 ('log_bg_black')
+           1078 LOAD_CONST             253 ('The game window cannot be captured while covered, so the normal screen capture is used (do not cover the game).')
+
+ 78        1080 MAP_ADD                  1
+
+124        1082 LOAD_CONST             147 ('log_bg_denied')
+           1084 LOAD_CONST             254 ('The game window cannot be captured (access denied). The game runs as administrator, so run pk-auto as administrator. Using the normal screen capture for now.')
+
+ 78        1086 MAP_ADD                  1
+
+125        1088 LOAD_CONST             149 ('upd_ver')
+           1090 LOAD_CONST             255 ('Version v{cur}')
+
+ 78        1092 MAP_ADD                  1
+
+125        1094 LOAD_CONST             151 ('upd_check')
+           1096 EXTENDED_ARG             1
+           1098 LOAD_CONST             256 ('Check for updates')
+
+ 78        1100 MAP_ADD                  1
+
+125        1102 LOAD_CONST             153 ('upd_auto')
+           1104 EXTENDED_ARG             1
+           1106 LOAD_CONST             257 ('Check at startup')
+
+ 78        1108 MAP_ADD                  1
+
+126        1110 LOAD_CONST             155 ('upd_checking')
+           1112 EXTENDED_ARG             1
+           1114 LOAD_CONST             258 ('Checking…')
+
+ 78        1116 MAP_ADD                  1
+
+126        1118 LOAD_CONST             157 ('upd_latest')
+           1120 EXTENDED_ARG             1
+           1122 LOAD_CONST             259 ('You are up to date')
+
+ 78        1124 MAP_ADD                  1
+
+126        1126 LOAD_CONST             159 ('upd_check_failed')
+           1128 EXTENDED_ARG             1
+           1130 LOAD_CONST             260 ('Could not check (offline, or GitHub rate limit)')
+
+ 78        1132 MAP_ADD                  1
+
+127        1134 LOAD_CONST             161 ('upd_title')
+           1136 EXTENDED_ARG             1
+           1138 LOAD_CONST             261 ('Update available')
+
+ 78        1140 MAP_ADD                  1
+
+127        1142 LOAD_CONST             163 ('upd_newver')
+           1144 EXTENDED_ARG             1
+           1146 LOAD_CONST             262 ('New version v{new} (you have v{cur})')
+
+ 78        1148 MAP_ADD                  1
+
+127        1150 LOAD_CONST             165 ('upd_notes')
+           1152 EXTENDED_ARG             1
+           1154 LOAD_CONST             263 ("What's new")
+
+ 78        1156 MAP_ADD                  1
+
+128        1158 LOAD_CONST             167 ('upd_now')
+           1160 EXTENDED_ARG             1
+           1162 LOAD_CONST             264 ('Update now and restart')
+
+ 78        1164 MAP_ADD                  1
+
+128        1166 LOAD_CONST             169 ('upd_later')
+           1168 EXTENDED_ARG             1
+           1170 LOAD_CONST             265 ('Later')
+
+ 78        1172 MAP_ADD                  1
+
+128        1174 LOAD_CONST             171 ('upd_page')
+           1176 EXTENDED_ARG             1
+           1178 LOAD_CONST             266 ('Open the download page')
+
+ 78        1180 MAP_ADD                  1
+
+129        1182 LOAD_CONST             173 ('upd_dev')
+           1184 EXTENDED_ARG             1
+           1186 LOAD_CONST             267 ('Running from source (.py): no automatic update.')
+
+ 78        1188 MAP_ADD                  1
+
+130        1190 LOAD_CONST             175 ('upd_downloading')
+           1192 EXTENDED_ARG             1
+           1194 LOAD_CONST             268 ('Downloading… {pct}%')
+
+ 78        1196 MAP_ADD                  1
+           1198 DICT_UPDATE              1
+
+130        1200 EXTENDED_ARG             1
+           1202 LOAD_CONST             269 ('Applying the update. Restarting shortly…')
+
+131        1204 EXTENDED_ARG             1
+           1206 LOAD_CONST             270 ('Update failed: {why}')
+
+132        1208 EXTENDED_ARG             1
+           1210 LOAD_CONST             271 ('The download could not be verified (the file is damaged or not the expected one)')
+
+133        1212 EXTENDED_ARG             1
+           1214 LOAD_CONST             272 ('Connection failed')
+
+134        1216 EXTENDED_ARG             1
+           1218 LOAD_CONST             273 ('Cannot write to this folder (move the app elsewhere or run as administrator)')
+
+135        1220 EXTENDED_ARG             1
+           1222 LOAD_CONST             274 ('🔔 New version v{new} is available')
+           1224 EXTENDED_ARG             1
+           1226 LOAD_CONST             275 ('Details')
+
+ 78        1228 LOAD_CONST             184 (('upd_installing', 'upd_error', 'upd_err_verify', 'upd_err_network', 'upd_err_write', 'upd_banner', 'upd_details'))
+           1230 BUILD_CONST_KEY_MAP      7
+           1232 DICT_UPDATE              1
+
+137        1234 BUILD_MAP                0
+
+138        1236 LOAD_CONST               8 ('tab_control')
+           1238 LOAD_CONST             185 ('Control')
+
+137        1240 MAP_ADD                  1
+
+138        1242 LOAD_CONST              10 ('tab_guide')
+           1244 EXTENDED_ARG             1
+           1246 LOAD_CONST             276 ('Guía')
+
+137        1248 MAP_ADD                  1
+
+139        1250 LOAD_CONST              12 ('start')
+           1252 EXTENDED_ARG             1
+           1254 LOAD_CONST             277 ('Iniciar')
+
+137        1256 MAP_ADD                  1
+
+139        1258 LOAD_CONST              14 ('stop')
+           1260 EXTENDED_ARG             1
+           1262 LOAD_CONST             278 ('Detener')
+
+137        1264 MAP_ADD                  1
+
+139        1266 LOAD_CONST              16 ('topmost')
+           1268 EXTENDED_ARG             1
+           1270 LOAD_CONST             279 ('Siempre visible')
+
+137        1272 MAP_ADD                  1
+
+140        1274 LOAD_CONST              18 ('lang_label')
+           1276 EXTENDED_ARG             1
+           1278 LOAD_CONST             280 ('Idioma (app y juego)')
+
+137        1280 MAP_ADD                  1
+
+141        1282 LOAD_CONST              20 ('mode_A')
+           1284 EXTENDED_ARG             1
+           1286 LOAD_CONST             281 ('A: Bucle normal (Continuar → Omitir → Lobby)')
+
+137        1288 MAP_ADD                  1
+
+142        1290 LOAD_CONST              22 ('mode_B')
+           1292 EXTENDED_ARG             1
+           1294 LOAD_CONST             282 ('B: Esperar en la isla y salir con Esc')
+
+137        1296 MAP_ADD                  1
+
+143        1298 LOAD_CONST              24 ('mode_C')
+           1300 EXTENDED_ARG             1
+           1302 LOAD_CONST             283 ('C: Ciclo en la isla, cambia a A si se encuentra un objeto')
+
+137        1304 MAP_ADD                  1
+
+144        1306 LOAD_CONST              26 ('b_pre')
+           1308 EXTENDED_ARG             1
+           1310 LOAD_CONST             284 ('B: Esperar en la isla')
+
+137        1312 MAP_ADD                  1
+
+144        1314 LOAD_CONST              28 ('b_post')
+           1316 EXTENDED_ARG             1
+           1318 LOAD_CONST             285 ('s y pulsar Esc')
+
+137        1320 MAP_ADD                  1
+
+145        1322 LOAD_CONST              30 ('c_pre')
+           1324 EXTENDED_ARG             1
+           1326 LOAD_CONST             286 ('C: Esperar en la isla')
+
+137        1328 MAP_ADD                  1
+
+145        1330 LOAD_CONST              32 ('c_post')
+           1332 EXTENDED_ARG             1
+           1334 LOAD_CONST             285 ('s y pulsar Esc')
+
+137        1336 MAP_ADD                  1
+
+146        1338 LOAD_CONST              33 ('afk_check')
+           1340 EXTENDED_ARG             1
+           1342 LOAD_CONST             287 ('Mantener WASD al azar en la partida')
+
+137        1344 MAP_ADD                  1
+
+147        1346 LOAD_CONST              35 ('afk_pre')
+           1348 EXTENDED_ARG             1
+           1350 LOAD_CONST             288 ('Cada')
+
+137        1352 MAP_ADD                  1
+
+147        1354 LOAD_CONST              37 ('afk_mid')
+           1356 EXTENDED_ARG             1
+           1358 LOAD_CONST             289 ('s / mantener')
+
+137        1360 MAP_ADD                  1
+
+147        1362 LOAD_CONST              39 ('afk_post')
+           1364 LOAD_CONST             200 ('s')
+
+137        1366 MAP_ADD                  1
+           1368 BUILD_MAP                0
+
+148        1370 LOAD_CONST              41 ('threshold')
+           1372 EXTENDED_ARG             1
+           1374 LOAD_CONST             290 ('Umbral')
+
+137        1376 MAP_ADD                  1
+
+148        1378 LOAD_CONST              43 ('crop')
+           1380 EXTENDED_ARG             1
+           1382 LOAD_CONST             291 ('Recortar imagen')
+
+137        1384 MAP_ADD                  1
+
+149        1386 LOAD_CONST              45 ('info')
+           1388 EXTENDED_ARG             1
+           1390 LOAD_CONST             292 ('{state}   puntuación: {score:.2f}   vueltas: {loops}')
+
+137        1392 MAP_ADD                  1
+
+150        1394 LOAD_CONST              47 ('log_started')
+           1396 EXTENDED_ARG             1
+           1398 LOAD_CONST             293 ('iniciado')
+
+137        1400 MAP_ADD                  1
+
+150        1402 LOAD_CONST              49 ('log_stopped')
+           1404 EXTENDED_ARG             1
+           1406 LOAD_CONST             294 ('detenido')
+
+137        1408 MAP_ADD                  1
+
+151        1410 LOAD_CONST              51 ('log_language')
+           1412 EXTENDED_ARG             1
+           1414 LOAD_CONST             295 ('idioma: {name}')
+
+137        1416 MAP_ADD                  1
+
+151        1418 LOAD_CONST              53 ('log_mode')
+           1420 EXTENDED_ARG             1
+           1422 LOAD_CONST             296 ('modo: {name}')
+
+137        1424 MAP_ADD                  1
+
+152        1426 LOAD_CONST              55 ('log_saved')
+           1428 EXTENDED_ARG             1
+           1430 LOAD_CONST             297 ('guardado: {path}')
+
+137        1432 MAP_ADD                  1
+
+152        1434 LOAD_CONST              57 ('log_cancelled')
+           1436 EXTENDED_ARG             1
+           1438 LOAD_CONST             298 ('recorte cancelado')
+
+137        1440 MAP_ADD                  1
+
+153        1442 LOAD_CONST              59 ('log_capture_error')
+           1444 EXTENDED_ARG             1
+           1446 LOAD_CONST             299 ('error de recorte: {error}')
+
+137        1448 MAP_ADD                  1
+
+154        1450 LOAD_CONST              61 ('log_too_large')
+           1452 EXTENDED_ARG             1
+           1454 LOAD_CONST             300 ('selección demasiado grande: arrastra solo alrededor del botón')
+
+137        1456 MAP_ADD                  1
+
+155        1458 LOAD_CONST              63 ('dm_key_label')
+           1460 EXTENDED_ARG             1
+           1462 LOAD_CONST             301 ('Clave')
+
+137        1464 MAP_ADD                  1
+
+155        1466 LOAD_CONST              65 ('dm_test')
+           1468 EXTENDED_ARG             1
+           1470 LOAD_CONST             302 ('Enviar DM de prueba')
+
+137        1472 MAP_ADD                  1
+
+156        1474 LOAD_CONST              67 ('dm_enabled')
+           1476 EXTENDED_ARG             1
+           1478 LOAD_CONST             303 ('Enviar resumen de sesión por DM al parar / salir')
+
+137        1480 MAP_ADD                  1
+
+157        1482 LOAD_CONST              69 ('alert_check')
+           1484 EXTENDED_ARG             1
+           1486 LOAD_CONST             304 ('Enviar un DM si algo falla (acción repetida, errores, bloqueo; máx. una vez cada 10 min)')
+
+137        1488 MAP_ADD                  1
+
+158        1490 LOAD_CONST              71 ('shot_check')
+           1492 EXTENDED_ARG             1
+           1494 LOAD_CONST             305 ('Permitir ver la pantalla desde Discord (/screenshot te envía la pantalla actual solo a ti, por DM)')
+
+137        1496 MAP_ADD                  1
+
+159        1498 LOAD_CONST              73 ('dm_desc')
+           1500 EXTENDED_ARG             1
+           1502 LOAD_CONST             306 ('Escribe /link en el servidor oficial de Discord y pega aquí la clave que recibes (sin iniciar sesión).')
+
+137        1504 MAP_ADD                  1
+           1506 DICT_UPDATE              1
+           1508 BUILD_MAP                0
+
+160        1510 LOAD_CONST              75 ('dm_s_sending')
+           1512 EXTENDED_ARG             1
+           1514 LOAD_CONST             307 ('Enviando…')
+
+137        1516 MAP_ADD                  1
+
+160        1518 LOAD_CONST              77 ('dm_s_ok')
+           1520 EXTENDED_ARG             1
+           1522 LOAD_CONST             308 ('✔ Enviado: revisa tus DM')
+
+137        1524 MAP_ADD                  1
+
+161        1526 LOAD_CONST              79 ('dm_s_invalid_key')
+           1528 EXTENDED_ARG             1
+           1530 LOAD_CONST             309 ('✖ Clave no válida (debe empezar por LAP-)')
+
+137        1532 MAP_ADD                  1
+
+162        1534 LOAD_CONST              81 ('dm_s_no_url')
+           1536 EXTENDED_ARG             1
+           1538 LOAD_CONST             310 ('✖ Destino no configurado')
+
+137        1540 MAP_ADD                  1
+
+162        1542 LOAD_CONST              83 ('dm_s_network')
+           1544 EXTENDED_ARG             1
+           1546 LOAD_CONST             311 ('✖ No se pudo conectar')
+
+137        1548 MAP_ADD                  1
+
+163        1550 LOAD_CONST              85 ('dm_s_network_dns')
+           1552 EXTENDED_ARG             1
+           1554 LOAD_CONST             312 ('✖ No se puede resolver el nombre del servidor (revisa la conexión a Internet, el DNS o la VPN)')
+
+137        1556 MAP_ADD                  1
+
+164        1558 LOAD_CONST              87 ('dm_s_network_tls')
+           1560 EXTENDED_ARG             1
+           1562 LOAD_CONST             313 ('✖ No se puede establecer una conexión segura (revisa la fecha y hora del PC y el software de seguridad que inspecciona el tráfico)')
+
+137        1564 MAP_ADD                  1
+
+165        1566 LOAD_CONST              89 ('dm_s_network_timeout')
+           1568 EXTENDED_ARG             1
+           1570 LOAD_CONST             314 ('✖ Sin respuesta (conexión inestable, o bloqueada por un cortafuegos / VPN)')
+
+137        1572 MAP_ADD                  1
+
+166        1574 LOAD_CONST              91 ('dm_s_network_blocked')
+           1576 EXTENDED_ARG             1
+           1578 LOAD_CONST             315 ('✖ Conexión rechazada o bloqueada (permite pk-auto en tu antivirus / cortafuegos)')
+
+137        1580 MAP_ADD                  1
+
+167        1582 LOAD_CONST              93 ('dm_s_dm_closed')
+           1584 EXTENDED_ARG             1
+           1586 LOAD_CONST             316 ('✖ No se puede enviar el DM (revisa tu privacidad de DM)')
+
+137        1588 MAP_ADD                  1
+
+168        1590 LOAD_CONST              95 ('dm_s_rate_limited')
+           1592 EXTENDED_ARG             1
+           1594 LOAD_CONST             317 ('✖ Espera un momento e inténtalo de nuevo')
+
+137        1596 MAP_ADD                  1
+
+168        1598 LOAD_CONST              97 ('dm_s_server')
+           1600 EXTENDED_ARG             1
+           1602 LOAD_CONST             318 ('✖ Error del servidor')
+
+137        1604 MAP_ADD                  1
+
+169        1606 LOAD_CONST              99 ('dm_every_pre')
+           1608 EXTENDED_ARG             1
+           1610 LOAD_CONST             319 ('DM cada')
+
+137        1612 MAP_ADD                  1
+
+169        1614 LOAD_CONST             101 ('dm_every_post')
+           1616 EXTENDED_ARG             1
+           1618 LOAD_CONST             320 ('h (0 = solo al parar / salir)')
+
+137        1620 MAP_ADD                  1
+
+170        1622 LOAD_CONST             103 ('remote_enabled')
+           1624 EXTENDED_ARG             1
+           1626 LOAD_CONST             321 ('Aceptar ajustes cambiados con /settings en Discord')
+
+137        1628 MAP_ADD                  1
+
+171        1630 LOAD_CONST             105 ('log_remote')
+           1632 EXTENDED_ARG             1
+           1634 LOAD_CONST             322 ('aplicado desde Discord: {what}')
+
+137        1636 MAP_ADD                  1
+
+172        1638 LOAD_CONST             107 ('dm_join')
+           1640 EXTENDED_ARG             1
+           1642 LOAD_CONST             323 ('Unirse al servidor de Discord')
+
+137        1644 MAP_ADD                  1
+           1646 DICT_UPDATE              1
+           1648 BUILD_MAP                0
+
+173        1650 LOAD_CONST             109 ('space_check')
+           1652 EXTENDED_ARG             1
+           1654 LOAD_CONST             324 ('Pulsar Espacio en la partida')
+
+137        1656 MAP_ADD                  1
+
+173        1658 LOAD_CONST             111 ('space_pre')
+           1660 EXTENDED_ARG             1
+           1662 LOAD_CONST             325 ('Espacio: cada')
+
+137        1664 MAP_ADD                  1
+
+173        1666 LOAD_CONST             113 ('space_mid')
+           1668 EXTENDED_ARG             1
+           1670 LOAD_CONST             326 ('s, pulsar')
+
+137        1672 MAP_ADD                  1
+
+173        1674 LOAD_CONST             115 ('space_post')
+           1676 EXTENDED_ARG             1
+           1678 LOAD_CONST             327 ('veces')
+
+137        1680 MAP_ADD                  1
+
+174        1682 LOAD_CONST             117 ('diag_button')
+           1684 EXTENDED_ARG             1
+           1686 LOAD_CONST             328 ('Crear informe de diagnóstico')
+
+137        1688 MAP_ADD                  1
+
+174        1690 LOAD_CONST             119 ('diag_running')
+           1692 EXTENDED_ARG             1
+           1694 LOAD_CONST             329 ('Diagnosticando… (hasta 30 s)')
+
+137        1696 MAP_ADD                  1
+
+175        1698 LOAD_CONST             121 ('net_fix_button')
+           1700 EXTENDED_ARG             1
+           1702 LOAD_CONST             330 ('Reparar conexión')
+
+137        1704 MAP_ADD                  1
+
+175        1706 LOAD_CONST             123 ('dm_s_fix_running')
+           1708 EXTENDED_ARG             1
+           1710 LOAD_CONST             331 ('Reparando… (hasta 1 min)')
+
+137        1712 MAP_ADD                  1
+
+175        1714 LOAD_CONST             125 ('dm_s_fix_ok')
+           1716 EXTENDED_ARG             1
+           1718 LOAD_CONST             332 ('✔ Conexión reparada. Pulsa el botón de prueba')
+
+137        1720 MAP_ADD                  1
+
+175        1722 LOAD_CONST             127 ('dm_s_fix_same')
+           1724 EXTENDED_ARG             1
+           1726 LOAD_CONST             333 ('✔ La conexión funciona. Revisa la clave y los ajustes de DM')
+
+137        1728 MAP_ADD                  1
+
+175        1730 LOAD_CONST             129 ('dm_s_fix_fail')
+           1732 EXTENDED_ARG             1
+           1734 LOAD_CONST             334 ('✖ No se pudo reparar. Crea el informe de diagnóstico y envíalo')
+
+137        1736 MAP_ADD                  1
+
+176        1738 LOAD_CONST             131 ('diag_done')
+           1740 EXTENDED_ARG             1
+           1742 LOAD_CONST             335 ('Guardado: {name} (abierto en el Bloc de notas y copiado al portapapeles)')
+
+137        1744 MAP_ADD                  1
+
+176        1746 LOAD_CONST             133 ('diag_failed')
+           1748 EXTENDED_ARG             1
+           1750 LOAD_CONST             336 ('Falló el diagnóstico')
+
+137        1752 MAP_ADD                  1
+
+177        1754 LOAD_CONST             135 ('bg_check')
+           1756 EXTENDED_ARG             1
+           1758 LOAD_CONST             337 ('Modo en segundo plano (captura detrás de ventanas + cambio rápido de foco)')
+
+137        1760 MAP_ADD                  1
+
+178        1762 LOAD_CONST             137 ('ghost_check')
+           1764 EXTENDED_ARG             1
+           1766 LOAD_CONST             338 ('Hacer el juego invisible para que no moleste (fantasma)')
+
+137        1768 MAP_ADD                  1
+
+179        1770 LOAD_CONST             139 ('ghost_show_check')
+           1772 EXTENDED_ARG             1
+           1774 LOAD_CONST             339 ('Mostrar el juego un momento (para comprobar)')
+
+137        1776 MAP_ADD                  1
+
+180        1778 LOAD_CONST             141 ('log_ghost_failed')
+           1780 EXTENDED_ARG             1
+           1782 LOAD_CONST             340 ('No se pudo hacer invisible la ventana del juego (puede ejecutarse como administrador: ejecuta pk-auto como administrador). Se usa el cambio de foco normal.')
+
+137        1784 MAP_ADD                  1
+           1786 DICT_UPDATE              1
+           1788 BUILD_MAP                0
+
+181        1790 LOAD_CONST             143 ('log_bg_minimized')
+           1792 EXTENDED_ARG             1
+           1794 LOAD_CONST             341 ('El juego está minimizado. Restáuralo y coloca otras ventanas encima en su lugar (pon el modo de pantalla de Fortnite en “Pantalla completa en ventana”).')
+
+137        1796 MAP_ADD                  1
+
+182        1798 LOAD_CONST             145 ('log_bg_black')
+           1800 EXTENDED_ARG             1
+           1802 LOAD_CONST             342 ('No se puede capturar la ventana del juego mientras está tapada; se usa la captura de pantalla normal (no tapes el juego).')
+
+137        1804 MAP_ADD                  1
+
+183        1806 LOAD_CONST             147 ('log_bg_denied')
+           1808 EXTENDED_ARG             1
+           1810 LOAD_CONST             343 ('No se puede capturar la ventana del juego (acceso denegado). El juego se ejecuta como administrador; ejecuta pk-auto como administrador. Se usa la captura de pantalla normal.')
+
+137        1812 MAP_ADD                  1
+
+184        1814 LOAD_CONST             149 ('upd_ver')
+           1816 EXTENDED_ARG             1
+           1818 LOAD_CONST             344 ('Versión v{cur}')
+
+137        1820 MAP_ADD                  1
+
+184        1822 LOAD_CONST             151 ('upd_check')
+           1824 EXTENDED_ARG             1
+           1826 LOAD_CONST             345 ('Buscar actualizaciones')
+
+137        1828 MAP_ADD                  1
+
+184        1830 LOAD_CONST             153 ('upd_auto')
+           1832 EXTENDED_ARG             1
+           1834 LOAD_CONST             346 ('Buscar al iniciar')
+
+137        1836 MAP_ADD                  1
+
+185        1838 LOAD_CONST             155 ('upd_checking')
+           1840 EXTENDED_ARG             1
+           1842 LOAD_CONST             347 ('Comprobando…')
+
+137        1844 MAP_ADD                  1
+
+185        1846 LOAD_CONST             157 ('upd_latest')
+           1848 EXTENDED_ARG             1
+           1850 LOAD_CONST             348 ('Tienes la última versión')
+
+137        1852 MAP_ADD                  1
+
+185        1854 LOAD_CONST             159 ('upd_check_failed')
+           1856 EXTENDED_ARG             1
+           1858 LOAD_CONST             349 ('No se pudo comprobar (sin conexión o límite de GitHub)')
+
+137        1860 MAP_ADD                  1
+
+186        1862 LOAD_CONST             161 ('upd_title')
+           1864 EXTENDED_ARG             1
+           1866 LOAD_CONST             350 ('Actualización disponible')
+
+137        1868 MAP_ADD                  1
+
+186        1870 LOAD_CONST             163 ('upd_newver')
+           1872 EXTENDED_ARG             1
+           1874 LOAD_CONST             351 ('Nueva versión v{new} (tienes v{cur})')
+
+137        1876 MAP_ADD                  1
+
+186        1878 LOAD_CONST             165 ('upd_notes')
+           1880 EXTENDED_ARG             1
+           1882 LOAD_CONST             352 ('Novedades')
+
+137        1884 MAP_ADD                  1
+
+187        1886 LOAD_CONST             167 ('upd_now')
+           1888 EXTENDED_ARG             1
+           1890 LOAD_CONST             353 ('Actualizar ahora y reiniciar')
+
+137        1892 MAP_ADD                  1
+
+187        1894 LOAD_CONST             169 ('upd_later')
+           1896 EXTENDED_ARG             1
+           1898 LOAD_CONST             354 ('Más tarde')
+
+137        1900 MAP_ADD                  1
+
+187        1902 LOAD_CONST             171 ('upd_page')
+           1904 EXTENDED_ARG             1
+           1906 LOAD_CONST             355 ('Abrir la página de descarga')
+
+137        1908 MAP_ADD                  1
+
+188        1910 LOAD_CONST             173 ('upd_dev')
+           1912 EXTENDED_ARG             1
+           1914 LOAD_CONST             356 ('Se ejecuta desde el código (.py): no hay actualización automática.')
+
+137        1916 MAP_ADD                  1
+
+189        1918 LOAD_CONST             175 ('upd_downloading')
+           1920 EXTENDED_ARG             1
+           1922 LOAD_CONST             357 ('Descargando… {pct}%')
+
+137        1924 MAP_ADD                  1
+           1926 DICT_UPDATE              1
+
+189        1928 EXTENDED_ARG             1
+           1930 LOAD_CONST             358 ('Aplicando la actualización. Se reiniciará enseguida…')
+
+190        1932 EXTENDED_ARG             1
+           1934 LOAD_CONST             359 ('La actualización falló: {why}')
+
+191        1936 EXTENDED_ARG             1
+           1938 LOAD_CONST             360 ('No se pudo verificar la descarga (el archivo está dañado o no es el esperado)')
+
+192        1940 EXTENDED_ARG             1
+           1942 LOAD_CONST             361 ('Falló la conexión')
+
+193        1944 EXTENDED_ARG             1
+           1946 LOAD_CONST             362 ('No se puede escribir en esta carpeta (mueve la app a otro sitio o ejecútala como administrador)')
+
+194        1948 EXTENDED_ARG             1
+           1950 LOAD_CONST             363 ('🔔 Hay una nueva versión v{new}')
+           1952 EXTENDED_ARG             1
+           1954 LOAD_CONST             364 ('Detalles')
+
+137        1956 LOAD_CONST             184 (('upd_installing', 'upd_error', 'upd_err_verify', 'upd_err_network', 'upd_err_write', 'upd_banner', 'upd_details'))
+           1958 BUILD_CONST_KEY_MAP      7
+           1960 DICT_UPDATE              1
+
+196        1962 BUILD_MAP                0
+
+197        1964 LOAD_CONST               8 ('tab_control')
+           1966 EXTENDED_ARG             1
+           1968 LOAD_CONST             365 ('Controle')
+
+196        1970 MAP_ADD                  1
+
+197        1972 LOAD_CONST              10 ('tab_guide')
+           1974 EXTENDED_ARG             1
+           1976 LOAD_CONST             366 ('Guia')
+
+196        1978 MAP_ADD                  1
+
+198        1980 LOAD_CONST              12 ('start')
+           1982 EXTENDED_ARG             1
+           1984 LOAD_CONST             277 ('Iniciar')
+
+196        1986 MAP_ADD                  1
+
+198        1988 LOAD_CONST              14 ('stop')
+           1990 EXTENDED_ARG             1
+           1992 LOAD_CONST             367 ('Parar')
+
+196        1994 MAP_ADD                  1
+
+198        1996 LOAD_CONST              16 ('topmost')
+           1998 EXTENDED_ARG             1
+           2000 LOAD_CONST             368 ('Sempre visível')
+
+196        2002 MAP_ADD                  1
+
+199        2004 LOAD_CONST              18 ('lang_label')
+           2006 EXTENDED_ARG             1
+           2008 LOAD_CONST             369 ('Idioma (app e jogo)')
+
+196        2010 MAP_ADD                  1
+
+200        2012 LOAD_CONST              20 ('mode_A')
+           2014 EXTENDED_ARG             1
+           2016 LOAD_CONST             370 ('A: Ciclo normal (Continuar → Pular → Lobby)')
+
+196        2018 MAP_ADD                  1
+
+201        2020 LOAD_CONST              22 ('mode_B')
+           2022 EXTENDED_ARG             1
+           2024 LOAD_CONST             371 ('B: Esperar na ilha e sair com Esc')
+
+196        2026 MAP_ADD                  1
+
+202        2028 LOAD_CONST              24 ('mode_C')
+           2030 EXTENDED_ARG             1
+           2032 LOAD_CONST             372 ('C: Ciclo na ilha, muda para A ao encontrar um item')
+
+196        2034 MAP_ADD                  1
+
+203        2036 LOAD_CONST              26 ('b_pre')
+           2038 EXTENDED_ARG             1
+           2040 LOAD_CONST             373 ('B: Esperar na ilha')
+
+196        2042 MAP_ADD                  1
+
+203        2044 LOAD_CONST              28 ('b_post')
+           2046 EXTENDED_ARG             1
+           2048 LOAD_CONST             374 ('s e apertar Esc')
+
+196        2050 MAP_ADD                  1
+
+204        2052 LOAD_CONST              30 ('c_pre')
+           2054 EXTENDED_ARG             1
+           2056 LOAD_CONST             375 ('C: Esperar na ilha')
+
+196        2058 MAP_ADD                  1
+
+204        2060 LOAD_CONST              32 ('c_post')
+           2062 EXTENDED_ARG             1
+           2064 LOAD_CONST             374 ('s e apertar Esc')
+
+196        2066 MAP_ADD                  1
+
+205        2068 LOAD_CONST              33 ('afk_check')
+           2070 EXTENDED_ARG             1
+           2072 LOAD_CONST             376 ('Segurar WASD aleatório na partida')
+
+196        2074 MAP_ADD                  1
+
+206        2076 LOAD_CONST              35 ('afk_pre')
+           2078 EXTENDED_ARG             1
+           2080 LOAD_CONST             377 ('A cada')
+
+196        2082 MAP_ADD                  1
+
+206        2084 LOAD_CONST              37 ('afk_mid')
+           2086 EXTENDED_ARG             1
+           2088 LOAD_CONST             378 ('s / segurar')
+
+196        2090 MAP_ADD                  1
+
+206        2092 LOAD_CONST              39 ('afk_post')
+           2094 LOAD_CONST             200 ('s')
+
+196        2096 MAP_ADD                  1
+           2098 BUILD_MAP                0
+
+207        2100 LOAD_CONST              41 ('threshold')
+           2102 EXTENDED_ARG             1
+           2104 LOAD_CONST             379 ('Limiar')
+
+196        2106 MAP_ADD                  1
+
+207        2108 LOAD_CONST              43 ('crop')
+           2110 EXTENDED_ARG             1
+           2112 LOAD_CONST             380 ('Recortar imagem')
+
+196        2114 MAP_ADD                  1
+
+208        2116 LOAD_CONST              45 ('info')
+           2118 EXTENDED_ARG             1
+           2120 LOAD_CONST             381 ('{state}   pontuação: {score:.2f}   voltas: {loops}')
+
+196        2122 MAP_ADD                  1
+
+209        2124 LOAD_CONST              47 ('log_started')
+           2126 EXTENDED_ARG             1
+           2128 LOAD_CONST             293 ('iniciado')
+
+196        2130 MAP_ADD                  1
+
+209        2132 LOAD_CONST              49 ('log_stopped')
+           2134 EXTENDED_ARG             1
+           2136 LOAD_CONST             382 ('parado')
+
+196        2138 MAP_ADD                  1
+
+210        2140 LOAD_CONST              51 ('log_language')
+           2142 EXTENDED_ARG             1
+           2144 LOAD_CONST             295 ('idioma: {name}')
+
+196        2146 MAP_ADD                  1
+
+210        2148 LOAD_CONST              53 ('log_mode')
+           2150 EXTENDED_ARG             1
+           2152 LOAD_CONST             296 ('modo: {name}')
+
+196        2154 MAP_ADD                  1
+
+211        2156 LOAD_CONST              55 ('log_saved')
+           2158 EXTENDED_ARG             1
+           2160 LOAD_CONST             383 ('salvo: {path}')
+
+196        2162 MAP_ADD                  1
+
+211        2164 LOAD_CONST              57 ('log_cancelled')
+           2166 EXTENDED_ARG             1
+           2168 LOAD_CONST             298 ('recorte cancelado')
+
+196        2170 MAP_ADD                  1
+
+212        2172 LOAD_CONST              59 ('log_capture_error')
+           2174 EXTENDED_ARG             1
+           2176 LOAD_CONST             384 ('erro de recorte: {error}')
+
+196        2178 MAP_ADD                  1
+
+213        2180 LOAD_CONST              61 ('log_too_large')
+           2182 EXTENDED_ARG             1
+           2184 LOAD_CONST             385 ('seleção grande demais: arraste só em volta do botão')
+
+196        2186 MAP_ADD                  1
+
+214        2188 LOAD_CONST              63 ('dm_key_label')
+           2190 EXTENDED_ARG             1
+           2192 LOAD_CONST             386 ('Chave')
+
+196        2194 MAP_ADD                  1
+
+214        2196 LOAD_CONST              65 ('dm_test')
+           2198 EXTENDED_ARG             1
+           2200 LOAD_CONST             387 ('Enviar DM de teste')
+
+196        2202 MAP_ADD                  1
+
+215        2204 LOAD_CONST              67 ('dm_enabled')
+           2206 EXTENDED_ARG             1
+           2208 LOAD_CONST             388 ('Enviar resumo da sessão por DM ao parar / sair')
+
+196        2210 MAP_ADD                  1
+
+216        2212 LOAD_CONST              69 ('alert_check')
+           2214 EXTENDED_ARG             1
+           2216 LOAD_CONST             389 ('Enviar uma DM se algo der errado (ação repetida, erros, travamento; no máx. a cada 10 min)')
+
+196        2218 MAP_ADD                  1
+
+217        2220 LOAD_CONST              71 ('shot_check')
+           2222 EXTENDED_ARG             1
+           2224 LOAD_CONST             390 ('Permitir ver a tela pelo Discord (/screenshot envia a tela atual só para você, por DM)')
+
+196        2226 MAP_ADD                  1
+
+218        2228 LOAD_CONST              73 ('dm_desc')
+           2230 EXTENDED_ARG             1
+           2232 LOAD_CONST             391 ('Digite /link no servidor oficial do Discord e cole aqui a chave que você recebe (sem login).')
+
+196        2234 MAP_ADD                  1
+           2236 DICT_UPDATE              1
+           2238 BUILD_MAP                0
+
+219        2240 LOAD_CONST              75 ('dm_s_sending')
+           2242 EXTENDED_ARG             1
+           2244 LOAD_CONST             307 ('Enviando…')
+
+196        2246 MAP_ADD                  1
+
+219        2248 LOAD_CONST              77 ('dm_s_ok')
+           2250 EXTENDED_ARG             1
+           2252 LOAD_CONST             392 ('✔ Enviado: confira suas DMs')
+
+196        2254 MAP_ADD                  1
+
+220        2256 LOAD_CONST              79 ('dm_s_invalid_key')
+           2258 EXTENDED_ARG             1
+           2260 LOAD_CONST             393 ('✖ Chave inválida (deve começar com LAP-)')
+
+196        2262 MAP_ADD                  1
+
+221        2264 LOAD_CONST              81 ('dm_s_no_url')
+           2266 EXTENDED_ARG             1
+           2268 LOAD_CONST             394 ('✖ Destino não configurado')
+
+196        2270 MAP_ADD                  1
+
+221        2272 LOAD_CONST              83 ('dm_s_network')
+           2274 EXTENDED_ARG             1
+           2276 LOAD_CONST             395 ('✖ Não foi possível conectar')
+
+196        2278 MAP_ADD                  1
+
+222        2280 LOAD_CONST              85 ('dm_s_network_dns')
+           2282 EXTENDED_ARG             1
+           2284 LOAD_CONST             396 ('✖ Não é possível resolver o nome do servidor (verifique a internet, o DNS ou a VPN)')
+
+196        2286 MAP_ADD                  1
+
+223        2288 LOAD_CONST              87 ('dm_s_network_tls')
+           2290 EXTENDED_ARG             1
+           2292 LOAD_CONST             397 ('✖ Não é possível criar uma conexão segura (verifique a data e a hora do PC e o software de segurança que inspeciona o tráfego)')
+
+196        2294 MAP_ADD                  1
+
+224        2296 LOAD_CONST              89 ('dm_s_network_timeout')
+           2298 EXTENDED_ARG             1
+           2300 LOAD_CONST             398 ('✖ Sem resposta (conexão instável, ou bloqueada por firewall / VPN)')
+
+196        2302 MAP_ADD                  1
+
+225        2304 LOAD_CONST              91 ('dm_s_network_blocked')
+           2306 EXTENDED_ARG             1
+           2308 LOAD_CONST             399 ('✖ Conexão recusada ou bloqueada (permita o pk-auto no antivírus / firewall)')
+
+196        2310 MAP_ADD                  1
+
+226        2312 LOAD_CONST              93 ('dm_s_dm_closed')
+           2314 EXTENDED_ARG             1
+           2316 LOAD_CONST             400 ('✖ Não é possível enviar a DM (verifique a privacidade das DMs)')
+
+196        2318 MAP_ADD                  1
+
+227        2320 LOAD_CONST              95 ('dm_s_rate_limited')
+           2322 EXTENDED_ARG             1
+           2324 LOAD_CONST             401 ('✖ Aguarde um momento e tente de novo')
+
+196        2326 MAP_ADD                  1
+
+227        2328 LOAD_CONST              97 ('dm_s_server')
+           2330 EXTENDED_ARG             1
+           2332 LOAD_CONST             402 ('✖ Erro do servidor')
+
+196        2334 MAP_ADD                  1
+
+228        2336 LOAD_CONST              99 ('dm_every_pre')
+           2338 EXTENDED_ARG             1
+           2340 LOAD_CONST             403 ('DM a cada')
+
+196        2342 MAP_ADD                  1
+
+228        2344 LOAD_CONST             101 ('dm_every_post')
+           2346 EXTENDED_ARG             1
+           2348 LOAD_CONST             404 ('h (0 = só ao parar / sair)')
+
+196        2350 MAP_ADD                  1
+
+229        2352 LOAD_CONST             103 ('remote_enabled')
+           2354 EXTENDED_ARG             1
+           2356 LOAD_CONST             405 ('Aceitar configurações alteradas com /settings no Discord')
+
+196        2358 MAP_ADD                  1
+
+230        2360 LOAD_CONST             105 ('log_remote')
+           2362 EXTENDED_ARG             1
+           2364 LOAD_CONST             406 ('aplicado pelo Discord: {what}')
+
+196        2366 MAP_ADD                  1
+
+231        2368 LOAD_CONST             107 ('dm_join')
+           2370 EXTENDED_ARG             1
+           2372 LOAD_CONST             407 ('Entrar no servidor do Discord')
+
+196        2374 MAP_ADD                  1
+           2376 DICT_UPDATE              1
+           2378 BUILD_MAP                0
+
+232        2380 LOAD_CONST             109 ('space_check')
+           2382 EXTENDED_ARG             1
+           2384 LOAD_CONST             408 ('Apertar Espaço na partida')
+
+196        2386 MAP_ADD                  1
+
+232        2388 LOAD_CONST             111 ('space_pre')
+           2390 EXTENDED_ARG             1
+           2392 LOAD_CONST             409 ('Espaço: a cada')
+
+196        2394 MAP_ADD                  1
+
+232        2396 LOAD_CONST             113 ('space_mid')
+           2398 EXTENDED_ARG             1
+           2400 LOAD_CONST             410 ('s, apertar')
+
+196        2402 MAP_ADD                  1
+
+232        2404 LOAD_CONST             115 ('space_post')
+           2406 EXTENDED_ARG             1
+           2408 LOAD_CONST             411 ('vezes')
+
+196        2410 MAP_ADD                  1
+
+233        2412 LOAD_CONST             117 ('diag_button')
+           2414 EXTENDED_ARG             1
+           2416 LOAD_CONST             412 ('Criar relatório de diagnóstico')
+
+196        2418 MAP_ADD                  1
+
+233        2420 LOAD_CONST             119 ('diag_running')
+           2422 EXTENDED_ARG             1
+           2424 LOAD_CONST             413 ('Diagnosticando… (até 30 s)')
+
+196        2426 MAP_ADD                  1
+
+234        2428 LOAD_CONST             121 ('net_fix_button')
+           2430 EXTENDED_ARG             1
+           2432 LOAD_CONST             414 ('Reparar conexão')
+
+196        2434 MAP_ADD                  1
+
+234        2436 LOAD_CONST             123 ('dm_s_fix_running')
+           2438 EXTENDED_ARG             1
+           2440 LOAD_CONST             415 ('Reparando… (até 1 min)')
+
+196        2442 MAP_ADD                  1
+
+234        2444 LOAD_CONST             125 ('dm_s_fix_ok')
+           2446 EXTENDED_ARG             1
+           2448 LOAD_CONST             416 ('✔ Conexão reparada. Pressione o botão de teste')
+
+196        2450 MAP_ADD                  1
+
+234        2452 LOAD_CONST             127 ('dm_s_fix_same')
+           2454 EXTENDED_ARG             1
+           2456 LOAD_CONST             417 ('✔ A conexão está boa. Verifique a chave e as configurações de DM')
+
+196        2458 MAP_ADD                  1
+
+234        2460 LOAD_CONST             129 ('dm_s_fix_fail')
+           2462 EXTENDED_ARG             1
+           2464 LOAD_CONST             418 ('✖ Não foi possível reparar. Crie o relatório de diagnóstico e envie')
+
+196        2466 MAP_ADD                  1
+
+235        2468 LOAD_CONST             131 ('diag_done')
+           2470 EXTENDED_ARG             1
+           2472 LOAD_CONST             419 ('Salvo: {name} (aberto no Bloco de Notas e copiado para a área de transferência)')
+
+196        2474 MAP_ADD                  1
+
+235        2476 LOAD_CONST             133 ('diag_failed')
+           2478 EXTENDED_ARG             1
+           2480 LOAD_CONST             420 ('Falha no diagnóstico')
+
+196        2482 MAP_ADD                  1
+
+236        2484 LOAD_CONST             135 ('bg_check')
+           2486 EXTENDED_ARG             1
+           2488 LOAD_CONST             421 ('Modo em segundo plano (captura atrás de janelas + troca rápida de foco)')
+
+196        2490 MAP_ADD                  1
+
+237        2492 LOAD_CONST             137 ('ghost_check')
+           2494 EXTENDED_ARG             1
+           2496 LOAD_CONST             422 ('Deixar o jogo invisível para não atrapalhar (fantasma)')
+
+196        2498 MAP_ADD                  1
+
+238        2500 LOAD_CONST             139 ('ghost_show_check')
+           2502 EXTENDED_ARG             1
+           2504 LOAD_CONST             423 ('Mostrar o jogo por um momento (para conferir)')
+
+196        2506 MAP_ADD                  1
+
+239        2508 LOAD_CONST             141 ('log_ghost_failed')
+           2510 EXTENDED_ARG             1
+           2512 LOAD_CONST             424 ('Não foi possível deixar a janela do jogo invisível (o jogo pode estar como administrador: execute o pk-auto como administrador). Usando a troca de foco normal.')
+
+196        2514 MAP_ADD                  1
+           2516 DICT_UPDATE              1
+           2518 BUILD_MAP                0
+
+240        2520 LOAD_CONST             143 ('log_bg_minimized')
+           2522 EXTENDED_ARG             1
+           2524 LOAD_CONST             425 ('O jogo está minimizado. Restaure-o e coloque outras janelas por cima dele (deixe o modo de tela do Fortnite em “Tela cheia em janela”).')
+
+196        2526 MAP_ADD                  1
+
+241        2528 LOAD_CONST             145 ('log_bg_black')
+           2530 EXTENDED_ARG             1
+           2532 LOAD_CONST             426 ('Não é possível capturar a janela do jogo enquanto ela está coberta; usando a captura de tela normal (não cubra o jogo).')
+
+196        2534 MAP_ADD                  1
+
+242        2536 LOAD_CONST             147 ('log_bg_denied')
+           2538 EXTENDED_ARG             1
+           2540 LOAD_CONST             427 ('Não é possível capturar a janela do jogo (acesso negado). O jogo roda como administrador; execute o pk-auto como administrador. Usando a captura de tela normal.')
+
+196        2542 MAP_ADD                  1
+
+243        2544 LOAD_CONST             149 ('upd_ver')
+           2546 EXTENDED_ARG             1
+           2548 LOAD_CONST             428 ('Versão v{cur}')
+
+196        2550 MAP_ADD                  1
+
+243        2552 LOAD_CONST             151 ('upd_check')
+           2554 EXTENDED_ARG             1
+           2556 LOAD_CONST             429 ('Verificar atualizações')
+
+196        2558 MAP_ADD                  1
+
+243        2560 LOAD_CONST             153 ('upd_auto')
+           2562 EXTENDED_ARG             1
+           2564 LOAD_CONST             430 ('Verificar ao iniciar')
+
+196        2566 MAP_ADD                  1
+
+244        2568 LOAD_CONST             155 ('upd_checking')
+           2570 EXTENDED_ARG             1
+           2572 LOAD_CONST             431 ('Verificando…')
+
+196        2574 MAP_ADD                  1
+
+244        2576 LOAD_CONST             157 ('upd_latest')
+           2578 EXTENDED_ARG             1
+           2580 LOAD_CONST             432 ('Você está na versão mais recente')
+
+196        2582 MAP_ADD                  1
+
+244        2584 LOAD_CONST             159 ('upd_check_failed')
+           2586 EXTENDED_ARG             1
+           2588 LOAD_CONST             433 ('Não foi possível verificar (sem conexão ou limite do GitHub)')
+
+196        2590 MAP_ADD                  1
+
+245        2592 LOAD_CONST             161 ('upd_title')
+           2594 EXTENDED_ARG             1
+           2596 LOAD_CONST             434 ('Atualização disponível')
+
+196        2598 MAP_ADD                  1
+
+245        2600 LOAD_CONST             163 ('upd_newver')
+           2602 EXTENDED_ARG             1
+           2604 LOAD_CONST             435 ('Nova versão v{new} (você tem v{cur})')
+
+196        2606 MAP_ADD                  1
+
+245        2608 LOAD_CONST             165 ('upd_notes')
+           2610 EXTENDED_ARG             1
+           2612 LOAD_CONST             436 ('Novidades')
+
+196        2614 MAP_ADD                  1
+
+246        2616 LOAD_CONST             167 ('upd_now')
+           2618 EXTENDED_ARG             1
+           2620 LOAD_CONST             437 ('Atualizar agora e reiniciar')
+
+196        2622 MAP_ADD                  1
+
+246        2624 LOAD_CONST             169 ('upd_later')
+           2626 EXTENDED_ARG             1
+           2628 LOAD_CONST             438 ('Depois')
+
+196        2630 MAP_ADD                  1
+
+246        2632 LOAD_CONST             171 ('upd_page')
+           2634 EXTENDED_ARG             1
+           2636 LOAD_CONST             439 ('Abrir a página de download')
+
+196        2638 MAP_ADD                  1
+
+247        2640 LOAD_CONST             173 ('upd_dev')
+           2642 EXTENDED_ARG             1
+           2644 LOAD_CONST             440 ('Executando pelo código (.py): sem atualização automática.')
+
+196        2646 MAP_ADD                  1
+
+248        2648 LOAD_CONST             175 ('upd_downloading')
+           2650 EXTENDED_ARG             1
+           2652 LOAD_CONST             441 ('Baixando… {pct}%')
+
+196        2654 MAP_ADD                  1
+           2656 DICT_UPDATE              1
+
+248        2658 EXTENDED_ARG             1
+           2660 LOAD_CONST             442 ('Aplicando a atualização. Reiniciando em instantes…')
+
+249        2662 EXTENDED_ARG             1
+           2664 LOAD_CONST             443 ('A atualização falhou: {why}')
+
+250        2666 EXTENDED_ARG             1
+           2668 LOAD_CONST             444 ('Não foi possível verificar o download (o arquivo está danificado ou não é o esperado)')
+
+251        2670 EXTENDED_ARG             1
+           2672 LOAD_CONST             445 ('Falha na conexão')
+
+252        2674 EXTENDED_ARG             1
+           2676 LOAD_CONST             446 ('Não é possível gravar nesta pasta (mova o app ou execute como administrador)')
+
+253        2678 EXTENDED_ARG             1
+           2680 LOAD_CONST             447 ('🔔 Nova versão v{new} disponível')
+           2682 EXTENDED_ARG             1
+           2684 LOAD_CONST             448 ('Detalhes')
+
+196        2686 LOAD_CONST             184 (('upd_installing', 'upd_error', 'upd_err_verify', 'upd_err_network', 'upd_err_write', 'upd_banner', 'upd_details'))
+           2688 BUILD_CONST_KEY_MAP      7
+           2690 DICT_UPDATE              1
+
+255        2692 BUILD_MAP                0
+
+256        2694 LOAD_CONST               8 ('tab_control')
+           2696 EXTENDED_ARG             1
+           2698 LOAD_CONST             449 ('Управление')
+
+255        2700 MAP_ADD                  1
+
+256        2702 LOAD_CONST              10 ('tab_guide')
+           2704 EXTENDED_ARG             1
+           2706 LOAD_CONST             450 ('Справка')
+
+255        2708 MAP_ADD                  1
+
+257        2710 LOAD_CONST              12 ('start')
+           2712 EXTENDED_ARG             1
+           2714 LOAD_CONST             451 ('Старт')
+
+255        2716 MAP_ADD                  1
+
+257        2718 LOAD_CONST              14 ('stop')
+           2720 EXTENDED_ARG             1
+           2722 LOAD_CONST             452 ('Стоп')
+
+255        2724 MAP_ADD                  1
+
+257        2726 LOAD_CONST              16 ('topmost')
+           2728 EXTENDED_ARG             1
+           2730 LOAD_CONST             453 ('Поверх окон')
+
+255        2732 MAP_ADD                  1
+
+258        2734 LOAD_CONST              18 ('lang_label')
+           2736 EXTENDED_ARG             1
+           2738 LOAD_CONST             454 ('Язык (программа и игра)')
+
+255        2740 MAP_ADD                  1
+
+259        2742 LOAD_CONST              20 ('mode_A')
+           2744 EXTENDED_ARG             1
+           2746 LOAD_CONST             455 ('A: Обычный цикл (Продолжить→Пропустить→Лобби)')
+
+255        2748 MAP_ADD                  1
+
+260        2750 LOAD_CONST              22 ('mode_B')
+           2752 EXTENDED_ARG             1
+           2754 LOAD_CONST             456 ('B: Ждать на острове и выйти через Esc')
+
+255        2756 MAP_ADD                  1
+
+261        2758 LOAD_CONST              24 ('mode_C')
+           2760 EXTENDED_ARG             1
+           2762 LOAD_CONST             457 ('C: Цикл на острове, переключается на A при находке предмета')
+
+255        2764 MAP_ADD                  1
+
+262        2766 LOAD_CONST              26 ('b_pre')
+           2768 EXTENDED_ARG             1
+           2770 LOAD_CONST             458 ('B: Ждать на острове')
+
+255        2772 MAP_ADD                  1
+
+262        2774 LOAD_CONST              28 ('b_post')
+           2776 EXTENDED_ARG             1
+           2778 LOAD_CONST             459 ('с, затем Esc')
+
+255        2780 MAP_ADD                  1
+
+263        2782 LOAD_CONST              30 ('c_pre')
+           2784 EXTENDED_ARG             1
+           2786 LOAD_CONST             460 ('C: Ждать на острове')
+
+255        2788 MAP_ADD                  1
+
+263        2790 LOAD_CONST              32 ('c_post')
+           2792 EXTENDED_ARG             1
+           2794 LOAD_CONST             459 ('с, затем Esc')
+
+255        2796 MAP_ADD                  1
+
+264        2798 LOAD_CONST              33 ('afk_check')
+           2800 EXTENDED_ARG             1
+           2802 LOAD_CONST             461 ('Случайное удержание WASD в матче')
+
+255        2804 MAP_ADD                  1
+
+265        2806 LOAD_CONST              35 ('afk_pre')
+           2808 EXTENDED_ARG             1
+           2810 LOAD_CONST             462 ('Каждые')
+
+255        2812 MAP_ADD                  1
+
+265        2814 LOAD_CONST              37 ('afk_mid')
+           2816 EXTENDED_ARG             1
+           2818 LOAD_CONST             463 ('с / удерживать')
+
+255        2820 MAP_ADD                  1
+
+265        2822 LOAD_CONST              39 ('afk_post')
+           2824 EXTENDED_ARG             1
+           2826 LOAD_CONST             464 ('с')
+
+255        2828 MAP_ADD                  1
+           2830 BUILD_MAP                0
+
+266        2832 LOAD_CONST              41 ('threshold')
+           2834 EXTENDED_ARG             1
+           2836 LOAD_CONST             465 ('Порог')
+
+255        2838 MAP_ADD                  1
+
+266        2840 LOAD_CONST              43 ('crop')
+           2842 EXTENDED_ARG             1
+           2844 LOAD_CONST             466 ('Вырезать изображение')
+
+255        2846 MAP_ADD                  1
+
+267        2848 LOAD_CONST              45 ('info')
+           2850 EXTENDED_ARG             1
+           2852 LOAD_CONST             467 ('{state}   оценка: {score:.2f}   циклы: {loops}')
+
+255        2854 MAP_ADD                  1
+
+268        2856 LOAD_CONST              47 ('log_started')
+           2858 EXTENDED_ARG             1
+           2860 LOAD_CONST             468 ('запущено')
+
+255        2862 MAP_ADD                  1
+
+268        2864 LOAD_CONST              49 ('log_stopped')
+           2866 EXTENDED_ARG             1
+           2868 LOAD_CONST             469 ('остановлено')
+
+255        2870 MAP_ADD                  1
+
+269        2872 LOAD_CONST              51 ('log_language')
+           2874 EXTENDED_ARG             1
+           2876 LOAD_CONST             470 ('язык: {name}')
+
+255        2878 MAP_ADD                  1
+
+269        2880 LOAD_CONST              53 ('log_mode')
+           2882 EXTENDED_ARG             1
+           2884 LOAD_CONST             471 ('режим: {name}')
+
+255        2886 MAP_ADD                  1
+
+270        2888 LOAD_CONST              55 ('log_saved')
+           2890 EXTENDED_ARG             1
+           2892 LOAD_CONST             472 ('сохранено: {path}')
+
+255        2894 MAP_ADD                  1
+
+270        2896 LOAD_CONST              57 ('log_cancelled')
+           2898 EXTENDED_ARG             1
+           2900 LOAD_CONST             473 ('вырезание отменено')
+
+255        2902 MAP_ADD                  1
+
+271        2904 LOAD_CONST              59 ('log_capture_error')
+           2906 EXTENDED_ARG             1
+           2908 LOAD_CONST             474 ('ошибка вырезания: {error}')
+
+255        2910 MAP_ADD                  1
+
+272        2912 LOAD_CONST              61 ('log_too_large')
+           2914 EXTENDED_ARG             1
+           2916 LOAD_CONST             475 ('область слишком большая: выделяйте только кнопку')
+
+255        2918 MAP_ADD                  1
+
+273        2920 LOAD_CONST              63 ('dm_key_label')
+           2922 EXTENDED_ARG             1
+           2924 LOAD_CONST             476 ('Ключ')
+
+255        2926 MAP_ADD                  1
+
+273        2928 LOAD_CONST              65 ('dm_test')
+           2930 EXTENDED_ARG             1
+           2932 LOAD_CONST             477 ('Тестовое ЛС')
+
+255        2934 MAP_ADD                  1
+
+274        2936 LOAD_CONST              67 ('dm_enabled')
+           2938 EXTENDED_ARG             1
+           2940 LOAD_CONST             478 ('Отправлять итоги сессии в ЛС при остановке / выходе')
+
+255        2942 MAP_ADD                  1
+
+275        2944 LOAD_CONST              69 ('alert_check')
+           2946 EXTENDED_ARG             1
+           2948 LOAD_CONST             479 ('Присылать ЛС при проблемах (повтор действия, ошибки, зависание; не чаще раза в 10 мин)')
+
+255        2950 MAP_ADD                  1
+
+276        2952 LOAD_CONST              71 ('shot_check')
+           2954 EXTENDED_ARG             1
+           2956 LOAD_CONST             480 ('Разрешить просмотр экрана из Discord (/screenshot присылает вам текущий экран в ЛС)')
+
+255        2958 MAP_ADD                  1
+
+277        2960 LOAD_CONST              73 ('dm_desc')
+           2962 EXTENDED_ARG             1
+           2964 LOAD_CONST             481 ('Введите /link на официальном сервере Discord и вставьте сюда полученный ключ (вход не нужен).')
+
+255        2966 MAP_ADD                  1
+           2968 DICT_UPDATE              1
+           2970 BUILD_MAP                0
+
+278        2972 LOAD_CONST              75 ('dm_s_sending')
+           2974 EXTENDED_ARG             1
+           2976 LOAD_CONST             482 ('Отправка…')
+
+255        2978 MAP_ADD                  1
+
+278        2980 LOAD_CONST              77 ('dm_s_ok')
+           2982 EXTENDED_ARG             1
+           2984 LOAD_CONST             483 ('✔ Отправлено — проверьте ЛС')
+
+255        2986 MAP_ADD                  1
+
+279        2988 LOAD_CONST              79 ('dm_s_invalid_key')
+           2990 EXTENDED_ARG             1
+           2992 LOAD_CONST             484 ('✖ Неверный ключ (должен начинаться с LAP-)')
+
+255        2994 MAP_ADD                  1
+
+280        2996 LOAD_CONST              81 ('dm_s_no_url')
+           2998 EXTENDED_ARG             1
+           3000 LOAD_CONST             485 ('✖ Адрес не задан')
+
+255        3002 MAP_ADD                  1
+
+280        3004 LOAD_CONST              83 ('dm_s_network')
+           3006 EXTENDED_ARG             1
+           3008 LOAD_CONST             486 ('✖ Нет связи')
+
+255        3010 MAP_ADD                  1
+
+281        3012 LOAD_CONST              85 ('dm_s_network_dns')
+           3014 EXTENDED_ARG             1
+           3016 LOAD_CONST             487 ('✖ Не удаётся определить адрес сервера (проверьте интернет, DNS или VPN)')
+
+255        3018 MAP_ADD                  1
+
+282        3020 LOAD_CONST              87 ('dm_s_network_tls')
+           3022 EXTENDED_ARG             1
+           3024 LOAD_CONST             488 ('✖ Не удаётся установить защищённое соединение (проверьте дату и время на ПК и антивирус, проверяющий трафик)')
+
+255        3026 MAP_ADD                  1
+
+283        3028 LOAD_CONST              89 ('dm_s_network_timeout')
+           3030 EXTENDED_ARG             1
+           3032 LOAD_CONST             489 ('✖ Нет ответа (нестабильное соединение или блокировка брандмауэром / VPN)')
+
+255        3034 MAP_ADD                  1
+
+284        3036 LOAD_CONST              91 ('dm_s_network_blocked')
+           3038 EXTENDED_ARG             1
+           3040 LOAD_CONST             490 ('✖ Соединение отклонено или заблокировано (разрешите pk-auto в антивирусе / брандмауэре)')
+
+255        3042 MAP_ADD                  1
+
+285        3044 LOAD_CONST              93 ('dm_s_dm_closed')
+           3046 EXTENDED_ARG             1
+           3048 LOAD_CONST             491 ('✖ Не удаётся отправить ЛС (проверьте настройки приватности)')
+
+255        3050 MAP_ADD                  1
+
+286        3052 LOAD_CONST              95 ('dm_s_rate_limited')
+           3054 EXTENDED_ARG             1
+           3056 LOAD_CONST             492 ('✖ Подождите немного и повторите')
+
+255        3058 MAP_ADD                  1
+
+286        3060 LOAD_CONST              97 ('dm_s_server')
+           3062 EXTENDED_ARG             1
+           3064 LOAD_CONST             493 ('✖ Ошибка сервера')
+
+255        3066 MAP_ADD                  1
+
+287        3068 LOAD_CONST              99 ('dm_every_pre')
+           3070 EXTENDED_ARG             1
+           3072 LOAD_CONST             494 ('ЛС каждые')
+
+255        3074 MAP_ADD                  1
+
+287        3076 LOAD_CONST             101 ('dm_every_post')
+           3078 EXTENDED_ARG             1
+           3080 LOAD_CONST             495 ('ч (0 = только при остановке / выходе)')
+
+255        3082 MAP_ADD                  1
+
+288        3084 LOAD_CONST             103 ('remote_enabled')
+           3086 EXTENDED_ARG             1
+           3088 LOAD_CONST             496 ('Принимать настройки из /settings в Discord')
+
+255        3090 MAP_ADD                  1
+
+289        3092 LOAD_CONST             105 ('log_remote')
+           3094 EXTENDED_ARG             1
+           3096 LOAD_CONST             497 ('применено из Discord: {what}')
+
+255        3098 MAP_ADD                  1
+
+290        3100 LOAD_CONST             107 ('dm_join')
+           3102 EXTENDED_ARG             1
+           3104 LOAD_CONST             498 ('Войти на сервер Discord')
+
+255        3106 MAP_ADD                  1
+           3108 DICT_UPDATE              1
+           3110 BUILD_MAP                0
+
+291        3112 LOAD_CONST             109 ('space_check')
+           3114 EXTENDED_ARG             1
+           3116 LOAD_CONST             499 ('Нажимать пробел в матче')
+
+255        3118 MAP_ADD                  1
+
+291        3120 LOAD_CONST             111 ('space_pre')
+           3122 EXTENDED_ARG             1
+           3124 LOAD_CONST             500 ('Пробел: каждые')
+
+255        3126 MAP_ADD                  1
+
+291        3128 LOAD_CONST             113 ('space_mid')
+           3130 EXTENDED_ARG             1
+           3132 LOAD_CONST             501 ('с нажать')
+
+255        3134 MAP_ADD                  1
+
+291        3136 LOAD_CONST             115 ('space_post')
+           3138 EXTENDED_ARG             1
+           3140 LOAD_CONST             502 ('раз')
+
+255        3142 MAP_ADD                  1
+
+292        3144 LOAD_CONST             117 ('diag_button')
+           3146 EXTENDED_ARG             1
+           3148 LOAD_CONST             503 ('Создать отчёт диагностики')
+
+255        3150 MAP_ADD                  1
+
+292        3152 LOAD_CONST             119 ('diag_running')
+           3154 EXTENDED_ARG             1
+           3156 LOAD_CONST             504 ('Диагностика… (до 30 с)')
+
+255        3158 MAP_ADD                  1
+
+293        3160 LOAD_CONST             121 ('net_fix_button')
+           3162 EXTENDED_ARG             1
+           3164 LOAD_CONST             505 ('Починить соединение')
+
+255        3166 MAP_ADD                  1
+
+293        3168 LOAD_CONST             123 ('dm_s_fix_running')
+           3170 EXTENDED_ARG             1
+           3172 LOAD_CONST             506 ('Починка… (до 1 мин)')
+
+255        3174 MAP_ADD                  1
+
+293        3176 LOAD_CONST             125 ('dm_s_fix_ok')
+           3178 EXTENDED_ARG             1
+           3180 LOAD_CONST             507 ('✔ Соединение исправлено. Нажмите кнопку проверки')
+
+255        3182 MAP_ADD                  1
+
+293        3184 LOAD_CONST             127 ('dm_s_fix_same')
+           3186 EXTENDED_ARG             1
+           3188 LOAD_CONST             508 ('✔ Соединение в порядке. Проверьте ключ и настройки ЛС')
+
+255        3190 MAP_ADD                  1
+
+293        3192 LOAD_CONST             129 ('dm_s_fix_fail')
+           3194 EXTENDED_ARG             1
+           3196 LOAD_CONST             509 ('✖ Не удалось починить. Создайте отчёт диагностики и отправьте его')
+
+255        3198 MAP_ADD                  1
+
+294        3200 LOAD_CONST             131 ('diag_done')
+           3202 EXTENDED_ARG             1
+           3204 LOAD_CONST             510 ('Сохранено: {name} (открыто в Блокноте и скопировано в буфер обмена)')
+
+255        3206 MAP_ADD                  1
+
+294        3208 LOAD_CONST             133 ('diag_failed')
+           3210 EXTENDED_ARG             1
+           3212 LOAD_CONST             511 ('Не удалось выполнить диагностику')
+
+255        3214 MAP_ADD                  1
+
+295        3216 LOAD_CONST             135 ('bg_check')
+           3218 EXTENDED_ARG             2
+           3220 LOAD_CONST             512 ('Фоновый режим (захват за окнами + быстрая смена фокуса)')
+
+255        3222 MAP_ADD                  1
+
+296        3224 LOAD_CONST             137 ('ghost_check')
+           3226 EXTENDED_ARG             2
+           3228 LOAD_CONST             513 ('Сделать игру невидимой, чтобы не мешала (призрак)')
+
+255        3230 MAP_ADD                  1
+
+297        3232 LOAD_CONST             139 ('ghost_show_check')
+           3234 EXTENDED_ARG             2
+           3236 LOAD_CONST             514 ('Показать игру на время (для проверки)')
+
+255        3238 MAP_ADD                  1
+
+298        3240 LOAD_CONST             141 ('log_ghost_failed')
+           3242 EXTENDED_ARG             2
+           3244 LOAD_CONST             515 ('Не удалось сделать окно игры невидимым (возможно, игра запущена от имени администратора: запустите pk-auto от имени администратора). Используется обычное переключение фокуса.')
+
+255        3246 MAP_ADD                  1
+           3248 DICT_UPDATE              1
+           3250 BUILD_MAP                0
+
+299        3252 LOAD_CONST             143 ('log_bg_minimized')
+           3254 EXTENDED_ARG             2
+           3256 LOAD_CONST             516 ('Игра свёрнута. Разверните её и закройте другими окнами сверху (в Fortnite выберите режим экрана «Оконный полноэкранный»).')
+
+255        3258 MAP_ADD                  1
+
+300        3260 LOAD_CONST             145 ('log_bg_black')
+           3262 EXTENDED_ARG             2
+           3264 LOAD_CONST             517 ('Окно игры нельзя захватить, пока оно закрыто; используется обычный захват экрана (не закрывайте игру).')
+
+255        3266 MAP_ADD                  1
+
+301        3268 LOAD_CONST             147 ('log_bg_denied')
+           3270 EXTENDED_ARG             2
+           3272 LOAD_CONST             518 ('Не удаётся захватить окно игры (отказано в доступе). Игра запущена от имени администратора — запустите pk-auto от имени администратора. Пока используется обычный захват экрана.')
+
+255        3274 MAP_ADD                  1
+
+302        3276 LOAD_CONST             149 ('upd_ver')
+           3278 EXTENDED_ARG             2
+           3280 LOAD_CONST             519 ('Версия v{cur}')
+
+255        3282 MAP_ADD                  1
+
+302        3284 LOAD_CONST             151 ('upd_check')
+           3286 EXTENDED_ARG             2
+           3288 LOAD_CONST             520 ('Проверить обновления')
+
+255        3290 MAP_ADD                  1
+
+302        3292 LOAD_CONST             153 ('upd_auto')
+           3294 EXTENDED_ARG             2
+           3296 LOAD_CONST             521 ('Проверять при запуске')
+
+255        3298 MAP_ADD                  1
+
+303        3300 LOAD_CONST             155 ('upd_checking')
+           3302 EXTENDED_ARG             2
+           3304 LOAD_CONST             522 ('Проверка…')
+
+255        3306 MAP_ADD                  1
+
+303        3308 LOAD_CONST             157 ('upd_latest')
+           3310 EXTENDED_ARG             2
+           3312 LOAD_CONST             523 ('У вас последняя версия')
+
+255        3314 MAP_ADD                  1
+
+303        3316 LOAD_CONST             159 ('upd_check_failed')
+           3318 EXTENDED_ARG             2
+           3320 LOAD_CONST             524 ('Не удалось проверить (нет сети или лимит GitHub)')
+
+255        3322 MAP_ADD                  1
+
+304        3324 LOAD_CONST             161 ('upd_title')
+           3326 EXTENDED_ARG             2
+           3328 LOAD_CONST             525 ('Доступно обновление')
+
+255        3330 MAP_ADD                  1
+
+304        3332 LOAD_CONST             163 ('upd_newver')
+           3334 EXTENDED_ARG             2
+           3336 LOAD_CONST             526 ('Новая версия v{new} (у вас v{cur})')
+
+255        3338 MAP_ADD                  1
+
+304        3340 LOAD_CONST             165 ('upd_notes')
+           3342 EXTENDED_ARG             2
+           3344 LOAD_CONST             527 ('Что нового')
+
+255        3346 MAP_ADD                  1
+
+305        3348 LOAD_CONST             167 ('upd_now')
+           3350 EXTENDED_ARG             2
+           3352 LOAD_CONST             528 ('Обновить сейчас и перезапустить')
+
+255        3354 MAP_ADD                  1
+
+305        3356 LOAD_CONST             169 ('upd_later')
+           3358 EXTENDED_ARG             2
+           3360 LOAD_CONST             529 ('Позже')
+
+255        3362 MAP_ADD                  1
+
+305        3364 LOAD_CONST             171 ('upd_page')
+           3366 EXTENDED_ARG             2
+           3368 LOAD_CONST             530 ('Открыть страницу загрузки')
+
+255        3370 MAP_ADD                  1
+
+306        3372 LOAD_CONST             173 ('upd_dev')
+           3374 EXTENDED_ARG             2
+           3376 LOAD_CONST             531 ('Запуск из исходников (.py): автообновление отключено.')
+
+255        3378 MAP_ADD                  1
+
+307        3380 LOAD_CONST             175 ('upd_downloading')
+           3382 EXTENDED_ARG             2
+           3384 LOAD_CONST             532 ('Загрузка… {pct}%')
+
+255        3386 MAP_ADD                  1
+           3388 DICT_UPDATE              1
+
+307        3390 EXTENDED_ARG             2
+           3392 LOAD_CONST             533 ('Применяю обновление. Сейчас перезапущусь…')
+
+308        3394 EXTENDED_ARG             2
+           3396 LOAD_CONST             534 ('Не удалось обновить: {why}')
+
+309        3398 EXTENDED_ARG             2
+           3400 LOAD_CONST             535 ('Не удалось проверить загрузку (файл повреждён или не тот)')
+
+310        3402 EXTENDED_ARG             2
+           3404 LOAD_CONST             536 ('Ошибка соединения')
+
+311        3406 EXTENDED_ARG             2
+           3408 LOAD_CONST             537 ('Нет прав на запись в эту папку (переместите программу или запустите от имени администратора)')
+
+312        3410 EXTENDED_ARG             2
+           3412 LOAD_CONST             538 ('🔔 Доступна новая версия v{new}')
+           3414 EXTENDED_ARG             2
+           3416 LOAD_CONST             539 ('Подробнее')
+
+255        3418 LOAD_CONST             184 (('upd_installing', 'upd_error', 'upd_err_verify', 'upd_err_network', 'upd_err_write', 'upd_banner', 'upd_details'))
+           3420 BUILD_CONST_KEY_MAP      7
+           3422 DICT_UPDATE              1
+
+ 18        3424 EXTENDED_ARG             2
+           3426 LOAD_CONST             540 (('ja', 'en', 'es', 'pt', 'ru'))
+           3428 BUILD_CONST_KEY_MAP      5
+           3430 STORE_NAME              17 (UI)
+           3432 LOAD_NAME                1 (Dict)
+           3434 LOAD_NAME               15 (str)
+           3436 LOAD_NAME                1 (Dict)
+           3438 LOAD_NAME               15 (str)
+           3440 LOAD_NAME               15 (str)
+           3442 BUILD_TUPLE              2
+           3444 BINARY_SUBSCR
+           3448 BUILD_TUPLE              2
+           3450 BINARY_SUBSCR
+           3454 LOAD_NAME               18 (__annotations__)
+           3456 EXTENDED_ARG             2
+           3458 LOAD_CONST             541 ('UI')
+           3460 STORE_SUBSCR
+
+317        3464 BUILD_LIST               0
+           3466 EXTENDED_ARG             2
+           3468 LOAD_CONST             542 ((('h1', 'うまく起動しないときの対処法'), ('n', '1. コントローラーの接続を切る'), ('n', '2. ソフトのタスクを終了（タスクマネージャー）'), ('n', '3. 管理者で実行'), ('n', '4. 開始を押して30秒待つ'), ('n', '5. それでも動作しない場合は「画像を切り抜く」を押す'), ('li', 'それでも動かないときは、「操作」タブの「診断レポートを作成」ボタンを押してください。状況を書き出して、メモ帳で開き、クリップボードにもコピーします。内容を、そのまま作者に送ってください。'), ('h1', 'これは何？'), ('p', 'ロビーの「プレイ」→ マッチ中の「続行」→ 結果画面の「スキップ」→「ロビーに戻る」を自動でクリックして、周回を繰り返すツールです。画面を見てボタンを探してクリックしているだけで、ゲームの内部データには一切触れていません。'), ('h1', '使い方'), ('n', '1. pk-auto.exe をダブルクリックして起動します（exe 単体で動きます。他のファイルは不要です）。管理者で実行しないと正常に動かない場合あり。'), ('n', '2. Fortnite を起動し、ロビー画面を表示しておきます。'), ('n', '3. pk-auto のウィンドウで「開始」を押します。'), ('n', '4. 止めたいときは「停止」ボタンか、F8 キー。'), ('h1', 'モード説明'), ('h2', 'モード A：通常ループ'), ('p', 'マッチを最後まで進めて、結果画面を抜けるまでを繰り返します。'), ('n', '1. ロビーの プレイ'), ('n', '2. マッチ中は待機'), ('n', '3. 続行'), ('n', '4. スキップ'), ('n', '5. ロビーに戻る → 1 に戻る'), ('li', 'マッチ中は、WASD のどれかをランダムに長押しします（初期値は10秒ごとに3秒）。'), ('li', '長押しの入り切り、間隔、長押し秒数は、画面で変えられます。'), ('h2', 'モード B：待機島ループ'), ('p', '待機島で一定時間待ってから、メニューを使って自分でロビーに戻ります。マッチを最後まで遊びません。'), ('n', '1. ロビーの プレイ を押す'), ('n', '2. 待機島に入ったら、設定した秒数だけ待つ（初期値 90秒）'), ('n', '3. Esc キーを押す'), ('n', '4. 右上の ≡（横3本線）を押す'), ('n', '5. ロビーに戻る を押す → 1 に戻る'), ('li', '待ち時間は、画面の「B: 待機島で ○ 秒待ってから Esc」で変えられます（10〜600秒）。'), ('li', 'バーやメニューの形で画面を見分けるので、どの言語でも動きます。'), ('li', 'Bの間は、WASD の長押しは動きません。'), ('h2', 'A と B の違い'), ('li', '1周の長さ：A = マッチが終わるまで ／ B = 約2分（待機秒数＋移動）'), ('li', 'マッチを最後まで遊ぶ：A = する ／ B = しない'), ('li', 'WASD 長押し：A = する ／ B = しない'), ('li', '言語の違い：A = 日本語・English で確認済み、他はベータ ／ B = 言語に関係なく動く'), ('h1', '設定について'), ('li', 'しきい値スライダー：ボタンの認識精度です。反応しないときは少し下げてみてください（誤作動が増える場合は上げてください）。'), ('li', '「マッチ中 WASD ランダム長押し」：オンにすると、マッチ中に W/A/S/D のいずれかをランダムに一定時間押し続けます。間隔と長押し秒数は画面上で変更できます。'), ('li', '「マッチ中 スペースキー連打」：オンにすると、マッチ中に「◯秒に◯回」の割合でスペースキーを押します（モードAでもBでも動きます。WASD長押しとは別の機能です）。モードBでは、Escを押す10秒前になると自動で止まり、次のマッチに入るまで止まったままです。'), ('li', '「バックグラウンド動作」：オンにすると、ゲームのウィンドウを他のウィンドウの裏に重ねたままでも画面を認識し、クリックやキー入力をする一瞬だけゲームを前面に出して、すぐ元のウィンドウとマウス位置に戻します。ゲームは最小化せず、他のウィンドウを上に重ねて置いてください。通常の Fortnite は、画面モードを「ウィンドウフルスクリーン」（または「ウィンドウ」）にしてください。GeForce NOW でも使えます（管理者として実行してください）。ゲームの窓は透明（ほぼ見えない状態）で、マウスのクリックも通り抜けるようになるので、ゲームが前面に出ても画面には何も映らず、あなたの作業は邪魔されません（「ゲーム画面を透明にして邪魔しない」で切り替え）。あなたの作業ウィンドウには何も変更を加えません。入力を送る前に、マウスやキーボードを1秒ほど触っていない状態になるまで待ちます。ゲームの様子を見たいときは「ゲーム画面を一時的に表示する」にチェックを入れてください。停止・終了すると元の表示に戻ります（異常終了した場合は、pk-auto をもう一度起動すると戻ります）。'), ('li', '画面サイズやUIが違ってボタンを認識しない場合は、「画像を切り抜く」ボタンでご自分の画面から撮り直せます（exe の横に assets フォルダが作られ、そちらが優先されます）。'), ('h1', 'Discord DM通知（任意）'), ('li', '「Discordサーバーに参加」ボタンで公式Discordサーバーに入り、/link（またはパネルの「Link key」ボタン）でキーを受け取って、「操作」タブの連携キー欄に貼り付けると、停止時や終了時に集計結果（経過時間・操作回数・ピークAPM・周回数など）がDMで届きます。'), ('li', '送信されるのは、これらの数値と連携キーだけです。画面の画像や個人情報は送りません。キーが空のときは何も送信しません。「停止・終了時に集計をDMで送る」のチェックでも止められます。'), ('li', '「DM送信間隔」を設定すると、動作中は指定した時間ごとにも経過報告がDMで届きます（0 = 停止・終了時のみ）。'), ('li', 'Discordの /settings コマンドで、モード・言語・待機秒数・DM間隔・WASD長押しを遠隔で変更できます（pk-auto が起動していれば約1分以内に反映）。開始・停止は遠隔ではできません。「Discordの /settings での設定変更を受け付ける」のチェックを外すと無効になります。'), ('h1', 'アップデート'), ('li', '起動時に、GitHub のリリースに新しいバージョンがないか確認します。あれば通知が出るので、「今すぐ更新して再起動」を押すと、自動でダウンロードして入れ替え、再起動します。設定やログのファイルは消えません。'), ('li', '「アップデートを確認」ボタンで、いつでも手動で確認できます。「起動時に確認」のチェックを外すと、自動の確認をしません。通信は、新しいバージョンの確認とダウンロードのときだけで、ダウンロードしたファイルは GitHub が示す値（SHA-256）で検証します。'), ('h1', '注意事項（必ずお読みください）'), ('li', '自動操作ツールの使用は Fortnite の利用規約・不正対策（Easy Anti-Cheat など）に違反する可能性があり、アカウント停止の対象になり得ます。使用は完全に自己責任でお願いします。'), ('li', '初回起動時、Windows の SmartScreen や一部のウイルス対策ソフトが「発行元不明」「不審なファイル」として警告を出すことがあります。これは、個人開発の未署名ソフトではよくあることで、マウス・キーボードの自動操作やホットキー監視の仕組みが、マクロ系ツールと似た挙動として検知されやすいためです。'), ('li', '本ツールは配布者・作者が動作を保証するものではありません。自己責任の上でご利用ください。'), ('h1', '連絡先・不具合報告'), ('p', 'X (Twitter): @4z5pk')))
+           3470 LIST_EXTEND              1
+
+378        3472 BUILD_LIST               0
+           3474 EXTENDED_ARG             2
+           3476 LOAD_CONST             543 ((('h1', "If it won't start properly"), ('n', '1. Disconnect the controller.'), ('n', "2. End the app's task (in Task Manager)."), ('n', '3. Run as administrator.'), ('n', '4. Press Start and wait 30 seconds.'), ('n', "5. If it still doesn't work, press “Crop image”."), ('li', 'If it still does not work, press “Create diagnostic report” on the Control tab. It writes a report, opens it in Notepad and copies it to the clipboard; send its content to the author as it is.'), ('h1', 'What is this?'), ('p', "It automatically clicks the lobby “Play” → “Continue” during the match → “Skip” on the results screen → “Return to Lobby”, and repeats the loop. It only looks at the screen to find buttons and click them; it never touches the game's internal data."), ('h1', 'How to use'), ('n', '1. Double-click pk-auto.exe to start it (the exe works alone; no other files are needed). It may not work correctly unless run as administrator.'), ('n', '2. Start Fortnite and show the lobby screen.'), ('n', '3. Press “Start” in the pk-auto window.'), ('n', '4. To stop, press the “Stop” button or the F8 key.'), ('h1', 'Modes'), ('h2', 'Mode A: Normal loop'), ('p', 'Plays each match to the end and repeats until you leave the results screen.'), ('n', '1. Lobby: Play'), ('n', '2. During the match: wait'), ('n', '3. Continue'), ('n', '4. Skip'), ('n', '5. Return to Lobby → back to 1'), ('li', 'During a match it holds a random WASD key (by default 3 seconds every 10 seconds).'), ('li', 'You can turn the key hold on/off and change the interval and hold time in the window.'), ('h2', 'Mode B: Waiting-island loop'), ('p', 'Waits a set time on the waiting island, then returns to the lobby through the menu. It does not play the match to the end.'), ('n', '1. Lobby: press Play'), ('n', '2. When you reach the waiting island, wait the set number of seconds (default 90 s)'), ('n', '3. Press the Esc key'), ('n', '4. Press the ≡ (three lines) at the top right'), ('n', '5. Press Return to Lobby → back to 1'), ('li', 'You can change the wait time with “B: Wait on island [ ] s, then Esc” in the window (10–600 s).'), ('li', 'It recognizes screens by the shape of the bar and menu, so it works in every language.'), ('li', 'In mode B the WASD key hold does not run.'), ('h2', 'Differences between A and B'), ('li', 'Length of one round: A = until the match ends / B = about 2 minutes (wait time + moving)'), ('li', 'Plays the match to the end: A = yes / B = no'), ('li', 'WASD key hold: A = yes / B = no'), ('li', 'Language: A = confirmed with Japanese and English, others are beta / B = works in any language'), ('h1', 'About the settings'), ('li', 'Threshold slider: how strict button recognition is. If nothing reacts, lower it a little (raise it if misclicks increase).'), ('li', '“Hold random WASD key during match”: when on, it holds one of W/A/S/D at random for a set time during the match. The interval and hold time can be changed in the window.'), ('li', '“Press Space during match”: when on, Space is pressed the given number of times every given number of seconds during the match (works in both modes; separate from the WASD hold). In mode B it stops automatically 10 seconds before Esc is pressed and stays off until the next match starts.'), ('li', '“Background mode”: when on, the game is recognized even while other windows cover it, and it is brought to the front only for the instant of a click or key press, after which your previous window and mouse position are restored. Do not minimize the game; leave other windows on top of it. With the normal Fortnite client set the display mode to “Windowed Fullscreen” (or “Windowed”). GeForce NOW works too (run pk-auto as administrator). The game window is made transparent (practically invisible) and mouse clicks pass through it, so even when it comes to the front nothing shows and your work is not disturbed (switch with “Make the game invisible”). Your own windows are never changed. Before an input is sent, the tool waits until you have not touched the mouse or keyboard for about a second. To look at the game, tick “Show the game for a moment”. Stopping or closing restores the normal view (after a crash, just start pk-auto again).'), ('li', 'If the screen size or UI differs and buttons are not recognized, use the “Crop image” button to capture them again from your own screen (an assets folder is created next to the exe and it takes priority).'), ('h1', 'Discord DM report (optional)'), ('li', 'Join the official Discord server with the “Join the Discord server” button, get your key with /link (or the “Link key” button on the panel), then paste it into the link key box on the Control tab. When you stop or quit, a summary (elapsed time, number of actions, peak APM, rounds and so on) is sent to you as a DM.'), ('li', 'Only these numbers and the link key are sent: no screenshots and no personal data. Nothing is sent while the key box is empty. You can also switch it off with the “Send a session summary by DM on stop / exit” checkbox.'), ('li', 'If you set “DM every”, progress reports also arrive by DM at that interval while the tool is running (0 = only on stop / exit).'), ('li', 'With the /settings command on Discord you can change the mode, language, wait time, DM interval and WASD hold remotely (applied within about a minute if pk-auto is running). Starting and stopping cannot be done remotely. Untick “Accept settings changed with /settings on Discord” to turn this off.'), ('h1', 'Updates'), ('li', 'At startup, pk-auto checks the GitHub Releases for a newer version. If there is one, a notice appears; press “Update now and restart” and it downloads the new version, replaces itself and restarts. Your settings and log files are not touched.'), ('li', 'You can also check at any time with the “Check for updates” button; untick “Check at startup” to stop the automatic check. It connects only to check for a new version and to download it, and the downloaded file is verified against the value (SHA-256) that GitHub provides.'), ('h1', 'Notes (please read)'), ('li', "Using automation tools may violate Fortnite's terms of service and anti-cheat (such as Easy Anti-Cheat) and may lead to account suspension. Use entirely at your own risk."), ('li', 'On first launch, Windows SmartScreen or some antivirus software may warn about an “unknown publisher” or a “suspicious file”. This is common for unsigned personal projects, because automatic mouse/keyboard control and hotkey monitoring look similar to macro tools.'), ('li', 'The author does not guarantee that this tool works. Use at your own risk.'), ('h1', 'Contact / bug reports'), ('p', 'X (Twitter): @4z5pk')))
+           3478 LIST_EXTEND              1
+
+439        3480 BUILD_LIST               0
+           3482 EXTENDED_ARG             2
+           3484 LOAD_CONST             544 ((('h1', 'Si no se inicia bien'), ('n', '1. Desconecta el mando.'), ('n', '2. Finaliza la tarea del programa (Administrador de tareas).'), ('n', '3. Ejecuta como administrador.'), ('n', '4. Pulsa Iniciar y espera 30 segundos.'), ('n', '5. Si sigue sin funcionar, pulsa “Recortar imagen”.'), ('li', 'Si sigue sin funcionar, pulsa “Crear informe de diagnóstico” en la pestaña Control. Escribe un informe, lo abre en el Bloc de notas y lo copia al portapapeles; envía su contenido al autor tal cual.'), ('h1', '¿Qué es esto?'), ('p', 'Hace clic automáticamente en “Jugar” del lobby → “Continuar” durante la partida → “Omitir” en la pantalla de resultados → “Volver al lobby”, y repite el ciclo. Solo mira la pantalla para encontrar los botones y hacer clic; nunca toca los datos internos del juego.'), ('h1', 'Cómo se usa'), ('n', '1. Haz doble clic en pk-auto.exe para abrirlo (el exe funciona solo; no hacen falta más archivos). Puede que no funcione bien si no se ejecuta como administrador.'), ('n', '2. Abre Fortnite y deja la pantalla del lobby.'), ('n', '3. Pulsa “Iniciar” en la ventana de pk-auto.'), ('n', '4. Para parar, pulsa el botón “Detener” o la tecla F8.'), ('h1', 'Modos'), ('h2', 'Modo A: ciclo normal'), ('p', 'Juega la partida hasta el final y repite hasta salir de la pantalla de resultados.'), ('n', '1. Lobby: Jugar'), ('n', '2. Durante la partida: esperar'), ('n', '3. Continuar'), ('n', '4. Omitir'), ('n', '5. Volver al lobby → vuelve al 1'), ('li', 'Durante la partida mantiene pulsada una tecla WASD al azar (por defecto 3 segundos cada 10 segundos).'), ('li', 'Puedes activar o desactivar la pulsación y cambiar el intervalo y la duración en la ventana.'), ('h2', 'Modo B: ciclo en la isla de espera'), ('p', 'Espera un tiempo en la isla de espera y luego vuelve al lobby desde el menú. No juega la partida hasta el final.'), ('n', '1. Lobby: pulsar Jugar'), ('n', '2. Al llegar a la isla de espera, esperar los segundos configurados (por defecto 90 s)'), ('n', '3. Pulsar la tecla Esc'), ('n', '4. Pulsar ≡ (tres líneas) arriba a la derecha'), ('n', '5. Pulsar Volver al lobby → vuelve al 1'), ('li', 'Puedes cambiar el tiempo de espera en “B: Esperar en la isla [ ] s y pulsar Esc” de la ventana (10–600 s).'), ('li', 'Reconoce las pantallas por la forma de la barra y del menú, así que funciona en cualquier idioma.'), ('li', 'En el modo B no se mantiene pulsado WASD.'), ('h2', 'Diferencias entre A y B'), ('li', 'Duración de una vuelta: A = hasta que termina la partida / B = unos 2 minutos (espera + movimientos)'), ('li', 'Juega la partida hasta el final: A = sí / B = no'), ('li', 'Pulsación de WASD: A = sí / B = no'), ('li', 'Idioma: A = confirmado en japonés e inglés, el resto en beta / B = funciona en cualquier idioma'), ('h1', 'Sobre los ajustes'), ('li', 'Control de umbral: exigencia del reconocimiento de botones. Si no reacciona, bájalo un poco (súbelo si aumentan los clics erróneos).'), ('li', '“Mantener WASD al azar en la partida”: si está activado, mantiene pulsada al azar una de las teclas W/A/S/D durante un tiempo en la partida. El intervalo y la duración se cambian en la ventana.'), ('li', '“Pulsar Espacio en la partida”: si está activado, pulsa Espacio el número de veces indicado cada tantos segundos durante la partida (funciona en ambos modos; es independiente de la pulsación de WASD). En el modo B se detiene solo 10 segundos antes de pulsar Esc y sigue parado hasta que empiece la siguiente partida.'), ('li', '“Modo en segundo plano”: si está activado, el juego se reconoce aunque otras ventanas lo tapen, y solo pasa al frente durante el instante de un clic o una pulsación de tecla; después se restauran tu ventana anterior y la posición del ratón. No minimices el juego; deja otras ventanas encima. Con el cliente normal de Fortnite usa el modo “Pantalla completa en ventana” (o “En ventana”). También funciona con GeForce NOW (ejecuta pk-auto como administrador). La ventana del juego se vuelve transparente (prácticamente invisible) y los clics del ratón la atraviesan, así que aunque pase al frente no se ve nada y tu trabajo no se interrumpe (se cambia con “Hacer el juego invisible”). Tus propias ventanas nunca se modifican. Antes de enviar una entrada, la herramienta espera a que lleves un segundo sin tocar el ratón ni el teclado. Para ver el juego, marca “Mostrar el juego un momento”. Al detener o cerrar se restaura la vista normal (tras un cierre inesperado, vuelve a abrir pk-auto).'), ('li', 'Si el tamaño de pantalla o la interfaz son distintos y no se reconocen los botones, usa el botón “Recortar imagen” para capturarlos de nuevo desde tu pantalla (se crea una carpeta assets junto al exe y tiene prioridad).'), ('h1', 'Informe por DM de Discord (opcional)'), ('li', 'Entra en el servidor oficial de Discord con el botón “Unirse al servidor de Discord”, obtén tu clave con /link (o el botón “Link key” del panel) y pégala en el campo de clave de la pestaña Control. Al parar o salir, recibirás por DM un resumen (tiempo, número de acciones, APM máximo, vueltas, etc.).'), ('li', 'Solo se envían estos números y la clave: nada de capturas de pantalla ni datos personales. Si el campo de clave está vacío, no se envía nada. También puedes desactivarlo con la casilla “Enviar resumen de sesión por DM al parar / salir”.'), ('li', 'Si configuras “DM cada”, también recibirás informes de progreso por DM con ese intervalo mientras la herramienta funciona (0 = solo al parar / salir).'), ('li', 'Con el comando /settings de Discord puedes cambiar a distancia el modo, el idioma, el tiempo de espera, el intervalo de DM y la pulsación de WASD (se aplica en aproximadamente un minuto si pk-auto está en marcha). No se puede iniciar ni parar a distancia. Desmarca “Aceptar ajustes cambiados con /settings en Discord” para desactivarlo.'), ('h1', 'Actualizaciones'), ('li', 'Al iniciar, pk-auto busca en las Releases de GitHub una versión más nueva. Si la hay, aparece un aviso; pulsa “Actualizar ahora y reiniciar” y descarga la nueva versión, se reemplaza y se reinicia. Tus ajustes y archivos de registro no se tocan.'), ('li', 'También puedes buscar cuando quieras con el botón “Buscar actualizaciones”; desmarca “Buscar al iniciar” para desactivar la búsqueda automática. Solo se conecta para comprobar si hay una versión nueva y para descargarla, y el archivo descargado se verifica con el valor (SHA-256) que indica GitHub.'), ('h1', 'Avisos (léelos)'), ('li', 'Usar herramientas de automatización puede infringir las condiciones de uso y el sistema anticheat de Fortnite (como Easy Anti-Cheat) y puede acarrear la suspensión de la cuenta. Úsalo bajo tu total responsabilidad.'), ('li', 'En el primer inicio, Windows SmartScreen o algunos antivirus pueden avisar de “editor desconocido” o “archivo sospechoso”. Es habitual en programas personales sin firmar, porque el control automático del ratón y el teclado y la vigilancia de atajos se parecen al comportamiento de las herramientas de macros.'), ('li', 'El autor no garantiza que esta herramienta funcione. Úsala bajo tu propia responsabilidad.'), ('h1', 'Contacto / errores'), ('p', 'X (Twitter): @4z5pk')))
+           3486 LIST_EXTEND              1
+
+500        3488 BUILD_LIST               0
+           3490 EXTENDED_ARG             2
+           3492 LOAD_CONST             545 ((('h1', 'Se não iniciar direito'), ('n', '1. Desconecte o controle.'), ('n', '2. Encerre a tarefa do programa (Gerenciador de Tarefas).'), ('n', '3. Execute como administrador.'), ('n', '4. Clique em Iniciar e aguarde 30 segundos.'), ('n', '5. Se ainda não funcionar, clique em “Recortar imagem”.'), ('li', 'Se ainda não funcionar, clique em “Criar relatório de diagnóstico” na aba Controle. Ele grava um relatório, abre no Bloco de Notas e copia para a área de transferência; envie o conteúdo ao autor como está.'), ('h1', 'O que é isto?'), ('p', 'Clica automaticamente em “Jogar” no lobby → “Continuar” durante a partida → “Pular” na tela de resultados → “Voltar ao lobby” e repete o ciclo. Ele apenas olha a tela para encontrar os botões e clicar; nunca mexe nos dados internos do jogo.'), ('h1', 'Como usar'), ('n', '1. Clique duas vezes em pk-auto.exe para abrir (o exe funciona sozinho; nenhum outro arquivo é necessário). Pode não funcionar direito se não for executado como administrador.'), ('n', '2. Abra o Fortnite e deixe a tela do lobby.'), ('n', '3. Clique em “Iniciar” na janela do pk-auto.'), ('n', '4. Para parar, use o botão “Parar” ou a tecla F8.'), ('h1', 'Modos'), ('h2', 'Modo A: ciclo normal'), ('p', 'Joga a partida até o fim e repete até sair da tela de resultados.'), ('n', '1. Lobby: Jogar'), ('n', '2. Durante a partida: aguardar'), ('n', '3. Continuar'), ('n', '4. Pular'), ('n', '5. Voltar ao lobby → volta ao 1'), ('li', 'Durante a partida, segura uma tecla WASD aleatória (padrão: 3 segundos a cada 10 segundos).'), ('li', 'Você pode ligar/desligar o pressionamento e mudar o intervalo e a duração na janela.'), ('h2', 'Modo B: ciclo na ilha de espera'), ('p', 'Espera um tempo na ilha de espera e depois volta ao lobby pelo menu. Não joga a partida até o fim.'), ('n', '1. Lobby: clicar em Jogar'), ('n', '2. Ao chegar na ilha de espera, aguardar os segundos definidos (padrão 90 s)'), ('n', '3. Apertar a tecla Esc'), ('n', '4. Clicar em ≡ (três linhas) no canto superior direito'), ('n', '5. Clicar em Voltar ao lobby → volta ao 1'), ('li', 'O tempo de espera pode ser mudado em “B: Esperar na ilha [ ] s e apertar Esc” na janela (10–600 s).'), ('li', 'Reconhece as telas pelo formato da barra e do menu, então funciona em qualquer idioma.'), ('li', 'No modo B, o pressionamento de WASD não é executado.'), ('h2', 'Diferenças entre A e B'), ('li', 'Duração de uma volta: A = até a partida acabar / B = cerca de 2 minutos (espera + movimentos)'), ('li', 'Joga a partida até o fim: A = sim / B = não'), ('li', 'Pressionar WASD: A = sim / B = não'), ('li', 'Idioma: A = confirmado em japonês e inglês, os demais em beta / B = funciona em qualquer idioma'), ('h1', 'Sobre as configurações'), ('li', 'Controle de limiar: rigor do reconhecimento dos botões. Se não reagir, diminua um pouco (aumente se houver cliques errados).'), ('li', '“Segurar WASD aleatório na partida”: quando ligado, segura uma das teclas W/A/S/D, ao acaso, por um tempo durante a partida. O intervalo e a duração podem ser mudados na janela.'), ('li', '“Apertar Espaço na partida”: quando ligado, aperta Espaço o número de vezes definido a cada tantos segundos durante a partida (funciona nos dois modos; é independente do WASD). No modo B, para sozinho 10 segundos antes de apertar Esc e fica parado até começar a próxima partida.'), ('li', '“Modo em segundo plano”: quando ligado, o jogo é reconhecido mesmo com outras janelas por cima, e só vai para a frente no instante de um clique ou de uma tecla; depois a janela anterior e a posição do mouse são restauradas. Não minimize o jogo; deixe outras janelas sobre ele. No Fortnite normal use o modo “Tela cheia em janela” (ou “Em janela”). Também funciona com o GeForce NOW (execute o pk-auto como administrador). A janela do jogo fica transparente (praticamente invisível) e os cliques do mouse passam por ela, então mesmo que vá para a frente nada aparece e seu trabalho não é atrapalhado (alterne com “Deixar o jogo invisível”). Suas próprias janelas nunca são alteradas. Antes de enviar uma entrada, a ferramenta espera você ficar cerca de um segundo sem tocar no mouse ou no teclado. Para ver o jogo, marque “Mostrar o jogo por um momento”. Ao parar ou fechar, a visão normal volta (após um fechamento inesperado, abra o pk-auto de novo).'), ('li', 'Se o tamanho da tela ou a interface forem diferentes e os botões não forem reconhecidos, use o botão “Recortar imagem” para capturá-los de novo na sua tela (uma pasta assets é criada ao lado do exe e tem prioridade).'), ('h1', 'Relatório por DM do Discord (opcional)'), ('li', 'Entre no servidor oficial do Discord pelo botão “Entrar no servidor do Discord”, pegue sua chave com /link (ou o botão “Link key” do painel) e cole no campo de chave da aba Controle. Ao parar ou sair, você recebe por DM um resumo (tempo, número de ações, APM máximo, voltas etc.).'), ('li', 'Apenas esses números e a chave são enviados: sem capturas de tela e sem dados pessoais. Com o campo de chave vazio, nada é enviado. Você também pode desligar pela caixa “Enviar resumo da sessão por DM ao parar / sair”.'), ('li', 'Se você definir “DM a cada”, também receberá relatórios de progresso por DM nesse intervalo enquanto a ferramenta estiver em execução (0 = só ao parar / sair).'), ('li', 'Com o comando /settings do Discord você pode mudar à distância o modo, o idioma, o tempo de espera, o intervalo de DM e o pressionamento de WASD (aplicado em cerca de um minuto se o pk-auto estiver em execução). Não é possível iniciar nem parar à distância. Desmarque “Aceitar configurações alteradas com /settings no Discord” para desativar.'), ('h1', 'Atualizações'), ('li', 'Ao iniciar, o pk-auto verifica nas Releases do GitHub se há uma versão mais nova. Se houver, aparece um aviso; clique em “Atualizar agora e reiniciar” e ele baixa a nova versão, se substitui e reinicia. Suas configurações e arquivos de log não são tocados.'), ('li', 'Você também pode verificar quando quiser com o botão “Verificar atualizações”; desmarque “Verificar ao iniciar” para desativar a verificação automática. Ele só se conecta para verificar se há versão nova e para baixá-la, e o arquivo baixado é verificado com o valor (SHA-256) informado pelo GitHub.'), ('h1', 'Avisos (leia com atenção)'), ('li', 'O uso de ferramentas de automação pode violar os termos de serviço e o sistema anti-cheat do Fortnite (como o Easy Anti-Cheat) e pode levar à suspensão da conta. Use por sua conta e risco.'), ('li', 'Na primeira execução, o Windows SmartScreen ou alguns antivírus podem avisar sobre “editor desconhecido” ou “arquivo suspeito”. Isso é comum em programas pessoais sem assinatura, porque o controle automático do mouse e do teclado e o monitoramento de atalhos se parecem com o comportamento de ferramentas de macro.'), ('li', 'O autor não garante o funcionamento desta ferramenta. Use por sua conta e risco.'), ('h1', 'Contato / relatar problemas'), ('p', 'X (Twitter): @4z5pk')))
+           3494 LIST_EXTEND              1
+
+561        3496 BUILD_LIST               0
+           3498 EXTENDED_ARG             2
+           3500 LOAD_CONST             546 ((('h1', 'Если программа запускается неправильно'), ('n', '1. Отключите геймпад.'), ('n', '2. Завершите задачу программы (Диспетчер задач).'), ('n', '3. Запустите от имени администратора.'), ('n', '4. Нажмите «Старт» и подождите 30 секунд.'), ('n', '5. Если всё равно не работает, нажмите «Вырезать изображение».'), ('li', 'Если всё равно не работает, нажмите «Создать отчёт диагностики» на вкладке «Управление». Отчёт сохраняется, открывается в Блокноте и копируется в буфер обмена; отправьте его содержимое автору как есть.'), ('h1', 'Что это?'), ('p', 'Автоматически нажимает «Играть» в лобби → «Продолжить» во время матча → «Пропустить» на экране результатов → «Вернуться в лобби» и повторяет цикл. Программа лишь смотрит на экран, ищет кнопки и нажимает их; внутренних данных игры она не касается.'), ('h1', 'Как пользоваться'), ('n', '1. Дважды щёлкните pk-auto.exe, чтобы запустить (exe работает сам по себе, другие файлы не нужны). Без запуска от имени администратора может работать неправильно.'), ('n', '2. Запустите Fortnite и откройте экран лобби.'), ('n', '3. Нажмите «Старт» в окне pk-auto.'), ('n', '4. Чтобы остановить, нажмите «Стоп» или клавишу F8.'), ('h1', 'Режимы'), ('h2', 'Режим A: обычный цикл'), ('p', 'Доигрывает матч до конца и повторяет, пока вы не выйдете с экрана результатов.'), ('n', '1. Лобби: «Играть»'), ('n', '2. Во время матча: ждать'), ('n', '3. «Продолжить»'), ('n', '4. «Пропустить»'), ('n', '5. «Вернуться в лобби» → снова к пункту 1'), ('li', 'Во время матча удерживает случайную клавишу WASD (по умолчанию 3 секунды каждые 10 секунд).'), ('li', 'Удержание можно включить/выключить, а интервал и длительность изменить в окне.'), ('h2', 'Режим B: цикл на острове ожидания'), ('p', 'Ждёт заданное время на острове ожидания, затем возвращается в лобби через меню. Матч до конца не играется.'), ('n', '1. Лобби: нажать «Играть»'), ('n', '2. Попав на остров ожидания, подождать заданное число секунд (по умолчанию 90 с)'), ('n', '3. Нажать клавишу Esc'), ('n', '4. Нажать ≡ (три полоски) в правом верхнем углу'), ('n', '5. Нажать «Вернуться в лобби» → снова к пункту 1'), ('li', 'Время ожидания меняется в поле «B: Ждать на острове [ ] с, затем Esc» в окне (10–600 с).'), ('li', 'Экраны распознаются по форме полосы и меню, поэтому режим работает на любом языке.'), ('li', 'В режиме B удержание WASD не выполняется.'), ('h2', 'Различия между A и B'), ('li', 'Длительность одного круга: A = до конца матча / B = около 2 минут (ожидание + переходы)'), ('li', 'Доигрывает матч до конца: A = да / B = нет'), ('li', 'Удержание WASD: A = да / B = нет'), ('li', 'Язык: A = проверено на японском и английском, остальные — бета / B = работает на любом языке'), ('h1', 'О настройках'), ('li', 'Ползунок порога: строгость распознавания кнопок. Если реакции нет, немного уменьшите его (увеличьте, если растёт число ложных нажатий).'), ('li', '«Случайное удержание WASD в матче»: если включено, во время матча программа на заданное время удерживает одну из клавиш W/A/S/D случайным образом. Интервал и длительность меняются в окне.'), ('li', '«Нажимать пробел в матче»: если включено, во время матча нажимает пробел заданное число раз за заданное число секунд (работает в обоих режимах; отдельно от удержания WASD). В режиме B автоматически останавливается за 10 секунд до нажатия Esc и остаётся выключенным до начала следующего матча.'), ('li', '«Фоновый режим»: если включено, игра распознаётся, даже когда её закрывают другие окна, и выводится на передний план только на миг клика или нажатия клавиши; затем возвращаются ваше прежнее окно и положение мыши. Не сворачивайте игру; оставляйте другие окна поверх неё. В обычном клиенте Fortnite выберите режим «Оконный полноэкранный» (или «Оконный»). С GeForce NOW тоже работает (запускайте pk-auto от имени администратора). Окно игры становится прозрачным (практически невидимым), и клики мыши проходят сквозь него, поэтому даже когда оно выходит вперёд, ничего не видно и вам не мешают (переключается пунктом «Сделать игру невидимой»). Ваши собственные окна не изменяются. Перед отправкой ввода программа ждёт, пока вы около секунды не трогаете мышь и клавиатуру. Чтобы посмотреть на игру, отметьте «Показать игру на время». При остановке или закрытии обычный вид возвращается (после аварийного завершения просто запустите pk-auto снова).'), ('li', 'Если размер экрана или интерфейс отличаются и кнопки не распознаются, кнопкой «Вырезать изображение» снимите их заново со своего экрана (рядом с exe создаётся папка assets, она имеет приоритет).'), ('h1', 'Отчёт в ЛС Discord (необязательно)'), ('li', 'Зайдите на официальный сервер Discord кнопкой «Войти на сервер Discord», получите ключ командой /link (или кнопкой «Link key» на панели) и вставьте его в поле ключа на вкладке «Управление». При остановке или выходе вам придёт в ЛС сводка (время, число действий, пик APM, циклы и т. д.).'), ('li', 'Отправляются только эти числа и ключ: никаких скриншотов и личных данных. Пока поле ключа пусто, ничего не отправляется. Отправку также можно отключить флажком «Отправлять итоги сессии в ЛС при остановке / выходе».'), ('li', 'Если задать «ЛС каждые», во время работы с этим интервалом в ЛС также будут приходить отчёты о ходе работы (0 = только при остановке / выходе).'), ('li', 'Командой /settings в Discord можно удалённо менять режим, язык, время ожидания, интервал ЛС и удержание WASD (применяется примерно за минуту, если pk-auto запущен). Запускать и останавливать удалённо нельзя. Чтобы отключить, снимите флажок «Принимать настройки из /settings в Discord».'), ('h1', 'Обновления'), ('li', 'При запуске pk-auto проверяет релизы на GitHub: нет ли новой версии. Если есть, появляется уведомление; нажмите «Обновить сейчас и перезапустить» — программа скачает новую версию, заменит себя и перезапустится. Ваши настройки и файлы журнала не затрагиваются.'), ('li', 'Проверить можно и вручную кнопкой «Проверить обновления»; чтобы отключить автоматическую проверку, снимите флажок «Проверять при запуске». Соединение нужно только для проверки новой версии и её загрузки, а скачанный файл проверяется по значению (SHA-256), которое указывает GitHub.'), ('h1', 'Важно (прочтите обязательно)'), ('li', 'Использование программ автоматизации может нарушать условия использования Fortnite и защиту от читов (например, Easy Anti-Cheat) и привести к блокировке аккаунта. Используйте полностью на свой страх и риск.'), ('li', 'При первом запуске Windows SmartScreen или некоторые антивирусы могут предупредить о «неизвестном издателе» или «подозрительном файле». Это обычное дело для личных программ без подписи: автоматическое управление мышью и клавиатурой и отслеживание горячих клавиш похожи на поведение макро-программ.'), ('li', 'Автор не гарантирует работу программы. Используйте на свой страх и риск.'), ('h1', 'Контакты / сообщения об ошибках'), ('p', 'X (Twitter): @4z5pk')))
+           3502 LIST_EXTEND              1
+
+316        3504 EXTENDED_ARG             2
+           3506 LOAD_CONST             540 (('ja', 'en', 'es', 'pt', 'ru'))
+           3508 BUILD_CONST_KEY_MAP      5
+           3510 STORE_NAME              19 (GUIDE)
+           3512 LOAD_NAME                1 (Dict)
+           3514 LOAD_NAME               15 (str)
+           3516 LOAD_NAME                2 (List)
+           3518 LOAD_NAME               16 (Block)
+           3520 BINARY_SUBSCR
+           3524 BUILD_TUPLE              2
+           3526 BINARY_SUBSCR
+           3530 LOAD_NAME               18 (__annotations__)
+           3532 EXTENDED_ARG             2
+           3534 LOAD_CONST             547 ('GUIDE')
+           3536 STORE_SUBSCR
+
+625        3540 LOAD_NAME               12 (UI_FR)
+           3542 LOAD_NAME               17 (UI)
+           3544 EXTENDED_ARG             2
+           3546 LOAD_CONST             548 ('fr')
+           3548 STORE_SUBSCR
+
+626        3552 LOAD_NAME               11 (GUIDE_FR)
+           3554 LOAD_NAME               19 (GUIDE)
+           3556 EXTENDED_ARG             2
+           3558 LOAD_CONST             548 ('fr')
+           3560 STORE_SUBSCR
+
+627        3564 PUSH_NULL
+           3566 LOAD_NAME                5 (UI_AC)
+           3568 LOAD_ATTR               40 (items)
+           3588 CALL                     0
+           3596 GET_ITER
+        >> 3598 FOR_ITER                25 (to 3652)
+           3602 UNPACK_SEQUENCE          2
+           3606 STORE_NAME              21 (_lang)
+           3608 STORE_NAME              22 (_texts)
+
+628        3610 LOAD_NAME               17 (UI)
+           3612 LOAD_NAME               21 (_lang)
+           3614 BINARY_SUBSCR
+           3618 LOAD_ATTR               47 (NULL|self + update)
+           3638 LOAD_NAME               22 (_texts)
+           3640 CALL                     1
+           3648 POP_TOP
+           3650 JUMP_BACKWARD           27 (to 3598)
+
+627     >> 3652 END_FOR
+
+629        3654 PUSH_NULL
+           3656 LOAD_NAME                9 (UI_LIC)
+           3658 LOAD_ATTR               40 (items)
+           3678 CALL                     0
+           3686 GET_ITER
+        >> 3688 FOR_ITER                25 (to 3742)
+           3692 UNPACK_SEQUENCE          2
+           3696 STORE_NAME              21 (_lang)
+           3698 STORE_NAME              22 (_texts)
+
+630        3700 LOAD_NAME               17 (UI)
+           3702 LOAD_NAME               21 (_lang)
+           3704 BINARY_SUBSCR
+           3708 LOAD_ATTR               47 (NULL|self + update)
+           3728 LOAD_NAME               22 (_texts)
+           3730 CALL                     1
+           3738 POP_TOP
+           3740 JUMP_BACKWARD           27 (to 3688)
+
+629     >> 3742 END_FOR
+
+631        3744 PUSH_NULL
+           3746 LOAD_NAME                7 (UI_EX)
+           3748 LOAD_ATTR               40 (items)
+           3768 CALL                     0
+           3776 GET_ITER
+        >> 3778 FOR_ITER                25 (to 3832)
+           3782 UNPACK_SEQUENCE          2
+           3786 STORE_NAME              21 (_lang)
+           3788 STORE_NAME              22 (_texts)
+
+632        3790 LOAD_NAME               17 (UI)
+           3792 LOAD_NAME               21 (_lang)
+           3794 BINARY_SUBSCR
+           3798 LOAD_ATTR               47 (NULL|self + update)
+           3818 LOAD_NAME               22 (_texts)
+           3820 CALL                     1
+           3828 POP_TOP
+           3830 JUMP_BACKWARD           27 (to 3778)
+
+631     >> 3832 END_FOR
+
+635        3834 EXTENDED_ARG             2
+           3836 LOAD_CONST             549 ('lang')
+           3838 LOAD_NAME               15 (str)
+           3840 EXTENDED_ARG             2
+           3842 LOAD_CONST             550 ('return')
+           3844 LOAD_NAME               15 (str)
+           3846 BUILD_TUPLE              4
+           3848 EXTENDED_ARG             2
+           3850 LOAD_CONST             551 (<code object norm at 0x7f6aed17c030, file "i18n.py", line 635>)
+           3852 MAKE_FUNCTION            4 (annotations)
+           3854 STORE_NAME              24 (norm)
+
+639        3856 EXTENDED_ARG             2
+           3858 LOAD_CONST             549 ('lang')
+           3860 LOAD_NAME               15 (str)
+           3862 EXTENDED_ARG             2
+           3864 LOAD_CONST             552 ('key')
+           3866 LOAD_NAME               15 (str)
+           3868 EXTENDED_ARG             2
+           3870 LOAD_CONST             550 ('return')
+           3872 LOAD_NAME               15 (str)
+           3874 BUILD_TUPLE              6
+           3876 EXTENDED_ARG             2
+           3878 LOAD_CONST             553 (<code object t at 0x7f6aed7a8f30, file "i18n.py", line 639>)
+           3880 MAKE_FUNCTION            4 (annotations)
+           3882 STORE_NAME              25 (t)
+
+645        3884 EXTENDED_ARG             2
+           3886 LOAD_CONST             549 ('lang')
+           3888 LOAD_NAME               15 (str)
+           3890 EXTENDED_ARG             2
+           3892 LOAD_CONST             550 ('return')
+           3894 LOAD_NAME                2 (List)
+           3896 LOAD_NAME               16 (Block)
+           3898 BINARY_SUBSCR
+           3902 BUILD_TUPLE              4
+           3904 EXTENDED_ARG             2
+           3906 LOAD_CONST             554 (<code object guide at 0x7f6aed7fd020, file "i18n.py", line 645>)
+           3908 MAKE_FUNCTION            4 (annotations)
+           3910 STORE_NAME              26 (guide)
+           3912 EXTENDED_ARG             2
+           3914 RETURN_CONST           555 (None)
+
+Disassembly of <code object norm at 0x7f6aed17c030, file "i18n.py", line 635>:
+635           0 RESUME                   0
+
+636           2 LOAD_FAST                0 (lang)
+              4 LOAD_GLOBAL              0 (UI)
+             14 CONTAINS_OP              0
+             16 POP_JUMP_IF_FALSE        2 (to 22)
+             18 LOAD_FAST                0 (lang)
+             20 RETURN_VALUE
+        >>   22 LOAD_GLOBAL              2 (DEFAULT_LANG)
+             32 RETURN_VALUE
+
+Disassembly of <code object t at 0x7f6aed7a8f30, file "i18n.py", line 639>:
+639           0 RESUME                   0
+
+640           2 NOP
+
+641           4 LOAD_GLOBAL              0 (UI)
+             14 LOAD_ATTR                3 (NULL|self + get)
+             34 LOAD_FAST                0 (lang)
+             36 BUILD_MAP                0
+             38 CALL                     2
+             46 LOAD_ATTR                3 (NULL|self + get)
+             66 LOAD_FAST                1 (key)
+             68 CALL                     1
+             76 COPY                     1
+             78 POP_JUMP_IF_TRUE        32 (to 144)
+             80 POP_TOP
+             82 LOAD_GLOBAL              0 (UI)
+             92 LOAD_GLOBAL              4 (DEFAULT_LANG)
+            102 BINARY_SUBSCR
+            106 LOAD_ATTR                3 (NULL|self + get)
+            126 LOAD_FAST                1 (key)
+            128 CALL                     1
+            136 COPY                     1
+            138 POP_JUMP_IF_TRUE         2 (to 144)
+            140 POP_TOP
+            142 LOAD_FAST                1 (key)
+        >>  144 STORE_FAST               3 (s)
+
+642         146 LOAD_FAST                2 (kw)
+            148 POP_JUMP_IF_FALSE       18 (to 186)
+            150 PUSH_NULL
+            152 LOAD_FAST                3 (s)
+            154 LOAD_ATTR                6 (format)
+            174 LOAD_CONST               1 (())
+            176 BUILD_MAP                0
+            178 LOAD_FAST                2 (kw)
+            180 DICT_MERGE               1
+            182 CALL_FUNCTION_EX         1
+            184 RETURN_VALUE
+        >>  186 LOAD_FAST                3 (s)
+            188 RETURN_VALUE
+
+Disassembly of <code object guide at 0x7f6aed7fd020, file "i18n.py", line 645>:
+645           0 RESUME                   0
+
+646           2 LOAD_GLOBAL              0 (GUIDE)
+             12 LOAD_ATTR                3 (NULL|self + get)
+             32 LOAD_FAST                0 (lang)
+             34 CALL                     1
+             42 COPY                     1
+             44 POP_JUMP_IF_TRUE        13 (to 72)
+             46 POP_TOP
+             48 LOAD_GLOBAL              0 (GUIDE)
+             58 LOAD_GLOBAL              4 (DEFAULT_LANG)
+             68 BINARY_SUBSCR
+        >>   72 RETURN_VALUE

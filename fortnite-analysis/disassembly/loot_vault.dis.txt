@@ -1,0 +1,731 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+  9           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (os)
+             10 STORE_NAME               0 (os)
+
+ 10          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (queue)
+             18 STORE_NAME               1 (queue)
+
+ 11          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              2 (threading)
+             26 STORE_NAME               2 (threading)
+
+ 12          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               1 (None)
+             32 IMPORT_NAME              3 (time)
+             34 STORE_NAME               3 (time)
+
+ 13          36 LOAD_CONST               0 (0)
+             38 LOAD_CONST               2 (('Callable', 'List', 'Optional'))
+             40 IMPORT_NAME              4 (typing)
+             42 IMPORT_FROM              5 (Callable)
+             44 STORE_NAME               5 (Callable)
+             46 IMPORT_FROM              6 (List)
+             48 STORE_NAME               6 (List)
+             50 IMPORT_FROM              7 (Optional)
+             52 STORE_NAME               7 (Optional)
+             54 POP_TOP
+
+ 15          56 LOAD_CONST               0 (0)
+             58 LOAD_CONST               1 (None)
+             60 IMPORT_NAME              8 (cv2)
+             62 STORE_NAME               8 (cv2)
+
+ 16          64 LOAD_CONST               0 (0)
+             66 LOAD_CONST               1 (None)
+             68 IMPORT_NAME              9 (numpy)
+             70 STORE_NAME              10 (np)
+
+ 18          72 LOAD_CONST               0 (0)
+             74 LOAD_CONST               1 (None)
+             76 IMPORT_NAME             11 (config)
+             78 STORE_NAME              11 (config)
+
+ 20          80 LOAD_CONST               3 ('loot_vault')
+             82 STORE_NAME              12 (FOLDER_NAME)
+
+ 21          84 LOAD_CONST               4 (100)
+             86 STORE_NAME              13 (MAX_FILES)
+
+ 24          88 LOAD_CONST               5 ('return')
+             90 LOAD_NAME               14 (str)
+             92 BUILD_TUPLE              2
+             94 LOAD_CONST               6 (<code object default_folder at 0x7f6aed1d0620, file "loot_vault.py", line 24>)
+             96 MAKE_FUNCTION            4 (annotations)
+             98 STORE_NAME              15 (default_folder)
+
+ 28         100 PUSH_NULL
+            102 LOAD_BUILD_CLASS
+            104 LOAD_CONST               7 (<code object LootVault at 0x7f6af1f8d5f0, file "loot_vault.py", line 28>)
+            106 MAKE_FUNCTION            0
+            108 LOAD_CONST               8 ('LootVault')
+            110 CALL                     2
+            118 STORE_NAME              16 (LootVault)
+            120 RETURN_CONST             1 (None)
+
+Disassembly of <code object default_folder at 0x7f6aed1d0620, file "loot_vault.py", line 24>:
+ 24           0 RESUME                   0
+
+ 25           2 LOAD_GLOBAL              0 (os)
+             12 LOAD_ATTR                2 (path)
+             32 LOAD_ATTR                5 (NULL|self + join)
+             52 LOAD_GLOBAL              7 (NULL + config)
+             62 LOAD_ATTR                8 (base_dir)
+             82 CALL                     0
+             90 LOAD_GLOBAL             10 (FOLDER_NAME)
+            100 CALL                     2
+            108 RETURN_VALUE
+
+Disassembly of <code object LootVault at 0x7f6af1f8d5f0, file "loot_vault.py", line 28>:
+ 28           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('LootVault')
+              8 STORE_NAME               2 (__qualname__)
+
+ 29          10 LOAD_CONST               1 (None)
+             12 LOAD_NAME                3 (MAX_FILES)
+             14 LOAD_NAME                4 (time)
+             16 LOAD_ATTR                8 (time)
+
+ 30          36 LOAD_CONST               2 (False)
+             38 LOAD_CONST               1 (None)
+
+ 29          40 BUILD_TUPLE              5
+             42 LOAD_CONST               3 ('folder')
+             44 LOAD_NAME                5 (Optional)
+             46 LOAD_NAME                6 (str)
+             48 BINARY_SUBSCR
+             52 LOAD_CONST               4 ('max_files')
+             54 LOAD_NAME                7 (int)
+             56 LOAD_CONST               5 ('now')
+             58 LOAD_NAME                8 (Callable)
+             60 BUILD_LIST               0
+             62 LOAD_NAME                9 (float)
+             64 BUILD_TUPLE              2
+             66 BINARY_SUBSCR
+             70 LOAD_CONST               6 ('sync')
+
+ 30          72 LOAD_NAME               10 (bool)
+
+ 29          74 LOAD_CONST               7 ('log')
+
+ 30          76 LOAD_NAME                5 (Optional)
+             78 LOAD_NAME                8 (Callable)
+             80 LOAD_NAME                6 (str)
+             82 BUILD_LIST               1
+             84 LOAD_CONST               1 (None)
+             86 BUILD_TUPLE              2
+             88 BINARY_SUBSCR
+             92 BINARY_SUBSCR
+
+ 29          96 BUILD_TUPLE             10
+             98 LOAD_CONST               8 (<code object __init__ at 0x7f6aed179470, file "loot_vault.py", line 29>)
+            100 MAKE_FUNCTION            5 (defaults, annotations)
+            102 STORE_NAME              11 (__init__)
+
+ 41         104 LOAD_CONST              22 ((0,))
+            106 LOAD_CONST               9 ('frame')
+            108 LOAD_NAME               12 (np)
+            110 LOAD_ATTR               26 (ndarray)
+            130 LOAD_CONST              10 ('loop')
+            132 LOAD_NAME                7 (int)
+            134 LOAD_CONST              11 ('return')
+            136 LOAD_CONST               1 (None)
+            138 BUILD_TUPLE              6
+            140 LOAD_CONST              12 (<code object save at 0x179d3d30, file "loot_vault.py", line 41>)
+            142 MAKE_FUNCTION            5 (defaults, annotations)
+            144 STORE_NAME              14 (save)
+
+ 56         146 LOAD_CONST              23 (('return', None))
+            148 LOAD_CONST              13 (<code object _run at 0x7f6af1de3b20, file "loot_vault.py", line 56>)
+            150 MAKE_FUNCTION            4 (annotations)
+            152 STORE_NAME              15 (_run)
+
+ 67         154 LOAD_CONST               9 ('frame')
+            156 LOAD_NAME               12 (np)
+            158 LOAD_ATTR               26 (ndarray)
+            178 LOAD_CONST              10 ('loop')
+            180 LOAD_NAME                7 (int)
+            182 LOAD_CONST              14 ('t')
+            184 LOAD_NAME                9 (float)
+            186 LOAD_CONST              15 ('seq')
+            188 LOAD_NAME                7 (int)
+            190 LOAD_CONST              11 ('return')
+            192 LOAD_NAME                5 (Optional)
+            194 LOAD_NAME                6 (str)
+            196 BINARY_SUBSCR
+            200 BUILD_TUPLE             10
+            202 LOAD_CONST              16 (<code object _write at 0x17a882a0, file "loot_vault.py", line 67>)
+            204 MAKE_FUNCTION            4 (annotations)
+            206 STORE_NAME              16 (_write)
+
+ 80         208 LOAD_CONST              11 ('return')
+            210 LOAD_NAME               17 (List)
+            212 LOAD_NAME                6 (str)
+            214 BINARY_SUBSCR
+            218 BUILD_TUPLE              2
+            220 LOAD_CONST              17 (<code object files at 0x7f6aed179b30, file "loot_vault.py", line 80>)
+            222 MAKE_FUNCTION            4 (annotations)
+            224 STORE_NAME              18 (files)
+
+ 87         226 LOAD_CONST              23 (('return', None))
+            228 LOAD_CONST              18 (<code object _trim at 0x7f6aed7c1a70, file "loot_vault.py", line 87>)
+            230 MAKE_FUNCTION            4 (annotations)
+            232 STORE_NAME              19 (_trim)
+
+ 95         234 LOAD_CONST              24 ((3.0,))
+            236 LOAD_CONST              19 ('timeout')
+            238 LOAD_NAME                9 (float)
+            240 LOAD_CONST              11 ('return')
+            242 LOAD_CONST               1 (None)
+            244 BUILD_TUPLE              4
+            246 LOAD_CONST              20 (<code object flush at 0x7f6aed188410, file "loot_vault.py", line 95>)
+            248 MAKE_FUNCTION            5 (defaults, annotations)
+            250 STORE_NAME              20 (flush)
+
+101         252 LOAD_CONST              11 ('return')
+            254 LOAD_NAME               10 (bool)
+            256 BUILD_TUPLE              2
+            258 LOAD_CONST              21 (<code object open_folder at 0x7f6af1de3c90, file "loot_vault.py", line 101>)
+            260 MAKE_FUNCTION            4 (annotations)
+            262 STORE_NAME              21 (open_folder)
+            264 RETURN_CONST             1 (None)
+
+Disassembly of <code object __init__ at 0x7f6aed179470, file "loot_vault.py", line 29>:
+ 29           0 RESUME                   0
+
+ 31           2 LOAD_FAST                1 (folder)
+              4 COPY                     1
+              6 POP_JUMP_IF_TRUE        10 (to 28)
+              8 POP_TOP
+             10 LOAD_GLOBAL              1 (NULL + default_folder)
+             20 CALL                     0
+        >>   28 LOAD_FAST                0 (self)
+             30 STORE_ATTR               1 (folder)
+
+ 32          40 LOAD_GLOBAL              5 (NULL + max)
+             50 LOAD_CONST               1 (1)
+             52 LOAD_GLOBAL              7 (NULL + int)
+             62 LOAD_FAST                2 (max_files)
+             64 CALL                     1
+             72 CALL                     2
+             80 LOAD_FAST                0 (self)
+             82 STORE_ATTR               4 (max_files)
+
+ 33          92 LOAD_FAST                3 (now)
+             94 LOAD_FAST                0 (self)
+             96 STORE_ATTR               5 (_now)
+
+ 34         106 LOAD_FAST                4 (sync)
+            108 LOAD_FAST                0 (self)
+            110 STORE_ATTR               6 (_sync)
+
+ 35         120 LOAD_FAST                5 (log)
+            122 COPY                     1
+            124 POP_JUMP_IF_TRUE         3 (to 132)
+            126 POP_TOP
+            128 LOAD_CONST               2 (<code object <lambda> at 0x7f6aed1a5ca0, file "loot_vault.py", line 35>)
+            130 MAKE_FUNCTION            0
+        >>  132 LOAD_FAST                0 (self)
+            134 STORE_ATTR               7 (log)
+
+ 36         144 LOAD_GLOBAL             17 (NULL + queue)
+            154 LOAD_ATTR               18 (Queue)
+            174 LOAD_CONST               3 (6)
+            176 KW_NAMES                 4 (('maxsize',))
+            178 CALL                     1
+            186 LOAD_FAST                0 (self)
+            188 STORE_ATTR              10 (_q)
+
+ 37         198 LOAD_CONST               0 (None)
+            200 LOAD_FAST                0 (self)
+            202 STORE_ATTR              11 (_thread)
+
+ 38         212 LOAD_CONST               5 (0)
+            214 LOAD_FAST                0 (self)
+            216 STORE_ATTR              12 (_seq)
+            226 RETURN_CONST             0 (None)
+
+Disassembly of <code object <lambda> at 0x7f6aed1a5ca0, file "loot_vault.py", line 35>:
+ 35           0 RESUME                   0
+              2 RETURN_CONST             0 (None)
+
+Disassembly of <code object save at 0x179d3d30, file "loot_vault.py", line 41>:
+ 41           0 RESUME                   0
+
+ 42           2 NOP
+
+ 43           4 LOAD_FAST                0 (self)
+              6 COPY                     1
+              8 LOAD_ATTR                0 (_seq)
+             28 LOAD_CONST               1 (1)
+             30 BINARY_OP               13 (+=)
+             34 SWAP                     2
+             36 STORE_ATTR               0 (_seq)
+
+ 44          46 LOAD_GLOBAL              3 (NULL + np)
+             56 LOAD_ATTR                4 (array)
+             76 LOAD_FAST                1 (frame)
+             78 LOAD_CONST               2 (True)
+             80 KW_NAMES                 3 (('copy',))
+             82 CALL                     2
+             90 LOAD_GLOBAL              7 (NULL + int)
+            100 LOAD_FAST                2 (loop)
+            102 CALL                     1
+            110 LOAD_FAST                0 (self)
+            112 LOAD_ATTR                9 (NULL|self + _now)
+            132 CALL                     0
+            140 LOAD_FAST                0 (self)
+            142 LOAD_ATTR                0 (_seq)
+            162 BUILD_TUPLE              4
+            164 STORE_FAST               3 (item)
+
+ 45         166 LOAD_FAST                0 (self)
+            168 LOAD_ATTR               10 (_sync)
+            188 POP_JUMP_IF_FALSE       16 (to 222)
+
+ 46         190 PUSH_NULL
+            192 LOAD_FAST                0 (self)
+            194 LOAD_ATTR               12 (_write)
+            214 LOAD_FAST                3 (item)
+            216 CALL_FUNCTION_EX         0
+            218 POP_TOP
+
+ 47         220 RETURN_CONST             0 (None)
+
+ 48     >>  222 LOAD_FAST                0 (self)
+            224 LOAD_ATTR               14 (_thread)
+            244 POP_JUMP_IF_NONE        26 (to 298)
+            246 LOAD_FAST                0 (self)
+            248 LOAD_ATTR               14 (_thread)
+            268 LOAD_ATTR               17 (NULL|self + is_alive)
+            288 CALL                     0
+            296 POP_JUMP_IF_TRUE        65 (to 428)
+
+ 49     >>  298 LOAD_GLOBAL             19 (NULL + threading)
+            308 LOAD_ATTR               20 (Thread)
+            328 LOAD_FAST                0 (self)
+            330 LOAD_ATTR               22 (_run)
+            350 LOAD_CONST               2 (True)
+            352 LOAD_CONST               4 ('pk-auto-loot')
+            354 KW_NAMES                 5 (('target', 'daemon', 'name'))
+            356 CALL                     3
+            364 LOAD_FAST                0 (self)
+            366 STORE_ATTR               7 (_thread)
+
+ 50         376 LOAD_FAST                0 (self)
+            378 LOAD_ATTR               14 (_thread)
+            398 LOAD_ATTR               25 (NULL|self + start)
+            418 CALL                     0
+            426 POP_TOP
+
+ 51     >>  428 LOAD_FAST                0 (self)
+            430 LOAD_ATTR               26 (_q)
+            450 LOAD_ATTR               29 (NULL|self + put_nowait)
+            470 LOAD_FAST                3 (item)
+            472 CALL                     1
+            480 POP_TOP
+            482 RETURN_CONST             0 (None)
+        >>  484 PUSH_EXC_INFO
+
+ 52         486 LOAD_GLOBAL             30 (Exception)
+            496 CHECK_EXC_MATCH
+            498 POP_JUMP_IF_FALSE        3 (to 506)
+            500 POP_TOP
+
+ 53         502 POP_EXCEPT
+            504 RETURN_CONST             0 (None)
+
+ 52     >>  506 RERAISE                  0
+        >>  508 COPY                     3
+            510 POP_EXCEPT
+            512 RERAISE                  1
+ExceptionTable:
+  4 to 218 -> 484 [0]
+  222 to 480 -> 484 [0]
+  484 to 500 -> 508 [1] lasti
+  506 to 506 -> 508 [1] lasti
+
+Disassembly of <code object _run at 0x7f6af1de3b20, file "loot_vault.py", line 56>:
+ 56           0 RESUME                   0
+
+ 57           2 NOP
+
+ 58     >>    4 NOP
+
+ 59           6 LOAD_FAST                0 (self)
+              8 LOAD_ATTR                0 (_q)
+             28 LOAD_ATTR                3 (NULL|self + get)
+             48 LOAD_CONST               1 (30)
+             50 KW_NAMES                 2 (('timeout',))
+             52 CALL                     1
+             60 STORE_FAST               1 (item)
+
+ 62          62 NOP
+
+ 63          64 PUSH_NULL
+             66 LOAD_FAST                0 (self)
+             68 LOAD_ATTR                8 (_write)
+             88 LOAD_FAST                1 (item)
+             90 CALL_FUNCTION_EX         0
+             92 POP_TOP
+
+ 57     >>   94 JUMP_BACKWARD           46 (to 4)
+        >>   96 PUSH_EXC_INFO
+
+ 60          98 LOAD_GLOBAL              4 (queue)
+            108 LOAD_ATTR                6 (Empty)
+            128 CHECK_EXC_MATCH
+            130 POP_JUMP_IF_FALSE        3 (to 138)
+            132 POP_TOP
+
+ 61         134 POP_EXCEPT
+            136 RETURN_CONST             0 (None)
+
+ 60     >>  138 RERAISE                  0
+        >>  140 COPY                     3
+            142 POP_EXCEPT
+            144 RERAISE                  1
+        >>  146 PUSH_EXC_INFO
+
+ 64         148 LOAD_GLOBAL             10 (Exception)
+            158 CHECK_EXC_MATCH
+            160 POP_JUMP_IF_FALSE        3 (to 168)
+            162 POP_TOP
+
+ 65         164 POP_EXCEPT
+            166 JUMP_BACKWARD           37 (to 94)
+
+ 64     >>  168 RERAISE                  0
+        >>  170 COPY                     3
+            172 POP_EXCEPT
+            174 RERAISE                  1
+ExceptionTable:
+  6 to 60 -> 96 [0]
+  64 to 92 -> 146 [0]
+  96 to 132 -> 140 [1] lasti
+  138 to 138 -> 140 [1] lasti
+  146 to 162 -> 170 [1] lasti
+  168 to 168 -> 170 [1] lasti
+
+Disassembly of <code object _write at 0x17a882a0, file "loot_vault.py", line 67>:
+ 67           0 RESUME                   0
+
+ 68           2 LOAD_GLOBAL              1 (NULL + os)
+             12 LOAD_ATTR                2 (makedirs)
+             32 LOAD_FAST                0 (self)
+             34 LOAD_ATTR                4 (folder)
+             54 LOAD_CONST               1 (True)
+             56 KW_NAMES                 2 (('exist_ok',))
+             58 CALL                     2
+             66 POP_TOP
+
+ 69          68 LOAD_GLOBAL              7 (NULL + time)
+             78 LOAD_ATTR                8 (strftime)
+             98 LOAD_CONST               3 ('%Y%m%d_%H%M%S')
+            100 LOAD_GLOBAL              7 (NULL + time)
+            110 LOAD_ATTR               10 (localtime)
+            130 LOAD_FAST                3 (t)
+            132 CALL                     1
+            140 CALL                     2
+            148 STORE_FAST               5 (stamp)
+
+ 70         150 LOAD_GLOBAL              0 (os)
+            160 LOAD_ATTR               12 (path)
+            180 LOAD_ATTR               15 (NULL|self + join)
+            200 LOAD_FAST                0 (self)
+            202 LOAD_ATTR                4 (folder)
+            222 LOAD_CONST               4 ('loot_')
+            224 LOAD_FAST                5 (stamp)
+            226 FORMAT_VALUE             0
+            228 LOAD_CONST               5 ('_loop')
+            230 LOAD_FAST                2 (loop)
+            232 FORMAT_VALUE             0
+            234 LOAD_CONST               6 ('.png')
+            236 BUILD_STRING             5
+            238 CALL                     2
+            246 STORE_FAST               6 (path)
+
+ 71         248 LOAD_GLOBAL              0 (os)
+            258 LOAD_ATTR               12 (path)
+            278 LOAD_ATTR               17 (NULL|self + exists)
+            298 LOAD_FAST                6 (path)
+            300 CALL                     1
+            308 POP_JUMP_IF_FALSE       52 (to 414)
+
+ 72         310 LOAD_GLOBAL              0 (os)
+            320 LOAD_ATTR               12 (path)
+            340 LOAD_ATTR               15 (NULL|self + join)
+            360 LOAD_FAST                0 (self)
+            362 LOAD_ATTR                4 (folder)
+            382 LOAD_CONST               4 ('loot_')
+            384 LOAD_FAST                5 (stamp)
+            386 FORMAT_VALUE             0
+            388 LOAD_CONST               5 ('_loop')
+            390 LOAD_FAST                2 (loop)
+            392 FORMAT_VALUE             0
+            394 LOAD_CONST               7 ('_')
+            396 LOAD_FAST                4 (seq)
+            398 FORMAT_VALUE             0
+            400 LOAD_CONST               6 ('.png')
+            402 BUILD_STRING             7
+            404 CALL                     2
+            412 STORE_FAST               6 (path)
+
+ 73     >>  414 LOAD_GLOBAL             19 (NULL + cv2)
+            424 LOAD_ATTR               20 (imencode)
+            444 LOAD_CONST               6 ('.png')
+            446 LOAD_FAST                1 (frame)
+            448 CALL                     2
+            456 UNPACK_SEQUENCE          2
+            460 STORE_FAST               7 (ok)
+            462 STORE_FAST               8 (buf)
+
+ 74         464 LOAD_FAST                7 (ok)
+            466 POP_JUMP_IF_TRUE         1 (to 470)
+
+ 75         468 RETURN_CONST             0 (None)
+
+ 76     >>  470 LOAD_FAST                8 (buf)
+            472 LOAD_ATTR               23 (NULL|self + tofile)
+            492 LOAD_FAST                6 (path)
+            494 CALL                     1
+            502 POP_TOP
+
+ 77         504 LOAD_FAST                0 (self)
+            506 LOAD_ATTR               25 (NULL|self + _trim)
+            526 CALL                     0
+            534 POP_TOP
+
+ 78         536 LOAD_FAST                6 (path)
+            538 RETURN_VALUE
+
+Disassembly of <code object files at 0x7f6aed179b30, file "loot_vault.py", line 80>:
+ 80           0 RESUME                   0
+
+ 81           2 NOP
+
+ 82           4 LOAD_GLOBAL              1 (NULL + os)
+             14 LOAD_ATTR                2 (listdir)
+             34 LOAD_FAST                0 (self)
+             36 LOAD_ATTR                4 (folder)
+             56 CALL                     1
+             64 GET_ITER
+             66 LOAD_FAST_AND_CLEAR      1 (n)
+             68 SWAP                     2
+             70 BUILD_LIST               0
+             72 SWAP                     2
+        >>   74 FOR_ITER                40 (to 158)
+             78 STORE_FAST               1 (n)
+             80 LOAD_FAST                1 (n)
+             82 LOAD_ATTR                7 (NULL|self + startswith)
+            102 LOAD_CONST               1 ('loot_')
+            104 CALL                     1
+            112 POP_JUMP_IF_TRUE         1 (to 116)
+            114 JUMP_BACKWARD           21 (to 74)
+        >>  116 LOAD_FAST                1 (n)
+            118 LOAD_ATTR                9 (NULL|self + endswith)
+            138 LOAD_CONST               2 ('.png')
+            140 CALL                     1
+            148 POP_JUMP_IF_TRUE         1 (to 152)
+            150 JUMP_BACKWARD           39 (to 74)
+        >>  152 LOAD_FAST                1 (n)
+            154 LIST_APPEND              2
+            156 JUMP_BACKWARD           42 (to 74)
+        >>  158 END_FOR
+            160 STORE_FAST               2 (names)
+            162 STORE_FAST               1 (n)
+
+ 85         164 LOAD_GLOBAL             13 (NULL + sorted)
+            174 LOAD_FAST                2 (names)
+            176 CALL                     1
+            184 RETURN_VALUE
+        >>  186 SWAP                     2
+            188 POP_TOP
+
+ 82         190 SWAP                     2
+            192 STORE_FAST               1 (n)
+            194 RERAISE                  0
+        >>  196 PUSH_EXC_INFO
+
+ 83         198 LOAD_GLOBAL             10 (OSError)
+            208 CHECK_EXC_MATCH
+            210 POP_JUMP_IF_FALSE        5 (to 222)
+            212 POP_TOP
+
+ 84         214 BUILD_LIST               0
+            216 SWAP                     2
+            218 POP_EXCEPT
+            220 RETURN_VALUE
+
+ 83     >>  222 RERAISE                  0
+        >>  224 COPY                     3
+            226 POP_EXCEPT
+            228 RERAISE                  1
+ExceptionTable:
+  4 to 68 -> 196 [0]
+  70 to 112 -> 186 [2]
+  116 to 148 -> 186 [2]
+  152 to 158 -> 186 [2]
+  160 to 162 -> 196 [0]
+  186 to 194 -> 196 [0]
+  196 to 216 -> 224 [1] lasti
+  222 to 222 -> 224 [1] lasti
+
+Disassembly of <code object _trim at 0x7f6aed7c1a70, file "loot_vault.py", line 87>:
+ 87           0 RESUME                   0
+
+ 88           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                1 (NULL|self + files)
+             24 CALL                     0
+             32 STORE_FAST               1 (names)
+
+ 89          34 LOAD_FAST                1 (names)
+             36 LOAD_CONST               0 (None)
+             38 LOAD_GLOBAL              3 (NULL + max)
+             48 LOAD_CONST               1 (0)
+             50 LOAD_GLOBAL              5 (NULL + len)
+             60 LOAD_FAST                1 (names)
+             62 CALL                     1
+             70 LOAD_FAST                0 (self)
+             72 LOAD_ATTR                6 (max_files)
+             92 BINARY_OP               10 (-)
+             96 CALL                     2
+            104 BINARY_SLICE
+            106 GET_ITER
+        >>  108 FOR_ITER                64 (to 240)
+            112 STORE_FAST               2 (n)
+
+ 90         114 NOP
+
+ 91         116 LOAD_GLOBAL              9 (NULL + os)
+            126 LOAD_ATTR               10 (remove)
+            146 LOAD_GLOBAL              8 (os)
+            156 LOAD_ATTR               12 (path)
+            176 LOAD_ATTR               15 (NULL|self + join)
+            196 LOAD_FAST                0 (self)
+            198 LOAD_ATTR               16 (folder)
+            218 LOAD_FAST                2 (n)
+            220 CALL                     2
+            228 CALL                     1
+            236 POP_TOP
+            238 JUMP_BACKWARD           66 (to 108)
+
+ 89     >>  240 END_FOR
+            242 RETURN_CONST             0 (None)
+        >>  244 PUSH_EXC_INFO
+
+ 92         246 LOAD_GLOBAL             18 (OSError)
+            256 CHECK_EXC_MATCH
+            258 POP_JUMP_IF_FALSE        3 (to 266)
+            260 POP_TOP
+
+ 93         262 POP_EXCEPT
+            264 JUMP_BACKWARD           79 (to 108)
+
+ 92     >>  266 RERAISE                  0
+        >>  268 COPY                     3
+            270 POP_EXCEPT
+            272 RERAISE                  1
+ExceptionTable:
+  116 to 236 -> 244 [1]
+  244 to 260 -> 268 [2] lasti
+  266 to 266 -> 268 [2] lasti
+
+Disassembly of <code object flush at 0x7f6aed188410, file "loot_vault.py", line 95>:
+ 95           0 RESUME                   0
+
+ 96           2 NOP
+
+ 97           4 LOAD_GLOBAL              1 (NULL + time)
+             14 LOAD_ATTR                2 (monotonic)
+             34 CALL                     0
+             42 LOAD_FAST                1 (timeout)
+             44 BINARY_OP                0 (+)
+             48 STORE_FAST               2 (end)
+
+ 98          50 LOAD_FAST                0 (self)
+             52 LOAD_ATTR                4 (_q)
+             72 LOAD_ATTR                7 (NULL|self + empty)
+             92 CALL                     0
+            100 POP_JUMP_IF_TRUE        97 (to 296)
+            102 LOAD_GLOBAL              1 (NULL + time)
+            112 LOAD_ATTR                2 (monotonic)
+            132 CALL                     0
+            140 LOAD_FAST                2 (end)
+            142 COMPARE_OP               2 (<)
+            146 POP_JUMP_IF_FALSE       73 (to 294)
+
+ 99     >>  148 LOAD_GLOBAL              1 (NULL + time)
+            158 LOAD_ATTR                8 (sleep)
+            178 LOAD_CONST               1 (0.02)
+            180 CALL                     1
+            188 POP_TOP
+
+ 98         190 LOAD_FAST                0 (self)
+            192 LOAD_ATTR                4 (_q)
+            212 LOAD_ATTR                7 (NULL|self + empty)
+            232 CALL                     0
+            240 POP_JUMP_IF_TRUE        25 (to 292)
+            242 LOAD_GLOBAL              1 (NULL + time)
+            252 LOAD_ATTR                2 (monotonic)
+            272 CALL                     0
+            280 LOAD_FAST                2 (end)
+            282 COMPARE_OP               2 (<)
+            286 POP_JUMP_IF_FALSE        1 (to 290)
+            288 JUMP_BACKWARD           71 (to 148)
+        >>  290 RETURN_CONST             0 (None)
+        >>  292 RETURN_CONST             0 (None)
+        >>  294 RETURN_CONST             0 (None)
+        >>  296 RETURN_CONST             0 (None)
+
+Disassembly of <code object open_folder at 0x7f6af1de3c90, file "loot_vault.py", line 101>:
+101           0 RESUME                   0
+
+102           2 NOP
+
+103           4 NOP
+
+104           6 LOAD_GLOBAL              1 (NULL + os)
+             16 LOAD_ATTR                2 (makedirs)
+             36 LOAD_FAST                0 (self)
+             38 LOAD_ATTR                4 (folder)
+             58 LOAD_CONST               1 (True)
+             60 KW_NAMES                 2 (('exist_ok',))
+             62 CALL                     2
+             70 POP_TOP
+
+105          72 LOAD_GLOBAL              1 (NULL + os)
+             82 LOAD_ATTR                6 (startfile)
+            102 LOAD_FAST                0 (self)
+            104 LOAD_ATTR                4 (folder)
+            124 CALL                     1
+            132 POP_TOP
+
+106         134 RETURN_CONST             1 (True)
+        >>  136 PUSH_EXC_INFO
+
+107         138 LOAD_GLOBAL              8 (Exception)
+            148 CHECK_EXC_MATCH
+            150 POP_JUMP_IF_FALSE        3 (to 158)
+            152 POP_TOP
+
+108         154 POP_EXCEPT
+            156 RETURN_CONST             3 (False)
+
+107     >>  158 RERAISE                  0
+        >>  160 COPY                     3
+            162 POP_EXCEPT
+            164 RERAISE                  1
+ExceptionTable:
+  6 to 132 -> 136 [0]
+  136 to 152 -> 160 [1] lasti
+  158 to 158 -> 160 [1] lasti

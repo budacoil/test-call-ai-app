@@ -1,0 +1,1426 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+  2           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (contextlib)
+             10 STORE_NAME               0 (contextlib)
+
+  3          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (random)
+             18 STORE_NAME               1 (random)
+
+  4          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              2 (time)
+             26 STORE_NAME               2 (time)
+
+  5          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               2 (('Callable', 'Optional'))
+             32 IMPORT_NAME              3 (typing)
+             34 IMPORT_FROM              4 (Callable)
+             36 STORE_NAME               4 (Callable)
+             38 IMPORT_FROM              5 (Optional)
+             40 STORE_NAME               5 (Optional)
+             42 POP_TOP
+
+  7          44 LOAD_CONST               0 (0)
+             46 LOAD_CONST               1 (None)
+             48 IMPORT_NAME              6 (humanizer)
+             50 STORE_NAME               6 (humanizer)
+
+  9          52 LOAD_CONST               3 (1)
+             54 STORE_NAME               7 (MOUSEEVENTF_MOVE)
+
+ 12          56 LOAD_CONST               4 ('dx')
+             58 LOAD_NAME                8 (int)
+             60 LOAD_CONST               5 ('dy')
+             62 LOAD_NAME                8 (int)
+             64 LOAD_CONST               6 ('return')
+             66 LOAD_CONST               1 (None)
+             68 BUILD_TUPLE              6
+             70 LOAD_CONST               7 (<code object _mouse_event_move at 0x7f6af1f81d10, file "controller.py", line 12>)
+             72 MAKE_FUNCTION            4 (annotations)
+             74 STORE_NAME               9 (_mouse_event_move)
+
+ 19          76 LOAD_CONST               1 (None)
+
+ 20          78 LOAD_NAME                2 (time)
+             80 LOAD_ATTR               20 (sleep)
+            100 LOAD_CONST               1 (None)
+
+ 19         102 BUILD_TUPLE              3
+            104 LOAD_CONST               4 ('dx')
+            106 LOAD_NAME                8 (int)
+            108 LOAD_CONST               5 ('dy')
+            110 LOAD_NAME                8 (int)
+            112 LOAD_CONST               8 ('duration_ms')
+            114 LOAD_NAME                8 (int)
+            116 LOAD_CONST               9 ('mover')
+            118 LOAD_NAME                5 (Optional)
+            120 LOAD_NAME                4 (Callable)
+            122 LOAD_NAME                8 (int)
+            124 LOAD_NAME                8 (int)
+            126 BUILD_LIST               2
+            128 LOAD_CONST               1 (None)
+            130 BUILD_TUPLE              2
+            132 BINARY_SUBSCR
+            136 BINARY_SUBSCR
+            140 LOAD_CONST              10 ('rng')
+
+ 20         142 LOAD_NAME                5 (Optional)
+            144 LOAD_NAME                1 (random)
+            146 LOAD_ATTR               22 (Random)
+            166 BINARY_SUBSCR
+
+ 19         170 LOAD_CONST               6 ('return')
+
+ 20         172 LOAD_NAME                8 (int)
+
+ 19         174 BUILD_TUPLE             12
+            176 LOAD_CONST              11 (<code object move_camera_smooth at 0x7f6af20c39f0, file "controller.py", line 19>)
+            178 MAKE_FUNCTION            5 (defaults, annotations)
+            180 STORE_NAME              12 (move_camera_smooth)
+
+ 34         182 LOAD_CONST              12 (<code object _cursor_pos at 0x7f6af1de5550, file "controller.py", line 34>)
+            184 MAKE_FUNCTION            0
+            186 STORE_NAME              13 (_cursor_pos)
+
+ 42         188 PUSH_NULL
+            190 LOAD_BUILD_CLASS
+            192 LOAD_CONST              13 (<code object Controller at 0x179d7ba0, file "controller.py", line 42>)
+            194 MAKE_FUNCTION            0
+            196 LOAD_CONST              14 ('Controller')
+            198 CALL                     2
+            206 STORE_NAME              14 (Controller)
+            208 RETURN_CONST             1 (None)
+
+Disassembly of <code object _mouse_event_move at 0x7f6af1f81d10, file "controller.py", line 12>:
+ 12           0 RESUME                   0
+
+ 13           2 NOP
+
+ 14           4 LOAD_CONST               1 (0)
+              6 LOAD_CONST               0 (None)
+              8 IMPORT_NAME              0 (ctypes)
+             10 STORE_FAST               2 (ctypes)
+
+ 16          12 LOAD_FAST                2 (ctypes)
+             14 LOAD_ATTR                2 (windll)
+             34 LOAD_ATTR                4 (user32)
+             54 LOAD_ATTR                7 (NULL|self + mouse_event)
+             74 LOAD_GLOBAL              8 (MOUSEEVENTF_MOVE)
+             84 LOAD_GLOBAL             11 (NULL + int)
+             94 LOAD_FAST                0 (dx)
+             96 CALL                     1
+            104 LOAD_GLOBAL             11 (NULL + int)
+            114 LOAD_FAST                1 (dy)
+            116 CALL                     1
+            124 LOAD_CONST               1 (0)
+            126 LOAD_CONST               1 (0)
+            128 CALL                     5
+            136 POP_TOP
+            138 RETURN_CONST             0 (None)
+
+Disassembly of <code object move_camera_smooth at 0x7f6af20c39f0, file "controller.py", line 19>:
+ 19           0 RESUME                   0
+
+ 21           2 NOP
+
+ 25           4 LOAD_FAST                3 (mover)
+              6 COPY                     1
+              8 POP_JUMP_IF_TRUE         6 (to 22)
+             10 POP_TOP
+             12 LOAD_GLOBAL              0 (_mouse_event_move)
+        >>   22 STORE_FAST               3 (mover)
+
+ 26          24 LOAD_GLOBAL              3 (NULL + humanizer)
+             34 LOAD_ATTR                4 (camera_steps)
+             54 LOAD_GLOBAL              7 (NULL + int)
+             64 LOAD_FAST                0 (dx)
+             66 CALL                     1
+             74 LOAD_GLOBAL              7 (NULL + int)
+             84 LOAD_FAST                1 (dy)
+             86 CALL                     1
+             94 LOAD_GLOBAL              7 (NULL + int)
+            104 LOAD_FAST                2 (duration_ms)
+            106 CALL                     1
+            114 LOAD_FAST                5 (rng)
+            116 COPY                     1
+            118 POP_JUMP_IF_TRUE        20 (to 160)
+            120 POP_TOP
+            122 LOAD_GLOBAL              9 (NULL + random)
+            132 LOAD_ATTR               10 (Random)
+            152 CALL                     0
+        >>  160 CALL                     4
+            168 STORE_FAST               6 (steps)
+
+ 27         170 LOAD_FAST                6 (steps)
+            172 GET_ITER
+        >>  174 FOR_ITER                27 (to 232)
+            178 UNPACK_SEQUENCE          3
+            182 STORE_FAST               7 (sx)
+            184 STORE_FAST               8 (sy)
+            186 STORE_FAST               9 (delay)
+
+ 28         188 LOAD_FAST                7 (sx)
+            190 POP_JUMP_IF_TRUE         2 (to 196)
+            192 LOAD_FAST                8 (sy)
+            194 POP_JUMP_IF_FALSE        9 (to 214)
+
+ 29     >>  196 PUSH_NULL
+            198 LOAD_FAST                3 (mover)
+            200 LOAD_FAST                7 (sx)
+            202 LOAD_FAST                8 (sy)
+            204 CALL                     2
+            212 POP_TOP
+
+ 30     >>  214 PUSH_NULL
+            216 LOAD_FAST                4 (sleeper)
+            218 LOAD_FAST                9 (delay)
+            220 CALL                     1
+            228 POP_TOP
+            230 JUMP_BACKWARD           29 (to 174)
+
+ 27     >>  232 END_FOR
+
+ 31         234 LOAD_GLOBAL             13 (NULL + len)
+            244 LOAD_FAST                6 (steps)
+            246 CALL                     1
+            254 RETURN_VALUE
+
+Disassembly of <code object _cursor_pos at 0x7f6af1de5550, file "controller.py", line 34>:
+ 34           0 RESUME                   0
+
+ 35           2 LOAD_CONST               1 (0)
+              4 LOAD_CONST               0 (None)
+              6 IMPORT_NAME              0 (ctypes)
+              8 STORE_FAST               0 (ctypes)
+
+ 36          10 LOAD_CONST               1 (0)
+             12 LOAD_CONST               2 (('wintypes',))
+             14 IMPORT_NAME              0 (ctypes)
+             16 IMPORT_FROM              1 (wintypes)
+             18 STORE_FAST               1 (wintypes)
+             20 POP_TOP
+
+ 38          22 LOAD_FAST                1 (wintypes)
+             24 LOAD_ATTR                5 (NULL|self + POINT)
+             44 CALL                     0
+             52 STORE_FAST               2 (pt)
+
+ 39          54 LOAD_FAST                0 (ctypes)
+             56 LOAD_ATTR                6 (windll)
+             76 LOAD_ATTR                8 (user32)
+             96 LOAD_ATTR               11 (NULL|self + GetCursorPos)
+            116 LOAD_FAST                0 (ctypes)
+            118 LOAD_ATTR               13 (NULL|self + byref)
+            138 LOAD_FAST                2 (pt)
+            140 CALL                     1
+            148 CALL                     1
+            156 POP_JUMP_IF_FALSE       24 (to 206)
+            158 LOAD_FAST                2 (pt)
+            160 LOAD_ATTR               14 (x)
+            180 LOAD_FAST                2 (pt)
+            182 LOAD_ATTR               16 (y)
+            202 BUILD_TUPLE              2
+            204 RETURN_VALUE
+        >>  206 LOAD_CONST               0 (None)
+            208 RETURN_VALUE
+
+Disassembly of <code object Controller at 0x179d7ba0, file "controller.py", line 42>:
+ 42           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('Controller')
+              8 STORE_NAME               2 (__qualname__)
+
+ 46          10 LOAD_CONST               1 (None)
+
+ 47          12 LOAD_NAME                3 (time)
+             14 LOAD_ATTR                8 (sleep)
+
+ 48          34 LOAD_NAME                3 (time)
+             36 LOAD_ATTR               10 (monotonic)
+
+ 49          56 LOAD_CONST               1 (None)
+
+ 50          58 LOAD_CONST               1 (None)
+
+ 51          60 LOAD_CONST               1 (None)
+
+ 52          62 LOAD_CONST               1 (None)
+
+ 53          64 LOAD_CONST               1 (None)
+
+ 54          66 LOAD_CONST               1 (None)
+
+ 55          68 LOAD_CONST               1 (None)
+
+ 56          70 LOAD_CONST               1 (None)
+
+ 57          72 LOAD_CONST               1 (None)
+
+ 43          74 BUILD_TUPLE             12
+             76 LOAD_CONST               2 ('clicker')
+
+ 46          78 LOAD_NAME                6 (Optional)
+             80 LOAD_NAME                7 (Callable)
+             82 LOAD_NAME                8 (int)
+             84 LOAD_NAME                8 (int)
+             86 BUILD_LIST               2
+             88 LOAD_CONST               1 (None)
+             90 BUILD_TUPLE              2
+             92 BINARY_SUBSCR
+             96 BINARY_SUBSCR
+
+ 43         100 LOAD_CONST               3 ('presser')
+
+ 49         102 LOAD_NAME                6 (Optional)
+            104 LOAD_NAME                7 (Callable)
+            106 LOAD_NAME                9 (str)
+            108 BUILD_LIST               1
+            110 LOAD_CONST               1 (None)
+            112 BUILD_TUPLE              2
+            114 BINARY_SUBSCR
+            118 BINARY_SUBSCR
+
+ 43         122 LOAD_CONST               4 ('focuser')
+
+ 50         124 LOAD_NAME                6 (Optional)
+            126 LOAD_NAME                7 (Callable)
+            128 BUILD_LIST               0
+            130 LOAD_NAME               10 (object)
+            132 BUILD_TUPLE              2
+            134 BINARY_SUBSCR
+            138 BINARY_SUBSCR
+
+ 43         142 LOAD_CONST               5 ('swapper')
+
+ 51         144 LOAD_NAME                6 (Optional)
+            146 LOAD_NAME                7 (Callable)
+            148 LOAD_CONST               6 (Ellipsis)
+            150 LOAD_NAME               10 (object)
+            152 BUILD_TUPLE              2
+            154 BINARY_SUBSCR
+            158 BINARY_SUBSCR
+
+ 43         162 LOAD_CONST               7 ('poster')
+
+ 52         164 LOAD_NAME                6 (Optional)
+            166 LOAD_NAME                7 (Callable)
+            168 LOAD_NAME                9 (str)
+            170 BUILD_LIST               1
+            172 LOAD_NAME               11 (bool)
+            174 BUILD_TUPLE              2
+            176 BINARY_SUBSCR
+            180 BINARY_SUBSCR
+
+ 43         184 LOAD_CONST               8 ('mover')
+
+ 53         186 LOAD_NAME                6 (Optional)
+            188 LOAD_NAME                7 (Callable)
+            190 LOAD_NAME                8 (int)
+            192 LOAD_NAME                8 (int)
+            194 BUILD_LIST               2
+            196 LOAD_CONST               1 (None)
+            198 BUILD_TUPLE              2
+            200 BINARY_SUBSCR
+            204 BINARY_SUBSCR
+
+ 43         208 LOAD_CONST               9 ('swinger')
+
+ 54         210 LOAD_NAME                6 (Optional)
+            212 LOAD_NAME                7 (Callable)
+            214 LOAD_NAME                8 (int)
+            216 LOAD_NAME                8 (int)
+            218 LOAD_NAME               12 (float)
+            220 BUILD_LIST               3
+            222 LOAD_CONST               1 (None)
+            224 BUILD_TUPLE              2
+            226 BINARY_SUBSCR
+            230 BINARY_SUBSCR
+
+ 43         234 LOAD_CONST              10 ('cursor')
+
+ 55         236 LOAD_NAME                6 (Optional)
+            238 LOAD_NAME                7 (Callable)
+            240 BUILD_LIST               0
+            242 LOAD_NAME               10 (object)
+            244 BUILD_TUPLE              2
+            246 BINARY_SUBSCR
+            250 BINARY_SUBSCR
+
+ 43         254 LOAD_CONST              11 ('rng')
+
+ 56         256 LOAD_NAME                6 (Optional)
+            258 LOAD_NAME               13 (random)
+            260 LOAD_ATTR               28 (Random)
+            280 BINARY_SUBSCR
+
+ 43         284 LOAD_CONST              12 ('away')
+
+ 57         286 LOAD_NAME                6 (Optional)
+            288 LOAD_NAME                7 (Callable)
+            290 BUILD_LIST               0
+            292 LOAD_NAME               11 (bool)
+            294 BUILD_TUPLE              2
+            296 BINARY_SUBSCR
+            300 BINARY_SUBSCR
+
+ 43         304 BUILD_TUPLE             20
+            306 LOAD_CONST              13 (<code object __init__ at 0x17a58fd0, file "controller.py", line 43>)
+            308 MAKE_FUNCTION            5 (defaults, annotations)
+            310 STORE_NAME              15 (__init__)
+
+ 74         312 LOAD_CONST              14 ('return')
+            314 LOAD_NAME               11 (bool)
+            316 BUILD_TUPLE              2
+            318 LOAD_CONST              15 (<code object _background at 0x7f6af1dd7630, file "controller.py", line 74>)
+            320 MAKE_FUNCTION            4 (annotations)
+            322 STORE_NAME              16 (_background)
+
+ 77         324 LOAD_CONST              36 (('key', None))
+            326 LOAD_CONST              17 ('kind')
+            328 LOAD_NAME                9 (str)
+            330 BUILD_TUPLE              2
+            332 LOAD_CONST              18 (<code object _input_context at 0x7f6af1ddac20, file "controller.py", line 77>)
+            334 MAKE_FUNCTION            5 (defaults, annotations)
+            336 STORE_NAME              17 (_input_context)
+
+ 81         338 LOAD_CONST              14 ('return')
+            340 LOAD_NAME               11 (bool)
+            342 BUILD_TUPLE              2
+            344 LOAD_CONST              19 (<code object _humanize at 0x7f6af1dbede0, file "controller.py", line 81>)
+            346 MAKE_FUNCTION            4 (annotations)
+            348 STORE_NAME              18 (_humanize)
+
+ 84         350 LOAD_CONST              20 ('x')
+            352 LOAD_NAME                8 (int)
+            354 LOAD_CONST              21 ('y')
+            356 LOAD_NAME                8 (int)
+            358 LOAD_CONST              14 ('return')
+            360 LOAD_CONST               1 (None)
+            362 BUILD_TUPLE              6
+            364 LOAD_CONST              22 (<code object _default_click at 0x17a64d20, file "controller.py", line 84>)
+            366 MAKE_FUNCTION            4 (annotations)
+            368 STORE_NAME              19 (_default_click)
+
+118         370 LOAD_NAME               20 (staticmethod)
+
+119         372 LOAD_CONST              20 ('x')
+            374 LOAD_NAME                8 (int)
+            376 LOAD_CONST              21 ('y')
+            378 LOAD_NAME                8 (int)
+            380 LOAD_CONST              23 ('hold')
+            382 LOAD_NAME               12 (float)
+            384 LOAD_CONST              14 ('return')
+            386 LOAD_CONST               1 (None)
+            388 BUILD_TUPLE              8
+            390 LOAD_CONST              24 (<code object _default_swing at 0x7f6aed7a8330, file "controller.py", line 118>)
+            392 MAKE_FUNCTION            4 (annotations)
+
+118         394 CALL                     0
+
+119         402 STORE_NAME              21 (_default_swing)
+
+130         404 LOAD_NAME               20 (staticmethod)
+
+131         406 LOAD_CONST              16 ('key')
+            408 LOAD_NAME                9 (str)
+            410 LOAD_CONST              14 ('return')
+            412 LOAD_CONST               1 (None)
+            414 BUILD_TUPLE              4
+            416 LOAD_CONST              25 (<code object _default_press at 0x7f6aed7a84b0, file "controller.py", line 130>)
+            418 MAKE_FUNCTION            4 (annotations)
+
+130         420 CALL                     0
+
+131         428 STORE_NAME              22 (_default_press)
+
+141         430 LOAD_CONST              16 ('key')
+            432 LOAD_NAME                9 (str)
+            434 LOAD_CONST              14 ('return')
+            436 LOAD_CONST               1 (None)
+            438 BUILD_TUPLE              4
+            440 LOAD_CONST              26 (<code object press at 0x17a61540, file "controller.py", line 141>)
+            442 MAKE_FUNCTION            4 (annotations)
+            444 STORE_NAME              23 (press)
+
+151         446 LOAD_CONST              14 ('return')
+            448 LOAD_NAME               11 (bool)
+            450 BUILD_TUPLE              2
+            452 LOAD_CONST              27 (<code object ready at 0x7f6af1ddad50, file "controller.py", line 151>)
+            454 MAKE_FUNCTION            4 (annotations)
+            456 STORE_NAME              24 (ready)
+
+154         458 LOAD_CONST              20 ('x')
+            460 LOAD_NAME                8 (int)
+            462 LOAD_CONST              21 ('y')
+            464 LOAD_NAME                8 (int)
+            466 LOAD_CONST              14 ('return')
+            468 LOAD_NAME               11 (bool)
+            470 BUILD_TUPLE              6
+            472 LOAD_CONST              28 (<code object click at 0x179d2680, file "controller.py", line 154>)
+            474 MAKE_FUNCTION            4 (annotations)
+            476 STORE_NAME              25 (click)
+
+171         478 LOAD_CONST              14 ('return')
+            480 LOAD_NAME               11 (bool)
+            482 BUILD_TUPLE              2
+            484 LOAD_CONST              29 (<code object user_away at 0x7f6aed7a0b30, file "controller.py", line 171>)
+            486 MAKE_FUNCTION            4 (annotations)
+            488 STORE_NAME              26 (user_away)
+
+178         490 LOAD_CONST              37 ((False,))
+            492 LOAD_CONST              30 ('dx')
+            494 LOAD_NAME                8 (int)
+            496 LOAD_CONST              31 ('dy')
+            498 LOAD_NAME                8 (int)
+            500 LOAD_CONST              32 ('duration_ms')
+            502 LOAD_NAME                8 (int)
+            504 LOAD_CONST              33 ('force')
+            506 LOAD_NAME               11 (bool)
+            508 LOAD_CONST              14 ('return')
+            510 LOAD_CONST               1 (None)
+            512 BUILD_TUPLE             10
+            514 LOAD_CONST              34 (<code object look at 0x7f6af20bbc40, file "controller.py", line 178>)
+            516 MAKE_FUNCTION            5 (defaults, annotations)
+            518 STORE_NAME              27 (look)
+
+190         520 LOAD_CONST              14 ('return')
+            522 LOAD_NAME               11 (bool)
+            524 BUILD_TUPLE              2
+            526 LOAD_CONST              35 (<code object swing at 0x17a3cbc0, file "controller.py", line 190>)
+            528 MAKE_FUNCTION            4 (annotations)
+            530 STORE_NAME              28 (swing)
+            532 RETURN_CONST             1 (None)
+
+Disassembly of <code object __init__ at 0x17a58fd0, file "controller.py", line 43>:
+ 43           0 RESUME                   0
+
+ 59           2 LOAD_FAST                1 (settings)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (s)
+
+ 60          16 LOAD_FAST                2 (clicker)
+             18 COPY                     1
+             20 POP_JUMP_IF_TRUE        12 (to 46)
+             22 POP_TOP
+             24 LOAD_FAST                0 (self)
+             26 LOAD_ATTR                2 (_default_click)
+        >>   46 LOAD_FAST                0 (self)
+             48 STORE_ATTR               2 (_clicker)
+
+ 61          58 LOAD_FAST                5 (presser)
+             60 COPY                     1
+             62 POP_JUMP_IF_TRUE        12 (to 88)
+             64 POP_TOP
+             66 LOAD_FAST                0 (self)
+             68 LOAD_ATTR                6 (_default_press)
+        >>   88 LOAD_FAST                0 (self)
+             90 STORE_ATTR               4 (_presser)
+
+ 62         100 LOAD_FAST                6 (focuser)
+            102 LOAD_FAST                0 (self)
+            104 STORE_ATTR               5 (_focuser)
+
+ 63         114 LOAD_FAST                7 (swapper)
+            116 LOAD_FAST                0 (self)
+            118 STORE_ATTR               6 (_swapper)
+
+ 64         128 LOAD_FAST                8 (poster)
+            130 LOAD_FAST                0 (self)
+            132 STORE_ATTR               7 (_poster)
+
+ 65         142 LOAD_FAST                9 (mover)
+            144 LOAD_FAST                0 (self)
+            146 STORE_ATTR               8 (_mover)
+
+ 66         156 LOAD_FAST               10 (swinger)
+            158 COPY                     1
+            160 POP_JUMP_IF_TRUE        12 (to 186)
+            162 POP_TOP
+            164 LOAD_FAST                0 (self)
+            166 LOAD_ATTR               18 (_default_swing)
+        >>  186 LOAD_FAST                0 (self)
+            188 STORE_ATTR              10 (_swinger)
+
+ 67         198 LOAD_FAST               11 (cursor)
+            200 COPY                     1
+            202 POP_JUMP_IF_TRUE         6 (to 216)
+            204 POP_TOP
+            206 LOAD_GLOBAL             22 (_cursor_pos)
+        >>  216 LOAD_FAST                0 (self)
+            218 STORE_ATTR              12 (_cursor)
+
+ 68         228 LOAD_FAST               12 (rng)
+            230 COPY                     1
+            232 POP_JUMP_IF_TRUE        20 (to 274)
+            234 POP_TOP
+            236 LOAD_GLOBAL             27 (NULL + random)
+            246 LOAD_ATTR               28 (Random)
+            266 CALL                     0
+        >>  274 LOAD_FAST                0 (self)
+            276 STORE_ATTR              15 (_rng)
+
+ 69         286 LOAD_FAST               13 (away)
+            288 LOAD_FAST                0 (self)
+            290 STORE_ATTR              16 (_away)
+
+ 70         300 LOAD_FAST                3 (sleeper)
+            302 LOAD_FAST                0 (self)
+            304 STORE_ATTR              17 (_sleep)
+
+ 71         314 LOAD_FAST                4 (clock)
+            316 LOAD_FAST                0 (self)
+            318 STORE_ATTR              18 (_clock)
+
+ 72         328 LOAD_CONST               1 (-1000000000.0)
+            330 LOAD_FAST                0 (self)
+            332 STORE_ATTR              19 (_last_click)
+            342 RETURN_CONST             0 (None)
+
+Disassembly of <code object _background at 0x7f6af1dd7630, file "controller.py", line 74>:
+ 74           0 RESUME                   0
+
+ 75           2 LOAD_GLOBAL              1 (NULL + bool)
+             12 LOAD_FAST                0 (self)
+             14 LOAD_ATTR                2 (_swapper)
+             34 COPY                     1
+             36 POP_JUMP_IF_FALSE       23 (to 84)
+             38 POP_TOP
+             40 LOAD_GLOBAL              5 (NULL + getattr)
+             50 LOAD_FAST                0 (self)
+             52 LOAD_ATTR                6 (s)
+             72 LOAD_CONST               1 ('background_mode')
+             74 LOAD_CONST               2 (False)
+             76 CALL                     3
+        >>   84 CALL                     1
+             92 RETURN_VALUE
+
+Disassembly of <code object _input_context at 0x7f6af1ddac20, file "controller.py", line 77>:
+ 77           0 RESUME                   0
+
+ 78           2 NOP
+
+ 79           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + _background)
+             26 CALL                     0
+             34 POP_JUMP_IF_FALSE       18 (to 72)
+             36 LOAD_FAST                0 (self)
+             38 LOAD_ATTR                3 (NULL|self + _swapper)
+             58 LOAD_FAST                1 (kind)
+             60 LOAD_FAST                2 (point)
+             62 CALL                     2
+             70 RETURN_VALUE
+        >>   72 LOAD_GLOBAL              5 (NULL + contextlib)
+             82 LOAD_ATTR                6 (nullcontext)
+            102 CALL                     0
+            110 RETURN_VALUE
+
+Disassembly of <code object _humanize at 0x7f6af1dbede0, file "controller.py", line 81>:
+ 81           0 RESUME                   0
+
+ 82           2 LOAD_GLOBAL              1 (NULL + bool)
+             12 LOAD_GLOBAL              3 (NULL + getattr)
+             22 LOAD_FAST                0 (self)
+             24 LOAD_ATTR                4 (s)
+             44 LOAD_CONST               1 ('humanizer_enabled')
+             46 LOAD_CONST               2 (False)
+             48 CALL                     3
+             56 CALL                     1
+             64 RETURN_VALUE
+
+Disassembly of <code object _default_click at 0x17a64d20, file "controller.py", line 84>:
+ 84           0 RESUME                   0
+
+ 85           2 NOP
+
+ 90           4 LOAD_CONST               1 (0)
+              6 LOAD_CONST               0 (None)
+              8 IMPORT_NAME              0 (pydirectinput)
+             10 STORE_FAST               3 (pydirectinput)
+
+ 92          12 LOAD_CONST               2 (False)
+             14 LOAD_FAST                3 (pydirectinput)
+             16 STORE_ATTR               1 (FAILSAFE)
+
+ 93          26 LOAD_CONST               3 (0.0)
+             28 LOAD_FAST                3 (pydirectinput)
+             30 STORE_ATTR               2 (PAUSE)
+
+ 94          40 LOAD_FAST                0 (self)
+             42 LOAD_ATTR                7 (NULL|self + _humanize)
+             62 CALL                     0
+             70 EXTENDED_ARG             1
+             72 POP_JUMP_IF_FALSE      339 (to 752)
+
+ 95          74 LOAD_FAST                0 (self)
+             76 LOAD_ATTR                8 (_rng)
+             96 STORE_FAST               4 (r)
+
+ 96          98 LOAD_FAST                1 (x)
+            100 LOAD_FAST                4 (r)
+            102 LOAD_ATTR               11 (NULL|self + randint)
+            122 LOAD_CONST               4 (8)
+            124 LOAD_CONST               5 (16)
+            126 CALL                     2
+            134 BINARY_OP               10 (-)
+            138 LOAD_FAST                2 (y)
+            140 LOAD_FAST                4 (r)
+            142 LOAD_ATTR               11 (NULL|self + randint)
+            162 LOAD_CONST               6 (4)
+            164 LOAD_CONST               4 (8)
+            166 CALL                     2
+            174 BINARY_OP               10 (-)
+            178 BUILD_TUPLE              2
+            180 STORE_FAST               5 (start)
+
+ 97         182 LOAD_FAST                0 (self)
+            184 LOAD_ATTR               13 (NULL|self + _background)
+            204 CALL                     0
+            212 STORE_FAST               6 (bg)
+
+ 98         214 LOAD_FAST                6 (bg)
+            216 POP_JUMP_IF_FALSE        2 (to 222)
+            218 LOAD_CONST               7 (2)
+            220 JUMP_FORWARD            17 (to 256)
+        >>  222 LOAD_FAST                4 (r)
+            224 LOAD_ATTR               11 (NULL|self + randint)
+            244 LOAD_CONST               8 (3)
+            246 LOAD_CONST               9 (6)
+            248 CALL                     2
+        >>  256 STORE_FAST               7 (n)
+
+ 99         258 LOAD_FAST                6 (bg)
+            260 POP_JUMP_IF_FALSE        2 (to 266)
+            262 LOAD_CONST              10 (0.015)
+            264 JUMP_FORWARD            17 (to 300)
+        >>  266 LOAD_FAST                4 (r)
+            268 LOAD_ATTR               15 (NULL|self + uniform)
+            288 LOAD_CONST              10 (0.015)
+            290 LOAD_CONST              11 (0.04)
+            292 CALL                     2
+        >>  300 STORE_FAST               8 (total)
+
+100         302 PUSH_NULL
+            304 LOAD_FAST                3 (pydirectinput)
+            306 LOAD_ATTR               16 (moveTo)
+            326 LOAD_FAST                5 (start)
+            328 CALL_FUNCTION_EX         0
+            330 POP_TOP
+
+101         332 LOAD_GLOBAL             19 (NULL + humanizer)
+            342 LOAD_ATTR               20 (bezier_points)
+            362 LOAD_FAST                5 (start)
+            364 LOAD_FAST                1 (x)
+            366 LOAD_FAST                2 (y)
+            368 BUILD_TUPLE              2
+            370 LOAD_FAST                7 (n)
+            372 LOAD_FAST                4 (r)
+            374 CALL                     4
+            382 GET_ITER
+        >>  384 FOR_ITER                47 (to 482)
+            388 UNPACK_SEQUENCE          2
+            392 STORE_FAST               9 (px)
+            394 STORE_FAST              10 (py)
+
+102         396 LOAD_FAST                3 (pydirectinput)
+            398 LOAD_ATTR               17 (NULL|self + moveTo)
+            418 LOAD_FAST                9 (px)
+            420 LOAD_FAST               10 (py)
+            422 CALL                     2
+            430 POP_TOP
+
+103         432 LOAD_GLOBAL             23 (NULL + time)
+            442 LOAD_ATTR               24 (sleep)
+            462 LOAD_FAST                8 (total)
+            464 LOAD_FAST                7 (n)
+            466 BINARY_OP               11 (/)
+            470 CALL                     1
+            478 POP_TOP
+            480 JUMP_BACKWARD           49 (to 384)
+
+101     >>  482 END_FOR
+
+104         484 LOAD_GLOBAL             23 (NULL + time)
+            494 LOAD_ATTR               24 (sleep)
+            514 LOAD_FAST                6 (bg)
+            516 POP_JUMP_IF_FALSE       18 (to 554)
+            518 LOAD_FAST                4 (r)
+            520 LOAD_ATTR               15 (NULL|self + uniform)
+            540 LOAD_CONST              12 (0.02)
+            542 LOAD_CONST              13 (0.05)
+            544 CALL                     2
+            552 JUMP_FORWARD            17 (to 588)
+        >>  554 LOAD_FAST                4 (r)
+            556 LOAD_ATTR               15 (NULL|self + uniform)
+            576 LOAD_CONST              14 (0.06)
+            578 LOAD_CONST              15 (0.12)
+            580 CALL                     2
+        >>  588 CALL                     1
+            596 POP_TOP
+
+105         598 LOAD_FAST                3 (pydirectinput)
+            600 LOAD_ATTR               27 (NULL|self + mouseDown)
+            620 LOAD_CONST              16 ('left')
+            622 KW_NAMES                17 (('button',))
+            624 CALL                     1
+            632 POP_TOP
+
+106         634 LOAD_GLOBAL             23 (NULL + time)
+            644 LOAD_ATTR               24 (sleep)
+            664 LOAD_GLOBAL             19 (NULL + humanizer)
+            674 LOAD_ATTR               28 (click_hold)
+            694 LOAD_FAST                4 (r)
+            696 CALL                     1
+            704 CALL                     1
+            712 POP_TOP
+
+107         714 LOAD_FAST                3 (pydirectinput)
+            716 LOAD_ATTR               31 (NULL|self + mouseUp)
+            736 LOAD_CONST              16 ('left')
+            738 KW_NAMES                17 (('button',))
+            740 CALL                     1
+            748 POP_TOP
+
+108         750 RETURN_CONST             0 (None)
+
+110     >>  752 LOAD_FAST                3 (pydirectinput)
+            754 LOAD_ATTR               17 (NULL|self + moveTo)
+            774 LOAD_FAST                1 (x)
+            776 LOAD_GLOBAL             33 (NULL + random)
+            786 LOAD_ATTR               10 (randint)
+            806 LOAD_CONST               4 (8)
+            808 LOAD_CONST               5 (16)
+            810 CALL                     2
+            818 BINARY_OP               10 (-)
+            822 LOAD_FAST                2 (y)
+            824 LOAD_GLOBAL             33 (NULL + random)
+            834 LOAD_ATTR               10 (randint)
+            854 LOAD_CONST               6 (4)
+            856 LOAD_CONST               4 (8)
+            858 CALL                     2
+            866 BINARY_OP               10 (-)
+            870 CALL                     2
+            878 POP_TOP
+
+111         880 LOAD_GLOBAL             23 (NULL + time)
+            890 LOAD_ATTR               24 (sleep)
+            910 LOAD_GLOBAL             33 (NULL + random)
+            920 LOAD_ATTR               14 (uniform)
+            940 LOAD_CONST              11 (0.04)
+            942 LOAD_CONST              18 (0.08)
+            944 CALL                     2
+            952 CALL                     1
+            960 POP_TOP
+
+112         962 LOAD_FAST                3 (pydirectinput)
+            964 LOAD_ATTR               17 (NULL|self + moveTo)
+            984 LOAD_FAST                1 (x)
+            986 LOAD_FAST                2 (y)
+            988 CALL                     2
+            996 POP_TOP
+
+113         998 LOAD_GLOBAL             23 (NULL + time)
+           1008 LOAD_ATTR               24 (sleep)
+           1028 LOAD_GLOBAL             33 (NULL + random)
+           1038 LOAD_ATTR               14 (uniform)
+           1058 LOAD_CONST              19 (0.1)
+           1060 LOAD_CONST              20 (0.2)
+           1062 CALL                     2
+           1070 CALL                     1
+           1078 POP_TOP
+
+114        1080 LOAD_FAST                3 (pydirectinput)
+           1082 LOAD_ATTR               27 (NULL|self + mouseDown)
+           1102 LOAD_CONST              16 ('left')
+           1104 KW_NAMES                17 (('button',))
+           1106 CALL                     1
+           1114 POP_TOP
+
+115        1116 LOAD_GLOBAL             23 (NULL + time)
+           1126 LOAD_ATTR               24 (sleep)
+           1146 LOAD_GLOBAL             33 (NULL + random)
+           1156 LOAD_ATTR               14 (uniform)
+           1176 LOAD_CONST              14 (0.06)
+           1178 LOAD_CONST              15 (0.12)
+           1180 CALL                     2
+           1188 CALL                     1
+           1196 POP_TOP
+
+116        1198 LOAD_FAST                3 (pydirectinput)
+           1200 LOAD_ATTR               31 (NULL|self + mouseUp)
+           1220 LOAD_CONST              16 ('left')
+           1222 KW_NAMES                17 (('button',))
+           1224 CALL                     1
+           1232 POP_TOP
+           1234 RETURN_CONST             0 (None)
+
+Disassembly of <code object _default_swing at 0x7f6aed7a8330, file "controller.py", line 118>:
+118           0 RESUME                   0
+
+120           2 NOP
+
+121           4 LOAD_CONST               1 (0)
+              6 LOAD_CONST               0 (None)
+              8 IMPORT_NAME              0 (pydirectinput)
+             10 STORE_FAST               3 (pydirectinput)
+
+123          12 LOAD_CONST               2 (False)
+             14 LOAD_FAST                3 (pydirectinput)
+             16 STORE_ATTR               1 (FAILSAFE)
+
+124          26 LOAD_CONST               3 (0.0)
+             28 LOAD_FAST                3 (pydirectinput)
+             30 STORE_ATTR               2 (PAUSE)
+
+125          40 LOAD_FAST                3 (pydirectinput)
+             42 LOAD_ATTR                7 (NULL|self + moveTo)
+             62 LOAD_FAST                0 (x)
+             64 LOAD_FAST                1 (y)
+             66 CALL                     2
+             74 POP_TOP
+
+126          76 LOAD_FAST                3 (pydirectinput)
+             78 LOAD_ATTR                9 (NULL|self + mouseDown)
+             98 LOAD_CONST               4 ('left')
+            100 KW_NAMES                 5 (('button',))
+            102 CALL                     1
+            110 POP_TOP
+
+127         112 LOAD_GLOBAL             11 (NULL + time)
+            122 LOAD_ATTR               12 (sleep)
+            142 LOAD_FAST                2 (hold)
+            144 CALL                     1
+            152 POP_TOP
+
+128         154 LOAD_FAST                3 (pydirectinput)
+            156 LOAD_ATTR               15 (NULL|self + mouseUp)
+            176 LOAD_CONST               4 ('left')
+            178 KW_NAMES                 5 (('button',))
+            180 CALL                     1
+            188 POP_TOP
+            190 RETURN_CONST             0 (None)
+
+Disassembly of <code object _default_press at 0x7f6aed7a84b0, file "controller.py", line 130>:
+130           0 RESUME                   0
+
+132           2 NOP
+
+133           4 LOAD_CONST               1 (0)
+              6 LOAD_CONST               0 (None)
+              8 IMPORT_NAME              0 (pydirectinput)
+             10 STORE_FAST               1 (pydirectinput)
+
+135          12 LOAD_CONST               2 (False)
+             14 LOAD_FAST                1 (pydirectinput)
+             16 STORE_ATTR               1 (FAILSAFE)
+
+136          26 LOAD_CONST               3 (0.0)
+             28 LOAD_FAST                1 (pydirectinput)
+             30 STORE_ATTR               2 (PAUSE)
+
+137          40 LOAD_FAST                1 (pydirectinput)
+             42 LOAD_ATTR                7 (NULL|self + keyDown)
+             62 LOAD_FAST                0 (key)
+             64 CALL                     1
+             72 POP_TOP
+
+138          74 LOAD_GLOBAL              9 (NULL + time)
+             84 LOAD_ATTR               10 (sleep)
+            104 LOAD_GLOBAL             13 (NULL + random)
+            114 LOAD_ATTR               14 (uniform)
+            134 LOAD_CONST               4 (0.06)
+            136 LOAD_CONST               5 (0.12)
+            138 CALL                     2
+            146 CALL                     1
+            154 POP_TOP
+
+139         156 LOAD_FAST                1 (pydirectinput)
+            158 LOAD_ATTR               17 (NULL|self + keyUp)
+            178 LOAD_FAST                0 (key)
+            180 CALL                     1
+            188 POP_TOP
+            190 RETURN_CONST             0 (None)
+
+Disassembly of <code object press at 0x17a61540, file "controller.py", line 141>:
+141           0 RESUME                   0
+
+142           2 NOP
+
+143           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + _sleep)
+             26 LOAD_GLOBAL              3 (NULL + random)
+             36 LOAD_ATTR                4 (uniform)
+             56 LOAD_FAST                0 (self)
+             58 LOAD_ATTR                6 (s)
+             78 LOAD_ATTR                8 (delay_min)
+             98 LOAD_FAST                0 (self)
+            100 LOAD_ATTR                6 (s)
+            120 LOAD_ATTR               10 (delay_max)
+            140 CALL                     2
+            148 CALL                     1
+            156 POP_TOP
+
+144         158 LOAD_FAST                0 (self)
+            160 LOAD_ATTR               13 (NULL|self + _background)
+            180 CALL                     0
+            188 POP_JUMP_IF_FALSE       53 (to 296)
+            190 LOAD_FAST                0 (self)
+            192 LOAD_ATTR               14 (_poster)
+            212 POP_JUMP_IF_FALSE       41 (to 296)
+            214 LOAD_GLOBAL             17 (NULL + getattr)
+            224 LOAD_FAST                0 (self)
+            226 LOAD_ATTR                6 (s)
+            246 LOAD_CONST               1 ('background_post_keys')
+            248 LOAD_CONST               2 (False)
+            250 CALL                     3
+            258 POP_JUMP_IF_FALSE       18 (to 296)
+            260 LOAD_FAST                0 (self)
+            262 LOAD_ATTR               15 (NULL|self + _poster)
+            282 LOAD_FAST                1 (key)
+            284 CALL                     1
+            292 POP_JUMP_IF_FALSE        1 (to 296)
+
+145         294 RETURN_CONST             0 (None)
+
+146     >>  296 LOAD_FAST                0 (self)
+            298 LOAD_ATTR               18 (_focuser)
+            318 POP_JUMP_IF_FALSE       32 (to 384)
+            320 LOAD_FAST                0 (self)
+            322 LOAD_ATTR               13 (NULL|self + _background)
+            342 CALL                     0
+            350 POP_JUMP_IF_TRUE        16 (to 384)
+
+147         352 LOAD_FAST                0 (self)
+            354 LOAD_ATTR               19 (NULL|self + _focuser)
+            374 CALL                     0
+            382 POP_TOP
+
+148     >>  384 LOAD_FAST                0 (self)
+            386 LOAD_ATTR               21 (NULL|self + _input_context)
+            406 LOAD_CONST               3 ('key')
+            408 CALL                     1
+            416 BEFORE_WITH
+            418 POP_TOP
+
+149         420 LOAD_FAST                0 (self)
+            422 LOAD_ATTR               23 (NULL|self + _presser)
+            442 LOAD_FAST                1 (key)
+            444 CALL                     1
+            452 POP_TOP
+
+148         454 LOAD_CONST               0 (None)
+            456 LOAD_CONST               0 (None)
+            458 LOAD_CONST               0 (None)
+            460 CALL                     2
+            468 POP_TOP
+            470 RETURN_CONST             0 (None)
+        >>  472 PUSH_EXC_INFO
+            474 WITH_EXCEPT_START
+            476 POP_JUMP_IF_TRUE         1 (to 480)
+            478 RERAISE                  2
+        >>  480 POP_TOP
+            482 POP_EXCEPT
+            484 POP_TOP
+            486 POP_TOP
+            488 RETURN_CONST             0 (None)
+        >>  490 COPY                     3
+            492 POP_EXCEPT
+            494 RERAISE                  1
+ExceptionTable:
+  418 to 452 -> 472 [1] lasti
+  472 to 480 -> 490 [3] lasti
+
+Disassembly of <code object ready at 0x7f6af1ddad50, file "controller.py", line 151>:
+151           0 RESUME                   0
+
+152           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                1 (NULL|self + _clock)
+             24 CALL                     0
+             32 LOAD_FAST                0 (self)
+             34 LOAD_ATTR                2 (_last_click)
+             54 BINARY_OP               10 (-)
+             58 LOAD_FAST                0 (self)
+             60 LOAD_ATTR                4 (s)
+             80 LOAD_ATTR                6 (click_cooldown)
+            100 COMPARE_OP              92 (>=)
+            104 RETURN_VALUE
+
+Disassembly of <code object click at 0x179d2680, file "controller.py", line 154>:
+154           0 RESUME                   0
+
+155           2 NOP
+
+156           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + ready)
+             26 CALL                     0
+             34 POP_JUMP_IF_TRUE         1 (to 38)
+
+157          36 RETURN_CONST             1 (False)
+
+158     >>   38 LOAD_FAST                0 (self)
+             40 LOAD_ATTR                2 (s)
+             60 LOAD_ATTR                4 (jitter_px)
+             80 STORE_FAST               3 (j)
+
+159          82 LOAD_FAST                0 (self)
+             84 LOAD_ATTR                7 (NULL|self + _humanize)
+            104 CALL                     0
+            112 POP_JUMP_IF_FALSE       74 (to 262)
+            114 LOAD_FAST                3 (j)
+            116 LOAD_CONST               2 (0)
+            118 COMPARE_OP              68 (>)
+            122 POP_JUMP_IF_FALSE       69 (to 262)
+
+160         124 LOAD_FAST                1 (x)
+            126 LOAD_GLOBAL              9 (NULL + humanizer)
+            136 LOAD_ATTR               10 (gauss_offset)
+            156 LOAD_FAST                0 (self)
+            158 LOAD_ATTR               12 (_rng)
+            178 CALL                     1
+            186 BINARY_OP                0 (+)
+            190 LOAD_FAST                2 (y)
+            192 LOAD_GLOBAL              9 (NULL + humanizer)
+            202 LOAD_ATTR               10 (gauss_offset)
+            222 LOAD_FAST                0 (self)
+            224 LOAD_ATTR               12 (_rng)
+            244 CALL                     1
+            252 BINARY_OP                0 (+)
+            256 STORE_FAST               5 (ty)
+            258 STORE_FAST               4 (tx)
+            260 JUMP_FORWARD            52 (to 366)
+
+162     >>  262 LOAD_FAST                1 (x)
+            264 LOAD_GLOBAL             15 (NULL + random)
+            274 LOAD_ATTR               16 (randint)
+            294 LOAD_FAST                3 (j)
+            296 UNARY_NEGATIVE
+            298 LOAD_FAST                3 (j)
+            300 CALL                     2
+            308 BINARY_OP                0 (+)
+            312 LOAD_FAST                2 (y)
+            314 LOAD_GLOBAL             15 (NULL + random)
+            324 LOAD_ATTR               16 (randint)
+            344 LOAD_FAST                3 (j)
+            346 UNARY_NEGATIVE
+            348 LOAD_FAST                3 (j)
+            350 CALL                     2
+            358 BINARY_OP                0 (+)
+            362 STORE_FAST               5 (ty)
+            364 STORE_FAST               4 (tx)
+
+163     >>  366 LOAD_FAST                0 (self)
+            368 LOAD_ATTR               19 (NULL|self + _sleep)
+            388 LOAD_GLOBAL             15 (NULL + random)
+            398 LOAD_ATTR               20 (uniform)
+            418 LOAD_FAST                0 (self)
+            420 LOAD_ATTR                2 (s)
+            440 LOAD_ATTR               22 (delay_min)
+            460 LOAD_FAST                0 (self)
+            462 LOAD_ATTR                2 (s)
+            482 LOAD_ATTR               24 (delay_max)
+            502 CALL                     2
+            510 CALL                     1
+            518 POP_TOP
+
+164         520 LOAD_FAST                0 (self)
+            522 LOAD_ATTR               27 (NULL|self + _input_context)
+            542 LOAD_CONST               3 ('click')
+            544 LOAD_FAST                4 (tx)
+            546 LOAD_FAST                5 (ty)
+            548 BUILD_TUPLE              2
+            550 CALL                     2
+            558 BEFORE_WITH
+            560 STORE_FAST               6 (ctx)
+
+165         562 LOAD_GLOBAL             29 (NULL + getattr)
+            572 LOAD_FAST                6 (ctx)
+            574 LOAD_CONST               4 ('click_blocked')
+            576 LOAD_CONST               1 (False)
+            578 CALL                     3
+            586 POP_JUMP_IF_FALSE       10 (to 608)
+
+166         588 NOP
+
+164         590 LOAD_CONST               0 (None)
+            592 LOAD_CONST               0 (None)
+            594 LOAD_CONST               0 (None)
+            596 CALL                     2
+            604 POP_TOP
+            606 RETURN_CONST             1 (False)
+
+167     >>  608 LOAD_FAST                0 (self)
+            610 LOAD_ATTR               31 (NULL|self + _clicker)
+            630 LOAD_FAST                4 (tx)
+            632 LOAD_FAST                5 (ty)
+            634 CALL                     2
+            642 POP_TOP
+
+164         644 LOAD_CONST               0 (None)
+            646 LOAD_CONST               0 (None)
+            648 LOAD_CONST               0 (None)
+            650 CALL                     2
+            658 POP_TOP
+
+168     >>  660 LOAD_FAST                0 (self)
+            662 LOAD_ATTR               33 (NULL|self + _clock)
+            682 CALL                     0
+            690 LOAD_FAST                0 (self)
+            692 STORE_ATTR              17 (_last_click)
+
+169         702 RETURN_CONST             5 (True)
+
+164     >>  704 PUSH_EXC_INFO
+            706 WITH_EXCEPT_START
+            708 POP_JUMP_IF_TRUE         1 (to 712)
+            710 RERAISE                  2
+        >>  712 POP_TOP
+            714 POP_EXCEPT
+            716 POP_TOP
+            718 POP_TOP
+            720 JUMP_BACKWARD           31 (to 660)
+        >>  722 COPY                     3
+            724 POP_EXCEPT
+            726 RERAISE                  1
+ExceptionTable:
+  560 to 588 -> 704 [1] lasti
+  608 to 642 -> 704 [1] lasti
+  704 to 712 -> 722 [3] lasti
+
+Disassembly of <code object user_away at 0x7f6aed7a0b30, file "controller.py", line 171>:
+171           0 RESUME                   0
+
+172           2 NOP
+
+173           4 NOP
+
+174           6 LOAD_GLOBAL              1 (NULL + bool)
+             16 LOAD_FAST                0 (self)
+             18 LOAD_ATTR                3 (NULL|self + _background)
+             38 CALL                     0
+             46 COPY                     1
+             48 POP_JUMP_IF_FALSE       30 (to 110)
+             50 POP_TOP
+             52 LOAD_FAST                0 (self)
+             54 LOAD_ATTR                4 (_away)
+             74 COPY                     1
+             76 POP_JUMP_IF_FALSE       16 (to 110)
+             78 POP_TOP
+             80 LOAD_FAST                0 (self)
+             82 LOAD_ATTR                5 (NULL|self + _away)
+            102 CALL                     0
+        >>  110 CALL                     1
+            118 RETURN_VALUE
+        >>  120 PUSH_EXC_INFO
+
+175         122 LOAD_GLOBAL              6 (Exception)
+            132 CHECK_EXC_MATCH
+            134 POP_JUMP_IF_FALSE        3 (to 142)
+            136 POP_TOP
+
+176         138 POP_EXCEPT
+            140 RETURN_CONST             1 (False)
+
+175     >>  142 RERAISE                  0
+        >>  144 COPY                     3
+            146 POP_EXCEPT
+            148 RERAISE                  1
+ExceptionTable:
+  6 to 116 -> 120 [0]
+  120 to 136 -> 144 [1] lasti
+  142 to 142 -> 144 [1] lasti
+
+Disassembly of <code object look at 0x7f6af20bbc40, file "controller.py", line 178>:
+178           0 RESUME                   0
+
+179           2 NOP
+
+183           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + user_away)
+             26 CALL                     0
+             34 POP_JUMP_IF_FALSE        3 (to 42)
+             36 LOAD_FAST                4 (force)
+             38 POP_JUMP_IF_TRUE         1 (to 42)
+
+184          40 RETURN_CONST             0 (None)
+
+185     >>   42 LOAD_FAST                0 (self)
+             44 LOAD_ATTR                2 (_focuser)
+             64 POP_JUMP_IF_FALSE       32 (to 130)
+             66 LOAD_FAST                0 (self)
+             68 LOAD_ATTR                5 (NULL|self + _background)
+             88 CALL                     0
+             96 POP_JUMP_IF_TRUE        16 (to 130)
+
+186          98 LOAD_FAST                0 (self)
+            100 LOAD_ATTR                3 (NULL|self + _focuser)
+            120 CALL                     0
+            128 POP_TOP
+
+187     >>  130 LOAD_FAST                0 (self)
+            132 LOAD_ATTR                7 (NULL|self + _input_context)
+            152 LOAD_CONST               1 ('key')
+            154 CALL                     1
+            162 BEFORE_WITH
+            164 POP_TOP
+
+188         166 LOAD_GLOBAL              9 (NULL + move_camera_smooth)
+            176 LOAD_FAST                1 (dx)
+            178 LOAD_FAST                2 (dy)
+            180 LOAD_FAST                3 (duration_ms)
+            182 LOAD_FAST                0 (self)
+            184 LOAD_ATTR               10 (_mover)
+            204 LOAD_FAST                0 (self)
+            206 LOAD_ATTR               12 (_sleep)
+            226 LOAD_FAST                0 (self)
+            228 LOAD_ATTR               14 (_rng)
+            248 CALL                     6
+            256 POP_TOP
+
+187         258 LOAD_CONST               0 (None)
+            260 LOAD_CONST               0 (None)
+            262 LOAD_CONST               0 (None)
+            264 CALL                     2
+            272 POP_TOP
+            274 RETURN_CONST             0 (None)
+        >>  276 PUSH_EXC_INFO
+            278 WITH_EXCEPT_START
+            280 POP_JUMP_IF_TRUE         1 (to 284)
+            282 RERAISE                  2
+        >>  284 POP_TOP
+            286 POP_EXCEPT
+            288 POP_TOP
+            290 POP_TOP
+            292 RETURN_CONST             0 (None)
+        >>  294 COPY                     3
+            296 POP_EXCEPT
+            298 RERAISE                  1
+ExceptionTable:
+  164 to 256 -> 276 [1] lasti
+  276 to 284 -> 294 [3] lasti
+
+Disassembly of <code object swing at 0x17a3cbc0, file "controller.py", line 190>:
+190           0 RESUME                   0
+
+191           2 NOP
+
+196           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + user_away)
+             26 CALL                     0
+             34 POP_JUMP_IF_FALSE        1 (to 38)
+
+197          36 RETURN_CONST             1 (False)
+
+198     >>   38 LOAD_FAST                0 (self)
+             40 LOAD_ATTR                3 (NULL|self + _cursor)
+             60 CALL                     0
+             68 STORE_FAST               1 (pos)
+
+199          70 LOAD_FAST                1 (pos)
+             72 POP_JUMP_IF_TRUE         1 (to 76)
+
+200          74 RETURN_CONST             1 (False)
+
+201     >>   76 LOAD_FAST                1 (pos)
+             78 LOAD_CONST               2 (0)
+             80 BINARY_SUBSCR
+             84 LOAD_GLOBAL              5 (NULL + humanizer)
+             94 LOAD_ATTR                6 (gauss_offset)
+            114 LOAD_FAST                0 (self)
+            116 LOAD_ATTR                8 (_rng)
+            136 CALL                     1
+            144 BINARY_OP                0 (+)
+            148 LOAD_FAST                1 (pos)
+            150 LOAD_CONST               3 (1)
+            152 BINARY_SUBSCR
+            156 LOAD_GLOBAL              5 (NULL + humanizer)
+            166 LOAD_ATTR                6 (gauss_offset)
+            186 LOAD_FAST                0 (self)
+            188 LOAD_ATTR                8 (_rng)
+            208 CALL                     1
+            216 BINARY_OP                0 (+)
+            220 STORE_FAST               3 (ty)
+            222 STORE_FAST               2 (tx)
+
+202         224 LOAD_FAST                0 (self)
+            226 LOAD_ATTR               10 (_focuser)
+            246 POP_JUMP_IF_FALSE       32 (to 312)
+            248 LOAD_FAST                0 (self)
+            250 LOAD_ATTR               13 (NULL|self + _background)
+            270 CALL                     0
+            278 POP_JUMP_IF_TRUE        16 (to 312)
+
+203         280 LOAD_FAST                0 (self)
+            282 LOAD_ATTR               11 (NULL|self + _focuser)
+            302 CALL                     0
+            310 POP_TOP
+
+204     >>  312 LOAD_FAST                0 (self)
+            314 LOAD_ATTR               15 (NULL|self + _input_context)
+            334 LOAD_CONST               4 ('click')
+            336 LOAD_FAST                2 (tx)
+            338 LOAD_FAST                3 (ty)
+            340 BUILD_TUPLE              2
+            342 CALL                     2
+            350 BEFORE_WITH
+            352 STORE_FAST               4 (ctx)
+
+205         354 LOAD_GLOBAL             17 (NULL + getattr)
+            364 LOAD_FAST                4 (ctx)
+            366 LOAD_CONST               5 ('click_blocked')
+            368 LOAD_CONST               1 (False)
+            370 CALL                     3
+            378 POP_JUMP_IF_FALSE       10 (to 400)
+
+206         380 NOP
+
+204         382 LOAD_CONST               0 (None)
+            384 LOAD_CONST               0 (None)
+            386 LOAD_CONST               0 (None)
+            388 CALL                     2
+            396 POP_TOP
+            398 RETURN_CONST             1 (False)
+
+207     >>  400 LOAD_FAST                0 (self)
+            402 LOAD_ATTR               19 (NULL|self + _swinger)
+            422 LOAD_FAST                2 (tx)
+            424 LOAD_FAST                3 (ty)
+            426 LOAD_FAST                0 (self)
+            428 LOAD_ATTR                8 (_rng)
+            448 LOAD_ATTR               21 (NULL|self + uniform)
+            468 LOAD_CONST               6 (0.06)
+            470 LOAD_CONST               7 (0.12)
+            472 CALL                     2
+            480 CALL                     3
+            488 POP_TOP
+
+204         490 LOAD_CONST               0 (None)
+            492 LOAD_CONST               0 (None)
+            494 LOAD_CONST               0 (None)
+            496 CALL                     2
+            504 POP_TOP
+
+208         506 RETURN_CONST             8 (True)
+
+204     >>  508 PUSH_EXC_INFO
+            510 WITH_EXCEPT_START
+            512 POP_JUMP_IF_TRUE         1 (to 516)
+            514 RERAISE                  2
+        >>  516 POP_TOP
+            518 POP_EXCEPT
+            520 POP_TOP
+            522 POP_TOP
+
+208         524 RETURN_CONST             8 (True)
+        >>  526 COPY                     3
+            528 POP_EXCEPT
+            530 RERAISE                  1
+ExceptionTable:
+  352 to 380 -> 508 [1] lasti
+  400 to 488 -> 508 [1] lasti
+  508 to 516 -> 526 [3] lasti

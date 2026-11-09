@@ -1,0 +1,462 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+  3           4 BUILD_MAP                0
+
+  4           6 LOAD_CONST               0 ('tab_control')
+              8 LOAD_CONST               1 ('Contrôle')
+
+  3          10 MAP_ADD                  1
+
+  4          12 LOAD_CONST               2 ('tab_guide')
+             14 LOAD_CONST               3 ('Guide')
+
+  3          16 MAP_ADD                  1
+
+  5          18 LOAD_CONST               4 ('start')
+             20 LOAD_CONST               5 ('Démarrer')
+
+  3          22 MAP_ADD                  1
+
+  5          24 LOAD_CONST               6 ('stop')
+             26 LOAD_CONST               7 ('Arrêter')
+
+  3          28 MAP_ADD                  1
+
+  5          30 LOAD_CONST               8 ('topmost')
+             32 LOAD_CONST               9 ('Toujours au premier plan')
+
+  3          34 MAP_ADD                  1
+
+  6          36 LOAD_CONST              10 ('lang_label')
+             38 LOAD_CONST              11 ('Langue (appli et jeu)')
+
+  3          40 MAP_ADD                  1
+
+  7          42 LOAD_CONST              12 ('mode_A')
+             44 LOAD_CONST              13 ('A : Boucle normale (Continuer → Passer → Lobby)')
+
+  3          46 MAP_ADD                  1
+
+  8          48 LOAD_CONST              14 ('mode_B')
+             50 LOAD_CONST              15 ("B : Attendre sur l'île, puis quitter avec Échap")
+
+  3          52 MAP_ADD                  1
+
+  9          54 LOAD_CONST              16 ('mode_C')
+             56 LOAD_CONST              17 ("C : Boucle sur l'île, passe en A si un objet est trouvé")
+
+  3          58 MAP_ADD                  1
+
+ 10          60 LOAD_CONST              18 ('b_pre')
+             62 LOAD_CONST              19 ("B : Attendre sur l'île")
+
+  3          64 MAP_ADD                  1
+
+ 10          66 LOAD_CONST              20 ('b_post')
+             68 LOAD_CONST              21 ('s, puis Échap')
+
+  3          70 MAP_ADD                  1
+
+ 11          72 LOAD_CONST              22 ('c_pre')
+             74 LOAD_CONST              23 ("C : Attendre sur l'île")
+
+  3          76 MAP_ADD                  1
+
+ 11          78 LOAD_CONST              24 ('c_post')
+             80 LOAD_CONST              21 ('s, puis Échap')
+
+  3          82 MAP_ADD                  1
+
+ 12          84 LOAD_CONST              25 ('afk_check')
+             86 LOAD_CONST              26 ('Maintenir une touche WASD au hasard pendant la partie')
+
+  3          88 MAP_ADD                  1
+
+ 13          90 LOAD_CONST              27 ('afk_pre')
+             92 LOAD_CONST              28 ('Toutes les')
+
+  3          94 MAP_ADD                  1
+
+ 13          96 LOAD_CONST              29 ('afk_mid')
+             98 LOAD_CONST              30 ('s / maintien')
+
+  3         100 MAP_ADD                  1
+
+ 13         102 LOAD_CONST              31 ('afk_post')
+            104 LOAD_CONST              32 ('s')
+
+  3         106 MAP_ADD                  1
+            108 BUILD_MAP                0
+
+ 14         110 LOAD_CONST              33 ('threshold')
+            112 LOAD_CONST              34 ('Seuil')
+
+  3         114 MAP_ADD                  1
+
+ 14         116 LOAD_CONST              35 ('crop')
+            118 LOAD_CONST              36 ("Recadrer l'image")
+
+  3         120 MAP_ADD                  1
+
+ 15         122 LOAD_CONST              37 ('info')
+            124 LOAD_CONST              38 ('{state}   score : {score:.2f}   boucles : {loops}')
+
+  3         126 MAP_ADD                  1
+
+ 16         128 LOAD_CONST              39 ('log_started')
+            130 LOAD_CONST              40 ('démarré')
+
+  3         132 MAP_ADD                  1
+
+ 16         134 LOAD_CONST              41 ('log_stopped')
+            136 LOAD_CONST              42 ('arrêté')
+
+  3         138 MAP_ADD                  1
+
+ 17         140 LOAD_CONST              43 ('log_language')
+            142 LOAD_CONST              44 ('langue : {name}')
+
+  3         144 MAP_ADD                  1
+
+ 17         146 LOAD_CONST              45 ('log_mode')
+            148 LOAD_CONST              46 ('mode : {name}')
+
+  3         150 MAP_ADD                  1
+
+ 18         152 LOAD_CONST              47 ('log_saved')
+            154 LOAD_CONST              48 ('enregistré : {path}')
+
+  3         156 MAP_ADD                  1
+
+ 18         158 LOAD_CONST              49 ('log_cancelled')
+            160 LOAD_CONST              50 ('capture annulée')
+
+  3         162 MAP_ADD                  1
+
+ 19         164 LOAD_CONST              51 ('log_capture_error')
+            166 LOAD_CONST              52 ('erreur de capture : {error}')
+
+  3         168 MAP_ADD                  1
+
+ 20         170 LOAD_CONST              53 ('log_too_large')
+            172 LOAD_CONST              54 ('sélection trop grande - faites glisser uniquement autour du bouton')
+
+  3         174 MAP_ADD                  1
+
+ 21         176 LOAD_CONST              55 ('dm_key_label')
+            178 LOAD_CONST              56 ('Clé de liaison')
+
+  3         180 MAP_ADD                  1
+
+ 21         182 LOAD_CONST              57 ('dm_test')
+            184 LOAD_CONST              58 ('Envoyer un DM de test')
+
+  3         186 MAP_ADD                  1
+
+ 22         188 LOAD_CONST              59 ('dm_enabled')
+            190 LOAD_CONST              60 ("Envoyer un résumé de session par DM à l'arrêt / à la fermeture")
+
+  3         192 MAP_ADD                  1
+
+ 23         194 LOAD_CONST              61 ('alert_check')
+            196 LOAD_CONST              62 ('Envoyer un DM en cas de problème (action répétée, erreurs, blocage ; au plus une fois par 10 min)')
+
+  3         198 MAP_ADD                  1
+
+ 24         200 LOAD_CONST              63 ('shot_check')
+            202 LOAD_CONST              64 ("Autoriser la vérification de l'écran depuis Discord (/screenshot vous envoie l'écran actuel, à vous seul, par DM)")
+
+  3         204 MAP_ADD                  1
+
+ 25         206 LOAD_CONST              65 ('dm_desc')
+            208 LOAD_CONST              66 ('Tapez /link sur le serveur Discord officiel et collez ici la clé obtenue (aucune connexion nécessaire).')
+
+  3         210 MAP_ADD                  1
+            212 DICT_UPDATE              1
+            214 BUILD_MAP                0
+
+ 26         216 LOAD_CONST              67 ('dm_s_sending')
+            218 LOAD_CONST              68 ('Envoi…')
+
+  3         220 MAP_ADD                  1
+
+ 26         222 LOAD_CONST              69 ('dm_s_ok')
+            224 LOAD_CONST              70 ('✔ Envoyé — vérifiez vos DM')
+
+  3         226 MAP_ADD                  1
+
+ 27         228 LOAD_CONST              71 ('dm_s_invalid_key')
+            230 LOAD_CONST              72 ('✖ Clé invalide (elle doit commencer par LAP-)')
+
+  3         232 MAP_ADD                  1
+
+ 28         234 LOAD_CONST              73 ('dm_s_no_url')
+            236 LOAD_CONST              74 ('✖ Destination non configurée')
+
+  3         238 MAP_ADD                  1
+
+ 28         240 LOAD_CONST              75 ('dm_s_network')
+            242 LOAD_CONST              76 ('✖ Connexion impossible')
+
+  3         244 MAP_ADD                  1
+
+ 29         246 LOAD_CONST              77 ('dm_s_network_dns')
+            248 LOAD_CONST              78 ('✖ Impossible de résoudre le nom du serveur (vérifiez votre connexion Internet, le DNS ou le VPN)')
+
+  3         250 MAP_ADD                  1
+
+ 30         252 LOAD_CONST              79 ('dm_s_network_tls')
+            254 LOAD_CONST              80 ("✖ Impossible d'établir une connexion sécurisée (vérifiez la date et l'heure du PC et les logiciels de sécurité qui inspectent le trafic)")
+
+  3         256 MAP_ADD                  1
+
+ 31         258 LOAD_CONST              81 ('dm_s_network_timeout')
+            260 LOAD_CONST              82 ('✖ Pas de réponse (connexion instable, ou bloquée par un pare-feu / VPN)')
+
+  3         262 MAP_ADD                  1
+
+ 32         264 LOAD_CONST              83 ('dm_s_network_blocked')
+            266 LOAD_CONST              84 ('✖ La connexion a été refusée ou bloquée (autorisez pk-auto dans votre logiciel de sécurité / pare-feu)')
+
+  3         268 MAP_ADD                  1
+
+ 33         270 LOAD_CONST              85 ('dm_s_dm_closed')
+            272 LOAD_CONST              86 ("✖ Impossible d'envoyer un DM (vérifiez vos paramètres de confidentialité des DM)")
+
+  3         274 MAP_ADD                  1
+
+ 34         276 LOAD_CONST              87 ('dm_s_rate_limited')
+            278 LOAD_CONST              88 ('✖ Patientez un instant puis réessayez')
+
+  3         280 MAP_ADD                  1
+
+ 34         282 LOAD_CONST              89 ('dm_s_server')
+            284 LOAD_CONST              90 ('✖ Erreur du serveur')
+
+  3         286 MAP_ADD                  1
+
+ 35         288 LOAD_CONST              91 ('dm_every_pre')
+            290 LOAD_CONST              92 ('DM toutes les')
+
+  3         292 MAP_ADD                  1
+
+ 35         294 LOAD_CONST              93 ('dm_every_post')
+            296 LOAD_CONST              94 ("h (0 = seulement à l'arrêt / à la fermeture)")
+
+  3         298 MAP_ADD                  1
+
+ 36         300 LOAD_CONST              95 ('remote_enabled')
+            302 LOAD_CONST              96 ('Accepter les réglages modifiés avec /settings sur Discord')
+
+  3         304 MAP_ADD                  1
+
+ 37         306 LOAD_CONST              97 ('log_remote')
+            308 LOAD_CONST              98 ('appliqué depuis Discord : {what}')
+
+  3         310 MAP_ADD                  1
+
+ 38         312 LOAD_CONST              99 ('dm_join')
+            314 LOAD_CONST             100 ('Rejoindre le serveur Discord')
+
+  3         316 MAP_ADD                  1
+            318 DICT_UPDATE              1
+            320 BUILD_MAP                0
+
+ 39         322 LOAD_CONST             101 ('space_check')
+            324 LOAD_CONST             102 ('Appuyer sur Espace pendant la partie')
+
+  3         326 MAP_ADD                  1
+
+ 39         328 LOAD_CONST             103 ('space_pre')
+            330 LOAD_CONST             104 ('Espace : toutes les')
+
+  3         332 MAP_ADD                  1
+
+ 39         334 LOAD_CONST             105 ('space_mid')
+            336 LOAD_CONST             106 ('s, appuyer')
+
+  3         338 MAP_ADD                  1
+
+ 39         340 LOAD_CONST             107 ('space_post')
+            342 LOAD_CONST             108 ('fois')
+
+  3         344 MAP_ADD                  1
+
+ 40         346 LOAD_CONST             109 ('diag_button')
+            348 LOAD_CONST             110 ('Créer un rapport de diagnostic')
+
+  3         350 MAP_ADD                  1
+
+ 40         352 LOAD_CONST             111 ('diag_running')
+            354 LOAD_CONST             112 ('En cours… (30 s maximum)')
+
+  3         356 MAP_ADD                  1
+
+ 41         358 LOAD_CONST             113 ('net_fix_button')
+            360 LOAD_CONST             114 ('Réparer la connexion')
+
+  3         362 MAP_ADD                  1
+
+ 41         364 LOAD_CONST             115 ('dm_s_fix_running')
+            366 LOAD_CONST             116 ('Réparation… (1 min max)')
+
+  3         368 MAP_ADD                  1
+
+ 41         370 LOAD_CONST             117 ('dm_s_fix_ok')
+            372 LOAD_CONST             118 ('✔ Connexion réparée. Appuyez sur le bouton de test')
+
+  3         374 MAP_ADD                  1
+
+ 41         376 LOAD_CONST             119 ('dm_s_fix_same')
+            378 LOAD_CONST             120 ('✔ La connexion est bonne. Vérifiez la clé et les réglages de DM')
+
+  3         380 MAP_ADD                  1
+
+ 41         382 LOAD_CONST             121 ('dm_s_fix_fail')
+            384 LOAD_CONST             122 ('✖ Réparation impossible. Créez le rapport de diagnostic et envoyez-le')
+
+  3         386 MAP_ADD                  1
+
+ 42         388 LOAD_CONST             123 ('diag_done')
+            390 LOAD_CONST             124 ('Enregistré : {name} (ouvert dans le Bloc-notes et copié dans le presse-papiers)')
+
+  3         392 MAP_ADD                  1
+
+ 42         394 LOAD_CONST             125 ('diag_failed')
+            396 LOAD_CONST             126 ('Échec du diagnostic')
+
+  3         398 MAP_ADD                  1
+
+ 43         400 LOAD_CONST             127 ('bg_check')
+            402 LOAD_CONST             128 ('Mode arrière-plan (capture derrière les fenêtres + changement de focus rapide)')
+
+  3         404 MAP_ADD                  1
+
+ 44         406 LOAD_CONST             129 ('ghost_check')
+            408 LOAD_CONST             130 ("Rendre le jeu invisible pour qu'il ne gêne jamais (fantôme)")
+
+  3         410 MAP_ADD                  1
+
+ 45         412 LOAD_CONST             131 ('ghost_show_check')
+            414 LOAD_CONST             132 ('Afficher le jeu un instant (pour vérifier)')
+
+  3         416 MAP_ADD                  1
+
+ 46         418 LOAD_CONST             133 ('log_ghost_failed')
+            420 LOAD_CONST             134 ('Impossible de rendre la fenêtre du jeu invisible (le jeu tourne peut-être en administrateur : lancez pk-auto en administrateur). Le changement de focus simple est utilisé.')
+
+  3         422 MAP_ADD                  1
+            424 DICT_UPDATE              1
+            426 BUILD_MAP                0
+
+ 47         428 LOAD_CONST             135 ('log_bg_minimized')
+            430 LOAD_CONST             136 ("Le jeu est réduit. Restaurez-le et placez plutôt d'autres fenêtres par-dessus (réglez l'affichage de Fortnite sur « Plein écran fenêtré »).")
+
+  3         432 MAP_ADD                  1
+
+ 48         434 LOAD_CONST             137 ('log_bg_black')
+            436 LOAD_CONST             138 ("La fenêtre du jeu ne peut pas être capturée quand elle est couverte ; la capture d'écran normale est utilisée (ne couvrez pas le jeu).")
+
+  3         438 MAP_ADD                  1
+
+ 49         440 LOAD_CONST             139 ('log_bg_denied')
+            442 LOAD_CONST             140 ("La fenêtre du jeu ne peut pas être capturée (accès refusé). Le jeu tourne en administrateur : lancez pk-auto en administrateur. La capture d'écran normale est utilisée pour l'instant.")
+
+  3         444 MAP_ADD                  1
+
+ 50         446 LOAD_CONST             141 ('upd_ver')
+            448 LOAD_CONST             142 ('Version v{cur}')
+
+  3         450 MAP_ADD                  1
+
+ 50         452 LOAD_CONST             143 ('upd_check')
+            454 LOAD_CONST             144 ('Rechercher des mises à jour')
+
+  3         456 MAP_ADD                  1
+
+ 50         458 LOAD_CONST             145 ('upd_auto')
+            460 LOAD_CONST             146 ('Vérifier au démarrage')
+
+  3         462 MAP_ADD                  1
+
+ 51         464 LOAD_CONST             147 ('upd_checking')
+            466 LOAD_CONST             148 ('Vérification…')
+
+  3         468 MAP_ADD                  1
+
+ 51         470 LOAD_CONST             149 ('upd_latest')
+            472 LOAD_CONST             150 ('Vous êtes à jour')
+
+  3         474 MAP_ADD                  1
+
+ 51         476 LOAD_CONST             151 ('upd_check_failed')
+            478 LOAD_CONST             152 ('Vérification impossible (hors ligne, ou limite de GitHub atteinte)')
+
+  3         480 MAP_ADD                  1
+
+ 52         482 LOAD_CONST             153 ('upd_title')
+            484 LOAD_CONST             154 ('Mise à jour disponible')
+
+  3         486 MAP_ADD                  1
+
+ 52         488 LOAD_CONST             155 ('upd_newver')
+            490 LOAD_CONST             156 ('Nouvelle version v{new} (vous avez v{cur})')
+
+  3         492 MAP_ADD                  1
+
+ 52         494 LOAD_CONST             157 ('upd_notes')
+            496 LOAD_CONST             158 ('Nouveautés')
+
+  3         498 MAP_ADD                  1
+
+ 53         500 LOAD_CONST             159 ('upd_now')
+            502 LOAD_CONST             160 ('Mettre à jour et redémarrer')
+
+  3         504 MAP_ADD                  1
+
+ 53         506 LOAD_CONST             161 ('upd_later')
+            508 LOAD_CONST             162 ('Plus tard')
+
+  3         510 MAP_ADD                  1
+
+ 53         512 LOAD_CONST             163 ('upd_page')
+            514 LOAD_CONST             164 ('Ouvrir la page de téléchargement')
+
+  3         516 MAP_ADD                  1
+
+ 54         518 LOAD_CONST             165 ('upd_dev')
+            520 LOAD_CONST             166 ('Exécution depuis les sources (.py) : pas de mise à jour automatique.')
+
+  3         522 MAP_ADD                  1
+
+ 55         524 LOAD_CONST             167 ('upd_downloading')
+            526 LOAD_CONST             168 ('Téléchargement… {pct} %')
+
+  3         528 MAP_ADD                  1
+            530 DICT_UPDATE              1
+
+ 55         532 LOAD_CONST             169 ('Application de la mise à jour. Redémarrage imminent…')
+
+ 56         534 LOAD_CONST             170 ('Échec de la mise à jour : {why}')
+
+ 57         536 LOAD_CONST             171 ("Le téléchargement n'a pas pu être vérifié (fichier endommagé ou différent de celui attendu)")
+
+ 58         538 LOAD_CONST             172 ('Échec de la connexion')
+
+ 59         540 LOAD_CONST             173 ("Impossible d'écrire dans ce dossier (déplacez l'appli ailleurs ou exécutez-la en administrateur)")
+
+ 60         542 LOAD_CONST             174 ('🔔 Une nouvelle version v{new} est disponible')
+            544 LOAD_CONST             175 ('Détails')
+
+  3         546 LOAD_CONST             176 (('upd_installing', 'upd_error', 'upd_err_verify', 'upd_err_network', 'upd_err_write', 'upd_banner', 'upd_details'))
+            548 BUILD_CONST_KEY_MAP      7
+            550 DICT_UPDATE              1
+            552 STORE_NAME               0 (UI_FR)
+
+ 63         554 BUILD_LIST               0
+            556 LOAD_CONST             177 ((('h1', 'Si le programme ne démarre pas correctement'), ('n', '1. Débranchez la manette.'), ('n', "2. Terminez la tâche de l'appli (dans le Gestionnaire des tâches)."), ('n', "3. Exécutez-la en tant qu'administrateur."), ('n', '4. Appuyez sur Démarrer et attendez 30 secondes.'), ('n', "5. Si cela ne fonctionne toujours pas, appuyez sur « Recadrer l'image »."), ('li', "Si cela ne fonctionne toujours pas, appuyez sur « Créer un rapport de diagnostic » dans l'onglet Contrôle. Il écrit un rapport, l'ouvre dans le Bloc-notes et le copie dans le presse-papiers ; envoyez son contenu tel quel à l'auteur."), ('h1', "De quoi s'agit-il ?"), ('p', "Il clique automatiquement sur « Jouer » dans le lobby → « Continuer » pendant la partie → « Passer » sur l'écran des résultats → « Retour au lobby », puis répète la boucle. Il se contente de regarder l'écran pour trouver les boutons et cliquer dessus ; il ne touche jamais aux données internes du jeu."), ('h1', 'Utilisation'), ('n', "1. Double-cliquez sur pk-auto.exe pour le lancer (l'exe fonctionne seul ; aucun autre fichier n'est nécessaire). Il peut mal fonctionner s'il n'est pas lancé en administrateur."), ('n', "2. Lancez Fortnite et affichez l'écran du lobby."), ('n', '3. Appuyez sur « Démarrer » dans la fenêtre pk-auto.'), ('n', '4. Pour arrêter, appuyez sur le bouton « Arrêter » ou sur la touche F8.'), ('h1', 'Modes'), ('h2', 'Mode A : Boucle normale'), ('p', "Joue chaque partie jusqu'au bout et répète jusqu'à ce que vous quittiez l'écran des résultats."), ('n', '1. Lobby : Jouer'), ('n', '2. Pendant la partie : attendre'), ('n', '3. Continuer'), ('n', '4. Passer'), ('n', '5. Retour au lobby → retour à 1'), ('li', 'Pendant une partie, il maintient une touche WASD au hasard (par défaut 3 secondes toutes les 10 secondes).'), ('li', "Vous pouvez activer/désactiver ce maintien et modifier l'intervalle et la durée dans la fenêtre."), ('h2', "Mode B : Boucle sur l'île d'attente"), ('p', "Attend un temps donné sur l'île d'attente, puis retourne au lobby par le menu. Il ne joue pas la partie jusqu'au bout."), ('n', '1. Lobby : appuyer sur Jouer'), ('n', "2. Une fois sur l'île d'attente, attendre le nombre de secondes réglé (90 s par défaut)"), ('n', '3. Appuyer sur la touche Échap'), ('n', '4. Appuyer sur ≡ (trois traits) en haut à droite'), ('n', '5. Appuyer sur Retour au lobby → retour à 1'), ('li', "Vous pouvez modifier le temps d'attente avec « B : Attendre sur l'île [ ] s, puis Échap » dans la fenêtre (10–600 s)."), ('li', 'Il reconnaît les écrans par la forme de la barre et du menu, donc il fonctionne dans toutes les langues.'), ('li', "En mode B, le maintien des touches WASD ne s'exécute pas."), ('h2', 'Différences entre A et B'), ('li', "Durée d'un tour : A = jusqu'à la fin de la partie / B = environ 2 minutes (temps d'attente + déplacements)"), ('li', "Joue la partie jusqu'au bout : A = oui / B = non"), ('li', 'Maintien des touches WASD : A = oui / B = non'), ('li', 'Langue : A = confirmé en japonais et en anglais, les autres sont en bêta / B = fonctionne dans toutes les langues'), ('h1', 'À propos des réglages'), ('li', 'Curseur de seuil : sévérité de la reconnaissance des boutons. Si rien ne réagit, baissez-le un peu (augmentez-le si les clics erronés se multiplient).'), ('li', "« Maintenir une touche WASD au hasard pendant la partie » : une fois activé, il maintient l'une des touches W/A/S/D au hasard pendant une durée donnée en cours de partie. L'intervalle et la durée se modifient dans la fenêtre."), ('li', "« Appuyer sur Espace pendant la partie » : une fois activé, Espace est pressé le nombre de fois indiqué toutes les N secondes pendant la partie (fonctionne dans les deux modes ; indépendant du maintien WASD). En mode B, il s'arrête automatiquement 10 secondes avant l'appui sur Échap et reste désactivé jusqu'au début de la partie suivante."), ('li', "« Mode arrière-plan » : une fois activé, le jeu est reconnu même lorsque d'autres fenêtres le recouvrent, et il n'est amené au premier plan que le temps d'un clic ou d'une touche, après quoi votre fenêtre précédente et la position de la souris sont restaurées. Ne réduisez pas le jeu ; laissez d'autres fenêtres par-dessus. Avec le client Fortnite normal, réglez l'affichage sur « Plein écran fenêtré » (ou « Fenêtré »). GeForce NOW fonctionne aussi (lancez pk-auto en administrateur). La fenêtre du jeu est rendue transparente (pratiquement invisible) et les clics de souris la traversent : même lorsqu'elle passe au premier plan, rien ne s'affiche et votre travail n'est pas dérangé (réglable avec « Rendre le jeu invisible »). Vos propres fenêtres ne sont jamais modifiées. Avant l'envoi d'une saisie, l'outil attend que vous n'ayez ni touché la souris ni le clavier pendant environ une seconde. Pour regarder le jeu, cochez « Afficher le jeu un instant ». L'arrêt ou la fermeture rétablit l'affichage normal (après un plantage, relancez simplement pk-auto)."), ('li', "Si la taille de l'écran ou l'interface diffère et que les boutons ne sont pas reconnus, utilisez le bouton « Recadrer l'image » pour les recapturer depuis votre propre écran (un dossier assets est créé à côté de l'exe et il est prioritaire)."), ('h1', 'Rapport par DM Discord (facultatif)'), ('li', "Rejoignez le serveur Discord officiel avec le bouton « Rejoindre le serveur Discord », obtenez votre clé avec /link (ou le bouton « Clé de liaison » du panneau), puis collez-la dans la zone de clé de l'onglet Contrôle. À l'arrêt ou à la fermeture, un résumé (temps écoulé, nombre d'actions, APM maximal, tours, etc.) vous est envoyé par DM."), ('li', "Seuls ces chiffres et la clé de liaison sont envoyés : pas de captures d'écran ni de données personnelles. Rien n'est envoyé tant que la zone de clé est vide. Vous pouvez aussi le désactiver avec la case « Envoyer un résumé de session par DM à l'arrêt / à la fermeture »."), ('li', "Si vous réglez « DM toutes les », des rapports d'avancement arrivent aussi par DM à cet intervalle pendant que l'outil tourne (0 = seulement à l'arrêt / à la fermeture)."), ('li', "Avec la commande /settings sur Discord, vous pouvez modifier à distance le mode, la langue, le temps d'attente, l'intervalle des DM et le maintien WASD (appliqué en quelques minutes si pk-auto tourne). Le démarrage et l'arrêt ne peuvent pas se faire à distance. Décochez « Accepter les réglages modifiés avec /settings sur Discord » pour le désactiver."), ('h1', 'Mises à jour'), ('li', "Au démarrage, pk-auto vérifie les versions GitHub (Releases) à la recherche d'une version plus récente. S'il y en a une, un avis s'affiche ; appuyez sur « Mettre à jour et redémarrer » et il télécharge la nouvelle version, se remplace et redémarre. Vos réglages et fichiers journaux ne sont pas touchés."), ('li', 'Vous pouvez aussi vérifier à tout moment avec le bouton « Rechercher des mises à jour » ; décochez « Vérifier au démarrage » pour arrêter la vérification automatique. Il ne se connecte que pour chercher une nouvelle version et la télécharger, et le fichier téléchargé est vérifié avec la valeur (SHA-256) fournie par GitHub.'), ('h1', 'Remarques (à lire)'), ('li', "L'utilisation d'outils d'automatisation peut enfreindre les conditions d'utilisation de Fortnite et son anti-triche (comme Easy Anti-Cheat) et peut entraîner la suspension du compte. Utilisation entièrement à vos risques et périls."), ('li', "Au premier lancement, Windows SmartScreen ou certains antivirus peuvent signaler un « éditeur inconnu » ou un « fichier suspect ». C'est courant pour les projets personnels non signés, car le contrôle automatique de la souris/du clavier et la surveillance des raccourcis ressemblent aux outils de macros."), ('li', "L'auteur ne garantit pas que cet outil fonctionne. Utilisation à vos risques et périls."), ('h1', 'Contact / signalement de bugs'), ('p', 'X (Twitter) : @4z5pk')))
+            558 LIST_EXTEND              1
+            560 STORE_NAME               1 (GUIDE_FR)
+            562 RETURN_CONST           178 (None)

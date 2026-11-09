@@ -1,0 +1,122 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+  5           4 LOAD_CONST               0 ('ライセンスキー')
+
+  6           6 LOAD_CONST               1 ('ライセンスキーを入力してください（PKA-XXXXX-XXXXX-XXXXX-XXXXX）。\n先行配布版です。キーは1台のPCでのみ使えます。')
+
+  7           8 LOAD_CONST               2 ('このライセンスキーは正しくありません。')
+
+  8          10 LOAD_CONST               3 ('このキーはすでに別のPCで使われています。')
+
+  9          12 LOAD_CONST               4 ('このキーは無効になっています。')
+
+ 10          14 LOAD_CONST               5 ('ライセンスサーバーに接続できません。通信環境を確認してもう一度お試しください。')
+
+ 11          16 LOAD_CONST               6 ('ライセンスサーバーでエラーが発生しました。しばらくしてからお試しください。')
+
+ 12          18 LOAD_CONST               7 ('ライセンスサーバーが混み合っているか、一時的に止まっています（1日のアクセス上限など）。時間をおいて、もう一度お試しください。')
+
+  4          20 LOAD_CONST               8 (('lic_title', 'lic_prompt', 'lic_invalid', 'lic_used', 'lic_revoked', 'lic_offline', 'lic_server', 'lic_busy'))
+             22 BUILD_CONST_KEY_MAP      8
+
+ 15          24 LOAD_CONST               9 ('License key')
+
+ 16          26 LOAD_CONST              10 ('Enter your license key (PKA-XXXXX-XXXXX-XXXXX-XXXXX).\nThis is an early-access build. A key works on one PC only.')
+
+ 17          28 LOAD_CONST              11 ('This license key is not valid.')
+
+ 18          30 LOAD_CONST              12 ('This key is already used on another PC.')
+
+ 19          32 LOAD_CONST              13 ('This key has been disabled.')
+
+ 20          34 LOAD_CONST              14 ('Could not reach the license server. Check your connection and try again.')
+
+ 21          36 LOAD_CONST              15 ('The license server returned an error. Please try again later.')
+
+ 22          38 LOAD_CONST              16 ('The license server is busy or temporarily down (for example its daily request limit). Please try again later.')
+
+ 14          40 LOAD_CONST               8 (('lic_title', 'lic_prompt', 'lic_invalid', 'lic_used', 'lic_revoked', 'lic_offline', 'lic_server', 'lic_busy'))
+             42 BUILD_CONST_KEY_MAP      8
+
+ 25          44 LOAD_CONST              17 ('Clave de licencia')
+
+ 26          46 LOAD_CONST              18 ('Introduce tu clave de licencia (PKA-XXXXX-XXXXX-XXXXX-XXXXX).\nEs una versión de acceso anticipado. Una clave funciona en un solo PC.')
+
+ 27          48 LOAD_CONST              19 ('Esta clave de licencia no es válida.')
+
+ 28          50 LOAD_CONST              20 ('Esta clave ya se usa en otro PC.')
+
+ 29          52 LOAD_CONST              21 ('Esta clave ha sido desactivada.')
+
+ 30          54 LOAD_CONST              22 ('No se pudo contactar con el servidor de licencias. Revisa tu conexión e inténtalo de nuevo.')
+
+ 31          56 LOAD_CONST              23 ('El servidor de licencias devolvió un error. Inténtalo más tarde.')
+
+ 32          58 LOAD_CONST              24 ('El servidor de licencias está saturado o caído temporalmente (por ejemplo, por su límite diario de solicitudes). Inténtalo más tarde.')
+
+ 24          60 LOAD_CONST               8 (('lic_title', 'lic_prompt', 'lic_invalid', 'lic_used', 'lic_revoked', 'lic_offline', 'lic_server', 'lic_busy'))
+             62 BUILD_CONST_KEY_MAP      8
+
+ 35          64 LOAD_CONST              25 ('Chave de licença')
+
+ 36          66 LOAD_CONST              26 ('Digite sua chave de licença (PKA-XXXXX-XXXXX-XXXXX-XXXXX).\nEsta é uma versão de acesso antecipado. Uma chave funciona em um único PC.')
+
+ 37          68 LOAD_CONST              27 ('Esta chave de licença não é válida.')
+
+ 38          70 LOAD_CONST              28 ('Esta chave já está em uso em outro PC.')
+
+ 39          72 LOAD_CONST              29 ('Esta chave foi desativada.')
+
+ 40          74 LOAD_CONST              30 ('Não foi possível acessar o servidor de licenças. Verifique sua conexão e tente novamente.')
+
+ 41          76 LOAD_CONST              31 ('O servidor de licenças retornou um erro. Tente novamente mais tarde.')
+
+ 42          78 LOAD_CONST              32 ('O servidor de licenças está ocupado ou temporariamente fora do ar (por exemplo, pelo limite diário de requisições). Tente novamente mais tarde.')
+
+ 34          80 LOAD_CONST               8 (('lic_title', 'lic_prompt', 'lic_invalid', 'lic_used', 'lic_revoked', 'lic_offline', 'lic_server', 'lic_busy'))
+             82 BUILD_CONST_KEY_MAP      8
+
+ 45          84 LOAD_CONST              33 ('Лицензионный ключ')
+
+ 46          86 LOAD_CONST              34 ('Введите лицензионный ключ (PKA-XXXXX-XXXXX-XXXXX-XXXXX).\nЭто сборка раннего доступа. Один ключ работает только на одном ПК.')
+
+ 47          88 LOAD_CONST              35 ('Этот лицензионный ключ недействителен.')
+
+ 48          90 LOAD_CONST              36 ('Этот ключ уже используется на другом ПК.')
+
+ 49          92 LOAD_CONST              37 ('Этот ключ отключён.')
+
+ 50          94 LOAD_CONST              38 ('Не удалось связаться с сервером лицензий. Проверьте подключение и повторите попытку.')
+
+ 51          96 LOAD_CONST              39 ('Сервер лицензий вернул ошибку. Повторите попытку позже.')
+
+ 52          98 LOAD_CONST              40 ('Сервер лицензий перегружен или временно недоступен (например, из-за суточного лимита запросов). Повторите попытку позже.')
+
+ 44         100 LOAD_CONST               8 (('lic_title', 'lic_prompt', 'lic_invalid', 'lic_used', 'lic_revoked', 'lic_offline', 'lic_server', 'lic_busy'))
+            102 BUILD_CONST_KEY_MAP      8
+
+ 55         104 LOAD_CONST              41 ('Clé de licence')
+
+ 56         106 LOAD_CONST              42 ("Saisissez votre clé de licence (PKA-XXXXX-XXXXX-XXXXX-XXXXX).\nIl s'agit d'une version en accès anticipé. Une clé ne fonctionne que sur un seul PC.")
+
+ 57         108 LOAD_CONST              43 ("Cette clé de licence n'est pas valide.")
+
+ 58         110 LOAD_CONST              44 ('Cette clé est déjà utilisée sur un autre PC.')
+
+ 59         112 LOAD_CONST              45 ('Cette clé a été désactivée.')
+
+ 60         114 LOAD_CONST              46 ('Impossible de joindre le serveur de licences. Vérifiez votre connexion et réessayez.')
+
+ 61         116 LOAD_CONST              47 ('Le serveur de licences a renvoyé une erreur. Réessayez plus tard.')
+
+ 62         118 LOAD_CONST              48 ('Le serveur de licences est saturé ou temporairement indisponible (par exemple, limite quotidienne de requêtes). Réessayez plus tard.')
+
+ 54         120 LOAD_CONST               8 (('lic_title', 'lic_prompt', 'lic_invalid', 'lic_used', 'lic_revoked', 'lic_offline', 'lic_server', 'lic_busy'))
+            122 BUILD_CONST_KEY_MAP      8
+
+  3         124 LOAD_CONST              49 (('ja', 'en', 'es', 'pt', 'ru', 'fr'))
+            126 BUILD_CONST_KEY_MAP      6
+            128 STORE_NAME               0 (UI_LIC)
+            130 RETURN_CONST            50 (None)

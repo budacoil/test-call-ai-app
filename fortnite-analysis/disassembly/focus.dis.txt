@@ -1,0 +1,930 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+  9           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (time)
+             10 STORE_NAME               0 (time)
+
+ 10          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               2 (('Callable', 'List', 'Optional'))
+             16 IMPORT_NAME              1 (typing)
+             18 IMPORT_FROM              2 (Callable)
+             20 STORE_NAME               2 (Callable)
+             22 IMPORT_FROM              3 (List)
+             24 STORE_NAME               3 (List)
+             26 IMPORT_FROM              4 (Optional)
+             28 STORE_NAME               4 (Optional)
+             30 POP_TOP
+
+ 12          32 LOAD_CONST               3 ('UnrealWindow')
+             34 STORE_NAME               5 (GAME_CLASS)
+
+ 13          36 LOAD_CONST               4 ('fortnite')
+             38 STORE_NAME               6 (GAME_TITLE)
+
+ 14          40 LOAD_CONST               5 (('fortniteclient-win64-shipping.exe',))
+             42 STORE_NAME               7 (FORTNITE_EXES)
+
+ 15          44 LOAD_CONST               6 ('CEFCLIENT')
+             46 STORE_NAME               8 (GFN_CLASS)
+
+ 16          48 LOAD_CONST               7 ('geforce now')
+             50 STORE_NAME               9 (GFN_TITLE)
+
+ 17          52 LOAD_CONST               8 (('fortnite', 'フォートナイト'))
+             54 STORE_NAME              10 (GFN_GAME_NAMES)
+
+ 20          56 PUSH_NULL
+             58 LOAD_BUILD_CLASS
+             60 LOAD_CONST               9 (<code object WinApi at 0x7f6af1f82250, file "focus.py", line 20>)
+             62 MAKE_FUNCTION            0
+             64 LOAD_CONST              10 ('WinApi')
+             66 CALL                     2
+             74 STORE_NAME              11 (WinApi)
+
+107          76 LOAD_CONST              11 ('cls')
+             78 LOAD_NAME               12 (str)
+             80 LOAD_CONST              12 ('title')
+             82 LOAD_NAME               12 (str)
+             84 LOAD_CONST              13 ('return')
+             86 LOAD_NAME               13 (bool)
+             88 BUILD_TUPLE              6
+             90 LOAD_CONST              14 (<code object is_game_window at 0x7f6af1de15c0, file "focus.py", line 107>)
+             92 MAKE_FUNCTION            4 (annotations)
+             94 STORE_NAME              14 (is_game_window)
+
+120          96 LOAD_CONST              13 ('return')
+             98 LOAD_NAME                4 (Optional)
+            100 LOAD_NAME               15 (int)
+            102 BINARY_SUBSCR
+            106 BUILD_TUPLE              2
+            108 LOAD_CONST              15 (<code object find_game at 0x179ceb10, file "focus.py", line 120>)
+            110 MAKE_FUNCTION            4 (annotations)
+            112 STORE_NAME              16 (find_game)
+
+138         114 LOAD_CONST               1 (None)
+            116 LOAD_NAME                0 (time)
+            118 LOAD_ATTR               34 (sleep)
+            138 BUILD_TUPLE              2
+            140 LOAD_CONST              16 ('sleeper')
+            142 LOAD_NAME                2 (Callable)
+            144 LOAD_NAME               18 (float)
+            146 BUILD_LIST               1
+            148 LOAD_CONST               1 (None)
+            150 BUILD_TUPLE              2
+            152 BINARY_SUBSCR
+            156 LOAD_CONST              13 ('return')
+            158 LOAD_NAME               13 (bool)
+            160 BUILD_TUPLE              4
+            162 LOAD_CONST              17 (<code object ensure_game_foreground at 0x7f6aed800030, file "focus.py", line 138>)
+            164 MAKE_FUNCTION            5 (defaults, annotations)
+            166 STORE_NAME              19 (ensure_game_foreground)
+            168 RETURN_CONST             1 (None)
+
+Disassembly of <code object WinApi at 0x7f6af1f82250, file "focus.py", line 20>:
+ 20           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('WinApi')
+              8 STORE_NAME               2 (__qualname__)
+
+ 21          10 NOP
+
+ 23          12 LOAD_CONST               1 (<code object __init__ at 0x7f6af1de2700, file "focus.py", line 23>)
+             14 MAKE_FUNCTION            0
+             16 STORE_NAME               3 (__init__)
+
+ 31          18 LOAD_CONST               2 ('return')
+             20 LOAD_NAME                4 (List)
+             22 LOAD_NAME                5 (int)
+             24 BINARY_SUBSCR
+             28 BUILD_TUPLE              2
+             30 LOAD_CONST               3 (<code object windows at 0x7f6af1f8df00, file "focus.py", line 31>)
+             32 MAKE_FUNCTION            4 (annotations)
+             34 STORE_NAME               6 (windows)
+
+ 43          36 LOAD_CONST               4 ('h')
+             38 LOAD_NAME                5 (int)
+             40 LOAD_CONST               2 ('return')
+             42 LOAD_NAME                7 (str)
+             44 BUILD_TUPLE              4
+             46 LOAD_CONST               5 (<code object class_name at 0x7f6af1f83c90, file "focus.py", line 43>)
+             48 MAKE_FUNCTION            4 (annotations)
+             50 STORE_NAME               8 (class_name)
+
+ 48          52 LOAD_CONST               4 ('h')
+             54 LOAD_NAME                5 (int)
+             56 LOAD_CONST               2 ('return')
+             58 LOAD_NAME                7 (str)
+             60 BUILD_TUPLE              4
+             62 LOAD_CONST               6 (<code object title at 0x7f6af1f82a30, file "focus.py", line 48>)
+             64 MAKE_FUNCTION            4 (annotations)
+             66 STORE_NAME               9 (title)
+
+ 53          68 LOAD_CONST               4 ('h')
+             70 LOAD_NAME                5 (int)
+             72 LOAD_CONST               2 ('return')
+             74 LOAD_NAME               10 (bool)
+             76 BUILD_TUPLE              4
+             78 LOAD_CONST               7 (<code object is_minimized at 0x7f6af1dbf110, file "focus.py", line 53>)
+             80 MAKE_FUNCTION            4 (annotations)
+             82 STORE_NAME              11 (is_minimized)
+
+ 56          84 LOAD_CONST               4 ('h')
+             86 LOAD_NAME                5 (int)
+             88 LOAD_CONST               2 ('return')
+             90 LOAD_NAME                7 (str)
+             92 BUILD_TUPLE              4
+             94 LOAD_CONST               8 (<code object process_name at 0x179d8430, file "focus.py", line 56>)
+             96 MAKE_FUNCTION            4 (annotations)
+             98 STORE_NAME              12 (process_name)
+
+ 91         100 LOAD_CONST               2 ('return')
+            102 LOAD_NAME                5 (int)
+            104 BUILD_TUPLE              2
+            106 LOAD_CONST               9 (<code object foreground at 0x7f6af1dd3030, file "focus.py", line 91>)
+            108 MAKE_FUNCTION            4 (annotations)
+            110 STORE_NAME              13 (foreground)
+
+ 94         112 LOAD_CONST               4 ('h')
+            114 LOAD_NAME                5 (int)
+            116 LOAD_CONST               2 ('return')
+            118 LOAD_CONST              10 (None)
+            120 BUILD_TUPLE              4
+            122 LOAD_CONST              11 (<code object focus at 0x179f0410, file "focus.py", line 94>)
+            124 MAKE_FUNCTION            4 (annotations)
+            126 STORE_NAME              14 (focus)
+            128 RETURN_CONST            10 (None)
+
+Disassembly of <code object __init__ at 0x7f6af1de2700, file "focus.py", line 23>:
+ 23           0 RESUME                   0
+
+ 24           2 LOAD_CONST               1 (0)
+              4 LOAD_CONST               0 (None)
+              6 IMPORT_NAME              0 (ctypes)
+              8 STORE_FAST               1 (ctypes)
+
+ 25          10 LOAD_CONST               1 (0)
+             12 LOAD_CONST               2 (('wintypes',))
+             14 IMPORT_NAME              0 (ctypes)
+             16 IMPORT_FROM              1 (wintypes)
+             18 STORE_FAST               2 (wintypes)
+             20 POP_TOP
+
+ 27          22 LOAD_FAST                1 (ctypes)
+             24 LOAD_FAST                2 (wintypes)
+             26 SWAP                     2
+             28 LOAD_FAST                0 (self)
+             30 STORE_ATTR               2 (_ct)
+             40 LOAD_FAST                0 (self)
+             42 STORE_ATTR               3 (_wt)
+
+ 28          52 LOAD_FAST                1 (ctypes)
+             54 LOAD_ATTR                8 (windll)
+             74 LOAD_ATTR               10 (user32)
+             94 LOAD_FAST                0 (self)
+             96 STORE_ATTR               6 (u)
+
+ 29         106 LOAD_FAST                1 (ctypes)
+            108 LOAD_ATTR                8 (windll)
+            128 LOAD_ATTR               14 (kernel32)
+            148 LOAD_FAST                0 (self)
+            150 STORE_ATTR               8 (k)
+            160 RETURN_CONST             0 (None)
+
+Disassembly of <code object windows at 0x7f6af1f8df00, file "focus.py", line 31>:
+              0 MAKE_CELL                0 (self)
+              2 MAKE_CELL                3 (found)
+
+ 31           4 RESUME                   0
+
+ 32           6 BUILD_LIST               0
+              8 STORE_DEREF              3 (found)
+
+ 33          10 LOAD_DEREF               0 (self)
+             12 LOAD_ATTR                0 (_ct)
+             32 LOAD_ATTR                3 (NULL|self + WINFUNCTYPE)
+             52 LOAD_DEREF               0 (self)
+             54 LOAD_ATTR                4 (_wt)
+             74 LOAD_ATTR                6 (BOOL)
+             94 LOAD_DEREF               0 (self)
+             96 LOAD_ATTR                4 (_wt)
+            116 LOAD_ATTR                8 (HWND)
+            136 LOAD_DEREF               0 (self)
+            138 LOAD_ATTR                4 (_wt)
+            158 LOAD_ATTR               10 (LPARAM)
+            178 CALL                     3
+            186 STORE_FAST               1 (proto)
+
+ 35         188 LOAD_CLOSURE             3 (found)
+            190 LOAD_CLOSURE             0 (self)
+            192 BUILD_TUPLE              2
+            194 LOAD_CONST               1 (<code object cb at 0x7f6af1dd7990, file "focus.py", line 35>)
+            196 MAKE_FUNCTION            8 (closure)
+            198 STORE_FAST               2 (cb)
+
+ 40         200 LOAD_DEREF               0 (self)
+            202 LOAD_ATTR               12 (u)
+            222 LOAD_ATTR               15 (NULL|self + EnumWindows)
+            242 PUSH_NULL
+            244 LOAD_FAST                1 (proto)
+            246 LOAD_FAST                2 (cb)
+            248 CALL                     1
+            256 LOAD_CONST               2 (0)
+            258 CALL                     2
+            266 POP_TOP
+
+ 41         268 LOAD_DEREF               3 (found)
+            270 RETURN_VALUE
+
+Disassembly of <code object cb at 0x7f6af1dd7990, file "focus.py", line 35>:
+              0 COPY_FREE_VARS           2
+
+ 35           2 RESUME                   0
+
+ 36           4 LOAD_DEREF               3 (self)
+              6 LOAD_ATTR                0 (u)
+             26 LOAD_ATTR                3 (NULL|self + IsWindowVisible)
+             46 LOAD_FAST                0 (h)
+             48 CALL                     1
+             56 POP_JUMP_IF_FALSE       17 (to 92)
+
+ 37          58 LOAD_DEREF               2 (found)
+             60 LOAD_ATTR                5 (NULL|self + append)
+             80 LOAD_FAST                0 (h)
+             82 CALL                     1
+             90 POP_TOP
+
+ 38     >>   92 RETURN_CONST             1 (True)
+
+Disassembly of <code object class_name at 0x7f6af1f83c90, file "focus.py", line 43>:
+ 43           0 RESUME                   0
+
+ 44           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_ct)
+             24 LOAD_ATTR                3 (NULL|self + create_unicode_buffer)
+             44 LOAD_CONST               1 (256)
+             46 CALL                     1
+             54 STORE_FAST               2 (buf)
+
+ 45          56 LOAD_FAST                0 (self)
+             58 LOAD_ATTR                4 (u)
+             78 LOAD_ATTR                7 (NULL|self + GetClassNameW)
+             98 LOAD_FAST                1 (h)
+            100 LOAD_FAST                2 (buf)
+            102 LOAD_CONST               1 (256)
+            104 CALL                     3
+            112 POP_TOP
+
+ 46         114 LOAD_FAST                2 (buf)
+            116 LOAD_ATTR                8 (value)
+            136 RETURN_VALUE
+
+Disassembly of <code object title at 0x7f6af1f82a30, file "focus.py", line 48>:
+ 48           0 RESUME                   0
+
+ 49           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_ct)
+             24 LOAD_ATTR                3 (NULL|self + create_unicode_buffer)
+             44 LOAD_CONST               1 (512)
+             46 CALL                     1
+             54 STORE_FAST               2 (buf)
+
+ 50          56 LOAD_FAST                0 (self)
+             58 LOAD_ATTR                4 (u)
+             78 LOAD_ATTR                7 (NULL|self + GetWindowTextW)
+             98 LOAD_FAST                1 (h)
+            100 LOAD_FAST                2 (buf)
+            102 LOAD_CONST               1 (512)
+            104 CALL                     3
+            112 POP_TOP
+
+ 51         114 LOAD_FAST                2 (buf)
+            116 LOAD_ATTR                8 (value)
+            136 RETURN_VALUE
+
+Disassembly of <code object is_minimized at 0x7f6af1dbf110, file "focus.py", line 53>:
+ 53           0 RESUME                   0
+
+ 54           2 LOAD_GLOBAL              1 (NULL + bool)
+             12 LOAD_FAST                0 (self)
+             14 LOAD_ATTR                2 (u)
+             34 LOAD_ATTR                5 (NULL|self + IsIconic)
+             54 LOAD_FAST                1 (h)
+             56 CALL                     1
+             64 CALL                     1
+             72 RETURN_VALUE
+
+Disassembly of <code object process_name at 0x179d8430, file "focus.py", line 56>:
+              0 MAKE_CELL                8 (ct)
+              2 MAKE_CELL                9 (wt)
+
+ 56           4 RESUME                   0
+
+ 57           6 NOP
+
+ 62           8 LOAD_FAST                0 (self)
+             10 LOAD_ATTR                0 (_ct)
+             30 LOAD_FAST                0 (self)
+             32 LOAD_ATTR                2 (_wt)
+             52 SWAP                     2
+             54 STORE_DEREF              8 (ct)
+             56 STORE_DEREF              9 (wt)
+
+ 64          58 PUSH_NULL
+             60 LOAD_BUILD_CLASS
+             62 LOAD_CLOSURE             8 (ct)
+             64 LOAD_CLOSURE             9 (wt)
+             66 BUILD_TUPLE              2
+             68 LOAD_CONST               1 (<code object ENTRY at 0x7f6af20bb290, file "focus.py", line 64>)
+             70 MAKE_FUNCTION            8 (closure)
+             72 LOAD_CONST               2 ('ENTRY')
+             74 LOAD_DEREF               8 (ct)
+             76 LOAD_ATTR                4 (Structure)
+             96 CALL                     3
+            104 STORE_FAST               2 (ENTRY)
+
+ 69         106 LOAD_DEREF               9 (wt)
+            108 LOAD_ATTR                7 (NULL|self + DWORD)
+            128 LOAD_CONST               3 (0)
+            130 CALL                     1
+            138 STORE_FAST               3 (pid)
+
+ 70         140 LOAD_FAST                0 (self)
+            142 LOAD_ATTR                8 (u)
+            162 LOAD_ATTR               11 (NULL|self + GetWindowThreadProcessId)
+            182 LOAD_FAST                1 (h)
+            184 LOAD_DEREF               8 (ct)
+            186 LOAD_ATTR               13 (NULL|self + byref)
+            206 LOAD_FAST                3 (pid)
+            208 CALL                     1
+            216 CALL                     2
+            224 POP_TOP
+
+ 71         226 LOAD_FAST                0 (self)
+            228 LOAD_ATTR               14 (k)
+            248 STORE_FAST               4 (k)
+
+ 72         250 LOAD_DEREF               8 (ct)
+            252 LOAD_ATTR               16 (c_void_p)
+            272 LOAD_FAST                4 (k)
+            274 LOAD_ATTR               18 (CreateToolhelp32Snapshot)
+            294 STORE_ATTR              10 (restype)
+
+ 73         304 LOAD_DEREF               9 (wt)
+            306 LOAD_ATTR                6 (DWORD)
+            326 LOAD_DEREF               9 (wt)
+            328 LOAD_ATTR                6 (DWORD)
+            348 BUILD_LIST               2
+            350 LOAD_FAST                4 (k)
+            352 LOAD_ATTR               18 (CreateToolhelp32Snapshot)
+            372 STORE_ATTR              11 (argtypes)
+
+ 74         382 LOAD_DEREF               8 (ct)
+            384 LOAD_ATTR               16 (c_void_p)
+            404 LOAD_DEREF               8 (ct)
+            406 LOAD_ATTR               25 (NULL|self + POINTER)
+            426 LOAD_FAST                2 (ENTRY)
+            428 CALL                     1
+            436 BUILD_LIST               2
+            438 COPY                     1
+            440 LOAD_FAST                4 (k)
+            442 LOAD_ATTR               26 (Process32FirstW)
+            462 STORE_ATTR              11 (argtypes)
+            472 LOAD_FAST                4 (k)
+            474 LOAD_ATTR               28 (Process32NextW)
+            494 STORE_ATTR              11 (argtypes)
+
+ 75         504 LOAD_DEREF               8 (ct)
+            506 LOAD_ATTR               16 (c_void_p)
+            526 BUILD_LIST               1
+            528 LOAD_FAST                4 (k)
+            530 LOAD_ATTR               30 (CloseHandle)
+            550 STORE_ATTR              11 (argtypes)
+
+ 76         560 LOAD_FAST                4 (k)
+            562 LOAD_ATTR               19 (NULL|self + CreateToolhelp32Snapshot)
+            582 LOAD_CONST               4 (2)
+            584 LOAD_CONST               3 (0)
+            586 CALL                     2
+            594 STORE_FAST               5 (snap)
+
+ 77         596 LOAD_FAST                5 (snap)
+            598 POP_JUMP_IF_FALSE       30 (to 660)
+            600 LOAD_FAST                5 (snap)
+            602 LOAD_DEREF               8 (ct)
+            604 LOAD_ATTR               17 (NULL|self + c_void_p)
+            624 LOAD_CONST               5 (-1)
+            626 CALL                     1
+            634 LOAD_ATTR               32 (value)
+            654 COMPARE_OP              40 (==)
+            658 POP_JUMP_IF_FALSE        1 (to 662)
+
+ 78     >>  660 RETURN_CONST             6 ('')
+
+ 79     >>  662 NOP
+
+ 80         664 PUSH_NULL
+            666 LOAD_FAST                2 (ENTRY)
+            668 CALL                     0
+            676 STORE_FAST               6 (e)
+
+ 81         678 LOAD_DEREF               8 (ct)
+            680 LOAD_ATTR               35 (NULL|self + sizeof)
+            700 LOAD_FAST                2 (ENTRY)
+            702 CALL                     1
+            710 LOAD_FAST                6 (e)
+            712 STORE_ATTR              18 (dwSize)
+
+ 82         722 LOAD_FAST                4 (k)
+            724 LOAD_ATTR               27 (NULL|self + Process32FirstW)
+            744 LOAD_FAST                5 (snap)
+            746 LOAD_DEREF               8 (ct)
+            748 LOAD_ATTR               13 (NULL|self + byref)
+            768 LOAD_FAST                6 (e)
+            770 CALL                     1
+            778 CALL                     2
+            786 STORE_FAST               7 (ok)
+
+ 83         788 LOAD_FAST                7 (ok)
+            790 POP_JUMP_IF_FALSE       90 (to 972)
+
+ 84     >>  792 LOAD_FAST                6 (e)
+            794 LOAD_ATTR               38 (th32ProcessID)
+            814 LOAD_FAST                3 (pid)
+            816 LOAD_ATTR               32 (value)
+            836 COMPARE_OP              40 (==)
+            840 POP_JUMP_IF_FALSE       29 (to 900)
+
+ 85         842 LOAD_FAST                6 (e)
+            844 LOAD_ATTR               40 (szExeFile)
+
+ 88         864 LOAD_FAST                4 (k)
+            866 LOAD_ATTR               31 (NULL|self + CloseHandle)
+            886 LOAD_FAST                5 (snap)
+            888 CALL                     1
+            896 POP_TOP
+            898 RETURN_VALUE
+
+ 86     >>  900 LOAD_FAST                4 (k)
+            902 LOAD_ATTR               29 (NULL|self + Process32NextW)
+            922 LOAD_FAST                5 (snap)
+            924 LOAD_DEREF               8 (ct)
+            926 LOAD_ATTR               13 (NULL|self + byref)
+            946 LOAD_FAST                6 (e)
+            948 CALL                     1
+            956 CALL                     2
+            964 STORE_FAST               7 (ok)
+
+ 83         966 LOAD_FAST                7 (ok)
+            968 POP_JUMP_IF_FALSE        1 (to 972)
+            970 JUMP_BACKWARD           90 (to 792)
+
+ 88     >>  972 LOAD_FAST                4 (k)
+            974 LOAD_ATTR               31 (NULL|self + CloseHandle)
+            994 LOAD_FAST                5 (snap)
+            996 CALL                     1
+           1004 POP_TOP
+
+ 89        1006 RETURN_CONST             6 ('')
+        >> 1008 PUSH_EXC_INFO
+
+ 88        1010 LOAD_FAST                4 (k)
+           1012 LOAD_ATTR               31 (NULL|self + CloseHandle)
+           1032 LOAD_FAST                5 (snap)
+           1034 CALL                     1
+           1042 POP_TOP
+           1044 RERAISE                  0
+        >> 1046 COPY                     3
+           1048 POP_EXCEPT
+           1050 RERAISE                  1
+ExceptionTable:
+  664 to 862 -> 1008 [0]
+  900 to 968 -> 1008 [0]
+  1008 to 1044 -> 1046 [1] lasti
+
+Disassembly of <code object ENTRY at 0x7f6af20bb290, file "focus.py", line 64>:
+              0 COPY_FREE_VARS           2
+
+ 64           2 RESUME                   0
+              4 LOAD_NAME                0 (__name__)
+              6 STORE_NAME               1 (__module__)
+              8 LOAD_CONST               0 ('WinApi.process_name.<locals>.ENTRY')
+             10 STORE_NAME               2 (__qualname__)
+
+ 65          12 LOAD_CONST               1 ('dwSize')
+             14 LOAD_LOCALS
+             16 LOAD_FROM_DICT_OR_DEREF     1 (wt)
+             18 LOAD_ATTR                6 (DWORD)
+             38 BUILD_TUPLE              2
+             40 LOAD_CONST               2 ('cntUsage')
+             42 LOAD_LOCALS
+             44 LOAD_FROM_DICT_OR_DEREF     1 (wt)
+             46 LOAD_ATTR                6 (DWORD)
+             66 BUILD_TUPLE              2
+             68 LOAD_CONST               3 ('th32ProcessID')
+             70 LOAD_LOCALS
+             72 LOAD_FROM_DICT_OR_DEREF     1 (wt)
+             74 LOAD_ATTR                6 (DWORD)
+             94 BUILD_TUPLE              2
+             96 LOAD_CONST               4 ('th32DefaultHeapID')
+             98 LOAD_LOCALS
+            100 LOAD_FROM_DICT_OR_DEREF     0 (ct)
+            102 LOAD_ATTR                8 (c_size_t)
+            122 BUILD_TUPLE              2
+
+ 66         124 LOAD_CONST               5 ('th32ModuleID')
+            126 LOAD_LOCALS
+            128 LOAD_FROM_DICT_OR_DEREF     1 (wt)
+            130 LOAD_ATTR                6 (DWORD)
+            150 BUILD_TUPLE              2
+            152 LOAD_CONST               6 ('cntThreads')
+            154 LOAD_LOCALS
+            156 LOAD_FROM_DICT_OR_DEREF     1 (wt)
+            158 LOAD_ATTR                6 (DWORD)
+            178 BUILD_TUPLE              2
+            180 LOAD_CONST               7 ('th32ParentProcessID')
+            182 LOAD_LOCALS
+            184 LOAD_FROM_DICT_OR_DEREF     1 (wt)
+            186 LOAD_ATTR                6 (DWORD)
+            206 BUILD_TUPLE              2
+
+ 67         208 LOAD_CONST               8 ('pcPriClassBase')
+            210 LOAD_LOCALS
+            212 LOAD_FROM_DICT_OR_DEREF     0 (ct)
+            214 LOAD_ATTR               10 (c_long)
+            234 BUILD_TUPLE              2
+            236 LOAD_CONST               9 ('dwFlags')
+            238 LOAD_LOCALS
+            240 LOAD_FROM_DICT_OR_DEREF     1 (wt)
+            242 LOAD_ATTR                6 (DWORD)
+            262 BUILD_TUPLE              2
+            264 LOAD_CONST              10 ('szExeFile')
+            266 LOAD_LOCALS
+            268 LOAD_FROM_DICT_OR_DEREF     0 (ct)
+            270 LOAD_ATTR               12 (c_wchar)
+            290 LOAD_CONST              11 (260)
+            292 BINARY_OP                5 (*)
+            296 BUILD_TUPLE              2
+
+ 65         298 BUILD_LIST              10
+            300 STORE_NAME               7 (_fields_)
+            302 RETURN_CONST            12 (None)
+
+Disassembly of <code object foreground at 0x7f6af1dd3030, file "focus.py", line 91>:
+ 91           0 RESUME                   0
+
+ 92           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (u)
+             24 LOAD_ATTR                3 (NULL|self + GetForegroundWindow)
+             44 CALL                     0
+             52 COPY                     1
+             54 POP_JUMP_IF_TRUE         2 (to 60)
+             56 POP_TOP
+             58 LOAD_CONST               1 (0)
+        >>   60 RETURN_VALUE
+
+Disassembly of <code object focus at 0x179f0410, file "focus.py", line 94>:
+ 94           0 RESUME                   0
+
+ 95           2 NOP
+
+ 96           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + foreground)
+             26 CALL                     0
+             34 STORE_FAST               2 (fg)
+
+ 97          36 LOAD_FAST                0 (self)
+             38 LOAD_ATTR                2 (k)
+             58 LOAD_ATTR                5 (NULL|self + GetCurrentThreadId)
+             78 CALL                     0
+             86 STORE_FAST               3 (me)
+
+ 98          88 LOAD_FAST                2 (fg)
+             90 POP_JUMP_IF_FALSE       28 (to 148)
+             92 LOAD_FAST                0 (self)
+             94 LOAD_ATTR                6 (u)
+            114 LOAD_ATTR                9 (NULL|self + GetWindowThreadProcessId)
+            134 LOAD_FAST                2 (fg)
+            136 LOAD_CONST               0 (None)
+            138 CALL                     2
+            146 JUMP_FORWARD             1 (to 150)
+        >>  148 LOAD_CONST               1 (0)
+        >>  150 STORE_FAST               4 (fg_tid)
+
+ 99         152 LOAD_GLOBAL             11 (NULL + bool)
+            162 LOAD_FAST                4 (fg_tid)
+            164 COPY                     1
+            166 POP_JUMP_IF_FALSE       36 (to 240)
+            168 POP_TOP
+            170 LOAD_FAST                4 (fg_tid)
+            172 LOAD_FAST                3 (me)
+            174 COMPARE_OP              55 (!=)
+            178 COPY                     1
+            180 POP_JUMP_IF_FALSE       29 (to 240)
+            182 POP_TOP
+            184 LOAD_FAST                0 (self)
+            186 LOAD_ATTR                6 (u)
+            206 LOAD_ATTR               13 (NULL|self + AttachThreadInput)
+            226 LOAD_FAST                3 (me)
+            228 LOAD_FAST                4 (fg_tid)
+            230 LOAD_CONST               2 (True)
+            232 CALL                     3
+        >>  240 CALL                     1
+            248 STORE_FAST               5 (attached)
+
+100         250 NOP
+
+101         252 LOAD_FAST                0 (self)
+            254 LOAD_ATTR                6 (u)
+            274 LOAD_ATTR               15 (NULL|self + SetForegroundWindow)
+            294 LOAD_FAST                1 (h)
+            296 CALL                     1
+            304 POP_TOP
+
+103         306 LOAD_FAST                5 (attached)
+            308 POP_JUMP_IF_FALSE       30 (to 370)
+
+104         310 LOAD_FAST                0 (self)
+            312 LOAD_ATTR                6 (u)
+            332 LOAD_ATTR               13 (NULL|self + AttachThreadInput)
+            352 LOAD_FAST                3 (me)
+            354 LOAD_FAST                4 (fg_tid)
+            356 LOAD_CONST               3 (False)
+            358 CALL                     3
+            366 POP_TOP
+            368 RETURN_CONST             0 (None)
+
+103     >>  370 RETURN_CONST             0 (None)
+        >>  372 PUSH_EXC_INFO
+            374 LOAD_FAST                5 (attached)
+            376 POP_JUMP_IF_FALSE       30 (to 438)
+
+104         378 LOAD_FAST                0 (self)
+            380 LOAD_ATTR                6 (u)
+            400 LOAD_ATTR               13 (NULL|self + AttachThreadInput)
+            420 LOAD_FAST                3 (me)
+            422 LOAD_FAST                4 (fg_tid)
+            424 LOAD_CONST               3 (False)
+            426 CALL                     3
+            434 POP_TOP
+            436 RERAISE                  0
+
+103     >>  438 RERAISE                  0
+        >>  440 COPY                     3
+            442 POP_EXCEPT
+            444 RERAISE                  1
+ExceptionTable:
+  252 to 304 -> 372 [0]
+  372 to 438 -> 440 [1] lasti
+
+Disassembly of <code object is_game_window at 0x7f6af1de15c0, file "focus.py", line 107>:
+              0 MAKE_CELL                2 (t)
+
+107           2 RESUME                   0
+
+108           4 NOP
+
+114           6 LOAD_FAST                1 (title)
+              8 COPY                     1
+             10 POP_JUMP_IF_TRUE         2 (to 16)
+             12 POP_TOP
+             14 LOAD_CONST               1 ('')
+        >>   16 LOAD_ATTR                1 (NULL|self + lower)
+             36 CALL                     0
+             44 STORE_DEREF              2 (t)
+
+115          46 LOAD_FAST                0 (cls)
+             48 LOAD_GLOBAL              2 (GAME_CLASS)
+             58 COMPARE_OP              40 (==)
+             62 POP_JUMP_IF_FALSE        9 (to 82)
+             64 LOAD_GLOBAL              4 (GAME_TITLE)
+             74 LOAD_DEREF               2 (t)
+             76 CONTAINS_OP              0
+             78 POP_JUMP_IF_FALSE        1 (to 82)
+
+116          80 RETURN_CONST             2 (True)
+
+117     >>   82 LOAD_FAST                0 (cls)
+             84 LOAD_GLOBAL              6 (GFN_CLASS)
+             94 COMPARE_OP              40 (==)
+             98 COPY                     1
+            100 POP_JUMP_IF_FALSE       34 (to 170)
+            102 POP_TOP
+            104 LOAD_GLOBAL              8 (GFN_TITLE)
+            114 LOAD_DEREF               2 (t)
+            116 CONTAINS_OP              0
+            118 COPY                     1
+            120 POP_JUMP_IF_FALSE       24 (to 170)
+            122 POP_TOP
+            124 LOAD_GLOBAL             11 (NULL + any)
+            134 LOAD_CLOSURE             2 (t)
+            136 BUILD_TUPLE              1
+            138 LOAD_CONST               3 (<code object <genexpr> at 0x7f6af1dc3870, file "focus.py", line 117>)
+            140 MAKE_FUNCTION            8 (closure)
+            142 LOAD_GLOBAL             12 (GFN_GAME_NAMES)
+            152 GET_ITER
+            154 CALL                     0
+            162 CALL                     1
+        >>  170 RETURN_VALUE
+
+Disassembly of <code object <genexpr> at 0x7f6af1dc3870, file "focus.py", line 117>:
+              0 COPY_FREE_VARS           1
+
+117           2 RETURN_GENERATOR
+              4 POP_TOP
+              6 RESUME                   0
+              8 LOAD_FAST                0 (.0)
+        >>   10 FOR_ITER                 8 (to 30)
+             14 STORE_FAST               1 (name)
+             16 LOAD_FAST                1 (name)
+             18 LOAD_DEREF               2 (t)
+             20 CONTAINS_OP              0
+             22 YIELD_VALUE              1
+             24 RESUME                   1
+             26 POP_TOP
+             28 JUMP_BACKWARD           10 (to 10)
+        >>   30 END_FOR
+             32 RETURN_CONST             0 (None)
+        >>   34 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             36 RERAISE                  1
+ExceptionTable:
+  6 to 32 -> 34 [0] lasti
+
+Disassembly of <code object find_game at 0x179ceb10, file "focus.py", line 120>:
+120           0 RESUME                   0
+
+121           2 LOAD_FAST                0 (api)
+              4 LOAD_ATTR                1 (NULL|self + windows)
+             24 CALL                     0
+             32 STORE_FAST               1 (windows)
+
+122          34 LOAD_FAST                1 (windows)
+             36 GET_ITER
+        >>   38 FOR_ITER                48 (to 138)
+             42 STORE_FAST               2 (h)
+
+123          44 LOAD_GLOBAL              3 (NULL + is_game_window)
+             54 LOAD_FAST                0 (api)
+             56 LOAD_ATTR                5 (NULL|self + class_name)
+             76 LOAD_FAST                2 (h)
+             78 CALL                     1
+             86 LOAD_FAST                0 (api)
+             88 LOAD_ATTR                7 (NULL|self + title)
+            108 LOAD_FAST                2 (h)
+            110 CALL                     1
+            118 CALL                     2
+            126 POP_JUMP_IF_TRUE         1 (to 130)
+            128 JUMP_BACKWARD           46 (to 38)
+
+124     >>  130 LOAD_FAST                2 (h)
+            132 SWAP                     2
+            134 POP_TOP
+            136 RETURN_VALUE
+
+122     >>  138 END_FOR
+
+126         140 LOAD_GLOBAL              9 (NULL + getattr)
+            150 LOAD_FAST                0 (api)
+            152 LOAD_CONST               1 ('process_name')
+            154 LOAD_CONST               0 (None)
+            156 CALL                     3
+            164 STORE_FAST               3 (process_name)
+
+127         166 LOAD_FAST                3 (process_name)
+            168 POP_JUMP_IF_FALSE       65 (to 300)
+
+128         170 LOAD_FAST                1 (windows)
+            172 GET_ITER
+        >>  174 FOR_ITER                60 (to 298)
+            178 STORE_FAST               2 (h)
+
+129         180 LOAD_FAST                0 (api)
+            182 LOAD_ATTR                5 (NULL|self + class_name)
+            202 LOAD_FAST                2 (h)
+            204 CALL                     1
+            212 LOAD_GLOBAL             10 (GAME_CLASS)
+            222 COMPARE_OP              40 (==)
+            226 POP_JUMP_IF_TRUE         1 (to 230)
+            228 JUMP_BACKWARD           28 (to 174)
+
+130     >>  230 NOP
+
+131         232 PUSH_NULL
+            234 LOAD_FAST                3 (process_name)
+            236 LOAD_FAST                2 (h)
+            238 CALL                     1
+            246 LOAD_ATTR               13 (NULL|self + lower)
+            266 CALL                     0
+            274 LOAD_GLOBAL             14 (FORTNITE_EXES)
+            284 CONTAINS_OP              0
+            286 POP_JUMP_IF_FALSE        4 (to 296)
+
+132         288 LOAD_FAST                2 (h)
+            290 SWAP                     2
+            292 POP_TOP
+            294 RETURN_VALUE
+
+131     >>  296 JUMP_BACKWARD           62 (to 174)
+
+128     >>  298 END_FOR
+
+135     >>  300 RETURN_CONST             0 (None)
+        >>  302 PUSH_EXC_INFO
+
+133         304 LOAD_GLOBAL             16 (Exception)
+            314 CHECK_EXC_MATCH
+            316 POP_JUMP_IF_FALSE        3 (to 324)
+            318 POP_TOP
+
+134         320 POP_EXCEPT
+            322 JUMP_BACKWARD           75 (to 174)
+
+133     >>  324 RERAISE                  0
+        >>  326 COPY                     3
+            328 POP_EXCEPT
+            330 RERAISE                  1
+ExceptionTable:
+  232 to 288 -> 302 [1]
+  302 to 318 -> 326 [2] lasti
+  324 to 324 -> 326 [2] lasti
+
+Disassembly of <code object ensure_game_foreground at 0x7f6aed800030, file "focus.py", line 138>:
+138           0 RESUME                   0
+
+139           2 NOP
+
+140           4 NOP
+
+141           6 LOAD_FAST                0 (api)
+              8 COPY                     1
+             10 POP_JUMP_IF_TRUE        10 (to 32)
+             12 POP_TOP
+             14 LOAD_GLOBAL              1 (NULL + WinApi)
+             24 CALL                     0
+        >>   32 STORE_FAST               0 (api)
+
+142          34 LOAD_GLOBAL              3 (NULL + find_game)
+             44 LOAD_FAST                0 (api)
+             46 CALL                     1
+             54 STORE_FAST               2 (h)
+
+143          56 LOAD_FAST                2 (h)
+             58 POP_JUMP_IF_NONE        17 (to 94)
+             60 LOAD_FAST                0 (api)
+             62 LOAD_ATTR                5 (NULL|self + is_minimized)
+             82 LOAD_FAST                2 (h)
+             84 CALL                     1
+             92 POP_JUMP_IF_FALSE        1 (to 96)
+
+144     >>   94 RETURN_CONST             1 (False)
+
+145     >>   96 LOAD_FAST                0 (api)
+             98 LOAD_ATTR                7 (NULL|self + foreground)
+            118 CALL                     0
+            126 LOAD_FAST                2 (h)
+            128 COMPARE_OP              40 (==)
+            132 POP_JUMP_IF_FALSE        1 (to 136)
+
+146         134 RETURN_CONST             2 (True)
+
+147     >>  136 LOAD_FAST                0 (api)
+            138 LOAD_ATTR                9 (NULL|self + focus)
+            158 LOAD_FAST                2 (h)
+            160 CALL                     1
+            168 POP_TOP
+
+148         170 PUSH_NULL
+            172 LOAD_FAST                1 (sleeper)
+            174 LOAD_CONST               3 (0.15)
+            176 CALL                     1
+            184 POP_TOP
+
+149         186 LOAD_FAST                0 (api)
+            188 LOAD_ATTR                7 (NULL|self + foreground)
+            208 CALL                     0
+            216 LOAD_FAST                2 (h)
+            218 COMPARE_OP              40 (==)
+            222 RETURN_VALUE
+        >>  224 PUSH_EXC_INFO
+
+150         226 LOAD_GLOBAL             10 (Exception)
+            236 CHECK_EXC_MATCH
+            238 POP_JUMP_IF_FALSE        3 (to 246)
+            240 POP_TOP
+
+151         242 POP_EXCEPT
+            244 RETURN_CONST             1 (False)
+
+150     >>  246 RERAISE                  0
+        >>  248 COPY                     3
+            250 POP_EXCEPT
+            252 RERAISE                  1
+ExceptionTable:
+  6 to 92 -> 224 [0]
+  96 to 132 -> 224 [0]
+  136 to 220 -> 224 [0]
+  224 to 240 -> 248 [1] lasti
+  246 to 246 -> 248 [1] lasti

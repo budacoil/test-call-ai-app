@@ -1,0 +1,598 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+  6           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (hashlib)
+             10 STORE_NAME               0 (hashlib)
+
+  8          12 LOAD_CONST               2 (2)
+             14 LOAD_CONST               3 (255)
+             16 BINARY_OP                8 (**)
+             20 LOAD_CONST               4 (19)
+             22 BINARY_OP               10 (-)
+             26 STORE_NAME               1 (P)
+
+  9          28 LOAD_CONST               2 (2)
+             30 LOAD_CONST               5 (252)
+             32 BINARY_OP                8 (**)
+             36 LOAD_CONST               6 (27742317777372353535851937790883648493)
+             38 BINARY_OP                0 (+)
+             42 STORE_NAME               2 (Q)
+
+ 10          44 LOAD_CONST               7 (-121665)
+             46 PUSH_NULL
+             48 LOAD_NAME                3 (pow)
+             50 LOAD_CONST               8 (121666)
+             52 LOAD_NAME                1 (P)
+             54 LOAD_CONST               2 (2)
+             56 BINARY_OP               10 (-)
+             60 LOAD_NAME                1 (P)
+             62 CALL                     3
+             70 BINARY_OP                5 (*)
+             74 LOAD_NAME                1 (P)
+             76 BINARY_OP                6 (%)
+             80 STORE_NAME               4 (D)
+
+ 11          82 PUSH_NULL
+             84 LOAD_NAME                3 (pow)
+             86 LOAD_CONST               2 (2)
+             88 LOAD_NAME                1 (P)
+             90 LOAD_CONST               9 (1)
+             92 BINARY_OP               10 (-)
+             96 LOAD_CONST              10 (4)
+             98 BINARY_OP                2 (//)
+            102 LOAD_NAME                1 (P)
+            104 CALL                     3
+            112 STORE_NAME               5 (I)
+
+ 14         114 LOAD_CONST              11 ('x')
+            116 LOAD_NAME                6 (int)
+            118 LOAD_CONST              12 ('return')
+            120 LOAD_NAME                6 (int)
+            122 BUILD_TUPLE              4
+            124 LOAD_CONST              13 (<code object _inv at 0x7f6af1dd2330, file "ed25519_verify.py", line 14>)
+            126 MAKE_FUNCTION            4 (annotations)
+            128 STORE_NAME               7 (_inv)
+
+ 18         130 LOAD_CONST              14 ('y')
+            132 LOAD_NAME                6 (int)
+            134 BUILD_TUPLE              2
+            136 LOAD_CONST              15 (<code object _x_recover at 0x7f6aed7c0b70, file "ed25519_verify.py", line 18>)
+            138 MAKE_FUNCTION            4 (annotations)
+            140 STORE_NAME               8 (_x_recover)
+
+ 28         142 LOAD_CONST              10 (4)
+            144 PUSH_NULL
+            146 LOAD_NAME                7 (_inv)
+            148 LOAD_CONST              16 (5)
+            150 CALL                     1
+            158 BINARY_OP                5 (*)
+            162 LOAD_NAME                1 (P)
+            164 BINARY_OP                6 (%)
+            168 STORE_NAME               9 (_BY)
+
+ 29         170 PUSH_NULL
+            172 LOAD_NAME                8 (_x_recover)
+            174 LOAD_NAME                9 (_BY)
+            176 CALL                     1
+            184 STORE_NAME              10 (_BX)
+
+ 30         186 LOAD_NAME               10 (_BX)
+            188 LOAD_NAME                9 (_BY)
+            190 LOAD_CONST               9 (1)
+            192 LOAD_NAME               10 (_BX)
+            194 LOAD_NAME                9 (_BY)
+            196 BINARY_OP                5 (*)
+            200 LOAD_NAME                1 (P)
+            202 BINARY_OP                6 (%)
+            206 BUILD_TUPLE              4
+            208 STORE_NAME              11 (_B)
+
+ 31         210 LOAD_CONST              17 ((0, 1, 1, 0))
+            212 STORE_NAME              12 (_ZERO)
+
+ 34         214 LOAD_CONST              18 (<code object _add at 0x7f6af1f77030, file "ed25519_verify.py", line 34>)
+            216 MAKE_FUNCTION            0
+            218 STORE_NAME              13 (_add)
+
+ 45         220 LOAD_CONST              19 ('s')
+            222 LOAD_NAME                6 (int)
+            224 BUILD_TUPLE              2
+            226 LOAD_CONST              20 (<code object _mul at 0x7f6af1dd6f70, file "ed25519_verify.py", line 45>)
+            228 MAKE_FUNCTION            4 (annotations)
+            230 STORE_NAME              14 (_mul)
+
+ 55         232 LOAD_CONST              21 ('b')
+            234 LOAD_NAME               15 (bytes)
+            236 BUILD_TUPLE              2
+            238 LOAD_CONST              22 (<code object _decode at 0x7f6af20e2f70, file "ed25519_verify.py", line 55>)
+            240 MAKE_FUNCTION            4 (annotations)
+            242 STORE_NAME              16 (_decode)
+
+ 71         244 LOAD_CONST              12 ('return')
+            246 LOAD_NAME               17 (bool)
+            248 BUILD_TUPLE              2
+            250 LOAD_CONST              23 (<code object _eq at 0x7f6af1f838a0, file "ed25519_verify.py", line 71>)
+            252 MAKE_FUNCTION            4 (annotations)
+            254 STORE_NAME              18 (_eq)
+
+ 75         256 LOAD_CONST              24 ('public_key')
+            258 LOAD_NAME               15 (bytes)
+            260 LOAD_CONST              25 ('message')
+            262 LOAD_NAME               15 (bytes)
+            264 LOAD_CONST              26 ('signature')
+            266 LOAD_NAME               15 (bytes)
+            268 LOAD_CONST              12 ('return')
+            270 LOAD_NAME               17 (bool)
+            272 BUILD_TUPLE              8
+            274 LOAD_CONST              27 (<code object verify at 0x179c8bc0, file "ed25519_verify.py", line 75>)
+            276 MAKE_FUNCTION            4 (annotations)
+            278 STORE_NAME              19 (verify)
+            280 RETURN_CONST             1 (None)
+
+Disassembly of <code object _inv at 0x7f6af1dd2330, file "ed25519_verify.py", line 14>:
+ 14           0 RESUME                   0
+
+ 15           2 LOAD_GLOBAL              1 (NULL + pow)
+             12 LOAD_FAST                0 (x)
+             14 LOAD_GLOBAL              2 (P)
+             24 LOAD_CONST               1 (2)
+             26 BINARY_OP               10 (-)
+             30 LOAD_GLOBAL              2 (P)
+             40 CALL                     3
+             48 RETURN_VALUE
+
+Disassembly of <code object _x_recover at 0x7f6aed7c0b70, file "ed25519_verify.py", line 18>:
+ 18           0 RESUME                   0
+
+ 19           2 LOAD_FAST                0 (y)
+              4 LOAD_FAST                0 (y)
+              6 BINARY_OP                5 (*)
+             10 LOAD_CONST               1 (1)
+             12 BINARY_OP               10 (-)
+             16 LOAD_GLOBAL              1 (NULL + _inv)
+             26 LOAD_GLOBAL              2 (D)
+             36 LOAD_FAST                0 (y)
+             38 BINARY_OP                5 (*)
+             42 LOAD_FAST                0 (y)
+             44 BINARY_OP                5 (*)
+             48 LOAD_CONST               1 (1)
+             50 BINARY_OP                0 (+)
+             54 CALL                     1
+             62 BINARY_OP                5 (*)
+             66 LOAD_GLOBAL              4 (P)
+             76 BINARY_OP                6 (%)
+             80 STORE_FAST               1 (xx)
+
+ 20          82 LOAD_GLOBAL              7 (NULL + pow)
+             92 LOAD_FAST                1 (xx)
+             94 LOAD_GLOBAL              4 (P)
+            104 LOAD_CONST               2 (3)
+            106 BINARY_OP                0 (+)
+            110 LOAD_CONST               3 (8)
+            112 BINARY_OP                2 (//)
+            116 LOAD_GLOBAL              4 (P)
+            126 CALL                     3
+            134 STORE_FAST               2 (x)
+
+ 21         136 LOAD_FAST                2 (x)
+            138 LOAD_FAST                2 (x)
+            140 BINARY_OP                5 (*)
+            144 LOAD_FAST                1 (xx)
+            146 BINARY_OP               10 (-)
+            150 LOAD_GLOBAL              4 (P)
+            160 BINARY_OP                6 (%)
+            164 LOAD_CONST               4 (0)
+            166 COMPARE_OP              55 (!=)
+            170 POP_JUMP_IF_FALSE       16 (to 204)
+
+ 22         172 LOAD_FAST                2 (x)
+            174 LOAD_GLOBAL              8 (I)
+            184 BINARY_OP                5 (*)
+            188 LOAD_GLOBAL              4 (P)
+            198 BINARY_OP                6 (%)
+            202 STORE_FAST               2 (x)
+
+ 23     >>  204 LOAD_FAST                2 (x)
+            206 LOAD_FAST                2 (x)
+            208 BINARY_OP                5 (*)
+            212 LOAD_FAST                1 (xx)
+            214 BINARY_OP               10 (-)
+            218 LOAD_GLOBAL              4 (P)
+            228 BINARY_OP                6 (%)
+            232 LOAD_CONST               4 (0)
+            234 COMPARE_OP              55 (!=)
+            238 POP_JUMP_IF_FALSE        1 (to 242)
+
+ 24         240 RETURN_CONST             0 (None)
+
+ 25     >>  242 LOAD_FAST                2 (x)
+            244 LOAD_CONST               5 (2)
+            246 BINARY_OP                6 (%)
+            250 LOAD_CONST               4 (0)
+            252 COMPARE_OP              40 (==)
+            256 POP_JUMP_IF_FALSE        2 (to 262)
+            258 LOAD_FAST                2 (x)
+            260 RETURN_VALUE
+        >>  262 LOAD_GLOBAL              4 (P)
+            272 LOAD_FAST                2 (x)
+            274 BINARY_OP               10 (-)
+            278 RETURN_VALUE
+
+Disassembly of <code object _add at 0x7f6af1f77030, file "ed25519_verify.py", line 34>:
+ 34           0 RESUME                   0
+
+ 35           2 LOAD_FAST                0 (a)
+              4 UNPACK_SEQUENCE          4
+              8 STORE_FAST               2 (x1)
+             10 STORE_FAST               3 (y1)
+             12 STORE_FAST               4 (z1)
+             14 STORE_FAST               5 (t1)
+
+ 36          16 LOAD_FAST                1 (b)
+             18 UNPACK_SEQUENCE          4
+             22 STORE_FAST               6 (x2)
+             24 STORE_FAST               7 (y2)
+             26 STORE_FAST               8 (z2)
+             28 STORE_FAST               9 (t2)
+
+ 37          30 LOAD_FAST                3 (y1)
+             32 LOAD_FAST                2 (x1)
+             34 BINARY_OP               10 (-)
+             38 LOAD_FAST                7 (y2)
+             40 LOAD_FAST                6 (x2)
+             42 BINARY_OP               10 (-)
+             46 BINARY_OP                5 (*)
+             50 LOAD_GLOBAL              0 (P)
+             60 BINARY_OP                6 (%)
+             64 STORE_FAST              10 (A)
+
+ 38          66 LOAD_FAST                3 (y1)
+             68 LOAD_FAST                2 (x1)
+             70 BINARY_OP                0 (+)
+             74 LOAD_FAST                7 (y2)
+             76 LOAD_FAST                6 (x2)
+             78 BINARY_OP                0 (+)
+             82 BINARY_OP                5 (*)
+             86 LOAD_GLOBAL              0 (P)
+             96 BINARY_OP                6 (%)
+            100 STORE_FAST              11 (B)
+
+ 39         102 LOAD_FAST                5 (t1)
+            104 LOAD_CONST               1 (2)
+            106 BINARY_OP                5 (*)
+            110 LOAD_GLOBAL              2 (D)
+            120 BINARY_OP                5 (*)
+            124 LOAD_FAST                9 (t2)
+            126 BINARY_OP                5 (*)
+            130 LOAD_GLOBAL              0 (P)
+            140 BINARY_OP                6 (%)
+            144 STORE_FAST              12 (C)
+
+ 40         146 LOAD_FAST                4 (z1)
+            148 LOAD_CONST               1 (2)
+            150 BINARY_OP                5 (*)
+            154 LOAD_FAST                8 (z2)
+            156 BINARY_OP                5 (*)
+            160 LOAD_GLOBAL              0 (P)
+            170 BINARY_OP                6 (%)
+            174 STORE_FAST              13 (E)
+
+ 41         176 LOAD_FAST               11 (B)
+            178 LOAD_FAST               10 (A)
+            180 BINARY_OP               10 (-)
+            184 LOAD_FAST               13 (E)
+            186 LOAD_FAST               12 (C)
+            188 BINARY_OP               10 (-)
+            192 LOAD_FAST               13 (E)
+            194 LOAD_FAST               12 (C)
+            196 BINARY_OP                0 (+)
+            200 LOAD_FAST               11 (B)
+            202 LOAD_FAST               10 (A)
+            204 BINARY_OP                0 (+)
+            208 BUILD_TUPLE              4
+            210 UNPACK_SEQUENCE          4
+            214 STORE_FAST              14 (F)
+            216 STORE_FAST              15 (G)
+            218 STORE_FAST              16 (H)
+            220 STORE_FAST              17 (J)
+
+ 42         222 LOAD_FAST               14 (F)
+            224 LOAD_FAST               15 (G)
+            226 BINARY_OP                5 (*)
+            230 LOAD_GLOBAL              0 (P)
+            240 BINARY_OP                6 (%)
+            244 LOAD_FAST               16 (H)
+            246 LOAD_FAST               17 (J)
+            248 BINARY_OP                5 (*)
+            252 LOAD_GLOBAL              0 (P)
+            262 BINARY_OP                6 (%)
+            266 LOAD_FAST               15 (G)
+            268 LOAD_FAST               16 (H)
+            270 BINARY_OP                5 (*)
+            274 LOAD_GLOBAL              0 (P)
+            284 BINARY_OP                6 (%)
+            288 LOAD_FAST               14 (F)
+            290 LOAD_FAST               17 (J)
+            292 BINARY_OP                5 (*)
+            296 LOAD_GLOBAL              0 (P)
+            306 BINARY_OP                6 (%)
+            310 BUILD_TUPLE              4
+            312 RETURN_VALUE
+
+Disassembly of <code object _mul at 0x7f6af1dd6f70, file "ed25519_verify.py", line 45>:
+ 45           0 RESUME                   0
+
+ 46           2 LOAD_GLOBAL              0 (_ZERO)
+             12 STORE_FAST               2 (r)
+
+ 47          14 LOAD_FAST                0 (s)
+             16 POP_JUMP_IF_FALSE       37 (to 92)
+
+ 48     >>   18 LOAD_FAST                0 (s)
+             20 LOAD_CONST               1 (1)
+             22 BINARY_OP                1 (&)
+             26 POP_JUMP_IF_FALSE       12 (to 52)
+
+ 49          28 LOAD_GLOBAL              3 (NULL + _add)
+             38 LOAD_FAST                2 (r)
+             40 LOAD_FAST                1 (pt)
+             42 CALL                     2
+             50 STORE_FAST               2 (r)
+
+ 50     >>   52 LOAD_GLOBAL              3 (NULL + _add)
+             62 LOAD_FAST                1 (pt)
+             64 LOAD_FAST                1 (pt)
+             66 CALL                     2
+             74 STORE_FAST               1 (pt)
+
+ 51          76 LOAD_FAST                0 (s)
+             78 LOAD_CONST               1 (1)
+             80 BINARY_OP               22 (>>=)
+             84 STORE_FAST               0 (s)
+
+ 47          86 LOAD_FAST                0 (s)
+             88 POP_JUMP_IF_FALSE        1 (to 92)
+             90 JUMP_BACKWARD           37 (to 18)
+
+ 52     >>   92 LOAD_FAST                2 (r)
+             94 RETURN_VALUE
+
+Disassembly of <code object _decode at 0x7f6af20e2f70, file "ed25519_verify.py", line 55>:
+ 55           0 RESUME                   0
+
+ 56           2 LOAD_GLOBAL              1 (NULL + len)
+             12 LOAD_FAST                0 (b)
+             14 CALL                     1
+             22 LOAD_CONST               1 (32)
+             24 COMPARE_OP              55 (!=)
+             28 POP_JUMP_IF_FALSE        1 (to 32)
+
+ 57          30 RETURN_CONST             0 (None)
+
+ 58     >>   32 LOAD_GLOBAL              2 (int)
+             42 LOAD_ATTR                5 (NULL|self + from_bytes)
+             62 LOAD_FAST                0 (b)
+             64 LOAD_CONST               2 ('little')
+             66 CALL                     2
+             74 STORE_FAST               1 (y)
+
+ 59          76 LOAD_FAST                1 (y)
+             78 LOAD_CONST               3 (255)
+             80 BINARY_OP                9 (>>)
+             84 STORE_FAST               2 (sign)
+
+ 60          86 LOAD_FAST                1 (y)
+             88 LOAD_CONST               4 (1)
+             90 LOAD_CONST               3 (255)
+             92 BINARY_OP                3 (<<)
+             96 LOAD_CONST               4 (1)
+             98 BINARY_OP               10 (-)
+            102 BINARY_OP               14 (&=)
+            106 STORE_FAST               1 (y)
+
+ 61         108 LOAD_FAST                1 (y)
+            110 LOAD_GLOBAL              6 (P)
+            120 COMPARE_OP              92 (>=)
+            124 POP_JUMP_IF_FALSE        1 (to 128)
+
+ 62         126 RETURN_CONST             0 (None)
+
+ 63     >>  128 LOAD_GLOBAL              9 (NULL + _x_recover)
+            138 LOAD_FAST                1 (y)
+            140 CALL                     1
+            148 STORE_FAST               3 (x)
+
+ 64         150 LOAD_FAST                3 (x)
+            152 POP_JUMP_IF_NONE         7 (to 168)
+            154 LOAD_FAST                3 (x)
+            156 LOAD_CONST               5 (0)
+            158 COMPARE_OP              40 (==)
+            162 POP_JUMP_IF_FALSE        3 (to 170)
+            164 LOAD_FAST                2 (sign)
+            166 POP_JUMP_IF_FALSE        1 (to 170)
+
+ 65     >>  168 RETURN_CONST             0 (None)
+
+ 66     >>  170 LOAD_FAST                3 (x)
+            172 LOAD_CONST               4 (1)
+            174 BINARY_OP                1 (&)
+            178 LOAD_FAST                2 (sign)
+            180 COMPARE_OP              55 (!=)
+            184 POP_JUMP_IF_FALSE        9 (to 204)
+
+ 67         186 LOAD_GLOBAL              6 (P)
+            196 LOAD_FAST                3 (x)
+            198 BINARY_OP               10 (-)
+            202 STORE_FAST               3 (x)
+
+ 68     >>  204 LOAD_FAST                3 (x)
+            206 LOAD_FAST                1 (y)
+            208 LOAD_CONST               4 (1)
+            210 LOAD_FAST                3 (x)
+            212 LOAD_FAST                1 (y)
+            214 BINARY_OP                5 (*)
+            218 LOAD_GLOBAL              6 (P)
+            228 BINARY_OP                6 (%)
+            232 BUILD_TUPLE              4
+            234 RETURN_VALUE
+
+Disassembly of <code object _eq at 0x7f6af1f838a0, file "ed25519_verify.py", line 71>:
+ 71           0 RESUME                   0
+
+ 72           2 LOAD_FAST                0 (a)
+              4 LOAD_CONST               1 (0)
+              6 BINARY_SUBSCR
+             10 LOAD_FAST                1 (b)
+             12 LOAD_CONST               2 (2)
+             14 BINARY_SUBSCR
+             18 BINARY_OP                5 (*)
+             22 LOAD_FAST                1 (b)
+             24 LOAD_CONST               1 (0)
+             26 BINARY_SUBSCR
+             30 LOAD_FAST                0 (a)
+             32 LOAD_CONST               2 (2)
+             34 BINARY_SUBSCR
+             38 BINARY_OP                5 (*)
+             42 BINARY_OP               10 (-)
+             46 LOAD_GLOBAL              0 (P)
+             56 BINARY_OP                6 (%)
+             60 LOAD_CONST               1 (0)
+             62 COMPARE_OP              40 (==)
+             66 COPY                     1
+             68 POP_JUMP_IF_FALSE       33 (to 136)
+             70 POP_TOP
+             72 LOAD_FAST                0 (a)
+             74 LOAD_CONST               3 (1)
+             76 BINARY_SUBSCR
+             80 LOAD_FAST                1 (b)
+             82 LOAD_CONST               2 (2)
+             84 BINARY_SUBSCR
+             88 BINARY_OP                5 (*)
+             92 LOAD_FAST                1 (b)
+             94 LOAD_CONST               3 (1)
+             96 BINARY_SUBSCR
+            100 LOAD_FAST                0 (a)
+            102 LOAD_CONST               2 (2)
+            104 BINARY_SUBSCR
+            108 BINARY_OP                5 (*)
+            112 BINARY_OP               10 (-)
+            116 LOAD_GLOBAL              0 (P)
+            126 BINARY_OP                6 (%)
+            130 LOAD_CONST               1 (0)
+            132 COMPARE_OP              40 (==)
+        >>  136 RETURN_VALUE
+
+Disassembly of <code object verify at 0x179c8bc0, file "ed25519_verify.py", line 75>:
+ 75           0 RESUME                   0
+
+ 76           2 NOP
+
+ 77           4 NOP
+
+ 78           6 LOAD_GLOBAL              1 (NULL + len)
+             16 LOAD_FAST                0 (public_key)
+             18 CALL                     1
+             26 LOAD_CONST               1 (32)
+             28 COMPARE_OP              55 (!=)
+             32 POP_JUMP_IF_TRUE        14 (to 62)
+             34 LOAD_GLOBAL              1 (NULL + len)
+             44 LOAD_FAST                2 (signature)
+             46 CALL                     1
+             54 LOAD_CONST               2 (64)
+             56 COMPARE_OP              55 (!=)
+             60 POP_JUMP_IF_FALSE        1 (to 64)
+
+ 79     >>   62 RETURN_CONST             3 (False)
+
+ 80     >>   64 LOAD_GLOBAL              3 (NULL + _decode)
+             74 LOAD_FAST                0 (public_key)
+             76 CALL                     1
+             84 STORE_FAST               3 (a)
+
+ 81          86 LOAD_GLOBAL              3 (NULL + _decode)
+             96 LOAD_FAST                2 (signature)
+             98 LOAD_CONST               0 (None)
+            100 LOAD_CONST               1 (32)
+            102 BINARY_SLICE
+            104 CALL                     1
+            112 STORE_FAST               4 (r)
+
+ 82         114 LOAD_GLOBAL              4 (int)
+            124 LOAD_ATTR                7 (NULL|self + from_bytes)
+            144 LOAD_FAST                2 (signature)
+            146 LOAD_CONST               1 (32)
+            148 LOAD_CONST               0 (None)
+            150 BINARY_SLICE
+            152 LOAD_CONST               4 ('little')
+            154 CALL                     2
+            162 STORE_FAST               5 (s)
+
+ 83         164 LOAD_FAST                3 (a)
+            166 POP_JUMP_IF_NONE        11 (to 190)
+            168 LOAD_FAST                4 (r)
+            170 POP_JUMP_IF_NONE         9 (to 190)
+            172 LOAD_FAST                5 (s)
+            174 LOAD_GLOBAL              8 (Q)
+            184 COMPARE_OP              92 (>=)
+            188 POP_JUMP_IF_FALSE        1 (to 192)
+
+ 84     >>  190 RETURN_CONST             3 (False)
+
+ 85     >>  192 LOAD_GLOBAL              4 (int)
+            202 LOAD_ATTR                7 (NULL|self + from_bytes)
+            222 LOAD_GLOBAL             11 (NULL + hashlib)
+            232 LOAD_ATTR               12 (sha512)
+            252 LOAD_FAST                2 (signature)
+            254 LOAD_CONST               0 (None)
+            256 LOAD_CONST               1 (32)
+            258 BINARY_SLICE
+            260 LOAD_FAST                0 (public_key)
+            262 BINARY_OP                0 (+)
+            266 LOAD_FAST                1 (message)
+            268 BINARY_OP                0 (+)
+            272 CALL                     1
+            280 LOAD_ATTR               15 (NULL|self + digest)
+            300 CALL                     0
+            308 LOAD_CONST               4 ('little')
+            310 CALL                     2
+            318 LOAD_GLOBAL              8 (Q)
+            328 BINARY_OP                6 (%)
+            332 STORE_FAST               6 (h)
+
+ 86         334 LOAD_GLOBAL             17 (NULL + _eq)
+            344 LOAD_GLOBAL             19 (NULL + _mul)
+            354 LOAD_FAST                5 (s)
+            356 LOAD_GLOBAL             20 (_B)
+            366 CALL                     2
+            374 LOAD_GLOBAL             23 (NULL + _add)
+            384 LOAD_FAST                4 (r)
+            386 LOAD_GLOBAL             19 (NULL + _mul)
+            396 LOAD_FAST                6 (h)
+            398 LOAD_FAST                3 (a)
+            400 CALL                     2
+            408 CALL                     2
+            416 CALL                     2
+            424 RETURN_VALUE
+        >>  426 PUSH_EXC_INFO
+
+ 87         428 LOAD_GLOBAL             24 (Exception)
+            438 CHECK_EXC_MATCH
+            440 POP_JUMP_IF_FALSE        3 (to 448)
+            442 POP_TOP
+
+ 88         444 POP_EXCEPT
+            446 RETURN_CONST             3 (False)
+
+ 87     >>  448 RERAISE                  0
+        >>  450 COPY                     3
+            452 POP_EXCEPT
+            454 RERAISE                  1
+ExceptionTable:
+  6 to 60 -> 426 [0]
+  64 to 188 -> 426 [0]
+  192 to 422 -> 426 [0]
+  426 to 442 -> 450 [1] lasti
+  448 to 448 -> 450 [1] lasti

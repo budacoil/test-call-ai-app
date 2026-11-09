@@ -1,0 +1,2225 @@
+  0           0 RESUME                   0
+
+  1           2 SETUP_ANNOTATIONS
+
+ 13           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (os)
+             10 STORE_NAME               0 (os)
+
+ 14          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (time)
+             18 STORE_NAME               1 (time)
+
+ 15          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               2 (('Callable', 'List', 'Optional', 'Tuple'))
+             24 IMPORT_NAME              2 (typing)
+             26 IMPORT_FROM              3 (Callable)
+             28 STORE_NAME               3 (Callable)
+             30 IMPORT_FROM              4 (List)
+             32 STORE_NAME               4 (List)
+             34 IMPORT_FROM              5 (Optional)
+             36 STORE_NAME               5 (Optional)
+             38 IMPORT_FROM              6 (Tuple)
+             40 STORE_NAME               6 (Tuple)
+             42 POP_TOP
+
+ 17          44 LOAD_CONST               0 (0)
+             46 LOAD_CONST               1 (None)
+             48 IMPORT_NAME              7 (cv2)
+             50 STORE_NAME               7 (cv2)
+
+ 18          52 LOAD_CONST               0 (0)
+             54 LOAD_CONST               1 (None)
+             56 IMPORT_NAME              8 (numpy)
+             58 STORE_NAME               9 (np)
+
+ 20          60 LOAD_CONST               0 (0)
+             62 LOAD_CONST               1 (None)
+             64 IMPORT_NAME             10 (config)
+             66 STORE_NAME              10 (config)
+
+ 22          68 LOAD_CONST               3 ((20, 28))
+             70 UNPACK_SEQUENCE          2
+             74 STORE_NAME              11 (GW)
+             76 STORE_NAME              12 (GH)
+
+ 23          78 LOAD_CONST               4 (0.55)
+             80 STORE_NAME              13 (MIN_SCORE)
+
+ 24          82 LOAD_CONST               5 (0.06)
+             84 STORE_NAME              14 (MIN_MARGIN)
+
+ 25          86 LOAD_CONST               6 (20.0)
+             88 STORE_NAME              15 (LOST_S)
+
+ 26          90 LOAD_CONST               7 (2)
+             92 STORE_NAME              16 (CONFIRM)
+
+ 27          94 LOAD_CONST               8 (12.0)
+             96 STORE_NAME              17 (WINDOW_S)
+
+ 28          98 LOAD_CONST               9 (30)
+            100 STORE_NAME              18 (SAMPLE_LIMIT)
+
+ 29         102 LOAD_CONST              10 ('countdown_digits.npz')
+            104 STORE_NAME              19 (NPZ_NAME)
+
+ 33         106 LOAD_CONST              11 ('frame')
+            108 LOAD_NAME                9 (np)
+            110 LOAD_ATTR               40 (ndarray)
+            130 BUILD_TUPLE              2
+            132 LOAD_CONST              12 (<code object find_plate at 0x179dba70, file "bus_drop.py", line 33>)
+            134 MAKE_FUNCTION            4 (annotations)
+            136 STORE_NAME              21 (find_plate)
+
+ 62         138 LOAD_CONST              13 ('dark')
+            140 LOAD_NAME                9 (np)
+            142 LOAD_ATTR               40 (ndarray)
+            162 LOAD_CONST              14 ('return')
+            164 LOAD_NAME                4 (List)
+            166 LOAD_NAME                9 (np)
+            168 LOAD_ATTR               40 (ndarray)
+            188 BINARY_SUBSCR
+            192 BUILD_TUPLE              4
+            194 LOAD_CONST              15 (<code object split_digits at 0x179d0280, file "bus_drop.py", line 62>)
+            196 MAKE_FUNCTION            4 (annotations)
+            198 STORE_NAME              22 (split_digits)
+
+ 98         200 LOAD_CONST              16 ('m')
+            202 LOAD_NAME                9 (np)
+            204 LOAD_ATTR               40 (ndarray)
+            224 LOAD_CONST              14 ('return')
+            226 LOAD_NAME                5 (Optional)
+            228 LOAD_NAME                9 (np)
+            230 LOAD_ATTR               40 (ndarray)
+            250 BINARY_SUBSCR
+            254 BUILD_TUPLE              4
+            256 LOAD_CONST              17 (<code object _crop at 0x179d0ca0, file "bus_drop.py", line 98>)
+            258 MAKE_FUNCTION            4 (annotations)
+            260 STORE_NAME              23 (_crop)
+
+105         262 LOAD_CONST              16 ('m')
+            264 LOAD_NAME                9 (np)
+            266 LOAD_ATTR               40 (ndarray)
+            286 LOAD_CONST              18 ('k')
+            288 LOAD_NAME               24 (float)
+            290 LOAD_CONST              14 ('return')
+            292 LOAD_NAME                9 (np)
+            294 LOAD_ATTR               40 (ndarray)
+            314 BUILD_TUPLE              6
+            316 LOAD_CONST              19 (<code object _shear at 0x7f6af20bba50, file "bus_drop.py", line 105>)
+            318 MAKE_FUNCTION            4 (annotations)
+            320 STORE_NAME              25 (_shear)
+
+111         322 LOAD_CONST              20 ('g')
+            324 LOAD_NAME                9 (np)
+            326 LOAD_ATTR               40 (ndarray)
+            346 LOAD_CONST              14 ('return')
+            348 LOAD_NAME                9 (np)
+            350 LOAD_ATTR               40 (ndarray)
+            370 BUILD_TUPLE              4
+            372 LOAD_CONST              21 (<code object _unit at 0x7f6af1f3ed30, file "bus_drop.py", line 111>)
+            374 MAKE_FUNCTION            4 (annotations)
+            376 STORE_NAME              26 (_unit)
+
+116         378 LOAD_CONST              22 ('mask')
+            380 LOAD_NAME                9 (np)
+            382 LOAD_ATTR               40 (ndarray)
+            402 LOAD_CONST              14 ('return')
+            404 LOAD_NAME                5 (Optional)
+            406 LOAD_NAME                9 (np)
+            408 LOAD_ATTR               40 (ndarray)
+            428 BINARY_SUBSCR
+            432 BUILD_TUPLE              4
+            434 LOAD_CONST              23 (<code object prepare_template at 0x7f6af1da6870, file "bus_drop.py", line 116>)
+            436 MAKE_FUNCTION            4 (annotations)
+            438 STORE_NAME              27 (prepare_template)
+
+121         440 LOAD_CONST               1 (None)
+            442 STORE_GLOBAL            28 (_TEMPLATES)
+            444 LOAD_NAME                5 (Optional)
+            446 LOAD_NAME               29 (dict)
+            448 BINARY_SUBSCR
+            452 LOAD_NAME               30 (__annotations__)
+            454 LOAD_CONST              24 ('_TEMPLATES')
+            456 STORE_SUBSCR
+
+124         460 LOAD_CONST              33 (('',))
+            462 LOAD_CONST              25 ('path')
+            464 LOAD_NAME               31 (str)
+            466 LOAD_CONST              14 ('return')
+            468 LOAD_NAME               29 (dict)
+            470 BUILD_TUPLE              4
+            472 LOAD_CONST              26 (<code object load_templates at 0x17a65af0, file "bus_drop.py", line 124>)
+            474 MAKE_FUNCTION            5 (defaults, annotations)
+            476 STORE_NAME              32 (load_templates)
+
+146         478 LOAD_CONST              27 ('raw')
+            480 LOAD_NAME                9 (np)
+            482 LOAD_ATTR               40 (ndarray)
+            502 LOAD_CONST              28 ('templates')
+            504 LOAD_NAME               29 (dict)
+            506 LOAD_CONST              14 ('return')
+            508 LOAD_NAME                5 (Optional)
+            510 LOAD_NAME                6 (Tuple)
+            512 LOAD_NAME               31 (str)
+            514 LOAD_NAME               24 (float)
+            516 LOAD_NAME               24 (float)
+            518 BUILD_TUPLE              3
+            520 BINARY_SUBSCR
+            524 BINARY_SUBSCR
+            528 BUILD_TUPLE              6
+            530 LOAD_CONST              29 (<code object classify at 0x178ba1f0, file "bus_drop.py", line 146>)
+            532 MAKE_FUNCTION            4 (annotations)
+            534 STORE_NAME              33 (classify)
+
+165         536 LOAD_CONST              34 ((None,))
+            538 LOAD_CONST              11 ('frame')
+            540 LOAD_NAME                9 (np)
+            542 LOAD_ATTR               40 (ndarray)
+            562 LOAD_CONST              28 ('templates')
+            564 LOAD_NAME                5 (Optional)
+            566 LOAD_NAME               29 (dict)
+            568 BINARY_SUBSCR
+            572 LOAD_CONST              14 ('return')
+            574 LOAD_NAME                6 (Tuple)
+            576 LOAD_NAME               34 (bool)
+            578 LOAD_NAME                5 (Optional)
+            580 LOAD_NAME               35 (int)
+            582 BINARY_SUBSCR
+            586 LOAD_NAME               24 (float)
+            588 LOAD_NAME                5 (Optional)
+            590 LOAD_NAME                9 (np)
+            592 LOAD_ATTR               40 (ndarray)
+            612 BINARY_SUBSCR
+            616 BUILD_TUPLE              4
+            618 BINARY_SUBSCR
+            622 BUILD_TUPLE              6
+            624 LOAD_CONST              30 (<code object read_countdown at 0x179dd280, file "bus_drop.py", line 165>)
+            626 MAKE_FUNCTION            5 (defaults, annotations)
+            628 STORE_NAME              36 (read_countdown)
+
+190         630 PUSH_NULL
+            632 LOAD_BUILD_CLASS
+            634 LOAD_CONST              31 (<code object BusDrop at 0x7f6af1e297a0, file "bus_drop.py", line 190>)
+            636 MAKE_FUNCTION            0
+            638 LOAD_CONST              32 ('BusDrop')
+            640 CALL                     2
+            648 STORE_NAME              37 (BusDrop)
+            650 RETURN_CONST             1 (None)
+
+Disassembly of <code object find_plate at 0x179dba70, file "bus_drop.py", line 33>:
+ 33           0 RESUME                   0
+
+ 34           2 NOP
+
+ 35           4 NOP
+
+ 36           6 LOAD_FAST                0 (frame)
+              8 LOAD_ATTR                0 (shape)
+             28 LOAD_CONST               0 (None)
+             30 LOAD_CONST               1 (2)
+             32 BINARY_SLICE
+             34 UNPACK_SEQUENCE          2
+             38 STORE_FAST               1 (h)
+             40 STORE_FAST               2 (w)
+
+ 37          42 LOAD_GLOBAL              3 (NULL + int)
+             52 LOAD_CONST               2 (0.45)
+             54 LOAD_FAST                2 (w)
+             56 BINARY_OP                5 (*)
+             60 CALL                     1
+             68 LOAD_GLOBAL              3 (NULL + int)
+             78 LOAD_CONST               3 (0.75)
+             80 LOAD_FAST                2 (w)
+             82 BINARY_OP                5 (*)
+             86 CALL                     1
+             94 LOAD_GLOBAL              3 (NULL + int)
+            104 LOAD_CONST               4 (0.25)
+            106 LOAD_FAST                1 (h)
+            108 BINARY_OP                5 (*)
+            112 CALL                     1
+            120 STORE_FAST               5 (y1)
+            122 STORE_FAST               4 (x1)
+            124 STORE_FAST               3 (x0)
+
+ 38         126 LOAD_FAST                0 (frame)
+            128 LOAD_CONST               0 (None)
+            130 LOAD_FAST                5 (y1)
+            132 BUILD_SLICE              2
+            134 LOAD_FAST                3 (x0)
+            136 LOAD_FAST                4 (x1)
+            138 BUILD_SLICE              2
+            140 BUILD_TUPLE              2
+            142 BINARY_SUBSCR
+            146 STORE_FAST               6 (reg)
+
+ 39         148 LOAD_GLOBAL              5 (NULL + cv2)
+            158 LOAD_ATTR                6 (cvtColor)
+            178 LOAD_FAST                6 (reg)
+            180 LOAD_GLOBAL              4 (cv2)
+            190 LOAD_ATTR                8 (COLOR_BGR2GRAY)
+            210 CALL                     2
+            218 STORE_FAST               7 (g)
+
+ 40         220 LOAD_FAST                6 (reg)
+            222 LOAD_ATTR               11 (NULL|self + max)
+            242 LOAD_CONST               1 (2)
+            244 KW_NAMES                 5 (('axis',))
+            246 CALL                     1
+            254 LOAD_ATTR               13 (NULL|self + astype)
+            274 LOAD_GLOBAL             14 (np)
+            284 LOAD_ATTR               16 (int16)
+            304 CALL                     1
+            312 LOAD_FAST                6 (reg)
+            314 LOAD_ATTR               19 (NULL|self + min)
+            334 LOAD_CONST               1 (2)
+            336 KW_NAMES                 5 (('axis',))
+            338 CALL                     1
+            346 LOAD_ATTR               13 (NULL|self + astype)
+            366 LOAD_GLOBAL             14 (np)
+            376 LOAD_ATTR               16 (int16)
+            396 CALL                     1
+            404 BINARY_OP               10 (-)
+            408 STORE_FAST               8 (sat)
+
+ 41         410 LOAD_GLOBAL              5 (NULL + cv2)
+            420 LOAD_ATTR               20 (morphologyEx)
+            440 LOAD_FAST                7 (g)
+            442 LOAD_CONST               6 (205)
+            444 COMPARE_OP              92 (>=)
+            448 LOAD_FAST                8 (sat)
+            450 LOAD_CONST               7 (60)
+            452 COMPARE_OP              26 (<=)
+            456 BINARY_OP                1 (&)
+            460 LOAD_ATTR               13 (NULL|self + astype)
+            480 LOAD_GLOBAL             14 (np)
+            490 LOAD_ATTR               22 (uint8)
+            510 CALL                     1
+            518 LOAD_GLOBAL              4 (cv2)
+            528 LOAD_ATTR               24 (MORPH_CLOSE)
+            548 LOAD_GLOBAL             15 (NULL + np)
+            558 LOAD_ATTR               26 (ones)
+            578 LOAD_CONST               8 ((3, 3))
+            580 LOAD_GLOBAL             14 (np)
+            590 LOAD_ATTR               22 (uint8)
+            610 CALL                     2
+            618 CALL                     3
+            626 STORE_FAST               9 (white)
+
+ 42         628 LOAD_GLOBAL              5 (NULL + cv2)
+            638 LOAD_ATTR               28 (connectedComponentsWithStats)
+            658 LOAD_FAST                9 (white)
+            660 LOAD_CONST               9 (8)
+            662 KW_NAMES                10 (('connectivity',))
+            664 CALL                     2
+            672 UNPACK_SEQUENCE          4
+            676 STORE_FAST              10 (n)
+            678 STORE_FAST              11 (lab)
+            680 STORE_FAST              12 (st)
+            682 STORE_FAST              13 (_)
+
+ 43         684 LOAD_CONST               0 (None)
+            686 STORE_FAST              14 (best)
+
+ 44         688 LOAD_GLOBAL             31 (NULL + range)
+            698 LOAD_CONST              11 (1)
+            700 LOAD_FAST               10 (n)
+            702 CALL                     2
+            710 GET_ITER
+        >>  712 EXTENDED_ARG             1
+            714 FOR_ITER               456 (to 1630)
+            718 STORE_FAST              15 (i)
+
+ 45         720 LOAD_CONST              12 (<code object <genexpr> at 0x7f6af1dd2630, file "bus_drop.py", line 45>)
+            722 MAKE_FUNCTION            0
+            724 LOAD_FAST               12 (st)
+            726 LOAD_FAST               15 (i)
+            728 BINARY_SUBSCR
+            732 GET_ITER
+            734 CALL                     0
+            742 UNPACK_SEQUENCE          5
+            746 STORE_FAST              16 (x)
+            748 STORE_FAST              17 (y)
+            750 STORE_FAST              18 (bw)
+            752 STORE_FAST              19 (bh)
+            754 STORE_FAST              20 (area)
+
+ 46         756 LOAD_CONST              13 (0.022)
+            758 LOAD_FAST                1 (h)
+            760 BINARY_OP                5 (*)
+            764 LOAD_FAST               19 (bh)
+            766 SWAP                     2
+            768 COPY                     2
+            770 COMPARE_OP              26 (<=)
+            774 POP_JUMP_IF_FALSE        8 (to 792)
+            776 LOAD_CONST              14 (0.07)
+            778 LOAD_FAST                1 (h)
+            780 BINARY_OP                5 (*)
+            784 COMPARE_OP              26 (<=)
+            788 POP_JUMP_IF_FALSE       19 (to 828)
+            790 JUMP_FORWARD             2 (to 796)
+        >>  792 POP_TOP
+            794 JUMP_FORWARD            16 (to 828)
+        >>  796 LOAD_CONST              15 (1.0)
+            798 LOAD_FAST               18 (bw)
+            800 LOAD_FAST               19 (bh)
+            802 BINARY_OP               11 (/)
+            806 SWAP                     2
+            808 COPY                     2
+            810 COMPARE_OP              26 (<=)
+            814 POP_JUMP_IF_FALSE        5 (to 826)
+            816 LOAD_CONST              16 (2.6)
+            818 COMPARE_OP              26 (<=)
+            822 POP_JUMP_IF_TRUE         3 (to 830)
+            824 JUMP_FORWARD             1 (to 828)
+        >>  826 POP_TOP
+
+ 47     >>  828 JUMP_BACKWARD           59 (to 712)
+
+ 48     >>  830 LOAD_FAST               11 (lab)
+            832 LOAD_FAST               17 (y)
+            834 LOAD_FAST               17 (y)
+            836 LOAD_FAST               19 (bh)
+            838 BINARY_OP                0 (+)
+            842 BUILD_SLICE              2
+            844 LOAD_FAST               16 (x)
+            846 LOAD_FAST               16 (x)
+            848 LOAD_FAST               18 (bw)
+            850 BINARY_OP                0 (+)
+            854 BUILD_SLICE              2
+            856 BUILD_TUPLE              2
+            858 BINARY_SUBSCR
+            862 LOAD_FAST               15 (i)
+            864 COMPARE_OP              40 (==)
+            868 LOAD_ATTR               13 (NULL|self + astype)
+            888 LOAD_GLOBAL             14 (np)
+            898 LOAD_ATTR               22 (uint8)
+            918 CALL                     1
+            926 STORE_FAST              21 (inside)
+
+ 49         928 LOAD_GLOBAL              5 (NULL + cv2)
+            938 LOAD_ATTR               32 (findContours)
+            958 LOAD_FAST               21 (inside)
+            960 LOAD_GLOBAL              4 (cv2)
+            970 LOAD_ATTR               34 (RETR_EXTERNAL)
+            990 LOAD_GLOBAL              4 (cv2)
+           1000 LOAD_ATTR               36 (CHAIN_APPROX_SIMPLE)
+           1020 CALL                     3
+           1028 UNPACK_SEQUENCE          2
+           1032 STORE_FAST              22 (cnts)
+           1034 STORE_FAST              13 (_)
+
+ 50        1036 LOAD_GLOBAL             15 (NULL + np)
+           1046 LOAD_ATTR               38 (zeros_like)
+           1066 LOAD_FAST               21 (inside)
+           1068 CALL                     1
+           1076 STORE_FAST              23 (hull)
+
+ 51        1078 LOAD_GLOBAL              5 (NULL + cv2)
+           1088 LOAD_ATTR               40 (fillPoly)
+           1108 LOAD_FAST               23 (hull)
+           1110 LOAD_GLOBAL              5 (NULL + cv2)
+           1120 LOAD_ATTR               42 (convexHull)
+           1140 LOAD_GLOBAL             11 (NULL + max)
+           1150 LOAD_FAST               22 (cnts)
+           1152 LOAD_GLOBAL              4 (cv2)
+           1162 LOAD_ATTR               44 (contourArea)
+           1182 KW_NAMES                17 (('key',))
+           1184 CALL                     2
+           1192 CALL                     1
+           1200 BUILD_LIST               1
+           1202 LOAD_CONST              11 (1)
+           1204 CALL                     3
+           1212 POP_TOP
+
+ 52        1214 LOAD_GLOBAL              5 (NULL + cv2)
+           1224 LOAD_ATTR               46 (erode)
+           1244 LOAD_FAST               23 (hull)
+           1246 LOAD_GLOBAL             15 (NULL + np)
+           1256 LOAD_ATTR               26 (ones)
+           1276 LOAD_CONST              18 ((7, 7))
+           1278 LOAD_GLOBAL             14 (np)
+           1288 LOAD_ATTR               22 (uint8)
+           1308 CALL                     2
+           1316 CALL                     2
+           1324 STORE_FAST              24 (core)
+
+ 53        1326 LOAD_FAST                7 (g)
+           1328 LOAD_FAST               17 (y)
+           1330 LOAD_FAST               17 (y)
+           1332 LOAD_FAST               19 (bh)
+           1334 BINARY_OP                0 (+)
+           1338 BUILD_SLICE              2
+           1340 LOAD_FAST               16 (x)
+           1342 LOAD_FAST               16 (x)
+           1344 LOAD_FAST               18 (bw)
+           1346 BINARY_OP                0 (+)
+           1350 BUILD_SLICE              2
+           1352 BUILD_TUPLE              2
+           1354 BINARY_SUBSCR
+           1358 LOAD_CONST              19 (120)
+           1360 COMPARE_OP               2 (<)
+           1364 LOAD_FAST               21 (inside)
+           1366 LOAD_CONST              20 (0)
+           1368 COMPARE_OP              40 (==)
+           1372 BINARY_OP                1 (&)
+           1376 LOAD_ATTR               13 (NULL|self + astype)
+           1396 LOAD_GLOBAL             14 (np)
+           1406 LOAD_ATTR               22 (uint8)
+           1426 CALL                     1
+           1434 LOAD_FAST               24 (core)
+           1436 BINARY_OP                1 (&)
+           1440 STORE_FAST              25 (dark)
+
+ 54        1442 LOAD_FAST               25 (dark)
+           1444 LOAD_ATTR               49 (NULL|self + sum)
+           1464 CALL                     0
+           1472 LOAD_GLOBAL             51 (NULL + float)
+           1482 LOAD_GLOBAL             11 (NULL + max)
+           1492 LOAD_CONST              11 (1)
+           1494 LOAD_FAST               23 (hull)
+           1496 LOAD_ATTR               49 (NULL|self + sum)
+           1516 CALL                     0
+           1524 CALL                     2
+           1532 CALL                     1
+           1540 BINARY_OP               11 (/)
+           1544 STORE_FAST              26 (share)
+
+ 55        1546 LOAD_CONST              21 (0.1)
+           1548 LOAD_FAST               26 (share)
+           1550 SWAP                     2
+           1552 COPY                     2
+           1554 COMPARE_OP              26 (<=)
+           1558 POP_JUMP_IF_FALSE        7 (to 1574)
+           1560 LOAD_CONST              22 (0.5)
+           1562 COMPARE_OP              26 (<=)
+           1566 POP_JUMP_IF_TRUE         2 (to 1572)
+           1568 EXTENDED_ARG             1
+           1570 JUMP_BACKWARD          430 (to 712)
+        >> 1572 JUMP_FORWARD             3 (to 1580)
+        >> 1574 POP_TOP
+           1576 EXTENDED_ARG             1
+           1578 JUMP_BACKWARD          434 (to 712)
+        >> 1580 LOAD_FAST               14 (best)
+           1582 POP_JUMP_IF_NONE        10 (to 1604)
+           1584 LOAD_FAST               20 (area)
+           1586 LOAD_FAST               14 (best)
+           1588 LOAD_CONST              23 (4)
+           1590 BINARY_SUBSCR
+           1594 COMPARE_OP              68 (>)
+           1598 POP_JUMP_IF_TRUE         2 (to 1604)
+           1600 EXTENDED_ARG             1
+           1602 JUMP_BACKWARD          446 (to 712)
+
+ 56     >> 1604 LOAD_FAST               16 (x)
+           1606 LOAD_FAST                3 (x0)
+           1608 BINARY_OP                0 (+)
+           1612 LOAD_FAST               17 (y)
+           1614 LOAD_FAST               18 (bw)
+           1616 LOAD_FAST               19 (bh)
+           1618 LOAD_FAST               20 (area)
+           1620 LOAD_FAST               25 (dark)
+           1622 BUILD_TUPLE              6
+           1624 STORE_FAST              14 (best)
+           1626 EXTENDED_ARG             1
+           1628 JUMP_BACKWARD          459 (to 712)
+
+ 44     >> 1630 END_FOR
+
+ 57        1632 LOAD_FAST               14 (best)
+           1634 POP_JUMP_IF_NOT_NONE     2 (to 1640)
+           1636 LOAD_CONST               0 (None)
+           1638 RETURN_VALUE
+        >> 1640 LOAD_FAST               14 (best)
+           1642 LOAD_CONST              20 (0)
+           1644 BINARY_SUBSCR
+           1648 LOAD_FAST               14 (best)
+           1650 LOAD_CONST              11 (1)
+           1652 BINARY_SUBSCR
+           1656 LOAD_FAST               14 (best)
+           1658 LOAD_CONST               1 (2)
+           1660 BINARY_SUBSCR
+           1664 LOAD_FAST               14 (best)
+           1666 LOAD_CONST              24 (3)
+           1668 BINARY_SUBSCR
+           1672 LOAD_FAST               14 (best)
+           1674 LOAD_CONST              25 (5)
+           1676 BINARY_SUBSCR
+           1680 BUILD_TUPLE              5
+           1682 RETURN_VALUE
+        >> 1684 PUSH_EXC_INFO
+
+ 58        1686 LOAD_GLOBAL             52 (Exception)
+           1696 CHECK_EXC_MATCH
+           1698 POP_JUMP_IF_FALSE        3 (to 1706)
+           1700 POP_TOP
+
+ 59        1702 POP_EXCEPT
+           1704 RETURN_CONST             0 (None)
+
+ 58     >> 1706 RERAISE                  0
+        >> 1708 COPY                     3
+           1710 POP_EXCEPT
+           1712 RERAISE                  1
+ExceptionTable:
+  6 to 1566 -> 1684 [0]
+  1572 to 1598 -> 1684 [0]
+  1604 to 1636 -> 1684 [0]
+  1640 to 1680 -> 1684 [0]
+  1684 to 1700 -> 1708 [1] lasti
+  1706 to 1706 -> 1708 [1] lasti
+
+Disassembly of <code object <genexpr> at 0x7f6af1dd2630, file "bus_drop.py", line 45>:
+ 45           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+              6 LOAD_FAST                0 (.0)
+        >>    8 FOR_ITER                15 (to 42)
+             12 STORE_FAST               1 (v)
+             14 LOAD_GLOBAL              1 (NULL + int)
+             24 LOAD_FAST                1 (v)
+             26 CALL                     1
+             34 YIELD_VALUE              1
+             36 RESUME                   1
+             38 POP_TOP
+             40 JUMP_BACKWARD           17 (to 8)
+        >>   42 END_FOR
+             44 RETURN_CONST             0 (None)
+        >>   46 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             48 RERAISE                  1
+ExceptionTable:
+  4 to 44 -> 46 [0] lasti
+
+Disassembly of <code object split_digits at 0x179d0280, file "bus_drop.py", line 62>:
+              0 MAKE_CELL               26 (st)
+
+ 62           2 RESUME                   0
+
+ 63           4 NOP
+
+ 68           6 LOAD_FAST                0 (dark)
+              8 LOAD_ATTR                1 (NULL|self + astype)
+             28 LOAD_GLOBAL              2 (np)
+             38 LOAD_ATTR                4 (float32)
+             58 CALL                     1
+             66 STORE_FAST               1 (m)
+
+ 69          68 LOAD_GLOBAL              7 (NULL + cv2)
+             78 LOAD_ATTR                8 (connectedComponentsWithStats)
+             98 LOAD_FAST                0 (dark)
+            100 LOAD_CONST               1 (8)
+            102 KW_NAMES                 2 (('connectivity',))
+            104 CALL                     2
+            112 UNPACK_SEQUENCE          4
+            116 STORE_FAST               2 (n)
+            118 STORE_FAST               3 (lab)
+            120 STORE_DEREF             26 (st)
+            122 STORE_FAST               4 (_)
+
+ 70         124 LOAD_GLOBAL             11 (NULL + max)
+            134 LOAD_CLOSURE            26 (st)
+            136 BUILD_TUPLE              1
+            138 LOAD_CONST               3 (<code object <genexpr> at 0x7f6af1dd2830, file "bus_drop.py", line 70>)
+            140 MAKE_FUNCTION            8 (closure)
+            142 LOAD_GLOBAL             13 (NULL + range)
+            152 LOAD_CONST               4 (1)
+            154 LOAD_FAST                2 (n)
+            156 CALL                     2
+            164 GET_ITER
+            166 CALL                     0
+            174 LOAD_CONST               5 (0)
+            176 KW_NAMES                 6 (('default',))
+            178 CALL                     2
+            186 STORE_FAST               5 (big)
+
+ 71         188 LOAD_FAST                5 (big)
+            190 LOAD_CONST               7 (12)
+            192 COMPARE_OP               2 (<)
+            196 POP_JUMP_IF_FALSE        2 (to 202)
+
+ 72         198 BUILD_LIST               0
+            200 RETURN_VALUE
+
+ 73     >>  202 LOAD_GLOBAL              3 (NULL + np)
+            212 LOAD_ATTR               14 (zeros_like)
+            232 LOAD_FAST                1 (m)
+            234 CALL                     1
+            242 STORE_FAST               6 (keep)
+
+ 74         244 LOAD_GLOBAL             13 (NULL + range)
+            254 LOAD_CONST               4 (1)
+            256 LOAD_FAST                2 (n)
+            258 CALL                     2
+            266 GET_ITER
+        >>  268 FOR_ITER                35 (to 342)
+            272 STORE_FAST               7 (i)
+
+ 75         274 LOAD_DEREF              26 (st)
+            276 LOAD_FAST                7 (i)
+            278 BINARY_SUBSCR
+            282 LOAD_CONST               8 (4)
+            284 BINARY_SUBSCR
+            288 LOAD_GLOBAL             11 (NULL + max)
+            298 LOAD_CONST               7 (12)
+            300 LOAD_CONST               9 (0.12)
+            302 LOAD_FAST                5 (big)
+            304 BINARY_OP                5 (*)
+            308 CALL                     2
+            316 COMPARE_OP              92 (>=)
+            320 POP_JUMP_IF_TRUE         1 (to 324)
+            322 JUMP_BACKWARD           28 (to 268)
+
+ 76     >>  324 LOAD_CONST              10 (1.0)
+            326 LOAD_FAST                6 (keep)
+            328 LOAD_FAST                3 (lab)
+            330 LOAD_FAST                7 (i)
+            332 COMPARE_OP              40 (==)
+            336 STORE_SUBSCR
+            340 JUMP_BACKWARD           37 (to 268)
+
+ 74     >>  342 END_FOR
+
+ 77         344 LOAD_CONST              11 ((0.0, -1.0))
+            346 UNPACK_SEQUENCE          2
+            350 STORE_FAST               8 (best_k)
+            352 STORE_FAST               9 (best)
+
+ 78         354 LOAD_GLOBAL              3 (NULL + np)
+            364 LOAD_ATTR               16 (arange)
+            384 LOAD_CONST              12 (-0.5)
+            386 LOAD_CONST              13 (0.51)
+            388 LOAD_CONST              14 (0.05)
+            390 CALL                     3
+            398 GET_ITER
+        >>  400 FOR_ITER                86 (to 576)
+            404 STORE_FAST              10 (k)
+
+ 79         406 LOAD_GLOBAL             19 (NULL + _shear)
+            416 LOAD_FAST                6 (keep)
+            418 LOAD_GLOBAL             21 (NULL + float)
+            428 LOAD_FAST               10 (k)
+            430 CALL                     1
+            438 CALL                     2
+            446 LOAD_ATTR               23 (NULL|self + sum)
+            466 LOAD_CONST               5 (0)
+            468 KW_NAMES                15 (('axis',))
+            470 CALL                     1
+            478 STORE_FAST              11 (col)
+
+ 80         480 LOAD_GLOBAL             21 (NULL + float)
+            490 LOAD_FAST               11 (col)
+            492 LOAD_CONST              16 (2)
+            494 BINARY_OP                8 (**)
+            498 LOAD_ATTR               23 (NULL|self + sum)
+            518 CALL                     0
+            526 CALL                     1
+            534 STORE_FAST              12 (sc)
+
+ 81         536 LOAD_FAST               12 (sc)
+            538 LOAD_FAST                9 (best)
+            540 COMPARE_OP              68 (>)
+            544 POP_JUMP_IF_TRUE         1 (to 548)
+            546 JUMP_BACKWARD           74 (to 400)
+
+ 82     >>  548 LOAD_GLOBAL             21 (NULL + float)
+            558 LOAD_FAST               10 (k)
+            560 CALL                     1
+            568 LOAD_FAST               12 (sc)
+            570 STORE_FAST               9 (best)
+            572 STORE_FAST               8 (best_k)
+            574 JUMP_BACKWARD           88 (to 400)
+
+ 78     >>  576 END_FOR
+
+ 83         578 LOAD_GLOBAL             19 (NULL + _shear)
+            588 LOAD_FAST                6 (keep)
+            590 LOAD_FAST                8 (best_k)
+            592 CALL                     2
+            600 LOAD_CONST              17 (0.5)
+            602 COMPARE_OP              68 (>)
+            606 STORE_FAST              13 (sh)
+
+ 84         608 LOAD_GLOBAL              3 (NULL + np)
+            618 LOAD_ATTR               24 (nonzero)
+            638 LOAD_FAST               13 (sh)
+            640 CALL                     1
+            648 UNPACK_SEQUENCE          2
+            652 STORE_FAST              14 (ys)
+            654 STORE_FAST              15 (xs)
+
+ 85         656 LOAD_GLOBAL             27 (NULL + len)
+            666 LOAD_FAST               15 (xs)
+            668 CALL                     1
+            676 LOAD_CONST               7 (12)
+            678 COMPARE_OP               2 (<)
+            682 POP_JUMP_IF_FALSE        2 (to 688)
+
+ 86         684 BUILD_LIST               0
+            686 RETURN_VALUE
+
+ 87     >>  688 LOAD_FAST               15 (xs)
+            690 LOAD_ATTR               29 (NULL|self + min)
+            710 CALL                     0
+            718 LOAD_FAST               15 (xs)
+            720 LOAD_ATTR               11 (NULL|self + max)
+            740 CALL                     0
+            748 LOAD_CONST               4 (1)
+            750 BINARY_OP                0 (+)
+            754 LOAD_FAST               14 (ys)
+            756 LOAD_ATTR               29 (NULL|self + min)
+            776 CALL                     0
+            784 LOAD_FAST               14 (ys)
+            786 LOAD_ATTR               11 (NULL|self + max)
+            806 CALL                     0
+            814 LOAD_CONST               4 (1)
+            816 BINARY_OP                0 (+)
+            820 BUILD_TUPLE              4
+            822 UNPACK_SEQUENCE          4
+            826 STORE_FAST              16 (x0)
+            828 STORE_FAST              17 (x1)
+            830 STORE_FAST              18 (y0)
+            832 STORE_FAST              19 (y1)
+
+ 88         834 LOAD_FAST               13 (sh)
+            836 LOAD_FAST               18 (y0)
+            838 LOAD_FAST               19 (y1)
+            840 BUILD_SLICE              2
+            842 LOAD_FAST               16 (x0)
+            844 LOAD_FAST               17 (x1)
+            846 BUILD_SLICE              2
+            848 BUILD_TUPLE              2
+            850 BINARY_SUBSCR
+            854 LOAD_ATTR                1 (NULL|self + astype)
+            874 LOAD_GLOBAL              2 (np)
+            884 LOAD_ATTR                4 (float32)
+            904 CALL                     1
+            912 STORE_FAST              13 (sh)
+
+ 89         914 LOAD_FAST               13 (sh)
+            916 LOAD_ATTR               30 (shape)
+            936 UNPACK_SEQUENCE          2
+            940 STORE_FAST              20 (hgt)
+            942 STORE_FAST              21 (wid)
+
+ 90         944 LOAD_FAST               21 (wid)
+            946 LOAD_GLOBAL             21 (NULL + float)
+            956 LOAD_FAST               20 (hgt)
+            958 CALL                     1
+            966 BINARY_OP               11 (/)
+            970 LOAD_CONST              18 (0.8)
+            972 COMPARE_OP               2 (<)
+            976 POP_JUMP_IF_FALSE        3 (to 984)
+
+ 91         978 LOAD_FAST               13 (sh)
+            980 BUILD_LIST               1
+            982 RETURN_VALUE
+
+ 92     >>  984 LOAD_FAST               13 (sh)
+            986 LOAD_ATTR               23 (NULL|self + sum)
+           1006 LOAD_CONST               5 (0)
+           1008 KW_NAMES                15 (('axis',))
+           1010 CALL                     1
+           1018 STORE_FAST              22 (cols)
+
+ 93        1020 LOAD_GLOBAL             33 (NULL + int)
+           1030 LOAD_CONST              19 (0.3)
+           1032 LOAD_FAST               21 (wid)
+           1034 BINARY_OP                5 (*)
+           1038 CALL                     1
+           1046 LOAD_GLOBAL             33 (NULL + int)
+           1056 LOAD_CONST              20 (0.7)
+           1058 LOAD_FAST               21 (wid)
+           1060 BINARY_OP                5 (*)
+           1064 CALL                     1
+           1072 LOAD_CONST               4 (1)
+           1074 BINARY_OP                0 (+)
+           1078 STORE_FAST              24 (hi)
+           1080 STORE_FAST              23 (lo)
+
+ 94        1082 LOAD_FAST               23 (lo)
+           1084 LOAD_GLOBAL             33 (NULL + int)
+           1094 LOAD_GLOBAL              3 (NULL + np)
+           1104 LOAD_ATTR               34 (argmin)
+           1124 LOAD_FAST               22 (cols)
+           1126 LOAD_FAST               23 (lo)
+           1128 LOAD_FAST               24 (hi)
+           1130 BINARY_SLICE
+           1132 LOAD_CONST              21 (0.01)
+           1134 LOAD_GLOBAL              3 (NULL + np)
+           1144 LOAD_ATTR               36 (abs)
+           1164 LOAD_GLOBAL              3 (NULL + np)
+           1174 LOAD_ATTR               16 (arange)
+           1194 LOAD_FAST               23 (lo)
+           1196 LOAD_FAST               24 (hi)
+           1198 CALL                     2
+           1206 LOAD_FAST               21 (wid)
+           1208 LOAD_CONST              22 (2.0)
+           1210 BINARY_OP               11 (/)
+           1214 BINARY_OP               10 (-)
+           1218 CALL                     1
+           1226 BINARY_OP                5 (*)
+           1230 BINARY_OP                0 (+)
+           1234 CALL                     1
+           1242 CALL                     1
+           1250 BINARY_OP                0 (+)
+           1254 STORE_FAST              25 (c)
+
+ 95        1256 LOAD_FAST               13 (sh)
+           1258 LOAD_CONST               0 (None)
+           1260 LOAD_CONST               0 (None)
+           1262 BUILD_SLICE              2
+           1264 LOAD_CONST               0 (None)
+           1266 LOAD_FAST               25 (c)
+           1268 BUILD_SLICE              2
+           1270 BUILD_TUPLE              2
+           1272 BINARY_SUBSCR
+           1276 LOAD_FAST               13 (sh)
+           1278 LOAD_CONST               0 (None)
+           1280 LOAD_CONST               0 (None)
+           1282 BUILD_SLICE              2
+           1284 LOAD_FAST               25 (c)
+           1286 LOAD_CONST               0 (None)
+           1288 BUILD_SLICE              2
+           1290 BUILD_TUPLE              2
+           1292 BINARY_SUBSCR
+           1296 BUILD_LIST               2
+           1298 RETURN_VALUE
+
+Disassembly of <code object <genexpr> at 0x7f6af1dd2830, file "bus_drop.py", line 70>:
+              0 COPY_FREE_VARS           1
+
+ 70           2 RETURN_GENERATOR
+              4 POP_TOP
+              6 RESUME                   0
+              8 LOAD_FAST                0 (.0)
+        >>   10 FOR_ITER                21 (to 56)
+             14 STORE_FAST               1 (i)
+             16 LOAD_GLOBAL              1 (NULL + int)
+             26 LOAD_DEREF               2 (st)
+             28 LOAD_FAST                1 (i)
+             30 BINARY_SUBSCR
+             34 LOAD_CONST               0 (4)
+             36 BINARY_SUBSCR
+             40 CALL                     1
+             48 YIELD_VALUE              1
+             50 RESUME                   1
+             52 POP_TOP
+             54 JUMP_BACKWARD           23 (to 10)
+        >>   56 END_FOR
+             58 RETURN_CONST             1 (None)
+        >>   60 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             62 RERAISE                  1
+ExceptionTable:
+  6 to 58 -> 60 [0] lasti
+
+Disassembly of <code object _crop at 0x179d0ca0, file "bus_drop.py", line 98>:
+ 98           0 RESUME                   0
+
+ 99           2 LOAD_GLOBAL              1 (NULL + np)
+             12 LOAD_ATTR                2 (nonzero)
+             32 LOAD_FAST                0 (m)
+             34 LOAD_CONST               1 (0.5)
+             36 COMPARE_OP              68 (>)
+             40 CALL                     1
+             48 UNPACK_SEQUENCE          2
+             52 STORE_FAST               1 (ys)
+             54 STORE_FAST               2 (xs)
+
+100          56 LOAD_GLOBAL              5 (NULL + len)
+             66 LOAD_FAST                2 (xs)
+             68 CALL                     1
+             76 LOAD_CONST               2 (5)
+             78 COMPARE_OP               2 (<)
+             82 POP_JUMP_IF_FALSE        1 (to 86)
+
+101          84 RETURN_CONST             0 (None)
+
+102     >>   86 LOAD_GLOBAL              7 (NULL + cv2)
+             96 LOAD_ATTR                8 (resize)
+            116 LOAD_FAST                0 (m)
+            118 LOAD_FAST                1 (ys)
+            120 LOAD_ATTR               11 (NULL|self + min)
+            140 CALL                     0
+            148 LOAD_FAST                1 (ys)
+            150 LOAD_ATTR               13 (NULL|self + max)
+            170 CALL                     0
+            178 LOAD_CONST               3 (1)
+            180 BINARY_OP                0 (+)
+            184 BUILD_SLICE              2
+            186 LOAD_FAST                2 (xs)
+            188 LOAD_ATTR               11 (NULL|self + min)
+            208 CALL                     0
+            216 LOAD_FAST                2 (xs)
+            218 LOAD_ATTR               13 (NULL|self + max)
+            238 CALL                     0
+            246 LOAD_CONST               3 (1)
+            248 BINARY_OP                0 (+)
+            252 BUILD_SLICE              2
+            254 BUILD_TUPLE              2
+            256 BINARY_SUBSCR
+            260 LOAD_ATTR               15 (NULL|self + astype)
+            280 LOAD_GLOBAL              0 (np)
+            290 LOAD_ATTR               16 (float32)
+            310 CALL                     1
+            318 LOAD_GLOBAL             18 (GW)
+            328 LOAD_GLOBAL             20 (GH)
+            338 BUILD_TUPLE              2
+            340 LOAD_GLOBAL              6 (cv2)
+            350 LOAD_ATTR               22 (INTER_AREA)
+            370 KW_NAMES                 4 (('interpolation',))
+            372 CALL                     3
+            380 RETURN_VALUE
+
+Disassembly of <code object _shear at 0x7f6af20bba50, file "bus_drop.py", line 105>:
+105           0 RESUME                   0
+
+106           2 LOAD_FAST                0 (m)
+              4 LOAD_ATTR                0 (shape)
+             24 UNPACK_SEQUENCE          2
+             28 STORE_FAST               2 (hgt)
+             30 STORE_FAST               3 (wid)
+
+107          32 LOAD_GLOBAL              3 (NULL + np)
+             42 LOAD_ATTR                4 (float32)
+             62 LOAD_CONST               1 (1)
+             64 LOAD_FAST                1 (k)
+             66 LOAD_CONST               2 (-0.5)
+             68 LOAD_FAST                2 (hgt)
+             70 BINARY_OP                5 (*)
+             74 LOAD_FAST                1 (k)
+             76 BINARY_OP                5 (*)
+             80 BUILD_LIST               3
+             82 BUILD_LIST               0
+             84 LOAD_CONST               3 ((0, 1, 0))
+             86 LIST_EXTEND              1
+             88 BUILD_LIST               2
+             90 CALL                     1
+             98 STORE_FAST               4 (mat)
+
+108         100 LOAD_GLOBAL              7 (NULL + cv2)
+            110 LOAD_ATTR                8 (warpAffine)
+            130 LOAD_FAST                0 (m)
+            132 LOAD_ATTR               11 (NULL|self + astype)
+            152 LOAD_GLOBAL              2 (np)
+            162 LOAD_ATTR                4 (float32)
+            182 CALL                     1
+            190 LOAD_FAST                4 (mat)
+            192 LOAD_FAST                3 (wid)
+            194 LOAD_GLOBAL             13 (NULL + int)
+            204 LOAD_GLOBAL             15 (NULL + abs)
+            214 LOAD_FAST                1 (k)
+            216 CALL                     1
+            224 LOAD_FAST                2 (hgt)
+            226 BINARY_OP                5 (*)
+            230 CALL                     1
+            238 BINARY_OP                0 (+)
+            242 LOAD_CONST               4 (4)
+            244 BINARY_OP                0 (+)
+            248 LOAD_FAST                2 (hgt)
+            250 BUILD_TUPLE              2
+            252 LOAD_GLOBAL              6 (cv2)
+            262 LOAD_ATTR               16 (INTER_LINEAR)
+            282 KW_NAMES                 5 (('flags',))
+            284 CALL                     4
+            292 RETURN_VALUE
+
+Disassembly of <code object _unit at 0x7f6af1f3ed30, file "bus_drop.py", line 111>:
+111           0 RESUME                   0
+
+112           2 LOAD_FAST                0 (g)
+              4 LOAD_FAST                0 (g)
+              6 LOAD_ATTR                1 (NULL|self + mean)
+             26 CALL                     0
+             34 BINARY_OP               10 (-)
+             38 STORE_FAST               1 (v)
+
+113          40 LOAD_FAST                1 (v)
+             42 LOAD_GLOBAL              2 (np)
+             52 LOAD_ATTR                4 (linalg)
+             72 LOAD_ATTR                7 (NULL|self + norm)
+             92 LOAD_FAST                1 (v)
+             94 CALL                     1
+            102 LOAD_CONST               1 (1e-06)
+            104 BINARY_OP                0 (+)
+            108 BINARY_OP               11 (/)
+            112 RETURN_VALUE
+
+Disassembly of <code object prepare_template at 0x7f6af1da6870, file "bus_drop.py", line 116>:
+116           0 RESUME                   0
+
+117           2 NOP
+
+118           4 LOAD_GLOBAL              1 (NULL + _crop)
+             14 LOAD_FAST                0 (mask)
+             16 CALL                     1
+             24 RETURN_VALUE
+
+Disassembly of <code object load_templates at 0x17a65af0, file "bus_drop.py", line 124>:
+124           0 RESUME                   0
+
+125           2 NOP
+
+127           4 LOAD_GLOBAL              0 (_TEMPLATES)
+             14 POP_JUMP_IF_NONE         8 (to 32)
+             16 LOAD_FAST                0 (path)
+             18 POP_JUMP_IF_TRUE         6 (to 32)
+
+128          20 LOAD_GLOBAL              0 (_TEMPLATES)
+             30 RETURN_VALUE
+
+129     >>   32 BUILD_MAP                0
+             34 STORE_FAST               1 (out)
+
+130          36 NOP
+
+131          38 LOAD_FAST                0 (path)
+             40 POP_JUMP_IF_FALSE        3 (to 48)
+             42 LOAD_FAST                0 (path)
+             44 BUILD_LIST               1
+             46 JUMP_FORWARD           107 (to 262)
+        >>   48 LOAD_GLOBAL              2 (os)
+             58 LOAD_ATTR                4 (path)
+             78 LOAD_ATTR                7 (NULL|self + join)
+             98 LOAD_GLOBAL              9 (NULL + config)
+            108 LOAD_ATTR               10 (assets_dir)
+            128 CALL                     0
+            136 LOAD_GLOBAL             12 (NPZ_NAME)
+            146 CALL                     2
+            154 LOAD_GLOBAL              2 (os)
+            164 LOAD_ATTR                4 (path)
+            184 LOAD_ATTR                7 (NULL|self + join)
+            204 LOAD_GLOBAL              9 (NULL + config)
+            214 LOAD_ATTR               14 (bundled_assets_dir)
+            234 CALL                     0
+            242 LOAD_GLOBAL             12 (NPZ_NAME)
+            252 CALL                     2
+            260 BUILD_LIST               2
+        >>  262 STORE_FAST               2 (cands)
+
+132         264 LOAD_FAST                2 (cands)
+            266 GET_ITER
+        >>  268 FOR_ITER               137 (to 546)
+            272 STORE_FAST               3 (p)
+
+133         274 LOAD_FAST                3 (p)
+            276 POP_JUMP_IF_TRUE         1 (to 280)
+            278 JUMP_BACKWARD            6 (to 268)
+        >>  280 LOAD_GLOBAL              2 (os)
+            290 LOAD_ATTR                4 (path)
+            310 LOAD_ATTR               17 (NULL|self + isfile)
+            330 LOAD_FAST                3 (p)
+            332 CALL                     1
+            340 POP_JUMP_IF_TRUE         1 (to 344)
+            342 JUMP_BACKWARD           38 (to 268)
+
+134     >>  344 LOAD_GLOBAL             19 (NULL + np)
+            354 LOAD_ATTR               20 (load)
+            374 LOAD_FAST                3 (p)
+            376 CALL                     1
+            384 STORE_FAST               4 (data)
+
+135         386 LOAD_CONST               1 ('0123456789')
+            388 GET_ITER
+        >>  390 FOR_ITER                73 (to 540)
+            394 STORE_FAST               5 (ch)
+
+136         396 LOAD_CONST               2 ('d')
+            398 LOAD_FAST                5 (ch)
+            400 FORMAT_VALUE             0
+            402 BUILD_STRING             2
+            404 LOAD_FAST                4 (data)
+            406 CONTAINS_OP              0
+            408 POP_JUMP_IF_TRUE         1 (to 412)
+            410 JUMP_BACKWARD           11 (to 390)
+
+137     >>  412 LOAD_FAST                4 (data)
+            414 LOAD_CONST               2 ('d')
+            416 LOAD_FAST                5 (ch)
+            418 FORMAT_VALUE             0
+            420 BUILD_STRING             2
+            422 BINARY_SUBSCR
+            426 GET_ITER
+            428 LOAD_FAST_AND_CLEAR      6 (t)
+            430 SWAP                     2
+            432 BUILD_LIST               0
+            434 SWAP                     2
+        >>  436 FOR_ITER                42 (to 524)
+            440 STORE_FAST               6 (t)
+            442 LOAD_GLOBAL             23 (NULL + _unit)
+            452 LOAD_FAST                6 (t)
+            454 LOAD_ATTR               25 (NULL|self + astype)
+            474 LOAD_GLOBAL             18 (np)
+            484 LOAD_ATTR               26 (float32)
+            504 CALL                     1
+            512 CALL                     1
+            520 LIST_APPEND              2
+            522 JUMP_BACKWARD           44 (to 436)
+        >>  524 END_FOR
+            526 SWAP                     2
+            528 STORE_FAST               6 (t)
+            530 LOAD_FAST                1 (out)
+            532 LOAD_FAST                5 (ch)
+            534 STORE_SUBSCR
+            538 JUMP_BACKWARD           75 (to 390)
+
+135     >>  540 END_FOR
+
+138         542 POP_TOP
+            544 JUMP_FORWARD             1 (to 548)
+
+132     >>  546 END_FOR
+
+141     >>  548 LOAD_FAST                0 (path)
+            550 POP_JUMP_IF_TRUE         2 (to 556)
+
+142         552 LOAD_FAST                1 (out)
+            554 STORE_GLOBAL             0 (_TEMPLATES)
+
+143     >>  556 LOAD_FAST                1 (out)
+            558 RETURN_VALUE
+        >>  560 SWAP                     2
+            562 POP_TOP
+
+137         564 SWAP                     2
+            566 STORE_FAST               6 (t)
+            568 RERAISE                  0
+        >>  570 PUSH_EXC_INFO
+
+139         572 LOAD_GLOBAL             28 (Exception)
+            582 CHECK_EXC_MATCH
+            584 POP_JUMP_IF_FALSE        5 (to 596)
+            586 POP_TOP
+
+140         588 BUILD_MAP                0
+            590 STORE_FAST               1 (out)
+            592 POP_EXCEPT
+            594 JUMP_BACKWARD           24 (to 548)
+
+139     >>  596 RERAISE                  0
+        >>  598 COPY                     3
+            600 POP_EXCEPT
+            602 RERAISE                  1
+ExceptionTable:
+  38 to 276 -> 570 [0]
+  280 to 340 -> 570 [0]
+  344 to 408 -> 570 [0]
+  412 to 430 -> 570 [0]
+  432 to 524 -> 560 [4]
+  526 to 546 -> 570 [0]
+  560 to 568 -> 570 [0]
+  570 to 590 -> 598 [1] lasti
+  596 to 596 -> 598 [1] lasti
+
+Disassembly of <code object classify at 0x178ba1f0, file "bus_drop.py", line 146>:
+146           0 RESUME                   0
+
+147           2 NOP
+
+148           4 LOAD_FAST                1 (templates)
+              6 GET_ITER
+              8 LOAD_FAST_AND_CLEAR      2 (ch)
+             10 SWAP                     2
+             12 BUILD_MAP                0
+             14 SWAP                     2
+        >>   16 FOR_ITER                 5 (to 30)
+             20 STORE_FAST               2 (ch)
+             22 LOAD_FAST                2 (ch)
+             24 LOAD_CONST               1 (-1.0)
+             26 MAP_ADD                  2
+             28 JUMP_BACKWARD            7 (to 16)
+        >>   30 END_FOR
+             32 STORE_FAST               3 (scores)
+             34 STORE_FAST               2 (ch)
+
+149          36 LOAD_GLOBAL              1 (NULL + np)
+             46 LOAD_ATTR                2 (arange)
+             66 LOAD_CONST               2 (-0.15)
+             68 LOAD_CONST               3 (0.16)
+             70 LOAD_CONST               4 (0.05)
+             72 CALL                     3
+             80 GET_ITER
+        >>   82 FOR_ITER               119 (to 324)
+             86 STORE_FAST               4 (k)
+
+150          88 LOAD_GLOBAL              5 (NULL + _crop)
+             98 LOAD_GLOBAL              7 (NULL + _shear)
+            108 LOAD_FAST                0 (raw)
+            110 LOAD_GLOBAL              9 (NULL + float)
+            120 LOAD_FAST                4 (k)
+            122 CALL                     1
+            130 CALL                     2
+            138 CALL                     1
+            146 STORE_FAST               5 (g)
+
+151         148 LOAD_FAST                5 (g)
+            150 POP_JUMP_IF_NOT_NONE     1 (to 154)
+
+152         152 JUMP_BACKWARD           36 (to 82)
+
+153     >>  154 LOAD_GLOBAL             11 (NULL + _unit)
+            164 LOAD_FAST                5 (g)
+            166 CALL                     1
+            174 STORE_FAST               6 (v)
+
+154         176 LOAD_FAST                1 (templates)
+            178 LOAD_ATTR               13 (NULL|self + items)
+            198 CALL                     0
+            206 GET_ITER
+        >>  208 FOR_ITER                54 (to 320)
+            212 UNPACK_SEQUENCE          2
+            216 STORE_FAST               2 (ch)
+            218 STORE_FAST               7 (lst)
+
+155         220 LOAD_FAST                7 (lst)
+            222 GET_ITER
+        >>  224 FOR_ITER                44 (to 316)
+            228 STORE_FAST               8 (t)
+
+156         230 LOAD_GLOBAL              9 (NULL + float)
+            240 LOAD_FAST                8 (t)
+            242 LOAD_FAST                6 (v)
+            244 BINARY_OP                5 (*)
+            248 LOAD_ATTR               15 (NULL|self + sum)
+            268 CALL                     0
+            276 CALL                     1
+            284 STORE_FAST               9 (s)
+
+157         286 LOAD_FAST                9 (s)
+            288 LOAD_FAST                3 (scores)
+            290 LOAD_FAST                2 (ch)
+            292 BINARY_SUBSCR
+            296 COMPARE_OP              68 (>)
+            300 POP_JUMP_IF_TRUE         1 (to 304)
+            302 JUMP_BACKWARD           40 (to 224)
+
+158     >>  304 LOAD_FAST                9 (s)
+            306 LOAD_FAST                3 (scores)
+            308 LOAD_FAST                2 (ch)
+            310 STORE_SUBSCR
+            314 JUMP_BACKWARD           46 (to 224)
+
+155     >>  316 END_FOR
+            318 JUMP_BACKWARD           56 (to 208)
+
+154     >>  320 END_FOR
+            322 JUMP_BACKWARD          121 (to 82)
+
+149     >>  324 END_FOR
+
+159         326 LOAD_GLOBAL             17 (NULL + sorted)
+            336 LOAD_FAST                3 (scores)
+            338 LOAD_ATTR               13 (NULL|self + items)
+            358 CALL                     0
+            366 LOAD_CONST               5 (<code object <lambda> at 0x7f6aed712730, file "bus_drop.py", line 159>)
+            368 MAKE_FUNCTION            0
+            370 KW_NAMES                 6 (('key',))
+            372 CALL                     2
+            380 STORE_FAST              10 (ranked)
+
+160         382 LOAD_GLOBAL             19 (NULL + len)
+            392 LOAD_FAST               10 (ranked)
+            394 CALL                     1
+            402 LOAD_CONST               7 (2)
+            404 COMPARE_OP               2 (<)
+            408 POP_JUMP_IF_FALSE        1 (to 412)
+
+161         410 RETURN_CONST             0 (None)
+
+162     >>  412 LOAD_FAST               10 (ranked)
+            414 LOAD_CONST               8 (0)
+            416 BINARY_SUBSCR
+            420 LOAD_CONST               8 (0)
+            422 BINARY_SUBSCR
+            426 LOAD_FAST               10 (ranked)
+            428 LOAD_CONST               8 (0)
+            430 BINARY_SUBSCR
+            434 LOAD_CONST               9 (1)
+            436 BINARY_SUBSCR
+            440 LOAD_FAST               10 (ranked)
+            442 LOAD_CONST               8 (0)
+            444 BINARY_SUBSCR
+            448 LOAD_CONST               9 (1)
+            450 BINARY_SUBSCR
+            454 LOAD_FAST               10 (ranked)
+            456 LOAD_CONST               9 (1)
+            458 BINARY_SUBSCR
+            462 LOAD_CONST               9 (1)
+            464 BINARY_SUBSCR
+            468 BINARY_OP               10 (-)
+            472 BUILD_TUPLE              3
+            474 RETURN_VALUE
+        >>  476 SWAP                     2
+            478 POP_TOP
+
+148         480 SWAP                     2
+            482 STORE_FAST               2 (ch)
+            484 RERAISE                  0
+ExceptionTable:
+  12 to 30 -> 476 [2]
+
+Disassembly of <code object <lambda> at 0x7f6aed712730, file "bus_drop.py", line 159>:
+159           0 RESUME                   0
+              2 LOAD_FAST                0 (kv)
+              4 LOAD_CONST               1 (1)
+              6 BINARY_SUBSCR
+             10 UNARY_NEGATIVE
+             12 RETURN_VALUE
+
+Disassembly of <code object read_countdown at 0x179dd280, file "bus_drop.py", line 165>:
+165           0 RESUME                   0
+
+166           2 NOP
+
+167           4 LOAD_GLOBAL              1 (NULL + find_plate)
+             14 LOAD_FAST                0 (frame)
+             16 CALL                     1
+             24 STORE_FAST               2 (plate)
+
+168          26 LOAD_FAST                2 (plate)
+             28 POP_JUMP_IF_NOT_NONE     1 (to 32)
+
+169          30 RETURN_CONST             1 ((False, None, 0.0, None))
+
+170     >>   32 LOAD_FAST                2 (plate)
+             34 UNPACK_SEQUENCE          5
+             38 STORE_FAST               3 (x)
+             40 STORE_FAST               4 (y)
+             42 STORE_FAST               5 (w)
+             44 STORE_FAST               6 (h)
+             46 STORE_FAST               7 (dark)
+
+171          48 LOAD_FAST                0 (frame)
+             50 LOAD_FAST                4 (y)
+             52 LOAD_FAST                4 (y)
+             54 LOAD_FAST                6 (h)
+             56 BINARY_OP                0 (+)
+             60 BUILD_SLICE              2
+             62 LOAD_FAST                3 (x)
+             64 LOAD_FAST                3 (x)
+             66 LOAD_FAST                5 (w)
+             68 BINARY_OP                0 (+)
+             72 BUILD_SLICE              2
+             74 BUILD_TUPLE              2
+             76 BINARY_SUBSCR
+             80 STORE_FAST               8 (crop)
+
+172          82 LOAD_FAST                1 (templates)
+             84 POP_JUMP_IF_NONE         2 (to 90)
+             86 LOAD_FAST                1 (templates)
+             88 JUMP_FORWARD             9 (to 108)
+        >>   90 LOAD_GLOBAL              3 (NULL + load_templates)
+            100 CALL                     0
+        >>  108 STORE_FAST               1 (templates)
+
+173         110 NOP
+
+174         112 LOAD_GLOBAL              5 (NULL + split_digits)
+            122 LOAD_FAST                7 (dark)
+            124 CALL                     1
+            132 STORE_FAST               9 (masks)
+
+175         134 LOAD_FAST                1 (templates)
+            136 POP_JUMP_IF_FALSE       22 (to 182)
+            138 LOAD_CONST               2 (1)
+            140 LOAD_GLOBAL              7 (NULL + len)
+            150 LOAD_FAST                9 (masks)
+            152 CALL                     1
+            160 SWAP                     2
+            162 COPY                     2
+            164 COMPARE_OP              26 (<=)
+            168 POP_JUMP_IF_FALSE        5 (to 180)
+            170 LOAD_CONST               3 (2)
+            172 COMPARE_OP              26 (<=)
+            176 POP_JUMP_IF_TRUE         8 (to 194)
+            178 JUMP_FORWARD             1 (to 182)
+        >>  180 POP_TOP
+
+176     >>  182 LOAD_CONST               4 (True)
+            184 LOAD_CONST               0 (None)
+            186 LOAD_CONST               5 (0.0)
+            188 LOAD_FAST                8 (crop)
+            190 BUILD_TUPLE              4
+            192 RETURN_VALUE
+
+177     >>  194 LOAD_CONST               6 (('', 9.0))
+            196 UNPACK_SEQUENCE          2
+            200 STORE_FAST              10 (digits)
+            202 STORE_FAST              11 (conf)
+
+178         204 LOAD_FAST                9 (masks)
+            206 GET_ITER
+        >>  208 FOR_ITER                71 (to 354)
+            212 STORE_FAST              12 (m)
+
+179         214 LOAD_GLOBAL              9 (NULL + classify)
+            224 LOAD_FAST               12 (m)
+            226 LOAD_FAST                1 (templates)
+            228 CALL                     2
+            236 STORE_FAST              13 (c)
+
+180         238 LOAD_FAST               13 (c)
+            240 POP_JUMP_IF_NONE        24 (to 290)
+            242 LOAD_FAST               13 (c)
+            244 LOAD_CONST               2 (1)
+            246 BINARY_SUBSCR
+            250 LOAD_GLOBAL             10 (MIN_SCORE)
+            260 COMPARE_OP               2 (<)
+            264 POP_JUMP_IF_TRUE        12 (to 290)
+            266 LOAD_FAST               13 (c)
+            268 LOAD_CONST               3 (2)
+            270 BINARY_SUBSCR
+            274 LOAD_GLOBAL             12 (MIN_MARGIN)
+            284 COMPARE_OP               2 (<)
+            288 POP_JUMP_IF_FALSE        8 (to 306)
+
+181     >>  290 LOAD_CONST               4 (True)
+            292 LOAD_CONST               0 (None)
+            294 LOAD_CONST               5 (0.0)
+            296 LOAD_FAST                8 (crop)
+            298 BUILD_TUPLE              4
+            300 SWAP                     2
+            302 POP_TOP
+            304 RETURN_VALUE
+
+182     >>  306 LOAD_FAST               10 (digits)
+            308 LOAD_FAST               13 (c)
+            310 LOAD_CONST               7 (0)
+            312 BINARY_SUBSCR
+            316 BINARY_OP               13 (+=)
+            320 STORE_FAST              10 (digits)
+
+183         322 LOAD_GLOBAL             15 (NULL + min)
+            332 LOAD_FAST               11 (conf)
+            334 LOAD_FAST               13 (c)
+            336 LOAD_CONST               2 (1)
+            338 BINARY_SUBSCR
+            342 CALL                     2
+            350 STORE_FAST              11 (conf)
+            352 JUMP_BACKWARD           73 (to 208)
+
+178     >>  354 END_FOR
+
+184         356 LOAD_CONST               4 (True)
+            358 LOAD_GLOBAL             17 (NULL + int)
+            368 LOAD_FAST               10 (digits)
+            370 CALL                     1
+            378 LOAD_FAST               11 (conf)
+            380 LOAD_FAST                8 (crop)
+            382 BUILD_TUPLE              4
+            384 RETURN_VALUE
+        >>  386 PUSH_EXC_INFO
+
+185         388 LOAD_GLOBAL             18 (Exception)
+            398 CHECK_EXC_MATCH
+            400 POP_JUMP_IF_FALSE        9 (to 420)
+            402 POP_TOP
+
+186         404 LOAD_CONST               4 (True)
+            406 LOAD_CONST               0 (None)
+            408 LOAD_CONST               5 (0.0)
+            410 LOAD_FAST                8 (crop)
+            412 BUILD_TUPLE              4
+            414 SWAP                     2
+            416 POP_EXCEPT
+            418 RETURN_VALUE
+
+185     >>  420 RERAISE                  0
+        >>  422 COPY                     3
+            424 POP_EXCEPT
+            426 RERAISE                  1
+ExceptionTable:
+  112 to 190 -> 386 [0]
+  194 to 302 -> 386 [0]
+  306 to 382 -> 386 [0]
+  386 to 414 -> 422 [1] lasti
+  420 to 420 -> 422 [1] lasti
+
+Disassembly of <code object BusDrop at 0x7f6af1e297a0, file "bus_drop.py", line 190>:
+190           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('BusDrop')
+              8 STORE_NAME               2 (__qualname__)
+
+191          10 LOAD_NAME                3 (time)
+             12 LOAD_ATTR                8 (monotonic)
+             32 LOAD_CONST               1 (<code object <lambda> at 0x7f6aed712800, file "bus_drop.py", line 191>)
+             34 MAKE_FUNCTION            0
+
+192          36 LOAD_CONST               2 (None)
+             38 LOAD_CONST               3 ('')
+
+191          40 BUILD_TUPLE              4
+             42 LOAD_CONST               4 ('clock')
+             44 LOAD_NAME                5 (Callable)
+             46 BUILD_LIST               0
+             48 LOAD_NAME                6 (float)
+             50 BUILD_TUPLE              2
+             52 BINARY_SUBSCR
+             56 LOAD_CONST               5 ('log')
+             58 LOAD_NAME                5 (Callable)
+             60 LOAD_NAME                7 (str)
+             62 BUILD_LIST               1
+             64 LOAD_CONST               2 (None)
+             66 BUILD_TUPLE              2
+             68 BINARY_SUBSCR
+             72 LOAD_CONST               6 ('templates')
+
+192          74 LOAD_NAME                8 (Optional)
+             76 LOAD_NAME                9 (dict)
+             78 BINARY_SUBSCR
+
+191          82 LOAD_CONST               7 ('sample_dir')
+
+192          84 LOAD_NAME                7 (str)
+
+191          86 BUILD_TUPLE              8
+             88 LOAD_CONST               8 (<code object __init__ at 0x7f6af20c2f70, file "bus_drop.py", line 191>)
+             90 MAKE_FUNCTION            5 (defaults, annotations)
+             92 STORE_NAME              10 (__init__)
+
+204          94 LOAD_CONST               9 ('return')
+             96 LOAD_NAME               11 (Tuple)
+             98 LOAD_NAME               12 (int)
+            100 LOAD_NAME               12 (int)
+            102 BUILD_TUPLE              2
+            104 BINARY_SUBSCR
+            108 BUILD_TUPLE              2
+            110 LOAD_CONST              10 (<code object _window at 0x7f6aed7a8030, file "bus_drop.py", line 204>)
+            112 MAKE_FUNCTION            4 (annotations)
+            114 STORE_NAME              13 (_window)
+
+208         116 LOAD_CONST              11 ('now')
+            118 LOAD_NAME                6 (float)
+            120 LOAD_CONST               9 ('return')
+            122 LOAD_NAME               11 (Tuple)
+            124 LOAD_NAME                8 (Optional)
+            126 LOAD_NAME                6 (float)
+            128 BINARY_SUBSCR
+            132 LOAD_NAME               12 (int)
+            134 BUILD_TUPLE              2
+            136 BINARY_SUBSCR
+            140 BUILD_TUPLE              4
+            142 LOAD_CONST              12 (<code object estimate at 0x179e37d0, file "bus_drop.py", line 208>)
+            144 MAKE_FUNCTION            4 (annotations)
+            146 STORE_NAME              14 (estimate)
+
+228         148 LOAD_CONST              13 ('frame')
+            150 LOAD_NAME               15 (np)
+            152 LOAD_ATTR               32 (ndarray)
+            172 LOAD_CONST               9 ('return')
+            174 LOAD_NAME               17 (bool)
+            176 BUILD_TUPLE              4
+            178 LOAD_CONST              14 (<code object observe at 0x179c92a0, file "bus_drop.py", line 228>)
+            180 MAKE_FUNCTION            4 (annotations)
+            182 STORE_NAME              18 (observe)
+
+260         184 LOAD_CONST              16 (('return', None))
+            186 LOAD_CONST              15 (<code object _save_sample at 0x17a59cb0, file "bus_drop.py", line 260>)
+            188 MAKE_FUNCTION            4 (annotations)
+            190 STORE_NAME              19 (_save_sample)
+            192 RETURN_CONST             2 (None)
+
+Disassembly of <code object <lambda> at 0x7f6aed712800, file "bus_drop.py", line 191>:
+191           0 RESUME                   0
+              2 RETURN_CONST             0 (None)
+
+Disassembly of <code object __init__ at 0x7f6af20c2f70, file "bus_drop.py", line 191>:
+191           0 RESUME                   0
+
+193           2 LOAD_FAST                1 (settings)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (s)
+
+194          16 LOAD_FAST                2 (clock)
+             18 LOAD_FAST                0 (self)
+             20 STORE_ATTR               1 (_clock)
+
+195          30 LOAD_FAST                3 (log)
+             32 LOAD_FAST                0 (self)
+             34 STORE_ATTR               2 (log)
+
+196          44 LOAD_FAST                4 (templates)
+             46 LOAD_FAST                0 (self)
+             48 STORE_ATTR               3 (_templates)
+
+197          58 BUILD_LIST               0
+             60 LOAD_FAST                0 (self)
+             62 STORE_ATTR               4 (_reads)
+
+198          72 LOAD_CONST               1 (-1000000000.0)
+             74 LOAD_FAST                0 (self)
+             76 STORE_ATTR               5 (_last_seen)
+
+199          86 LOAD_CONST               2 (False)
+             88 LOAD_FAST                0 (self)
+             90 STORE_ATTR               6 (_fired)
+
+200         100 LOAD_CONST               3 (0)
+            102 LOAD_FAST                0 (self)
+            104 STORE_ATTR               7 (_samples)
+
+201         114 LOAD_FAST                5 (sample_dir)
+            116 COPY                     1
+            118 POP_JUMP_IF_TRUE        50 (to 220)
+            120 POP_TOP
+            122 LOAD_GLOBAL             16 (os)
+            132 LOAD_ATTR               18 (path)
+            152 LOAD_ATTR               21 (NULL|self + join)
+            172 LOAD_GLOBAL             23 (NULL + config)
+            182 LOAD_ATTR               24 (base_dir)
+            202 CALL                     0
+            210 LOAD_CONST               4 ('bus_samples')
+            212 CALL                     2
+        >>  220 LOAD_FAST                0 (self)
+            222 STORE_ATTR              13 (_sample_dir)
+
+202         232 LOAD_CONST               0 (None)
+            234 LOAD_FAST                0 (self)
+            236 STORE_ATTR              14 (last_value)
+            246 RETURN_CONST             0 (None)
+
+Disassembly of <code object _window at 0x7f6aed7a8030, file "bus_drop.py", line 204>:
+204           0 RESUME                   0
+
+205           2 LOAD_GLOBAL              1 (NULL + int)
+             12 LOAD_GLOBAL              3 (NULL + getattr)
+             22 LOAD_FAST                0 (self)
+             24 LOAD_ATTR                4 (s)
+             44 LOAD_CONST               1 ('bus_drop_min')
+             46 LOAD_CONST               2 (15)
+             48 CALL                     3
+             56 CALL                     1
+             64 LOAD_GLOBAL              1 (NULL + int)
+             74 LOAD_GLOBAL              3 (NULL + getattr)
+             84 LOAD_FAST                0 (self)
+             86 LOAD_ATTR                4 (s)
+            106 LOAD_CONST               3 ('bus_drop_max')
+            108 LOAD_CONST               4 (25)
+            110 CALL                     3
+            118 CALL                     1
+            126 STORE_FAST               2 (hi)
+            128 STORE_FAST               1 (lo)
+
+206         130 LOAD_GLOBAL              7 (NULL + min)
+            140 LOAD_FAST                1 (lo)
+            142 LOAD_FAST                2 (hi)
+            144 CALL                     2
+            152 LOAD_GLOBAL              9 (NULL + max)
+            162 LOAD_FAST                1 (lo)
+            164 LOAD_FAST                2 (hi)
+            166 CALL                     2
+            174 BUILD_TUPLE              2
+            176 RETURN_VALUE
+
+Disassembly of <code object estimate at 0x179e37d0, file "bus_drop.py", line 208>:
+208           0 RESUME                   0
+
+209           2 NOP
+
+214           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (_reads)
+             26 GET_ITER
+             28 LOAD_FAST_AND_CLEAR      2 (t)
+             30 LOAD_FAST_AND_CLEAR      3 (v)
+             32 SWAP                     3
+             34 BUILD_LIST               0
+             36 SWAP                     2
+        >>   38 FOR_ITER                22 (to 86)
+             42 UNPACK_SEQUENCE          2
+             46 STORE_FAST               2 (t)
+             48 STORE_FAST               3 (v)
+             50 LOAD_FAST                1 (now)
+             52 LOAD_FAST                2 (t)
+             54 BINARY_OP               10 (-)
+             58 LOAD_GLOBAL              2 (WINDOW_S)
+             68 COMPARE_OP              26 (<=)
+             72 POP_JUMP_IF_TRUE         1 (to 76)
+             74 JUMP_BACKWARD           19 (to 38)
+        >>   76 LOAD_FAST                2 (t)
+             78 LOAD_FAST                3 (v)
+             80 BUILD_TUPLE              2
+             82 LIST_APPEND              2
+             84 JUMP_BACKWARD           24 (to 38)
+        >>   86 END_FOR
+             88 STORE_FAST               4 (reads)
+             90 STORE_FAST               2 (t)
+             92 STORE_FAST               3 (v)
+
+215          94 LOAD_FAST                4 (reads)
+             96 POP_JUMP_IF_TRUE         1 (to 100)
+
+216          98 RETURN_CONST             1 ((None, 0))
+
+217     >>  100 LOAD_FAST                4 (reads)
+            102 GET_ITER
+            104 LOAD_FAST_AND_CLEAR      2 (t)
+            106 LOAD_FAST_AND_CLEAR      3 (v)
+            108 SWAP                     3
+            110 BUILD_LIST               0
+            112 SWAP                     2
+        >>  114 FOR_ITER                10 (to 138)
+            118 UNPACK_SEQUENCE          2
+            122 STORE_FAST               2 (t)
+            124 STORE_FAST               3 (v)
+            126 LOAD_FAST                3 (v)
+            128 LOAD_FAST                2 (t)
+            130 BINARY_OP                0 (+)
+            134 LIST_APPEND              2
+            136 JUMP_BACKWARD           12 (to 114)
+        >>  138 END_FOR
+            140 STORE_FAST               5 (anchors)
+            142 STORE_FAST               2 (t)
+            144 STORE_FAST               3 (v)
+
+218         146 BUILD_LIST               0
+            148 STORE_FAST               6 (best)
+
+219         150 LOAD_FAST                5 (anchors)
+            152 GET_ITER
+        >>  154 FOR_ITER                97 (to 352)
+            158 STORE_FAST               7 (a)
+
+220         160 LOAD_FAST                5 (anchors)
+            162 GET_ITER
+            164 LOAD_FAST_AND_CLEAR      8 (x)
+            166 SWAP                     2
+            168 BUILD_LIST               0
+            170 SWAP                     2
+        >>  172 FOR_ITER                22 (to 220)
+            176 STORE_FAST               8 (x)
+            178 LOAD_GLOBAL              5 (NULL + abs)
+            188 LOAD_FAST                8 (x)
+            190 LOAD_FAST                7 (a)
+            192 BINARY_OP               10 (-)
+            196 CALL                     1
+            204 LOAD_CONST               2 (1.0)
+            206 COMPARE_OP              26 (<=)
+            210 POP_JUMP_IF_TRUE         1 (to 214)
+            212 JUMP_BACKWARD           21 (to 172)
+        >>  214 LOAD_FAST                8 (x)
+            216 LIST_APPEND              2
+            218 JUMP_BACKWARD           24 (to 172)
+        >>  220 END_FOR
+            222 STORE_FAST               9 (grp)
+            224 STORE_FAST               8 (x)
+
+221         226 LOAD_GLOBAL              7 (NULL + len)
+            236 LOAD_FAST                9 (grp)
+            238 CALL                     1
+            246 LOAD_GLOBAL              7 (NULL + len)
+            256 LOAD_FAST                6 (best)
+            258 CALL                     1
+            266 COMPARE_OP              68 (>)
+            270 POP_JUMP_IF_TRUE        37 (to 346)
+            272 LOAD_GLOBAL              7 (NULL + len)
+            282 LOAD_FAST                9 (grp)
+            284 CALL                     1
+            292 LOAD_GLOBAL              7 (NULL + len)
+            302 LOAD_FAST                6 (best)
+            304 CALL                     1
+            312 COMPARE_OP              40 (==)
+            316 POP_JUMP_IF_TRUE         1 (to 320)
+            318 JUMP_BACKWARD           83 (to 154)
+        >>  320 LOAD_FAST                7 (a)
+            322 LOAD_FAST                6 (best)
+            324 POP_JUMP_IF_FALSE        5 (to 336)
+            326 LOAD_FAST                6 (best)
+            328 LOAD_CONST               3 (0)
+            330 BINARY_SUBSCR
+            334 JUMP_FORWARD             1 (to 338)
+        >>  336 LOAD_CONST               4 (-1e+18)
+        >>  338 COMPARE_OP              68 (>)
+            342 POP_JUMP_IF_TRUE         1 (to 346)
+            344 JUMP_BACKWARD           96 (to 154)
+
+222     >>  346 LOAD_FAST                9 (grp)
+            348 STORE_FAST               6 (best)
+            350 JUMP_BACKWARD           99 (to 154)
+
+219     >>  352 END_FOR
+
+223         354 LOAD_GLOBAL              7 (NULL + len)
+            364 LOAD_FAST                6 (best)
+            366 CALL                     1
+            374 LOAD_GLOBAL              8 (CONFIRM)
+            384 COMPARE_OP               2 (<)
+            388 POP_JUMP_IF_FALSE       13 (to 416)
+
+224         390 LOAD_CONST               0 (None)
+            392 LOAD_GLOBAL              7 (NULL + len)
+            402 LOAD_FAST                6 (best)
+            404 CALL                     1
+            412 BUILD_TUPLE              2
+            414 RETURN_VALUE
+
+225     >>  416 LOAD_FAST                6 (best)
+            418 LOAD_ATTR               11 (NULL|self + sort)
+            438 CALL                     0
+            446 POP_TOP
+
+226         448 LOAD_FAST                6 (best)
+            450 LOAD_GLOBAL              7 (NULL + len)
+            460 LOAD_FAST                6 (best)
+            462 CALL                     1
+            470 LOAD_CONST               5 (2)
+            472 BINARY_OP                2 (//)
+            476 BINARY_SUBSCR
+            480 LOAD_FAST                1 (now)
+            482 BINARY_OP               10 (-)
+            486 LOAD_GLOBAL              7 (NULL + len)
+            496 LOAD_FAST                6 (best)
+            498 CALL                     1
+            506 BUILD_TUPLE              2
+            508 RETURN_VALUE
+        >>  510 SWAP                     2
+            512 POP_TOP
+
+214         514 SWAP                     3
+            516 STORE_FAST               3 (v)
+            518 STORE_FAST               2 (t)
+            520 RERAISE                  0
+        >>  522 SWAP                     2
+            524 POP_TOP
+
+217         526 SWAP                     3
+            528 STORE_FAST               3 (v)
+            530 STORE_FAST               2 (t)
+            532 RERAISE                  0
+        >>  534 SWAP                     2
+            536 POP_TOP
+
+220         538 SWAP                     2
+            540 STORE_FAST               8 (x)
+            542 RERAISE                  0
+ExceptionTable:
+  34 to 72 -> 510 [3]
+  76 to 86 -> 510 [3]
+  110 to 138 -> 522 [3]
+  168 to 210 -> 534 [3]
+  214 to 220 -> 534 [3]
+
+Disassembly of <code object observe at 0x179c92a0, file "bus_drop.py", line 228>:
+228           0 RESUME                   0
+
+229           2 NOP
+
+230           4 NOP
+
+231           6 LOAD_GLOBAL              1 (NULL + getattr)
+             16 LOAD_FAST                0 (self)
+             18 LOAD_ATTR                2 (s)
+             38 LOAD_CONST               1 ('bus_drop_enabled')
+             40 LOAD_CONST               2 (False)
+             42 CALL                     3
+             50 POP_JUMP_IF_TRUE         1 (to 54)
+
+232          52 RETURN_CONST             2 (False)
+
+233     >>   54 LOAD_FAST                0 (self)
+             56 LOAD_ATTR                5 (NULL|self + _clock)
+             76 CALL                     0
+             84 STORE_FAST               2 (now)
+
+234          86 LOAD_GLOBAL              7 (NULL + read_countdown)
+             96 LOAD_FAST                1 (frame)
+             98 LOAD_FAST                0 (self)
+            100 LOAD_ATTR                8 (_templates)
+            120 CALL                     2
+            128 UNPACK_SEQUENCE          4
+            132 STORE_FAST               3 (seen)
+            134 STORE_FAST               4 (value)
+            136 STORE_FAST               5 (conf)
+            138 STORE_FAST               6 (crop)
+
+235         140 LOAD_FAST                3 (seen)
+            142 POP_JUMP_IF_TRUE        38 (to 220)
+
+236         144 LOAD_FAST                2 (now)
+            146 LOAD_FAST                0 (self)
+            148 LOAD_ATTR               10 (_last_seen)
+            168 BINARY_OP               10 (-)
+            172 LOAD_GLOBAL             12 (LOST_S)
+            182 COMPARE_OP              68 (>)
+            186 POP_JUMP_IF_FALSE       15 (to 218)
+
+237         188 BUILD_LIST               0
+            190 LOAD_CONST               2 (False)
+            192 SWAP                     2
+            194 LOAD_FAST                0 (self)
+            196 STORE_ATTR               7 (_reads)
+            206 LOAD_FAST                0 (self)
+            208 STORE_ATTR               8 (_fired)
+
+238     >>  218 RETURN_CONST             2 (False)
+
+239     >>  220 LOAD_FAST                2 (now)
+            222 LOAD_FAST                0 (self)
+            224 LOAD_ATTR               10 (_last_seen)
+            244 BINARY_OP               10 (-)
+            248 LOAD_GLOBAL             12 (LOST_S)
+            258 COMPARE_OP              68 (>)
+            262 POP_JUMP_IF_FALSE       15 (to 294)
+
+240         264 BUILD_LIST               0
+            266 LOAD_CONST               2 (False)
+            268 SWAP                     2
+            270 LOAD_FAST                0 (self)
+            272 STORE_ATTR               7 (_reads)
+            282 LOAD_FAST                0 (self)
+            284 STORE_ATTR               8 (_fired)
+
+241     >>  294 LOAD_FAST                2 (now)
+            296 LOAD_FAST                0 (self)
+            298 STORE_ATTR               5 (_last_seen)
+
+242         308 LOAD_FAST                4 (value)
+            310 POP_JUMP_IF_NOT_NONE    18 (to 348)
+
+243         312 LOAD_FAST                0 (self)
+            314 LOAD_ATTR               19 (NULL|self + _save_sample)
+            334 LOAD_FAST                6 (crop)
+            336 CALL                     1
+            344 POP_TOP
+
+244         346 RETURN_CONST             2 (False)
+
+245     >>  348 LOAD_FAST                4 (value)
+            350 LOAD_FAST                0 (self)
+            352 STORE_ATTR              10 (last_value)
+
+246         362 LOAD_FAST                0 (self)
+            364 LOAD_ATTR               14 (_reads)
+            384 LOAD_ATTR               23 (NULL|self + append)
+            404 LOAD_FAST                2 (now)
+            406 LOAD_FAST                4 (value)
+            408 BUILD_TUPLE              2
+            410 CALL                     1
+            418 POP_TOP
+
+247         420 LOAD_FAST                0 (self)
+            422 LOAD_ATTR               14 (_reads)
+            442 GET_ITER
+            444 LOAD_FAST_AND_CLEAR      7 (t)
+            446 LOAD_FAST_AND_CLEAR      8 (v)
+            448 SWAP                     3
+            450 BUILD_LIST               0
+            452 SWAP                     2
+        >>  454 FOR_ITER                22 (to 502)
+            458 UNPACK_SEQUENCE          2
+            462 STORE_FAST               7 (t)
+            464 STORE_FAST               8 (v)
+            466 LOAD_FAST                2 (now)
+            468 LOAD_FAST                7 (t)
+            470 BINARY_OP               10 (-)
+            474 LOAD_GLOBAL             24 (WINDOW_S)
+            484 COMPARE_OP              26 (<=)
+            488 POP_JUMP_IF_TRUE         1 (to 492)
+            490 JUMP_BACKWARD           19 (to 454)
+        >>  492 LOAD_FAST                7 (t)
+            494 LOAD_FAST                8 (v)
+            496 BUILD_TUPLE              2
+            498 LIST_APPEND              2
+            500 JUMP_BACKWARD           24 (to 454)
+        >>  502 END_FOR
+            504 SWAP                     3
+            506 STORE_FAST               8 (v)
+            508 STORE_FAST               7 (t)
+            510 LOAD_FAST                0 (self)
+            512 STORE_ATTR               7 (_reads)
+
+248         522 LOAD_FAST                0 (self)
+            524 LOAD_ATTR               16 (_fired)
+            544 POP_JUMP_IF_FALSE        1 (to 548)
+
+249         546 RETURN_CONST             2 (False)
+
+250     >>  548 LOAD_FAST                0 (self)
+            550 LOAD_ATTR               27 (NULL|self + estimate)
+            570 LOAD_FAST                2 (now)
+            572 CALL                     1
+            580 UNPACK_SEQUENCE          2
+            584 STORE_FAST               9 (est)
+            586 STORE_FAST              10 (agree)
+
+251         588 LOAD_FAST                0 (self)
+            590 LOAD_ATTR               29 (NULL|self + _window)
+            610 CALL                     0
+            618 UNPACK_SEQUENCE          2
+            622 STORE_FAST              11 (lo)
+            624 STORE_FAST              12 (hi)
+
+252         626 LOAD_FAST                0 (self)
+            628 LOAD_ATTR               31 (NULL|self + log)
+            648 LOAD_CONST               3 ('[bus] countdown ')
+            650 LOAD_FAST                4 (value)
+            652 FORMAT_VALUE             0
+            654 LOAD_CONST               4 (' (conf ')
+            656 LOAD_FAST                5 (conf)
+            658 LOAD_CONST               5 ('.2f')
+            660 FORMAT_VALUE             4 (with format)
+            662 LOAD_CONST               6 (', ')
+            664 LOAD_FAST               10 (agree)
+            666 FORMAT_VALUE             0
+            668 LOAD_CONST               7 (' agree, jump at ')
+            670 LOAD_FAST               11 (lo)
+            672 FORMAT_VALUE             0
+            674 LOAD_CONST               8 ('-')
+            676 LOAD_FAST               12 (hi)
+            678 FORMAT_VALUE             0
+            680 LOAD_CONST               9 (')')
+            682 BUILD_STRING            11
+            684 CALL                     1
+            692 POP_TOP
+
+253         694 LOAD_FAST                9 (est)
+            696 POP_JUMP_IF_NONE        13 (to 724)
+            698 LOAD_FAST                9 (est)
+            700 LOAD_FAST               12 (hi)
+            702 COMPARE_OP              26 (<=)
+            706 POP_JUMP_IF_FALSE        8 (to 724)
+
+254         708 LOAD_CONST              10 (True)
+            710 LOAD_FAST                0 (self)
+            712 STORE_ATTR               8 (_fired)
+
+255         722 RETURN_CONST            10 (True)
+
+256     >>  724 RETURN_CONST             2 (False)
+        >>  726 SWAP                     2
+            728 POP_TOP
+
+247         730 SWAP                     3
+            732 STORE_FAST               8 (v)
+            734 STORE_FAST               7 (t)
+            736 RERAISE                  0
+        >>  738 PUSH_EXC_INFO
+
+257         740 LOAD_GLOBAL             32 (Exception)
+            750 CHECK_EXC_MATCH
+            752 POP_JUMP_IF_FALSE        3 (to 760)
+            754 POP_TOP
+
+258         756 POP_EXCEPT
+            758 RETURN_CONST             2 (False)
+
+257     >>  760 RERAISE                  0
+        >>  762 COPY                     3
+            764 POP_EXCEPT
+            766 RERAISE                  1
+ExceptionTable:
+  6 to 50 -> 738 [0]
+  54 to 216 -> 738 [0]
+  220 to 344 -> 738 [0]
+  348 to 448 -> 738 [0]
+  450 to 488 -> 726 [3]
+  492 to 502 -> 726 [3]
+  504 to 544 -> 738 [0]
+  548 to 720 -> 738 [0]
+  726 to 736 -> 738 [0]
+  738 to 754 -> 762 [1] lasti
+  760 to 760 -> 762 [1] lasti
+
+Disassembly of <code object _save_sample at 0x17a59cb0, file "bus_drop.py", line 260>:
+260           0 RESUME                   0
+
+261           2 NOP
+
+262           4 NOP
+
+263           6 LOAD_FAST                1 (crop)
+              8 POP_JUMP_IF_NONE        19 (to 48)
+             10 LOAD_FAST                0 (self)
+             12 LOAD_ATTR                0 (_samples)
+             32 LOAD_GLOBAL              2 (SAMPLE_LIMIT)
+             42 COMPARE_OP              92 (>=)
+             46 POP_JUMP_IF_FALSE        1 (to 50)
+
+264     >>   48 RETURN_CONST             0 (None)
+
+265     >>   50 LOAD_GLOBAL              5 (NULL + os)
+             60 LOAD_ATTR                6 (makedirs)
+             80 LOAD_FAST                0 (self)
+             82 LOAD_ATTR                8 (_sample_dir)
+            102 LOAD_CONST               1 (True)
+            104 KW_NAMES                 2 (('exist_ok',))
+            106 CALL                     2
+            114 POP_TOP
+
+266         116 LOAD_GLOBAL             11 (NULL + cv2)
+            126 LOAD_ATTR               12 (imencode)
+            146 LOAD_CONST               3 ('.png')
+            148 LOAD_GLOBAL             11 (NULL + cv2)
+            158 LOAD_ATTR               14 (resize)
+            178 LOAD_FAST                1 (crop)
+            180 LOAD_CONST               0 (None)
+            182 LOAD_CONST               4 (4)
+            184 LOAD_CONST               4 (4)
+            186 LOAD_GLOBAL             10 (cv2)
+            196 LOAD_ATTR               16 (INTER_CUBIC)
+            216 KW_NAMES                 5 (('fx', 'fy', 'interpolation'))
+            218 CALL                     5
+            226 CALL                     2
+            234 UNPACK_SEQUENCE          2
+            238 STORE_FAST               2 (ok)
+            240 STORE_FAST               3 (buf)
+
+267         242 LOAD_FAST                2 (ok)
+            244 POP_JUMP_IF_FALSE      123 (to 492)
+
+268         246 LOAD_FAST                3 (buf)
+            248 LOAD_ATTR               19 (NULL|self + tofile)
+            268 LOAD_GLOBAL              4 (os)
+            278 LOAD_ATTR               20 (path)
+            298 LOAD_ATTR               23 (NULL|self + join)
+            318 LOAD_FAST                0 (self)
+            320 LOAD_ATTR                8 (_sample_dir)
+            340 LOAD_CONST               6 ('plate_')
+            342 LOAD_GLOBAL             25 (NULL + int)
+            352 LOAD_GLOBAL             27 (NULL + time)
+            362 LOAD_ATTR               26 (time)
+            382 CALL                     0
+            390 CALL                     1
+            398 FORMAT_VALUE             0
+            400 LOAD_CONST               7 ('_')
+            402 LOAD_FAST                0 (self)
+            404 LOAD_ATTR                0 (_samples)
+            424 FORMAT_VALUE             0
+            426 LOAD_CONST               3 ('.png')
+            428 BUILD_STRING             5
+            430 CALL                     2
+            438 CALL                     1
+            446 POP_TOP
+
+269         448 LOAD_FAST                0 (self)
+            450 COPY                     1
+            452 LOAD_ATTR                0 (_samples)
+            472 LOAD_CONST               8 (1)
+            474 BINARY_OP               13 (+=)
+            478 SWAP                     2
+            480 STORE_ATTR               0 (_samples)
+            490 RETURN_CONST             0 (None)
+
+267     >>  492 RETURN_CONST             0 (None)
+        >>  494 PUSH_EXC_INFO
+
+270         496 LOAD_GLOBAL             28 (Exception)
+            506 CHECK_EXC_MATCH
+            508 POP_JUMP_IF_FALSE        3 (to 516)
+            510 POP_TOP
+
+271         512 POP_EXCEPT
+            514 RETURN_CONST             0 (None)
+
+270     >>  516 RERAISE                  0
+        >>  518 COPY                     3
+            520 POP_EXCEPT
+            522 RERAISE                  1
+ExceptionTable:
+  6 to 46 -> 494 [0]
+  50 to 488 -> 494 [0]
+  494 to 510 -> 518 [1] lasti
+  516 to 516 -> 518 [1] lasti

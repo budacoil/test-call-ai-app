@@ -1,0 +1,635 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+  7           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (queue)
+             10 STORE_NAME               0 (queue)
+
+  8          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (threading)
+             18 STORE_NAME               1 (threading)
+
+  9          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               2 (('messagebox', 'simpledialog'))
+             24 IMPORT_NAME              2 (tkinter)
+             26 IMPORT_FROM              3 (messagebox)
+             28 STORE_NAME               3 (messagebox)
+             30 IMPORT_FROM              4 (simpledialog)
+             32 STORE_NAME               4 (simpledialog)
+             34 POP_TOP
+
+ 11          36 LOAD_CONST               0 (0)
+             38 LOAD_CONST               1 (None)
+             40 IMPORT_NAME              5 (config)
+             42 STORE_NAME               5 (config)
+
+ 12          44 LOAD_CONST               0 (0)
+             46 LOAD_CONST               1 (None)
+             48 IMPORT_NAME              6 (i18n)
+             50 STORE_NAME               6 (i18n)
+
+ 13          52 LOAD_CONST               0 (0)
+             54 LOAD_CONST               1 (None)
+             56 IMPORT_NAME              7 (licensing)
+             58 STORE_NAME               7 (licensing)
+
+ 16          60 LOAD_CONST               3 ('key')
+             62 LOAD_NAME                8 (str)
+             64 LOAD_CONST               4 ('return')
+             66 LOAD_NAME                8 (str)
+             68 BUILD_TUPLE              4
+             70 LOAD_CONST               5 (<code object _t at 0x7f6aed7e4c90, file "licensing_ui.py", line 16>)
+             72 MAKE_FUNCTION            4 (annotations)
+             74 STORE_NAME               9 (_t)
+
+ 20          76 LOAD_CONST              12 (('return', None))
+             78 LOAD_CONST               6 (<code object gate at 0x7f6aed7a9230, file "licensing_ui.py", line 20>)
+             80 MAKE_FUNCTION            4 (annotations)
+             82 STORE_NAME              10 (gate)
+
+ 27          84 LOAD_CONST               3 ('key')
+             86 LOAD_NAME                8 (str)
+             88 LOAD_CONST               4 ('return')
+             90 LOAD_CONST               1 (None)
+             92 BUILD_TUPLE              4
+             94 LOAD_CONST               7 (<code object _check at 0x7f6aed7a9b30, file "licensing_ui.py", line 27>)
+             96 MAKE_FUNCTION            4 (annotations)
+             98 STORE_NAME              11 (_check)
+
+ 42         100 LOAD_CONST              12 (('return', None))
+            102 LOAD_CONST               8 (<code object poll at 0x7f6aed188fb0, file "licensing_ui.py", line 42>)
+            104 MAKE_FUNCTION            4 (annotations)
+            106 STORE_NAME              12 (poll)
+
+ 58         108 LOAD_CONST               9 ('res')
+            110 LOAD_NAME                8 (str)
+            112 LOAD_CONST               4 ('return')
+            114 LOAD_CONST               1 (None)
+            116 BUILD_TUPLE              4
+            118 LOAD_CONST              10 (<code object handle at 0x17a851b0, file "licensing_ui.py", line 58>)
+            120 MAKE_FUNCTION            4 (annotations)
+            122 STORE_NAME              13 (handle)
+
+ 76         124 LOAD_CONST               4 ('return')
+            126 LOAD_NAME               14 (bool)
+            128 BUILD_TUPLE              2
+            130 LOAD_CONST              11 (<code object startup at 0x17a83c90, file "licensing_ui.py", line 76>)
+            132 MAKE_FUNCTION            4 (annotations)
+            134 STORE_NAME              15 (startup)
+            136 RETURN_CONST             1 (None)
+
+Disassembly of <code object _t at 0x7f6aed7e4c90, file "licensing_ui.py", line 16>:
+ 16           0 RESUME                   0
+
+ 17           2 LOAD_GLOBAL              1 (NULL + i18n)
+             12 LOAD_ATTR                2 (t)
+             32 LOAD_FAST                0 (app)
+             34 LOAD_ATTR                4 (s)
+             54 LOAD_ATTR                6 (lang)
+             74 LOAD_FAST                1 (key)
+             76 BUILD_TUPLE              2
+             78 BUILD_MAP                0
+             80 LOAD_FAST                2 (kw)
+             82 DICT_MERGE               1
+             84 CALL_FUNCTION_EX         1
+             86 RETURN_VALUE
+
+Disassembly of <code object gate at 0x7f6aed7a9230, file "licensing_ui.py", line 20>:
+ 20           0 RESUME                   0
+
+ 21           2 LOAD_GLOBAL              1 (NULL + licensing)
+             12 LOAD_ATTR                2 (required)
+             32 CALL                     0
+             40 POP_JUMP_IF_FALSE       31 (to 104)
+             42 LOAD_GLOBAL              1 (NULL + licensing)
+             52 LOAD_ATTR                4 (is_fresh)
+             72 LOAD_FAST                0 (app)
+             74 LOAD_ATTR                6 (s)
+             94 CALL                     1
+            102 POP_JUMP_IF_FALSE        8 (to 120)
+
+ 22     >>  104 PUSH_NULL
+            106 LOAD_FAST                1 (then)
+            108 CALL                     0
+            116 POP_TOP
+
+ 23         118 RETURN_CONST             0 (None)
+
+ 24     >>  120 LOAD_GLOBAL              9 (NULL + _check)
+            130 LOAD_FAST                0 (app)
+            132 LOAD_FAST                0 (app)
+            134 LOAD_ATTR                6 (s)
+            154 LOAD_ATTR               10 (license_key)
+            174 LOAD_FAST                1 (then)
+            176 CALL                     3
+            184 POP_TOP
+            186 RETURN_CONST             0 (None)
+
+Disassembly of <code object _check at 0x7f6aed7a9b30, file "licensing_ui.py", line 27>:
+              0 MAKE_CELL                0 (app)
+              2 MAKE_CELL                1 (key)
+              4 MAKE_CELL                2 (then)
+              6 MAKE_CELL                4 (q)
+
+ 27           8 RESUME                   0
+
+ 28          10 LOAD_GLOBAL              1 (NULL + getattr)
+             20 LOAD_DEREF               0 (app)
+             22 LOAD_CONST               1 ('lic_q')
+             24 LOAD_CONST               0 (None)
+             26 CALL                     3
+             34 STORE_DEREF              4 (q)
+
+ 29          36 LOAD_DEREF               4 (q)
+             38 POP_JUMP_IF_NOT_NONE    27 (to 94)
+
+ 30          40 LOAD_GLOBAL              3 (NULL + queue)
+             50 LOAD_ATTR                4 (Queue)
+             70 CALL                     0
+             78 COPY                     1
+             80 STORE_DEREF              4 (q)
+             82 LOAD_DEREF               0 (app)
+             84 STORE_ATTR               3 (lic_q)
+
+ 32     >>   94 LOAD_CONST               6 (('return', None))
+             96 LOAD_CLOSURE             0 (app)
+             98 LOAD_CLOSURE             1 (key)
+            100 LOAD_CLOSURE             4 (q)
+            102 LOAD_CLOSURE             2 (then)
+            104 BUILD_TUPLE              4
+            106 LOAD_CONST               2 (<code object work at 0x7f6af1de1e60, file "licensing_ui.py", line 32>)
+            108 MAKE_FUNCTION           12 (annotations, closure)
+            110 STORE_FAST               3 (work)
+
+ 39         112 LOAD_GLOBAL              9 (NULL + threading)
+            122 LOAD_ATTR               10 (Thread)
+            142 LOAD_FAST                3 (work)
+            144 LOAD_CONST               3 (True)
+            146 LOAD_CONST               4 ('pk-auto-license')
+            148 KW_NAMES                 5 (('target', 'daemon', 'name'))
+            150 CALL                     3
+            158 LOAD_ATTR               13 (NULL|self + start)
+            178 CALL                     0
+            186 POP_TOP
+            188 RETURN_CONST             0 (None)
+
+Disassembly of <code object work at 0x7f6af1de1e60, file "licensing_ui.py", line 32>:
+              0 COPY_FREE_VARS           4
+
+ 32           2 RESUME                   0
+
+ 33           4 NOP
+
+ 34           6 LOAD_GLOBAL              1 (NULL + licensing)
+             16 LOAD_ATTR                2 (verify)
+             36 LOAD_DEREF               1 (app)
+             38 LOAD_ATTR                4 (s)
+             58 LOAD_DEREF               2 (key)
+             60 CALL                     2
+             68 STORE_FAST               0 (res)
+
+ 37     >>   70 LOAD_DEREF               3 (q)
+             72 LOAD_ATTR               11 (NULL|self + put)
+             92 LOAD_FAST                0 (res)
+             94 LOAD_DEREF               4 (then)
+             96 BUILD_TUPLE              2
+             98 CALL                     1
+            106 POP_TOP
+            108 RETURN_CONST             0 (None)
+        >>  110 PUSH_EXC_INFO
+
+ 35         112 LOAD_GLOBAL              6 (Exception)
+            122 CHECK_EXC_MATCH
+            124 POP_JUMP_IF_FALSE       19 (to 164)
+            126 POP_TOP
+
+ 36         128 LOAD_GLOBAL              0 (licensing)
+            138 LOAD_ATTR                8 (OFFLINE)
+            158 STORE_FAST               0 (res)
+            160 POP_EXCEPT
+            162 JUMP_BACKWARD           47 (to 70)
+
+ 35     >>  164 RERAISE                  0
+        >>  166 COPY                     3
+            168 POP_EXCEPT
+            170 RERAISE                  1
+ExceptionTable:
+  6 to 68 -> 110 [0]
+  110 to 158 -> 166 [1] lasti
+  164 to 164 -> 166 [1] lasti
+
+Disassembly of <code object poll at 0x7f6aed188fb0, file "licensing_ui.py", line 42>:
+ 42           0 RESUME                   0
+
+ 43           2 NOP
+
+ 44           4 NOP
+
+ 45           6 LOAD_GLOBAL              1 (NULL + licensing)
+             16 LOAD_ATTR                2 (pop_notices)
+             36 CALL                     0
+             44 GET_ITER
+        >>   46 FOR_ITER                29 (to 108)
+             50 STORE_FAST               1 (line)
+
+ 46          52 LOAD_FAST                0 (app)
+             54 LOAD_ATTR                4 (log_q)
+             74 LOAD_ATTR                7 (NULL|self + put)
+             94 LOAD_FAST                1 (line)
+             96 CALL                     1
+            104 POP_TOP
+            106 JUMP_BACKWARD           31 (to 46)
+
+ 45     >>  108 END_FOR
+            110 NOP
+
+ 49     >>  112 LOAD_GLOBAL             11 (NULL + getattr)
+            122 LOAD_FAST                0 (app)
+            124 LOAD_CONST               1 ('lic_q')
+            126 LOAD_CONST               0 (None)
+            128 CALL                     3
+            136 STORE_FAST               2 (q)
+
+ 50         138 LOAD_FAST                2 (q)
+            140 POP_JUMP_IF_NONE        37 (to 216)
+
+ 51     >>  142 NOP
+
+ 52         144 LOAD_FAST                2 (q)
+            146 LOAD_ATTR               13 (NULL|self + get_nowait)
+            166 CALL                     0
+            174 UNPACK_SEQUENCE          2
+            178 STORE_FAST               3 (res)
+            180 STORE_FAST               4 (then)
+
+ 55         182 LOAD_GLOBAL             19 (NULL + handle)
+            192 LOAD_FAST                0 (app)
+            194 LOAD_FAST                3 (res)
+            196 LOAD_FAST                4 (then)
+            198 CALL                     3
+            206 POP_TOP
+
+ 50         208 LOAD_FAST                2 (q)
+            210 POP_JUMP_IF_NONE         1 (to 214)
+            212 JUMP_BACKWARD           36 (to 142)
+        >>  214 RETURN_CONST             0 (None)
+        >>  216 RETURN_CONST             0 (None)
+        >>  218 PUSH_EXC_INFO
+
+ 47         220 LOAD_GLOBAL              8 (Exception)
+            230 CHECK_EXC_MATCH
+            232 POP_JUMP_IF_FALSE        3 (to 240)
+            234 POP_TOP
+
+ 48         236 POP_EXCEPT
+            238 JUMP_BACKWARD           64 (to 112)
+
+ 47     >>  240 RERAISE                  0
+        >>  242 COPY                     3
+            244 POP_EXCEPT
+            246 RERAISE                  1
+        >>  248 PUSH_EXC_INFO
+
+ 53         250 LOAD_GLOBAL             14 (queue)
+            260 LOAD_ATTR               16 (Empty)
+            280 CHECK_EXC_MATCH
+            282 POP_JUMP_IF_FALSE        3 (to 290)
+            284 POP_TOP
+
+ 54         286 POP_EXCEPT
+            288 RETURN_CONST             0 (None)
+
+ 53     >>  290 RERAISE                  0
+        >>  292 COPY                     3
+            294 POP_EXCEPT
+            296 RERAISE                  1
+ExceptionTable:
+  6 to 108 -> 218 [0]
+  144 to 180 -> 248 [0]
+  218 to 234 -> 242 [1] lasti
+  240 to 240 -> 242 [1] lasti
+  248 to 284 -> 292 [1] lasti
+  290 to 290 -> 292 [1] lasti
+
+Disassembly of <code object handle at 0x17a851b0, file "licensing_ui.py", line 58>:
+ 58           0 RESUME                   0
+
+ 59           2 LOAD_FAST                1 (res)
+              4 LOAD_GLOBAL              0 (licensing)
+             14 LOAD_ATTR                2 (OK)
+             34 COMPARE_OP              40 (==)
+             38 POP_JUMP_IF_FALSE       39 (to 118)
+
+ 60          40 LOAD_GLOBAL              5 (NULL + config)
+             50 LOAD_ATTR                6 (save_user_settings)
+             70 LOAD_FAST                0 (app)
+             72 LOAD_ATTR                8 (s)
+             92 CALL                     1
+            100 POP_TOP
+
+ 61         102 PUSH_NULL
+            104 LOAD_FAST                2 (then)
+            106 CALL                     0
+            114 POP_TOP
+
+ 62         116 RETURN_CONST             0 (None)
+
+ 63     >>  118 LOAD_FAST                1 (res)
+            120 LOAD_GLOBAL              0 (licensing)
+            130 LOAD_ATTR               10 (OFFLINE)
+            150 LOAD_GLOBAL              0 (licensing)
+            160 LOAD_ATTR               12 (BUSY)
+            180 BUILD_TUPLE              2
+            182 CONTAINS_OP              0
+            184 POP_JUMP_IF_FALSE       76 (to 338)
+
+ 64         186 LOAD_GLOBAL             15 (NULL + messagebox)
+            196 LOAD_ATTR               16 (showerror)
+            216 LOAD_GLOBAL             19 (NULL + _t)
+            226 LOAD_FAST                0 (app)
+            228 LOAD_CONST               1 ('lic_title')
+            230 CALL                     2
+            238 LOAD_GLOBAL             19 (NULL + _t)
+            248 LOAD_FAST                0 (app)
+            250 LOAD_FAST                1 (res)
+            252 LOAD_GLOBAL              0 (licensing)
+            262 LOAD_ATTR               12 (BUSY)
+            282 COMPARE_OP              40 (==)
+            286 POP_JUMP_IF_FALSE        2 (to 292)
+            288 LOAD_CONST               2 ('lic_busy')
+            290 JUMP_FORWARD             1 (to 294)
+        >>  292 LOAD_CONST               3 ('lic_offline')
+        >>  294 CALL                     2
+            302 LOAD_FAST                0 (app)
+            304 LOAD_ATTR               20 (root)
+            324 KW_NAMES                 4 (('parent',))
+            326 CALL                     3
+            334 POP_TOP
+
+ 65         336 RETURN_CONST             0 (None)
+
+ 66     >>  338 LOAD_FAST                1 (res)
+            340 LOAD_GLOBAL              0 (licensing)
+            350 LOAD_ATTR               22 (SERVER)
+            370 COMPARE_OP              40 (==)
+            374 POP_JUMP_IF_FALSE       55 (to 486)
+
+ 67         376 LOAD_GLOBAL             15 (NULL + messagebox)
+            386 LOAD_ATTR               16 (showerror)
+            406 LOAD_GLOBAL             19 (NULL + _t)
+            416 LOAD_FAST                0 (app)
+            418 LOAD_CONST               1 ('lic_title')
+            420 CALL                     2
+            428 LOAD_GLOBAL             19 (NULL + _t)
+            438 LOAD_FAST                0 (app)
+            440 LOAD_CONST               5 ('lic_server')
+            442 CALL                     2
+            450 LOAD_FAST                0 (app)
+            452 LOAD_ATTR               20 (root)
+            472 KW_NAMES                 4 (('parent',))
+            474 CALL                     3
+            482 POP_TOP
+
+ 68         484 RETURN_CONST             0 (None)
+
+ 69     >>  486 LOAD_GLOBAL              0 (licensing)
+            496 LOAD_ATTR               24 (INVALID)
+            516 LOAD_CONST               6 ('lic_invalid')
+            518 LOAD_GLOBAL              0 (licensing)
+            528 LOAD_ATTR               26 (USED)
+            548 LOAD_CONST               7 ('lic_used')
+            550 LOAD_GLOBAL              0 (licensing)
+            560 LOAD_ATTR               28 (REVOKED)
+            580 LOAD_CONST               8 ('lic_revoked')
+            582 BUILD_MAP                3
+            584 LOAD_ATTR               31 (NULL|self + get)
+            604 LOAD_FAST                1 (res)
+            606 LOAD_CONST               9 ('')
+            608 CALL                     2
+            616 STORE_FAST               3 (reason)
+
+ 70         618 LOAD_FAST                3 (reason)
+            620 POP_JUMP_IF_TRUE        12 (to 646)
+            622 LOAD_GLOBAL             19 (NULL + _t)
+            632 LOAD_FAST                0 (app)
+            634 LOAD_CONST              10 ('lic_prompt')
+            636 CALL                     2
+            644 JUMP_FORWARD            27 (to 700)
+        >>  646 LOAD_GLOBAL             19 (NULL + _t)
+            656 LOAD_FAST                0 (app)
+            658 LOAD_FAST                3 (reason)
+            660 CALL                     2
+            668 LOAD_CONST              11 ('\n\n')
+            670 BINARY_OP                0 (+)
+            674 LOAD_GLOBAL             19 (NULL + _t)
+            684 LOAD_FAST                0 (app)
+            686 LOAD_CONST              10 ('lic_prompt')
+            688 CALL                     2
+            696 BINARY_OP                0 (+)
+        >>  700 STORE_FAST               4 (text)
+
+ 71         702 LOAD_GLOBAL             33 (NULL + simpledialog)
+            712 LOAD_ATTR               34 (askstring)
+            732 LOAD_GLOBAL             19 (NULL + _t)
+            742 LOAD_FAST                0 (app)
+            744 LOAD_CONST               1 ('lic_title')
+            746 CALL                     2
+            754 LOAD_FAST                4 (text)
+            756 LOAD_FAST                0 (app)
+            758 LOAD_ATTR               20 (root)
+            778 KW_NAMES                 4 (('parent',))
+            780 CALL                     3
+            788 STORE_FAST               5 (key)
+
+ 72         790 LOAD_FAST                5 (key)
+            792 POP_JUMP_IF_FALSE       31 (to 856)
+            794 LOAD_FAST                5 (key)
+            796 LOAD_ATTR               37 (NULL|self + strip)
+            816 CALL                     0
+            824 POP_JUMP_IF_FALSE       14 (to 854)
+
+ 73         826 LOAD_GLOBAL             39 (NULL + _check)
+            836 LOAD_FAST                0 (app)
+            838 LOAD_FAST                5 (key)
+            840 LOAD_FAST                2 (then)
+            842 CALL                     3
+            850 POP_TOP
+            852 RETURN_CONST             0 (None)
+
+ 72     >>  854 RETURN_CONST             0 (None)
+        >>  856 RETURN_CONST             0 (None)
+
+Disassembly of <code object startup at 0x17a83c90, file "licensing_ui.py", line 76>:
+ 76           0 RESUME                   0
+
+ 77           2 NOP
+
+ 82           4 LOAD_GLOBAL              1 (NULL + licensing)
+             14 LOAD_ATTR                2 (required)
+             34 CALL                     0
+             42 POP_JUMP_IF_FALSE       31 (to 106)
+             44 LOAD_GLOBAL              1 (NULL + licensing)
+             54 LOAD_ATTR                4 (is_fresh)
+             74 LOAD_FAST                0 (app)
+             76 LOAD_ATTR                6 (s)
+             96 CALL                     1
+            104 POP_JUMP_IF_FALSE        1 (to 108)
+
+ 83     >>  106 RETURN_CONST             1 (True)
+
+ 84     >>  108 LOAD_FAST                0 (app)
+            110 LOAD_ATTR                6 (s)
+            130 LOAD_ATTR                8 (license_key)
+            150 STORE_FAST               1 (key)
+
+ 85         152 NOP
+
+ 86     >>  154 NOP
+
+ 87         156 LOAD_GLOBAL              1 (NULL + licensing)
+            166 LOAD_ATTR               10 (verify)
+            186 LOAD_FAST                0 (app)
+            188 LOAD_ATTR                6 (s)
+            208 LOAD_FAST                1 (key)
+            210 CALL                     2
+            218 STORE_FAST               2 (res)
+
+ 90     >>  220 LOAD_FAST                2 (res)
+            222 LOAD_GLOBAL              0 (licensing)
+            232 LOAD_ATTR               16 (OK)
+            252 COMPARE_OP              40 (==)
+            256 POP_JUMP_IF_FALSE       32 (to 322)
+
+ 91         258 LOAD_GLOBAL             19 (NULL + config)
+            268 LOAD_ATTR               20 (save_user_settings)
+            288 LOAD_FAST                0 (app)
+            290 LOAD_ATTR                6 (s)
+            310 CALL                     1
+            318 POP_TOP
+
+ 92         320 RETURN_CONST             1 (True)
+
+ 93     >>  322 LOAD_FAST                2 (res)
+            324 LOAD_GLOBAL              0 (licensing)
+            334 LOAD_ATTR               14 (OFFLINE)
+            354 LOAD_GLOBAL              0 (licensing)
+            364 LOAD_ATTR               22 (SERVER)
+            384 LOAD_GLOBAL              0 (licensing)
+            394 LOAD_ATTR               24 (BUSY)
+            414 BUILD_TUPLE              3
+            416 CONTAINS_OP              0
+            418 POP_JUMP_IF_FALSE      103 (to 626)
+
+ 94         420 LOAD_GLOBAL             27 (NULL + messagebox)
+            430 LOAD_ATTR               28 (showerror)
+            450 LOAD_GLOBAL             31 (NULL + _t)
+            460 LOAD_FAST                0 (app)
+            462 LOAD_CONST               2 ('lic_title')
+            464 CALL                     2
+            472 LOAD_GLOBAL             31 (NULL + _t)
+            482 LOAD_FAST                0 (app)
+            484 LOAD_GLOBAL              0 (licensing)
+            494 LOAD_ATTR               14 (OFFLINE)
+            514 LOAD_CONST               3 ('lic_offline')
+            516 LOAD_GLOBAL              0 (licensing)
+            526 LOAD_ATTR               24 (BUSY)
+            546 LOAD_CONST               4 ('lic_busy')
+            548 BUILD_MAP                2
+            550 LOAD_ATTR               33 (NULL|self + get)
+            570 LOAD_FAST                2 (res)
+            572 LOAD_CONST               5 ('lic_server')
+            574 CALL                     2
+            582 CALL                     2
+            590 LOAD_FAST                0 (app)
+            592 LOAD_ATTR               34 (root)
+            612 KW_NAMES                 6 (('parent',))
+            614 CALL                     3
+            622 POP_TOP
+
+ 95         624 RETURN_CONST             7 (False)
+
+ 96     >>  626 LOAD_GLOBAL              0 (licensing)
+            636 LOAD_ATTR               36 (INVALID)
+            656 LOAD_CONST               8 ('lic_invalid')
+            658 LOAD_GLOBAL              0 (licensing)
+            668 LOAD_ATTR               38 (USED)
+            688 LOAD_CONST               9 ('lic_used')
+            690 LOAD_GLOBAL              0 (licensing)
+            700 LOAD_ATTR               40 (REVOKED)
+            720 LOAD_CONST              10 ('lic_revoked')
+            722 BUILD_MAP                3
+            724 LOAD_ATTR               33 (NULL|self + get)
+            744 LOAD_FAST                2 (res)
+            746 LOAD_CONST              11 ('')
+            748 CALL                     2
+            756 STORE_FAST               3 (reason)
+
+ 97         758 LOAD_FAST                3 (reason)
+            760 POP_JUMP_IF_TRUE        12 (to 786)
+            762 LOAD_GLOBAL             31 (NULL + _t)
+            772 LOAD_FAST                0 (app)
+            774 LOAD_CONST              12 ('lic_prompt')
+            776 CALL                     2
+            784 JUMP_FORWARD            27 (to 840)
+        >>  786 LOAD_GLOBAL             31 (NULL + _t)
+            796 LOAD_FAST                0 (app)
+            798 LOAD_FAST                3 (reason)
+            800 CALL                     2
+            808 LOAD_CONST              13 ('\n\n')
+            810 BINARY_OP                0 (+)
+            814 LOAD_GLOBAL             31 (NULL + _t)
+            824 LOAD_FAST                0 (app)
+            826 LOAD_CONST              12 ('lic_prompt')
+            828 CALL                     2
+            836 BINARY_OP                0 (+)
+        >>  840 STORE_FAST               4 (text)
+
+ 98         842 LOAD_GLOBAL             43 (NULL + simpledialog)
+            852 LOAD_ATTR               44 (askstring)
+            872 LOAD_GLOBAL             31 (NULL + _t)
+            882 LOAD_FAST                0 (app)
+            884 LOAD_CONST               2 ('lic_title')
+            886 CALL                     2
+            894 LOAD_FAST                4 (text)
+            896 LOAD_FAST                0 (app)
+            898 LOAD_ATTR               34 (root)
+            918 KW_NAMES                 6 (('parent',))
+            920 CALL                     3
+            928 STORE_FAST               1 (key)
+
+ 99         930 LOAD_FAST                1 (key)
+            932 POP_JUMP_IF_FALSE       16 (to 966)
+            934 LOAD_FAST                1 (key)
+            936 LOAD_ATTR               47 (NULL|self + strip)
+            956 CALL                     0
+            964 POP_JUMP_IF_TRUE         1 (to 968)
+
+100     >>  966 RETURN_CONST             7 (False)
+
+ 85     >>  968 EXTENDED_ARG             1
+            970 JUMP_BACKWARD          409 (to 154)
+        >>  972 PUSH_EXC_INFO
+
+ 88         974 LOAD_GLOBAL             12 (Exception)
+            984 CHECK_EXC_MATCH
+            986 POP_JUMP_IF_FALSE       20 (to 1028)
+            988 POP_TOP
+
+ 89         990 LOAD_GLOBAL              0 (licensing)
+           1000 LOAD_ATTR               14 (OFFLINE)
+           1020 STORE_FAST               2 (res)
+           1022 POP_EXCEPT
+           1024 EXTENDED_ARG             1
+           1026 JUMP_BACKWARD          404 (to 220)
+
+ 88     >> 1028 RERAISE                  0
+        >> 1030 COPY                     3
+           1032 POP_EXCEPT
+           1034 RERAISE                  1
+ExceptionTable:
+  156 to 218 -> 972 [0]
+  972 to 1020 -> 1030 [1] lasti
+  1028 to 1028 -> 1030 [1] lasti

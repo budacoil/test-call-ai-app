@@ -1,0 +1,1120 @@
+  0           0 RESUME                   0
+
+  1           2 SETUP_ANNOTATIONS
+
+ 13           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (json)
+             10 STORE_NAME               0 (json)
+
+ 14          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (os)
+             18 STORE_NAME               1 (os)
+
+ 15          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              2 (re)
+             26 STORE_NAME               2 (re)
+
+ 16          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               1 (None)
+             32 IMPORT_NAME              3 (threading)
+             34 STORE_NAME               3 (threading)
+
+ 17          36 LOAD_CONST               0 (0)
+             38 LOAD_CONST               1 (None)
+             40 IMPORT_NAME              4 (time)
+             42 STORE_NAME               4 (time)
+
+ 18          44 LOAD_CONST               0 (0)
+             46 LOAD_CONST               2 (('Callable', 'List', 'Optional', 'Tuple'))
+             48 IMPORT_NAME              5 (typing)
+             50 IMPORT_FROM              6 (Callable)
+             52 STORE_NAME               6 (Callable)
+             54 IMPORT_FROM              7 (List)
+             56 STORE_NAME               7 (List)
+             58 IMPORT_FROM              8 (Optional)
+             60 STORE_NAME               8 (Optional)
+             62 IMPORT_FROM              9 (Tuple)
+             64 STORE_NAME               9 (Tuple)
+             66 POP_TOP
+
+ 20          68 LOAD_CONST               0 (0)
+             70 LOAD_CONST               1 (None)
+             72 IMPORT_NAME             10 (breaker)
+             74 STORE_NAME              10 (breaker)
+
+ 21          76 LOAD_CONST               0 (0)
+             78 LOAD_CONST               1 (None)
+             80 IMPORT_NAME             11 (config)
+             82 STORE_NAME              11 (config)
+
+ 23          84 LOAD_CONST               3 (6)
+             86 STORE_NAME              12 (MAX_URLS)
+
+ 24          88 LOAD_CONST               4 (21600.0)
+             90 STORE_NAME              13 (REFRESH_S)
+
+ 25          92 LOAD_CONST               5 ('relay_endpoints.json')
+             94 STORE_NAME              14 (CACHE_NAME)
+
+ 26          96 LOAD_CONST               6 (60.0)
+             98 STORE_NAME              15 (CONNECT_FAIL_COOLDOWN_S)
+
+ 28         100 PUSH_NULL
+            102 LOAD_NAME                3 (threading)
+            104 LOAD_ATTR               32 (Lock)
+            124 CALL                     0
+            132 STORE_NAME              17 (_lock)
+
+ 29         134 BUILD_LIST               0
+            136 STORE_GLOBAL            18 (_user)
+            138 LOAD_NAME                7 (List)
+            140 LOAD_NAME               19 (str)
+            142 BINARY_SUBSCR
+            146 LOAD_NAME               20 (__annotations__)
+            148 LOAD_CONST               7 ('_user')
+            150 STORE_SUBSCR
+
+ 30         154 BUILD_LIST               0
+            156 STORE_GLOBAL            21 (_remote)
+            158 LOAD_NAME                7 (List)
+            160 LOAD_NAME               19 (str)
+            162 BINARY_SUBSCR
+            166 LOAD_NAME               20 (__annotations__)
+            168 LOAD_CONST               8 ('_remote')
+            170 STORE_SUBSCR
+
+ 31         174 BUILD_MAP                0
+            176 STORE_NAME              22 (_breakers)
+            178 LOAD_NAME               23 (dict)
+            180 LOAD_NAME               20 (__annotations__)
+            182 LOAD_CONST               9 ('_breakers')
+            184 STORE_SUBSCR
+
+ 32         188 LOAD_CONST              10 (False)
+            190 STORE_GLOBAL            24 (_started)
+
+ 35         192 LOAD_CONST              11 ('return')
+            194 LOAD_NAME               19 (str)
+            196 BUILD_TUPLE              2
+            198 LOAD_CONST              12 (<code object clean_url at 0x179d1d30, file "relay.py", line 35>)
+            200 MAKE_FUNCTION            4 (annotations)
+            202 STORE_NAME              25 (clean_url)
+
+ 48         204 LOAD_CONST              11 ('return')
+            206 LOAD_NAME                7 (List)
+            208 LOAD_NAME               19 (str)
+            210 BINARY_SUBSCR
+            214 BUILD_TUPLE              2
+            216 LOAD_CONST              13 (<code object parse_list at 0x7f6af1de7770, file "relay.py", line 48>)
+            218 MAKE_FUNCTION            4 (annotations)
+            220 STORE_NAME              26 (parse_list)
+
+ 59         222 LOAD_CONST              28 (('return', None))
+            224 LOAD_CONST              14 (<code object set_user_urls at 0x7f6aed800e30, file "relay.py", line 59>)
+            226 MAKE_FUNCTION            4 (annotations)
+            228 STORE_NAME              27 (set_user_urls)
+
+ 67         230 LOAD_CONST              15 ('url')
+            232 LOAD_NAME               19 (str)
+            234 LOAD_CONST              11 ('return')
+            236 LOAD_NAME                7 (List)
+            238 LOAD_NAME                9 (Tuple)
+            240 LOAD_NAME               19 (str)
+            242 LOAD_NAME               19 (str)
+            244 BUILD_TUPLE              2
+            246 BINARY_SUBSCR
+            250 BINARY_SUBSCR
+            254 BUILD_TUPLE              4
+            256 LOAD_CONST              16 (<code object candidates at 0x17a7c4f0, file "relay.py", line 67>)
+            258 MAKE_FUNCTION            4 (annotations)
+            260 STORE_NAME              28 (candidates)
+
+ 84         262 LOAD_CONST              17 ('base')
+            264 LOAD_NAME               19 (str)
+            266 LOAD_CONST              18 ('is_primary')
+            268 LOAD_NAME               29 (bool)
+            270 LOAD_CONST              11 ('return')
+            272 LOAD_CONST              19 ('breaker.Breaker')
+            274 BUILD_TUPLE              6
+            276 LOAD_CONST              20 (<code object breaker_for at 0x7f6af1e2a100, file "relay.py", line 84>)
+            278 MAKE_FUNCTION            4 (annotations)
+            280 STORE_NAME              30 (breaker_for)
+
+ 96         282 LOAD_CONST              11 ('return')
+            284 LOAD_NAME               19 (str)
+            286 BUILD_TUPLE              2
+            288 LOAD_CONST              21 (<code object cache_path at 0x7f6aed1d1de0, file "relay.py", line 96>)
+            290 MAKE_FUNCTION            4 (annotations)
+            292 STORE_NAME              31 (cache_path)
+
+100         294 LOAD_CONST              28 (('return', None))
+            296 LOAD_CONST              22 (<code object load_cache at 0x7f6aed18cc30, file "relay.py", line 100>)
+            298 MAKE_FUNCTION            4 (annotations)
+            300 STORE_NAME              32 (load_cache)
+
+112         302 LOAD_CONST              29 ((None,))
+            304 LOAD_CONST              23 ('opener')
+            306 LOAD_NAME                8 (Optional)
+            308 LOAD_NAME                6 (Callable)
+            310 BINARY_SUBSCR
+            314 LOAD_CONST              11 ('return')
+            316 LOAD_NAME                7 (List)
+            318 LOAD_NAME               19 (str)
+            320 BINARY_SUBSCR
+            324 BUILD_TUPLE              4
+            326 LOAD_CONST              24 (<code object fetch_list at 0x17ab4ea0, file "relay.py", line 112>)
+            328 MAKE_FUNCTION            5 (defaults, annotations)
+            330 STORE_NAME              33 (fetch_list)
+
+130         332 LOAD_CONST              29 ((None,))
+            334 LOAD_CONST              23 ('opener')
+            336 LOAD_NAME                8 (Optional)
+            338 LOAD_NAME                6 (Callable)
+            340 BINARY_SUBSCR
+            344 LOAD_CONST              11 ('return')
+            346 LOAD_NAME                7 (List)
+            348 LOAD_NAME               19 (str)
+            350 BINARY_SUBSCR
+            354 BUILD_TUPLE              4
+            356 LOAD_CONST              25 (<code object refresh at 0x17a84170, file "relay.py", line 130>)
+            358 MAKE_FUNCTION            5 (defaults, annotations)
+            360 STORE_NAME              34 (refresh)
+
+145         362 LOAD_CONST               1 (None)
+            364 LOAD_NAME                4 (time)
+            366 LOAD_ATTR               70 (sleep)
+            386 BUILD_TUPLE              2
+            388 LOAD_CONST              26 ('sleep')
+            390 LOAD_NAME                6 (Callable)
+            392 LOAD_NAME               36 (float)
+            394 BUILD_LIST               1
+            396 LOAD_CONST               1 (None)
+            398 BUILD_TUPLE              2
+            400 BINARY_SUBSCR
+            404 LOAD_CONST              11 ('return')
+            406 LOAD_CONST               1 (None)
+            408 BUILD_TUPLE              4
+            410 LOAD_CONST              27 (<code object start at 0x7f6aed7aa130, file "relay.py", line 145>)
+            412 MAKE_FUNCTION            5 (defaults, annotations)
+            414 STORE_NAME              37 (start)
+            416 RETURN_CONST             1 (None)
+
+Disassembly of <code object clean_url at 0x179d1d30, file "relay.py", line 35>:
+ 35           0 RESUME                   0
+
+ 36           2 NOP
+
+ 37           4 LOAD_GLOBAL              1 (NULL + isinstance)
+             14 LOAD_FAST                0 (u)
+             16 LOAD_GLOBAL              2 (str)
+             26 CALL                     2
+             34 POP_JUMP_IF_TRUE         1 (to 38)
+
+ 38          36 RETURN_CONST             1 ('')
+
+ 39     >>   38 LOAD_FAST                0 (u)
+             40 LOAD_ATTR                5 (NULL|self + strip)
+             60 CALL                     0
+             68 LOAD_ATTR                5 (NULL|self + strip)
+             88 LOAD_CONST               2 ('"\'')
+             90 CALL                     1
+             98 LOAD_ATTR                7 (NULL|self + rstrip)
+            118 LOAD_CONST               3 ('/')
+            120 CALL                     1
+            128 STORE_FAST               0 (u)
+
+ 40         130 LOAD_CONST               4 (('/api/telemetry', '/api/sync', '/api/license'))
+            132 GET_ITER
+        >>  134 FOR_ITER                35 (to 208)
+            138 STORE_FAST               1 (suffix)
+
+ 41         140 LOAD_FAST                0 (u)
+            142 LOAD_ATTR                9 (NULL|self + endswith)
+            162 LOAD_FAST                1 (suffix)
+            164 CALL                     1
+            172 POP_JUMP_IF_TRUE         1 (to 176)
+            174 JUMP_BACKWARD           21 (to 134)
+
+ 42     >>  176 LOAD_FAST                0 (u)
+            178 LOAD_CONST               0 (None)
+            180 LOAD_GLOBAL             11 (NULL + len)
+            190 LOAD_FAST                1 (suffix)
+            192 CALL                     1
+            200 UNARY_NEGATIVE
+            202 BINARY_SLICE
+            204 STORE_FAST               0 (u)
+            206 JUMP_BACKWARD           37 (to 134)
+
+ 40     >>  208 END_FOR
+
+ 43         210 LOAD_GLOBAL             13 (NULL + re)
+            220 LOAD_ATTR               14 (fullmatch)
+            240 LOAD_CONST               5 ('https://[A-Za-z0-9.\\-]+(:\\d{2,5})?(/[A-Za-z0-9._~/\\-]*)?')
+            242 LOAD_FAST                0 (u)
+            244 CALL                     2
+            252 POP_JUMP_IF_FALSE       18 (to 290)
+            254 LOAD_CONST               6 ('your-worker')
+            256 LOAD_FAST                0 (u)
+            258 LOAD_ATTR               17 (NULL|self + lower)
+            278 CALL                     0
+            286 CONTAINS_OP              0
+            288 POP_JUMP_IF_FALSE        1 (to 292)
+
+ 44     >>  290 RETURN_CONST             1 ('')
+
+ 45     >>  292 LOAD_FAST                0 (u)
+            294 LOAD_ATTR                7 (NULL|self + rstrip)
+            314 LOAD_CONST               3 ('/')
+            316 CALL                     1
+            324 RETURN_VALUE
+
+Disassembly of <code object parse_list at 0x7f6af1de7770, file "relay.py", line 48>:
+ 48           0 RESUME                   0
+
+ 49           2 NOP
+
+ 50           4 LOAD_GLOBAL              1 (NULL + isinstance)
+             14 LOAD_FAST                0 (text)
+             16 LOAD_GLOBAL              2 (str)
+             26 CALL                     2
+             34 POP_JUMP_IF_FALSE       22 (to 80)
+             36 LOAD_GLOBAL              5 (NULL + re)
+             46 LOAD_ATTR                6 (split)
+             66 LOAD_CONST               1 ('[\\s,;]+')
+             68 LOAD_FAST                0 (text)
+             70 CALL                     2
+             78 JUMP_FORWARD            14 (to 108)
+        >>   80 LOAD_GLOBAL              9 (NULL + list)
+             90 LOAD_FAST                0 (text)
+             92 COPY                     1
+             94 POP_JUMP_IF_TRUE         2 (to 100)
+             96 POP_TOP
+             98 BUILD_LIST               0
+        >>  100 CALL                     1
+        >>  108 STORE_FAST               1 (parts)
+
+ 51         110 BUILD_LIST               0
+            112 STORE_FAST               2 (out)
+
+ 52         114 LOAD_FAST                1 (parts)
+            116 GET_ITER
+        >>  118 FOR_ITER                38 (to 198)
+            122 STORE_FAST               3 (p)
+
+ 53         124 LOAD_GLOBAL             11 (NULL + clean_url)
+            134 LOAD_FAST                3 (p)
+            136 CALL                     1
+            144 STORE_FAST               4 (c)
+
+ 54         146 LOAD_FAST                4 (c)
+            148 POP_JUMP_IF_TRUE         1 (to 152)
+            150 JUMP_BACKWARD           17 (to 118)
+        >>  152 LOAD_FAST                4 (c)
+            154 LOAD_FAST                2 (out)
+            156 CONTAINS_OP              1
+            158 POP_JUMP_IF_TRUE         1 (to 162)
+            160 JUMP_BACKWARD           22 (to 118)
+
+ 55     >>  162 LOAD_FAST                2 (out)
+            164 LOAD_ATTR               13 (NULL|self + append)
+            184 LOAD_FAST                4 (c)
+            186 CALL                     1
+            194 POP_TOP
+            196 JUMP_BACKWARD           40 (to 118)
+
+ 52     >>  198 END_FOR
+
+ 56         200 LOAD_FAST                2 (out)
+            202 LOAD_CONST               0 (None)
+            204 LOAD_GLOBAL             14 (MAX_URLS)
+            214 BINARY_SLICE
+            216 RETURN_VALUE
+
+Disassembly of <code object set_user_urls at 0x7f6aed800e30, file "relay.py", line 59>:
+ 59           0 RESUME                   0
+
+ 60           2 NOP
+
+ 62           4 LOAD_GLOBAL              1 (NULL + parse_list)
+             14 LOAD_FAST                0 (text)
+             16 CALL                     1
+             24 LOAD_GLOBAL              1 (NULL + parse_list)
+             34 LOAD_GLOBAL              2 (os)
+             44 LOAD_ATTR                4 (environ)
+             64 LOAD_ATTR                7 (NULL|self + get)
+             84 LOAD_CONST               1 ('PKA_RELAY_URLS')
+             86 LOAD_CONST               2 ('')
+             88 CALL                     2
+             96 CALL                     1
+            104 GET_ITER
+            106 LOAD_FAST_AND_CLEAR      1 (u)
+            108 SWAP                     2
+            110 BUILD_LIST               0
+            112 SWAP                     2
+        >>  114 FOR_ITER                18 (to 154)
+            118 STORE_FAST               1 (u)
+            120 LOAD_FAST                1 (u)
+            122 LOAD_GLOBAL              1 (NULL + parse_list)
+            132 LOAD_FAST                0 (text)
+            134 CALL                     1
+            142 CONTAINS_OP              1
+            144 POP_JUMP_IF_TRUE         1 (to 148)
+            146 JUMP_BACKWARD           17 (to 114)
+        >>  148 LOAD_FAST                1 (u)
+            150 LIST_APPEND              2
+            152 JUMP_BACKWARD           20 (to 114)
+        >>  154 END_FOR
+            156 SWAP                     2
+            158 STORE_FAST               1 (u)
+            160 BINARY_OP                0 (+)
+            164 STORE_FAST               2 (urls)
+
+ 63         166 LOAD_GLOBAL              8 (_lock)
+            176 BEFORE_WITH
+            178 POP_TOP
+
+ 64         180 LOAD_FAST                2 (urls)
+            182 LOAD_CONST               0 (None)
+            184 LOAD_GLOBAL             10 (MAX_URLS)
+            194 BINARY_SLICE
+            196 STORE_GLOBAL             6 (_user)
+
+ 63         198 LOAD_CONST               0 (None)
+            200 LOAD_CONST               0 (None)
+            202 LOAD_CONST               0 (None)
+            204 CALL                     2
+            212 POP_TOP
+            214 RETURN_CONST             0 (None)
+        >>  216 SWAP                     2
+            218 POP_TOP
+
+ 62         220 SWAP                     2
+            222 STORE_FAST               1 (u)
+            224 RERAISE                  0
+
+ 63     >>  226 PUSH_EXC_INFO
+            228 WITH_EXCEPT_START
+            230 POP_JUMP_IF_TRUE         1 (to 234)
+            232 RERAISE                  2
+        >>  234 POP_TOP
+            236 POP_EXCEPT
+            238 POP_TOP
+            240 POP_TOP
+            242 RETURN_CONST             0 (None)
+        >>  244 COPY                     3
+            246 POP_EXCEPT
+            248 RERAISE                  1
+ExceptionTable:
+  110 to 144 -> 216 [3]
+  148 to 154 -> 216 [3]
+  178 to 196 -> 226 [1] lasti
+  226 to 234 -> 244 [3] lasti
+
+Disassembly of <code object candidates at 0x17a7c4f0, file "relay.py", line 67>:
+ 67           0 RESUME                   0
+
+ 68           2 NOP
+
+ 70           4 LOAD_GLOBAL              1 (NULL + re)
+             14 LOAD_ATTR                2 (match)
+             34 LOAD_CONST               1 ('^(https://[^/]+(?:/[^?]*?)?)(/api/[A-Za-z0-9_\\-/]+)(\\?.*)?$')
+             36 LOAD_FAST                0 (url)
+             38 COPY                     1
+             40 POP_JUMP_IF_TRUE         2 (to 46)
+             42 POP_TOP
+             44 LOAD_CONST               2 ('')
+        >>   46 CALL                     2
+             54 STORE_FAST               1 (m)
+
+ 71          56 LOAD_FAST                1 (m)
+             58 POP_JUMP_IF_TRUE         5 (to 70)
+
+ 72          60 LOAD_FAST                0 (url)
+             62 LOAD_FAST                0 (url)
+             64 BUILD_TUPLE              2
+             66 BUILD_LIST               1
+             68 RETURN_VALUE
+
+ 73     >>   70 LOAD_FAST                1 (m)
+             72 LOAD_ATTR                5 (NULL|self + group)
+             92 LOAD_CONST               3 (1)
+             94 CALL                     1
+            102 LOAD_FAST                1 (m)
+            104 LOAD_ATTR                5 (NULL|self + group)
+            124 LOAD_CONST               4 (2)
+            126 CALL                     1
+            134 LOAD_FAST                1 (m)
+            136 LOAD_ATTR                5 (NULL|self + group)
+            156 LOAD_CONST               5 (3)
+            158 CALL                     1
+            166 COPY                     1
+            168 POP_JUMP_IF_TRUE         2 (to 174)
+            170 POP_TOP
+            172 LOAD_CONST               2 ('')
+        >>  174 BINARY_OP                0 (+)
+            178 STORE_FAST               3 (path)
+            180 STORE_FAST               2 (base)
+
+ 74         182 LOAD_GLOBAL              7 (NULL + clean_url)
+            192 LOAD_FAST                2 (base)
+            194 CALL                     1
+            202 COPY                     1
+            204 POP_JUMP_IF_TRUE         2 (to 210)
+            206 POP_TOP
+            208 LOAD_FAST                2 (base)
+        >>  210 STORE_FAST               4 (primary)
+
+ 75         212 LOAD_FAST                4 (primary)
+            214 BUILD_LIST               1
+            216 STORE_FAST               5 (out)
+
+ 76         218 LOAD_GLOBAL              8 (_lock)
+            228 BEFORE_WITH
+            230 POP_TOP
+
+ 77         232 LOAD_GLOBAL             11 (NULL + list)
+            242 LOAD_GLOBAL             12 (_user)
+            252 CALL                     1
+            260 LOAD_GLOBAL             11 (NULL + list)
+            270 LOAD_GLOBAL             14 (_remote)
+            280 CALL                     1
+            288 BINARY_OP                0 (+)
+            292 STORE_FAST               6 (extra)
+
+ 76         294 LOAD_CONST               0 (None)
+            296 LOAD_CONST               0 (None)
+            298 LOAD_CONST               0 (None)
+            300 CALL                     2
+            308 POP_TOP
+
+ 78     >>  310 LOAD_FAST_CHECK          6 (extra)
+            312 LOAD_GLOBAL             17 (NULL + getattr)
+            322 LOAD_GLOBAL             18 (config)
+            332 LOAD_CONST               6 ('FALLBACK_RELAY_URLS')
+            334 LOAD_CONST               7 (())
+            336 CALL                     3
+            344 GET_ITER
+            346 LOAD_FAST_AND_CLEAR      7 (x)
+            348 SWAP                     2
+            350 BUILD_LIST               0
+            352 SWAP                     2
+        >>  354 FOR_ITER                13 (to 384)
+            358 STORE_FAST               7 (x)
+            360 LOAD_GLOBAL              7 (NULL + clean_url)
+            370 LOAD_FAST                7 (x)
+            372 CALL                     1
+            380 LIST_APPEND              2
+            382 JUMP_BACKWARD           15 (to 354)
+        >>  384 END_FOR
+            386 SWAP                     2
+            388 STORE_FAST               7 (x)
+            390 BINARY_OP                0 (+)
+            394 GET_ITER
+        >>  396 FOR_ITER                27 (to 454)
+            400 STORE_FAST               8 (u)
+
+ 79         402 LOAD_FAST                8 (u)
+            404 POP_JUMP_IF_TRUE         1 (to 408)
+            406 JUMP_BACKWARD            6 (to 396)
+        >>  408 LOAD_FAST                8 (u)
+            410 LOAD_FAST                5 (out)
+            412 CONTAINS_OP              1
+            414 POP_JUMP_IF_TRUE         1 (to 418)
+            416 JUMP_BACKWARD           11 (to 396)
+
+ 80     >>  418 LOAD_FAST                5 (out)
+            420 LOAD_ATTR               21 (NULL|self + append)
+            440 LOAD_FAST                8 (u)
+            442 CALL                     1
+            450 POP_TOP
+            452 JUMP_BACKWARD           29 (to 396)
+
+ 78     >>  454 END_FOR
+
+ 81         456 LOAD_FAST                5 (out)
+            458 LOAD_CONST               0 (None)
+            460 LOAD_GLOBAL             22 (MAX_URLS)
+            470 LOAD_CONST               3 (1)
+            472 BINARY_OP                0 (+)
+            476 BINARY_SLICE
+            478 GET_ITER
+            480 LOAD_FAST_AND_CLEAR      9 (b)
+            482 SWAP                     2
+            484 BUILD_LIST               0
+            486 SWAP                     2
+        >>  488 FOR_ITER                 9 (to 510)
+            492 STORE_FAST               9 (b)
+            494 LOAD_FAST                9 (b)
+            496 LOAD_FAST                9 (b)
+            498 LOAD_FAST                3 (path)
+            500 BINARY_OP                0 (+)
+            504 BUILD_TUPLE              2
+            506 LIST_APPEND              2
+            508 JUMP_BACKWARD           11 (to 488)
+        >>  510 END_FOR
+            512 SWAP                     2
+            514 STORE_FAST               9 (b)
+            516 RETURN_VALUE
+
+ 76     >>  518 PUSH_EXC_INFO
+            520 WITH_EXCEPT_START
+            522 POP_JUMP_IF_TRUE         1 (to 526)
+            524 RERAISE                  2
+        >>  526 POP_TOP
+            528 POP_EXCEPT
+            530 POP_TOP
+            532 POP_TOP
+            534 JUMP_BACKWARD          113 (to 310)
+        >>  536 COPY                     3
+            538 POP_EXCEPT
+            540 RERAISE                  1
+        >>  542 SWAP                     2
+            544 POP_TOP
+
+ 78         546 SWAP                     2
+            548 STORE_FAST               7 (x)
+            550 RERAISE                  0
+        >>  552 SWAP                     2
+            554 POP_TOP
+
+ 81         556 SWAP                     2
+            558 STORE_FAST               9 (b)
+            560 RERAISE                  0
+ExceptionTable:
+  230 to 292 -> 518 [1] lasti
+  350 to 384 -> 542 [3]
+  484 to 510 -> 552 [2]
+  518 to 526 -> 536 [3] lasti
+
+Disassembly of <code object breaker_for at 0x7f6af1e2a100, file "relay.py", line 84>:
+ 84           0 RESUME                   0
+
+ 85           2 NOP
+
+ 86           4 LOAD_FAST                1 (is_primary)
+              6 POP_JUMP_IF_FALSE       16 (to 40)
+
+ 87           8 LOAD_GLOBAL              0 (breaker)
+             18 LOAD_ATTR                2 (BREAKER)
+             38 RETURN_VALUE
+
+ 88     >>   40 LOAD_GLOBAL              4 (_lock)
+             50 BEFORE_WITH
+             52 POP_TOP
+
+ 89          54 LOAD_GLOBAL              6 (_breakers)
+             64 LOAD_ATTR                9 (NULL|self + get)
+             84 LOAD_FAST                0 (base)
+             86 CALL                     1
+             94 STORE_FAST               2 (b)
+
+ 90          96 LOAD_FAST                2 (b)
+             98 POP_JUMP_IF_NOT_NONE    29 (to 158)
+
+ 91         100 LOAD_GLOBAL              1 (NULL + breaker)
+            110 LOAD_ATTR               10 (Breaker)
+            130 CALL                     0
+            138 COPY                     1
+            140 STORE_FAST               2 (b)
+            142 LOAD_GLOBAL              6 (_breakers)
+            152 LOAD_FAST                0 (base)
+            154 STORE_SUBSCR
+
+ 92     >>  158 LOAD_FAST                2 (b)
+
+ 88         160 SWAP                     2
+            162 LOAD_CONST               0 (None)
+            164 LOAD_CONST               0 (None)
+            166 LOAD_CONST               0 (None)
+            168 CALL                     2
+            176 POP_TOP
+            178 RETURN_VALUE
+        >>  180 PUSH_EXC_INFO
+            182 WITH_EXCEPT_START
+            184 POP_JUMP_IF_TRUE         1 (to 188)
+            186 RERAISE                  2
+        >>  188 POP_TOP
+            190 POP_EXCEPT
+            192 POP_TOP
+            194 POP_TOP
+            196 RETURN_CONST             0 (None)
+        >>  198 COPY                     3
+            200 POP_EXCEPT
+            202 RERAISE                  1
+ExceptionTable:
+  52 to 158 -> 180 [1] lasti
+  180 to 188 -> 198 [3] lasti
+
+Disassembly of <code object cache_path at 0x7f6aed1d1de0, file "relay.py", line 96>:
+ 96           0 RESUME                   0
+
+ 97           2 LOAD_GLOBAL              0 (os)
+             12 LOAD_ATTR                2 (path)
+             32 LOAD_ATTR                5 (NULL|self + join)
+             52 LOAD_GLOBAL              7 (NULL + config)
+             62 LOAD_ATTR                8 (base_dir)
+             82 CALL                     0
+             90 LOAD_GLOBAL             10 (CACHE_NAME)
+            100 CALL                     2
+            108 RETURN_VALUE
+
+Disassembly of <code object load_cache at 0x7f6aed18cc30, file "relay.py", line 100>:
+100           0 RESUME                   0
+
+102           2 NOP
+
+103           4 LOAD_GLOBAL              1 (NULL + open)
+             14 LOAD_GLOBAL              3 (NULL + cache_path)
+             24 CALL                     0
+             32 LOAD_CONST               1 ('r')
+             34 LOAD_CONST               2 ('utf-8')
+             36 KW_NAMES                 3 (('encoding',))
+             38 CALL                     3
+             46 BEFORE_WITH
+             48 STORE_FAST               0 (f)
+
+104          50 LOAD_GLOBAL              5 (NULL + json)
+             60 LOAD_ATTR                6 (load)
+             80 LOAD_FAST                0 (f)
+             82 CALL                     1
+             90 STORE_FAST               1 (data)
+
+103          92 LOAD_CONST               0 (None)
+             94 LOAD_CONST               0 (None)
+             96 LOAD_CONST               0 (None)
+             98 CALL                     2
+            106 POP_TOP
+
+105     >>  108 LOAD_GLOBAL              9 (NULL + parse_list)
+            118 LOAD_GLOBAL             11 (NULL + isinstance)
+            128 LOAD_FAST_CHECK          1 (data)
+            130 LOAD_GLOBAL             12 (dict)
+            140 CALL                     2
+            148 POP_JUMP_IF_FALSE       18 (to 186)
+            150 LOAD_FAST                1 (data)
+            152 LOAD_ATTR               15 (NULL|self + get)
+            172 LOAD_CONST               4 ('urls')
+            174 BUILD_LIST               0
+            176 CALL                     2
+            184 JUMP_FORWARD             1 (to 188)
+        >>  186 BUILD_LIST               0
+        >>  188 CALL                     1
+            196 STORE_FAST               2 (urls)
+
+106         198 LOAD_GLOBAL             16 (_lock)
+            208 BEFORE_WITH
+            210 POP_TOP
+
+107         212 LOAD_FAST                2 (urls)
+            214 STORE_GLOBAL             9 (_remote)
+
+106         216 LOAD_CONST               0 (None)
+            218 LOAD_CONST               0 (None)
+            220 LOAD_CONST               0 (None)
+            222 CALL                     2
+            230 POP_TOP
+            232 RETURN_CONST             0 (None)
+
+103     >>  234 PUSH_EXC_INFO
+            236 WITH_EXCEPT_START
+            238 POP_JUMP_IF_TRUE         1 (to 242)
+            240 RERAISE                  2
+        >>  242 POP_TOP
+            244 POP_EXCEPT
+            246 POP_TOP
+            248 POP_TOP
+            250 JUMP_BACKWARD           72 (to 108)
+        >>  252 COPY                     3
+            254 POP_EXCEPT
+            256 RERAISE                  1
+
+106     >>  258 PUSH_EXC_INFO
+            260 WITH_EXCEPT_START
+            262 POP_JUMP_IF_TRUE         1 (to 266)
+            264 RERAISE                  2
+        >>  266 POP_TOP
+            268 POP_EXCEPT
+            270 POP_TOP
+            272 POP_TOP
+            274 RETURN_CONST             0 (None)
+        >>  276 COPY                     3
+            278 POP_EXCEPT
+            280 RERAISE                  1
+        >>  282 PUSH_EXC_INFO
+
+108         284 LOAD_GLOBAL             20 (Exception)
+            294 CHECK_EXC_MATCH
+            296 POP_JUMP_IF_FALSE        3 (to 304)
+            298 POP_TOP
+
+109         300 POP_EXCEPT
+            302 RETURN_CONST             0 (None)
+
+108     >>  304 RERAISE                  0
+        >>  306 COPY                     3
+            308 POP_EXCEPT
+            310 RERAISE                  1
+ExceptionTable:
+  4 to 46 -> 282 [0]
+  48 to 90 -> 234 [1] lasti
+  92 to 208 -> 282 [0]
+  210 to 214 -> 258 [1] lasti
+  216 to 230 -> 282 [0]
+  234 to 242 -> 252 [3] lasti
+  244 to 256 -> 282 [0]
+  258 to 266 -> 276 [3] lasti
+  268 to 272 -> 282 [0]
+  276 to 280 -> 282 [0]
+  282 to 298 -> 306 [1] lasti
+  304 to 304 -> 306 [1] lasti
+
+Disassembly of <code object fetch_list at 0x17ab4ea0, file "relay.py", line 112>:
+112           0 RESUME                   0
+
+113           2 NOP
+
+114           4 NOP
+
+115           6 LOAD_CONST               1 (0)
+              8 LOAD_CONST               0 (None)
+             10 IMPORT_NAME              0 (urllib.request)
+             12 STORE_FAST               1 (urllib)
+
+117          14 LOAD_CONST               1 (0)
+             16 LOAD_CONST               0 (None)
+             18 IMPORT_NAME              1 (telemetry)
+             20 STORE_FAST               2 (telemetry)
+
+119          22 LOAD_GLOBAL              5 (NULL + getattr)
+             32 LOAD_GLOBAL              6 (config)
+             42 LOAD_CONST               2 ('RELAY_LIST_URL')
+             44 LOAD_CONST               3 ('')
+             46 CALL                     3
+             54 STORE_FAST               3 (url)
+
+120          56 LOAD_FAST                3 (url)
+             58 LOAD_ATTR                9 (NULL|self + lower)
+             78 CALL                     0
+             86 LOAD_ATTR               11 (NULL|self + startswith)
+            106 LOAD_CONST               4 ('https://')
+            108 CALL                     1
+            116 POP_JUMP_IF_TRUE         2 (to 122)
+
+121         118 BUILD_LIST               0
+            120 RETURN_VALUE
+
+122     >>  122 LOAD_FAST                1 (urllib)
+            124 LOAD_ATTR               12 (request)
+            144 LOAD_ATTR               15 (NULL|self + Request)
+            164 LOAD_FAST                3 (url)
+            166 LOAD_CONST               5 ('pk-auto/1.0')
+            168 LOAD_CONST               6 ('no-cache')
+            170 LOAD_CONST               7 (('User-Agent', 'Cache-Control'))
+            172 BUILD_CONST_KEY_MAP      2
+            174 KW_NAMES                 8 (('headers',))
+            176 CALL                     2
+            184 STORE_FAST               4 (req)
+
+123         186 PUSH_NULL
+            188 LOAD_FAST                0 (opener)
+            190 COPY                     1
+            192 POP_JUMP_IF_TRUE        12 (to 218)
+            194 POP_TOP
+            196 LOAD_FAST                2 (telemetry)
+            198 LOAD_ATTR               16 (_open)
+        >>  218 LOAD_FAST                4 (req)
+            220 LOAD_CONST               9 (15)
+            222 CALL                     2
+            230 BEFORE_WITH
+            232 STORE_FAST               5 (r)
+
+124         234 LOAD_GLOBAL             19 (NULL + json)
+            244 LOAD_ATTR               20 (loads)
+            264 LOAD_FAST                5 (r)
+            266 LOAD_ATTR               23 (NULL|self + read)
+            286 LOAD_CONST              10 (65536)
+            288 CALL                     1
+            296 LOAD_ATTR               25 (NULL|self + decode)
+            316 LOAD_CONST              11 ('utf-8')
+            318 CALL                     1
+            326 CALL                     1
+            334 STORE_FAST               6 (data)
+
+123         336 LOAD_CONST               0 (None)
+            338 LOAD_CONST               0 (None)
+            340 LOAD_CONST               0 (None)
+            342 CALL                     2
+            350 POP_TOP
+
+125     >>  352 LOAD_GLOBAL             27 (NULL + parse_list)
+            362 LOAD_GLOBAL             29 (NULL + isinstance)
+            372 LOAD_FAST_CHECK          6 (data)
+            374 LOAD_GLOBAL             30 (dict)
+            384 CALL                     2
+            392 POP_JUMP_IF_FALSE       22 (to 438)
+            394 LOAD_FAST                6 (data)
+            396 LOAD_ATTR               33 (NULL|self + get)
+            416 LOAD_CONST              12 ('urls')
+            418 BUILD_LIST               0
+            420 CALL                     2
+            428 CALL                     1
+            436 RETURN_VALUE
+        >>  438 BUILD_LIST               0
+            440 CALL                     1
+            448 RETURN_VALUE
+
+123     >>  450 PUSH_EXC_INFO
+            452 WITH_EXCEPT_START
+            454 POP_JUMP_IF_TRUE         1 (to 458)
+            456 RERAISE                  2
+        >>  458 POP_TOP
+            460 POP_EXCEPT
+            462 POP_TOP
+            464 POP_TOP
+            466 JUMP_BACKWARD           58 (to 352)
+        >>  468 COPY                     3
+            470 POP_EXCEPT
+            472 RERAISE                  1
+        >>  474 PUSH_EXC_INFO
+
+126         476 LOAD_GLOBAL             34 (Exception)
+            486 CHECK_EXC_MATCH
+            488 POP_JUMP_IF_FALSE        5 (to 500)
+            490 POP_TOP
+
+127         492 BUILD_LIST               0
+            494 SWAP                     2
+            496 POP_EXCEPT
+            498 RETURN_VALUE
+
+126     >>  500 RERAISE                  0
+        >>  502 COPY                     3
+            504 POP_EXCEPT
+            506 RERAISE                  1
+ExceptionTable:
+  6 to 118 -> 474 [0]
+  122 to 230 -> 474 [0]
+  232 to 334 -> 450 [1] lasti
+  336 to 434 -> 474 [0]
+  438 to 446 -> 474 [0]
+  450 to 458 -> 468 [3] lasti
+  460 to 472 -> 474 [0]
+  474 to 494 -> 502 [1] lasti
+  500 to 500 -> 502 [1] lasti
+
+Disassembly of <code object refresh at 0x17a84170, file "relay.py", line 130>:
+130           0 RESUME                   0
+
+131           2 NOP
+
+133           4 LOAD_GLOBAL              1 (NULL + fetch_list)
+             14 LOAD_FAST                0 (opener)
+             16 CALL                     1
+             24 STORE_FAST               1 (urls)
+
+134          26 LOAD_FAST                1 (urls)
+             28 POP_JUMP_IF_FALSE      103 (to 236)
+
+135          30 LOAD_GLOBAL              2 (_lock)
+             40 BEFORE_WITH
+             42 POP_TOP
+
+136          44 LOAD_FAST                1 (urls)
+             46 STORE_GLOBAL             2 (_remote)
+
+135          48 LOAD_CONST               0 (None)
+             50 LOAD_CONST               0 (None)
+             52 LOAD_CONST               0 (None)
+             54 CALL                     2
+             62 POP_TOP
+
+137     >>   64 NOP
+
+138          66 LOAD_GLOBAL              7 (NULL + open)
+             76 LOAD_GLOBAL              9 (NULL + cache_path)
+             86 CALL                     0
+             94 LOAD_CONST               1 ('w')
+             96 LOAD_CONST               2 ('utf-8')
+             98 KW_NAMES                 3 (('encoding',))
+            100 CALL                     3
+            108 BEFORE_WITH
+            110 STORE_FAST               2 (f)
+
+139         112 LOAD_GLOBAL             11 (NULL + json)
+            122 LOAD_ATTR               12 (dump)
+            142 LOAD_FAST                1 (urls)
+            144 LOAD_GLOBAL             15 (NULL + int)
+            154 LOAD_GLOBAL             17 (NULL + time)
+            164 LOAD_ATTR               16 (time)
+            184 CALL                     0
+            192 CALL                     1
+            200 LOAD_CONST               4 (('urls', 'at'))
+            202 BUILD_CONST_KEY_MAP      2
+            204 LOAD_FAST                2 (f)
+            206 CALL                     2
+            214 POP_TOP
+
+138         216 LOAD_CONST               0 (None)
+            218 LOAD_CONST               0 (None)
+            220 LOAD_CONST               0 (None)
+            222 CALL                     2
+            230 POP_TOP
+
+142         232 LOAD_FAST                1 (urls)
+            234 RETURN_VALUE
+        >>  236 LOAD_FAST                1 (urls)
+            238 RETURN_VALUE
+
+135     >>  240 PUSH_EXC_INFO
+            242 WITH_EXCEPT_START
+            244 POP_JUMP_IF_TRUE         1 (to 248)
+            246 RERAISE                  2
+        >>  248 POP_TOP
+            250 POP_EXCEPT
+            252 POP_TOP
+            254 POP_TOP
+            256 JUMP_BACKWARD           97 (to 64)
+        >>  258 COPY                     3
+            260 POP_EXCEPT
+            262 RERAISE                  1
+
+138     >>  264 PUSH_EXC_INFO
+            266 WITH_EXCEPT_START
+            268 POP_JUMP_IF_TRUE         1 (to 272)
+            270 RERAISE                  2
+        >>  272 POP_TOP
+            274 POP_EXCEPT
+            276 POP_TOP
+            278 POP_TOP
+
+142         280 LOAD_FAST                1 (urls)
+            282 RETURN_VALUE
+        >>  284 COPY                     3
+            286 POP_EXCEPT
+            288 RERAISE                  1
+        >>  290 PUSH_EXC_INFO
+
+140         292 LOAD_GLOBAL             18 (Exception)
+            302 CHECK_EXC_MATCH
+            304 POP_JUMP_IF_FALSE        4 (to 314)
+            306 POP_TOP
+
+141         308 POP_EXCEPT
+
+142         310 LOAD_FAST                1 (urls)
+            312 RETURN_VALUE
+
+140     >>  314 RERAISE                  0
+        >>  316 COPY                     3
+            318 POP_EXCEPT
+            320 RERAISE                  1
+ExceptionTable:
+  42 to 46 -> 240 [1] lasti
+  66 to 108 -> 290 [0]
+  110 to 214 -> 264 [1] lasti
+  216 to 230 -> 290 [0]
+  240 to 248 -> 258 [3] lasti
+  264 to 272 -> 284 [3] lasti
+  274 to 278 -> 290 [0]
+  284 to 288 -> 290 [0]
+  290 to 306 -> 316 [1] lasti
+  314 to 314 -> 316 [1] lasti
+
+Disassembly of <code object start at 0x7f6aed7aa130, file "relay.py", line 145>:
+              0 MAKE_CELL                1 (sleep)
+
+145           2 RESUME                   0
+
+146           4 NOP
+
+148           6 LOAD_GLOBAL              1 (NULL + set_user_urls)
+             16 LOAD_FAST                0 (settings)
+             18 POP_JUMP_IF_NONE        13 (to 46)
+             20 LOAD_GLOBAL              3 (NULL + getattr)
+             30 LOAD_FAST                0 (settings)
+             32 LOAD_CONST               1 ('relay_fallback_urls')
+             34 LOAD_CONST               2 ('')
+             36 CALL                     3
+             44 JUMP_FORWARD             1 (to 48)
+        >>   46 LOAD_CONST               2 ('')
+        >>   48 CALL                     1
+             56 POP_TOP
+
+149          58 LOAD_GLOBAL              5 (NULL + load_cache)
+             68 CALL                     0
+             76 POP_TOP
+
+150          78 LOAD_GLOBAL              6 (_started)
+             88 POP_JUMP_IF_FALSE        1 (to 92)
+
+151          90 RETURN_CONST             0 (None)
+
+152     >>   92 LOAD_CONST               3 (True)
+             94 STORE_GLOBAL             3 (_started)
+
+154          96 LOAD_CONST               7 (('return', None))
+             98 LOAD_CLOSURE             1 (sleep)
+            100 BUILD_TUPLE              1
+            102 LOAD_CONST               4 (<code object loop at 0x7f6aed1d17f0, file "relay.py", line 154>)
+            104 MAKE_FUNCTION           12 (annotations, closure)
+            106 STORE_FAST               2 (loop)
+
+163         108 LOAD_GLOBAL              9 (NULL + threading)
+            118 LOAD_ATTR               10 (Thread)
+            138 LOAD_FAST                2 (loop)
+            140 LOAD_CONST               3 (True)
+            142 LOAD_CONST               5 ('pk-auto-relay-list')
+            144 KW_NAMES                 6 (('target', 'daemon', 'name'))
+            146 CALL                     3
+            154 LOAD_ATTR               13 (NULL|self + start)
+            174 CALL                     0
+            182 POP_TOP
+            184 RETURN_CONST             0 (None)
+
+Disassembly of <code object loop at 0x7f6aed1d17f0, file "relay.py", line 154>:
+              0 COPY_FREE_VARS           1
+
+154           2 RESUME                   0
+
+155           4 PUSH_NULL
+              6 LOAD_DEREF               0 (sleep)
+              8 LOAD_CONST               1 (5.0)
+             10 CALL                     1
+             18 POP_TOP
+
+156          20 NOP
+
+157     >>   22 NOP
+
+158          24 LOAD_GLOBAL              1 (NULL + refresh)
+             34 CALL                     0
+             42 POP_TOP
+
+161     >>   44 PUSH_NULL
+             46 LOAD_DEREF               0 (sleep)
+             48 LOAD_GLOBAL              4 (REFRESH_S)
+             58 CALL                     1
+             66 POP_TOP
+
+156          68 JUMP_BACKWARD           24 (to 22)
+        >>   70 PUSH_EXC_INFO
+
+159          72 LOAD_GLOBAL              2 (Exception)
+             82 CHECK_EXC_MATCH
+             84 POP_JUMP_IF_FALSE        3 (to 92)
+             86 POP_TOP
+
+160          88 POP_EXCEPT
+             90 JUMP_BACKWARD           24 (to 44)
+
+159     >>   92 RERAISE                  0
+        >>   94 COPY                     3
+             96 POP_EXCEPT
+             98 RERAISE                  1
+ExceptionTable:
+  24 to 42 -> 70 [0]
+  70 to 86 -> 94 [1] lasti
+  92 to 92 -> 94 [1] lasti

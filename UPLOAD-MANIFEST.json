@@ -1,0 +1,1962 @@
+{
+  "repository": "budacoil/test-call-ai-app",
+  "files": [
+    {
+      "path": "fortnite-telegram/.github/workflows/spritepilot.yml",
+      "bytes": 893,
+      "encoding": "utf-8",
+      "sha256": "3a485cedbc74fa0cfe57c1a3e53ddc1796647e36fe4eea7b6bfb5778f89275e8",
+      "git_sha": "139d8ec124b17827a776b9bb19627d6373b4723c"
+    },
+    {
+      "path": "fortnite-telegram/.gitignore",
+      "bytes": 181,
+      "encoding": "utf-8",
+      "sha256": "1774b1b67d24965a9466e99a04b6e3ad4fdac1b49993ea201c6bd273ad74b5b5",
+      "git_sha": "4d34b18d4ba795c6f80a1424681dec8ad5e108ef"
+    },
+    {
+      "path": "fortnite-telegram/LICENSE",
+      "bytes": 1059,
+      "encoding": "utf-8",
+      "sha256": "12bb96d6c4c980ad206c0eb3fd3642f3143bcb172ea5ea17232d6c733e2a7467",
+      "git_sha": "cecbc0061c6c69c121f2fe90897068041bedba31"
+    },
+    {
+      "path": "fortnite-telegram/README.md",
+      "bytes": 9747,
+      "encoding": "utf-8",
+      "sha256": "efd41917cc5da8f007517b747147860fc4cf5fa20ace76bff4808702ecd5f87e",
+      "git_sha": "1cfe9b3777cb768036f1d9349a6c1be65c1dd1b7"
+    },
+    {
+      "path": "fortnite-telegram/README.upstream.md",
+      "bytes": 5653,
+      "encoding": "utf-8",
+      "sha256": "3bd73e806abe8d58edb65820e1779e19b5af495b17091d253e70657c8f634d78",
+      "git_sha": "c2ef03ed863bab1b12a144f4c5664f6f79353f06"
+    },
+    {
+      "path": "fortnite-telegram/artifacts/VALIDATION.md",
+      "bytes": 2367,
+      "encoding": "utf-8",
+      "sha256": "47a0c1a161c184cfe39894b2e78679309e122a88f0a6f4d3af01baa35c5e363b",
+      "git_sha": "643f139d15840a9bfe67f5a7e679592c1138cec5"
+    },
+    {
+      "path": "fortnite-telegram/artifacts/installed-package.png",
+      "bytes": 71710,
+      "encoding": "base64",
+      "sha256": "f02152746330dcf7ec5accbaa6a60ca00a298aa3937556c36c29c255b9c45a8f",
+      "git_sha": "405a327cdde19ae25321e824b6453af1e6130e2a"
+    },
+    {
+      "path": "fortnite-telegram/artifacts/overview.png",
+      "bytes": 71710,
+      "encoding": "base64",
+      "sha256": "f02152746330dcf7ec5accbaa6a60ca00a298aa3937556c36c29c255b9c45a8f",
+      "git_sha": "405a327cdde19ae25321e824b6453af1e6130e2a"
+    },
+    {
+      "path": "fortnite-telegram/artifacts/rewards.png",
+      "bytes": 89752,
+      "encoding": "base64",
+      "sha256": "2589f3e39396c27c0bd946fa569abace37c191eb97f76ae10b3dc542c48b16ba",
+      "git_sha": "e68f3e5bf80ecc52ccbef50b31b854ad4840b677"
+    },
+    {
+      "path": "fortnite-telegram/artifacts/spritepilot-0.1.0-py3-none-any.whl",
+      "bytes": 202827,
+      "encoding": "base64",
+      "sha256": "12c874f2bdc941f5bd7c83dd21f8a4fe28baf8a940e802d248ba11429c342e29",
+      "git_sha": "89bf60455e554155f2496c84d8eaf454e9665b0b"
+    },
+    {
+      "path": "fortnite-telegram/artifacts/tests.xml",
+      "bytes": 5742,
+      "encoding": "utf-8",
+      "sha256": "d93e4f12b3aff1388fb372e69f774b58719b35ce9fcbf34f5056d9c82198bd9f",
+      "git_sha": "aec6d63d4c80687c1120cf8b4f379aa95a1bb953"
+    },
+    {
+      "path": "fortnite-telegram/assets/claim_btn.png",
+      "bytes": 14362,
+      "encoding": "base64",
+      "sha256": "4d0c0d6dd66b34ae4aa6d0fa38487a59e08095feacfa12a3139d05000fac8b97",
+      "git_sha": "cc95c444b0dc4bef83abefa42dbb248db9e0db00"
+    },
+    {
+      "path": "fortnite-telegram/assets/claim_btn_en.png",
+      "bytes": 8043,
+      "encoding": "base64",
+      "sha256": "d560a7741d34f20e3fda2022fbe1752cac8e8f2175fca43fe6c15435086fe64d",
+      "git_sha": "c3ee657ebdb6469a49b634a016bae9bea7abf08c"
+    },
+    {
+      "path": "fortnite-telegram/assets/claim_btn_plate.png",
+      "bytes": 13724,
+      "encoding": "base64",
+      "sha256": "0632792db4715866a87a7a0b40827476e96480754a63f3c552a4a70f22bcb35f",
+      "git_sha": "fb9c793640e2eec1e7d43f2c18284a5ef25b7c72"
+    },
+    {
+      "path": "fortnite-telegram/assets/claim_single_btn.png",
+      "bytes": 4859,
+      "encoding": "base64",
+      "sha256": "a6b7553cbb8e3c7444a2e24bed799e0f7c4f6f2843466a8c58f1ef4562349b1b",
+      "git_sha": "db1ad8e1f049174f1efc1582178790009f40792f"
+    },
+    {
+      "path": "fortnite-telegram/assets/claim_single_btn_en.png",
+      "bytes": 6668,
+      "encoding": "base64",
+      "sha256": "79c0682285c692e6a3055e135c63f41ce9ea8b1f54bc9e6f115fd64a91555d56",
+      "git_sha": "9ff29988ca975c19e544e345825dfc21b7ef614c"
+    },
+    {
+      "path": "fortnite-telegram/assets/continue_btn.png",
+      "bytes": 1518,
+      "encoding": "base64",
+      "sha256": "38939d94709f32caf6f83a4cbc0ea953afc9060245432e6234b222ff37c928f2",
+      "git_sha": "42832ccf5a97dcd89b0b9f9abde61a553eed8c0b"
+    },
+    {
+      "path": "fortnite-telegram/assets/hud_btn.png",
+      "bytes": 10695,
+      "encoding": "base64",
+      "sha256": "f10be2fa96da89bc1ae008d5b069f5b8b1aa8b9125d7f08e69ead814d7b68b09",
+      "git_sha": "69f38becfd04b9bc1e827baf316176e909aaeac5"
+    },
+    {
+      "path": "fortnite-telegram/assets/menu_btn.png",
+      "bytes": 2098,
+      "encoding": "base64",
+      "sha256": "09e3f3216b3654985891b72214ee70c87aaa1b73a6f24ec871de87f17bf02594",
+      "git_sha": "c52ab74fc35c9e8207ed3cad7a2e351a3a1726f8"
+    },
+    {
+      "path": "fortnite-telegram/assets/menu_return_btn.png",
+      "bytes": 38559,
+      "encoding": "base64",
+      "sha256": "dfdb3835245c5182781301c7f61ef513454847003d4e8a1a57cc342d990e0981",
+      "git_sha": "c9596fa2558391a169bf398d62f0c2a9f2f5a5ed"
+    },
+    {
+      "path": "fortnite-telegram/assets/play_btn.png",
+      "bytes": 6726,
+      "encoding": "base64",
+      "sha256": "f783ea3284fb26faae3fc34ef6a6fa7d521d8f7be4dc0cd05573ffc204dabb27",
+      "git_sha": "7e417ee87c0eac85e96bb93d9778fd6096d66eb8"
+    },
+    {
+      "path": "fortnite-telegram/assets/play_btn_en.png",
+      "bytes": 7769,
+      "encoding": "base64",
+      "sha256": "2b6d57ea9bd43b15b249ebc3d047d2c9be22f10a9330777e1381988293c7915c",
+      "git_sha": "ffa73fa3fb7fb867f83f4b309b9901653cb55309"
+    },
+    {
+      "path": "fortnite-telegram/assets/play_btn_plate.png",
+      "bytes": 13447,
+      "encoding": "base64",
+      "sha256": "c3206c0a8487a5b846b92d3ff4901c8b43861cc6a928e1811594da41b3b0f76d",
+      "git_sha": "5b04e1d00a456374b8c0491245da5cf12b1e77ae"
+    },
+    {
+      "path": "fortnite-telegram/assets/return_lobby_btn.png",
+      "bytes": 7689,
+      "encoding": "base64",
+      "sha256": "38581d086ca2ee01783aecbaa1121d8fa0d66746dabee9d4130af1964db6c08b",
+      "git_sha": "1ad6e2c778f967a62c112a53fcc877fb79584cb1"
+    },
+    {
+      "path": "fortnite-telegram/assets/return_lobby_btn_en.png",
+      "bytes": 12127,
+      "encoding": "base64",
+      "sha256": "8220c53d6a7f82e442d4ca6b4cb9b87d83dcd0895c6cac1cb929f6f81d0189bd",
+      "git_sha": "716954028d3f90940247873fb1d7fb26330375f0"
+    },
+    {
+      "path": "fortnite-telegram/assets/return_lobby_btn_plate.png",
+      "bytes": 20776,
+      "encoding": "base64",
+      "sha256": "1a4a5d27f3d4df25c9a4c98a019ce097bb881c0b05cb8a33f8cf844ae86ffbb2",
+      "git_sha": "7d571fdad74c188236d7dc8d5e4f271e90d62227"
+    },
+    {
+      "path": "fortnite-telegram/assets/skip_btn.png",
+      "bytes": 1416,
+      "encoding": "base64",
+      "sha256": "e4f4783b7e34ce7e3028c920504cf30c3d322532190a2edd8f72a627f5f395ab",
+      "git_sha": "c5d10298eae25f29f5027316e1782a6e6ab1ab47"
+    },
+    {
+      "path": "fortnite-telegram/build_exe.bat",
+      "bytes": 1874,
+      "encoding": "utf-8",
+      "sha256": "293812f2888ae2cfb6f65c0d072bc32b3cfb8bd95aab10127cb7de5b2cb1e7b2",
+      "git_sha": "fd5518b7c9444a676f8810d52f3078694e09c8cb"
+    },
+    {
+      "path": "fortnite-telegram/build_exe_protected.bat",
+      "bytes": 2397,
+      "encoding": "utf-8",
+      "sha256": "187b37715e79e1faaa71da1dfc7e47b4f4bc64642ab72b39c87e89c3b8898b85",
+      "git_sha": "5b150a87ae6a66d065e9f1f5a5ab5880ef36e1f8"
+    },
+    {
+      "path": "fortnite-telegram/build_spritepilot.bat",
+      "bytes": 527,
+      "encoding": "utf-8",
+      "sha256": "9b03ab0713da8e0da808f037fef364fe93fd5220f1c6dcea9acdd1a26463b948",
+      "git_sha": "313dbbb7a2a77acb3396501298a478190c1f7d60"
+    },
+    {
+      "path": "fortnite-telegram/install_windows.bat",
+      "bytes": 395,
+      "encoding": "utf-8",
+      "sha256": "ab72ef6915152c1cd17b7d1d33fb6c0fcb9ce8f02d74f1b7350b0a74d8249323",
+      "git_sha": "59162d2264768582266f7dfda8ccd7e798a1cf2d"
+    },
+    {
+      "path": "fortnite-telegram/pilot_tests/conftest.py",
+      "bytes": 350,
+      "encoding": "utf-8",
+      "sha256": "eee576b5965528a3deba324644e2f74721fea4c2917730fc7e9da33386324f28",
+      "git_sha": "13cd1fbac35b8a5c3033126f3e08adcbbf51f766"
+    },
+    {
+      "path": "fortnite-telegram/pilot_tests/test_automation.py",
+      "bytes": 1778,
+      "encoding": "utf-8",
+      "sha256": "5b2717354565a08418561529bc563a2e03e6d543fab671a08edb5c8ace711701",
+      "git_sha": "ca7f85ba84e37a41b0f94080343d4c0b3e10b701"
+    },
+    {
+      "path": "fortnite-telegram/pilot_tests/test_engine.py",
+      "bytes": 5364,
+      "encoding": "utf-8",
+      "sha256": "9f00f13642893dcda47790bcb311e14f30e7d3bfd80d9400bb00ee21422c4d46",
+      "git_sha": "457c8c2ac56a97e05c60d1b6167769d0c5ba5d18"
+    },
+    {
+      "path": "fortnite-telegram/pilot_tests/test_persistence.py",
+      "bytes": 2517,
+      "encoding": "utf-8",
+      "sha256": "1d28481ed75035f695ee84a6ab08831c6131563916045c7b204c93f79e0e3d9a",
+      "git_sha": "4247bad49a4dcd41e176cce1b4b00abab71f0eff"
+    },
+    {
+      "path": "fortnite-telegram/pilot_tests/test_rewards.py",
+      "bytes": 3651,
+      "encoding": "utf-8",
+      "sha256": "bb9c4a036e0dd1f4dbb954faef3a756890d6a89f0ad16c251e6a1aaf2d2726a5",
+      "git_sha": "945ec02646b14ac72aed11677d24e3298fa6f646"
+    },
+    {
+      "path": "fortnite-telegram/pilot_tests/test_telegram.py",
+      "bytes": 3964,
+      "encoding": "utf-8",
+      "sha256": "2b70196018a7a68c6f51866bc782e9c2ca8eb868cc25d85a5080f29191734312",
+      "git_sha": "6138d738c2cc02ec27bc6750b6b3f715a8acfd1e"
+    },
+    {
+      "path": "fortnite-telegram/pilot_tests/test_ui.py",
+      "bytes": 1796,
+      "encoding": "utf-8",
+      "sha256": "eee1b431db04f3bd7118388267473791b7f303ff208c4bc45d374754eed6aa90",
+      "git_sha": "77d30c3ea522f1fd335ca00bba3121e0ae54e0eb"
+    },
+    {
+      "path": "fortnite-telegram/pk-auto.spec",
+      "bytes": 730,
+      "encoding": "utf-8",
+      "sha256": "19960ae1b40697f684daa2a2baf49f21a3836fdbcdfa6fbf3dbfce06f5fd3f03",
+      "git_sha": "0c4ae3caa8c4177f054fe6d37c585bac2bffbc3f"
+    },
+    {
+      "path": "fortnite-telegram/pyproject.toml",
+      "bytes": 821,
+      "encoding": "utf-8",
+      "sha256": "da5a7ea0c7c2c2dc627f753171d7a2b9b8333d45f599fe1d5e41f5613a0af02c",
+      "git_sha": "befb0963b625e999e5a8c27b7c1273da267cb0a7"
+    },
+    {
+      "path": "fortnite-telegram/requirements.txt",
+      "bytes": 73,
+      "encoding": "utf-8",
+      "sha256": "c8b156599f930848aa27df44be7e78f510e61a46592729884976b5f876595573",
+      "git_sha": "d93636f2023cb295854d562bcfca537b2cfca77f"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/NOTICE.txt",
+      "bytes": 1208,
+      "encoding": "utf-8",
+      "sha256": "c1bd17de9248be973238534e2cb22d5008f9b5089d66a39af75cd3dd01c519ee",
+      "git_sha": "1d53e2f4210c9b5e60ad4e5ac5c1a75458ff017f"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/__init__.py",
+      "bytes": 22,
+      "encoding": "utf-8",
+      "sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+      "git_sha": "3dc1f76bc69e3f559bee6253b24fc93acee9e1f9"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/__main__.py",
+      "bytes": 2058,
+      "encoding": "utf-8",
+      "sha256": "c4c0f094a965093e527d0d2b3e453c602a1c711ce74bc1d3f3fa9acf2f8af786",
+      "git_sha": "e549095eae7cfee85075bbdb343c40fa7f73aba0"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/assets/claim_btn.png",
+      "bytes": 14362,
+      "encoding": "base64",
+      "sha256": "4d0c0d6dd66b34ae4aa6d0fa38487a59e08095feacfa12a3139d05000fac8b97",
+      "git_sha": "cc95c444b0dc4bef83abefa42dbb248db9e0db00"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/assets/claim_btn_en.png",
+      "bytes": 8043,
+      "encoding": "base64",
+      "sha256": "d560a7741d34f20e3fda2022fbe1752cac8e8f2175fca43fe6c15435086fe64d",
+      "git_sha": "c3ee657ebdb6469a49b634a016bae9bea7abf08c"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/assets/claim_btn_plate.png",
+      "bytes": 13724,
+      "encoding": "base64",
+      "sha256": "0632792db4715866a87a7a0b40827476e96480754a63f3c552a4a70f22bcb35f",
+      "git_sha": "fb9c793640e2eec1e7d43f2c18284a5ef25b7c72"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/assets/claim_single_btn.png",
+      "bytes": 4859,
+      "encoding": "base64",
+      "sha256": "a6b7553cbb8e3c7444a2e24bed799e0f7c4f6f2843466a8c58f1ef4562349b1b",
+      "git_sha": "db1ad8e1f049174f1efc1582178790009f40792f"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/assets/claim_single_btn_en.png",
+      "bytes": 6668,
+      "encoding": "base64",
+      "sha256": "79c0682285c692e6a3055e135c63f41ce9ea8b1f54bc9e6f115fd64a91555d56",
+      "git_sha": "9ff29988ca975c19e544e345825dfc21b7ef614c"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/assets/continue_btn.png",
+      "bytes": 1518,
+      "encoding": "base64",
+      "sha256": "38939d94709f32caf6f83a4cbc0ea953afc9060245432e6234b222ff37c928f2",
+      "git_sha": "42832ccf5a97dcd89b0b9f9abde61a553eed8c0b"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/assets/hud_btn.png",
+      "bytes": 10695,
+      "encoding": "base64",
+      "sha256": "f10be2fa96da89bc1ae008d5b069f5b8b1aa8b9125d7f08e69ead814d7b68b09",
+      "git_sha": "69f38becfd04b9bc1e827baf316176e909aaeac5"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/assets/menu_btn.png",
+      "bytes": 2098,
+      "encoding": "base64",
+      "sha256": "09e3f3216b3654985891b72214ee70c87aaa1b73a6f24ec871de87f17bf02594",
+      "git_sha": "c52ab74fc35c9e8207ed3cad7a2e351a3a1726f8"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/assets/menu_return_btn.png",
+      "bytes": 38559,
+      "encoding": "base64",
+      "sha256": "dfdb3835245c5182781301c7f61ef513454847003d4e8a1a57cc342d990e0981",
+      "git_sha": "c9596fa2558391a169bf398d62f0c2a9f2f5a5ed"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/assets/play_btn.png",
+      "bytes": 6726,
+      "encoding": "base64",
+      "sha256": "f783ea3284fb26faae3fc34ef6a6fa7d521d8f7be4dc0cd05573ffc204dabb27",
+      "git_sha": "7e417ee87c0eac85e96bb93d9778fd6096d66eb8"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/assets/play_btn_en.png",
+      "bytes": 7769,
+      "encoding": "base64",
+      "sha256": "2b6d57ea9bd43b15b249ebc3d047d2c9be22f10a9330777e1381988293c7915c",
+      "git_sha": "ffa73fa3fb7fb867f83f4b309b9901653cb55309"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/assets/play_btn_plate.png",
+      "bytes": 13447,
+      "encoding": "base64",
+      "sha256": "c3206c0a8487a5b846b92d3ff4901c8b43861cc6a928e1811594da41b3b0f76d",
+      "git_sha": "5b04e1d00a456374b8c0491245da5cf12b1e77ae"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/assets/return_lobby_btn.png",
+      "bytes": 7689,
+      "encoding": "base64",
+      "sha256": "38581d086ca2ee01783aecbaa1121d8fa0d66746dabee9d4130af1964db6c08b",
+      "git_sha": "1ad6e2c778f967a62c112a53fcc877fb79584cb1"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/assets/return_lobby_btn_en.png",
+      "bytes": 12127,
+      "encoding": "base64",
+      "sha256": "8220c53d6a7f82e442d4ca6b4cb9b87d83dcd0895c6cac1cb929f6f81d0189bd",
+      "git_sha": "716954028d3f90940247873fb1d7fb26330375f0"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/assets/return_lobby_btn_plate.png",
+      "bytes": 20776,
+      "encoding": "base64",
+      "sha256": "1a4a5d27f3d4df25c9a4c98a019ce097bb881c0b05cb8a33f8cf844ae86ffbb2",
+      "git_sha": "7d571fdad74c188236d7dc8d5e4f271e90d62227"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/assets/skip_btn.png",
+      "bytes": 1416,
+      "encoding": "base64",
+      "sha256": "e4f4783b7e34ce7e3028c920504cf30c3d322532190a2edd8f72a627f5f395ab",
+      "git_sha": "c5d10298eae25f29f5027316e1782a6e6ab1ab47"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/automation/__init__.py",
+      "bytes": 0,
+      "encoding": "utf-8",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/automation/mode_b.py",
+      "bytes": 5386,
+      "encoding": "utf-8",
+      "sha256": "e13749a51b217a48ae931ffa5ce20b216ba147e4c2cd32a2ebc36626ae8b1452",
+      "git_sha": "ad4c93c7137db67d4de4200bebea44e484652ff0"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/automation/state_machine.py",
+      "bytes": 2974,
+      "encoding": "utf-8",
+      "sha256": "4fe08072eb6451d171d15f03da53969b1473de2498350057049ccea1a3b5cca0",
+      "git_sha": "f6d371bf469cdbcdfac34027fad1e40104cf2c2f"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/automation/vision.py",
+      "bytes": 4202,
+      "encoding": "utf-8",
+      "sha256": "5d4114c7cedf52fa6452ebac7bc6da79f71ba64e9238f95f12024efbd2e294da",
+      "git_sha": "25dcad5166f4c0561c80ff23c49b8988097bad7c"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/demo.py",
+      "bytes": 2677,
+      "encoding": "utf-8",
+      "sha256": "8732c93766e2618607988b330aa8fe2b3ea8cbbb8e567e4d05fe81d845c16454",
+      "git_sha": "07f32e542e6c3b4046470964c9537f742153f607"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/engine.py",
+      "bytes": 18538,
+      "encoding": "utf-8",
+      "sha256": "75a0d810d7bef59fd0f13dbec0dd559af06e6351c7fc82154269b584833be311",
+      "git_sha": "0cab7db8b15a07bc43fa4b318f8de46041ae3c2a"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/rewards.py",
+      "bytes": 6422,
+      "encoding": "utf-8",
+      "sha256": "ca13fa0bae9a2119a92e1e57084b0f9019ecc3b0fd6d6eb95e4f546af6656a31",
+      "git_sha": "89ab9103e504687ef1f5b14308da4903e3ec45c3"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/settings.py",
+      "bytes": 5430,
+      "encoding": "utf-8",
+      "sha256": "b1a76daccd4d397ecb6bd08ccb02cb2b42960319afed620644d68a6a2c646566",
+      "git_sha": "133c730a1fd850e2369a5b5283bbe237eba74eb8"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/storage.py",
+      "bytes": 4371,
+      "encoding": "utf-8",
+      "sha256": "597e03dd442027c131e9edc062f6b666d0a4172f72b32cea8c8f38daf73265fa",
+      "git_sha": "4e9227dc68badf7294144c24fe2d1eaff985e1dd"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/telegram.py",
+      "bytes": 10415,
+      "encoding": "utf-8",
+      "sha256": "b725260add2bf9faa06e5bb0a72850f4eb62c585d1ca6aed537fc6fc473219d3",
+      "git_sha": "93c2afd70f44d6f8dc32ff64a9149c77c7340c9f"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/ui.py",
+      "bytes": 35032,
+      "encoding": "utf-8",
+      "sha256": "6d6fa868fee54a979343c1c3214b0d75d48fcdd99dee8f6f78e79b025710ecd9",
+      "git_sha": "c5ec5fff7ceabd970a87a954ef2013cb1a74b1a3"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot/windows.py",
+      "bytes": 4933,
+      "encoding": "utf-8",
+      "sha256": "e0d20eaad3c8c9f766ea0d0b064deb5889ddbe67c0a0df4e616dcdfa979b4290",
+      "git_sha": "286479bd62af01cd21a6da284ceb0c41f9adc6d9"
+    },
+    {
+      "path": "fortnite-telegram/spritepilot_entry.py",
+      "bytes": 77,
+      "encoding": "utf-8",
+      "sha256": "f32cfba7eacfaa774cce8307d6bd5c1b0ce0fda559ba735aa0bafac13bb31dbf",
+      "git_sha": "13aaa1a4ac4676cc0f460fec4d4a9bbb2fa9f3ba"
+    },
+    {
+      "path": "fortnite-telegram/src/anti_afk.py",
+      "bytes": 1378,
+      "encoding": "utf-8",
+      "sha256": "c49610d77b6de46e1a9f28704367df4f0762f805bf317e89c3ec96605dc49618",
+      "git_sha": "d3b93a84a0be2ec74a6f4216734adab3840690dd"
+    },
+    {
+      "path": "fortnite-telegram/src/config.py",
+      "bytes": 3107,
+      "encoding": "utf-8",
+      "sha256": "9405df4b27e375c3bf72d6133624efef4e86865e76c94ca0f950eb8ba3e68d7d",
+      "git_sha": "f30bf06565a60da6d97aea00987a2c2523aec78b"
+    },
+    {
+      "path": "fortnite-telegram/src/controller.py",
+      "bytes": 1492,
+      "encoding": "utf-8",
+      "sha256": "ae8e336ee16ec0377cb89d8194331a9dbdecc60465aa11e5c6f6cde872fcd18e",
+      "git_sha": "505d7118b15457481b197d7937a6536061d199c5"
+    },
+    {
+      "path": "fortnite-telegram/src/focus.py",
+      "bytes": 1919,
+      "encoding": "utf-8",
+      "sha256": "8f6d7965ab087578defb45b37fdd0a41159eb6c193b4d781f15a79a881e6a162",
+      "git_sha": "ef233b503994309967f0d269510ec44d9b16a453"
+    },
+    {
+      "path": "fortnite-telegram/src/i18n.py",
+      "bytes": 30177,
+      "encoding": "utf-8",
+      "sha256": "bb4b6bd8ae1704bde0d3224bde3ca7c969e6906803512b95a605b5ed6c3649f8",
+      "git_sha": "409660198dd8ed703df1d11d504372ed0bac85ec"
+    },
+    {
+      "path": "fortnite-telegram/src/main.py",
+      "bytes": 16334,
+      "encoding": "utf-8",
+      "sha256": "73b44e43e0632f91e584ccf2bbcdb83f9de42dbe69541f5893c45ea03c71363d",
+      "git_sha": "5eafa38b9e53b7e5208048f44b4c0482e6a890cd"
+    },
+    {
+      "path": "fortnite-telegram/src/mode_b.py",
+      "bytes": 5325,
+      "encoding": "utf-8",
+      "sha256": "f91e54a11866cd827f59bbb0fe0b337e994dcc8d60ddbf2547ba2a79a87df19a",
+      "git_sha": "58e791e28f5203d045cfe9fd26b50d23196c1550"
+    },
+    {
+      "path": "fortnite-telegram/src/state_machine.py",
+      "bytes": 2914,
+      "encoding": "utf-8",
+      "sha256": "797eea3f58acdaa4c53c84c488476cf0e0800c25b4b15f24dcbfd9e878f3f577",
+      "git_sha": "d504564ba42a2b9b2dd281476a5ad8b207658d61"
+    },
+    {
+      "path": "fortnite-telegram/src/vision.py",
+      "bytes": 4143,
+      "encoding": "utf-8",
+      "sha256": "76608243296c8302c6baff6c57df3711d98954cce293540154849f183de2c033",
+      "git_sha": "2029bca051987b19afa027c57aefa0dbae53e9cf"
+    },
+    {
+      "path": "fortnite-telegram/start_spritepilot.bat",
+      "bytes": 199,
+      "encoding": "utf-8",
+      "sha256": "b6ccb69c39b81c0685c1ccc4f7c2a7b8d942139a800056aab1f20c7ca1cd8a24",
+      "git_sha": "a427ddb540f53c50ecc9b06d811533df52f14d00"
+    },
+    {
+      "path": "fortnite-telegram/tests/conftest.py",
+      "bytes": 370,
+      "encoding": "utf-8",
+      "sha256": "f9743cd54a4f8f1a6edcb19e5528235fc49ed8594f13e64092e3084d64b7ed4e",
+      "git_sha": "08f6dc903752d04b892aae7a26d4fc56222db8dc"
+    },
+    {
+      "path": "fortnite-telegram/tests/test_anti_afk.py",
+      "bytes": 2754,
+      "encoding": "utf-8",
+      "sha256": "a55e7d7674d13a5ace42abfdd35e9fa3a45844069ad76e26b4828260afeb7280",
+      "git_sha": "55e26e20d6d839b26e5edf9f2ac671801bcb89f0"
+    },
+    {
+      "path": "fortnite-telegram/tests/test_config.py",
+      "bytes": 3110,
+      "encoding": "utf-8",
+      "sha256": "ba0e67aeb06cf83dcc9246cbb220ffbccb796eabbbe73326f440ca82f8332430",
+      "git_sha": "6b223b73666808ab34e77d5bca73af348f8ccf0f"
+    },
+    {
+      "path": "fortnite-telegram/tests/test_focus.py",
+      "bytes": 3473,
+      "encoding": "utf-8",
+      "sha256": "b07bfef59c60d4da4c2a159ad1a2ef5f532a3b702da1336d8316f069ac822e58",
+      "git_sha": "25684b13cc17b3d1af4a055c6b6f6f96fa2f4256"
+    },
+    {
+      "path": "fortnite-telegram/tests/test_i18n.py",
+      "bytes": 2118,
+      "encoding": "utf-8",
+      "sha256": "3523f64920a1e6411e3096224aa00442dd72b9b6da6441f249f576681fdf603a",
+      "git_sha": "e1607b7e98af0acb2402f3314f246b9cd4ea7715"
+    },
+    {
+      "path": "fortnite-telegram/tests/test_mode_b.py",
+      "bytes": 6270,
+      "encoding": "utf-8",
+      "sha256": "3b7b7fae0c781e55bb9a3f6be9395956a03edcaae3079f81bf0b9b9c5a87c05e",
+      "git_sha": "8e2d63a60e75b8def7c34ecbc7d6da4329c6b093"
+    },
+    {
+      "path": "fortnite-telegram/tests/test_plate.py",
+      "bytes": 4340,
+      "encoding": "utf-8",
+      "sha256": "36859540877241f398d669c766177c4ffcc72dd1170aae10189e6bd6c9190439",
+      "git_sha": "eb0c2fcaab31a21ac8b9f153ac3e454a960c25ce"
+    },
+    {
+      "path": "fortnite-telegram/tests/test_state_machine.py",
+      "bytes": 6576,
+      "encoding": "utf-8",
+      "sha256": "2e88481a82e3b5249a32a7723525d213a42c7cf51a7bcdfd7dd7ff9abbfe72e1",
+      "git_sha": "3a14a2efd9892a706309979d99db36e1add513f3"
+    },
+    {
+      "path": "fortnite-telegram/tools/make_mode_b_templates.py",
+      "bytes": 1525,
+      "encoding": "utf-8",
+      "sha256": "dfcdde2dca0bdb607faf0967599b5e7293f128348100458ab9f1655f384b308e",
+      "git_sha": "e73a78508f49a3ab7ae8806370fce5799f7dd811"
+    },
+    {
+      "path": "fortnite-telegram/tools/make_plate_templates.py",
+      "bytes": 1190,
+      "encoding": "utf-8",
+      "sha256": "a34fcafc957c4cbba6f53c55d510aa2939a9a58258511c0b8f858346f66100a0",
+      "git_sha": "c6e036550bdf2c3030e1894275e8a3c5d3f13eea"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/anti_afk.pyc",
+      "bytes": 25589,
+      "encoding": "base64",
+      "sha256": "d3d3c888029b4a256d47548b6aff458a227ea3d6607952c89e92506c7453fa4a",
+      "git_sha": "75ec70a6d83aeda76d4d97fe6196e99390c5079a"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/audio_mute.pyc",
+      "bytes": 17760,
+      "encoding": "base64",
+      "sha256": "42c1038d640773bde1bc5c55552287501f1b917a670fced750b0f23d566ab96a",
+      "git_sha": "2b3dc1e1e3d20d2618d3d9508111c396d51bc777"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/autocal.pyc",
+      "bytes": 7057,
+      "encoding": "base64",
+      "sha256": "d2b4e6e5d8143fdfc455611f53689ee5790146469fc93d40da37197e40704761",
+      "git_sha": "5bdf0ca65c9b750a2fe79c26ad63f45bfc5e4a0d"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/autocheck.pyc",
+      "bytes": 11844,
+      "encoding": "base64",
+      "sha256": "5ee9d54a8eb04509f528e02c4ea59c7563911b1c4820d690e782528110338feb",
+      "git_sha": "23e3df4d0a879cef10229bb20a44efdc1b7e56de"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/background_input.pyc",
+      "bytes": 21652,
+      "encoding": "base64",
+      "sha256": "55c21e01e296a36ae4967c544c4a400dcf1156f4729ca8800aaa689bfee5ab03",
+      "git_sha": "802e91969869be64b47ed7a57cb859b2c1f7631a"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/breaker.pyc",
+      "bytes": 4472,
+      "encoding": "base64",
+      "sha256": "db121382f7b49d2efc48d31dfdb9e506f31afd2cc69203dfcd6915edcb6daa2e",
+      "git_sha": "c593d1c403a1f79f98e7d4be9cffb72cbe84c9fd"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/bus_drop.pyc",
+      "bytes": 18085,
+      "encoding": "base64",
+      "sha256": "0d7dd50702345df00623ec0c4a74eb280d02a337f6e65ada6f11e2821445f06c",
+      "git_sha": "e9f74c309b8098a9d2bf8fb371da14b573a14371"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/config.pyc",
+      "bytes": 12658,
+      "encoding": "base64",
+      "sha256": "a3604456d7dd35f9bee5168e06427baa57f59f9f09c49d042b454fe8fdca4163",
+      "git_sha": "88b30c0593a81f6f72327e630121c0916711292f"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/controller.pyc",
+      "bytes": 12609,
+      "encoding": "base64",
+      "sha256": "7228c3c21ef45bc2a21337af54016450e6411187eda8b984235da8b864ca8c0a",
+      "git_sha": "c751c88220ded2127aaaeed6657a9b3415261a5c"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/diagnose.pyc",
+      "bytes": 17831,
+      "encoding": "base64",
+      "sha256": "4eb484d46bc9b615d0998d4071de0aad76323c3a125564c55e157bdf29a3e2b9",
+      "git_sha": "d7184c4507b71057c18df33b2d23de705b6d8c46"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/ed25519_verify.pyc",
+      "bytes": 4301,
+      "encoding": "base64",
+      "sha256": "7da550fceee991d506d719f1394879c3045f677a486ec1829013265e3141632c",
+      "git_sha": "2405189dcd6ad58bace8a38e1f24fec2cca29c91"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/focus.pyc",
+      "bytes": 8828,
+      "encoding": "base64",
+      "sha256": "fdc4c5355190b66bd1e05b2d3e0c3e4ac22b1ddfb176d4d60924dd1000f30705",
+      "git_sha": "e02187bc119dc379312d740767c18598baa0b171"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/ghost.pyc",
+      "bytes": 22907,
+      "encoding": "base64",
+      "sha256": "2b7d1832c893185ecca6788c9120a77118a63aa6550be72556fbbe24e573cbc0",
+      "git_sha": "c849d29538acde62dd6684dd071ca8175eb3d048"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/gui_extras.pyc",
+      "bytes": 10218,
+      "encoding": "base64",
+      "sha256": "6a408e2ff56606ce1f2a653ef0dfb477e1ce56a4c98103e6090f9ec9900e112c",
+      "git_sha": "3d71538a27a6b6dcb215582ece96064631a26649"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/humanizer.pyc",
+      "bytes": 15773,
+      "encoding": "base64",
+      "sha256": "87f48fa7b1757c548e6ea1e149e1b75e6e72143822f3ed70eec88d56d3523d83",
+      "git_sha": "72bea2f1b310c372cf10c2f5f1ce8aa0b977e177"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/i18n.pyc",
+      "bytes": 76734,
+      "encoding": "base64",
+      "sha256": "80e58ea3086a0d165f83b4d4efaab7e8fe80f9ad613216d3728dd4c722f387a2",
+      "git_sha": "5bb452888470a05d932b99cb56e330ada588f0f5"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/i18n_ac.pyc",
+      "bytes": 13963,
+      "encoding": "base64",
+      "sha256": "5d5afa252aa204848317164e9cd496892248698bfd7cc768da65ce99d17e4f90",
+      "git_sha": "7e85c092ba86854755f7ccf774338340a82edb48"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/i18n_ex.pyc",
+      "bytes": 13349,
+      "encoding": "base64",
+      "sha256": "b4c6343281b64648964a47c2e33de518872ed8b5bd6a1c355067a1eaa3c31ce4",
+      "git_sha": "4a0b974d97a70f01e65bb932145441771013fb7f"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/i18n_fr.pyc",
+      "bytes": 15615,
+      "encoding": "base64",
+      "sha256": "0bc019fb32f69f33d2f66d8698d7e190128ae05eee7167bd2865b7465ff84322",
+      "git_sha": "6e4fcdbf280ec89292e1319754f559da2b7af42d"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/i18n_lic.pyc",
+      "bytes": 4599,
+      "encoding": "base64",
+      "sha256": "c180b3f3f96aabea9a74bcdd0b759328643e63b88960d9ad534ef2f9cca1790c",
+      "git_sha": "aae8ea7126a68836859b18f7083df7f708586220"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/licensing.pyc",
+      "bytes": 11039,
+      "encoding": "base64",
+      "sha256": "56248e2797d875d8f4af15e3789166160fb0955bbf939107512bf0c2bd58c680",
+      "git_sha": "6cb62338663cf39face302e6d0a4f194b3acf89f"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/licensing_ui.pyc",
+      "bytes": 5990,
+      "encoding": "base64",
+      "sha256": "6a4189abc604d7e397ef9676445661522c8625eda8617a217cccfc6d8c6ce433",
+      "git_sha": "96fb98db81c80400472c079c974700d772510032"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/loot_vault.pyc",
+      "bytes": 6678,
+      "encoding": "base64",
+      "sha256": "d009f9f9d279d313c8ad116a4166eec75187fa2ad99101c628e33045e1dc2fab",
+      "git_sha": "408ac1f5fdb7046be13d94b82688c46fc53540fa"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/main.pyc",
+      "bytes": 60305,
+      "encoding": "base64",
+      "sha256": "0dd39fa7e3ff299756be46b687a110fb564e80ed8ddb08eba3e64fb92a9da103",
+      "git_sha": "0dcb655c7c01548798d3983f8b7ceb8fcf4b0b2f"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/mode_b.pyc",
+      "bytes": 19820,
+      "encoding": "base64",
+      "sha256": "dc55178496eed5aa2ae65720c9e2e30739a020c21ee2d689cf1b3cb4dcaf4241",
+      "git_sha": "373b46243bea83eae7b32a541493e50edd6318ab"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/mode_c.pyc",
+      "bytes": 1936,
+      "encoding": "base64",
+      "sha256": "8ca3737188ee46f8c4cc8ecb748abdb4eab00f032b25bb1ac23eb9a3f561378a",
+      "git_sha": "195178577b6b9b302fccc290d526cdb5c47fa7f0"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/mode_fix.pyc",
+      "bytes": 17014,
+      "encoding": "base64",
+      "sha256": "9156374e1ac272604c027a4475df0f6ea35cf55b29f4cd5de62dd28e1460eecc",
+      "git_sha": "00e93d9196160d9c0b65b72cc8143695a5fd7cc7"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/netfix.pyc",
+      "bytes": 10965,
+      "encoding": "base64",
+      "sha256": "6f0f238a9954ebaa54f391c71e24fd5873b1918351ee11d3111203c72e6ca63e",
+      "git_sha": "3d2649251d801df3b5d8bf0e53f2f4430ffd3863"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/relay.pyc",
+      "bytes": 8162,
+      "encoding": "base64",
+      "sha256": "7055b7e3f3949462e02d37d2d984f9434103d1bb0f49a64615832c19e3ecdc5e",
+      "git_sha": "9c56e705b509130d97e15368a56c9fffacc1169d"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/remote.pyc",
+      "bytes": 13898,
+      "encoding": "base64",
+      "sha256": "a40e87017e6e0a68ea4bd9314a4dc33100c848163f70f215218a9e5b89f38485",
+      "git_sha": "c292aa5795d0c8b6b36659c6678c9fcbf03e871a"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/rescue.pyc",
+      "bytes": 8717,
+      "encoding": "base64",
+      "sha256": "92aa0cc7131dd0733bd0c28a597def2e7a1f5000b251578278c221d0355ef1bc",
+      "git_sha": "4b0bcb2ca3540b1aef576944bbfd0151d994e3bc"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/rescue_grid.pyc",
+      "bytes": 3404,
+      "encoding": "base64",
+      "sha256": "7f693d870d960bbe090117d0e8fb5a988ac8a3136752b293625223f340f514a0",
+      "git_sha": "3171cc08bdd7211abc4ce3d4fb2aa6b710867f6c"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/reward_fallback.pyc",
+      "bytes": 4195,
+      "encoding": "base64",
+      "sha256": "9ac6ef96687443d8395b6da14400b66ebab60abd6d51368dac865196e5c8b877",
+      "git_sha": "00eca5dd02c0888a1bf3c4ca16076f3e564e9f5f"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/reward_shot.pyc",
+      "bytes": 5104,
+      "encoding": "base64",
+      "sha256": "1ac467624b2355bd55d09ca7e5dfa52ee4e0d4a76c20f9b13586444f63a3f204",
+      "git_sha": "84fbe061ca9b45cf4a45fb6eb980d5eb286b2b80"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/shot.pyc",
+      "bytes": 6079,
+      "encoding": "base64",
+      "sha256": "12c212559d2268052c724ce924b7478209bd2276e9e9e7159323ebd8531323ef",
+      "git_sha": "769c7054b9fd63ad8f3fa501ccb512f6a3157938"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/snip.pyc",
+      "bytes": 4969,
+      "encoding": "base64",
+      "sha256": "b4d0be0764646193b8a0d3183c3e5aa499ff51e213adb0f7f86ba00e8c3d57dd",
+      "git_sha": "e748776e61fa77879e0a63c0bad6724b918e016a"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/space_press.pyc",
+      "bytes": 4465,
+      "encoding": "base64",
+      "sha256": "ce149517d53e0c18b150460163399931a703f6f700678c3912ef05157b7c456c",
+      "git_sha": "2a9efb129f932446167f0b8468952869325f9d78"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/squad_bar.pyc",
+      "bytes": 5048,
+      "encoding": "base64",
+      "sha256": "2301d5c46d0f5c95f33c040435346140decb27505ccc2b7ef4371b46de6d1c6f",
+      "git_sha": "72558c1dea2abf532afb828efb2e7c3df0616de2"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/state_machine.pyc",
+      "bytes": 13716,
+      "encoding": "base64",
+      "sha256": "a68c35a8be82ab146d000d99dcd9538db7a77b8cd9efe8e4a97487f141e1f686",
+      "git_sha": "0a85a0b11b42d4a4dd9ae0b3f4c3fc2fbec50c97"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/survey.pyc",
+      "bytes": 7650,
+      "encoding": "base64",
+      "sha256": "9aa74851c1c06689a2e8af8c0b5a988f678c27cba115abe947a704c5c659e9c3",
+      "git_sha": "6acc9e5275b1c61250e61d95f8a3faaff208f8b1"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/telemetry.pyc",
+      "bytes": 25720,
+      "encoding": "base64",
+      "sha256": "8d4d8f48193449446280eda5e718c0553822e2341b8e04f489549bf964593b24",
+      "git_sha": "a4be500d88c7272ddd8a60020f10741c94921a44"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/update_ui.pyc",
+      "bytes": 19058,
+      "encoding": "base64",
+      "sha256": "4a9cc379cb09829d53639f6fd4c3db97d6465ff8e438d0d2e6ff9efb401ef891",
+      "git_sha": "5067c975faf3144a1542fd087eaa55875b15690a"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/updater.pyc",
+      "bytes": 23445,
+      "encoding": "base64",
+      "sha256": "4bd991000707792b501a407a2218e55adb723b17a9bdae5314681282757d99d4",
+      "git_sha": "63b349f5ab22158aadf202befdc99aa82b35b781"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/version.pyc",
+      "bytes": 226,
+      "encoding": "base64",
+      "sha256": "cb35dc11c37446c86ac1244fb06cae0e9908f3b4b7a77f0dc5e557677972010c",
+      "git_sha": "4ef4116aaae2ac3ca6e8d277d0ecd1c8d8858072"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/vision.pyc",
+      "bytes": 14976,
+      "encoding": "base64",
+      "sha256": "eed70bd39958dca937d3f553c55d1efb7087e439d2d46b750b5a014c9eb7fe16",
+      "git_sha": "86451257d72fdc59bfc2278213f1634933078d7a"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/watchdog.pyc",
+      "bytes": 4808,
+      "encoding": "base64",
+      "sha256": "41cde491a575745e4dbefd41eb406563cbd7766c7e2667c5a6fc8ec96f021897",
+      "git_sha": "9b5609153996a693783e2437a7f138d77fd00613"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/window_capture.pyc",
+      "bytes": 19920,
+      "encoding": "base64",
+      "sha256": "028b671cebde4475d8cc7aa42d4460f60e38814f3ac1c9dad71f0146bc555300",
+      "git_sha": "b313247fbaca5fe06ba6c54f26b497f047e6ec90"
+    },
+    {
+      "path": "fortnite-analysis/bytecode/worker.pyc",
+      "bytes": 18502,
+      "encoding": "base64",
+      "sha256": "fb9bf6f1aab73d61d2bbfdb0d01fd85366c70bcd84f7a6599263446cd43aeb71",
+      "git_sha": "a2b83234d941e7bfd0c23d4b7a039aaac0d78556"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/anti_afk.py",
+      "bytes": 14183,
+      "encoding": "utf-8",
+      "sha256": "0830a243a24db2e3bc7c6ba178658f6531ec8a9b81e925464bec4389e82eed52",
+      "git_sha": "68d6b29aa0a0270da1819257a018172e9e79b060"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/audio_mute.py",
+      "bytes": 9296,
+      "encoding": "utf-8",
+      "sha256": "a138f580a68f18b4b95a5f8078864033e4b19a25e5aeae535eac0e9ee6aec29c",
+      "git_sha": "8b505e2b7d7929ba5860e3e4197edae84351f659"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/autocal.py",
+      "bytes": 4374,
+      "encoding": "utf-8",
+      "sha256": "bbd1cafd1f76e1f33075f5193593785a6a7795e9891588a60a68e5f349ea4ad3",
+      "git_sha": "1fc9771a12de2bc0f3a8a410398703b13b2cf242"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/autocheck.py",
+      "bytes": 6636,
+      "encoding": "utf-8",
+      "sha256": "b9449cc1294d778628b6b5dd0853c9c407fdb76b71846b3e04722ccf31e55323",
+      "git_sha": "6a286a9b850f4b3195c806bcf1c8903726e08dbd"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/background_input.py",
+      "bytes": 10953,
+      "encoding": "utf-8",
+      "sha256": "06c8a7f7573b243f8433203990352aaa1e96a06e4f67151df80244d65844de48",
+      "git_sha": "9571a3e55efe882a14586e281a7c7ef88ea93a20"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/breaker.py",
+      "bytes": 1814,
+      "encoding": "utf-8",
+      "sha256": "49f1b937caf5a619aeff81763dfb3c9f4e9e06756a4f0d8247470c8ddae4c91e",
+      "git_sha": "510210904ae6d50463b6c316ee6ea69772c16931"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/bus_drop.py",
+      "bytes": 9273,
+      "encoding": "utf-8",
+      "sha256": "c9ae303514739cf35f0351852ec49e994116a00f14a91f05228c7f0da99d1228",
+      "git_sha": "666996cda2f5f27848b01f33212e801c6b095794"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/config.py",
+      "bytes": 9038,
+      "encoding": "utf-8",
+      "sha256": "528ac4e93f03ef57b4d547d90f2190cf89b335487b5061bc5cd7882bc9bebc0e",
+      "git_sha": "727b9a83d63451c31ac2edbbd24ce20d68f9d513"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/controller.py",
+      "bytes": 6453,
+      "encoding": "utf-8",
+      "sha256": "08003a9f0ea78496bc02d92f7c3117e7176eb7d9cb73e420b594e3f7d1f06c90",
+      "git_sha": "5704b85775f6aebc747b58c43e1b13c2ff1069d7"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/diagnose.py",
+      "bytes": 9623,
+      "encoding": "utf-8",
+      "sha256": "a90e33c0bdbd670034af845d80668ac99cb53459ac31f31578094b94006c6f9f",
+      "git_sha": "778ca9bf8193f1a9307ddd849fb54297dbda97d0"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/ed25519_verify.py",
+      "bytes": 1980,
+      "encoding": "utf-8",
+      "sha256": "082cce20454ccb448fb42e26343bea1ca08d346557553656474aef95d783dbee",
+      "git_sha": "8d94b0e3b43236281c667894ad849b7e6356fe65"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/focus.py",
+      "bytes": 4281,
+      "encoding": "utf-8",
+      "sha256": "152c0ef0a503c944d781eefa334ba07ee3cc89eb004bd73b7b55c18bc434a819",
+      "git_sha": "50dcca2af1fe2f0bed3489980191e8370a949526"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/ghost.py",
+      "bytes": 11459,
+      "encoding": "utf-8",
+      "sha256": "89e22328b3240ed77c3f77e1d011f22e98a3926e0879b665cbda107fcb123362",
+      "git_sha": "f10bff8f05a766474afc72d07c210a4827c6d7c0"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/gui_extras.py",
+      "bytes": 4700,
+      "encoding": "utf-8",
+      "sha256": "69fa34f37bf3f30595546139482a77439e7a4d8dabfeb5fbcd1f8d36b7b32f0d",
+      "git_sha": "dd85c0441a9918232347235f3350af793d0abba3"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/humanizer.py",
+      "bytes": 6806,
+      "encoding": "utf-8",
+      "sha256": "546945c109f6e4a94b08bb44241644d20d043899073f04335726dc62b01d6881",
+      "git_sha": "ce938d8b9e3f5e5440d99f2af18ebe5b0e2a9cba"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/i18n.py",
+      "bytes": 71877,
+      "encoding": "utf-8",
+      "sha256": "52fed159c5373230996ef804c7b68859461cc3424543bce3eff404f7bfbfa454",
+      "git_sha": "02d7c112551f640dde96eaf1600e770be1db8c30"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/i18n_ac.py",
+      "bytes": 13198,
+      "encoding": "utf-8",
+      "sha256": "6e3c11a22ea1b6ee12b32b2f651b18b2ecc7a0ab84b828c46958ab5a6cfd5439",
+      "git_sha": "84282d3d23e0cf9e1bf9cd2609b2d123e5ff8f45"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/i18n_ex.py",
+      "bytes": 12803,
+      "encoding": "utf-8",
+      "sha256": "41c32fca9c29eec935887c3f35329bbe4abbdce244082f03d5f3b3e9faa54f55",
+      "git_sha": "1897d3a07ccb7a0b81076b1a8b85bcb12c15f665"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/i18n_fr.py",
+      "bytes": 13869,
+      "encoding": "utf-8",
+      "sha256": "753bfc9f2e7c79af3aecf937dd8810a530327df3923cb7cd0360a73e92e42d01",
+      "git_sha": "a14939e01e92ed19b62f2d0080113242cb2c8bce"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/i18n_lic.py",
+      "bytes": 4706,
+      "encoding": "utf-8",
+      "sha256": "86fa68302305ef6de7000867239e70faa3554406ea32caeddf250f248840b528",
+      "git_sha": "7be225da793ac55de2f535d9716415bad3f9af2a"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/licensing.py",
+      "bytes": 5733,
+      "encoding": "utf-8",
+      "sha256": "0dc2c20634d94e7238a106bd8c9c3ddfb7ea3e6f2ad64c747cd699f7529e6c24",
+      "git_sha": "4fe5f9925cc864901988eb5228f0773d361c98d8"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/licensing_ui.py",
+      "bytes": 2957,
+      "encoding": "utf-8",
+      "sha256": "81df35bb8f23fa5b31fd44a174db4c6ff797aaf9c7dca5d1e66b14155b4aae19",
+      "git_sha": "d508af6afe7ac3024459404e0ec6d12d9550e1de"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/loot_vault.py",
+      "bytes": 3097,
+      "encoding": "utf-8",
+      "sha256": "a301f4b346a46111c1ec1cb99b372a06da6852f1d856b82cc20135d00827df0b",
+      "git_sha": "7140de2dd0c919c814132f6f6b4235bc67cfe5f5"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/main.py",
+      "bytes": 26674,
+      "encoding": "utf-8",
+      "sha256": "82303fa9937ccd4f7c1562f5d8a6c788e44e7e8da7b295c41916cfa75d2f646b",
+      "git_sha": "95b02aa7cf53b8c90f4d7b967af2b3a6d74074fe"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/mode_b.py",
+      "bytes": 12072,
+      "encoding": "utf-8",
+      "sha256": "d5c082c9ea56f505503ecdadf28e6f80fc621b9587f1935bea676f86cc8b83fe",
+      "git_sha": "cc295eed62c7f7ecf97c2169cd53fb9c5d832afd"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/mode_c.py",
+      "bytes": 906,
+      "encoding": "utf-8",
+      "sha256": "1f29c5aa298a2e81e54ed8bd7e0c41403f75fdc668040b70061c70491b7e50f1",
+      "git_sha": "b00ed7bf8149983ff5343c5a374a6b8151e88bf8"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/mode_fix.py",
+      "bytes": 8910,
+      "encoding": "utf-8",
+      "sha256": "7ff6733db5e352744b6ac03451a0b2b554e944c9b3bc6c07d5ca4d139ee2123f",
+      "git_sha": "b5c0fddca8a95751c1ae2fd00251fa27f457c574"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/netfix.py",
+      "bytes": 5726,
+      "encoding": "utf-8",
+      "sha256": "d69a0814917f50c1fea93bec4a3a803d782265a32dac2bc567c18ba130ea45fa",
+      "git_sha": "51858719010da69a931cf4fd3ed46d4978aff8ed"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/relay.py",
+      "bytes": 4065,
+      "encoding": "utf-8",
+      "sha256": "85d732a35ce1ae7afe8c38bc170cd6cdd61f8267f6ad3feeb70a4cc063327136",
+      "git_sha": "3d62757b25113523b9e56d7166033daf8644c136"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/remote.py",
+      "bytes": 7933,
+      "encoding": "utf-8",
+      "sha256": "e14a1149eeae7008c88634f02808cd42715e1d456159f55aee3fd850c4b9da72",
+      "git_sha": "6b2ad036aaf799c8c306271a0650a1b1db4cd11d"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/rescue.py",
+      "bytes": 5326,
+      "encoding": "utf-8",
+      "sha256": "10a5a711600709eb69cba2d09ed549fb74f6df69a0bcba171fef04f480a6e2cf",
+      "git_sha": "d2d2639139ebd5ceb77a69af0e1bd11dd3ca25b8"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/rescue_grid.py",
+      "bytes": 1682,
+      "encoding": "utf-8",
+      "sha256": "9aa624d93b919791c6c53bffeca82f81a72435b49049ff8ba8d71bab0fd05ea6",
+      "git_sha": "87c6f866a3dc99c07ef45a8d8a70366eefc547c3"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/reward_fallback.py",
+      "bytes": 2006,
+      "encoding": "utf-8",
+      "sha256": "50c7a8b34367c026c0178551ac6a0c02ab0dcf44b6d5d9425b7272b44448882e",
+      "git_sha": "02748de927a1cca904f27f9cc0fb99286c12e41b"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/reward_shot.py",
+      "bytes": 2650,
+      "encoding": "utf-8",
+      "sha256": "74d7962186048824a78ade4edfbd86739a85b3d5c31964ca97073297feb49433",
+      "git_sha": "3c28099b02523bd30da9db3e40746e4204b31d94"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/shot.py",
+      "bytes": 3054,
+      "encoding": "utf-8",
+      "sha256": "aca2b72b8df5ab0b58c52a545cf0ecaa9a0d9c51862b08b7abce0ab60bc2641d",
+      "git_sha": "b093a4130c2e7d868066a1d448f319fb69ea1921"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/snip.py",
+      "bytes": 1990,
+      "encoding": "utf-8",
+      "sha256": "317266e3eb1d0b903f1ed54aaa9e446f2e7d7f8ddd6d4d3f54c0b1326306363b",
+      "git_sha": "597cf343628426412467abfc415c467c7878df87"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/space_press.py",
+      "bytes": 2089,
+      "encoding": "utf-8",
+      "sha256": "31f32d027f7f0300e5da33b65a952194f3323c16dee3d3c987a71d977c829174",
+      "git_sha": "02d3910d842f1c56581d397c5700503895d45274"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/squad_bar.py",
+      "bytes": 2048,
+      "encoding": "utf-8",
+      "sha256": "481b9c7ae94b6e85704b7cfab3526d448b475b46c749f23bb1a4809ca38cef67",
+      "git_sha": "19c857236282be7c1b48ab587cfacb80b6ff2fd2"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/state_machine.py",
+      "bytes": 7293,
+      "encoding": "utf-8",
+      "sha256": "547272b9b22c96faac2e903cdeca0f64c07d25b171d65177dba0b7ec94b67247",
+      "git_sha": "be940900ebe90bcf85515f4340652d7a878ed17b"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/survey.py",
+      "bytes": 3434,
+      "encoding": "utf-8",
+      "sha256": "97d8ecd9ee19a2d531364addcbc2da1001c48a8d22cbb480d56931074767fb7e",
+      "git_sha": "bd23cd61770210711902ac180fe6d9bdf3d5de20"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/telemetry.py",
+      "bytes": 15292,
+      "encoding": "utf-8",
+      "sha256": "96e75be45ef24f7f929f5b2f640e47c902ba5c930904857479e2e3b26fd70c35",
+      "git_sha": "a77f74525111e278881fec6237ba65b7aab5c15e"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/update_ui.py",
+      "bytes": 8948,
+      "encoding": "utf-8",
+      "sha256": "f029b729d7fa92aff35c30964cefc1728e6b1a6d29016f562bd850d5e123d9f0",
+      "git_sha": "cfa9284037d9401d69b78ffb6d75e0949cdc12a8"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/updater.py",
+      "bytes": 12450,
+      "encoding": "utf-8",
+      "sha256": "b5da19a39fc2d2b6f07244f17ca6ec2390b8199ae62a8f586a2a56c496ee1b72",
+      "git_sha": "e635bb8f77f6f97e0717f29ecd52b43f37649166"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/version.py",
+      "bytes": 92,
+      "encoding": "utf-8",
+      "sha256": "052978122f44ff5dd321da15ff26e344c80ce66929d7f0346f290a08e5485968",
+      "git_sha": "5d19281db95e19f445c9873af8db378e6af6f424"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/vision.py",
+      "bytes": 7947,
+      "encoding": "utf-8",
+      "sha256": "5dc249cb6371ae518b0dcac44fb803d35d221cee2f83143b7dc919872c9a0772",
+      "git_sha": "14a284accdd19f4533247264899c2f8a48f8144a"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/watchdog.py",
+      "bytes": 2557,
+      "encoding": "utf-8",
+      "sha256": "ab9b54f2d1984b0147a34e01cace01cc69e308a4c5e8e0c285f17061f48a64ab",
+      "git_sha": "38b515e496e06b053531a4aab4798c8f724816be"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/window_capture.py",
+      "bytes": 12908,
+      "encoding": "utf-8",
+      "sha256": "3bdab8503c7cb1a29cceaacfdad96f2d096f5b3c27f2dc1b7355f2b7681d9e68",
+      "git_sha": "b3613953a9dec39adcb55c83a6e1c6ad15fe9e1f"
+    },
+    {
+      "path": "fortnite-analysis/decompiled-raw/worker.py",
+      "bytes": 7364,
+      "encoding": "utf-8",
+      "sha256": "2df13e01711917c712cee54addcc70629d1ccbe265e6c53c5021ef1fed78961c",
+      "git_sha": "277c02b97679de88b54343be4942289771d2f66c"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/anti_afk.dis.txt",
+      "bytes": 126019,
+      "encoding": "utf-8",
+      "sha256": "8c13d5215a765ad00153e9d8621f967c0e645cdffe1fbc8752219096595047c3",
+      "git_sha": "dd55e0a9fd43e8d0af454f85a4c7fd0cbe2f67e4"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/audio_mute.dis.txt",
+      "bytes": 77953,
+      "encoding": "utf-8",
+      "sha256": "d906368b496be6acbebf9a40dba38b02309aa044c929ce90df84fa9a6b821e62",
+      "git_sha": "18dea1da0b613a5ae760c2de7c966e0a89331764"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/autocal.dis.txt",
+      "bytes": 36979,
+      "encoding": "utf-8",
+      "sha256": "4f1ce37b3ee0df936b1b696d1d578a30268ad1afb30a203921412a9df2dfa03f",
+      "git_sha": "8e2d6b828f8f3886ceda3ef73253713ab6cfa4dc"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/autocheck.dis.txt",
+      "bytes": 64982,
+      "encoding": "utf-8",
+      "sha256": "c0f46da4fbe8bdbc052420c21ef045301e9b11f5d7af0627db90d532a76b1f65",
+      "git_sha": "36d262d5f796c77b72bab0a476a3d2616eeb15d2"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/background_input.dis.txt",
+      "bytes": 93085,
+      "encoding": "utf-8",
+      "sha256": "8841902edfd0919d77b194a0dd6c2aa6ea10ba58b13cea81bbe433081570ddc1",
+      "git_sha": "a36b94932d6b84c030f144ad555114f53b8af3fe"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/breaker.dis.txt",
+      "bytes": 21926,
+      "encoding": "utf-8",
+      "sha256": "98e58ece798e84bca1efe69a4a624c4b41cb8886c97a8c2a2469990ddcc58216",
+      "git_sha": "205010eb531605aea878e16341a60ea02f0799e1"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/bus_drop.dis.txt",
+      "bytes": 93551,
+      "encoding": "utf-8",
+      "sha256": "b47fc7aedca70e0d332c372b59b38ccea46f1d34e4efaa68ccf7325a802bea63",
+      "git_sha": "59705ecdc47a03247612f4cbef10820d4a2f5feb"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/config.dis.txt",
+      "bytes": 64203,
+      "encoding": "utf-8",
+      "sha256": "e78969d4c308b9deb4299fce44cee94185c47ef020cd76e02bbfeb5cc870e6b0",
+      "git_sha": "749aaa815c1f521a563d15e5bbddad1740b0e464"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/controller.dis.txt",
+      "bytes": 59314,
+      "encoding": "utf-8",
+      "sha256": "363045c83a7dad6167a25fbfc645e613242642d29693c4ec6b398be41c30e637",
+      "git_sha": "5ae020ed520e06822ebf4e2b2f99ab603b612f6a"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/diagnose.dis.txt",
+      "bytes": 82515,
+      "encoding": "utf-8",
+      "sha256": "562f334ae51c593847bfc19282700259d617471be2ee2bd536bd8a7975e6a89d",
+      "git_sha": "e5d1c86dce69fe39f2f2bd9db501563784bb1e18"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/ed25519_verify.dis.txt",
+      "bytes": 25293,
+      "encoding": "utf-8",
+      "sha256": "6a44f3ad5ca067a4574be3bb80e76bec26dedcc33f71e621e601c9e186ecaaf1",
+      "git_sha": "068992cd88b5b76e6769513a571063fa4d17e300"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/focus.dis.txt",
+      "bytes": 38881,
+      "encoding": "utf-8",
+      "sha256": "c7610590f05e63277253bc6ba7b8635aeb3038b4db0e9bc8ebeb9838f9c2c063",
+      "git_sha": "25be09a54e0e15f484e468cce473846bbb9407c8"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/ghost.dis.txt",
+      "bytes": 101023,
+      "encoding": "utf-8",
+      "sha256": "484e2d48662d66398beb76e203d551d999c4ba05afd8e7a9e784f4ff133667b2",
+      "git_sha": "29beab937b36e25d9ac1c3ef3b0ffe8706aaa7c4"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/gui_extras.dis.txt",
+      "bytes": 44180,
+      "encoding": "utf-8",
+      "sha256": "9b3a372d183498bfda97aea3e31e7783745c99577f4448a34a62a9a8d5c99e77",
+      "git_sha": "f74f72c198714216b2ab45f7de0888dae2fa569f"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/humanizer.dis.txt",
+      "bytes": 75445,
+      "encoding": "utf-8",
+      "sha256": "2f6bb98cf80787620f17cff8e2a8c71a50d784b197b1b49d94a8e733ef0b4425",
+      "git_sha": "6db01d40e2c7743a0f313b9c08f7da93cfcabc9f"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/i18n.dis.txt",
+      "bytes": 156639,
+      "encoding": "utf-8",
+      "sha256": "fadaed131cbc79e681fbff6a8525db594bcb67de3a87926b5a27f8d1f297ed48",
+      "git_sha": "a7784faff36d1cfdf55896bb7aa317017a32476e"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/i18n_ac.dis.txt",
+      "bytes": 28870,
+      "encoding": "utf-8",
+      "sha256": "85eaafcbce127b1187978953cc0381dac0483ebb547783e6ccd7afc55d670087",
+      "git_sha": "1e90c2cea4590db93fa32aef35fcc1646a170484"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/i18n_ex.dis.txt",
+      "bytes": 30083,
+      "encoding": "utf-8",
+      "sha256": "00f06466c0667884e7d8c74326cda7f8a4a0838d7030db1784660f09ec48bdd3",
+      "git_sha": "55f619be2959695e8d0222bf41f5860c7dd61dc8"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/i18n_fr.dis.txt",
+      "bytes": 26340,
+      "encoding": "utf-8",
+      "sha256": "84f113607c5ce3d122ffd7f1cfbbbc09724969af0a97a26c5561e25f8b2618d4",
+      "git_sha": "ab5726b9b244e7f867c824576ac4c4876e1f4145"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/i18n_lic.dis.txt",
+      "bytes": 7640,
+      "encoding": "utf-8",
+      "sha256": "37a5e18a2dd83afccea268e71673aa89dfe16a549792ac2a88d1aed842b6b205",
+      "git_sha": "13626a22e9016f8cdeb2a6e616d5227d30c3e628"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/licensing.dis.txt",
+      "bytes": 54575,
+      "encoding": "utf-8",
+      "sha256": "ec4c948aa66fecb47a6f655e1e429cd6a9b3f430335ee47e7b6735721065f3b4",
+      "git_sha": "9977fe469710d5a5ac881f262abb8d16fbb830b6"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/licensing_ui.dis.txt",
+      "bytes": 26731,
+      "encoding": "utf-8",
+      "sha256": "17195c4112f37c2676f9a0b931cbb32f3fe3537bb84f7b6d8cc425fae4d2be69",
+      "git_sha": "cac8f4854c6b6ed63b9e8347734748b0e8f5c60b"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/loot_vault.dis.txt",
+      "bytes": 29887,
+      "encoding": "utf-8",
+      "sha256": "687c033e65286fb953f2e1bf3191c4718205e35e4ee13ec5e43d36da1fbf4f6e",
+      "git_sha": "11c5c36424a654607bf040c4ae4d7d55caf67bd7"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/main.dis.txt",
+      "bytes": 242081,
+      "encoding": "utf-8",
+      "sha256": "d75037713abd83061e721a3b30dd4720955189f7ed45d634a471473478f6cf86",
+      "git_sha": "b74d04179b169f98d5b04f627617b45d22d82275"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/mode_b.dis.txt",
+      "bytes": 91772,
+      "encoding": "utf-8",
+      "sha256": "d1531b04fcd4b5176746997fbdc0e54f3e217fb2ff16caaae42ab8a27c855212",
+      "git_sha": "8ee5c712ead6e1010995ffc878ec314510aff5b8"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/mode_c.dis.txt",
+      "bytes": 8555,
+      "encoding": "utf-8",
+      "sha256": "1f85a902f4d2bb80bd84c507bca450a4f431ca6e2f1c8077f6b3e337f35d0792",
+      "git_sha": "a70afb22d056f7fbc979dc048b13eebec1854f3a"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/mode_fix.dis.txt",
+      "bytes": 97421,
+      "encoding": "utf-8",
+      "sha256": "1b4db70681a715e81c518f4e24859ddb61660f89662c31fbfad7b45a38c071cd",
+      "git_sha": "76783cd08aa760fc3f9383ed158c89b85f5c873f"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/netfix.dis.txt",
+      "bytes": 52986,
+      "encoding": "utf-8",
+      "sha256": "42cb50de8e0907eae23fbaa5d79d32197ac62ffcabfbaf87ba0f3dfe9448ed13",
+      "git_sha": "4b3dacae4fed4e3cff86f0828e83bdfe80d58cb4"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/relay.dis.txt",
+      "bytes": 43975,
+      "encoding": "utf-8",
+      "sha256": "2392c3b4e18dd8c9a3978475748f7221291f097c90563c6bd55dca4e6eee64fd",
+      "git_sha": "9e77b13bc2292a00cf1271e13db79705150cfc95"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/remote.dis.txt",
+      "bytes": 65011,
+      "encoding": "utf-8",
+      "sha256": "ff42e18055b88d498f2316af789726eb2bdf549ec791de344ad4110d0f149214",
+      "git_sha": "ac4b6516988b62165eb106e4019fe63c8cb9d6f4"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/rescue.dis.txt",
+      "bytes": 41748,
+      "encoding": "utf-8",
+      "sha256": "287ba5fb31dd3683b1f8dce5bf0b976470c7e6599edaeca534174dae6e5b8561",
+      "git_sha": "267375a4d3750db4cee6a57128446a75d9736d0d"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/rescue_grid.dis.txt",
+      "bytes": 17161,
+      "encoding": "utf-8",
+      "sha256": "2a94c29cc41937dcc85101c784fd29adf14e83f1488e07b071ca85e16aeeeee2",
+      "git_sha": "d3ac5823362be58bcd651459107ba2812c8157a5"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/reward_fallback.dis.txt",
+      "bytes": 21597,
+      "encoding": "utf-8",
+      "sha256": "e5e55fab3f615c5dacb958a4fddf7a4d826596f9e9b64b47ec85f9651442ca35",
+      "git_sha": "da6489898064e8d3c90e8ee9e54d9f5f2fc8685d"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/reward_shot.dis.txt",
+      "bytes": 22116,
+      "encoding": "utf-8",
+      "sha256": "100f551e3de7f0ad4f6c0c63731969053d8273a054860b0b08d86bc01fce63b8",
+      "git_sha": "1da17bd930b7e4a1071b32525415079dd4e7889b"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/shot.dis.txt",
+      "bytes": 26830,
+      "encoding": "utf-8",
+      "sha256": "61ace51b07b4e95ddb84944dbb0048989d90ce1236a1e338977614a2d61aa6f1",
+      "git_sha": "67fbad67a4991d7e136aed9c9bcabd8608ca6de6"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/snip.dis.txt",
+      "bytes": 19996,
+      "encoding": "utf-8",
+      "sha256": "62cb79f27602cd5e16add0f0bbd10d6dec7f1a8ad158b84b6ce11d9352e59943",
+      "git_sha": "b62ada4bfc72daf835957ca86330fefb20459463"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/space_press.dis.txt",
+      "bytes": 21534,
+      "encoding": "utf-8",
+      "sha256": "d24be3a187d63afe413e4f44c6b664bca018685eeac47d9d9a4f5f2ae74dea51",
+      "git_sha": "a3644af1743e928ec282d3f2ca91c1bb685f5977"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/squad_bar.dis.txt",
+      "bytes": 24405,
+      "encoding": "utf-8",
+      "sha256": "7264873c6b139b45cbe059d092ce087389b4719b38c193597f114e0b458b7fbe",
+      "git_sha": "86ff8f7eb00e25206a377a92bab25c4e1871b280"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/state_machine.dis.txt",
+      "bytes": 67529,
+      "encoding": "utf-8",
+      "sha256": "2d60e8079788fcaf227fd1529cd4c23ae1169bbabcee5dcd80f07cab6d0b8b46",
+      "git_sha": "a334e2d91fb0f22b0d63e06520153f6990bbe788"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/survey.dis.txt",
+      "bytes": 42716,
+      "encoding": "utf-8",
+      "sha256": "d421d0ff9baf2b456f513ffac3d345248062b6cf65118471d7123d2323cf225b",
+      "git_sha": "537a8cb2d786c55d6db2e9861bb65d61761fc947"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/telemetry.dis.txt",
+      "bytes": 127230,
+      "encoding": "utf-8",
+      "sha256": "7c9be4e340c6d6a6bbfe2fdbf84fcc0daa611291cd74c3c41840698449f43fc2",
+      "git_sha": "5fb7c4fd88547b20b355a075277a2d070db6ae5f"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/update_ui.dis.txt",
+      "bytes": 76438,
+      "encoding": "utf-8",
+      "sha256": "7a206d976eac6c22aa7d91fc5e223ef3aabe45a6a8a64de0aef046f74c794859",
+      "git_sha": "b1db00b36da7b86d9293dbbfc89ea6b2ca32e0c5"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/updater.dis.txt",
+      "bytes": 108771,
+      "encoding": "utf-8",
+      "sha256": "1420af3b55f8be4c5039cbada81783e6f94946940c85dc946ed9bd6f4e4f77ee",
+      "git_sha": "3994ea3a4ee936862cc62207515270ec82cd1142"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/version.dis.txt",
+      "bytes": 473,
+      "encoding": "utf-8",
+      "sha256": "82a962c6b2167f70a9aa5da97be43b0dfad2074b4cff05336778231117685aca",
+      "git_sha": "a68d870d3955d4b171881452519a330e1018de87"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/vision.dis.txt",
+      "bytes": 79915,
+      "encoding": "utf-8",
+      "sha256": "9d62780573d7c7b07fe208a2162865dc795bd81670f76e899c93a40879f6b519",
+      "git_sha": "49fd38a5603c69c12611c30f5031f210138730e5"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/watchdog.dis.txt",
+      "bytes": 21826,
+      "encoding": "utf-8",
+      "sha256": "a49e31d7fc52161d89cacef58e9858f89836a716d2b275289c769266e094106a",
+      "git_sha": "1319fb75ef299fdb7060c71cfb50a956c8b3d346"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/window_capture.dis.txt",
+      "bytes": 89513,
+      "encoding": "utf-8",
+      "sha256": "b5d378b16bee0f0e8f5f5207ba30b8a2fb5f8b375e57a748783a304b116b1436",
+      "git_sha": "41553d9f143c9e159c02129177367c969a7dcff0"
+    },
+    {
+      "path": "fortnite-analysis/disassembly/worker.dis.txt",
+      "bytes": 80024,
+      "encoding": "utf-8",
+      "sha256": "7c7d360df481a8ee67b47289d3e5b2103467570e9fa77d161c099478c8748efe",
+      "git_sha": "1b35e7de68760f4bac65d6d3c4b2fbf4e492bcf7"
+    },
+    {
+      "path": "fortnite-analysis/pk-auto-v2.0.0-recovered-python.zip",
+      "bytes": 995574,
+      "encoding": "base64",
+      "sha256": "cdc50eefa0f6d9feef8f6a85248028de5a4c41c088f298e0f04a34060373422b",
+      "git_sha": "e988e3e2e10301fba680aa7edfcb32becd9453f9"
+    },
+    {
+      "path": "fortnite-analysis/pk-auto-v2.0.0-static-analysis.zip",
+      "bytes": 850042,
+      "encoding": "base64",
+      "sha256": "2c27222316095f491a7a95fc61fa9c6a3375017e3e937ecb0231be86f67581bb",
+      "git_sha": "9ca7ac3ae3cb971c01c2b7c18eb4eee456eb61fb"
+    },
+    {
+      "path": "fortnite-analysis/reference-assets/claim_btn.png",
+      "bytes": 14362,
+      "encoding": "base64",
+      "sha256": "4d0c0d6dd66b34ae4aa6d0fa38487a59e08095feacfa12a3139d05000fac8b97",
+      "git_sha": "cc95c444b0dc4bef83abefa42dbb248db9e0db00"
+    },
+    {
+      "path": "fortnite-analysis/reference-assets/claim_btn_en.png",
+      "bytes": 8043,
+      "encoding": "base64",
+      "sha256": "d560a7741d34f20e3fda2022fbe1752cac8e8f2175fca43fe6c15435086fe64d",
+      "git_sha": "c3ee657ebdb6469a49b634a016bae9bea7abf08c"
+    },
+    {
+      "path": "fortnite-analysis/reference-assets/claim_btn_plate.png",
+      "bytes": 13724,
+      "encoding": "base64",
+      "sha256": "0632792db4715866a87a7a0b40827476e96480754a63f3c552a4a70f22bcb35f",
+      "git_sha": "fb9c793640e2eec1e7d43f2c18284a5ef25b7c72"
+    },
+    {
+      "path": "fortnite-analysis/reference-assets/claim_single_btn.png",
+      "bytes": 4859,
+      "encoding": "base64",
+      "sha256": "a6b7553cbb8e3c7444a2e24bed799e0f7c4f6f2843466a8c58f1ef4562349b1b",
+      "git_sha": "db1ad8e1f049174f1efc1582178790009f40792f"
+    },
+    {
+      "path": "fortnite-analysis/reference-assets/claim_single_btn_en.png",
+      "bytes": 6668,
+      "encoding": "base64",
+      "sha256": "79c0682285c692e6a3055e135c63f41ce9ea8b1f54bc9e6f115fd64a91555d56",
+      "git_sha": "9ff29988ca975c19e544e345825dfc21b7ef614c"
+    },
+    {
+      "path": "fortnite-analysis/reference-assets/continue_btn.png",
+      "bytes": 1518,
+      "encoding": "base64",
+      "sha256": "38939d94709f32caf6f83a4cbc0ea953afc9060245432e6234b222ff37c928f2",
+      "git_sha": "42832ccf5a97dcd89b0b9f9abde61a553eed8c0b"
+    },
+    {
+      "path": "fortnite-analysis/reference-assets/hud_btn.png",
+      "bytes": 10695,
+      "encoding": "base64",
+      "sha256": "f10be2fa96da89bc1ae008d5b069f5b8b1aa8b9125d7f08e69ead814d7b68b09",
+      "git_sha": "69f38becfd04b9bc1e827baf316176e909aaeac5"
+    },
+    {
+      "path": "fortnite-analysis/reference-assets/item_found_btn.png",
+      "bytes": 96161,
+      "encoding": "base64",
+      "sha256": "985e9dacee0896f50b58e8e51061f910ee5b268c9f66e39d67a9c0472313780a",
+      "git_sha": "6456cbe61c4a6055e29af57b33eb0efea08c3710"
+    },
+    {
+      "path": "fortnite-analysis/reference-assets/menu_btn.png",
+      "bytes": 2098,
+      "encoding": "base64",
+      "sha256": "09e3f3216b3654985891b72214ee70c87aaa1b73a6f24ec871de87f17bf02594",
+      "git_sha": "c52ab74fc35c9e8207ed3cad7a2e351a3a1726f8"
+    },
+    {
+      "path": "fortnite-analysis/reference-assets/menu_return_btn.png",
+      "bytes": 38559,
+      "encoding": "base64",
+      "sha256": "dfdb3835245c5182781301c7f61ef513454847003d4e8a1a57cc342d990e0981",
+      "git_sha": "c9596fa2558391a169bf398d62f0c2a9f2f5a5ed"
+    },
+    {
+      "path": "fortnite-analysis/reference-assets/play_btn.png",
+      "bytes": 6726,
+      "encoding": "base64",
+      "sha256": "f783ea3284fb26faae3fc34ef6a6fa7d521d8f7be4dc0cd05573ffc204dabb27",
+      "git_sha": "7e417ee87c0eac85e96bb93d9778fd6096d66eb8"
+    },
+    {
+      "path": "fortnite-analysis/reference-assets/play_btn_en.png",
+      "bytes": 7769,
+      "encoding": "base64",
+      "sha256": "2b6d57ea9bd43b15b249ebc3d047d2c9be22f10a9330777e1381988293c7915c",
+      "git_sha": "ffa73fa3fb7fb867f83f4b309b9901653cb55309"
+    },
+    {
+      "path": "fortnite-analysis/reference-assets/play_btn_plate.png",
+      "bytes": 13447,
+      "encoding": "base64",
+      "sha256": "c3206c0a8487a5b846b92d3ff4901c8b43861cc6a928e1811594da41b3b0f76d",
+      "git_sha": "5b04e1d00a456374b8c0491245da5cf12b1e77ae"
+    },
+    {
+      "path": "fortnite-analysis/reference-assets/return_lobby_btn.png",
+      "bytes": 7689,
+      "encoding": "base64",
+      "sha256": "38581d086ca2ee01783aecbaa1121d8fa0d66746dabee9d4130af1964db6c08b",
+      "git_sha": "1ad6e2c778f967a62c112a53fcc877fb79584cb1"
+    },
+    {
+      "path": "fortnite-analysis/reference-assets/return_lobby_btn_en.png",
+      "bytes": 12127,
+      "encoding": "base64",
+      "sha256": "8220c53d6a7f82e442d4ca6b4cb9b87d83dcd0895c6cac1cb929f6f81d0189bd",
+      "git_sha": "716954028d3f90940247873fb1d7fb26330375f0"
+    },
+    {
+      "path": "fortnite-analysis/reference-assets/return_lobby_btn_plate.png",
+      "bytes": 20776,
+      "encoding": "base64",
+      "sha256": "1a4a5d27f3d4df25c9a4c98a019ce097bb881c0b05cb8a33f8cf844ae86ffbb2",
+      "git_sha": "7d571fdad74c188236d7dc8d5e4f271e90d62227"
+    },
+    {
+      "path": "fortnite-analysis/reference-assets/skip_btn.png",
+      "bytes": 1416,
+      "encoding": "base64",
+      "sha256": "e4f4783b7e34ce7e3028c920504cf30c3d322532190a2edd8f72a627f5f395ab",
+      "git_sha": "c5d10298eae25f29f5027316e1782a6e6ab1ab47"
+    },
+    {
+      "path": "fortnite-analysis/reference-assets/storefront_play_btn.png",
+      "bytes": 9158,
+      "encoding": "base64",
+      "sha256": "afd52e76985184e256b1842d184f143bb47bd2d949bdc459c7c195d02853c1dd",
+      "git_sha": "bd9301dbcf47ba37467bf8124451b0ace9e9529b"
+    },
+    {
+      "path": "fortnite-analysis/reports/ANALYSIS.ru.md",
+      "bytes": 9466,
+      "encoding": "utf-8",
+      "sha256": "9e80bf43583a3ab5ef9e3ae74067b356b775ee8ec521eb32013c8062770ae169",
+      "git_sha": "0d491f6e197a5f424291c1893d4f302b84b42032"
+    },
+    {
+      "path": "fortnite-analysis/reports/PRODUCT.ru.md",
+      "bytes": 6429,
+      "encoding": "utf-8",
+      "sha256": "7fe0976ea78ad4739f0d1b9a686988c4e096c0c6cbfedb5e92c3e504491d21ac",
+      "git_sha": "2898fa603c073efe1879d0a4da123d6afe064602"
+    },
+    {
+      "path": "fortnite-analysis/reports/RECOVERY.ru.md",
+      "bytes": 3898,
+      "encoding": "utf-8",
+      "sha256": "13e9f87128882c35f45e7c5ba4e7ce59c98c927537e629d22713af4bef1301be",
+      "git_sha": "03a0c7a5ea2f052ba72ad8591ef10e318bba5745"
+    },
+    {
+      "path": "fortnite-analysis/reports/application-modules.json",
+      "bytes": 87219,
+      "encoding": "utf-8",
+      "sha256": "faac5a8fb0827c01b0da49fdc8221d2d44e8fde12a948322ac665e473f611012",
+      "git_sha": "ac286a9a7131e6605a62a44b421883f70f9a72f5"
+    },
+    {
+      "path": "fortnite-analysis/reports/carchive.json",
+      "bytes": 189353,
+      "encoding": "utf-8",
+      "sha256": "a5c3c099047f09d38f5ad43c99a5bedc68250e44871df3a955f840d10a95004c",
+      "git_sha": "f14deb79158dde15f998b60746e7cc6c940c307f"
+    },
+    {
+      "path": "fortnite-analysis/reports/decompilation-check.json",
+      "bytes": 43551,
+      "encoding": "utf-8",
+      "sha256": "4848037cfa8e35541b0e7f763d29b0e25b97adbfc93b3c9a14d92c93f373e02c",
+      "git_sha": "c3ddb1e128da43018803c1dc83b5b82581488787"
+    },
+    {
+      "path": "fortnite-analysis/reports/decompilation-first-pass.json",
+      "bytes": 5827,
+      "encoding": "utf-8",
+      "sha256": "b1637e4f9a10a74d334b5c9fd38e28c22fae3bf5c383f94b6db528b514b9baf4",
+      "git_sha": "7cc09b3733201925476620b381135c262c23adef"
+    },
+    {
+      "path": "fortnite-analysis/reports/main.dis.txt",
+      "bytes": 10253,
+      "encoding": "utf-8",
+      "sha256": "c6acf69fa91189eb68bf2240dab97ac33caf8957c95919a9b52ffd491674c7d1",
+      "git_sha": "f8894d7d65eb56d6f84f182eef76ff4d1d6c2a91"
+    },
+    {
+      "path": "fortnite-analysis/reports/pyz-modules.json",
+      "bytes": 30932,
+      "encoding": "utf-8",
+      "sha256": "ea368fd9bed7a6ca933694b595d1857f7da9a30fb70ca4b54ba612c23f4f2ab4",
+      "git_sha": "027fdce87a84cd6e8941744828d0320d22f52eb2"
+    },
+    {
+      "path": "fortnite-analysis/reports/summary.json",
+      "bytes": 399,
+      "encoding": "utf-8",
+      "sha256": "66ffe0710bbaa037c55ba12ad7fd1208bb4a7e266c0dc0de2907c32c90383f33",
+      "git_sha": "abb34c5993d45d9008e86372a0b20343074c27b9"
+    },
+    {
+      "path": "fortnite-analysis/tools/check_decompiled.py",
+      "bytes": 4930,
+      "encoding": "utf-8",
+      "sha256": "268a1571eecd4897e7a0e45d668671476de30510447fac89a50e1ec23cfaa893",
+      "git_sha": "7af9551f3ebabd8f049c9829540d9f3114ff6447"
+    },
+    {
+      "path": "fortnite-analysis/tools/inspect_release.py",
+      "bytes": 5227,
+      "encoding": "utf-8",
+      "sha256": "1316c941a00677e11022e2ad9d8a8741615e2295e4e11ac687b9175f7861898b",
+      "git_sha": "9a4a2a1171cf187561d00b9211cd329c4e3c4b89"
+    },
+    {
+      "path": "chat/messages.json",
+      "bytes": 33973,
+      "encoding": "utf-8",
+      "sha256": "4192ea52aa827d2b9d07ba6aa8d5a93e93f471e7605fbdc3f1646d11a248fc23",
+      "git_sha": "8339dad8ae9acf8a8704ba25980135e2f5e265e0"
+    },
+    {
+      "path": "chat/Разговор.html",
+      "bytes": 33509,
+      "encoding": "utf-8",
+      "sha256": "f19ac7c07cbbc65332410e2fda9e2a286f63130dafdcbff13aa5e0221aed6e4b",
+      "git_sha": "806e7172ab644609b38747a164a2fef6b6d5bfdf"
+    },
+    {
+      "path": "chat/Разговор.md",
+      "bytes": 32371,
+      "encoding": "utf-8",
+      "sha256": "0cd90c6c42c362a68af8aae69e13e88ce1c0fa7afb6a2b4db874fe6d499eb65b",
+      "git_sha": "aef0adfe62793e2b4e0739e5e7400fea21499dab"
+    },
+    {
+      "path": "НАЧНИ-ЗДЕСЬ.html",
+      "bytes": 2795,
+      "encoding": "utf-8",
+      "sha256": "4bfdd1f43fd828fa049c1c9eee7717f49c3e063d687f751bc9db04b00c82c331",
+      "git_sha": "e8ac26ff798c48909308e235b01432dc933b086d"
+    },
+    {
+      "path": "ПРОДОЛЖИТЬ-РАБОТУ.md",
+      "bytes": 8130,
+      "encoding": "utf-8",
+      "sha256": "f355ab79162047c575fe005b73208d771a04dda9e4a7b04aacd6afa71d229a3a",
+      "git_sha": "75876872d46be2bbf702ac626b560940c2eef76a"
+    },
+    {
+      "path": "ПРОЧИТАЙ-МЕНЯ.md",
+      "bytes": 4843,
+      "encoding": "utf-8",
+      "sha256": "0aee19a17256a896ac6cf77799a235ac41e3c6f4bbb90b4229f2503d115b5146",
+      "git_sha": "e7edb67adeba670bf0aeee9a9ead5f3d567fd7e0"
+    },
+    {
+      "path": "SpritePilot-0.1.0-source.zip",
+      "bytes": 841228,
+      "encoding": "base64",
+      "sha256": "1dd30051eda27c95a037d76f82284cf7fb76190f494f2f681bd2cfc67ae89676",
+      "git_sha": "f2b95be4be18ccb1615b502499a5dabd12cb7996"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5090,
+      "encoding": "utf-8",
+      "sha256": "b4a529980628efec34c956ac3606e3134d03c8c18ada3c57081739785f0f149f",
+      "git_sha": "3b5536915b3f70b4c2b7507a2bdcb6f4bae9d5ee"
+    },
+    {
+      "path": "tools/fetch_original.py",
+      "bytes": 1522,
+      "encoding": "utf-8",
+      "sha256": "1571139dcbc8a6859d7452126fba480cb4bd543def65d8d980a6073cf1092ee7",
+      "git_sha": "8814b374fc93bece0b26f38f73b5cb4603bbc819"
+    },
+    {
+      "path": ".github/workflows/spritepilot.yml",
+      "bytes": 1051,
+      "encoding": "utf-8",
+      "sha256": "b6c5c272f10c58420c233857417d07eeb07a2d514639c455c98fb06a144ec91c",
+      "git_sha": "5e9ede8be499882358cf1e4cc409b5f92bc79583"
+    }
+  ],
+  "excluded": "Original relay_endpoints.json and its source ZIP copy: unused by Telegram application; removed following automatic publication review",
+  "original_exe": "tools/fetch_original.py",
+  "user_images_unavailable": 5,
+  "conversation_messages": 33
+}

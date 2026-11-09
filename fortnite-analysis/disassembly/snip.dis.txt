@@ -1,0 +1,458 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+  2           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (os)
+             10 STORE_NAME               0 (os)
+
+  3          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (tkinter)
+             18 STORE_NAME               2 (tk)
+
+  5          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              3 (config)
+             26 STORE_NAME               3 (config)
+
+  6          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               1 (None)
+             32 IMPORT_NAME              4 (i18n)
+             34 STORE_NAME               4 (i18n)
+
+  7          36 LOAD_CONST               0 (0)
+             38 LOAD_CONST               2 (('capture_screen',))
+             40 IMPORT_NAME              5 (vision)
+             42 IMPORT_FROM              6 (capture_screen)
+             44 STORE_NAME               6 (capture_screen)
+             46 POP_TOP
+
+ 10          48 PUSH_NULL
+             50 LOAD_BUILD_CLASS
+             52 LOAD_CONST               3 (<code object SnipOverlay at 0x7f6aed7e4930, file "snip.py", line 10>)
+             54 MAKE_FUNCTION            0
+             56 LOAD_CONST               4 ('SnipOverlay')
+             58 CALL                     2
+             66 STORE_NAME               7 (SnipOverlay)
+             68 RETURN_CONST             1 (None)
+
+Disassembly of <code object SnipOverlay at 0x7f6aed7e4930, file "snip.py", line 10>:
+ 10           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('SnipOverlay')
+              8 STORE_NAME               2 (__qualname__)
+
+ 11          10 NOP
+
+ 13          12 LOAD_CONST              10 (('ja',))
+             14 LOAD_CONST               1 ('root')
+             16 LOAD_NAME                3 (tk)
+             18 LOAD_ATTR                8 (Tk)
+             38 LOAD_CONST               2 ('key')
+             40 LOAD_NAME                5 (str)
+             42 LOAD_CONST               3 ('lang')
+             44 LOAD_NAME                5 (str)
+             46 BUILD_TUPLE              6
+             48 LOAD_CONST               4 (<code object __init__ at 0x17ab43d0, file "snip.py", line 13>)
+             50 MAKE_FUNCTION            5 (defaults, annotations)
+             52 STORE_NAME               6 (__init__)
+
+ 33          54 LOAD_CONST               5 (<code object _down at 0x7f6af1de7ab0, file "snip.py", line 33>)
+             56 MAKE_FUNCTION            0
+             58 STORE_NAME               7 (_down)
+
+ 37          60 LOAD_CONST               6 (<code object _drag at 0x7f6af1e292f0, file "snip.py", line 37>)
+             62 MAKE_FUNCTION            0
+             64 STORE_NAME               8 (_drag)
+
+ 41          66 LOAD_CONST               7 (<code object _up at 0x17a87290, file "snip.py", line 41>)
+             68 MAKE_FUNCTION            0
+             70 STORE_NAME               9 (_up)
+
+ 57          72 LOAD_CONST              11 ((None,))
+             74 LOAD_CONST               9 (<code object _close at 0x7f6aed7e5c50, file "snip.py", line 57>)
+             76 MAKE_FUNCTION            1 (defaults)
+             78 STORE_NAME              10 (_close)
+             80 RETURN_CONST             8 (None)
+
+Disassembly of <code object __init__ at 0x17ab43d0, file "snip.py", line 13>:
+              0 MAKE_CELL                0 (self)
+
+ 13           2 RESUME                   0
+
+ 14           4 LOAD_CONST               1 (0)
+              6 LOAD_CONST               2 (('Image', 'ImageTk'))
+              8 IMPORT_NAME              0 (PIL)
+             10 IMPORT_FROM              1 (Image)
+             12 STORE_FAST               5 (Image)
+             14 IMPORT_FROM              2 (ImageTk)
+             16 STORE_FAST               6 (ImageTk)
+             18 POP_TOP
+
+ 16          20 LOAD_FAST                2 (key)
+             22 LOAD_FAST                3 (on_done)
+             24 LOAD_FAST                4 (lang)
+             26 SWAP                     3
+             28 LOAD_DEREF               0 (self)
+             30 STORE_ATTR               3 (key)
+             40 LOAD_DEREF               0 (self)
+             42 STORE_ATTR               4 (on_done)
+             52 LOAD_DEREF               0 (self)
+             54 STORE_ATTR               5 (lang)
+
+ 17          64 LOAD_GLOBAL             13 (NULL + capture_screen)
+             74 LOAD_CONST               3 (1)
+             76 CALL                     1
+             84 UNPACK_SEQUENCE          3
+             88 STORE_FAST               7 (frame)
+             90 STORE_FAST               8 (_)
+             92 STORE_FAST               8 (_)
+
+ 18          94 LOAD_FAST                5 (Image)
+             96 LOAD_ATTR               15 (NULL|self + fromarray)
+            116 LOAD_FAST                7 (frame)
+            118 LOAD_CONST               0 (None)
+            120 LOAD_CONST               0 (None)
+            122 BUILD_SLICE              2
+            124 LOAD_CONST               0 (None)
+            126 LOAD_CONST               0 (None)
+            128 BUILD_SLICE              2
+            130 LOAD_CONST               0 (None)
+            132 LOAD_CONST               0 (None)
+            134 LOAD_CONST               4 (-1)
+            136 BUILD_SLICE              3
+            138 BUILD_TUPLE              3
+            140 BINARY_SUBSCR
+            144 CALL                     1
+            152 LOAD_DEREF               0 (self)
+            154 STORE_ATTR               8 (img)
+
+ 19         164 LOAD_GLOBAL             19 (NULL + tk)
+            174 LOAD_ATTR               20 (Toplevel)
+            194 LOAD_FAST                1 (root)
+            196 CALL                     1
+            204 LOAD_DEREF               0 (self)
+            206 STORE_ATTR              11 (top)
+
+ 20         216 LOAD_DEREF               0 (self)
+            218 LOAD_ATTR               22 (top)
+            238 LOAD_ATTR               25 (NULL|self + attributes)
+            258 LOAD_CONST               5 ('-fullscreen')
+            260 LOAD_CONST               6 (True)
+            262 CALL                     2
+            270 POP_TOP
+
+ 21         272 LOAD_DEREF               0 (self)
+            274 LOAD_ATTR               22 (top)
+            294 LOAD_ATTR               25 (NULL|self + attributes)
+            314 LOAD_CONST               7 ('-topmost')
+            316 LOAD_CONST               6 (True)
+            318 CALL                     2
+            326 POP_TOP
+
+ 22         328 LOAD_FAST                6 (ImageTk)
+            330 LOAD_ATTR               27 (NULL|self + PhotoImage)
+            350 LOAD_DEREF               0 (self)
+            352 LOAD_ATTR               16 (img)
+            372 CALL                     1
+            380 LOAD_DEREF               0 (self)
+            382 STORE_ATTR              14 (photo)
+
+ 23         392 LOAD_GLOBAL             19 (NULL + tk)
+            402 LOAD_ATTR               30 (Canvas)
+            422 LOAD_DEREF               0 (self)
+            424 LOAD_ATTR               22 (top)
+            444 LOAD_CONST               8 ('cross')
+            446 LOAD_CONST               1 (0)
+            448 KW_NAMES                 9 (('cursor', 'highlightthickness'))
+            450 CALL                     3
+            458 LOAD_DEREF               0 (self)
+            460 STORE_ATTR              16 (cv)
+
+ 24         470 LOAD_DEREF               0 (self)
+            472 LOAD_ATTR               32 (cv)
+            492 LOAD_ATTR               35 (NULL|self + pack)
+            512 LOAD_CONST              10 ('both')
+            514 LOAD_CONST               6 (True)
+            516 KW_NAMES                11 (('fill', 'expand'))
+            518 CALL                     2
+            526 POP_TOP
+
+ 25         528 LOAD_DEREF               0 (self)
+            530 LOAD_ATTR               32 (cv)
+            550 LOAD_ATTR               37 (NULL|self + create_image)
+            570 LOAD_CONST               1 (0)
+            572 LOAD_CONST               1 (0)
+            574 LOAD_DEREF               0 (self)
+            576 LOAD_ATTR               28 (photo)
+            596 LOAD_CONST              12 ('nw')
+            598 KW_NAMES                13 (('image', 'anchor'))
+            600 CALL                     4
+            608 POP_TOP
+
+ 26         610 LOAD_CONST               0 (None)
+            612 LOAD_DEREF               0 (self)
+            614 STORE_ATTR              19 (start)
+
+ 27         624 LOAD_CONST               0 (None)
+            626 LOAD_DEREF               0 (self)
+            628 STORE_ATTR              20 (rect)
+
+ 28         638 LOAD_DEREF               0 (self)
+            640 LOAD_ATTR               32 (cv)
+            660 LOAD_ATTR               43 (NULL|self + bind)
+            680 LOAD_CONST              14 ('<ButtonPress-1>')
+            682 LOAD_DEREF               0 (self)
+            684 LOAD_ATTR               44 (_down)
+            704 CALL                     2
+            712 POP_TOP
+
+ 29         714 LOAD_DEREF               0 (self)
+            716 LOAD_ATTR               32 (cv)
+            736 LOAD_ATTR               43 (NULL|self + bind)
+            756 LOAD_CONST              15 ('<B1-Motion>')
+            758 LOAD_DEREF               0 (self)
+            760 LOAD_ATTR               46 (_drag)
+            780 CALL                     2
+            788 POP_TOP
+
+ 30         790 LOAD_DEREF               0 (self)
+            792 LOAD_ATTR               32 (cv)
+            812 LOAD_ATTR               43 (NULL|self + bind)
+            832 LOAD_CONST              16 ('<ButtonRelease-1>')
+            834 LOAD_DEREF               0 (self)
+            836 LOAD_ATTR               48 (_up)
+            856 CALL                     2
+            864 POP_TOP
+
+ 31         866 LOAD_DEREF               0 (self)
+            868 LOAD_ATTR               22 (top)
+            888 LOAD_ATTR               43 (NULL|self + bind)
+            908 LOAD_CONST              17 ('<Escape>')
+            910 LOAD_CLOSURE             0 (self)
+            912 BUILD_TUPLE              1
+            914 LOAD_CONST              18 (<code object <lambda> at 0x7f6aed17f4b0, file "snip.py", line 31>)
+            916 MAKE_FUNCTION            8 (closure)
+            918 CALL                     2
+            926 POP_TOP
+            928 RETURN_CONST             0 (None)
+
+Disassembly of <code object <lambda> at 0x7f6aed17f4b0, file "snip.py", line 31>:
+              0 COPY_FREE_VARS           1
+
+ 31           2 RESUME                   0
+              4 LOAD_DEREF               1 (self)
+              6 LOAD_ATTR                1 (NULL|self + _close)
+             26 LOAD_CONST               0 (None)
+             28 CALL                     1
+             36 RETURN_VALUE
+
+Disassembly of <code object _down at 0x7f6af1de7ab0, file "snip.py", line 33>:
+ 33           0 RESUME                   0
+
+ 34           2 LOAD_FAST                1 (e)
+              4 LOAD_ATTR                0 (x)
+             24 LOAD_FAST                1 (e)
+             26 LOAD_ATTR                2 (y)
+             46 BUILD_TUPLE              2
+             48 LOAD_FAST                0 (self)
+             50 STORE_ATTR               2 (start)
+
+ 35          60 LOAD_FAST                0 (self)
+             62 LOAD_ATTR                6 (cv)
+             82 LOAD_ATTR                9 (NULL|self + create_rectangle)
+            102 LOAD_FAST                1 (e)
+            104 LOAD_ATTR                0 (x)
+            124 LOAD_FAST                1 (e)
+            126 LOAD_ATTR                2 (y)
+            146 LOAD_FAST                1 (e)
+            148 LOAD_ATTR                0 (x)
+            168 LOAD_FAST                1 (e)
+            170 LOAD_ATTR                2 (y)
+            190 LOAD_CONST               1 ('red')
+            192 LOAD_CONST               2 (2)
+            194 KW_NAMES                 3 (('outline', 'width'))
+            196 CALL                     6
+            204 LOAD_FAST                0 (self)
+            206 STORE_ATTR               5 (rect)
+            216 RETURN_CONST             0 (None)
+
+Disassembly of <code object _drag at 0x7f6af1e292f0, file "snip.py", line 37>:
+ 37           0 RESUME                   0
+
+ 38           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (rect)
+             24 POP_JUMP_IF_FALSE       88 (to 202)
+
+ 39          26 LOAD_FAST                0 (self)
+             28 LOAD_ATTR                2 (cv)
+             48 LOAD_ATTR                5 (NULL|self + coords)
+             68 LOAD_FAST                0 (self)
+             70 LOAD_ATTR                0 (rect)
+             90 LOAD_FAST                0 (self)
+             92 LOAD_ATTR                6 (start)
+            112 LOAD_CONST               1 (0)
+            114 BINARY_SUBSCR
+            118 LOAD_FAST                0 (self)
+            120 LOAD_ATTR                6 (start)
+            140 LOAD_CONST               2 (1)
+            142 BINARY_SUBSCR
+            146 LOAD_FAST                1 (e)
+            148 LOAD_ATTR                8 (x)
+            168 LOAD_FAST                1 (e)
+            170 LOAD_ATTR               10 (y)
+            190 CALL                     5
+            198 POP_TOP
+            200 RETURN_CONST             0 (None)
+
+ 38     >>  202 RETURN_CONST             0 (None)
+
+Disassembly of <code object _up at 0x17a87290, file "snip.py", line 41>:
+ 41           0 RESUME                   0
+
+ 42           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (start)
+             24 POP_JUMP_IF_TRUE         1 (to 28)
+
+ 43          26 RETURN_CONST             0 (None)
+
+ 44     >>   28 LOAD_GLOBAL              3 (NULL + sorted)
+             38 LOAD_FAST                0 (self)
+             40 LOAD_ATTR                0 (start)
+             60 LOAD_CONST               1 (0)
+             62 BINARY_SUBSCR
+             66 LOAD_FAST                1 (e)
+             68 LOAD_ATTR                4 (x)
+             88 BUILD_TUPLE              2
+             90 CALL                     1
+             98 UNPACK_SEQUENCE          2
+            102 STORE_FAST               2 (x0)
+            104 STORE_FAST               3 (x1)
+
+ 45         106 LOAD_GLOBAL              3 (NULL + sorted)
+            116 LOAD_FAST                0 (self)
+            118 LOAD_ATTR                0 (start)
+            138 LOAD_CONST               2 (1)
+            140 BINARY_SUBSCR
+            144 LOAD_FAST                1 (e)
+            146 LOAD_ATTR                6 (y)
+            166 BUILD_TUPLE              2
+            168 CALL                     1
+            176 UNPACK_SEQUENCE          2
+            180 STORE_FAST               4 (y0)
+            182 STORE_FAST               5 (y1)
+
+ 46         184 LOAD_FAST                3 (x1)
+            186 LOAD_FAST                2 (x0)
+            188 BINARY_OP               10 (-)
+            192 LOAD_CONST               3 (5)
+            194 COMPARE_OP               2 (<)
+            198 POP_JUMP_IF_TRUE         8 (to 216)
+            200 LOAD_FAST                5 (y1)
+            202 LOAD_FAST                4 (y0)
+            204 BINARY_OP               10 (-)
+            208 LOAD_CONST               3 (5)
+            210 COMPARE_OP               2 (<)
+            214 POP_JUMP_IF_FALSE       17 (to 250)
+
+ 47     >>  216 LOAD_FAST                0 (self)
+            218 LOAD_ATTR                9 (NULL|self + _close)
+            238 LOAD_CONST               0 (None)
+            240 CALL                     1
+            248 RETURN_VALUE
+
+ 48     >>  250 LOAD_GLOBAL             11 (NULL + os)
+            260 LOAD_ATTR               12 (makedirs)
+            280 LOAD_GLOBAL             15 (NULL + config)
+            290 LOAD_ATTR               16 (assets_dir)
+            310 CALL                     0
+            318 LOAD_CONST               4 (True)
+            320 KW_NAMES                 5 (('exist_ok',))
+            322 CALL                     2
+            330 POP_TOP
+
+ 49         332 LOAD_GLOBAL             15 (NULL + config)
+            342 LOAD_ATTR               18 (external_template_path)
+            362 LOAD_FAST                0 (self)
+            364 LOAD_ATTR               20 (key)
+            384 LOAD_FAST                0 (self)
+            386 LOAD_ATTR               22 (lang)
+            406 CALL                     2
+            414 STORE_FAST               6 (path)
+
+ 50         416 LOAD_FAST                0 (self)
+            418 LOAD_ATTR               24 (img)
+            438 LOAD_ATTR               26 (size)
+            458 UNPACK_SEQUENCE          2
+            462 STORE_FAST               7 (w)
+            464 STORE_FAST               8 (h)
+
+ 51         466 LOAD_FAST                3 (x1)
+            468 LOAD_FAST                2 (x0)
+            470 BINARY_OP               10 (-)
+            474 LOAD_FAST                5 (y1)
+            476 LOAD_FAST                4 (y0)
+            478 BINARY_OP               10 (-)
+            482 BINARY_OP                5 (*)
+            486 LOAD_CONST               6 (0.15)
+            488 LOAD_FAST                7 (w)
+            490 BINARY_OP                5 (*)
+            494 LOAD_FAST                8 (h)
+            496 BINARY_OP                5 (*)
+            500 COMPARE_OP              68 (>)
+            504 POP_JUMP_IF_FALSE       49 (to 604)
+
+ 52         506 LOAD_FAST                0 (self)
+            508 LOAD_ATTR                9 (NULL|self + _close)
+            528 LOAD_CONST               0 (None)
+            530 LOAD_GLOBAL             29 (NULL + i18n)
+            540 LOAD_ATTR               30 (t)
+            560 LOAD_FAST                0 (self)
+            562 LOAD_ATTR               22 (lang)
+            582 LOAD_CONST               7 ('log_too_large')
+            584 CALL                     2
+            592 CALL                     2
+            600 POP_TOP
+
+ 53         602 RETURN_CONST             0 (None)
+
+ 54     >>  604 LOAD_FAST                0 (self)
+            606 LOAD_ATTR               24 (img)
+            626 LOAD_ATTR               33 (NULL|self + crop)
+            646 LOAD_FAST                2 (x0)
+            648 LOAD_FAST                4 (y0)
+            650 LOAD_FAST                3 (x1)
+            652 LOAD_FAST                5 (y1)
+            654 BUILD_TUPLE              4
+            656 CALL                     1
+            664 LOAD_ATTR               35 (NULL|self + save)
+            684 LOAD_FAST                6 (path)
+            686 CALL                     1
+            694 POP_TOP
+
+ 55         696 LOAD_FAST                0 (self)
+            698 LOAD_ATTR                9 (NULL|self + _close)
+            718 LOAD_FAST                6 (path)
+            720 CALL                     1
+            728 POP_TOP
+            730 RETURN_CONST             0 (None)
+
+Disassembly of <code object _close at 0x7f6aed7e5c50, file "snip.py", line 57>:
+ 57           0 RESUME                   0
+
+ 58           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (top)
+             24 LOAD_ATTR                3 (NULL|self + destroy)
+             44 CALL                     0
+             52 POP_TOP
+
+ 59          54 LOAD_FAST                0 (self)
+             56 LOAD_ATTR                5 (NULL|self + on_done)
+             76 LOAD_FAST                1 (path)
+             78 LOAD_FAST                2 (error)
+             80 CALL                     2
+             88 POP_TOP
+             90 RETURN_CONST             0 (None)

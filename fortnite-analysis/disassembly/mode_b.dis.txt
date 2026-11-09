@@ -1,0 +1,2081 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+  8           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (math)
+             10 STORE_NAME               0 (math)
+
+  9          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (time)
+             18 STORE_NAME               1 (time)
+
+ 10          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               2 (('Callable', 'Dict', 'Optional'))
+             24 IMPORT_NAME              2 (typing)
+             26 IMPORT_FROM              3 (Callable)
+             28 STORE_NAME               3 (Callable)
+             30 IMPORT_FROM              4 (Dict)
+             32 STORE_NAME               4 (Dict)
+             34 IMPORT_FROM              5 (Optional)
+             36 STORE_NAME               5 (Optional)
+             38 POP_TOP
+
+ 12          40 LOAD_CONST               0 (0)
+             42 LOAD_CONST               1 (None)
+             44 IMPORT_NAME              6 (numpy)
+             46 STORE_NAME               7 (np)
+
+ 14          48 LOAD_CONST               0 (0)
+             50 LOAD_CONST               1 (None)
+             52 IMPORT_NAME              8 (config)
+             54 STORE_NAME               8 (config)
+
+ 15          56 LOAD_CONST               0 (0)
+             58 LOAD_CONST               3 (('AutoCalibrator', 'still_visible'))
+             60 IMPORT_NAME              9 (autocal)
+             62 IMPORT_FROM             10 (AutoCalibrator)
+             64 STORE_NAME              10 (AutoCalibrator)
+             66 IMPORT_FROM             11 (still_visible)
+             68 STORE_NAME              11 (still_visible)
+             70 POP_TOP
+
+ 16          72 LOAD_CONST               0 (0)
+             74 LOAD_CONST               4 (('POPUP_KEYS', 'REWARD_KEYS', 'RewardCounter', 'State', 'StepResult', 'note_claim', 'visible_rewards'))
+             76 IMPORT_NAME             12 (state_machine)
+             78 IMPORT_FROM             13 (POPUP_KEYS)
+             80 STORE_NAME              13 (POPUP_KEYS)
+             82 IMPORT_FROM             14 (REWARD_KEYS)
+             84 STORE_NAME              14 (REWARD_KEYS)
+             86 IMPORT_FROM             15 (RewardCounter)
+             88 STORE_NAME              15 (RewardCounter)
+             90 IMPORT_FROM             16 (State)
+             92 STORE_NAME              16 (State)
+             94 IMPORT_FROM             17 (StepResult)
+             96 STORE_NAME              17 (StepResult)
+             98 IMPORT_FROM             18 (note_claim)
+            100 STORE_NAME              18 (note_claim)
+            102 IMPORT_FROM             19 (visible_rewards)
+            104 STORE_NAME              19 (visible_rewards)
+            106 POP_TOP
+
+ 17         108 LOAD_CONST               0 (0)
+            110 LOAD_CONST               1 (None)
+            112 IMPORT_NAME             20 (squad_bar)
+            114 STORE_NAME              20 (squad_bar)
+
+ 18         116 LOAD_CONST               0 (0)
+            118 LOAD_CONST               5 (('ModeFix',))
+            120 IMPORT_NAME             21 (mode_fix)
+            122 IMPORT_FROM             22 (ModeFix)
+            124 STORE_NAME              22 (ModeFix)
+            126 POP_TOP
+
+ 19         128 LOAD_CONST               0 (0)
+            130 LOAD_CONST               6 (('RewardFallback',))
+            132 IMPORT_NAME             23 (reward_fallback)
+            134 IMPORT_FROM             24 (RewardFallback)
+            136 STORE_NAME              24 (RewardFallback)
+            138 POP_TOP
+
+ 20         140 LOAD_CONST               0 (0)
+            142 LOAD_CONST               7 (('SurveyGuard',))
+            144 IMPORT_NAME             25 (survey)
+            146 IMPORT_FROM             26 (SurveyGuard)
+            148 STORE_NAME              26 (SurveyGuard)
+            150 POP_TOP
+
+ 21         152 LOAD_CONST               0 (0)
+            154 LOAD_CONST               8 (('Plate', 'aim_point', 'find_checked', 'find_plate', 'find_template'))
+            156 IMPORT_NAME             27 (vision)
+            158 IMPORT_FROM             28 (Plate)
+            160 STORE_NAME              28 (Plate)
+            162 IMPORT_FROM             29 (aim_point)
+            164 STORE_NAME              29 (aim_point)
+            166 IMPORT_FROM             30 (find_checked)
+            168 STORE_NAME              30 (find_checked)
+            170 IMPORT_FROM             31 (find_plate)
+            172 STORE_NAME              31 (find_plate)
+            174 IMPORT_FROM             32 (find_template)
+            176 STORE_NAME              32 (find_template)
+            178 POP_TOP
+
+ 23         180 LOAD_CONST               9 (150.0)
+            182 STORE_NAME              33 (LOAD_FALLBACK_S)
+
+ 24         184 LOAD_CONST              10 (30.0)
+            186 STORE_NAME              34 (ESC_GRACE_S)
+
+ 25         188 LOAD_CONST              11 (8.0)
+            190 STORE_NAME              35 (MENU_RETRY_S)
+
+ 26         192 LOAD_CONST              12 (3)
+            194 STORE_NAME              36 (MENU_MAX_ESC)
+
+ 27         196 LOAD_CONST              13 (10.0)
+            198 STORE_NAME              37 (SPACE_STOP_LEAD_S)
+
+ 28         200 LOAD_CONST              14 (100.0)
+            202 STORE_NAME              38 (SQUAD_START_S)
+
+ 29         204 LOAD_CONST              13 (10.0)
+            206 STORE_NAME              39 (SQUAD_EVERY_S)
+
+ 30         208 LOAD_CONST              15 (2)
+            210 STORE_NAME              40 (SQUAD_MAX_SIZE)
+
+ 31         212 LOAD_CONST              15 (2)
+            214 STORE_NAME              41 (SQUAD_CONFIRM)
+
+ 34         216 PUSH_NULL
+            218 LOAD_BUILD_CLASS
+            220 LOAD_CONST              16 (<code object ModeB at 0x179ddb70, file "mode_b.py", line 34>)
+            222 MAKE_FUNCTION            0
+            224 LOAD_CONST              17 ('ModeB')
+            226 CALL                     2
+            234 STORE_NAME              42 (ModeB)
+            236 RETURN_CONST             1 (None)
+
+Disassembly of <code object ModeB at 0x179ddb70, file "mode_b.py", line 34>:
+ 34           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('ModeB')
+              8 STORE_NAME               2 (__qualname__)
+
+ 35          10 LOAD_NAME                3 (time)
+             12 LOAD_ATTR                8 (monotonic)
+             32 BUILD_TUPLE              1
+             34 LOAD_CONST               1 ('templates')
+             36 LOAD_NAME                5 (Dict)
+             38 LOAD_NAME                6 (str)
+             40 LOAD_NAME                7 (Optional)
+             42 LOAD_NAME                8 (np)
+             44 LOAD_ATTR               18 (ndarray)
+             64 BINARY_SUBSCR
+             68 BUILD_TUPLE              2
+             70 BINARY_SUBSCR
+             74 LOAD_CONST               2 ('clock')
+             76 LOAD_NAME               10 (Callable)
+             78 BUILD_LIST               0
+             80 LOAD_NAME               11 (float)
+             82 BUILD_TUPLE              2
+             84 BINARY_SUBSCR
+             88 BUILD_TUPLE              4
+             90 LOAD_CONST               3 (<code object __init__ at 0x17a7e210, file "mode_b.py", line 35>)
+             92 MAKE_FUNCTION            5 (defaults, annotations)
+             94 STORE_NAME              12 (__init__)
+
+ 61          96 LOAD_CONST              34 (('return', None))
+             98 LOAD_CONST               6 (<code object start at 0x7f6aed1d0030, file "mode_b.py", line 61>)
+            100 MAKE_FUNCTION            4 (annotations)
+            102 STORE_NAME              13 (start)
+
+ 65         104 LOAD_CONST               4 ('return')
+            106 LOAD_NAME               14 (bool)
+            108 BUILD_TUPLE              2
+            110 LOAD_CONST               7 (<code object match_active at 0x7f6aed801370, file "mode_b.py", line 65>)
+            112 MAKE_FUNCTION            4 (annotations)
+            114 STORE_NAME              15 (match_active)
+
+ 82         116 LOAD_CONST              34 (('return', None))
+            118 LOAD_CONST               8 (<code object stop at 0x7f6aed17ee20, file "mode_b.py", line 82>)
+            120 MAKE_FUNCTION            4 (annotations)
+            122 STORE_NAME              16 (stop)
+
+ 86         124 LOAD_CONST               4 ('return')
+            126 LOAD_NAME               11 (float)
+            128 BUILD_TUPLE              2
+            130 LOAD_CONST               9 (<code object _wait_s at 0x7f6aed17ef10, file "mode_b.py", line 86>)
+            132 MAKE_FUNCTION            4 (annotations)
+            134 STORE_NAME              17 (_wait_s)
+
+ 90         136 LOAD_CONST               4 ('return')
+            138 LOAD_NAME               11 (float)
+            140 BUILD_TUPLE              2
+            142 LOAD_CONST              10 (<code object _wait_now at 0x7f6aed7f4f30, file "mode_b.py", line 90>)
+            144 MAKE_FUNCTION            4 (annotations)
+            146 STORE_NAME              18 (_wait_now)
+
+ 94         148 LOAD_CONST              11 ('key')
+            150 LOAD_NAME                6 (str)
+            152 LOAD_CONST              12 ('frame')
+            154 LOAD_NAME                8 (np)
+            156 LOAD_ATTR               18 (ndarray)
+            176 BUILD_TUPLE              4
+            178 LOAD_CONST              13 (<code object _find at 0x7f6aed7a99b0, file "mode_b.py", line 94>)
+            180 MAKE_FUNCTION            4 (annotations)
+            182 STORE_NAME              19 (_find)
+
+103         184 LOAD_CONST              11 ('key')
+            186 LOAD_NAME                6 (str)
+            188 LOAD_CONST              12 ('frame')
+            190 LOAD_NAME                8 (np)
+            192 LOAD_ATTR               18 (ndarray)
+            212 BUILD_TUPLE              4
+            214 LOAD_CONST              14 (<code object _find_one at 0x17a87740, file "mode_b.py", line 103>)
+            216 MAKE_FUNCTION            4 (annotations)
+            218 STORE_NAME              20 (_find_one)
+
+113         220 LOAD_CONST              35 ((False,))
+            222 LOAD_CONST              11 ('key')
+            224 LOAD_NAME                6 (str)
+            226 LOAD_CONST              15 ('score')
+            228 LOAD_NAME               11 (float)
+            230 LOAD_CONST              16 ('ox')
+            232 LOAD_NAME               21 (int)
+            234 LOAD_CONST              17 ('oy')
+            236 LOAD_NAME               21 (int)
+            238 LOAD_CONST              18 ('nxt')
+            240 LOAD_NAME               22 (State)
+            242 LOAD_CONST              19 ('finishes_loop')
+            244 LOAD_NAME               14 (bool)
+            246 LOAD_CONST               4 ('return')
+            248 LOAD_NAME               14 (bool)
+            250 BUILD_TUPLE             14
+            252 LOAD_CONST              20 (<code object _calibrate at 0x17a83200, file "mode_b.py", line 113>)
+            254 MAKE_FUNCTION            5 (defaults, annotations)
+            256 STORE_NAME              23 (_calibrate)
+
+126         258 LOAD_CONST              36 (('',))
+            260 LOAD_CONST              16 ('ox')
+            262 LOAD_NAME               21 (int)
+            264 LOAD_CONST              17 ('oy')
+            266 LOAD_NAME               21 (int)
+            268 LOAD_CONST              11 ('key')
+            270 LOAD_NAME                6 (str)
+            272 LOAD_CONST               4 ('return')
+            274 LOAD_NAME               14 (bool)
+            276 BUILD_TUPLE              8
+            278 LOAD_CONST              21 (<code object _click at 0x7f6aed7a87b0, file "mode_b.py", line 126>)
+            280 MAKE_FUNCTION            5 (defaults, annotations)
+            282 STORE_NAME              24 (_click)
+
+132         284 LOAD_CONST              22 ('now')
+            286 LOAD_NAME               11 (float)
+            288 LOAD_CONST              23 ('first')
+            290 LOAD_NAME               14 (bool)
+            292 LOAD_CONST               4 ('return')
+            294 LOAD_CONST               5 (None)
+            296 BUILD_TUPLE              6
+            298 LOAD_CONST              24 (<code object _press_esc at 0x7f6af1f83360, file "mode_b.py", line 132>)
+            300 MAKE_FUNCTION            4 (annotations)
+            302 STORE_NAME              25 (_press_esc)
+
+137         304 LOAD_CONST              22 ('now')
+            306 LOAD_NAME               11 (float)
+            308 LOAD_CONST              15 ('score')
+            310 LOAD_NAME               11 (float)
+            312 LOAD_CONST              25 ('note')
+            314 LOAD_NAME                6 (str)
+            316 LOAD_CONST               4 ('return')
+            318 LOAD_NAME               26 (StepResult)
+            320 BUILD_TUPLE              8
+            322 LOAD_CONST              26 (<code object _enter_countdown at 0x17a7bc40, file "mode_b.py", line 137>)
+            324 MAKE_FUNCTION            4 (annotations)
+            326 STORE_NAME              27 (_enter_countdown)
+
+152         328 LOAD_CONST              37 ((0, 0))
+            330 LOAD_CONST              12 ('frame')
+            332 LOAD_NAME                8 (np)
+            334 LOAD_ATTR               18 (ndarray)
+            354 LOAD_CONST              16 ('ox')
+            356 LOAD_NAME               21 (int)
+            358 LOAD_CONST              17 ('oy')
+            360 LOAD_NAME               21 (int)
+            362 LOAD_CONST               4 ('return')
+            364 LOAD_NAME               26 (StepResult)
+            366 BUILD_TUPLE              8
+            368 LOAD_CONST              27 (<code object step at 0x17a86ed0, file "mode_b.py", line 152>)
+            370 MAKE_FUNCTION            5 (defaults, annotations)
+            372 STORE_NAME              28 (step)
+
+169         374 LOAD_CONST              37 ((0, 0))
+            376 LOAD_CONST              12 ('frame')
+            378 LOAD_NAME                8 (np)
+            380 LOAD_ATTR               18 (ndarray)
+            400 LOAD_CONST              16 ('ox')
+            402 LOAD_NAME               21 (int)
+            404 LOAD_CONST              17 ('oy')
+            406 LOAD_NAME               21 (int)
+            408 LOAD_CONST               4 ('return')
+            410 LOAD_NAME               26 (StepResult)
+            412 BUILD_TUPLE              8
+            414 LOAD_CONST              28 (<code object _step at 0x17a7c010, file "mode_b.py", line 169>)
+            416 MAKE_FUNCTION            5 (defaults, annotations)
+            418 STORE_NAME              29 (_step)
+
+181         420 LOAD_CONST               4 ('return')
+            422 LOAD_NAME               26 (StepResult)
+            424 BUILD_TUPLE              2
+            426 LOAD_CONST              29 (<code object _lobby at 0x17a80b60, file "mode_b.py", line 181>)
+            428 MAKE_FUNCTION            4 (annotations)
+            430 STORE_NAME              30 (_lobby)
+
+212         432 LOAD_CONST               4 ('return')
+            434 LOAD_NAME               26 (StepResult)
+            436 BUILD_TUPLE              2
+            438 LOAD_CONST              30 (<code object _loading at 0x17a87b70, file "mode_b.py", line 212>)
+            440 MAKE_FUNCTION            4 (annotations)
+            442 STORE_NAME              31 (_loading)
+
+229         444 LOAD_CONST               4 ('return')
+            446 LOAD_NAME               14 (bool)
+            448 BUILD_TUPLE              2
+            450 LOAD_CONST              31 (<code object _squad_small at 0x17a6cf10, file "mode_b.py", line 229>)
+            452 MAKE_FUNCTION            4 (annotations)
+            454 STORE_NAME              32 (_squad_small)
+
+251         456 LOAD_CONST               4 ('return')
+            458 LOAD_NAME               26 (StepResult)
+            460 BUILD_TUPLE              2
+            462 LOAD_CONST              32 (<code object _countdown at 0x17a82800, file "mode_b.py", line 251>)
+            464 MAKE_FUNCTION            4 (annotations)
+            466 STORE_NAME              33 (_countdown)
+
+273         468 LOAD_CONST               4 ('return')
+            470 LOAD_NAME               26 (StepResult)
+            472 BUILD_TUPLE              2
+            474 LOAD_CONST              33 (<code object _menu at 0x17a8d840, file "mode_b.py", line 273>)
+            476 MAKE_FUNCTION            4 (annotations)
+            478 STORE_NAME              34 (_menu)
+            480 RETURN_CONST             5 (None)
+
+Disassembly of <code object __init__ at 0x17a7e210, file "mode_b.py", line 35>:
+              0 MAKE_CELL                0 (self)
+
+ 35           2 RESUME                   0
+
+ 36           4 LOAD_FAST                1 (settings)
+              6 LOAD_DEREF               0 (self)
+              8 STORE_ATTR               0 (s)
+
+ 37          18 LOAD_FAST                2 (templates)
+             20 LOAD_DEREF               0 (self)
+             22 STORE_ATTR               1 (templates)
+
+ 38          32 LOAD_FAST                3 (controller)
+             34 LOAD_DEREF               0 (self)
+             36 STORE_ATTR               2 (ctrl)
+
+ 39          46 LOAD_FAST                4 (clock)
+             48 LOAD_DEREF               0 (self)
+             50 STORE_ATTR               3 (_clock)
+
+ 40          60 LOAD_GLOBAL              8 (State)
+             70 LOAD_ATTR               10 (IDLE)
+             90 LOAD_DEREF               0 (self)
+             92 STORE_ATTR               6 (state)
+
+ 41         102 LOAD_CONST               1 (0)
+            104 LOAD_DEREF               0 (self)
+            106 STORE_ATTR               7 (loops)
+
+ 42         116 LOAD_GLOBAL             17 (NULL + RewardCounter)
+            126 LOAD_FAST                4 (clock)
+            128 CALL                     1
+            136 LOAD_DEREF               0 (self)
+            138 STORE_ATTR               9 (rewards)
+
+ 43         148 LOAD_CONST               1 (0)
+            150 LOAD_DEREF               0 (self)
+            152 STORE_ATTR              10 (claims)
+
+ 44         162 LOAD_CONST               0 (None)
+            164 LOAD_DEREF               0 (self)
+            166 STORE_ATTR              11 (on_claim)
+
+ 45         176 LOAD_CONST               2 (<code object <lambda> at 0x7f6aed1a5b00, file "mode_b.py", line 45>)
+            178 MAKE_FUNCTION            0
+            180 LOAD_DEREF               0 (self)
+            182 STORE_ATTR              12 (log)
+
+ 46         192 LOAD_GLOBAL             27 (NULL + AutoCalibrator)
+            202 LOAD_FAST                1 (settings)
+            204 LOAD_FAST                4 (clock)
+            206 LOAD_CLOSURE             0 (self)
+            208 BUILD_TUPLE              1
+            210 LOAD_CONST               3 (<code object <lambda> at 0x7f6aed17d5c0, file "mode_b.py", line 46>)
+            212 MAKE_FUNCTION            8 (closure)
+            214 KW_NAMES                 4 (('log',))
+            216 CALL                     3
+            224 LOAD_DEREF               0 (self)
+            226 STORE_ATTR              14 (cal)
+
+ 47         236 LOAD_GLOBAL             31 (NULL + ModeFix)
+            246 LOAD_FAST                1 (settings)
+            248 LOAD_FAST                4 (clock)
+            250 LOAD_CLOSURE             0 (self)
+            252 BUILD_TUPLE              1
+            254 LOAD_CONST               5 (<code object <lambda> at 0x7f6aed17de30, file "mode_b.py", line 47>)
+            256 MAKE_FUNCTION            8 (closure)
+            258 KW_NAMES                 4 (('log',))
+            260 CALL                     3
+            268 LOAD_DEREF               0 (self)
+            270 STORE_ATTR              16 (modefix)
+
+ 48         280 LOAD_GLOBAL             35 (NULL + SurveyGuard)
+            290 LOAD_FAST                4 (clock)
+            292 CALL                     1
+            300 LOAD_DEREF               0 (self)
+            302 STORE_ATTR              18 (survey)
+
+ 49         312 LOAD_GLOBAL             39 (NULL + RewardFallback)
+            322 LOAD_FAST                4 (clock)
+            324 CALL                     1
+            332 LOAD_DEREF               0 (self)
+            334 STORE_ATTR              20 (fallback)
+
+ 50         344 LOAD_CONST               6 (0.0)
+            346 LOAD_DEREF               0 (self)
+            348 STORE_ATTR              21 (_t0)
+
+ 51         358 LOAD_CONST               0 (None)
+            360 LOAD_DEREF               0 (self)
+            362 STORE_ATTR              22 (_load_since)
+
+ 52         372 LOAD_CONST               7 (1.0)
+            374 LOAD_DEREF               0 (self)
+            376 STORE_ATTR              23 (_wait_k)
+
+ 53         386 LOAD_CONST               6 (0.0)
+            388 LOAD_DEREF               0 (self)
+            390 STORE_ATTR              24 (_t_esc)
+
+ 54         400 LOAD_CONST               1 (0)
+            402 LOAD_DEREF               0 (self)
+            404 STORE_ATTR              25 (_esc_tries)
+
+ 55         414 LOAD_CONST               8 (False)
+            416 LOAD_DEREF               0 (self)
+            418 STORE_ATTR              26 (_space_locked)
+
+ 56         428 LOAD_CONST               6 (0.0)
+            430 LOAD_DEREF               0 (self)
+            432 STORE_ATTR              27 (_squad_next)
+
+ 57         442 LOAD_CONST               1 (0)
+            444 LOAD_DEREF               0 (self)
+            446 STORE_ATTR              28 (_squad_low_n)
+
+ 58         456 LOAD_CONST               8 (False)
+            458 LOAD_DEREF               0 (self)
+            460 STORE_ATTR              29 (_squad_hit)
+
+ 59         470 LOAD_CONST               1 (0)
+            472 LOAD_DEREF               0 (self)
+            474 STORE_ATTR              30 (squad_last)
+            484 RETURN_CONST             0 (None)
+
+Disassembly of <code object <lambda> at 0x7f6aed1a5b00, file "mode_b.py", line 45>:
+ 45           0 RESUME                   0
+              2 RETURN_CONST             0 (None)
+
+Disassembly of <code object <lambda> at 0x7f6aed17d5c0, file "mode_b.py", line 46>:
+              0 COPY_FREE_VARS           1
+
+ 46           2 RESUME                   0
+              4 LOAD_DEREF               1 (self)
+              6 LOAD_ATTR                1 (NULL|self + log)
+             26 LOAD_FAST                0 (m)
+             28 CALL                     1
+             36 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed17de30, file "mode_b.py", line 47>:
+              0 COPY_FREE_VARS           1
+
+ 47           2 RESUME                   0
+              4 LOAD_DEREF               1 (self)
+              6 LOAD_ATTR                1 (NULL|self + log)
+             26 LOAD_FAST                0 (m)
+             28 CALL                     1
+             36 RETURN_VALUE
+
+Disassembly of <code object start at 0x7f6aed1d0030, file "mode_b.py", line 61>:
+ 61           0 RESUME                   0
+
+ 62           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (state)
+             24 LOAD_GLOBAL              2 (State)
+             34 LOAD_ATTR                4 (IDLE)
+             54 IS_OP                    0
+             56 POP_JUMP_IF_FALSE       22 (to 102)
+
+ 63          58 LOAD_GLOBAL              2 (State)
+             68 LOAD_ATTR                6 (B_LOBBY)
+             88 LOAD_FAST                0 (self)
+             90 STORE_ATTR               0 (state)
+            100 RETURN_CONST             0 (None)
+
+ 62     >>  102 RETURN_CONST             0 (None)
+
+Disassembly of <code object match_active at 0x7f6aed801370, file "mode_b.py", line 65>:
+ 65           0 RESUME                   0
+
+ 66           2 NOP
+
+ 72           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (state)
+             26 LOAD_GLOBAL              2 (State)
+             36 LOAD_ATTR                4 (B_COUNTDOWN)
+             56 IS_OP                    1
+             58 POP_JUMP_IF_TRUE        12 (to 84)
+             60 LOAD_FAST                0 (self)
+             62 LOAD_ATTR                6 (_space_locked)
+             82 POP_JUMP_IF_FALSE        1 (to 86)
+
+ 73     >>   84 RETURN_CONST             1 (False)
+
+ 74     >>   86 LOAD_FAST                0 (self)
+             88 LOAD_ATTR                8 (_squad_hit)
+            108 POP_JUMP_IF_FALSE        8 (to 126)
+
+ 75         110 LOAD_CONST               2 (True)
+            112 LOAD_FAST                0 (self)
+            114 STORE_ATTR               3 (_space_locked)
+
+ 76         124 RETURN_CONST             1 (False)
+
+ 77     >>  126 LOAD_FAST                0 (self)
+            128 LOAD_ATTR               11 (NULL|self + _wait_now)
+            148 CALL                     0
+            156 LOAD_FAST                0 (self)
+            158 LOAD_ATTR               13 (NULL|self + _clock)
+            178 CALL                     0
+            186 LOAD_FAST                0 (self)
+            188 LOAD_ATTR               14 (_t0)
+            208 BINARY_OP               10 (-)
+            212 BINARY_OP               10 (-)
+            216 LOAD_GLOBAL             16 (SPACE_STOP_LEAD_S)
+            226 COMPARE_OP              26 (<=)
+            230 POP_JUMP_IF_FALSE        8 (to 248)
+
+ 78         232 LOAD_CONST               2 (True)
+            234 LOAD_FAST                0 (self)
+            236 STORE_ATTR               3 (_space_locked)
+
+ 79         246 RETURN_CONST             1 (False)
+
+ 80     >>  248 RETURN_CONST             2 (True)
+
+Disassembly of <code object stop at 0x7f6aed17ee20, file "mode_b.py", line 82>:
+ 82           0 RESUME                   0
+
+ 83           2 LOAD_GLOBAL              0 (State)
+             12 LOAD_ATTR                2 (IDLE)
+             32 LOAD_FAST                0 (self)
+             34 STORE_ATTR               2 (state)
+             44 RETURN_CONST             0 (None)
+
+Disassembly of <code object _wait_s at 0x7f6aed17ef10, file "mode_b.py", line 86>:
+ 86           0 RESUME                   0
+
+ 87           2 NOP
+
+ 88           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (s)
+             26 LOAD_ATTR                2 (wait_b)
+             46 RETURN_VALUE
+
+Disassembly of <code object _wait_now at 0x7f6aed7f4f30, file "mode_b.py", line 90>:
+ 90           0 RESUME                   0
+
+ 91           2 NOP
+
+ 92           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + _wait_s)
+             26 CALL                     0
+             34 LOAD_FAST                0 (self)
+             36 LOAD_ATTR                2 (_wait_k)
+             56 BINARY_OP                5 (*)
+             60 RETURN_VALUE
+
+Disassembly of <code object _find at 0x7f6aed7a99b0, file "mode_b.py", line 94>:
+ 94           0 RESUME                   0
+
+ 95           2 LOAD_FAST                1 (key)
+              4 LOAD_CONST               1 ('play')
+              6 COMPARE_OP              40 (==)
+             10 POP_JUMP_IF_FALSE       68 (to 148)
+
+ 96          12 LOAD_FAST                0 (self)
+             14 LOAD_ATTR                1 (NULL|self + _find_one)
+             34 LOAD_FAST                1 (key)
+             36 LOAD_FAST                2 (frame)
+             38 CALL                     2
+             46 UNPACK_SEQUENCE          2
+             50 STORE_FAST               3 (m)
+             52 STORE_FAST               4 (score)
+
+ 97          54 LOAD_FAST                3 (m)
+             56 POP_JUMP_IF_FALSE        4 (to 66)
+
+ 98          58 LOAD_FAST                3 (m)
+             60 LOAD_FAST                4 (score)
+             62 BUILD_TUPLE              2
+             64 RETURN_VALUE
+
+ 99     >>   66 LOAD_FAST                0 (self)
+             68 LOAD_ATTR                1 (NULL|self + _find_one)
+             88 LOAD_CONST               2 ('storefront_play')
+             90 LOAD_FAST                2 (frame)
+             92 CALL                     2
+            100 UNPACK_SEQUENCE          2
+            104 STORE_FAST               5 (m2)
+            106 STORE_FAST               6 (score2)
+
+100         108 LOAD_FAST                5 (m2)
+            110 POP_JUMP_IF_FALSE        4 (to 120)
+            112 LOAD_FAST                5 (m2)
+            114 LOAD_FAST                6 (score2)
+            116 BUILD_TUPLE              2
+            118 RETURN_VALUE
+        >>  120 LOAD_CONST               0 (None)
+            122 LOAD_GLOBAL              3 (NULL + max)
+            132 LOAD_FAST                4 (score)
+            134 LOAD_FAST                6 (score2)
+            136 CALL                     2
+            144 BUILD_TUPLE              2
+            146 RETURN_VALUE
+
+101     >>  148 LOAD_FAST                0 (self)
+            150 LOAD_ATTR                1 (NULL|self + _find_one)
+            170 LOAD_FAST                1 (key)
+            172 LOAD_FAST                2 (frame)
+            174 CALL                     2
+            182 RETURN_VALUE
+
+Disassembly of <code object _find_one at 0x17a87740, file "mode_b.py", line 103>:
+              0 MAKE_CELL                0 (self)
+              2 MAKE_CELL                3 (plate)
+              4 MAKE_CELL                4 (thr)
+              6 MAKE_CELL                5 (tpl)
+
+103           8 RESUME                   0
+
+104          10 LOAD_DEREF               0 (self)
+             12 LOAD_ATTR                0 (templates)
+             32 LOAD_ATTR                3 (NULL|self + get)
+             52 LOAD_FAST                1 (key)
+             54 CALL                     1
+             62 STORE_DEREF              5 (tpl)
+
+105          64 LOAD_DEREF               5 (tpl)
+             66 POP_JUMP_IF_NOT_NONE     1 (to 70)
+
+106          68 RETURN_CONST             1 ((None, 0.0))
+
+107     >>   70 LOAD_GLOBAL              5 (NULL + isinstance)
+             80 LOAD_DEREF               5 (tpl)
+             82 LOAD_GLOBAL              6 (Plate)
+             92 CALL                     2
+            100 POP_JUMP_IF_FALSE       46 (to 194)
+
+108         102 LOAD_DEREF               0 (self)
+            104 LOAD_ATTR                8 (cal)
+            124 LOAD_ATTR               11 (NULL|self + plate)
+            144 LOAD_FAST                1 (key)
+            146 LOAD_DEREF               5 (tpl)
+            148 CALL                     2
+            156 STORE_DEREF              3 (plate)
+
+109         158 LOAD_GLOBAL             13 (NULL + find_checked)
+            168 LOAD_FAST                2 (frame)
+            170 LOAD_FAST                1 (key)
+            172 LOAD_DEREF               5 (tpl)
+            174 LOAD_CLOSURE             3 (plate)
+            176 LOAD_CLOSURE             0 (self)
+            178 BUILD_TUPLE              2
+            180 LOAD_CONST               2 (<code object <lambda> at 0x7f6aed7ff110, file "mode_b.py", line 109>)
+            182 MAKE_FUNCTION            8 (closure)
+            184 CALL                     4
+            192 RETURN_VALUE
+
+110     >>  194 LOAD_DEREF               0 (self)
+            196 LOAD_ATTR                8 (cal)
+            216 LOAD_ATTR               15 (NULL|self + threshold_for)
+            236 LOAD_FAST                1 (key)
+            238 LOAD_DEREF               0 (self)
+            240 LOAD_ATTR               16 (s)
+            260 LOAD_ATTR               18 (threshold)
+            280 CALL                     2
+            288 STORE_DEREF              4 (thr)
+
+111         290 LOAD_GLOBAL             13 (NULL + find_checked)
+            300 LOAD_FAST                2 (frame)
+            302 LOAD_FAST                1 (key)
+            304 LOAD_DEREF               5 (tpl)
+            306 LOAD_CLOSURE             0 (self)
+            308 LOAD_CLOSURE             4 (thr)
+            310 LOAD_CLOSURE             5 (tpl)
+            312 BUILD_TUPLE              3
+            314 LOAD_CONST               3 (<code object <lambda> at 0x7f6aed7fe340, file "mode_b.py", line 111>)
+            316 MAKE_FUNCTION            8 (closure)
+            318 CALL                     4
+            326 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed7ff110, file "mode_b.py", line 109>:
+              0 COPY_FREE_VARS           2
+
+109           2 RESUME                   0
+              4 LOAD_GLOBAL              1 (NULL + find_plate)
+             14 LOAD_FAST                0 (f)
+             16 LOAD_DEREF               1 (plate)
+             18 LOAD_DEREF               2 (self)
+             20 LOAD_ATTR                2 (s)
+             40 LOAD_ATTR                4 (scales)
+             60 CALL                     3
+             68 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed7fe340, file "mode_b.py", line 111>:
+              0 COPY_FREE_VARS           3
+
+111           2 RESUME                   0
+              4 LOAD_GLOBAL              1 (NULL + find_template)
+             14 LOAD_FAST                0 (f)
+             16 LOAD_DEREF               3 (tpl)
+             18 LOAD_DEREF               2 (thr)
+             20 LOAD_DEREF               1 (self)
+             22 LOAD_ATTR                2 (s)
+             42 LOAD_ATTR                4 (scales)
+             62 CALL                     4
+             70 RETURN_VALUE
+
+Disassembly of <code object _calibrate at 0x17a83200, file "mode_b.py", line 113>:
+113           0 RESUME                   0
+
+114           2 NOP
+
+116           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (templates)
+             26 LOAD_ATTR                3 (NULL|self + get)
+             46 LOAD_FAST                2 (key)
+             48 CALL                     1
+             56 STORE_FAST               8 (tpl)
+
+117          58 LOAD_GLOBAL              5 (NULL + isinstance)
+             68 LOAD_FAST                8 (tpl)
+             70 LOAD_GLOBAL              6 (Plate)
+             80 CALL                     2
+             88 POP_JUMP_IF_FALSE       12 (to 114)
+             90 LOAD_FAST                8 (tpl)
+             92 LOAD_ATTR                8 (threshold)
+            112 JUMP_FORWARD            21 (to 156)
+        >>  114 LOAD_FAST                0 (self)
+            116 LOAD_ATTR               10 (s)
+            136 LOAD_ATTR                8 (threshold)
+        >>  156 STORE_FAST               9 (base)
+
+118         158 LOAD_FAST                0 (self)
+            160 LOAD_ATTR               12 (cal)
+            180 LOAD_ATTR               15 (NULL|self + attempt)
+            200 LOAD_FAST                0 (self)
+            202 LOAD_ATTR               16 (state)
+            222 LOAD_FAST                1 (frame)
+            224 LOAD_FAST                2 (key)
+            226 LOAD_FAST                8 (tpl)
+            228 LOAD_FAST                3 (score)
+            230 LOAD_FAST                9 (base)
+            232 LOAD_FAST                4 (ox)
+            234 LOAD_FAST                5 (oy)
+            236 LOAD_FAST                0 (self)
+            238 LOAD_ATTR               18 (ctrl)
+            258 LOAD_ATTR               20 (click)
+            278 LOAD_FAST                0 (self)
+            280 LOAD_ATTR               10 (s)
+            300 LOAD_ATTR               22 (scales)
+
+119         320 LOAD_FAST                0 (self)
+            322 LOAD_ATTR               16 (state)
+            342 LOAD_FAST                7 (finishes_loop)
+            344 LOAD_CONST               1 (('prev', 'fin'))
+            346 BUILD_CONST_KEY_MAP      2
+
+118         348 KW_NAMES                 2 (('meta',))
+            350 CALL                    11
+            358 POP_JUMP_IF_TRUE         1 (to 362)
+
+120         360 RETURN_CONST             3 (False)
+
+121     >>  362 LOAD_FAST                7 (finishes_loop)
+            364 POP_JUMP_IF_FALSE       21 (to 408)
+
+122         366 LOAD_FAST                0 (self)
+            368 COPY                     1
+            370 LOAD_ATTR               24 (loops)
+            390 LOAD_CONST               4 (1)
+            392 BINARY_OP               13 (+=)
+            396 SWAP                     2
+            398 STORE_ATTR              12 (loops)
+
+123     >>  408 LOAD_FAST                6 (nxt)
+            410 LOAD_FAST                0 (self)
+            412 STORE_ATTR               8 (state)
+
+124         422 RETURN_CONST             5 (True)
+
+Disassembly of <code object _click at 0x7f6aed7a87b0, file "mode_b.py", line 126>:
+126           0 RESUME                   0
+
+127           2 LOAD_FAST                1 (m)
+              4 POP_JUMP_IF_TRUE         1 (to 8)
+
+128           6 RETURN_CONST             1 (False)
+
+129     >>    8 LOAD_FAST                4 (key)
+             10 POP_JUMP_IF_FALSE       38 (to 88)
+             12 LOAD_GLOBAL              1 (NULL + aim_point)
+             22 LOAD_FAST                4 (key)
+             24 LOAD_FAST                0 (self)
+             26 LOAD_ATTR                2 (templates)
+             46 LOAD_ATTR                5 (NULL|self + get)
+             66 LOAD_FAST                4 (key)
+             68 CALL                     1
+             76 LOAD_FAST                1 (m)
+             78 CALL                     3
+             86 JUMP_FORWARD             9 (to 106)
+        >>   88 LOAD_FAST                1 (m)
+             90 LOAD_CONST               2 (0)
+             92 BINARY_SUBSCR
+             96 LOAD_FAST                1 (m)
+             98 LOAD_CONST               3 (1)
+            100 BINARY_SUBSCR
+            104 BUILD_TUPLE              2
+        >>  106 UNPACK_SEQUENCE          2
+            110 STORE_FAST               5 (x)
+            112 STORE_FAST               6 (y)
+
+130         114 LOAD_FAST                0 (self)
+            116 LOAD_ATTR                6 (ctrl)
+            136 LOAD_ATTR                9 (NULL|self + click)
+            156 LOAD_FAST                5 (x)
+            158 LOAD_FAST                2 (ox)
+            160 BINARY_OP                0 (+)
+            164 LOAD_FAST                6 (y)
+            166 LOAD_FAST                3 (oy)
+            168 BINARY_OP                0 (+)
+            172 CALL                     2
+            180 RETURN_VALUE
+
+Disassembly of <code object _press_esc at 0x7f6af1f83360, file "mode_b.py", line 132>:
+132           0 RESUME                   0
+
+133           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (ctrl)
+             24 LOAD_ATTR                3 (NULL|self + press)
+             44 LOAD_CONST               1 ('esc')
+             46 CALL                     1
+             54 POP_TOP
+
+134          56 LOAD_FAST                1 (now)
+             58 LOAD_FAST                0 (self)
+             60 STORE_ATTR               2 (_t_esc)
+
+135          70 LOAD_FAST                2 (first)
+             72 POP_JUMP_IF_FALSE        8 (to 90)
+             74 LOAD_CONST               2 (1)
+             76 LOAD_FAST                0 (self)
+             78 STORE_ATTR               3 (_esc_tries)
+             88 RETURN_CONST             0 (None)
+        >>   90 LOAD_FAST                0 (self)
+             92 LOAD_ATTR                6 (_esc_tries)
+            112 LOAD_CONST               2 (1)
+            114 BINARY_OP                0 (+)
+            118 LOAD_FAST                0 (self)
+            120 STORE_ATTR               3 (_esc_tries)
+            130 RETURN_CONST             0 (None)
+
+Disassembly of <code object _enter_countdown at 0x17a7bc40, file "mode_b.py", line 137>:
+137           0 RESUME                   0
+
+138           2 LOAD_GLOBAL              0 (State)
+             12 LOAD_ATTR                2 (B_COUNTDOWN)
+             32 LOAD_FAST                0 (self)
+             34 STORE_ATTR               2 (state)
+
+139          44 LOAD_FAST                1 (now)
+             46 LOAD_FAST                0 (self)
+             48 STORE_ATTR               3 (_t0)
+
+140          58 LOAD_CONST               0 (None)
+             60 LOAD_FAST                0 (self)
+             62 STORE_ATTR               4 (_load_since)
+
+141          72 LOAD_CONST               1 (False)
+             74 LOAD_FAST                0 (self)
+             76 STORE_ATTR               5 (_space_locked)
+
+142          86 LOAD_FAST                0 (self)
+             88 LOAD_ATTR               13 (NULL|self + _wait_s)
+            108 CALL                     0
+            116 STORE_FAST               4 (base)
+
+143         118 LOAD_GLOBAL             15 (NULL + config)
+            128 LOAD_ATTR               16 (get_jittered_wait)
+            148 LOAD_FAST                4 (base)
+            150 LOAD_FAST                0 (self)
+            152 LOAD_ATTR               18 (s)
+            172 CALL                     2
+            180 STORE_FAST               5 (w)
+
+144         182 LOAD_FAST                4 (base)
+            184 LOAD_CONST               2 (0)
+            186 COMPARE_OP              68 (>)
+            190 POP_JUMP_IF_FALSE        5 (to 202)
+            192 LOAD_FAST                5 (w)
+            194 LOAD_FAST                4 (base)
+            196 BINARY_OP               11 (/)
+            200 JUMP_FORWARD             1 (to 204)
+        >>  202 LOAD_CONST               3 (1.0)
+        >>  204 LOAD_FAST                0 (self)
+            206 STORE_ATTR              10 (_wait_k)
+
+145         216 LOAD_GLOBAL             23 (NULL + getattr)
+            226 LOAD_FAST                0 (self)
+            228 LOAD_ATTR               18 (s)
+            248 LOAD_CONST               4 ('jitter_enabled')
+            250 LOAD_CONST               1 (False)
+            252 CALL                     3
+            260 POP_JUMP_IF_FALSE       65 (to 392)
+
+146         262 LOAD_GLOBAL             15 (NULL + config)
+            272 LOAD_ATTR               24 (jitter_range)
+            292 LOAD_FAST                4 (base)
+            294 LOAD_FAST                0 (self)
+            296 LOAD_ATTR               18 (s)
+            316 CALL                     2
+            324 UNPACK_SEQUENCE          2
+            328 STORE_FAST               6 (lo)
+            330 STORE_FAST               7 (hi)
+
+147         332 LOAD_FAST                0 (self)
+            334 LOAD_ATTR               27 (NULL|self + log)
+            354 LOAD_CONST               5 ('[jitter] waiting for ')
+            356 LOAD_FAST                5 (w)
+            358 LOAD_CONST               6 ('.1f')
+            360 FORMAT_VALUE             4 (with format)
+            362 LOAD_CONST               7 ('s (range: ')
+            364 LOAD_FAST                6 (lo)
+            366 LOAD_CONST               8 ('.0f')
+            368 FORMAT_VALUE             4 (with format)
+            370 LOAD_CONST               9 ('s-')
+            372 LOAD_FAST                7 (hi)
+            374 LOAD_CONST               8 ('.0f')
+            376 FORMAT_VALUE             4 (with format)
+            378 LOAD_CONST              10 ('s)')
+            380 BUILD_STRING             7
+            382 CALL                     1
+            390 POP_TOP
+
+148     >>  392 LOAD_CONST              11 ((0.0, 0, False, 0))
+            394 UNPACK_SEQUENCE          4
+            398 LOAD_FAST                0 (self)
+            400 STORE_ATTR              14 (_squad_next)
+            410 LOAD_FAST                0 (self)
+            412 STORE_ATTR              15 (_squad_low_n)
+            422 LOAD_FAST                0 (self)
+            424 STORE_ATTR              16 (_squad_hit)
+            434 LOAD_FAST                0 (self)
+            436 STORE_ATTR              17 (squad_last)
+
+149         446 LOAD_GLOBAL             37 (NULL + StepResult)
+            456 LOAD_FAST                0 (self)
+            458 LOAD_ATTR                4 (state)
+            478 LOAD_FAST                2 (score)
+            480 LOAD_CONST               1 (False)
+            482 LOAD_FAST                3 (note)
+            484 CALL                     4
+            492 RETURN_VALUE
+
+Disassembly of <code object step at 0x17a86ed0, file "mode_b.py", line 152>:
+              0 MAKE_CELL                0 (self)
+              2 MAKE_CELL                1 (frame)
+
+152           4 RESUME                   0
+
+153           6 LOAD_DEREF               0 (self)
+              8 LOAD_ATTR                0 (state)
+             28 LOAD_GLOBAL              2 (State)
+             38 LOAD_ATTR                4 (IDLE)
+             58 IS_OP                    0
+             60 POP_JUMP_IF_FALSE       23 (to 108)
+
+154          62 LOAD_GLOBAL              7 (NULL + StepResult)
+             72 LOAD_DEREF               0 (self)
+             74 LOAD_ATTR                0 (state)
+             94 LOAD_CONST               1 ('idle')
+             96 KW_NAMES                 2 (('note',))
+             98 CALL                     2
+            106 RETURN_VALUE
+
+155     >>  108 LOAD_DEREF               0 (self)
+            110 LOAD_ATTR                8 (cal)
+            130 LOAD_ATTR               11 (NULL|self + check)
+            150 LOAD_DEREF               0 (self)
+            152 LOAD_ATTR                0 (state)
+            172 CALL                     1
+            180 POP_TOP
+
+156         182 LOAD_DEREF               0 (self)
+            184 LOAD_ATTR                8 (cal)
+            204 LOAD_ATTR               13 (NULL|self + judge)
+            224 LOAD_CLOSURE             1 (frame)
+            226 LOAD_CLOSURE             0 (self)
+            228 BUILD_TUPLE              2
+            230 LOAD_CONST               3 (<code object <lambda> at 0x7f6af1f3df70, file "mode_b.py", line 156>)
+            232 MAKE_FUNCTION            8 (closure)
+            234 CALL                     1
+            242 STORE_FAST               4 (j)
+
+157         244 LOAD_FAST                4 (j)
+            246 POP_JUMP_IF_NONE        52 (to 352)
+            248 LOAD_FAST                4 (j)
+            250 LOAD_CONST               4 (0)
+            252 BINARY_SUBSCR
+            256 LOAD_CONST               5 ('fail')
+            258 COMPARE_OP              40 (==)
+            262 POP_JUMP_IF_FALSE       44 (to 352)
+
+158         264 LOAD_FAST                4 (j)
+            266 LOAD_CONST               6 (1)
+            268 BINARY_SUBSCR
+            272 LOAD_CONST               7 ('prev')
+            274 BINARY_SUBSCR
+            278 LOAD_DEREF               0 (self)
+            280 STORE_ATTR               0 (state)
+
+159         290 LOAD_DEREF               0 (self)
+            292 COPY                     1
+            294 LOAD_ATTR               14 (loops)
+            314 LOAD_FAST                4 (j)
+            316 LOAD_CONST               6 (1)
+            318 BINARY_SUBSCR
+            322 LOAD_CONST               8 ('fin')
+            324 BINARY_SUBSCR
+            328 POP_JUMP_IF_FALSE        2 (to 334)
+            330 LOAD_CONST               6 (1)
+            332 JUMP_FORWARD             1 (to 336)
+        >>  334 LOAD_CONST               4 (0)
+        >>  336 BINARY_OP               23 (-=)
+            340 SWAP                     2
+            342 STORE_ATTR               7 (loops)
+
+160     >>  352 LOAD_GLOBAL             17 (NULL + visible_rewards)
+            362 LOAD_DEREF               1 (frame)
+            364 LOAD_DEREF               0 (self)
+            366 LOAD_ATTR               18 (templates)
+            386 LOAD_DEREF               0 (self)
+            388 LOAD_ATTR               20 (s)
+            408 CALL                     3
+            416 STORE_FAST               5 (seen)
+
+161         418 LOAD_DEREF               0 (self)
+            420 LOAD_ATTR               23 (NULL|self + _step)
+            440 LOAD_DEREF               1 (frame)
+            442 LOAD_FAST                2 (ox)
+            444 LOAD_FAST                3 (oy)
+            446 CALL                     3
+            454 STORE_FAST               6 (r)
+
+162         456 LOAD_DEREF               0 (self)
+            458 LOAD_ATTR               24 (rewards)
+            478 LOAD_ATTR               27 (NULL|self + update)
+            498 LOAD_FAST                6 (r)
+            500 LOAD_ATTR               28 (clicked)
+            520 POP_JUMP_IF_FALSE       12 (to 546)
+            522 LOAD_FAST                6 (r)
+            524 LOAD_ATTR               30 (key)
+            544 JUMP_FORWARD             1 (to 548)
+        >>  546 LOAD_CONST               9 ('')
+        >>  548 LOAD_FAST                5 (seen)
+            550 CALL                     2
+            558 POP_TOP
+
+163         560 LOAD_FAST                6 (r)
+            562 LOAD_ATTR               28 (clicked)
+            582 POP_JUMP_IF_FALSE       26 (to 636)
+
+164         584 LOAD_DEREF               0 (self)
+            586 LOAD_ATTR               32 (fallback)
+            606 LOAD_ATTR               35 (NULL|self + reset)
+            626 CALL                     0
+            634 POP_TOP
+
+165     >>  636 LOAD_FAST                6 (r)
+            638 LOAD_ATTR               28 (clicked)
+            658 POP_JUMP_IF_FALSE       41 (to 742)
+            660 LOAD_FAST                6 (r)
+            662 LOAD_ATTR               30 (key)
+            682 LOAD_GLOBAL             36 (REWARD_KEYS)
+            692 CONTAINS_OP              0
+            694 POP_JUMP_IF_FALSE       23 (to 742)
+
+166         696 LOAD_GLOBAL             39 (NULL + note_claim)
+            706 LOAD_DEREF               0 (self)
+            708 LOAD_FAST                6 (r)
+            710 LOAD_ATTR               30 (key)
+            730 LOAD_DEREF               1 (frame)
+            732 CALL                     3
+            740 POP_TOP
+
+167     >>  742 LOAD_FAST                6 (r)
+            744 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6af1f3df70, file "mode_b.py", line 156>:
+              0 COPY_FREE_VARS           2
+
+156           2 RESUME                   0
+              4 LOAD_GLOBAL              1 (NULL + still_visible)
+             14 LOAD_DEREF               3 (frame)
+             16 LOAD_DEREF               4 (self)
+             18 LOAD_ATTR                2 (templates)
+             38 LOAD_ATTR                5 (NULL|self + get)
+             58 LOAD_FAST                0 (k)
+             60 CALL                     1
+             68 LOAD_FAST                1 (thr)
+             70 LOAD_FAST                2 (pos)
+             72 LOAD_DEREF               4 (self)
+             74 LOAD_ATTR                6 (s)
+             94 LOAD_ATTR                8 (scales)
+            114 CALL                     5
+            122 RETURN_VALUE
+
+Disassembly of <code object _step at 0x17a7c010, file "mode_b.py", line 169>:
+169           0 RESUME                   0
+
+170           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (state)
+             24 STORE_FAST               4 (st)
+
+171          26 LOAD_FAST                0 (self)
+             28 LOAD_ATTR                3 (NULL|self + _clock)
+             48 CALL                     0
+             56 STORE_FAST               5 (now)
+
+172          58 LOAD_FAST                4 (st)
+             60 LOAD_GLOBAL              4 (State)
+             70 LOAD_ATTR                6 (B_COUNTDOWN)
+             90 IS_OP                    0
+             92 POP_JUMP_IF_FALSE       20 (to 134)
+
+173          94 LOAD_FAST                0 (self)
+             96 LOAD_ATTR                9 (NULL|self + _countdown)
+            116 LOAD_FAST                1 (frame)
+            118 LOAD_FAST                5 (now)
+            120 LOAD_FAST                2 (ox)
+            122 LOAD_FAST                3 (oy)
+            124 CALL                     4
+            132 RETURN_VALUE
+
+174     >>  134 LOAD_FAST                4 (st)
+            136 LOAD_GLOBAL              4 (State)
+            146 LOAD_ATTR               10 (B_MENU)
+            166 IS_OP                    0
+            168 POP_JUMP_IF_FALSE       20 (to 210)
+
+175         170 LOAD_FAST                0 (self)
+            172 LOAD_ATTR               13 (NULL|self + _menu)
+            192 LOAD_FAST                1 (frame)
+            194 LOAD_FAST                5 (now)
+            196 LOAD_FAST                2 (ox)
+            198 LOAD_FAST                3 (oy)
+            200 CALL                     4
+            208 RETURN_VALUE
+
+176     >>  210 LOAD_FAST                4 (st)
+            212 LOAD_GLOBAL              4 (State)
+            222 LOAD_ATTR               14 (B_WAIT_MATCH)
+            242 IS_OP                    0
+            244 POP_JUMP_IF_FALSE       20 (to 286)
+
+177         246 LOAD_FAST                0 (self)
+            248 LOAD_ATTR               17 (NULL|self + _loading)
+            268 LOAD_FAST                1 (frame)
+            270 LOAD_FAST                5 (now)
+            272 LOAD_FAST                2 (ox)
+            274 LOAD_FAST                3 (oy)
+            276 CALL                     4
+            284 RETURN_VALUE
+
+178     >>  286 LOAD_CONST               0 (None)
+            288 LOAD_FAST                0 (self)
+            290 STORE_ATTR               9 (_load_since)
+
+179         300 LOAD_FAST                0 (self)
+            302 LOAD_ATTR               21 (NULL|self + _lobby)
+            322 LOAD_FAST                1 (frame)
+            324 LOAD_FAST                5 (now)
+            326 LOAD_FAST                2 (ox)
+            328 LOAD_FAST                3 (oy)
+            330 CALL                     4
+            338 RETURN_VALUE
+
+Disassembly of <code object _lobby at 0x17a80b60, file "mode_b.py", line 181>:
+181           0 RESUME                   0
+
+182           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (ctrl)
+             24 LOAD_ATTR                3 (NULL|self + ready)
+             44 CALL                     0
+             52 POP_JUMP_IF_FALSE       96 (to 246)
+
+183          54 LOAD_FAST                0 (self)
+             56 LOAD_ATTR                4 (modefix)
+             76 LOAD_ATTR                7 (NULL|self + poll)
+             96 LOAD_FAST                1 (frame)
+             98 CALL                     1
+            106 STORE_FAST               5 (fx)
+
+184         108 LOAD_FAST                5 (fx)
+            110 POP_JUMP_IF_FALSE       67 (to 246)
+            112 LOAD_FAST                0 (self)
+            114 LOAD_ATTR                0 (ctrl)
+            134 LOAD_ATTR                9 (NULL|self + click)
+            154 LOAD_FAST                5 (fx)
+            156 LOAD_CONST               1 (0)
+            158 BINARY_SUBSCR
+            162 LOAD_FAST                3 (ox)
+            164 BINARY_OP                0 (+)
+            168 LOAD_FAST                5 (fx)
+            170 LOAD_CONST               2 (1)
+            172 BINARY_SUBSCR
+            176 LOAD_FAST                4 (oy)
+            178 BINARY_OP                0 (+)
+            182 CALL                     2
+            190 POP_JUMP_IF_FALSE       27 (to 246)
+
+185         192 LOAD_GLOBAL             11 (NULL + StepResult)
+            202 LOAD_FAST                0 (self)
+            204 LOAD_ATTR               12 (state)
+            224 LOAD_CONST               3 (0.0)
+            226 LOAD_CONST               4 (True)
+            228 LOAD_FAST                5 (fx)
+            230 LOAD_CONST               5 (2)
+            232 BINARY_SUBSCR
+            236 CALL                     4
+            244 RETURN_VALUE
+
+186     >>  246 LOAD_FAST                0 (self)
+            248 LOAD_ATTR               15 (NULL|self + _find)
+            268 LOAD_CONST               6 ('play')
+            270 LOAD_FAST                1 (frame)
+            272 CALL                     2
+            280 UNPACK_SEQUENCE          2
+            284 STORE_FAST               6 (m)
+            286 STORE_FAST               7 (play_score)
+
+187         288 LOAD_FAST                0 (self)
+            290 LOAD_ATTR               17 (NULL|self + _click)
+            310 LOAD_FAST                6 (m)
+            312 LOAD_FAST                3 (ox)
+            314 LOAD_FAST                4 (oy)
+            316 LOAD_CONST               6 ('play')
+            318 CALL                     4
+            326 POP_JUMP_IF_FALSE       45 (to 418)
+
+188         328 LOAD_GLOBAL             18 (State)
+            338 LOAD_ATTR               20 (B_WAIT_MATCH)
+            358 LOAD_FAST                0 (self)
+            360 STORE_ATTR               6 (state)
+
+189         370 LOAD_GLOBAL             11 (NULL + StepResult)
+            380 LOAD_FAST                0 (self)
+            382 LOAD_ATTR               12 (state)
+            402 LOAD_FAST                7 (play_score)
+            404 LOAD_CONST               4 (True)
+            406 LOAD_CONST               7 ('clicked play')
+            408 CALL                     4
+            416 RETURN_VALUE
+
+190     >>  418 LOAD_GLOBAL             22 (POPUP_KEYS)
+            428 GET_ITER
+        >>  430 FOR_ITER                73 (to 580)
+            434 STORE_FAST               8 (key)
+
+191         436 LOAD_FAST                0 (self)
+            438 LOAD_ATTR               15 (NULL|self + _find)
+            458 LOAD_FAST                8 (key)
+            460 LOAD_FAST                1 (frame)
+            462 CALL                     2
+            470 UNPACK_SEQUENCE          2
+            474 STORE_FAST               6 (m)
+            476 STORE_FAST               9 (score)
+
+192         478 LOAD_FAST                0 (self)
+            480 LOAD_ATTR               17 (NULL|self + _click)
+            500 LOAD_FAST                6 (m)
+            502 LOAD_FAST                3 (ox)
+            504 LOAD_FAST                4 (oy)
+            506 CALL                     3
+            514 POP_JUMP_IF_TRUE         1 (to 518)
+            516 JUMP_BACKWARD           44 (to 430)
+
+193     >>  518 LOAD_GLOBAL             11 (NULL + StepResult)
+            528 LOAD_FAST                0 (self)
+            530 LOAD_ATTR               12 (state)
+            550 LOAD_FAST                9 (score)
+            552 LOAD_CONST               4 (True)
+            554 LOAD_CONST               8 ('clicked ')
+            556 LOAD_FAST                8 (key)
+            558 FORMAT_VALUE             0
+            560 LOAD_CONST               9 (' (stay)')
+            562 BUILD_STRING             3
+            564 LOAD_FAST                8 (key)
+            566 CALL                     5
+            574 SWAP                     2
+            576 POP_TOP
+            578 RETURN_VALUE
+
+190     >>  580 END_FOR
+
+194         582 LOAD_FAST                0 (self)
+            584 LOAD_ATTR               24 (survey)
+            604 LOAD_ATTR                7 (NULL|self + poll)
+            624 LOAD_FAST                1 (frame)
+            626 CALL                     1
+            634 STORE_FAST              10 (pt)
+
+195         636 LOAD_FAST               10 (pt)
+            638 POP_JUMP_IF_FALSE       65 (to 770)
+            640 LOAD_FAST                0 (self)
+            642 LOAD_ATTR                0 (ctrl)
+            662 LOAD_ATTR                9 (NULL|self + click)
+            682 LOAD_FAST               10 (pt)
+            684 LOAD_CONST               1 (0)
+            686 BINARY_SUBSCR
+            690 LOAD_FAST                3 (ox)
+            692 BINARY_OP                0 (+)
+            696 LOAD_FAST               10 (pt)
+            698 LOAD_CONST               2 (1)
+            700 BINARY_SUBSCR
+            704 LOAD_FAST                4 (oy)
+            706 BINARY_OP                0 (+)
+            710 CALL                     2
+            718 POP_JUMP_IF_FALSE       25 (to 770)
+
+196         720 LOAD_GLOBAL             11 (NULL + StepResult)
+            730 LOAD_FAST                0 (self)
+            732 LOAD_ATTR               12 (state)
+            752 LOAD_CONST               3 (0.0)
+            754 LOAD_CONST               4 (True)
+            756 LOAD_CONST              10 ('clicked survey skip (stay)')
+            758 LOAD_CONST              11 ('survey')
+            760 CALL                     5
+            768 RETURN_VALUE
+
+198     >>  770 LOAD_FAST                0 (self)
+            772 LOAD_ATTR               15 (NULL|self + _find)
+            792 LOAD_CONST              12 ('menu_return')
+            794 LOAD_FAST                1 (frame)
+            796 CALL                     2
+            804 UNPACK_SEQUENCE          2
+            808 STORE_FAST               6 (m)
+            810 STORE_FAST               9 (score)
+
+199         812 LOAD_FAST                0 (self)
+            814 LOAD_ATTR               17 (NULL|self + _click)
+            834 LOAD_FAST                6 (m)
+            836 LOAD_FAST                3 (ox)
+            838 LOAD_FAST                4 (oy)
+            840 CALL                     3
+            848 POP_JUMP_IF_FALSE       24 (to 898)
+
+200         850 LOAD_GLOBAL             11 (NULL + StepResult)
+            860 LOAD_FAST                0 (self)
+            862 LOAD_ATTR               12 (state)
+            882 LOAD_FAST                9 (score)
+            884 LOAD_CONST               4 (True)
+            886 LOAD_CONST              13 ('clicked menu_return (retry)')
+            888 CALL                     4
+            896 RETURN_VALUE
+
+202     >>  898 LOAD_FAST                0 (self)
+            900 LOAD_ATTR               15 (NULL|self + _find)
+            920 LOAD_CONST              14 ('hud')
+            922 LOAD_FAST                1 (frame)
+            924 CALL                     2
+            932 UNPACK_SEQUENCE          2
+            936 STORE_FAST               6 (m)
+            938 STORE_FAST               9 (score)
+
+203         940 LOAD_FAST                6 (m)
+            942 POP_JUMP_IF_FALSE       19 (to 982)
+
+204         944 LOAD_FAST                0 (self)
+            946 LOAD_ATTR               27 (NULL|self + _enter_countdown)
+            966 LOAD_FAST                2 (now)
+            968 LOAD_FAST                9 (score)
+            970 LOAD_CONST              15 ('island detected')
+            972 CALL                     3
+            980 RETURN_VALUE
+
+205     >>  982 LOAD_FAST                0 (self)
+            984 LOAD_ATTR               29 (NULL|self + _calibrate)
+           1004 LOAD_FAST                1 (frame)
+           1006 LOAD_CONST               6 ('play')
+           1008 LOAD_FAST                7 (play_score)
+           1010 LOAD_FAST                3 (ox)
+           1012 LOAD_FAST                4 (oy)
+           1014 LOAD_GLOBAL             18 (State)
+           1024 LOAD_ATTR               20 (B_WAIT_MATCH)
+           1044 CALL                     6
+           1052 POP_JUMP_IF_FALSE       24 (to 1102)
+
+206        1054 LOAD_GLOBAL             11 (NULL + StepResult)
+           1064 LOAD_FAST                0 (self)
+           1066 LOAD_ATTR               12 (state)
+           1086 LOAD_FAST                7 (play_score)
+           1088 LOAD_CONST               4 (True)
+           1090 LOAD_CONST              16 ('auto-calibrate test click on play')
+           1092 CALL                     4
+           1100 RETURN_VALUE
+
+207     >> 1102 LOAD_FAST                0 (self)
+           1104 LOAD_ATTR               30 (fallback)
+           1124 LOAD_ATTR                7 (NULL|self + poll)
+           1144 LOAD_FAST                1 (frame)
+           1146 CALL                     1
+           1154 STORE_FAST              10 (pt)
+
+208        1156 LOAD_FAST               10 (pt)
+           1158 POP_JUMP_IF_FALSE       65 (to 1290)
+           1160 LOAD_FAST                0 (self)
+           1162 LOAD_ATTR                0 (ctrl)
+           1182 LOAD_ATTR                9 (NULL|self + click)
+           1202 LOAD_FAST               10 (pt)
+           1204 LOAD_CONST               1 (0)
+           1206 BINARY_SUBSCR
+           1210 LOAD_FAST                3 (ox)
+           1212 BINARY_OP                0 (+)
+           1216 LOAD_FAST               10 (pt)
+           1218 LOAD_CONST               2 (1)
+           1220 BINARY_SUBSCR
+           1224 LOAD_FAST                4 (oy)
+           1226 BINARY_OP                0 (+)
+           1230 CALL                     2
+           1238 POP_JUMP_IF_FALSE       25 (to 1290)
+
+209        1240 LOAD_GLOBAL             11 (NULL + StepResult)
+           1250 LOAD_FAST                0 (self)
+           1252 LOAD_ATTR               12 (state)
+           1272 LOAD_CONST               3 (0.0)
+           1274 LOAD_CONST               4 (True)
+           1276 LOAD_CONST              17 ('clicked reward button (fallback)')
+           1278 LOAD_CONST              18 ('claim_single')
+           1280 CALL                     5
+           1288 RETURN_VALUE
+
+210     >> 1290 LOAD_GLOBAL             11 (NULL + StepResult)
+           1300 LOAD_FAST                0 (self)
+           1302 LOAD_ATTR               12 (state)
+           1322 LOAD_FAST                7 (play_score)
+           1324 LOAD_CONST              19 (False)
+           1326 LOAD_CONST              20 ('waiting play')
+           1328 CALL                     4
+           1336 RETURN_VALUE
+
+Disassembly of <code object _loading at 0x17a87b70, file "mode_b.py", line 212>:
+212           0 RESUME                   0
+
+213           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                1 (NULL|self + _find)
+             24 LOAD_CONST               1 ('hud')
+             26 LOAD_FAST                1 (frame)
+             28 CALL                     2
+             36 UNPACK_SEQUENCE          2
+             40 STORE_FAST               5 (m)
+             42 STORE_FAST               6 (hud_score)
+
+214          44 LOAD_FAST                5 (m)
+             46 POP_JUMP_IF_FALSE       19 (to 86)
+
+215          48 LOAD_FAST                0 (self)
+             50 LOAD_ATTR                3 (NULL|self + _enter_countdown)
+             70 LOAD_FAST                2 (now)
+             72 LOAD_FAST                6 (hud_score)
+             74 LOAD_CONST               2 ('island detected')
+             76 CALL                     3
+             84 RETURN_VALUE
+
+216     >>   86 LOAD_FAST                0 (self)
+             88 LOAD_ATTR                1 (NULL|self + _find)
+            108 LOAD_CONST               3 ('play')
+            110 LOAD_FAST                1 (frame)
+            112 CALL                     2
+            120 UNPACK_SEQUENCE          2
+            124 STORE_FAST               5 (m)
+            126 STORE_FAST               7 (score)
+
+217         128 LOAD_FAST                0 (self)
+            130 LOAD_ATTR                5 (NULL|self + _click)
+            150 LOAD_FAST                5 (m)
+            152 LOAD_FAST                3 (ox)
+            154 LOAD_FAST                4 (oy)
+            156 LOAD_CONST               3 ('play')
+            158 CALL                     4
+            166 POP_JUMP_IF_FALSE       31 (to 230)
+
+218         168 LOAD_CONST               0 (None)
+            170 LOAD_FAST                0 (self)
+            172 STORE_ATTR               3 (_load_since)
+
+219         182 LOAD_GLOBAL              9 (NULL + StepResult)
+            192 LOAD_FAST                0 (self)
+            194 LOAD_ATTR               10 (state)
+            214 LOAD_FAST                7 (score)
+            216 LOAD_CONST               4 (True)
+            218 LOAD_CONST               5 ('clicked play (retry)')
+            220 CALL                     4
+            228 RETURN_VALUE
+
+220     >>  230 LOAD_FAST                5 (m)
+            232 POP_JUMP_IF_TRUE        85 (to 404)
+
+221         234 LOAD_FAST                0 (self)
+            236 LOAD_ATTR                6 (_load_since)
+            256 POP_JUMP_IF_NOT_NONE     8 (to 274)
+
+222         258 LOAD_FAST                2 (now)
+            260 LOAD_FAST                0 (self)
+            262 STORE_ATTR               3 (_load_since)
+            272 JUMP_FORWARD            65 (to 404)
+
+223     >>  274 LOAD_FAST                2 (now)
+            276 LOAD_FAST                0 (self)
+            278 LOAD_ATTR                6 (_load_since)
+            298 BINARY_OP               10 (-)
+            302 LOAD_GLOBAL             12 (LOAD_FALLBACK_S)
+            312 COMPARE_OP              92 (>=)
+            316 POP_JUMP_IF_FALSE       43 (to 404)
+
+224         318 LOAD_FAST                0 (self)
+            320 LOAD_ATTR               15 (NULL|self + log)
+            340 LOAD_CONST               6 ('island HUD not recognised: assuming the island')
+            342 CALL                     1
+            350 POP_TOP
+
+225         352 LOAD_CONST               0 (None)
+            354 LOAD_FAST                0 (self)
+            356 STORE_ATTR               3 (_load_since)
+
+226         366 LOAD_FAST                0 (self)
+            368 LOAD_ATTR                3 (NULL|self + _enter_countdown)
+            388 LOAD_FAST                2 (now)
+            390 LOAD_FAST                6 (hud_score)
+            392 LOAD_CONST               7 ('island assumed (HUD not recognised)')
+            394 CALL                     3
+            402 RETURN_VALUE
+
+227     >>  404 LOAD_GLOBAL              9 (NULL + StepResult)
+            414 LOAD_FAST                0 (self)
+            416 LOAD_ATTR               10 (state)
+            436 LOAD_FAST                6 (hud_score)
+            438 LOAD_CONST               8 (False)
+            440 LOAD_CONST               9 ('waiting island')
+            442 CALL                     4
+            450 RETURN_VALUE
+
+Disassembly of <code object _squad_small at 0x17a6cf10, file "mode_b.py", line 229>:
+229           0 RESUME                   0
+
+230           2 NOP
+
+232           4 NOP
+
+233           6 LOAD_GLOBAL              1 (NULL + getattr)
+             16 LOAD_FAST                0 (self)
+             18 LOAD_ATTR                2 (s)
+             38 LOAD_CONST               1 ('squad_check_enabled')
+             40 LOAD_CONST               2 (False)
+             42 CALL                     3
+             50 POP_JUMP_IF_TRUE         1 (to 54)
+
+234          52 RETURN_CONST             2 (False)
+
+235     >>   54 LOAD_FAST                0 (self)
+             56 LOAD_ATTR                4 (_squad_hit)
+             76 POP_JUMP_IF_FALSE        1 (to 80)
+
+236          78 RETURN_CONST             3 (True)
+
+237     >>   80 LOAD_FAST                2 (now)
+             82 LOAD_FAST                0 (self)
+             84 LOAD_ATTR                6 (_t0)
+            104 BINARY_OP               10 (-)
+            108 LOAD_GLOBAL              8 (SQUAD_START_S)
+            118 COMPARE_OP               2 (<)
+            122 POP_JUMP_IF_TRUE        15 (to 154)
+            124 LOAD_FAST                2 (now)
+            126 LOAD_FAST                0 (self)
+            128 LOAD_ATTR               10 (_squad_next)
+            148 COMPARE_OP               2 (<)
+            152 POP_JUMP_IF_FALSE        1 (to 156)
+
+238     >>  154 RETURN_CONST             2 (False)
+
+239     >>  156 LOAD_FAST                2 (now)
+            158 LOAD_GLOBAL             12 (SQUAD_EVERY_S)
+            168 BINARY_OP                0 (+)
+            172 LOAD_FAST                0 (self)
+            174 STORE_ATTR               5 (_squad_next)
+
+240         184 LOAD_FAST                0 (self)
+            186 LOAD_ATTR               15 (NULL|self + _find)
+            206 LOAD_CONST               4 ('hud')
+            208 LOAD_FAST                1 (frame)
+            210 CALL                     2
+            218 LOAD_CONST               5 (0)
+            220 BINARY_SUBSCR
+            224 POP_JUMP_IF_TRUE         1 (to 228)
+
+241         226 RETURN_CONST             2 (False)
+
+242     >>  228 LOAD_GLOBAL             17 (NULL + squad_bar)
+            238 LOAD_ATTR               18 (squad_size)
+            258 LOAD_FAST                1 (frame)
+            260 CALL                     1
+            268 LOAD_FAST                0 (self)
+            270 STORE_ATTR              10 (squad_last)
+
+243         280 LOAD_FAST                0 (self)
+            282 LOAD_ATTR               20 (squad_last)
+            302 LOAD_GLOBAL             22 (SQUAD_MAX_SIZE)
+            312 COMPARE_OP              26 (<=)
+            316 POP_JUMP_IF_FALSE       15 (to 348)
+            318 LOAD_FAST                0 (self)
+            320 LOAD_ATTR               24 (_squad_low_n)
+            340 LOAD_CONST               6 (1)
+            342 BINARY_OP                0 (+)
+            346 JUMP_FORWARD             1 (to 350)
+        >>  348 LOAD_CONST               5 (0)
+        >>  350 LOAD_FAST                0 (self)
+            352 STORE_ATTR              12 (_squad_low_n)
+
+244         362 LOAD_FAST                0 (self)
+            364 LOAD_ATTR               24 (_squad_low_n)
+            384 LOAD_GLOBAL             26 (SQUAD_CONFIRM)
+            394 COMPARE_OP              92 (>=)
+            398 LOAD_FAST                0 (self)
+            400 STORE_ATTR               2 (_squad_hit)
+
+245         410 LOAD_FAST                0 (self)
+            412 LOAD_ATTR                4 (_squad_hit)
+            432 POP_JUMP_IF_FALSE       31 (to 496)
+
+246         434 LOAD_FAST                0 (self)
+            436 LOAD_ATTR               29 (NULL|self + log)
+            456 LOAD_CONST               7 ('squad of ')
+            458 LOAD_FAST                0 (self)
+            460 LOAD_ATTR               20 (squad_last)
+            480 FORMAT_VALUE             0
+            482 LOAD_CONST               8 (': leaving the island')
+            484 BUILD_STRING             3
+            486 CALL                     1
+            494 POP_TOP
+
+247     >>  496 LOAD_FAST                0 (self)
+            498 LOAD_ATTR                4 (_squad_hit)
+            518 RETURN_VALUE
+        >>  520 PUSH_EXC_INFO
+
+248         522 LOAD_GLOBAL             30 (Exception)
+            532 CHECK_EXC_MATCH
+            534 POP_JUMP_IF_FALSE        3 (to 542)
+            536 POP_TOP
+
+249         538 POP_EXCEPT
+            540 RETURN_CONST             2 (False)
+
+248     >>  542 RERAISE                  0
+        >>  544 COPY                     3
+            546 POP_EXCEPT
+            548 RERAISE                  1
+ExceptionTable:
+  6 to 50 -> 520 [0]
+  54 to 76 -> 520 [0]
+  80 to 152 -> 520 [0]
+  156 to 224 -> 520 [0]
+  228 to 516 -> 520 [0]
+  520 to 536 -> 544 [1] lasti
+  542 to 542 -> 544 [1] lasti
+
+Disassembly of <code object _countdown at 0x17a82800, file "mode_b.py", line 251>:
+251           0 RESUME                   0
+
+252           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                1 (NULL|self + _wait_now)
+             24 CALL                     0
+             32 LOAD_FAST                2 (now)
+             34 LOAD_FAST                0 (self)
+             36 LOAD_ATTR                2 (_t0)
+             56 BINARY_OP               10 (-)
+             60 BINARY_OP               10 (-)
+             64 STORE_FAST               5 (remaining)
+
+253          66 LOAD_FAST                5 (remaining)
+             68 LOAD_CONST               1 (0)
+             70 COMPARE_OP              68 (>)
+             74 POP_JUMP_IF_FALSE       71 (to 218)
+             76 LOAD_FAST                0 (self)
+             78 LOAD_ATTR                5 (NULL|self + _squad_small)
+             98 LOAD_FAST                1 (frame)
+            100 LOAD_FAST                2 (now)
+            102 CALL                     2
+            110 POP_JUMP_IF_TRUE        53 (to 218)
+
+254         112 LOAD_GLOBAL              7 (NULL + StepResult)
+            122 LOAD_FAST                0 (self)
+            124 LOAD_ATTR                8 (state)
+            144 LOAD_CONST               2 (0.0)
+            146 LOAD_CONST               3 (False)
+            148 LOAD_CONST               4 ('waiting ')
+            150 LOAD_GLOBAL             11 (NULL + math)
+            160 LOAD_ATTR               12 (ceil)
+            180 LOAD_FAST                5 (remaining)
+            182 LOAD_CONST               5 (10)
+            184 BINARY_OP               11 (/)
+            188 CALL                     1
+            196 LOAD_CONST               5 (10)
+            198 BINARY_OP                5 (*)
+            202 FORMAT_VALUE             0
+            204 LOAD_CONST               6 ('s')
+            206 BUILD_STRING             3
+            208 CALL                     4
+            216 RETURN_VALUE
+
+256     >>  218 LOAD_FAST                0 (self)
+            220 LOAD_ATTR               15 (NULL|self + _find)
+            240 LOAD_CONST               7 ('menu_return')
+            242 LOAD_FAST                1 (frame)
+            244 CALL                     2
+            252 UNPACK_SEQUENCE          2
+            256 STORE_FAST               6 (m)
+            258 STORE_FAST               7 (_)
+
+257         260 LOAD_FAST                6 (m)
+            262 POP_JUMP_IF_TRUE        21 (to 306)
+
+258         264 LOAD_FAST                0 (self)
+            266 LOAD_ATTR               15 (NULL|self + _find)
+            286 LOAD_CONST               8 ('menu_btn')
+            288 LOAD_FAST                1 (frame)
+            290 CALL                     2
+            298 UNPACK_SEQUENCE          2
+            302 STORE_FAST               6 (m)
+            304 STORE_FAST               7 (_)
+
+259     >>  306 LOAD_FAST                6 (m)
+            308 POP_JUMP_IF_FALSE       60 (to 430)
+
+260         310 LOAD_GLOBAL             16 (State)
+            320 LOAD_ATTR               18 (B_MENU)
+            340 LOAD_FAST                2 (now)
+            342 LOAD_CONST               9 (1)
+            344 SWAP                     3
+            346 LOAD_FAST                0 (self)
+            348 STORE_ATTR               4 (state)
+            358 LOAD_FAST                0 (self)
+            360 STORE_ATTR              10 (_t_esc)
+            370 LOAD_FAST                0 (self)
+            372 STORE_ATTR              11 (_esc_tries)
+
+261         382 LOAD_GLOBAL              7 (NULL + StepResult)
+            392 LOAD_FAST                0 (self)
+            394 LOAD_ATTR                8 (state)
+            414 LOAD_CONST               2 (0.0)
+            416 LOAD_CONST               3 (False)
+            418 LOAD_CONST              10 ('menu already open')
+            420 CALL                     4
+            428 RETURN_VALUE
+
+262     >>  430 LOAD_FAST                0 (self)
+            432 LOAD_ATTR               15 (NULL|self + _find)
+            452 LOAD_CONST              11 ('play')
+            454 LOAD_FAST                1 (frame)
+            456 CALL                     2
+            464 UNPACK_SEQUENCE          2
+            468 STORE_FAST               6 (m)
+            470 STORE_FAST               8 (score)
+
+263         472 LOAD_FAST                6 (m)
+            474 POP_JUMP_IF_FALSE       45 (to 566)
+
+264         476 LOAD_GLOBAL             16 (State)
+            486 LOAD_ATTR               24 (B_LOBBY)
+            506 LOAD_FAST                0 (self)
+            508 STORE_ATTR               4 (state)
+
+265         518 LOAD_GLOBAL              7 (NULL + StepResult)
+            528 LOAD_FAST                0 (self)
+            530 LOAD_ATTR                8 (state)
+            550 LOAD_FAST                8 (score)
+            552 LOAD_CONST               3 (False)
+            554 LOAD_CONST              12 ('back in lobby')
+            556 CALL                     4
+            564 RETURN_VALUE
+
+266     >>  566 LOAD_FAST                0 (self)
+            568 LOAD_ATTR               15 (NULL|self + _find)
+            588 LOAD_CONST              13 ('hud')
+            590 LOAD_FAST                1 (frame)
+            592 CALL                     2
+            600 UNPACK_SEQUENCE          2
+            604 STORE_FAST               6 (m)
+            606 STORE_FAST               8 (score)
+
+267         608 LOAD_FAST                6 (m)
+            610 POP_JUMP_IF_TRUE        34 (to 680)
+            612 LOAD_FAST                5 (remaining)
+            614 LOAD_GLOBAL             26 (ESC_GRACE_S)
+            624 UNARY_NEGATIVE
+            626 COMPARE_OP              68 (>)
+            630 POP_JUMP_IF_FALSE       24 (to 680)
+
+268         632 LOAD_GLOBAL              7 (NULL + StepResult)
+            642 LOAD_FAST                0 (self)
+            644 LOAD_ATTR                8 (state)
+            664 LOAD_FAST                8 (score)
+            666 LOAD_CONST               3 (False)
+            668 LOAD_CONST              14 ('island not visible')
+            670 CALL                     4
+            678 RETURN_VALUE
+
+269     >>  680 LOAD_GLOBAL             16 (State)
+            690 LOAD_ATTR               18 (B_MENU)
+            710 LOAD_FAST                0 (self)
+            712 STORE_ATTR               4 (state)
+
+270         722 LOAD_FAST                0 (self)
+            724 LOAD_ATTR               29 (NULL|self + _press_esc)
+            744 LOAD_FAST                2 (now)
+            746 LOAD_CONST              15 (True)
+            748 KW_NAMES                16 (('first',))
+            750 CALL                     2
+            758 POP_TOP
+
+271         760 LOAD_GLOBAL              7 (NULL + StepResult)
+            770 LOAD_FAST                0 (self)
+            772 LOAD_ATTR                8 (state)
+            792 LOAD_FAST                8 (score)
+            794 LOAD_CONST              15 (True)
+            796 LOAD_FAST                0 (self)
+            798 LOAD_ATTR               30 (_squad_hit)
+            818 POP_JUMP_IF_FALSE        6 (to 832)
+            820 LOAD_CONST              17 ('pressed Esc (small squad)')
+            822 CALL                     4
+            830 RETURN_VALUE
+        >>  832 LOAD_CONST              18 ('pressed Esc')
+            834 CALL                     4
+            842 RETURN_VALUE
+
+Disassembly of <code object _menu at 0x17a8d840, file "mode_b.py", line 273>:
+273           0 RESUME                   0
+
+274           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                1 (NULL|self + _find)
+             24 LOAD_CONST               1 ('menu_return')
+             26 LOAD_FAST                1 (frame)
+             28 CALL                     2
+             36 UNPACK_SEQUENCE          2
+             40 STORE_FAST               5 (m)
+             42 STORE_FAST               6 (score)
+
+275          44 LOAD_FAST                6 (score)
+             46 STORE_FAST               7 (ret_score)
+
+276          48 LOAD_FAST                5 (m)
+             50 POP_JUMP_IF_FALSE      109 (to 270)
+
+277          52 LOAD_FAST                0 (self)
+             54 LOAD_ATTR                3 (NULL|self + _click)
+             74 LOAD_FAST                5 (m)
+             76 LOAD_FAST                3 (ox)
+             78 LOAD_FAST                4 (oy)
+             80 CALL                     3
+             88 POP_JUMP_IF_FALSE       66 (to 222)
+
+278          90 LOAD_FAST                0 (self)
+             92 COPY                     1
+             94 LOAD_ATTR                4 (loops)
+            114 LOAD_CONST               2 (1)
+            116 BINARY_OP               13 (+=)
+            120 SWAP                     2
+            122 STORE_ATTR               2 (loops)
+
+279         132 LOAD_GLOBAL              6 (State)
+            142 LOAD_ATTR                8 (B_LOBBY)
+            162 LOAD_FAST                0 (self)
+            164 STORE_ATTR               5 (state)
+
+280         174 LOAD_GLOBAL             13 (NULL + StepResult)
+            184 LOAD_FAST                0 (self)
+            186 LOAD_ATTR               10 (state)
+            206 LOAD_FAST                6 (score)
+            208 LOAD_CONST               3 (True)
+            210 LOAD_CONST               4 ('clicked menu_return')
+            212 CALL                     4
+            220 RETURN_VALUE
+
+281     >>  222 LOAD_GLOBAL             13 (NULL + StepResult)
+            232 LOAD_FAST                0 (self)
+            234 LOAD_ATTR               10 (state)
+            254 LOAD_FAST                6 (score)
+            256 LOAD_CONST               5 (False)
+            258 LOAD_CONST               6 ('menu_return (cooldown)')
+            260 CALL                     4
+            268 RETURN_VALUE
+
+282     >>  270 LOAD_FAST                0 (self)
+            272 LOAD_ATTR                1 (NULL|self + _find)
+            292 LOAD_CONST               7 ('menu_btn')
+            294 LOAD_FAST                1 (frame)
+            296 CALL                     2
+            304 UNPACK_SEQUENCE          2
+            308 STORE_FAST               5 (m)
+            310 STORE_FAST               6 (score)
+
+283         312 LOAD_FAST                5 (m)
+            314 POP_JUMP_IF_FALSE       74 (to 464)
+
+284         316 LOAD_FAST                0 (self)
+            318 LOAD_ATTR                3 (NULL|self + _click)
+            338 LOAD_FAST                5 (m)
+            340 LOAD_FAST                3 (ox)
+            342 LOAD_FAST                4 (oy)
+            344 CALL                     3
+            352 POP_JUMP_IF_FALSE       31 (to 416)
+
+285         354 LOAD_FAST                2 (now)
+            356 LOAD_FAST                0 (self)
+            358 STORE_ATTR               7 (_t_esc)
+
+286         368 LOAD_GLOBAL             13 (NULL + StepResult)
+            378 LOAD_FAST                0 (self)
+            380 LOAD_ATTR               10 (state)
+            400 LOAD_FAST                6 (score)
+            402 LOAD_CONST               3 (True)
+            404 LOAD_CONST               8 ('clicked menu_btn')
+            406 CALL                     4
+            414 RETURN_VALUE
+
+287     >>  416 LOAD_GLOBAL             13 (NULL + StepResult)
+            426 LOAD_FAST                0 (self)
+            428 LOAD_ATTR               10 (state)
+            448 LOAD_FAST                6 (score)
+            450 LOAD_CONST               5 (False)
+            452 LOAD_CONST               9 ('menu_btn (cooldown)')
+            454 CALL                     4
+            462 RETURN_VALUE
+
+288     >>  464 LOAD_FAST                0 (self)
+            466 LOAD_ATTR                1 (NULL|self + _find)
+            486 LOAD_CONST              10 ('play')
+            488 LOAD_FAST                1 (frame)
+            490 CALL                     2
+            498 UNPACK_SEQUENCE          2
+            502 STORE_FAST               5 (m)
+            504 STORE_FAST               6 (score)
+
+289         506 LOAD_FAST                5 (m)
+            508 POP_JUMP_IF_FALSE       45 (to 600)
+
+290         510 LOAD_GLOBAL              6 (State)
+            520 LOAD_ATTR                8 (B_LOBBY)
+            540 LOAD_FAST                0 (self)
+            542 STORE_ATTR               5 (state)
+
+291         552 LOAD_GLOBAL             13 (NULL + StepResult)
+            562 LOAD_FAST                0 (self)
+            564 LOAD_ATTR               10 (state)
+            584 LOAD_FAST                6 (score)
+            586 LOAD_CONST               5 (False)
+            588 LOAD_CONST              11 ('back in lobby')
+            590 CALL                     4
+            598 RETURN_VALUE
+
+292     >>  600 LOAD_FAST                2 (now)
+            602 LOAD_FAST                0 (self)
+            604 LOAD_ATTR               14 (_t_esc)
+            624 BINARY_OP               10 (-)
+            628 LOAD_GLOBAL             16 (MENU_RETRY_S)
+            638 COMPARE_OP              92 (>=)
+            642 POP_JUMP_IF_FALSE       76 (to 796)
+            644 LOAD_FAST                0 (self)
+            646 LOAD_ATTR               18 (_esc_tries)
+            666 LOAD_GLOBAL             20 (MENU_MAX_ESC)
+            676 COMPARE_OP               2 (<)
+            680 POP_JUMP_IF_FALSE       57 (to 796)
+
+293         682 LOAD_FAST                0 (self)
+            684 LOAD_ATTR               23 (NULL|self + _press_esc)
+            704 LOAD_FAST                2 (now)
+            706 LOAD_CONST               5 (False)
+            708 KW_NAMES                12 (('first',))
+            710 CALL                     2
+            718 POP_TOP
+
+294         720 LOAD_GLOBAL             13 (NULL + StepResult)
+            730 LOAD_FAST                0 (self)
+            732 LOAD_ATTR               10 (state)
+            752 LOAD_CONST              13 (0.0)
+            754 LOAD_CONST               3 (True)
+            756 LOAD_CONST              14 ('pressed Esc again (')
+            758 LOAD_FAST                0 (self)
+            760 LOAD_ATTR               18 (_esc_tries)
+            780 FORMAT_VALUE             0
+            782 LOAD_CONST              15 (')')
+            784 BUILD_STRING             3
+            786 CALL                     4
+            794 RETURN_VALUE
+
+295     >>  796 LOAD_FAST                0 (self)
+            798 LOAD_ATTR               18 (_esc_tries)
+            818 LOAD_GLOBAL             20 (MENU_MAX_ESC)
+            828 COMPARE_OP              92 (>=)
+            832 POP_JUMP_IF_FALSE       32 (to 898)
+            834 LOAD_FAST                2 (now)
+            836 LOAD_FAST                0 (self)
+            838 LOAD_ATTR               14 (_t_esc)
+            858 BINARY_OP               10 (-)
+            862 LOAD_CONST              16 (4)
+            864 LOAD_GLOBAL             16 (MENU_RETRY_S)
+            874 BINARY_OP                5 (*)
+            878 COMPARE_OP              92 (>=)
+            882 POP_JUMP_IF_FALSE        7 (to 898)
+
+296         884 LOAD_CONST              17 (0)
+            886 LOAD_FAST                0 (self)
+            888 STORE_ATTR               9 (_esc_tries)
+
+297     >>  898 LOAD_FAST                0 (self)
+            900 LOAD_ATTR               25 (NULL|self + _calibrate)
+            920 LOAD_FAST                1 (frame)
+            922 LOAD_CONST               1 ('menu_return')
+            924 LOAD_FAST                7 (ret_score)
+            926 LOAD_FAST                3 (ox)
+            928 LOAD_FAST                4 (oy)
+            930 LOAD_GLOBAL              6 (State)
+            940 LOAD_ATTR                8 (B_LOBBY)
+            960 LOAD_CONST               3 (True)
+            962 CALL                     7
+            970 POP_JUMP_IF_FALSE       24 (to 1020)
+
+298         972 LOAD_GLOBAL             13 (NULL + StepResult)
+            982 LOAD_FAST                0 (self)
+            984 LOAD_ATTR               10 (state)
+           1004 LOAD_FAST                7 (ret_score)
+           1006 LOAD_CONST               3 (True)
+           1008 LOAD_CONST              18 ('auto-calibrate test click on menu_return')
+           1010 CALL                     4
+           1018 RETURN_VALUE
+
+299     >> 1020 LOAD_GLOBAL             13 (NULL + StepResult)
+           1030 LOAD_FAST                0 (self)
+           1032 LOAD_ATTR               10 (state)
+           1052 LOAD_CONST              13 (0.0)
+           1054 LOAD_CONST               5 (False)
+           1056 LOAD_CONST              19 ('waiting menu')
+           1058 CALL                     4
+           1066 RETURN_VALUE

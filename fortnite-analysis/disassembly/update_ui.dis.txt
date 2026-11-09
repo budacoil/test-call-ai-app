@@ -1,0 +1,1744 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+  5           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (queue)
+             10 STORE_NAME               0 (queue)
+
+  6          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (threading)
+             18 STORE_NAME               1 (threading)
+
+  7          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              2 (tkinter)
+             26 STORE_NAME               3 (tk)
+
+  8          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               1 (None)
+             32 IMPORT_NAME              4 (webbrowser)
+             34 STORE_NAME               4 (webbrowser)
+
+  9          36 LOAD_CONST               0 (0)
+             38 LOAD_CONST               2 (('ttk',))
+             40 IMPORT_NAME              2 (tkinter)
+             42 IMPORT_FROM              5 (ttk)
+             44 STORE_NAME               5 (ttk)
+             46 POP_TOP
+
+ 10          48 LOAD_CONST               0 (0)
+             50 LOAD_CONST               3 (('Optional',))
+             52 IMPORT_NAME              6 (typing)
+             54 IMPORT_FROM              7 (Optional)
+             56 STORE_NAME               7 (Optional)
+             58 POP_TOP
+
+ 12          60 LOAD_CONST               0 (0)
+             62 LOAD_CONST               1 (None)
+             64 IMPORT_NAME              8 (i18n)
+             66 STORE_NAME               8 (i18n)
+
+ 13          68 LOAD_CONST               0 (0)
+             70 LOAD_CONST               4 (('AutoUpdater', 'UpdateError', 'UpdateInfo'))
+             72 IMPORT_NAME              9 (updater)
+             74 IMPORT_FROM             10 (AutoUpdater)
+             76 STORE_NAME              10 (AutoUpdater)
+             78 IMPORT_FROM             11 (UpdateError)
+             80 STORE_NAME              11 (UpdateError)
+             82 IMPORT_FROM             12 (UpdateInfo)
+             84 STORE_NAME              12 (UpdateInfo)
+             86 POP_TOP
+
+ 14          88 LOAD_CONST               0 (0)
+             90 LOAD_CONST               5 (('GITHUB_REPO', '__version__'))
+             92 IMPORT_NAME             13 (version)
+             94 IMPORT_FROM             14 (GITHUB_REPO)
+             96 STORE_NAME              14 (GITHUB_REPO)
+             98 IMPORT_FROM             15 (__version__)
+            100 STORE_NAME              15 (__version__)
+            102 POP_TOP
+
+ 16         104 LOAD_CONST               6 ('upd_err_verify')
+            106 LOAD_CONST               7 ('upd_err_network')
+            108 LOAD_CONST               8 ('upd_err_write')
+            110 LOAD_CONST               9 (('verify', 'network', 'not_writable'))
+            112 BUILD_CONST_KEY_MAP      3
+            114 STORE_NAME              16 (WHY_KEYS)
+
+ 17         116 LOAD_CONST              10 (1500)
+            118 STORE_NAME              17 (AUTO_CHECK_DELAY_MS)
+
+ 20         120 PUSH_NULL
+            122 LOAD_BUILD_CLASS
+            124 LOAD_CONST              11 (<code object UpdateDialog at 0x7f6aed1d3800, file "update_ui.py", line 20>)
+            126 MAKE_FUNCTION            0
+            128 LOAD_CONST              12 ('UpdateDialog')
+            130 CALL                     2
+            138 STORE_NAME              18 (UpdateDialog)
+
+101         140 PUSH_NULL
+            142 LOAD_BUILD_CLASS
+            144 LOAD_CONST              13 (<code object UpdateController at 0x7f6aed1fda70, file "update_ui.py", line 101>)
+            146 MAKE_FUNCTION            0
+            148 LOAD_CONST              14 ('UpdateController')
+            150 CALL                     2
+            158 STORE_NAME              19 (UpdateController)
+            160 RETURN_CONST             1 (None)
+
+Disassembly of <code object UpdateDialog at 0x7f6aed1d3800, file "update_ui.py", line 20>:
+ 20           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('UpdateDialog')
+              8 STORE_NAME               2 (__qualname__)
+
+ 21          10 NOP
+
+ 23          12 LOAD_CONST               1 ('ctl')
+             14 LOAD_CONST               2 ('UpdateController')
+             16 LOAD_CONST               3 ('info')
+             18 LOAD_NAME                3 (UpdateInfo)
+             20 BUILD_TUPLE              4
+             22 LOAD_CONST               4 (<code object __init__ at 0x17a96100, file "update_ui.py", line 23>)
+             24 MAKE_FUNCTION            4 (annotations)
+             26 STORE_NAME               4 (__init__)
+
+ 64          28 LOAD_CONST               5 ('return')
+             30 LOAD_NAME                5 (bool)
+             32 BUILD_TUPLE              2
+             34 LOAD_CONST               6 (<code object alive at 0x7f6aed1c5f70, file "update_ui.py", line 64>)
+             36 MAKE_FUNCTION            4 (annotations)
+             38 STORE_NAME               6 (alive)
+
+ 70          40 LOAD_CONST              16 (('return', None))
+             42 LOAD_CONST               8 (<code object lift at 0x7f6aed1d1a50, file "update_ui.py", line 70>)
+             44 MAKE_FUNCTION            4 (annotations)
+             46 STORE_NAME               7 (lift)
+
+ 74          48 LOAD_CONST               9 ('pct')
+             50 LOAD_NAME                8 (int)
+             52 LOAD_CONST               5 ('return')
+             54 LOAD_CONST               7 (None)
+             56 BUILD_TUPLE              4
+             58 LOAD_CONST              10 (<code object set_progress at 0x7f6aed1fd140, file "update_ui.py", line 74>)
+             60 MAKE_FUNCTION            4 (annotations)
+             62 STORE_NAME               9 (set_progress)
+
+ 78          64 LOAD_CONST              16 (('return', None))
+             66 LOAD_CONST              11 (<code object installing at 0x7f6aed801df0, file "update_ui.py", line 78>)
+             68 MAKE_FUNCTION            4 (annotations)
+             70 STORE_NAME              10 (installing)
+
+ 84          72 LOAD_CONST              16 (('return', None))
+             74 LOAD_CONST              12 (<code object busy at 0x7f6aed7a1e70, file "update_ui.py", line 84>)
+             76 MAKE_FUNCTION            4 (annotations)
+             78 STORE_NAME              11 (busy)
+
+ 89          80 LOAD_CONST              13 ('why')
+             82 LOAD_NAME               12 (str)
+             84 LOAD_CONST               5 ('return')
+             86 LOAD_CONST               7 (None)
+             88 BUILD_TUPLE              4
+             90 LOAD_CONST              14 (<code object error at 0x17a99870, file "update_ui.py", line 89>)
+             92 MAKE_FUNCTION            4 (annotations)
+             94 STORE_NAME              13 (error)
+
+ 95          96 LOAD_CONST              16 (('return', None))
+             98 LOAD_CONST              15 (<code object later at 0x7f6aed1d23d0, file "update_ui.py", line 95>)
+            100 MAKE_FUNCTION            4 (annotations)
+            102 STORE_NAME              14 (later)
+            104 RETURN_CONST             7 (None)
+
+Disassembly of <code object __init__ at 0x17a96100, file "update_ui.py", line 23>:
+ 23           0 RESUME                   0
+
+ 24           2 LOAD_FAST                1 (ctl)
+              4 LOAD_FAST                2 (info)
+              6 SWAP                     2
+              8 LOAD_FAST                0 (self)
+             10 STORE_ATTR               0 (ctl)
+             20 LOAD_FAST                0 (self)
+             22 STORE_ATTR               1 (info)
+
+ 25          32 LOAD_FAST                1 (ctl)
+             34 LOAD_ATTR                4 (t)
+             54 LOAD_FAST                1 (ctl)
+             56 LOAD_ATTR                6 (app)
+             76 LOAD_ATTR                8 (root)
+             96 STORE_FAST               4 (root)
+             98 STORE_FAST               3 (t)
+
+ 26         100 LOAD_FAST                4 (root)
+            102 LOAD_ATTR               11 (NULL|self + winfo_fpixels)
+            122 LOAD_CONST               1 ('1i')
+            124 CALL                     1
+            132 LOAD_CONST               2 (96.0)
+            134 BINARY_OP               11 (/)
+            138 STORE_FAST               5 (k)
+
+ 27         140 LOAD_GLOBAL             13 (NULL + tk)
+            150 LOAD_ATTR               14 (Toplevel)
+            170 LOAD_FAST                4 (root)
+            172 CALL                     1
+            180 LOAD_FAST                0 (self)
+            182 STORE_ATTR               8 (top)
+
+ 28         192 LOAD_FAST                0 (self)
+            194 LOAD_ATTR               16 (top)
+            214 LOAD_ATTR               19 (NULL|self + title)
+            234 PUSH_NULL
+            236 LOAD_FAST                3 (t)
+            238 LOAD_CONST               3 ('upd_title')
+            240 CALL                     1
+            248 CALL                     1
+            256 POP_TOP
+
+ 29         258 LOAD_FAST                0 (self)
+            260 LOAD_ATTR               16 (top)
+            280 LOAD_ATTR               21 (NULL|self + transient)
+            300 LOAD_FAST                4 (root)
+            302 CALL                     1
+            310 POP_TOP
+
+ 30         312 LOAD_FAST                0 (self)
+            314 LOAD_ATTR               16 (top)
+            334 LOAD_ATTR               23 (NULL|self + resizable)
+            354 LOAD_CONST               4 (False)
+            356 LOAD_CONST               4 (False)
+            358 CALL                     2
+            366 POP_TOP
+
+ 31         368 LOAD_FAST                0 (self)
+            370 LOAD_ATTR               16 (top)
+            390 LOAD_ATTR               25 (NULL|self + protocol)
+            410 LOAD_CONST               5 ('WM_DELETE_WINDOW')
+            412 LOAD_FAST                0 (self)
+            414 LOAD_ATTR               26 (later)
+            434 CALL                     2
+            442 POP_TOP
+
+ 32         444 LOAD_GLOBAL             29 (NULL + ttk)
+            454 LOAD_ATTR               30 (Frame)
+            474 LOAD_FAST                0 (self)
+            476 LOAD_ATTR               16 (top)
+            496 LOAD_CONST               6 (14)
+            498 KW_NAMES                 7 (('padding',))
+            500 CALL                     2
+            508 STORE_FAST               6 (box)
+
+ 33         510 LOAD_FAST                6 (box)
+            512 LOAD_ATTR               33 (NULL|self + pack)
+            532 LOAD_CONST               8 ('both')
+            534 LOAD_CONST               9 (True)
+            536 KW_NAMES                10 (('fill', 'expand'))
+            538 CALL                     2
+            546 POP_TOP
+
+ 34         548 LOAD_GLOBAL             29 (NULL + ttk)
+            558 LOAD_ATTR               34 (Label)
+            578 LOAD_FAST                6 (box)
+            580 PUSH_NULL
+            582 LOAD_FAST                3 (t)
+            584 LOAD_CONST               3 ('upd_title')
+            586 CALL                     1
+            594 LOAD_CONST              11 (('Segoe UI', 13, 'bold'))
+            596 KW_NAMES                12 (('text', 'font'))
+            598 CALL                     3
+            606 LOAD_ATTR               33 (NULL|self + pack)
+            626 LOAD_CONST              13 ('w')
+            628 KW_NAMES                14 (('anchor',))
+            630 CALL                     1
+            638 POP_TOP
+
+ 35         640 LOAD_GLOBAL             29 (NULL + ttk)
+            650 LOAD_ATTR               34 (Label)
+            670 LOAD_FAST                6 (box)
+            672 PUSH_NULL
+            674 LOAD_FAST                3 (t)
+            676 LOAD_CONST              15 ('upd_newver')
+            678 LOAD_FAST                2 (info)
+            680 LOAD_ATTR               36 (latest_version)
+            700 LOAD_GLOBAL             38 (__version__)
+            710 KW_NAMES                16 (('new', 'cur'))
+            712 CALL                     3
+            720 KW_NAMES                17 (('text',))
+            722 CALL                     2
+            730 LOAD_ATTR               33 (NULL|self + pack)
+            750 LOAD_CONST              13 ('w')
+            752 LOAD_CONST              18 ((2, 8))
+            754 KW_NAMES                19 (('anchor', 'pady'))
+            756 CALL                     2
+            764 POP_TOP
+
+ 36         766 LOAD_GLOBAL             29 (NULL + ttk)
+            776 LOAD_ATTR               34 (Label)
+            796 LOAD_FAST                6 (box)
+            798 PUSH_NULL
+            800 LOAD_FAST                3 (t)
+            802 LOAD_CONST              20 ('upd_notes')
+            804 CALL                     1
+            812 LOAD_CONST              21 (('Segoe UI', 9, 'bold'))
+            814 KW_NAMES                12 (('text', 'font'))
+            816 CALL                     3
+            824 LOAD_ATTR               33 (NULL|self + pack)
+            844 LOAD_CONST              13 ('w')
+            846 KW_NAMES                14 (('anchor',))
+            848 CALL                     1
+            856 POP_TOP
+
+ 37         858 LOAD_GLOBAL             29 (NULL + ttk)
+            868 LOAD_ATTR               30 (Frame)
+            888 LOAD_FAST                6 (box)
+            890 CALL                     1
+            898 STORE_FAST               7 (frame)
+
+ 38         900 LOAD_FAST                7 (frame)
+            902 LOAD_ATTR               33 (NULL|self + pack)
+            922 LOAD_CONST               8 ('both')
+            924 LOAD_CONST               9 (True)
+            926 LOAD_CONST              18 ((2, 8))
+            928 KW_NAMES                22 (('fill', 'expand', 'pady'))
+            930 CALL                     3
+            938 POP_TOP
+
+ 39         940 LOAD_GLOBAL             29 (NULL + ttk)
+            950 LOAD_ATTR               40 (Scrollbar)
+            970 LOAD_FAST                7 (frame)
+            972 LOAD_CONST              23 ('vertical')
+            974 KW_NAMES                24 (('orient',))
+            976 CALL                     2
+            984 STORE_FAST               8 (sb)
+
+ 40         986 LOAD_GLOBAL             13 (NULL + tk)
+            996 LOAD_ATTR               42 (Text)
+           1016 LOAD_FAST                7 (frame)
+           1018 LOAD_GLOBAL             45 (NULL + int)
+           1028 LOAD_CONST              25 (58)
+           1030 CALL                     1
+           1038 LOAD_CONST              26 (10)
+           1040 LOAD_CONST              27 ('word')
+           1042 LOAD_CONST              28 (('Segoe UI', 9))
+           1044 LOAD_CONST              29 ('flat')
+           1046 LOAD_FAST                8 (sb)
+           1048 LOAD_ATTR               46 (set)
+           1068 KW_NAMES                30 (('width', 'height', 'wrap', 'font', 'relief', 'yscrollcommand'))
+           1070 CALL                     7
+           1078 LOAD_FAST                0 (self)
+           1080 STORE_ATTR              24 (notes)
+
+ 41        1090 LOAD_FAST                8 (sb)
+           1092 LOAD_ATTR               51 (NULL|self + config)
+           1112 LOAD_FAST                0 (self)
+           1114 LOAD_ATTR               48 (notes)
+           1134 LOAD_ATTR               52 (yview)
+           1154 KW_NAMES                31 (('command',))
+           1156 CALL                     1
+           1164 POP_TOP
+
+ 42        1166 LOAD_FAST                8 (sb)
+           1168 LOAD_ATTR               33 (NULL|self + pack)
+           1188 LOAD_CONST              32 ('right')
+           1190 LOAD_CONST              33 ('y')
+           1192 KW_NAMES                34 (('side', 'fill'))
+           1194 CALL                     2
+           1202 POP_TOP
+
+ 43        1204 LOAD_FAST                0 (self)
+           1206 LOAD_ATTR               48 (notes)
+           1226 LOAD_ATTR               33 (NULL|self + pack)
+           1246 LOAD_CONST              35 ('left')
+           1248 LOAD_CONST               8 ('both')
+           1250 LOAD_CONST               9 (True)
+           1252 KW_NAMES                36 (('side', 'fill', 'expand'))
+           1254 CALL                     3
+           1262 POP_TOP
+
+ 44        1264 LOAD_FAST                0 (self)
+           1266 LOAD_ATTR               48 (notes)
+           1286 LOAD_ATTR               55 (NULL|self + insert)
+           1306 LOAD_CONST              37 ('1.0')
+           1308 LOAD_FAST                2 (info)
+           1310 LOAD_ATTR               56 (release_notes)
+           1330 LOAD_ATTR               59 (NULL|self + strip)
+           1350 CALL                     0
+           1358 COPY                     1
+           1360 POP_JUMP_IF_TRUE         2 (to 1366)
+           1362 POP_TOP
+           1364 LOAD_CONST              38 ('-')
+        >> 1366 CALL                     2
+           1374 POP_TOP
+
+ 45        1376 LOAD_FAST                0 (self)
+           1378 LOAD_ATTR               48 (notes)
+           1398 LOAD_ATTR               51 (NULL|self + config)
+           1418 LOAD_CONST              39 ('disabled')
+           1420 KW_NAMES                40 (('state',))
+           1422 CALL                     1
+           1430 POP_TOP
+
+ 46        1432 LOAD_GLOBAL             29 (NULL + ttk)
+           1442 LOAD_ATTR               60 (Progressbar)
+           1462 LOAD_FAST                6 (box)
+           1464 LOAD_CONST              41 (100)
+           1466 LOAD_GLOBAL             45 (NULL + int)
+           1476 LOAD_CONST              42 (440)
+           1478 LOAD_FAST                5 (k)
+           1480 BINARY_OP                5 (*)
+           1484 CALL                     1
+           1492 KW_NAMES                43 (('maximum', 'length'))
+           1494 CALL                     3
+           1502 LOAD_FAST                0 (self)
+           1504 STORE_ATTR              31 (bar)
+
+ 47        1514 LOAD_GLOBAL             29 (NULL + ttk)
+           1524 LOAD_ATTR               34 (Label)
+           1544 LOAD_FAST                6 (box)
+           1546 LOAD_CONST              44 ('')
+           1548 LOAD_GLOBAL             45 (NULL + int)
+           1558 LOAD_CONST              42 (440)
+           1560 LOAD_FAST                5 (k)
+           1562 BINARY_OP                5 (*)
+           1566 CALL                     1
+           1574 KW_NAMES                45 (('text', 'wraplength'))
+           1576 CALL                     3
+           1584 LOAD_FAST                0 (self)
+           1586 STORE_ATTR              32 (msg)
+
+ 48        1596 LOAD_FAST                0 (self)
+           1598 LOAD_ATTR               62 (bar)
+           1618 LOAD_ATTR               33 (NULL|self + pack)
+           1638 LOAD_CONST              46 ('x')
+           1640 KW_NAMES                47 (('fill',))
+           1642 CALL                     1
+           1650 POP_TOP
+
+ 49        1652 LOAD_FAST                0 (self)
+           1654 LOAD_ATTR               64 (msg)
+           1674 LOAD_ATTR               33 (NULL|self + pack)
+           1694 LOAD_CONST              13 ('w')
+           1696 LOAD_CONST              48 ((4, 8))
+           1698 KW_NAMES                19 (('anchor', 'pady'))
+           1700 CALL                     2
+           1708 POP_TOP
+
+ 50        1710 LOAD_GLOBAL             29 (NULL + ttk)
+           1720 LOAD_ATTR               30 (Frame)
+           1740 LOAD_FAST                6 (box)
+           1742 CALL                     1
+           1750 STORE_FAST               9 (row)
+
+ 51        1752 LOAD_FAST                9 (row)
+           1754 LOAD_ATTR               33 (NULL|self + pack)
+           1774 LOAD_CONST              49 ('e')
+           1776 KW_NAMES                14 (('anchor',))
+           1778 CALL                     1
+           1786 POP_TOP
+
+ 52        1788 LOAD_FAST                1 (ctl)
+           1790 LOAD_ATTR               66 (updater)
+           1810 LOAD_ATTR               68 (can_self_replace)
+           1830 STORE_FAST              10 (can_install)
+
+ 53        1832 LOAD_GLOBAL             29 (NULL + ttk)
+           1842 LOAD_ATTR               70 (Button)
+           1862 LOAD_FAST                9 (row)
+           1864 PUSH_NULL
+           1866 LOAD_FAST                3 (t)
+           1868 LOAD_FAST               10 (can_install)
+           1870 POP_JUMP_IF_FALSE        2 (to 1876)
+           1872 LOAD_CONST              50 ('upd_now')
+           1874 JUMP_FORWARD             1 (to 1878)
+        >> 1876 LOAD_CONST              51 ('upd_page')
+        >> 1878 CALL                     1
+           1886 LOAD_FAST                1 (ctl)
+           1888 LOAD_ATTR               72 (install)
+           1908 KW_NAMES                52 (('text', 'command'))
+           1910 CALL                     3
+           1918 LOAD_FAST                0 (self)
+           1920 STORE_ATTR              37 (now_btn)
+
+ 54        1930 LOAD_GLOBAL             29 (NULL + ttk)
+           1940 LOAD_ATTR               70 (Button)
+           1960 LOAD_FAST                9 (row)
+           1962 PUSH_NULL
+           1964 LOAD_FAST                3 (t)
+           1966 LOAD_CONST              53 ('upd_later')
+           1968 CALL                     1
+           1976 LOAD_FAST                0 (self)
+           1978 LOAD_ATTR               26 (later)
+           1998 KW_NAMES                52 (('text', 'command'))
+           2000 CALL                     3
+           2008 LOAD_FAST                0 (self)
+           2010 STORE_ATTR              38 (later_btn)
+
+ 55        2020 LOAD_FAST                0 (self)
+           2022 LOAD_ATTR               74 (now_btn)
+           2042 LOAD_ATTR               33 (NULL|self + pack)
+           2062 LOAD_CONST              35 ('left')
+           2064 LOAD_CONST              54 (4)
+           2066 KW_NAMES                55 (('side', 'padx'))
+           2068 CALL                     2
+           2076 POP_TOP
+
+ 56        2078 LOAD_FAST                0 (self)
+           2080 LOAD_ATTR               76 (later_btn)
+           2100 LOAD_ATTR               33 (NULL|self + pack)
+           2120 LOAD_CONST              35 ('left')
+           2122 KW_NAMES                56 (('side',))
+           2124 CALL                     1
+           2132 POP_TOP
+
+ 57        2134 LOAD_FAST               10 (can_install)
+           2136 POP_JUMP_IF_TRUE        34 (to 2206)
+
+ 58        2138 LOAD_FAST                0 (self)
+           2140 LOAD_ATTR               64 (msg)
+           2160 LOAD_ATTR               51 (NULL|self + config)
+           2180 PUSH_NULL
+           2182 LOAD_FAST                3 (t)
+           2184 LOAD_CONST              57 ('upd_dev')
+           2186 CALL                     1
+           2194 KW_NAMES                17 (('text',))
+           2196 CALL                     1
+           2204 POP_TOP
+
+ 60     >> 2206 LOAD_FAST                0 (self)
+           2208 LOAD_ATTR               16 (top)
+           2228 LOAD_ATTR               79 (NULL|self + update_idletasks)
+           2248 CALL                     0
+           2256 POP_TOP
+
+ 61        2258 LOAD_FAST                4 (root)
+           2260 LOAD_ATTR               81 (NULL|self + winfo_rootx)
+           2280 CALL                     0
+           2288 LOAD_GLOBAL             83 (NULL + max)
+           2298 LOAD_CONST              58 (0)
+           2300 LOAD_FAST                4 (root)
+           2302 LOAD_ATTR               85 (NULL|self + winfo_width)
+           2322 CALL                     0
+           2330 LOAD_FAST                0 (self)
+           2332 LOAD_ATTR               16 (top)
+           2352 LOAD_ATTR               87 (NULL|self + winfo_reqwidth)
+           2372 CALL                     0
+           2380 BINARY_OP               10 (-)
+           2384 LOAD_CONST              59 (2)
+           2386 BINARY_OP                2 (//)
+           2390 CALL                     2
+           2398 BINARY_OP                0 (+)
+           2402 STORE_FAST              11 (x)
+
+ 62        2404 LOAD_FAST                0 (self)
+           2406 LOAD_ATTR               16 (top)
+           2426 LOAD_ATTR               89 (NULL|self + geometry)
+           2446 LOAD_CONST              60 ('+')
+           2448 LOAD_FAST               11 (x)
+           2450 FORMAT_VALUE             0
+           2452 LOAD_CONST              60 ('+')
+           2454 LOAD_FAST                4 (root)
+           2456 LOAD_ATTR               91 (NULL|self + winfo_rooty)
+           2476 CALL                     0
+           2484 LOAD_GLOBAL             45 (NULL + int)
+           2494 LOAD_CONST              61 (60)
+           2496 LOAD_FAST                5 (k)
+           2498 BINARY_OP                5 (*)
+           2502 CALL                     1
+           2510 BINARY_OP                0 (+)
+           2514 FORMAT_VALUE             0
+           2516 BUILD_STRING             4
+           2518 CALL                     1
+           2526 POP_TOP
+           2528 RETURN_CONST             0 (None)
+
+Disassembly of <code object alive at 0x7f6aed1c5f70, file "update_ui.py", line 64>:
+ 64           0 RESUME                   0
+
+ 65           2 NOP
+
+ 66           4 LOAD_GLOBAL              1 (NULL + bool)
+             14 LOAD_FAST                0 (self)
+             16 LOAD_ATTR                2 (top)
+             36 LOAD_ATTR                5 (NULL|self + winfo_exists)
+             56 CALL                     0
+             64 CALL                     1
+             72 RETURN_VALUE
+        >>   74 PUSH_EXC_INFO
+
+ 67          76 LOAD_GLOBAL              6 (tk)
+             86 LOAD_ATTR                8 (TclError)
+            106 CHECK_EXC_MATCH
+            108 POP_JUMP_IF_FALSE        3 (to 116)
+            110 POP_TOP
+
+ 68         112 POP_EXCEPT
+            114 RETURN_CONST             1 (False)
+
+ 67     >>  116 RERAISE                  0
+        >>  118 COPY                     3
+            120 POP_EXCEPT
+            122 RERAISE                  1
+ExceptionTable:
+  4 to 70 -> 74 [0]
+  74 to 110 -> 118 [1] lasti
+  116 to 116 -> 118 [1] lasti
+
+Disassembly of <code object lift at 0x7f6aed1d1a50, file "update_ui.py", line 70>:
+ 70           0 RESUME                   0
+
+ 71           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (top)
+             24 LOAD_ATTR                3 (NULL|self + deiconify)
+             44 CALL                     0
+             52 POP_TOP
+
+ 72          54 LOAD_FAST                0 (self)
+             56 LOAD_ATTR                0 (top)
+             76 LOAD_ATTR                5 (NULL|self + lift)
+             96 CALL                     0
+            104 POP_TOP
+            106 RETURN_CONST             0 (None)
+
+Disassembly of <code object set_progress at 0x7f6aed1fd140, file "update_ui.py", line 74>:
+ 74           0 RESUME                   0
+
+ 75           2 LOAD_FAST                1 (pct)
+              4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (bar)
+             26 LOAD_CONST               1 ('value')
+             28 STORE_SUBSCR
+
+ 76          32 LOAD_FAST                0 (self)
+             34 LOAD_ATTR                2 (msg)
+             54 LOAD_ATTR                5 (NULL|self + config)
+             74 LOAD_FAST                0 (self)
+             76 LOAD_ATTR                6 (ctl)
+             96 LOAD_ATTR                9 (NULL|self + t)
+            116 LOAD_CONST               2 ('upd_downloading')
+            118 LOAD_FAST                1 (pct)
+            120 KW_NAMES                 3 (('pct',))
+            122 CALL                     2
+            130 KW_NAMES                 4 (('text',))
+            132 CALL                     1
+            140 POP_TOP
+            142 RETURN_CONST             0 (None)
+
+Disassembly of <code object installing at 0x7f6aed801df0, file "update_ui.py", line 78>:
+ 78           0 RESUME                   0
+
+ 79           2 LOAD_CONST               1 (100)
+              4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (bar)
+             26 LOAD_CONST               2 ('value')
+             28 STORE_SUBSCR
+
+ 80          32 LOAD_FAST                0 (self)
+             34 LOAD_ATTR                2 (msg)
+             54 LOAD_ATTR                5 (NULL|self + config)
+             74 LOAD_FAST                0 (self)
+             76 LOAD_ATTR                6 (ctl)
+             96 LOAD_ATTR                9 (NULL|self + t)
+            116 LOAD_CONST               3 ('upd_installing')
+            118 CALL                     1
+            126 KW_NAMES                 4 (('text',))
+            128 CALL                     1
+            136 POP_TOP
+
+ 81         138 LOAD_FAST                0 (self)
+            140 LOAD_ATTR               10 (now_btn)
+            160 LOAD_ATTR               13 (NULL|self + state)
+            180 LOAD_CONST               5 ('disabled')
+            182 BUILD_LIST               1
+            184 CALL                     1
+            192 POP_TOP
+
+ 82         194 LOAD_FAST                0 (self)
+            196 LOAD_ATTR               14 (later_btn)
+            216 LOAD_ATTR               13 (NULL|self + state)
+            236 LOAD_CONST               5 ('disabled')
+            238 BUILD_LIST               1
+            240 CALL                     1
+            248 POP_TOP
+            250 RETURN_CONST             0 (None)
+
+Disassembly of <code object busy at 0x7f6aed7a1e70, file "update_ui.py", line 84>:
+ 84           0 RESUME                   0
+
+ 85           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (now_btn)
+             24 LOAD_ATTR                3 (NULL|self + state)
+             44 LOAD_CONST               1 ('disabled')
+             46 BUILD_LIST               1
+             48 CALL                     1
+             56 POP_TOP
+
+ 86          58 LOAD_FAST                0 (self)
+             60 LOAD_ATTR                4 (later_btn)
+             80 LOAD_ATTR                3 (NULL|self + state)
+            100 LOAD_CONST               1 ('disabled')
+            102 BUILD_LIST               1
+            104 CALL                     1
+            112 POP_TOP
+
+ 87         114 LOAD_FAST                0 (self)
+            116 LOAD_ATTR                7 (NULL|self + set_progress)
+            136 LOAD_CONST               2 (0)
+            138 CALL                     1
+            146 POP_TOP
+            148 RETURN_CONST             0 (None)
+
+Disassembly of <code object error at 0x17a99870, file "update_ui.py", line 89>:
+ 89           0 RESUME                   0
+
+ 90           2 LOAD_CONST               1 (0)
+              4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (bar)
+             26 LOAD_CONST               2 ('value')
+             28 STORE_SUBSCR
+
+ 91          32 LOAD_FAST                0 (self)
+             34 LOAD_ATTR                2 (msg)
+             54 LOAD_ATTR                5 (NULL|self + config)
+             74 LOAD_FAST                0 (self)
+             76 LOAD_ATTR                6 (ctl)
+             96 LOAD_ATTR                9 (NULL|self + t)
+            116 LOAD_CONST               3 ('upd_error')
+            118 LOAD_FAST                0 (self)
+            120 LOAD_ATTR                6 (ctl)
+            140 LOAD_ATTR                9 (NULL|self + t)
+            160 LOAD_GLOBAL             10 (WHY_KEYS)
+            170 LOAD_ATTR               13 (NULL|self + get)
+            190 LOAD_FAST                1 (why)
+            192 LOAD_CONST               4 ('upd_err_network')
+            194 CALL                     2
+            202 CALL                     1
+            210 KW_NAMES                 5 (('why',))
+            212 CALL                     2
+            220 KW_NAMES                 6 (('text',))
+            222 CALL                     1
+            230 POP_TOP
+
+ 92         232 LOAD_FAST                0 (self)
+            234 LOAD_ATTR               14 (now_btn)
+            254 LOAD_ATTR               17 (NULL|self + state)
+            274 LOAD_CONST               7 ('!disabled')
+            276 BUILD_LIST               1
+            278 CALL                     1
+            286 POP_TOP
+
+ 93         288 LOAD_FAST                0 (self)
+            290 LOAD_ATTR               18 (later_btn)
+            310 LOAD_ATTR               17 (NULL|self + state)
+            330 LOAD_CONST               7 ('!disabled')
+            332 BUILD_LIST               1
+            334 CALL                     1
+            342 POP_TOP
+            344 RETURN_CONST             0 (None)
+
+Disassembly of <code object later at 0x7f6aed1d23d0, file "update_ui.py", line 95>:
+ 95           0 RESUME                   0
+
+ 96           2 NOP
+
+ 97           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (ctl)
+             26 LOAD_ATTR                2 (installing)
+             46 POP_JUMP_IF_TRUE        27 (to 102)
+
+ 98          48 LOAD_FAST                0 (self)
+             50 LOAD_ATTR                4 (top)
+             70 LOAD_ATTR                7 (NULL|self + destroy)
+             90 CALL                     0
+             98 POP_TOP
+            100 RETURN_CONST             0 (None)
+
+ 97     >>  102 RETURN_CONST             0 (None)
+
+Disassembly of <code object UpdateController at 0x7f6aed1fda70, file "update_ui.py", line 101>:
+101           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('UpdateController')
+              8 STORE_NAME               2 (__qualname__)
+
+102          10 LOAD_CONST              18 ((None,))
+             12 LOAD_CONST               2 ('updater')
+             14 LOAD_NAME                3 (Optional)
+             16 LOAD_NAME                4 (AutoUpdater)
+             18 BINARY_SUBSCR
+             22 BUILD_TUPLE              2
+             24 LOAD_CONST               3 (<code object __init__ at 0x7f6aed7ab4b0, file "update_ui.py", line 102>)
+             26 MAKE_FUNCTION            5 (defaults, annotations)
+             28 STORE_NAME               5 (__init__)
+
+113          30 LOAD_CONST               4 ('key')
+             32 LOAD_NAME                6 (str)
+             34 LOAD_CONST               5 ('return')
+             36 LOAD_NAME                6 (str)
+             38 BUILD_TUPLE              4
+             40 LOAD_CONST               6 (<code object t at 0x7f6aed1d29c0, file "update_ui.py", line 113>)
+             42 MAKE_FUNCTION            4 (annotations)
+             44 STORE_NAME               7 (t)
+
+117          46 LOAD_CONST              19 (('return', None))
+             48 LOAD_CONST               7 (<code object build_row at 0x17aa59c0, file "update_ui.py", line 117>)
+             50 MAKE_FUNCTION            4 (annotations)
+             52 STORE_NAME               8 (build_row)
+
+135          54 LOAD_CONST              19 (('return', None))
+             56 LOAD_CONST               8 (<code object relabel at 0x179de940, file "update_ui.py", line 135>)
+             58 MAKE_FUNCTION            4 (annotations)
+             60 STORE_NAME               9 (relabel)
+
+143          62 LOAD_CONST              19 (('return', None))
+             64 LOAD_CONST               9 (<code object _show_banner at 0x7f6aed7ab930, file "update_ui.py", line 143>)
+             66 MAKE_FUNCTION            4 (annotations)
+             68 STORE_NAME              10 (_show_banner)
+
+149          70 LOAD_CONST              19 (('return', None))
+             72 LOAD_CONST              10 (<code object start_auto_check at 0x7f6af1de33f0, file "update_ui.py", line 149>)
+             74 MAKE_FUNCTION            4 (annotations)
+             76 STORE_NAME              11 (start_auto_check)
+
+153          78 LOAD_CONST              11 ('manual')
+             80 LOAD_NAME               12 (bool)
+             82 LOAD_CONST               5 ('return')
+             84 LOAD_CONST               1 (None)
+             86 BUILD_TUPLE              4
+             88 LOAD_CONST              12 (<code object check at 0x7f6aecfc0030, file "update_ui.py", line 153>)
+             90 MAKE_FUNCTION            4 (annotations)
+             92 STORE_NAME              13 (check)
+
+162          94 LOAD_CONST              19 (('return', None))
+             96 LOAD_CONST              13 (<code object open_dialog at 0x7f6aecfc01d0, file "update_ui.py", line 162>)
+             98 MAKE_FUNCTION            4 (annotations)
+            100 STORE_NAME              14 (open_dialog)
+
+170         102 LOAD_CONST              19 (('return', None))
+            104 LOAD_CONST              14 (<code object install at 0x17a82c20, file "update_ui.py", line 170>)
+            106 MAKE_FUNCTION            4 (annotations)
+            108 STORE_NAME              15 (install)
+
+191         110 LOAD_CONST              15 ('staged')
+            112 LOAD_NAME                6 (str)
+            114 LOAD_CONST               5 ('return')
+            116 LOAD_NAME               12 (bool)
+            118 BUILD_TUPLE              4
+            120 LOAD_CONST              16 (<code object _apply at 0x17a69b00, file "update_ui.py", line 191>)
+            122 MAKE_FUNCTION            4 (annotations)
+            124 STORE_NAME              16 (_apply)
+
+204         126 LOAD_CONST               5 ('return')
+            128 LOAD_NAME               12 (bool)
+            130 BUILD_TUPLE              2
+            132 LOAD_CONST              17 (<code object poll at 0x17a78880, file "update_ui.py", line 204>)
+            134 MAKE_FUNCTION            4 (annotations)
+            136 STORE_NAME              17 (poll)
+            138 RETURN_CONST             1 (None)
+
+Disassembly of <code object __init__ at 0x7f6aed7ab4b0, file "update_ui.py", line 102>:
+102           0 RESUME                   0
+
+103           2 LOAD_FAST                1 (app)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (app)
+
+104          16 LOAD_FAST                2 (updater)
+             18 COPY                     1
+             20 POP_JUMP_IF_TRUE        10 (to 42)
+             22 POP_TOP
+             24 LOAD_GLOBAL              3 (NULL + AutoUpdater)
+             34 CALL                     0
+        >>   42 LOAD_FAST                0 (self)
+             44 STORE_ATTR               2 (updater)
+
+105          54 LOAD_GLOBAL              7 (NULL + queue)
+             64 LOAD_ATTR                8 (Queue)
+             84 CALL                     0
+             92 LOAD_FAST                0 (self)
+             94 STORE_ATTR               5 (q)
+
+106         104 LOAD_CONST               0 (None)
+            106 LOAD_FAST                0 (self)
+            108 STORE_ATTR               6 (info)
+
+107         118 LOAD_CONST               0 (None)
+            120 LOAD_FAST                0 (self)
+            122 STORE_ATTR               7 (dialog)
+
+108         132 LOAD_CONST               1 (False)
+            134 LOAD_FAST                0 (self)
+            136 STORE_ATTR               8 (notified)
+
+109         146 LOAD_CONST               1 (False)
+            148 LOAD_FAST                0 (self)
+            150 STORE_ATTR               9 (checking)
+
+110         160 LOAD_CONST               1 (False)
+            162 LOAD_FAST                0 (self)
+            164 STORE_ATTR              10 (installing)
+
+111         174 LOAD_CONST               0 (None)
+            176 LOAD_FAST                0 (self)
+            178 STORE_ATTR              11 (status)
+            188 RETURN_CONST             0 (None)
+
+Disassembly of <code object t at 0x7f6aed1d29c0, file "update_ui.py", line 113>:
+113           0 RESUME                   0
+
+114           2 LOAD_GLOBAL              1 (NULL + i18n)
+             12 LOAD_ATTR                2 (t)
+             32 LOAD_FAST                0 (self)
+             34 LOAD_ATTR                4 (app)
+             54 LOAD_ATTR                6 (s)
+             74 LOAD_ATTR                8 (lang)
+             94 LOAD_FAST                1 (key)
+             96 BUILD_TUPLE              2
+             98 BUILD_MAP                0
+            100 LOAD_FAST                2 (kw)
+            102 DICT_MERGE               1
+            104 CALL_FUNCTION_EX         1
+            106 RETURN_VALUE
+
+Disassembly of <code object build_row at 0x17aa59c0, file "update_ui.py", line 117>:
+              0 MAKE_CELL                0 (self)
+
+117           2 RESUME                   0
+
+118           4 LOAD_GLOBAL              1 (NULL + tk)
+             14 LOAD_ATTR                2 (StringVar)
+             34 CALL                     0
+             42 LOAD_DEREF               0 (self)
+             44 STORE_ATTR               2 (status)
+
+119          54 LOAD_GLOBAL              7 (NULL + ttk)
+             64 LOAD_ATTR                8 (Frame)
+             84 LOAD_FAST                1 (parent)
+             86 CALL                     1
+             94 STORE_FAST               2 (row)
+
+120          96 LOAD_FAST                2 (row)
+             98 LOAD_ATTR               11 (NULL|self + pack)
+            118 LOAD_CONST               1 ((0, 2))
+            120 KW_NAMES                 2 (('pady',))
+            122 CALL                     1
+            130 POP_TOP
+
+121         132 LOAD_GLOBAL              7 (NULL + ttk)
+            142 LOAD_ATTR               12 (Label)
+            162 LOAD_FAST                2 (row)
+            164 LOAD_CONST               3 (('Segoe UI', 9))
+            166 KW_NAMES                 4 (('font',))
+            168 CALL                     2
+            176 LOAD_DEREF               0 (self)
+            178 STORE_ATTR               7 (ver_lbl)
+
+122         188 LOAD_DEREF               0 (self)
+            190 LOAD_ATTR               14 (ver_lbl)
+            210 LOAD_ATTR               11 (NULL|self + pack)
+            230 LOAD_CONST               5 ('left')
+            232 LOAD_CONST               6 (4)
+            234 KW_NAMES                 7 (('side', 'padx'))
+            236 CALL                     2
+            244 POP_TOP
+
+123         246 LOAD_GLOBAL              7 (NULL + ttk)
+            256 LOAD_ATTR               16 (Button)
+            276 LOAD_FAST                2 (row)
+            278 LOAD_CLOSURE             0 (self)
+            280 BUILD_TUPLE              1
+            282 LOAD_CONST               8 (<code object <lambda> at 0x7f6aed17f690, file "update_ui.py", line 123>)
+            284 MAKE_FUNCTION            8 (closure)
+            286 KW_NAMES                 9 (('command',))
+            288 CALL                     2
+            296 LOAD_DEREF               0 (self)
+            298 STORE_ATTR               9 (check_btn)
+
+124         308 LOAD_DEREF               0 (self)
+            310 LOAD_ATTR               18 (check_btn)
+            330 LOAD_ATTR               11 (NULL|self + pack)
+            350 LOAD_CONST               5 ('left')
+            352 KW_NAMES                10 (('side',))
+            354 CALL                     1
+            362 POP_TOP
+
+125         364 LOAD_GLOBAL              1 (NULL + tk)
+            374 LOAD_ATTR               20 (BooleanVar)
+            394 LOAD_DEREF               0 (self)
+            396 LOAD_ATTR               22 (app)
+            416 LOAD_ATTR               24 (s)
+            436 LOAD_ATTR               26 (auto_update_check)
+            456 KW_NAMES                11 (('value',))
+            458 CALL                     1
+            466 LOAD_DEREF               0 (self)
+            468 STORE_ATTR              14 (auto_var)
+
+126         478 LOAD_GLOBAL              7 (NULL + ttk)
+            488 LOAD_ATTR               30 (Checkbutton)
+            508 LOAD_FAST                2 (row)
+            510 LOAD_DEREF               0 (self)
+            512 LOAD_ATTR               28 (auto_var)
+            532 LOAD_CLOSURE             0 (self)
+            534 BUILD_TUPLE              1
+            536 LOAD_CONST              12 (<code object <lambda> at 0x7f6aed1c5a70, file "update_ui.py", line 126>)
+            538 MAKE_FUNCTION            8 (closure)
+            540 KW_NAMES                13 (('variable', 'command'))
+            542 CALL                     3
+            550 LOAD_DEREF               0 (self)
+            552 STORE_ATTR              16 (auto_chk)
+
+127         562 LOAD_DEREF               0 (self)
+            564 LOAD_ATTR               32 (auto_chk)
+            584 LOAD_ATTR               11 (NULL|self + pack)
+            604 LOAD_CONST               5 ('left')
+            606 LOAD_CONST              14 (6)
+            608 KW_NAMES                 7 (('side', 'padx'))
+            610 CALL                     2
+            618 POP_TOP
+
+128         620 LOAD_GLOBAL              7 (NULL + ttk)
+            630 LOAD_ATTR               12 (Label)
+            650 LOAD_FAST                1 (parent)
+            652 LOAD_DEREF               0 (self)
+            654 LOAD_ATTR                4 (status)
+            674 LOAD_CONST              15 (('Segoe UI', 8))
+            676 LOAD_CONST              16 ('#666666')
+            678 KW_NAMES                17 (('textvariable', 'font', 'foreground'))
+            680 CALL                     4
+            688 LOAD_ATTR               11 (NULL|self + pack)
+            708 CALL                     0
+            716 POP_TOP
+
+129         718 LOAD_GLOBAL              7 (NULL + ttk)
+            728 LOAD_ATTR                8 (Frame)
+            748 LOAD_FAST                1 (parent)
+            750 CALL                     1
+            758 LOAD_DEREF               0 (self)
+            760 STORE_ATTR              17 (banner)
+
+130         770 LOAD_GLOBAL              7 (NULL + ttk)
+            780 LOAD_ATTR               12 (Label)
+            800 LOAD_DEREF               0 (self)
+            802 LOAD_ATTR               34 (banner)
+            822 LOAD_CONST              18 ('#0b5cad')
+            824 LOAD_CONST              19 (('Segoe UI', 9, 'bold'))
+            826 KW_NAMES                20 (('foreground', 'font'))
+            828 CALL                     3
+            836 LOAD_DEREF               0 (self)
+            838 STORE_ATTR              18 (banner_lbl)
+
+131         848 LOAD_GLOBAL              7 (NULL + ttk)
+            858 LOAD_ATTR               16 (Button)
+            878 LOAD_DEREF               0 (self)
+            880 LOAD_ATTR               34 (banner)
+            900 LOAD_DEREF               0 (self)
+            902 LOAD_ATTR               38 (open_dialog)
+            922 KW_NAMES                 9 (('command',))
+            924 CALL                     2
+            932 LOAD_DEREF               0 (self)
+            934 STORE_ATTR              20 (banner_btn)
+
+132         944 LOAD_DEREF               0 (self)
+            946 LOAD_ATTR               36 (banner_lbl)
+            966 LOAD_ATTR               11 (NULL|self + pack)
+            986 LOAD_CONST               5 ('left')
+            988 LOAD_CONST              14 (6)
+            990 KW_NAMES                 7 (('side', 'padx'))
+            992 CALL                     2
+           1000 POP_TOP
+
+133        1002 LOAD_DEREF               0 (self)
+           1004 LOAD_ATTR               40 (banner_btn)
+           1024 LOAD_ATTR               11 (NULL|self + pack)
+           1044 LOAD_CONST               5 ('left')
+           1046 KW_NAMES                10 (('side',))
+           1048 CALL                     1
+           1056 POP_TOP
+           1058 RETURN_CONST             0 (None)
+
+Disassembly of <code object <lambda> at 0x7f6aed17f690, file "update_ui.py", line 123>:
+              0 COPY_FREE_VARS           1
+
+123           2 RESUME                   0
+              4 LOAD_DEREF               0 (self)
+              6 LOAD_ATTR                1 (NULL|self + check)
+             26 LOAD_CONST               1 (True)
+             28 KW_NAMES                 2 (('manual',))
+             30 CALL                     1
+             38 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed1c5a70, file "update_ui.py", line 126>:
+              0 COPY_FREE_VARS           1
+
+126           2 RESUME                   0
+              4 LOAD_GLOBAL              1 (NULL + setattr)
+             14 LOAD_DEREF               0 (self)
+             16 LOAD_ATTR                2 (app)
+             36 LOAD_ATTR                4 (s)
+             56 LOAD_CONST               1 ('auto_update_check')
+             58 LOAD_DEREF               0 (self)
+             60 LOAD_ATTR                6 (auto_var)
+             80 LOAD_ATTR                9 (NULL|self + get)
+            100 CALL                     0
+            108 CALL                     3
+            116 RETURN_VALUE
+
+Disassembly of <code object relabel at 0x179de940, file "update_ui.py", line 135>:
+135           0 RESUME                   0
+
+136           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (ver_lbl)
+             24 LOAD_ATTR                3 (NULL|self + config)
+             44 LOAD_FAST                0 (self)
+             46 LOAD_ATTR                5 (NULL|self + t)
+             66 LOAD_CONST               1 ('upd_ver')
+             68 LOAD_GLOBAL              6 (__version__)
+             78 KW_NAMES                 2 (('cur',))
+             80 CALL                     2
+             88 KW_NAMES                 3 (('text',))
+             90 CALL                     1
+             98 POP_TOP
+
+137         100 LOAD_FAST                0 (self)
+            102 LOAD_ATTR                8 (check_btn)
+            122 LOAD_ATTR                3 (NULL|self + config)
+            142 LOAD_FAST                0 (self)
+            144 LOAD_ATTR                5 (NULL|self + t)
+            164 LOAD_CONST               4 ('upd_check')
+            166 CALL                     1
+            174 KW_NAMES                 3 (('text',))
+            176 CALL                     1
+            184 POP_TOP
+
+138         186 LOAD_FAST                0 (self)
+            188 LOAD_ATTR               10 (auto_chk)
+            208 LOAD_ATTR                3 (NULL|self + config)
+            228 LOAD_FAST                0 (self)
+            230 LOAD_ATTR                5 (NULL|self + t)
+            250 LOAD_CONST               5 ('upd_auto')
+            252 CALL                     1
+            260 KW_NAMES                 3 (('text',))
+            262 CALL                     1
+            270 POP_TOP
+
+139         272 LOAD_FAST                0 (self)
+            274 LOAD_ATTR               12 (banner_btn)
+            294 LOAD_ATTR                3 (NULL|self + config)
+            314 LOAD_FAST                0 (self)
+            316 LOAD_ATTR                5 (NULL|self + t)
+            336 LOAD_CONST               6 ('upd_details')
+            338 CALL                     1
+            346 KW_NAMES                 3 (('text',))
+            348 CALL                     1
+            356 POP_TOP
+
+140         358 LOAD_FAST                0 (self)
+            360 LOAD_ATTR               14 (info)
+            380 POP_JUMP_IF_FALSE       66 (to 514)
+
+141         382 LOAD_FAST                0 (self)
+            384 LOAD_ATTR               16 (banner_lbl)
+            404 LOAD_ATTR                3 (NULL|self + config)
+            424 LOAD_FAST                0 (self)
+            426 LOAD_ATTR                5 (NULL|self + t)
+            446 LOAD_CONST               7 ('upd_banner')
+            448 LOAD_FAST                0 (self)
+            450 LOAD_ATTR               14 (info)
+            470 LOAD_ATTR               18 (latest_version)
+            490 KW_NAMES                 8 (('new',))
+            492 CALL                     2
+            500 KW_NAMES                 3 (('text',))
+            502 CALL                     1
+            510 POP_TOP
+            512 RETURN_CONST             0 (None)
+
+140     >>  514 RETURN_CONST             0 (None)
+
+Disassembly of <code object _show_banner at 0x7f6aed7ab930, file "update_ui.py", line 143>:
+143           0 RESUME                   0
+
+144           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                1 (NULL|self + relabel)
+             24 CALL                     0
+             32 POP_TOP
+
+145          34 LOAD_FAST                0 (self)
+             36 LOAD_ATTR                2 (banner)
+             56 LOAD_ATTR                5 (NULL|self + winfo_ismapped)
+             76 CALL                     0
+             84 POP_JUMP_IF_TRUE        52 (to 190)
+
+146          86 LOAD_FAST                0 (self)
+             88 LOAD_ATTR                2 (banner)
+            108 LOAD_ATTR                7 (NULL|self + pack)
+            128 LOAD_FAST                0 (self)
+            130 LOAD_ATTR                8 (app)
+            150 LOAD_ATTR               10 (nb)
+            170 LOAD_CONST               1 ('x')
+            172 LOAD_CONST               2 (6)
+            174 LOAD_CONST               3 ((0, 2))
+            176 KW_NAMES                 4 (('before', 'fill', 'padx', 'pady'))
+            178 CALL                     4
+            186 POP_TOP
+            188 RETURN_CONST             0 (None)
+
+145     >>  190 RETURN_CONST             0 (None)
+
+Disassembly of <code object start_auto_check at 0x7f6af1de33f0, file "update_ui.py", line 149>:
+              0 MAKE_CELL                0 (self)
+
+149           2 RESUME                   0
+
+150           4 LOAD_DEREF               0 (self)
+              6 LOAD_ATTR                0 (app)
+             26 LOAD_ATTR                2 (s)
+             46 LOAD_ATTR                4 (auto_update_check)
+             66 POP_JUMP_IF_FALSE       46 (to 160)
+
+151          68 LOAD_DEREF               0 (self)
+             70 LOAD_ATTR                0 (app)
+             90 LOAD_ATTR                6 (root)
+            110 LOAD_ATTR                9 (NULL|self + after)
+            130 LOAD_GLOBAL             10 (AUTO_CHECK_DELAY_MS)
+            140 LOAD_CLOSURE             0 (self)
+            142 BUILD_TUPLE              1
+            144 LOAD_CONST               1 (<code object <lambda> at 0x7f6aed17e100, file "update_ui.py", line 151>)
+            146 MAKE_FUNCTION            8 (closure)
+            148 CALL                     2
+            156 POP_TOP
+            158 RETURN_CONST             0 (None)
+
+150     >>  160 RETURN_CONST             0 (None)
+
+Disassembly of <code object <lambda> at 0x7f6aed17e100, file "update_ui.py", line 151>:
+              0 COPY_FREE_VARS           1
+
+151           2 RESUME                   0
+              4 LOAD_DEREF               0 (self)
+              6 LOAD_ATTR                1 (NULL|self + check)
+             26 LOAD_CONST               1 (False)
+             28 KW_NAMES                 2 (('manual',))
+             30 CALL                     1
+             38 RETURN_VALUE
+
+Disassembly of <code object check at 0x7f6aecfc0030, file "update_ui.py", line 153>:
+              0 MAKE_CELL                0 (self)
+              2 MAKE_CELL                1 (manual)
+
+153           4 RESUME                   0
+
+154           6 LOAD_DEREF               0 (self)
+              8 LOAD_ATTR                0 (checking)
+             28 POP_JUMP_IF_TRUE        12 (to 54)
+             30 LOAD_DEREF               0 (self)
+             32 LOAD_ATTR                2 (installing)
+             52 POP_JUMP_IF_FALSE        1 (to 56)
+
+155     >>   54 RETURN_CONST             0 (None)
+
+156     >>   56 LOAD_CONST               1 (True)
+             58 LOAD_DEREF               0 (self)
+             60 STORE_ATTR               0 (checking)
+
+157          70 LOAD_DEREF               1 (manual)
+             72 POP_JUMP_IF_FALSE       42 (to 158)
+
+158          74 LOAD_DEREF               0 (self)
+             76 LOAD_ATTR                4 (status)
+             96 LOAD_ATTR                7 (NULL|self + set)
+            116 LOAD_DEREF               0 (self)
+            118 LOAD_ATTR                9 (NULL|self + t)
+            138 LOAD_CONST               2 ('upd_checking')
+            140 CALL                     1
+            148 CALL                     1
+            156 POP_TOP
+
+159     >>  158 LOAD_DEREF               0 (self)
+            160 LOAD_ATTR               10 (updater)
+            180 LOAD_ATTR               13 (NULL|self + check_async)
+            200 LOAD_CLOSURE             1 (manual)
+            202 LOAD_CLOSURE             0 (self)
+            204 BUILD_TUPLE              2
+            206 LOAD_CONST               3 (<code object <lambda> at 0x7f6aed1d2c20, file "update_ui.py", line 159>)
+            208 MAKE_FUNCTION            8 (closure)
+            210 CALL                     1
+            218 POP_TOP
+            220 RETURN_CONST             0 (None)
+
+Disassembly of <code object <lambda> at 0x7f6aed1d2c20, file "update_ui.py", line 159>:
+              0 COPY_FREE_VARS           2
+
+159           2 RESUME                   0
+              4 LOAD_DEREF               2 (self)
+              6 LOAD_ATTR                0 (q)
+             26 LOAD_ATTR                3 (NULL|self + put)
+             46 LOAD_CONST               1 ('check')
+             48 LOAD_FAST                0 (info)
+             50 LOAD_DEREF               1 (manual)
+             52 LOAD_DEREF               2 (self)
+             54 LOAD_ATTR                4 (updater)
+             74 LOAD_ATTR                6 (last_error)
+             94 BUILD_TUPLE              4
+             96 CALL                     1
+            104 RETURN_VALUE
+
+Disassembly of <code object open_dialog at 0x7f6aecfc01d0, file "update_ui.py", line 162>:
+162           0 RESUME                   0
+
+163           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (info)
+             24 POP_JUMP_IF_TRUE         1 (to 28)
+
+164          26 RETURN_CONST             0 (None)
+
+165     >>   28 LOAD_FAST                0 (self)
+             30 LOAD_ATTR                2 (dialog)
+             50 POP_JUMP_IF_FALSE       53 (to 158)
+             52 LOAD_FAST                0 (self)
+             54 LOAD_ATTR                2 (dialog)
+             74 LOAD_ATTR                5 (NULL|self + alive)
+             94 CALL                     0
+            102 POP_JUMP_IF_FALSE       27 (to 158)
+
+166         104 LOAD_FAST                0 (self)
+            106 LOAD_ATTR                2 (dialog)
+            126 LOAD_ATTR                7 (NULL|self + lift)
+            146 CALL                     0
+            154 POP_TOP
+            156 RETURN_CONST             0 (None)
+
+168     >>  158 LOAD_GLOBAL              9 (NULL + UpdateDialog)
+            168 LOAD_FAST                0 (self)
+            170 LOAD_FAST                0 (self)
+            172 LOAD_ATTR                0 (info)
+            192 CALL                     2
+            200 LOAD_FAST                0 (self)
+            202 STORE_ATTR               1 (dialog)
+            212 RETURN_CONST             0 (None)
+
+Disassembly of <code object install at 0x17a82c20, file "update_ui.py", line 170>:
+              0 MAKE_CELL                0 (self)
+              2 MAKE_CELL                2 (info)
+
+170           4 RESUME                   0
+
+171           6 LOAD_DEREF               0 (self)
+              8 LOAD_ATTR                0 (info)
+             28 STORE_DEREF              2 (info)
+
+172          30 LOAD_DEREF               2 (info)
+             32 POP_JUMP_IF_FALSE       12 (to 58)
+             34 LOAD_DEREF               0 (self)
+             36 LOAD_ATTR                2 (installing)
+             56 POP_JUMP_IF_FALSE        1 (to 60)
+
+173     >>   58 RETURN_CONST             0 (None)
+
+174     >>   60 LOAD_DEREF               0 (self)
+             62 LOAD_ATTR                4 (updater)
+             82 LOAD_ATTR                6 (can_self_replace)
+            102 POP_JUMP_IF_TRUE        44 (to 192)
+
+175         104 LOAD_GLOBAL              9 (NULL + webbrowser)
+            114 LOAD_ATTR               10 (open)
+            134 LOAD_DEREF               2 (info)
+            136 LOAD_ATTR               12 (page_url)
+            156 COPY                     1
+            158 POP_JUMP_IF_TRUE        10 (to 180)
+            160 POP_TOP
+            162 LOAD_CONST               1 ('https://github.com/')
+            164 LOAD_GLOBAL             14 (GITHUB_REPO)
+            174 FORMAT_VALUE             0
+            176 LOAD_CONST               2 ('/releases/latest')
+            178 BUILD_STRING             3
+        >>  180 CALL                     1
+            188 POP_TOP
+
+176         190 RETURN_CONST             0 (None)
+
+177     >>  192 LOAD_CONST               3 (True)
+            194 LOAD_DEREF               0 (self)
+            196 STORE_ATTR               1 (installing)
+
+178         206 LOAD_DEREF               0 (self)
+            208 LOAD_ATTR               16 (dialog)
+            228 LOAD_ATTR               19 (NULL|self + busy)
+            248 CALL                     0
+            256 POP_TOP
+
+180         258 LOAD_CLOSURE             2 (info)
+            260 LOAD_CLOSURE             0 (self)
+            262 BUILD_TUPLE              2
+            264 LOAD_CONST               4 (<code object work at 0x17a9c140, file "update_ui.py", line 180>)
+            266 MAKE_FUNCTION            8 (closure)
+            268 STORE_FAST               1 (work)
+
+189         270 LOAD_GLOBAL             21 (NULL + threading)
+            280 LOAD_ATTR               22 (Thread)
+            300 LOAD_FAST                1 (work)
+            302 LOAD_CONST               3 (True)
+            304 LOAD_CONST               5 ('pk-auto-update-download')
+            306 KW_NAMES                 6 (('target', 'daemon', 'name'))
+            308 CALL                     3
+            316 LOAD_ATTR               25 (NULL|self + start)
+            336 CALL                     0
+            344 POP_TOP
+            346 RETURN_CONST             0 (None)
+
+Disassembly of <code object work at 0x17a9c140, file "update_ui.py", line 180>:
+              0 COPY_FREE_VARS           2
+
+180           2 RESUME                   0
+
+181           4 NOP
+
+182           6 LOAD_DEREF               3 (self)
+              8 LOAD_ATTR                0 (updater)
+             28 LOAD_ATTR                3 (NULL|self + download_update)
+             48 LOAD_DEREF               2 (info)
+             50 LOAD_CLOSURE             3 (self)
+             52 BUILD_TUPLE              1
+             54 LOAD_CONST               1 (<code object <lambda> at 0x7f6aed7f6430, file "update_ui.py", line 182>)
+             56 MAKE_FUNCTION            8 (closure)
+             58 CALL                     2
+             66 STORE_FAST               0 (staged)
+
+183          68 LOAD_DEREF               3 (self)
+             70 LOAD_ATTR                4 (q)
+             90 LOAD_ATTR                7 (NULL|self + put)
+            110 LOAD_CONST               2 ('staged')
+            112 LOAD_FAST                0 (staged)
+            114 BUILD_TUPLE              2
+            116 CALL                     1
+            124 POP_TOP
+            126 RETURN_CONST             0 (None)
+        >>  128 PUSH_EXC_INFO
+
+184         130 LOAD_GLOBAL              8 (UpdateError)
+            140 CHECK_EXC_MATCH
+            142 POP_JUMP_IF_FALSE       75 (to 294)
+            144 STORE_FAST               1 (e)
+
+185         146 LOAD_DEREF               3 (self)
+            148 LOAD_ATTR                4 (q)
+            168 LOAD_ATTR                7 (NULL|self + put)
+            188 LOAD_CONST               3 ('failed')
+            190 LOAD_FAST                1 (e)
+            192 LOAD_ATTR               10 (args)
+            212 POP_JUMP_IF_FALSE       24 (to 262)
+            214 LOAD_GLOBAL             13 (NULL + str)
+            224 LOAD_FAST                1 (e)
+            226 LOAD_ATTR               10 (args)
+            246 LOAD_CONST               4 (0)
+            248 BINARY_SUBSCR
+            252 CALL                     1
+            260 JUMP_FORWARD             1 (to 264)
+        >>  262 LOAD_CONST               5 ('network')
+        >>  264 BUILD_TUPLE              2
+            266 CALL                     1
+            274 POP_TOP
+            276 POP_EXCEPT
+            278 LOAD_CONST               0 (None)
+            280 STORE_FAST               1 (e)
+            282 DELETE_FAST              1 (e)
+            284 RETURN_CONST             0 (None)
+        >>  286 LOAD_CONST               0 (None)
+            288 STORE_FAST               1 (e)
+            290 DELETE_FAST              1 (e)
+            292 RERAISE                  1
+
+186     >>  294 LOAD_GLOBAL             14 (Exception)
+            304 CHECK_EXC_MATCH
+            306 POP_JUMP_IF_FALSE       30 (to 368)
+            308 POP_TOP
+
+187         310 LOAD_DEREF               3 (self)
+            312 LOAD_ATTR                4 (q)
+            332 LOAD_ATTR                7 (NULL|self + put)
+            352 LOAD_CONST               6 (('failed', 'network'))
+            354 CALL                     1
+            362 POP_TOP
+            364 POP_EXCEPT
+            366 RETURN_CONST             0 (None)
+
+186     >>  368 RERAISE                  0
+        >>  370 COPY                     3
+            372 POP_EXCEPT
+            374 RERAISE                  1
+ExceptionTable:
+  6 to 124 -> 128 [0]
+  128 to 144 -> 370 [1] lasti
+  146 to 274 -> 286 [1] lasti
+  286 to 362 -> 370 [1] lasti
+  368 to 368 -> 370 [1] lasti
+
+Disassembly of <code object <lambda> at 0x7f6aed7f6430, file "update_ui.py", line 182>:
+              0 COPY_FREE_VARS           1
+
+182           2 RESUME                   0
+              4 LOAD_DEREF               1 (self)
+              6 LOAD_ATTR                0 (q)
+             26 LOAD_ATTR                3 (NULL|self + put)
+             46 LOAD_CONST               1 ('progress')
+             48 LOAD_FAST                0 (p)
+             50 BUILD_TUPLE              2
+             52 CALL                     1
+             60 RETURN_VALUE
+
+Disassembly of <code object _apply at 0x17a69b00, file "update_ui.py", line 191>:
+191           0 RESUME                   0
+
+192           2 NOP
+
+193           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (dialog)
+             26 LOAD_ATTR                3 (NULL|self + installing)
+             46 CALL                     0
+             54 POP_TOP
+
+194          56 NOP
+
+195          58 LOAD_FAST                0 (self)
+             60 LOAD_ATTR                4 (updater)
+             80 LOAD_ATTR                7 (NULL|self + launch_runner)
+            100 LOAD_FAST                1 (staged)
+            102 CALL                     1
+            110 POP_TOP
+
+200         112 LOAD_FAST                0 (self)
+            114 LOAD_ATTR               20 (app)
+            134 LOAD_ATTR               23 (NULL|self + _quit)
+            154 CALL                     0
+            162 POP_TOP
+
+201         164 RETURN_CONST             4 (True)
+        >>  166 PUSH_EXC_INFO
+
+196         168 LOAD_GLOBAL              8 (Exception)
+            178 CHECK_EXC_MATCH
+            180 POP_JUMP_IF_FALSE       96 (to 374)
+            182 STORE_FAST               2 (e)
+
+197         184 LOAD_CONST               1 (False)
+            186 LOAD_FAST                0 (self)
+            188 STORE_ATTR               1 (installing)
+
+198         198 LOAD_FAST                0 (self)
+            200 LOAD_ATTR                0 (dialog)
+            220 LOAD_ATTR               11 (NULL|self + error)
+            240 LOAD_GLOBAL             13 (NULL + isinstance)
+            250 LOAD_FAST                2 (e)
+            252 LOAD_GLOBAL             14 (UpdateError)
+            262 CALL                     2
+            270 POP_JUMP_IF_FALSE       36 (to 344)
+            272 LOAD_FAST                2 (e)
+            274 LOAD_ATTR               16 (args)
+            294 POP_JUMP_IF_FALSE       24 (to 344)
+            296 LOAD_GLOBAL             19 (NULL + str)
+            306 LOAD_FAST                2 (e)
+            308 LOAD_ATTR               16 (args)
+            328 LOAD_CONST               2 (0)
+            330 BINARY_SUBSCR
+            334 CALL                     1
+            342 JUMP_FORWARD             1 (to 346)
+        >>  344 LOAD_CONST               3 ('not_writable')
+        >>  346 CALL                     1
+            354 POP_TOP
+
+199         356 POP_EXCEPT
+            358 LOAD_CONST               0 (None)
+            360 STORE_FAST               2 (e)
+            362 DELETE_FAST              2 (e)
+            364 RETURN_CONST             1 (False)
+        >>  366 LOAD_CONST               0 (None)
+            368 STORE_FAST               2 (e)
+            370 DELETE_FAST              2 (e)
+            372 RERAISE                  1
+
+196     >>  374 RERAISE                  0
+        >>  376 COPY                     3
+            378 POP_EXCEPT
+            380 RERAISE                  1
+ExceptionTable:
+  58 to 110 -> 166 [0]
+  166 to 182 -> 376 [1] lasti
+  184 to 354 -> 366 [1] lasti
+  366 to 374 -> 376 [1] lasti
+
+Disassembly of <code object poll at 0x17a78880, file "update_ui.py", line 204>:
+204           0 RESUME                   0
+
+205           2 NOP
+
+206           4 NOP
+
+207     >>    6 NOP
+
+208           8 LOAD_FAST                0 (self)
+             10 LOAD_ATTR                0 (q)
+             30 LOAD_ATTR                3 (NULL|self + get_nowait)
+             50 CALL                     0
+             58 STORE_FAST               1 (msg)
+
+211          60 LOAD_FAST                1 (msg)
+             62 LOAD_CONST               3 (0)
+             64 BINARY_SUBSCR
+             68 STORE_FAST               2 (kind)
+
+212          70 LOAD_FAST                2 (kind)
+             72 LOAD_CONST               4 ('check')
+             74 COMPARE_OP              40 (==)
+             78 POP_JUMP_IF_FALSE      153 (to 386)
+
+213          80 LOAD_FAST                1 (msg)
+             82 UNPACK_SEQUENCE          4
+             86 STORE_FAST               3 (_)
+             88 STORE_FAST               4 (info)
+             90 STORE_FAST               5 (manual)
+             92 STORE_FAST               6 (err)
+
+214          94 LOAD_CONST               2 (False)
+             96 LOAD_FAST                0 (self)
+             98 STORE_ATTR               4 (checking)
+
+215         108 LOAD_FAST                4 (info)
+            110 POP_JUMP_IF_FALSE       88 (to 288)
+
+216         112 LOAD_FAST                4 (info)
+            114 LOAD_FAST                0 (self)
+            116 STORE_ATTR               5 (info)
+
+217         126 LOAD_FAST                0 (self)
+            128 LOAD_ATTR               12 (status)
+            148 LOAD_ATTR               15 (NULL|self + set)
+            168 LOAD_CONST               5 ('')
+            170 CALL                     1
+            178 POP_TOP
+
+218         180 LOAD_FAST                0 (self)
+            182 LOAD_ATTR               17 (NULL|self + _show_banner)
+            202 CALL                     0
+            210 POP_TOP
+
+219         212 LOAD_FAST                5 (manual)
+            214 POP_JUMP_IF_TRUE        12 (to 240)
+            216 LOAD_FAST                0 (self)
+            218 LOAD_ATTR               18 (notified)
+            238 POP_JUMP_IF_TRUE       254 (to 748)
+
+220     >>  240 LOAD_CONST               1 (True)
+            242 LOAD_FAST                0 (self)
+            244 STORE_ATTR               9 (notified)
+
+221         254 LOAD_FAST                0 (self)
+            256 LOAD_ATTR               21 (NULL|self + open_dialog)
+            276 CALL                     0
+            284 POP_TOP
+            286 JUMP_FORWARD           230 (to 748)
+
+222     >>  288 LOAD_FAST                5 (manual)
+            290 POP_JUMP_IF_FALSE      228 (to 748)
+
+223         292 LOAD_FAST                0 (self)
+            294 LOAD_ATTR               12 (status)
+            314 LOAD_ATTR               15 (NULL|self + set)
+            334 LOAD_FAST                0 (self)
+            336 LOAD_ATTR               23 (NULL|self + t)
+            356 LOAD_FAST                6 (err)
+            358 POP_JUMP_IF_FALSE        2 (to 364)
+            360 LOAD_CONST               6 ('upd_check_failed')
+            362 JUMP_FORWARD             1 (to 366)
+        >>  364 LOAD_CONST               7 ('upd_latest')
+        >>  366 CALL                     1
+            374 CALL                     1
+            382 POP_TOP
+            384 JUMP_FORWARD           181 (to 748)
+
+224     >>  386 LOAD_FAST                2 (kind)
+            388 LOAD_CONST               8 ('progress')
+            390 COMPARE_OP              40 (==)
+            394 POP_JUMP_IF_FALSE       69 (to 534)
+            396 LOAD_FAST                0 (self)
+            398 LOAD_ATTR               24 (dialog)
+            418 POP_JUMP_IF_FALSE       57 (to 534)
+            420 LOAD_FAST                0 (self)
+            422 LOAD_ATTR               24 (dialog)
+            442 LOAD_ATTR               27 (NULL|self + alive)
+            462 CALL                     0
+            470 POP_JUMP_IF_FALSE       31 (to 534)
+
+225         472 LOAD_FAST                0 (self)
+            474 LOAD_ATTR               24 (dialog)
+            494 LOAD_ATTR               29 (NULL|self + set_progress)
+            514 LOAD_FAST                1 (msg)
+            516 LOAD_CONST               9 (1)
+            518 BINARY_SUBSCR
+            522 CALL                     1
+            530 POP_TOP
+            532 JUMP_FORWARD           107 (to 748)
+
+226     >>  534 LOAD_FAST                2 (kind)
+            536 LOAD_CONST              10 ('failed')
+            538 COMPARE_OP              40 (==)
+            542 POP_JUMP_IF_FALSE       76 (to 696)
+
+227         544 LOAD_CONST               2 (False)
+            546 LOAD_FAST                0 (self)
+            548 STORE_ATTR              15 (installing)
+
+228         558 LOAD_FAST                0 (self)
+            560 LOAD_ATTR               24 (dialog)
+            580 POP_JUMP_IF_FALSE       83 (to 748)
+            582 LOAD_FAST                0 (self)
+            584 LOAD_ATTR               24 (dialog)
+            604 LOAD_ATTR               27 (NULL|self + alive)
+            624 CALL                     0
+            632 POP_JUMP_IF_FALSE       57 (to 748)
+
+229         634 LOAD_FAST                0 (self)
+            636 LOAD_ATTR               24 (dialog)
+            656 LOAD_ATTR               33 (NULL|self + error)
+            676 LOAD_FAST                1 (msg)
+            678 LOAD_CONST               9 (1)
+            680 BINARY_SUBSCR
+            684 CALL                     1
+            692 POP_TOP
+            694 JUMP_FORWARD            26 (to 748)
+
+230     >>  696 LOAD_FAST                2 (kind)
+            698 LOAD_CONST              11 ('staged')
+            700 COMPARE_OP              40 (==)
+            704 POP_JUMP_IF_FALSE       21 (to 748)
+
+231         706 LOAD_FAST                0 (self)
+            708 LOAD_ATTR               35 (NULL|self + _apply)
+            728 LOAD_FAST                1 (msg)
+            730 LOAD_CONST               9 (1)
+            732 BINARY_SUBSCR
+            736 CALL                     1
+            744 POP_JUMP_IF_FALSE        1 (to 748)
+
+232         746 RETURN_CONST             1 (True)
+
+206     >>  748 EXTENDED_ARG             1
+            750 JUMP_BACKWARD          373 (to 6)
+        >>  752 PUSH_EXC_INFO
+
+209         754 LOAD_GLOBAL              4 (queue)
+            764 LOAD_ATTR                6 (Empty)
+            784 CHECK_EXC_MATCH
+            786 POP_JUMP_IF_FALSE        3 (to 794)
+            788 POP_TOP
+
+210         790 POP_EXCEPT
+            792 RETURN_CONST             2 (False)
+
+209     >>  794 RERAISE                  0
+        >>  796 COPY                     3
+            798 POP_EXCEPT
+            800 RERAISE                  1
+ExceptionTable:
+  8 to 58 -> 752 [0]
+  752 to 788 -> 796 [1] lasti
+  794 to 794 -> 796 [1] lasti

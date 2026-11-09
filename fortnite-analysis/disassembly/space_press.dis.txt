@@ -1,0 +1,514 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+ 11           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (random)
+             10 STORE_NAME               0 (random)
+
+ 12          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (threading)
+             18 STORE_NAME               1 (threading)
+
+ 13          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              2 (time)
+             26 STORE_NAME               2 (time)
+
+ 14          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               2 (('Callable', 'List', 'Optional', 'Tuple'))
+             32 IMPORT_NAME              3 (typing)
+             34 IMPORT_FROM              4 (Callable)
+             36 STORE_NAME               4 (Callable)
+             38 IMPORT_FROM              5 (List)
+             40 STORE_NAME               5 (List)
+             42 IMPORT_FROM              6 (Optional)
+             44 STORE_NAME               6 (Optional)
+             46 IMPORT_FROM              7 (Tuple)
+             48 STORE_NAME               7 (Tuple)
+             50 POP_TOP
+
+ 17          52 PUSH_NULL
+             54 LOAD_BUILD_CLASS
+             56 LOAD_CONST               3 (<code object SpacePresser at 0x7f6af1f8f690, file "space_press.py", line 17>)
+             58 MAKE_FUNCTION            0
+             60 LOAD_CONST               4 ('SpacePresser')
+             62 CALL                     2
+             70 STORE_NAME               8 (SpacePresser)
+             72 RETURN_CONST             1 (None)
+
+Disassembly of <code object SpacePresser at 0x7f6af1f8f690, file "space_press.py", line 17>:
+ 17           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('SpacePresser')
+              8 STORE_NAME               2 (__qualname__)
+
+ 23          10 LOAD_NAME                3 (time)
+             12 LOAD_ATTR                8 (monotonic)
+
+ 24          32 LOAD_CONST               1 (None)
+
+ 25          34 LOAD_CONST               2 (0.05)
+
+ 26          36 LOAD_CONST               1 (None)
+
+ 18          38 BUILD_TUPLE              4
+             40 LOAD_CONST               3 ('active')
+
+ 21          42 LOAD_NAME                5 (Callable)
+             44 BUILD_LIST               0
+             46 LOAD_NAME                6 (bool)
+             48 BUILD_TUPLE              2
+             50 BINARY_SUBSCR
+
+ 18          54 LOAD_CONST               4 ('press')
+
+ 22          56 LOAD_NAME                5 (Callable)
+             58 BUILD_LIST               0
+             60 LOAD_CONST               1 (None)
+             62 BUILD_TUPLE              2
+             64 BINARY_SUBSCR
+
+ 18          68 LOAD_CONST               5 ('clock')
+
+ 23          70 LOAD_NAME                5 (Callable)
+             72 BUILD_LIST               0
+             74 LOAD_NAME                7 (float)
+             76 BUILD_TUPLE              2
+             78 BINARY_SUBSCR
+
+ 18          82 LOAD_CONST               6 ('rng')
+
+ 24          84 LOAD_NAME                8 (Optional)
+             86 LOAD_NAME                9 (random)
+             88 LOAD_ATTR               20 (Random)
+            108 BINARY_SUBSCR
+
+ 18         112 LOAD_CONST               7 ('tick')
+
+ 25         114 LOAD_NAME                7 (float)
+
+ 18         116 LOAD_CONST               8 ('defer')
+
+ 26         118 LOAD_NAME                8 (Optional)
+            120 LOAD_NAME                5 (Callable)
+            122 BUILD_LIST               0
+            124 LOAD_NAME                6 (bool)
+            126 BUILD_TUPLE              2
+            128 BINARY_SUBSCR
+            132 BINARY_SUBSCR
+
+ 18         136 BUILD_TUPLE             12
+            138 LOAD_CONST               9 (<code object __init__ at 0x7f6af1e29930, file "space_press.py", line 18>)
+            140 MAKE_FUNCTION            5 (defaults, annotations)
+            142 STORE_NAME              11 (__init__)
+
+ 40         144 LOAD_CONST              10 ('return')
+            146 LOAD_NAME                6 (bool)
+            148 BUILD_TUPLE              2
+            150 LOAD_CONST              11 (<code object _enabled at 0x7f6af1de2fa0, file "space_press.py", line 40>)
+            152 MAKE_FUNCTION            4 (annotations)
+            154 STORE_NAME              12 (_enabled)
+
+ 44         156 LOAD_CONST              12 ('start')
+            158 LOAD_NAME                7 (float)
+            160 LOAD_CONST              10 ('return')
+            162 LOAD_NAME               13 (Tuple)
+            164 LOAD_NAME               14 (List)
+            166 LOAD_NAME                7 (float)
+            168 BINARY_SUBSCR
+            172 LOAD_NAME                7 (float)
+            174 BUILD_TUPLE              2
+            176 BINARY_SUBSCR
+            180 BUILD_TUPLE              4
+            182 LOAD_CONST              13 (<code object _window at 0x17a8fc80, file "space_press.py", line 44>)
+            184 MAKE_FUNCTION            4 (annotations)
+            186 STORE_NAME              15 (_window)
+
+ 50         188 LOAD_CONST              10 ('return')
+            190 LOAD_NAME               16 (int)
+            192 BUILD_TUPLE              2
+            194 LOAD_CONST              14 (<code object poll at 0x17a7b820, file "space_press.py", line 50>)
+            196 MAKE_FUNCTION            4 (annotations)
+            198 STORE_NAME              17 (poll)
+
+ 72         200 LOAD_CONST              15 (<code object <lambda> at 0x7f6aed1a5550, file "space_press.py", line 72>)
+            202 MAKE_FUNCTION            0
+            204 BUILD_TUPLE              1
+            206 LOAD_CONST              16 ('stop')
+            208 LOAD_NAME               18 (threading)
+            210 LOAD_ATTR               38 (Event)
+            230 LOAD_CONST              17 ('log')
+            232 LOAD_NAME                5 (Callable)
+            234 LOAD_NAME               20 (str)
+            236 BUILD_LIST               1
+            238 LOAD_CONST               1 (None)
+            240 BUILD_TUPLE              2
+            242 BINARY_SUBSCR
+            246 LOAD_CONST              10 ('return')
+            248 LOAD_CONST               1 (None)
+            250 BUILD_TUPLE              6
+            252 LOAD_CONST              18 (<code object run at 0x7f6af1de75d0, file "space_press.py", line 72>)
+            254 MAKE_FUNCTION            5 (defaults, annotations)
+            256 STORE_NAME              21 (run)
+            258 RETURN_CONST             1 (None)
+
+Disassembly of <code object __init__ at 0x7f6af1e29930, file "space_press.py", line 18>:
+ 18           0 RESUME                   0
+
+ 28           2 LOAD_FAST                1 (settings)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (s)
+
+ 29          16 LOAD_FAST                2 (active)
+             18 LOAD_FAST                0 (self)
+             20 STORE_ATTR               1 (active)
+
+ 30          30 LOAD_FAST                3 (press)
+             32 LOAD_FAST                0 (self)
+             34 STORE_ATTR               2 (_press)
+
+ 31          44 LOAD_FAST                4 (clock)
+             46 LOAD_FAST                0 (self)
+             48 STORE_ATTR               3 (_clock)
+
+ 32          58 LOAD_FAST                5 (rng)
+             60 COPY                     1
+             62 POP_JUMP_IF_TRUE        20 (to 104)
+             64 POP_TOP
+             66 LOAD_GLOBAL              9 (NULL + random)
+             76 LOAD_ATTR               10 (Random)
+             96 CALL                     0
+        >>  104 LOAD_FAST                0 (self)
+            106 STORE_ATTR               6 (_rng)
+
+ 33         116 LOAD_FAST                6 (tick)
+            118 LOAD_FAST                0 (self)
+            120 STORE_ATTR               7 (tick)
+
+ 34         130 LOAD_FAST                7 (defer)
+            132 LOAD_FAST                0 (self)
+            134 STORE_ATTR               8 (_defer)
+
+ 35         144 BUILD_LIST               0
+            146 LOAD_FAST                0 (self)
+            148 STORE_ATTR               9 (_times)
+
+ 36         158 LOAD_CONST               1 (0.0)
+            160 LOAD_FAST                0 (self)
+            162 STORE_ATTR              10 (_end)
+
+ 37         172 LOAD_CONST               2 (False)
+            174 LOAD_FAST                0 (self)
+            176 STORE_ATTR              11 (_running)
+
+ 38         186 LOAD_CONST               3 (0)
+            188 LOAD_FAST                0 (self)
+            190 STORE_ATTR              12 (presses)
+            200 RETURN_CONST             0 (None)
+
+Disassembly of <code object _enabled at 0x7f6af1de2fa0, file "space_press.py", line 40>:
+ 40           0 RESUME                   0
+
+ 41           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (s)
+             24 STORE_FAST               1 (s)
+
+ 42          26 LOAD_GLOBAL              3 (NULL + bool)
+             36 LOAD_FAST                1 (s)
+             38 LOAD_ATTR                4 (space_enabled)
+             58 CALL                     1
+             66 COPY                     1
+             68 POP_JUMP_IF_FALSE       50 (to 170)
+             70 POP_TOP
+             72 LOAD_GLOBAL              7 (NULL + int)
+             82 LOAD_FAST                1 (s)
+             84 LOAD_ATTR                8 (space_count)
+            104 CALL                     1
+            112 LOAD_CONST               1 (1)
+            114 COMPARE_OP              92 (>=)
+            118 COPY                     1
+            120 POP_JUMP_IF_FALSE       24 (to 170)
+            122 POP_TOP
+            124 LOAD_GLOBAL             11 (NULL + float)
+            134 LOAD_FAST                1 (s)
+            136 LOAD_ATTR               12 (space_seconds)
+            156 CALL                     1
+            164 LOAD_CONST               2 (0)
+            166 COMPARE_OP              68 (>)
+        >>  170 RETURN_VALUE
+
+Disassembly of <code object _window at 0x17a8fc80, file "space_press.py", line 44>:
+ 44           0 RESUME                   0
+
+ 45           2 LOAD_GLOBAL              1 (NULL + max)
+             12 LOAD_CONST               1 (1)
+             14 LOAD_GLOBAL              3 (NULL + int)
+             24 LOAD_FAST                0 (self)
+             26 LOAD_ATTR                4 (s)
+             46 LOAD_ATTR                6 (space_count)
+             66 CALL                     1
+             74 CALL                     2
+             82 STORE_FAST               2 (n)
+
+ 46          84 LOAD_GLOBAL              1 (NULL + max)
+             94 LOAD_CONST               2 (0.5)
+             96 LOAD_GLOBAL              9 (NULL + float)
+            106 LOAD_FAST                0 (self)
+            108 LOAD_ATTR                4 (s)
+            128 LOAD_ATTR               10 (space_seconds)
+            148 CALL                     1
+            156 CALL                     2
+            164 STORE_FAST               3 (length)
+
+ 47         166 LOAD_FAST                3 (length)
+            168 LOAD_FAST                2 (n)
+            170 BINARY_OP               11 (/)
+            174 STORE_FAST               4 (slot)
+
+ 48         176 LOAD_GLOBAL             13 (NULL + range)
+            186 LOAD_FAST                2 (n)
+            188 CALL                     1
+            196 GET_ITER
+            198 LOAD_FAST_AND_CLEAR      5 (k)
+            200 SWAP                     2
+            202 BUILD_LIST               0
+            204 SWAP                     2
+        >>  206 FOR_ITER                42 (to 294)
+            210 STORE_FAST               5 (k)
+            212 LOAD_FAST                1 (start)
+            214 LOAD_FAST                5 (k)
+            216 LOAD_FAST                4 (slot)
+            218 BINARY_OP                5 (*)
+            222 BINARY_OP                0 (+)
+            226 LOAD_FAST                0 (self)
+            228 LOAD_ATTR               14 (_rng)
+            248 LOAD_ATTR               17 (NULL|self + uniform)
+            268 LOAD_CONST               3 (0.05)
+            270 LOAD_CONST               4 (0.95)
+            272 CALL                     2
+            280 LOAD_FAST                4 (slot)
+            282 BINARY_OP                5 (*)
+            286 BINARY_OP                0 (+)
+            290 LIST_APPEND              2
+            292 JUMP_BACKWARD           44 (to 206)
+        >>  294 END_FOR
+            296 SWAP                     2
+            298 STORE_FAST               5 (k)
+            300 LOAD_FAST                1 (start)
+            302 LOAD_FAST                3 (length)
+            304 BINARY_OP                0 (+)
+            308 BUILD_TUPLE              2
+            310 RETURN_VALUE
+        >>  312 SWAP                     2
+            314 POP_TOP
+            316 SWAP                     2
+            318 STORE_FAST               5 (k)
+            320 RERAISE                  0
+ExceptionTable:
+  202 to 294 -> 312 [2]
+
+Disassembly of <code object poll at 0x17a7b820, file "space_press.py", line 50>:
+ 50           0 RESUME                   0
+
+ 51           2 NOP
+
+ 52           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + _enabled)
+             26 CALL                     0
+             34 POP_JUMP_IF_FALSE       16 (to 68)
+             36 LOAD_FAST                0 (self)
+             38 LOAD_ATTR                3 (NULL|self + active)
+             58 CALL                     0
+             66 POP_JUMP_IF_TRUE        16 (to 100)
+
+ 53     >>   68 LOAD_CONST               1 (False)
+             70 BUILD_LIST               0
+             72 SWAP                     2
+             74 LOAD_FAST                0 (self)
+             76 STORE_ATTR               2 (_running)
+             86 LOAD_FAST                0 (self)
+             88 STORE_ATTR               3 (_times)
+
+ 54          98 RETURN_CONST             2 (0)
+
+ 55     >>  100 LOAD_FAST                0 (self)
+            102 LOAD_ATTR                9 (NULL|self + _clock)
+            122 CALL                     0
+            130 STORE_FAST               1 (now)
+
+ 56         132 LOAD_FAST                0 (self)
+            134 LOAD_ATTR                4 (_running)
+            154 POP_JUMP_IF_TRUE        38 (to 232)
+
+ 57         156 LOAD_CONST               3 (True)
+            158 LOAD_FAST                0 (self)
+            160 STORE_ATTR               2 (_running)
+
+ 58         170 LOAD_FAST                0 (self)
+            172 LOAD_ATTR               11 (NULL|self + _window)
+            192 LOAD_FAST                1 (now)
+            194 CALL                     1
+            202 UNPACK_SEQUENCE          2
+            206 LOAD_FAST                0 (self)
+            208 STORE_ATTR               3 (_times)
+            218 LOAD_FAST                0 (self)
+            220 STORE_ATTR               6 (_end)
+            230 JUMP_FORWARD            57 (to 346)
+
+ 59     >>  232 LOAD_FAST                0 (self)
+            234 LOAD_ATTR                6 (_times)
+            254 POP_JUMP_IF_TRUE        45 (to 346)
+            256 LOAD_FAST                1 (now)
+            258 LOAD_FAST                0 (self)
+            260 LOAD_ATTR               12 (_end)
+            280 COMPARE_OP              92 (>=)
+            284 POP_JUMP_IF_FALSE       30 (to 346)
+
+ 60         286 LOAD_FAST                0 (self)
+            288 LOAD_ATTR               11 (NULL|self + _window)
+            308 LOAD_FAST                1 (now)
+            310 CALL                     1
+            318 UNPACK_SEQUENCE          2
+            322 LOAD_FAST                0 (self)
+            324 STORE_ATTR               3 (_times)
+            334 LOAD_FAST                0 (self)
+            336 STORE_ATTR               6 (_end)
+
+ 61     >>  346 LOAD_CONST               2 (0)
+            348 STORE_FAST               2 (made)
+
+ 62         350 LOAD_FAST                0 (self)
+            352 LOAD_ATTR               14 (_defer)
+            372 POP_JUMP_IF_FALSE       18 (to 410)
+            374 LOAD_FAST                0 (self)
+            376 LOAD_ATTR               15 (NULL|self + _defer)
+            396 CALL                     0
+            404 POP_JUMP_IF_FALSE        2 (to 410)
+
+ 63         406 LOAD_FAST                2 (made)
+            408 RETURN_VALUE
+
+ 64     >>  410 LOAD_FAST                0 (self)
+            412 LOAD_ATTR                6 (_times)
+            432 POP_JUMP_IF_FALSE      134 (to 702)
+            434 LOAD_FAST                1 (now)
+            436 LOAD_FAST                0 (self)
+            438 LOAD_ATTR                6 (_times)
+            458 LOAD_CONST               2 (0)
+            460 BINARY_SUBSCR
+            464 COMPARE_OP              92 (>=)
+            468 POP_JUMP_IF_FALSE      116 (to 702)
+
+ 65     >>  470 LOAD_FAST                0 (self)
+            472 LOAD_ATTR                6 (_times)
+            492 LOAD_ATTR               17 (NULL|self + pop)
+            512 LOAD_CONST               2 (0)
+            514 CALL                     1
+            522 POP_TOP
+
+ 66         524 LOAD_FAST                0 (self)
+            526 LOAD_ATTR                3 (NULL|self + active)
+            546 CALL                     0
+            554 POP_JUMP_IF_FALSE       42 (to 640)
+
+ 67         556 LOAD_FAST                0 (self)
+            558 LOAD_ATTR               19 (NULL|self + _press)
+            578 CALL                     0
+            586 POP_TOP
+
+ 68         588 LOAD_FAST                0 (self)
+            590 COPY                     1
+            592 LOAD_ATTR               20 (presses)
+            612 LOAD_CONST               4 (1)
+            614 BINARY_OP               13 (+=)
+            618 SWAP                     2
+            620 STORE_ATTR              10 (presses)
+
+ 69         630 LOAD_FAST                2 (made)
+            632 LOAD_CONST               4 (1)
+            634 BINARY_OP               13 (+=)
+            638 STORE_FAST               2 (made)
+
+ 64     >>  640 LOAD_FAST                0 (self)
+            642 LOAD_ATTR                6 (_times)
+            662 POP_JUMP_IF_FALSE       19 (to 702)
+            664 LOAD_FAST                1 (now)
+            666 LOAD_FAST                0 (self)
+            668 LOAD_ATTR                6 (_times)
+            688 LOAD_CONST               2 (0)
+            690 BINARY_SUBSCR
+            694 COMPARE_OP              92 (>=)
+            698 POP_JUMP_IF_FALSE        1 (to 702)
+            700 JUMP_BACKWARD          116 (to 470)
+
+ 70     >>  702 LOAD_FAST                2 (made)
+            704 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed1a5550, file "space_press.py", line 72>:
+ 72           0 RESUME                   0
+              2 RETURN_CONST             0 (None)
+
+Disassembly of <code object run at 0x7f6af1de75d0, file "space_press.py", line 72>:
+ 72           0 RESUME                   0
+
+ 73           2 LOAD_FAST                1 (stop)
+              4 LOAD_ATTR                1 (NULL|self + wait)
+             24 LOAD_FAST                0 (self)
+             26 LOAD_ATTR                2 (tick)
+             46 CALL                     1
+             54 POP_JUMP_IF_TRUE        46 (to 148)
+
+ 74     >>   56 NOP
+
+ 75          58 LOAD_FAST                0 (self)
+             60 LOAD_ATTR                5 (NULL|self + poll)
+             80 CALL                     0
+             88 POP_TOP
+
+ 73     >>   90 LOAD_FAST                1 (stop)
+             92 LOAD_ATTR                1 (NULL|self + wait)
+            112 LOAD_FAST                0 (self)
+            114 LOAD_ATTR                2 (tick)
+            134 CALL                     1
+            142 POP_JUMP_IF_TRUE         1 (to 146)
+            144 JUMP_BACKWARD           45 (to 56)
+        >>  146 RETURN_CONST             0 (None)
+        >>  148 RETURN_CONST             0 (None)
+        >>  150 PUSH_EXC_INFO
+
+ 76         152 LOAD_GLOBAL              6 (Exception)
+            162 CHECK_EXC_MATCH
+            164 POP_JUMP_IF_FALSE       21 (to 208)
+            166 STORE_FAST               3 (e)
+
+ 77         168 PUSH_NULL
+            170 LOAD_FAST                2 (log)
+            172 LOAD_CONST               1 ('space error: ')
+            174 LOAD_FAST                3 (e)
+            176 FORMAT_VALUE             0
+            178 BUILD_STRING             2
+            180 CALL                     1
+            188 POP_TOP
+            190 POP_EXCEPT
+            192 LOAD_CONST               0 (None)
+            194 STORE_FAST               3 (e)
+            196 DELETE_FAST              3 (e)
+            198 JUMP_BACKWARD           55 (to 90)
+        >>  200 LOAD_CONST               0 (None)
+            202 STORE_FAST               3 (e)
+            204 DELETE_FAST              3 (e)
+            206 RERAISE                  1
+
+ 76     >>  208 RERAISE                  0
+        >>  210 COPY                     3
+            212 POP_EXCEPT
+            214 RERAISE                  1
+ExceptionTable:
+  58 to 88 -> 150 [0]
+  150 to 166 -> 210 [1] lasti
+  168 to 188 -> 200 [1] lasti
+  200 to 208 -> 210 [1] lasti

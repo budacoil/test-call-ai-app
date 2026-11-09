@@ -1,0 +1,243 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+  2           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (os)
+             10 STORE_NAME               0 (os)
+
+  3          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (queue)
+             18 STORE_NAME               1 (queue)
+
+  4          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              2 (sys)
+             26 STORE_NAME               2 (sys)
+
+  5          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               1 (None)
+             32 IMPORT_NAME              3 (threading)
+             34 STORE_NAME               3 (threading)
+
+  6          36 LOAD_CONST               0 (0)
+             38 LOAD_CONST               1 (None)
+             40 IMPORT_NAME              4 (time)
+             42 STORE_NAME               4 (time)
+
+  7          44 LOAD_CONST               0 (0)
+             46 LOAD_CONST               1 (None)
+             48 IMPORT_NAME              5 (tkinter)
+             50 STORE_NAME               6 (tk)
+
+  8          52 LOAD_CONST               0 (0)
+             54 LOAD_CONST               1 (None)
+             56 IMPORT_NAME              7 (webbrowser)
+             58 STORE_NAME               7 (webbrowser)
+
+  9          60 LOAD_CONST               0 (0)
+             62 LOAD_CONST               2 (('ttk',))
+             64 IMPORT_NAME              5 (tkinter)
+             66 IMPORT_FROM              8 (ttk)
+             68 STORE_NAME               8 (ttk)
+             70 POP_TOP
+
+ 11          72 LOAD_CONST              23 (('return', None))
+             74 LOAD_CONST               4 (<code object _enable_dpi_awareness at 0x7f08000c4850, file "main.py", line 11>)
+             76 MAKE_FUNCTION            4 (annotations)
+             78 STORE_NAME               9 (_enable_dpi_awareness)
+
+ 24          80 PUSH_NULL
+             82 LOAD_NAME                9 (_enable_dpi_awareness)
+             84 CALL                     0
+             92 POP_TOP
+
+ 26          94 LOAD_CONST               0 (0)
+             96 LOAD_CONST               1 (None)
+             98 IMPORT_NAME             10 (config)
+            100 STORE_NAME              10 (config)
+
+ 27         102 LOAD_CONST               0 (0)
+            104 LOAD_CONST               1 (None)
+            106 IMPORT_NAME             11 (i18n)
+            108 STORE_NAME              11 (i18n)
+
+ 28         110 LOAD_CONST               0 (0)
+            112 LOAD_CONST               1 (None)
+            114 IMPORT_NAME             12 (remote)
+            116 STORE_NAME              12 (remote)
+
+ 29         118 LOAD_CONST               0 (0)
+            120 LOAD_CONST               1 (None)
+            122 IMPORT_NAME             13 (gui_extras)
+            124 STORE_NAME              13 (gui_extras)
+
+ 30         126 LOAD_CONST               0 (0)
+            128 LOAD_CONST               1 (None)
+            130 IMPORT_NAME             14 (licensing_ui)
+            132 STORE_NAME              14 (licensing_ui)
+
+ 31         134 LOAD_CONST               0 (0)
+            136 LOAD_CONST               1 (None)
+            138 IMPORT_NAME             15 (relay)
+            140 STORE_NAME              15 (relay)
+
+ 32         142 LOAD_CONST               0 (0)
+            144 LOAD_CONST               1 (None)
+            146 IMPORT_NAME             16 (rescue)
+            148 STORE_NAME              16 (rescue)
+
+ 33         150 LOAD_CONST               0 (0)
+            152 LOAD_CONST               1 (None)
+            154 IMPORT_NAME             17 (shot)
+            156 STORE_NAME              17 (shot)
+
+ 34         158 LOAD_CONST               0 (0)
+            160 LOAD_CONST               5 (('Settings',))
+            162 IMPORT_NAME             10 (config)
+            164 IMPORT_FROM             18 (Settings)
+            166 STORE_NAME              18 (Settings)
+            168 POP_TOP
+
+ 35         170 LOAD_CONST               0 (0)
+            172 LOAD_CONST               6 (('SnipOverlay',))
+            174 IMPORT_NAME             19 (snip)
+            176 IMPORT_FROM             20 (SnipOverlay)
+            178 STORE_NAME              20 (SnipOverlay)
+            180 POP_TOP
+
+ 36         182 LOAD_CONST               0 (0)
+            184 LOAD_CONST               7 (('State',))
+            186 IMPORT_NAME             21 (state_machine)
+            188 IMPORT_FROM             22 (State)
+            190 STORE_NAME              22 (State)
+            192 POP_TOP
+
+ 37         194 LOAD_CONST               0 (0)
+            196 LOAD_CONST               8 (('TelemetryManager', 'clean_key'))
+            198 IMPORT_NAME             23 (telemetry)
+            200 IMPORT_FROM             24 (TelemetryManager)
+            202 STORE_NAME              24 (TelemetryManager)
+            204 IMPORT_FROM             25 (clean_key)
+            206 STORE_NAME              25 (clean_key)
+            208 POP_TOP
+
+ 38         210 LOAD_CONST               0 (0)
+            212 LOAD_CONST               9 (('UpdateController',))
+            214 IMPORT_NAME             26 (update_ui)
+            216 IMPORT_FROM             27 (UpdateController)
+            218 STORE_NAME              27 (UpdateController)
+            220 POP_TOP
+
+ 39         222 LOAD_CONST               0 (0)
+            224 LOAD_CONST              10 (('capture_screen', 'load_template_auto'))
+            226 IMPORT_NAME             28 (vision)
+            228 IMPORT_FROM             29 (capture_screen)
+            230 STORE_NAME              29 (capture_screen)
+            232 IMPORT_FROM             30 (load_template_auto)
+            234 STORE_NAME              30 (load_template_auto)
+            236 POP_TOP
+
+ 40         238 LOAD_CONST               0 (0)
+            240 LOAD_CONST              11 (('Worker', 'load_templates'))
+            242 IMPORT_NAME             31 (worker)
+            244 IMPORT_FROM             32 (Worker)
+            246 STORE_NAME              32 (Worker)
+            248 IMPORT_FROM             33 (load_templates)
+            250 STORE_NAME              33 (load_templates)
+            252 POP_TOP
+
+ 43         254 LOAD_CONST              12 ('twitter:4z5pk')
+            256 STORE_NAME              34 (TITLE)
+
+ 46         258 PUSH_NULL
+            260 LOAD_BUILD_CLASS
+            262 LOAD_CONST              13 (<code object App at 0x3eb62ba0, file "main.py", line 46>)
+            264 MAKE_FUNCTION            0
+            266 LOAD_CONST              14 ('App')
+            268 CALL                     2
+            276 STORE_NAME              35 (App)
+
+574         278 LOAD_CONST              15 ('out_path')
+            280 LOAD_NAME               36 (str)
+            282 LOAD_CONST               3 ('return')
+            284 LOAD_CONST               1 (None)
+            286 BUILD_TUPLE              4
+            288 LOAD_CONST              16 (<code object selftest at 0x3ec53e70, file "main.py", line 574>)
+            290 MAKE_FUNCTION            4 (annotations)
+            292 STORE_NAME              37 (selftest)
+
+643         294 LOAD_NAME               38 (__name__)
+            296 LOAD_CONST              17 ('__main__')
+            298 COMPARE_OP              40 (==)
+            302 POP_JUMP_IF_FALSE      158 (to 620)
+
+644         304 PUSH_NULL
+            306 LOAD_NAME               39 (len)
+            308 LOAD_NAME                2 (sys)
+            310 LOAD_ATTR               80 (argv)
+            330 CALL                     1
+            338 LOAD_CONST              18 (3)
+            340 COMPARE_OP              40 (==)
+            344 POP_JUMP_IF_FALSE       40 (to 426)
+            346 LOAD_NAME                2 (sys)
+            348 LOAD_ATTR               80 (argv)
+            368 LOAD_CONST              19 (1)
+            370 BINARY_SUBSCR
+            374 LOAD_CONST              20 ('--selftest')
+            376 COMPARE_OP              40 (==)
+            380 POP_JUMP_IF_FALSE       22 (to 426)
+
+645         382 PUSH_NULL
+            384 LOAD_NAME               37 (selftest)
+            386 LOAD_NAME                2 (sys)
+            388 LOAD_ATTR               80 (argv)
+            408 LOAD_CONST              21 (2)
+            410 BINARY_SUBSCR
+            414 CALL                     1
+            422 POP_TOP
+            424 RETURN_CONST             1 (None)
+
+646     >>  426 PUSH_NULL
+            428 LOAD_NAME               39 (len)
+            430 LOAD_NAME                2 (sys)
+            432 LOAD_ATTR               80 (argv)
+            452 CALL                     1
+            460 LOAD_CONST              18 (3)
+            462 COMPARE_OP              40 (==)
+            466 POP_JUMP_IF_FALSE       54 (to 576)
+            468 LOAD_NAME                2 (sys)
+            470 LOAD_ATTR               80 (argv)
+            490 LOAD_CONST              19 (1)
+            492 BINARY_SUBSCR
+            496 LOAD_CONST              22 ('--diagnose')
+            498 COMPARE_OP              40 (==)
+            502 POP_JUMP_IF_FALSE       36 (to 576)
+
+647         504 LOAD_CONST               0 (0)
+            506 LOAD_CONST               1 (None)
+            508 IMPORT_NAME             41 (diagnose)
+            510 STORE_NAME              41 (diagnose)
+
+649         512 PUSH_NULL
+            514 LOAD_NAME               41 (diagnose)
+            516 LOAD_ATTR               84 (run)
+            536 LOAD_NAME                2 (sys)
+            538 LOAD_ATTR               80 (argv)
+            558 LOAD_CONST              21 (2)
+            560 BINARY_SUBSCR
+            564 CALL                     1
+            572 POP_TOP
+            574 RETURN_CONST             1 (None)
+
+651     >>  576 PUSH_NULL
+            578 LOAD_NAME               35 (App)
+            580 CALL                     0
+            588 LOAD_ATTR               85 (NULL|self + run)
+            608 CALL                     0
+            616 POP_TOP
+            618 RETURN_CONST             1 (None)
+
+643     >>  620 RETURN_CONST             1 (None)

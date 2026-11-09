@@ -1,0 +1,3151 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+  7           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (contextlib)
+             10 STORE_NAME               0 (contextlib)
+
+  8          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (random)
+             18 STORE_NAME               1 (random)
+
+  9          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              2 (threading)
+             26 STORE_NAME               2 (threading)
+
+ 10          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               1 (None)
+             32 IMPORT_NAME              3 (time)
+             34 STORE_NAME               3 (time)
+
+ 11          36 LOAD_CONST               0 (0)
+             38 LOAD_CONST               2 (('Callable', 'Optional'))
+             40 IMPORT_NAME              4 (typing)
+             42 IMPORT_FROM              5 (Callable)
+             44 STORE_NAME               5 (Callable)
+             46 IMPORT_FROM              6 (Optional)
+             48 STORE_NAME               6 (Optional)
+             50 POP_TOP
+
+ 13          52 LOAD_CONST               0 (0)
+             54 LOAD_CONST               1 (None)
+             56 IMPORT_NAME              7 (config)
+             58 STORE_NAME               7 (config)
+
+ 14          60 LOAD_CONST               0 (0)
+             62 LOAD_CONST               3 (('Humanizer',))
+             64 IMPORT_NAME              8 (humanizer)
+             66 IMPORT_FROM              9 (Humanizer)
+             68 STORE_NAME               9 (Humanizer)
+             70 POP_TOP
+
+ 16          72 LOAD_CONST               4 (1400)
+             74 STORE_NAME              10 (DIVE_PITCH)
+
+ 17          76 LOAD_CONST               5 (0.55)
+             78 STORE_NAME              11 (DIVE_RESTORE)
+
+ 18          80 LOAD_CONST               6 ((10.0, 30.0))
+             82 STORE_NAME              12 (PICKAXE_EVERY_S)
+
+ 21          84 PUSH_NULL
+             86 LOAD_BUILD_CLASS
+             88 LOAD_CONST               7 (<code object _Guard at 0x7f6af1dbe230, file "anti_afk.py", line 21>)
+             90 MAKE_FUNCTION            0
+             92 LOAD_CONST               8 ('_Guard')
+             94 CALL                     2
+            102 STORE_NAME              13 (_Guard)
+
+ 49         104 LOAD_CONST               9 ('return')
+            106 LOAD_NAME               14 (bool)
+            108 BUILD_TUPLE              2
+            110 LOAD_CONST              10 (<code object _halted at 0x7f6af1dbecd0, file "anti_afk.py", line 49>)
+            112 MAKE_FUNCTION            4 (annotations)
+            114 STORE_NAME              15 (_halted)
+
+ 54         116 LOAD_CONST              11 ('key')
+            118 LOAD_NAME               16 (str)
+            120 LOAD_CONST               9 ('return')
+            122 LOAD_CONST               1 (None)
+            124 BUILD_TUPLE              4
+            126 LOAD_CONST              12 (<code object _default_key_down at 0x7f6af1dc26a0, file "anti_afk.py", line 54>)
+            128 MAKE_FUNCTION            4 (annotations)
+            130 STORE_NAME              17 (_default_key_down)
+
+ 60         132 LOAD_CONST              11 ('key')
+            134 LOAD_NAME               16 (str)
+            136 LOAD_CONST               9 ('return')
+            138 LOAD_CONST               1 (None)
+            140 BUILD_TUPLE              4
+            142 LOAD_CONST              13 (<code object _default_key_up at 0x7f6af1dc32d0, file "anti_afk.py", line 60>)
+            144 MAKE_FUNCTION            4 (annotations)
+            146 STORE_NAME              18 (_default_key_up)
+
+ 66         148 PUSH_NULL
+            150 LOAD_BUILD_CLASS
+            152 LOAD_CONST              14 (<code object AntiAfk at 0x17a62120, file "anti_afk.py", line 66>)
+            154 MAKE_FUNCTION            0
+            156 LOAD_CONST              15 ('AntiAfk')
+            158 CALL                     2
+            166 STORE_NAME              19 (AntiAfk)
+            168 RETURN_CONST             1 (None)
+
+Disassembly of <code object _Guard at 0x7f6af1dbe230, file "anti_afk.py", line 21>:
+ 21           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('_Guard')
+              8 STORE_NAME               2 (__qualname__)
+
+ 22          10 NOP
+
+ 25          12 LOAD_CONST               9 ((0.05,))
+             14 LOAD_CONST               1 ('active')
+             16 LOAD_NAME                3 (Callable)
+             18 BUILD_LIST               0
+             20 LOAD_NAME                4 (bool)
+             22 BUILD_TUPLE              2
+             24 BINARY_SUBSCR
+             28 LOAD_CONST               2 ('slice_s')
+             30 LOAD_NAME                5 (float)
+             32 BUILD_TUPLE              4
+             34 LOAD_CONST               3 (<code object __init__ at 0x7f6af1dc2790, file "anti_afk.py", line 25>)
+             36 MAKE_FUNCTION            5 (defaults, annotations)
+             38 STORE_NAME               6 (__init__)
+
+ 28          40 LOAD_CONST               4 ('return')
+             42 LOAD_NAME                4 (bool)
+             44 BUILD_TUPLE              2
+             46 LOAD_CONST               5 (<code object _alive at 0x7f6af1dd6e50, file "anti_afk.py", line 28>)
+             48 MAKE_FUNCTION            4 (annotations)
+             50 STORE_NAME               7 (_alive)
+
+ 34          52 LOAD_CONST               4 ('return')
+             54 LOAD_NAME                4 (bool)
+             56 BUILD_TUPLE              2
+             58 LOAD_CONST               6 (<code object is_set at 0x7f6af1dd7e10, file "anti_afk.py", line 34>)
+             60 MAKE_FUNCTION            4 (annotations)
+             62 STORE_NAME               8 (is_set)
+
+ 37          64 LOAD_CONST              10 ((None,))
+             66 LOAD_CONST               4 ('return')
+             68 LOAD_NAME                4 (bool)
+             70 BUILD_TUPLE              2
+             72 LOAD_CONST               8 (<code object wait at 0x7f6af20c3830, file "anti_afk.py", line 37>)
+             74 MAKE_FUNCTION            5 (defaults, annotations)
+             76 STORE_NAME               9 (wait)
+             78 RETURN_CONST             7 (None)
+
+Disassembly of <code object __init__ at 0x7f6af1dc2790, file "anti_afk.py", line 25>:
+ 25           0 RESUME                   0
+
+ 26           2 LOAD_FAST                1 (stop)
+              4 LOAD_FAST                2 (active)
+              6 LOAD_FAST                3 (slice_s)
+              8 SWAP                     3
+             10 LOAD_FAST                0 (self)
+             12 STORE_ATTR               0 (_stop)
+             22 LOAD_FAST                0 (self)
+             24 STORE_ATTR               1 (_active)
+             34 LOAD_FAST                0 (self)
+             36 STORE_ATTR               2 (_slice)
+             46 RETURN_CONST             0 (None)
+
+Disassembly of <code object _alive at 0x7f6af1dd6e50, file "anti_afk.py", line 28>:
+ 28           0 RESUME                   0
+
+ 29           2 NOP
+
+ 30           4 LOAD_GLOBAL              1 (NULL + bool)
+             14 LOAD_FAST                0 (self)
+             16 LOAD_ATTR                3 (NULL|self + _active)
+             36 CALL                     0
+             44 CALL                     1
+             52 RETURN_VALUE
+        >>   54 PUSH_EXC_INFO
+
+ 31          56 LOAD_GLOBAL              4 (Exception)
+             66 CHECK_EXC_MATCH
+             68 POP_JUMP_IF_FALSE        3 (to 76)
+             70 POP_TOP
+
+ 32          72 POP_EXCEPT
+             74 RETURN_CONST             1 (False)
+
+ 31     >>   76 RERAISE                  0
+        >>   78 COPY                     3
+             80 POP_EXCEPT
+             82 RERAISE                  1
+ExceptionTable:
+  4 to 50 -> 54 [0]
+  54 to 70 -> 78 [1] lasti
+  76 to 76 -> 78 [1] lasti
+
+Disassembly of <code object is_set at 0x7f6af1dd7e10, file "anti_afk.py", line 34>:
+ 34           0 RESUME                   0
+
+ 35           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_stop)
+             24 LOAD_ATTR                3 (NULL|self + is_set)
+             44 CALL                     0
+             52 COPY                     1
+             54 POP_JUMP_IF_TRUE        17 (to 90)
+             56 POP_TOP
+             58 LOAD_FAST                0 (self)
+             60 LOAD_ATTR                5 (NULL|self + _alive)
+             80 CALL                     0
+             88 UNARY_NOT
+        >>   90 RETURN_VALUE
+
+Disassembly of <code object wait at 0x7f6af20c3830, file "anti_afk.py", line 37>:
+ 37           0 RESUME                   0
+
+ 38           2 LOAD_GLOBAL              1 (NULL + time)
+             12 LOAD_ATTR                2 (monotonic)
+             32 CALL                     0
+             40 LOAD_FAST                1 (timeout)
+             42 COPY                     1
+             44 POP_JUMP_IF_TRUE         2 (to 50)
+             46 POP_TOP
+             48 LOAD_CONST               1 (0.0)
+        >>   50 BINARY_OP                0 (+)
+             54 STORE_FAST               2 (end)
+
+ 39          56 NOP
+
+ 40     >>   58 LOAD_FAST                0 (self)
+             60 LOAD_ATTR                5 (NULL|self + is_set)
+             80 CALL                     0
+             88 POP_JUMP_IF_FALSE        1 (to 92)
+
+ 41          90 RETURN_CONST             2 (True)
+
+ 42     >>   92 LOAD_FAST                2 (end)
+             94 LOAD_GLOBAL              1 (NULL + time)
+            104 LOAD_ATTR                2 (monotonic)
+            124 CALL                     0
+            132 BINARY_OP               10 (-)
+            136 STORE_FAST               3 (left)
+
+ 43         138 LOAD_FAST                3 (left)
+            140 LOAD_CONST               3 (0)
+            142 COMPARE_OP              26 (<=)
+            146 POP_JUMP_IF_FALSE        1 (to 150)
+
+ 44         148 RETURN_CONST             4 (False)
+
+ 45     >>  150 LOAD_FAST                0 (self)
+            152 LOAD_ATTR                6 (_stop)
+            172 LOAD_ATTR                9 (NULL|self + wait)
+            192 LOAD_GLOBAL             11 (NULL + min)
+            202 LOAD_FAST                0 (self)
+            204 LOAD_ATTR               12 (_slice)
+            224 LOAD_FAST                3 (left)
+            226 CALL                     2
+            234 CALL                     1
+            242 POP_JUMP_IF_FALSE        1 (to 246)
+
+ 46         244 RETURN_CONST             2 (True)
+
+ 39     >>  246 JUMP_BACKWARD           95 (to 58)
+
+Disassembly of <code object _halted at 0x7f6af1dbecd0, file "anti_afk.py", line 49>:
+ 49           0 RESUME                   0
+
+ 50           2 LOAD_GLOBAL              1 (NULL + getattr)
+             12 LOAD_FAST                0 (stop)
+             14 LOAD_CONST               1 ('is_set')
+             16 LOAD_CONST               0 (None)
+             18 CALL                     3
+             26 STORE_FAST               1 (f)
+
+ 51          28 LOAD_GLOBAL              3 (NULL + bool)
+             38 LOAD_FAST                1 (f)
+             40 COPY                     1
+             42 POP_JUMP_IF_FALSE        7 (to 58)
+             44 POP_TOP
+             46 PUSH_NULL
+             48 LOAD_FAST                1 (f)
+             50 CALL                     0
+        >>   58 CALL                     1
+             66 RETURN_VALUE
+
+Disassembly of <code object _default_key_down at 0x7f6af1dc26a0, file "anti_afk.py", line 54>:
+ 54           0 RESUME                   0
+
+ 55           2 LOAD_CONST               1 (0)
+              4 LOAD_CONST               0 (None)
+              6 IMPORT_NAME              0 (pydirectinput)
+              8 STORE_FAST               1 (pydirectinput)
+
+ 57          10 LOAD_FAST                1 (pydirectinput)
+             12 LOAD_ATTR                3 (NULL|self + keyDown)
+             32 LOAD_FAST                0 (key)
+             34 CALL                     1
+             42 POP_TOP
+             44 RETURN_CONST             0 (None)
+
+Disassembly of <code object _default_key_up at 0x7f6af1dc32d0, file "anti_afk.py", line 60>:
+ 60           0 RESUME                   0
+
+ 61           2 LOAD_CONST               1 (0)
+              4 LOAD_CONST               0 (None)
+              6 IMPORT_NAME              0 (pydirectinput)
+              8 STORE_FAST               1 (pydirectinput)
+
+ 63          10 LOAD_FAST                1 (pydirectinput)
+             12 LOAD_ATTR                3 (NULL|self + keyUp)
+             32 LOAD_FAST                0 (key)
+             34 CALL                     1
+             42 POP_TOP
+             44 RETURN_CONST             0 (None)
+
+Disassembly of <code object AntiAfk at 0x17a62120, file "anti_afk.py", line 66>:
+ 66           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('AntiAfk')
+              8 STORE_NAME               2 (__qualname__)
+
+ 71          10 LOAD_CONST               1 (None)
+
+ 72          12 LOAD_CONST               1 (None)
+
+ 73          14 LOAD_NAME                3 (time)
+             16 LOAD_ATTR                8 (monotonic)
+
+ 74          36 LOAD_CONST               1 (None)
+
+ 75          38 LOAD_CONST               1 (None)
+
+ 76          40 LOAD_CONST               1 (None)
+
+ 77          42 LOAD_CONST               1 (None)
+
+ 78          44 LOAD_CONST               1 (None)
+
+ 79          46 LOAD_CONST               1 (None)
+
+ 80          48 LOAD_CONST               1 (None)
+
+ 81          50 LOAD_CONST               1 (None)
+
+ 82          52 LOAD_CONST               1 (None)
+
+ 83          54 LOAD_CONST               1 (None)
+
+ 67          56 BUILD_TUPLE             13
+             58 LOAD_CONST               2 ('active')
+
+ 70          60 LOAD_NAME                5 (Callable)
+             62 BUILD_LIST               0
+             64 LOAD_NAME                6 (bool)
+             66 BUILD_TUPLE              2
+             68 BINARY_SUBSCR
+
+ 67          72 LOAD_CONST               3 ('key_down')
+
+ 71          74 LOAD_NAME                7 (Optional)
+             76 LOAD_NAME                5 (Callable)
+             78 LOAD_NAME                8 (str)
+             80 BUILD_LIST               1
+             82 LOAD_CONST               1 (None)
+             84 BUILD_TUPLE              2
+             86 BINARY_SUBSCR
+             90 BINARY_SUBSCR
+
+ 67          94 LOAD_CONST               4 ('key_up')
+
+ 72          96 LOAD_NAME                7 (Optional)
+             98 LOAD_NAME                5 (Callable)
+            100 LOAD_NAME                8 (str)
+            102 BUILD_LIST               1
+            104 LOAD_CONST               1 (None)
+            106 BUILD_TUPLE              2
+            108 BINARY_SUBSCR
+            112 BINARY_SUBSCR
+
+ 67         116 LOAD_CONST               5 ('clock')
+
+ 73         118 LOAD_NAME                5 (Callable)
+            120 BUILD_LIST               0
+            122 LOAD_NAME                9 (float)
+            124 BUILD_TUPLE              2
+            126 BINARY_SUBSCR
+
+ 67         130 LOAD_CONST               6 ('focuser')
+
+ 74         132 LOAD_NAME                7 (Optional)
+            134 LOAD_NAME                5 (Callable)
+            136 BUILD_LIST               0
+            138 LOAD_NAME               10 (object)
+            140 BUILD_TUPLE              2
+            142 BINARY_SUBSCR
+            146 BINARY_SUBSCR
+
+ 67         150 LOAD_CONST               7 ('swapper')
+
+ 75         152 LOAD_NAME                7 (Optional)
+            154 LOAD_NAME                5 (Callable)
+            156 LOAD_CONST               8 (Ellipsis)
+            158 LOAD_NAME               10 (object)
+            160 BUILD_TUPLE              2
+            162 BINARY_SUBSCR
+            166 BINARY_SUBSCR
+
+ 67         170 LOAD_CONST               9 ('defer')
+
+ 76         172 LOAD_NAME                7 (Optional)
+            174 LOAD_NAME                5 (Callable)
+            176 BUILD_LIST               0
+            178 LOAD_NAME                6 (bool)
+            180 BUILD_TUPLE              2
+            182 BINARY_SUBSCR
+            186 BINARY_SUBSCR
+
+ 67         190 LOAD_CONST              10 ('post_down')
+
+ 77         192 LOAD_NAME                7 (Optional)
+            194 LOAD_NAME                5 (Callable)
+            196 LOAD_NAME                8 (str)
+            198 BUILD_LIST               1
+            200 LOAD_NAME                6 (bool)
+            202 BUILD_TUPLE              2
+            204 BINARY_SUBSCR
+            208 BINARY_SUBSCR
+
+ 67         212 LOAD_CONST              11 ('post_up')
+
+ 78         214 LOAD_NAME                7 (Optional)
+            216 LOAD_NAME                5 (Callable)
+            218 LOAD_NAME                8 (str)
+            220 BUILD_LIST               1
+            222 LOAD_NAME                6 (bool)
+            224 BUILD_TUPLE              2
+            226 BINARY_SUBSCR
+            230 BINARY_SUBSCR
+
+ 67         234 LOAD_CONST              12 ('look')
+
+ 79         236 LOAD_NAME                7 (Optional)
+            238 LOAD_NAME                5 (Callable)
+            240 LOAD_NAME               11 (int)
+            242 LOAD_NAME               11 (int)
+            244 LOAD_NAME               11 (int)
+            246 BUILD_LIST               3
+            248 LOAD_CONST               1 (None)
+            250 BUILD_TUPLE              2
+            252 BINARY_SUBSCR
+            256 BINARY_SUBSCR
+
+ 67         260 LOAD_CONST              13 ('swing')
+
+ 80         262 LOAD_NAME                7 (Optional)
+            264 LOAD_NAME                5 (Callable)
+            266 BUILD_LIST               0
+            268 LOAD_NAME               10 (object)
+            270 BUILD_TUPLE              2
+            272 BINARY_SUBSCR
+            276 BINARY_SUBSCR
+
+ 67         280 LOAD_CONST              14 ('dive_look')
+
+ 81         282 LOAD_NAME                7 (Optional)
+            284 LOAD_NAME                5 (Callable)
+            286 LOAD_NAME               11 (int)
+            288 LOAD_NAME               11 (int)
+            290 LOAD_NAME               11 (int)
+            292 BUILD_LIST               3
+            294 LOAD_CONST               1 (None)
+            296 BUILD_TUPLE              2
+            298 BINARY_SUBSCR
+            302 BINARY_SUBSCR
+
+ 67         306 LOAD_CONST              15 ('rng')
+
+ 82         308 LOAD_NAME                7 (Optional)
+            310 LOAD_NAME               12 (random)
+            312 LOAD_ATTR               26 (Random)
+            332 BINARY_SUBSCR
+
+ 67         336 LOAD_CONST              16 ('away')
+
+ 83         338 LOAD_NAME                7 (Optional)
+            340 LOAD_NAME                5 (Callable)
+            342 BUILD_LIST               0
+            344 LOAD_NAME                6 (bool)
+            346 BUILD_TUPLE              2
+            348 BINARY_SUBSCR
+            352 BINARY_SUBSCR
+
+ 67         356 BUILD_TUPLE             28
+            358 LOAD_CONST              17 (<code object __init__ at 0x179c59f0, file "anti_afk.py", line 67>)
+            360 MAKE_FUNCTION            5 (defaults, annotations)
+            362 STORE_NAME              14 (__init__)
+
+106         364 LOAD_CONST              18 ('return')
+            366 LOAD_NAME                6 (bool)
+            368 BUILD_TUPLE              2
+            370 LOAD_CONST              19 (<code object _humanize at 0x7f6af1dbf770, file "anti_afk.py", line 106>)
+            372 MAKE_FUNCTION            4 (annotations)
+            374 STORE_NAME              15 (_humanize)
+
+109         376 LOAD_CONST              18 ('return')
+            378 LOAD_NAME                6 (bool)
+            380 BUILD_TUPLE              2
+            382 LOAD_CONST              20 (<code object _background at 0x7f6af1dd61f0, file "anti_afk.py", line 109>)
+            384 MAKE_FUNCTION            4 (annotations)
+            386 STORE_NAME              16 (_background)
+
+112         388 LOAD_CONST              21 (<code object _input_context at 0x7f6af1dda2a0, file "anti_afk.py", line 112>)
+            390 MAKE_FUNCTION            0
+            392 STORE_NAME              17 (_input_context)
+
+115         394 LOAD_CONST              18 ('return')
+            396 LOAD_NAME                6 (bool)
+            398 BUILD_TUPLE              2
+            400 LOAD_CONST              22 (<code object _use_post at 0x7f6af2047b50, file "anti_afk.py", line 115>)
+            402 MAKE_FUNCTION            4 (annotations)
+            404 STORE_NAME              18 (_use_post)
+
+118         406 LOAD_CONST              18 ('return')
+            408 LOAD_NAME                6 (bool)
+            410 BUILD_TUPLE              2
+            412 LOAD_CONST              23 (<code object _can_look at 0x7f6af1f82790, file "anti_afk.py", line 118>)
+            414 MAKE_FUNCTION            4 (annotations)
+            416 STORE_NAME              19 (_can_look)
+
+121         418 LOAD_CONST              18 ('return')
+            420 LOAD_NAME                6 (bool)
+            422 BUILD_TUPLE              2
+            424 LOAD_CONST              24 (<code object _user_away at 0x7f6af2047e10, file "anti_afk.py", line 121>)
+            426 MAKE_FUNCTION            4 (annotations)
+            428 STORE_NAME              20 (_user_away)
+
+127         430 LOAD_CONST              48 (('return', None))
+            432 LOAD_CONST              25 (<code object _look_around at 0x7f6af2087ab0, file "anti_afk.py", line 127>)
+            434 MAKE_FUNCTION            4 (annotations)
+            436 STORE_NAME              21 (_look_around)
+
+137         438 LOAD_CONST              26 ('key')
+            440 LOAD_NAME                8 (str)
+            442 LOAD_CONST              27 ('dur')
+            444 LOAD_NAME                9 (float)
+            446 LOAD_CONST              18 ('return')
+            448 LOAD_CONST               1 (None)
+            450 BUILD_TUPLE              6
+            452 LOAD_CONST              28 (<code object _tap at 0x7f6af20c3130, file "anti_afk.py", line 137>)
+            454 MAKE_FUNCTION            4 (annotations)
+            456 STORE_NAME              22 (_tap)
+
+147         458 LOAD_CONST              29 ('stop')
+            460 LOAD_NAME               23 (threading)
+            462 LOAD_ATTR               48 (Event)
+            482 LOAD_CONST              18 ('return')
+            484 LOAD_NAME                8 (str)
+            486 BUILD_TUPLE              4
+            488 LOAD_CONST              30 (<code object press_once at 0x17a519a0, file "anti_afk.py", line 147>)
+            490 MAKE_FUNCTION            4 (annotations)
+            492 STORE_NAME              25 (press_once)
+
+174         494 LOAD_CONST              29 ('stop')
+            496 LOAD_NAME               23 (threading)
+            498 LOAD_ATTR               48 (Event)
+            518 LOAD_CONST              18 ('return')
+            520 LOAD_NAME                8 (str)
+            522 BUILD_TUPLE              4
+            524 LOAD_CONST              31 (<code object _strafe at 0x179cd3d0, file "anti_afk.py", line 174>)
+            526 MAKE_FUNCTION            4 (annotations)
+            528 STORE_NAME              26 (_strafe)
+
+208         530 LOAD_CONST              29 ('stop')
+            532 LOAD_NAME               23 (threading)
+            534 LOAD_ATTR               48 (Event)
+            554 LOAD_CONST              18 ('return')
+            556 LOAD_NAME                8 (str)
+            558 BUILD_TUPLE              4
+            560 LOAD_CONST              32 (<code object _jump_walk at 0x179d58e0, file "anti_afk.py", line 208>)
+            562 MAKE_FUNCTION            4 (annotations)
+            564 STORE_NAME              27 (_jump_walk)
+
+227         566 LOAD_CONST              29 ('stop')
+            568 LOAD_NAME               23 (threading)
+            570 LOAD_ATTR               48 (Event)
+            590 LOAD_CONST              18 ('return')
+            592 LOAD_NAME                8 (str)
+            594 BUILD_TUPLE              4
+            596 LOAD_CONST              33 (<code object _fidget at 0x17a3c5b0, file "anti_afk.py", line 227>)
+            598 MAKE_FUNCTION            4 (annotations)
+            600 STORE_NAME              28 (_fidget)
+
+244         602 LOAD_CONST              29 ('stop')
+            604 LOAD_NAME               23 (threading)
+            606 LOAD_ATTR               48 (Event)
+            626 LOAD_CONST              18 ('return')
+            628 LOAD_NAME                8 (str)
+            630 BUILD_TUPLE              4
+            632 LOAD_CONST              34 (<code object _micro_pause at 0x7f6af20e3990, file "anti_afk.py", line 244>)
+            634 MAKE_FUNCTION            4 (annotations)
+            636 STORE_NAME              29 (_micro_pause)
+
+256         638 LOAD_CONST              29 ('stop')
+            640 LOAD_NAME               23 (threading)
+            642 LOAD_ATTR               48 (Event)
+            662 LOAD_CONST              18 ('return')
+            664 LOAD_NAME                6 (bool)
+            666 BUILD_TUPLE              4
+            668 LOAD_CONST              35 (<code object pickaxe_swing at 0x17a58570, file "anti_afk.py", line 256>)
+            670 MAKE_FUNCTION            4 (annotations)
+            672 STORE_NAME              30 (pickaxe_swing)
+
+275         674 LOAD_CONST              36 (<code object <lambda> at 0x7f6aed711e40, file "anti_afk.py", line 275>)
+            676 MAKE_FUNCTION            0
+            678 BUILD_TUPLE              1
+            680 LOAD_CONST              29 ('stop')
+            682 LOAD_NAME               23 (threading)
+            684 LOAD_ATTR               48 (Event)
+            704 LOAD_CONST              37 ('log')
+            706 LOAD_NAME                5 (Callable)
+            708 LOAD_NAME                8 (str)
+            710 BUILD_LIST               1
+            712 LOAD_CONST               1 (None)
+            714 BUILD_TUPLE              2
+            716 BINARY_SUBSCR
+            720 LOAD_CONST              18 ('return')
+            722 LOAD_NAME                6 (bool)
+            724 BUILD_TUPLE              6
+            726 LOAD_CONST              38 (<code object dive_async at 0x7f6af1de60b0, file "anti_afk.py", line 275>)
+            728 MAKE_FUNCTION            5 (defaults, annotations)
+            730 STORE_NAME              31 (dive_async)
+
+293         732 LOAD_CONST              39 (<code object <lambda> at 0x7f6aed711ca0, file "anti_afk.py", line 293>)
+            734 MAKE_FUNCTION            0
+            736 BUILD_TUPLE              1
+            738 LOAD_CONST              29 ('stop')
+            740 LOAD_NAME               23 (threading)
+            742 LOAD_ATTR               48 (Event)
+            762 LOAD_CONST              37 ('log')
+            764 LOAD_NAME                5 (Callable)
+            766 LOAD_NAME                8 (str)
+            768 BUILD_LIST               1
+            770 LOAD_CONST               1 (None)
+            772 BUILD_TUPLE              2
+            774 BINARY_SUBSCR
+            778 LOAD_CONST              18 ('return')
+            780 LOAD_NAME                6 (bool)
+            782 BUILD_TUPLE              6
+            784 LOAD_CONST              40 (<code object dive at 0x179d4b20, file "anti_afk.py", line 293>)
+            786 MAKE_FUNCTION            5 (defaults, annotations)
+            788 STORE_NAME              32 (dive)
+
+339         790 LOAD_CONST              18 ('return')
+            792 LOAD_NAME                9 (float)
+            794 BUILD_TUPLE              2
+            796 LOAD_CONST              41 (<code object _pickaxe_delay at 0x179d4910, file "anti_afk.py", line 339>)
+            798 MAKE_FUNCTION            4 (annotations)
+            800 STORE_NAME              33 (_pickaxe_delay)
+
+348         802 LOAD_CONST              42 ('now')
+            804 LOAD_NAME                9 (float)
+            806 LOAD_CONST              29 ('stop')
+            808 LOAD_NAME               23 (threading)
+            810 LOAD_ATTR               48 (Event)
+            830 LOAD_CONST              37 ('log')
+            832 LOAD_NAME                5 (Callable)
+            834 LOAD_NAME                8 (str)
+            836 BUILD_LIST               1
+            838 LOAD_CONST               1 (None)
+            840 BUILD_TUPLE              2
+            842 BINARY_SUBSCR
+            846 LOAD_CONST              18 ('return')
+            848 LOAD_CONST               1 (None)
+            850 BUILD_TUPLE              8
+            852 LOAD_CONST              43 (<code object _pickaxe_tick at 0x179016e0, file "anti_afk.py", line 348>)
+            854 MAKE_FUNCTION            4 (annotations)
+            856 STORE_NAME              34 (_pickaxe_tick)
+
+364         858 LOAD_CONST              37 ('log')
+            860 LOAD_NAME                5 (Callable)
+            862 LOAD_NAME                8 (str)
+            864 BUILD_LIST               1
+            866 LOAD_CONST               1 (None)
+            868 BUILD_TUPLE              2
+            870 BINARY_SUBSCR
+            874 LOAD_CONST              18 ('return')
+            876 LOAD_CONST               1 (None)
+            878 BUILD_TUPLE              4
+            880 LOAD_CONST              44 (<code object _next_ratio at 0x179ce5d0, file "anti_afk.py", line 364>)
+            882 MAKE_FUNCTION            4 (annotations)
+            884 STORE_NAME              35 (_next_ratio)
+
+379         886 LOAD_CONST              48 (('return', None))
+            888 LOAD_CONST              45 (<code object release_all at 0x7f6af1e28e40, file "anti_afk.py", line 379>)
+            890 MAKE_FUNCTION            4 (annotations)
+            892 STORE_NAME              36 (release_all)
+
+387         894 LOAD_CONST              46 (<code object <lambda> at 0x7f6aed711a30, file "anti_afk.py", line 387>)
+            896 MAKE_FUNCTION            0
+            898 BUILD_TUPLE              1
+            900 LOAD_CONST              29 ('stop')
+            902 LOAD_NAME               23 (threading)
+            904 LOAD_ATTR               48 (Event)
+            924 LOAD_CONST              37 ('log')
+            926 LOAD_NAME                5 (Callable)
+            928 LOAD_NAME                8 (str)
+            930 BUILD_LIST               1
+            932 LOAD_CONST               1 (None)
+            934 BUILD_TUPLE              2
+            936 BINARY_SUBSCR
+            940 LOAD_CONST              18 ('return')
+            942 LOAD_CONST               1 (None)
+            944 BUILD_TUPLE              6
+            946 LOAD_CONST              47 (<code object run at 0x179d43d0, file "anti_afk.py", line 387>)
+            948 MAKE_FUNCTION            5 (defaults, annotations)
+            950 STORE_NAME              37 (run)
+            952 RETURN_CONST             1 (None)
+
+Disassembly of <code object __init__ at 0x179c59f0, file "anti_afk.py", line 67>:
+ 67           0 RESUME                   0
+
+ 85           2 LOAD_FAST                1 (settings)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (s)
+
+ 86          16 LOAD_FAST                2 (active)
+             18 LOAD_FAST                0 (self)
+             20 STORE_ATTR               1 (active)
+
+ 87          30 LOAD_FAST                6 (focuser)
+             32 LOAD_FAST                0 (self)
+             34 STORE_ATTR               2 (_focuser)
+
+ 88          44 LOAD_FAST                7 (swapper)
+             46 LOAD_FAST                0 (self)
+             48 STORE_ATTR               3 (_swapper)
+
+ 89          58 LOAD_FAST                8 (defer)
+             60 LOAD_FAST                0 (self)
+             62 STORE_ATTR               4 (_defer)
+
+ 90          72 LOAD_FAST                9 (post_down)
+             74 LOAD_FAST               10 (post_up)
+             76 SWAP                     2
+             78 LOAD_FAST                0 (self)
+             80 STORE_ATTR               5 (_post_down)
+             90 LOAD_FAST                0 (self)
+             92 STORE_ATTR               6 (_post_up)
+
+ 91         102 LOAD_FAST                3 (key_down)
+            104 COPY                     1
+            106 POP_JUMP_IF_TRUE         6 (to 120)
+            108 POP_TOP
+            110 LOAD_GLOBAL             14 (_default_key_down)
+        >>  120 LOAD_FAST                0 (self)
+            122 STORE_ATTR               8 (_down)
+
+ 92         132 LOAD_FAST                4 (key_up)
+            134 COPY                     1
+            136 POP_JUMP_IF_TRUE         6 (to 150)
+            138 POP_TOP
+            140 LOAD_GLOBAL             18 (_default_key_up)
+        >>  150 LOAD_FAST                0 (self)
+            152 STORE_ATTR              10 (_up)
+
+ 93         162 LOAD_FAST                5 (clock)
+            164 LOAD_FAST                0 (self)
+            166 STORE_ATTR              11 (_clock)
+
+ 94         176 LOAD_FAST               11 (look)
+            178 LOAD_FAST                0 (self)
+            180 STORE_ATTR              12 (_look)
+
+ 95         190 LOAD_FAST               12 (swing)
+            192 LOAD_FAST                0 (self)
+            194 STORE_ATTR              13 (_swing)
+
+ 96         204 LOAD_FAST               13 (dive_look)
+            206 LOAD_FAST                0 (self)
+            208 STORE_ATTR              14 (_dive_look)
+
+ 97         218 LOAD_GLOBAL             31 (NULL + threading)
+            228 LOAD_ATTR               32 (Event)
+            248 CALL                     0
+            256 LOAD_FAST                0 (self)
+            258 STORE_ATTR              17 (_diving)
+
+ 98         268 LOAD_FAST               15 (away)
+            270 LOAD_FAST                0 (self)
+            272 STORE_ATTR              18 (_away)
+
+ 99         282 LOAD_FAST               14 (rng)
+            284 COPY                     1
+            286 POP_JUMP_IF_TRUE        20 (to 328)
+            288 POP_TOP
+            290 LOAD_GLOBAL             39 (NULL + random)
+            300 LOAD_ATTR               40 (Random)
+            320 CALL                     0
+        >>  328 LOAD_FAST                0 (self)
+            330 STORE_ATTR              21 (_rng)
+
+100         340 LOAD_GLOBAL             45 (NULL + Humanizer)
+            350 CALL                     0
+            358 LOAD_FAST                0 (self)
+            360 STORE_ATTR              23 (_hum)
+
+101         370 LOAD_CONST               0 (None)
+            372 LOAD_FAST                0 (self)
+            374 STORE_ATTR              24 (_pickaxe_due)
+
+102         384 LOAD_CONST               1 ('')
+            386 LOAD_FAST                0 (self)
+            388 STORE_ATTR              25 (last_pattern)
+
+103         398 LOAD_CONST               2 (1.0)
+            400 LOAD_FAST                0 (self)
+            402 STORE_ATTR              26 (_ratio)
+
+104         412 LOAD_CONST               3 (0.0)
+            414 LOAD_FAST                0 (self)
+            416 STORE_ATTR              27 (last_hold)
+            426 RETURN_CONST             0 (None)
+
+Disassembly of <code object _humanize at 0x7f6af1dbf770, file "anti_afk.py", line 106>:
+106           0 RESUME                   0
+
+107           2 LOAD_GLOBAL              1 (NULL + bool)
+             12 LOAD_GLOBAL              3 (NULL + getattr)
+             22 LOAD_FAST                0 (self)
+             24 LOAD_ATTR                4 (s)
+             44 LOAD_CONST               1 ('humanizer_enabled')
+             46 LOAD_CONST               2 (False)
+             48 CALL                     3
+             56 CALL                     1
+             64 RETURN_VALUE
+
+Disassembly of <code object _background at 0x7f6af1dd61f0, file "anti_afk.py", line 109>:
+109           0 RESUME                   0
+
+110           2 LOAD_GLOBAL              1 (NULL + bool)
+             12 LOAD_FAST                0 (self)
+             14 LOAD_ATTR                2 (_swapper)
+             34 COPY                     1
+             36 POP_JUMP_IF_FALSE       23 (to 84)
+             38 POP_TOP
+             40 LOAD_GLOBAL              5 (NULL + getattr)
+             50 LOAD_FAST                0 (self)
+             52 LOAD_ATTR                6 (s)
+             72 LOAD_CONST               1 ('background_mode')
+             74 LOAD_CONST               2 (False)
+             76 CALL                     3
+        >>   84 CALL                     1
+             92 RETURN_VALUE
+
+Disassembly of <code object _input_context at 0x7f6af1dda2a0, file "anti_afk.py", line 112>:
+112           0 RESUME                   0
+
+113           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                1 (NULL|self + _background)
+             24 CALL                     0
+             32 POP_JUMP_IF_FALSE       18 (to 70)
+             34 LOAD_FAST                0 (self)
+             36 LOAD_ATTR                3 (NULL|self + _swapper)
+             56 LOAD_CONST               1 ('key')
+             58 LOAD_CONST               0 (None)
+             60 CALL                     2
+             68 RETURN_VALUE
+        >>   70 LOAD_GLOBAL              5 (NULL + contextlib)
+             80 LOAD_ATTR                6 (nullcontext)
+            100 CALL                     0
+            108 RETURN_VALUE
+
+Disassembly of <code object _use_post at 0x7f6af2047b50, file "anti_afk.py", line 115>:
+115           0 RESUME                   0
+
+116           2 LOAD_GLOBAL              1 (NULL + bool)
+             12 LOAD_FAST                0 (self)
+             14 LOAD_ATTR                3 (NULL|self + _background)
+             34 CALL                     0
+             42 COPY                     1
+             44 POP_JUMP_IF_FALSE       51 (to 148)
+             46 POP_TOP
+             48 LOAD_FAST                0 (self)
+             50 LOAD_ATTR                4 (_post_down)
+             70 COPY                     1
+             72 POP_JUMP_IF_FALSE       37 (to 148)
+             74 POP_TOP
+             76 LOAD_FAST                0 (self)
+             78 LOAD_ATTR                6 (_post_up)
+             98 COPY                     1
+            100 POP_JUMP_IF_FALSE       23 (to 148)
+            102 POP_TOP
+            104 LOAD_GLOBAL              9 (NULL + getattr)
+            114 LOAD_FAST                0 (self)
+            116 LOAD_ATTR               10 (s)
+            136 LOAD_CONST               1 ('background_post_keys')
+            138 LOAD_CONST               2 (False)
+            140 CALL                     3
+        >>  148 CALL                     1
+            156 RETURN_VALUE
+
+Disassembly of <code object _can_look at 0x7f6af1f82790, file "anti_afk.py", line 118>:
+118           0 RESUME                   0
+
+119           2 LOAD_GLOBAL              1 (NULL + bool)
+             12 LOAD_FAST                0 (self)
+             14 LOAD_ATTR                2 (_look)
+             34 COPY                     1
+             36 POP_JUMP_IF_FALSE       23 (to 84)
+             38 POP_TOP
+             40 LOAD_GLOBAL              5 (NULL + getattr)
+             50 LOAD_FAST                0 (self)
+             52 LOAD_ATTR                6 (s)
+             72 LOAD_CONST               1 ('afk_mouse_look')
+             74 LOAD_CONST               2 (True)
+             76 CALL                     3
+        >>   84 CALL                     1
+             92 COPY                     1
+             94 POP_JUMP_IF_FALSE       17 (to 130)
+             96 POP_TOP
+             98 LOAD_FAST                0 (self)
+            100 LOAD_ATTR                9 (NULL|self + _user_away)
+            120 CALL                     0
+            128 UNARY_NOT
+        >>  130 RETURN_VALUE
+
+Disassembly of <code object _user_away at 0x7f6af2047e10, file "anti_afk.py", line 121>:
+121           0 RESUME                   0
+
+122           2 NOP
+
+123           4 LOAD_GLOBAL              1 (NULL + bool)
+             14 LOAD_FAST                0 (self)
+             16 LOAD_ATTR                3 (NULL|self + _background)
+             36 CALL                     0
+             44 COPY                     1
+             46 POP_JUMP_IF_FALSE       30 (to 108)
+             48 POP_TOP
+             50 LOAD_FAST                0 (self)
+             52 LOAD_ATTR                4 (_away)
+             72 COPY                     1
+             74 POP_JUMP_IF_FALSE       16 (to 108)
+             76 POP_TOP
+             78 LOAD_FAST                0 (self)
+             80 LOAD_ATTR                5 (NULL|self + _away)
+            100 CALL                     0
+        >>  108 CALL                     1
+            116 RETURN_VALUE
+        >>  118 PUSH_EXC_INFO
+
+124         120 LOAD_GLOBAL              6 (Exception)
+            130 CHECK_EXC_MATCH
+            132 POP_JUMP_IF_FALSE        3 (to 140)
+            134 POP_TOP
+
+125         136 POP_EXCEPT
+            138 RETURN_CONST             1 (False)
+
+124     >>  140 RERAISE                  0
+        >>  142 COPY                     3
+            144 POP_EXCEPT
+            146 RERAISE                  1
+ExceptionTable:
+  4 to 114 -> 118 [0]
+  118 to 134 -> 142 [1] lasti
+  140 to 140 -> 142 [1] lasti
+
+Disassembly of <code object _look_around at 0x7f6af2087ab0, file "anti_afk.py", line 127>:
+127           0 RESUME                   0
+
+128           2 NOP
+
+129           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + _can_look)
+             26 CALL                     0
+             34 POP_JUMP_IF_TRUE         1 (to 38)
+
+130          36 RETURN_CONST             0 (None)
+
+131     >>   38 NOP
+
+132          40 LOAD_FAST                0 (self)
+             42 LOAD_ATTR                2 (_hum)
+             62 LOAD_ATTR                4 (pitch)
+             82 LOAD_ATTR                7 (NULL|self + next_look)
+            102 CALL                     0
+            110 UNPACK_SEQUENCE          3
+            114 STORE_FAST               1 (dx)
+            116 STORE_FAST               2 (dy)
+            118 STORE_FAST               3 (ms)
+
+133         120 LOAD_FAST                0 (self)
+            122 LOAD_ATTR                9 (NULL|self + _look)
+            142 LOAD_FAST                1 (dx)
+            144 LOAD_FAST                2 (dy)
+            146 LOAD_FAST                3 (ms)
+            148 CALL                     3
+            156 POP_TOP
+            158 RETURN_CONST             0 (None)
+        >>  160 PUSH_EXC_INFO
+
+134         162 LOAD_GLOBAL             10 (Exception)
+            172 CHECK_EXC_MATCH
+            174 POP_JUMP_IF_FALSE        3 (to 182)
+            176 POP_TOP
+
+135         178 POP_EXCEPT
+            180 RETURN_CONST             0 (None)
+
+134     >>  182 RERAISE                  0
+        >>  184 COPY                     3
+            186 POP_EXCEPT
+            188 RERAISE                  1
+ExceptionTable:
+  40 to 156 -> 160 [0]
+  160 to 176 -> 184 [1] lasti
+  182 to 182 -> 184 [1] lasti
+
+Disassembly of <code object _tap at 0x7f6af20c3130, file "anti_afk.py", line 137>:
+137           0 RESUME                   0
+
+138           2 NOP
+
+139           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + _input_context)
+             26 CALL                     0
+             34 BEFORE_WITH
+             36 POP_TOP
+
+140          38 LOAD_FAST                0 (self)
+             40 LOAD_ATTR                3 (NULL|self + _down)
+             60 LOAD_FAST                1 (key)
+             62 CALL                     1
+             70 POP_TOP
+
+141          72 NOP
+
+142          74 LOAD_FAST                2 (dur)
+             76 LOAD_CONST               1 (0)
+             78 COMPARE_OP              68 (>)
+             82 POP_JUMP_IF_FALSE       21 (to 126)
+
+143          84 LOAD_GLOBAL              5 (NULL + time)
+             94 LOAD_ATTR                6 (sleep)
+            114 LOAD_FAST                2 (dur)
+            116 CALL                     1
+            124 POP_TOP
+
+145     >>  126 LOAD_FAST                0 (self)
+            128 LOAD_ATTR                9 (NULL|self + _up)
+            148 LOAD_FAST                1 (key)
+            150 CALL                     1
+            158 POP_TOP
+            160 NOP
+
+139         162 LOAD_CONST               0 (None)
+            164 LOAD_CONST               0 (None)
+            166 LOAD_CONST               0 (None)
+            168 CALL                     2
+            176 POP_TOP
+            178 RETURN_CONST             0 (None)
+        >>  180 PUSH_EXC_INFO
+
+145         182 LOAD_FAST                0 (self)
+            184 LOAD_ATTR                9 (NULL|self + _up)
+            204 LOAD_FAST                1 (key)
+            206 CALL                     1
+            214 POP_TOP
+            216 RERAISE                  0
+        >>  218 COPY                     3
+            220 POP_EXCEPT
+            222 RERAISE                  1
+
+139     >>  224 PUSH_EXC_INFO
+            226 WITH_EXCEPT_START
+            228 POP_JUMP_IF_TRUE         1 (to 232)
+            230 RERAISE                  2
+        >>  232 POP_TOP
+            234 POP_EXCEPT
+            236 POP_TOP
+            238 POP_TOP
+            240 RETURN_CONST             0 (None)
+        >>  242 COPY                     3
+            244 POP_EXCEPT
+            246 RERAISE                  1
+ExceptionTable:
+  36 to 70 -> 224 [1] lasti
+  74 to 124 -> 180 [1]
+  126 to 158 -> 224 [1] lasti
+  180 to 216 -> 218 [2] lasti
+  218 to 222 -> 224 [1] lasti
+  224 to 232 -> 242 [3] lasti
+
+Disassembly of <code object press_once at 0x17a519a0, file "anti_afk.py", line 147>:
+147           0 RESUME                   0
+
+148           2 NOP
+
+153           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + _humanize)
+             26 CALL                     0
+             34 POP_JUMP_IF_TRUE        24 (to 84)
+
+154          36 LOAD_CONST               1 ('-')
+             38 LOAD_FAST                0 (self)
+             40 STORE_ATTR               1 (last_pattern)
+
+155          50 LOAD_FAST                0 (self)
+             52 LOAD_ATTR                5 (NULL|self + _strafe)
+             72 LOAD_FAST                1 (stop)
+             74 CALL                     1
+             82 RETURN_VALUE
+
+156     >>   84 LOAD_FAST                0 (self)
+             86 LOAD_ATTR                6 (_hum)
+            106 LOAD_ATTR                9 (NULL|self + pattern)
+            126 CALL                     0
+            134 STORE_FAST               2 (pat)
+
+157         136 LOAD_FAST                2 (pat)
+            138 LOAD_CONST               2 ('D')
+            140 COMPARE_OP              40 (==)
+            144 POP_JUMP_IF_FALSE       18 (to 182)
+            146 LOAD_FAST                0 (self)
+            148 LOAD_ATTR               11 (NULL|self + _can_look)
+            168 CALL                     0
+            176 POP_JUMP_IF_TRUE         2 (to 182)
+
+158         178 LOAD_CONST               3 ('A')
+            180 STORE_FAST               2 (pat)
+
+159     >>  182 LOAD_FAST                2 (pat)
+            184 LOAD_FAST                0 (self)
+            186 STORE_ATTR               1 (last_pattern)
+
+160         196 NOP
+
+161         198 LOAD_FAST                2 (pat)
+            200 LOAD_CONST               4 ('B')
+            202 COMPARE_OP              40 (==)
+            206 POP_JUMP_IF_FALSE       17 (to 242)
+
+162         208 LOAD_FAST                0 (self)
+            210 LOAD_ATTR               13 (NULL|self + _jump_walk)
+            230 LOAD_FAST                1 (stop)
+            232 CALL                     1
+            240 RETURN_VALUE
+
+163     >>  242 LOAD_FAST                2 (pat)
+            244 LOAD_CONST               5 ('C')
+            246 COMPARE_OP              40 (==)
+            250 POP_JUMP_IF_FALSE       17 (to 286)
+
+164         252 LOAD_FAST                0 (self)
+            254 LOAD_ATTR               15 (NULL|self + _fidget)
+            274 LOAD_FAST                1 (stop)
+            276 CALL                     1
+            284 RETURN_VALUE
+
+165     >>  286 LOAD_FAST                2 (pat)
+            288 LOAD_CONST               2 ('D')
+            290 COMPARE_OP              40 (==)
+            294 POP_JUMP_IF_FALSE       17 (to 330)
+
+166         296 LOAD_FAST                0 (self)
+            298 LOAD_ATTR               17 (NULL|self + _micro_pause)
+            318 LOAD_FAST                1 (stop)
+            320 CALL                     1
+            328 RETURN_VALUE
+
+167     >>  330 LOAD_FAST                0 (self)
+            332 LOAD_ATTR               11 (NULL|self + _can_look)
+            352 CALL                     0
+            360 POP_JUMP_IF_FALSE       56 (to 474)
+            362 LOAD_FAST                0 (self)
+            364 LOAD_ATTR               18 (_rng)
+            384 LOAD_ATTR               21 (NULL|self + random)
+            404 CALL                     0
+            412 LOAD_CONST               6 (0.35)
+            414 COMPARE_OP               2 (<)
+            418 POP_JUMP_IF_FALSE       27 (to 474)
+            420 LOAD_GLOBAL             23 (NULL + _halted)
+            430 LOAD_FAST                1 (stop)
+            432 CALL                     1
+            440 POP_JUMP_IF_TRUE        16 (to 474)
+
+168         442 LOAD_FAST                0 (self)
+            444 LOAD_ATTR               25 (NULL|self + _look_around)
+            464 CALL                     0
+            472 POP_TOP
+
+169     >>  474 LOAD_FAST                0 (self)
+            476 LOAD_ATTR                5 (NULL|self + _strafe)
+            496 LOAD_FAST                1 (stop)
+            498 CALL                     1
+            506 RETURN_VALUE
+        >>  508 PUSH_EXC_INFO
+
+170         510 LOAD_GLOBAL             26 (Exception)
+            520 CHECK_EXC_MATCH
+            522 POP_JUMP_IF_FALSE       18 (to 560)
+            524 POP_TOP
+
+171         526 LOAD_FAST                0 (self)
+            528 LOAD_ATTR               29 (NULL|self + release_all)
+            548 CALL                     0
+            556 POP_TOP
+
+172         558 RAISE_VARARGS            0
+
+170     >>  560 RERAISE                  0
+        >>  562 COPY                     3
+            564 POP_EXCEPT
+            566 RERAISE                  1
+ExceptionTable:
+  198 to 238 -> 508 [0]
+  242 to 282 -> 508 [0]
+  286 to 326 -> 508 [0]
+  330 to 504 -> 508 [0]
+  508 to 560 -> 562 [1] lasti
+
+Disassembly of <code object _strafe at 0x179cd3d0, file "anti_afk.py", line 174>:
+174           0 RESUME                   0
+
+175           2 NOP
+
+176           4 LOAD_GLOBAL              1 (NULL + random)
+             14 LOAD_ATTR                2 (choice)
+             34 LOAD_FAST                0 (self)
+             36 LOAD_ATTR                4 (s)
+             56 LOAD_ATTR                6 (afk_keys)
+             76 CALL                     1
+             84 STORE_FAST               2 (key)
+
+177          86 LOAD_FAST                0 (self)
+             88 LOAD_ATTR                9 (NULL|self + _humanize)
+            108 CALL                     0
+            116 POP_JUMP_IF_FALSE       47 (to 212)
+            118 LOAD_FAST                0 (self)
+            120 LOAD_ATTR               10 (_hum)
+            140 LOAD_ATTR               13 (NULL|self + hold)
+            160 LOAD_FAST                0 (self)
+            162 LOAD_ATTR                4 (s)
+            182 LOAD_ATTR               14 (afk_hold)
+            202 CALL                     1
+            210 JUMP_FORWARD            21 (to 254)
+        >>  212 LOAD_FAST                0 (self)
+            214 LOAD_ATTR                4 (s)
+            234 LOAD_ATTR               14 (afk_hold)
+        >>  254 STORE_FAST               3 (hold)
+
+178         256 LOAD_FAST                3 (hold)
+            258 LOAD_FAST                0 (self)
+            260 STORE_ATTR               8 (last_hold)
+
+179         270 LOAD_FAST                0 (self)
+            272 LOAD_ATTR               19 (NULL|self + _use_post)
+            292 CALL                     0
+            300 COPY                     1
+            302 POP_JUMP_IF_FALSE       17 (to 338)
+            304 POP_TOP
+            306 LOAD_FAST                0 (self)
+            308 LOAD_ATTR               21 (NULL|self + _post_down)
+            328 LOAD_FAST                2 (key)
+            330 CALL                     1
+        >>  338 STORE_FAST               4 (posted)
+
+180         340 LOAD_FAST                4 (posted)
+            342 POP_JUMP_IF_TRUE        86 (to 516)
+
+181         344 LOAD_FAST                0 (self)
+            346 LOAD_ATTR               22 (_focuser)
+            366 POP_JUMP_IF_FALSE       32 (to 432)
+            368 LOAD_FAST                0 (self)
+            370 LOAD_ATTR               25 (NULL|self + _background)
+            390 CALL                     0
+            398 POP_JUMP_IF_TRUE        16 (to 432)
+
+182         400 LOAD_FAST                0 (self)
+            402 LOAD_ATTR               23 (NULL|self + _focuser)
+            422 CALL                     0
+            430 POP_TOP
+
+183     >>  432 LOAD_FAST                0 (self)
+            434 LOAD_ATTR               27 (NULL|self + _input_context)
+            454 CALL                     0
+            462 BEFORE_WITH
+            464 POP_TOP
+
+184         466 LOAD_FAST                0 (self)
+            468 LOAD_ATTR               29 (NULL|self + _down)
+            488 LOAD_FAST                2 (key)
+            490 CALL                     1
+            498 POP_TOP
+
+183         500 LOAD_CONST               0 (None)
+            502 LOAD_CONST               0 (None)
+            504 LOAD_CONST               0 (None)
+            506 CALL                     2
+            514 POP_TOP
+
+185     >>  516 NOP
+
+186         518 LOAD_FAST                0 (self)
+            520 LOAD_ATTR                9 (NULL|self + _humanize)
+            540 CALL                     0
+            548 POP_JUMP_IF_FALSE       51 (to 652)
+            550 LOAD_FAST                4 (posted)
+            552 POP_JUMP_IF_TRUE        49 (to 652)
+            554 LOAD_FAST                0 (self)
+            556 LOAD_ATTR               10 (_hum)
+            576 LOAD_ATTR               31 (NULL|self + side_tap)
+            596 LOAD_FAST                2 (key)
+            598 LOAD_FAST                0 (self)
+            600 LOAD_ATTR                4 (s)
+            620 LOAD_ATTR                6 (afk_keys)
+            640 LOAD_FAST                3 (hold)
+            642 CALL                     3
+            650 JUMP_FORWARD             1 (to 654)
+        >>  652 LOAD_CONST               0 (None)
+        >>  654 STORE_FAST               5 (tap)
+
+187         656 LOAD_FAST                5 (tap)
+            658 POP_JUMP_IF_NOT_NONE    18 (to 696)
+
+188         660 LOAD_FAST                1 (stop)
+            662 LOAD_ATTR               33 (NULL|self + wait)
+            682 LOAD_FAST                3 (hold)
+            684 CALL                     1
+            692 POP_TOP
+            694 JUMP_FORWARD           158 (to 1012)
+
+190     >>  696 LOAD_FAST                5 (tap)
+            698 UNPACK_SEQUENCE          3
+            702 STORE_FAST               6 (lead)
+            704 STORE_FAST               7 (side)
+            706 STORE_FAST               8 (dur)
+
+191         708 LOAD_FAST                1 (stop)
+            710 LOAD_ATTR               33 (NULL|self + wait)
+            730 LOAD_FAST                6 (lead)
+            732 CALL                     1
+            740 POP_TOP
+
+192         742 LOAD_FAST                0 (self)
+            744 LOAD_ATTR               27 (NULL|self + _input_context)
+            764 CALL                     0
+            772 BEFORE_WITH
+            774 POP_TOP
+
+193         776 LOAD_FAST                0 (self)
+            778 LOAD_ATTR               29 (NULL|self + _down)
+            798 LOAD_FAST                7 (side)
+            800 CALL                     1
+            808 POP_TOP
+
+192         810 LOAD_CONST               0 (None)
+            812 LOAD_CONST               0 (None)
+            814 LOAD_CONST               0 (None)
+            816 CALL                     2
+            824 POP_TOP
+
+194     >>  826 NOP
+
+195         828 LOAD_FAST                1 (stop)
+            830 LOAD_ATTR               33 (NULL|self + wait)
+            850 LOAD_FAST                8 (dur)
+            852 CALL                     1
+            860 POP_TOP
+
+197         862 LOAD_FAST                0 (self)
+            864 LOAD_ATTR               27 (NULL|self + _input_context)
+            884 CALL                     0
+            892 BEFORE_WITH
+            894 POP_TOP
+
+198         896 LOAD_FAST                0 (self)
+            898 LOAD_ATTR               35 (NULL|self + _up)
+            918 LOAD_FAST                7 (side)
+            920 CALL                     1
+            928 POP_TOP
+
+197         930 LOAD_CONST               0 (None)
+            932 LOAD_CONST               0 (None)
+            934 LOAD_CONST               0 (None)
+            936 CALL                     2
+            944 POP_TOP
+
+199     >>  946 LOAD_FAST                1 (stop)
+            948 LOAD_ATTR               33 (NULL|self + wait)
+            968 LOAD_GLOBAL             37 (NULL + max)
+            978 LOAD_CONST               1 (0.0)
+            980 LOAD_FAST                3 (hold)
+            982 LOAD_FAST                6 (lead)
+            984 BINARY_OP               10 (-)
+            988 LOAD_FAST                8 (dur)
+            990 BINARY_OP               10 (-)
+            994 CALL                     2
+           1002 CALL                     1
+           1010 POP_TOP
+
+201     >> 1012 LOAD_FAST                4 (posted)
+           1014 POP_JUMP_IF_FALSE       19 (to 1054)
+
+202        1016 LOAD_FAST                0 (self)
+           1018 LOAD_ATTR               39 (NULL|self + _post_up)
+           1038 LOAD_FAST                2 (key)
+           1040 CALL                     1
+           1048 POP_TOP
+
+206        1050 LOAD_FAST                2 (key)
+           1052 RETURN_VALUE
+
+204     >> 1054 LOAD_FAST                0 (self)
+           1056 LOAD_ATTR               27 (NULL|self + _input_context)
+           1076 CALL                     0
+           1084 BEFORE_WITH
+           1086 POP_TOP
+
+205        1088 LOAD_FAST                0 (self)
+           1090 LOAD_ATTR               35 (NULL|self + _up)
+           1110 LOAD_FAST                2 (key)
+           1112 CALL                     1
+           1120 POP_TOP
+
+204        1122 LOAD_CONST               0 (None)
+           1124 LOAD_CONST               0 (None)
+           1126 LOAD_CONST               0 (None)
+           1128 CALL                     2
+           1136 POP_TOP
+
+206        1138 LOAD_FAST                2 (key)
+           1140 RETURN_VALUE
+
+183     >> 1142 PUSH_EXC_INFO
+           1144 WITH_EXCEPT_START
+           1146 POP_JUMP_IF_TRUE         1 (to 1150)
+           1148 RERAISE                  2
+        >> 1150 POP_TOP
+           1152 POP_EXCEPT
+           1154 POP_TOP
+           1156 POP_TOP
+           1158 EXTENDED_ARG             1
+           1160 JUMP_BACKWARD          323 (to 516)
+        >> 1162 COPY                     3
+           1164 POP_EXCEPT
+           1166 RERAISE                  1
+
+192     >> 1168 PUSH_EXC_INFO
+           1170 WITH_EXCEPT_START
+           1172 POP_JUMP_IF_TRUE         1 (to 1176)
+           1174 RERAISE                  2
+        >> 1176 POP_TOP
+           1178 POP_EXCEPT
+           1180 POP_TOP
+           1182 POP_TOP
+           1184 JUMP_BACKWARD          180 (to 826)
+        >> 1186 COPY                     3
+           1188 POP_EXCEPT
+           1190 RERAISE                  1
+
+197     >> 1192 PUSH_EXC_INFO
+           1194 WITH_EXCEPT_START
+           1196 POP_JUMP_IF_TRUE         1 (to 1200)
+           1198 RERAISE                  2
+        >> 1200 POP_TOP
+           1202 POP_EXCEPT
+           1204 POP_TOP
+           1206 POP_TOP
+           1208 JUMP_BACKWARD          132 (to 946)
+        >> 1210 COPY                     3
+           1212 POP_EXCEPT
+           1214 RERAISE                  1
+        >> 1216 PUSH_EXC_INFO
+           1218 LOAD_FAST                0 (self)
+           1220 LOAD_ATTR               27 (NULL|self + _input_context)
+           1240 CALL                     0
+           1248 BEFORE_WITH
+           1250 POP_TOP
+
+198        1252 LOAD_FAST                0 (self)
+           1254 LOAD_ATTR               35 (NULL|self + _up)
+           1274 LOAD_FAST                7 (side)
+           1276 CALL                     1
+           1284 POP_TOP
+
+197        1286 LOAD_CONST               0 (None)
+           1288 LOAD_CONST               0 (None)
+           1290 LOAD_CONST               0 (None)
+           1292 CALL                     2
+           1300 POP_TOP
+           1302 RERAISE                  0
+        >> 1304 PUSH_EXC_INFO
+           1306 WITH_EXCEPT_START
+           1308 POP_JUMP_IF_TRUE         1 (to 1312)
+           1310 RERAISE                  2
+        >> 1312 POP_TOP
+           1314 POP_EXCEPT
+           1316 POP_TOP
+           1318 POP_TOP
+           1320 RERAISE                  0
+        >> 1322 COPY                     3
+           1324 POP_EXCEPT
+           1326 RERAISE                  1
+        >> 1328 COPY                     3
+           1330 POP_EXCEPT
+           1332 RERAISE                  1
+
+204     >> 1334 PUSH_EXC_INFO
+           1336 WITH_EXCEPT_START
+           1338 POP_JUMP_IF_TRUE         1 (to 1342)
+           1340 RERAISE                  2
+        >> 1342 POP_TOP
+           1344 POP_EXCEPT
+           1346 POP_TOP
+           1348 POP_TOP
+
+206        1350 LOAD_FAST                2 (key)
+           1352 RETURN_VALUE
+        >> 1354 COPY                     3
+           1356 POP_EXCEPT
+           1358 RERAISE                  1
+        >> 1360 PUSH_EXC_INFO
+
+201        1362 LOAD_FAST                4 (posted)
+           1364 POP_JUMP_IF_FALSE       18 (to 1402)
+
+202        1366 LOAD_FAST                0 (self)
+           1368 LOAD_ATTR               39 (NULL|self + _post_up)
+           1388 LOAD_FAST                2 (key)
+           1390 CALL                     1
+           1398 POP_TOP
+           1400 RERAISE                  0
+
+204     >> 1402 LOAD_FAST                0 (self)
+           1404 LOAD_ATTR               27 (NULL|self + _input_context)
+           1424 CALL                     0
+           1432 BEFORE_WITH
+           1434 POP_TOP
+
+205        1436 LOAD_FAST                0 (self)
+           1438 LOAD_ATTR               35 (NULL|self + _up)
+           1458 LOAD_FAST                2 (key)
+           1460 CALL                     1
+           1468 POP_TOP
+
+204        1470 LOAD_CONST               0 (None)
+           1472 LOAD_CONST               0 (None)
+           1474 LOAD_CONST               0 (None)
+           1476 CALL                     2
+           1484 POP_TOP
+           1486 RERAISE                  0
+        >> 1488 PUSH_EXC_INFO
+           1490 WITH_EXCEPT_START
+           1492 POP_JUMP_IF_TRUE         1 (to 1496)
+           1494 RERAISE                  2
+        >> 1496 POP_TOP
+           1498 POP_EXCEPT
+           1500 POP_TOP
+           1502 POP_TOP
+           1504 RERAISE                  0
+        >> 1506 COPY                     3
+           1508 POP_EXCEPT
+           1510 RERAISE                  1
+        >> 1512 COPY                     3
+           1514 POP_EXCEPT
+           1516 RERAISE                  1
+ExceptionTable:
+  464 to 498 -> 1142 [1] lasti
+  518 to 772 -> 1360 [0]
+  774 to 808 -> 1168 [1] lasti
+  810 to 824 -> 1360 [0]
+  828 to 860 -> 1216 [0]
+  862 to 892 -> 1360 [0]
+  894 to 928 -> 1192 [1] lasti
+  930 to 1010 -> 1360 [0]
+  1086 to 1120 -> 1334 [1] lasti
+  1142 to 1150 -> 1162 [3] lasti
+  1168 to 1176 -> 1186 [3] lasti
+  1178 to 1190 -> 1360 [0]
+  1192 to 1200 -> 1210 [3] lasti
+  1202 to 1214 -> 1360 [0]
+  1216 to 1248 -> 1328 [1] lasti
+  1250 to 1284 -> 1304 [3] lasti
+  1286 to 1302 -> 1328 [1] lasti
+  1304 to 1312 -> 1322 [5] lasti
+  1314 to 1326 -> 1328 [1] lasti
+  1328 to 1332 -> 1360 [0]
+  1334 to 1342 -> 1354 [3] lasti
+  1360 to 1432 -> 1512 [1] lasti
+  1434 to 1468 -> 1488 [3] lasti
+  1470 to 1486 -> 1512 [1] lasti
+  1488 to 1496 -> 1506 [5] lasti
+  1498 to 1510 -> 1512 [1] lasti
+
+Disassembly of <code object _jump_walk at 0x179d58e0, file "anti_afk.py", line 208>:
+208           0 RESUME                   0
+
+209           2 NOP
+
+210           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (_rng)
+             26 STORE_FAST               2 (r)
+
+211          28 LOAD_FAST                0 (self)
+             30 LOAD_ATTR                2 (_hum)
+             50 LOAD_ATTR                5 (NULL|self + hold)
+             70 LOAD_FAST                0 (self)
+             72 LOAD_ATTR                6 (s)
+             92 LOAD_ATTR                8 (afk_hold)
+            112 CALL                     1
+            120 STORE_FAST               3 (hold)
+
+212         122 LOAD_FAST                3 (hold)
+            124 LOAD_FAST                0 (self)
+            126 STORE_ATTR               5 (last_hold)
+
+213         136 LOAD_FAST                0 (self)
+            138 LOAD_ATTR               12 (_focuser)
+            158 POP_JUMP_IF_FALSE       32 (to 224)
+            160 LOAD_FAST                0 (self)
+            162 LOAD_ATTR               15 (NULL|self + _background)
+            182 CALL                     0
+            190 POP_JUMP_IF_TRUE        16 (to 224)
+
+214         192 LOAD_FAST                0 (self)
+            194 LOAD_ATTR               13 (NULL|self + _focuser)
+            214 CALL                     0
+            222 POP_TOP
+
+215     >>  224 LOAD_FAST                0 (self)
+            226 LOAD_ATTR               17 (NULL|self + _input_context)
+            246 CALL                     0
+            254 BEFORE_WITH
+            256 POP_TOP
+
+216         258 LOAD_FAST                0 (self)
+            260 LOAD_ATTR               19 (NULL|self + _down)
+            280 LOAD_CONST               1 ('w')
+            282 CALL                     1
+            290 POP_TOP
+
+215         292 LOAD_CONST               0 (None)
+            294 LOAD_CONST               0 (None)
+            296 LOAD_CONST               0 (None)
+            298 CALL                     2
+            306 POP_TOP
+
+217     >>  308 NOP
+
+218         310 LOAD_FAST                2 (r)
+            312 LOAD_ATTR               21 (NULL|self + uniform)
+            332 LOAD_CONST               2 (0.3)
+            334 LOAD_CONST               3 (0.8)
+            336 CALL                     2
+            344 STORE_FAST               4 (lead)
+
+219         346 LOAD_FAST                1 (stop)
+            348 LOAD_ATTR               23 (NULL|self + wait)
+            368 LOAD_FAST                4 (lead)
+            370 CALL                     1
+            378 POP_JUMP_IF_TRUE        75 (to 530)
+            380 LOAD_GLOBAL             25 (NULL + _halted)
+            390 LOAD_FAST                1 (stop)
+            392 CALL                     1
+            400 POP_JUMP_IF_TRUE        64 (to 530)
+
+220         402 LOAD_FAST                0 (self)
+            404 LOAD_ATTR               27 (NULL|self + _tap)
+            424 LOAD_CONST               4 ('space')
+            426 LOAD_FAST                2 (r)
+            428 LOAD_ATTR               21 (NULL|self + uniform)
+            448 LOAD_CONST               5 (0.08)
+            450 LOAD_CONST               6 (0.18)
+            452 CALL                     2
+            460 CALL                     2
+            468 POP_TOP
+
+221         470 LOAD_FAST                1 (stop)
+            472 LOAD_ATTR               23 (NULL|self + wait)
+            492 LOAD_GLOBAL             29 (NULL + max)
+            502 LOAD_CONST               7 (0.0)
+            504 LOAD_FAST                3 (hold)
+            506 LOAD_FAST                4 (lead)
+            508 BINARY_OP               10 (-)
+            512 CALL                     2
+            520 CALL                     1
+            528 POP_TOP
+
+223     >>  530 LOAD_FAST                0 (self)
+            532 LOAD_ATTR               17 (NULL|self + _input_context)
+            552 CALL                     0
+            560 BEFORE_WITH
+            562 POP_TOP
+
+224         564 LOAD_FAST                0 (self)
+            566 LOAD_ATTR               31 (NULL|self + _up)
+            586 LOAD_CONST               1 ('w')
+            588 CALL                     1
+            596 POP_TOP
+
+223         598 LOAD_CONST               0 (None)
+            600 LOAD_CONST               0 (None)
+            602 LOAD_CONST               0 (None)
+            604 CALL                     2
+            612 POP_TOP
+
+225         614 RETURN_CONST             1 ('w')
+
+215     >>  616 PUSH_EXC_INFO
+            618 WITH_EXCEPT_START
+            620 POP_JUMP_IF_TRUE         1 (to 624)
+            622 RERAISE                  2
+        >>  624 POP_TOP
+            626 POP_EXCEPT
+            628 POP_TOP
+            630 POP_TOP
+            632 JUMP_BACKWARD          163 (to 308)
+        >>  634 COPY                     3
+            636 POP_EXCEPT
+            638 RERAISE                  1
+
+223     >>  640 PUSH_EXC_INFO
+            642 WITH_EXCEPT_START
+            644 POP_JUMP_IF_TRUE         1 (to 648)
+            646 RERAISE                  2
+        >>  648 POP_TOP
+            650 POP_EXCEPT
+            652 POP_TOP
+            654 POP_TOP
+
+225         656 RETURN_CONST             1 ('w')
+        >>  658 COPY                     3
+            660 POP_EXCEPT
+            662 RERAISE                  1
+        >>  664 PUSH_EXC_INFO
+
+223         666 LOAD_FAST                0 (self)
+            668 LOAD_ATTR               17 (NULL|self + _input_context)
+            688 CALL                     0
+            696 BEFORE_WITH
+            698 POP_TOP
+
+224         700 LOAD_FAST                0 (self)
+            702 LOAD_ATTR               31 (NULL|self + _up)
+            722 LOAD_CONST               1 ('w')
+            724 CALL                     1
+            732 POP_TOP
+
+223         734 LOAD_CONST               0 (None)
+            736 LOAD_CONST               0 (None)
+            738 LOAD_CONST               0 (None)
+            740 CALL                     2
+            748 POP_TOP
+            750 RERAISE                  0
+        >>  752 PUSH_EXC_INFO
+            754 WITH_EXCEPT_START
+            756 POP_JUMP_IF_TRUE         1 (to 760)
+            758 RERAISE                  2
+        >>  760 POP_TOP
+            762 POP_EXCEPT
+            764 POP_TOP
+            766 POP_TOP
+            768 RERAISE                  0
+        >>  770 COPY                     3
+            772 POP_EXCEPT
+            774 RERAISE                  1
+        >>  776 COPY                     3
+            778 POP_EXCEPT
+            780 RERAISE                  1
+ExceptionTable:
+  256 to 290 -> 616 [1] lasti
+  310 to 528 -> 664 [0]
+  562 to 596 -> 640 [1] lasti
+  616 to 624 -> 634 [3] lasti
+  640 to 648 -> 658 [3] lasti
+  664 to 696 -> 776 [1] lasti
+  698 to 732 -> 752 [3] lasti
+  734 to 750 -> 776 [1] lasti
+  752 to 760 -> 770 [5] lasti
+  762 to 774 -> 776 [1] lasti
+
+Disassembly of <code object _fidget at 0x17a3c5b0, file "anti_afk.py", line 227>:
+227           0 RESUME                   0
+
+228           2 NOP
+
+229           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (_rng)
+             26 STORE_FAST               2 (r)
+
+230          28 LOAD_GLOBAL              3 (NULL + random)
+             38 LOAD_ATTR                4 (choice)
+             58 LOAD_FAST                0 (self)
+             60 LOAD_ATTR                6 (s)
+             80 LOAD_ATTR                8 (afk_keys)
+            100 CALL                     1
+            108 STORE_FAST               3 (key)
+
+231         110 LOAD_CONST               1 (0.0)
+            112 LOAD_FAST                0 (self)
+            114 STORE_ATTR               5 (last_hold)
+
+232         124 LOAD_FAST                0 (self)
+            126 LOAD_ATTR               12 (_focuser)
+            146 POP_JUMP_IF_FALSE       32 (to 212)
+            148 LOAD_FAST                0 (self)
+            150 LOAD_ATTR               15 (NULL|self + _background)
+            170 CALL                     0
+            178 POP_JUMP_IF_TRUE        16 (to 212)
+
+233         180 LOAD_FAST                0 (self)
+            182 LOAD_ATTR               13 (NULL|self + _focuser)
+            202 CALL                     0
+            210 POP_TOP
+
+234     >>  212 LOAD_GLOBAL             17 (NULL + range)
+            222 LOAD_CONST               2 (2)
+            224 CALL                     1
+            232 GET_ITER
+        >>  234 FOR_ITER               112 (to 462)
+            238 STORE_FAST               4 (n)
+
+235         240 LOAD_GLOBAL             19 (NULL + _halted)
+            250 LOAD_FAST                1 (stop)
+            252 CALL                     1
+            260 POP_JUMP_IF_FALSE        3 (to 268)
+
+236         262 POP_TOP
+
+242         264 LOAD_FAST                3 (key)
+            266 RETURN_VALUE
+
+237     >>  268 LOAD_FAST                2 (r)
+            270 LOAD_ATTR               21 (NULL|self + uniform)
+            290 LOAD_CONST               3 (0.12)
+            292 LOAD_CONST               4 (0.25)
+            294 CALL                     2
+            302 STORE_FAST               5 (dur)
+
+238         304 LOAD_FAST                0 (self)
+            306 COPY                     1
+            308 LOAD_ATTR               10 (last_hold)
+            328 LOAD_FAST                5 (dur)
+            330 BINARY_OP               13 (+=)
+            334 SWAP                     2
+            336 STORE_ATTR               5 (last_hold)
+
+239         346 LOAD_FAST                0 (self)
+            348 LOAD_ATTR               23 (NULL|self + _tap)
+            368 LOAD_FAST                3 (key)
+            370 LOAD_FAST                5 (dur)
+            372 CALL                     2
+            380 POP_TOP
+
+240         382 LOAD_FAST                4 (n)
+            384 LOAD_CONST               5 (0)
+            386 COMPARE_OP              40 (==)
+            390 POP_JUMP_IF_TRUE         1 (to 394)
+            392 JUMP_BACKWARD           80 (to 234)
+
+241     >>  394 LOAD_FAST                1 (stop)
+            396 LOAD_ATTR               25 (NULL|self + wait)
+            416 LOAD_FAST                2 (r)
+            418 LOAD_ATTR               21 (NULL|self + uniform)
+            438 LOAD_CONST               6 (0.06)
+            440 LOAD_CONST               7 (0.18)
+            442 CALL                     2
+            450 CALL                     1
+            458 POP_TOP
+            460 JUMP_BACKWARD          114 (to 234)
+
+234     >>  462 END_FOR
+
+242         464 LOAD_FAST                3 (key)
+            466 RETURN_VALUE
+
+Disassembly of <code object _micro_pause at 0x7f6af20e3990, file "anti_afk.py", line 244>:
+244           0 RESUME                   0
+
+245           2 NOP
+
+246           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (_rng)
+             26 STORE_FAST               2 (r)
+
+247          28 LOAD_CONST               1 (0.0)
+             30 LOAD_FAST                0 (self)
+             32 STORE_ATTR               1 (last_hold)
+
+248          42 LOAD_GLOBAL              5 (NULL + range)
+             52 LOAD_FAST                2 (r)
+             54 LOAD_ATTR                7 (NULL|self + randint)
+             74 LOAD_CONST               2 (1)
+             76 LOAD_CONST               3 (3)
+             78 CALL                     2
+             86 CALL                     1
+             94 GET_ITER
+        >>   96 FOR_ITER                66 (to 232)
+            100 STORE_FAST               3 (_)
+
+249         102 LOAD_GLOBAL              9 (NULL + _halted)
+            112 LOAD_FAST                1 (stop)
+            114 CALL                     1
+            122 POP_JUMP_IF_FALSE        2 (to 128)
+
+250         124 POP_TOP
+
+254         126 RETURN_CONST             6 ('-')
+
+251     >>  128 LOAD_FAST                0 (self)
+            130 LOAD_ATTR               11 (NULL|self + _look_around)
+            150 CALL                     0
+            158 POP_TOP
+
+252         160 LOAD_FAST                1 (stop)
+            162 LOAD_ATTR               13 (NULL|self + wait)
+            182 LOAD_FAST                2 (r)
+            184 LOAD_ATTR               15 (NULL|self + uniform)
+            204 LOAD_CONST               4 (0.4)
+            206 LOAD_CONST               5 (1.2)
+            208 CALL                     2
+            216 CALL                     1
+            224 POP_JUMP_IF_TRUE         1 (to 228)
+            226 JUMP_BACKWARD           66 (to 96)
+
+253     >>  228 POP_TOP
+
+254         230 RETURN_CONST             6 ('-')
+
+248     >>  232 END_FOR
+
+254         234 RETURN_CONST             6 ('-')
+
+Disassembly of <code object pickaxe_swing at 0x17a58570, file "anti_afk.py", line 256>:
+256           0 RESUME                   0
+
+257           2 NOP
+
+258           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (_swing)
+             26 POP_JUMP_IF_FALSE       16 (to 60)
+             28 LOAD_FAST                0 (self)
+             30 LOAD_ATTR                3 (NULL|self + _user_away)
+             50 CALL                     0
+             58 POP_JUMP_IF_FALSE        1 (to 62)
+
+259     >>   60 RETURN_CONST             1 (False)
+
+260     >>   62 LOAD_FAST                0 (self)
+             64 LOAD_ATTR                4 (_rng)
+             84 STORE_FAST               2 (r)
+
+261          86 LOAD_GLOBAL              7 (NULL + getattr)
+             96 LOAD_FAST                0 (self)
+             98 LOAD_ATTR                8 (s)
+            118 LOAD_CONST               2 ('pickaxe_slot_key')
+            120 LOAD_CONST               3 ('1')
+            122 CALL                     3
+            130 COPY                     1
+            132 POP_JUMP_IF_TRUE         2 (to 138)
+            134 POP_TOP
+            136 LOAD_CONST               3 ('1')
+        >>  138 STORE_FAST               3 (slot)
+
+262         140 LOAD_FAST                0 (self)
+            142 LOAD_ATTR               11 (NULL|self + release_all)
+            162 CALL                     0
+            170 POP_TOP
+
+263         172 LOAD_FAST                0 (self)
+            174 LOAD_ATTR               12 (_focuser)
+            194 POP_JUMP_IF_FALSE       32 (to 260)
+            196 LOAD_FAST                0 (self)
+            198 LOAD_ATTR               15 (NULL|self + _background)
+            218 CALL                     0
+            226 POP_JUMP_IF_TRUE        16 (to 260)
+
+264         228 LOAD_FAST                0 (self)
+            230 LOAD_ATTR               13 (NULL|self + _focuser)
+            250 CALL                     0
+            258 POP_TOP
+
+265     >>  260 NOP
+
+266         262 LOAD_GLOBAL             17 (NULL + _halted)
+            272 LOAD_FAST                1 (stop)
+            274 CALL                     1
+            282 POP_JUMP_IF_FALSE       18 (to 320)
+
+267         284 NOP
+
+273         286 LOAD_FAST                0 (self)
+            288 LOAD_ATTR               11 (NULL|self + release_all)
+            308 CALL                     0
+            316 POP_TOP
+            318 RETURN_CONST             1 (False)
+
+268     >>  320 LOAD_FAST                0 (self)
+            322 LOAD_ATTR               19 (NULL|self + _tap)
+            342 LOAD_FAST                3 (slot)
+            344 LOAD_FAST                2 (r)
+            346 LOAD_ATTR               21 (NULL|self + uniform)
+            366 LOAD_CONST               4 (0.08)
+            368 LOAD_CONST               5 (0.15)
+            370 CALL                     2
+            378 CALL                     2
+            386 POP_TOP
+
+269         388 LOAD_FAST                1 (stop)
+            390 LOAD_ATTR               23 (NULL|self + wait)
+            410 LOAD_FAST                2 (r)
+            412 LOAD_ATTR               21 (NULL|self + uniform)
+            432 LOAD_CONST               6 (0.2)
+            434 LOAD_CONST               7 (0.4)
+            436 CALL                     2
+            444 CALL                     1
+            452 POP_JUMP_IF_TRUE        11 (to 476)
+            454 LOAD_GLOBAL             17 (NULL + _halted)
+            464 LOAD_FAST                1 (stop)
+            466 CALL                     1
+            474 POP_JUMP_IF_FALSE       18 (to 512)
+
+270     >>  476 NOP
+
+273         478 LOAD_FAST                0 (self)
+            480 LOAD_ATTR               11 (NULL|self + release_all)
+            500 CALL                     0
+            508 POP_TOP
+            510 RETURN_CONST             1 (False)
+
+271     >>  512 LOAD_GLOBAL             25 (NULL + bool)
+            522 LOAD_FAST                0 (self)
+            524 LOAD_ATTR                1 (NULL|self + _swing)
+            544 CALL                     0
+            552 CALL                     1
+
+273         560 LOAD_FAST                0 (self)
+            562 LOAD_ATTR               11 (NULL|self + release_all)
+            582 CALL                     0
+            590 POP_TOP
+            592 RETURN_VALUE
+        >>  594 PUSH_EXC_INFO
+            596 LOAD_FAST                0 (self)
+            598 LOAD_ATTR               11 (NULL|self + release_all)
+            618 CALL                     0
+            626 POP_TOP
+            628 RERAISE                  0
+        >>  630 COPY                     3
+            632 POP_EXCEPT
+            634 RERAISE                  1
+ExceptionTable:
+  262 to 282 -> 594 [0]
+  320 to 474 -> 594 [0]
+  512 to 558 -> 594 [0]
+  594 to 628 -> 630 [1] lasti
+
+Disassembly of <code object <lambda> at 0x7f6aed711e40, file "anti_afk.py", line 275>:
+275           0 RESUME                   0
+              2 RETURN_CONST             0 (None)
+
+Disassembly of <code object dive_async at 0x7f6af1de60b0, file "anti_afk.py", line 275>:
+              0 MAKE_CELL                0 (self)
+              2 MAKE_CELL                1 (stop)
+              4 MAKE_CELL                2 (log)
+
+275           6 RESUME                   0
+
+276           8 NOP
+
+277          10 LOAD_DEREF               0 (self)
+             12 LOAD_ATTR                0 (_diving)
+             32 LOAD_ATTR                3 (NULL|self + is_set)
+             52 CALL                     0
+             60 POP_JUMP_IF_FALSE        1 (to 64)
+
+278          62 RETURN_CONST             1 (False)
+
+279     >>   64 LOAD_DEREF               0 (self)
+             66 LOAD_ATTR                0 (_diving)
+             86 LOAD_ATTR                5 (NULL|self + set)
+            106 CALL                     0
+            114 POP_TOP
+
+281         116 LOAD_CONST               6 (('return', None))
+            118 LOAD_CLOSURE             2 (log)
+            120 LOAD_CLOSURE             0 (self)
+            122 LOAD_CLOSURE             1 (stop)
+            124 BUILD_TUPLE              3
+            126 LOAD_CONST               2 (<code object work at 0x7f6af208f690, file "anti_afk.py", line 281>)
+            128 MAKE_FUNCTION           12 (annotations, closure)
+            130 STORE_FAST               3 (work)
+
+290         132 LOAD_GLOBAL              7 (NULL + threading)
+            142 LOAD_ATTR                8 (Thread)
+            162 LOAD_FAST                3 (work)
+            164 LOAD_CONST               3 (True)
+            166 LOAD_CONST               4 ('pk-auto-dive')
+            168 KW_NAMES                 5 (('target', 'daemon', 'name'))
+            170 CALL                     3
+            178 LOAD_ATTR               11 (NULL|self + start)
+            198 CALL                     0
+            206 POP_TOP
+
+291         208 RETURN_CONST             3 (True)
+
+Disassembly of <code object work at 0x7f6af208f690, file "anti_afk.py", line 281>:
+              0 COPY_FREE_VARS           3
+
+281           2 RESUME                   0
+
+282           4 NOP
+
+283           6 LOAD_DEREF               2 (self)
+              8 LOAD_ATTR                1 (NULL|self + dive)
+             28 LOAD_DEREF               3 (stop)
+             30 LOAD_DEREF               1 (log)
+             32 CALL                     2
+             40 POP_TOP
+
+287     >>   42 LOAD_DEREF               2 (self)
+             44 LOAD_ATTR                5 (NULL|self + release_all)
+             64 CALL                     0
+             72 POP_TOP
+
+288          74 LOAD_DEREF               2 (self)
+             76 LOAD_ATTR                6 (_diving)
+             96 LOAD_ATTR                9 (NULL|self + clear)
+            116 CALL                     0
+            124 POP_TOP
+            126 RETURN_CONST             0 (None)
+        >>  128 PUSH_EXC_INFO
+
+284         130 LOAD_GLOBAL              2 (Exception)
+            140 CHECK_EXC_MATCH
+            142 POP_JUMP_IF_FALSE       21 (to 186)
+            144 STORE_FAST               0 (e)
+
+285         146 PUSH_NULL
+            148 LOAD_DEREF               1 (log)
+            150 LOAD_CONST               1 ('bus drop error: ')
+            152 LOAD_FAST                0 (e)
+            154 FORMAT_VALUE             0
+            156 BUILD_STRING             2
+            158 CALL                     1
+            166 POP_TOP
+            168 POP_EXCEPT
+            170 LOAD_CONST               0 (None)
+            172 STORE_FAST               0 (e)
+            174 DELETE_FAST              0 (e)
+            176 JUMP_BACKWARD           68 (to 42)
+        >>  178 LOAD_CONST               0 (None)
+            180 STORE_FAST               0 (e)
+            182 DELETE_FAST              0 (e)
+            184 RERAISE                  1
+
+284     >>  186 RERAISE                  0
+        >>  188 COPY                     3
+            190 POP_EXCEPT
+            192 RERAISE                  1
+        >>  194 PUSH_EXC_INFO
+
+287         196 LOAD_DEREF               2 (self)
+            198 LOAD_ATTR                5 (NULL|self + release_all)
+            218 CALL                     0
+            226 POP_TOP
+
+288         228 LOAD_DEREF               2 (self)
+            230 LOAD_ATTR                6 (_diving)
+            250 LOAD_ATTR                9 (NULL|self + clear)
+            270 CALL                     0
+            278 POP_TOP
+            280 RERAISE                  0
+        >>  282 COPY                     3
+            284 POP_EXCEPT
+            286 RERAISE                  1
+ExceptionTable:
+  6 to 40 -> 128 [0]
+  128 to 144 -> 188 [1] lasti
+  146 to 166 -> 178 [1] lasti
+  168 to 176 -> 194 [0]
+  178 to 186 -> 188 [1] lasti
+  188 to 192 -> 194 [0]
+  194 to 280 -> 282 [1] lasti
+
+Disassembly of <code object <lambda> at 0x7f6aed711ca0, file "anti_afk.py", line 293>:
+293           0 RESUME                   0
+              2 RETURN_CONST             0 (None)
+
+Disassembly of <code object dive at 0x179d4b20, file "anti_afk.py", line 293>:
+293           0 RESUME                   0
+
+294           2 NOP
+
+298           4 LOAD_GLOBAL              1 (NULL + _Guard)
+             14 LOAD_FAST                1 (stop)
+             16 LOAD_FAST                0 (self)
+             18 LOAD_ATTR                2 (active)
+             38 CALL                     2
+             46 STORE_FAST               3 (guard)
+
+299          48 LOAD_FAST                0 (self)
+             50 LOAD_ATTR                4 (_rng)
+             70 STORE_FAST               4 (r)
+
+300          72 LOAD_FAST                0 (self)
+             74 LOAD_ATTR                6 (_diving)
+             94 LOAD_ATTR                9 (NULL|self + set)
+            114 CALL                     0
+            122 POP_TOP
+
+301         124 LOAD_FAST                0 (self)
+            126 LOAD_ATTR               11 (NULL|self + release_all)
+            146 CALL                     0
+            154 POP_TOP
+
+302         156 LOAD_FAST                0 (self)
+            158 LOAD_ATTR               12 (_focuser)
+            178 POP_JUMP_IF_FALSE       32 (to 244)
+            180 LOAD_FAST                0 (self)
+            182 LOAD_ATTR               15 (NULL|self + _background)
+            202 CALL                     0
+            210 POP_JUMP_IF_TRUE        16 (to 244)
+
+303         212 LOAD_FAST                0 (self)
+            214 LOAD_ATTR               13 (NULL|self + _focuser)
+            234 CALL                     0
+            242 POP_TOP
+
+304     >>  244 LOAD_FAST                3 (guard)
+            246 LOAD_ATTR               17 (NULL|self + is_set)
+            266 CALL                     0
+            274 POP_JUMP_IF_FALSE        1 (to 278)
+
+305         276 RETURN_CONST             1 (False)
+
+306     >>  278 LOAD_FAST                0 (self)
+            280 LOAD_ATTR               19 (NULL|self + _tap)
+            300 LOAD_CONST               2 ('space')
+            302 LOAD_FAST                4 (r)
+            304 LOAD_ATTR               21 (NULL|self + uniform)
+            324 LOAD_CONST               3 (0.08)
+            326 LOAD_CONST               4 (0.15)
+            328 CALL                     2
+            336 CALL                     2
+            344 POP_TOP
+
+307         346 PUSH_NULL
+            348 LOAD_FAST                2 (log)
+            350 LOAD_CONST               5 ('anti-afk: bus drop - jumped')
+            352 CALL                     1
+            360 POP_TOP
+
+308         362 LOAD_FAST                3 (guard)
+            364 LOAD_ATTR               23 (NULL|self + wait)
+            384 LOAD_FAST                4 (r)
+            386 LOAD_ATTR               21 (NULL|self + uniform)
+            406 LOAD_CONST               6 (0.35)
+            408 LOAD_CONST               7 (0.7)
+            410 CALL                     2
+            418 CALL                     1
+            426 POP_JUMP_IF_FALSE        1 (to 430)
+
+309         428 RETURN_CONST             1 (False)
+
+310     >>  430 LOAD_FAST                0 (self)
+            432 LOAD_ATTR               24 (_dive_look)
+            452 COPY                     1
+            454 POP_JUMP_IF_TRUE        12 (to 480)
+            456 POP_TOP
+            458 LOAD_FAST                0 (self)
+            460 LOAD_ATTR               26 (_look)
+        >>  480 STORE_FAST               5 (look)
+
+311         482 LOAD_CONST               8 (0)
+            484 STORE_FAST               6 (down)
+
+312         486 LOAD_FAST                5 (look)
+            488 POP_JUMP_IF_FALSE      122 (to 734)
+            490 LOAD_FAST                3 (guard)
+            492 LOAD_ATTR               17 (NULL|self + is_set)
+            512 CALL                     0
+            520 POP_JUMP_IF_TRUE       106 (to 734)
+
+313         522 NOP
+
+314         524 LOAD_CONST               9 ((0.6, 0.4))
+            526 GET_ITER
+        >>  528 FOR_ITER               100 (to 732)
+            532 STORE_FAST               7 (part)
+
+315         534 PUSH_NULL
+            536 LOAD_FAST                5 (look)
+            538 LOAD_FAST                4 (r)
+            540 LOAD_ATTR               29 (NULL|self + randint)
+            560 LOAD_CONST              10 (-12)
+            562 LOAD_CONST              11 (12)
+            564 CALL                     2
+            572 LOAD_GLOBAL             31 (NULL + int)
+            582 LOAD_GLOBAL             32 (DIVE_PITCH)
+            592 LOAD_FAST                7 (part)
+            594 BINARY_OP                5 (*)
+            598 CALL                     1
+            606 LOAD_FAST                4 (r)
+            608 LOAD_ATTR               29 (NULL|self + randint)
+            628 LOAD_CONST              12 (260)
+            630 LOAD_CONST              13 (420)
+            632 CALL                     2
+            640 CALL                     3
+            648 POP_TOP
+
+316         650 LOAD_FAST                6 (down)
+            652 LOAD_GLOBAL             31 (NULL + int)
+            662 LOAD_GLOBAL             32 (DIVE_PITCH)
+            672 LOAD_FAST                7 (part)
+            674 BINARY_OP                5 (*)
+            678 CALL                     1
+            686 BINARY_OP               13 (+=)
+            690 STORE_FAST               6 (down)
+
+317         692 LOAD_FAST                3 (guard)
+            694 LOAD_ATTR               23 (NULL|self + wait)
+            714 LOAD_CONST              14 (0.12)
+            716 CALL                     1
+            724 POP_JUMP_IF_TRUE         1 (to 728)
+            726 JUMP_BACKWARD          100 (to 528)
+
+318     >>  728 POP_TOP
+            730 JUMP_FORWARD             1 (to 734)
+
+314     >>  732 END_FOR
+
+321     >>  734 LOAD_GLOBAL             37 (NULL + max)
+            744 LOAD_CONST              15 (0.0)
+            746 LOAD_GLOBAL             39 (NULL + float)
+            756 LOAD_GLOBAL             41 (NULL + getattr)
+            766 LOAD_FAST                0 (self)
+            768 LOAD_ATTR               42 (s)
+            788 LOAD_CONST              16 ('bus_dive_seconds')
+            790 LOAD_CONST              17 (8.0)
+            792 CALL                     3
+            800 CALL                     1
+            808 CALL                     2
+            816 STORE_FAST               8 (secs)
+
+322         818 LOAD_FAST                8 (secs)
+            820 LOAD_CONST               8 (0)
+            822 COMPARE_OP              68 (>)
+            826 POP_JUMP_IF_FALSE      118 (to 1064)
+            828 LOAD_FAST                3 (guard)
+            830 LOAD_ATTR               17 (NULL|self + is_set)
+            850 CALL                     0
+            858 POP_JUMP_IF_TRUE       102 (to 1064)
+
+323         860 LOAD_FAST                0 (self)
+            862 LOAD_ATTR               45 (NULL|self + _input_context)
+            882 CALL                     0
+            890 BEFORE_WITH
+            892 POP_TOP
+
+324         894 LOAD_FAST                0 (self)
+            896 LOAD_ATTR               47 (NULL|self + _down)
+            916 LOAD_CONST              18 ('w')
+            918 CALL                     1
+            926 POP_TOP
+
+323         928 LOAD_CONST               0 (None)
+            930 LOAD_CONST               0 (None)
+            932 LOAD_CONST               0 (None)
+            934 CALL                     2
+            942 POP_TOP
+
+325     >>  944 NOP
+
+326         946 LOAD_FAST                3 (guard)
+            948 LOAD_ATTR               23 (NULL|self + wait)
+            968 LOAD_FAST                8 (secs)
+            970 CALL                     1
+            978 POP_TOP
+
+328         980 LOAD_FAST                0 (self)
+            982 LOAD_ATTR               45 (NULL|self + _input_context)
+           1002 CALL                     0
+           1010 BEFORE_WITH
+           1012 POP_TOP
+
+329        1014 LOAD_FAST                0 (self)
+           1016 LOAD_ATTR               49 (NULL|self + _up)
+           1036 LOAD_CONST              18 ('w')
+           1038 CALL                     1
+           1046 POP_TOP
+
+328        1048 LOAD_CONST               0 (None)
+           1050 LOAD_CONST               0 (None)
+           1052 LOAD_CONST               0 (None)
+           1054 CALL                     2
+           1062 POP_TOP
+
+330     >> 1064 LOAD_FAST                5 (look)
+           1066 POP_JUMP_IF_FALSE       62 (to 1192)
+           1068 LOAD_FAST                6 (down)
+           1070 POP_JUMP_IF_FALSE       60 (to 1192)
+           1072 LOAD_FAST                3 (guard)
+           1074 LOAD_ATTR               17 (NULL|self + is_set)
+           1094 CALL                     0
+           1102 POP_JUMP_IF_TRUE        44 (to 1192)
+
+331        1104 NOP
+
+332        1106 PUSH_NULL
+           1108 LOAD_FAST                5 (look)
+           1110 LOAD_CONST               8 (0)
+           1112 LOAD_GLOBAL             31 (NULL + int)
+           1122 LOAD_FAST                6 (down)
+           1124 LOAD_GLOBAL             50 (DIVE_RESTORE)
+           1134 BINARY_OP                5 (*)
+           1138 CALL                     1
+           1146 UNARY_NEGATIVE
+           1148 LOAD_FAST                4 (r)
+           1150 LOAD_ATTR               29 (NULL|self + randint)
+           1170 LOAD_CONST              19 (300)
+           1172 LOAD_CONST              20 (500)
+           1174 CALL                     2
+           1182 CALL                     3
+           1190 POP_TOP
+
+335     >> 1192 LOAD_CONST               8 (0)
+           1194 LOAD_FAST                0 (self)
+           1196 LOAD_ATTR               52 (_hum)
+           1216 LOAD_ATTR               54 (pitch)
+           1236 STORE_ATTR              27 (pitch)
+
+336        1246 PUSH_NULL
+           1248 LOAD_FAST                2 (log)
+           1250 LOAD_CONST              21 ('anti-afk: bus drop - done')
+           1252 CALL                     1
+           1260 POP_TOP
+
+337        1262 RETURN_CONST            22 (True)
+        >> 1264 PUSH_EXC_INFO
+
+319        1266 LOAD_GLOBAL             34 (Exception)
+           1276 CHECK_EXC_MATCH
+           1278 POP_JUMP_IF_FALSE        4 (to 1288)
+           1280 POP_TOP
+
+320        1282 POP_EXCEPT
+           1284 EXTENDED_ARG             1
+           1286 JUMP_BACKWARD          277 (to 734)
+
+319     >> 1288 RERAISE                  0
+        >> 1290 COPY                     3
+           1292 POP_EXCEPT
+           1294 RERAISE                  1
+
+323     >> 1296 PUSH_EXC_INFO
+           1298 WITH_EXCEPT_START
+           1300 POP_JUMP_IF_TRUE         1 (to 1304)
+           1302 RERAISE                  2
+        >> 1304 POP_TOP
+           1306 POP_EXCEPT
+           1308 POP_TOP
+           1310 POP_TOP
+           1312 JUMP_BACKWARD          185 (to 944)
+        >> 1314 COPY                     3
+           1316 POP_EXCEPT
+           1318 RERAISE                  1
+
+328     >> 1320 PUSH_EXC_INFO
+           1322 WITH_EXCEPT_START
+           1324 POP_JUMP_IF_TRUE         1 (to 1328)
+           1326 RERAISE                  2
+        >> 1328 POP_TOP
+           1330 POP_EXCEPT
+           1332 POP_TOP
+           1334 POP_TOP
+           1336 JUMP_BACKWARD          137 (to 1064)
+        >> 1338 COPY                     3
+           1340 POP_EXCEPT
+           1342 RERAISE                  1
+        >> 1344 PUSH_EXC_INFO
+           1346 LOAD_FAST                0 (self)
+           1348 LOAD_ATTR               45 (NULL|self + _input_context)
+           1368 CALL                     0
+           1376 BEFORE_WITH
+           1378 POP_TOP
+
+329        1380 LOAD_FAST                0 (self)
+           1382 LOAD_ATTR               49 (NULL|self + _up)
+           1402 LOAD_CONST              18 ('w')
+           1404 CALL                     1
+           1412 POP_TOP
+
+328        1414 LOAD_CONST               0 (None)
+           1416 LOAD_CONST               0 (None)
+           1418 LOAD_CONST               0 (None)
+           1420 CALL                     2
+           1428 POP_TOP
+           1430 RERAISE                  0
+        >> 1432 PUSH_EXC_INFO
+           1434 WITH_EXCEPT_START
+           1436 POP_JUMP_IF_TRUE         1 (to 1440)
+           1438 RERAISE                  2
+        >> 1440 POP_TOP
+           1442 POP_EXCEPT
+           1444 POP_TOP
+           1446 POP_TOP
+           1448 RERAISE                  0
+        >> 1450 COPY                     3
+           1452 POP_EXCEPT
+           1454 RERAISE                  1
+        >> 1456 COPY                     3
+           1458 POP_EXCEPT
+           1460 RERAISE                  1
+        >> 1462 PUSH_EXC_INFO
+
+333        1464 LOAD_GLOBAL             34 (Exception)
+           1474 CHECK_EXC_MATCH
+           1476 POP_JUMP_IF_FALSE        3 (to 1484)
+           1478 POP_TOP
+
+334        1480 POP_EXCEPT
+           1482 JUMP_BACKWARD          146 (to 1192)
+
+333     >> 1484 RERAISE                  0
+        >> 1486 COPY                     3
+           1488 POP_EXCEPT
+           1490 RERAISE                  1
+ExceptionTable:
+  524 to 724 -> 1264 [0]
+  728 to 732 -> 1264 [0]
+  892 to 926 -> 1296 [1] lasti
+  946 to 978 -> 1344 [0]
+  1012 to 1046 -> 1320 [1] lasti
+  1106 to 1190 -> 1462 [0]
+  1264 to 1280 -> 1290 [1] lasti
+  1288 to 1288 -> 1290 [1] lasti
+  1296 to 1304 -> 1314 [3] lasti
+  1320 to 1328 -> 1338 [3] lasti
+  1344 to 1376 -> 1456 [1] lasti
+  1378 to 1412 -> 1432 [3] lasti
+  1414 to 1430 -> 1456 [1] lasti
+  1432 to 1440 -> 1450 [5] lasti
+  1442 to 1454 -> 1456 [1] lasti
+  1462 to 1478 -> 1486 [1] lasti
+  1484 to 1484 -> 1486 [1] lasti
+
+Disassembly of <code object _pickaxe_delay at 0x179d4910, file "anti_afk.py", line 339>:
+339           0 RESUME                   0
+
+340           2 NOP
+
+341           4 NOP
+
+342           6 LOAD_GLOBAL              1 (NULL + float)
+             16 LOAD_FAST                0 (self)
+             18 LOAD_ATTR                2 (s)
+             38 LOAD_ATTR                4 (pickaxe_min_s)
+             58 CALL                     1
+             66 LOAD_GLOBAL              1 (NULL + float)
+             76 LOAD_FAST                0 (self)
+             78 LOAD_ATTR                2 (s)
+             98 LOAD_ATTR                6 (pickaxe_max_s)
+            118 CALL                     1
+            126 STORE_FAST               2 (hi)
+            128 STORE_FAST               1 (lo)
+
+345     >>  130 LOAD_GLOBAL             13 (NULL + max)
+            140 LOAD_CONST               1 (1.0)
+            142 LOAD_GLOBAL             15 (NULL + min)
+            152 LOAD_FAST                1 (lo)
+            154 LOAD_FAST                2 (hi)
+            156 CALL                     2
+            164 CALL                     2
+            172 LOAD_GLOBAL             13 (NULL + max)
+            182 LOAD_CONST               1 (1.0)
+            184 LOAD_GLOBAL             13 (NULL + max)
+            194 LOAD_FAST                1 (lo)
+            196 LOAD_FAST                2 (hi)
+            198 CALL                     2
+            206 CALL                     2
+            214 STORE_FAST               2 (hi)
+            216 STORE_FAST               1 (lo)
+
+346         218 LOAD_FAST                0 (self)
+            220 LOAD_ATTR               16 (_rng)
+            240 LOAD_ATTR               19 (NULL|self + uniform)
+            260 LOAD_FAST                1 (lo)
+            262 LOAD_FAST                2 (hi)
+            264 CALL                     2
+            272 RETURN_VALUE
+        >>  274 PUSH_EXC_INFO
+
+343         276 LOAD_GLOBAL              8 (Exception)
+            286 CHECK_EXC_MATCH
+            288 POP_JUMP_IF_FALSE       12 (to 314)
+            290 POP_TOP
+
+344         292 LOAD_GLOBAL             10 (PICKAXE_EVERY_S)
+            302 UNPACK_SEQUENCE          2
+            306 STORE_FAST               1 (lo)
+            308 STORE_FAST               2 (hi)
+            310 POP_EXCEPT
+            312 JUMP_BACKWARD           92 (to 130)
+
+343     >>  314 RERAISE                  0
+        >>  316 COPY                     3
+            318 POP_EXCEPT
+            320 RERAISE                  1
+ExceptionTable:
+  6 to 128 -> 274 [0]
+  274 to 308 -> 316 [1] lasti
+  314 to 314 -> 316 [1] lasti
+
+Disassembly of <code object _pickaxe_tick at 0x179016e0, file "anti_afk.py", line 348>:
+348           0 RESUME                   0
+
+349           2 LOAD_GLOBAL              1 (NULL + getattr)
+             12 LOAD_FAST                0 (self)
+             14 LOAD_ATTR                2 (s)
+             34 LOAD_CONST               1 ('pickaxe_afk_enabled')
+             36 LOAD_CONST               2 (False)
+             38 CALL                     3
+             46 POP_JUMP_IF_FALSE       12 (to 72)
+             48 LOAD_FAST                0 (self)
+             50 LOAD_ATTR                4 (_swing)
+             70 POP_JUMP_IF_TRUE         8 (to 88)
+
+350     >>   72 LOAD_CONST               0 (None)
+             74 LOAD_FAST                0 (self)
+             76 STORE_ATTR               3 (_pickaxe_due)
+
+351          86 RETURN_CONST             0 (None)
+
+352     >>   88 LOAD_FAST                0 (self)
+             90 LOAD_ATTR                6 (_pickaxe_due)
+            110 POP_JUMP_IF_NOT_NONE    25 (to 162)
+
+353         112 LOAD_FAST                1 (now)
+            114 LOAD_FAST                0 (self)
+            116 LOAD_ATTR                9 (NULL|self + _pickaxe_delay)
+            136 CALL                     0
+            144 BINARY_OP                0 (+)
+            148 LOAD_FAST                0 (self)
+            150 STORE_ATTR               3 (_pickaxe_due)
+
+354         160 RETURN_CONST             0 (None)
+
+355     >>  162 LOAD_FAST                1 (now)
+            164 LOAD_FAST                0 (self)
+            166 LOAD_ATTR                6 (_pickaxe_due)
+            186 COMPARE_OP               2 (<)
+            190 POP_JUMP_IF_TRUE        44 (to 280)
+            192 LOAD_FAST                0 (self)
+            194 LOAD_ATTR               10 (_defer)
+            214 POP_JUMP_IF_FALSE       16 (to 248)
+            216 LOAD_FAST                0 (self)
+            218 LOAD_ATTR               11 (NULL|self + _defer)
+            238 CALL                     0
+            246 POP_JUMP_IF_TRUE        16 (to 280)
+        >>  248 LOAD_FAST                0 (self)
+            250 LOAD_ATTR               13 (NULL|self + active)
+            270 CALL                     0
+            278 POP_JUMP_IF_TRUE         1 (to 282)
+
+356     >>  280 RETURN_CONST             0 (None)
+
+357     >>  282 LOAD_FAST                1 (now)
+            284 LOAD_FAST                0 (self)
+            286 LOAD_ATTR                9 (NULL|self + _pickaxe_delay)
+            306 CALL                     0
+            314 BINARY_OP                0 (+)
+            318 LOAD_FAST                0 (self)
+            320 STORE_ATTR               3 (_pickaxe_due)
+
+358         330 NOP
+
+359         332 LOAD_FAST                0 (self)
+            334 LOAD_ATTR               15 (NULL|self + pickaxe_swing)
+            354 LOAD_GLOBAL             17 (NULL + _Guard)
+            364 LOAD_FAST                2 (stop)
+            366 LOAD_FAST                0 (self)
+            368 LOAD_ATTR               12 (active)
+            388 CALL                     2
+            396 CALL                     1
+            404 STORE_FAST               4 (ok)
+
+360         406 PUSH_NULL
+            408 LOAD_FAST                3 (log)
+            410 LOAD_FAST                4 (ok)
+            412 POP_JUMP_IF_FALSE        7 (to 428)
+            414 LOAD_CONST               3 ('anti-afk: pickaxe swing')
+            416 CALL                     1
+            424 POP_TOP
+            426 RETURN_CONST             0 (None)
+        >>  428 LOAD_CONST               4 ('anti-afk: pickaxe swing skipped')
+            430 CALL                     1
+            438 POP_TOP
+            440 RETURN_CONST             0 (None)
+        >>  442 PUSH_EXC_INFO
+
+361         444 LOAD_GLOBAL             18 (Exception)
+            454 CHECK_EXC_MATCH
+            456 POP_JUMP_IF_FALSE       21 (to 500)
+            458 STORE_FAST               5 (e)
+
+362         460 PUSH_NULL
+            462 LOAD_FAST                3 (log)
+            464 LOAD_CONST               5 ('anti-afk pickaxe error: ')
+            466 LOAD_FAST                5 (e)
+            468 FORMAT_VALUE             0
+            470 BUILD_STRING             2
+            472 CALL                     1
+            480 POP_TOP
+            482 POP_EXCEPT
+            484 LOAD_CONST               0 (None)
+            486 STORE_FAST               5 (e)
+            488 DELETE_FAST              5 (e)
+            490 RETURN_CONST             0 (None)
+        >>  492 LOAD_CONST               0 (None)
+            494 STORE_FAST               5 (e)
+            496 DELETE_FAST              5 (e)
+            498 RERAISE                  1
+
+361     >>  500 RERAISE                  0
+        >>  502 COPY                     3
+            504 POP_EXCEPT
+            506 RERAISE                  1
+ExceptionTable:
+  332 to 424 -> 442 [0]
+  428 to 438 -> 442 [0]
+  442 to 458 -> 502 [1] lasti
+  460 to 480 -> 492 [1] lasti
+  492 to 500 -> 502 [1] lasti
+
+Disassembly of <code object _next_ratio at 0x179ce5d0, file "anti_afk.py", line 364>:
+364           0 RESUME                   0
+
+365           2 NOP
+
+366           4 LOAD_CONST               1 (1.0)
+              6 STORE_FAST               2 (ratio)
+
+367           8 LOAD_FAST                0 (self)
+             10 LOAD_ATTR                1 (NULL|self + _humanize)
+             30 CALL                     0
+             38 POP_JUMP_IF_FALSE       54 (to 148)
+
+368          40 LOAD_FAST                0 (self)
+             42 LOAD_ATTR                2 (_hum)
+             62 LOAD_ATTR                5 (NULL|self + interval)
+             82 LOAD_CONST               1 (1.0)
+             84 CALL                     1
+             92 LOAD_FAST                0 (self)
+             94 LOAD_ATTR                2 (_hum)
+            114 LOAD_ATTR                7 (NULL|self + session_factor)
+            134 CALL                     0
+            142 BINARY_OP                5 (*)
+            146 STORE_FAST               2 (ratio)
+
+369     >>  148 LOAD_GLOBAL              9 (NULL + bool)
+            158 LOAD_GLOBAL             11 (NULL + getattr)
+            168 LOAD_FAST                0 (self)
+            170 LOAD_ATTR               12 (s)
+            190 LOAD_CONST               2 ('jitter_enabled')
+            192 LOAD_CONST               3 (False)
+            194 CALL                     3
+            202 CALL                     1
+            210 STORE_FAST               3 (jitter)
+
+370         212 LOAD_FAST                3 (jitter)
+            214 POP_JUMP_IF_FALSE       66 (to 348)
+
+371         216 LOAD_GLOBAL             15 (NULL + config)
+            226 LOAD_ATTR               16 (jitter_range)
+            246 LOAD_CONST               1 (1.0)
+            248 LOAD_FAST                0 (self)
+            250 LOAD_ATTR               12 (s)
+            270 CALL                     2
+            278 UNPACK_SEQUENCE          2
+            282 STORE_FAST               4 (lo)
+            284 STORE_FAST               5 (hi)
+
+372         286 LOAD_FAST                2 (ratio)
+            288 LOAD_FAST                0 (self)
+            290 LOAD_ATTR               18 (_rng)
+            310 LOAD_ATTR               21 (NULL|self + uniform)
+            330 LOAD_FAST                4 (lo)
+            332 LOAD_FAST                5 (hi)
+            334 CALL                     2
+            342 BINARY_OP               18 (*=)
+            346 STORE_FAST               2 (ratio)
+
+373     >>  348 LOAD_FAST                2 (ratio)
+            350 LOAD_FAST                0 (self)
+            352 STORE_ATTR              11 (_ratio)
+
+374         362 LOAD_FAST                3 (jitter)
+            364 POP_JUMP_IF_FALSE       82 (to 530)
+
+375         366 LOAD_FAST                0 (self)
+            368 LOAD_ATTR               12 (s)
+            388 LOAD_ATTR               24 (afk_interval)
+            408 STORE_FAST               6 (base)
+
+376         410 LOAD_GLOBAL             15 (NULL + config)
+            420 LOAD_ATTR               16 (jitter_range)
+            440 LOAD_FAST                6 (base)
+            442 LOAD_FAST                0 (self)
+            444 LOAD_ATTR               12 (s)
+            464 CALL                     2
+            472 UNPACK_SEQUENCE          2
+            476 STORE_FAST               4 (lo)
+            478 STORE_FAST               5 (hi)
+
+377         480 PUSH_NULL
+            482 LOAD_FAST                1 (log)
+            484 LOAD_CONST               4 ('[jitter] waiting for ')
+            486 LOAD_FAST                6 (base)
+            488 LOAD_FAST                2 (ratio)
+            490 BINARY_OP                5 (*)
+            494 LOAD_CONST               5 ('.1f')
+            496 FORMAT_VALUE             4 (with format)
+            498 LOAD_CONST               6 ('s (range: ')
+            500 LOAD_FAST                4 (lo)
+            502 LOAD_CONST               7 ('.0f')
+            504 FORMAT_VALUE             4 (with format)
+            506 LOAD_CONST               8 ('s-')
+            508 LOAD_FAST                5 (hi)
+            510 LOAD_CONST               7 ('.0f')
+            512 FORMAT_VALUE             4 (with format)
+            514 LOAD_CONST               9 ('s)')
+            516 BUILD_STRING             7
+            518 CALL                     1
+            526 POP_TOP
+            528 RETURN_CONST             0 (None)
+
+374     >>  530 RETURN_CONST             0 (None)
+
+Disassembly of <code object release_all at 0x7f6af1e28e40, file "anti_afk.py", line 379>:
+379           0 RESUME                   0
+
+380           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                1 (NULL|self + _input_context)
+             24 CALL                     0
+             32 BEFORE_WITH
+             34 POP_TOP
+
+381          36 LOAD_FAST                0 (self)
+             38 LOAD_ATTR                2 (s)
+             58 LOAD_ATTR                4 (afk_keys)
+             78 GET_ITER
+        >>   80 FOR_ITER                20 (to 124)
+             84 STORE_FAST               1 (k)
+
+382          86 NOP
+
+383          88 LOAD_FAST                0 (self)
+             90 LOAD_ATTR                7 (NULL|self + _up)
+            110 LOAD_FAST                1 (k)
+            112 CALL                     1
+            120 POP_TOP
+            122 JUMP_BACKWARD           22 (to 80)
+
+381     >>  124 END_FOR
+            126 NOP
+
+380         128 LOAD_CONST               0 (None)
+            130 LOAD_CONST               0 (None)
+            132 LOAD_CONST               0 (None)
+            134 CALL                     2
+            142 POP_TOP
+            144 RETURN_CONST             0 (None)
+        >>  146 PUSH_EXC_INFO
+
+384         148 LOAD_GLOBAL              8 (Exception)
+            158 CHECK_EXC_MATCH
+            160 POP_JUMP_IF_FALSE        3 (to 168)
+            162 POP_TOP
+
+385         164 POP_EXCEPT
+            166 JUMP_BACKWARD           44 (to 80)
+
+384     >>  168 RERAISE                  0
+        >>  170 COPY                     3
+            172 POP_EXCEPT
+            174 RERAISE                  1
+
+380     >>  176 PUSH_EXC_INFO
+            178 WITH_EXCEPT_START
+            180 POP_JUMP_IF_TRUE         1 (to 184)
+            182 RERAISE                  2
+        >>  184 POP_TOP
+            186 POP_EXCEPT
+            188 POP_TOP
+            190 POP_TOP
+            192 RETURN_CONST             0 (None)
+        >>  194 COPY                     3
+            196 POP_EXCEPT
+            198 RERAISE                  1
+ExceptionTable:
+  34 to 84 -> 176 [1] lasti
+  88 to 120 -> 146 [2]
+  122 to 124 -> 176 [1] lasti
+  146 to 162 -> 170 [3] lasti
+  164 to 166 -> 176 [1] lasti
+  168 to 168 -> 170 [3] lasti
+  170 to 174 -> 176 [1] lasti
+  176 to 184 -> 194 [3] lasti
+
+Disassembly of <code object <lambda> at 0x7f6aed711a30, file "anti_afk.py", line 387>:
+387           0 RESUME                   0
+              2 RETURN_CONST             0 (None)
+
+Disassembly of <code object run at 0x179d43d0, file "anti_afk.py", line 387>:
+              0 MAKE_CELL                0 (self)
+
+387           2 RESUME                   0
+
+388           4 NOP
+
+392           6 LOAD_DEREF               0 (self)
+              8 LOAD_ATTR                1 (NULL|self + _clock)
+             28 CALL                     0
+             36 STORE_FAST               3 (last)
+
+393          38 NOP
+
+394     >>   40 LOAD_FAST                1 (stop)
+             42 LOAD_ATTR                3 (NULL|self + wait)
+             62 LOAD_CONST               1 (0.2)
+             64 CALL                     1
+             72 EXTENDED_ARG             1
+             74 POP_JUMP_IF_TRUE       406 (to 888)
+
+395     >>   76 LOAD_DEREF               0 (self)
+             78 LOAD_ATTR                1 (NULL|self + _clock)
+             98 CALL                     0
+            106 STORE_FAST               4 (now)
+
+396         108 LOAD_DEREF               0 (self)
+            110 LOAD_ATTR                4 (_diving)
+            130 LOAD_ATTR                7 (NULL|self + is_set)
+            150 CALL                     0
+            158 POP_JUMP_IF_FALSE        3 (to 166)
+
+397         160 LOAD_FAST                4 (now)
+            162 STORE_FAST               3 (last)
+
+398         164 JUMP_BACKWARD           63 (to 40)
+
+399     >>  166 LOAD_DEREF               0 (self)
+            168 LOAD_ATTR                8 (s)
+            188 LOAD_ATTR               10 (afk_enabled)
+            208 POP_JUMP_IF_FALSE       16 (to 242)
+            210 LOAD_DEREF               0 (self)
+            212 LOAD_ATTR               13 (NULL|self + active)
+            232 CALL                     0
+            240 POP_JUMP_IF_TRUE        10 (to 262)
+
+400     >>  242 LOAD_FAST                4 (now)
+            244 STORE_FAST               3 (last)
+
+401         246 LOAD_CONST               0 (None)
+            248 LOAD_DEREF               0 (self)
+            250 STORE_ATTR               7 (_pickaxe_due)
+
+402         260 JUMP_BACKWARD          111 (to 40)
+
+403     >>  262 LOAD_DEREF               0 (self)
+            264 LOAD_ATTR               17 (NULL|self + _pickaxe_tick)
+            284 LOAD_FAST                4 (now)
+            286 LOAD_FAST                1 (stop)
+            288 LOAD_FAST                2 (log)
+            290 CALL                     3
+            298 POP_TOP
+
+404         300 LOAD_FAST                4 (now)
+            302 LOAD_FAST                3 (last)
+            304 BINARY_OP               10 (-)
+            308 LOAD_DEREF               0 (self)
+            310 LOAD_ATTR                8 (s)
+            330 LOAD_ATTR               18 (afk_interval)
+            350 LOAD_DEREF               0 (self)
+            352 LOAD_ATTR               20 (_ratio)
+            372 BINARY_OP                5 (*)
+            376 COMPARE_OP               2 (<)
+            380 POP_JUMP_IF_FALSE        1 (to 384)
+
+405         382 JUMP_BACKWARD          172 (to 40)
+
+406     >>  384 LOAD_DEREF               0 (self)
+            386 LOAD_ATTR               22 (_defer)
+            406 POP_JUMP_IF_FALSE       17 (to 442)
+            408 LOAD_DEREF               0 (self)
+            410 LOAD_ATTR               23 (NULL|self + _defer)
+            430 CALL                     0
+            438 POP_JUMP_IF_FALSE        1 (to 442)
+
+407         440 JUMP_BACKWARD          201 (to 40)
+
+408     >>  442 LOAD_FAST                4 (now)
+            444 STORE_FAST               3 (last)
+
+409         446 LOAD_DEREF               0 (self)
+            448 LOAD_ATTR               25 (NULL|self + _next_ratio)
+            468 LOAD_FAST                2 (log)
+            470 CALL                     1
+            478 POP_TOP
+
+410         480 NOP
+
+411         482 LOAD_GLOBAL             27 (NULL + _Guard)
+            492 LOAD_FAST                1 (stop)
+            494 LOAD_CLOSURE             0 (self)
+            496 BUILD_TUPLE              1
+            498 LOAD_CONST               2 (<code object <lambda> at 0x7f6af1dd6790, file "anti_afk.py", line 411>)
+            500 MAKE_FUNCTION            8 (closure)
+            502 CALL                     2
+            510 STORE_FAST               5 (guard)
+
+412         512 LOAD_DEREF               0 (self)
+            514 LOAD_ATTR               29 (NULL|self + press_once)
+            534 LOAD_FAST                5 (guard)
+            536 CALL                     1
+            544 STORE_FAST               6 (key)
+
+413         546 LOAD_FAST                5 (guard)
+            548 LOAD_ATTR                7 (NULL|self + is_set)
+            568 CALL                     0
+            576 POP_JUMP_IF_FALSE       16 (to 610)
+
+414         578 LOAD_DEREF               0 (self)
+            580 LOAD_ATTR               31 (NULL|self + release_all)
+            600 CALL                     0
+            608 POP_TOP
+
+415     >>  610 LOAD_DEREF               0 (self)
+            612 LOAD_ATTR               33 (NULL|self + _humanize)
+            632 CALL                     0
+            640 POP_JUMP_IF_FALSE       54 (to 750)
+
+416         642 PUSH_NULL
+            644 LOAD_FAST                2 (log)
+            646 LOAD_CONST               3 ('anti-afk: ')
+            648 LOAD_DEREF               0 (self)
+            650 LOAD_ATTR               34 (last_pattern)
+            670 FORMAT_VALUE             0
+            672 LOAD_CONST               4 (' ')
+            674 LOAD_FAST                6 (key)
+            676 LOAD_ATTR               37 (NULL|self + upper)
+            696 CALL                     0
+            704 FORMAT_VALUE             0
+            706 LOAD_CONST               4 (' ')
+            708 LOAD_DEREF               0 (self)
+            710 LOAD_ATTR               38 (last_hold)
+            730 LOAD_CONST               5 ('.1f')
+            732 FORMAT_VALUE             4 (with format)
+            734 LOAD_CONST               6 ('s')
+            736 BUILD_STRING             7
+            738 CALL                     1
+            746 POP_TOP
+            748 JUMP_FORWARD            50 (to 850)
+
+418     >>  750 PUSH_NULL
+            752 LOAD_FAST                2 (log)
+            754 LOAD_CONST               7 ('anti-afk: held ')
+            756 LOAD_FAST                6 (key)
+            758 LOAD_ATTR               37 (NULL|self + upper)
+            778 CALL                     0
+            786 FORMAT_VALUE             0
+            788 LOAD_CONST               4 (' ')
+            790 LOAD_DEREF               0 (self)
+            792 LOAD_ATTR                8 (s)
+            812 LOAD_ATTR               40 (afk_hold)
+            832 LOAD_CONST               8 ('g')
+            834 FORMAT_VALUE             4 (with format)
+            836 LOAD_CONST               6 ('s')
+            838 BUILD_STRING             5
+            840 CALL                     1
+            848 POP_TOP
+
+394     >>  850 LOAD_FAST                1 (stop)
+            852 LOAD_ATTR                3 (NULL|self + wait)
+            872 LOAD_CONST               1 (0.2)
+            874 CALL                     1
+            882 POP_JUMP_IF_TRUE         2 (to 888)
+            884 EXTENDED_ARG             1
+            886 JUMP_BACKWARD          406 (to 76)
+
+422     >>  888 LOAD_DEREF               0 (self)
+            890 LOAD_ATTR               31 (NULL|self + release_all)
+            910 CALL                     0
+            918 POP_TOP
+            920 RETURN_CONST             0 (None)
+        >>  922 PUSH_EXC_INFO
+
+419         924 LOAD_GLOBAL             42 (Exception)
+            934 CHECK_EXC_MATCH
+            936 POP_JUMP_IF_FALSE       21 (to 980)
+            938 STORE_FAST               7 (e)
+
+420         940 PUSH_NULL
+            942 LOAD_FAST                2 (log)
+            944 LOAD_CONST               9 ('anti-afk error: ')
+            946 LOAD_FAST                7 (e)
+            948 FORMAT_VALUE             0
+            950 BUILD_STRING             2
+            952 CALL                     1
+            960 POP_TOP
+            962 POP_EXCEPT
+            964 LOAD_CONST               0 (None)
+            966 STORE_FAST               7 (e)
+            968 DELETE_FAST              7 (e)
+            970 JUMP_BACKWARD           61 (to 850)
+        >>  972 LOAD_CONST               0 (None)
+            974 STORE_FAST               7 (e)
+            976 DELETE_FAST              7 (e)
+            978 RERAISE                  1
+
+419     >>  980 RERAISE                  0
+        >>  982 COPY                     3
+            984 POP_EXCEPT
+            986 RERAISE                  1
+        >>  988 PUSH_EXC_INFO
+
+422         990 LOAD_DEREF               0 (self)
+            992 LOAD_ATTR               31 (NULL|self + release_all)
+           1012 CALL                     0
+           1020 POP_TOP
+           1022 RERAISE                  0
+        >> 1024 COPY                     3
+           1026 POP_EXCEPT
+           1028 RERAISE                  1
+ExceptionTable:
+  40 to 478 -> 988 [0]
+  482 to 848 -> 922 [0]
+  850 to 882 -> 988 [0]
+  922 to 938 -> 982 [1] lasti
+  940 to 960 -> 972 [1] lasti
+  962 to 970 -> 988 [0]
+  972 to 980 -> 982 [1] lasti
+  982 to 986 -> 988 [0]
+  988 to 1022 -> 1024 [1] lasti
+
+Disassembly of <code object <lambda> at 0x7f6af1dd6790, file "anti_afk.py", line 411>:
+              0 COPY_FREE_VARS           1
+
+411           2 RESUME                   0
+              4 LOAD_DEREF               0 (self)
+              6 LOAD_ATTR                0 (s)
+             26 LOAD_ATTR                2 (afk_enabled)
+             46 COPY                     1
+             48 POP_JUMP_IF_FALSE       16 (to 82)
+             50 POP_TOP
+             52 LOAD_DEREF               0 (self)
+             54 LOAD_ATTR                5 (NULL|self + active)
+             74 CALL                     0
+        >>   82 RETURN_VALUE

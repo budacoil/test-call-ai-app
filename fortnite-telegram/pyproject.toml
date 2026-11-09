@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spritepilot"
+version = "0.1.0"
+description = "Local Fortnite automation, Telegram control and visual reward journal"
+requires-python = ">=3.12"
+dependencies = [
+  "PySide6-Essentials>=6.8,<7", "opencv-python-headless>=4.10,<6",
+  "numpy>=2,<3", "Pillow>=10", "mss>=10,<11", "keyring>=25,<26",
+  "pydirectinput>=1.0.4; sys_platform == 'win32'",
+  "keyboard>=0.13.5; sys_platform == 'win32'",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pyinstaller>=6"]
+
+[project.scripts]
+spritepilot = "spritepilot.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["spritepilot*"]
+
+[tool.setuptools.package-data]
+spritepilot = ["assets/*.png", "NOTICE.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["pilot_tests"]

@@ -1,0 +1,334 @@
+[
+  {
+    "module": "anti_afk",
+    "lines": 397,
+    "syntax_error": null,
+    "warning_lines": [
+      {
+        "line": 397,
+        "text": "# WARNING: Decompyle incomplete"
+      }
+    ]
+  },
+  {
+    "module": "audio_mute",
+    "lines": 240,
+    "syntax_error": null,
+    "warning_lines": [
+      {
+        "line": 240,
+        "text": "# WARNING: Decompyle incomplete"
+      }
+    ]
+  },
+  {
+    "module": "autocal",
+    "lines": 109,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "autocheck",
+    "lines": 180,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "background_input",
+    "lines": 298,
+    "syntax_error": null,
+    "warning_lines": [
+      {
+        "line": 298,
+        "text": "# WARNING: Decompyle incomplete"
+      }
+    ]
+  },
+  {
+    "module": "breaker",
+    "lines": 66,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "bus_drop",
+    "lines": 249,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "config",
+    "lines": 190,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "controller",
+    "lines": 159,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "diagnose",
+    "lines": 203,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "ed25519_verify",
+    "lines": 76,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "focus",
+    "lines": 122,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "ghost",
+    "lines": 332,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "gui_extras",
+    "lines": 101,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "humanizer",
+    "lines": 192,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "i18n",
+    "lines": 33,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "i18n_ac",
+    "lines": 1,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "i18n_ex",
+    "lines": 1,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "i18n_fr",
+    "lines": 2,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "i18n_lic",
+    "lines": 1,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "licensing",
+    "lines": 163,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "licensing_ui",
+    "lines": 82,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "loot_vault",
+    "lines": 98,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "main",
+    "lines": 586,
+    "syntax_error": null,
+    "warning_lines": [
+      {
+        "line": 586,
+        "text": "# WARNING: Decompyle incomplete"
+      }
+    ]
+  },
+  {
+    "module": "mode_b",
+    "lines": 278,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "mode_c",
+    "lines": 24,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "mode_fix",
+    "lines": 223,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "netfix",
+    "lines": 157,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "relay",
+    "lines": 131,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "remote",
+    "lines": 208,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "rescue",
+    "lines": 139,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "rescue_grid",
+    "lines": 43,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "reward_fallback",
+    "lines": 57,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "reward_shot",
+    "lines": 69,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "shot",
+    "lines": 76,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "snip",
+    "lines": 55,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "space_press",
+    "lines": 59,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "squad_bar",
+    "lines": 57,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "state_machine",
+    "lines": 180,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "survey",
+    "lines": 91,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "telemetry",
+    "lines": 407,
+    "syntax_error": null,
+    "warning_lines": [
+      {
+        "line": 20,
+        "text": "PLACEHOLDER = 'your-worker'"
+      },
+      {
+        "line": 123,
+        "text": "return isinstance(url, str) and url.strip().lower().startswith('https://') and PLACEHOLDER not in url.lower()"
+      }
+    ]
+  },
+  {
+    "module": "update_ui",
+    "lines": 221,
+    "syntax_error": null,
+    "warning_lines": [
+      {
+        "line": 221,
+        "text": "# WARNING: Decompyle incomplete"
+      }
+    ]
+  },
+  {
+    "module": "updater",
+    "lines": 292,
+    "syntax_error": null,
+    "warning_lines": [
+      {
+        "line": 292,
+        "text": "# WARNING: Decompyle incomplete"
+      }
+    ]
+  },
+  {
+    "module": "version",
+    "lines": 3,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "vision",
+    "lines": 199,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "watchdog",
+    "lines": 78,
+    "syntax_error": null,
+    "warning_lines": []
+  },
+  {
+    "module": "window_capture",
+    "lines": 349,
+    "syntax_error": null,
+    "warning_lines": [
+      {
+        "line": 349,
+        "text": "# WARNING: Decompyle incomplete"
+      }
+    ]
+  },
+  {
+    "module": "worker",
+    "lines": 168,
+    "syntax_error": null,
+    "warning_lines": []
+  }
+]

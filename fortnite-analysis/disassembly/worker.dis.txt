@@ -1,0 +1,1865 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+  2           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (os)
+             10 STORE_NAME               0 (os)
+
+  3          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (queue)
+             18 STORE_NAME               1 (queue)
+
+  4          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              2 (threading)
+             26 STORE_NAME               2 (threading)
+
+  5          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               1 (None)
+             32 IMPORT_NAME              3 (time)
+             34 STORE_NAME               3 (time)
+
+  7          36 LOAD_CONST               0 (0)
+             38 LOAD_CONST               1 (None)
+             40 IMPORT_NAME              4 (config)
+             42 STORE_NAME               4 (config)
+
+  8          44 LOAD_CONST               0 (0)
+             46 LOAD_CONST               1 (None)
+             48 IMPORT_NAME              5 (i18n)
+             50 STORE_NAME               5 (i18n)
+
+  9          52 LOAD_CONST               0 (0)
+             54 LOAD_CONST               2 (('AntiAfk',))
+             56 IMPORT_NAME              6 (anti_afk)
+             58 IMPORT_FROM              7 (AntiAfk)
+             60 STORE_NAME               7 (AntiAfk)
+             62 POP_TOP
+
+ 10          64 LOAD_CONST               0 (0)
+             66 LOAD_CONST               3 (('GameAudioController',))
+             68 IMPORT_NAME              8 (audio_mute)
+             70 IMPORT_FROM              9 (GameAudioController)
+             72 STORE_NAME               9 (GameAudioController)
+             74 POP_TOP
+
+ 11          76 LOAD_CONST               0 (0)
+             78 LOAD_CONST               4 (('BusDrop',))
+             80 IMPORT_NAME             10 (bus_drop)
+             82 IMPORT_FROM             11 (BusDrop)
+             84 STORE_NAME              11 (BusDrop)
+             86 POP_TOP
+
+ 12          88 LOAD_CONST               0 (0)
+             90 LOAD_CONST               5 (('BackgroundInput',))
+             92 IMPORT_NAME             12 (background_input)
+             94 IMPORT_FROM             13 (BackgroundInput)
+             96 STORE_NAME              13 (BackgroundInput)
+             98 POP_TOP
+
+ 13         100 LOAD_CONST               0 (0)
+            102 LOAD_CONST               6 (('Settings',))
+            104 IMPORT_NAME              4 (config)
+            106 IMPORT_FROM             14 (Settings)
+            108 STORE_NAME              14 (Settings)
+            110 POP_TOP
+
+ 14         112 LOAD_CONST               0 (0)
+            114 LOAD_CONST               7 (('Controller',))
+            116 IMPORT_NAME             15 (controller)
+            118 IMPORT_FROM             16 (Controller)
+            120 STORE_NAME              16 (Controller)
+            122 POP_TOP
+
+ 15         124 LOAD_CONST               0 (0)
+            126 LOAD_CONST               8 (('ensure_game_foreground',))
+            128 IMPORT_NAME             17 (focus)
+            130 IMPORT_FROM             18 (ensure_game_foreground)
+            132 STORE_NAME              18 (ensure_game_foreground)
+            134 POP_TOP
+
+ 16         136 LOAD_CONST               0 (0)
+            138 LOAD_CONST               9 (('CoffeeBreak',))
+            140 IMPORT_NAME             19 (humanizer)
+            142 IMPORT_FROM             20 (CoffeeBreak)
+            144 STORE_NAME              20 (CoffeeBreak)
+            146 POP_TOP
+
+ 17         148 LOAD_CONST               0 (0)
+            150 LOAD_CONST              10 (('LootVault',))
+            152 IMPORT_NAME             21 (loot_vault)
+            154 IMPORT_FROM             22 (LootVault)
+            156 STORE_NAME              22 (LootVault)
+            158 POP_TOP
+
+ 18         160 LOAD_CONST               0 (0)
+            162 LOAD_CONST              11 (('ModeB',))
+            164 IMPORT_NAME             23 (mode_b)
+            166 IMPORT_FROM             24 (ModeB)
+            168 STORE_NAME              24 (ModeB)
+            170 POP_TOP
+
+ 19         172 LOAD_CONST               0 (0)
+            174 LOAD_CONST              12 (('ModeC',))
+            176 IMPORT_NAME             25 (mode_c)
+            178 IMPORT_FROM             26 (ModeC)
+            180 STORE_NAME              26 (ModeC)
+            182 POP_TOP
+
+ 20         184 LOAD_CONST               0 (0)
+            186 LOAD_CONST              13 (('RewardShotSender',))
+            188 IMPORT_NAME             27 (reward_shot)
+            190 IMPORT_FROM             28 (RewardShotSender)
+            192 STORE_NAME              28 (RewardShotSender)
+            194 POP_TOP
+
+ 21         196 LOAD_CONST               0 (0)
+            198 LOAD_CONST              14 (('Rescue',))
+            200 IMPORT_NAME             29 (rescue)
+            202 IMPORT_FROM             30 (Rescue)
+            204 STORE_NAME              30 (Rescue)
+            206 POP_TOP
+
+ 22         208 LOAD_CONST               0 (0)
+            210 LOAD_CONST              15 (('SpacePresser',))
+            212 IMPORT_NAME             31 (space_press)
+            214 IMPORT_FROM             32 (SpacePresser)
+            216 STORE_NAME              32 (SpacePresser)
+            218 POP_TOP
+
+ 23         220 LOAD_CONST               0 (0)
+            222 LOAD_CONST              16 (('POPUP_KEYS', 'State', 'StateMachine'))
+            224 IMPORT_NAME             33 (state_machine)
+            226 IMPORT_FROM             34 (POPUP_KEYS)
+            228 STORE_NAME              34 (POPUP_KEYS)
+            230 IMPORT_FROM             35 (State)
+            232 STORE_NAME              35 (State)
+            234 IMPORT_FROM             36 (StateMachine)
+            236 STORE_NAME              36 (StateMachine)
+            238 POP_TOP
+
+ 24         240 LOAD_CONST               0 (0)
+            242 LOAD_CONST              17 (('TelemetryManager',))
+            244 IMPORT_NAME             37 (telemetry)
+            246 IMPORT_FROM             38 (TelemetryManager)
+            248 STORE_NAME              38 (TelemetryManager)
+            250 POP_TOP
+
+ 25         252 LOAD_CONST               0 (0)
+            254 LOAD_CONST              18 (('Plate', 'capture_for_matching', 'find_plate', 'find_template', 'load_template_auto'))
+            256 IMPORT_NAME             39 (vision)
+            258 IMPORT_FROM             40 (Plate)
+            260 STORE_NAME              40 (Plate)
+            262 IMPORT_FROM             41 (capture_for_matching)
+            264 STORE_NAME              41 (capture_for_matching)
+            266 IMPORT_FROM             42 (find_plate)
+            268 STORE_NAME              42 (find_plate)
+            270 IMPORT_FROM             43 (find_template)
+            272 STORE_NAME              43 (find_template)
+            274 IMPORT_FROM             44 (load_template_auto)
+            276 STORE_NAME              44 (load_template_auto)
+            278 POP_TOP
+
+ 26         280 LOAD_CONST               0 (0)
+            282 LOAD_CONST              19 (('Watchdog',))
+            284 IMPORT_NAME             45 (watchdog)
+            286 IMPORT_FROM             46 (Watchdog)
+            288 STORE_NAME              46 (Watchdog)
+            290 POP_TOP
+
+ 27         292 LOAD_CONST               0 (0)
+            294 LOAD_CONST              20 (('GameWindow', 'WindowCapture'))
+            296 IMPORT_NAME             47 (window_capture)
+            298 IMPORT_FROM             48 (GameWindow)
+            300 STORE_NAME              48 (GameWindow)
+            302 IMPORT_FROM             49 (WindowCapture)
+            304 STORE_NAME              49 (WindowCapture)
+            306 POP_TOP
+
+ 30         308 LOAD_CONST              21 ('log_bg_minimized')
+            310 LOAD_CONST              22 ('log_bg_black')
+            312 LOAD_CONST              23 ('log_bg_denied')
+            314 LOAD_CONST              24 (('minimized', 'black', 'denied'))
+            316 BUILD_CONST_KEY_MAP      3
+            318 STORE_NAME              50 (BG_HINTS)
+
+ 33         320 LOAD_CONST              25 ('lang')
+            322 LOAD_NAME               51 (str)
+            324 LOAD_CONST              26 ('return')
+            326 LOAD_NAME               52 (dict)
+            328 BUILD_TUPLE              4
+            330 LOAD_CONST              27 (<code object load_templates at 0x7f6aed8018b0, file "worker.py", line 33>)
+            332 MAKE_FUNCTION            4 (annotations)
+            334 STORE_NAME              53 (load_templates)
+
+ 41         336 PUSH_NULL
+            338 LOAD_BUILD_CLASS
+            340 LOAD_CONST              28 (<code object Worker at 0x7f6aed7feef0, file "worker.py", line 41>)
+            342 MAKE_FUNCTION            0
+            344 LOAD_CONST              29 ('Worker')
+            346 LOAD_NAME                2 (threading)
+            348 LOAD_ATTR              108 (Thread)
+            368 CALL                     3
+            376 STORE_NAME              55 (Worker)
+            378 RETURN_CONST             1 (None)
+
+Disassembly of <code object load_templates at 0x7f6aed8018b0, file "worker.py", line 33>:
+ 33           0 RESUME                   0
+
+ 34           2 NOP
+
+ 37           4 LOAD_GLOBAL              0 (config)
+             14 LOAD_ATTR                2 (TEMPLATE_NAMES)
+             34 GET_ITER
+
+ 35          36 LOAD_FAST_AND_CLEAR      1 (k)
+             38 SWAP                     2
+             40 BUILD_MAP                0
+             42 SWAP                     2
+
+ 37     >>   44 FOR_ITER                88 (to 224)
+             48 STORE_FAST               1 (k)
+
+ 36          50 LOAD_FAST                1 (k)
+             52 LOAD_GLOBAL              1 (NULL + config)
+             62 LOAD_ATTR                4 (uses_template)
+             82 LOAD_FAST                1 (k)
+             84 LOAD_FAST                0 (lang)
+             86 CALL                     2
+             94 POP_JUMP_IF_FALSE       61 (to 218)
+             96 LOAD_GLOBAL              7 (NULL + load_template_auto)
+            106 LOAD_GLOBAL              1 (NULL + config)
+            116 LOAD_ATTR                8 (template_path)
+            136 LOAD_FAST                1 (k)
+            138 LOAD_FAST                0 (lang)
+            140 CALL                     2
+            148 LOAD_GLOBAL              0 (config)
+            158 LOAD_ATTR               10 (PLATES)
+            178 LOAD_ATTR               13 (NULL|self + get)
+            198 LOAD_FAST                1 (k)
+            200 CALL                     1
+            208 CALL                     2
+            216 JUMP_FORWARD             1 (to 220)
+        >>  218 LOAD_CONST               0 (None)
+        >>  220 MAP_ADD                  2
+            222 JUMP_BACKWARD           90 (to 44)
+
+ 37     >>  224 END_FOR
+
+ 35         226 SWAP                     2
+            228 STORE_FAST               1 (k)
+            230 RETURN_VALUE
+        >>  232 SWAP                     2
+            234 POP_TOP
+            236 SWAP                     2
+            238 STORE_FAST               1 (k)
+            240 RERAISE                  0
+ExceptionTable:
+  40 to 224 -> 232 [2]
+
+Disassembly of <code object Worker at 0x7f6aed7feef0, file "worker.py", line 41>:
+              0 MAKE_CELL                0 (__class__)
+
+ 41           2 RESUME                   0
+              4 LOAD_NAME                0 (__name__)
+              6 STORE_NAME               1 (__module__)
+              8 LOAD_CONST               0 ('Worker')
+             10 STORE_NAME               2 (__qualname__)
+
+ 42          12 LOAD_CONST              12 ((None,))
+             14 LOAD_CONST               1 ('settings')
+             16 LOAD_NAME                3 (Settings)
+             18 LOAD_CONST               2 ('log_q')
+             20 LOAD_CONST               3 ('queue.Queue[str]')
+             22 LOAD_CONST               4 ('status')
+             24 LOAD_NAME                4 (dict)
+             26 LOAD_CONST               5 ('tm')
+             28 LOAD_CONST               6 ('TelemetryManager | None')
+             30 BUILD_TUPLE              8
+             32 LOAD_CLOSURE             0 (__class__)
+             34 BUILD_TUPLE              1
+             36 LOAD_CONST               7 (<code object __init__ at 0x7f6aed1fecd0, file "worker.py", line 42>)
+             38 MAKE_FUNCTION           13 (defaults, annotations, closure)
+             40 STORE_NAME               5 (__init__)
+
+ 50          42 LOAD_CONST               8 ('lang')
+             44 LOAD_NAME                6 (str)
+             46 LOAD_CONST               9 ('return')
+             48 LOAD_NAME                4 (dict)
+             50 BUILD_TUPLE              4
+             52 LOAD_CONST              10 (<code object _load_templates at 0x7f6af1f8f2f0, file "worker.py", line 50>)
+             54 MAKE_FUNCTION            4 (annotations)
+             56 STORE_NAME               7 (_load_templates)
+
+ 57          58 LOAD_CONST              13 (('return', None))
+             60 LOAD_CONST              11 (<code object run at 0x17aacb30, file "worker.py", line 57>)
+             62 MAKE_FUNCTION            4 (annotations)
+             64 STORE_NAME               8 (run)
+             66 LOAD_CLOSURE             0 (__class__)
+             68 COPY                     1
+             70 STORE_NAME               9 (__classcell__)
+             72 RETURN_VALUE
+
+Disassembly of <code object __init__ at 0x7f6aed1fecd0, file "worker.py", line 42>:
+              0 COPY_FREE_VARS           1
+
+ 42           2 RESUME                   0
+
+ 43           4 LOAD_GLOBAL              0 (super)
+             14 LOAD_DEREF               5 (__class__)
+             16 LOAD_FAST                0 (self)
+             18 LOAD_SUPER_ATTR          5 (NULL|self + __init__)
+             22 LOAD_CONST               1 (True)
+             24 KW_NAMES                 2 (('daemon',))
+             26 CALL                     1
+             34 POP_TOP
+
+ 44          36 LOAD_FAST                1 (settings)
+             38 LOAD_FAST                0 (self)
+             40 STORE_ATTR               2 (s)
+
+ 45          50 LOAD_FAST                2 (log_q)
+             52 LOAD_FAST                0 (self)
+             54 STORE_ATTR               3 (log_q)
+
+ 46          64 LOAD_FAST                3 (status)
+             66 LOAD_FAST                0 (self)
+             68 STORE_ATTR               4 (status)
+
+ 47          78 LOAD_FAST                4 (tm)
+             80 LOAD_FAST                0 (self)
+             82 STORE_ATTR               5 (tm)
+
+ 48          92 LOAD_GLOBAL             13 (NULL + threading)
+            102 LOAD_ATTR               14 (Event)
+            122 CALL                     0
+            130 LOAD_FAST                0 (self)
+            132 STORE_ATTR               8 (stop_event)
+            142 RETURN_CONST             0 (None)
+
+Disassembly of <code object _load_templates at 0x7f6af1f8f2f0, file "worker.py", line 50>:
+ 50           0 RESUME                   0
+
+ 51           2 LOAD_GLOBAL              1 (NULL + load_templates)
+             12 LOAD_FAST                1 (lang)
+             14 CALL                     1
+             22 STORE_FAST               2 (templates)
+
+ 52          24 LOAD_FAST                2 (templates)
+             26 LOAD_ATTR                3 (NULL|self + items)
+             46 CALL                     0
+             54 GET_ITER
+        >>   56 FOR_ITER               100 (to 260)
+             60 UNPACK_SEQUENCE          2
+             64 STORE_FAST               3 (k)
+             66 STORE_FAST               4 (v)
+
+ 53          68 LOAD_FAST                4 (v)
+             70 POP_JUMP_IF_NONE         1 (to 74)
+             72 JUMP_BACKWARD            9 (to 56)
+        >>   74 LOAD_FAST                3 (k)
+             76 LOAD_GLOBAL              4 (config)
+             86 LOAD_ATTR                6 (OPTIONAL_TEMPLATES)
+            106 CONTAINS_OP              1
+            108 POP_JUMP_IF_TRUE         1 (to 112)
+            110 JUMP_BACKWARD           28 (to 56)
+        >>  112 LOAD_GLOBAL              5 (NULL + config)
+            122 LOAD_ATTR                8 (uses_template)
+            142 LOAD_FAST                3 (k)
+            144 LOAD_FAST                1 (lang)
+            146 CALL                     2
+            154 POP_JUMP_IF_TRUE         1 (to 158)
+            156 JUMP_BACKWARD           51 (to 56)
+
+ 54     >>  158 LOAD_FAST                0 (self)
+            160 LOAD_ATTR               10 (log_q)
+            180 LOAD_ATTR               13 (NULL|self + put)
+            200 LOAD_CONST               1 ('template missing: ')
+            202 LOAD_GLOBAL              5 (NULL + config)
+            212 LOAD_ATTR               14 (template_filename)
+            232 LOAD_FAST                3 (k)
+            234 LOAD_FAST                1 (lang)
+            236 CALL                     2
+            244 FORMAT_VALUE             0
+            246 BUILD_STRING             2
+            248 CALL                     1
+            256 POP_TOP
+            258 JUMP_BACKWARD          102 (to 56)
+
+ 52     >>  260 END_FOR
+
+ 55         262 LOAD_FAST                2 (templates)
+            264 RETURN_VALUE
+
+Disassembly of <code object run at 0x17aacb30, file "worker.py", line 57>:
+              0 MAKE_CELL                0 (self)
+              2 MAKE_CELL               35 (bg)
+              4 MAKE_CELL               36 (ctrl)
+              6 MAKE_CELL               37 (resc)
+              8 MAKE_CELL               38 (rshot)
+             10 MAKE_CELL               39 (sm)
+             12 MAKE_CELL               40 (templates)
+             14 MAKE_CELL               41 (vault)
+
+ 57          16 RESUME                   0
+
+ 58          18 LOAD_DEREF               0 (self)
+             20 LOAD_ATTR                0 (s)
+             40 LOAD_ATTR                2 (lang)
+             60 STORE_FAST               1 (lang)
+
+ 59          62 LOAD_DEREF               0 (self)
+             64 LOAD_ATTR                5 (NULL|self + _load_templates)
+             84 LOAD_FAST                1 (lang)
+             86 CALL                     1
+             94 STORE_DEREF             40 (templates)
+
+ 62          96 LOAD_GLOBAL              7 (NULL + GameWindow)
+            106 CALL                     0
+            114 STORE_FAST               2 (locator)
+
+ 63         116 LOAD_GLOBAL              9 (NULL + WindowCapture)
+            126 LOAD_FAST                2 (locator)
+            128 CALL                     1
+            136 STORE_FAST               3 (wcap)
+
+ 66         138 LOAD_GLOBAL             11 (NULL + BackgroundInput)
+            148 LOAD_FAST                2 (locator)
+            150 LOAD_DEREF               0 (self)
+            152 LOAD_ATTR                0 (s)
+            172 LOAD_GLOBAL             12 (os)
+            182 LOAD_ATTR               14 (path)
+            202 LOAD_ATTR               17 (NULL|self + join)
+            222 LOAD_GLOBAL             19 (NULL + config)
+            232 LOAD_ATTR               20 (base_dir)
+            252 CALL                     0
+            260 LOAD_CONST               1 ('pk-auto_shield.json')
+            262 CALL                     2
+            270 KW_NAMES                 2 (('marker_path',))
+            272 CALL                     3
+            280 STORE_DEREF             35 (bg)
+
+ 67         282 LOAD_DEREF              35 (bg)
+            284 LOAD_ATTR               23 (NULL|self + start)
+            304 CALL                     0
+            312 POP_TOP
+
+ 68         314 LOAD_GLOBAL             25 (NULL + threading)
+            324 LOAD_ATTR               26 (Event)
+            344 CALL                     0
+            352 STORE_FAST               4 (bg_stop)
+
+ 69         354 LOAD_GLOBAL             25 (NULL + threading)
+            364 LOAD_ATTR               28 (Thread)
+            384 LOAD_DEREF              35 (bg)
+            386 LOAD_ATTR               30 (watch)
+            406 LOAD_FAST                4 (bg_stop)
+            408 BUILD_TUPLE              1
+            410 LOAD_CONST               3 (True)
+            412 LOAD_CONST               4 ('pk-auto-ghost')
+            414 KW_NAMES                 5 (('target', 'args', 'daemon', 'name'))
+            416 CALL                     4
+            424 LOAD_ATTR               23 (NULL|self + start)
+            444 CALL                     0
+            452 POP_TOP
+
+ 71         454 LOAD_GLOBAL             33 (NULL + Controller)
+            464 LOAD_DEREF               0 (self)
+            466 LOAD_ATTR                0 (s)
+            486 LOAD_GLOBAL             34 (ensure_game_foreground)
+            496 LOAD_DEREF              35 (bg)
+            498 LOAD_ATTR               36 (context)
+            518 LOAD_CLOSURE            35 (bg)
+            520 BUILD_TUPLE              1
+            522 LOAD_CONST               6 (<code object <lambda> at 0x7f6aed17f960, file "worker.py", line 71>)
+            524 MAKE_FUNCTION            8 (closure)
+
+ 72         526 LOAD_GLOBAL             39 (NULL + getattr)
+            536 LOAD_DEREF              35 (bg)
+            538 LOAD_CONST               7 ('other_window_in_front')
+            540 LOAD_CONST               0 (None)
+            542 CALL                     3
+
+ 71         550 KW_NAMES                 8 (('focuser', 'swapper', 'poster', 'away'))
+            552 CALL                     5
+            560 STORE_DEREF             36 (ctrl)
+
+ 73         562 LOAD_GLOBAL             41 (NULL + StateMachine)
+            572 LOAD_DEREF               0 (self)
+            574 LOAD_ATTR                0 (s)
+            594 LOAD_DEREF              40 (templates)
+            596 LOAD_DEREF              36 (ctrl)
+            598 CALL                     3
+            606 STORE_FAST               5 (mode_a)
+
+ 74         608 LOAD_FAST                5 (mode_a)
+            610 LOAD_GLOBAL             43 (NULL + ModeB)
+            620 LOAD_DEREF               0 (self)
+            622 LOAD_ATTR                0 (s)
+            642 LOAD_DEREF              40 (templates)
+            644 LOAD_DEREF              36 (ctrl)
+            646 CALL                     3
+            654 LOAD_GLOBAL             45 (NULL + ModeC)
+            664 LOAD_DEREF               0 (self)
+            666 LOAD_ATTR                0 (s)
+            686 LOAD_DEREF              40 (templates)
+            688 LOAD_DEREF              36 (ctrl)
+            690 LOAD_FAST                5 (mode_a)
+            692 CALL                     4
+            700 LOAD_CONST               9 (('A', 'B', 'C'))
+            702 BUILD_CONST_KEY_MAP      3
+            704 STORE_FAST               6 (machines)
+
+ 75         706 LOAD_DEREF               0 (self)
+            708 LOAD_ATTR                0 (s)
+            728 LOAD_ATTR               46 (mode)
+            748 LOAD_FAST                6 (machines)
+            750 CONTAINS_OP              0
+            752 POP_JUMP_IF_FALSE       22 (to 798)
+            754 LOAD_DEREF               0 (self)
+            756 LOAD_ATTR                0 (s)
+            776 LOAD_ATTR               46 (mode)
+            796 JUMP_FORWARD             1 (to 800)
+        >>  798 LOAD_CONST              10 ('A')
+        >>  800 STORE_FAST               7 (mode)
+
+ 76         802 LOAD_FAST                6 (machines)
+            804 LOAD_FAST                7 (mode)
+            806 BINARY_SUBSCR
+            810 STORE_DEREF             39 (sm)
+
+ 77         812 LOAD_DEREF              39 (sm)
+            814 LOAD_ATTR               23 (NULL|self + start)
+            834 CALL                     0
+            842 POP_TOP
+
+ 79         844 LOAD_GLOBAL             49 (NULL + LootVault)
+            854 LOAD_DEREF               0 (self)
+            856 LOAD_ATTR               50 (log_q)
+            876 LOAD_ATTR               52 (put)
+            896 KW_NAMES                11 (('log',))
+            898 CALL                     1
+            906 STORE_DEREF             41 (vault)
+
+ 80         908 LOAD_GLOBAL             55 (NULL + RewardShotSender)
+            918 LOAD_DEREF               0 (self)
+            920 LOAD_ATTR                0 (s)
+            940 LOAD_DEREF               0 (self)
+            942 LOAD_ATTR               50 (log_q)
+            962 LOAD_ATTR               52 (put)
+            982 KW_NAMES                11 (('log',))
+            984 CALL                     2
+            992 STORE_DEREF             38 (rshot)
+
+ 82         994 LOAD_CLOSURE            38 (rshot)
+            996 LOAD_CLOSURE             0 (self)
+            998 LOAD_CLOSURE            41 (vault)
+           1000 BUILD_TUPLE              3
+           1002 LOAD_CONST              12 (<code object on_claim at 0x7f6aed1c6970, file "worker.py", line 82>)
+           1004 MAKE_FUNCTION            8 (closure)
+           1006 STORE_FAST               8 (on_claim)
+
+ 87        1008 LOAD_FAST                6 (machines)
+           1010 LOAD_ATTR               57 (NULL|self + values)
+           1030 CALL                     0
+           1038 GET_ITER
+        >> 1040 FOR_ITER                36 (to 1116)
+           1044 STORE_FAST               9 (m)
+
+ 88        1046 LOAD_DEREF               0 (self)
+           1048 LOAD_ATTR               50 (log_q)
+           1068 LOAD_ATTR               52 (put)
+           1088 LOAD_FAST                9 (m)
+           1090 STORE_ATTR              29 (log)
+
+ 89        1100 LOAD_FAST                8 (on_claim)
+           1102 LOAD_FAST                9 (m)
+           1104 STORE_ATTR              30 (on_claim)
+           1114 JUMP_BACKWARD           38 (to 1040)
+
+ 87     >> 1116 END_FOR
+
+ 90        1118 LOAD_GLOBAL             63 (NULL + GameAudioController)
+           1128 LOAD_DEREF               0 (self)
+           1130 LOAD_ATTR               50 (log_q)
+           1150 LOAD_ATTR               52 (put)
+           1170 KW_NAMES                11 (('log',))
+           1172 CALL                     1
+           1180 STORE_FAST              10 (audio)
+
+ 91        1182 LOAD_CONST              13 (0.0)
+           1184 STORE_FAST              11 (audio_t)
+
+ 92        1186 LOAD_GLOBAL             65 (NULL + CoffeeBreak)
+           1196 LOAD_DEREF               0 (self)
+           1198 LOAD_ATTR                0 (s)
+           1218 CALL                     1
+           1226 STORE_FAST              12 (coffee)
+
+ 94        1228 LOAD_CLOSURE             0 (self)
+           1230 LOAD_CLOSURE            40 (templates)
+           1232 BUILD_TUPLE              2
+           1234 LOAD_CONST              14 (<code object find_popup at 0x7f6aed18dc30, file "worker.py", line 94>)
+           1236 MAKE_FUNCTION            8 (closure)
+           1238 STORE_FAST              13 (find_popup)
+
+104        1240 LOAD_CONST              15 ('state')
+           1242 LOAD_GLOBAL             66 (str)
+           1252 LOAD_CONST              16 ('minutes')
+           1254 LOAD_GLOBAL             68 (int)
+           1264 LOAD_CONST              17 ('return')
+           1266 LOAD_CONST               0 (None)
+           1268 BUILD_TUPLE              6
+           1270 LOAD_CLOSURE            37 (resc)
+           1272 LOAD_CLOSURE             0 (self)
+           1274 BUILD_TUPLE              2
+           1276 LOAD_CONST              18 (<code object send_stuck at 0x17ab49e0, file "worker.py", line 104>)
+           1278 MAKE_FUNCTION           12 (annotations, closure)
+           1280 STORE_FAST              14 (send_stuck)
+
+115        1282 LOAD_GLOBAL             71 (NULL + Rescue)
+           1292 LOAD_DEREF               0 (self)
+           1294 LOAD_ATTR                0 (s)
+           1314 LOAD_DEREF              36 (ctrl)
+           1316 LOAD_CLOSURE            39 (sm)
+           1318 BUILD_TUPLE              1
+           1320 LOAD_CONST              19 (<code object <lambda> at 0x7f6aed1a5e40, file "worker.py", line 115>)
+           1322 MAKE_FUNCTION            8 (closure)
+           1324 LOAD_FAST               13 (find_popup)
+           1326 LOAD_FAST               14 (send_stuck)
+           1328 LOAD_DEREF               0 (self)
+           1330 LOAD_ATTR               50 (log_q)
+           1350 LOAD_ATTR               52 (put)
+           1370 KW_NAMES                20 (('find_popup', 'send_stuck', 'log'))
+           1372 CALL                     6
+           1380 STORE_DEREF             37 (resc)
+
+119        1382 LOAD_CONST              17 ('return')
+           1384 LOAD_GLOBAL             72 (bool)
+           1394 BUILD_TUPLE              2
+           1396 LOAD_CLOSURE            39 (sm)
+           1398 BUILD_TUPLE              1
+           1400 LOAD_CONST              21 (<code object in_match at 0x7f6aed1c6bf0, file "worker.py", line 119>)
+           1402 MAKE_FUNCTION           12 (annotations, closure)
+           1404 STORE_FAST              15 (in_match)
+
+122        1406 LOAD_GLOBAL             75 (NULL + AntiAfk)
+           1416 LOAD_DEREF               0 (self)
+           1418 LOAD_ATTR                0 (s)
+           1438 LOAD_FAST               15 (in_match)
+           1440 LOAD_GLOBAL             34 (ensure_game_foreground)
+           1450 LOAD_DEREF              35 (bg)
+           1452 LOAD_ATTR               36 (context)
+           1472 LOAD_DEREF              36 (ctrl)
+           1474 LOAD_ATTR               76 (look)
+           1494 LOAD_DEREF              36 (ctrl)
+           1496 LOAD_ATTR               78 (swing)
+           1516 LOAD_CLOSURE            36 (ctrl)
+           1518 BUILD_TUPLE              1
+           1520 LOAD_CONST              22 (<code object <lambda> at 0x7f6aed17d980, file "worker.py", line 122>)
+           1522 MAKE_FUNCTION            8 (closure)
+           1524 LOAD_GLOBAL             39 (NULL + getattr)
+           1534 LOAD_DEREF              35 (bg)
+           1536 LOAD_CONST               7 ('other_window_in_front')
+           1538 LOAD_CONST               0 (None)
+           1540 CALL                     3
+
+123        1548 LOAD_DEREF              35 (bg)
+           1550 LOAD_ATTR               80 (user_busy)
+           1570 LOAD_CLOSURE            35 (bg)
+           1572 BUILD_TUPLE              1
+           1574 LOAD_CONST              23 (<code object <lambda> at 0x7f6aed17f2d0, file "worker.py", line 123>)
+           1576 MAKE_FUNCTION            8 (closure)
+           1578 LOAD_CLOSURE            35 (bg)
+           1580 BUILD_TUPLE              1
+           1582 LOAD_CONST              24 (<code object <lambda> at 0x7f6aed17e6a0, file "worker.py", line 123>)
+           1584 MAKE_FUNCTION            8 (closure)
+
+122        1586 KW_NAMES                25 (('active', 'focuser', 'swapper', 'look', 'swing', 'dive_look', 'away', 'defer', 'post_down', 'post_up'))
+           1588 CALL                    11
+           1596 STORE_FAST              16 (afk)
+
+124        1598 LOAD_GLOBAL             83 (NULL + BusDrop)
+           1608 LOAD_DEREF               0 (self)
+           1610 LOAD_ATTR                0 (s)
+           1630 LOAD_DEREF               0 (self)
+           1632 LOAD_ATTR               50 (log_q)
+           1652 LOAD_ATTR               52 (put)
+           1672 KW_NAMES                11 (('log',))
+           1674 CALL                     2
+           1682 STORE_FAST              17 (bus)
+
+125        1684 LOAD_GLOBAL             25 (NULL + threading)
+           1694 LOAD_ATTR               28 (Thread)
+           1714 LOAD_FAST               16 (afk)
+           1716 LOAD_ATTR               84 (run)
+           1736 LOAD_DEREF               0 (self)
+           1738 LOAD_ATTR               86 (stop_event)
+           1758 LOAD_DEREF               0 (self)
+           1760 LOAD_ATTR               50 (log_q)
+           1780 LOAD_ATTR               52 (put)
+           1800 BUILD_TUPLE              2
+           1802 LOAD_CONST               3 (True)
+           1804 KW_NAMES                26 (('target', 'args', 'daemon'))
+           1806 CALL                     3
+           1814 STORE_FAST              18 (afk_thread)
+
+126        1816 LOAD_FAST               18 (afk_thread)
+           1818 LOAD_ATTR               23 (NULL|self + start)
+           1838 CALL                     0
+           1846 POP_TOP
+
+129        1848 LOAD_GLOBAL             89 (NULL + SpacePresser)
+           1858 LOAD_DEREF               0 (self)
+           1860 LOAD_ATTR                0 (s)
+           1880 LOAD_FAST               15 (in_match)
+           1882 LOAD_CLOSURE            36 (ctrl)
+           1884 BUILD_TUPLE              1
+           1886 LOAD_CONST              27 (<code object <lambda> at 0x7f6aed17e1f0, file "worker.py", line 129>)
+           1888 MAKE_FUNCTION            8 (closure)
+           1890 LOAD_DEREF              35 (bg)
+           1892 LOAD_ATTR               80 (user_busy)
+           1912 KW_NAMES                28 (('active', 'press', 'defer'))
+           1914 CALL                     4
+           1922 STORE_FAST              19 (space)
+
+130        1924 LOAD_GLOBAL             25 (NULL + threading)
+           1934 LOAD_ATTR               28 (Thread)
+           1954 LOAD_FAST               19 (space)
+           1956 LOAD_ATTR               84 (run)
+           1976 LOAD_DEREF               0 (self)
+           1978 LOAD_ATTR               86 (stop_event)
+           1998 LOAD_DEREF               0 (self)
+           2000 LOAD_ATTR               50 (log_q)
+           2020 LOAD_ATTR               52 (put)
+           2040 BUILD_TUPLE              2
+           2042 LOAD_CONST               3 (True)
+           2044 KW_NAMES                26 (('target', 'args', 'daemon'))
+           2046 CALL                     3
+           2054 STORE_FAST              20 (space_thread)
+
+131        2056 LOAD_FAST               20 (space_thread)
+           2058 LOAD_ATTR               23 (NULL|self + start)
+           2078 CALL                     0
+           2086 POP_TOP
+
+132        2088 LOAD_CONST              29 (('', -1.0, ''))
+           2090 UNPACK_SEQUENCE          3
+           2094 STORE_FAST              21 (last_note)
+           2096 STORE_FAST              22 (last_score)
+           2098 STORE_FAST              23 (last_src)
+
+134        2100 LOAD_CONST              30 ('code')
+           2102 LOAD_GLOBAL             66 (str)
+           2112 LOAD_CONST              31 ('detail')
+           2114 LOAD_GLOBAL             66 (str)
+           2124 LOAD_CONST              17 ('return')
+           2126 LOAD_CONST               0 (None)
+           2128 BUILD_TUPLE              6
+           2130 LOAD_CLOSURE             0 (self)
+           2132 BUILD_TUPLE              1
+           2134 LOAD_CONST              32 (<code object alert at 0x7f6af1f8ef50, file "worker.py", line 134>)
+           2136 MAKE_FUNCTION           12 (annotations, closure)
+           2138 STORE_FAST              24 (alert)
+
+138        2140 LOAD_GLOBAL             91 (NULL + Watchdog)
+           2150 LOAD_FAST               24 (alert)
+           2152 CALL                     1
+           2160 STORE_FAST              25 (dog)
+
+139        2162 NOP
+
+140     >> 2164 LOAD_DEREF               0 (self)
+           2166 LOAD_ATTR               86 (stop_event)
+           2186 LOAD_ATTR               93 (NULL|self + is_set)
+           2206 CALL                     0
+           2214 EXTENDED_ARG             6
+           2216 POP_JUMP_IF_TRUE      1638 (to 5494)
+
+141     >> 2218 NOP
+
+142        2220 LOAD_DEREF               0 (self)
+           2222 LOAD_ATTR                0 (s)
+           2242 LOAD_ATTR                2 (lang)
+           2262 LOAD_FAST                1 (lang)
+           2264 COMPARE_OP              55 (!=)
+           2268 POP_JUMP_IF_FALSE       67 (to 2404)
+
+143        2270 LOAD_DEREF               0 (self)
+           2272 LOAD_ATTR                0 (s)
+           2292 LOAD_ATTR                2 (lang)
+           2312 STORE_FAST               1 (lang)
+
+144        2314 LOAD_DEREF               0 (self)
+           2316 LOAD_ATTR                5 (NULL|self + _load_templates)
+           2336 LOAD_FAST                1 (lang)
+           2338 CALL                     1
+           2346 STORE_DEREF             40 (templates)
+
+145        2348 LOAD_FAST                6 (machines)
+           2350 LOAD_ATTR               57 (NULL|self + values)
+           2370 CALL                     0
+           2378 GET_ITER
+        >> 2380 FOR_ITER                 9 (to 2402)
+           2384 STORE_FAST               9 (m)
+
+146        2386 LOAD_DEREF              40 (templates)
+           2388 LOAD_FAST                9 (m)
+           2390 STORE_ATTR              47 (templates)
+           2400 JUMP_BACKWARD           11 (to 2380)
+
+145     >> 2402 END_FOR
+
+147     >> 2404 LOAD_DEREF               0 (self)
+           2406 LOAD_ATTR                0 (s)
+           2426 LOAD_ATTR               46 (mode)
+           2446 LOAD_FAST                7 (mode)
+           2448 COMPARE_OP              55 (!=)
+           2452 POP_JUMP_IF_FALSE      122 (to 2698)
+           2454 LOAD_DEREF               0 (self)
+           2456 LOAD_ATTR                0 (s)
+           2476 LOAD_ATTR               46 (mode)
+           2496 LOAD_FAST                6 (machines)
+           2498 CONTAINS_OP              0
+           2500 POP_JUMP_IF_FALSE       98 (to 2698)
+
+148        2502 LOAD_DEREF              39 (sm)
+           2504 LOAD_ATTR               97 (NULL|self + stop)
+           2524 CALL                     0
+           2532 POP_TOP
+
+149        2534 LOAD_DEREF               0 (self)
+           2536 LOAD_ATTR                0 (s)
+           2556 LOAD_ATTR               46 (mode)
+           2576 STORE_FAST               7 (mode)
+
+150        2578 LOAD_FAST                6 (machines)
+           2580 LOAD_FAST                7 (mode)
+           2582 BINARY_SUBSCR
+           2586 STORE_DEREF             39 (sm)
+
+151        2588 LOAD_DEREF              39 (sm)
+           2590 LOAD_ATTR               23 (NULL|self + start)
+           2610 CALL                     0
+           2618 POP_TOP
+
+152        2620 LOAD_DEREF               0 (self)
+           2622 LOAD_ATTR               98 (tm)
+           2642 POP_JUMP_IF_FALSE       27 (to 2698)
+
+153        2644 LOAD_DEREF               0 (self)
+           2646 LOAD_ATTR               98 (tm)
+           2666 LOAD_ATTR              101 (NULL|self + set_mode)
+           2686 LOAD_FAST                7 (mode)
+           2688 CALL                     1
+           2696 POP_TOP
+
+154     >> 2698 LOAD_GLOBAL            103 (NULL + time)
+           2708 LOAD_ATTR              104 (monotonic)
+           2728 CALL                     0
+           2736 STORE_FAST              26 (now_m)
+
+155        2738 LOAD_FAST               26 (now_m)
+           2740 LOAD_FAST               11 (audio_t)
+           2742 BINARY_OP               10 (-)
+           2746 LOAD_CONST              33 (30.0)
+           2748 COMPARE_OP              92 (>=)
+           2752 POP_JUMP_IF_FALSE       57 (to 2868)
+
+156        2754 LOAD_FAST               26 (now_m)
+           2756 STORE_FAST              11 (audio_t)
+
+157        2758 LOAD_DEREF               0 (self)
+           2760 LOAD_ATTR                0 (s)
+           2780 LOAD_ATTR              106 (auto_mute_enabled)
+           2800 POP_JUMP_IF_FALSE       17 (to 2836)
+
+158        2802 LOAD_FAST               10 (audio)
+           2804 LOAD_ATTR              109 (NULL|self + refresh)
+           2824 CALL                     0
+           2832 POP_TOP
+           2834 JUMP_FORWARD            16 (to 2868)
+
+160     >> 2836 LOAD_FAST               10 (audio)
+           2838 LOAD_ATTR              111 (NULL|self + restore)
+           2858 CALL                     0
+           2866 POP_TOP
+
+161     >> 2868 LOAD_FAST               12 (coffee)
+           2870 LOAD_ATTR              113 (NULL|self + check)
+           2890 LOAD_DEREF              39 (sm)
+           2892 LOAD_ATTR              114 (state)
+           2912 LOAD_ATTR              116 (value)
+           2932 CALL                     1
+           2940 STORE_FAST              27 (pause)
+
+162        2942 LOAD_FAST               27 (pause)
+           2944 POP_JUMP_IF_FALSE       85 (to 3116)
+
+163        2946 LOAD_DEREF               0 (self)
+           2948 LOAD_ATTR               50 (log_q)
+           2968 LOAD_ATTR               53 (NULL|self + put)
+           2988 LOAD_CONST              34 ('[humanizer] coffee break (')
+           2990 LOAD_GLOBAL             69 (NULL + int)
+           3000 LOAD_FAST               27 (pause)
+           3002 CALL                     1
+           3010 FORMAT_VALUE             0
+           3012 LOAD_CONST              35 ('s)')
+           3014 BUILD_STRING             3
+           3016 CALL                     1
+           3024 POP_TOP
+
+164        3026 LOAD_DEREF               0 (self)
+           3028 LOAD_ATTR               86 (stop_event)
+           3048 LOAD_ATTR              119 (NULL|self + wait)
+           3068 LOAD_FAST               27 (pause)
+           3070 CALL                     1
+           3078 POP_TOP
+
+165        3080 LOAD_DEREF              37 (resc)
+           3082 LOAD_ATTR              121 (NULL|self + progress)
+           3102 CALL                     0
+           3110 POP_TOP
+
+166        3112 EXTENDED_ARG             1
+           3114 JUMP_BACKWARD          476 (to 2164)
+
+167     >> 3116 LOAD_DEREF              35 (bg)
+           3118 LOAD_ATTR              123 (NULL|self + capture_guard)
+           3138 CALL                     0
+           3146 BEFORE_WITH
+           3148 POP_TOP
+
+168        3150 LOAD_GLOBAL            125 (NULL + capture_for_matching)
+           3160 LOAD_DEREF               0 (self)
+           3162 LOAD_ATTR                0 (s)
+           3182 LOAD_ATTR              126 (monitor_index)
+           3202 LOAD_DEREF               0 (self)
+           3204 LOAD_ATTR                0 (s)
+           3224 LOAD_ATTR              128 (background_mode)
+           3244 POP_JUMP_IF_FALSE        2 (to 3250)
+           3246 LOAD_FAST                3 (wcap)
+           3248 JUMP_FORWARD             1 (to 3252)
+        >> 3250 LOAD_CONST               0 (None)
+        >> 3252 CALL                     2
+           3260 UNPACK_SEQUENCE          4
+           3264 STORE_FAST              28 (frame)
+           3266 STORE_FAST              29 (ox)
+           3268 STORE_FAST              30 (oy)
+           3270 STORE_FAST              31 (src)
+
+167        3272 LOAD_CONST               0 (None)
+           3274 LOAD_CONST               0 (None)
+           3276 LOAD_CONST               0 (None)
+           3278 CALL                     2
+           3286 POP_TOP
+
+169     >> 3288 LOAD_FAST_CHECK         31 (src)
+           3290 LOAD_FAST               23 (last_src)
+           3292 COMPARE_OP              55 (!=)
+           3296 POP_JUMP_IF_FALSE       84 (to 3466)
+
+170        3298 LOAD_FAST               31 (src)
+           3300 STORE_FAST              23 (last_src)
+
+171        3302 LOAD_FAST               31 (src)
+           3304 LOAD_GLOBAL            130 (BG_HINTS)
+           3314 CONTAINS_OP              0
+           3316 POP_JUMP_IF_FALSE       74 (to 3466)
+
+172        3318 LOAD_DEREF               0 (self)
+           3320 LOAD_ATTR               50 (log_q)
+           3340 LOAD_ATTR               53 (NULL|self + put)
+           3360 LOAD_GLOBAL            133 (NULL + i18n)
+           3370 LOAD_ATTR              134 (t)
+           3390 LOAD_DEREF               0 (self)
+           3392 LOAD_ATTR                0 (s)
+           3412 LOAD_ATTR                2 (lang)
+           3432 LOAD_GLOBAL            130 (BG_HINTS)
+           3442 LOAD_FAST               31 (src)
+           3444 BINARY_SUBSCR
+           3448 CALL                     2
+           3456 CALL                     1
+           3464 POP_TOP
+
+173     >> 3466 LOAD_DEREF              35 (bg)
+           3468 LOAD_ATTR              137 (NULL|self + ghost_notice)
+           3488 LOAD_FAST               31 (src)
+           3490 CALL                     1
+           3498 STORE_FAST              32 (note)
+
+174        3500 LOAD_FAST               32 (note)
+           3502 POP_JUMP_IF_FALSE       67 (to 3638)
+
+175        3504 LOAD_DEREF               0 (self)
+           3506 LOAD_ATTR               50 (log_q)
+           3526 LOAD_ATTR               53 (NULL|self + put)
+           3546 LOAD_GLOBAL            133 (NULL + i18n)
+           3556 LOAD_ATTR              134 (t)
+           3576 LOAD_DEREF               0 (self)
+           3578 LOAD_ATTR                0 (s)
+           3598 LOAD_ATTR                2 (lang)
+           3618 LOAD_FAST               32 (note)
+           3620 CALL                     2
+           3628 CALL                     1
+           3636 POP_TOP
+
+176     >> 3638 LOAD_DEREF              39 (sm)
+           3640 LOAD_ATTR              139 (NULL|self + step)
+           3660 LOAD_FAST_CHECK         28 (frame)
+           3662 LOAD_FAST_CHECK         29 (ox)
+           3664 LOAD_FAST_CHECK         30 (oy)
+           3666 CALL                     3
+           3674 STORE_FAST              33 (r)
+
+177        3676 LOAD_FAST               25 (dog)
+           3678 LOAD_ATTR              141 (NULL|self + ok)
+           3698 CALL                     0
+           3706 POP_TOP
+
+178        3708 PUSH_NULL
+           3710 LOAD_FAST               15 (in_match)
+           3712 CALL                     0
+           3720 POP_JUMP_IF_FALSE       65 (to 3852)
+           3722 LOAD_FAST               17 (bus)
+           3724 LOAD_ATTR              143 (NULL|self + observe)
+           3744 LOAD_FAST               28 (frame)
+           3746 CALL                     1
+           3754 POP_JUMP_IF_FALSE       48 (to 3852)
+
+179        3756 LOAD_FAST               16 (afk)
+           3758 LOAD_ATTR              145 (NULL|self + dive_async)
+           3778 LOAD_DEREF               0 (self)
+           3780 LOAD_ATTR               86 (stop_event)
+           3800 LOAD_DEREF               0 (self)
+           3802 LOAD_ATTR               50 (log_q)
+           3822 LOAD_ATTR               52 (put)
+           3842 CALL                     2
+           3850 POP_TOP
+
+180     >> 3852 LOAD_FAST               33 (r)
+           3854 LOAD_ATTR              146 (clicked)
+           3874 POP_JUMP_IF_FALSE       52 (to 3980)
+
+181        3876 LOAD_FAST               25 (dog)
+           3878 LOAD_ATTR              149 (NULL|self + action)
+           3898 LOAD_FAST               33 (r)
+           3900 LOAD_ATTR              114 (state)
+           3920 LOAD_ATTR              116 (value)
+           3940 FORMAT_VALUE             0
+           3942 LOAD_CONST              36 (':')
+           3944 LOAD_FAST               33 (r)
+           3946 LOAD_ATTR              150 (key)
+           3966 FORMAT_VALUE             0
+           3968 BUILD_STRING             3
+           3970 CALL                     1
+           3978 POP_TOP
+
+182     >> 3980 LOAD_FAST               25 (dog)
+           3982 LOAD_ATTR              153 (NULL|self + tick)
+           4002 CALL                     0
+           4010 POP_TOP
+
+183        4012 LOAD_DEREF               0 (self)
+           4014 LOAD_ATTR              154 (status)
+           4034 LOAD_ATTR              157 (NULL|self + update)
+           4054 LOAD_FAST               33 (r)
+           4056 LOAD_ATTR              114 (state)
+           4076 LOAD_ATTR              116 (value)
+           4096 LOAD_FAST               33 (r)
+           4098 LOAD_ATTR              158 (score)
+           4118 LOAD_DEREF              39 (sm)
+           4120 LOAD_ATTR              160 (loops)
+           4140 KW_NAMES                37 (('state', 'score', 'loops'))
+           4142 CALL                     3
+           4150 POP_TOP
+
+184        4152 LOAD_DEREF              37 (resc)
+           4154 LOAD_ATTR              153 (NULL|self + tick)
+           4174 LOAD_FAST               33 (r)
+           4176 LOAD_ATTR              114 (state)
+           4196 LOAD_ATTR              116 (value)
+           4216 LOAD_FAST               33 (r)
+           4218 LOAD_ATTR              146 (clicked)
+           4238 LOAD_FAST               28 (frame)
+           4240 LOAD_FAST               29 (ox)
+           4242 LOAD_FAST               30 (oy)
+           4244 CALL                     5
+           4252 POP_TOP
+
+185        4254 LOAD_DEREF               0 (self)
+           4256 LOAD_ATTR               98 (tm)
+           4276 EXTENDED_ARG             1
+           4278 POP_JUMP_IF_FALSE      322 (to 4924)
+
+186        4280 LOAD_FAST               33 (r)
+           4282 LOAD_ATTR              146 (clicked)
+           4302 POP_JUMP_IF_FALSE       26 (to 4356)
+
+187        4304 LOAD_DEREF               0 (self)
+           4306 LOAD_ATTR               98 (tm)
+           4326 LOAD_ATTR              163 (NULL|self + record_action)
+           4346 CALL                     0
+           4354 POP_TOP
+
+188     >> 4356 LOAD_DEREF               0 (self)
+           4358 LOAD_ATTR               98 (tm)
+           4378 LOAD_ATTR              165 (NULL|self + set_loops)
+           4398 LOAD_GLOBAL            167 (NULL + sum)
+           4408 LOAD_CONST              38 (<code object <genexpr> at 0x7f6aed7f7a30, file "worker.py", line 188>)
+           4410 MAKE_FUNCTION            0
+           4412 LOAD_FAST                6 (machines)
+           4414 LOAD_ATTR               57 (NULL|self + values)
+           4434 CALL                     0
+           4442 GET_ITER
+           4444 CALL                     0
+           4452 CALL                     1
+           4460 CALL                     1
+           4468 POP_TOP
+
+189        4470 LOAD_DEREF               0 (self)
+           4472 LOAD_ATTR               98 (tm)
+           4492 LOAD_ATTR              169 (NULL|self + set_popups)
+           4512 LOAD_GLOBAL            167 (NULL + sum)
+           4522 LOAD_CONST              39 (<code object <genexpr> at 0x7f6aed7fe560, file "worker.py", line 189>)
+           4524 MAKE_FUNCTION            0
+           4526 LOAD_FAST                6 (machines)
+           4528 LOAD_ATTR               57 (NULL|self + values)
+           4548 CALL                     0
+           4556 GET_ITER
+           4558 CALL                     0
+           4566 CALL                     1
+           4574 CALL                     1
+           4582 POP_TOP
+
+190        4584 LOAD_DEREF               0 (self)
+           4586 LOAD_ATTR               98 (tm)
+           4606 LOAD_ATTR              171 (NULL|self + set_claims)
+           4626 LOAD_GLOBAL            167 (NULL + sum)
+           4636 LOAD_CONST              40 (<code object <genexpr> at 0x7f6aed7f6b30, file "worker.py", line 190>)
+           4638 MAKE_FUNCTION            0
+           4640 LOAD_FAST                6 (machines)
+           4642 LOAD_ATTR               57 (NULL|self + values)
+           4662 CALL                     0
+           4670 GET_ITER
+           4672 CALL                     0
+           4680 CALL                     1
+           4688 CALL                     1
+           4696 POP_TOP
+
+192        4698 LOAD_DEREF               0 (self)
+           4700 LOAD_ATTR               98 (tm)
+           4720 LOAD_ATTR              173 (NULL|self + maybe_send_periodic)
+
+193        4740 LOAD_DEREF               0 (self)
+           4742 LOAD_ATTR                0 (s)
+           4762 LOAD_ATTR              174 (discord_link_key)
+           4782 LOAD_DEREF               0 (self)
+           4784 LOAD_ATTR                0 (s)
+           4804 LOAD_ATTR              176 (telemetry_api_url)
+           4824 LOAD_DEREF               0 (self)
+           4826 LOAD_ATTR                0 (s)
+           4846 LOAD_ATTR              178 (telemetry_enabled)
+           4866 POP_JUMP_IF_FALSE       22 (to 4912)
+           4868 LOAD_DEREF               0 (self)
+           4870 LOAD_ATTR                0 (s)
+           4890 LOAD_ATTR              180 (report_hours)
+           4910 JUMP_FORWARD             1 (to 4914)
+        >> 4912 LOAD_CONST              41 (0)
+
+192     >> 4914 CALL                     3
+           4922 POP_TOP
+
+195     >> 4924 LOAD_FAST               33 (r)
+           4926 LOAD_ATTR              182 (note)
+           4946 LOAD_FAST               21 (last_note)
+           4948 COMPARE_OP              55 (!=)
+           4952 POP_JUMP_IF_TRUE        39 (to 5032)
+           4954 LOAD_FAST               33 (r)
+           4956 LOAD_ATTR              146 (clicked)
+           4976 POP_JUMP_IF_TRUE        27 (to 5032)
+           4978 LOAD_GLOBAL            185 (NULL + abs)
+           4988 LOAD_FAST               33 (r)
+           4990 LOAD_ATTR              158 (score)
+           5010 LOAD_FAST               22 (last_score)
+           5012 BINARY_OP               10 (-)
+           5016 CALL                     1
+           5024 LOAD_CONST              42 (0.1)
+           5026 COMPARE_OP              68 (>)
+           5030 POP_JUMP_IF_FALSE      126 (to 5284)
+
+196     >> 5032 LOAD_DEREF               0 (self)
+           5034 LOAD_ATTR               50 (log_q)
+           5054 LOAD_ATTR               53 (NULL|self + put)
+           5074 LOAD_CONST              43 ('[')
+           5076 LOAD_FAST               33 (r)
+           5078 LOAD_ATTR              114 (state)
+           5098 LOAD_ATTR              116 (value)
+           5118 FORMAT_VALUE             0
+           5120 LOAD_CONST              44 ('] ')
+           5122 LOAD_FAST               33 (r)
+           5124 LOAD_ATTR              182 (note)
+           5144 FORMAT_VALUE             0
+           5146 LOAD_CONST              45 (' (')
+           5148 LOAD_FAST               33 (r)
+           5150 LOAD_ATTR              158 (score)
+           5170 LOAD_CONST              46 ('.2f')
+           5172 FORMAT_VALUE             4 (with format)
+           5174 LOAD_CONST              47 ('/')
+           5176 LOAD_DEREF               0 (self)
+           5178 LOAD_ATTR                0 (s)
+           5198 LOAD_ATTR              186 (threshold)
+           5218 LOAD_CONST              46 ('.2f')
+           5220 FORMAT_VALUE             4 (with format)
+           5222 LOAD_CONST              48 (')')
+           5224 BUILD_STRING             9
+           5226 CALL                     1
+           5234 POP_TOP
+
+197        5236 LOAD_FAST               33 (r)
+           5238 LOAD_ATTR              182 (note)
+           5258 LOAD_FAST               33 (r)
+           5260 LOAD_ATTR              158 (score)
+           5280 STORE_FAST              22 (last_score)
+           5282 STORE_FAST              21 (last_note)
+
+201     >> 5284 LOAD_DEREF               0 (self)
+           5286 LOAD_ATTR               86 (stop_event)
+           5306 LOAD_ATTR              119 (NULL|self + wait)
+           5326 LOAD_GLOBAL             19 (NULL + config)
+           5336 LOAD_ATTR              196 (get_jittered_wait)
+           5356 LOAD_DEREF               0 (self)
+           5358 LOAD_ATTR                0 (s)
+           5378 LOAD_ATTR              198 (poll_interval)
+           5398 LOAD_DEREF               0 (self)
+           5400 LOAD_ATTR                0 (s)
+           5420 CALL                     2
+           5428 CALL                     1
+           5436 POP_TOP
+
+140        5438 LOAD_DEREF               0 (self)
+           5440 LOAD_ATTR               86 (stop_event)
+           5460 LOAD_ATTR               93 (NULL|self + is_set)
+           5480 CALL                     0
+           5488 POP_JUMP_IF_TRUE         2 (to 5494)
+           5490 EXTENDED_ARG             6
+           5492 JUMP_BACKWARD         1638 (to 2218)
+
+206     >> 5494 LOAD_FAST                4 (bg_stop)
+           5496 LOAD_ATTR              205 (NULL|self + set)
+           5516 CALL                     0
+           5524 POP_TOP
+
+207        5526 LOAD_CONST              51 (False)
+           5528 LOAD_DEREF               0 (self)
+           5530 LOAD_ATTR                0 (s)
+           5550 STORE_ATTR             103 (rescue_listening)
+
+208        5560 NOP
+
+209        5562 LOAD_FAST               10 (audio)
+           5564 LOAD_ATTR              111 (NULL|self + restore)
+           5584 CALL                     0
+           5592 POP_TOP
+
+212     >> 5594 NOP
+
+213        5596 LOAD_FAST               18 (afk_thread)
+           5598 LOAD_ATTR               17 (NULL|self + join)
+           5618 LOAD_CONST              52 (2)
+           5620 KW_NAMES                53 (('timeout',))
+           5622 CALL                     1
+           5630 POP_TOP
+
+214        5632 LOAD_FAST               20 (space_thread)
+           5634 LOAD_ATTR               17 (NULL|self + join)
+           5654 LOAD_CONST              52 (2)
+           5656 KW_NAMES                53 (('timeout',))
+           5658 CALL                     1
+           5666 POP_TOP
+
+216        5668 LOAD_DEREF              35 (bg)
+           5670 LOAD_ATTR              209 (NULL|self + release_all)
+           5690 CALL                     0
+           5698 POP_TOP
+
+217        5700 LOAD_DEREF               0 (self)
+           5702 LOAD_ATTR              154 (status)
+           5722 LOAD_ATTR              157 (NULL|self + update)
+           5742 LOAD_GLOBAL            210 (State)
+           5752 LOAD_ATTR              212 (IDLE)
+           5772 LOAD_ATTR              116 (value)
+           5792 LOAD_CONST              13 (0.0)
+           5794 KW_NAMES                54 (('state', 'score'))
+           5796 CALL                     2
+           5804 POP_TOP
+           5806 RETURN_CONST             0 (None)
+
+167     >> 5808 PUSH_EXC_INFO
+           5810 WITH_EXCEPT_START
+           5812 POP_JUMP_IF_TRUE         1 (to 5816)
+           5814 RERAISE                  2
+        >> 5816 POP_TOP
+           5818 POP_EXCEPT
+           5820 POP_TOP
+           5822 POP_TOP
+           5824 EXTENDED_ARG             4
+           5826 JUMP_BACKWARD         1270 (to 3288)
+        >> 5828 COPY                     3
+           5830 POP_EXCEPT
+           5832 RERAISE                  1
+        >> 5834 PUSH_EXC_INFO
+
+198        5836 LOAD_GLOBAL            188 (Exception)
+           5846 CHECK_EXC_MATCH
+           5848 POP_JUMP_IF_FALSE       82 (to 6014)
+           5850 STORE_FAST              34 (e)
+
+199        5852 LOAD_DEREF               0 (self)
+           5854 LOAD_ATTR               50 (log_q)
+           5874 LOAD_ATTR               53 (NULL|self + put)
+           5894 LOAD_CONST              49 ('error: ')
+           5896 LOAD_FAST               34 (e)
+           5898 FORMAT_VALUE             0
+           5900 BUILD_STRING             2
+           5902 CALL                     1
+           5910 POP_TOP
+
+200        5912 LOAD_FAST               25 (dog)
+           5914 LOAD_ATTR              191 (NULL|self + error)
+           5934 LOAD_GLOBAL            193 (NULL + type)
+           5944 LOAD_FAST               34 (e)
+           5946 CALL                     1
+           5954 LOAD_ATTR              194 (__name__)
+           5974 FORMAT_VALUE             0
+           5976 LOAD_CONST              50 (': ')
+           5978 LOAD_FAST               34 (e)
+           5980 FORMAT_VALUE             0
+           5982 BUILD_STRING             3
+           5984 CALL                     1
+           5992 POP_TOP
+           5994 POP_EXCEPT
+           5996 LOAD_CONST               0 (None)
+           5998 STORE_FAST              34 (e)
+           6000 DELETE_FAST             34 (e)
+           6002 EXTENDED_ARG             1
+           6004 JUMP_BACKWARD          361 (to 5284)
+        >> 6006 LOAD_CONST               0 (None)
+           6008 STORE_FAST              34 (e)
+           6010 DELETE_FAST             34 (e)
+           6012 RERAISE                  1
+
+198     >> 6014 RERAISE                  0
+        >> 6016 COPY                     3
+           6018 POP_EXCEPT
+           6020 RERAISE                  1
+        >> 6022 PUSH_EXC_INFO
+
+202        6024 LOAD_GLOBAL            200 (BaseException)
+           6034 CHECK_EXC_MATCH
+           6036 POP_JUMP_IF_FALSE       47 (to 6132)
+           6038 STORE_FAST              34 (e)
+
+203        6040 LOAD_FAST               25 (dog)
+           6042 LOAD_ATTR              203 (NULL|self + fatal)
+           6062 LOAD_GLOBAL            193 (NULL + type)
+           6072 LOAD_FAST               34 (e)
+           6074 CALL                     1
+           6082 LOAD_ATTR              194 (__name__)
+           6102 FORMAT_VALUE             0
+           6104 LOAD_CONST              50 (': ')
+           6106 LOAD_FAST               34 (e)
+           6108 FORMAT_VALUE             0
+           6110 BUILD_STRING             3
+           6112 CALL                     1
+           6120 POP_TOP
+
+204        6122 RAISE_VARARGS            0
+        >> 6124 LOAD_CONST               0 (None)
+           6126 STORE_FAST              34 (e)
+           6128 DELETE_FAST             34 (e)
+           6130 RERAISE                  1
+
+202     >> 6132 RERAISE                  0
+        >> 6134 COPY                     3
+           6136 POP_EXCEPT
+           6138 RERAISE                  1
+        >> 6140 PUSH_EXC_INFO
+
+210        6142 LOAD_GLOBAL            188 (Exception)
+           6152 CHECK_EXC_MATCH
+           6154 POP_JUMP_IF_FALSE        4 (to 6164)
+           6156 POP_TOP
+
+211        6158 POP_EXCEPT
+           6160 EXTENDED_ARG             1
+           6162 JUMP_BACKWARD          285 (to 5594)
+
+210     >> 6164 RERAISE                  0
+        >> 6166 COPY                     3
+           6168 POP_EXCEPT
+           6170 RERAISE                  1
+        >> 6172 PUSH_EXC_INFO
+
+216        6174 LOAD_DEREF              35 (bg)
+           6176 LOAD_ATTR              209 (NULL|self + release_all)
+           6196 CALL                     0
+           6204 POP_TOP
+           6206 RERAISE                  0
+        >> 6208 COPY                     3
+           6210 POP_EXCEPT
+           6212 RERAISE                  1
+        >> 6214 PUSH_EXC_INFO
+
+206        6216 LOAD_FAST                4 (bg_stop)
+           6218 LOAD_ATTR              205 (NULL|self + set)
+           6238 CALL                     0
+           6246 POP_TOP
+
+207        6248 LOAD_CONST              51 (False)
+           6250 LOAD_DEREF               0 (self)
+           6252 LOAD_ATTR                0 (s)
+           6272 STORE_ATTR             103 (rescue_listening)
+
+208        6282 NOP
+
+209        6284 LOAD_FAST               10 (audio)
+           6286 LOAD_ATTR              111 (NULL|self + restore)
+           6306 CALL                     0
+           6314 POP_TOP
+           6316 JUMP_FORWARD            15 (to 6348)
+        >> 6318 PUSH_EXC_INFO
+
+210        6320 LOAD_GLOBAL            188 (Exception)
+           6330 CHECK_EXC_MATCH
+           6332 POP_JUMP_IF_FALSE        3 (to 6340)
+           6334 POP_TOP
+
+211        6336 POP_EXCEPT
+           6338 JUMP_FORWARD             4 (to 6348)
+
+210     >> 6340 RERAISE                  0
+        >> 6342 COPY                     3
+           6344 POP_EXCEPT
+           6346 RERAISE                  1
+
+212     >> 6348 NOP
+
+213        6350 LOAD_FAST               18 (afk_thread)
+           6352 LOAD_ATTR               17 (NULL|self + join)
+           6372 LOAD_CONST              52 (2)
+           6374 KW_NAMES                53 (('timeout',))
+           6376 CALL                     1
+           6384 POP_TOP
+
+214        6386 LOAD_FAST               20 (space_thread)
+           6388 LOAD_ATTR               17 (NULL|self + join)
+           6408 LOAD_CONST              52 (2)
+           6410 KW_NAMES                53 (('timeout',))
+           6412 CALL                     1
+           6420 POP_TOP
+
+216        6422 LOAD_DEREF              35 (bg)
+           6424 LOAD_ATTR              209 (NULL|self + release_all)
+           6444 CALL                     0
+           6452 POP_TOP
+           6454 RERAISE                  0
+        >> 6456 PUSH_EXC_INFO
+           6458 LOAD_DEREF              35 (bg)
+           6460 LOAD_ATTR              209 (NULL|self + release_all)
+           6480 CALL                     0
+           6488 POP_TOP
+           6490 RERAISE                  0
+        >> 6492 COPY                     3
+           6494 POP_EXCEPT
+           6496 RERAISE                  1
+        >> 6498 COPY                     3
+           6500 POP_EXCEPT
+           6502 RERAISE                  1
+ExceptionTable:
+  2164 to 2216 -> 6022 [0]
+  2220 to 3110 -> 5834 [0]
+  3112 to 3114 -> 6022 [0]
+  3116 to 3146 -> 5834 [0]
+  3148 to 3270 -> 5808 [1] lasti
+  3272 to 5282 -> 5834 [0]
+  5284 to 5488 -> 6022 [0]
+  5562 to 5592 -> 6140 [0]
+  5596 to 5666 -> 6172 [0]
+  5808 to 5816 -> 5828 [3] lasti
+  5818 to 5832 -> 5834 [0]
+  5834 to 5850 -> 6016 [1] lasti
+  5852 to 5992 -> 6006 [1] lasti
+  5994 to 6004 -> 6022 [0]
+  6006 to 6014 -> 6016 [1] lasti
+  6016 to 6020 -> 6022 [0]
+  6022 to 6038 -> 6134 [1] lasti
+  6040 to 6122 -> 6124 [1] lasti
+  6124 to 6132 -> 6134 [1] lasti
+  6134 to 6138 -> 6214 [0]
+  6140 to 6156 -> 6166 [1] lasti
+  6164 to 6164 -> 6166 [1] lasti
+  6172 to 6206 -> 6208 [1] lasti
+  6214 to 6280 -> 6498 [1] lasti
+  6284 to 6314 -> 6318 [2]
+  6316 to 6316 -> 6498 [1] lasti
+  6318 to 6334 -> 6342 [3] lasti
+  6336 to 6338 -> 6498 [1] lasti
+  6340 to 6340 -> 6342 [3] lasti
+  6342 to 6346 -> 6498 [1] lasti
+  6350 to 6420 -> 6456 [2]
+  6422 to 6454 -> 6498 [1] lasti
+  6456 to 6490 -> 6492 [3] lasti
+  6492 to 6496 -> 6498 [1] lasti
+
+Disassembly of <code object <lambda> at 0x7f6aed17f960, file "worker.py", line 71>:
+              0 COPY_FREE_VARS           1
+
+ 71           2 RESUME                   0
+              4 LOAD_DEREF               1 (bg)
+              6 LOAD_ATTR                1 (NULL|self + post_tap)
+             26 LOAD_FAST                0 (key)
+             28 CALL                     1
+             36 RETURN_VALUE
+
+Disassembly of <code object on_claim at 0x7f6aed1c6970, file "worker.py", line 82>:
+              0 COPY_FREE_VARS           3
+
+ 82           2 RESUME                   0
+
+ 83           4 LOAD_DEREF               4 (self)
+              6 LOAD_ATTR                0 (s)
+             26 LOAD_ATTR                2 (loot_vault_enabled)
+             46 POP_JUMP_IF_FALSE       18 (to 84)
+
+ 84          48 LOAD_DEREF               5 (vault)
+             50 LOAD_ATTR                5 (NULL|self + save)
+             70 LOAD_FAST                1 (frame)
+             72 LOAD_FAST                2 (loops)
+             74 CALL                     2
+             82 POP_TOP
+
+ 85     >>   84 LOAD_DEREF               3 (rshot)
+             86 LOAD_ATTR                7 (NULL|self + notify)
+            106 LOAD_FAST                1 (frame)
+            108 CALL                     1
+            116 POP_TOP
+            118 RETURN_CONST             0 (None)
+
+Disassembly of <code object find_popup at 0x7f6aed18dc30, file "worker.py", line 94>:
+              0 COPY_FREE_VARS           2
+
+ 94           2 RESUME                   0
+
+ 95           4 LOAD_GLOBAL              0 (POPUP_KEYS)
+             14 GET_ITER
+        >>   16 FOR_ITER               142 (to 304)
+             20 STORE_FAST               1 (key)
+
+ 96          22 LOAD_DEREF               6 (templates)
+             24 LOAD_ATTR                3 (NULL|self + get)
+             44 LOAD_FAST                1 (key)
+             46 CALL                     1
+             54 STORE_FAST               2 (tpl)
+
+ 97          56 LOAD_FAST                2 (tpl)
+             58 POP_JUMP_IF_NOT_NONE     1 (to 62)
+
+ 98          60 JUMP_BACKWARD           23 (to 16)
+
+ 99     >>   62 LOAD_GLOBAL              5 (NULL + isinstance)
+             72 LOAD_FAST                2 (tpl)
+             74 LOAD_GLOBAL              6 (Plate)
+             84 CALL                     2
+             92 POP_JUMP_IF_FALSE       33 (to 160)
+             94 LOAD_GLOBAL              9 (NULL + find_plate)
+            104 LOAD_FAST                0 (frame)
+            106 LOAD_FAST                2 (tpl)
+            108 LOAD_DEREF               5 (self)
+            110 LOAD_ATTR               10 (s)
+            130 LOAD_ATTR               12 (scales)
+            150 CALL                     3
+            158 JUMP_FORWARD            53 (to 266)
+        >>  160 LOAD_GLOBAL             15 (NULL + find_template)
+            170 LOAD_FAST                0 (frame)
+            172 LOAD_FAST                2 (tpl)
+            174 LOAD_DEREF               5 (self)
+            176 LOAD_ATTR               10 (s)
+            196 LOAD_ATTR               16 (threshold)
+            216 LOAD_DEREF               5 (self)
+            218 LOAD_ATTR               10 (s)
+            238 LOAD_ATTR               12 (scales)
+            258 CALL                     4
+        >>  266 UNPACK_SEQUENCE          2
+            270 STORE_FAST               3 (m)
+            272 STORE_FAST               4 (_)
+
+100         274 LOAD_FAST                3 (m)
+            276 POP_JUMP_IF_TRUE         1 (to 280)
+            278 JUMP_BACKWARD          132 (to 16)
+
+101     >>  280 LOAD_FAST                3 (m)
+            282 LOAD_CONST               1 (0)
+            284 BINARY_SUBSCR
+            288 LOAD_FAST                3 (m)
+            290 LOAD_CONST               2 (1)
+            292 BINARY_SUBSCR
+            296 BUILD_TUPLE              2
+            298 SWAP                     2
+            300 POP_TOP
+            302 RETURN_VALUE
+
+ 95     >>  304 END_FOR
+
+102         306 RETURN_CONST             0 (None)
+
+Disassembly of <code object send_stuck at 0x17ab49e0, file "worker.py", line 104>:
+              0 COPY_FREE_VARS           2
+
+104           2 RESUME                   0
+
+105           4 LOAD_DEREF               5 (self)
+              6 LOAD_ATTR                0 (tm)
+             26 POP_JUMP_IF_FALSE      146 (to 320)
+             28 LOAD_DEREF               5 (self)
+             30 LOAD_ATTR                2 (s)
+             50 LOAD_ATTR                4 (telemetry_enabled)
+             70 POP_JUMP_IF_FALSE      123 (to 318)
+             72 LOAD_DEREF               5 (self)
+             74 LOAD_ATTR                2 (s)
+             94 LOAD_ATTR                6 (alert_enabled)
+            114 POP_JUMP_IF_FALSE      100 (to 316)
+
+106         116 LOAD_CONST               0 (None)
+            118 STORE_FAST               2 (grid)
+
+107         120 NOP
+
+108         122 LOAD_CONST               1 (0)
+            124 LOAD_CONST               2 (('grid_b64',))
+            126 IMPORT_NAME              4 (rescue_grid)
+            128 IMPORT_FROM              5 (grid_b64)
+            130 STORE_FAST               3 (grid_b64)
+            132 POP_TOP
+
+110         134 PUSH_NULL
+            136 LOAD_FAST                3 (grid_b64)
+            138 LOAD_DEREF               4 (resc)
+            140 LOAD_ATTR               12 (last_frame)
+            160 CALL                     1
+            168 STORE_FAST               2 (grid)
+
+113     >>  170 LOAD_DEREF               5 (self)
+            172 LOAD_ATTR                0 (tm)
+            192 LOAD_ATTR               17 (NULL|self + send_stuck)
+            212 LOAD_DEREF               5 (self)
+            214 LOAD_ATTR                2 (s)
+            234 LOAD_ATTR               18 (discord_link_key)
+            254 LOAD_DEREF               5 (self)
+            256 LOAD_ATTR                2 (s)
+            276 LOAD_ATTR               20 (telemetry_api_url)
+            296 LOAD_FAST                0 (state)
+            298 LOAD_FAST                1 (minutes)
+            300 LOAD_FAST                2 (grid)
+            302 KW_NAMES                 3 (('grid_image_b64',))
+            304 CALL                     5
+            312 POP_TOP
+            314 RETURN_CONST             0 (None)
+
+105     >>  316 RETURN_CONST             0 (None)
+        >>  318 RETURN_CONST             0 (None)
+        >>  320 RETURN_CONST             0 (None)
+        >>  322 PUSH_EXC_INFO
+
+111         324 LOAD_GLOBAL             14 (Exception)
+            334 CHECK_EXC_MATCH
+            336 POP_JUMP_IF_FALSE        5 (to 348)
+            338 POP_TOP
+
+112         340 LOAD_CONST               0 (None)
+            342 STORE_FAST               2 (grid)
+            344 POP_EXCEPT
+            346 JUMP_BACKWARD           89 (to 170)
+
+111     >>  348 RERAISE                  0
+        >>  350 COPY                     3
+            352 POP_EXCEPT
+            354 RERAISE                  1
+ExceptionTable:
+  122 to 168 -> 322 [0]
+  322 to 342 -> 350 [1] lasti
+  348 to 348 -> 350 [1] lasti
+
+Disassembly of <code object <lambda> at 0x7f6aed1a5e40, file "worker.py", line 115>:
+              0 COPY_FREE_VARS           1
+
+115           2 RESUME                   0
+              4 LOAD_DEREF               0 (sm)
+              6 RETURN_VALUE
+
+Disassembly of <code object in_match at 0x7f6aed1c6bf0, file "worker.py", line 119>:
+              0 COPY_FREE_VARS           1
+
+119           2 RESUME                   0
+
+120           4 LOAD_GLOBAL              1 (NULL + isinstance)
+             14 LOAD_DEREF               0 (sm)
+             16 LOAD_GLOBAL              2 (ModeB)
+             26 CALL                     2
+             34 POP_JUMP_IF_FALSE       16 (to 68)
+             36 LOAD_DEREF               0 (sm)
+             38 LOAD_ATTR                5 (NULL|self + match_active)
+             58 CALL                     0
+             66 RETURN_VALUE
+        >>   68 LOAD_DEREF               0 (sm)
+             70 LOAD_ATTR                6 (state)
+             90 LOAD_GLOBAL              8 (State)
+            100 LOAD_ATTR               10 (IN_MATCH)
+            120 IS_OP                    0
+            122 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed17d980, file "worker.py", line 122>:
+              0 COPY_FREE_VARS           1
+
+122           2 RESUME                   0
+              4 LOAD_DEREF               3 (ctrl)
+              6 LOAD_ATTR                1 (NULL|self + look)
+             26 LOAD_FAST                0 (dx)
+             28 LOAD_FAST                1 (dy)
+             30 LOAD_FAST                2 (ms)
+             32 LOAD_CONST               1 (True)
+             34 KW_NAMES                 2 (('force',))
+             36 CALL                     4
+             44 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed17f2d0, file "worker.py", line 123>:
+              0 COPY_FREE_VARS           1
+
+123           2 RESUME                   0
+              4 LOAD_DEREF               1 (bg)
+              6 LOAD_ATTR                1 (NULL|self + post_key)
+             26 LOAD_FAST                0 (k)
+             28 LOAD_CONST               1 (True)
+             30 CALL                     2
+             38 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed17e6a0, file "worker.py", line 123>:
+              0 COPY_FREE_VARS           1
+
+123           2 RESUME                   0
+              4 LOAD_DEREF               1 (bg)
+              6 LOAD_ATTR                1 (NULL|self + post_key)
+             26 LOAD_FAST                0 (k)
+             28 LOAD_CONST               1 (False)
+             30 CALL                     2
+             38 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed17e1f0, file "worker.py", line 129>:
+              0 COPY_FREE_VARS           1
+
+129           2 RESUME                   0
+              4 LOAD_DEREF               0 (ctrl)
+              6 LOAD_ATTR                1 (NULL|self + press)
+             26 LOAD_CONST               1 ('space')
+             28 CALL                     1
+             36 RETURN_VALUE
+
+Disassembly of <code object alert at 0x7f6af1f8ef50, file "worker.py", line 134>:
+              0 COPY_FREE_VARS           1
+
+134           2 RESUME                   0
+
+135           4 LOAD_DEREF               2 (self)
+              6 LOAD_ATTR                0 (tm)
+             26 POP_JUMP_IF_FALSE      117 (to 262)
+             28 LOAD_DEREF               2 (self)
+             30 LOAD_ATTR                2 (s)
+             50 LOAD_ATTR                4 (telemetry_enabled)
+             70 POP_JUMP_IF_FALSE       94 (to 260)
+             72 LOAD_DEREF               2 (self)
+             74 LOAD_ATTR                2 (s)
+             94 LOAD_ATTR                6 (alert_enabled)
+            114 POP_JUMP_IF_FALSE       71 (to 258)
+
+136         116 LOAD_DEREF               2 (self)
+            118 LOAD_ATTR                0 (tm)
+            138 LOAD_ATTR                9 (NULL|self + send_alert)
+            158 LOAD_DEREF               2 (self)
+            160 LOAD_ATTR                2 (s)
+            180 LOAD_ATTR               10 (discord_link_key)
+            200 LOAD_DEREF               2 (self)
+            202 LOAD_ATTR                2 (s)
+            222 LOAD_ATTR               12 (telemetry_api_url)
+            242 LOAD_FAST                0 (code)
+            244 LOAD_FAST                1 (detail)
+            246 CALL                     4
+            254 POP_TOP
+            256 RETURN_CONST             0 (None)
+
+135     >>  258 RETURN_CONST             0 (None)
+        >>  260 RETURN_CONST             0 (None)
+        >>  262 RETURN_CONST             0 (None)
+
+Disassembly of <code object <genexpr> at 0x7f6aed7f7a30, file "worker.py", line 188>:
+188           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+              6 LOAD_FAST                0 (.0)
+        >>    8 FOR_ITER                16 (to 44)
+             12 STORE_FAST               1 (m)
+             14 LOAD_FAST                1 (m)
+             16 LOAD_ATTR                0 (loops)
+             36 YIELD_VALUE              1
+             38 RESUME                   1
+             40 POP_TOP
+             42 JUMP_BACKWARD           18 (to 8)
+        >>   44 END_FOR
+             46 RETURN_CONST             0 (None)
+        >>   48 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             50 RERAISE                  1
+ExceptionTable:
+  4 to 46 -> 48 [0] lasti
+
+Disassembly of <code object <genexpr> at 0x7f6aed7fe560, file "worker.py", line 189>:
+189           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+              6 LOAD_FAST                0 (.0)
+        >>    8 FOR_ITER                26 (to 64)
+             12 STORE_FAST               1 (m)
+             14 LOAD_FAST                1 (m)
+             16 LOAD_ATTR                0 (rewards)
+             36 LOAD_ATTR                2 (count)
+             56 YIELD_VALUE              1
+             58 RESUME                   1
+             60 POP_TOP
+             62 JUMP_BACKWARD           28 (to 8)
+        >>   64 END_FOR
+             66 RETURN_CONST             0 (None)
+        >>   68 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             70 RERAISE                  1
+ExceptionTable:
+  4 to 66 -> 68 [0] lasti
+
+Disassembly of <code object <genexpr> at 0x7f6aed7f6b30, file "worker.py", line 190>:
+190           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+              6 LOAD_FAST                0 (.0)
+        >>    8 FOR_ITER                16 (to 44)
+             12 STORE_FAST               1 (m)
+             14 LOAD_FAST                1 (m)
+             16 LOAD_ATTR                0 (claims)
+             36 YIELD_VALUE              1
+             38 RESUME                   1
+             40 POP_TOP
+             42 JUMP_BACKWARD           18 (to 8)
+        >>   44 END_FOR
+             46 RETURN_CONST             0 (None)
+        >>   48 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             50 RERAISE                  1
+ExceptionTable:
+  4 to 46 -> 48 [0] lasti

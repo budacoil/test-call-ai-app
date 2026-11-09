@@ -1,0 +1,1296 @@
+  0           0 RESUME                   0
+
+  1           2 SETUP_ANNOTATIONS
+
+ 16           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (hashlib)
+             10 STORE_NAME               0 (hashlib)
+
+ 17          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (json)
+             18 STORE_NAME               1 (json)
+
+ 18          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              2 (re)
+             26 STORE_NAME               2 (re)
+
+ 19          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               1 (None)
+             32 IMPORT_NAME              3 (time)
+             34 STORE_NAME               3 (time)
+
+ 20          36 LOAD_CONST               0 (0)
+             38 LOAD_CONST               1 (None)
+             40 IMPORT_NAME              4 (unicodedata)
+             42 STORE_NAME               4 (unicodedata)
+
+ 21          44 LOAD_CONST               0 (0)
+             46 LOAD_CONST               1 (None)
+             48 IMPORT_NAME              5 (urllib.error)
+             50 STORE_NAME               6 (urllib)
+
+ 22          52 LOAD_CONST               0 (0)
+             54 LOAD_CONST               1 (None)
+             56 IMPORT_NAME              7 (urllib.request)
+             58 STORE_NAME               6 (urllib)
+
+ 23          60 LOAD_CONST               0 (0)
+             62 LOAD_CONST               2 (('Callable',))
+             64 IMPORT_NAME              8 (typing)
+             66 IMPORT_FROM              9 (Callable)
+             68 STORE_NAME               9 (Callable)
+             70 POP_TOP
+
+ 25          72 LOAD_CONST               0 (0)
+             74 LOAD_CONST               1 (None)
+             76 IMPORT_NAME             10 (config)
+             78 STORE_NAME              10 (config)
+
+ 26          80 LOAD_CONST               0 (0)
+             82 LOAD_CONST               1 (None)
+             84 IMPORT_NAME             11 (ed25519_verify)
+             86 STORE_NAME              11 (ed25519_verify)
+
+ 27          88 LOAD_CONST               0 (0)
+             90 LOAD_CONST               1 (None)
+             92 IMPORT_NAME             12 (telemetry)
+             94 STORE_NAME              12 (telemetry)
+
+ 28          96 LOAD_CONST               0 (0)
+             98 LOAD_CONST               1 (None)
+            100 IMPORT_NAME             13 (version)
+            102 STORE_NAME              13 (version)
+
+ 30         104 LOAD_CONST               3 ('PKA-')
+            106 STORE_NAME              14 (PREFIX)
+
+ 31         108 PUSH_NULL
+            110 LOAD_NAME                2 (re)
+            112 LOAD_ATTR               30 (compile)
+            132 LOAD_CONST               4 ('^PKA-[A-Z2-7]{5}-[A-Z2-7]{5}-[A-Z2-7]{5}-[A-Z2-7]{5}$')
+            134 CALL                     1
+            142 STORE_NAME              16 (KEY_RE)
+
+ 35         144 LOAD_CONST               5 ('6348eba862d36ed3ed7cf72ebf47dbf5de3d0eeb99a67b92fd9fcf5c89704da8')
+            146 STORE_NAME              17 (SIGN_PUBKEY)
+
+ 36         148 LOAD_CONST               6 (259200)
+            150 STORE_NAME              18 (GRACE_S)
+
+ 37         152 LOAD_CONST               7 (86400)
+            154 STORE_NAME              19 (RECHECK_S)
+
+ 38         156 LOAD_CONST               7 (86400)
+            158 STORE_NAME              20 (TEMP_PASS_S)
+
+ 39         160 LOAD_CONST               8 (604800)
+            162 STORE_NAME              21 (GRACE_MAX_S)
+
+ 41         164 LOAD_CONST               9 (('ok', 'need_key', 'invalid_key', 'used_elsewhere', 'revoked', 'offline', 'server'))
+            166 UNPACK_SEQUENCE          7
+            170 STORE_NAME              22 (OK)
+            172 STORE_NAME              23 (NEED_KEY)
+            174 STORE_NAME              24 (INVALID)
+            176 STORE_NAME              25 (USED)
+            178 STORE_NAME              26 (REVOKED)
+            180 STORE_NAME              27 (OFFLINE)
+            182 STORE_NAME              28 (SERVER)
+
+ 42         184 LOAD_CONST              10 ('busy')
+            186 STORE_NAME              29 (BUSY)
+
+ 45         188 BUILD_LIST               0
+            190 STORE_NAME              30 (_NOTICES)
+            192 LOAD_NAME               31 (list)
+            194 LOAD_NAME               32 (__annotations__)
+            196 LOAD_CONST              11 ('_NOTICES')
+            198 STORE_SUBSCR
+
+ 48         202 LOAD_CONST              12 ('msg')
+            204 LOAD_NAME               33 (str)
+            206 LOAD_CONST              13 ('return')
+            208 LOAD_CONST               1 (None)
+            210 BUILD_TUPLE              4
+            212 LOAD_CONST              14 (<code object note at 0x7f6af1ddbb90, file "licensing.py", line 48>)
+            214 MAKE_FUNCTION            4 (annotations)
+            216 STORE_NAME              34 (note)
+
+ 55         218 LOAD_CONST              13 ('return')
+            220 LOAD_NAME               31 (list)
+            222 BUILD_TUPLE              2
+            224 LOAD_CONST              15 (<code object pop_notices at 0x7f6aed7fdf00, file "licensing.py", line 55>)
+            226 MAKE_FUNCTION            4 (annotations)
+            228 STORE_NAME              35 (pop_notices)
+
+ 61         230 PUSH_NULL
+            232 LOAD_BUILD_CLASS
+            234 LOAD_CONST              16 (<code object Busy at 0x7f6aed1a5620, file "licensing.py", line 61>)
+            236 MAKE_FUNCTION            0
+            238 LOAD_CONST              17 ('Busy')
+            240 LOAD_NAME               36 (Exception)
+            242 CALL                     3
+            250 STORE_NAME              37 (Busy)
+
+ 65         252 LOAD_CONST              18 ('url')
+            254 LOAD_NAME               33 (str)
+            256 LOAD_CONST              19 ('payload')
+            258 LOAD_NAME               38 (dict)
+            260 LOAD_CONST              13 ('return')
+            262 LOAD_NAME               38 (dict)
+            264 BUILD_TUPLE              6
+            266 LOAD_CONST              20 (<code object _default_post at 0x7f6af1f3feb0, file "licensing.py", line 65>)
+            268 MAKE_FUNCTION            4 (annotations)
+            270 STORE_NAME              39 (_default_post)
+
+ 74         272 LOAD_CONST              13 ('return')
+            274 LOAD_NAME               40 (bool)
+            276 BUILD_TUPLE              2
+            278 LOAD_CONST              21 (<code object required at 0x7f6aed7f5130, file "licensing.py", line 74>)
+            280 MAKE_FUNCTION            4 (annotations)
+            282 STORE_NAME              41 (required)
+
+ 79         284 LOAD_CONST              13 ('return')
+            286 LOAD_NAME               33 (str)
+            288 BUILD_TUPLE              2
+            290 LOAD_CONST              22 (<code object clean_key at 0x17a7afe0, file "licensing.py", line 79>)
+            292 MAKE_FUNCTION            4 (annotations)
+            294 STORE_NAME              42 (clean_key)
+
+ 93         296 LOAD_CONST              13 ('return')
+            298 LOAD_NAME               40 (bool)
+            300 BUILD_TUPLE              2
+            302 LOAD_CONST              23 (<code object valid_format at 0x7f6aed7febc0, file "licensing.py", line 93>)
+            304 MAKE_FUNCTION            4 (annotations)
+            306 STORE_NAME              43 (valid_format)
+
+ 97         308 LOAD_CONST              13 ('return')
+            310 LOAD_NAME               33 (str)
+            312 BUILD_TUPLE              2
+            314 LOAD_CONST              24 (<code object machine_id at 0x179cdc40, file "licensing.py", line 97>)
+            316 MAKE_FUNCTION            4 (annotations)
+            318 STORE_NAME              44 (machine_id)
+
+114         320 LOAD_CONST              25 ('key')
+            322 LOAD_NAME               33 (str)
+            324 LOAD_CONST              13 ('return')
+            326 LOAD_NAME               33 (str)
+            328 BUILD_TUPLE              4
+            330 LOAD_CONST              26 (<code object key_id at 0x7f6aed7e57d0, file "licensing.py", line 114>)
+            332 MAKE_FUNCTION            4 (annotations)
+            334 STORE_NAME              45 (key_id)
+
+120         336 LOAD_CONST              25 ('key')
+            338 LOAD_NAME               33 (str)
+            340 LOAD_CONST              27 ('hw')
+            342 LOAD_NAME               33 (str)
+            344 LOAD_CONST              28 ('iat')
+            346 LOAD_NAME               46 (float)
+            348 LOAD_CONST              29 ('sig_hex')
+            350 LOAD_NAME               33 (str)
+            352 LOAD_CONST              30 ('now')
+            354 LOAD_NAME               46 (float)
+            356 LOAD_CONST              31 ('max_age')
+            358 LOAD_NAME               46 (float)
+            360 LOAD_CONST              13 ('return')
+            362 LOAD_NAME               40 (bool)
+            364 BUILD_TUPLE             14
+            366 LOAD_CONST              32 (<code object _proof_ok at 0x17a66320, file "licensing.py", line 120>)
+            368 MAKE_FUNCTION            4 (annotations)
+            370 STORE_NAME              47 (_proof_ok)
+
+133         372 LOAD_CONST              25 ('key')
+            374 LOAD_NAME               33 (str)
+            376 LOAD_CONST              27 ('hw')
+            378 LOAD_NAME               33 (str)
+            380 LOAD_CONST              30 ('now')
+            382 LOAD_NAME               46 (float)
+            384 LOAD_CONST              31 ('max_age')
+            386 LOAD_NAME               46 (float)
+            388 LOAD_CONST              13 ('return')
+            390 LOAD_NAME               40 (bool)
+            392 BUILD_TUPLE             10
+            394 LOAD_CONST              33 (<code object _remembered at 0x7f6af1de2870, file "licensing.py", line 133>)
+            396 MAKE_FUNCTION            4 (annotations)
+            398 STORE_NAME              48 (_remembered)
+
+137         400 LOAD_CONST              25 ('key')
+            402 LOAD_NAME               33 (str)
+            404 LOAD_CONST              30 ('now')
+            406 LOAD_NAME               46 (float)
+            408 LOAD_CONST              13 ('return')
+            410 LOAD_NAME               40 (bool)
+            412 BUILD_TUPLE              6
+            414 LOAD_CONST              34 (<code object _temp_pass_live at 0x7f6af1f3f0f0, file "licensing.py", line 137>)
+            416 MAKE_FUNCTION            4 (annotations)
+            418 STORE_NAME              49 (_temp_pass_live)
+
+141         420 LOAD_NAME                3 (time)
+            422 LOAD_ATTR                6 (time)
+            442 LOAD_CONST              35 ('')
+            444 BUILD_TUPLE              2
+            446 LOAD_CONST              30 ('now')
+            448 LOAD_NAME                9 (Callable)
+            450 BUILD_LIST               0
+            452 LOAD_NAME               46 (float)
+            454 BUILD_TUPLE              2
+            456 BINARY_SUBSCR
+            460 LOAD_CONST              36 ('hwid')
+            462 LOAD_NAME               33 (str)
+            464 LOAD_CONST              13 ('return')
+            466 LOAD_NAME               40 (bool)
+            468 BUILD_TUPLE              6
+            470 LOAD_CONST              37 (<code object is_fresh at 0x7f6aed7a8630, file "licensing.py", line 141>)
+            472 MAKE_FUNCTION            5 (defaults, annotations)
+            474 STORE_NAME              50 (is_fresh)
+
+150         476 LOAD_CONST               1 (None)
+            478 LOAD_NAME                3 (time)
+            480 LOAD_ATTR                6 (time)
+            500 LOAD_CONST              35 ('')
+            502 BUILD_TUPLE              3
+            504 LOAD_CONST              25 ('key')
+            506 LOAD_NAME               33 (str)
+            508 LOAD_CONST              30 ('now')
+            510 LOAD_NAME                9 (Callable)
+            512 BUILD_LIST               0
+            514 LOAD_NAME               46 (float)
+            516 BUILD_TUPLE              2
+            518 BINARY_SUBSCR
+            522 LOAD_CONST              36 ('hwid')
+            524 LOAD_NAME               33 (str)
+            526 LOAD_CONST              13 ('return')
+            528 LOAD_NAME               33 (str)
+            530 BUILD_TUPLE              8
+            532 LOAD_CONST              38 (<code object verify at 0x17a86780, file "licensing.py", line 150>)
+            534 MAKE_FUNCTION            5 (defaults, annotations)
+            536 STORE_NAME              51 (verify)
+
+183         538 LOAD_CONST              25 ('key')
+            540 LOAD_NAME               33 (str)
+            542 LOAD_CONST              27 ('hw')
+            544 LOAD_NAME               33 (str)
+            546 LOAD_CONST              13 ('return')
+            548 LOAD_NAME               33 (str)
+            550 BUILD_TUPLE              6
+            552 LOAD_CONST              39 (<code object _outage at 0x179ce8b0, file "licensing.py", line 183>)
+            554 MAKE_FUNCTION            4 (annotations)
+            556 STORE_NAME              52 (_outage)
+
+203         558 LOAD_CONST              25 ('key')
+            560 LOAD_NAME               33 (str)
+            562 LOAD_CONST              27 ('hw')
+            564 LOAD_NAME               33 (str)
+            566 LOAD_CONST              13 ('return')
+            568 LOAD_NAME               33 (str)
+            570 BUILD_TUPLE              6
+            572 LOAD_CONST              40 (<code object _grace at 0x7f6af1f82cd0, file "licensing.py", line 203>)
+            574 MAKE_FUNCTION            4 (annotations)
+            576 STORE_NAME              53 (_grace)
+            578 RETURN_CONST             1 (None)
+
+Disassembly of <code object note at 0x7f6af1ddbb90, file "licensing.py", line 48>:
+ 48           0 RESUME                   0
+
+ 49           2 NOP
+
+ 50           4 LOAD_GLOBAL              0 (_NOTICES)
+             14 POP_JUMP_IF_FALSE       12 (to 40)
+             16 LOAD_GLOBAL              0 (_NOTICES)
+             26 LOAD_CONST               1 (-1)
+             28 BINARY_SUBSCR
+             32 LOAD_FAST                0 (msg)
+             34 COMPARE_OP              55 (!=)
+             38 POP_JUMP_IF_FALSE       31 (to 102)
+
+ 51     >>   40 LOAD_GLOBAL              0 (_NOTICES)
+             50 LOAD_ATTR                3 (NULL|self + append)
+             70 LOAD_FAST                0 (msg)
+             72 CALL                     1
+             80 POP_TOP
+
+ 52          82 LOAD_GLOBAL              0 (_NOTICES)
+             92 LOAD_CONST               0 (None)
+             94 LOAD_CONST               2 (-20)
+             96 BUILD_SLICE              2
+             98 DELETE_SUBSCR
+            100 RETURN_CONST             0 (None)
+
+ 50     >>  102 RETURN_CONST             0 (None)
+
+Disassembly of <code object pop_notices at 0x7f6aed7fdf00, file "licensing.py", line 55>:
+ 55           0 RESUME                   0
+
+ 56           2 LOAD_GLOBAL              1 (NULL + list)
+             12 LOAD_GLOBAL              2 (_NOTICES)
+             22 CALL                     1
+             30 STORE_FAST               0 (out)
+
+ 57          32 LOAD_GLOBAL              2 (_NOTICES)
+             42 LOAD_ATTR                5 (NULL|self + clear)
+             62 CALL                     0
+             70 POP_TOP
+
+ 58          72 LOAD_FAST                0 (out)
+             74 RETURN_VALUE
+
+Disassembly of <code object Busy at 0x7f6aed1a5620, file "licensing.py", line 61>:
+ 61           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('Busy')
+              8 STORE_NAME               2 (__qualname__)
+
+ 62          10 RETURN_CONST             1 (None)
+
+Disassembly of <code object _default_post at 0x7f6af1f3feb0, file "licensing.py", line 65>:
+ 65           0 RESUME                   0
+
+ 66           2 NOP
+
+ 68           4 LOAD_GLOBAL              1 (NULL + telemetry)
+             14 LOAD_ATTR                2 (_http_post)
+             34 LOAD_FAST                0 (url)
+             36 LOAD_FAST                1 (payload)
+             38 CALL                     2
+             46 STORE_FAST               2 (data)
+
+ 69          48 LOAD_GLOBAL              5 (NULL + isinstance)
+             58 LOAD_FAST                2 (data)
+             60 LOAD_GLOBAL              6 (dict)
+             70 CALL                     2
+             78 POP_JUMP_IF_FALSE        8 (to 96)
+             80 LOAD_CONST               1 ('ok')
+             82 LOAD_FAST                2 (data)
+             84 CONTAINS_OP              1
+             86 POP_JUMP_IF_FALSE       15 (to 118)
+             88 LOAD_CONST               2 ('error')
+             90 LOAD_FAST                2 (data)
+             92 CONTAINS_OP              1
+             94 POP_JUMP_IF_FALSE       11 (to 118)
+
+ 70     >>   96 LOAD_GLOBAL              9 (NULL + Busy)
+            106 LOAD_CONST               3 ('no JSON answer')
+            108 CALL                     1
+            116 RAISE_VARARGS            1
+
+ 71     >>  118 LOAD_FAST                2 (data)
+            120 RETURN_VALUE
+
+Disassembly of <code object required at 0x7f6aed7f5130, file "licensing.py", line 74>:
+ 74           0 RESUME                   0
+
+ 75           2 NOP
+
+ 76           4 LOAD_GLOBAL              1 (NULL + bool)
+             14 LOAD_GLOBAL              3 (NULL + getattr)
+             24 LOAD_GLOBAL              4 (version)
+             34 LOAD_CONST               1 ('LICENSE_REQUIRED')
+             36 LOAD_CONST               2 (False)
+             38 CALL                     3
+             46 CALL                     1
+             54 RETURN_VALUE
+
+Disassembly of <code object clean_key at 0x17a7afe0, file "licensing.py", line 79>:
+              0 MAKE_CELL                2 (raw)
+
+ 79           2 RESUME                   0
+
+ 80           4 NOP
+
+ 81           6 LOAD_GLOBAL              1 (NULL + isinstance)
+             16 LOAD_FAST                0 (key)
+             18 LOAD_GLOBAL              2 (str)
+             28 CALL                     2
+             36 POP_JUMP_IF_TRUE         1 (to 40)
+
+ 82          38 RETURN_CONST             1 ('')
+
+ 83     >>   40 LOAD_GLOBAL              5 (NULL + unicodedata)
+             50 LOAD_ATTR                6 (normalize)
+             70 LOAD_CONST               2 ('NFKC')
+             72 LOAD_FAST                0 (key)
+             74 CALL                     2
+             82 STORE_FAST               1 (s)
+
+ 84          84 LOAD_GLOBAL              9 (NULL + re)
+             94 LOAD_ATTR               10 (sub)
+            114 LOAD_CONST               3 ('[‐-―−ー]')
+            116 LOAD_CONST               4 ('-')
+            118 LOAD_FAST                1 (s)
+            120 CALL                     3
+            128 STORE_FAST               1 (s)
+
+ 85         130 LOAD_CONST               1 ('')
+            132 LOAD_ATTR               13 (NULL|self + join)
+            152 LOAD_FAST                1 (s)
+            154 LOAD_ATTR               15 (NULL|self + split)
+            174 CALL                     0
+            182 CALL                     1
+            190 LOAD_ATTR               17 (NULL|self + strip)
+            210 LOAD_CONST               5 ('"\'`“”‘’')
+            212 CALL                     1
+            220 LOAD_ATTR               19 (NULL|self + upper)
+            240 CALL                     0
+            248 STORE_FAST               1 (s)
+
+ 86         250 LOAD_FAST                1 (s)
+            252 LOAD_ATTR               21 (NULL|self + replace)
+            272 LOAD_CONST               4 ('-')
+            274 LOAD_CONST               1 ('')
+            276 CALL                     2
+            284 STORE_DEREF              2 (raw)
+
+ 87         286 LOAD_GLOBAL              9 (NULL + re)
+            296 LOAD_ATTR               22 (fullmatch)
+            316 LOAD_CONST               6 ('(PKA)?[A-Z2-7]{20}')
+            318 LOAD_DEREF               2 (raw)
+            320 CALL                     2
+            328 POP_JUMP_IF_FALSE       82 (to 494)
+
+ 88         330 LOAD_DEREF               2 (raw)
+            332 LOAD_ATTR               25 (NULL|self + startswith)
+            352 LOAD_CONST               7 ('PKA')
+            354 CALL                     1
+            362 POP_JUMP_IF_FALSE       19 (to 402)
+            364 LOAD_GLOBAL             27 (NULL + len)
+            374 LOAD_DEREF               2 (raw)
+            376 CALL                     1
+            384 LOAD_CONST               8 (23)
+            386 COMPARE_OP              40 (==)
+            390 POP_JUMP_IF_FALSE        5 (to 402)
+            392 LOAD_DEREF               2 (raw)
+            394 LOAD_CONST               9 (3)
+            396 LOAD_CONST               0 (None)
+            398 BINARY_SLICE
+            400 JUMP_FORWARD             1 (to 404)
+        >>  402 LOAD_DEREF               2 (raw)
+        >>  404 STORE_DEREF              2 (raw)
+
+ 89         406 LOAD_GLOBAL             28 (PREFIX)
+            416 LOAD_CONST               4 ('-')
+            418 LOAD_ATTR               13 (NULL|self + join)
+            438 LOAD_CLOSURE             2 (raw)
+            440 BUILD_TUPLE              1
+            442 LOAD_CONST              10 (<code object <genexpr> at 0x7f6aed17cf30, file "licensing.py", line 89>)
+            444 MAKE_FUNCTION            8 (closure)
+            446 LOAD_GLOBAL             31 (NULL + range)
+            456 LOAD_CONST              11 (0)
+            458 LOAD_CONST              12 (20)
+            460 LOAD_CONST              13 (5)
+            462 CALL                     3
+            470 GET_ITER
+            472 CALL                     0
+            480 CALL                     1
+            488 BINARY_OP                0 (+)
+            492 RETURN_VALUE
+
+ 90     >>  494 LOAD_FAST                1 (s)
+            496 RETURN_VALUE
+
+Disassembly of <code object <genexpr> at 0x7f6aed17cf30, file "licensing.py", line 89>:
+              0 COPY_FREE_VARS           1
+
+ 89           2 RETURN_GENERATOR
+              4 POP_TOP
+              6 RESUME                   0
+              8 LOAD_FAST                0 (.0)
+        >>   10 FOR_ITER                12 (to 38)
+             14 STORE_FAST               1 (i)
+             16 LOAD_DEREF               2 (raw)
+             18 LOAD_FAST                1 (i)
+             20 LOAD_FAST                1 (i)
+             22 LOAD_CONST               0 (5)
+             24 BINARY_OP                0 (+)
+             28 BINARY_SLICE
+             30 YIELD_VALUE              1
+             32 RESUME                   1
+             34 POP_TOP
+             36 JUMP_BACKWARD           14 (to 10)
+        >>   38 END_FOR
+             40 RETURN_CONST             1 (None)
+        >>   42 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             44 RERAISE                  1
+ExceptionTable:
+  6 to 40 -> 42 [0] lasti
+
+Disassembly of <code object valid_format at 0x7f6aed7febc0, file "licensing.py", line 93>:
+ 93           0 RESUME                   0
+
+ 94           2 LOAD_GLOBAL              1 (NULL + bool)
+             12 LOAD_GLOBAL              2 (KEY_RE)
+             22 LOAD_ATTR                5 (NULL|self + match)
+             42 LOAD_FAST                0 (key)
+             44 COPY                     1
+             46 POP_JUMP_IF_TRUE         2 (to 52)
+             48 POP_TOP
+             50 LOAD_CONST               1 ('')
+        >>   52 CALL                     1
+             60 CALL                     1
+             68 RETURN_VALUE
+
+Disassembly of <code object machine_id at 0x179cdc40, file "licensing.py", line 97>:
+ 97           0 RESUME                   0
+
+ 98           2 NOP
+
+ 99           4 LOAD_CONST               1 ('')
+              6 STORE_FAST               0 (raw)
+
+100           8 NOP
+
+101          10 LOAD_CONST               2 (0)
+             12 LOAD_CONST               0 (None)
+             14 IMPORT_NAME              0 (winreg)
+             16 STORE_FAST               1 (winreg)
+
+103          18 LOAD_FAST                1 (winreg)
+             20 LOAD_ATTR                3 (NULL|self + OpenKey)
+             40 LOAD_FAST                1 (winreg)
+             42 LOAD_ATTR                4 (HKEY_LOCAL_MACHINE)
+             62 LOAD_CONST               3 ('SOFTWARE\\Microsoft\\Cryptography')
+             64 LOAD_CONST               2 (0)
+             66 LOAD_FAST                1 (winreg)
+             68 LOAD_ATTR                6 (KEY_READ)
+             88 LOAD_GLOBAL              9 (NULL + getattr)
+             98 LOAD_FAST                1 (winreg)
+            100 LOAD_CONST               4 ('KEY_WOW64_64KEY')
+            102 LOAD_CONST               2 (0)
+            104 CALL                     3
+            112 BINARY_OP                7 (|)
+            116 CALL                     4
+            124 BEFORE_WITH
+            126 STORE_FAST               2 (k)
+
+104         128 LOAD_GLOBAL             11 (NULL + str)
+            138 LOAD_FAST                1 (winreg)
+            140 LOAD_ATTR               13 (NULL|self + QueryValueEx)
+            160 LOAD_FAST                2 (k)
+            162 LOAD_CONST               5 ('MachineGuid')
+            164 CALL                     2
+            172 LOAD_CONST               2 (0)
+            174 BINARY_SUBSCR
+            178 CALL                     1
+            186 STORE_FAST               0 (raw)
+
+103         188 LOAD_CONST               0 (None)
+            190 LOAD_CONST               0 (None)
+            192 LOAD_CONST               0 (None)
+            194 CALL                     2
+            202 POP_TOP
+
+107     >>  204 LOAD_FAST                0 (raw)
+            206 POP_JUMP_IF_TRUE        23 (to 254)
+
+108         208 LOAD_CONST               2 (0)
+            210 LOAD_CONST               0 (None)
+            212 IMPORT_NAME              8 (uuid)
+            214 STORE_FAST               3 (uuid)
+
+110         216 LOAD_CONST               6 ('mac:')
+            218 LOAD_FAST                3 (uuid)
+            220 LOAD_ATTR               19 (NULL|self + getnode)
+            240 CALL                     0
+            248 FORMAT_VALUE             0
+            250 BUILD_STRING             2
+            252 STORE_FAST               0 (raw)
+
+111     >>  254 LOAD_GLOBAL             21 (NULL + hashlib)
+            264 LOAD_ATTR               22 (sha256)
+            284 LOAD_CONST               7 ('pka-hw:')
+            286 LOAD_FAST                0 (raw)
+            288 BINARY_OP                0 (+)
+            292 LOAD_ATTR               25 (NULL|self + encode)
+            312 LOAD_CONST               8 ('utf-8')
+            314 CALL                     1
+            322 CALL                     1
+            330 LOAD_ATTR               27 (NULL|self + hexdigest)
+            350 CALL                     0
+            358 LOAD_CONST               0 (None)
+            360 LOAD_CONST               9 (24)
+            362 BINARY_SLICE
+            364 RETURN_VALUE
+
+103     >>  366 PUSH_EXC_INFO
+            368 WITH_EXCEPT_START
+            370 POP_JUMP_IF_TRUE         1 (to 374)
+            372 RERAISE                  2
+        >>  374 POP_TOP
+            376 POP_EXCEPT
+            378 POP_TOP
+            380 POP_TOP
+            382 JUMP_BACKWARD           90 (to 204)
+        >>  384 COPY                     3
+            386 POP_EXCEPT
+            388 RERAISE                  1
+        >>  390 PUSH_EXC_INFO
+
+105         392 LOAD_GLOBAL             14 (Exception)
+            402 CHECK_EXC_MATCH
+            404 POP_JUMP_IF_FALSE        3 (to 412)
+            406 POP_TOP
+
+106         408 POP_EXCEPT
+            410 JUMP_BACKWARD          104 (to 204)
+
+105     >>  412 RERAISE                  0
+        >>  414 COPY                     3
+            416 POP_EXCEPT
+            418 RERAISE                  1
+ExceptionTable:
+  10 to 124 -> 390 [0]
+  126 to 186 -> 366 [1] lasti
+  188 to 202 -> 390 [0]
+  366 to 374 -> 384 [3] lasti
+  376 to 388 -> 390 [0]
+  390 to 406 -> 414 [1] lasti
+  412 to 412 -> 414 [1] lasti
+
+Disassembly of <code object key_id at 0x7f6aed7e57d0, file "licensing.py", line 114>:
+114           0 RESUME                   0
+
+115           2 NOP
+
+116           4 LOAD_GLOBAL              1 (NULL + clean_key)
+             14 LOAD_FAST                0 (key)
+             16 CALL                     1
+             24 STORE_FAST               1 (k)
+
+117          26 LOAD_GLOBAL              3 (NULL + valid_format)
+             36 LOAD_FAST                1 (k)
+             38 CALL                     1
+             46 POP_JUMP_IF_FALSE       21 (to 90)
+             48 LOAD_FAST                1 (k)
+             50 LOAD_CONST               1 (4)
+             52 LOAD_CONST               2 (15)
+             54 BINARY_SLICE
+             56 LOAD_ATTR                5 (NULL|self + replace)
+             76 LOAD_CONST               3 ('-')
+             78 LOAD_CONST               4 ('')
+             80 CALL                     2
+             88 RETURN_VALUE
+        >>   90 LOAD_CONST               4 ('')
+             92 RETURN_VALUE
+
+Disassembly of <code object _proof_ok at 0x17a66320, file "licensing.py", line 120>:
+120           0 RESUME                   0
+
+121           2 NOP
+
+122           4 NOP
+
+123           6 LOAD_CONST               1 (-300)
+              8 LOAD_FAST                4 (now)
+             10 LOAD_GLOBAL              1 (NULL + float)
+             20 LOAD_FAST                2 (iat)
+             22 CALL                     1
+             30 BINARY_OP               10 (-)
+             34 SWAP                     2
+             36 COPY                     2
+             38 COMPARE_OP              26 (<=)
+             42 POP_JUMP_IF_FALSE        5 (to 54)
+             44 LOAD_FAST                5 (max_age)
+             46 COMPARE_OP               2 (<)
+             50 POP_JUMP_IF_TRUE         3 (to 58)
+
+124          52 RETURN_CONST             2 (False)
+
+123     >>   54 POP_TOP
+
+124          56 RETURN_CONST             2 (False)
+
+125     >>   58 LOAD_GLOBAL              2 (SIGN_PUBKEY)
+             68 POP_JUMP_IF_TRUE         1 (to 72)
+
+126          70 RETURN_CONST             3 (True)
+
+127     >>   72 LOAD_CONST               4 ('pka-token:')
+             74 LOAD_GLOBAL              5 (NULL + key_id)
+             84 LOAD_FAST                0 (key)
+             86 CALL                     1
+             94 FORMAT_VALUE             0
+             96 LOAD_CONST               5 (':')
+             98 LOAD_FAST                1 (hw)
+            100 FORMAT_VALUE             0
+            102 LOAD_CONST               5 (':')
+            104 LOAD_GLOBAL              7 (NULL + int)
+            114 LOAD_FAST                2 (iat)
+            116 CALL                     1
+            124 FORMAT_VALUE             0
+            126 BUILD_STRING             6
+            128 LOAD_ATTR                9 (NULL|self + encode)
+            148 LOAD_CONST               6 ('utf-8')
+            150 CALL                     1
+            158 STORE_FAST               6 (msg)
+
+128         160 LOAD_GLOBAL             11 (NULL + bool)
+            170 LOAD_GLOBAL              5 (NULL + key_id)
+            180 LOAD_FAST                0 (key)
+            182 CALL                     1
+            190 CALL                     1
+            198 COPY                     1
+            200 POP_JUMP_IF_FALSE       69 (to 340)
+            202 POP_TOP
+            204 LOAD_GLOBAL             13 (NULL + ed25519_verify)
+            214 LOAD_ATTR               14 (verify)
+            234 LOAD_GLOBAL             16 (bytes)
+            244 LOAD_ATTR               19 (NULL|self + fromhex)
+            264 LOAD_GLOBAL              2 (SIGN_PUBKEY)
+            274 CALL                     1
+            282 LOAD_FAST                6 (msg)
+            284 LOAD_GLOBAL             16 (bytes)
+            294 LOAD_ATTR               19 (NULL|self + fromhex)
+            314 LOAD_FAST                3 (sig_hex)
+            316 COPY                     1
+            318 POP_JUMP_IF_TRUE         2 (to 324)
+            320 POP_TOP
+            322 LOAD_CONST               7 ('')
+        >>  324 CALL                     1
+            332 CALL                     3
+        >>  340 RETURN_VALUE
+        >>  342 PUSH_EXC_INFO
+
+129         344 LOAD_GLOBAL             20 (Exception)
+            354 CHECK_EXC_MATCH
+            356 POP_JUMP_IF_FALSE        3 (to 364)
+            358 POP_TOP
+
+130         360 POP_EXCEPT
+            362 RETURN_CONST             2 (False)
+
+129     >>  364 RERAISE                  0
+        >>  366 COPY                     3
+            368 POP_EXCEPT
+            370 RERAISE                  1
+ExceptionTable:
+  6 to 50 -> 342 [0]
+  54 to 54 -> 342 [0]
+  58 to 68 -> 342 [0]
+  72 to 338 -> 342 [0]
+  342 to 358 -> 366 [1] lasti
+  364 to 364 -> 366 [1] lasti
+
+Disassembly of <code object _remembered at 0x7f6af1de2870, file "licensing.py", line 133>:
+133           0 RESUME                   0
+
+134           2 LOAD_GLOBAL              1 (NULL + bool)
+             12 LOAD_FAST                1 (key)
+             14 CALL                     1
+             22 COPY                     1
+             24 POP_JUMP_IF_FALSE       71 (to 168)
+             26 POP_TOP
+             28 LOAD_GLOBAL              3 (NULL + clean_key)
+             38 LOAD_FAST                0 (s)
+             40 LOAD_ATTR                4 (license_key)
+             60 CALL                     1
+             68 LOAD_GLOBAL              3 (NULL + clean_key)
+             78 LOAD_FAST                1 (key)
+             80 CALL                     1
+             88 COMPARE_OP              40 (==)
+             92 COPY                     1
+             94 POP_JUMP_IF_FALSE       36 (to 168)
+             96 POP_TOP
+             98 LOAD_GLOBAL              7 (NULL + _proof_ok)
+            108 LOAD_FAST                1 (key)
+            110 LOAD_FAST                2 (hw)
+            112 LOAD_FAST                0 (s)
+            114 LOAD_ATTR                8 (license_ok_at)
+            134 LOAD_FAST                0 (s)
+            136 LOAD_ATTR               10 (license_sig)
+            156 LOAD_FAST                3 (now)
+            158 LOAD_FAST                4 (max_age)
+            160 CALL                     6
+        >>  168 RETURN_VALUE
+
+Disassembly of <code object _temp_pass_live at 0x7f6af1f3f0f0, file "licensing.py", line 137>:
+137           0 RESUME                   0
+
+138           2 LOAD_GLOBAL              1 (NULL + bool)
+             12 LOAD_FAST                1 (key)
+             14 CALL                     1
+             22 COPY                     1
+             24 POP_JUMP_IF_FALSE       50 (to 126)
+             26 POP_TOP
+             28 LOAD_GLOBAL              3 (NULL + clean_key)
+             38 LOAD_FAST                0 (s)
+             40 LOAD_ATTR                4 (license_key)
+             60 CALL                     1
+             68 LOAD_GLOBAL              3 (NULL + clean_key)
+             78 LOAD_FAST                1 (key)
+             80 CALL                     1
+             88 COMPARE_OP              40 (==)
+             92 COPY                     1
+             94 POP_JUMP_IF_FALSE       15 (to 126)
+             96 POP_TOP
+             98 LOAD_FAST                2 (now)
+            100 LOAD_FAST                0 (s)
+            102 LOAD_ATTR                6 (license_grace_until)
+            122 COMPARE_OP               2 (<)
+        >>  126 RETURN_VALUE
+
+Disassembly of <code object is_fresh at 0x7f6aed7a8630, file "licensing.py", line 141>:
+141           0 RESUME                   0
+
+142           2 NOP
+
+143           4 NOP
+
+144           6 PUSH_NULL
+              8 LOAD_FAST                1 (now)
+             10 CALL                     0
+             18 STORE_FAST               3 (t)
+
+145          20 LOAD_GLOBAL              1 (NULL + _temp_pass_live)
+             30 LOAD_FAST                0 (s)
+             32 LOAD_FAST                0 (s)
+             34 LOAD_ATTR                2 (license_key)
+             54 LOAD_FAST                3 (t)
+             56 CALL                     3
+             64 COPY                     1
+             66 POP_JUMP_IF_TRUE        41 (to 150)
+             68 POP_TOP
+             70 LOAD_GLOBAL              5 (NULL + _remembered)
+             80 LOAD_FAST                0 (s)
+             82 LOAD_FAST                0 (s)
+             84 LOAD_ATTR                2 (license_key)
+            104 LOAD_FAST                2 (hwid)
+            106 COPY                     1
+            108 POP_JUMP_IF_TRUE        10 (to 130)
+            110 POP_TOP
+            112 LOAD_GLOBAL              7 (NULL + machine_id)
+            122 CALL                     0
+        >>  130 LOAD_FAST                3 (t)
+            132 LOAD_GLOBAL              8 (RECHECK_S)
+            142 CALL                     5
+        >>  150 RETURN_VALUE
+        >>  152 PUSH_EXC_INFO
+
+146         154 LOAD_GLOBAL             10 (Exception)
+            164 CHECK_EXC_MATCH
+            166 POP_JUMP_IF_FALSE        3 (to 174)
+            168 POP_TOP
+
+147         170 POP_EXCEPT
+            172 RETURN_CONST             1 (False)
+
+146     >>  174 RERAISE                  0
+        >>  176 COPY                     3
+            178 POP_EXCEPT
+            180 RERAISE                  1
+ExceptionTable:
+  6 to 148 -> 152 [0]
+  152 to 168 -> 176 [1] lasti
+  174 to 174 -> 176 [1] lasti
+
+Disassembly of <code object verify at 0x17a86780, file "licensing.py", line 150>:
+150           0 RESUME                   0
+
+151           2 NOP
+
+152           4 LOAD_FAST                2 (post)
+              6 COPY                     1
+              8 POP_JUMP_IF_TRUE         6 (to 22)
+             10 POP_TOP
+             12 LOAD_GLOBAL              0 (_default_post)
+        >>   22 STORE_FAST               2 (post)
+
+153          24 LOAD_GLOBAL              3 (NULL + clean_key)
+             34 LOAD_FAST                1 (key)
+             36 CALL                     1
+             44 STORE_FAST               1 (key)
+
+154          46 LOAD_FAST                4 (hwid)
+             48 COPY                     1
+             50 POP_JUMP_IF_TRUE        10 (to 72)
+             52 POP_TOP
+             54 LOAD_GLOBAL              5 (NULL + machine_id)
+             64 CALL                     0
+        >>   72 STORE_FAST               5 (hw)
+
+155          74 LOAD_FAST                1 (key)
+             76 POP_JUMP_IF_FALSE       17 (to 112)
+             78 LOAD_GLOBAL              7 (NULL + valid_format)
+             88 LOAD_FAST                1 (key)
+             90 CALL                     1
+             98 POP_JUMP_IF_TRUE         6 (to 112)
+
+156         100 LOAD_GLOBAL              8 (INVALID)
+            110 RETURN_VALUE
+
+157     >>  112 LOAD_GLOBAL             11 (NULL + _temp_pass_live)
+            122 LOAD_FAST                0 (s)
+            124 LOAD_FAST                1 (key)
+            126 LOAD_GLOBAL             13 (NULL + float)
+            136 PUSH_NULL
+            138 LOAD_FAST                3 (now)
+            140 CALL                     0
+            148 CALL                     1
+            156 CALL                     3
+            164 POP_JUMP_IF_FALSE        6 (to 178)
+
+158         166 LOAD_GLOBAL             14 (OK)
+            176 RETURN_VALUE
+
+159     >>  178 NOP
+
+160         180 LOAD_GLOBAL             16 (config)
+            190 LOAD_ATTR               18 (DEFAULT_TELEMETRY_URL)
+            210 STORE_FAST               6 (url)
+
+161         212 LOAD_GLOBAL             21 (NULL + telemetry)
+            222 LOAD_ATTR               22 (valid_endpoint)
+            242 LOAD_FAST                6 (url)
+            244 CALL                     1
+            252 POP_JUMP_IF_TRUE        11 (to 276)
+
+162         254 LOAD_GLOBAL             25 (NULL + OSError)
+            264 LOAD_CONST               1 ('no server address')
+            266 CALL                     1
+            274 RAISE_VARARGS            1
+
+163     >>  276 PUSH_NULL
+            278 LOAD_FAST                2 (post)
+            280 LOAD_GLOBAL             21 (NULL + telemetry)
+            290 LOAD_ATTR               26 (api_url)
+            310 LOAD_FAST                6 (url)
+            312 LOAD_CONST               2 ('/api/license')
+            314 CALL                     2
+            322 LOAD_FAST                1 (key)
+            324 LOAD_FAST                5 (hw)
+            326 LOAD_GLOBAL             29 (NULL + getattr)
+            336 LOAD_GLOBAL             30 (version)
+            346 LOAD_CONST               3 ('__version__')
+            348 LOAD_CONST               4 ('')
+            350 CALL                     3
+            358 LOAD_CONST               5 (('key', 'hwid', 'v'))
+            360 BUILD_CONST_KEY_MAP      3
+            362 CALL                     2
+            370 STORE_FAST               7 (ans)
+
+166         372 LOAD_FAST                7 (ans)
+            374 LOAD_ATTR               37 (NULL|self + get)
+            394 LOAD_CONST               6 ('ok')
+            396 CALL                     1
+            404 LOAD_CONST               7 (True)
+            406 IS_OP                    0
+            408 POP_JUMP_IF_FALSE      179 (to 768)
+
+167         410 LOAD_FAST                7 (ans)
+            412 LOAD_ATTR               37 (NULL|self + get)
+            432 LOAD_CONST               8 ('required')
+            434 CALL                     1
+            442 LOAD_CONST               9 (False)
+            444 IS_OP                    0
+            446 POP_JUMP_IF_FALSE        6 (to 460)
+
+168         448 LOAD_GLOBAL             14 (OK)
+            458 RETURN_VALUE
+
+169     >>  460 LOAD_GLOBAL             39 (NULL + str)
+            470 LOAD_FAST                7 (ans)
+            472 LOAD_ATTR               37 (NULL|self + get)
+            492 LOAD_CONST              10 ('sig')
+            494 LOAD_CONST               4 ('')
+            496 CALL                     2
+            504 CALL                     1
+            512 LOAD_FAST                7 (ans)
+            514 LOAD_ATTR               37 (NULL|self + get)
+            534 LOAD_CONST              11 ('iat')
+            536 LOAD_CONST              12 (0)
+            538 CALL                     2
+            546 STORE_FAST              10 (iat)
+            548 STORE_FAST               9 (sig)
+
+170         550 LOAD_GLOBAL             41 (NULL + _proof_ok)
+            560 LOAD_FAST                1 (key)
+            562 LOAD_FAST                5 (hw)
+            564 LOAD_FAST               10 (iat)
+            566 LOAD_FAST                9 (sig)
+            568 PUSH_NULL
+            570 LOAD_FAST                3 (now)
+            572 CALL                     0
+            580 LOAD_GLOBAL             42 (RECHECK_S)
+            590 CALL                     6
+            598 POP_JUMP_IF_TRUE        24 (to 648)
+
+171         600 LOAD_GLOBAL             35 (NULL + _outage)
+            610 LOAD_FAST                0 (s)
+            612 LOAD_FAST                1 (key)
+            614 LOAD_FAST                5 (hw)
+            616 LOAD_FAST                3 (now)
+            618 LOAD_GLOBAL             45 (NULL + Busy)
+            628 LOAD_CONST              13 ('unsigned answer')
+            630 CALL                     1
+            638 CALL                     5
+            646 RETURN_VALUE
+
+172     >>  648 LOAD_FAST                1 (key)
+            650 LOAD_GLOBAL             13 (NULL + float)
+            660 LOAD_FAST               10 (iat)
+            662 CALL                     1
+            670 LOAD_FAST                5 (hw)
+            672 LOAD_FAST                9 (sig)
+            674 BUILD_TUPLE              4
+            676 UNPACK_SEQUENCE          4
+            680 LOAD_FAST                0 (s)
+            682 STORE_ATTR              23 (license_key)
+            692 LOAD_FAST                0 (s)
+            694 STORE_ATTR              24 (license_ok_at)
+            704 LOAD_FAST                0 (s)
+            706 STORE_ATTR              25 (license_ok_hwid)
+            716 LOAD_FAST                0 (s)
+            718 STORE_ATTR              26 (license_sig)
+
+173         728 LOAD_CONST              14 (0.0)
+            730 COPY                     1
+            732 LOAD_FAST                0 (s)
+            734 STORE_ATTR              27 (license_grace_until)
+            744 LOAD_FAST                0 (s)
+            746 STORE_ATTR              28 (license_grace_since)
+
+174         756 LOAD_GLOBAL             14 (OK)
+            766 RETURN_VALUE
+
+175     >>  768 LOAD_GLOBAL             39 (NULL + str)
+            778 LOAD_FAST                7 (ans)
+            780 LOAD_ATTR               37 (NULL|self + get)
+            800 LOAD_CONST              15 ('error')
+            802 LOAD_CONST               4 ('')
+            804 CALL                     2
+            812 CALL                     1
+            820 STORE_FAST              11 (err)
+
+176         822 LOAD_FAST               11 (err)
+            824 LOAD_GLOBAL             58 (NEED_KEY)
+            834 LOAD_GLOBAL              8 (INVALID)
+            844 LOAD_GLOBAL             60 (USED)
+            854 LOAD_GLOBAL             62 (REVOKED)
+            864 BUILD_TUPLE              4
+            866 CONTAINS_OP              0
+            868 POP_JUMP_IF_FALSE       36 (to 942)
+
+177         870 LOAD_FAST               11 (err)
+            872 LOAD_GLOBAL             60 (USED)
+            882 LOAD_GLOBAL             62 (REVOKED)
+            892 LOAD_GLOBAL              8 (INVALID)
+            902 BUILD_TUPLE              3
+            904 CONTAINS_OP              0
+            906 POP_JUMP_IF_FALSE       15 (to 938)
+
+178         908 LOAD_CONST              16 ((0.0, ''))
+            910 UNPACK_SEQUENCE          2
+            914 LOAD_FAST                0 (s)
+            916 STORE_ATTR              24 (license_ok_at)
+            926 LOAD_FAST                0 (s)
+            928 STORE_ATTR              26 (license_sig)
+
+179     >>  938 LOAD_FAST               11 (err)
+            940 RETURN_VALUE
+
+180     >>  942 LOAD_GLOBAL             35 (NULL + _outage)
+            952 LOAD_FAST                0 (s)
+            954 LOAD_FAST                1 (key)
+            956 LOAD_FAST                5 (hw)
+            958 LOAD_FAST                3 (now)
+            960 LOAD_GLOBAL             45 (NULL + Busy)
+            970 LOAD_FAST               11 (err)
+            972 COPY                     1
+            974 POP_JUMP_IF_TRUE         2 (to 980)
+            976 POP_TOP
+            978 LOAD_CONST              17 ('unknown answer')
+        >>  980 CALL                     1
+            988 CALL                     5
+            996 RETURN_VALUE
+        >>  998 PUSH_EXC_INFO
+
+164        1000 LOAD_GLOBAL             32 (Exception)
+           1010 CHECK_EXC_MATCH
+           1012 POP_JUMP_IF_FALSE       25 (to 1064)
+           1014 STORE_FAST               8 (e)
+
+165        1016 LOAD_GLOBAL             35 (NULL + _outage)
+           1026 LOAD_FAST                0 (s)
+           1028 LOAD_FAST                1 (key)
+           1030 LOAD_FAST                5 (hw)
+           1032 LOAD_FAST                3 (now)
+           1034 LOAD_FAST                8 (e)
+           1036 CALL                     5
+           1044 SWAP                     2
+           1046 POP_EXCEPT
+           1048 LOAD_CONST               0 (None)
+           1050 STORE_FAST               8 (e)
+           1052 DELETE_FAST              8 (e)
+           1054 RETURN_VALUE
+        >> 1056 LOAD_CONST               0 (None)
+           1058 STORE_FAST               8 (e)
+           1060 DELETE_FAST              8 (e)
+           1062 RERAISE                  1
+
+164     >> 1064 RERAISE                  0
+        >> 1066 COPY                     3
+           1068 POP_EXCEPT
+           1070 RERAISE                  1
+ExceptionTable:
+  180 to 370 -> 998 [0]
+  998 to 1014 -> 1066 [1] lasti
+  1016 to 1042 -> 1056 [1] lasti
+  1044 to 1044 -> 1066 [1] lasti
+  1056 to 1064 -> 1066 [1] lasti
+
+Disassembly of <code object _outage at 0x179ce8b0, file "licensing.py", line 183>:
+183           0 RESUME                   0
+
+184           2 NOP
+
+188           4 NOP
+
+189           6 LOAD_GLOBAL              1 (NULL + float)
+             16 PUSH_NULL
+             18 LOAD_FAST                3 (now)
+             20 CALL                     0
+             28 CALL                     1
+             36 STORE_FAST               5 (t)
+
+190          38 LOAD_GLOBAL              3 (NULL + note)
+             48 LOAD_CONST               1 ('[license] server busy (429), running in offline grace mode')
+             50 CALL                     1
+             58 POP_TOP
+
+191          60 LOAD_GLOBAL              5 (NULL + _remembered)
+             70 LOAD_FAST                0 (s)
+             72 LOAD_FAST                1 (key)
+             74 LOAD_FAST                2 (hw)
+             76 LOAD_FAST                5 (t)
+             78 LOAD_GLOBAL              1 (NULL + float)
+             88 LOAD_CONST               2 ('inf')
+             90 CALL                     1
+             98 CALL                     5
+            106 POP_JUMP_IF_FALSE        6 (to 120)
+
+192         108 LOAD_GLOBAL              6 (OK)
+            118 RETURN_VALUE
+
+193     >>  120 LOAD_FAST                1 (key)
+            122 POP_JUMP_IF_FALSE       96 (to 316)
+            124 LOAD_GLOBAL              9 (NULL + valid_format)
+            134 LOAD_FAST                1 (key)
+            136 CALL                     1
+            144 POP_JUMP_IF_FALSE       85 (to 316)
+
+194         146 LOAD_CONST               3 (0)
+            148 LOAD_FAST                0 (s)
+            150 LOAD_ATTR               10 (license_grace_since)
+            170 SWAP                     2
+            172 COPY                     2
+            174 COMPARE_OP               2 (<)
+            178 POP_JUMP_IF_FALSE        5 (to 190)
+            180 LOAD_FAST                5 (t)
+            182 COMPARE_OP              26 (<=)
+            186 POP_JUMP_IF_FALSE       15 (to 218)
+            188 JUMP_FORWARD             2 (to 194)
+        >>  190 POP_TOP
+            192 JUMP_FORWARD            12 (to 218)
+        >>  194 LOAD_FAST                0 (s)
+            196 LOAD_ATTR               10 (license_grace_since)
+            216 JUMP_FORWARD             1 (to 220)
+        >>  218 LOAD_FAST                5 (t)
+        >>  220 STORE_FAST               6 (since)
+
+195         222 LOAD_FAST                5 (t)
+            224 LOAD_FAST                6 (since)
+            226 BINARY_OP               10 (-)
+            230 LOAD_GLOBAL             12 (GRACE_MAX_S)
+            240 COMPARE_OP              26 (<=)
+            244 POP_JUMP_IF_FALSE       35 (to 316)
+
+196         246 LOAD_FAST                1 (key)
+            248 LOAD_FAST                5 (t)
+            250 LOAD_GLOBAL             14 (TEMP_PASS_S)
+            260 BINARY_OP                0 (+)
+            264 LOAD_FAST                6 (since)
+            266 SWAP                     3
+            268 LOAD_FAST                0 (s)
+            270 STORE_ATTR               8 (license_key)
+            280 LOAD_FAST                0 (s)
+            282 STORE_ATTR               9 (license_grace_until)
+            292 LOAD_FAST                0 (s)
+            294 STORE_ATTR               5 (license_grace_since)
+
+197         304 LOAD_GLOBAL              6 (OK)
+            314 RETURN_VALUE
+
+200     >>  316 LOAD_GLOBAL             23 (NULL + isinstance)
+            326 LOAD_FAST                4 (why)
+            328 LOAD_GLOBAL             24 (Busy)
+            338 CALL                     2
+            346 POP_JUMP_IF_FALSE        6 (to 360)
+            348 LOAD_GLOBAL             26 (BUSY)
+            358 RETURN_VALUE
+        >>  360 LOAD_GLOBAL             28 (OFFLINE)
+            370 RETURN_VALUE
+        >>  372 PUSH_EXC_INFO
+
+198         374 LOAD_GLOBAL             20 (Exception)
+            384 CHECK_EXC_MATCH
+            386 POP_JUMP_IF_FALSE        3 (to 394)
+            388 POP_TOP
+
+199         390 POP_EXCEPT
+            392 JUMP_BACKWARD           39 (to 316)
+
+198     >>  394 RERAISE                  0
+        >>  396 COPY                     3
+            398 POP_EXCEPT
+            400 RERAISE                  1
+ExceptionTable:
+  6 to 116 -> 372 [0]
+  120 to 312 -> 372 [0]
+  372 to 388 -> 396 [1] lasti
+  394 to 394 -> 396 [1] lasti
+
+Disassembly of <code object _grace at 0x7f6af1f82cd0, file "licensing.py", line 203>:
+203           0 RESUME                   0
+
+204           2 NOP
+
+205           4 NOP
+
+206           6 LOAD_GLOBAL              1 (NULL + _remembered)
+             16 LOAD_FAST                0 (s)
+             18 LOAD_FAST                1 (key)
+             20 LOAD_FAST                2 (hw)
+             22 PUSH_NULL
+             24 LOAD_FAST                3 (now)
+             26 CALL                     0
+             34 LOAD_GLOBAL              3 (NULL + float)
+             44 LOAD_CONST               1 ('inf')
+             46 CALL                     1
+             54 CALL                     5
+             62 POP_JUMP_IF_FALSE        6 (to 76)
+             64 LOAD_GLOBAL              4 (OK)
+             74 RETURN_VALUE
+        >>   76 LOAD_GLOBAL              6 (OFFLINE)
+             86 RETURN_VALUE
+        >>   88 PUSH_EXC_INFO
+
+207          90 LOAD_GLOBAL              8 (Exception)
+            100 CHECK_EXC_MATCH
+            102 POP_JUMP_IF_FALSE        9 (to 122)
+            104 POP_TOP
+
+208         106 LOAD_GLOBAL              6 (OFFLINE)
+            116 SWAP                     2
+            118 POP_EXCEPT
+            120 RETURN_VALUE
+
+207     >>  122 RERAISE                  0
+        >>  124 COPY                     3
+            126 POP_EXCEPT
+            128 RERAISE                  1
+ExceptionTable:
+  6 to 72 -> 88 [0]
+  76 to 84 -> 88 [0]
+  88 to 116 -> 124 [1] lasti
+  122 to 122 -> 124 [1] lasti

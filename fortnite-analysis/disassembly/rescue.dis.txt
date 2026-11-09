@@ -1,0 +1,999 @@
+  0           0 RESUME                   0
+
+  1           2 SETUP_ANNOTATIONS
+
+ 15           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (queue)
+             10 STORE_NAME               0 (queue)
+
+ 16          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (re)
+             18 STORE_NAME               1 (re)
+
+ 17          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              2 (time)
+             26 STORE_NAME               2 (time)
+
+ 18          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               2 (('Callable', 'List', 'Optional', 'Tuple'))
+             32 IMPORT_NAME              3 (typing)
+             34 IMPORT_FROM              4 (Callable)
+             36 STORE_NAME               4 (Callable)
+             38 IMPORT_FROM              5 (List)
+             40 STORE_NAME               5 (List)
+             42 IMPORT_FROM              6 (Optional)
+             44 STORE_NAME               6 (Optional)
+             46 IMPORT_FROM              7 (Tuple)
+             48 STORE_NAME               7 (Tuple)
+             50 POP_TOP
+
+ 20          52 LOAD_CONST               3 (120.0)
+             54 STORE_NAME               8 (STAGE2_AFTER_S)
+
+ 21          56 LOAD_CONST               4 (2100.0)
+             58 STORE_NAME               9 (MATCH_STUCK_S)
+
+ 22          60 LOAD_CONST               5 (60.0)
+             62 STORE_NAME              10 (ACTION_TTL_S)
+
+ 23          64 PUSH_NULL
+             66 LOAD_NAME                1 (re)
+             68 LOAD_ATTR               22 (compile)
+             88 LOAD_CONST               6 ('^(esc|click_center|restart_loop|grid:[A-D][1-4])$')
+             90 CALL                     1
+             98 STORE_NAME              12 (ACTION_RE)
+
+ 25         100 PUSH_NULL
+            102 LOAD_NAME                0 (queue)
+            104 LOAD_ATTR               26 (Queue)
+            124 LOAD_CONST               7 (8)
+            126 KW_NAMES                 8 (('maxsize',))
+            128 CALL                     1
+            136 STORE_NAME              14 (incoming)
+            138 LOAD_CONST               9 ('queue.Queue[str]')
+            140 LOAD_NAME               15 (__annotations__)
+            142 LOAD_CONST              10 ('incoming')
+            144 STORE_SUBSCR
+
+ 28         148 LOAD_CONST              11 ('return')
+            150 LOAD_NAME               16 (bool)
+            152 BUILD_TUPLE              2
+            154 LOAD_CONST              12 (<code object valid_action at 0x7f6aed1d16c0, file "rescue.py", line 28>)
+            156 MAKE_FUNCTION            4 (annotations)
+            158 STORE_NAME              17 (valid_action)
+
+ 32         160 LOAD_CONST              13 ('action')
+            162 LOAD_NAME               18 (str)
+            164 LOAD_CONST              11 ('return')
+            166 LOAD_NAME               16 (bool)
+            168 BUILD_TUPLE              4
+            170 LOAD_CONST              14 (<code object push at 0x7f6aed1c51b0, file "rescue.py", line 32>)
+            172 MAKE_FUNCTION            4 (annotations)
+            174 STORE_NAME              19 (push)
+
+ 43         176 LOAD_CONST              13 ('action')
+            178 LOAD_NAME               18 (str)
+            180 LOAD_CONST              11 ('return')
+            182 LOAD_NAME                6 (Optional)
+            184 LOAD_NAME                7 (Tuple)
+            186 LOAD_NAME               20 (float)
+            188 LOAD_NAME               20 (float)
+            190 BUILD_TUPLE              2
+            192 BINARY_SUBSCR
+            196 BINARY_SUBSCR
+            200 BUILD_TUPLE              4
+            202 LOAD_CONST              15 (<code object cell_center at 0x7f6aed7a9e30, file "rescue.py", line 43>)
+            204 MAKE_FUNCTION            4 (annotations)
+            206 STORE_NAME              21 (cell_center)
+
+ 53         208 PUSH_NULL
+            210 LOAD_BUILD_CLASS
+            212 LOAD_CONST              16 (<code object Rescue at 0x7f6aed18d430, file "rescue.py", line 53>)
+            214 MAKE_FUNCTION            0
+            216 LOAD_CONST              17 ('Rescue')
+            218 CALL                     2
+            226 STORE_NAME              22 (Rescue)
+            228 RETURN_CONST             1 (None)
+
+Disassembly of <code object valid_action at 0x7f6aed1d16c0, file "rescue.py", line 28>:
+ 28           0 RESUME                   0
+
+ 29           2 LOAD_GLOBAL              1 (NULL + isinstance)
+             12 LOAD_FAST                0 (a)
+             14 LOAD_GLOBAL              2 (str)
+             24 CALL                     2
+             32 COPY                     1
+             34 POP_JUMP_IF_FALSE       30 (to 96)
+             36 POP_TOP
+             38 LOAD_GLOBAL              5 (NULL + bool)
+             48 LOAD_GLOBAL              6 (ACTION_RE)
+             58 LOAD_ATTR                9 (NULL|self + match)
+             78 LOAD_FAST                0 (a)
+             80 CALL                     1
+             88 CALL                     1
+        >>   96 RETURN_VALUE
+
+Disassembly of <code object push at 0x7f6aed1c51b0, file "rescue.py", line 32>:
+ 32           0 RESUME                   0
+
+ 33           2 NOP
+
+ 34           4 LOAD_GLOBAL              1 (NULL + valid_action)
+             14 LOAD_FAST                0 (action)
+             16 CALL                     1
+             24 POP_JUMP_IF_TRUE         1 (to 28)
+
+ 35          26 RETURN_CONST             1 (False)
+
+ 36     >>   28 NOP
+
+ 37          30 LOAD_GLOBAL              2 (incoming)
+             40 LOAD_ATTR                5 (NULL|self + put_nowait)
+             60 LOAD_FAST                0 (action)
+             62 CALL                     1
+             70 POP_TOP
+
+ 38          72 RETURN_CONST             2 (True)
+        >>   74 PUSH_EXC_INFO
+
+ 39          76 LOAD_GLOBAL              6 (queue)
+             86 LOAD_ATTR                8 (Full)
+            106 CHECK_EXC_MATCH
+            108 POP_JUMP_IF_FALSE        3 (to 116)
+            110 POP_TOP
+
+ 40         112 POP_EXCEPT
+            114 RETURN_CONST             1 (False)
+
+ 39     >>  116 RERAISE                  0
+        >>  118 COPY                     3
+            120 POP_EXCEPT
+            122 RERAISE                  1
+ExceptionTable:
+  30 to 70 -> 74 [0]
+  74 to 110 -> 118 [1] lasti
+  116 to 116 -> 118 [1] lasti
+
+Disassembly of <code object cell_center at 0x7f6aed7a9e30, file "rescue.py", line 43>:
+ 43           0 RESUME                   0
+
+ 44           2 NOP
+
+ 45           4 LOAD_FAST                0 (action)
+              6 LOAD_CONST               1 ('click_center')
+              8 COMPARE_OP              40 (==)
+             12 POP_JUMP_IF_FALSE        1 (to 16)
+
+ 46          14 RETURN_CONST             2 ((0.5, 0.5))
+
+ 47     >>   16 LOAD_FAST                0 (action)
+             18 LOAD_ATTR                1 (NULL|self + startswith)
+             38 LOAD_CONST               3 ('grid:')
+             40 CALL                     1
+             48 POP_JUMP_IF_FALSE       70 (to 190)
+             50 LOAD_GLOBAL              3 (NULL + valid_action)
+             60 LOAD_FAST                0 (action)
+             62 CALL                     1
+             70 POP_JUMP_IF_FALSE       59 (to 190)
+
+ 48          72 LOAD_GLOBAL              5 (NULL + ord)
+             82 LOAD_FAST                0 (action)
+             84 LOAD_CONST               4 (5)
+             86 BINARY_SUBSCR
+             90 CALL                     1
+             98 LOAD_GLOBAL              5 (NULL + ord)
+            108 LOAD_CONST               5 ('A')
+            110 CALL                     1
+            118 BINARY_OP               10 (-)
+            122 LOAD_GLOBAL              7 (NULL + int)
+            132 LOAD_FAST                0 (action)
+            134 LOAD_CONST               6 (6)
+            136 BINARY_SUBSCR
+            140 CALL                     1
+            148 LOAD_CONST               7 (1)
+            150 BINARY_OP               10 (-)
+            154 STORE_FAST               2 (row)
+            156 STORE_FAST               1 (col)
+
+ 49         158 LOAD_FAST                1 (col)
+            160 LOAD_CONST               8 (0.5)
+            162 BINARY_OP                0 (+)
+            166 LOAD_CONST               9 (4.0)
+            168 BINARY_OP               11 (/)
+            172 LOAD_FAST                2 (row)
+            174 LOAD_CONST               8 (0.5)
+            176 BINARY_OP                0 (+)
+            180 LOAD_CONST               9 (4.0)
+            182 BINARY_OP               11 (/)
+            186 BUILD_TUPLE              2
+            188 RETURN_VALUE
+
+ 50     >>  190 RETURN_CONST             0 (None)
+
+Disassembly of <code object Rescue at 0x7f6aed18d430, file "rescue.py", line 53>:
+ 53           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('Rescue')
+              8 STORE_NAME               2 (__qualname__)
+
+ 59          10 LOAD_CONST               1 (None)
+
+ 60          12 LOAD_CONST               1 (None)
+
+ 61          14 LOAD_CONST               1 (None)
+
+ 62          16 LOAD_NAME                3 (time)
+             18 LOAD_ATTR                8 (monotonic)
+
+ 63          38 LOAD_CONST               1 (None)
+
+ 54          40 BUILD_TUPLE              5
+             42 LOAD_CONST               2 ('get_machine')
+
+ 58          44 LOAD_NAME                5 (Callable)
+             46 BUILD_LIST               0
+             48 LOAD_NAME                6 (object)
+             50 BUILD_TUPLE              2
+             52 BINARY_SUBSCR
+
+ 54          56 LOAD_CONST               3 ('find_popup')
+
+ 59          58 LOAD_NAME                7 (Optional)
+             60 LOAD_NAME                5 (Callable)
+             62 LOAD_NAME                6 (object)
+             64 BUILD_LIST               1
+             66 LOAD_NAME                7 (Optional)
+             68 LOAD_NAME                8 (Tuple)
+             70 LOAD_NAME                9 (int)
+             72 LOAD_NAME                9 (int)
+             74 BUILD_TUPLE              2
+             76 BINARY_SUBSCR
+             80 BINARY_SUBSCR
+             84 BUILD_TUPLE              2
+             86 BINARY_SUBSCR
+             90 BINARY_SUBSCR
+
+ 54          94 LOAD_CONST               4 ('send_stuck')
+
+ 60          96 LOAD_NAME                7 (Optional)
+             98 LOAD_NAME                5 (Callable)
+            100 LOAD_NAME               10 (str)
+            102 LOAD_NAME                9 (int)
+            104 BUILD_LIST               2
+            106 LOAD_CONST               1 (None)
+            108 BUILD_TUPLE              2
+            110 BINARY_SUBSCR
+            114 BINARY_SUBSCR
+
+ 54         118 LOAD_CONST               5 ('log')
+
+ 61         120 LOAD_NAME                7 (Optional)
+            122 LOAD_NAME                5 (Callable)
+            124 LOAD_NAME               10 (str)
+            126 BUILD_LIST               1
+            128 LOAD_CONST               1 (None)
+            130 BUILD_TUPLE              2
+            132 BINARY_SUBSCR
+            136 BINARY_SUBSCR
+
+ 54         140 LOAD_CONST               6 ('clock')
+
+ 62         142 LOAD_NAME                5 (Callable)
+            144 BUILD_LIST               0
+            146 LOAD_NAME               11 (float)
+            148 BUILD_TUPLE              2
+            150 BINARY_SUBSCR
+
+ 54         154 LOAD_CONST               7 ('source')
+
+ 63         156 LOAD_NAME                7 (Optional)
+            158 LOAD_CONST               8 ('queue.Queue[str]')
+            160 BINARY_SUBSCR
+
+ 54         164 BUILD_TUPLE             12
+            166 LOAD_CONST               9 (<code object __init__ at 0x7f6aed178f60, file "rescue.py", line 54>)
+            168 MAKE_FUNCTION            5 (defaults, annotations)
+            170 STORE_NAME              12 (__init__)
+
+ 80         172 LOAD_NAME               13 (property)
+
+ 81         174 LOAD_CONST              10 ('return')
+            176 LOAD_NAME               14 (bool)
+            178 BUILD_TUPLE              2
+            180 LOAD_CONST              11 (<code object stuck at 0x7f6aed807050, file "rescue.py", line 80>)
+            182 MAKE_FUNCTION            4 (annotations)
+
+ 80         184 CALL                     0
+
+ 81         192 STORE_NAME              15 (stuck)
+
+ 84         194 LOAD_CONST              24 (('return', None))
+            196 LOAD_CONST              12 (<code object progress at 0x7f6aed1c42b0, file "rescue.py", line 84>)
+            198 MAKE_FUNCTION            4 (annotations)
+            200 STORE_NAME              16 (progress)
+
+ 91         202 LOAD_CONST              25 ((0, 0))
+            204 LOAD_CONST              13 ('state_value')
+            206 LOAD_NAME               10 (str)
+            208 LOAD_CONST              14 ('clicked')
+            210 LOAD_NAME               14 (bool)
+            212 LOAD_CONST              15 ('ox')
+            214 LOAD_NAME                9 (int)
+            216 LOAD_CONST              16 ('oy')
+            218 LOAD_NAME                9 (int)
+            220 LOAD_CONST              10 ('return')
+            222 LOAD_CONST               1 (None)
+            224 BUILD_TUPLE             10
+            226 LOAD_CONST              17 (<code object tick at 0x7f6af1de3840, file "rescue.py", line 91>)
+            228 MAKE_FUNCTION            5 (defaults, annotations)
+            230 STORE_NAME              17 (tick)
+
+ 97         232 LOAD_CONST              24 (('return', None))
+            234 LOAD_CONST              18 (<code object _tick at 0x17a92030, file "rescue.py", line 97>)
+            236 MAKE_FUNCTION            4 (annotations)
+            238 STORE_NAME              18 (_tick)
+
+129         240 LOAD_CONST              19 ('now')
+            242 LOAD_NAME               11 (float)
+            244 LOAD_CONST              10 ('return')
+            246 LOAD_CONST               1 (None)
+            248 BUILD_TUPLE              4
+            250 LOAD_CONST              20 (<code object _intake at 0x7f6aed1889e0, file "rescue.py", line 129>)
+            252 MAKE_FUNCTION            4 (annotations)
+            254 STORE_NAME              19 (_intake)
+
+140         256 LOAD_CONST              19 ('now')
+            258 LOAD_NAME               11 (float)
+            260 LOAD_CONST              15 ('ox')
+            262 LOAD_NAME                9 (int)
+            264 LOAD_CONST              16 ('oy')
+            266 LOAD_NAME                9 (int)
+            268 LOAD_CONST              10 ('return')
+            270 LOAD_CONST               1 (None)
+            272 BUILD_TUPLE              8
+            274 LOAD_CONST              21 (<code object _run_pending at 0x7f6af1e2a740, file "rescue.py", line 140>)
+            276 MAKE_FUNCTION            4 (annotations)
+            278 STORE_NAME              20 (_run_pending)
+
+150         280 LOAD_CONST              22 ('action')
+            282 LOAD_NAME               10 (str)
+            284 LOAD_CONST              19 ('now')
+            286 LOAD_NAME               11 (float)
+            288 LOAD_CONST              15 ('ox')
+            290 LOAD_NAME                9 (int)
+            292 LOAD_CONST              16 ('oy')
+            294 LOAD_NAME                9 (int)
+            296 LOAD_CONST              10 ('return')
+            298 LOAD_NAME               14 (bool)
+            300 BUILD_TUPLE             10
+            302 LOAD_CONST              23 (<code object _execute at 0x17a817d0, file "rescue.py", line 150>)
+            304 MAKE_FUNCTION            4 (annotations)
+            306 STORE_NAME              21 (_execute)
+            308 RETURN_CONST             1 (None)
+
+Disassembly of <code object __init__ at 0x7f6aed178f60, file "rescue.py", line 54>:
+ 54           0 RESUME                   0
+
+ 65           2 LOAD_FAST                1 (settings)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (s)
+
+ 66          16 LOAD_FAST                2 (ctrl)
+             18 LOAD_FAST                0 (self)
+             20 STORE_ATTR               1 (ctrl)
+
+ 67          30 LOAD_FAST                3 (get_machine)
+             32 LOAD_FAST                0 (self)
+             34 STORE_ATTR               2 (_machine)
+
+ 68          44 LOAD_FAST                4 (find_popup)
+             46 LOAD_FAST                0 (self)
+             48 STORE_ATTR               3 (_find_popup)
+
+ 69          58 LOAD_FAST                5 (send_stuck)
+             60 LOAD_FAST                0 (self)
+             62 STORE_ATTR               4 (_send_stuck)
+
+ 70          72 LOAD_FAST                6 (log)
+             74 COPY                     1
+             76 POP_JUMP_IF_TRUE         3 (to 84)
+             78 POP_TOP
+             80 LOAD_CONST               1 (<code object <lambda> at 0x7f6aed1a7b80, file "rescue.py", line 70>)
+             82 MAKE_FUNCTION            0
+        >>   84 LOAD_FAST                0 (self)
+             86 STORE_ATTR               5 (log)
+
+ 71          96 LOAD_FAST                7 (clock)
+             98 LOAD_FAST                0 (self)
+            100 STORE_ATTR               6 (_clock)
+
+ 72         110 LOAD_FAST                8 (source)
+            112 POP_JUMP_IF_NONE         2 (to 118)
+            114 LOAD_FAST                8 (source)
+            116 JUMP_FORWARD             5 (to 128)
+        >>  118 LOAD_GLOBAL             14 (incoming)
+        >>  128 LOAD_FAST                0 (self)
+            130 STORE_ATTR               8 (_source)
+
+ 73         140 BUILD_LIST               0
+            142 LOAD_FAST                0 (self)
+            144 STORE_ATTR               9 (_pending)
+
+ 74         154 LOAD_CONST               2 (0)
+            156 LOAD_FAST                0 (self)
+            158 STORE_ATTR              10 (stage)
+
+ 75         168 LOAD_CONST               0 (None)
+            170 LOAD_FAST                0 (self)
+            172 STORE_ATTR              11 (last_frame)
+
+ 76         182 LOAD_CONST               0 (None)
+            184 LOAD_FAST                0 (self)
+            186 STORE_ATTR              12 (_state)
+
+ 77         196 PUSH_NULL
+            198 LOAD_FAST                7 (clock)
+            200 CALL                     0
+            208 LOAD_FAST                0 (self)
+            210 STORE_ATTR              13 (_t_progress)
+
+ 78         220 LOAD_CONST               3 (0.0)
+            222 LOAD_FAST                0 (self)
+            224 STORE_ATTR              14 (_t_stage1)
+            234 RETURN_CONST             0 (None)
+
+Disassembly of <code object <lambda> at 0x7f6aed1a7b80, file "rescue.py", line 70>:
+ 70           0 RESUME                   0
+              2 RETURN_CONST             0 (None)
+
+Disassembly of <code object stuck at 0x7f6aed807050, file "rescue.py", line 80>:
+ 80           0 RESUME                   0
+
+ 82           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (stage)
+             24 LOAD_CONST               1 (1)
+             26 COMPARE_OP              92 (>=)
+             30 RETURN_VALUE
+
+Disassembly of <code object progress at 0x7f6aed1c42b0, file "rescue.py", line 84>:
+ 84           0 RESUME                   0
+
+ 85           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                1 (NULL|self + _clock)
+             24 CALL                     0
+             32 LOAD_FAST                0 (self)
+             34 STORE_ATTR               1 (_t_progress)
+
+ 86          44 LOAD_FAST                0 (self)
+             46 LOAD_ATTR                4 (stage)
+             66 POP_JUMP_IF_FALSE       25 (to 118)
+
+ 87          68 LOAD_CONST               1 (0)
+             70 LOAD_FAST                0 (self)
+             72 STORE_ATTR               2 (stage)
+
+ 88          82 LOAD_CONST               2 (False)
+             84 LOAD_FAST                0 (self)
+             86 LOAD_ATTR                6 (s)
+            106 STORE_ATTR               4 (rescue_listening)
+            116 RETURN_CONST             0 (None)
+
+ 86     >>  118 RETURN_CONST             0 (None)
+
+Disassembly of <code object tick at 0x7f6af1de3840, file "rescue.py", line 91>:
+ 91           0 RESUME                   0
+
+ 92           2 NOP
+
+ 93           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + _tick)
+             26 LOAD_FAST                1 (state_value)
+             28 LOAD_FAST                2 (clicked)
+             30 LOAD_FAST                3 (frame)
+             32 LOAD_FAST                4 (ox)
+             34 LOAD_FAST                5 (oy)
+             36 CALL                     5
+             44 POP_TOP
+             46 RETURN_CONST             0 (None)
+        >>   48 PUSH_EXC_INFO
+
+ 94          50 LOAD_GLOBAL              2 (Exception)
+             60 CHECK_EXC_MATCH
+             62 POP_JUMP_IF_FALSE       52 (to 168)
+             64 STORE_FAST               6 (e)
+
+ 95          66 LOAD_FAST                0 (self)
+             68 LOAD_ATTR                5 (NULL|self + log)
+             88 LOAD_CONST               1 ('[rescue] error: ')
+             90 LOAD_GLOBAL              7 (NULL + type)
+            100 LOAD_FAST                6 (e)
+            102 CALL                     1
+            110 LOAD_ATTR                8 (__name__)
+            130 FORMAT_VALUE             0
+            132 LOAD_CONST               2 (': ')
+            134 LOAD_FAST                6 (e)
+            136 FORMAT_VALUE             0
+            138 BUILD_STRING             4
+            140 CALL                     1
+            148 POP_TOP
+            150 POP_EXCEPT
+            152 LOAD_CONST               0 (None)
+            154 STORE_FAST               6 (e)
+            156 DELETE_FAST              6 (e)
+            158 RETURN_CONST             0 (None)
+        >>  160 LOAD_CONST               0 (None)
+            162 STORE_FAST               6 (e)
+            164 DELETE_FAST              6 (e)
+            166 RERAISE                  1
+
+ 94     >>  168 RERAISE                  0
+        >>  170 COPY                     3
+            172 POP_EXCEPT
+            174 RERAISE                  1
+ExceptionTable:
+  4 to 44 -> 48 [0]
+  48 to 64 -> 170 [1] lasti
+  66 to 148 -> 160 [1] lasti
+  160 to 168 -> 170 [1] lasti
+
+Disassembly of <code object _tick at 0x17a92030, file "rescue.py", line 97>:
+ 97           0 RESUME                   0
+
+ 98           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                1 (NULL|self + _clock)
+             24 CALL                     0
+             32 STORE_FAST               6 (now)
+
+ 99          34 LOAD_FAST                3 (frame)
+             36 LOAD_FAST                0 (self)
+             38 STORE_ATTR               1 (last_frame)
+
+100          48 LOAD_FAST                2 (clicked)
+             50 POP_JUMP_IF_TRUE        15 (to 82)
+             52 LOAD_FAST                1 (state_value)
+             54 LOAD_FAST                0 (self)
+             56 LOAD_ATTR                4 (_state)
+             76 COMPARE_OP              55 (!=)
+             80 POP_JUMP_IF_FALSE       23 (to 128)
+
+101     >>   82 LOAD_FAST                1 (state_value)
+             84 LOAD_FAST                0 (self)
+             86 STORE_ATTR               2 (_state)
+
+102          96 LOAD_FAST                0 (self)
+             98 LOAD_ATTR                7 (NULL|self + progress)
+            118 CALL                     0
+            126 POP_TOP
+
+103     >>  128 LOAD_FAST                0 (self)
+            130 LOAD_ATTR                9 (NULL|self + _intake)
+            150 LOAD_FAST                6 (now)
+            152 CALL                     1
+            160 POP_TOP
+
+104         162 LOAD_GLOBAL             11 (NULL + float)
+            172 LOAD_GLOBAL             13 (NULL + getattr)
+            182 LOAD_FAST                0 (self)
+            184 LOAD_ATTR               14 (s)
+            204 LOAD_CONST               1 ('stuck_timeout_min')
+            206 LOAD_CONST               2 (0.0)
+            208 CALL                     3
+            216 CALL                     1
+            224 LOAD_CONST               3 (60.0)
+            226 BINARY_OP                5 (*)
+            230 STORE_FAST               7 (timeout)
+
+105         232 LOAD_FAST                7 (timeout)
+            234 LOAD_CONST               4 (0)
+            236 COMPARE_OP              68 (>)
+            240 POP_JUMP_IF_FALSE       21 (to 284)
+            242 LOAD_FAST                1 (state_value)
+            244 LOAD_CONST               5 ('IN_MATCH')
+            246 COMPARE_OP              40 (==)
+            250 POP_JUMP_IF_FALSE       16 (to 284)
+
+106         252 LOAD_GLOBAL             17 (NULL + max)
+            262 LOAD_FAST                7 (timeout)
+            264 LOAD_GLOBAL             18 (MATCH_STUCK_S)
+            274 CALL                     2
+            282 STORE_FAST               7 (timeout)
+
+107     >>  284 LOAD_FAST                7 (timeout)
+            286 LOAD_CONST               4 (0)
+            288 COMPARE_OP              68 (>)
+            292 EXTENDED_ARG             1
+            294 POP_JUMP_IF_FALSE      285 (to 866)
+
+108         296 LOAD_FAST                6 (now)
+            298 LOAD_FAST                0 (self)
+            300 LOAD_ATTR               20 (_t_progress)
+            320 BINARY_OP               10 (-)
+            324 STORE_FAST               8 (idle)
+
+109         326 LOAD_FAST                0 (self)
+            328 LOAD_ATTR               22 (stage)
+            348 LOAD_CONST               4 (0)
+            350 COMPARE_OP              40 (==)
+            354 POP_JUMP_IF_FALSE      136 (to 628)
+            356 LOAD_FAST                8 (idle)
+            358 LOAD_FAST                7 (timeout)
+            360 COMPARE_OP              92 (>=)
+            364 POP_JUMP_IF_FALSE      131 (to 628)
+
+110         366 LOAD_CONST               6 (1)
+            368 LOAD_FAST                6 (now)
+            370 SWAP                     2
+            372 LOAD_FAST                0 (self)
+            374 STORE_ATTR              11 (stage)
+            384 LOAD_FAST                0 (self)
+            386 STORE_ATTR              12 (_t_stage1)
+
+111         396 LOAD_FAST                0 (self)
+            398 LOAD_ATTR               27 (NULL|self + log)
+            418 LOAD_CONST               7 ('[rescue] stuck detected, attempting Esc recovery')
+            420 CALL                     1
+            428 POP_TOP
+
+112         430 LOAD_FAST                0 (self)
+            432 LOAD_ATTR               28 (ctrl)
+            452 LOAD_ATTR               31 (NULL|self + press)
+            472 LOAD_CONST               8 ('esc')
+            474 CALL                     1
+            482 POP_TOP
+
+113         484 LOAD_FAST                0 (self)
+            486 LOAD_ATTR               32 (_find_popup)
+            506 POP_JUMP_IF_NONE       207 (to 922)
+
+114         508 LOAD_FAST                0 (self)
+            510 LOAD_ATTR               33 (NULL|self + _find_popup)
+            530 LOAD_FAST                3 (frame)
+            532 CALL                     1
+            540 STORE_FAST               9 (p)
+
+115         542 LOAD_FAST                9 (p)
+            544 POP_JUMP_IF_FALSE      188 (to 922)
+
+116         546 LOAD_FAST                0 (self)
+            548 LOAD_ATTR               28 (ctrl)
+            568 LOAD_ATTR               35 (NULL|self + click)
+            588 LOAD_FAST                9 (p)
+            590 LOAD_CONST               4 (0)
+            592 BINARY_SUBSCR
+            596 LOAD_FAST                4 (ox)
+            598 BINARY_OP                0 (+)
+            602 LOAD_FAST                9 (p)
+            604 LOAD_CONST               6 (1)
+            606 BINARY_SUBSCR
+            610 LOAD_FAST                5 (oy)
+            612 BINARY_OP                0 (+)
+            616 CALL                     2
+            624 POP_TOP
+            626 JUMP_FORWARD           147 (to 922)
+
+117     >>  628 LOAD_FAST                0 (self)
+            630 LOAD_ATTR               22 (stage)
+            650 LOAD_CONST               6 (1)
+            652 COMPARE_OP              40 (==)
+            656 POP_JUMP_IF_FALSE      132 (to 922)
+            658 LOAD_FAST                6 (now)
+            660 LOAD_FAST                0 (self)
+            662 LOAD_ATTR               24 (_t_stage1)
+            682 BINARY_OP               10 (-)
+            686 LOAD_GLOBAL             36 (STAGE2_AFTER_S)
+            696 COMPARE_OP              92 (>=)
+            700 POP_JUMP_IF_FALSE      110 (to 922)
+
+118         702 LOAD_CONST               9 (2)
+            704 LOAD_FAST                0 (self)
+            706 STORE_ATTR              11 (stage)
+
+119         716 LOAD_GLOBAL             39 (NULL + int)
+            726 LOAD_FAST                8 (idle)
+            728 LOAD_CONST              10 (60)
+            730 BINARY_OP                2 (//)
+            734 CALL                     1
+            742 STORE_FAST              10 (minutes)
+
+120         744 LOAD_FAST                0 (self)
+            746 LOAD_ATTR               27 (NULL|self + log)
+            766 LOAD_CONST              11 ('[rescue] still stuck after ')
+            768 LOAD_FAST               10 (minutes)
+            770 FORMAT_VALUE             0
+            772 LOAD_CONST              12 (' min: alerting')
+            774 BUILD_STRING             3
+            776 CALL                     1
+            784 POP_TOP
+
+121         786 LOAD_FAST                0 (self)
+            788 LOAD_ATTR               40 (_send_stuck)
+            808 POP_JUMP_IF_NONE        56 (to 922)
+
+122         810 LOAD_FAST                0 (self)
+            812 LOAD_ATTR               41 (NULL|self + _send_stuck)
+            832 LOAD_GLOBAL             43 (NULL + str)
+            842 LOAD_FAST                1 (state_value)
+            844 CALL                     1
+            852 LOAD_FAST               10 (minutes)
+            854 CALL                     2
+            862 POP_TOP
+            864 JUMP_FORWARD            28 (to 922)
+
+123     >>  866 LOAD_FAST                0 (self)
+            868 LOAD_ATTR               22 (stage)
+            888 POP_JUMP_IF_FALSE       16 (to 922)
+
+124         890 LOAD_FAST                0 (self)
+            892 LOAD_ATTR                7 (NULL|self + progress)
+            912 CALL                     0
+            920 POP_TOP
+
+125     >>  922 LOAD_GLOBAL             45 (NULL + bool)
+            932 LOAD_FAST                0 (self)
+            934 LOAD_ATTR               22 (stage)
+            954 LOAD_CONST               6 (1)
+            956 COMPARE_OP              92 (>=)
+            960 COPY                     1
+            962 POP_JUMP_IF_FALSE       23 (to 1010)
+            964 POP_TOP
+            966 LOAD_GLOBAL             13 (NULL + getattr)
+            976 LOAD_FAST                0 (self)
+            978 LOAD_ATTR               14 (s)
+            998 LOAD_CONST              13 ('rescue_remote_enabled')
+           1000 LOAD_CONST              14 (False)
+           1002 CALL                     3
+        >> 1010 CALL                     1
+           1018 LOAD_FAST                0 (self)
+           1020 LOAD_ATTR               14 (s)
+           1040 STORE_ATTR              23 (rescue_listening)
+
+126        1050 LOAD_FAST                0 (self)
+           1052 LOAD_ATTR               49 (NULL|self + _run_pending)
+           1072 LOAD_FAST                6 (now)
+           1074 LOAD_FAST                3 (frame)
+           1076 LOAD_FAST                4 (ox)
+           1078 LOAD_FAST                5 (oy)
+           1080 CALL                     4
+           1088 POP_TOP
+           1090 RETURN_CONST             0 (None)
+
+Disassembly of <code object _intake at 0x7f6aed1889e0, file "rescue.py", line 129>:
+129           0 RESUME                   0
+
+130     >>    2 NOP
+
+131     >>    4 NOP
+
+132           6 LOAD_FAST                0 (self)
+              8 LOAD_ATTR                0 (_source)
+             28 LOAD_ATTR                3 (NULL|self + get_nowait)
+             48 CALL                     0
+             56 STORE_FAST               2 (action)
+
+135          58 LOAD_GLOBAL              9 (NULL + getattr)
+             68 LOAD_FAST                0 (self)
+             70 LOAD_ATTR               10 (s)
+             90 LOAD_CONST               1 ('rescue_remote_enabled')
+             92 LOAD_CONST               2 (False)
+             94 CALL                     3
+            102 POP_JUMP_IF_FALSE       12 (to 128)
+            104 LOAD_FAST                0 (self)
+            106 LOAD_ATTR               12 (stuck)
+            126 POP_JUMP_IF_TRUE        22 (to 172)
+
+136     >>  128 LOAD_FAST                0 (self)
+            130 LOAD_ATTR               15 (NULL|self + log)
+            150 LOAD_CONST               3 ('[rescue] remote action ')
+            152 LOAD_FAST                2 (action)
+            154 FORMAT_VALUE             0
+            156 LOAD_CONST               4 (' ignored (the loop is not stuck)')
+            158 BUILD_STRING             3
+            160 CALL                     1
+            168 POP_TOP
+
+137         170 JUMP_BACKWARD           85 (to 2)
+
+138     >>  172 LOAD_FAST                0 (self)
+            174 LOAD_ATTR               16 (_pending)
+            194 LOAD_ATTR               19 (NULL|self + append)
+            214 LOAD_FAST                2 (action)
+            216 LOAD_FAST                1 (now)
+            218 LOAD_GLOBAL             20 (ACTION_TTL_S)
+            228 BINARY_OP                0 (+)
+            232 BUILD_TUPLE              2
+            234 CALL                     1
+            242 POP_TOP
+
+130         244 JUMP_BACKWARD          121 (to 4)
+        >>  246 PUSH_EXC_INFO
+
+133         248 LOAD_GLOBAL              4 (queue)
+            258 LOAD_ATTR                6 (Empty)
+            278 CHECK_EXC_MATCH
+            280 POP_JUMP_IF_FALSE        3 (to 288)
+            282 POP_TOP
+
+134         284 POP_EXCEPT
+            286 RETURN_CONST             0 (None)
+
+133     >>  288 RERAISE                  0
+        >>  290 COPY                     3
+            292 POP_EXCEPT
+            294 RERAISE                  1
+ExceptionTable:
+  6 to 56 -> 246 [0]
+  246 to 282 -> 290 [1] lasti
+  288 to 288 -> 290 [1] lasti
+
+Disassembly of <code object _run_pending at 0x7f6af1e2a740, file "rescue.py", line 140>:
+140           0 RESUME                   0
+
+141           2 BUILD_LIST               0
+              4 STORE_FAST               5 (keep)
+
+142           6 LOAD_FAST                0 (self)
+              8 LOAD_ATTR                0 (_pending)
+             28 GET_ITER
+        >>   30 FOR_ITER                73 (to 180)
+             34 UNPACK_SEQUENCE          2
+             38 STORE_FAST               6 (action)
+             40 STORE_FAST               7 (deadline)
+
+143          42 LOAD_FAST                1 (now)
+             44 LOAD_FAST                7 (deadline)
+             46 COMPARE_OP              68 (>)
+             50 POP_JUMP_IF_FALSE       22 (to 96)
+
+144          52 LOAD_FAST                0 (self)
+             54 LOAD_ATTR                3 (NULL|self + log)
+             74 LOAD_CONST               1 ('[rescue] remote action ')
+             76 LOAD_FAST                6 (action)
+             78 FORMAT_VALUE             0
+             80 LOAD_CONST               2 (' dropped (could not be executed)')
+             82 BUILD_STRING             3
+             84 CALL                     1
+             92 POP_TOP
+
+145          94 JUMP_BACKWARD           33 (to 30)
+
+146     >>   96 LOAD_FAST                0 (self)
+             98 LOAD_ATTR                5 (NULL|self + _execute)
+            118 LOAD_FAST                6 (action)
+            120 LOAD_FAST                1 (now)
+            122 LOAD_FAST                2 (frame)
+            124 LOAD_FAST                3 (ox)
+            126 LOAD_FAST                4 (oy)
+            128 CALL                     5
+            136 POP_JUMP_IF_FALSE        1 (to 140)
+            138 JUMP_BACKWARD           55 (to 30)
+
+147     >>  140 LOAD_FAST                5 (keep)
+            142 LOAD_ATTR                7 (NULL|self + append)
+            162 LOAD_FAST                6 (action)
+            164 LOAD_FAST                7 (deadline)
+            166 BUILD_TUPLE              2
+            168 CALL                     1
+            176 POP_TOP
+            178 JUMP_BACKWARD           75 (to 30)
+
+142     >>  180 END_FOR
+
+148         182 LOAD_FAST                5 (keep)
+            184 LOAD_FAST                0 (self)
+            186 STORE_ATTR               0 (_pending)
+            196 RETURN_CONST             0 (None)
+
+Disassembly of <code object _execute at 0x17a817d0, file "rescue.py", line 150>:
+150           0 RESUME                   0
+
+151           2 NOP
+
+152           4 LOAD_FAST                1 (action)
+              6 LOAD_CONST               1 ('esc')
+              8 COMPARE_OP              40 (==)
+             12 POP_JUMP_IF_FALSE       28 (to 70)
+
+153          14 LOAD_FAST                0 (self)
+             16 LOAD_ATTR                0 (ctrl)
+             36 LOAD_ATTR                3 (NULL|self + press)
+             56 LOAD_CONST               1 ('esc')
+             58 CALL                     1
+             66 POP_TOP
+             68 JUMP_FORWARD           153 (to 376)
+
+154     >>   70 LOAD_FAST                1 (action)
+             72 LOAD_CONST               2 ('restart_loop')
+             74 COMPARE_OP              40 (==)
+             78 POP_JUMP_IF_FALSE       49 (to 178)
+
+155          80 LOAD_FAST                0 (self)
+             82 LOAD_ATTR                5 (NULL|self + _machine)
+            102 CALL                     0
+            110 STORE_FAST               6 (m)
+
+156         112 LOAD_FAST                6 (m)
+            114 LOAD_ATTR                7 (NULL|self + stop)
+            134 CALL                     0
+            142 POP_TOP
+
+157         144 LOAD_FAST                6 (m)
+            146 LOAD_ATTR                9 (NULL|self + start)
+            166 CALL                     0
+            174 POP_TOP
+            176 JUMP_FORWARD            99 (to 376)
+
+159     >>  178 LOAD_GLOBAL             11 (NULL + cell_center)
+            188 LOAD_FAST                1 (action)
+            190 CALL                     1
+            198 STORE_FAST               7 (pt)
+
+160         200 LOAD_FAST                7 (pt)
+            202 POP_JUMP_IF_NONE         2 (to 208)
+            204 LOAD_FAST                3 (frame)
+            206 POP_JUMP_IF_NOT_NONE     1 (to 210)
+
+161     >>  208 RETURN_CONST             3 (True)
+
+162     >>  210 LOAD_FAST                3 (frame)
+            212 LOAD_ATTR               12 (shape)
+            232 LOAD_CONST               0 (None)
+            234 LOAD_CONST               4 (2)
+            236 BINARY_SLICE
+            238 UNPACK_SEQUENCE          2
+            242 STORE_FAST               8 (fh)
+            244 STORE_FAST               9 (fw)
+
+163         246 LOAD_FAST                0 (self)
+            248 LOAD_ATTR                0 (ctrl)
+            268 LOAD_ATTR               15 (NULL|self + click)
+            288 LOAD_FAST                4 (ox)
+            290 LOAD_GLOBAL             17 (NULL + int)
+            300 LOAD_FAST                7 (pt)
+            302 LOAD_CONST               5 (0)
+            304 BINARY_SUBSCR
+            308 LOAD_FAST                9 (fw)
+            310 BINARY_OP                5 (*)
+            314 CALL                     1
+            322 BINARY_OP                0 (+)
+            326 LOAD_FAST                5 (oy)
+            328 LOAD_GLOBAL             17 (NULL + int)
+            338 LOAD_FAST                7 (pt)
+            340 LOAD_CONST               6 (1)
+            342 BINARY_SUBSCR
+            346 LOAD_FAST                8 (fh)
+            348 BINARY_OP                5 (*)
+            352 CALL                     1
+            360 BINARY_OP                0 (+)
+            364 CALL                     2
+            372 POP_JUMP_IF_TRUE         1 (to 376)
+
+164         374 RETURN_CONST             7 (False)
+
+165     >>  376 LOAD_FAST                0 (self)
+            378 LOAD_ATTR               19 (NULL|self + log)
+            398 LOAD_CONST               8 ('[rescue] remote action ')
+            400 LOAD_FAST                1 (action)
+            402 FORMAT_VALUE             0
+            404 LOAD_CONST               9 (' executed')
+            406 BUILD_STRING             3
+            408 CALL                     1
+            416 POP_TOP
+
+166         418 LOAD_FAST                2 (now)
+            420 LOAD_FAST                0 (self)
+            422 STORE_ATTR              10 (_t_progress)
+
+167         432 LOAD_CONST               5 (0)
+            434 LOAD_FAST                0 (self)
+            436 STORE_ATTR              11 (stage)
+
+168         446 LOAD_CONST               7 (False)
+            448 LOAD_FAST                0 (self)
+            450 LOAD_ATTR               24 (s)
+            470 STORE_ATTR              13 (rescue_listening)
+
+169         480 RETURN_CONST             3 (True)

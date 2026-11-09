@@ -1,0 +1,1454 @@
+  0           0 RESUME                   0
+
+  1           2 SETUP_ANNOTATIONS
+
+  2           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (json)
+             10 STORE_NAME               0 (json)
+
+  3          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (os)
+             18 STORE_NAME               1 (os)
+
+  4          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              2 (random)
+             26 STORE_NAME               2 (random)
+
+  5          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               1 (None)
+             32 IMPORT_NAME              3 (sys)
+             34 STORE_NAME               3 (sys)
+
+  6          36 LOAD_CONST               0 (0)
+             38 LOAD_CONST               2 (('dataclass',))
+             40 IMPORT_NAME              4 (dataclasses)
+             42 IMPORT_FROM              5 (dataclass)
+             44 STORE_NAME               5 (dataclass)
+             46 POP_TOP
+
+ 12          48 LOAD_CONST               3 (())
+             50 STORE_NAME               6 (FALLBACK_RELAY_URLS)
+             52 LOAD_NAME                7 (tuple)
+             54 LOAD_NAME                8 (__annotations__)
+             56 LOAD_CONST               4 ('FALLBACK_RELAY_URLS')
+             58 STORE_SUBSCR
+
+ 13          62 LOAD_CONST               5 ('https://raw.githubusercontent.com/ppkk12/fortnite-automatic-lap/main/relay_endpoints.json')
+             64 STORE_NAME               9 (RELAY_LIST_URL)
+
+ 14          66 LOAD_CONST               6 ('https://pk-auto-relay.pkaringo103.workers.dev')
+             68 STORE_NAME              10 (DEFAULT_TELEMETRY_URL)
+
+ 16          70 LOAD_CONST               7 ('https://discord.gg/jXgyWsYfUd')
+             72 STORE_NAME              11 (DISCORD_INVITE_URL)
+
+ 21          74 LOAD_CONST               8 ('play_btn.png')
+
+ 22          76 LOAD_CONST               9 ('continue_btn.png')
+
+ 23          78 LOAD_CONST              10 ('skip_btn.png')
+
+ 24          80 LOAD_CONST              11 ('return_lobby_btn.png')
+
+ 26          82 LOAD_CONST              12 ('claim_btn.png')
+
+ 27          84 LOAD_CONST              13 ('claim_single_btn.png')
+
+ 28          86 LOAD_CONST              14 ('popup_btn.png')
+
+ 30          88 LOAD_CONST              15 ('hud_btn.png')
+
+ 31          90 LOAD_CONST              16 ('menu_btn.png')
+
+ 32          92 LOAD_CONST              17 ('menu_return_btn.png')
+
+ 35          94 LOAD_CONST              18 ('storefront_play_btn.png')
+
+ 38          96 LOAD_CONST              19 ('item_found_btn.png')
+
+ 20          98 LOAD_CONST              20 (('play', 'continue', 'skip', 'return_lobby', 'claim', 'claim_single', 'popup', 'hud', 'menu_btn', 'menu_return', 'storefront_play', 'item_found'))
+            100 BUILD_CONST_KEY_MAP     12
+            102 STORE_NAME              12 (TEMPLATE_NAMES)
+
+ 45         104 LOAD_CONST              21 ('A: 通常ループ (続行→スキップ→ロビーへ)')
+
+ 46         106 LOAD_CONST              22 ('B: 待機島で待ってEscから退出')
+
+ 47         108 LOAD_CONST              23 ('C: 待機島で待って退出、アイテム発見でAへ切替')
+
+ 44         110 LOAD_CONST              24 (('A', 'B', 'C'))
+            112 BUILD_CONST_KEY_MAP      3
+            114 STORE_NAME              13 (MODES)
+
+ 51         116 BUILD_SET                0
+            118 LOAD_CONST              25 (frozenset({'storefront_play', 'claim_single', 'claim', 'popup', 'item_found'}))
+            120 SET_UPDATE               1
+            122 STORE_NAME              14 (OPTIONAL_TEMPLATES)
+
+ 59         124 LOAD_CONST              26 ('日本語')
+
+ 60         126 LOAD_CONST              27 ('English')
+
+ 61         128 LOAD_CONST              28 ('Español (beta)')
+
+ 62         130 LOAD_CONST              29 ('Português (beta)')
+
+ 63         132 LOAD_CONST              30 ('Русский (beta)')
+
+ 64         134 LOAD_CONST              31 ('Français (beta)')
+
+ 58         136 LOAD_CONST              32 (('ja', 'en', 'es', 'pt', 'ru', 'fr'))
+            138 BUILD_CONST_KEY_MAP      6
+            140 STORE_NAME              15 (LANGS)
+
+ 66         142 LOAD_CONST              33 (('es', 'pt', 'ru', 'fr'))
+            144 STORE_NAME              16 (PLATE_LANGS)
+
+ 70         146 BUILD_SET                0
+            148 LOAD_CONST              34 (frozenset({'menu_return', 'hud', 'storefront_play', 'menu_btn', 'skip', 'continue', 'item_found'}))
+            150 SET_UPDATE               1
+            152 STORE_NAME              17 (LANG_INDEPENDENT)
+
+ 77         154 LOAD_CONST              35 ((0.0, 0.7, 0.4, 1.0))
+            156 LOAD_CONST              36 (0.92)
+            158 LOAD_CONST              37 (('roi', 'threshold'))
+            160 BUILD_CONST_KEY_MAP      2
+
+ 78         162 LOAD_CONST              38 ((0.55, 0.3, 1.0, 0.52))
+            164 LOAD_CONST              39 (0.8)
+            166 LOAD_CONST              37 (('roi', 'threshold'))
+            168 BUILD_CONST_KEY_MAP      2
+
+ 79         170 LOAD_CONST              40 ((0.503, 0.8, 1.0, 1.0))
+            172 LOAD_CONST              41 (0.93)
+            174 LOAD_CONST              37 (('roi', 'threshold'))
+            176 BUILD_CONST_KEY_MAP      2
+
+ 84         178 LOAD_CONST              42 ((0.0, 0.8, 0.3, 1.0))
+            180 LOAD_CONST              43 (0.85)
+            182 LOAD_CONST              37 (('roi', 'threshold'))
+            184 BUILD_CONST_KEY_MAP      2
+
+ 85         186 LOAD_CONST              44 ((0.7, 0.0, 1.0, 0.18))
+            188 LOAD_CONST              43 (0.85)
+            190 LOAD_CONST              37 (('roi', 'threshold'))
+            192 BUILD_CONST_KEY_MAP      2
+
+ 86         194 LOAD_CONST              45 ((0.55, 0.0, 1.0, 0.36))
+            196 LOAD_CONST              43 (0.85)
+            198 LOAD_CONST              37 (('roi', 'threshold'))
+            200 BUILD_CONST_KEY_MAP      2
+
+ 88         202 LOAD_CONST              46 ((0.0, 0.55, 0.3, 0.8))
+            204 LOAD_CONST              39 (0.8)
+            206 LOAD_CONST              37 (('roi', 'threshold'))
+            208 BUILD_CONST_KEY_MAP      2
+
+ 90         210 LOAD_CONST              47 ((0.3, 0.0, 0.7, 0.4))
+            212 LOAD_CONST              48 (0.75)
+            214 LOAD_CONST              37 (('roi', 'threshold'))
+            216 BUILD_CONST_KEY_MAP      2
+
+ 76         218 LOAD_CONST              49 (('play', 'return_lobby', 'claim', 'hud', 'menu_btn', 'menu_return', 'storefront_play', 'item_found'))
+            220 BUILD_CONST_KEY_MAP      8
+            222 STORE_NAME              18 (PLATES)
+
+ 93         224 LOAD_CONST              50 ('claim_single')
+            226 BUILD_SET                1
+            228 STORE_NAME              19 (PLATE_UNUSED)
+
+ 96         230 LOAD_CONST              51 ('key')
+            232 LOAD_NAME               20 (str)
+            234 LOAD_CONST              52 ('return')
+            236 LOAD_NAME               20 (str)
+            238 BUILD_TUPLE              4
+            240 LOAD_CONST              53 (<code object plate_filename at 0x7f6af1dd2a30, file "config.py", line 96>)
+            242 MAKE_FUNCTION            4 (annotations)
+            244 STORE_NAME              21 (plate_filename)
+
+100         246 LOAD_CONST              51 ('key')
+            248 LOAD_NAME               20 (str)
+            250 LOAD_CONST              54 ('lang')
+            252 LOAD_NAME               20 (str)
+            254 LOAD_CONST              52 ('return')
+            256 LOAD_NAME               22 (bool)
+            258 BUILD_TUPLE              6
+            260 LOAD_CONST              55 (<code object uses_template at 0x7f6af1dc2e20, file "config.py", line 100>)
+            262 MAKE_FUNCTION            4 (annotations)
+            264 STORE_NAME              23 (uses_template)
+
+104         266 LOAD_CONST              87 (('ja',))
+            268 LOAD_CONST              51 ('key')
+            270 LOAD_NAME               20 (str)
+            272 LOAD_CONST              54 ('lang')
+            274 LOAD_NAME               20 (str)
+            276 LOAD_CONST              52 ('return')
+            278 LOAD_NAME               20 (str)
+            280 BUILD_TUPLE              6
+            282 LOAD_CONST              56 (<code object template_filename at 0x7f6af1de05f0, file "config.py", line 104>)
+            284 MAKE_FUNCTION            5 (defaults, annotations)
+            286 STORE_NAME              24 (template_filename)
+
+115         288 LOAD_CONST              52 ('return')
+            290 LOAD_NAME               20 (str)
+            292 BUILD_TUPLE              2
+            294 LOAD_CONST              57 (<code object base_dir at 0x179dff30, file "config.py", line 115>)
+            296 MAKE_FUNCTION            4 (annotations)
+            298 STORE_NAME              25 (base_dir)
+
+121         300 LOAD_CONST              52 ('return')
+            302 LOAD_NAME               20 (str)
+            304 BUILD_TUPLE              2
+            306 LOAD_CONST              58 (<code object assets_dir at 0x7f6af1dd5e90, file "config.py", line 121>)
+            308 MAKE_FUNCTION            4 (annotations)
+            310 STORE_NAME              26 (assets_dir)
+
+125         312 LOAD_CONST              52 ('return')
+            314 LOAD_NAME               20 (str)
+            316 BUILD_TUPLE              2
+            318 LOAD_CONST              59 (<code object bundled_assets_dir at 0x7f6af1de08d0, file "config.py", line 125>)
+            320 MAKE_FUNCTION            4 (annotations)
+            322 STORE_NAME              27 (bundled_assets_dir)
+
+132         324 LOAD_CONST              87 (('ja',))
+            326 LOAD_CONST              51 ('key')
+            328 LOAD_NAME               20 (str)
+            330 LOAD_CONST              54 ('lang')
+            332 LOAD_NAME               20 (str)
+            334 LOAD_CONST              52 ('return')
+            336 LOAD_NAME               20 (str)
+            338 BUILD_TUPLE              6
+            340 LOAD_CONST              60 (<code object external_template_path at 0x7f6af1dda9c0, file "config.py", line 132>)
+            342 MAKE_FUNCTION            5 (defaults, annotations)
+            344 STORE_NAME              28 (external_template_path)
+
+137         346 LOAD_CONST              87 (('ja',))
+            348 LOAD_CONST              51 ('key')
+            350 LOAD_NAME               20 (str)
+            352 LOAD_CONST              54 ('lang')
+            354 LOAD_NAME               20 (str)
+            356 LOAD_CONST              52 ('return')
+            358 LOAD_NAME               20 (str)
+            360 BUILD_TUPLE              6
+            362 LOAD_CONST              61 (<code object template_path at 0x7f6af1f8d7c0, file "config.py", line 137>)
+            364 MAKE_FUNCTION            5 (defaults, annotations)
+            366 STORE_NAME              29 (template_path)
+
+146         368 LOAD_NAME                5 (dataclass)
+
+147         370 PUSH_NULL
+            372 LOAD_BUILD_CLASS
+            374 LOAD_CONST              62 (<code object Settings at 0x179d1f40, file "config.py", line 146>)
+            376 MAKE_FUNCTION            0
+            378 LOAD_CONST              63 ('Settings')
+            380 CALL                     2
+
+146         388 CALL                     0
+
+147         396 STORE_NAME              30 (Settings)
+
+225         398 LOAD_CONST              64 (('discord_link_key', 'telemetry_enabled', 'alert_enabled', 'screenshot_enabled', 'telemetry_api_url', 'report_hours', 'remote_enabled', 'auto_update_check', 'reward_shot_enabled', 'background_mode', 'background_ghost', 'background_post_keys', 'lang', 'mode', 'wait_b', 'wait_c', 'threshold', 'afk_enabled', 'afk_interval', 'afk_hold', 'space_enabled', 'space_seconds', 'space_count', 'auto_mute_enabled', 'loot_vault_enabled', 'humanizer_enabled', 'coffee_break_enabled', 'auto_calibrate', 'stuck_timeout_min', 'rescue_remote_enabled', 'squad_check_enabled', 'afk_mouse_look', 'jitter_enabled', 'wait_jitter_percent', 'pickaxe_afk_enabled', 'pickaxe_slot_key', 'pickaxe_min_s', 'pickaxe_max_s', 'license_key', 'license_ok_at', 'license_ok_hwid', 'license_sig', 'license_grace_until', 'license_grace_since', 'relay_fallback_urls', 'bus_drop_enabled', 'mode_fix_enabled', 'bus_dive_seconds', 'bus_drop_min', 'bus_drop_max'))
+            400 STORE_NAME              31 (USER_SETTING_KEYS)
+
+239         402 LOAD_CONST              65 ((0.0, 24.0))
+            404 LOAD_CONST              66 ((10.0, 600.0))
+            406 LOAD_CONST              66 ((10.0, 600.0))
+            408 LOAD_CONST              67 ((0.3, 0.99))
+            410 LOAD_CONST              68 ((1.0, 600.0))
+            412 LOAD_CONST              69 ((0.5, 30.0))
+
+240         414 LOAD_CONST              70 ((1.0, 3600.0))
+            416 LOAD_CONST              71 ((1, 20))
+            418 LOAD_CONST              72 ((0.0, 240.0))
+
+241         420 LOAD_CONST              73 ((0.0, 0.5))
+            422 LOAD_CONST              70 ((1.0, 3600.0))
+            424 LOAD_CONST              70 ((1.0, 3600.0))
+
+242         426 LOAD_CONST              74 ((1.0, 60.0))
+            428 LOAD_CONST              75 ((1, 60))
+            430 LOAD_CONST              75 ((1, 60))
+
+238         432 LOAD_CONST              76 (('report_hours', 'wait_b', 'wait_c', 'threshold', 'afk_interval', 'afk_hold', 'space_seconds', 'space_count', 'stuck_timeout_min', 'wait_jitter_percent', 'pickaxe_min_s', 'pickaxe_max_s', 'bus_dive_seconds', 'bus_drop_min', 'bus_drop_max'))
+            434 BUILD_CONST_KEY_MAP     15
+            436 STORE_NAME              32 (NUMBER_RANGES)
+
+244         438 PUSH_NULL
+            440 LOAD_NAME                7 (tuple)
+            442 LOAD_CONST              77 ('1234567890')
+            444 CALL                     1
+            452 STORE_NAME              33 (PICKAXE_SLOT_KEYS)
+
+247         454 LOAD_CONST              88 ((None,))
+            456 LOAD_CONST              78 ('base_seconds')
+            458 LOAD_NAME               34 (float)
+            460 LOAD_CONST              79 ('s')
+            462 LOAD_CONST              80 ('Settings | None')
+            464 LOAD_CONST              52 ('return')
+            466 LOAD_NAME                7 (tuple)
+            468 BUILD_TUPLE              6
+            470 LOAD_CONST              81 (<code object jitter_range at 0x7f6af1de56f0, file "config.py", line 247>)
+            472 MAKE_FUNCTION            5 (defaults, annotations)
+            474 STORE_NAME              35 (jitter_range)
+
+258         476 LOAD_CONST               1 (None)
+            478 LOAD_NAME                2 (random)
+            480 BUILD_TUPLE              2
+            482 LOAD_CONST              78 ('base_seconds')
+            484 LOAD_NAME               34 (float)
+            486 LOAD_CONST              79 ('s')
+            488 LOAD_CONST              80 ('Settings | None')
+            490 LOAD_CONST              52 ('return')
+            492 LOAD_NAME               34 (float)
+            494 BUILD_TUPLE              6
+            496 LOAD_CONST              82 (<code object get_jittered_wait at 0x7f6af1dd5fb0, file "config.py", line 258>)
+            498 MAKE_FUNCTION            5 (defaults, annotations)
+            500 STORE_NAME              36 (get_jittered_wait)
+
+264         502 LOAD_CONST              52 ('return')
+            504 LOAD_NAME               20 (str)
+            506 BUILD_TUPLE              2
+            508 LOAD_CONST              83 (<code object user_settings_path at 0x7f6af1dd69d0, file "config.py", line 264>)
+            510 MAKE_FUNCTION            4 (annotations)
+            512 STORE_NAME              37 (user_settings_path)
+
+268         514 LOAD_CONST              89 (('',))
+            516 LOAD_CONST              79 ('s')
+            518 LOAD_CONST              63 ('Settings')
+            520 LOAD_CONST              84 ('path')
+            522 LOAD_NAME               20 (str)
+            524 LOAD_CONST              52 ('return')
+            526 LOAD_CONST               1 (None)
+            528 BUILD_TUPLE              6
+            530 LOAD_CONST              85 (<code object load_user_settings at 0x179dcf00, file "config.py", line 268>)
+            532 MAKE_FUNCTION            5 (defaults, annotations)
+            534 STORE_NAME              38 (load_user_settings)
+
+298         536 LOAD_CONST              89 (('',))
+            538 LOAD_CONST              79 ('s')
+            540 LOAD_CONST              63 ('Settings')
+            542 LOAD_CONST              84 ('path')
+            544 LOAD_NAME               20 (str)
+            546 LOAD_CONST              52 ('return')
+            548 LOAD_NAME               22 (bool)
+            550 BUILD_TUPLE              6
+            552 LOAD_CONST              86 (<code object save_user_settings at 0x7f6aed7c03f0, file "config.py", line 298>)
+            554 MAKE_FUNCTION            5 (defaults, annotations)
+            556 STORE_NAME              39 (save_user_settings)
+            558 RETURN_CONST             1 (None)
+
+Disassembly of <code object plate_filename at 0x7f6af1dd2a30, file "config.py", line 96>:
+ 96           0 RESUME                   0
+
+ 97           2 LOAD_GLOBAL              0 (TEMPLATE_NAMES)
+             12 LOAD_FAST                0 (key)
+             14 BINARY_SUBSCR
+             18 LOAD_ATTR                3 (NULL|self + replace)
+             38 LOAD_CONST               1 ('.png')
+             40 LOAD_CONST               2 ('_plate.png')
+             42 CALL                     2
+             50 RETURN_VALUE
+
+Disassembly of <code object uses_template at 0x7f6af1dc2e20, file "config.py", line 100>:
+100           0 RESUME                   0
+
+101           2 LOAD_FAST                1 (lang)
+              4 LOAD_GLOBAL              0 (PLATE_LANGS)
+             14 CONTAINS_OP              0
+             16 COPY                     1
+             18 POP_JUMP_IF_FALSE        8 (to 36)
+             20 POP_TOP
+             22 LOAD_FAST                0 (key)
+             24 LOAD_GLOBAL              2 (PLATE_UNUSED)
+             34 CONTAINS_OP              0
+        >>   36 UNARY_NOT
+             38 RETURN_VALUE
+
+Disassembly of <code object template_filename at 0x7f6af1de05f0, file "config.py", line 104>:
+104           0 RESUME                   0
+
+105           2 LOAD_GLOBAL              0 (TEMPLATE_NAMES)
+             12 LOAD_FAST                0 (key)
+             14 BINARY_SUBSCR
+             18 STORE_FAST               2 (name)
+
+106          20 LOAD_FAST                0 (key)
+             22 LOAD_GLOBAL              2 (LANG_INDEPENDENT)
+             32 CONTAINS_OP              0
+             34 POP_JUMP_IF_FALSE        2 (to 40)
+
+107          36 LOAD_FAST                2 (name)
+             38 RETURN_VALUE
+
+108     >>   40 LOAD_FAST                1 (lang)
+             42 LOAD_GLOBAL              4 (PLATE_LANGS)
+             52 CONTAINS_OP              0
+             54 POP_JUMP_IF_FALSE       19 (to 94)
+             56 LOAD_FAST                0 (key)
+             58 LOAD_GLOBAL              6 (PLATES)
+             68 CONTAINS_OP              0
+             70 POP_JUMP_IF_FALSE       11 (to 94)
+
+109          72 LOAD_GLOBAL              9 (NULL + plate_filename)
+             82 LOAD_FAST                0 (key)
+             84 CALL                     1
+             92 RETURN_VALUE
+
+110     >>   94 LOAD_FAST                1 (lang)
+             96 LOAD_CONST               1 ('ja')
+             98 COMPARE_OP              40 (==)
+            102 POP_JUMP_IF_TRUE         8 (to 120)
+            104 LOAD_FAST                1 (lang)
+            106 LOAD_GLOBAL              4 (PLATE_LANGS)
+            116 CONTAINS_OP              0
+            118 POP_JUMP_IF_FALSE        2 (to 124)
+
+111     >>  120 LOAD_FAST                2 (name)
+            122 RETURN_VALUE
+
+112     >>  124 LOAD_FAST                2 (name)
+            126 LOAD_ATTR               11 (NULL|self + replace)
+            146 LOAD_CONST               2 ('.png')
+            148 LOAD_CONST               3 ('_')
+            150 LOAD_FAST                1 (lang)
+            152 FORMAT_VALUE             0
+            154 LOAD_CONST               2 ('.png')
+            156 BUILD_STRING             3
+            158 CALL                     2
+            166 RETURN_VALUE
+
+Disassembly of <code object base_dir at 0x179dff30, file "config.py", line 115>:
+115           0 RESUME                   0
+
+116           2 LOAD_GLOBAL              1 (NULL + getattr)
+             12 LOAD_GLOBAL              2 (sys)
+             22 LOAD_CONST               1 ('frozen')
+             24 LOAD_CONST               2 (False)
+             26 CALL                     3
+             34 POP_JUMP_IF_FALSE       74 (to 184)
+
+117          36 LOAD_GLOBAL              4 (os)
+             46 LOAD_ATTR                6 (path)
+             66 LOAD_ATTR                9 (NULL|self + dirname)
+             86 LOAD_GLOBAL              4 (os)
+             96 LOAD_ATTR                6 (path)
+            116 LOAD_ATTR               11 (NULL|self + abspath)
+            136 LOAD_GLOBAL              2 (sys)
+            146 LOAD_ATTR               12 (executable)
+            166 CALL                     1
+            174 CALL                     1
+            182 RETURN_VALUE
+
+118     >>  184 LOAD_GLOBAL              4 (os)
+            194 LOAD_ATTR                6 (path)
+            214 LOAD_ATTR                9 (NULL|self + dirname)
+            234 LOAD_GLOBAL              4 (os)
+            244 LOAD_ATTR                6 (path)
+            264 LOAD_ATTR                9 (NULL|self + dirname)
+            284 LOAD_GLOBAL              4 (os)
+            294 LOAD_ATTR                6 (path)
+            314 LOAD_ATTR               11 (NULL|self + abspath)
+            334 LOAD_GLOBAL             14 (__file__)
+            344 CALL                     1
+            352 CALL                     1
+            360 CALL                     1
+            368 RETURN_VALUE
+
+Disassembly of <code object assets_dir at 0x7f6af1dd5e90, file "config.py", line 121>:
+121           0 RESUME                   0
+
+122           2 LOAD_GLOBAL              0 (os)
+             12 LOAD_ATTR                2 (path)
+             32 LOAD_ATTR                5 (NULL|self + join)
+             52 LOAD_GLOBAL              7 (NULL + base_dir)
+             62 CALL                     0
+             70 LOAD_CONST               1 ('assets')
+             72 CALL                     2
+             80 RETURN_VALUE
+
+Disassembly of <code object bundled_assets_dir at 0x7f6af1de08d0, file "config.py", line 125>:
+125           0 RESUME                   0
+
+126           2 NOP
+
+127           4 LOAD_GLOBAL              1 (NULL + getattr)
+             14 LOAD_GLOBAL              2 (sys)
+             24 LOAD_CONST               1 ('frozen')
+             26 LOAD_CONST               2 (False)
+             28 CALL                     3
+             36 POP_JUMP_IF_FALSE       55 (to 148)
+
+128          38 LOAD_GLOBAL              4 (os)
+             48 LOAD_ATTR                6 (path)
+             68 LOAD_ATTR                9 (NULL|self + join)
+             88 LOAD_GLOBAL              1 (NULL + getattr)
+             98 LOAD_GLOBAL              2 (sys)
+            108 LOAD_CONST               3 ('_MEIPASS')
+            110 LOAD_GLOBAL             11 (NULL + base_dir)
+            120 CALL                     0
+            128 CALL                     3
+            136 LOAD_CONST               4 ('assets_default')
+            138 CALL                     2
+            146 RETURN_VALUE
+
+129     >>  148 LOAD_GLOBAL             13 (NULL + assets_dir)
+            158 CALL                     0
+            166 RETURN_VALUE
+
+Disassembly of <code object external_template_path at 0x7f6af1dda9c0, file "config.py", line 132>:
+132           0 RESUME                   0
+
+133           2 NOP
+
+134           4 LOAD_GLOBAL              0 (os)
+             14 LOAD_ATTR                2 (path)
+             34 LOAD_ATTR                5 (NULL|self + join)
+             54 LOAD_GLOBAL              7 (NULL + assets_dir)
+             64 CALL                     0
+             72 LOAD_GLOBAL              9 (NULL + template_filename)
+             82 LOAD_FAST                0 (key)
+             84 LOAD_FAST                1 (lang)
+             86 CALL                     2
+             94 CALL                     2
+            102 RETURN_VALUE
+
+Disassembly of <code object template_path at 0x7f6af1f8d7c0, file "config.py", line 137>:
+137           0 RESUME                   0
+
+138           2 NOP
+
+139           4 LOAD_GLOBAL              1 (NULL + external_template_path)
+             14 LOAD_FAST                0 (key)
+             16 LOAD_FAST                1 (lang)
+             18 CALL                     2
+             26 STORE_FAST               2 (ext)
+
+140          28 LOAD_GLOBAL              2 (os)
+             38 LOAD_ATTR                4 (path)
+             58 LOAD_ATTR                7 (NULL|self + isfile)
+             78 LOAD_FAST                2 (ext)
+             80 CALL                     1
+             88 POP_JUMP_IF_FALSE        2 (to 94)
+
+141          90 LOAD_FAST                2 (ext)
+             92 RETURN_VALUE
+
+142     >>   94 LOAD_GLOBAL              2 (os)
+            104 LOAD_ATTR                4 (path)
+            124 LOAD_ATTR                9 (NULL|self + join)
+            144 LOAD_GLOBAL             11 (NULL + bundled_assets_dir)
+            154 CALL                     0
+            162 LOAD_GLOBAL             13 (NULL + template_filename)
+            172 LOAD_FAST                0 (key)
+            174 LOAD_FAST                1 (lang)
+            176 CALL                     2
+            184 CALL                     2
+            192 STORE_FAST               3 (bundled)
+
+143         194 LOAD_GLOBAL              2 (os)
+            204 LOAD_ATTR                4 (path)
+            224 LOAD_ATTR                7 (NULL|self + isfile)
+            244 LOAD_FAST                3 (bundled)
+            246 CALL                     1
+            254 POP_JUMP_IF_FALSE        2 (to 260)
+            256 LOAD_FAST                3 (bundled)
+            258 RETURN_VALUE
+        >>  260 LOAD_FAST                2 (ext)
+            262 RETURN_VALUE
+
+Disassembly of <code object Settings at 0x179d1f40, file "config.py", line 146>:
+146           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('Settings')
+              8 STORE_NAME               2 (__qualname__)
+             10 SETUP_ANNOTATIONS
+
+148          12 LOAD_CONST               1 (0.82)
+             14 STORE_NAME               3 (threshold)
+             16 LOAD_NAME                4 (float)
+             18 LOAD_NAME                5 (__annotations__)
+             20 LOAD_CONST               2 ('threshold')
+             22 STORE_SUBSCR
+
+149          26 LOAD_CONST               3 ('ja')
+             28 STORE_NAME               6 (lang)
+             30 LOAD_NAME                7 (str)
+             32 LOAD_NAME                5 (__annotations__)
+             34 LOAD_CONST               4 ('lang')
+             36 STORE_SUBSCR
+
+150          40 LOAD_CONST               5 ('A')
+             42 STORE_NAME               8 (mode)
+             44 LOAD_NAME                7 (str)
+             46 LOAD_NAME                5 (__annotations__)
+             48 LOAD_CONST               6 ('mode')
+             50 STORE_SUBSCR
+
+151          54 LOAD_CONST               7 (90.0)
+             56 STORE_NAME               9 (wait_b)
+             58 LOAD_NAME                4 (float)
+             60 LOAD_NAME                5 (__annotations__)
+             62 LOAD_CONST               8 ('wait_b')
+             64 STORE_SUBSCR
+
+152          68 LOAD_CONST               7 (90.0)
+             70 STORE_NAME              10 (wait_c)
+             72 LOAD_NAME                4 (float)
+             74 LOAD_NAME                5 (__annotations__)
+             76 LOAD_CONST               9 ('wait_c')
+             78 STORE_SUBSCR
+
+153          82 LOAD_CONST              10 (2.0)
+             84 STORE_NAME              11 (poll_interval)
+             86 LOAD_NAME                4 (float)
+             88 LOAD_NAME                5 (__annotations__)
+             90 LOAD_CONST              11 ('poll_interval')
+             92 STORE_SUBSCR
+
+156          96 PUSH_NULL
+             98 LOAD_NAME               12 (tuple)
+            100 LOAD_CONST              12 (<code object <genexpr> at 0x7f6af1dd3b30, file "config.py", line 156>)
+            102 MAKE_FUNCTION            0
+            104 PUSH_NULL
+            106 LOAD_NAME               13 (range)
+            108 LOAD_CONST              13 (9)
+            110 CALL                     1
+            118 GET_ITER
+            120 CALL                     0
+            128 CALL                     1
+            136 STORE_NAME              14 (scales)
+            138 LOAD_NAME               12 (tuple)
+            140 LOAD_NAME                5 (__annotations__)
+            142 LOAD_CONST              14 ('scales')
+            144 STORE_SUBSCR
+
+157         148 LOAD_CONST              15 (5)
+            150 STORE_NAME              15 (jitter_px)
+            152 LOAD_NAME               16 (int)
+            154 LOAD_NAME                5 (__annotations__)
+            156 LOAD_CONST              16 ('jitter_px')
+            158 STORE_SUBSCR
+
+158         162 LOAD_CONST              17 (0.15)
+            164 STORE_NAME              17 (delay_min)
+            166 LOAD_NAME                4 (float)
+            168 LOAD_NAME                5 (__annotations__)
+            170 LOAD_CONST              18 ('delay_min')
+            172 STORE_SUBSCR
+
+159         176 LOAD_CONST              19 (0.45)
+            178 STORE_NAME              18 (delay_max)
+            180 LOAD_NAME                4 (float)
+            182 LOAD_NAME                5 (__annotations__)
+            184 LOAD_CONST              20 ('delay_max')
+            186 STORE_SUBSCR
+
+160         190 LOAD_CONST              21 (3.0)
+            192 STORE_NAME              19 (click_cooldown)
+            194 LOAD_NAME                4 (float)
+            196 LOAD_NAME                5 (__annotations__)
+            198 LOAD_CONST              22 ('click_cooldown')
+            200 STORE_SUBSCR
+
+161         204 LOAD_CONST              23 (1)
+            206 STORE_NAME              20 (monitor_index)
+            208 LOAD_NAME               16 (int)
+            210 LOAD_NAME                5 (__annotations__)
+            212 LOAD_CONST              24 ('monitor_index')
+            214 STORE_SUBSCR
+
+163         218 LOAD_CONST              25 (True)
+            220 STORE_NAME              21 (afk_enabled)
+            222 LOAD_NAME               22 (bool)
+            224 LOAD_NAME                5 (__annotations__)
+            226 LOAD_CONST              26 ('afk_enabled')
+            228 STORE_SUBSCR
+
+164         232 LOAD_CONST              27 (10.0)
+            234 STORE_NAME              23 (afk_interval)
+            236 LOAD_NAME                4 (float)
+            238 LOAD_NAME                5 (__annotations__)
+            240 LOAD_CONST              28 ('afk_interval')
+            242 STORE_SUBSCR
+
+165         246 LOAD_CONST              21 (3.0)
+            248 STORE_NAME              24 (afk_hold)
+            250 LOAD_NAME                4 (float)
+            252 LOAD_NAME                5 (__annotations__)
+            254 LOAD_CONST              29 ('afk_hold')
+            256 STORE_SUBSCR
+
+166         260 LOAD_CONST              30 (('w', 'a', 's', 'd'))
+            262 STORE_NAME              25 (afk_keys)
+            264 LOAD_NAME               12 (tuple)
+            266 LOAD_NAME                5 (__annotations__)
+            268 LOAD_CONST              31 ('afk_keys')
+            270 STORE_SUBSCR
+
+168         274 LOAD_CONST              32 ('')
+            276 STORE_NAME              26 (discord_link_key)
+            278 LOAD_NAME                7 (str)
+            280 LOAD_NAME                5 (__annotations__)
+            282 LOAD_CONST              33 ('discord_link_key')
+            284 STORE_SUBSCR
+
+169         288 LOAD_CONST              25 (True)
+            290 STORE_NAME              27 (telemetry_enabled)
+            292 LOAD_NAME               22 (bool)
+            294 LOAD_NAME                5 (__annotations__)
+            296 LOAD_CONST              34 ('telemetry_enabled')
+            298 STORE_SUBSCR
+
+170         302 LOAD_CONST              35 (False)
+            304 STORE_NAME              28 (reward_shot_enabled)
+            306 LOAD_NAME               22 (bool)
+            308 LOAD_NAME                5 (__annotations__)
+            310 LOAD_CONST              36 ('reward_shot_enabled')
+            312 STORE_SUBSCR
+
+171         316 LOAD_CONST              35 (False)
+            318 STORE_NAME              29 (screenshot_enabled)
+            320 LOAD_NAME               22 (bool)
+            322 LOAD_NAME                5 (__annotations__)
+            324 LOAD_CONST              37 ('screenshot_enabled')
+            326 STORE_SUBSCR
+
+172         330 LOAD_CONST              25 (True)
+            332 STORE_NAME              30 (alert_enabled)
+            334 LOAD_NAME               22 (bool)
+            336 LOAD_NAME                5 (__annotations__)
+            338 LOAD_CONST              38 ('alert_enabled')
+            340 STORE_SUBSCR
+
+173         344 LOAD_NAME               31 (DEFAULT_TELEMETRY_URL)
+            346 STORE_NAME              32 (telemetry_api_url)
+            348 LOAD_NAME                7 (str)
+            350 LOAD_NAME                5 (__annotations__)
+            352 LOAD_CONST              39 ('telemetry_api_url')
+            354 STORE_SUBSCR
+
+174         358 LOAD_CONST              40 (0.0)
+            360 STORE_NAME              33 (report_hours)
+            362 LOAD_NAME                4 (float)
+            364 LOAD_NAME                5 (__annotations__)
+            366 LOAD_CONST              41 ('report_hours')
+            368 STORE_SUBSCR
+
+175         372 LOAD_CONST              25 (True)
+            374 STORE_NAME              34 (remote_enabled)
+            376 LOAD_NAME               22 (bool)
+            378 LOAD_NAME                5 (__annotations__)
+            380 LOAD_CONST              42 ('remote_enabled')
+            382 STORE_SUBSCR
+
+177         386 LOAD_CONST              35 (False)
+            388 STORE_NAME              35 (space_enabled)
+            390 LOAD_NAME               22 (bool)
+            392 LOAD_NAME                5 (__annotations__)
+            394 LOAD_CONST              43 ('space_enabled')
+            396 STORE_SUBSCR
+
+178         400 LOAD_CONST              27 (10.0)
+            402 STORE_NAME              36 (space_seconds)
+            404 LOAD_NAME                4 (float)
+            406 LOAD_NAME                5 (__annotations__)
+            408 LOAD_CONST              44 ('space_seconds')
+            410 STORE_SUBSCR
+
+179         414 LOAD_CONST              45 (3)
+            416 STORE_NAME              37 (space_count)
+            418 LOAD_NAME               16 (int)
+            420 LOAD_NAME                5 (__annotations__)
+            422 LOAD_CONST              46 ('space_count')
+            424 STORE_SUBSCR
+
+180         428 LOAD_CONST              25 (True)
+            430 STORE_NAME              38 (auto_update_check)
+            432 LOAD_NAME               22 (bool)
+            434 LOAD_NAME                5 (__annotations__)
+            436 LOAD_CONST              47 ('auto_update_check')
+            438 STORE_SUBSCR
+
+183         442 LOAD_CONST              25 (True)
+            444 STORE_NAME              39 (background_mode)
+            446 LOAD_NAME               22 (bool)
+            448 LOAD_NAME                5 (__annotations__)
+            450 LOAD_CONST              48 ('background_mode')
+            452 STORE_SUBSCR
+
+187         456 LOAD_CONST              25 (True)
+            458 STORE_NAME              40 (background_ghost)
+            460 LOAD_NAME               22 (bool)
+            462 LOAD_NAME                5 (__annotations__)
+            464 LOAD_CONST              49 ('background_ghost')
+            466 STORE_SUBSCR
+
+188         470 LOAD_CONST              35 (False)
+            472 STORE_NAME              41 (ghost_show)
+            474 LOAD_NAME               22 (bool)
+            476 LOAD_NAME                5 (__annotations__)
+            478 LOAD_CONST              50 ('ghost_show')
+            480 STORE_SUBSCR
+
+189         484 LOAD_CONST              35 (False)
+            486 STORE_NAME              42 (background_post_keys)
+            488 LOAD_NAME               22 (bool)
+            490 LOAD_NAME                5 (__annotations__)
+            492 LOAD_CONST              51 ('background_post_keys')
+            494 STORE_SUBSCR
+
+191         498 LOAD_CONST              35 (False)
+            500 STORE_NAME              43 (auto_mute_enabled)
+            502 LOAD_NAME               22 (bool)
+            504 LOAD_NAME                5 (__annotations__)
+            506 LOAD_CONST              52 ('auto_mute_enabled')
+            508 STORE_SUBSCR
+
+192         512 LOAD_CONST              25 (True)
+            514 STORE_NAME              44 (loot_vault_enabled)
+            516 LOAD_NAME               22 (bool)
+            518 LOAD_NAME                5 (__annotations__)
+            520 LOAD_CONST              53 ('loot_vault_enabled')
+            522 STORE_SUBSCR
+
+193         526 LOAD_CONST              25 (True)
+            528 STORE_NAME              45 (humanizer_enabled)
+            530 LOAD_NAME               22 (bool)
+            532 LOAD_NAME                5 (__annotations__)
+            534 LOAD_CONST              54 ('humanizer_enabled')
+            536 STORE_SUBSCR
+
+194         540 LOAD_CONST              35 (False)
+            542 STORE_NAME              46 (coffee_break_enabled)
+            544 LOAD_NAME               22 (bool)
+            546 LOAD_NAME                5 (__annotations__)
+            548 LOAD_CONST              55 ('coffee_break_enabled')
+            550 STORE_SUBSCR
+
+195         554 LOAD_CONST              25 (True)
+            556 STORE_NAME              47 (auto_calibrate)
+            558 LOAD_NAME               22 (bool)
+            560 LOAD_NAME                5 (__annotations__)
+            562 LOAD_CONST              56 ('auto_calibrate')
+            564 STORE_SUBSCR
+
+196         568 LOAD_CONST              57 (15.0)
+            570 STORE_NAME              48 (stuck_timeout_min)
+            572 LOAD_NAME                4 (float)
+            574 LOAD_NAME                5 (__annotations__)
+            576 LOAD_CONST              58 ('stuck_timeout_min')
+            578 STORE_SUBSCR
+
+197         582 LOAD_CONST              25 (True)
+            584 STORE_NAME              49 (rescue_remote_enabled)
+            586 LOAD_NAME               22 (bool)
+            588 LOAD_NAME                5 (__annotations__)
+            590 LOAD_CONST              59 ('rescue_remote_enabled')
+            592 STORE_SUBSCR
+
+198         596 LOAD_CONST              35 (False)
+            598 STORE_NAME              50 (squad_check_enabled)
+            600 LOAD_NAME               22 (bool)
+            602 LOAD_NAME                5 (__annotations__)
+            604 LOAD_CONST              60 ('squad_check_enabled')
+            606 STORE_SUBSCR
+
+199         610 LOAD_CONST              35 (False)
+            612 STORE_NAME              51 (rescue_listening)
+            614 LOAD_NAME               22 (bool)
+            616 LOAD_NAME                5 (__annotations__)
+            618 LOAD_CONST              61 ('rescue_listening')
+            620 STORE_SUBSCR
+
+201         624 LOAD_CONST              25 (True)
+            626 STORE_NAME              52 (afk_mouse_look)
+            628 LOAD_NAME               22 (bool)
+            630 LOAD_NAME                5 (__annotations__)
+            632 LOAD_CONST              62 ('afk_mouse_look')
+            634 STORE_SUBSCR
+
+202         638 LOAD_CONST              25 (True)
+            640 STORE_NAME              53 (jitter_enabled)
+            642 LOAD_NAME               22 (bool)
+            644 LOAD_NAME                5 (__annotations__)
+            646 LOAD_CONST              63 ('jitter_enabled')
+            648 STORE_SUBSCR
+
+203         652 LOAD_CONST              17 (0.15)
+            654 STORE_NAME              54 (wait_jitter_percent)
+            656 LOAD_NAME                4 (float)
+            658 LOAD_NAME                5 (__annotations__)
+            660 LOAD_CONST              64 ('wait_jitter_percent')
+            662 STORE_SUBSCR
+
+204         666 LOAD_CONST              25 (True)
+            668 STORE_NAME              55 (pickaxe_afk_enabled)
+            670 LOAD_NAME               22 (bool)
+            672 LOAD_NAME                5 (__annotations__)
+            674 LOAD_CONST              65 ('pickaxe_afk_enabled')
+            676 STORE_SUBSCR
+
+205         680 LOAD_CONST              66 ('1')
+            682 STORE_NAME              56 (pickaxe_slot_key)
+            684 LOAD_NAME                7 (str)
+            686 LOAD_NAME                5 (__annotations__)
+            688 LOAD_CONST              67 ('pickaxe_slot_key')
+            690 STORE_SUBSCR
+
+208         694 LOAD_CONST              25 (True)
+            696 STORE_NAME              57 (bus_drop_enabled)
+            698 LOAD_NAME               22 (bool)
+            700 LOAD_NAME                5 (__annotations__)
+            702 LOAD_CONST              68 ('bus_drop_enabled')
+            704 STORE_SUBSCR
+
+209         708 LOAD_CONST              25 (True)
+            710 STORE_NAME              58 (mode_fix_enabled)
+            712 LOAD_NAME               22 (bool)
+            714 LOAD_NAME                5 (__annotations__)
+            716 LOAD_CONST              69 ('mode_fix_enabled')
+            718 STORE_SUBSCR
+
+210         722 LOAD_CONST              70 (8.0)
+            724 STORE_NAME              59 (bus_dive_seconds)
+            726 LOAD_NAME                4 (float)
+            728 LOAD_NAME                5 (__annotations__)
+            730 LOAD_CONST              71 ('bus_dive_seconds')
+            732 STORE_SUBSCR
+
+211         736 LOAD_CONST              72 (15)
+            738 STORE_NAME              60 (bus_drop_min)
+            740 LOAD_NAME               16 (int)
+            742 LOAD_NAME                5 (__annotations__)
+            744 LOAD_CONST              73 ('bus_drop_min')
+            746 STORE_SUBSCR
+
+212         750 LOAD_CONST              74 (25)
+            752 STORE_NAME              61 (bus_drop_max)
+            754 LOAD_NAME               16 (int)
+            756 LOAD_NAME                5 (__annotations__)
+            758 LOAD_CONST              75 ('bus_drop_max')
+            760 STORE_SUBSCR
+
+213         764 LOAD_CONST              27 (10.0)
+            766 STORE_NAME              62 (pickaxe_min_s)
+            768 LOAD_NAME                4 (float)
+            770 LOAD_NAME                5 (__annotations__)
+            772 LOAD_CONST              76 ('pickaxe_min_s')
+            774 STORE_SUBSCR
+
+214         778 LOAD_CONST              32 ('')
+            780 STORE_NAME              63 (license_key)
+            782 LOAD_NAME                7 (str)
+            784 LOAD_NAME                5 (__annotations__)
+            786 LOAD_CONST              77 ('license_key')
+            788 STORE_SUBSCR
+
+215         792 LOAD_CONST              40 (0.0)
+            794 STORE_NAME              64 (license_ok_at)
+            796 LOAD_NAME                4 (float)
+            798 LOAD_NAME                5 (__annotations__)
+            800 LOAD_CONST              78 ('license_ok_at')
+            802 STORE_SUBSCR
+
+216         806 LOAD_CONST              32 ('')
+            808 STORE_NAME              65 (license_ok_hwid)
+            810 LOAD_NAME                7 (str)
+            812 LOAD_NAME                5 (__annotations__)
+            814 LOAD_CONST              79 ('license_ok_hwid')
+            816 STORE_SUBSCR
+
+217         820 LOAD_CONST              32 ('')
+            822 STORE_NAME              66 (relay_fallback_urls)
+            824 LOAD_NAME                7 (str)
+            826 LOAD_NAME                5 (__annotations__)
+            828 LOAD_CONST              80 ('relay_fallback_urls')
+            830 STORE_SUBSCR
+
+218         834 LOAD_CONST              40 (0.0)
+            836 STORE_NAME              67 (license_grace_until)
+            838 LOAD_NAME                4 (float)
+            840 LOAD_NAME                5 (__annotations__)
+            842 LOAD_CONST              81 ('license_grace_until')
+            844 STORE_SUBSCR
+
+219         848 LOAD_CONST              40 (0.0)
+            850 STORE_NAME              68 (license_grace_since)
+            852 LOAD_NAME                4 (float)
+            854 LOAD_NAME                5 (__annotations__)
+            856 LOAD_CONST              82 ('license_grace_since')
+            858 STORE_SUBSCR
+
+220         862 LOAD_CONST              32 ('')
+            864 STORE_NAME              69 (license_sig)
+            866 LOAD_NAME                7 (str)
+            868 LOAD_NAME                5 (__annotations__)
+            870 LOAD_CONST              83 ('license_sig')
+            872 STORE_SUBSCR
+
+221         876 LOAD_CONST              84 (30.0)
+            878 STORE_NAME              70 (pickaxe_max_s)
+            880 LOAD_NAME                4 (float)
+            882 LOAD_NAME                5 (__annotations__)
+            884 LOAD_CONST              85 ('pickaxe_max_s')
+            886 STORE_SUBSCR
+            890 RETURN_CONST            86 (None)
+
+Disassembly of <code object <genexpr> at 0x7f6af1dd3b30, file "config.py", line 156>:
+156           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+              6 LOAD_FAST                0 (.0)
+        >>    8 FOR_ITER                22 (to 56)
+             12 STORE_FAST               1 (i)
+             14 LOAD_GLOBAL              1 (NULL + round)
+             24 LOAD_CONST               0 (0.6)
+             26 LOAD_CONST               1 (0.1)
+             28 LOAD_FAST                1 (i)
+             30 BINARY_OP                5 (*)
+             34 BINARY_OP                0 (+)
+             38 LOAD_CONST               2 (2)
+             40 CALL                     2
+             48 YIELD_VALUE              1
+             50 RESUME                   1
+             52 POP_TOP
+             54 JUMP_BACKWARD           24 (to 8)
+        >>   56 END_FOR
+             58 RETURN_CONST             3 (None)
+        >>   60 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             62 RERAISE                  1
+ExceptionTable:
+  4 to 58 -> 60 [0] lasti
+
+Disassembly of <code object jitter_range at 0x7f6af1de56f0, file "config.py", line 247>:
+247           0 RESUME                   0
+
+248           2 NOP
+
+249           4 LOAD_GLOBAL              1 (NULL + float)
+             14 LOAD_FAST                0 (base_seconds)
+             16 CALL                     1
+             24 STORE_FAST               2 (base)
+
+250          26 LOAD_FAST                1 (s)
+             28 POP_JUMP_IF_NOT_NONE    10 (to 50)
+
+251          30 LOAD_GLOBAL              3 (NULL + Settings)
+             40 CALL                     0
+             48 STORE_FAST               1 (s)
+
+252     >>   50 LOAD_GLOBAL              5 (NULL + getattr)
+             60 LOAD_FAST                1 (s)
+             62 LOAD_CONST               1 ('jitter_enabled')
+             64 LOAD_CONST               2 (True)
+             66 CALL                     3
+             74 POP_JUMP_IF_FALSE        5 (to 86)
+             76 LOAD_FAST                2 (base)
+             78 LOAD_CONST               3 (0)
+             80 COMPARE_OP              26 (<=)
+             84 POP_JUMP_IF_FALSE        4 (to 94)
+
+253     >>   86 LOAD_FAST                2 (base)
+             88 LOAD_FAST                2 (base)
+             90 BUILD_TUPLE              2
+             92 RETURN_VALUE
+
+254     >>   94 LOAD_GLOBAL              7 (NULL + max)
+            104 LOAD_CONST               4 (0.0)
+            106 LOAD_GLOBAL              9 (NULL + min)
+            116 LOAD_CONST               5 (0.5)
+            118 LOAD_GLOBAL              1 (NULL + float)
+            128 LOAD_GLOBAL              5 (NULL + getattr)
+            138 LOAD_FAST                1 (s)
+            140 LOAD_CONST               6 ('wait_jitter_percent')
+            142 LOAD_CONST               7 (0.15)
+            144 CALL                     3
+            152 CALL                     1
+            160 CALL                     2
+            168 CALL                     2
+            176 STORE_FAST               3 (pct)
+
+255         178 LOAD_FAST                2 (base)
+            180 LOAD_CONST               8 (1.0)
+            182 LOAD_FAST                3 (pct)
+            184 BINARY_OP               10 (-)
+            188 BINARY_OP                5 (*)
+            192 LOAD_FAST                2 (base)
+            194 LOAD_CONST               8 (1.0)
+            196 LOAD_FAST                3 (pct)
+            198 BINARY_OP                0 (+)
+            202 BINARY_OP                5 (*)
+            206 BUILD_TUPLE              2
+            208 RETURN_VALUE
+
+Disassembly of <code object get_jittered_wait at 0x7f6af1dd5fb0, file "config.py", line 258>:
+258           0 RESUME                   0
+
+259           2 NOP
+
+260           4 LOAD_GLOBAL              1 (NULL + jitter_range)
+             14 LOAD_FAST                0 (base_seconds)
+             16 LOAD_FAST                1 (s)
+             18 CALL                     2
+             26 UNPACK_SEQUENCE          2
+             30 STORE_FAST               3 (lo)
+             32 STORE_FAST               4 (hi)
+
+261          34 LOAD_FAST                4 (hi)
+             36 LOAD_FAST                3 (lo)
+             38 COMPARE_OP              26 (<=)
+             42 POP_JUMP_IF_FALSE        2 (to 48)
+             44 LOAD_FAST                3 (lo)
+             46 RETURN_VALUE
+        >>   48 LOAD_FAST                2 (rng)
+             50 LOAD_ATTR                3 (NULL|self + uniform)
+             70 LOAD_FAST                3 (lo)
+             72 LOAD_FAST                4 (hi)
+             74 CALL                     2
+             82 RETURN_VALUE
+
+Disassembly of <code object user_settings_path at 0x7f6af1dd69d0, file "config.py", line 264>:
+264           0 RESUME                   0
+
+265           2 LOAD_GLOBAL              0 (os)
+             12 LOAD_ATTR                2 (path)
+             32 LOAD_ATTR                5 (NULL|self + join)
+             52 LOAD_GLOBAL              7 (NULL + base_dir)
+             62 CALL                     0
+             70 LOAD_CONST               1 ('pk-auto_settings.json')
+             72 CALL                     2
+             80 RETURN_VALUE
+
+Disassembly of <code object load_user_settings at 0x179dcf00, file "config.py", line 268>:
+268           0 RESUME                   0
+
+269           2 NOP
+
+270           4 NOP
+
+271           6 LOAD_GLOBAL              1 (NULL + open)
+             16 LOAD_FAST                1 (path)
+             18 COPY                     1
+             20 POP_JUMP_IF_TRUE        10 (to 42)
+             22 POP_TOP
+             24 LOAD_GLOBAL              3 (NULL + user_settings_path)
+             34 CALL                     0
+        >>   42 LOAD_CONST               1 ('r')
+             44 LOAD_CONST               2 ('utf-8')
+             46 KW_NAMES                 3 (('encoding',))
+             48 CALL                     3
+             56 BEFORE_WITH
+             58 STORE_FAST               2 (f)
+
+272          60 LOAD_GLOBAL              5 (NULL + json)
+             70 LOAD_ATTR                6 (load)
+             90 LOAD_FAST                2 (f)
+             92 CALL                     1
+            100 STORE_FAST               3 (data)
+
+271         102 LOAD_CONST               0 (None)
+            104 LOAD_CONST               0 (None)
+            106 LOAD_CONST               0 (None)
+            108 CALL                     2
+            116 POP_TOP
+
+273     >>  118 LOAD_GLOBAL              9 (NULL + isinstance)
+            128 LOAD_FAST_CHECK          3 (data)
+            130 LOAD_GLOBAL             10 (dict)
+            140 CALL                     2
+            148 POP_JUMP_IF_TRUE         1 (to 152)
+
+274         150 RETURN_CONST             0 (None)
+
+275     >>  152 LOAD_GLOBAL             12 (USER_SETTING_KEYS)
+            162 GET_ITER
+        >>  164 FOR_ITER               234 (to 636)
+            168 STORE_FAST               4 (k)
+
+276         170 LOAD_FAST                4 (k)
+            172 LOAD_FAST                3 (data)
+            174 CONTAINS_OP              1
+            176 POP_JUMP_IF_FALSE        1 (to 180)
+
+277         178 JUMP_BACKWARD            8 (to 164)
+
+278     >>  180 LOAD_FAST                3 (data)
+            182 LOAD_FAST                4 (k)
+            184 BINARY_SUBSCR
+            188 LOAD_GLOBAL             15 (NULL + type)
+            198 LOAD_GLOBAL             17 (NULL + getattr)
+            208 LOAD_FAST                0 (s)
+            210 LOAD_FAST                4 (k)
+            212 CALL                     2
+            220 CALL                     1
+            228 STORE_FAST               6 (want)
+            230 STORE_FAST               5 (v)
+
+279         232 LOAD_FAST                6 (want)
+            234 LOAD_GLOBAL             18 (float)
+            244 IS_OP                    0
+            246 POP_JUMP_IF_FALSE       43 (to 334)
+            248 LOAD_GLOBAL              9 (NULL + isinstance)
+            258 LOAD_FAST                5 (v)
+            260 LOAD_GLOBAL             20 (int)
+            270 CALL                     2
+            278 POP_JUMP_IF_FALSE       27 (to 334)
+            280 LOAD_GLOBAL              9 (NULL + isinstance)
+            290 LOAD_FAST                5 (v)
+            292 LOAD_GLOBAL             22 (bool)
+            302 CALL                     2
+            310 POP_JUMP_IF_TRUE        11 (to 334)
+
+280         312 LOAD_GLOBAL             19 (NULL + float)
+            322 LOAD_FAST                5 (v)
+            324 CALL                     1
+            332 STORE_FAST               5 (v)
+
+281     >>  334 LOAD_GLOBAL              9 (NULL + isinstance)
+            344 LOAD_FAST                5 (v)
+            346 LOAD_FAST                6 (want)
+            348 CALL                     2
+            356 POP_JUMP_IF_TRUE         1 (to 360)
+
+282         358 JUMP_BACKWARD           98 (to 164)
+
+283     >>  360 LOAD_FAST                4 (k)
+            362 LOAD_CONST               4 ('telemetry_api_url')
+            364 COMPARE_OP              40 (==)
+            368 POP_JUMP_IF_FALSE       35 (to 440)
+            370 LOAD_FAST                5 (v)
+            372 LOAD_ATTR               25 (NULL|self + strip)
+            392 CALL                     0
+            400 POP_JUMP_IF_FALSE       18 (to 438)
+            402 LOAD_CONST               5 ('your-worker')
+            404 LOAD_FAST                5 (v)
+            406 LOAD_ATTR               27 (NULL|self + lower)
+            426 CALL                     0
+            434 CONTAINS_OP              0
+            436 POP_JUMP_IF_FALSE        1 (to 440)
+
+284     >>  438 JUMP_BACKWARD          138 (to 164)
+
+285     >>  440 LOAD_FAST                4 (k)
+            442 LOAD_GLOBAL             28 (NUMBER_RANGES)
+            452 CONTAINS_OP              0
+            454 POP_JUMP_IF_FALSE       34 (to 524)
+            456 LOAD_GLOBAL             28 (NUMBER_RANGES)
+            466 LOAD_FAST                4 (k)
+            468 BINARY_SUBSCR
+            472 LOAD_CONST               6 (0)
+            474 BINARY_SUBSCR
+            478 LOAD_FAST                5 (v)
+            480 SWAP                     2
+            482 COPY                     2
+            484 COMPARE_OP              26 (<=)
+            488 POP_JUMP_IF_FALSE       15 (to 520)
+            490 LOAD_GLOBAL             28 (NUMBER_RANGES)
+            500 LOAD_FAST                4 (k)
+            502 BINARY_SUBSCR
+            506 LOAD_CONST               7 (1)
+            508 BINARY_SUBSCR
+            512 COMPARE_OP              26 (<=)
+            516 POP_JUMP_IF_TRUE         3 (to 524)
+            518 JUMP_FORWARD             1 (to 522)
+        >>  520 POP_TOP
+
+286     >>  522 JUMP_BACKWARD          180 (to 164)
+
+287     >>  524 LOAD_FAST                4 (k)
+            526 LOAD_CONST               8 ('pickaxe_slot_key')
+            528 COMPARE_OP              40 (==)
+            532 POP_JUMP_IF_FALSE        9 (to 552)
+            534 LOAD_FAST                5 (v)
+            536 LOAD_GLOBAL             30 (PICKAXE_SLOT_KEYS)
+            546 CONTAINS_OP              1
+            548 POP_JUMP_IF_FALSE        1 (to 552)
+
+288         550 JUMP_BACKWARD          194 (to 164)
+
+289     >>  552 LOAD_FAST                4 (k)
+            554 LOAD_CONST               9 ('lang')
+            556 COMPARE_OP              40 (==)
+            560 POP_JUMP_IF_FALSE        9 (to 580)
+            562 LOAD_FAST                5 (v)
+            564 LOAD_GLOBAL             32 (LANGS)
+            574 CONTAINS_OP              1
+            576 POP_JUMP_IF_FALSE        1 (to 580)
+
+290         578 JUMP_BACKWARD          208 (to 164)
+
+291     >>  580 LOAD_FAST                4 (k)
+            582 LOAD_CONST              10 ('mode')
+            584 COMPARE_OP              40 (==)
+            588 POP_JUMP_IF_FALSE        9 (to 608)
+            590 LOAD_FAST                5 (v)
+            592 LOAD_GLOBAL             34 (MODES)
+            602 CONTAINS_OP              1
+            604 POP_JUMP_IF_FALSE        1 (to 608)
+
+292         606 JUMP_BACKWARD          222 (to 164)
+
+293     >>  608 LOAD_GLOBAL             37 (NULL + setattr)
+            618 LOAD_FAST                0 (s)
+            620 LOAD_FAST                4 (k)
+            622 LOAD_FAST                5 (v)
+            624 CALL                     3
+            632 POP_TOP
+            634 JUMP_BACKWARD          236 (to 164)
+
+275     >>  636 END_FOR
+            638 RETURN_CONST             0 (None)
+
+271     >>  640 PUSH_EXC_INFO
+            642 WITH_EXCEPT_START
+            644 POP_JUMP_IF_TRUE         1 (to 648)
+            646 RERAISE                  2
+        >>  648 POP_TOP
+            650 POP_EXCEPT
+            652 POP_TOP
+            654 POP_TOP
+            656 EXTENDED_ARG             1
+            658 JUMP_BACKWARD          271 (to 118)
+        >>  660 COPY                     3
+            662 POP_EXCEPT
+            664 RERAISE                  1
+        >>  666 PUSH_EXC_INFO
+
+294         668 LOAD_GLOBAL             38 (Exception)
+            678 CHECK_EXC_MATCH
+            680 POP_JUMP_IF_FALSE        3 (to 688)
+            682 POP_TOP
+
+295         684 POP_EXCEPT
+            686 RETURN_CONST             0 (None)
+
+294     >>  688 RERAISE                  0
+        >>  690 COPY                     3
+            692 POP_EXCEPT
+            694 RERAISE                  1
+ExceptionTable:
+  6 to 56 -> 666 [0]
+  58 to 100 -> 640 [1] lasti
+  102 to 148 -> 666 [0]
+  152 to 636 -> 666 [0]
+  640 to 648 -> 660 [3] lasti
+  650 to 664 -> 666 [0]
+  666 to 682 -> 690 [1] lasti
+  688 to 688 -> 690 [1] lasti
+
+Disassembly of <code object save_user_settings at 0x7f6aed7c03f0, file "config.py", line 298>:
+298           0 RESUME                   0
+
+299           2 NOP
+
+300           4 LOAD_GLOBAL              0 (USER_SETTING_KEYS)
+             14 GET_ITER
+             16 LOAD_FAST_AND_CLEAR      2 (k)
+             18 SWAP                     2
+             20 BUILD_MAP                0
+             22 SWAP                     2
+        >>   24 FOR_ITER                15 (to 58)
+             28 STORE_FAST               2 (k)
+             30 LOAD_FAST                2 (k)
+             32 LOAD_GLOBAL              3 (NULL + getattr)
+             42 LOAD_FAST                0 (s)
+             44 LOAD_FAST                2 (k)
+             46 CALL                     2
+             54 MAP_ADD                  2
+             56 JUMP_BACKWARD           17 (to 24)
+        >>   58 END_FOR
+             60 STORE_FAST               3 (data)
+             62 STORE_FAST               2 (k)
+
+301          64 LOAD_FAST                3 (data)
+             66 LOAD_CONST               1 ('telemetry_api_url')
+             68 BINARY_SUBSCR
+             72 LOAD_GLOBAL              4 (DEFAULT_TELEMETRY_URL)
+             82 COMPARE_OP              40 (==)
+             86 POP_JUMP_IF_FALSE        3 (to 94)
+
+302          88 LOAD_FAST                3 (data)
+             90 LOAD_CONST               1 ('telemetry_api_url')
+             92 DELETE_SUBSCR
+
+303     >>   94 LOAD_GLOBAL              7 (NULL + open)
+            104 LOAD_FAST                1 (path)
+            106 COPY                     1
+            108 POP_JUMP_IF_TRUE        10 (to 130)
+            110 POP_TOP
+            112 LOAD_GLOBAL              9 (NULL + user_settings_path)
+            122 CALL                     0
+        >>  130 LOAD_CONST               2 ('w')
+            132 LOAD_CONST               3 ('utf-8')
+            134 KW_NAMES                 4 (('encoding',))
+            136 CALL                     3
+            144 BEFORE_WITH
+            146 STORE_FAST               4 (f)
+
+304         148 LOAD_GLOBAL             11 (NULL + json)
+            158 LOAD_ATTR               12 (dump)
+            178 LOAD_FAST                3 (data)
+            180 LOAD_FAST                4 (f)
+            182 LOAD_CONST               5 (False)
+            184 LOAD_CONST               6 (2)
+            186 KW_NAMES                 7 (('ensure_ascii', 'indent'))
+            188 CALL                     4
+            196 POP_TOP
+
+303         198 LOAD_CONST               0 (None)
+            200 LOAD_CONST               0 (None)
+            202 LOAD_CONST               0 (None)
+            204 CALL                     2
+            212 POP_TOP
+
+305         214 RETURN_CONST             8 (True)
+        >>  216 SWAP                     2
+            218 POP_TOP
+
+300         220 SWAP                     2
+            222 STORE_FAST               2 (k)
+            224 RERAISE                  0
+
+303     >>  226 PUSH_EXC_INFO
+            228 WITH_EXCEPT_START
+            230 POP_JUMP_IF_TRUE         1 (to 234)
+            232 RERAISE                  2
+        >>  234 POP_TOP
+            236 POP_EXCEPT
+            238 POP_TOP
+            240 POP_TOP
+
+305         242 RETURN_CONST             8 (True)
+        >>  244 COPY                     3
+            246 POP_EXCEPT
+            248 RERAISE                  1
+        >>  250 PUSH_EXC_INFO
+
+306         252 LOAD_GLOBAL             14 (Exception)
+            262 CHECK_EXC_MATCH
+            264 POP_JUMP_IF_FALSE        3 (to 272)
+            266 POP_TOP
+
+307         268 POP_EXCEPT
+            270 RETURN_CONST             5 (False)
+
+306     >>  272 RERAISE                  0
+        >>  274 COPY                     3
+            276 POP_EXCEPT
+            278 RERAISE                  1
+ExceptionTable:
+  4 to 18 -> 250 [0]
+  20 to 58 -> 216 [2]
+  60 to 144 -> 250 [0]
+  146 to 196 -> 226 [1] lasti
+  198 to 212 -> 250 [0]
+  216 to 224 -> 250 [0]
+  226 to 234 -> 244 [3] lasti
+  236 to 240 -> 250 [0]
+  244 to 248 -> 250 [0]
+  250 to 266 -> 274 [1] lasti
+  272 to 272 -> 274 [1] lasti

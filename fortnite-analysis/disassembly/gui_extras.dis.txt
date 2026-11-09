@@ -1,0 +1,1003 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+  6           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (tkinter)
+             10 STORE_NAME               1 (tk)
+
+  7          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               2 (('ttk',))
+             16 IMPORT_NAME              0 (tkinter)
+             18 IMPORT_FROM              2 (ttk)
+             20 STORE_NAME               2 (ttk)
+             22 POP_TOP
+
+  9          24 LOAD_CONST               0 (0)
+             26 LOAD_CONST               1 (None)
+             28 IMPORT_NAME              3 (config)
+             30 STORE_NAME               3 (config)
+
+ 10          32 LOAD_CONST               0 (0)
+             34 LOAD_CONST               1 (None)
+             36 IMPORT_NAME              4 (i18n)
+             38 STORE_NAME               4 (i18n)
+
+ 13          40 LOAD_CONST              11 (('return', None))
+             42 LOAD_CONST               4 (<code object build at 0x17a6e640, file "gui_extras.py", line 13>)
+             44 MAKE_FUNCTION            4 (annotations)
+             46 STORE_NAME               5 (build)
+
+ 78          48 LOAD_CONST               3 ('return')
+             50 LOAD_NAME                6 (float)
+             52 BUILD_TUPLE              2
+             54 LOAD_CONST               5 (<code object wait_for_mode at 0x7f6af1f81fb0, file "gui_extras.py", line 78>)
+             56 MAKE_FUNCTION            4 (annotations)
+             58 STORE_NAME               7 (wait_for_mode)
+
+ 83          60 LOAD_CONST               3 ('return')
+             62 LOAD_NAME                8 (str)
+             64 BUILD_TUPLE              2
+             66 LOAD_CONST               6 (<code object preview_text at 0x7f6aed178030, file "gui_extras.py", line 83>)
+             68 MAKE_FUNCTION            4 (annotations)
+             70 STORE_NAME               9 (preview_text)
+
+ 91          72 LOAD_CONST              11 (('return', None))
+             74 LOAD_CONST               7 (<code object _on_pct at 0x7f6aed7a8db0, file "gui_extras.py", line 91>)
+             76 MAKE_FUNCTION            4 (annotations)
+             78 STORE_NAME              10 (_on_pct)
+
+101          80 LOAD_CONST              12 ((True,))
+             82 LOAD_CONST               8 ('loop')
+             84 LOAD_NAME               11 (bool)
+             86 LOAD_CONST               3 ('return')
+             88 LOAD_CONST               1 (None)
+             90 BUILD_TUPLE              4
+             92 LOAD_CONST               9 (<code object _refresh_preview at 0x7f6aed1781e0, file "gui_extras.py", line 101>)
+             94 MAKE_FUNCTION            5 (defaults, annotations)
+             96 STORE_NAME              12 (_refresh_preview)
+
+114          98 LOAD_CONST              11 (('return', None))
+            100 LOAD_CONST              10 (<code object open_vault at 0x7f6af1f3ee70, file "gui_extras.py", line 114>)
+            102 MAKE_FUNCTION            4 (annotations)
+            104 STORE_NAME              13 (open_vault)
+            106 RETURN_CONST             1 (None)
+
+Disassembly of <code object build at 0x17a6e640, file "gui_extras.py", line 13>:
+              0 MAKE_CELL                0 (app)
+              2 MAKE_CELL                1 (parent)
+              4 MAKE_CELL                7 (s)
+
+ 13           6 RESUME                   0
+
+ 14           8 NOP
+
+ 15          10 LOAD_DEREF               0 (app)
+             12 LOAD_ATTR                0 (s)
+             32 STORE_DEREF              7 (s)
+
+ 17          34 LOAD_CONST               1 ('attr')
+             36 LOAD_GLOBAL              2 (str)
+             46 LOAD_CONST               2 ('key')
+             48 LOAD_GLOBAL              2 (str)
+             58 BUILD_TUPLE              4
+             60 LOAD_CLOSURE             0 (app)
+             62 LOAD_CLOSURE             1 (parent)
+             64 LOAD_CLOSURE             7 (s)
+             66 BUILD_TUPLE              3
+             68 LOAD_CONST               3 (<code object check at 0x7f6af1f8d990, file "gui_extras.py", line 17>)
+             70 MAKE_FUNCTION           12 (annotations, closure)
+             72 STORE_FAST               2 (check)
+
+ 24          74 PUSH_NULL
+             76 LOAD_FAST                2 (check)
+             78 LOAD_CONST               4 ('auto_mute_enabled')
+             80 LOAD_CONST               5 ('ex_mute')
+             82 CALL                     2
+             90 POP_TOP
+
+ 26          92 PUSH_NULL
+             94 LOAD_FAST                2 (check)
+             96 LOAD_CONST               6 ('loot_vault_enabled')
+             98 LOAD_CONST               7 ('ex_loot')
+            100 CALL                     2
+            108 POP_TOP
+
+ 27         110 LOAD_DEREF               0 (app)
+            112 LOAD_ATTR                5 (NULL|self + _l)
+            132 LOAD_GLOBAL              7 (NULL + ttk)
+            142 LOAD_ATTR                8 (Button)
+            162 LOAD_DEREF               1 (parent)
+            164 LOAD_CLOSURE             0 (app)
+            166 BUILD_TUPLE              1
+            168 LOAD_CONST               8 (<code object <lambda> at 0x7f6aed804570, file "gui_extras.py", line 27>)
+            170 MAKE_FUNCTION            8 (closure)
+            172 KW_NAMES                 9 (('command',))
+            174 CALL                     2
+            182 LOAD_CONST              10 ('ex_loot_open')
+            184 CALL                     2
+            192 LOAD_ATTR               11 (NULL|self + pack)
+            212 LOAD_CONST              11 ('w')
+            214 LOAD_CONST              12 (34)
+            216 LOAD_CONST              13 ((0, 4))
+            218 KW_NAMES                14 (('anchor', 'padx', 'pady'))
+            220 CALL                     3
+            228 POP_TOP
+
+ 29         230 PUSH_NULL
+            232 LOAD_FAST                2 (check)
+            234 LOAD_CONST              15 ('humanizer_enabled')
+            236 LOAD_CONST              16 ('ex_human')
+            238 CALL                     2
+            246 POP_TOP
+
+ 30         248 PUSH_NULL
+            250 LOAD_FAST                2 (check)
+            252 LOAD_CONST              17 ('afk_mouse_look')
+            254 LOAD_CONST              18 ('ex_look')
+            256 CALL                     2
+            264 POP_TOP
+
+ 31         266 PUSH_NULL
+            268 LOAD_FAST                2 (check)
+            270 LOAD_CONST              19 ('jitter_enabled')
+            272 LOAD_CONST              20 ('ex_jitter')
+            274 CALL                     2
+            282 POP_TOP
+
+ 32         284 LOAD_GLOBAL              7 (NULL + ttk)
+            294 LOAD_ATTR               12 (Frame)
+            314 LOAD_DEREF               1 (parent)
+            316 CALL                     1
+            324 STORE_FAST               3 (jrow)
+
+ 33         326 LOAD_FAST                3 (jrow)
+            328 LOAD_ATTR               11 (NULL|self + pack)
+            348 LOAD_CONST              11 ('w')
+            350 LOAD_CONST              12 (34)
+            352 LOAD_CONST              21 ((0, 2))
+            354 KW_NAMES                14 (('anchor', 'padx', 'pady'))
+            356 CALL                     3
+            364 POP_TOP
+
+ 34         366 LOAD_GLOBAL             15 (NULL + tk)
+            376 LOAD_ATTR               16 (StringVar)
+            396 LOAD_DEREF               7 (s)
+            398 LOAD_ATTR               18 (wait_jitter_percent)
+            418 LOAD_CONST              22 (100)
+            420 BINARY_OP                5 (*)
+            424 LOAD_CONST              23 ('g')
+            426 FORMAT_VALUE             4 (with format)
+            428 KW_NAMES                24 (('value',))
+            430 CALL                     1
+            438 LOAD_DEREF               0 (app)
+            440 STORE_ATTR              10 (ex_jpct_var)
+
+ 35         450 LOAD_DEREF               0 (app)
+            452 LOAD_ATTR                5 (NULL|self + _l)
+            472 LOAD_GLOBAL              7 (NULL + ttk)
+            482 LOAD_ATTR               22 (Label)
+            502 LOAD_FAST                3 (jrow)
+            504 CALL                     1
+            512 LOAD_CONST              25 ('ex_jpct_pre')
+            514 CALL                     2
+            522 LOAD_ATTR               11 (NULL|self + pack)
+            542 LOAD_CONST              26 ('left')
+            544 KW_NAMES                27 (('side',))
+            546 CALL                     1
+            554 POP_TOP
+
+ 36         556 LOAD_GLOBAL              7 (NULL + ttk)
+            566 LOAD_ATTR               24 (Spinbox)
+            586 LOAD_FAST                3 (jrow)
+            588 LOAD_CONST              28 (5)
+            590 LOAD_CONST              29 (50)
+            592 LOAD_CONST              30 (1)
+            594 LOAD_CONST              31 (4)
+            596 LOAD_DEREF               0 (app)
+            598 LOAD_ATTR               20 (ex_jpct_var)
+            618 KW_NAMES                32 (('from_', 'to', 'increment', 'width', 'textvariable'))
+            620 CALL                     6
+            628 LOAD_ATTR               11 (NULL|self + pack)
+            648 LOAD_CONST              26 ('left')
+            650 LOAD_CONST              33 (3)
+            652 KW_NAMES                34 (('side', 'padx'))
+            654 CALL                     2
+            662 POP_TOP
+
+ 37         664 LOAD_DEREF               0 (app)
+            666 LOAD_ATTR                5 (NULL|self + _l)
+            686 LOAD_GLOBAL              7 (NULL + ttk)
+            696 LOAD_ATTR               22 (Label)
+            716 LOAD_FAST                3 (jrow)
+            718 CALL                     1
+            726 LOAD_CONST              35 ('ex_jpct_post')
+            728 CALL                     2
+            736 LOAD_ATTR               11 (NULL|self + pack)
+            756 LOAD_CONST              26 ('left')
+            758 KW_NAMES                27 (('side',))
+            760 CALL                     1
+            768 POP_TOP
+
+ 38         770 LOAD_DEREF               0 (app)
+            772 LOAD_ATTR               20 (ex_jpct_var)
+            792 LOAD_ATTR               27 (NULL|self + trace_add)
+            812 LOAD_CONST              36 ('write')
+            814 LOAD_CLOSURE             0 (app)
+            816 BUILD_TUPLE              1
+            818 LOAD_CONST              37 (<code object <lambda> at 0x7f6af1dd2230, file "gui_extras.py", line 38>)
+            820 MAKE_FUNCTION            8 (closure)
+            822 CALL                     2
+            830 POP_TOP
+
+ 39         832 LOAD_GLOBAL             15 (NULL + tk)
+            842 LOAD_ATTR               16 (StringVar)
+            862 CALL                     0
+            870 LOAD_DEREF               0 (app)
+            872 STORE_ATTR              14 (ex_jprev_var)
+
+ 40         882 LOAD_GLOBAL              7 (NULL + ttk)
+            892 LOAD_ATTR               22 (Label)
+            912 LOAD_DEREF               1 (parent)
+            914 LOAD_DEREF               0 (app)
+            916 LOAD_ATTR               28 (ex_jprev_var)
+            936 LOAD_CONST              38 ('#2a6')
+            938 KW_NAMES                39 (('textvariable', 'foreground'))
+            940 CALL                     3
+            948 LOAD_ATTR               11 (NULL|self + pack)
+            968 LOAD_CONST              11 ('w')
+            970 LOAD_CONST              12 (34)
+            972 LOAD_CONST              13 ((0, 4))
+            974 KW_NAMES                14 (('anchor', 'padx', 'pady'))
+            976 CALL                     3
+            984 POP_TOP
+
+ 41         986 LOAD_GLOBAL             31 (NULL + _refresh_preview)
+            996 LOAD_DEREF               0 (app)
+            998 CALL                     1
+           1006 POP_TOP
+
+ 42        1008 PUSH_NULL
+           1010 LOAD_FAST                2 (check)
+           1012 LOAD_CONST              40 ('mode_fix_enabled')
+           1014 LOAD_CONST              41 ('ex_modefix')
+           1016 CALL                     2
+           1024 POP_TOP
+
+ 43        1026 PUSH_NULL
+           1028 LOAD_FAST                2 (check)
+           1030 LOAD_CONST              42 ('bus_drop_enabled')
+           1032 LOAD_CONST              43 ('ex_bus')
+           1034 CALL                     2
+           1042 POP_TOP
+
+ 44        1044 LOAD_GLOBAL              7 (NULL + ttk)
+           1054 LOAD_ATTR               12 (Frame)
+           1074 LOAD_DEREF               1 (parent)
+           1076 CALL                     1
+           1084 STORE_FAST               4 (brow)
+
+ 45        1086 LOAD_FAST                4 (brow)
+           1088 LOAD_ATTR               11 (NULL|self + pack)
+           1108 LOAD_CONST              11 ('w')
+           1110 LOAD_CONST              12 (34)
+           1112 LOAD_CONST              13 ((0, 4))
+           1114 KW_NAMES                14 (('anchor', 'padx', 'pady'))
+           1116 CALL                     3
+           1124 POP_TOP
+
+ 46        1126 LOAD_GLOBAL             15 (NULL + tk)
+           1136 LOAD_ATTR               16 (StringVar)
+           1156 LOAD_DEREF               7 (s)
+           1158 LOAD_ATTR               32 (bus_dive_seconds)
+           1178 LOAD_CONST              23 ('g')
+           1180 FORMAT_VALUE             4 (with format)
+           1182 KW_NAMES                24 (('value',))
+           1184 CALL                     1
+           1192 LOAD_DEREF               0 (app)
+           1194 STORE_ATTR              17 (ex_dive_var)
+
+ 47        1204 LOAD_DEREF               0 (app)
+           1206 LOAD_ATTR                5 (NULL|self + _l)
+           1226 LOAD_GLOBAL              7 (NULL + ttk)
+           1236 LOAD_ATTR               22 (Label)
+           1256 LOAD_FAST                4 (brow)
+           1258 CALL                     1
+           1266 LOAD_CONST              44 ('ex_dive_pre')
+           1268 CALL                     2
+           1276 LOAD_ATTR               11 (NULL|self + pack)
+           1296 LOAD_CONST              26 ('left')
+           1298 KW_NAMES                27 (('side',))
+           1300 CALL                     1
+           1308 POP_TOP
+
+ 48        1310 LOAD_GLOBAL              7 (NULL + ttk)
+           1320 LOAD_ATTR               24 (Spinbox)
+           1340 LOAD_FAST                4 (brow)
+           1342 LOAD_CONST              30 (1)
+           1344 LOAD_CONST              45 (60)
+           1346 LOAD_CONST              30 (1)
+           1348 LOAD_CONST              28 (5)
+           1350 LOAD_DEREF               0 (app)
+           1352 LOAD_ATTR               34 (ex_dive_var)
+           1372 KW_NAMES                32 (('from_', 'to', 'increment', 'width', 'textvariable'))
+           1374 CALL                     6
+           1382 LOAD_ATTR               11 (NULL|self + pack)
+           1402 LOAD_CONST              26 ('left')
+           1404 LOAD_CONST              33 (3)
+           1406 KW_NAMES                34 (('side', 'padx'))
+           1408 CALL                     2
+           1416 POP_TOP
+
+ 49        1418 LOAD_DEREF               0 (app)
+           1420 LOAD_ATTR                5 (NULL|self + _l)
+           1440 LOAD_GLOBAL              7 (NULL + ttk)
+           1450 LOAD_ATTR               22 (Label)
+           1470 LOAD_FAST                4 (brow)
+           1472 CALL                     1
+           1480 LOAD_CONST              46 ('ex_dive_post')
+           1482 CALL                     2
+           1490 LOAD_ATTR               11 (NULL|self + pack)
+           1510 LOAD_CONST              26 ('left')
+           1512 KW_NAMES                27 (('side',))
+           1514 CALL                     1
+           1522 POP_TOP
+
+ 50        1524 LOAD_DEREF               0 (app)
+           1526 LOAD_ATTR               34 (ex_dive_var)
+           1546 LOAD_ATTR               27 (NULL|self + trace_add)
+           1566 LOAD_CONST              36 ('write')
+           1568 LOAD_CLOSURE             0 (app)
+           1570 BUILD_TUPLE              1
+           1572 LOAD_CONST              47 (<code object <lambda> at 0x7f6aed7f4530, file "gui_extras.py", line 50>)
+           1574 MAKE_FUNCTION            8 (closure)
+           1576 CALL                     2
+           1584 POP_TOP
+
+ 51        1586 PUSH_NULL
+           1588 LOAD_FAST                2 (check)
+           1590 LOAD_CONST              48 ('pickaxe_afk_enabled')
+           1592 LOAD_CONST              49 ('ex_pickaxe')
+           1594 CALL                     2
+           1602 POP_TOP
+
+ 52        1604 LOAD_GLOBAL              7 (NULL + ttk)
+           1614 LOAD_ATTR               12 (Frame)
+           1634 LOAD_DEREF               1 (parent)
+           1636 CALL                     1
+           1644 STORE_FAST               5 (prow)
+
+ 53        1646 LOAD_FAST                5 (prow)
+           1648 LOAD_ATTR               11 (NULL|self + pack)
+           1668 LOAD_CONST              11 ('w')
+           1670 LOAD_CONST              12 (34)
+           1672 LOAD_CONST              13 ((0, 4))
+           1674 KW_NAMES                14 (('anchor', 'padx', 'pady'))
+           1676 CALL                     3
+           1684 POP_TOP
+
+ 54        1686 LOAD_GLOBAL             15 (NULL + tk)
+           1696 LOAD_ATTR               16 (StringVar)
+           1716 LOAD_DEREF               7 (s)
+           1718 LOAD_ATTR               36 (pickaxe_min_s)
+           1738 LOAD_CONST              23 ('g')
+           1740 FORMAT_VALUE             4 (with format)
+           1742 KW_NAMES                24 (('value',))
+           1744 CALL                     1
+           1752 LOAD_DEREF               0 (app)
+           1754 STORE_ATTR              19 (ex_pmin_var)
+
+ 55        1764 LOAD_GLOBAL             15 (NULL + tk)
+           1774 LOAD_ATTR               16 (StringVar)
+           1794 LOAD_DEREF               7 (s)
+           1796 LOAD_ATTR               40 (pickaxe_max_s)
+           1816 LOAD_CONST              23 ('g')
+           1818 FORMAT_VALUE             4 (with format)
+           1820 KW_NAMES                24 (('value',))
+           1822 CALL                     1
+           1830 LOAD_DEREF               0 (app)
+           1832 STORE_ATTR              21 (ex_pmax_var)
+
+ 56        1842 LOAD_DEREF               0 (app)
+           1844 LOAD_ATTR                5 (NULL|self + _l)
+           1864 LOAD_GLOBAL              7 (NULL + ttk)
+           1874 LOAD_ATTR               22 (Label)
+           1894 LOAD_FAST                5 (prow)
+           1896 CALL                     1
+           1904 LOAD_CONST              50 ('ex_pick_pre')
+           1906 CALL                     2
+           1914 LOAD_ATTR               11 (NULL|self + pack)
+           1934 LOAD_CONST              26 ('left')
+           1936 KW_NAMES                27 (('side',))
+           1938 CALL                     1
+           1946 POP_TOP
+
+ 57        1948 LOAD_GLOBAL              7 (NULL + ttk)
+           1958 LOAD_ATTR               24 (Spinbox)
+           1978 LOAD_FAST                5 (prow)
+           1980 LOAD_CONST              30 (1)
+           1982 LOAD_CONST              51 (3600)
+           1984 LOAD_CONST              28 (5)
+           1986 LOAD_CONST              28 (5)
+           1988 LOAD_DEREF               0 (app)
+           1990 LOAD_ATTR               38 (ex_pmin_var)
+           2010 KW_NAMES                32 (('from_', 'to', 'increment', 'width', 'textvariable'))
+           2012 CALL                     6
+           2020 LOAD_ATTR               11 (NULL|self + pack)
+           2040 LOAD_CONST              26 ('left')
+           2042 LOAD_CONST              33 (3)
+           2044 KW_NAMES                34 (('side', 'padx'))
+           2046 CALL                     2
+           2054 POP_TOP
+
+ 58        2056 LOAD_DEREF               0 (app)
+           2058 LOAD_ATTR                5 (NULL|self + _l)
+           2078 LOAD_GLOBAL              7 (NULL + ttk)
+           2088 LOAD_ATTR               22 (Label)
+           2108 LOAD_FAST                5 (prow)
+           2110 CALL                     1
+           2118 LOAD_CONST              52 ('ex_pick_mid')
+           2120 CALL                     2
+           2128 LOAD_ATTR               11 (NULL|self + pack)
+           2148 LOAD_CONST              26 ('left')
+           2150 KW_NAMES                27 (('side',))
+           2152 CALL                     1
+           2160 POP_TOP
+
+ 59        2162 LOAD_GLOBAL              7 (NULL + ttk)
+           2172 LOAD_ATTR               24 (Spinbox)
+           2192 LOAD_FAST                5 (prow)
+           2194 LOAD_CONST              30 (1)
+           2196 LOAD_CONST              51 (3600)
+           2198 LOAD_CONST              28 (5)
+           2200 LOAD_CONST              28 (5)
+           2202 LOAD_DEREF               0 (app)
+           2204 LOAD_ATTR               42 (ex_pmax_var)
+           2224 KW_NAMES                32 (('from_', 'to', 'increment', 'width', 'textvariable'))
+           2226 CALL                     6
+           2234 LOAD_ATTR               11 (NULL|self + pack)
+           2254 LOAD_CONST              26 ('left')
+           2256 LOAD_CONST              33 (3)
+           2258 KW_NAMES                34 (('side', 'padx'))
+           2260 CALL                     2
+           2268 POP_TOP
+
+ 60        2270 LOAD_DEREF               0 (app)
+           2272 LOAD_ATTR                5 (NULL|self + _l)
+           2292 LOAD_GLOBAL              7 (NULL + ttk)
+           2302 LOAD_ATTR               22 (Label)
+           2322 LOAD_FAST                5 (prow)
+           2324 CALL                     1
+           2332 LOAD_CONST              53 ('ex_pick_post')
+           2334 CALL                     2
+           2342 LOAD_ATTR               11 (NULL|self + pack)
+           2362 LOAD_CONST              26 ('left')
+           2364 KW_NAMES                27 (('side',))
+           2366 CALL                     1
+           2374 POP_TOP
+
+ 61        2376 LOAD_DEREF               0 (app)
+           2378 LOAD_ATTR               38 (ex_pmin_var)
+           2398 LOAD_ATTR               27 (NULL|self + trace_add)
+           2418 LOAD_CONST              36 ('write')
+           2420 LOAD_CLOSURE             0 (app)
+           2422 BUILD_TUPLE              1
+           2424 LOAD_CONST              54 (<code object <lambda> at 0x7f6aed7f4630, file "gui_extras.py", line 61>)
+           2426 MAKE_FUNCTION            8 (closure)
+           2428 CALL                     2
+           2436 POP_TOP
+
+ 62        2438 LOAD_DEREF               0 (app)
+           2440 LOAD_ATTR               42 (ex_pmax_var)
+           2460 LOAD_ATTR               27 (NULL|self + trace_add)
+           2480 LOAD_CONST              36 ('write')
+           2482 LOAD_CLOSURE             0 (app)
+           2484 BUILD_TUPLE              1
+           2486 LOAD_CONST              55 (<code object <lambda> at 0x7f6aed7f4730, file "gui_extras.py", line 62>)
+           2488 MAKE_FUNCTION            8 (closure)
+           2490 CALL                     2
+           2498 POP_TOP
+
+ 63        2500 PUSH_NULL
+           2502 LOAD_FAST                2 (check)
+           2504 LOAD_CONST              56 ('coffee_break_enabled')
+           2506 LOAD_CONST              57 ('ex_coffee')
+           2508 CALL                     2
+           2516 POP_TOP
+
+ 64        2518 PUSH_NULL
+           2520 LOAD_FAST                2 (check)
+           2522 LOAD_CONST              58 ('reward_shot_enabled')
+           2524 LOAD_CONST              59 ('ex_rshot')
+           2526 CALL                     2
+           2534 POP_TOP
+
+ 65        2536 PUSH_NULL
+           2538 LOAD_FAST                2 (check)
+           2540 LOAD_CONST              60 ('auto_calibrate')
+           2542 LOAD_CONST              61 ('ex_calib')
+           2544 CALL                     2
+           2552 POP_TOP
+
+ 66        2554 PUSH_NULL
+           2556 LOAD_FAST                2 (check)
+           2558 LOAD_CONST              62 ('squad_check_enabled')
+           2560 LOAD_CONST              63 ('ex_squad')
+           2562 CALL                     2
+           2570 POP_TOP
+
+ 68        2572 LOAD_GLOBAL              7 (NULL + ttk)
+           2582 LOAD_ATTR               12 (Frame)
+           2602 LOAD_DEREF               1 (parent)
+           2604 CALL                     1
+           2612 STORE_FAST               6 (row)
+
+ 69        2614 LOAD_FAST                6 (row)
+           2616 LOAD_ATTR               11 (NULL|self + pack)
+           2636 LOAD_CONST              11 ('w')
+           2638 LOAD_CONST              64 (12)
+           2640 LOAD_CONST              65 ((6, 2))
+           2642 KW_NAMES                14 (('anchor', 'padx', 'pady'))
+           2644 CALL                     3
+           2652 POP_TOP
+
+ 70        2654 LOAD_GLOBAL             15 (NULL + tk)
+           2664 LOAD_ATTR               16 (StringVar)
+           2684 LOAD_DEREF               7 (s)
+           2686 LOAD_ATTR               44 (stuck_timeout_min)
+           2706 LOAD_CONST              23 ('g')
+           2708 FORMAT_VALUE             4 (with format)
+           2710 KW_NAMES                24 (('value',))
+           2712 CALL                     1
+           2720 LOAD_DEREF               0 (app)
+           2722 STORE_ATTR              23 (ex_stuck_var)
+
+ 71        2732 LOAD_DEREF               0 (app)
+           2734 LOAD_ATTR                5 (NULL|self + _l)
+           2754 LOAD_GLOBAL              7 (NULL + ttk)
+           2764 LOAD_ATTR               22 (Label)
+           2784 LOAD_FAST                6 (row)
+           2786 CALL                     1
+           2794 LOAD_CONST              66 ('ex_stuck_pre')
+           2796 CALL                     2
+           2804 LOAD_ATTR               11 (NULL|self + pack)
+           2824 LOAD_CONST              26 ('left')
+           2826 KW_NAMES                27 (('side',))
+           2828 CALL                     1
+           2836 POP_TOP
+
+ 72        2838 LOAD_GLOBAL              7 (NULL + ttk)
+           2848 LOAD_ATTR               24 (Spinbox)
+           2868 LOAD_FAST                6 (row)
+           2870 LOAD_CONST              67 (0)
+           2872 LOAD_CONST              68 (240)
+           2874 LOAD_CONST              28 (5)
+           2876 LOAD_CONST              28 (5)
+           2878 LOAD_DEREF               0 (app)
+           2880 LOAD_ATTR               46 (ex_stuck_var)
+           2900 KW_NAMES                32 (('from_', 'to', 'increment', 'width', 'textvariable'))
+           2902 CALL                     6
+           2910 LOAD_ATTR               11 (NULL|self + pack)
+           2930 LOAD_CONST              26 ('left')
+           2932 LOAD_CONST              33 (3)
+           2934 KW_NAMES                34 (('side', 'padx'))
+           2936 CALL                     2
+           2944 POP_TOP
+
+ 73        2946 LOAD_DEREF               0 (app)
+           2948 LOAD_ATTR                5 (NULL|self + _l)
+           2968 LOAD_GLOBAL              7 (NULL + ttk)
+           2978 LOAD_ATTR               22 (Label)
+           2998 LOAD_FAST                6 (row)
+           3000 CALL                     1
+           3008 LOAD_CONST              69 ('ex_stuck_post')
+           3010 CALL                     2
+           3018 LOAD_ATTR               11 (NULL|self + pack)
+           3038 LOAD_CONST              26 ('left')
+           3040 KW_NAMES                27 (('side',))
+           3042 CALL                     1
+           3050 POP_TOP
+
+ 74        3052 LOAD_DEREF               0 (app)
+           3054 LOAD_ATTR               46 (ex_stuck_var)
+           3074 LOAD_ATTR               27 (NULL|self + trace_add)
+           3094 LOAD_CONST              36 ('write')
+           3096 LOAD_CLOSURE             0 (app)
+           3098 BUILD_TUPLE              1
+           3100 LOAD_CONST              70 (<code object <lambda> at 0x7f6aed7f4830, file "gui_extras.py", line 74>)
+           3102 MAKE_FUNCTION            8 (closure)
+           3104 CALL                     2
+           3112 POP_TOP
+
+ 75        3114 PUSH_NULL
+           3116 LOAD_FAST                2 (check)
+           3118 LOAD_CONST              71 ('rescue_remote_enabled')
+           3120 LOAD_CONST              72 ('ex_rescue')
+           3122 CALL                     2
+           3130 POP_TOP
+           3132 RETURN_CONST             0 (None)
+
+Disassembly of <code object check at 0x7f6af1f8d990, file "gui_extras.py", line 17>:
+              0 COPY_FREE_VARS           3
+              2 MAKE_CELL                0 (attr)
+              4 MAKE_CELL                3 (var)
+
+ 17           6 RESUME                   0
+
+ 18           8 LOAD_GLOBAL              1 (NULL + tk)
+             18 LOAD_ATTR                2 (BooleanVar)
+             38 LOAD_GLOBAL              5 (NULL + bool)
+             48 LOAD_GLOBAL              7 (NULL + getattr)
+             58 LOAD_DEREF               6 (s)
+             60 LOAD_DEREF               0 (attr)
+             62 CALL                     2
+             70 CALL                     1
+             78 KW_NAMES                 1 (('value',))
+             80 CALL                     1
+             88 STORE_DEREF              3 (var)
+
+ 19          90 LOAD_GLOBAL              9 (NULL + setattr)
+            100 LOAD_DEREF               4 (app)
+            102 LOAD_CONST               2 ('ex_')
+            104 LOAD_DEREF               0 (attr)
+            106 FORMAT_VALUE             0
+            108 LOAD_CONST               3 ('_var')
+            110 BUILD_STRING             3
+            112 LOAD_DEREF               3 (var)
+            114 CALL                     3
+            122 POP_TOP
+
+ 20         124 LOAD_GLOBAL             11 (NULL + ttk)
+            134 LOAD_ATTR               12 (Checkbutton)
+            154 LOAD_DEREF               5 (parent)
+            156 LOAD_DEREF               3 (var)
+            158 LOAD_CLOSURE             0 (attr)
+            160 LOAD_CLOSURE             6 (s)
+            162 LOAD_CLOSURE             3 (var)
+            164 BUILD_TUPLE              3
+            166 LOAD_CONST               4 (<code object <lambda> at 0x7f6aed7f4330, file "gui_extras.py", line 20>)
+            168 MAKE_FUNCTION            8 (closure)
+            170 KW_NAMES                 5 (('variable', 'command'))
+            172 CALL                     3
+            180 STORE_FAST               2 (cb)
+
+ 21         182 LOAD_DEREF               4 (app)
+            184 LOAD_ATTR               15 (NULL|self + _l)
+            204 LOAD_FAST                2 (cb)
+            206 LOAD_FAST                1 (key)
+            208 CALL                     2
+            216 LOAD_ATTR               17 (NULL|self + pack)
+            236 LOAD_CONST               6 ('w')
+            238 LOAD_CONST               7 (12)
+            240 LOAD_CONST               8 (3)
+            242 KW_NAMES                 9 (('anchor', 'padx', 'pady'))
+            244 CALL                     3
+            252 POP_TOP
+
+ 22         254 LOAD_FAST                2 (cb)
+            256 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed7f4330, file "gui_extras.py", line 20>:
+              0 COPY_FREE_VARS           3
+
+ 20           2 RESUME                   0
+              4 LOAD_GLOBAL              1 (NULL + setattr)
+             14 LOAD_DEREF               1 (s)
+             16 LOAD_DEREF               0 (attr)
+             18 LOAD_DEREF               2 (var)
+             20 LOAD_ATTR                3 (NULL|self + get)
+             40 CALL                     0
+             48 CALL                     3
+             56 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed804570, file "gui_extras.py", line 27>:
+              0 COPY_FREE_VARS           1
+
+ 27           2 RESUME                   0
+              4 LOAD_GLOBAL              1 (NULL + open_vault)
+             14 LOAD_DEREF               0 (app)
+             16 CALL                     1
+             24 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6af1dd2230, file "gui_extras.py", line 38>:
+              0 COPY_FREE_VARS           1
+
+ 38           2 RESUME                   0
+              4 LOAD_GLOBAL              1 (NULL + _on_pct)
+             14 LOAD_DEREF               1 (app)
+             16 CALL                     1
+             24 LOAD_GLOBAL              3 (NULL + _refresh_preview)
+             34 LOAD_DEREF               1 (app)
+             36 LOAD_CONST               1 (False)
+             38 KW_NAMES                 2 (('loop',))
+             40 CALL                     2
+             48 BUILD_TUPLE              2
+             50 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed7f4530, file "gui_extras.py", line 50>:
+              0 COPY_FREE_VARS           1
+
+ 50           2 RESUME                   0
+              4 LOAD_DEREF               1 (app)
+              6 LOAD_ATTR                1 (NULL|self + _on_afk_num)
+             26 LOAD_CONST               1 ('bus_dive_seconds')
+             28 LOAD_DEREF               1 (app)
+             30 LOAD_ATTR                2 (ex_dive_var)
+             50 LOAD_CONST               2 (1.0)
+             52 LOAD_CONST               3 (60.0)
+             54 CALL                     4
+             62 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed7f4630, file "gui_extras.py", line 61>:
+              0 COPY_FREE_VARS           1
+
+ 61           2 RESUME                   0
+              4 LOAD_DEREF               1 (app)
+              6 LOAD_ATTR                1 (NULL|self + _on_afk_num)
+             26 LOAD_CONST               1 ('pickaxe_min_s')
+             28 LOAD_DEREF               1 (app)
+             30 LOAD_ATTR                2 (ex_pmin_var)
+             50 LOAD_CONST               2 (1.0)
+             52 LOAD_CONST               3 (3600.0)
+             54 CALL                     4
+             62 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed7f4730, file "gui_extras.py", line 62>:
+              0 COPY_FREE_VARS           1
+
+ 62           2 RESUME                   0
+              4 LOAD_DEREF               1 (app)
+              6 LOAD_ATTR                1 (NULL|self + _on_afk_num)
+             26 LOAD_CONST               1 ('pickaxe_max_s')
+             28 LOAD_DEREF               1 (app)
+             30 LOAD_ATTR                2 (ex_pmax_var)
+             50 LOAD_CONST               2 (1.0)
+             52 LOAD_CONST               3 (3600.0)
+             54 CALL                     4
+             62 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6aed7f4830, file "gui_extras.py", line 74>:
+              0 COPY_FREE_VARS           1
+
+ 74           2 RESUME                   0
+              4 LOAD_DEREF               1 (app)
+              6 LOAD_ATTR                1 (NULL|self + _on_afk_num)
+             26 LOAD_CONST               1 ('stuck_timeout_min')
+             28 LOAD_DEREF               1 (app)
+             30 LOAD_ATTR                2 (ex_stuck_var)
+             50 LOAD_CONST               2 (0.0)
+             52 LOAD_CONST               3 (240.0)
+             54 CALL                     4
+             62 RETURN_VALUE
+
+Disassembly of <code object wait_for_mode at 0x7f6af1f81fb0, file "gui_extras.py", line 78>:
+ 78           0 RESUME                   0
+
+ 79           2 NOP
+
+ 80           4 LOAD_GLOBAL              1 (NULL + float)
+             14 LOAD_FAST                0 (s)
+             16 LOAD_ATTR                2 (wait_b)
+             36 LOAD_FAST                0 (s)
+             38 LOAD_ATTR                4 (wait_c)
+             58 LOAD_CONST               1 (('B', 'C'))
+             60 BUILD_CONST_KEY_MAP      2
+             62 LOAD_ATTR                7 (NULL|self + get)
+             82 LOAD_FAST                0 (s)
+             84 LOAD_ATTR                8 (mode)
+            104 LOAD_FAST                0 (s)
+            106 LOAD_ATTR               10 (afk_interval)
+            126 CALL                     2
+            134 CALL                     1
+            142 RETURN_VALUE
+
+Disassembly of <code object preview_text at 0x7f6aed178030, file "gui_extras.py", line 83>:
+ 83           0 RESUME                   0
+
+ 84           2 LOAD_GLOBAL              1 (NULL + wait_for_mode)
+             12 LOAD_FAST                0 (s)
+             14 CALL                     1
+             22 STORE_FAST               1 (base)
+
+ 85          24 LOAD_FAST                0 (s)
+             26 LOAD_ATTR                2 (jitter_enabled)
+             46 POP_JUMP_IF_TRUE        34 (to 116)
+
+ 86          48 LOAD_GLOBAL              5 (NULL + i18n)
+             58 LOAD_ATTR                6 (t)
+             78 LOAD_FAST                0 (s)
+             80 LOAD_ATTR                8 (lang)
+            100 LOAD_CONST               1 ('ex_jprev_off')
+            102 LOAD_FAST                1 (base)
+            104 KW_NAMES                 2 (('base',))
+            106 CALL                     3
+            114 RETURN_VALUE
+
+ 87     >>  116 LOAD_GLOBAL             11 (NULL + config)
+            126 LOAD_ATTR               12 (jitter_range)
+            146 LOAD_FAST                1 (base)
+            148 LOAD_FAST                0 (s)
+            150 CALL                     2
+            158 UNPACK_SEQUENCE          2
+            162 STORE_FAST               2 (lo)
+            164 STORE_FAST               3 (hi)
+
+ 88         166 LOAD_GLOBAL              5 (NULL + i18n)
+            176 LOAD_ATTR                6 (t)
+            196 LOAD_FAST                0 (s)
+            198 LOAD_ATTR                8 (lang)
+            218 LOAD_CONST               3 ('ex_jprev')
+            220 LOAD_FAST                1 (base)
+            222 LOAD_FAST                2 (lo)
+            224 LOAD_FAST                3 (hi)
+            226 KW_NAMES                 4 (('base', 'lo', 'hi'))
+            228 CALL                     5
+            236 RETURN_VALUE
+
+Disassembly of <code object _on_pct at 0x7f6aed7a8db0, file "gui_extras.py", line 91>:
+ 91           0 RESUME                   0
+
+ 92           2 NOP
+
+ 93           4 NOP
+
+ 94           6 LOAD_GLOBAL              1 (NULL + float)
+             16 LOAD_FAST                0 (app)
+             18 LOAD_ATTR                2 (ex_jpct_var)
+             38 LOAD_ATTR                5 (NULL|self + get)
+             58 CALL                     0
+             66 CALL                     1
+             74 STORE_FAST               1 (v)
+
+ 97          76 LOAD_CONST               1 (5.0)
+             78 LOAD_FAST                1 (v)
+             80 SWAP                     2
+             82 COPY                     2
+             84 COMPARE_OP              26 (<=)
+             88 POP_JUMP_IF_FALSE        5 (to 100)
+             90 LOAD_CONST               2 (50.0)
+             92 COMPARE_OP              26 (<=)
+             96 POP_JUMP_IF_FALSE       24 (to 146)
+             98 JUMP_FORWARD             2 (to 104)
+        >>  100 POP_TOP
+            102 RETURN_CONST             0 (None)
+
+ 98     >>  104 LOAD_FAST                1 (v)
+            106 LOAD_CONST               3 (100.0)
+            108 BINARY_OP               11 (/)
+            112 LOAD_FAST                0 (app)
+            114 LOAD_ATTR                8 (s)
+            134 STORE_ATTR               5 (wait_jitter_percent)
+            144 RETURN_CONST             0 (None)
+
+ 97     >>  146 RETURN_CONST             0 (None)
+        >>  148 PUSH_EXC_INFO
+
+ 95         150 LOAD_GLOBAL              6 (ValueError)
+            160 CHECK_EXC_MATCH
+            162 POP_JUMP_IF_FALSE        3 (to 170)
+            164 POP_TOP
+
+ 96         166 POP_EXCEPT
+            168 RETURN_CONST             0 (None)
+
+ 95     >>  170 RERAISE                  0
+        >>  172 COPY                     3
+            174 POP_EXCEPT
+            176 RERAISE                  1
+ExceptionTable:
+  6 to 74 -> 148 [0]
+  148 to 164 -> 172 [1] lasti
+  170 to 170 -> 172 [1] lasti
+
+Disassembly of <code object _refresh_preview at 0x7f6aed1781e0, file "gui_extras.py", line 101>:
+              0 MAKE_CELL                0 (app)
+
+101           2 RESUME                   0
+
+102           4 NOP
+
+103           6 NOP
+
+104           8 LOAD_DEREF               0 (app)
+             10 LOAD_ATTR                0 (ex_jprev_var)
+             30 LOAD_ATTR                3 (NULL|self + set)
+             50 LOAD_GLOBAL              5 (NULL + preview_text)
+             60 LOAD_DEREF               0 (app)
+             62 LOAD_ATTR                6 (s)
+             82 CALL                     1
+             90 CALL                     1
+             98 POP_TOP
+
+107     >>  100 LOAD_FAST                1 (loop)
+            102 POP_JUMP_IF_FALSE       33 (to 170)
+
+108         104 NOP
+
+109         106 LOAD_DEREF               0 (app)
+            108 LOAD_ATTR               10 (root)
+            128 LOAD_ATTR               13 (NULL|self + after)
+            148 LOAD_CONST               1 (500)
+            150 LOAD_CLOSURE             0 (app)
+            152 BUILD_TUPLE              1
+            154 LOAD_CONST               2 (<code object <lambda> at 0x7f6aed804810, file "gui_extras.py", line 109>)
+            156 MAKE_FUNCTION            8 (closure)
+            158 CALL                     2
+            166 POP_TOP
+            168 RETURN_CONST             0 (None)
+
+107     >>  170 RETURN_CONST             0 (None)
+        >>  172 PUSH_EXC_INFO
+
+105         174 LOAD_GLOBAL              8 (Exception)
+            184 CHECK_EXC_MATCH
+            186 POP_JUMP_IF_FALSE        3 (to 194)
+            188 POP_TOP
+
+106         190 POP_EXCEPT
+            192 JUMP_BACKWARD           47 (to 100)
+
+105     >>  194 RERAISE                  0
+        >>  196 COPY                     3
+            198 POP_EXCEPT
+            200 RERAISE                  1
+        >>  202 PUSH_EXC_INFO
+
+110         204 LOAD_GLOBAL              8 (Exception)
+            214 CHECK_EXC_MATCH
+            216 POP_JUMP_IF_FALSE        3 (to 224)
+            218 POP_TOP
+
+111         220 POP_EXCEPT
+            222 RETURN_CONST             0 (None)
+
+110     >>  224 RERAISE                  0
+        >>  226 COPY                     3
+            228 POP_EXCEPT
+            230 RERAISE                  1
+ExceptionTable:
+  8 to 98 -> 172 [0]
+  106 to 166 -> 202 [0]
+  172 to 188 -> 196 [1] lasti
+  194 to 194 -> 196 [1] lasti
+  202 to 218 -> 226 [1] lasti
+  224 to 224 -> 226 [1] lasti
+
+Disassembly of <code object <lambda> at 0x7f6aed804810, file "gui_extras.py", line 109>:
+              0 COPY_FREE_VARS           1
+
+109           2 RESUME                   0
+              4 LOAD_GLOBAL              1 (NULL + _refresh_preview)
+             14 LOAD_DEREF               0 (app)
+             16 CALL                     1
+             24 RETURN_VALUE
+
+Disassembly of <code object open_vault at 0x7f6af1f3ee70, file "gui_extras.py", line 114>:
+114           0 RESUME                   0
+
+115           2 NOP
+
+116           4 LOAD_CONST               1 (0)
+              6 LOAD_CONST               2 (('LootVault',))
+              8 IMPORT_NAME              0 (loot_vault)
+             10 IMPORT_FROM              1 (LootVault)
+             12 STORE_FAST               1 (LootVault)
+             14 POP_TOP
+
+118          16 PUSH_NULL
+             18 LOAD_FAST                1 (LootVault)
+             20 CALL                     0
+             28 LOAD_ATTR                5 (NULL|self + open_folder)
+             48 CALL                     0
+             56 POP_JUMP_IF_TRUE        28 (to 114)
+
+119          58 LOAD_FAST                0 (app)
+             60 LOAD_ATTR                6 (log_q)
+             80 LOAD_ATTR                9 (NULL|self + put)
+            100 LOAD_CONST               3 ('loot_vault: could not open the folder')
+            102 CALL                     1
+            110 POP_TOP
+            112 RETURN_CONST             0 (None)
+
+118     >>  114 RETURN_CONST             0 (None)

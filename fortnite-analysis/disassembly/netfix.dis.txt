@@ -1,0 +1,1278 @@
+  0           0 RESUME                   0
+
+  1           2 SETUP_ANNOTATIONS
+
+ 11           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (http.client)
+             10 STORE_NAME               1 (http)
+
+ 12          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              2 (json)
+             18 STORE_NAME               2 (json)
+
+ 13          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              3 (socket)
+             26 STORE_NAME               3 (socket)
+
+ 14          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               1 (None)
+             32 IMPORT_NAME              4 (ssl)
+             34 STORE_NAME               4 (ssl)
+
+ 15          36 LOAD_CONST               0 (0)
+             38 LOAD_CONST               1 (None)
+             40 IMPORT_NAME              5 (threading)
+             42 STORE_NAME               5 (threading)
+
+ 16          44 LOAD_CONST               0 (0)
+             46 LOAD_CONST               1 (None)
+             48 IMPORT_NAME              6 (time)
+             50 STORE_NAME               6 (time)
+
+ 17          52 LOAD_CONST               0 (0)
+             54 LOAD_CONST               1 (None)
+             56 IMPORT_NAME              7 (urllib.error)
+             58 STORE_NAME               8 (urllib)
+
+ 18          60 LOAD_CONST               0 (0)
+             62 LOAD_CONST               1 (None)
+             64 IMPORT_NAME              9 (urllib.parse)
+             66 STORE_NAME               8 (urllib)
+
+ 19          68 LOAD_CONST               0 (0)
+             70 LOAD_CONST               1 (None)
+             72 IMPORT_NAME             10 (urllib.request)
+             74 STORE_NAME               8 (urllib)
+
+ 20          76 LOAD_CONST               0 (0)
+             78 LOAD_CONST               2 (('Callable', 'List', 'Optional', 'Tuple'))
+             80 IMPORT_NAME             11 (typing)
+             82 IMPORT_FROM             12 (Callable)
+             84 STORE_NAME              12 (Callable)
+             86 IMPORT_FROM             13 (List)
+             88 STORE_NAME              13 (List)
+             90 IMPORT_FROM             14 (Optional)
+             92 STORE_NAME              14 (Optional)
+             94 IMPORT_FROM             15 (Tuple)
+             96 STORE_NAME              15 (Tuple)
+             98 POP_TOP
+
+ 22         100 LOAD_CONST               3 (('system', 'bundled', 'direct', 'direct-bundled', 'ipv4', 'ipv4-bundled', 'doh', 'doh-bundled'))
+            102 STORE_NAME              16 (SPECS)
+
+ 23         104 LOAD_CONST               4 (('ipv4', 'ipv4-bundled', 'doh', 'doh-bundled'))
+            106 STORE_NAME              17 (RESCUE_SPECS)
+
+ 24         108 LOAD_CONST               5 (('https://1.1.1.1/dns-query', 'https://8.8.8.8/resolve', 'https://9.9.9.9:5053/dns-query'))
+            110 STORE_NAME              18 (DOH_SERVERS)
+
+ 25         112 LOAD_CONST               6 (600.0)
+            114 STORE_NAME              19 (DOH_TTL_S)
+
+ 26         116 LOAD_CONST               7 (8.0)
+            118 STORE_NAME              20 (PROBE_TIMEOUT_S)
+
+ 28         120 PUSH_NULL
+            122 LOAD_NAME                5 (threading)
+            124 LOAD_ATTR               42 (Lock)
+            144 CALL                     0
+            152 STORE_NAME              22 (_lock)
+
+ 29         154 LOAD_CONST               1 (None)
+            156 STORE_GLOBAL            23 (_preferred)
+            158 LOAD_NAME               14 (Optional)
+            160 LOAD_NAME               24 (str)
+            162 BINARY_SUBSCR
+            166 LOAD_NAME               25 (__annotations__)
+            168 LOAD_CONST               8 ('_preferred')
+            170 STORE_SUBSCR
+
+ 30         174 BUILD_MAP                0
+            176 STORE_NAME              26 (_doh_cache)
+            178 LOAD_NAME               27 (dict)
+            180 LOAD_NAME               25 (__annotations__)
+            182 LOAD_CONST               9 ('_doh_cache')
+            184 STORE_SUBSCR
+
+ 33         188 LOAD_CONST              10 ('return')
+            190 LOAD_NAME               14 (Optional)
+            192 LOAD_NAME               24 (str)
+            194 BINARY_SUBSCR
+            198 BUILD_TUPLE              2
+            200 LOAD_CONST              11 (<code object preferred at 0x7f6aed1a6180, file "netfix.py", line 33>)
+            202 MAKE_FUNCTION            4 (annotations)
+            204 STORE_NAME              28 (preferred)
+
+ 37         206 LOAD_CONST              12 ('spec')
+            208 LOAD_NAME               14 (Optional)
+            210 LOAD_NAME               24 (str)
+            212 BINARY_SUBSCR
+            216 LOAD_CONST              10 ('return')
+            218 LOAD_CONST               1 (None)
+            220 BUILD_TUPLE              4
+            222 LOAD_CONST              13 (<code object set_preferred at 0x7f6aed7f6a30, file "netfix.py", line 37>)
+            224 MAKE_FUNCTION            4 (annotations)
+            226 STORE_NAME              29 (set_preferred)
+
+ 43         228 LOAD_CONST              14 ('bundled')
+            230 LOAD_NAME               30 (bool)
+            232 LOAD_CONST              10 ('return')
+            234 LOAD_NAME                4 (ssl)
+            236 LOAD_ATTR               62 (SSLContext)
+            256 BUILD_TUPLE              4
+            258 LOAD_CONST              15 (<code object _context at 0x7f6aed1c47b0, file "netfix.py", line 43>)
+            260 MAKE_FUNCTION            4 (annotations)
+            262 STORE_NAME              32 (_context)
+
+ 55         264 LOAD_CONST              16 ('host')
+            266 LOAD_NAME               24 (str)
+            268 LOAD_CONST              17 ('port')
+            270 LOAD_NAME               33 (int)
+            272 LOAD_CONST              10 ('return')
+            274 LOAD_NAME               13 (List)
+            276 LOAD_NAME               24 (str)
+            278 BINARY_SUBSCR
+            282 BUILD_TUPLE              6
+            284 LOAD_CONST              18 (<code object _addrs_v4 at 0x7f6af1de3e00, file "netfix.py", line 55>)
+            286 MAKE_FUNCTION            4 (annotations)
+            288 STORE_NAME              34 (_addrs_v4)
+
+ 59         290 LOAD_CONST              16 ('host')
+            292 LOAD_NAME               24 (str)
+            294 LOAD_CONST              17 ('port')
+            296 LOAD_NAME               33 (int)
+            298 LOAD_CONST              10 ('return')
+            300 LOAD_NAME               13 (List)
+            302 LOAD_NAME               24 (str)
+            304 BINARY_SUBSCR
+            308 BUILD_TUPLE              6
+            310 LOAD_CONST              19 (<code object _addrs_doh at 0x17a8dd40, file "netfix.py", line 59>)
+            312 MAKE_FUNCTION            4 (annotations)
+            314 STORE_NAME              35 (_addrs_doh)
+
+ 80         316 LOAD_CONST              20 ('addrs')
+            318 LOAD_NAME               13 (List)
+            320 LOAD_NAME               24 (str)
+            322 BINARY_SUBSCR
+            326 LOAD_CONST              17 ('port')
+            328 LOAD_NAME               33 (int)
+            330 LOAD_CONST              21 ('timeout')
+            332 LOAD_NAME               36 (float)
+            334 LOAD_CONST              10 ('return')
+            336 LOAD_NAME                3 (socket)
+            338 LOAD_ATTR                6 (socket)
+            358 BUILD_TUPLE              8
+            360 LOAD_CONST              22 (<code object _connect_any at 0x7f6aed7a2130, file "netfix.py", line 80>)
+            362 MAKE_FUNCTION            4 (annotations)
+            364 STORE_NAME              37 (_connect_any)
+
+ 90         366 PUSH_NULL
+            368 LOAD_BUILD_CLASS
+            370 LOAD_CONST              23 (<code object _PinnedHandler at 0x7f6aed7e5230, file "netfix.py", line 90>)
+            372 MAKE_FUNCTION            0
+            374 LOAD_CONST              24 ('_PinnedHandler')
+            376 LOAD_NAME                8 (urllib)
+            378 LOAD_ATTR               76 (request)
+            398 LOAD_ATTR               78 (HTTPSHandler)
+            418 CALL                     3
+            426 STORE_NAME              40 (_PinnedHandler)
+
+108         428 LOAD_CONST              12 ('spec')
+            430 LOAD_NAME               24 (str)
+            432 LOAD_CONST              25 ('req')
+            434 LOAD_NAME                8 (urllib)
+            436 LOAD_ATTR               76 (request)
+            456 LOAD_ATTR               82 (Request)
+            476 LOAD_CONST              21 ('timeout')
+            478 LOAD_NAME               36 (float)
+            480 BUILD_TUPLE              6
+            482 LOAD_CONST              26 (<code object open_with at 0x17a602e0, file "netfix.py", line 108>)
+            484 MAKE_FUNCTION            4 (annotations)
+            486 STORE_NAME              42 (open_with)
+
+125         488 LOAD_CONST              25 ('req')
+            490 LOAD_NAME                8 (urllib)
+            492 LOAD_ATTR               76 (request)
+            512 LOAD_ATTR               82 (Request)
+            532 LOAD_CONST              21 ('timeout')
+            534 LOAD_NAME               36 (float)
+            536 BUILD_TUPLE              4
+            538 LOAD_CONST              27 (<code object rescue at 0x7f6af1e29610, file "netfix.py", line 125>)
+            540 MAKE_FUNCTION            4 (annotations)
+            542 STORE_NAME              43 (rescue)
+
+144         544 LOAD_NAME               20 (PROBE_TIMEOUT_S)
+            546 BUILD_TUPLE              1
+            548 LOAD_CONST              28 ('relay_url')
+            550 LOAD_NAME               24 (str)
+            552 LOAD_CONST              21 ('timeout')
+            554 LOAD_NAME               36 (float)
+            556 LOAD_CONST              10 ('return')
+            558 LOAD_NAME               15 (Tuple)
+            560 LOAD_NAME               24 (str)
+            562 LOAD_NAME               13 (List)
+            564 LOAD_NAME               24 (str)
+            566 BINARY_SUBSCR
+            570 BUILD_TUPLE              2
+            572 BINARY_SUBSCR
+            576 BUILD_TUPLE              6
+            578 LOAD_CONST              29 (<code object repair at 0x17a807a0, file "netfix.py", line 144>)
+            580 MAKE_FUNCTION            5 (defaults, annotations)
+            582 STORE_NAME              44 (repair)
+
+170         584 LOAD_CONST              28 ('relay_url')
+            586 LOAD_NAME               24 (str)
+            588 LOAD_CONST              30 ('callback')
+            590 LOAD_NAME               12 (Callable)
+            592 LOAD_NAME               24 (str)
+            594 BUILD_LIST               1
+            596 LOAD_CONST               1 (None)
+            598 BUILD_TUPLE              2
+            600 BINARY_SUBSCR
+            604 LOAD_CONST              10 ('return')
+            606 LOAD_NAME                5 (threading)
+            608 LOAD_ATTR               90 (Thread)
+            628 BUILD_TUPLE              6
+            630 LOAD_CONST              31 (<code object repair_async at 0x7f6aed1d0880, file "netfix.py", line 170>)
+            632 MAKE_FUNCTION            4 (annotations)
+            634 STORE_NAME              46 (repair_async)
+            636 RETURN_CONST             1 (None)
+
+Disassembly of <code object preferred at 0x7f6aed1a6180, file "netfix.py", line 33>:
+ 33           0 RESUME                   0
+
+ 34           2 LOAD_GLOBAL              0 (_preferred)
+             12 RETURN_VALUE
+
+Disassembly of <code object set_preferred at 0x7f6aed7f6a30, file "netfix.py", line 37>:
+ 37           0 RESUME                   0
+
+ 39           2 LOAD_GLOBAL              0 (_lock)
+             12 BEFORE_WITH
+             14 POP_TOP
+
+ 40          16 LOAD_FAST                0 (spec)
+             18 STORE_GLOBAL             1 (_preferred)
+
+ 39          20 LOAD_CONST               0 (None)
+             22 LOAD_CONST               0 (None)
+             24 LOAD_CONST               0 (None)
+             26 CALL                     2
+             34 POP_TOP
+             36 RETURN_CONST             0 (None)
+        >>   38 PUSH_EXC_INFO
+             40 WITH_EXCEPT_START
+             42 POP_JUMP_IF_TRUE         1 (to 46)
+             44 RERAISE                  2
+        >>   46 POP_TOP
+             48 POP_EXCEPT
+             50 POP_TOP
+             52 POP_TOP
+             54 RETURN_CONST             0 (None)
+        >>   56 COPY                     3
+             58 POP_EXCEPT
+             60 RERAISE                  1
+ExceptionTable:
+  14 to 18 -> 38 [1] lasti
+  38 to 46 -> 56 [3] lasti
+
+Disassembly of <code object _context at 0x7f6aed1c47b0, file "netfix.py", line 43>:
+ 43           0 RESUME                   0
+
+ 44           2 LOAD_FAST                0 (bundled)
+              4 POP_JUMP_IF_TRUE        20 (to 46)
+
+ 45           6 LOAD_GLOBAL              1 (NULL + ssl)
+             16 LOAD_ATTR                2 (create_default_context)
+             36 CALL                     0
+             44 RETURN_VALUE
+
+ 46     >>   46 LOAD_CONST               1 (0)
+             48 LOAD_CONST               0 (None)
+             50 IMPORT_NAME              2 (telemetry)
+             52 STORE_FAST               1 (telemetry)
+
+ 48          54 LOAD_FAST                1 (telemetry)
+             56 LOAD_ATTR                7 (NULL|self + bundled_context)
+             76 CALL                     0
+             84 STORE_FAST               2 (ctx)
+
+ 49          86 LOAD_FAST                2 (ctx)
+             88 POP_JUMP_IF_NOT_NONE    11 (to 112)
+
+ 50          90 LOAD_GLOBAL              9 (NULL + ValueError)
+            100 LOAD_CONST               2 ('bundled certificates not available')
+            102 CALL                     1
+            110 RAISE_VARARGS            1
+
+ 51     >>  112 LOAD_FAST                2 (ctx)
+            114 RETURN_VALUE
+
+Disassembly of <code object _addrs_v4 at 0x7f6af1de3e00, file "netfix.py", line 55>:
+ 55           0 RESUME                   0
+
+ 56           2 LOAD_GLOBAL              1 (NULL + sorted)
+             12 LOAD_GLOBAL              3 (NULL + socket)
+             22 LOAD_ATTR                4 (getaddrinfo)
+             42 LOAD_FAST                0 (host)
+             44 LOAD_FAST                1 (port)
+             46 LOAD_GLOBAL              2 (socket)
+             56 LOAD_ATTR                6 (AF_INET)
+             76 LOAD_GLOBAL              2 (socket)
+             86 LOAD_ATTR                8 (SOCK_STREAM)
+            106 CALL                     4
+            114 GET_ITER
+            116 LOAD_FAST_AND_CLEAR      2 (i)
+            118 SWAP                     2
+            120 BUILD_SET                0
+            122 SWAP                     2
+        >>  124 FOR_ITER                10 (to 148)
+            128 STORE_FAST               2 (i)
+            130 LOAD_FAST                2 (i)
+            132 LOAD_CONST               1 (4)
+            134 BINARY_SUBSCR
+            138 LOAD_CONST               2 (0)
+            140 BINARY_SUBSCR
+            144 SET_ADD                  2
+            146 JUMP_BACKWARD           12 (to 124)
+        >>  148 END_FOR
+            150 SWAP                     2
+            152 STORE_FAST               2 (i)
+            154 CALL                     1
+            162 RETURN_VALUE
+        >>  164 SWAP                     2
+            166 POP_TOP
+            168 SWAP                     2
+            170 STORE_FAST               2 (i)
+            172 RERAISE                  0
+ExceptionTable:
+  120 to 148 -> 164 [4]
+
+Disassembly of <code object _addrs_doh at 0x17a8dd40, file "netfix.py", line 59>:
+ 59           0 RESUME                   0
+
+ 60           2 NOP
+
+ 61           4 LOAD_GLOBAL              0 (_doh_cache)
+             14 LOAD_ATTR                3 (NULL|self + get)
+             34 LOAD_FAST                0 (host)
+             36 CALL                     1
+             44 STORE_FAST               2 (hit)
+
+ 62          46 LOAD_FAST                2 (hit)
+             48 POP_JUMP_IF_FALSE       47 (to 144)
+             50 LOAD_GLOBAL              5 (NULL + time)
+             60 LOAD_ATTR                6 (monotonic)
+             80 CALL                     0
+             88 LOAD_FAST                2 (hit)
+             90 LOAD_CONST               1 (0)
+             92 BINARY_SUBSCR
+             96 BINARY_OP               10 (-)
+            100 LOAD_GLOBAL              8 (DOH_TTL_S)
+            110 COMPARE_OP               2 (<)
+            114 POP_JUMP_IF_FALSE       14 (to 144)
+
+ 63         116 LOAD_GLOBAL             11 (NULL + list)
+            126 LOAD_FAST                2 (hit)
+            128 LOAD_CONST               2 (1)
+            130 BINARY_SUBSCR
+            134 CALL                     1
+            142 RETURN_VALUE
+
+ 64     >>  144 LOAD_CONST               0 (None)
+            146 STORE_FAST               3 (last)
+
+ 65         148 LOAD_GLOBAL             12 (urllib)
+            158 LOAD_ATTR               14 (request)
+            178 LOAD_ATTR               17 (NULL|self + build_opener)
+            198 LOAD_GLOBAL             12 (urllib)
+            208 LOAD_ATTR               14 (request)
+            228 LOAD_ATTR               19 (NULL|self + ProxyHandler)
+            248 BUILD_MAP                0
+            250 CALL                     1
+            258 CALL                     1
+            266 STORE_FAST               4 (opener)
+
+ 66         268 LOAD_GLOBAL             20 (DOH_SERVERS)
+            278 GET_ITER
+        >>  280 EXTENDED_ARG             1
+            282 FOR_ITER               280 (to 846)
+            286 STORE_FAST               5 (base)
+
+ 67         288 NOP
+
+ 68         290 LOAD_GLOBAL             12 (urllib)
+            300 LOAD_ATTR               14 (request)
+            320 LOAD_ATTR               23 (NULL|self + Request)
+            340 LOAD_FAST                5 (base)
+            342 FORMAT_VALUE             0
+            344 LOAD_CONST               3 ('?name=')
+            346 LOAD_GLOBAL             12 (urllib)
+            356 LOAD_ATTR               24 (parse)
+            376 LOAD_ATTR               27 (NULL|self + quote)
+            396 LOAD_FAST                0 (host)
+            398 CALL                     1
+            406 FORMAT_VALUE             0
+            408 LOAD_CONST               4 ('&type=A')
+            410 BUILD_STRING             4
+            412 LOAD_CONST               5 ('application/dns-json')
+            414 LOAD_CONST               6 ('pk-auto-net')
+            416 LOAD_CONST               7 (('Accept', 'User-Agent'))
+            418 BUILD_CONST_KEY_MAP      2
+            420 KW_NAMES                 8 (('headers',))
+            422 CALL                     2
+            430 STORE_FAST               6 (req)
+
+ 69         432 LOAD_FAST                4 (opener)
+            434 LOAD_ATTR               29 (NULL|self + open)
+            454 LOAD_FAST                6 (req)
+            456 LOAD_GLOBAL             30 (PROBE_TIMEOUT_S)
+            466 KW_NAMES                 9 (('timeout',))
+            468 CALL                     2
+            476 BEFORE_WITH
+            478 STORE_FAST               7 (r)
+
+ 70         480 LOAD_GLOBAL             33 (NULL + json)
+            490 LOAD_ATTR               34 (loads)
+            510 LOAD_FAST                7 (r)
+            512 LOAD_ATTR               37 (NULL|self + read)
+            532 LOAD_CONST              10 (65536)
+            534 CALL                     1
+            542 LOAD_ATTR               39 (NULL|self + decode)
+            562 LOAD_CONST              11 ('utf-8')
+            564 CALL                     1
+            572 CALL                     1
+            580 STORE_FAST               8 (data)
+
+ 69         582 LOAD_CONST               0 (None)
+            584 LOAD_CONST               0 (None)
+            586 LOAD_CONST               0 (None)
+            588 CALL                     2
+            596 POP_TOP
+
+ 71     >>  598 LOAD_FAST_CHECK          8 (data)
+            600 LOAD_ATTR                3 (NULL|self + get)
+            620 LOAD_CONST              12 ('Answer')
+            622 BUILD_LIST               0
+            624 CALL                     2
+            632 GET_ITER
+            634 LOAD_FAST_AND_CLEAR      9 (a)
+            636 SWAP                     2
+            638 BUILD_LIST               0
+            640 SWAP                     2
+        >>  642 FOR_ITER                60 (to 766)
+            646 STORE_FAST               9 (a)
+            648 LOAD_FAST                9 (a)
+            650 LOAD_ATTR                3 (NULL|self + get)
+            670 LOAD_CONST              13 ('type')
+            672 CALL                     1
+            680 LOAD_CONST               2 (1)
+            682 COMPARE_OP              40 (==)
+            686 POP_JUMP_IF_TRUE         1 (to 690)
+            688 JUMP_BACKWARD           24 (to 642)
+        >>  690 LOAD_GLOBAL             41 (NULL + isinstance)
+            700 LOAD_FAST                9 (a)
+            702 LOAD_ATTR                3 (NULL|self + get)
+            722 LOAD_CONST              14 ('data')
+            724 CALL                     1
+            732 LOAD_GLOBAL             42 (str)
+            742 CALL                     2
+            750 POP_JUMP_IF_TRUE         1 (to 754)
+            752 JUMP_BACKWARD           56 (to 642)
+        >>  754 LOAD_FAST                9 (a)
+            756 LOAD_CONST              14 ('data')
+            758 BINARY_SUBSCR
+            762 LIST_APPEND              2
+            764 JUMP_BACKWARD           62 (to 642)
+        >>  766 END_FOR
+            768 STORE_FAST              10 (ips)
+            770 STORE_FAST               9 (a)
+
+ 72         772 LOAD_FAST               10 (ips)
+            774 POP_JUMP_IF_FALSE       33 (to 842)
+
+ 73         776 LOAD_GLOBAL              5 (NULL + time)
+            786 LOAD_ATTR                6 (monotonic)
+            806 CALL                     0
+            814 LOAD_FAST               10 (ips)
+            816 BUILD_TUPLE              2
+            818 LOAD_GLOBAL              0 (_doh_cache)
+            828 LOAD_FAST                0 (host)
+            830 STORE_SUBSCR
+
+ 74         834 LOAD_FAST               10 (ips)
+            836 SWAP                     2
+            838 POP_TOP
+            840 RETURN_VALUE
+
+ 72     >>  842 EXTENDED_ARG             1
+            844 JUMP_BACKWARD          283 (to 280)
+
+ 66     >>  846 END_FOR
+
+ 77         848 LOAD_GLOBAL             47 (NULL + OSError)
+            858 LOAD_CONST              15 ('DNS-over-HTTPS lookup failed: ')
+            860 LOAD_FAST                3 (last)
+            862 FORMAT_VALUE             0
+            864 BUILD_STRING             2
+            866 CALL                     1
+            874 RAISE_VARARGS            1
+
+ 69     >>  876 PUSH_EXC_INFO
+            878 WITH_EXCEPT_START
+            880 POP_JUMP_IF_TRUE         1 (to 884)
+            882 RERAISE                  2
+        >>  884 POP_TOP
+            886 POP_EXCEPT
+            888 POP_TOP
+            890 POP_TOP
+            892 JUMP_BACKWARD          148 (to 598)
+        >>  894 COPY                     3
+            896 POP_EXCEPT
+            898 RERAISE                  1
+        >>  900 SWAP                     2
+            902 POP_TOP
+
+ 71         904 SWAP                     2
+            906 STORE_FAST               9 (a)
+            908 RERAISE                  0
+        >>  910 PUSH_EXC_INFO
+
+ 75         912 LOAD_GLOBAL             44 (Exception)
+            922 CHECK_EXC_MATCH
+            924 POP_JUMP_IF_FALSE       13 (to 952)
+            926 STORE_FAST              11 (e)
+
+ 76         928 LOAD_FAST               11 (e)
+            930 STORE_FAST               3 (last)
+            932 POP_EXCEPT
+            934 LOAD_CONST               0 (None)
+            936 STORE_FAST              11 (e)
+            938 DELETE_FAST             11 (e)
+            940 EXTENDED_ARG             1
+            942 JUMP_BACKWARD          332 (to 280)
+        >>  944 LOAD_CONST               0 (None)
+            946 STORE_FAST              11 (e)
+            948 DELETE_FAST             11 (e)
+            950 RERAISE                  1
+
+ 75     >>  952 RERAISE                  0
+        >>  954 COPY                     3
+            956 POP_EXCEPT
+            958 RERAISE                  1
+ExceptionTable:
+  290 to 476 -> 910 [1]
+  478 to 580 -> 876 [2] lasti
+  582 to 636 -> 910 [1]
+  638 to 686 -> 900 [3]
+  690 to 750 -> 900 [3]
+  754 to 766 -> 900 [3]
+  768 to 834 -> 910 [1]
+  876 to 884 -> 894 [4] lasti
+  886 to 908 -> 910 [1]
+  910 to 926 -> 954 [2] lasti
+  928 to 930 -> 944 [2] lasti
+  944 to 952 -> 954 [2] lasti
+
+Disassembly of <code object _connect_any at 0x7f6aed7a2130, file "netfix.py", line 80>:
+ 80           0 RESUME                   0
+
+ 81           2 LOAD_CONST               0 (None)
+              4 STORE_FAST               3 (last)
+
+ 82           6 LOAD_FAST                0 (addrs)
+              8 GET_ITER
+        >>   10 FOR_ITER                28 (to 70)
+             14 STORE_FAST               4 (a)
+
+ 83          16 NOP
+
+ 84          18 LOAD_GLOBAL              1 (NULL + socket)
+             28 LOAD_ATTR                2 (create_connection)
+             48 LOAD_FAST                4 (a)
+             50 LOAD_FAST                1 (port)
+             52 BUILD_TUPLE              2
+             54 LOAD_FAST                2 (timeout)
+             56 CALL                     2
+             64 SWAP                     2
+             66 POP_TOP
+             68 RETURN_VALUE
+
+ 82     >>   70 END_FOR
+
+ 87          72 LOAD_FAST                3 (last)
+             74 COPY                     1
+             76 POP_JUMP_IF_TRUE        11 (to 100)
+             78 POP_TOP
+             80 LOAD_GLOBAL              5 (NULL + OSError)
+             90 LOAD_CONST               1 ('no address')
+             92 CALL                     1
+        >>  100 RAISE_VARARGS            1
+        >>  102 PUSH_EXC_INFO
+
+ 85         104 LOAD_GLOBAL              4 (OSError)
+            114 CHECK_EXC_MATCH
+            116 POP_JUMP_IF_FALSE       12 (to 142)
+            118 STORE_FAST               5 (e)
+
+ 86         120 LOAD_FAST                5 (e)
+            122 STORE_FAST               3 (last)
+            124 POP_EXCEPT
+            126 LOAD_CONST               0 (None)
+            128 STORE_FAST               5 (e)
+            130 DELETE_FAST              5 (e)
+            132 JUMP_BACKWARD           62 (to 10)
+        >>  134 LOAD_CONST               0 (None)
+            136 STORE_FAST               5 (e)
+            138 DELETE_FAST              5 (e)
+            140 RERAISE                  1
+
+ 85     >>  142 RERAISE                  0
+        >>  144 COPY                     3
+            146 POP_EXCEPT
+            148 RERAISE                  1
+ExceptionTable:
+  18 to 62 -> 102 [1]
+  102 to 118 -> 144 [2] lasti
+  120 to 122 -> 134 [2] lasti
+  134 to 142 -> 144 [2] lasti
+
+Disassembly of <code object _PinnedHandler at 0x7f6aed7e5230, file "netfix.py", line 90>:
+              0 MAKE_CELL                0 (__class__)
+
+ 90           2 RESUME                   0
+              4 LOAD_NAME                0 (__name__)
+              6 STORE_NAME               1 (__module__)
+              8 LOAD_CONST               0 ('_PinnedHandler')
+             10 STORE_NAME               2 (__qualname__)
+
+ 91          12 NOP
+
+ 93          14 LOAD_CONST               1 ('context')
+             16 LOAD_NAME                3 (ssl)
+             18 LOAD_ATTR                8 (SSLContext)
+             38 LOAD_CONST               2 ('lookup')
+             40 LOAD_NAME                5 (Callable)
+             42 LOAD_NAME                6 (str)
+             44 LOAD_NAME                7 (int)
+             46 BUILD_LIST               2
+             48 LOAD_NAME                8 (List)
+             50 LOAD_NAME                6 (str)
+             52 BINARY_SUBSCR
+             56 BUILD_TUPLE              2
+             58 BINARY_SUBSCR
+             62 BUILD_TUPLE              4
+             64 LOAD_CLOSURE             0 (__class__)
+             66 BUILD_TUPLE              1
+             68 LOAD_CONST               3 (<code object __init__ at 0x7f6aed7fe120, file "netfix.py", line 93>)
+             70 MAKE_FUNCTION           12 (annotations, closure)
+             72 STORE_NAME               9 (__init__)
+
+ 97          74 LOAD_CONST               4 (<code object https_open at 0x7f6af1de36d0, file "netfix.py", line 97>)
+             76 MAKE_FUNCTION            0
+             78 STORE_NAME              10 (https_open)
+             80 LOAD_CLOSURE             0 (__class__)
+             82 COPY                     1
+             84 STORE_NAME              11 (__classcell__)
+             86 RETURN_VALUE
+
+Disassembly of <code object __init__ at 0x7f6aed7fe120, file "netfix.py", line 93>:
+              0 COPY_FREE_VARS           1
+
+ 93           2 RESUME                   0
+
+ 94           4 LOAD_GLOBAL              0 (super)
+             14 LOAD_DEREF               3 (__class__)
+             16 LOAD_FAST                0 (self)
+             18 LOAD_SUPER_ATTR          5 (NULL|self + __init__)
+             22 LOAD_FAST                1 (context)
+             24 KW_NAMES                 1 (('context',))
+             26 CALL                     1
+             34 POP_TOP
+
+ 95          36 LOAD_FAST                1 (context)
+             38 LOAD_FAST                2 (lookup)
+             40 SWAP                     2
+             42 LOAD_FAST                0 (self)
+             44 STORE_ATTR               2 (_ctx)
+             54 LOAD_FAST                0 (self)
+             56 STORE_ATTR               3 (_lookup)
+             66 RETURN_CONST             0 (None)
+
+Disassembly of <code object https_open at 0x7f6af1de36d0, file "netfix.py", line 97>:
+              0 MAKE_CELL                3 (ctx)
+              2 MAKE_CELL                4 (lookup)
+
+ 97           4 RESUME                   0
+
+ 98           6 LOAD_FAST                0 (self)
+              8 LOAD_ATTR                0 (_ctx)
+             28 LOAD_FAST                0 (self)
+             30 LOAD_ATTR                2 (_lookup)
+             50 SWAP                     2
+             52 STORE_DEREF              3 (ctx)
+             54 STORE_DEREF              4 (lookup)
+
+100          56 PUSH_NULL
+             58 LOAD_BUILD_CLASS
+             60 LOAD_CLOSURE             3 (ctx)
+             62 LOAD_CLOSURE             4 (lookup)
+             64 BUILD_TUPLE              2
+             66 LOAD_CONST               1 (<code object Conn at 0x7f6aed806db0, file "netfix.py", line 100>)
+             68 MAKE_FUNCTION            8 (closure)
+             70 LOAD_CONST               2 ('Conn')
+             72 LOAD_GLOBAL              4 (http)
+             82 LOAD_ATTR                6 (client)
+            102 LOAD_ATTR                8 (HTTPSConnection)
+            122 CALL                     3
+            130 STORE_FAST               2 (Conn)
+
+105         132 LOAD_FAST                0 (self)
+            134 LOAD_ATTR               11 (NULL|self + do_open)
+            154 LOAD_FAST                2 (Conn)
+            156 LOAD_FAST                1 (req)
+            158 LOAD_DEREF               3 (ctx)
+            160 KW_NAMES                 3 (('context',))
+            162 CALL                     3
+            170 RETURN_VALUE
+
+Disassembly of <code object Conn at 0x7f6aed806db0, file "netfix.py", line 100>:
+              0 COPY_FREE_VARS           2
+
+100           2 RESUME                   0
+              4 LOAD_NAME                0 (__name__)
+              6 STORE_NAME               1 (__module__)
+              8 LOAD_CONST               0 ('_PinnedHandler.https_open.<locals>.Conn')
+             10 STORE_NAME               2 (__qualname__)
+
+101          12 LOAD_CLOSURE             0 (ctx)
+             14 LOAD_CLOSURE             1 (lookup)
+             16 BUILD_TUPLE              2
+             18 LOAD_CONST               1 (<code object connect at 0x7f6af1e29c50, file "netfix.py", line 101>)
+             20 MAKE_FUNCTION            8 (closure)
+             22 STORE_NAME               3 (connect)
+             24 RETURN_CONST             2 (None)
+
+Disassembly of <code object connect at 0x7f6af1e29c50, file "netfix.py", line 101>:
+              0 COPY_FREE_VARS           2
+
+101           2 RESUME                   0
+
+102           4 LOAD_GLOBAL              1 (NULL + _connect_any)
+             14 PUSH_NULL
+             16 LOAD_DEREF               3 (lookup)
+             18 LOAD_FAST                0 (self)
+             20 LOAD_ATTR                2 (host)
+             40 LOAD_FAST                0 (self)
+             42 LOAD_ATTR                4 (port)
+             62 CALL                     2
+             70 LOAD_FAST                0 (self)
+             72 LOAD_ATTR                4 (port)
+             92 LOAD_FAST                0 (self)
+             94 LOAD_ATTR                6 (timeout)
+            114 CALL                     3
+            122 STORE_FAST               1 (sock)
+
+103         124 LOAD_DEREF               2 (ctx)
+            126 LOAD_ATTR                9 (NULL|self + wrap_socket)
+            146 LOAD_FAST                1 (sock)
+            148 LOAD_FAST                0 (self)
+            150 LOAD_ATTR                2 (host)
+            170 KW_NAMES                 1 (('server_hostname',))
+            172 CALL                     2
+            180 LOAD_FAST                0 (self)
+            182 STORE_ATTR               5 (sock)
+            192 RETURN_CONST             0 (None)
+
+Disassembly of <code object open_with at 0x17a602e0, file "netfix.py", line 108>:
+108           0 RESUME                   0
+
+109           2 NOP
+
+110           4 LOAD_FAST                0 (spec)
+              6 LOAD_ATTR                1 (NULL|self + split)
+             26 LOAD_CONST               1 ('-')
+             28 CALL                     1
+             36 LOAD_CONST               2 (0)
+             38 BINARY_SUBSCR
+             42 STORE_FAST               3 (base)
+
+111          44 LOAD_GLOBAL              3 (NULL + _context)
+             54 LOAD_FAST                0 (spec)
+             56 LOAD_ATTR                5 (NULL|self + endswith)
+             76 LOAD_CONST               3 ('-bundled')
+             78 CALL                     1
+             86 COPY                     1
+             88 POP_JUMP_IF_TRUE         5 (to 100)
+             90 POP_TOP
+             92 LOAD_FAST                3 (base)
+             94 LOAD_CONST               4 ('bundled')
+             96 COMPARE_OP              40 (==)
+        >>  100 CALL                     1
+            108 STORE_FAST               4 (ctx)
+
+112         110 LOAD_FAST                3 (base)
+            112 LOAD_CONST               5 (('system', 'bundled'))
+            114 CONTAINS_OP              0
+            116 POP_JUMP_IF_FALSE       63 (to 244)
+
+113         118 LOAD_GLOBAL              6 (urllib)
+            128 LOAD_ATTR                8 (request)
+            148 LOAD_ATTR               11 (NULL|self + build_opener)
+            168 LOAD_GLOBAL              6 (urllib)
+            178 LOAD_ATTR                8 (request)
+            198 LOAD_ATTR               13 (NULL|self + HTTPSHandler)
+            218 LOAD_FAST                4 (ctx)
+            220 KW_NAMES                 6 (('context',))
+            222 CALL                     1
+            230 CALL                     1
+            238 STORE_FAST               5 (opener)
+            240 EXTENDED_ARG             1
+            242 JUMP_FORWARD           270 (to 784)
+
+114     >>  244 LOAD_FAST                3 (base)
+            246 LOAD_CONST               7 ('direct')
+            248 COMPARE_OP              40 (==)
+            252 POP_JUMP_IF_FALSE       92 (to 438)
+
+115         254 LOAD_GLOBAL              6 (urllib)
+            264 LOAD_ATTR                8 (request)
+            284 LOAD_ATTR               11 (NULL|self + build_opener)
+            304 LOAD_GLOBAL              6 (urllib)
+            314 LOAD_ATTR                8 (request)
+            334 LOAD_ATTR               15 (NULL|self + ProxyHandler)
+            354 BUILD_MAP                0
+            356 CALL                     1
+            364 LOAD_GLOBAL              6 (urllib)
+            374 LOAD_ATTR                8 (request)
+            394 LOAD_ATTR               13 (NULL|self + HTTPSHandler)
+            414 LOAD_FAST                4 (ctx)
+            416 KW_NAMES                 6 (('context',))
+            418 CALL                     1
+            426 CALL                     2
+            434 STORE_FAST               5 (opener)
+            436 JUMP_FORWARD           173 (to 784)
+
+116     >>  438 LOAD_FAST                3 (base)
+            440 LOAD_CONST               8 ('ipv4')
+            442 COMPARE_OP              40 (==)
+            446 POP_JUMP_IF_FALSE       76 (to 600)
+
+117         448 LOAD_GLOBAL              6 (urllib)
+            458 LOAD_ATTR                8 (request)
+            478 LOAD_ATTR               11 (NULL|self + build_opener)
+            498 LOAD_GLOBAL              6 (urllib)
+            508 LOAD_ATTR                8 (request)
+            528 LOAD_ATTR               15 (NULL|self + ProxyHandler)
+            548 BUILD_MAP                0
+            550 CALL                     1
+            558 LOAD_GLOBAL             17 (NULL + _PinnedHandler)
+            568 LOAD_FAST                4 (ctx)
+            570 LOAD_GLOBAL             18 (_addrs_v4)
+            580 CALL                     2
+            588 CALL                     2
+            596 STORE_FAST               5 (opener)
+            598 JUMP_FORWARD            92 (to 784)
+
+118     >>  600 LOAD_FAST                3 (base)
+            602 LOAD_CONST               9 ('doh')
+            604 COMPARE_OP              40 (==)
+            608 POP_JUMP_IF_FALSE       76 (to 762)
+
+119         610 LOAD_GLOBAL              6 (urllib)
+            620 LOAD_ATTR                8 (request)
+            640 LOAD_ATTR               11 (NULL|self + build_opener)
+            660 LOAD_GLOBAL              6 (urllib)
+            670 LOAD_ATTR                8 (request)
+            690 LOAD_ATTR               15 (NULL|self + ProxyHandler)
+            710 BUILD_MAP                0
+            712 CALL                     1
+            720 LOAD_GLOBAL             17 (NULL + _PinnedHandler)
+            730 LOAD_FAST                4 (ctx)
+            732 LOAD_GLOBAL             20 (_addrs_doh)
+            742 CALL                     2
+            750 CALL                     2
+            758 STORE_FAST               5 (opener)
+            760 JUMP_FORWARD            11 (to 784)
+
+121     >>  762 LOAD_GLOBAL             23 (NULL + ValueError)
+            772 LOAD_FAST                0 (spec)
+            774 CALL                     1
+            782 RAISE_VARARGS            1
+
+122     >>  784 LOAD_FAST                5 (opener)
+            786 LOAD_ATTR               25 (NULL|self + open)
+            806 LOAD_FAST                1 (req)
+            808 LOAD_FAST                2 (timeout)
+            810 KW_NAMES                10 (('timeout',))
+            812 CALL                     2
+            820 RETURN_VALUE
+
+Disassembly of <code object rescue at 0x7f6af1e29610, file "netfix.py", line 125>:
+125           0 RESUME                   0
+
+126           2 NOP
+
+130           4 LOAD_GLOBAL              0 (RESCUE_SPECS)
+             14 GET_ITER
+        >>   16 FOR_ITER                30 (to 80)
+             20 STORE_FAST               2 (spec)
+
+131          22 NOP
+
+132          24 LOAD_GLOBAL              3 (NULL + open_with)
+             34 LOAD_FAST                2 (spec)
+             36 LOAD_FAST                0 (req)
+             38 LOAD_FAST                1 (timeout)
+             40 CALL                     3
+             48 STORE_FAST               3 (r)
+
+138          50 LOAD_GLOBAL             11 (NULL + set_preferred)
+             60 LOAD_FAST                2 (spec)
+             62 CALL                     1
+             70 POP_TOP
+
+139          72 LOAD_FAST                3 (r)
+             74 SWAP                     2
+             76 POP_TOP
+             78 RETURN_VALUE
+
+130     >>   80 END_FOR
+
+140          82 RETURN_CONST             0 (None)
+        >>   84 PUSH_EXC_INFO
+
+133          86 LOAD_GLOBAL              4 (urllib)
+             96 LOAD_ATTR                6 (error)
+            116 LOAD_ATTR                8 (HTTPError)
+            136 CHECK_EXC_MATCH
+            138 POP_JUMP_IF_FALSE       13 (to 166)
+            140 POP_TOP
+
+134         142 LOAD_GLOBAL             11 (NULL + set_preferred)
+            152 LOAD_FAST                2 (spec)
+            154 CALL                     1
+            162 POP_TOP
+
+135         164 RAISE_VARARGS            0
+
+136     >>  166 LOAD_GLOBAL             12 (Exception)
+            176 CHECK_EXC_MATCH
+            178 POP_JUMP_IF_FALSE        3 (to 186)
+            180 POP_TOP
+
+137         182 POP_EXCEPT
+            184 JUMP_BACKWARD           85 (to 16)
+
+136     >>  186 RERAISE                  0
+        >>  188 COPY                     3
+            190 POP_EXCEPT
+            192 RERAISE                  1
+ExceptionTable:
+  24 to 48 -> 84 [1]
+  84 to 180 -> 188 [2] lasti
+  186 to 186 -> 188 [2] lasti
+
+Disassembly of <code object repair at 0x17a807a0, file "netfix.py", line 144>:
+144           0 RESUME                   0
+
+145           2 NOP
+
+147           4 BUILD_LIST               0
+              6 STORE_FAST               2 (lines)
+
+148           8 LOAD_FAST                0 (relay_url)
+             10 LOAD_ATTR                1 (NULL|self + strip)
+             30 CALL                     0
+             38 LOAD_ATTR                3 (NULL|self + rstrip)
+             58 LOAD_CONST               1 ('/')
+             60 CALL                     1
+             68 LOAD_CONST               1 ('/')
+             70 BINARY_OP                0 (+)
+             74 STORE_FAST               3 (base)
+
+149          76 LOAD_GLOBAL              4 (SPECS)
+             86 GET_ITER
+        >>   88 FOR_ITER               184 (to 460)
+             92 STORE_FAST               4 (spec)
+
+150          94 LOAD_GLOBAL              7 (NULL + time)
+            104 LOAD_ATTR                8 (perf_counter)
+            124 CALL                     0
+            132 STORE_FAST               5 (t0)
+
+151         134 NOP
+
+152         136 LOAD_GLOBAL             10 (urllib)
+            146 LOAD_ATTR               12 (request)
+            166 LOAD_ATTR               15 (NULL|self + Request)
+            186 LOAD_FAST                3 (base)
+            188 LOAD_CONST               2 ('User-Agent')
+            190 LOAD_CONST               3 ('pk-auto-net')
+            192 BUILD_MAP                1
+            194 KW_NAMES                 4 (('headers',))
+            196 CALL                     2
+            204 STORE_FAST               6 (req)
+
+153         206 NOP
+
+154         208 LOAD_GLOBAL             17 (NULL + open_with)
+            218 LOAD_FAST                4 (spec)
+            220 LOAD_FAST                6 (req)
+            222 LOAD_FAST                1 (timeout)
+            224 CALL                     3
+            232 BEFORE_WITH
+            234 STORE_FAST               7 (r)
+
+155         236 LOAD_FAST                7 (r)
+            238 LOAD_ATTR               19 (NULL|self + read)
+            258 LOAD_CONST               5 (256)
+            260 CALL                     1
+            268 POP_TOP
+
+154         270 LOAD_CONST               0 (None)
+            272 LOAD_CONST               0 (None)
+            274 LOAD_CONST               0 (None)
+            276 CALL                     2
+            284 POP_TOP
+
+161     >>  286 LOAD_FAST                2 (lines)
+            288 LOAD_ATTR               27 (NULL|self + append)
+            308 LOAD_FAST                4 (spec)
+            310 FORMAT_VALUE             0
+            312 LOAD_CONST              11 (': OK [')
+            314 LOAD_GLOBAL              7 (NULL + time)
+            324 LOAD_ATTR                8 (perf_counter)
+            344 CALL                     0
+            352 LOAD_FAST                5 (t0)
+            354 BINARY_OP               10 (-)
+            358 LOAD_CONST               8 (1000)
+            360 BINARY_OP                5 (*)
+            364 LOAD_CONST               9 ('.0f')
+            366 FORMAT_VALUE             4 (with format)
+            368 LOAD_CONST              10 (' ms]')
+            370 BUILD_STRING             4
+            372 CALL                     1
+            380 POP_TOP
+
+162         382 LOAD_FAST                4 (spec)
+            384 LOAD_CONST              12 ('system')
+            386 COMPARE_OP              40 (==)
+            390 POP_JUMP_IF_FALSE       17 (to 426)
+
+163         392 LOAD_GLOBAL             33 (NULL + set_preferred)
+            402 LOAD_CONST               0 (None)
+            404 CALL                     1
+            412 POP_TOP
+
+164         414 LOAD_CONST              13 ('fix_same')
+            416 LOAD_FAST                2 (lines)
+            418 BUILD_TUPLE              2
+            420 SWAP                     2
+            422 POP_TOP
+            424 RETURN_VALUE
+
+165     >>  426 LOAD_GLOBAL             33 (NULL + set_preferred)
+            436 LOAD_FAST                4 (spec)
+            438 CALL                     1
+            446 POP_TOP
+
+166         448 LOAD_CONST              14 ('fix_ok')
+            450 LOAD_FAST                2 (lines)
+            452 BUILD_TUPLE              2
+            454 SWAP                     2
+            456 POP_TOP
+            458 RETURN_VALUE
+
+149     >>  460 END_FOR
+
+167         462 LOAD_CONST              15 ('fix_fail')
+            464 LOAD_FAST                2 (lines)
+            466 BUILD_TUPLE              2
+            468 RETURN_VALUE
+
+154     >>  470 PUSH_EXC_INFO
+            472 WITH_EXCEPT_START
+            474 POP_JUMP_IF_TRUE         1 (to 478)
+            476 RERAISE                  2
+        >>  478 POP_TOP
+            480 POP_EXCEPT
+            482 POP_TOP
+            484 POP_TOP
+            486 JUMP_BACKWARD          101 (to 286)
+        >>  488 COPY                     3
+            490 POP_EXCEPT
+            492 RERAISE                  1
+        >>  494 PUSH_EXC_INFO
+
+156         496 LOAD_GLOBAL             10 (urllib)
+            506 LOAD_ATTR               20 (error)
+            526 LOAD_ATTR               22 (HTTPError)
+            546 CHECK_EXC_MATCH
+            548 POP_JUMP_IF_FALSE        3 (to 556)
+            550 POP_TOP
+
+157         552 POP_EXCEPT
+            554 JUMP_BACKWARD          135 (to 286)
+
+156     >>  556 RERAISE                  0
+        >>  558 COPY                     3
+            560 POP_EXCEPT
+            562 RERAISE                  1
+        >>  564 PUSH_EXC_INFO
+
+158         566 LOAD_GLOBAL             24 (Exception)
+            576 CHECK_EXC_MATCH
+            578 POP_JUMP_IF_FALSE       81 (to 742)
+            580 STORE_FAST               8 (e)
+
+159         582 LOAD_FAST                2 (lines)
+            584 LOAD_ATTR               27 (NULL|self + append)
+            604 LOAD_FAST                4 (spec)
+            606 FORMAT_VALUE             0
+            608 LOAD_CONST               6 (': FAILED ')
+            610 LOAD_GLOBAL             29 (NULL + type)
+            620 LOAD_FAST                8 (e)
+            622 CALL                     1
+            630 LOAD_ATTR               30 (__name__)
+            650 FORMAT_VALUE             0
+            652 LOAD_CONST               7 (' [')
+            654 LOAD_GLOBAL              7 (NULL + time)
+            664 LOAD_ATTR                8 (perf_counter)
+            684 CALL                     0
+            692 LOAD_FAST                5 (t0)
+            694 BINARY_OP               10 (-)
+            698 LOAD_CONST               8 (1000)
+            700 BINARY_OP                5 (*)
+            704 LOAD_CONST               9 ('.0f')
+            706 FORMAT_VALUE             4 (with format)
+            708 LOAD_CONST              10 (' ms]')
+            710 BUILD_STRING             6
+            712 CALL                     1
+            720 POP_TOP
+
+160         722 POP_EXCEPT
+            724 LOAD_CONST               0 (None)
+            726 STORE_FAST               8 (e)
+            728 DELETE_FAST              8 (e)
+            730 EXTENDED_ARG             1
+            732 JUMP_BACKWARD          323 (to 88)
+        >>  734 LOAD_CONST               0 (None)
+            736 STORE_FAST               8 (e)
+            738 DELETE_FAST              8 (e)
+            740 RERAISE                  1
+
+158     >>  742 RERAISE                  0
+        >>  744 COPY                     3
+            746 POP_EXCEPT
+            748 RERAISE                  1
+ExceptionTable:
+  136 to 204 -> 564 [1]
+  208 to 232 -> 494 [1]
+  234 to 268 -> 470 [2] lasti
+  270 to 284 -> 494 [1]
+  470 to 478 -> 488 [4] lasti
+  480 to 492 -> 494 [1]
+  494 to 550 -> 558 [2] lasti
+  552 to 554 -> 564 [1]
+  556 to 556 -> 558 [2] lasti
+  558 to 562 -> 564 [1]
+  564 to 580 -> 744 [2] lasti
+  582 to 720 -> 734 [2] lasti
+  734 to 742 -> 744 [2] lasti
+
+Disassembly of <code object repair_async at 0x7f6aed1d0880, file "netfix.py", line 170>:
+              0 MAKE_CELL                0 (relay_url)
+              2 MAKE_CELL                1 (callback)
+
+170           4 RESUME                   0
+
+171           6 NOP
+
+173           8 LOAD_CONST               5 (('return', None))
+             10 LOAD_CLOSURE             1 (callback)
+             12 LOAD_CLOSURE             0 (relay_url)
+             14 BUILD_TUPLE              2
+             16 LOAD_CONST               1 (<code object work at 0x7f6aed1c4670, file "netfix.py", line 173>)
+             18 MAKE_FUNCTION           12 (annotations, closure)
+             20 STORE_FAST               2 (work)
+
+183          22 LOAD_GLOBAL              1 (NULL + threading)
+             32 LOAD_ATTR                2 (Thread)
+             52 LOAD_FAST                2 (work)
+             54 LOAD_CONST               2 (True)
+             56 LOAD_CONST               3 ('pk-auto-netfix')
+             58 KW_NAMES                 4 (('target', 'daemon', 'name'))
+             60 CALL                     3
+             68 STORE_FAST               3 (t)
+
+184          70 LOAD_FAST                3 (t)
+             72 LOAD_ATTR                5 (NULL|self + start)
+             92 CALL                     0
+            100 POP_TOP
+
+185         102 LOAD_FAST                3 (t)
+            104 RETURN_VALUE
+
+Disassembly of <code object work at 0x7f6aed1c4670, file "netfix.py", line 173>:
+              0 COPY_FREE_VARS           2
+
+173           2 RESUME                   0
+
+174           4 NOP
+
+175           6 LOAD_GLOBAL              1 (NULL + repair)
+             16 LOAD_DEREF               3 (relay_url)
+             18 CALL                     1
+             26 UNPACK_SEQUENCE          2
+             30 STORE_FAST               0 (status)
+             32 STORE_FAST               1 (_lines)
+
+178     >>   34 NOP
+
+179          36 PUSH_NULL
+             38 LOAD_DEREF               2 (callback)
+             40 LOAD_FAST                0 (status)
+             42 CALL                     1
+             50 POP_TOP
+             52 RETURN_CONST             0 (None)
+        >>   54 PUSH_EXC_INFO
+
+176          56 LOAD_GLOBAL              2 (Exception)
+             66 CHECK_EXC_MATCH
+             68 POP_JUMP_IF_FALSE        5 (to 80)
+             70 POP_TOP
+
+177          72 LOAD_CONST               1 ('fix_fail')
+             74 STORE_FAST               0 (status)
+             76 POP_EXCEPT
+             78 JUMP_BACKWARD           23 (to 34)
+
+176     >>   80 RERAISE                  0
+        >>   82 COPY                     3
+             84 POP_EXCEPT
+             86 RERAISE                  1
+        >>   88 PUSH_EXC_INFO
+
+180          90 LOAD_GLOBAL              2 (Exception)
+            100 CHECK_EXC_MATCH
+            102 POP_JUMP_IF_FALSE        3 (to 110)
+            104 POP_TOP
+
+181         106 POP_EXCEPT
+            108 RETURN_CONST             0 (None)
+
+180     >>  110 RERAISE                  0
+        >>  112 COPY                     3
+            114 POP_EXCEPT
+            116 RERAISE                  1
+ExceptionTable:
+  6 to 32 -> 54 [0]
+  36 to 50 -> 88 [0]
+  54 to 74 -> 82 [1] lasti
+  80 to 80 -> 82 [1] lasti
+  88 to 104 -> 112 [1] lasti
+  110 to 110 -> 112 [1] lasti

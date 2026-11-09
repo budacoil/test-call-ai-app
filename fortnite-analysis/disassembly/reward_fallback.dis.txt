@@ -1,0 +1,501 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+  8           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (time)
+             10 STORE_NAME               0 (time)
+
+  9          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               2 (('Callable', 'Optional', 'Tuple'))
+             16 IMPORT_NAME              1 (typing)
+             18 IMPORT_FROM              2 (Callable)
+             20 STORE_NAME               2 (Callable)
+             22 IMPORT_FROM              3 (Optional)
+             24 STORE_NAME               3 (Optional)
+             26 IMPORT_FROM              4 (Tuple)
+             28 STORE_NAME               4 (Tuple)
+             30 POP_TOP
+
+ 11          32 LOAD_CONST               0 (0)
+             34 LOAD_CONST               1 (None)
+             36 IMPORT_NAME              5 (cv2)
+             38 STORE_NAME               5 (cv2)
+
+ 12          40 LOAD_CONST               0 (0)
+             42 LOAD_CONST               1 (None)
+             44 IMPORT_NAME              6 (numpy)
+             46 STORE_NAME               7 (np)
+
+ 14          48 LOAD_CONST               3 (60.0)
+             50 STORE_NAME               8 (IDLE_S)
+
+ 15          52 LOAD_CONST               4 (30.0)
+             54 STORE_NAME               9 (RETRY_S)
+
+ 16          56 LOAD_CONST               5 (10.0)
+             58 STORE_NAME              10 (GAP_S)
+
+ 17          60 LOAD_CONST               6 ((0.3, 0.76, 0.97, 0.98))
+             62 STORE_NAME              11 (BAND)
+
+ 20          64 LOAD_CONST               7 ('frame')
+             66 LOAD_NAME                7 (np)
+             68 LOAD_ATTR               24 (ndarray)
+             88 LOAD_CONST               8 ('return')
+             90 LOAD_NAME                3 (Optional)
+             92 LOAD_NAME                4 (Tuple)
+             94 LOAD_NAME               13 (int)
+             96 LOAD_NAME               13 (int)
+             98 BUILD_TUPLE              2
+            100 BINARY_SUBSCR
+            104 BINARY_SUBSCR
+            108 BUILD_TUPLE              4
+            110 LOAD_CONST               9 (<code object find_white_button at 0x17a9f970, file "reward_fallback.py", line 20>)
+            112 MAKE_FUNCTION            4 (annotations)
+            114 STORE_NAME              14 (find_white_button)
+
+ 47         116 PUSH_NULL
+            118 LOAD_BUILD_CLASS
+            120 LOAD_CONST              10 (<code object RewardFallback at 0x7f6aed1c5570, file "reward_fallback.py", line 47>)
+            122 MAKE_FUNCTION            0
+            124 LOAD_CONST              11 ('RewardFallback')
+            126 CALL                     2
+            134 STORE_NAME              15 (RewardFallback)
+            136 RETURN_CONST             1 (None)
+
+Disassembly of <code object find_white_button at 0x17a9f970, file "reward_fallback.py", line 20>:
+ 20           0 RESUME                   0
+
+ 21           2 NOP
+
+ 22           4 NOP
+
+ 23           6 LOAD_FAST                0 (frame)
+              8 LOAD_ATTR                0 (shape)
+             28 LOAD_CONST               0 (None)
+             30 LOAD_CONST               1 (2)
+             32 BINARY_SLICE
+             34 UNPACK_SEQUENCE          2
+             38 STORE_FAST               1 (fh)
+             40 STORE_FAST               2 (fw)
+
+ 24          42 LOAD_GLOBAL              3 (NULL + int)
+             52 LOAD_GLOBAL              4 (BAND)
+             62 LOAD_CONST               2 (0)
+             64 BINARY_SUBSCR
+             68 LOAD_FAST                2 (fw)
+             70 BINARY_OP                5 (*)
+             74 CALL                     1
+             82 LOAD_GLOBAL              3 (NULL + int)
+             92 LOAD_GLOBAL              4 (BAND)
+            102 LOAD_CONST               3 (1)
+            104 BINARY_SUBSCR
+            108 LOAD_FAST                1 (fh)
+            110 BINARY_OP                5 (*)
+            114 CALL                     1
+            122 LOAD_GLOBAL              3 (NULL + int)
+            132 LOAD_GLOBAL              4 (BAND)
+            142 LOAD_CONST               1 (2)
+            144 BINARY_SUBSCR
+            148 LOAD_FAST                2 (fw)
+            150 BINARY_OP                5 (*)
+            154 CALL                     1
+            162 LOAD_GLOBAL              3 (NULL + int)
+            172 LOAD_GLOBAL              4 (BAND)
+            182 LOAD_CONST               4 (3)
+            184 BINARY_SUBSCR
+            188 LOAD_FAST                1 (fh)
+            190 BINARY_OP                5 (*)
+            194 CALL                     1
+            202 BUILD_TUPLE              4
+            204 UNPACK_SEQUENCE          4
+            208 STORE_FAST               3 (x0)
+            210 STORE_FAST               4 (y0)
+            212 STORE_FAST               5 (x1)
+            214 STORE_FAST               6 (y1)
+
+ 25         216 LOAD_FAST                0 (frame)
+            218 LOAD_FAST                4 (y0)
+            220 LOAD_FAST                6 (y1)
+            222 BUILD_SLICE              2
+            224 LOAD_FAST                3 (x0)
+            226 LOAD_FAST                5 (x1)
+            228 BUILD_SLICE              2
+            230 BUILD_TUPLE              2
+            232 BINARY_SUBSCR
+            236 STORE_FAST               7 (region)
+
+ 26         238 LOAD_FAST                7 (region)
+            240 LOAD_ATTR                6 (size)
+            260 LOAD_CONST               2 (0)
+            262 COMPARE_OP              40 (==)
+            266 POP_JUMP_IF_TRUE        15 (to 298)
+            268 LOAD_FAST                7 (region)
+            270 LOAD_ATTR                8 (ndim)
+            290 LOAD_CONST               4 (3)
+            292 COMPARE_OP              55 (!=)
+            296 POP_JUMP_IF_FALSE        1 (to 300)
+
+ 27     >>  298 RETURN_CONST             0 (None)
+
+ 28     >>  300 LOAD_FAST                7 (region)
+            302 LOAD_ATTR               11 (NULL|self + min)
+            322 LOAD_CONST               1 (2)
+            324 KW_NAMES                 5 (('axis',))
+            326 CALL                     1
+            334 LOAD_FAST                7 (region)
+            336 LOAD_ATTR               13 (NULL|self + max)
+            356 LOAD_CONST               1 (2)
+            358 KW_NAMES                 5 (('axis',))
+            360 CALL                     1
+            368 STORE_FAST               9 (mx)
+            370 STORE_FAST               8 (mn)
+
+ 29         372 LOAD_FAST                8 (mn)
+            374 LOAD_CONST               6 (205)
+            376 COMPARE_OP              92 (>=)
+            380 LOAD_FAST                9 (mx)
+            382 LOAD_FAST                8 (mn)
+            384 BINARY_OP               10 (-)
+            388 LOAD_CONST               7 (40)
+            390 COMPARE_OP              26 (<=)
+            394 BINARY_OP                1 (&)
+            398 LOAD_ATTR               15 (NULL|self + astype)
+            418 LOAD_GLOBAL             16 (np)
+            428 LOAD_ATTR               18 (uint8)
+            448 CALL                     1
+            456 LOAD_CONST               8 (255)
+            458 BINARY_OP                5 (*)
+            462 STORE_FAST              10 (mask)
+
+ 30         464 LOAD_GLOBAL             13 (NULL + max)
+            474 LOAD_CONST               4 (3)
+            476 LOAD_GLOBAL              3 (NULL + int)
+            486 LOAD_FAST                2 (fw)
+            488 LOAD_CONST               9 (0.004)
+            490 BINARY_OP                5 (*)
+            494 CALL                     1
+            502 CALL                     2
+            510 LOAD_CONST               3 (1)
+            512 BINARY_OP                7 (|)
+            516 STORE_FAST              11 (k)
+
+ 31         518 LOAD_GLOBAL             21 (NULL + cv2)
+            528 LOAD_ATTR               22 (morphologyEx)
+            548 LOAD_FAST               10 (mask)
+            550 LOAD_GLOBAL             20 (cv2)
+            560 LOAD_ATTR               24 (MORPH_CLOSE)
+            580 LOAD_GLOBAL             21 (NULL + cv2)
+            590 LOAD_ATTR               26 (getStructuringElement)
+            610 LOAD_GLOBAL             20 (cv2)
+            620 LOAD_ATTR               28 (MORPH_RECT)
+            640 LOAD_FAST               11 (k)
+            642 LOAD_CONST               4 (3)
+            644 BINARY_OP                5 (*)
+            648 LOAD_FAST               11 (k)
+            650 BUILD_TUPLE              2
+            652 CALL                     2
+            660 CALL                     3
+            668 STORE_FAST              10 (mask)
+
+ 32         670 LOAD_GLOBAL             21 (NULL + cv2)
+            680 LOAD_ATTR               30 (connectedComponentsWithStats)
+            700 LOAD_FAST               10 (mask)
+            702 LOAD_CONST              10 (8)
+            704 KW_NAMES                11 (('connectivity',))
+            706 CALL                     2
+            714 UNPACK_SEQUENCE          4
+            718 STORE_FAST              12 (n)
+            720 STORE_FAST              13 (_)
+            722 STORE_FAST              14 (stats)
+            724 STORE_FAST              13 (_)
+
+ 33         726 LOAD_CONST              12 ((None, 0))
+            728 UNPACK_SEQUENCE          2
+            732 STORE_FAST              15 (best)
+            734 STORE_FAST              16 (best_area)
+
+ 34         736 LOAD_GLOBAL             33 (NULL + range)
+            746 LOAD_CONST               3 (1)
+            748 LOAD_FAST               12 (n)
+            750 CALL                     2
+            758 GET_ITER
+        >>  760 FOR_ITER               128 (to 1020)
+            764 STORE_FAST              17 (i)
+
+ 35         766 LOAD_CONST              13 (<code object <genexpr> at 0x7f6aed7f5030, file "reward_fallback.py", line 35>)
+            768 MAKE_FUNCTION            0
+            770 LOAD_FAST               14 (stats)
+            772 LOAD_FAST               17 (i)
+            774 BINARY_SUBSCR
+            778 GET_ITER
+            780 CALL                     0
+            788 UNPACK_SEQUENCE          5
+            792 STORE_FAST              18 (x)
+            794 STORE_FAST              19 (y)
+            796 STORE_FAST              20 (w)
+            798 STORE_FAST              21 (h)
+            800 STORE_FAST              22 (area)
+
+ 36         802 LOAD_CONST              14 (0.07)
+            804 LOAD_FAST                2 (fw)
+            806 BINARY_OP                5 (*)
+            810 LOAD_FAST               20 (w)
+            812 SWAP                     2
+            814 COPY                     2
+            816 COMPARE_OP              26 (<=)
+            820 POP_JUMP_IF_FALSE        8 (to 838)
+            822 LOAD_CONST              15 (0.3)
+            824 LOAD_FAST                2 (fw)
+            826 BINARY_OP                5 (*)
+            830 COMPARE_OP              26 (<=)
+            834 POP_JUMP_IF_FALSE       22 (to 880)
+            836 JUMP_FORWARD             2 (to 842)
+        >>  838 POP_TOP
+            840 JUMP_FORWARD            19 (to 880)
+        >>  842 LOAD_CONST              16 (0.025)
+            844 LOAD_FAST                1 (fh)
+            846 BINARY_OP                5 (*)
+            850 LOAD_FAST               21 (h)
+            852 SWAP                     2
+            854 COPY                     2
+            856 COMPARE_OP              26 (<=)
+            860 POP_JUMP_IF_FALSE        8 (to 878)
+            862 LOAD_CONST              17 (0.075)
+            864 LOAD_FAST                1 (fh)
+            866 BINARY_OP                5 (*)
+            870 COMPARE_OP              26 (<=)
+            874 POP_JUMP_IF_TRUE         3 (to 882)
+            876 JUMP_FORWARD             1 (to 880)
+        >>  878 POP_TOP
+
+ 37     >>  880 JUMP_BACKWARD           61 (to 760)
+
+ 38     >>  882 LOAD_CONST              18 (2.5)
+            884 LOAD_FAST               20 (w)
+            886 LOAD_FAST               21 (h)
+            888 BINARY_OP               11 (/)
+            892 SWAP                     2
+            894 COPY                     2
+            896 COMPARE_OP              26 (<=)
+            900 POP_JUMP_IF_FALSE        5 (to 912)
+            902 LOAD_CONST              19 (8.0)
+            904 COMPARE_OP              26 (<=)
+            908 POP_JUMP_IF_FALSE       23 (to 956)
+            910 JUMP_FORWARD             2 (to 916)
+        >>  912 POP_TOP
+            914 JUMP_FORWARD            20 (to 956)
+        >>  916 LOAD_FAST               22 (area)
+            918 LOAD_GLOBAL             35 (NULL + float)
+            928 LOAD_FAST               20 (w)
+            930 LOAD_FAST               21 (h)
+            932 BINARY_OP                5 (*)
+            936 CALL                     1
+            944 BINARY_OP               11 (/)
+            948 LOAD_CONST              20 (0.75)
+            950 COMPARE_OP               2 (<)
+            954 POP_JUMP_IF_FALSE        1 (to 958)
+
+ 39     >>  956 JUMP_BACKWARD           99 (to 760)
+
+ 40     >>  958 LOAD_FAST               22 (area)
+            960 LOAD_FAST               16 (best_area)
+            962 COMPARE_OP              68 (>)
+            966 POP_JUMP_IF_TRUE         1 (to 970)
+            968 JUMP_BACKWARD          105 (to 760)
+
+ 41     >>  970 LOAD_FAST                3 (x0)
+            972 LOAD_FAST               18 (x)
+            974 BINARY_OP                0 (+)
+            978 LOAD_FAST               20 (w)
+            980 LOAD_CONST               1 (2)
+            982 BINARY_OP                2 (//)
+            986 BINARY_OP                0 (+)
+            990 LOAD_FAST                4 (y0)
+            992 LOAD_FAST               19 (y)
+            994 BINARY_OP                0 (+)
+            998 LOAD_FAST               21 (h)
+           1000 LOAD_CONST               1 (2)
+           1002 BINARY_OP                2 (//)
+           1006 BINARY_OP                0 (+)
+           1010 BUILD_TUPLE              2
+           1012 LOAD_FAST               22 (area)
+           1014 STORE_FAST              16 (best_area)
+           1016 STORE_FAST              15 (best)
+           1018 JUMP_BACKWARD          130 (to 760)
+
+ 34     >> 1020 END_FOR
+
+ 42        1022 LOAD_FAST               15 (best)
+           1024 RETURN_VALUE
+        >> 1026 PUSH_EXC_INFO
+
+ 43        1028 LOAD_GLOBAL             36 (Exception)
+           1038 CHECK_EXC_MATCH
+           1040 POP_JUMP_IF_FALSE        3 (to 1048)
+           1042 POP_TOP
+
+ 44        1044 POP_EXCEPT
+           1046 RETURN_CONST             0 (None)
+
+ 43     >> 1048 RERAISE                  0
+        >> 1050 COPY                     3
+           1052 POP_EXCEPT
+           1054 RERAISE                  1
+ExceptionTable:
+  6 to 296 -> 1026 [0]
+  300 to 966 -> 1026 [0]
+  970 to 1022 -> 1026 [0]
+  1026 to 1042 -> 1050 [1] lasti
+  1048 to 1048 -> 1050 [1] lasti
+
+Disassembly of <code object <genexpr> at 0x7f6aed7f5030, file "reward_fallback.py", line 35>:
+ 35           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+              6 LOAD_FAST                0 (.0)
+        >>    8 FOR_ITER                15 (to 42)
+             12 STORE_FAST               1 (v)
+             14 LOAD_GLOBAL              1 (NULL + int)
+             24 LOAD_FAST                1 (v)
+             26 CALL                     1
+             34 YIELD_VALUE              1
+             36 RESUME                   1
+             38 POP_TOP
+             40 JUMP_BACKWARD           17 (to 8)
+        >>   42 END_FOR
+             44 RETURN_CONST             0 (None)
+        >>   46 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             48 RERAISE                  1
+ExceptionTable:
+  4 to 44 -> 46 [0] lasti
+
+Disassembly of <code object RewardFallback at 0x7f6aed1c5570, file "reward_fallback.py", line 47>:
+ 47           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('RewardFallback')
+              8 STORE_NAME               2 (__qualname__)
+
+ 48          10 LOAD_NAME                3 (time)
+             12 LOAD_ATTR                8 (monotonic)
+             32 BUILD_TUPLE              1
+             34 LOAD_CONST               1 ('clock')
+             36 LOAD_NAME                5 (Callable)
+             38 BUILD_LIST               0
+             40 LOAD_NAME                6 (float)
+             42 BUILD_TUPLE              2
+             44 BINARY_SUBSCR
+             48 BUILD_TUPLE              2
+             50 LOAD_CONST               2 (<code object __init__ at 0x7f6aed7f5f30, file "reward_fallback.py", line 48>)
+             52 MAKE_FUNCTION            5 (defaults, annotations)
+             54 STORE_NAME               7 (__init__)
+
+ 54          56 LOAD_CONST               8 (('return', None))
+             58 LOAD_CONST               5 (<code object reset at 0x7f6aed806a30, file "reward_fallback.py", line 54>)
+             60 MAKE_FUNCTION            4 (annotations)
+             62 STORE_NAME               8 (reset)
+
+ 58          64 LOAD_CONST               6 ('frame')
+             66 LOAD_NAME                9 (np)
+             68 LOAD_ATTR               20 (ndarray)
+             88 LOAD_CONST               3 ('return')
+             90 LOAD_NAME               11 (Optional)
+             92 LOAD_NAME               12 (Tuple)
+             94 LOAD_NAME               13 (int)
+             96 LOAD_NAME               13 (int)
+             98 BUILD_TUPLE              2
+            100 BINARY_SUBSCR
+            104 BINARY_SUBSCR
+            108 BUILD_TUPLE              4
+            110 LOAD_CONST               7 (<code object poll at 0x7f6af1f8ebb0, file "reward_fallback.py", line 58>)
+            112 MAKE_FUNCTION            4 (annotations)
+            114 STORE_NAME              14 (poll)
+            116 RETURN_CONST             4 (None)
+
+Disassembly of <code object __init__ at 0x7f6aed7f5f30, file "reward_fallback.py", line 48>:
+ 48           0 RESUME                   0
+
+ 49           2 LOAD_FAST                1 (clock)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (_clock)
+
+ 50          16 LOAD_CONST               0 (None)
+             18 LOAD_FAST                0 (self)
+             20 STORE_ATTR               1 (_since)
+
+ 51          30 LOAD_CONST               1 (-1000000000.0)
+             32 LOAD_FAST                0 (self)
+             34 STORE_ATTR               2 (_last_poll)
+
+ 52          44 LOAD_CONST               2 (0.0)
+             46 LOAD_FAST                0 (self)
+             48 STORE_ATTR               3 (_next)
+             58 RETURN_CONST             0 (None)
+
+Disassembly of <code object reset at 0x7f6aed806a30, file "reward_fallback.py", line 54>:
+ 54           0 RESUME                   0
+
+ 55           2 NOP
+
+ 56           4 LOAD_CONST               0 (None)
+              6 LOAD_FAST                0 (self)
+              8 STORE_ATTR               0 (_since)
+             18 RETURN_CONST             0 (None)
+
+Disassembly of <code object poll at 0x7f6af1f8ebb0, file "reward_fallback.py", line 58>:
+ 58           0 RESUME                   0
+
+ 59           2 NOP
+
+ 60           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + _clock)
+             26 CALL                     0
+             34 STORE_FAST               2 (now)
+
+ 61          36 LOAD_FAST                0 (self)
+             38 LOAD_ATTR                2 (_since)
+             58 POP_JUMP_IF_NONE        22 (to 104)
+             60 LOAD_FAST                2 (now)
+             62 LOAD_FAST                0 (self)
+             64 LOAD_ATTR                4 (_last_poll)
+             84 BINARY_OP               10 (-)
+             88 LOAD_GLOBAL              6 (GAP_S)
+             98 COMPARE_OP              68 (>)
+            102 POP_JUMP_IF_FALSE        7 (to 118)
+
+ 62     >>  104 LOAD_FAST                2 (now)
+            106 LOAD_FAST                0 (self)
+            108 STORE_ATTR               1 (_since)
+
+ 63     >>  118 LOAD_FAST                2 (now)
+            120 LOAD_FAST                0 (self)
+            122 STORE_ATTR               2 (_last_poll)
+
+ 64         132 LOAD_FAST                2 (now)
+            134 LOAD_FAST                0 (self)
+            136 LOAD_ATTR                2 (_since)
+            156 BINARY_OP               10 (-)
+            160 LOAD_GLOBAL              8 (IDLE_S)
+            170 COMPARE_OP               2 (<)
+            174 POP_JUMP_IF_TRUE        15 (to 206)
+            176 LOAD_FAST                2 (now)
+            178 LOAD_FAST                0 (self)
+            180 LOAD_ATTR               10 (_next)
+            200 COMPARE_OP               2 (<)
+            204 POP_JUMP_IF_FALSE        1 (to 208)
+
+ 65     >>  206 RETURN_CONST             0 (None)
+
+ 66     >>  208 LOAD_FAST                2 (now)
+            210 LOAD_GLOBAL             12 (RETRY_S)
+            220 BINARY_OP                0 (+)
+            224 LOAD_FAST                0 (self)
+            226 STORE_ATTR               5 (_next)
+
+ 67         236 LOAD_GLOBAL             15 (NULL + find_white_button)
+            246 LOAD_FAST                1 (frame)
+            248 CALL                     1
+            256 RETURN_VALUE

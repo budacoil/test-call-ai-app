@@ -1,0 +1,1848 @@
+  0           0 RESUME                   0
+
+  1           2 NOP
+
+ 12           4 LOAD_CONST               0 (0)
+              6 LOAD_CONST               1 (None)
+              8 IMPORT_NAME              0 (atexit)
+             10 STORE_NAME               0 (atexit)
+
+ 13          12 LOAD_CONST               0 (0)
+             14 LOAD_CONST               1 (None)
+             16 IMPORT_NAME              1 (ctypes)
+             18 STORE_NAME               1 (ctypes)
+
+ 14          20 LOAD_CONST               0 (0)
+             22 LOAD_CONST               1 (None)
+             24 IMPORT_NAME              2 (threading)
+             26 STORE_NAME               2 (threading)
+
+ 15          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               2 (('wintypes',))
+             32 IMPORT_NAME              1 (ctypes)
+             34 IMPORT_FROM              3 (wintypes)
+             36 STORE_NAME               3 (wintypes)
+             38 POP_TOP
+
+ 16          40 LOAD_CONST               0 (0)
+             42 LOAD_CONST               3 (('Callable', 'Dict', 'List', 'Optional', 'Tuple'))
+             44 IMPORT_NAME              4 (typing)
+             46 IMPORT_FROM              5 (Callable)
+             48 STORE_NAME               5 (Callable)
+             50 IMPORT_FROM              6 (Dict)
+             52 STORE_NAME               6 (Dict)
+             54 IMPORT_FROM              7 (List)
+             56 STORE_NAME               7 (List)
+             58 IMPORT_FROM              8 (Optional)
+             60 STORE_NAME               8 (Optional)
+             62 IMPORT_FROM              9 (Tuple)
+             64 STORE_NAME               9 (Tuple)
+             66 POP_TOP
+
+ 18          68 LOAD_CONST               4 (('fortniteclient-win64-shipping.exe',))
+             70 STORE_NAME              10 (GAME_EXES)
+
+ 21          72 PUSH_NULL
+             74 LOAD_BUILD_CLASS
+             76 LOAD_CONST               5 (<code object Session at 0x7f6af1dd2030, file "audio_mute.py", line 21>)
+             78 MAKE_FUNCTION            0
+             80 LOAD_CONST               6 ('Session')
+             82 CALL                     2
+             90 STORE_NAME              11 (Session)
+
+ 29          92 LOAD_CONST               7 ('s')
+             94 LOAD_NAME               12 (str)
+             96 BUILD_TUPLE              2
+             98 LOAD_CONST               8 (<code object _guid at 0x7f6af1f76030, file "audio_mute.py", line 29>)
+            100 MAKE_FUNCTION            4 (annotations)
+            102 STORE_NAME              13 (_guid)
+
+ 43         104 LOAD_CONST               9 ('index')
+            106 LOAD_NAME               14 (int)
+            108 LOAD_CONST              10 ('argtypes')
+            110 LOAD_NAME               15 (tuple)
+            112 LOAD_CONST              11 ('return')
+            114 LOAD_NAME               14 (int)
+            116 BUILD_TUPLE              6
+            118 LOAD_CONST              12 (<code object _call at 0x179dc460, file "audio_mute.py", line 43>)
+            120 MAKE_FUNCTION            4 (annotations)
+            122 STORE_NAME              16 (_call)
+
+ 50         124 LOAD_CONST              22 (('return', None))
+            126 LOAD_CONST              13 (<code object _release at 0x7f6af1dbf000, file "audio_mute.py", line 50>)
+            128 MAKE_FUNCTION            4 (annotations)
+            130 STORE_NAME              17 (_release)
+
+ 58         132 LOAD_CONST              11 ('return')
+            134 LOAD_NAME                6 (Dict)
+            136 LOAD_NAME               14 (int)
+            138 LOAD_NAME               12 (str)
+            140 BUILD_TUPLE              2
+            142 BINARY_SUBSCR
+            146 BUILD_TUPLE              2
+            148 LOAD_CONST              14 (<code object _process_names at 0x179d2d40, file "audio_mute.py", line 58>)
+            150 MAKE_FUNCTION            4 (annotations)
+            152 STORE_NAME              18 (_process_names)
+
+ 88         154 PUSH_NULL
+            156 LOAD_BUILD_CLASS
+            158 LOAD_CONST              15 (<code object CoreAudioBackend at 0x7f6af1dd7090, file "audio_mute.py", line 88>)
+            160 MAKE_FUNCTION            0
+            162 LOAD_CONST              16 ('CoreAudioBackend')
+            164 CALL                     2
+            172 STORE_NAME              19 (CoreAudioBackend)
+
+159         174 PUSH_NULL
+            176 LOAD_BUILD_CLASS
+            178 LOAD_CONST              17 (<code object PycawBackend at 0x7f6af1dc3a50, file "audio_mute.py", line 159>)
+            180 MAKE_FUNCTION            0
+            182 LOAD_CONST              18 ('PycawBackend')
+            184 CALL                     2
+            192 STORE_NAME              20 (PycawBackend)
+
+177         194 LOAD_CONST              19 (<code object default_backend at 0x7f6af1dbf330, file "audio_mute.py", line 177>)
+            196 MAKE_FUNCTION            0
+            198 STORE_NAME              21 (default_backend)
+
+185         200 PUSH_NULL
+            202 LOAD_BUILD_CLASS
+            204 LOAD_CONST              20 (<code object GameAudioController at 0x7f6af1f3dbb0, file "audio_mute.py", line 185>)
+            206 MAKE_FUNCTION            0
+            208 LOAD_CONST              21 ('GameAudioController')
+            210 CALL                     2
+            218 STORE_NAME              22 (GameAudioController)
+            220 RETURN_CONST             1 (None)
+
+Disassembly of <code object Session at 0x7f6af1dd2030, file "audio_mute.py", line 21>:
+ 21           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('Session')
+              8 STORE_NAME               2 (__qualname__)
+
+ 22          10 NOP
+
+ 24          12 LOAD_CONST               1 ('pid')
+             14 LOAD_NAME                3 (int)
+             16 LOAD_CONST               2 ('name')
+             18 LOAD_NAME                4 (str)
+             20 LOAD_CONST               3 ('get_mute')
+             22 LOAD_NAME                5 (Callable)
+             24 BUILD_LIST               0
+             26 LOAD_NAME                6 (bool)
+             28 BUILD_TUPLE              2
+             30 BINARY_SUBSCR
+             34 LOAD_CONST               4 ('set_mute')
+             36 LOAD_NAME                5 (Callable)
+             38 LOAD_NAME                6 (bool)
+             40 BUILD_LIST               1
+             42 LOAD_CONST               5 (None)
+             44 BUILD_TUPLE              2
+             46 BINARY_SUBSCR
+             50 BUILD_TUPLE              8
+             52 LOAD_CONST               6 (<code object __init__ at 0x7f6af1dbfaa0, file "audio_mute.py", line 24>)
+             54 MAKE_FUNCTION            4 (annotations)
+             56 STORE_NAME               7 (__init__)
+             58 RETURN_CONST             5 (None)
+
+Disassembly of <code object __init__ at 0x7f6af1dbfaa0, file "audio_mute.py", line 24>:
+ 24           0 RESUME                   0
+
+ 25           2 LOAD_FAST                1 (pid)
+              4 LOAD_FAST                2 (name)
+              6 LOAD_FAST                3 (get_mute)
+              8 LOAD_FAST                4 (set_mute)
+             10 BUILD_TUPLE              4
+             12 UNPACK_SEQUENCE          4
+             16 LOAD_FAST                0 (self)
+             18 STORE_ATTR               0 (pid)
+             28 LOAD_FAST                0 (self)
+             30 STORE_ATTR               1 (name)
+             40 LOAD_FAST                0 (self)
+             42 STORE_ATTR               2 (get_mute)
+             52 LOAD_FAST                0 (self)
+             54 STORE_ATTR               3 (set_mute)
+             64 RETURN_CONST             0 (None)
+
+Disassembly of <code object _guid at 0x7f6af1f76030, file "audio_mute.py", line 29>:
+ 29           0 RESUME                   0
+
+ 30           2 LOAD_CONST               1 (0)
+              4 LOAD_CONST               0 (None)
+              6 IMPORT_NAME              0 (uuid)
+              8 STORE_FAST               1 (uuid)
+
+ 32          10 PUSH_NULL
+             12 LOAD_BUILD_CLASS
+             14 LOAD_CONST               2 (<code object GUID at 0x7f6af1f3fc30, file "audio_mute.py", line 32>)
+             16 MAKE_FUNCTION            0
+             18 LOAD_CONST               3 ('GUID')
+             20 LOAD_GLOBAL              2 (ctypes)
+             30 LOAD_ATTR                4 (Structure)
+             50 CALL                     3
+             58 STORE_FAST               2 (GUID)
+
+ 35          60 LOAD_FAST                1 (uuid)
+             62 LOAD_ATTR                7 (NULL|self + UUID)
+             82 LOAD_FAST                0 (s)
+             84 CALL                     1
+             92 STORE_FAST               3 (u)
+
+ 36          94 PUSH_NULL
+             96 LOAD_FAST                2 (GUID)
+             98 CALL                     0
+            106 STORE_FAST               4 (g)
+
+ 37         108 LOAD_FAST                3 (u)
+            110 LOAD_ATTR                8 (time_low)
+            130 LOAD_FAST                3 (u)
+            132 LOAD_ATTR               10 (time_mid)
+            152 LOAD_FAST                3 (u)
+            154 LOAD_ATTR               12 (time_hi_version)
+            174 SWAP                     3
+            176 LOAD_FAST                4 (g)
+            178 STORE_ATTR               7 (a)
+            188 LOAD_FAST                4 (g)
+            190 STORE_ATTR               8 (b)
+            200 LOAD_FAST                4 (g)
+            202 STORE_ATTR               9 (c)
+
+ 38         212 LOAD_GLOBAL             21 (NULL + enumerate)
+            222 LOAD_FAST                3 (u)
+            224 LOAD_ATTR               22 (bytes)
+            244 LOAD_CONST               4 (8)
+            246 LOAD_CONST               0 (None)
+            248 BINARY_SLICE
+            250 CALL                     1
+            258 GET_ITER
+        >>  260 FOR_ITER                20 (to 304)
+            264 UNPACK_SEQUENCE          2
+            268 STORE_FAST               5 (i)
+            270 STORE_FAST               6 (byte)
+
+ 39         272 LOAD_FAST                6 (byte)
+            274 LOAD_FAST                4 (g)
+            276 LOAD_ATTR               24 (d)
+            296 LOAD_FAST                5 (i)
+            298 STORE_SUBSCR
+            302 JUMP_BACKWARD           22 (to 260)
+
+ 38     >>  304 END_FOR
+
+ 40         306 LOAD_FAST                4 (g)
+            308 RETURN_VALUE
+
+Disassembly of <code object GUID at 0x7f6af1f3fc30, file "audio_mute.py", line 32>:
+ 32           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('_guid.<locals>.GUID')
+              8 STORE_NAME               2 (__qualname__)
+
+ 33          10 LOAD_CONST               1 ('a')
+             12 LOAD_NAME                3 (wintypes)
+             14 LOAD_ATTR                8 (DWORD)
+             34 BUILD_TUPLE              2
+             36 LOAD_CONST               2 ('b')
+             38 LOAD_NAME                3 (wintypes)
+             40 LOAD_ATTR               10 (WORD)
+             60 BUILD_TUPLE              2
+             62 LOAD_CONST               3 ('c')
+             64 LOAD_NAME                3 (wintypes)
+             66 LOAD_ATTR               10 (WORD)
+             86 BUILD_TUPLE              2
+             88 LOAD_CONST               4 ('d')
+             90 LOAD_NAME                6 (ctypes)
+             92 LOAD_ATTR               14 (c_ubyte)
+            112 LOAD_CONST               5 (8)
+            114 BINARY_OP                5 (*)
+            118 BUILD_TUPLE              2
+            120 BUILD_LIST               4
+            122 STORE_NAME               8 (_fields_)
+            124 RETURN_CONST             6 (None)
+
+Disassembly of <code object _call at 0x179dc460, file "audio_mute.py", line 43>:
+ 43           0 RESUME                   0
+
+ 44           2 NOP
+
+ 45           4 LOAD_GLOBAL              1 (NULL + ctypes)
+             14 LOAD_ATTR                2 (cast)
+             34 LOAD_GLOBAL              1 (NULL + ctypes)
+             44 LOAD_ATTR                2 (cast)
+             64 LOAD_FAST                0 (obj)
+             66 LOAD_GLOBAL              1 (NULL + ctypes)
+             76 LOAD_ATTR                4 (POINTER)
+             96 LOAD_GLOBAL              0 (ctypes)
+            106 LOAD_ATTR                6 (c_void_p)
+            126 CALL                     1
+            134 CALL                     2
+            142 LOAD_CONST               1 (0)
+            144 BINARY_SUBSCR
+            148 LOAD_GLOBAL              1 (NULL + ctypes)
+            158 LOAD_ATTR                4 (POINTER)
+            178 LOAD_GLOBAL              0 (ctypes)
+            188 LOAD_ATTR                6 (c_void_p)
+            208 CALL                     1
+            216 CALL                     2
+            224 STORE_FAST               4 (table)
+
+ 46         226 PUSH_NULL
+            228 LOAD_GLOBAL              1 (NULL + ctypes)
+            238 LOAD_ATTR                8 (WINFUNCTYPE)
+            258 LOAD_GLOBAL              0 (ctypes)
+            268 LOAD_ATTR               10 (c_long)
+            288 LOAD_GLOBAL              0 (ctypes)
+            298 LOAD_ATTR                6 (c_void_p)
+            318 BUILD_LIST               2
+            320 LOAD_FAST                2 (argtypes)
+            322 LIST_EXTEND              1
+            324 CALL_INTRINSIC_1         6 (INTRINSIC_LIST_TO_TUPLE)
+            326 CALL_FUNCTION_EX         0
+            328 LOAD_FAST                4 (table)
+            330 LOAD_FAST                1 (index)
+            332 BINARY_SUBSCR
+            336 CALL                     1
+            344 STORE_FAST               5 (fn)
+
+ 47         346 PUSH_NULL
+            348 LOAD_FAST                5 (fn)
+            350 LOAD_FAST                0 (obj)
+            352 BUILD_LIST               1
+            354 LOAD_FAST                3 (args)
+            356 LIST_EXTEND              1
+            358 CALL_INTRINSIC_1         6 (INTRINSIC_LIST_TO_TUPLE)
+            360 CALL_FUNCTION_EX         0
+            362 RETURN_VALUE
+
+Disassembly of <code object _release at 0x7f6af1dbf000, file "audio_mute.py", line 50>:
+ 50           0 RESUME                   0
+
+ 51           2 NOP
+
+ 52           4 LOAD_FAST                0 (obj)
+              6 POP_JUMP_IF_FALSE       14 (to 36)
+
+ 53           8 LOAD_GLOBAL              1 (NULL + _call)
+             18 LOAD_FAST                0 (obj)
+             20 LOAD_CONST               1 (2)
+             22 LOAD_CONST               2 (())
+             24 CALL                     3
+             32 POP_TOP
+             34 RETURN_CONST             0 (None)
+
+ 52     >>   36 RETURN_CONST             0 (None)
+        >>   38 PUSH_EXC_INFO
+
+ 54          40 LOAD_GLOBAL              2 (Exception)
+             50 CHECK_EXC_MATCH
+             52 POP_JUMP_IF_FALSE        3 (to 60)
+             54 POP_TOP
+
+ 55          56 POP_EXCEPT
+             58 RETURN_CONST             0 (None)
+
+ 54     >>   60 RERAISE                  0
+        >>   62 COPY                     3
+             64 POP_EXCEPT
+             66 RERAISE                  1
+ExceptionTable:
+  4 to 32 -> 38 [0]
+  38 to 54 -> 62 [1] lasti
+  60 to 60 -> 62 [1] lasti
+
+Disassembly of <code object _process_names at 0x179d2d40, file "audio_mute.py", line 58>:
+ 58           0 RESUME                   0
+
+ 59           2 NOP
+
+ 61           4 PUSH_NULL
+              6 LOAD_BUILD_CLASS
+              8 LOAD_CONST               1 (<code object ENTRY at 0x7f6af208fe10, file "audio_mute.py", line 61>)
+             10 MAKE_FUNCTION            0
+             12 LOAD_CONST               2 ('ENTRY')
+             14 LOAD_GLOBAL              0 (ctypes)
+             24 LOAD_ATTR                2 (Structure)
+             44 CALL                     3
+             52 STORE_FAST               0 (ENTRY)
+
+ 67          54 LOAD_GLOBAL              0 (ctypes)
+             64 LOAD_ATTR                4 (windll)
+             84 LOAD_ATTR                6 (kernel32)
+            104 STORE_FAST               1 (k)
+
+ 68         106 LOAD_GLOBAL              0 (ctypes)
+            116 LOAD_ATTR                8 (c_void_p)
+            136 LOAD_FAST                1 (k)
+            138 LOAD_ATTR               10 (CreateToolhelp32Snapshot)
+            158 STORE_ATTR               6 (restype)
+
+ 69         168 LOAD_GLOBAL             14 (wintypes)
+            178 LOAD_ATTR               16 (DWORD)
+            198 LOAD_GLOBAL             14 (wintypes)
+            208 LOAD_ATTR               16 (DWORD)
+            228 BUILD_LIST               2
+            230 LOAD_FAST                1 (k)
+            232 LOAD_ATTR               10 (CreateToolhelp32Snapshot)
+            252 STORE_ATTR               9 (argtypes)
+
+ 70         262 LOAD_GLOBAL              0 (ctypes)
+            272 LOAD_ATTR                8 (c_void_p)
+            292 LOAD_GLOBAL              1 (NULL + ctypes)
+            302 LOAD_ATTR               20 (POINTER)
+            322 LOAD_FAST                0 (ENTRY)
+            324 CALL                     1
+            332 BUILD_LIST               2
+            334 COPY                     1
+            336 LOAD_FAST                1 (k)
+            338 LOAD_ATTR               22 (Process32FirstW)
+            358 STORE_ATTR               9 (argtypes)
+            368 LOAD_FAST                1 (k)
+            370 LOAD_ATTR               24 (Process32NextW)
+            390 STORE_ATTR               9 (argtypes)
+
+ 71         400 LOAD_GLOBAL              0 (ctypes)
+            410 LOAD_ATTR                8 (c_void_p)
+            430 BUILD_LIST               1
+            432 LOAD_FAST                1 (k)
+            434 LOAD_ATTR               26 (CloseHandle)
+            454 STORE_ATTR               9 (argtypes)
+
+ 72         464 BUILD_MAP                0
+            466 STORE_FAST               2 (out)
+
+ 73         468 LOAD_FAST                1 (k)
+            470 LOAD_ATTR               11 (NULL|self + CreateToolhelp32Snapshot)
+            490 LOAD_CONST               3 (2)
+            492 LOAD_CONST               4 (0)
+            494 CALL                     2
+            502 STORE_FAST               3 (snap)
+
+ 74         504 LOAD_FAST                3 (snap)
+            506 POP_JUMP_IF_FALSE       34 (to 576)
+            508 LOAD_FAST                3 (snap)
+            510 LOAD_GLOBAL              1 (NULL + ctypes)
+            520 LOAD_ATTR                8 (c_void_p)
+            540 LOAD_CONST               5 (-1)
+            542 CALL                     1
+            550 LOAD_ATTR               28 (value)
+            570 COMPARE_OP              40 (==)
+            574 POP_JUMP_IF_FALSE        2 (to 580)
+
+ 75     >>  576 LOAD_FAST                2 (out)
+            578 RETURN_VALUE
+
+ 76     >>  580 NOP
+
+ 77         582 PUSH_NULL
+            584 LOAD_FAST                0 (ENTRY)
+            586 CALL                     0
+            594 STORE_FAST               4 (e)
+
+ 78         596 LOAD_GLOBAL              1 (NULL + ctypes)
+            606 LOAD_ATTR               30 (sizeof)
+            626 LOAD_FAST                0 (ENTRY)
+            628 CALL                     1
+            636 LOAD_FAST                4 (e)
+            638 STORE_ATTR              16 (dwSize)
+
+ 79         648 LOAD_FAST                1 (k)
+            650 LOAD_ATTR               23 (NULL|self + Process32FirstW)
+            670 LOAD_FAST                3 (snap)
+            672 LOAD_GLOBAL              1 (NULL + ctypes)
+            682 LOAD_ATTR               34 (byref)
+            702 LOAD_FAST                4 (e)
+            704 CALL                     1
+            712 CALL                     2
+            720 STORE_FAST               5 (ok)
+
+ 80         722 LOAD_FAST                5 (ok)
+            724 POP_JUMP_IF_FALSE       88 (to 902)
+
+ 81     >>  726 LOAD_FAST                4 (e)
+            728 LOAD_ATTR               36 (szExeFile)
+            748 LOAD_ATTR               39 (NULL|self + lower)
+            768 CALL                     0
+            776 LOAD_FAST                2 (out)
+            778 LOAD_GLOBAL             41 (NULL + int)
+            788 LOAD_FAST                4 (e)
+            790 LOAD_ATTR               42 (th32ProcessID)
+            810 CALL                     1
+            818 STORE_SUBSCR
+
+ 82         822 LOAD_FAST                1 (k)
+            824 LOAD_ATTR               25 (NULL|self + Process32NextW)
+            844 LOAD_FAST                3 (snap)
+            846 LOAD_GLOBAL              1 (NULL + ctypes)
+            856 LOAD_ATTR               34 (byref)
+            876 LOAD_FAST                4 (e)
+            878 CALL                     1
+            886 CALL                     2
+            894 STORE_FAST               5 (ok)
+
+ 80         896 LOAD_FAST                5 (ok)
+            898 POP_JUMP_IF_FALSE        1 (to 902)
+            900 JUMP_BACKWARD           88 (to 726)
+
+ 84     >>  902 LOAD_FAST                1 (k)
+            904 LOAD_ATTR               27 (NULL|self + CloseHandle)
+            924 LOAD_FAST                3 (snap)
+            926 CALL                     1
+            934 POP_TOP
+
+ 85         936 LOAD_FAST                2 (out)
+            938 RETURN_VALUE
+        >>  940 PUSH_EXC_INFO
+
+ 84         942 LOAD_FAST                1 (k)
+            944 LOAD_ATTR               27 (NULL|self + CloseHandle)
+            964 LOAD_FAST                3 (snap)
+            966 CALL                     1
+            974 POP_TOP
+            976 RERAISE                  0
+        >>  978 COPY                     3
+            980 POP_EXCEPT
+            982 RERAISE                  1
+ExceptionTable:
+  582 to 898 -> 940 [0]
+  940 to 976 -> 978 [1] lasti
+
+Disassembly of <code object ENTRY at 0x7f6af208fe10, file "audio_mute.py", line 61>:
+ 61           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('_process_names.<locals>.ENTRY')
+              8 STORE_NAME               2 (__qualname__)
+
+ 62          10 LOAD_CONST               1 ('dwSize')
+             12 LOAD_NAME                3 (wintypes)
+             14 LOAD_ATTR                8 (DWORD)
+             34 BUILD_TUPLE              2
+             36 LOAD_CONST               2 ('cntUsage')
+             38 LOAD_NAME                3 (wintypes)
+             40 LOAD_ATTR                8 (DWORD)
+             60 BUILD_TUPLE              2
+             62 LOAD_CONST               3 ('th32ProcessID')
+             64 LOAD_NAME                3 (wintypes)
+             66 LOAD_ATTR                8 (DWORD)
+             86 BUILD_TUPLE              2
+
+ 63          88 LOAD_CONST               4 ('th32DefaultHeapID')
+             90 LOAD_NAME                5 (ctypes)
+             92 LOAD_ATTR               12 (c_size_t)
+            112 BUILD_TUPLE              2
+            114 LOAD_CONST               5 ('th32ModuleID')
+            116 LOAD_NAME                3 (wintypes)
+            118 LOAD_ATTR                8 (DWORD)
+            138 BUILD_TUPLE              2
+            140 LOAD_CONST               6 ('cntThreads')
+            142 LOAD_NAME                3 (wintypes)
+            144 LOAD_ATTR                8 (DWORD)
+            164 BUILD_TUPLE              2
+
+ 64         166 LOAD_CONST               7 ('th32ParentProcessID')
+            168 LOAD_NAME                3 (wintypes)
+            170 LOAD_ATTR                8 (DWORD)
+            190 BUILD_TUPLE              2
+            192 LOAD_CONST               8 ('pcPriClassBase')
+            194 LOAD_NAME                5 (ctypes)
+            196 LOAD_ATTR               14 (c_long)
+            216 BUILD_TUPLE              2
+            218 LOAD_CONST               9 ('dwFlags')
+            220 LOAD_NAME                3 (wintypes)
+            222 LOAD_ATTR                8 (DWORD)
+            242 BUILD_TUPLE              2
+
+ 65         244 LOAD_CONST              10 ('szExeFile')
+            246 LOAD_NAME                5 (ctypes)
+            248 LOAD_ATTR               16 (c_wchar)
+            268 LOAD_CONST              11 (260)
+            270 BINARY_OP                5 (*)
+            274 BUILD_TUPLE              2
+
+ 62         276 BUILD_LIST              10
+            278 STORE_NAME               9 (_fields_)
+            280 RETURN_CONST            12 (None)
+
+Disassembly of <code object CoreAudioBackend at 0x7f6af1dd7090, file "audio_mute.py", line 88>:
+ 88           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('CoreAudioBackend')
+              8 STORE_NAME               2 (__qualname__)
+
+ 89          10 NOP
+
+ 91          12 LOAD_CONST               1 ('BCDE0395-E52F-467C-8E3D-C4579291692E')
+             14 STORE_NAME               3 (CLSID_ENUM)
+
+ 92          16 LOAD_CONST               2 ('A95664D2-9614-4F35-A746-DE8DB63617E6')
+             18 STORE_NAME               4 (IID_ENUM)
+
+ 93          20 LOAD_CONST               3 ('77AA99A0-1BD6-484F-8BC7-2C654C9A9B6F')
+             22 STORE_NAME               5 (IID_MGR2)
+
+ 94          24 LOAD_CONST               4 ('BFB7FF88-7239-4FC9-8FA2-07C950BE9C6D')
+             26 STORE_NAME               6 (IID_CTRL2)
+
+ 95          28 LOAD_CONST               5 ('87CE5498-68D6-44E5-9215-6DA47EF883D8')
+             30 STORE_NAME               7 (IID_VOL)
+
+ 97          32 LOAD_CONST               6 ('return')
+             34 LOAD_NAME                8 (List)
+             36 LOAD_NAME                9 (Session)
+             38 BINARY_SUBSCR
+             42 BUILD_TUPLE              2
+             44 LOAD_CONST               7 (<code object sessions at 0x179c6e40, file "audio_mute.py", line 97>)
+             46 MAKE_FUNCTION            4 (annotations)
+             48 STORE_NAME              10 (sessions)
+
+131          50 LOAD_CONST               8 ('names')
+             52 LOAD_NAME               11 (Dict)
+             54 LOAD_NAME               12 (int)
+             56 LOAD_NAME               13 (str)
+             58 BUILD_TUPLE              2
+             60 BINARY_SUBSCR
+             64 LOAD_CONST               6 ('return')
+             66 LOAD_NAME               14 (Optional)
+             68 LOAD_NAME                9 (Session)
+             70 BINARY_SUBSCR
+             74 BUILD_TUPLE              4
+             76 LOAD_CONST               9 (<code object _session at 0x179d5cc0, file "audio_mute.py", line 131>)
+             78 MAKE_FUNCTION            4 (annotations)
+             80 STORE_NAME              15 (_session)
+             82 RETURN_CONST            10 (None)
+
+Disassembly of <code object sessions at 0x179c6e40, file "audio_mute.py", line 97>:
+ 97           0 RESUME                   0
+
+ 98           2 LOAD_GLOBAL              0 (ctypes)
+             12 LOAD_ATTR                2 (windll)
+             32 LOAD_ATTR                4 (ole32)
+             52 STORE_FAST               1 (ole)
+
+ 99          54 LOAD_FAST                1 (ole)
+             56 LOAD_ATTR                7 (NULL|self + CoInitializeEx)
+             76 LOAD_CONST               0 (None)
+             78 LOAD_CONST               1 (0)
+             80 CALL                     2
+             88 POP_TOP
+
+100          90 BUILD_LIST               0
+             92 STORE_FAST               2 (out)
+
+101          94 LOAD_GLOBAL              9 (NULL + _process_names)
+            104 CALL                     0
+            112 STORE_FAST               3 (names)
+
+102         114 LOAD_GLOBAL              1 (NULL + ctypes)
+            124 LOAD_ATTR               10 (c_void_p)
+            144 CALL                     0
+            152 STORE_FAST               4 (enum)
+
+103         154 LOAD_FAST                1 (ole)
+            156 LOAD_ATTR               13 (NULL|self + CoCreateInstance)
+            176 LOAD_GLOBAL              1 (NULL + ctypes)
+            186 LOAD_ATTR               14 (byref)
+            206 LOAD_GLOBAL             17 (NULL + _guid)
+            216 LOAD_FAST                0 (self)
+            218 LOAD_ATTR               18 (CLSID_ENUM)
+            238 CALL                     1
+            246 CALL                     1
+            254 LOAD_CONST               0 (None)
+            256 LOAD_CONST               2 (23)
+            258 LOAD_GLOBAL              1 (NULL + ctypes)
+            268 LOAD_ATTR               14 (byref)
+            288 LOAD_GLOBAL             17 (NULL + _guid)
+            298 LOAD_FAST                0 (self)
+            300 LOAD_ATTR               20 (IID_ENUM)
+            320 CALL                     1
+            328 CALL                     1
+            336 LOAD_GLOBAL              1 (NULL + ctypes)
+            346 LOAD_ATTR               14 (byref)
+            366 LOAD_FAST                4 (enum)
+            368 CALL                     1
+            376 CALL                     5
+            384 STORE_FAST               5 (hr)
+
+104         386 LOAD_FAST                5 (hr)
+            388 LOAD_CONST               1 (0)
+            390 COMPARE_OP              55 (!=)
+            394 POP_JUMP_IF_TRUE         2 (to 400)
+            396 LOAD_FAST                4 (enum)
+            398 POP_JUMP_IF_TRUE         2 (to 404)
+
+105     >>  400 LOAD_FAST                2 (out)
+            402 RETURN_VALUE
+
+106     >>  404 LOAD_GLOBAL              1 (NULL + ctypes)
+            414 LOAD_ATTR               10 (c_void_p)
+            434 CALL                     0
+            442 LOAD_GLOBAL              1 (NULL + ctypes)
+            452 LOAD_ATTR               10 (c_void_p)
+            472 CALL                     0
+            480 LOAD_GLOBAL              1 (NULL + ctypes)
+            490 LOAD_ATTR               10 (c_void_p)
+            510 CALL                     0
+            518 STORE_FAST               8 (senum)
+            520 STORE_FAST               7 (mgr)
+            522 STORE_FAST               6 (dev)
+
+107         524 NOP
+
+109         526 LOAD_GLOBAL             23 (NULL + _call)
+            536 LOAD_FAST                4 (enum)
+            538 LOAD_CONST               3 (4)
+            540 LOAD_GLOBAL              0 (ctypes)
+            550 LOAD_ATTR               24 (c_int)
+            570 LOAD_GLOBAL              0 (ctypes)
+            580 LOAD_ATTR               24 (c_int)
+            600 LOAD_GLOBAL              1 (NULL + ctypes)
+            610 LOAD_ATTR               26 (POINTER)
+            630 LOAD_GLOBAL              0 (ctypes)
+            640 LOAD_ATTR               10 (c_void_p)
+            660 CALL                     1
+            668 BUILD_TUPLE              3
+            670 LOAD_CONST               1 (0)
+            672 LOAD_CONST               4 (1)
+            674 LOAD_GLOBAL              1 (NULL + ctypes)
+            684 LOAD_ATTR               14 (byref)
+            704 LOAD_FAST                6 (dev)
+            706 CALL                     1
+            714 CALL                     6
+            722 LOAD_CONST               1 (0)
+            724 COMPARE_OP              55 (!=)
+            728 POP_JUMP_IF_TRUE         2 (to 734)
+            730 LOAD_FAST                6 (dev)
+            732 POP_JUMP_IF_TRUE        44 (to 822)
+
+110     >>  734 LOAD_FAST                2 (out)
+
+128         736 LOAD_GLOBAL             29 (NULL + _release)
+            746 LOAD_FAST                8 (senum)
+            748 CALL                     1
+            756 LOAD_GLOBAL             29 (NULL + _release)
+            766 LOAD_FAST                7 (mgr)
+            768 CALL                     1
+            776 LOAD_GLOBAL             29 (NULL + _release)
+            786 LOAD_FAST                6 (dev)
+            788 CALL                     1
+            796 LOAD_GLOBAL             29 (NULL + _release)
+            806 LOAD_FAST                4 (enum)
+            808 CALL                     1
+            816 BUILD_TUPLE              4
+            818 POP_TOP
+            820 RETURN_VALUE
+
+112     >>  822 LOAD_GLOBAL             23 (NULL + _call)
+            832 LOAD_FAST                6 (dev)
+            834 LOAD_CONST               5 (3)
+            836 LOAD_GLOBAL              0 (ctypes)
+            846 LOAD_ATTR               10 (c_void_p)
+            866 LOAD_GLOBAL             30 (wintypes)
+            876 LOAD_ATTR               32 (DWORD)
+            896 LOAD_GLOBAL              0 (ctypes)
+            906 LOAD_ATTR               10 (c_void_p)
+            926 LOAD_GLOBAL              1 (NULL + ctypes)
+            936 LOAD_ATTR               26 (POINTER)
+            956 LOAD_GLOBAL              0 (ctypes)
+            966 LOAD_ATTR               10 (c_void_p)
+            986 CALL                     1
+            994 BUILD_TUPLE              4
+
+113         996 LOAD_GLOBAL              1 (NULL + ctypes)
+           1006 LOAD_ATTR               14 (byref)
+           1026 LOAD_GLOBAL             17 (NULL + _guid)
+           1036 LOAD_FAST                0 (self)
+           1038 LOAD_ATTR               34 (IID_MGR2)
+           1058 CALL                     1
+           1066 CALL                     1
+           1074 LOAD_CONST               2 (23)
+           1076 LOAD_CONST               0 (None)
+           1078 LOAD_GLOBAL              1 (NULL + ctypes)
+           1088 LOAD_ATTR               14 (byref)
+           1108 LOAD_FAST                7 (mgr)
+           1110 CALL                     1
+
+112        1118 CALL                     7
+
+113        1126 LOAD_CONST               1 (0)
+
+112        1128 COMPARE_OP              55 (!=)
+           1132 POP_JUMP_IF_TRUE         2 (to 1138)
+
+113        1134 LOAD_FAST                7 (mgr)
+           1136 POP_JUMP_IF_TRUE        44 (to 1226)
+
+114     >> 1138 LOAD_FAST                2 (out)
+
+128        1140 LOAD_GLOBAL             29 (NULL + _release)
+           1150 LOAD_FAST                8 (senum)
+           1152 CALL                     1
+           1160 LOAD_GLOBAL             29 (NULL + _release)
+           1170 LOAD_FAST                7 (mgr)
+           1172 CALL                     1
+           1180 LOAD_GLOBAL             29 (NULL + _release)
+           1190 LOAD_FAST                6 (dev)
+           1192 CALL                     1
+           1200 LOAD_GLOBAL             29 (NULL + _release)
+           1210 LOAD_FAST                4 (enum)
+           1212 CALL                     1
+           1220 BUILD_TUPLE              4
+           1222 POP_TOP
+           1224 RETURN_VALUE
+
+116     >> 1226 LOAD_GLOBAL             23 (NULL + _call)
+           1236 LOAD_FAST                7 (mgr)
+           1238 LOAD_CONST               6 (5)
+           1240 LOAD_GLOBAL              1 (NULL + ctypes)
+           1250 LOAD_ATTR               26 (POINTER)
+           1270 LOAD_GLOBAL              0 (ctypes)
+           1280 LOAD_ATTR               10 (c_void_p)
+           1300 CALL                     1
+           1308 BUILD_TUPLE              1
+           1310 LOAD_GLOBAL              1 (NULL + ctypes)
+           1320 LOAD_ATTR               14 (byref)
+           1340 LOAD_FAST                8 (senum)
+           1342 CALL                     1
+           1350 CALL                     4
+           1358 LOAD_CONST               1 (0)
+           1360 COMPARE_OP              55 (!=)
+           1364 POP_JUMP_IF_TRUE         2 (to 1370)
+           1366 LOAD_FAST                8 (senum)
+           1368 POP_JUMP_IF_TRUE        44 (to 1458)
+
+117     >> 1370 LOAD_FAST                2 (out)
+
+128        1372 LOAD_GLOBAL             29 (NULL + _release)
+           1382 LOAD_FAST                8 (senum)
+           1384 CALL                     1
+           1392 LOAD_GLOBAL             29 (NULL + _release)
+           1402 LOAD_FAST                7 (mgr)
+           1404 CALL                     1
+           1412 LOAD_GLOBAL             29 (NULL + _release)
+           1422 LOAD_FAST                6 (dev)
+           1424 CALL                     1
+           1432 LOAD_GLOBAL             29 (NULL + _release)
+           1442 LOAD_FAST                4 (enum)
+           1444 CALL                     1
+           1452 BUILD_TUPLE              4
+           1454 POP_TOP
+           1456 RETURN_VALUE
+
+118     >> 1458 LOAD_GLOBAL              1 (NULL + ctypes)
+           1468 LOAD_ATTR               24 (c_int)
+           1488 LOAD_CONST               1 (0)
+           1490 CALL                     1
+           1498 STORE_FAST               9 (count)
+
+119        1500 LOAD_GLOBAL             23 (NULL + _call)
+           1510 LOAD_FAST                8 (senum)
+           1512 LOAD_CONST               5 (3)
+           1514 LOAD_GLOBAL              1 (NULL + ctypes)
+           1524 LOAD_ATTR               26 (POINTER)
+           1544 LOAD_GLOBAL              0 (ctypes)
+           1554 LOAD_ATTR               24 (c_int)
+           1574 CALL                     1
+           1582 BUILD_TUPLE              1
+           1584 LOAD_GLOBAL              1 (NULL + ctypes)
+           1594 LOAD_ATTR               14 (byref)
+           1614 LOAD_FAST                9 (count)
+           1616 CALL                     1
+           1624 CALL                     4
+           1632 POP_TOP
+
+120        1634 LOAD_GLOBAL             37 (NULL + range)
+           1644 LOAD_FAST                9 (count)
+           1646 LOAD_ATTR               38 (value)
+           1666 CALL                     1
+           1674 GET_ITER
+        >> 1676 FOR_ITER               149 (to 1978)
+           1680 STORE_FAST              10 (i)
+
+121        1682 LOAD_GLOBAL              1 (NULL + ctypes)
+           1692 LOAD_ATTR               10 (c_void_p)
+           1712 CALL                     0
+           1720 STORE_FAST              11 (ctrl)
+
+122        1722 LOAD_GLOBAL             23 (NULL + _call)
+           1732 LOAD_FAST                8 (senum)
+           1734 LOAD_CONST               3 (4)
+           1736 LOAD_GLOBAL              0 (ctypes)
+           1746 LOAD_ATTR               24 (c_int)
+           1766 LOAD_GLOBAL              1 (NULL + ctypes)
+           1776 LOAD_ATTR               26 (POINTER)
+           1796 LOAD_GLOBAL              0 (ctypes)
+           1806 LOAD_ATTR               10 (c_void_p)
+           1826 CALL                     1
+           1834 BUILD_TUPLE              2
+           1836 LOAD_FAST               10 (i)
+           1838 LOAD_GLOBAL              1 (NULL + ctypes)
+           1848 LOAD_ATTR               14 (byref)
+           1868 LOAD_FAST               11 (ctrl)
+           1870 CALL                     1
+           1878 CALL                     5
+           1886 LOAD_CONST               1 (0)
+           1888 COMPARE_OP              55 (!=)
+           1892 POP_JUMP_IF_TRUE         2 (to 1898)
+           1894 LOAD_FAST               11 (ctrl)
+           1896 POP_JUMP_IF_TRUE         1 (to 1900)
+
+123     >> 1898 JUMP_BACKWARD          112 (to 1676)
+
+124     >> 1900 LOAD_FAST                0 (self)
+           1902 LOAD_ATTR               41 (NULL|self + _session)
+           1922 LOAD_FAST               11 (ctrl)
+           1924 LOAD_FAST                3 (names)
+           1926 CALL                     2
+           1934 STORE_FAST              12 (s)
+
+125        1936 LOAD_FAST               12 (s)
+           1938 POP_JUMP_IF_NOT_NONE     1 (to 1942)
+           1940 JUMP_BACKWARD          133 (to 1676)
+
+126     >> 1942 LOAD_FAST                2 (out)
+           1944 LOAD_ATTR               43 (NULL|self + append)
+           1964 LOAD_FAST               12 (s)
+           1966 CALL                     1
+           1974 POP_TOP
+           1976 JUMP_BACKWARD          151 (to 1676)
+
+120     >> 1978 END_FOR
+           1980 NOP
+
+128        1982 LOAD_GLOBAL             29 (NULL + _release)
+           1992 LOAD_FAST                8 (senum)
+           1994 CALL                     1
+           2002 LOAD_GLOBAL             29 (NULL + _release)
+           2012 LOAD_FAST                7 (mgr)
+           2014 CALL                     1
+           2022 LOAD_GLOBAL             29 (NULL + _release)
+           2032 LOAD_FAST                6 (dev)
+           2034 CALL                     1
+           2042 LOAD_GLOBAL             29 (NULL + _release)
+           2052 LOAD_FAST                4 (enum)
+           2054 CALL                     1
+           2062 BUILD_TUPLE              4
+           2064 POP_TOP
+
+129        2066 LOAD_FAST                2 (out)
+           2068 RETURN_VALUE
+        >> 2070 PUSH_EXC_INFO
+
+128        2072 LOAD_GLOBAL             29 (NULL + _release)
+           2082 LOAD_FAST                8 (senum)
+           2084 CALL                     1
+           2092 LOAD_GLOBAL             29 (NULL + _release)
+           2102 LOAD_FAST                7 (mgr)
+           2104 CALL                     1
+           2112 LOAD_GLOBAL             29 (NULL + _release)
+           2122 LOAD_FAST                6 (dev)
+           2124 CALL                     1
+           2132 LOAD_GLOBAL             29 (NULL + _release)
+           2142 LOAD_FAST                4 (enum)
+           2144 CALL                     1
+           2152 BUILD_TUPLE              4
+           2154 POP_TOP
+           2156 RERAISE                  0
+        >> 2158 COPY                     3
+           2160 POP_EXCEPT
+           2162 RERAISE                  1
+ExceptionTable:
+  526 to 734 -> 2070 [0]
+  822 to 1138 -> 2070 [0]
+  1226 to 1370 -> 2070 [0]
+  1458 to 1938 -> 2070 [0]
+  1942 to 1978 -> 2070 [0]
+  2070 to 2156 -> 2158 [1] lasti
+
+Disassembly of <code object _session at 0x179d5cc0, file "audio_mute.py", line 131>:
+              0 MAKE_CELL                8 (vol)
+
+131           2 RESUME                   0
+
+132           4 LOAD_GLOBAL              1 (NULL + ctypes)
+             14 LOAD_ATTR                2 (c_void_p)
+             34 CALL                     0
+             42 LOAD_GLOBAL              1 (NULL + ctypes)
+             52 LOAD_ATTR                2 (c_void_p)
+             72 CALL                     0
+             80 SWAP                     2
+             82 STORE_FAST               3 (ctrl2)
+             84 STORE_DEREF              8 (vol)
+
+133          86 NOP
+
+134          88 LOAD_GLOBAL              0 (ctypes)
+             98 LOAD_ATTR                2 (c_void_p)
+            118 LOAD_GLOBAL              1 (NULL + ctypes)
+            128 LOAD_ATTR                4 (POINTER)
+            148 LOAD_GLOBAL              0 (ctypes)
+            158 LOAD_ATTR                2 (c_void_p)
+            178 CALL                     1
+            186 BUILD_TUPLE              2
+            188 STORE_FAST               4 (qi)
+
+135         190 LOAD_GLOBAL              7 (NULL + _call)
+            200 LOAD_FAST                1 (ctrl)
+            202 LOAD_CONST               1 (0)
+            204 LOAD_FAST                4 (qi)
+            206 LOAD_GLOBAL              1 (NULL + ctypes)
+            216 LOAD_ATTR                8 (byref)
+            236 LOAD_GLOBAL             11 (NULL + _guid)
+            246 LOAD_FAST                0 (self)
+            248 LOAD_ATTR               12 (IID_CTRL2)
+            268 CALL                     1
+            276 CALL                     1
+            284 LOAD_GLOBAL              1 (NULL + ctypes)
+            294 LOAD_ATTR                8 (byref)
+            314 LOAD_FAST                3 (ctrl2)
+            316 CALL                     1
+            324 CALL                     5
+            332 LOAD_CONST               1 (0)
+            334 COMPARE_OP              55 (!=)
+            338 POP_JUMP_IF_TRUE         2 (to 344)
+            340 LOAD_FAST                3 (ctrl2)
+            342 POP_JUMP_IF_TRUE         1 (to 346)
+
+136     >>  344 RETURN_CONST             0 (None)
+
+137     >>  346 LOAD_GLOBAL             15 (NULL + wintypes)
+            356 LOAD_ATTR               16 (DWORD)
+            376 LOAD_CONST               1 (0)
+            378 CALL                     1
+            386 STORE_FAST               5 (pid)
+
+138         388 LOAD_GLOBAL              7 (NULL + _call)
+            398 LOAD_FAST                3 (ctrl2)
+            400 LOAD_CONST               2 (14)
+            402 LOAD_GLOBAL              1 (NULL + ctypes)
+            412 LOAD_ATTR                4 (POINTER)
+            432 LOAD_GLOBAL             14 (wintypes)
+            442 LOAD_ATTR               16 (DWORD)
+            462 CALL                     1
+            470 BUILD_TUPLE              1
+            472 LOAD_GLOBAL              1 (NULL + ctypes)
+            482 LOAD_ATTR                8 (byref)
+            502 LOAD_FAST                5 (pid)
+            504 CALL                     1
+            512 CALL                     4
+            520 LOAD_CONST               1 (0)
+            522 COMPARE_OP              55 (!=)
+            526 POP_JUMP_IF_FALSE        1 (to 530)
+
+139         528 RETURN_CONST             0 (None)
+
+140     >>  530 LOAD_GLOBAL              7 (NULL + _call)
+            540 LOAD_FAST                1 (ctrl)
+            542 LOAD_CONST               1 (0)
+            544 LOAD_FAST                4 (qi)
+            546 LOAD_GLOBAL              1 (NULL + ctypes)
+            556 LOAD_ATTR                8 (byref)
+            576 LOAD_GLOBAL             11 (NULL + _guid)
+            586 LOAD_FAST                0 (self)
+            588 LOAD_ATTR               18 (IID_VOL)
+            608 CALL                     1
+            616 CALL                     1
+            624 LOAD_GLOBAL              1 (NULL + ctypes)
+            634 LOAD_ATTR                8 (byref)
+            654 LOAD_DEREF               8 (vol)
+            656 CALL                     1
+            664 CALL                     5
+            672 LOAD_CONST               1 (0)
+            674 COMPARE_OP              55 (!=)
+            678 POP_JUMP_IF_TRUE         2 (to 684)
+            680 LOAD_DEREF               8 (vol)
+            682 POP_JUMP_IF_TRUE         1 (to 686)
+
+141     >>  684 RETURN_CONST             0 (None)
+
+140     >>  686 NOP
+
+145         688 LOAD_GLOBAL             23 (NULL + _release)
+            698 LOAD_FAST                3 (ctrl2)
+            700 CALL                     1
+            708 POP_TOP
+
+146         710 LOAD_GLOBAL             23 (NULL + _release)
+            720 LOAD_FAST                1 (ctrl)
+            722 CALL                     1
+            730 POP_TOP
+
+148         732 LOAD_CONST               3 ('return')
+            734 LOAD_GLOBAL             24 (bool)
+            744 BUILD_TUPLE              2
+            746 LOAD_CLOSURE             8 (vol)
+            748 BUILD_TUPLE              1
+            750 LOAD_CONST               4 (<code object get_mute at 0x7f6af1de5890, file "audio_mute.py", line 148>)
+            752 MAKE_FUNCTION           12 (annotations, closure)
+            754 STORE_FAST               6 (get_mute)
+
+153         756 LOAD_CONST               5 ('on')
+            758 LOAD_GLOBAL             24 (bool)
+            768 LOAD_CONST               3 ('return')
+            770 LOAD_CONST               0 (None)
+            772 BUILD_TUPLE              4
+            774 LOAD_CLOSURE             8 (vol)
+            776 BUILD_TUPLE              1
+            778 LOAD_CONST               6 (<code object set_mute at 0x7f6af1f3e470, file "audio_mute.py", line 153>)
+            780 MAKE_FUNCTION           12 (annotations, closure)
+            782 STORE_FAST               7 (set_mute)
+
+156         784 LOAD_GLOBAL             27 (NULL + Session)
+            794 LOAD_GLOBAL             29 (NULL + int)
+            804 LOAD_FAST                5 (pid)
+            806 LOAD_ATTR               30 (value)
+            826 CALL                     1
+            834 LOAD_FAST                2 (names)
+            836 LOAD_ATTR               33 (NULL|self + get)
+            856 LOAD_GLOBAL             29 (NULL + int)
+            866 LOAD_FAST                5 (pid)
+            868 LOAD_ATTR               30 (value)
+            888 CALL                     1
+            896 LOAD_CONST               7 ('')
+            898 CALL                     2
+            906 LOAD_FAST                6 (get_mute)
+            908 LOAD_FAST                7 (set_mute)
+            910 CALL                     4
+            918 RETURN_VALUE
+        >>  920 PUSH_EXC_INFO
+
+142         922 LOAD_GLOBAL             20 (Exception)
+            932 CHECK_EXC_MATCH
+            934 POP_JUMP_IF_FALSE       35 (to 1006)
+            936 POP_TOP
+
+143         938 LOAD_GLOBAL             23 (NULL + _release)
+            948 LOAD_FAST                3 (ctrl2)
+            950 CALL                     1
+            958 LOAD_GLOBAL             23 (NULL + _release)
+            968 LOAD_DEREF               8 (vol)
+            970 CALL                     1
+            978 LOAD_GLOBAL             23 (NULL + _release)
+            988 LOAD_FAST                1 (ctrl)
+            990 CALL                     1
+            998 BUILD_TUPLE              3
+           1000 POP_TOP
+
+144        1002 POP_EXCEPT
+           1004 RETURN_CONST             0 (None)
+
+142     >> 1006 RERAISE                  0
+        >> 1008 COPY                     3
+           1010 POP_EXCEPT
+           1012 RERAISE                  1
+ExceptionTable:
+  88 to 342 -> 920 [0]
+  346 to 526 -> 920 [0]
+  530 to 682 -> 920 [0]
+  920 to 1000 -> 1008 [1] lasti
+  1006 to 1006 -> 1008 [1] lasti
+
+Disassembly of <code object get_mute at 0x7f6af1de5890, file "audio_mute.py", line 148>:
+              0 COPY_FREE_VARS           1
+
+148           2 RESUME                   0
+
+149           4 LOAD_GLOBAL              1 (NULL + wintypes)
+             14 LOAD_ATTR                2 (BOOL)
+             34 LOAD_CONST               1 (0)
+             36 CALL                     1
+             44 STORE_FAST               0 (v)
+
+150          46 LOAD_GLOBAL              5 (NULL + _call)
+             56 LOAD_DEREF               1 (vol)
+             58 LOAD_CONST               2 (6)
+             60 LOAD_GLOBAL              7 (NULL + ctypes)
+             70 LOAD_ATTR                8 (POINTER)
+             90 LOAD_GLOBAL              0 (wintypes)
+            100 LOAD_ATTR                2 (BOOL)
+            120 CALL                     1
+            128 BUILD_TUPLE              1
+            130 LOAD_GLOBAL              7 (NULL + ctypes)
+            140 LOAD_ATTR               10 (byref)
+            160 LOAD_FAST                0 (v)
+            162 CALL                     1
+            170 CALL                     4
+            178 POP_TOP
+
+151         180 LOAD_GLOBAL             13 (NULL + bool)
+            190 LOAD_FAST                0 (v)
+            192 LOAD_ATTR               14 (value)
+            212 CALL                     1
+            220 RETURN_VALUE
+
+Disassembly of <code object set_mute at 0x7f6af1f3e470, file "audio_mute.py", line 153>:
+              0 COPY_FREE_VARS           1
+
+153           2 RESUME                   0
+
+154           4 LOAD_GLOBAL              1 (NULL + _call)
+             14 LOAD_DEREF               1 (vol)
+             16 LOAD_CONST               1 (5)
+             18 LOAD_GLOBAL              2 (wintypes)
+             28 LOAD_ATTR                4 (BOOL)
+             48 LOAD_GLOBAL              6 (ctypes)
+             58 LOAD_ATTR                8 (c_void_p)
+             78 BUILD_TUPLE              2
+             80 LOAD_FAST                0 (on)
+             82 POP_JUMP_IF_FALSE        8 (to 100)
+             84 LOAD_CONST               2 (1)
+             86 LOAD_CONST               0 (None)
+             88 CALL                     5
+             96 POP_TOP
+             98 RETURN_CONST             0 (None)
+        >>  100 LOAD_CONST               3 (0)
+            102 LOAD_CONST               0 (None)
+            104 CALL                     5
+            112 POP_TOP
+            114 RETURN_CONST             0 (None)
+
+Disassembly of <code object PycawBackend at 0x7f6af1dc3a50, file "audio_mute.py", line 159>:
+159           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('PycawBackend')
+              8 STORE_NAME               2 (__qualname__)
+
+160          10 NOP
+
+162          12 LOAD_CONST               1 (<code object __init__ at 0x7f6aed712180, file "audio_mute.py", line 162>)
+             14 MAKE_FUNCTION            0
+             16 STORE_NAME               3 (__init__)
+
+165          18 LOAD_CONST               2 ('return')
+             20 LOAD_NAME                4 (List)
+             22 LOAD_NAME                5 (Session)
+             24 BINARY_SUBSCR
+             28 BUILD_TUPLE              2
+             30 LOAD_CONST               3 (<code object sessions at 0x7f6af1f76630, file "audio_mute.py", line 165>)
+             32 MAKE_FUNCTION            4 (annotations)
+             34 STORE_NAME               6 (sessions)
+             36 RETURN_CONST             4 (None)
+
+Disassembly of <code object __init__ at 0x7f6aed712180, file "audio_mute.py", line 162>:
+162           0 RESUME                   0
+
+163           2 LOAD_CONST               1 (0)
+              4 LOAD_CONST               2 (('AudioUtilities',))
+              6 IMPORT_NAME              0 (pycaw.pycaw)
+              8 IMPORT_FROM              1 (AudioUtilities)
+             10 STORE_FAST               1 (AudioUtilities)
+             12 POP_TOP
+             14 RETURN_CONST             0 (None)
+
+Disassembly of <code object sessions at 0x7f6af1f76630, file "audio_mute.py", line 165>:
+165           0 RESUME                   0
+
+166           2 LOAD_CONST               1 (0)
+              4 LOAD_CONST               2 (('AudioUtilities',))
+              6 IMPORT_NAME              0 (pycaw.pycaw)
+              8 IMPORT_FROM              1 (AudioUtilities)
+             10 STORE_FAST               1 (AudioUtilities)
+             12 POP_TOP
+
+168          14 BUILD_LIST               0
+             16 STORE_FAST               2 (out)
+
+169          18 LOAD_FAST                1 (AudioUtilities)
+             20 LOAD_ATTR                5 (NULL|self + GetAllSessions)
+             40 CALL                     0
+             48 GET_ITER
+        >>   50 FOR_ITER               123 (to 300)
+             54 STORE_FAST               3 (s)
+
+170          56 LOAD_FAST                3 (s)
+             58 LOAD_ATTR                6 (Process)
+             78 POP_JUMP_IF_NOT_NONE     1 (to 82)
+
+171          80 JUMP_BACKWARD           16 (to 50)
+
+172     >>   82 LOAD_FAST                3 (s)
+             84 LOAD_ATTR                8 (SimpleAudioVolume)
+            104 STORE_FAST               4 (vol)
+
+173         106 LOAD_FAST                2 (out)
+            108 LOAD_ATTR               11 (NULL|self + append)
+            128 LOAD_GLOBAL             13 (NULL + Session)
+            138 LOAD_GLOBAL             15 (NULL + int)
+            148 LOAD_FAST                3 (s)
+            150 LOAD_ATTR               16 (ProcessId)
+            170 CALL                     1
+            178 LOAD_FAST                3 (s)
+            180 LOAD_ATTR                6 (Process)
+            200 LOAD_ATTR               19 (NULL|self + name)
+            220 CALL                     0
+            228 COPY                     1
+            230 POP_JUMP_IF_TRUE         2 (to 236)
+            232 POP_TOP
+            234 LOAD_CONST               3 ('')
+        >>  236 LOAD_ATTR               21 (NULL|self + lower)
+            256 CALL                     0
+            264 LOAD_FAST                4 (vol)
+            266 BUILD_TUPLE              1
+            268 LOAD_CONST               4 (<code object <lambda> at 0x7f6af1dd2530, file "audio_mute.py", line 173>)
+            270 MAKE_FUNCTION            1 (defaults)
+            272 LOAD_FAST                4 (vol)
+            274 BUILD_TUPLE              1
+            276 LOAD_CONST               5 (<code object <lambda> at 0x7f6af1dd3530, file "audio_mute.py", line 173>)
+            278 MAKE_FUNCTION            1 (defaults)
+            280 CALL                     4
+            288 CALL                     1
+            296 POP_TOP
+            298 JUMP_BACKWARD          125 (to 50)
+
+169     >>  300 END_FOR
+
+174         302 LOAD_FAST                2 (out)
+            304 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6af1dd2530, file "audio_mute.py", line 173>:
+173           0 RESUME                   0
+              2 LOAD_GLOBAL              1 (NULL + bool)
+             12 LOAD_FAST                0 (v)
+             14 LOAD_ATTR                3 (NULL|self + GetMute)
+             34 CALL                     0
+             42 CALL                     1
+             50 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f6af1dd3530, file "audio_mute.py", line 173>:
+173           0 RESUME                   0
+              2 LOAD_FAST                1 (v)
+              4 LOAD_ATTR                1 (NULL|self + SetMute)
+             24 LOAD_FAST                0 (on)
+             26 POP_JUMP_IF_FALSE        7 (to 42)
+             28 LOAD_CONST               1 (1)
+             30 LOAD_CONST               0 (None)
+             32 CALL                     2
+             40 RETURN_VALUE
+        >>   42 LOAD_CONST               2 (0)
+             44 LOAD_CONST               0 (None)
+             46 CALL                     2
+             54 RETURN_VALUE
+
+Disassembly of <code object default_backend at 0x7f6af1dbf330, file "audio_mute.py", line 177>:
+177           0 RESUME                   0
+
+178           2 NOP
+
+179           4 LOAD_GLOBAL              1 (NULL + PycawBackend)
+             14 CALL                     0
+             22 RETURN_VALUE
+        >>   24 PUSH_EXC_INFO
+
+180          26 LOAD_GLOBAL              2 (Exception)
+             36 CHECK_EXC_MATCH
+             38 POP_JUMP_IF_FALSE       13 (to 66)
+             40 POP_TOP
+
+181          42 LOAD_GLOBAL              5 (NULL + CoreAudioBackend)
+             52 CALL                     0
+             60 SWAP                     2
+             62 POP_EXCEPT
+             64 RETURN_VALUE
+
+180     >>   66 RERAISE                  0
+        >>   68 COPY                     3
+             70 POP_EXCEPT
+             72 RERAISE                  1
+ExceptionTable:
+  4 to 20 -> 24 [0]
+  24 to 60 -> 68 [1] lasti
+  66 to 66 -> 68 [1] lasti
+
+Disassembly of <code object GameAudioController at 0x7f6af1f3dbb0, file "audio_mute.py", line 185>:
+185           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('GameAudioController')
+              8 STORE_NAME               2 (__qualname__)
+
+186          10 LOAD_CONST               1 (None)
+             12 LOAD_NAME                3 (GAME_EXES)
+             14 LOAD_CONST               1 (None)
+             16 BUILD_TUPLE              3
+             18 LOAD_CONST               2 ('names')
+             20 LOAD_NAME                4 (Tuple)
+             22 LOAD_NAME                5 (str)
+             24 LOAD_CONST               3 (Ellipsis)
+             26 BUILD_TUPLE              2
+             28 BINARY_SUBSCR
+             32 LOAD_CONST               4 ('log')
+             34 LOAD_NAME                6 (Optional)
+             36 LOAD_NAME                7 (Callable)
+             38 LOAD_NAME                5 (str)
+             40 BUILD_LIST               1
+             42 LOAD_CONST               1 (None)
+             44 BUILD_TUPLE              2
+             46 BINARY_SUBSCR
+             50 BINARY_SUBSCR
+             54 BUILD_TUPLE              4
+             56 LOAD_CONST               5 (<code object __init__ at 0x7f6af2087c30, file "audio_mute.py", line 186>)
+             58 MAKE_FUNCTION            5 (defaults, annotations)
+             60 STORE_NAME               8 (__init__)
+
+195          62 LOAD_CONST               6 (<code object _backend_or_default at 0x7f6af1dbf990, file "audio_mute.py", line 195>)
+             64 MAKE_FUNCTION            0
+             66 STORE_NAME               9 (_backend_or_default)
+
+200          68 LOAD_CONST               7 ('return')
+             70 LOAD_NAME               10 (List)
+             72 LOAD_NAME               11 (Session)
+             74 BINARY_SUBSCR
+             78 BUILD_TUPLE              2
+             80 LOAD_CONST               8 (<code object _game_sessions at 0x7f6aed7a0030, file "audio_mute.py", line 200>)
+             82 MAKE_FUNCTION            4 (annotations)
+             84 STORE_NAME              12 (_game_sessions)
+
+203          86 LOAD_CONST               7 ('return')
+             88 LOAD_NAME               13 (int)
+             90 BUILD_TUPLE              2
+             92 LOAD_CONST               9 (<code object mute at 0x17a3b730, file "audio_mute.py", line 203>)
+             94 MAKE_FUNCTION            4 (annotations)
+             96 STORE_NAME              14 (mute)
+
+229          98 LOAD_CONST               7 ('return')
+            100 LOAD_NAME               13 (int)
+            102 BUILD_TUPLE              2
+            104 LOAD_CONST              10 (<code object refresh at 0x7f6af1dc3690, file "audio_mute.py", line 229>)
+            106 MAKE_FUNCTION            4 (annotations)
+            108 STORE_NAME              15 (refresh)
+
+233         110 LOAD_CONST               7 ('return')
+            112 LOAD_NAME               13 (int)
+            114 BUILD_TUPLE              2
+            116 LOAD_CONST              11 (<code object restore at 0x179daea0, file "audio_mute.py", line 233>)
+            118 MAKE_FUNCTION            4 (annotations)
+            120 STORE_NAME              16 (restore)
+            122 RETURN_CONST             1 (None)
+
+Disassembly of <code object __init__ at 0x7f6af2087c30, file "audio_mute.py", line 186>:
+186           0 RESUME                   0
+
+187           2 LOAD_FAST                1 (backend)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (_backend)
+
+188          16 LOAD_GLOBAL              3 (NULL + tuple)
+             26 LOAD_CONST               1 (<code object <genexpr> at 0x7f6af1dd2730, file "audio_mute.py", line 188>)
+             28 MAKE_FUNCTION            0
+             30 LOAD_FAST                2 (names)
+             32 GET_ITER
+             34 CALL                     0
+             42 CALL                     1
+             50 LOAD_FAST                0 (self)
+             52 STORE_ATTR               2 (_names)
+
+189          62 LOAD_FAST                3 (log)
+             64 COPY                     1
+             66 POP_JUMP_IF_TRUE         3 (to 74)
+             68 POP_TOP
+             70 LOAD_CONST               2 (<code object <lambda> at 0x7f6aed711fe0, file "audio_mute.py", line 189>)
+             72 MAKE_FUNCTION            0
+        >>   74 LOAD_FAST                0 (self)
+             76 STORE_ATTR               3 (log)
+
+190          86 LOAD_GLOBAL              9 (NULL + threading)
+             96 LOAD_ATTR               10 (Lock)
+            116 CALL                     0
+            124 LOAD_FAST                0 (self)
+            126 STORE_ATTR               6 (_lock)
+
+191         136 BUILD_MAP                0
+            138 LOAD_FAST                0 (self)
+            140 STORE_ATTR               7 (_before)
+
+192         150 BUILD_MAP                0
+            152 LOAD_FAST                0 (self)
+            154 STORE_ATTR               8 (_muted_by_us)
+
+193         164 LOAD_CONST               3 (False)
+            166 LOAD_FAST                0 (self)
+            168 STORE_ATTR               9 (_registered)
+            178 RETURN_CONST             0 (None)
+
+Disassembly of <code object <genexpr> at 0x7f6af1dd2730, file "audio_mute.py", line 188>:
+188           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+              6 LOAD_FAST                0 (.0)
+        >>    8 FOR_ITER                20 (to 52)
+             12 STORE_FAST               1 (n)
+             14 LOAD_FAST                1 (n)
+             16 LOAD_ATTR                1 (NULL|self + lower)
+             36 CALL                     0
+             44 YIELD_VALUE              1
+             46 RESUME                   1
+             48 POP_TOP
+             50 JUMP_BACKWARD           22 (to 8)
+        >>   52 END_FOR
+             54 RETURN_CONST             0 (None)
+        >>   56 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+             58 RERAISE                  1
+ExceptionTable:
+  4 to 54 -> 56 [0] lasti
+
+Disassembly of <code object <lambda> at 0x7f6aed711fe0, file "audio_mute.py", line 189>:
+189           0 RESUME                   0
+              2 RETURN_CONST             0 (None)
+
+Disassembly of <code object _backend_or_default at 0x7f6af1dbf990, file "audio_mute.py", line 195>:
+195           0 RESUME                   0
+
+196           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_backend)
+             24 POP_JUMP_IF_NOT_NONE    15 (to 56)
+
+197          26 LOAD_GLOBAL              3 (NULL + default_backend)
+             36 CALL                     0
+             44 LOAD_FAST                0 (self)
+             46 STORE_ATTR               0 (_backend)
+
+198     >>   56 LOAD_FAST                0 (self)
+             58 LOAD_ATTR                0 (_backend)
+             78 RETURN_VALUE
+
+Disassembly of <code object _game_sessions at 0x7f6aed7a0030, file "audio_mute.py", line 200>:
+200           0 RESUME                   0
+
+201           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                1 (NULL|self + _backend_or_default)
+             24 CALL                     0
+             32 LOAD_ATTR                3 (NULL|self + sessions)
+             52 CALL                     0
+             60 GET_ITER
+             62 LOAD_FAST_AND_CLEAR      1 (s)
+             64 SWAP                     2
+             66 BUILD_LIST               0
+             68 SWAP                     2
+        >>   70 FOR_ITER                29 (to 132)
+             74 STORE_FAST               1 (s)
+             76 LOAD_FAST                1 (s)
+             78 LOAD_ATTR                4 (name)
+             98 LOAD_FAST                0 (self)
+            100 LOAD_ATTR                6 (_names)
+            120 CONTAINS_OP              0
+            122 POP_JUMP_IF_TRUE         1 (to 126)
+            124 JUMP_BACKWARD           28 (to 70)
+        >>  126 LOAD_FAST                1 (s)
+            128 LIST_APPEND              2
+            130 JUMP_BACKWARD           31 (to 70)
+        >>  132 END_FOR
+            134 SWAP                     2
+            136 STORE_FAST               1 (s)
+            138 RETURN_VALUE
+        >>  140 SWAP                     2
+            142 POP_TOP
+            144 SWAP                     2
+            146 STORE_FAST               1 (s)
+            148 RERAISE                  0
+ExceptionTable:
+  66 to 122 -> 140 [2]
+  126 to 132 -> 140 [2]
+
+Disassembly of <code object mute at 0x17a3b730, file "audio_mute.py", line 203>:
+203           0 RESUME                   0
+
+204           2 NOP
+
+205           4 LOAD_CONST               1 (0)
+              6 STORE_FAST               1 (n)
+
+206           8 NOP
+
+207          10 LOAD_FAST                0 (self)
+             12 LOAD_ATTR                0 (_lock)
+             32 BEFORE_WITH
+             34 POP_TOP
+
+208          36 LOAD_FAST                0 (self)
+             38 LOAD_ATTR                2 (_registered)
+             58 POP_JUMP_IF_TRUE        38 (to 136)
+
+209          60 LOAD_GLOBAL              5 (NULL + atexit)
+             70 LOAD_ATTR                6 (register)
+             90 LOAD_FAST                0 (self)
+             92 LOAD_ATTR                8 (restore)
+            112 CALL                     1
+            120 POP_TOP
+
+210         122 LOAD_CONST               2 (True)
+            124 LOAD_FAST                0 (self)
+            126 STORE_ATTR               1 (_registered)
+
+211     >>  136 LOAD_FAST                0 (self)
+            138 LOAD_ATTR               11 (NULL|self + _game_sessions)
+            158 CALL                     0
+            166 GET_ITER
+        >>  168 FOR_ITER               127 (to 426)
+            172 STORE_FAST               2 (s)
+
+212         174 LOAD_FAST                2 (s)
+            176 LOAD_ATTR               12 (pid)
+            196 LOAD_FAST                0 (self)
+            198 LOAD_ATTR               14 (_muted_by_us)
+            218 CONTAINS_OP              0
+            220 POP_JUMP_IF_FALSE        1 (to 224)
+
+213         222 JUMP_BACKWARD           28 (to 168)
+
+214     >>  224 NOP
+
+215         226 LOAD_GLOBAL             17 (NULL + bool)
+            236 LOAD_FAST                2 (s)
+            238 LOAD_ATTR               19 (NULL|self + get_mute)
+            258 CALL                     0
+            266 CALL                     1
+            274 STORE_FAST               3 (was)
+
+216         276 LOAD_FAST                3 (was)
+            278 LOAD_FAST                0 (self)
+            280 LOAD_ATTR               20 (_before)
+            300 LOAD_FAST                2 (s)
+            302 LOAD_ATTR               12 (pid)
+            322 STORE_SUBSCR
+
+217         326 LOAD_FAST                3 (was)
+            328 POP_JUMP_IF_TRUE        47 (to 424)
+
+218         330 LOAD_FAST                2 (s)
+            332 LOAD_ATTR               23 (NULL|self + set_mute)
+            352 LOAD_CONST               2 (True)
+            354 CALL                     1
+            362 POP_TOP
+
+219         364 LOAD_FAST                2 (s)
+            366 LOAD_FAST                0 (self)
+            368 LOAD_ATTR               14 (_muted_by_us)
+            388 LOAD_FAST                2 (s)
+            390 LOAD_ATTR               12 (pid)
+            410 STORE_SUBSCR
+
+220         414 LOAD_FAST                1 (n)
+            416 LOAD_CONST               3 (1)
+            418 BINARY_OP               13 (+=)
+            422 STORE_FAST               1 (n)
+        >>  424 JUMP_BACKWARD          129 (to 168)
+
+211     >>  426 END_FOR
+            428 NOP
+
+207         430 LOAD_CONST               0 (None)
+            432 LOAD_CONST               0 (None)
+            434 LOAD_CONST               0 (None)
+            436 CALL                     2
+            444 POP_TOP
+
+225     >>  446 LOAD_FAST                1 (n)
+            448 POP_JUMP_IF_FALSE       17 (to 484)
+
+226         450 LOAD_FAST                0 (self)
+            452 LOAD_ATTR               27 (NULL|self + log)
+            472 LOAD_CONST               4 ('auto-silencer: game muted')
+            474 CALL                     1
+            482 POP_TOP
+
+227     >>  484 LOAD_FAST                1 (n)
+            486 RETURN_VALUE
+        >>  488 PUSH_EXC_INFO
+
+221         490 LOAD_GLOBAL             24 (Exception)
+            500 CHECK_EXC_MATCH
+            502 POP_JUMP_IF_FALSE        3 (to 510)
+            504 POP_TOP
+
+222         506 POP_EXCEPT
+            508 JUMP_BACKWARD          171 (to 168)
+
+221     >>  510 RERAISE                  0
+        >>  512 COPY                     3
+            514 POP_EXCEPT
+            516 RERAISE                  1
+
+207     >>  518 PUSH_EXC_INFO
+            520 WITH_EXCEPT_START
+            522 POP_JUMP_IF_TRUE         1 (to 526)
+            524 RERAISE                  2
+        >>  526 POP_TOP
+            528 POP_EXCEPT
+            530 POP_TOP
+            532 POP_TOP
+            534 JUMP_BACKWARD           45 (to 446)
+        >>  536 COPY                     3
+            538 POP_EXCEPT
+            540 RERAISE                  1
+        >>  542 PUSH_EXC_INFO
+
+223         544 LOAD_GLOBAL             24 (Exception)
+            554 CHECK_EXC_MATCH
+            556 POP_JUMP_IF_FALSE        3 (to 564)
+            558 POP_TOP
+
+224         560 POP_EXCEPT
+            562 JUMP_BACKWARD           59 (to 446)
+
+223     >>  564 RERAISE                  0
+        >>  566 COPY                     3
+            568 POP_EXCEPT
+            570 RERAISE                  1
+ExceptionTable:
+  10 to 32 -> 542 [0]
+  34 to 222 -> 518 [1] lasti
+  226 to 422 -> 488 [2]
+  424 to 426 -> 518 [1] lasti
+  430 to 444 -> 542 [0]
+  488 to 504 -> 512 [3] lasti
+  506 to 508 -> 518 [1] lasti
+  510 to 510 -> 512 [3] lasti
+  512 to 516 -> 518 [1] lasti
+  518 to 526 -> 536 [3] lasti
+  528 to 540 -> 542 [0]
+  542 to 558 -> 566 [1] lasti
+  564 to 564 -> 566 [1] lasti
+
+Disassembly of <code object refresh at 0x7f6af1dc3690, file "audio_mute.py", line 229>:
+229           0 RESUME                   0
+
+230           2 NOP
+
+231           4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                1 (NULL|self + mute)
+             26 CALL                     0
+             34 RETURN_VALUE
+
+Disassembly of <code object restore at 0x179daea0, file "audio_mute.py", line 233>:
+233           0 RESUME                   0
+
+234           2 NOP
+
+235           4 LOAD_CONST               1 (0)
+              6 STORE_FAST               1 (n)
+
+236           8 NOP
+
+237          10 LOAD_FAST                0 (self)
+             12 LOAD_ATTR                0 (_lock)
+             32 BEFORE_WITH
+             34 POP_TOP
+
+238          36 LOAD_GLOBAL              3 (NULL + list)
+             46 LOAD_FAST                0 (self)
+             48 LOAD_ATTR                4 (_muted_by_us)
+             68 LOAD_ATTR                7 (NULL|self + items)
+             88 CALL                     0
+             96 CALL                     1
+            104 GET_ITER
+        >>  106 FOR_ITER                56 (to 222)
+            110 UNPACK_SEQUENCE          2
+            114 STORE_FAST               2 (pid)
+            116 STORE_FAST               3 (s)
+
+239         118 NOP
+
+240         120 LOAD_FAST                0 (self)
+            122 LOAD_ATTR                8 (_before)
+            142 LOAD_ATTR               11 (NULL|self + get)
+            162 LOAD_FAST                2 (pid)
+            164 LOAD_CONST               2 (False)
+            166 CALL                     2
+            174 POP_JUMP_IF_TRUE        22 (to 220)
+
+241         176 LOAD_FAST                3 (s)
+            178 LOAD_ATTR               13 (NULL|self + set_mute)
+            198 LOAD_CONST               2 (False)
+            200 CALL                     1
+            208 POP_TOP
+
+242         210 LOAD_FAST                1 (n)
+            212 LOAD_CONST               3 (1)
+            214 BINARY_OP               13 (+=)
+            218 STORE_FAST               1 (n)
+        >>  220 JUMP_BACKWARD           58 (to 106)
+
+238     >>  222 END_FOR
+
+245         224 LOAD_FAST                0 (self)
+            226 LOAD_ATTR                4 (_muted_by_us)
+            246 LOAD_ATTR               17 (NULL|self + clear)
+            266 CALL                     0
+            274 POP_TOP
+
+246         276 LOAD_FAST                0 (self)
+            278 LOAD_ATTR                8 (_before)
+            298 LOAD_ATTR               17 (NULL|self + clear)
+            318 CALL                     0
+            326 POP_TOP
+
+237         328 LOAD_CONST               0 (None)
+            330 LOAD_CONST               0 (None)
+            332 LOAD_CONST               0 (None)
+            334 CALL                     2
+            342 POP_TOP
+
+249     >>  344 LOAD_FAST                1 (n)
+            346 POP_JUMP_IF_FALSE       17 (to 382)
+
+250         348 LOAD_FAST                0 (self)
+            350 LOAD_ATTR               19 (NULL|self + log)
+            370 LOAD_CONST               4 ('auto-silencer: game sound restored')
+            372 CALL                     1
+            380 POP_TOP
+
+251     >>  382 LOAD_FAST                1 (n)
+            384 RETURN_VALUE
+        >>  386 PUSH_EXC_INFO
+
+243         388 LOAD_GLOBAL             14 (Exception)
+            398 CHECK_EXC_MATCH
+            400 POP_JUMP_IF_FALSE        3 (to 408)
+            402 POP_TOP
+
+244         404 POP_EXCEPT
+            406 JUMP_BACKWARD          151 (to 106)
+
+243     >>  408 RERAISE                  0
+        >>  410 COPY                     3
+            412 POP_EXCEPT
+            414 RERAISE                  1
+
+237     >>  416 PUSH_EXC_INFO
+            418 WITH_EXCEPT_START
+            420 POP_JUMP_IF_TRUE         1 (to 424)
+            422 RERAISE                  2
+        >>  424 POP_TOP
+            426 POP_EXCEPT
+            428 POP_TOP
+            430 POP_TOP
+            432 JUMP_BACKWARD           45 (to 344)
+        >>  434 COPY                     3
+            436 POP_EXCEPT
+            438 RERAISE                  1
+        >>  440 PUSH_EXC_INFO
+
+247         442 LOAD_GLOBAL             14 (Exception)
+            452 CHECK_EXC_MATCH
+            454 POP_JUMP_IF_FALSE        3 (to 462)
+            456 POP_TOP
+
+248         458 POP_EXCEPT
+            460 JUMP_BACKWARD           59 (to 344)
+
+247     >>  462 RERAISE                  0
+        >>  464 COPY                     3
+            466 POP_EXCEPT
+            468 RERAISE                  1
+ExceptionTable:
+  10 to 32 -> 440 [0]
+  34 to 116 -> 416 [1] lasti
+  120 to 218 -> 386 [2]
+  220 to 326 -> 416 [1] lasti
+  328 to 342 -> 440 [0]
+  386 to 402 -> 410 [3] lasti
+  404 to 406 -> 416 [1] lasti
+  408 to 408 -> 410 [3] lasti
+  410 to 414 -> 416 [1] lasti
+  416 to 424 -> 434 [3] lasti
+  426 to 438 -> 440 [0]
+  440 to 456 -> 464 [1] lasti
+  462 to 462 -> 464 [1] lasti
